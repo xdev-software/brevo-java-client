@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.xdev-software</groupId>
-	<artifactId>standard-maven-template-root</artifactId>
+	<artifactId>openapi-client-maven-template-root</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
@@ -15,8 +15,8 @@
 	</organization>
 
 	<modules>
-		<module>standard-maven-template</module>
-		<module>standard-maven-template-demo</module>
+		<module>openapi-client-maven-template</module>
+		<module>openapi-client-maven-template-demo</module>
 	</modules>
 
 	<licenses>
