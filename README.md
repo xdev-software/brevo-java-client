@@ -1,6 +1,7 @@
 [![Latest version](https://img.shields.io/maven-central/v/com.xdev-software/openapi-client-maven-template?logo=apache%20maven)](https://mvnrepository.com/artifact/com.xdev-software/openapi-client-maven-template)
 [![Build](https://img.shields.io/github/actions/workflow/status/xdev-software/openapi-client-maven-template/checkBuild.yml?branch=develop)](https://github.com/xdev-software/openapi-client-maven-template/actions/workflows/checkBuild.yml?query=branch%3Adevelop)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=xdev-software_openapi-client-maven-template&metric=alert_status)](https://sonarcloud.io/dashboard?id=xdev-software_openapi-client-maven-template)
+[![API Specification Editor](https://img.shields.io/badge/API--Spec-Editor-85ea2d?logo=swagger)](https://editor.swagger.io/?url=https://raw.githubusercontent.com/xdev-software/openapi-client-maven-template/develop/openapi/openapi.yml)
 
 # openapi-client-maven-template
 
