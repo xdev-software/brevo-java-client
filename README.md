@@ -9,6 +9,8 @@ This client [is generated](./openapi-client-maven-template/pom.xml) from an [``o
 ## Installation
 [Installation guide for the latest release](https://github.com/xdev-software/openapi-client-maven-template/releases/latest#Installation)
 
+## Demo
+A minimal demo is also available [here](./openapi-client-maven-template-demo/src/main/java/software/xdev/Application.java).
 
 ## Support
 If you need support as soon as possible and you can't wait for any pull request, feel free to use [our support](https://xdev.software/en/services/support).
