@@ -4,6 +4,7 @@
 
 # openapi-client-maven-template
 
+This client [is generated](./openapi-client-maven-template/pom.xml) from an [``openapi.yml``](./openapi/openapi.yml) using [OpenAPI Generator](https://openapi-generator.tech/).
 
 ## Installation
 [Installation guide for the latest release](https://github.com/xdev-software/openapi-client-maven-template/releases/latest#Installation)
