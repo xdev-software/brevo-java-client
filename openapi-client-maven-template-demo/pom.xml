@@ -25,7 +25,7 @@
 
 		<mainClass>software.xdev.Application</mainClass>
 
-		<log4j2-version>2.20.0</log4j2-version>
+		<log4j2-version>2.21.0</log4j2-version>
 	</properties>
 
 	<dependencies>
