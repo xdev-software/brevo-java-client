@@ -48,6 +48,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
+		<generatedDirRelative>src/generated/java</generatedDirRelative>
+
 		<!-- Ignore generated code -->
 		<sonar.exclusions>
 			src/generated/**
@@ -226,7 +228,7 @@
 						</goals>
 						<configuration>
 							<sources>
-								<source>src/generated/java</source>
+								<source>${generatedDirRelative}</source>
 							</sources>
 						</configuration>
 					</execution>
@@ -283,7 +285,6 @@
 			<properties>
 				<componentName>INSERT_NAME_HERE</componentName>
 
-				<generatedDirRelative>src/generated/java</generatedDirRelative>
 				<generatedDir>${project.basedir}/${generatedDirRelative}</generatedDir>
 				<openApiRelativeGeneratorDir>src/gen</openApiRelativeGeneratorDir>
 				<openApiGeneratorDir>
