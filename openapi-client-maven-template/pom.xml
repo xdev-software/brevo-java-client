@@ -123,10 +123,6 @@
 			<artifactId>jackson-databind</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.fasterxml.jackson.jaxrs</groupId>
-			<artifactId>jackson-jaxrs-json-provider</artifactId>
-		</dependency>
-		<dependency>
 			<groupId>com.fasterxml.jackson.datatype</groupId>
 			<artifactId>jackson-datatype-jsr310</artifactId>
 		</dependency>
@@ -285,7 +281,7 @@
 		<profile>
 			<id>openapi-generator</id>
 			<properties>
-				<basePackage>software.xdev.INSERT_NAME_HERE</basePackage>
+				<componentName>INSERT_NAME_HERE</componentName>
 
 				<generatedDirRelative>src/generated/java</generatedDirRelative>
 				<generatedDir>${project.basedir}/${generatedDirRelative}</generatedDir>
@@ -340,9 +336,9 @@
 									<configOptions>
 										<sourceFolder>${openApiRelativeGeneratorDir}</sourceFolder>
 										<library>apache-httpclient</library>
-										<apiPackage>${basePackage}.api</apiPackage>
-										<modelPackage>${basePackage}.model</modelPackage>
-										<invokerPackage>${basePackage}.client</invokerPackage>
+										<apiPackage>software.xdev.${componentName}.api</apiPackage>
+										<modelPackage>software.xdev.${componentName}.model</modelPackage>
+										<invokerPackage>software.xdev.${componentName}.client</invokerPackage>
 										<!-- Otherwise throw and catch everywhere -->
 										<useRuntimeException>true</useRuntimeException>
 										<!-- Some fields of API have been ignored because they are unused -->
@@ -379,6 +375,30 @@
 											<directory>${openApiGeneratorDir}</directory>
 										</resource>
 									</resources>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<groupId>io.github.floverfelt</groupId>
+						<artifactId>find-and-replace-maven-plugin</artifactId>
+						<version>1.1.0</version>
+						<executions>
+							<execution>
+								<id>remove-unused-import-com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider</id>
+								<phase>process-sources</phase>
+								<goals>
+									<goal>find-and-replace</goal>
+								</goals>
+								<configuration>
+									<replacementType>file-contents</replacementType>
+									<baseDir>${generatedDirRelative}/software/xdev/${componentName}/client/</baseDir>
+									<fileMask>ApiClient.java</fileMask>
+									<!-- @formatter:off DO NOT INTRODUCE LINE BREAK -->
+									<findRegex>^(import com\.fasterxml\.jackson\.jaxrs\.json\.JacksonJsonProvider;)$</findRegex>
+									<!-- Can't be removed as the plugin isn't supporting empty values -->
+									<replaceValue>// $1</replaceValue>
+									<!-- @formatter:on -->
 								</configuration>
 							</execution>
 						</executions>
