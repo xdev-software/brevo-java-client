@@ -42,3 +42,5 @@ See the [contributing guide](./CONTRIBUTING.md) for detailed instructions on how
 
 ## Dependencies and Licenses
 View the [license of the current project](LICENSE) or the [summary including all dependencies](https://xdev-software.github.io/brevo-java-client/dependencies/)
+
+<sub>Disclaimer: This is not an official Brevo product and not associated with Brevo</sub>
