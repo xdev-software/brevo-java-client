@@ -5,17 +5,17 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>software.xdev</groupId>
-	<artifactId>openapi-client-maven-template</artifactId>
+	<artifactId>brevo-java-client</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>openapi-client-maven-template</name>
-	<description>openapi-client-maven-template</description>
-	<url>https://github.com/xdev-software/openapi-client-maven-template</url>
+	<name>brevo-java-client</name>
+	<description>brevo-java-client</description>
+	<url>https://github.com/xdev-software/brevo-java-client</url>
 
 	<scm>
-		<url>https://github.com/xdev-software/openapi-client-maven-template</url>
-		<connection>https://github.com/xdev-software/openapi-client-maven-template.git</connection>
+		<url>https://github.com/xdev-software/brevo-java-client</url>
+		<connection>https://github.com/xdev-software/brevo-java-client.git</connection>
 	</scm>
 
 	<inceptionYear>2023</inceptionYear>
@@ -283,7 +283,7 @@
 		<profile>
 			<id>openapi-generator</id>
 			<properties>
-				<componentName>INSERT_NAME_HERE</componentName>
+				<componentName>brevo</componentName>
 
 				<generatedDir>${project.basedir}/${generatedDirRelative}</generatedDir>
 				<openApiRelativeGeneratorDir>src/gen</openApiRelativeGeneratorDir>
