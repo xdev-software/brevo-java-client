@@ -3,7 +3,13 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=xdev-software_brevo-java-client&metric=alert_status)](https://sonarcloud.io/dashboard?id=xdev-software_brevo-java-client)
 [![API Specification Editor](https://img.shields.io/badge/API--Spec-Editor-85ea2d?logo=swagger)](https://editor.swagger.io/?url=https://raw.githubusercontent.com/xdev-software/brevo-java-client/develop/openapi/openapi.yml)
 
-# brevo-java-client
+# <img src="https://corp-backend.brevo.com/wp-content/uploads/2023/05/favicon.svg" height="28" /> [brevo](https://brevo.com)-java-client
+
+Java client for the [Brevo](https://brevo.com) (formerly [Sendinblue](https://help.brevo.com/hc/en-us/articles/11279317272722-FAQs-Sendinblue-becomes-Brevo)) API
+
+> [!IMPORTANT]
+> An API-Key is required for using the API.<br/>
+> You can get a key at https://app.brevo.com/settings/keys/api
 
 This client [is generated](./brevo-java-client/pom.xml) from an [``openapi.yml``](./openapi/openapi.yml) using [OpenAPI Generator](https://openapi-generator.tech/).
 
