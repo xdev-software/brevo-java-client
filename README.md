@@ -5,13 +5,28 @@
 
 # <img src="https://corp-backend.brevo.com/wp-content/uploads/2023/05/favicon.svg" height="28" /> [brevo](https://brevo.com)-java-client
 
-Java client for the [Brevo](https://brevo.com) (formerly [Sendinblue](https://help.brevo.com/hc/en-us/articles/11279317272722-FAQs-Sendinblue-becomes-Brevo)) API
+Java client for the [Brevo](https://brevo.com) (formerly [SendinBlue](https://help.brevo.com/hc/en-us/articles/11279317272722-FAQs-Sendinblue-becomes-Brevo)) API
 
 > [!IMPORTANT]
-> An API-Key is required for using the API.<br/>
-> You can get a key at https://app.brevo.com/settings/keys/api
+> An API-Key is required.<br/>
+> You can get it at https://app.brevo.com/settings/keys/api
 
 This client [is generated](./brevo-java-client/pom.xml) from an [``openapi.yml``](./openapi/openapi.yml) using [OpenAPI Generator](https://openapi-generator.tech/).
+
+> [!NOTE]
+> <details><summary>Why did you create this API client and not use <a href="https://github.com/sendinblue/APIv3-java-library">the official one</a>?</summary>
+>
+> We had some problems (as of March 2024) with the "official" client:
+> * The client looks seriously outdated:
+>   * it is still called "SendinBlue"
+>   * was last updated over a year ago and there was no activity (on issues/PR) since then
+>   * There is at least one CVE in the underlying HTTP client
+> * It looks like there are problems with the underlying dependencies:
+>   * ``maven-gpg-plugin`` is declared as compile dependency
+>   * There is a [dependency for Java 7](https://www.threeten.org/threetenbp/) however the client is built for Java 8+
+> * ...
+>
+> </details>
 
 ## Installation
 [Installation guide for the latest release](https://github.com/xdev-software/brevo-java-client/releases/latest#Installation)
