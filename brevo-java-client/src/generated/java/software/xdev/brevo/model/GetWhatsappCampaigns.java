@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   GetWhatsappCampaigns.JSON_PROPERTY_COUNT
 })
 @JsonTypeName("getWhatsappCampaigns")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetWhatsappCampaigns {
   public static final String JSON_PROPERTY_CAMPAIGNS = "campaigns";
   private List<GetWhatsappCampaignsCampaignsInner> campaigns;

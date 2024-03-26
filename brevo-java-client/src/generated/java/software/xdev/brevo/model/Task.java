@@ -40,7 +40,6 @@ import java.util.StringJoiner;
   Task.JSON_PROPERTY_DEALS_IDS,
   Task.JSON_PROPERTY_COMPANIES_IDS
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class Task {
   public static final String JSON_PROPERTY_ID = "id";
   private String id;

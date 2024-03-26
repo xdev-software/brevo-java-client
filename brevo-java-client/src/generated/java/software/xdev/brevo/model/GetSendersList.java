@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   GetSendersList.JSON_PROPERTY_SENDERS
 })
 @JsonTypeName("getSendersList")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetSendersList {
   public static final String JSON_PROPERTY_SENDERS = "senders";
   private List<GetSendersListSendersInner> senders;

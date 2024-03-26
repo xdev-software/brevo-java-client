@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   GetWhatsappTemplates.JSON_PROPERTY_COUNT
 })
 @JsonTypeName("getWhatsappTemplates")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetWhatsappTemplates {
   public static final String JSON_PROPERTY_TEMPLATES = "templates";
   private List<GetWhatsappTemplatesTemplatesInner> templates;

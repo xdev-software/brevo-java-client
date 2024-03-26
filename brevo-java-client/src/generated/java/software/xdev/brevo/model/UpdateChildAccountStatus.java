@@ -36,7 +36,6 @@ import java.util.StringJoiner;
   UpdateChildAccountStatus.JSON_PROPERTY_SMS_CAMPAIGN
 })
 @JsonTypeName("updateChildAccountStatus")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class UpdateChildAccountStatus {
   public static final String JSON_PROPERTY_TRANSACTIONAL_EMAIL = "transactionalEmail";
   private Boolean transactionalEmail;

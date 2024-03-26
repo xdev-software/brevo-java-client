@@ -34,7 +34,6 @@ import java.util.StringJoiner;
   GetExternalFeedByUUIDHeadersInner.JSON_PROPERTY_VALUE
 })
 @JsonTypeName("getExternalFeedByUUID_headers_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetExternalFeedByUUIDHeadersInner {
   public static final String JSON_PROPERTY_NAME = "name";
   private String name;

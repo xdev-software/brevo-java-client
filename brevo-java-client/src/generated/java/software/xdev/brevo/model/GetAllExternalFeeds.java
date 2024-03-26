@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   GetAllExternalFeeds.JSON_PROPERTY_FEEDS
 })
 @JsonTypeName("getAllExternalFeeds")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetAllExternalFeeds {
   public static final String JSON_PROPERTY_COUNT = "count";
   private Integer count;

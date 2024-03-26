@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   PutRevokeUserPermissionResponse.JSON_PROPERTY_CREDIT_NOTES
 })
 @JsonTypeName("putRevokeUserPermissionResponse")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class PutRevokeUserPermissionResponse {
   public static final String JSON_PROPERTY_STATUS = "status";
   private String status;

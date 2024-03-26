@@ -32,7 +32,6 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   NoteId.JSON_PROPERTY_ID
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class NoteId {
   public static final String JSON_PROPERTY_ID = "id";
   private String id;

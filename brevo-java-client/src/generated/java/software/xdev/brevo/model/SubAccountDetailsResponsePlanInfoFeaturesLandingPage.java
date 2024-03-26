@@ -34,7 +34,6 @@ import java.util.StringJoiner;
   SubAccountDetailsResponsePlanInfoFeaturesLandingPage.JSON_PROPERTY_REMAINING
 })
 @JsonTypeName("subAccountDetailsResponse_planInfo_features_landingPage")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class SubAccountDetailsResponsePlanInfoFeaturesLandingPage {
   public static final String JSON_PROPERTY_QUANTITY = "quantity";
   private Long quantity;

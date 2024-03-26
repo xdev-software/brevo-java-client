@@ -42,7 +42,6 @@ import java.util.StringJoiner;
   UpdateWebhook.JSON_PROPERTY_HEADERS
 })
 @JsonTypeName("updateWebhook")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class UpdateWebhook {
   public static final String JSON_PROPERTY_URL = "url";
   private String url;

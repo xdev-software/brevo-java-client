@@ -44,7 +44,6 @@ import java.util.StringJoiner;
   GetScheduledEmailById200Response.JSON_PROPERTY_STATUS
 })
 @JsonTypeName("getScheduledEmailById_200_response")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetScheduledEmailById200Response {
   public static final String JSON_PROPERTY_COUNT = "count";
   private Integer count;

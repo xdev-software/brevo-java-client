@@ -33,7 +33,6 @@ import java.util.StringJoiner;
   ManageIp.JSON_PROPERTY_IP
 })
 @JsonTypeName("manageIp")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class ManageIp {
   public static final String JSON_PROPERTY_IP = "ip";
   private String ip;

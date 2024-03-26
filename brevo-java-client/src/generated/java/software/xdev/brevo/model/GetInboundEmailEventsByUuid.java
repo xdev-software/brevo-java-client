@@ -50,7 +50,6 @@ import java.util.StringJoiner;
   GetInboundEmailEventsByUuid.JSON_PROPERTY_LOGS
 })
 @JsonTypeName("getInboundEmailEventsByUuid")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetInboundEmailEventsByUuid {
   public static final String JSON_PROPERTY_RECEIVED_AT = "receivedAt";
   private OffsetDateTime receivedAt;

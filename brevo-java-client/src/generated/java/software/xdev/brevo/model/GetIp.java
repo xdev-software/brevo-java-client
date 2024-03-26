@@ -36,7 +36,6 @@ import java.util.StringJoiner;
   GetIp.JSON_PROPERTY_DOMAIN
 })
 @JsonTypeName("getIp")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetIp {
   public static final String JSON_PROPERTY_ID = "id";
   private Long id;

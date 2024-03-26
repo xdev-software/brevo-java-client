@@ -33,7 +33,6 @@ import java.util.StringJoiner;
   SendWhatsappMessage201Response.JSON_PROPERTY_MESSAGE_ID
 })
 @JsonTypeName("sendWhatsappMessage_201_response")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class SendWhatsappMessage201Response {
   public static final String JSON_PROPERTY_MESSAGE_ID = "messageId";
   private String messageId;

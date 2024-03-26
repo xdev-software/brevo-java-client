@@ -34,7 +34,6 @@ import java.util.StringJoiner;
   CreateApiKeyResponse.JSON_PROPERTY_KEY
 })
 @JsonTypeName("createApiKeyResponse")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CreateApiKeyResponse {
   public static final String JSON_PROPERTY_STATUS = "status";
   private String status;

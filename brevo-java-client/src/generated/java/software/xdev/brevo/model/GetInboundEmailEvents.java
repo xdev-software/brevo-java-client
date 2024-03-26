@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   GetInboundEmailEvents.JSON_PROPERTY_EVENTS
 })
 @JsonTypeName("getInboundEmailEvents")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetInboundEmailEvents {
   public static final String JSON_PROPERTY_EVENTS = "events";
   private List<GetInboundEmailEventsEventsInner> events;

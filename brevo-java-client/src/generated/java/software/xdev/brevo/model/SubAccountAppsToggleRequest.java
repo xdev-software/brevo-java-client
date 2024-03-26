@@ -45,7 +45,6 @@ import java.util.StringJoiner;
   SubAccountAppsToggleRequest.JSON_PROPERTY_CRM
 })
 @JsonTypeName("subAccountAppsToggleRequest")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class SubAccountAppsToggleRequest {
   public static final String JSON_PROPERTY_INBOX = "inbox";
   private Boolean inbox;

@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   CreateSmtpEmail.JSON_PROPERTY_MESSAGE_IDS
 })
 @JsonTypeName("createSmtpEmail")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CreateSmtpEmail {
   public static final String JSON_PROPERTY_MESSAGE_ID = "messageId";
   private String messageId;

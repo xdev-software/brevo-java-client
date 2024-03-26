@@ -39,7 +39,6 @@ import java.util.StringJoiner;
   CompaniesLinkUnlinkIdPatchRequest.JSON_PROPERTY_UNLINK_DEALS_IDS
 })
 @JsonTypeName("_companies_link_unlink__id__patch_request")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CompaniesLinkUnlinkIdPatchRequest {
   public static final String JSON_PROPERTY_LINK_CONTACT_IDS = "linkContactIds";
   private List<Long> linkContactIds;

@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   Pipeline.JSON_PROPERTY_PIPELINE,
   Pipeline.JSON_PROPERTY_STAGES
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class Pipeline {
   public static final String JSON_PROPERTY_PIPELINE_NAME = "pipeline_name";
   private String pipelineName;

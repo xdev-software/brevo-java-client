@@ -35,7 +35,6 @@ import java.util.StringJoiner;
   CreateSenderIpsInner.JSON_PROPERTY_WEIGHT
 })
 @JsonTypeName("createSender_ips_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CreateSenderIpsInner {
   public static final String JSON_PROPERTY_IP = "ip";
   private String ip;

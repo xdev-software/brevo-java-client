@@ -46,7 +46,6 @@ import java.util.StringJoiner;
   GetReportsReportsInner.JSON_PROPERTY_UNSUBSCRIBED
 })
 @JsonTypeName("getReports_reports_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetReportsReportsInner {
   public static final String JSON_PROPERTY_DATE = "date";
   private LocalDate date;

@@ -34,7 +34,6 @@ import java.util.StringJoiner;
   GetAccountAllOfMarketingAutomation.JSON_PROPERTY_ENABLED
 })
 @JsonTypeName("getAccount_allOf_marketingAutomation")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetAccountAllOfMarketingAutomation {
   public static final String JSON_PROPERTY_KEY = "key";
   private String key;

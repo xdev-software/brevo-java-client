@@ -40,7 +40,6 @@ import java.util.StringJoiner;
   DealAttributesInner.JSON_PROPERTY_IS_REQUIRED
 })
 @JsonTypeName("DealAttributes_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class DealAttributesInner {
   public static final String JSON_PROPERTY_INTERNAL_NAME = "internalName";
   private String internalName;

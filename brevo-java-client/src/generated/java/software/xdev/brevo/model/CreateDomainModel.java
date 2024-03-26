@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   CreateDomainModel.JSON_PROPERTY_DNS_RECORDS
 })
 @JsonTypeName("createDomainModel")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CreateDomainModel {
   public static final String JSON_PROPERTY_ID = "id";
   private Long id;

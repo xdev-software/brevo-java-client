@@ -33,7 +33,6 @@ import java.util.StringJoiner;
   GetSharedTemplateUrl.JSON_PROPERTY_SHARED_URL
 })
 @JsonTypeName("getSharedTemplateUrl")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetSharedTemplateUrl {
   public static final String JSON_PROPERTY_SHARED_URL = "sharedUrl";
   private String sharedUrl;

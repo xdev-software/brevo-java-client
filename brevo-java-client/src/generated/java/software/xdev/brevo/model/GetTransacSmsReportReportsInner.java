@@ -43,7 +43,6 @@ import java.util.StringJoiner;
   GetTransacSmsReportReportsInner.JSON_PROPERTY_REJECTED
 })
 @JsonTypeName("getTransacSmsReport_reports_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetTransacSmsReportReportsInner {
   public static final String JSON_PROPERTY_DATE = "date";
   private LocalDate date;

@@ -47,7 +47,6 @@ import java.util.StringJoiner;
   UpdateBatchContactsContactsInner.JSON_PROPERTY_SMTP_BLACKLIST_SENDER
 })
 @JsonTypeName("updateBatchContacts_contacts_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class UpdateBatchContactsContactsInner {
   public static final String JSON_PROPERTY_EMAIL = "email";
   private String email;

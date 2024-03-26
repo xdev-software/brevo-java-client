@@ -33,7 +33,6 @@ import java.util.StringJoiner;
   ConversationsMessagesIdPutRequest.JSON_PROPERTY_TEXT
 })
 @JsonTypeName("_conversations_messages__id__put_request")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class ConversationsMessagesIdPutRequest {
   public static final String JSON_PROPERTY_TEXT = "text";
   private String text;

@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   GetWebhooks.JSON_PROPERTY_WEBHOOKS
 })
 @JsonTypeName("getWebhooks")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetWebhooks {
   public static final String JSON_PROPERTY_WEBHOOKS = "webhooks";
   private List<GetWebhook> webhooks = new ArrayList<>();

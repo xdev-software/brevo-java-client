@@ -41,7 +41,6 @@ import java.util.StringJoiner;
   CreateSmsCampaign.JSON_PROPERTY_UNSUBSCRIBE_INSTRUCTION
 })
 @JsonTypeName("createSmsCampaign")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CreateSmsCampaign {
   public static final String JSON_PROPERTY_NAME = "name";
   private String name;

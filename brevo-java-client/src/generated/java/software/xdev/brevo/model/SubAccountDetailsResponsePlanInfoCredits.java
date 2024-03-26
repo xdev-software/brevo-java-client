@@ -35,7 +35,6 @@ import java.util.StringJoiner;
   SubAccountDetailsResponsePlanInfoCredits.JSON_PROPERTY_EMAILS
 })
 @JsonTypeName("subAccountDetailsResponse_planInfo_credits")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class SubAccountDetailsResponsePlanInfoCredits {
   public static final String JSON_PROPERTY_SMS = "sms";
   private Long sms;

@@ -36,7 +36,6 @@ import java.util.StringJoiner;
   GetExtendedContactDetailsAllOfStatisticsLinks.JSON_PROPERTY_URL
 })
 @JsonTypeName("getExtendedContactDetails_allOf_statistics_links")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetExtendedContactDetailsAllOfStatisticsLinks {
   public static final String JSON_PROPERTY_COUNT = "count";
   private Long count;

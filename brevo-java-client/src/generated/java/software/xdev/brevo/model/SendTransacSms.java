@@ -40,7 +40,6 @@ import java.util.StringJoiner;
   SendTransacSms.JSON_PROPERTY_ORGANISATION_PREFIX
 })
 @JsonTypeName("sendTransacSms")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class SendTransacSms {
   public static final String JSON_PROPERTY_SENDER = "sender";
   private String sender;

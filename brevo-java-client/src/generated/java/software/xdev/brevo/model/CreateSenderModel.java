@@ -35,7 +35,6 @@ import java.util.StringJoiner;
   CreateSenderModel.JSON_PROPERTY_DKIM_ERROR
 })
 @JsonTypeName("createSenderModel")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CreateSenderModel {
   public static final String JSON_PROPERTY_ID = "id";
   private Long id;

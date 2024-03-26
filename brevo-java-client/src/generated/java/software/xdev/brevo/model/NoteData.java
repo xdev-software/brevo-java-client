@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   NoteData.JSON_PROPERTY_DEAL_IDS,
   NoteData.JSON_PROPERTY_COMPANY_IDS
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class NoteData {
   public static final String JSON_PROPERTY_TEXT = "text";
   private String text;

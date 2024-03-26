@@ -33,7 +33,6 @@ import java.util.StringJoiner;
   UpdateCouponCollectionRequest.JSON_PROPERTY_DEFAULT_COUPON
 })
 @JsonTypeName("updateCouponCollection_request")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class UpdateCouponCollectionRequest {
   public static final String JSON_PROPERTY_DEFAULT_COUPON = "defaultCoupon";
   private String defaultCoupon;

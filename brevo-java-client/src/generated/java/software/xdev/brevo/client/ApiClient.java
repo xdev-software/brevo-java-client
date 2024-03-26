@@ -16,7 +16,6 @@ import com.fasterxml.jackson.annotation.*;
 import com.fasterxml.jackson.databind.*;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import java.time.OffsetDateTime;
-// import com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JavaType;
@@ -80,7 +79,6 @@ import java.text.DateFormat;
 import software.xdev.brevo.client.auth.Authentication;
 import software.xdev.brevo.client.auth.ApiKeyAuth;
 
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class ApiClient extends JavaTimeFormatter {
   private Map<String, String> defaultHeaderMap = new HashMap<String, String>();
   private Map<String, String> defaultCookieMap = new HashMap<String, String>();
@@ -740,8 +738,7 @@ public class ApiClient extends JavaTimeFormatter {
     if (mimeType == null || isJsonMime(mimeType)) {
       // Assume json if no mime type
       // convert input stream to string
-      java.util.Scanner s = new java.util.Scanner(entity.getContent()).useDelimiter("\\A");
-      String content = (String) (s.hasNext() ? s.next() : "");
+      String content = EntityUtils.toString(entity);
 
       if ("".equals(content)) { // returns null for empty body
         return null;
@@ -750,8 +747,7 @@ public class ApiClient extends JavaTimeFormatter {
       return objectMapper.readValue(content, valueType);
     } else if ("text/plain".equalsIgnoreCase(mimeType)) {
       // convert input stream to string
-      java.util.Scanner s = new java.util.Scanner(entity.getContent()).useDelimiter("\\A");
-      return (T) (s.hasNext() ? s.next() : "");
+      return (T) EntityUtils.toString(entity);
     } else {
       throw new ApiException(
           "Deserialization for content type '" + mimeType + "' not supported for type '" + valueType + "'",

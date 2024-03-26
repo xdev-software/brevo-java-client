@@ -40,7 +40,6 @@ import java.util.StringJoiner;
   InviteAdminUser.JSON_PROPERTY_PRIVILEGES
 })
 @JsonTypeName("inviteAdminUser")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class InviteAdminUser {
   public static final String JSON_PROPERTY_EMAIL = "email";
   private String email;

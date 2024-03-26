@@ -35,7 +35,6 @@ import java.util.StringJoiner;
   UpdateCouponCollection200Response.JSON_PROPERTY_DEFAULT_COUPON
 })
 @JsonTypeName("updateCouponCollection_200_response")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class UpdateCouponCollection200Response {
   public static final String JSON_PROPERTY_ID = "id";
   private String id;

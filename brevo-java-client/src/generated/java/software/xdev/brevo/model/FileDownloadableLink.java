@@ -32,7 +32,6 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   FileDownloadableLink.JSON_PROPERTY_FILE_URL
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class FileDownloadableLink {
   public static final String JSON_PROPERTY_FILE_URL = "fileUrl";
   private String fileUrl;

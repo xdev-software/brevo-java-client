@@ -43,7 +43,6 @@ import java.util.StringJoiner;
   MasterDetailsResponsePlanInfo.JSON_PROPERTY_FEATURES
 })
 @JsonTypeName("masterDetailsResponse_planInfo")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class MasterDetailsResponsePlanInfo {
   public static final String JSON_PROPERTY_CURRENCY_CODE = "currencyCode";
   private String currencyCode;

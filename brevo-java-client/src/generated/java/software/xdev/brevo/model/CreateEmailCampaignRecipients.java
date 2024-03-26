@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   CreateEmailCampaignRecipients.JSON_PROPERTY_SEGMENT_IDS
 })
 @JsonTypeName("createEmailCampaign_recipients")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CreateEmailCampaignRecipients {
   public static final String JSON_PROPERTY_EXCLUSION_LIST_IDS = "exclusionListIds";
   private List<Long> exclusionListIds;

@@ -48,7 +48,6 @@ import java.util.StringJoiner;
   RequestContactImport.JSON_PROPERTY_EMPTY_CONTACTS_ATTRIBUTES
 })
 @JsonTypeName("requestContactImport")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class RequestContactImport {
   public static final String JSON_PROPERTY_FILE_URL = "fileUrl";
   private String fileUrl;

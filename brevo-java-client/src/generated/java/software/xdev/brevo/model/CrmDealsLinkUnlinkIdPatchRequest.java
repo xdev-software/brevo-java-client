@@ -39,7 +39,6 @@ import java.util.StringJoiner;
   CrmDealsLinkUnlinkIdPatchRequest.JSON_PROPERTY_UNLINK_COMPANY_IDS
 })
 @JsonTypeName("_crm_deals_link_unlink__id__patch_request")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CrmDealsLinkUnlinkIdPatchRequest {
   public static final String JSON_PROPERTY_LINK_CONTACT_IDS = "linkContactIds";
   private List<Long> linkContactIds;

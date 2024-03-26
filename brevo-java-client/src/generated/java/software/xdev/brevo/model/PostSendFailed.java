@@ -40,7 +40,6 @@ import java.util.StringJoiner;
   PostSendFailed.JSON_PROPERTY_BLACK_LISTED_EMAILS
 })
 @JsonTypeName("postSendFailed")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class PostSendFailed {
   public static final String JSON_PROPERTY_CODE = "code";
   private String code;

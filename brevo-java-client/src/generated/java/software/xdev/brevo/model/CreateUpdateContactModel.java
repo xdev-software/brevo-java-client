@@ -33,7 +33,6 @@ import java.util.StringJoiner;
   CreateUpdateContactModel.JSON_PROPERTY_ID
 })
 @JsonTypeName("createUpdateContactModel")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CreateUpdateContactModel {
   public static final String JSON_PROPERTY_ID = "id";
   private Long id;

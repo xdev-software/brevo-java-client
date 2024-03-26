@@ -46,7 +46,6 @@ import java.util.StringJoiner;
   GetCampaignOverview.JSON_PROPERTY_SEND_AT_BEST_TIME
 })
 @JsonTypeName("getCampaignOverview")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetCampaignOverview {
   public static final String JSON_PROPERTY_ID = "id";
   private Long id;

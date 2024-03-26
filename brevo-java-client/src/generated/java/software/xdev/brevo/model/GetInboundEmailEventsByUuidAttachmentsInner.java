@@ -36,7 +36,6 @@ import java.util.StringJoiner;
   GetInboundEmailEventsByUuidAttachmentsInner.JSON_PROPERTY_CONTENT_LENGTH
 })
 @JsonTypeName("getInboundEmailEventsByUuid_attachments_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetInboundEmailEventsByUuidAttachmentsInner {
   public static final String JSON_PROPERTY_NAME = "name";
   private String name;

@@ -36,7 +36,6 @@ import java.util.StringJoiner;
   SendTestEmail.JSON_PROPERTY_EMAIL_TO
 })
 @JsonTypeName("sendTestEmail")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class SendTestEmail {
   public static final String JSON_PROPERTY_EMAIL_TO = "emailTo";
   private List<String> emailTo;

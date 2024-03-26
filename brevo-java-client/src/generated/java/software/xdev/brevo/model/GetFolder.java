@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   GetFolder.JSON_PROPERTY_UNIQUE_SUBSCRIBERS
 })
 @JsonTypeName("getFolder")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetFolder {
   public static final String JSON_PROPERTY_ID = "id";
   private Long id;

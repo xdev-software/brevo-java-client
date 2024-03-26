@@ -39,7 +39,6 @@ import java.util.StringJoiner;
   GetAccountAllOfPlan.JSON_PROPERTY_USER_LIMIT
 })
 @JsonTypeName("getAccount_allOf_plan")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetAccountAllOfPlan {
   /**
    * Displays the plan type of the user

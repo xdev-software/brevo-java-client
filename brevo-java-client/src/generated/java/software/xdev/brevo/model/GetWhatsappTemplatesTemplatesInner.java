@@ -40,7 +40,6 @@ import java.util.StringJoiner;
   GetWhatsappTemplatesTemplatesInner.JSON_PROPERTY_MODIFIED_AT
 })
 @JsonTypeName("getWhatsappTemplates_templates_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetWhatsappTemplatesTemplatesInner {
   public static final String JSON_PROPERTY_ID = "id";
   private Long id;

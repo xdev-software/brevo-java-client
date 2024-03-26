@@ -36,7 +36,6 @@ import java.util.StringJoiner;
   CreateDomainModelDnsRecords.JSON_PROPERTY_DMARC_RECORD
 })
 @JsonTypeName("createDomainModel_dns_records")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CreateDomainModelDnsRecords {
   public static final String JSON_PROPERTY_DKIM_RECORD = "dkim_record";
   private CreateDomainModelDnsRecordsDkimRecord dkimRecord;

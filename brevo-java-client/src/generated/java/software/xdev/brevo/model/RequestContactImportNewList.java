@@ -34,7 +34,6 @@ import java.util.StringJoiner;
   RequestContactImportNewList.JSON_PROPERTY_FOLDER_ID
 })
 @JsonTypeName("requestContactImport_newList")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class RequestContactImportNewList {
   public static final String JSON_PROPERTY_LIST_NAME = "listName";
   private String listName;

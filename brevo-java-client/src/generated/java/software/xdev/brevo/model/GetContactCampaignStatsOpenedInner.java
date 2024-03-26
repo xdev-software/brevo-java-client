@@ -36,7 +36,6 @@ import java.util.StringJoiner;
   GetContactCampaignStatsOpenedInner.JSON_PROPERTY_IP
 })
 @JsonTypeName("getContactCampaignStats_opened_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetContactCampaignStatsOpenedInner {
   public static final String JSON_PROPERTY_CAMPAIGN_ID = "campaignId";
   private Long campaignId;

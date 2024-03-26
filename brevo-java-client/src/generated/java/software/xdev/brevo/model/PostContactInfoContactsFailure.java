@@ -28,7 +28,6 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
 })
 @JsonTypeName("postContactInfo_contacts_failure")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class PostContactInfoContactsFailure {
   public PostContactInfoContactsFailure() {
   }

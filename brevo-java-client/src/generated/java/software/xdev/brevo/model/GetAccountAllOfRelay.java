@@ -35,7 +35,6 @@ import java.util.StringJoiner;
   GetAccountAllOfRelay.JSON_PROPERTY_DATA
 })
 @JsonTypeName("getAccount_allOf_relay")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetAccountAllOfRelay {
   public static final String JSON_PROPERTY_ENABLED = "enabled";
   private Boolean enabled;

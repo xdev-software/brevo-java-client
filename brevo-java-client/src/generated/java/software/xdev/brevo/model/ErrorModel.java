@@ -34,7 +34,6 @@ import java.util.StringJoiner;
   ErrorModel.JSON_PROPERTY_MESSAGE
 })
 @JsonTypeName("errorModel")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class ErrorModel {
   /**
    * Error code displayed in case of a failure

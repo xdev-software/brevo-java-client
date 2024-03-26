@@ -41,7 +41,6 @@ import java.util.StringJoiner;
   MasterDetailsResponse.JSON_PROPERTY_PLAN_INFO
 })
 @JsonTypeName("masterDetailsResponse")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class MasterDetailsResponse {
   public static final String JSON_PROPERTY_EMAIL = "email";
   private String email;

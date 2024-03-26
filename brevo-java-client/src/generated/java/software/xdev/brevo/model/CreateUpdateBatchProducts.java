@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   CreateUpdateBatchProducts.JSON_PROPERTY_UPDATE_ENABLED
 })
 @JsonTypeName("createUpdateBatchProducts")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CreateUpdateBatchProducts {
   public static final String JSON_PROPERTY_PRODUCTS = "products";
   private List<CreateUpdateProducts> products = new ArrayList<>();

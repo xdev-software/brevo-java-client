@@ -34,7 +34,6 @@ import java.util.StringJoiner;
   AddCredits.JSON_PROPERTY_EMAIL
 })
 @JsonTypeName("addCredits")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class AddCredits {
   public static final String JSON_PROPERTY_SMS = "sms";
   private Long sms;

@@ -35,7 +35,6 @@ import java.util.StringJoiner;
   CreatedBatchId.JSON_PROPERTY_COUNT
 })
 @JsonTypeName("createdBatchId")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CreatedBatchId {
   public static final String JSON_PROPERTY_BATCH_ID = "batchId";
   private BigDecimal batchId;

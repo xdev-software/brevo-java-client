@@ -48,7 +48,6 @@ import java.util.StringJoiner;
   CreateUpdateProducts.JSON_PROPERTY_DELETED_AT
 })
 @JsonTypeName("createUpdateProducts")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CreateUpdateProducts {
   public static final String JSON_PROPERTY_ID = "id";
   private String id;

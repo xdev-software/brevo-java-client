@@ -33,7 +33,6 @@ import java.util.StringJoiner;
   CreateExternalFeed201Response.JSON_PROPERTY_ID
 })
 @JsonTypeName("createExternalFeed_201_response")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CreateExternalFeed201Response {
   public static final String JSON_PROPERTY_ID = "id";
   private String id;

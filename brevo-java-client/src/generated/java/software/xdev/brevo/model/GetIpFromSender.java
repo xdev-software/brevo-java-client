@@ -36,7 +36,6 @@ import java.util.StringJoiner;
   GetIpFromSender.JSON_PROPERTY_WEIGHT
 })
 @JsonTypeName("getIpFromSender")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetIpFromSender {
   public static final String JSON_PROPERTY_ID = "id";
   private Long id;

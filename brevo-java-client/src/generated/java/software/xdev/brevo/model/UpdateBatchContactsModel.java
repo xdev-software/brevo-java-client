@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   UpdateBatchContactsModel.JSON_PROPERTY_FAILURE_IDS
 })
 @JsonTypeName("updateBatchContactsModel")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class UpdateBatchContactsModel {
   public static final String JSON_PROPERTY_SUCCESS_IDS = "successIds";
   private List<Long> successIds;

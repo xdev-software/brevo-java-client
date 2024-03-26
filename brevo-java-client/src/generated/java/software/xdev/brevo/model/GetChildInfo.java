@@ -47,7 +47,6 @@ import java.util.StringJoiner;
   GetChildInfo.JSON_PROPERTY_API_KEYS
 })
 @JsonTypeName("getChildInfo")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetChildInfo {
   public static final String JSON_PROPERTY_EMAIL = "email";
   private String email;

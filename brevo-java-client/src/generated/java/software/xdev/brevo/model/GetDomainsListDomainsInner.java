@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   GetDomainsListDomainsInner.JSON_PROPERTY_IP
 })
 @JsonTypeName("getDomainsList_domains_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetDomainsListDomainsInner {
   public static final String JSON_PROPERTY_ID = "id";
   private Long id;

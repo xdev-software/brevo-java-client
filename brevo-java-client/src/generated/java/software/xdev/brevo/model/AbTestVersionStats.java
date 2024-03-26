@@ -34,7 +34,6 @@ import java.util.StringJoiner;
   AbTestVersionStats.JSON_PROPERTY_VERSION_B
 })
 @JsonTypeName("abTestVersionStats")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class AbTestVersionStats {
   public static final String JSON_PROPERTY_VERSION_A = "Version A";
   private String versionA;

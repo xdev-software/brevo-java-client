@@ -47,7 +47,6 @@ import java.util.StringJoiner;
   Order.JSON_PROPERTY_COUPONS
 })
 @JsonTypeName("order")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class Order {
   public static final String JSON_PROPERTY_ID = "id";
   private String id;

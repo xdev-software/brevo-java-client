@@ -33,7 +33,6 @@ import java.util.StringJoiner;
   GetSsoToken.JSON_PROPERTY_TOKEN
 })
 @JsonTypeName("getSsoToken")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetSsoToken {
   public static final String JSON_PROPERTY_TOKEN = "token";
   private String token;

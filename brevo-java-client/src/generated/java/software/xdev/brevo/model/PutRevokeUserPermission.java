@@ -33,7 +33,6 @@ import java.util.StringJoiner;
   PutRevokeUserPermission.JSON_PROPERTY_EMAIL
 })
 @JsonTypeName("putRevokeUserPermission")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class PutRevokeUserPermission {
   public static final String JSON_PROPERTY_EMAIL = "email";
   private String email;

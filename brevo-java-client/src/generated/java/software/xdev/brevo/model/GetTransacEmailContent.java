@@ -43,7 +43,6 @@ import java.util.StringJoiner;
   GetTransacEmailContent.JSON_PROPERTY_ATTACHMENT_COUNT
 })
 @JsonTypeName("getTransacEmailContent")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetTransacEmailContent {
   public static final String JSON_PROPERTY_EMAIL = "email";
   private String email;

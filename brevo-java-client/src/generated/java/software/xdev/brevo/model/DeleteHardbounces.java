@@ -35,7 +35,6 @@ import java.util.StringJoiner;
   DeleteHardbounces.JSON_PROPERTY_CONTACT_EMAIL
 })
 @JsonTypeName("deleteHardbounces")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class DeleteHardbounces {
   public static final String JSON_PROPERTY_START_DATE = "startDate";
   private String startDate;

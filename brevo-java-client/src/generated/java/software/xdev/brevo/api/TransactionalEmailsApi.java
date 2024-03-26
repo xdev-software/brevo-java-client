@@ -50,7 +50,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.StringJoiner;
 
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class TransactionalEmailsApi {
 
 
@@ -1087,7 +1086,7 @@ public class TransactionalEmailsApi {
    * @param endDate **Mandatory if startDate is used.** Ending date (YYYY-MM-DD) till which you want to fetch the blocked or unsubscribed contacts  (optional)
    * @param limit Number of documents returned per page (optional, default to 50)
    * @param offset Index of the first document on the page (optional, default to 0)
-   * @param senders Comma separated list of emails of the senders from which contacts are blocked or unsubscribed (optional
+   * @param senders Comma separated list of emails of the senders from which contacts are blocked or unsubscribed (optional)
    * @param sort Sort the results in the ascending/descending order of record creation. Default order is **descending** if &#x60;sort&#x60; is not passed (optional, default to desc)
    * @return GetTransacBlockedContacts
    * @throws ApiException if fails to make API call
@@ -1104,7 +1103,7 @@ public class TransactionalEmailsApi {
    * @param endDate **Mandatory if startDate is used.** Ending date (YYYY-MM-DD) till which you want to fetch the blocked or unsubscribed contacts  (optional)
    * @param limit Number of documents returned per page (optional, default to 50)
    * @param offset Index of the first document on the page (optional, default to 0)
-   * @param senders Comma separated list of emails of the senders from which contacts are blocked or unsubscribed (optional
+   * @param senders Comma separated list of emails of the senders from which contacts are blocked or unsubscribed (optional)
    * @param sort Sort the results in the ascending/descending order of record creation. Default order is **descending** if &#x60;sort&#x60; is not passed (optional, default to desc)
    * @param additionalHeaders additionalHeaders for this call
    * @return GetTransacBlockedContacts

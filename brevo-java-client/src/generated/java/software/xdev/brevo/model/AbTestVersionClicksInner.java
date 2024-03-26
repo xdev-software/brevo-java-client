@@ -35,7 +35,6 @@ import java.util.StringJoiner;
   AbTestVersionClicksInner.JSON_PROPERTY_CLICK_RATE
 })
 @JsonTypeName("abTestVersionClicks_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class AbTestVersionClicksInner {
   public static final String JSON_PROPERTY_LINK = "link";
   private String link;

@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   GetProcesses.JSON_PROPERTY_COUNT
 })
 @JsonTypeName("getProcesses")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetProcesses {
   public static final String JSON_PROPERTY_PROCESSES = "processes";
   private List<GetProcess> processes;

@@ -33,7 +33,6 @@ import java.util.StringJoiner;
   SendTestSms.JSON_PROPERTY_PHONE_NUMBER
 })
 @JsonTypeName("sendTestSms")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class SendTestSms {
   public static final String JSON_PROPERTY_PHONE_NUMBER = "phoneNumber";
   private String phoneNumber;

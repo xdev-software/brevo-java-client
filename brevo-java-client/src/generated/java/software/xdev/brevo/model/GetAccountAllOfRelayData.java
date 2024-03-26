@@ -35,7 +35,6 @@ import java.util.StringJoiner;
   GetAccountAllOfRelayData.JSON_PROPERTY_PORT
 })
 @JsonTypeName("getAccount_allOf_relay_data")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetAccountAllOfRelayData {
   public static final String JSON_PROPERTY_USER_NAME = "userName";
   private String userName;

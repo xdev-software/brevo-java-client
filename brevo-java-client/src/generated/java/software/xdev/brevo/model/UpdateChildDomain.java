@@ -33,7 +33,6 @@ import java.util.StringJoiner;
   UpdateChildDomain.JSON_PROPERTY_DOMAIN
 })
 @JsonTypeName("updateChildDomain")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class UpdateChildDomain {
   public static final String JSON_PROPERTY_DOMAIN = "domain";
   private String domain;

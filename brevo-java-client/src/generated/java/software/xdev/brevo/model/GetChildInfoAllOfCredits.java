@@ -34,7 +34,6 @@ import java.util.StringJoiner;
   GetChildInfoAllOfCredits.JSON_PROPERTY_SMS_CREDITS
 })
 @JsonTypeName("getChildInfo_allOf_credits")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetChildInfoAllOfCredits {
   public static final String JSON_PROPERTY_EMAIL_CREDITS = "emailCredits";
   private Long emailCredits;

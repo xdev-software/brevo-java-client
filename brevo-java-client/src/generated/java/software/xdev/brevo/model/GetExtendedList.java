@@ -45,7 +45,6 @@ import java.util.StringJoiner;
   GetExtendedList.JSON_PROPERTY_DYNAMIC_LIST
 })
 @JsonTypeName("getExtendedList")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetExtendedList {
   public static final String JSON_PROPERTY_ID = "id";
   private Long id;

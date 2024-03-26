@@ -36,7 +36,6 @@ import java.util.StringJoiner;
   AddContactToListByEmails.JSON_PROPERTY_EMAILS
 })
 @JsonTypeName("addContactToListByEmails")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class AddContactToListByEmails {
   public static final String JSON_PROPERTY_EMAILS = "emails";
   private List<String> emails;

@@ -34,7 +34,6 @@ import java.util.StringJoiner;
   GetChildInfoAllOfApiKeysV2.JSON_PROPERTY_KEY
 })
 @JsonTypeName("getChildInfo_allOf_apiKeys_v2")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetChildInfoAllOfApiKeysV2 {
   public static final String JSON_PROPERTY_NAME = "name";
   private String name;

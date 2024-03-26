@@ -34,7 +34,6 @@ import java.util.StringJoiner;
   CrmDealsPostRequest.JSON_PROPERTY_ATTRIBUTES
 })
 @JsonTypeName("_crm_deals_post_request")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CrmDealsPostRequest {
   public static final String JSON_PROPERTY_NAME = "name";
   private String name;

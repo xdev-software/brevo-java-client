@@ -35,7 +35,6 @@ import java.util.StringJoiner;
   CompaniesIdPatchRequest.JSON_PROPERTY_COUNTRY_CODE
 })
 @JsonTypeName("_companies__id__patch_request")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CompaniesIdPatchRequest {
   public static final String JSON_PROPERTY_NAME = "name";
   private String name;

@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   AbTestCampaignResultClickedLinks.JSON_PROPERTY_VERSION_B
 })
 @JsonTypeName("abTestCampaignResult_clickedLinks")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class AbTestCampaignResultClickedLinks {
   public static final String JSON_PROPERTY_VERSION_A = "Version A";
   private List<AbTestVersionClicksInner> versionA = new ArrayList<>();

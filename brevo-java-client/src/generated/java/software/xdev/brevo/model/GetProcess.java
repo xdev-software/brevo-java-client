@@ -36,7 +36,6 @@ import java.util.StringJoiner;
   GetProcess.JSON_PROPERTY_EXPORT_URL
 })
 @JsonTypeName("getProcess")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetProcess {
   public static final String JSON_PROPERTY_ID = "id";
   private Long id;

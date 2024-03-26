@@ -34,7 +34,6 @@ import java.util.StringJoiner;
   GetExtendedContactDetailsAllOfStatisticsMessagesSent.JSON_PROPERTY_EVENT_TIME
 })
 @JsonTypeName("getExtendedContactDetails_allOf_statistics_messagesSent")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetExtendedContactDetailsAllOfStatisticsMessagesSent {
   public static final String JSON_PROPERTY_CAMPAIGN_ID = "campaignId";
   private Long campaignId;

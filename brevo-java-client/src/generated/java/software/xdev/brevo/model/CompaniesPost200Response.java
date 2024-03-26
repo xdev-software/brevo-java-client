@@ -33,7 +33,6 @@ import java.util.StringJoiner;
   CompaniesPost200Response.JSON_PROPERTY_ID
 })
 @JsonTypeName("_companies_post_200_response")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CompaniesPost200Response {
   public static final String JSON_PROPERTY_ID = "id";
   private String id;

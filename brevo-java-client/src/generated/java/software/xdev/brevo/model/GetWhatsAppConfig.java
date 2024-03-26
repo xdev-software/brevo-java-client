@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   GetWhatsAppConfig.JSON_PROPERTY_PHONE_NUMBER_NAME_STATUS
 })
 @JsonTypeName("getWhatsAppConfig")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetWhatsAppConfig {
   public static final String JSON_PROPERTY_WHATSAPP_BUSINESS_ACCOUNT_ID = "whatsappBusinessAccountId";
   private String whatsappBusinessAccountId;

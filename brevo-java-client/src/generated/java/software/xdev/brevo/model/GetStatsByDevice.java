@@ -39,7 +39,6 @@ import java.util.StringJoiner;
   GetStatsByDevice.JSON_PROPERTY_UNKNOWN
 })
 @JsonTypeName("getStatsByDevice")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetStatsByDevice {
   public static final String JSON_PROPERTY_DESKTOP = "desktop";
   private Map<String, GetDeviceBrowserStats> desktop = new HashMap<>();

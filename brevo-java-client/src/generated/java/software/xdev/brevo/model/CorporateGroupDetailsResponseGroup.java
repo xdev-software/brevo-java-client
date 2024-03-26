@@ -35,7 +35,6 @@ import java.util.StringJoiner;
   CorporateGroupDetailsResponseGroup.JSON_PROPERTY_CREATED_AT
 })
 @JsonTypeName("corporateGroupDetailsResponse_group")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CorporateGroupDetailsResponseGroup {
   public static final String JSON_PROPERTY_ID = "id";
   private String id;

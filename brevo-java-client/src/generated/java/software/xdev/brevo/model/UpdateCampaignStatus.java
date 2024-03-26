@@ -33,7 +33,6 @@ import java.util.StringJoiner;
   UpdateCampaignStatus.JSON_PROPERTY_STATUS
 })
 @JsonTypeName("updateCampaignStatus")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class UpdateCampaignStatus {
   /**
    * Note:- **replicateTemplate** status will be available **only for template type campaigns.** 

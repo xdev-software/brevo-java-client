@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   GetContactCampaignStatsClickedInner.JSON_PROPERTY_LINKS
 })
 @JsonTypeName("getContactCampaignStats_clicked_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetContactCampaignStatsClickedInner {
   public static final String JSON_PROPERTY_CAMPAIGN_ID = "campaignId";
   private Long campaignId;

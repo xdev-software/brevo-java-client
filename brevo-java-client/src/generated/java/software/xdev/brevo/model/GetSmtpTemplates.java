@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   GetSmtpTemplates.JSON_PROPERTY_TEMPLATES
 })
 @JsonTypeName("getSmtpTemplates")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetSmtpTemplates {
   public static final String JSON_PROPERTY_COUNT = "count";
   private Long count;

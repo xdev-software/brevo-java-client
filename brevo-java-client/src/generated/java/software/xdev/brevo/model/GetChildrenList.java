@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   GetChildrenList.JSON_PROPERTY_COUNT
 })
 @JsonTypeName("getChildrenList")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetChildrenList {
   public static final String JSON_PROPERTY_CHILDREN = "children";
   private List<GetChildrenListChildrenInner> children;

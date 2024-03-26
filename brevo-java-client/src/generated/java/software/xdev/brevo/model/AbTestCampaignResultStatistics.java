@@ -39,7 +39,6 @@ import java.util.StringJoiner;
   AbTestCampaignResultStatistics.JSON_PROPERTY_COMPLAINTS
 })
 @JsonTypeName("abTestCampaignResult_statistics")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class AbTestCampaignResultStatistics {
   public static final String JSON_PROPERTY_OPENERS = "openers";
   private AbTestVersionStats openers;

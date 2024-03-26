@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   InviteAdminUserPrivilegesInner.JSON_PROPERTY_PERMISSIONS
 })
 @JsonTypeName("inviteAdminUser_privileges_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class InviteAdminUserPrivilegesInner {
   /**
    * Feature name

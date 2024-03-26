@@ -33,7 +33,6 @@ import java.util.StringJoiner;
   UploadImageModel.JSON_PROPERTY_URL
 })
 @JsonTypeName("uploadImageModel")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class UploadImageModel {
   public static final String JSON_PROPERTY_URL = "url";
   private String url;

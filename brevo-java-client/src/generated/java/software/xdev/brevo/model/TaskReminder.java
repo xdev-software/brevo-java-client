@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   TaskReminder.JSON_PROPERTY_UNIT,
   TaskReminder.JSON_PROPERTY_TYPES
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class TaskReminder {
   public static final String JSON_PROPERTY_VALUE = "value";
   private Integer value;

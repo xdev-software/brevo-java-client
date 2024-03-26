@@ -33,7 +33,6 @@ import java.util.StringJoiner;
   PipelineStage.JSON_PROPERTY_ID,
   PipelineStage.JSON_PROPERTY_NAME
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class PipelineStage {
   public static final String JSON_PROPERTY_ID = "id";
   private String id;

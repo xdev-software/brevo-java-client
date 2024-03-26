@@ -34,7 +34,6 @@ import java.util.StringJoiner;
   CreateReseller.JSON_PROPERTY_ID
 })
 @JsonTypeName("createReseller")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CreateReseller {
   public static final String JSON_PROPERTY_AUTH_KEY = "authKey";
   private String authKey;

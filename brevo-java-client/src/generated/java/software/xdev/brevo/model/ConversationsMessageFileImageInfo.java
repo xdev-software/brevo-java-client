@@ -35,7 +35,6 @@ import java.util.StringJoiner;
   ConversationsMessageFileImageInfo.JSON_PROPERTY_PREVIEW_URL
 })
 @JsonTypeName("ConversationsMessage_file_imageInfo")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class ConversationsMessageFileImageInfo {
   public static final String JSON_PROPERTY_WIDTH = "width";
   private Long width;

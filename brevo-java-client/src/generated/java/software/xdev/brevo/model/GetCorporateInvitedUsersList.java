@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   GetCorporateInvitedUsersList.JSON_PROPERTY_USERS
 })
 @JsonTypeName("getCorporateInvitedUsersList")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetCorporateInvitedUsersList {
   public static final String JSON_PROPERTY_USERS = "users";
   private List<GetCorporateInvitedUsersListUsersInner> users;

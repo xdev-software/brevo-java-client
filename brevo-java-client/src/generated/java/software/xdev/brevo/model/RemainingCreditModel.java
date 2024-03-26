@@ -36,7 +36,6 @@ import java.util.StringJoiner;
   RemainingCreditModel.JSON_PROPERTY_RESELLER
 })
 @JsonTypeName("remainingCreditModel")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class RemainingCreditModel {
   public static final String JSON_PROPERTY_CHILD = "child";
   private RemainingCreditModelChild child;

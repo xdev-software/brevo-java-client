@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   MasterDetailsResponseBillingInfoAddress.JSON_PROPERTY_COUNTRY_CODE
 })
 @JsonTypeName("masterDetailsResponse_billingInfo_address")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class MasterDetailsResponseBillingInfoAddress {
   public static final String JSON_PROPERTY_STREET_ADDRESS = "streetAddress";
   private String streetAddress;

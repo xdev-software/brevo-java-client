@@ -34,7 +34,6 @@ import java.util.StringJoiner;
   GetSubAccountGroups200ResponseInner.JSON_PROPERTY_GROUP_NAME
 })
 @JsonTypeName("getSubAccountGroups_200_response_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetSubAccountGroups200ResponseInner {
   public static final String JSON_PROPERTY_ID = "id";
   private String id;

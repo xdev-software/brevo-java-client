@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   UpdateChild.JSON_PROPERTY_PASSWORD
 })
 @JsonTypeName("updateChild")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class UpdateChild {
   public static final String JSON_PROPERTY_EMAIL = "email";
   private String email;

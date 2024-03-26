@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   GetDomainConfigurationModel.JSON_PROPERTY_DNS_RECORDS
 })
 @JsonTypeName("getDomainConfigurationModel")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetDomainConfigurationModel {
   public static final String JSON_PROPERTY_DOMAIN = "domain";
   private String domain;

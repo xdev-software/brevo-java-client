@@ -36,7 +36,6 @@ import java.util.StringJoiner;
   WhatsappCampStats.JSON_PROPERTY_UNSUBSCRIBE,
   WhatsappCampStats.JSON_PROPERTY_NOT_SENT
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class WhatsappCampStats {
   public static final String JSON_PROPERTY_SENT = "sent";
   private Integer sent;

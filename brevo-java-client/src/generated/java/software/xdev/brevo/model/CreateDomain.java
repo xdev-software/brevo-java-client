@@ -33,7 +33,6 @@ import java.util.StringJoiner;
   CreateDomain.JSON_PROPERTY_NAME
 })
 @JsonTypeName("createDomain")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CreateDomain {
   public static final String JSON_PROPERTY_NAME = "name";
   private String name;

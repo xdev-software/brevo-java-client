@@ -36,7 +36,6 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   TaskList.JSON_PROPERTY_ITEMS
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class TaskList {
   public static final String JSON_PROPERTY_ITEMS = "items";
   private List<Task> items;

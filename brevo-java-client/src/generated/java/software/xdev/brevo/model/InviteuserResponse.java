@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   InviteuserResponse.JSON_PROPERTY_INVOICE_ID
 })
 @JsonTypeName("inviteuserResponse")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class InviteuserResponse {
   public static final String JSON_PROPERTY_STATUS = "status";
   private String status;

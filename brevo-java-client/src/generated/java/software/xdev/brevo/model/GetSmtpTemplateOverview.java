@@ -46,7 +46,6 @@ import java.util.StringJoiner;
   GetSmtpTemplateOverview.JSON_PROPERTY_DOI_TEMPLATE
 })
 @JsonTypeName("getSmtpTemplateOverview")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetSmtpTemplateOverview {
   public static final String JSON_PROPERTY_ID = "id";
   private Long id;

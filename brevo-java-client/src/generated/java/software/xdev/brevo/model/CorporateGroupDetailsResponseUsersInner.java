@@ -35,7 +35,6 @@ import java.util.StringJoiner;
   CorporateGroupDetailsResponseUsersInner.JSON_PROPERTY_FIRST_NAME
 })
 @JsonTypeName("corporateGroupDetailsResponse_users_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CorporateGroupDetailsResponseUsersInner {
   public static final String JSON_PROPERTY_EMAIL = "email";
   private String email;

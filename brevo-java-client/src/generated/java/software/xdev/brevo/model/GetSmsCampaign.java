@@ -44,7 +44,6 @@ import java.util.StringJoiner;
   GetSmsCampaign.JSON_PROPERTY_STATISTICS
 })
 @JsonTypeName("getSmsCampaign")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetSmsCampaign {
   public static final String JSON_PROPERTY_ID = "id";
   private Long id;

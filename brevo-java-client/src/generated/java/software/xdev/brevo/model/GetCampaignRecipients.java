@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   GetCampaignRecipients.JSON_PROPERTY_EXCLUSION_LISTS
 })
 @JsonTypeName("getCampaignRecipients")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetCampaignRecipients {
   public static final String JSON_PROPERTY_LISTS = "lists";
   private List<Long> lists = new ArrayList<>();

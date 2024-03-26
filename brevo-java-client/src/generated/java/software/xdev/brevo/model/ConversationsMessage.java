@@ -42,7 +42,6 @@ import java.util.StringJoiner;
   ConversationsMessage.JSON_PROPERTY_RECEIVED_FROM,
   ConversationsMessage.JSON_PROPERTY_FILE
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class ConversationsMessage {
   public static final String JSON_PROPERTY_ID = "id";
   private String id;

@@ -34,7 +34,6 @@ import java.util.StringJoiner;
   GetAttributesAttributesInnerEnumerationInner.JSON_PROPERTY_LABEL
 })
 @JsonTypeName("getAttributes_attributes_inner_enumeration_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetAttributesAttributesInnerEnumerationInner {
   public static final String JSON_PROPERTY_VALUE = "value";
   private Long value;

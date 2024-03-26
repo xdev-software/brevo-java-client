@@ -47,7 +47,6 @@ import java.util.StringJoiner;
   GetAccount.JSON_PROPERTY_MARKETING_AUTOMATION
 })
 @JsonTypeName("getAccount")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetAccount {
   public static final String JSON_PROPERTY_EMAIL = "email";
   private String email;

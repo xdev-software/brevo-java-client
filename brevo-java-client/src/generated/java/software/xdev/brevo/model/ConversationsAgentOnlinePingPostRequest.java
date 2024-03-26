@@ -40,7 +40,6 @@ import java.util.StringJoiner;
   ConversationsAgentOnlinePingPostRequest.JSON_PROPERTY_AGENT_NAME
 })
 @JsonTypeName("_conversations_agentOnlinePing_post_request")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class ConversationsAgentOnlinePingPostRequest {
   public static final String JSON_PROPERTY_AGENT_ID = "agentId";
   private JsonNullable<Object> agentId = JsonNullable.<Object>of(null);

@@ -41,7 +41,6 @@ import java.util.StringJoiner;
   GetSendersListSendersInner.JSON_PROPERTY_IPS
 })
 @JsonTypeName("getSendersList_senders_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetSendersListSendersInner {
   public static final String JSON_PROPERTY_ID = "id";
   private Long id;

@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   ConversationsMessageFile.JSON_PROPERTY_IMAGE_INFO
 })
 @JsonTypeName("ConversationsMessage_file")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class ConversationsMessageFile {
   public static final String JSON_PROPERTY_FILENAME = "filename";
   private String filename;

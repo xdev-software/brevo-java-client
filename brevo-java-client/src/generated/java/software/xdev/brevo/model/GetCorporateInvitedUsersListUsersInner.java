@@ -39,7 +39,6 @@ import java.util.StringJoiner;
   GetCorporateInvitedUsersListUsersInner.JSON_PROPERTY_FEATURE_ACCESS
 })
 @JsonTypeName("getCorporateInvitedUsersList_users_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetCorporateInvitedUsersListUsersInner {
   public static final String JSON_PROPERTY_GROUPS = "groups";
   private GetCorporateInvitedUsersListUsersInnerGroups groups;

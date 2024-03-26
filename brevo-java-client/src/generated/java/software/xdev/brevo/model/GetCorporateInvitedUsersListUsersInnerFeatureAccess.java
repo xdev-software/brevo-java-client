@@ -39,7 +39,6 @@ import java.util.StringJoiner;
   GetCorporateInvitedUsersListUsersInnerFeatureAccess.JSON_PROPERTY_APPS_MANAGEMENT
 })
 @JsonTypeName("getCorporateInvitedUsersList_users_inner_feature_access")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
   public static final String JSON_PROPERTY_USER_MANAGEMENT = "user_management";
   private List<String> userManagement;

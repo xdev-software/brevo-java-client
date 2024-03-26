@@ -35,7 +35,6 @@ import java.util.StringJoiner;
   CompaniesPostRequest.JSON_PROPERTY_COUNTRY_CODE
 })
 @JsonTypeName("_companies_post_request")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CompaniesPostRequest {
   public static final String JSON_PROPERTY_NAME = "name";
   private String name;

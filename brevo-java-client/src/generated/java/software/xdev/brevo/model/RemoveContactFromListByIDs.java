@@ -36,7 +36,6 @@ import java.util.StringJoiner;
   RemoveContactFromListByIDs.JSON_PROPERTY_IDS
 })
 @JsonTypeName("removeContactFromListByIDs")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class RemoveContactFromListByIDs {
   public static final String JSON_PROPERTY_IDS = "ids";
   private List<Long> ids;

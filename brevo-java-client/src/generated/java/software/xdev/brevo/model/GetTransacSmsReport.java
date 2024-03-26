@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   GetTransacSmsReport.JSON_PROPERTY_REPORTS
 })
 @JsonTypeName("getTransacSmsReport")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetTransacSmsReport {
   public static final String JSON_PROPERTY_REPORTS = "reports";
   private List<GetTransacSmsReportReportsInner> reports;

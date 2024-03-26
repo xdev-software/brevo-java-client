@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   GetInboundEmailEventsEventsInner.JSON_PROPERTY_RECIPIENT
 })
 @JsonTypeName("getInboundEmailEvents_events_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetInboundEmailEventsEventsInner {
   public static final String JSON_PROPERTY_UUID = "uuid";
   private UUID uuid;
