@@ -395,25 +395,59 @@
 						</executions>
 					</plugin>
 					<plugin>
-						<groupId>io.github.floverfelt</groupId>
+						<groupId>software.xdev</groupId>
 						<artifactId>find-and-replace-maven-plugin</artifactId>
-						<version>1.1.0</version>
+						<version>1.0.0</version>
 						<executions>
 							<execution>
+								<!-- Remove so that we don't need additional dependency -->
 								<id>remove-unused-import-com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider</id>
 								<phase>process-sources</phase>
 								<goals>
-									<goal>find-and-replace</goal>
+									<goal>file-contents</goal>
 								</goals>
 								<configuration>
 									<replacementType>file-contents</replacementType>
 									<baseDir>${generatedDirRelative}/software/xdev/${componentName}/client/</baseDir>
 									<fileMask>ApiClient.java</fileMask>
 									<!-- @formatter:off DO NOT INTRODUCE LINE BREAK -->
-									<findRegex>^(import com\.fasterxml\.jackson\.jaxrs\.json\.JacksonJsonProvider;)$</findRegex>
-									<!-- Can't be removed as the plugin isn't supporting empty values -->
-									<replaceValue>// $1</replaceValue>
+									<findRegex>^import com\.fasterxml\.jackson\.jaxrs\.json\.JacksonJsonProvider;(\r?\n)</findRegex>
 									<!-- @formatter:on -->
+									<replaceLineBased>false</replaceLineBased>
+								</configuration>
+							</execution>
+							<execution>
+								<!-- Changes with each generator version -->
+								<id>remove-generated-annotation</id>
+								<phase>process-sources</phase>
+								<goals>
+									<goal>file-contents</goal>
+								</goals>
+								<configuration>
+									<replacementType>file-contents</replacementType>
+									<baseDir>${generatedDirRelative}/software/xdev/${componentName}/</baseDir>
+									<recursive>true</recursive>
+									<fileMask>.java</fileMask>
+									<findRegex>^@jakarta\.annotation\.Generated.*(\r?\n)</findRegex>
+									<replaceAll>false</replaceAll>
+									<replaceLineBased>false</replaceLineBased>
+								</configuration>
+							</execution>
+							<execution>
+								<!-- Requiring Java serialization indicates a serious misuse of the API -->
+								<id>remove-serialVersionUID</id>
+								<phase>process-sources</phase>
+								<goals>
+									<goal>file-contents</goal>
+								</goals>
+								<configuration>
+									<replacementType>file-contents</replacementType>
+									<baseDir>${generatedDirRelative}/software/xdev/${componentName}/</baseDir>
+									<recursive>true</recursive>
+									<fileMask>.java</fileMask>
+									<findRegex>^.*serialVersionUID.*(\r?\n)(\s*\r?\n)?</findRegex>
+									<replaceAll>false</replaceAll>
+									<replaceLineBased>false</replaceLineBased>
 								</configuration>
 							</execution>
 						</executions>
