@@ -407,7 +407,6 @@
 									<goal>file-contents</goal>
 								</goals>
 								<configuration>
-									<replacementType>file-contents</replacementType>
 									<baseDir>${generatedDirRelative}/software/xdev/${componentName}/client/</baseDir>
 									<fileMask>ApiClient.java</fileMask>
 									<!-- @formatter:off DO NOT INTRODUCE LINE BREAK -->
@@ -424,7 +423,6 @@
 									<goal>file-contents</goal>
 								</goals>
 								<configuration>
-									<replacementType>file-contents</replacementType>
 									<baseDir>${generatedDirRelative}/software/xdev/${componentName}/</baseDir>
 									<recursive>true</recursive>
 									<fileMask>.java</fileMask>
@@ -441,7 +439,6 @@
 									<goal>file-contents</goal>
 								</goals>
 								<configuration>
-									<replacementType>file-contents</replacementType>
 									<baseDir>${generatedDirRelative}/software/xdev/${componentName}/</baseDir>
 									<recursive>true</recursive>
 									<fileMask>.java</fileMask>
