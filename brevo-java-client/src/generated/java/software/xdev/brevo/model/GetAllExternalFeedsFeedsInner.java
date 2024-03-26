@@ -49,7 +49,6 @@ import java.util.StringJoiner;
   GetAllExternalFeedsFeedsInner.JSON_PROPERTY_MODIFIED_AT
 })
 @JsonTypeName("getAllExternalFeeds_feeds_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetAllExternalFeedsFeedsInner {
   public static final String JSON_PROPERTY_ID = "id";
   private String id;

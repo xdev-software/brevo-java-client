@@ -15,7 +15,7 @@
 
 	<scm>
 		<url>https://github.com/xdev-software/brevo-java-client</url>
-		<connection>https://github.com/xdev-software/brevo-java-client.git</connection>
+		<connection>scm:git:https://github.com/xdev-software/brevo-java-client.git</connection>
 	</scm>
 
 	<inceptionYear>2024</inceptionYear>
@@ -96,7 +96,7 @@
 			<dependency>
 				<groupId>com.fasterxml.jackson</groupId>
 				<artifactId>jackson-bom</artifactId>
-				<version>2.16.1</version>
+				<version>2.17.0</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -142,6 +142,20 @@
 	</dependencies>
 
 	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-site-plugin</artifactId>
+					<version>4.0.0-M13</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-project-info-reports-plugin</artifactId>
+					<version>3.5.0</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 		<plugins>
 			<plugin>
 				<groupId>com.mycila</groupId>
@@ -175,7 +189,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.12.1</version>
+				<version>3.13.0</version>
 				<configuration>
 					<release>${maven.compiler.release}</release>
 					<compilerArgs>
@@ -244,7 +258,7 @@
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-gpg-plugin</artifactId>
-						<version>3.1.0</version>
+						<version>3.2.2</version>
 						<executions>
 							<execution>
 								<id>sign-artifacts</id>
@@ -325,7 +339,7 @@
 					<plugin>
 						<groupId>org.openapitools</groupId>
 						<artifactId>openapi-generator-maven-plugin</artifactId>
-						<version>7.3.0</version>
+						<version>7.4.0</version>
 						<executions>
 							<execution>
 								<goals>
@@ -381,25 +395,59 @@
 						</executions>
 					</plugin>
 					<plugin>
-						<groupId>io.github.floverfelt</groupId>
+						<groupId>software.xdev</groupId>
 						<artifactId>find-and-replace-maven-plugin</artifactId>
-						<version>1.1.0</version>
+						<version>1.0.0</version>
 						<executions>
 							<execution>
+								<!-- Remove so that we don't need additional dependency -->
 								<id>remove-unused-import-com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider</id>
 								<phase>process-sources</phase>
 								<goals>
-									<goal>find-and-replace</goal>
+									<goal>file-contents</goal>
 								</goals>
 								<configuration>
 									<replacementType>file-contents</replacementType>
 									<baseDir>${generatedDirRelative}/software/xdev/${componentName}/client/</baseDir>
 									<fileMask>ApiClient.java</fileMask>
 									<!-- @formatter:off DO NOT INTRODUCE LINE BREAK -->
-									<findRegex>^(import com\.fasterxml\.jackson\.jaxrs\.json\.JacksonJsonProvider;)$</findRegex>
-									<!-- Can't be removed as the plugin isn't supporting empty values -->
-									<replaceValue>// $1</replaceValue>
+									<findRegex>^import com\.fasterxml\.jackson\.jaxrs\.json\.JacksonJsonProvider;(\r?\n)</findRegex>
 									<!-- @formatter:on -->
+									<replaceLineBased>false</replaceLineBased>
+								</configuration>
+							</execution>
+							<execution>
+								<!-- Changes with each generator version -->
+								<id>remove-generated-annotation</id>
+								<phase>process-sources</phase>
+								<goals>
+									<goal>file-contents</goal>
+								</goals>
+								<configuration>
+									<replacementType>file-contents</replacementType>
+									<baseDir>${generatedDirRelative}/software/xdev/${componentName}/</baseDir>
+									<recursive>true</recursive>
+									<fileMask>.java</fileMask>
+									<findRegex>^@jakarta\.annotation\.Generated.*(\r?\n)</findRegex>
+									<replaceAll>false</replaceAll>
+									<replaceLineBased>false</replaceLineBased>
+								</configuration>
+							</execution>
+							<execution>
+								<!-- Requiring Java serialization indicates a serious misuse of the API -->
+								<id>remove-serialVersionUID</id>
+								<phase>process-sources</phase>
+								<goals>
+									<goal>file-contents</goal>
+								</goals>
+								<configuration>
+									<replacementType>file-contents</replacementType>
+									<baseDir>${generatedDirRelative}/software/xdev/${componentName}/</baseDir>
+									<recursive>true</recursive>
+									<fileMask>.java</fileMask>
+									<findRegex>^.*serialVersionUID.*(\r?\n)(\s*\r?\n)?</findRegex>
+									<replaceAll>false</replaceAll>
+									<replaceLineBased>false</replaceLineBased>
 								</configuration>
 							</execution>
 						</executions>
@@ -419,7 +467,7 @@
 							<dependency>
 								<groupId>com.puppycrawl.tools</groupId>
 								<artifactId>checkstyle</artifactId>
-								<version>10.14.0</version>
+								<version>10.14.2</version>
 							</dependency>
 						</dependencies>
 						<configuration>

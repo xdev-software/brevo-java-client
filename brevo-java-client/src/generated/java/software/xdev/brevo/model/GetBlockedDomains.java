@@ -36,7 +36,6 @@ import java.util.StringJoiner;
   GetBlockedDomains.JSON_PROPERTY_DOMAINS
 })
 @JsonTypeName("getBlockedDomains")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetBlockedDomains {
   public static final String JSON_PROPERTY_DOMAINS = "domains";
   private List<String> domains = new ArrayList<>();

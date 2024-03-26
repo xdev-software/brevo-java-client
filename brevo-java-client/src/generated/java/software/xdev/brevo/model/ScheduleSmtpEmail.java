@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   ScheduleSmtpEmail.JSON_PROPERTY_BATCH_ID
 })
 @JsonTypeName("scheduleSmtpEmail")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class ScheduleSmtpEmail {
   public static final String JSON_PROPERTY_MESSAGE_ID = "messageId";
   private String messageId;

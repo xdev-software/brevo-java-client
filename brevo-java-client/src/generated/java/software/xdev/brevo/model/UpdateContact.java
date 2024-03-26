@@ -44,7 +44,6 @@ import java.util.StringJoiner;
   UpdateContact.JSON_PROPERTY_SMTP_BLACKLIST_SENDER
 })
 @JsonTypeName("updateContact")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class UpdateContact {
   public static final String JSON_PROPERTY_ATTRIBUTES = "attributes";
   private Map<String, Object> attributes = new HashMap<>();

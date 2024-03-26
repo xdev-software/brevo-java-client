@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   CreateUpdateBatchCategory.JSON_PROPERTY_UPDATE_ENABLED
 })
 @JsonTypeName("createUpdateBatchCategory")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CreateUpdateBatchCategory {
   public static final String JSON_PROPERTY_CATEGORIES = "categories";
   private List<CreateUpdateCategories> categories = new ArrayList<>();

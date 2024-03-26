@@ -36,7 +36,6 @@ import java.util.StringJoiner;
   GetExtendedClientAllOfAddress.JSON_PROPERTY_COUNTRY
 })
 @JsonTypeName("getExtendedClient_allOf_address")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetExtendedClientAllOfAddress {
   public static final String JSON_PROPERTY_STREET = "street";
   private String street;

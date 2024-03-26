@@ -34,7 +34,6 @@ import java.util.StringJoiner;
   SendSmtpEmailToInner.JSON_PROPERTY_NAME
 })
 @JsonTypeName("sendSmtpEmail_to_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class SendSmtpEmailToInner {
   public static final String JSON_PROPERTY_EMAIL = "email";
   private String email;

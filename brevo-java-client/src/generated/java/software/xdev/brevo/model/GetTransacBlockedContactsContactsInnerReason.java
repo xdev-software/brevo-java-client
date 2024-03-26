@@ -34,7 +34,6 @@ import java.util.StringJoiner;
   GetTransacBlockedContactsContactsInnerReason.JSON_PROPERTY_MESSAGE
 })
 @JsonTypeName("getTransacBlockedContacts_contacts_inner_reason")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetTransacBlockedContactsContactsInnerReason {
   /**
    * Reason code for blocking / unsubscribing (This code is safe for comparison)

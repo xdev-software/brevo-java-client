@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   CreateCouponsRequest.JSON_PROPERTY_COUPONS
 })
 @JsonTypeName("createCoupons_request")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CreateCouponsRequest {
   public static final String JSON_PROPERTY_COLLECTION_ID = "collectionId";
   private String collectionId;

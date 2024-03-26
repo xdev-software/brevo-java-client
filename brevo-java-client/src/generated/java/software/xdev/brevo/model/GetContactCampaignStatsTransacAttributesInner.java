@@ -36,7 +36,6 @@ import java.util.StringJoiner;
   GetContactCampaignStatsTransacAttributesInner.JSON_PROPERTY_ORDER_ID
 })
 @JsonTypeName("getContactCampaignStats_transacAttributes_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetContactCampaignStatsTransacAttributesInner {
   public static final String JSON_PROPERTY_ORDER_DATE = "orderDate";
   private LocalDate orderDate;

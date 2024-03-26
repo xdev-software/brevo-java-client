@@ -33,7 +33,6 @@ import java.util.StringJoiner;
   GetChildAccountCreationStatus.JSON_PROPERTY_CHILD_ACCOUNT_CREATED
 })
 @JsonTypeName("getChildAccountCreationStatus")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetChildAccountCreationStatus {
   public static final String JSON_PROPERTY_CHILD_ACCOUNT_CREATED = "childAccountCreated";
   private Boolean childAccountCreated;

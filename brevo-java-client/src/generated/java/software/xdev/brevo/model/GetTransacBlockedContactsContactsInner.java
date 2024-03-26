@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   GetTransacBlockedContactsContactsInner.JSON_PROPERTY_BLOCKED_AT
 })
 @JsonTypeName("getTransacBlockedContacts_contacts_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetTransacBlockedContactsContactsInner {
   public static final String JSON_PROPERTY_EMAIL = "email";
   private String email;

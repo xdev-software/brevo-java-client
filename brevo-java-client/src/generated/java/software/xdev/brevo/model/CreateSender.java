@@ -39,7 +39,6 @@ import java.util.StringJoiner;
   CreateSender.JSON_PROPERTY_IPS
 })
 @JsonTypeName("createSender")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CreateSender {
   public static final String JSON_PROPERTY_NAME = "name";
   private String name;

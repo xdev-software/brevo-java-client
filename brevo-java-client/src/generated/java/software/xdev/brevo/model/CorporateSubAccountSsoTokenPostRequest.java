@@ -36,7 +36,6 @@ import java.util.StringJoiner;
   CorporateSubAccountSsoTokenPostRequest.JSON_PROPERTY_URL
 })
 @JsonTypeName("_corporate_subAccount_ssoToken_post_request")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CorporateSubAccountSsoTokenPostRequest {
   public static final String JSON_PROPERTY_ID = "id";
   private Long id;

@@ -39,7 +39,6 @@ import java.util.StringJoiner;
   FileData.JSON_PROPERTY_SIZE,
   FileData.JSON_PROPERTY_CREATED_AT
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class FileData {
   public static final String JSON_PROPERTY_NAME = "name";
   private String name;

@@ -39,7 +39,6 @@ import java.util.StringJoiner;
   RequestContactExport.JSON_PROPERTY_NOTIFY_URL
 })
 @JsonTypeName("requestContactExport")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class RequestContactExport {
   public static final String JSON_PROPERTY_EXPORT_ATTRIBUTES = "exportAttributes";
   private List<String> exportAttributes;

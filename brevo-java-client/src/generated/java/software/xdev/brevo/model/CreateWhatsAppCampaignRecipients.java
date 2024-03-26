@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   CreateWhatsAppCampaignRecipients.JSON_PROPERTY_SEGMENTS
 })
 @JsonTypeName("createWhatsAppCampaign_recipients")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CreateWhatsAppCampaignRecipients {
   public static final String JSON_PROPERTY_EXCLUDED_LIST_IDS = "excludedListIds";
   private List<Long> excludedListIds;

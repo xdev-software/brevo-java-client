@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   GetContacts.JSON_PROPERTY_COUNT
 })
 @JsonTypeName("getContacts")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetContacts {
   public static final String JSON_PROPERTY_CONTACTS = "contacts";
   private List<GetContactDetails> contacts = new ArrayList<>();

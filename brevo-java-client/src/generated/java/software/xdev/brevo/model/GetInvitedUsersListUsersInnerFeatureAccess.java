@@ -35,7 +35,6 @@ import java.util.StringJoiner;
   GetInvitedUsersListUsersInnerFeatureAccess.JSON_PROPERTY_CRM
 })
 @JsonTypeName("getInvitedUsersList_users_inner_feature_access")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetInvitedUsersListUsersInnerFeatureAccess {
   public static final String JSON_PROPERTY_MARKETING = "marketing";
   private String marketing;

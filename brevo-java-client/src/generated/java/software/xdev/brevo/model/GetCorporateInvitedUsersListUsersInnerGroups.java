@@ -34,7 +34,6 @@ import java.util.StringJoiner;
   GetCorporateInvitedUsersListUsersInnerGroups.JSON_PROPERTY_NAME
 })
 @JsonTypeName("getCorporateInvitedUsersList_users_inner_groups")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetCorporateInvitedUsersListUsersInnerGroups {
   public static final String JSON_PROPERTY_ID = "id";
   private String id;

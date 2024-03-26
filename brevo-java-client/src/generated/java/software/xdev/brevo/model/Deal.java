@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   Deal.JSON_PROPERTY_LINKED_CONTACTS_IDS,
   Deal.JSON_PROPERTY_LINKED_COMPANIES_IDS
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class Deal {
   public static final String JSON_PROPERTY_ID = "id";
   private String id;

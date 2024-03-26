@@ -36,7 +36,6 @@ import java.util.StringJoiner;
   AddContactToListByIDs.JSON_PROPERTY_IDS
 })
 @JsonTypeName("addContactToListByIDs")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class AddContactToListByIDs {
   public static final String JSON_PROPERTY_IDS = "ids";
   private List<Long> ids;

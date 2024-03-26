@@ -34,7 +34,6 @@ import java.util.StringJoiner;
   UploadImageToGallery.JSON_PROPERTY_NAME
 })
 @JsonTypeName("uploadImageToGallery")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class UploadImageToGallery {
   public static final String JSON_PROPERTY_IMAGE_URL = "imageUrl";
   private String imageUrl;

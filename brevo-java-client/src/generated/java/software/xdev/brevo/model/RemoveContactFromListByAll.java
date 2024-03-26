@@ -33,7 +33,6 @@ import java.util.StringJoiner;
   RemoveContactFromListByAll.JSON_PROPERTY_ALL
 })
 @JsonTypeName("removeContactFromListByAll")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class RemoveContactFromListByAll {
   public static final String JSON_PROPERTY_ALL = "all";
   private Boolean all;

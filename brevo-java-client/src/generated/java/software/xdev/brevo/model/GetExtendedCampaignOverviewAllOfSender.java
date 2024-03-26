@@ -35,7 +35,6 @@ import java.util.StringJoiner;
   GetExtendedCampaignOverviewAllOfSender.JSON_PROPERTY_ID
 })
 @JsonTypeName("getExtendedCampaignOverview_allOf_sender")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetExtendedCampaignOverviewAllOfSender {
   public static final String JSON_PROPERTY_NAME = "name";
   private String name;

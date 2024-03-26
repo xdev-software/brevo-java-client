@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   PutresendcancelinvitationResponse.JSON_PROPERTY_CREDIT_NOTES
 })
 @JsonTypeName("putresendcancelinvitationResponse")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class PutresendcancelinvitationResponse {
   public static final String JSON_PROPERTY_STATUS = "status";
   private String status;

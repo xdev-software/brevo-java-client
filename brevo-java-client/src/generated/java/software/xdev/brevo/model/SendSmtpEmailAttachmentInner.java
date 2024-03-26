@@ -35,7 +35,6 @@ import java.util.StringJoiner;
   SendSmtpEmailAttachmentInner.JSON_PROPERTY_NAME
 })
 @JsonTypeName("sendSmtpEmail_attachment_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class SendSmtpEmailAttachmentInner {
   public static final String JSON_PROPERTY_URL = "url";
   private String url;

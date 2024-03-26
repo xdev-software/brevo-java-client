@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   SendSms.JSON_PROPERTY_REMAINING_CREDITS
 })
 @JsonTypeName("sendSms")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class SendSms {
   public static final String JSON_PROPERTY_REFERENCE = "reference";
   private String reference;

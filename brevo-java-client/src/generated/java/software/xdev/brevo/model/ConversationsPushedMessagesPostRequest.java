@@ -40,7 +40,6 @@ import java.util.StringJoiner;
   ConversationsPushedMessagesPostRequest.JSON_PROPERTY_GROUP_ID
 })
 @JsonTypeName("_conversations_pushedMessages_post_request")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class ConversationsPushedMessagesPostRequest {
   public static final String JSON_PROPERTY_VISITOR_ID = "visitorId";
   private Object visitorId = null;

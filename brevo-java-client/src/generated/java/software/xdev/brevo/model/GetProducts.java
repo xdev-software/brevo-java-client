@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   GetProducts.JSON_PROPERTY_COUNT
 })
 @JsonTypeName("getProducts")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetProducts {
   public static final String JSON_PROPERTY_PRODUCTS = "products";
   private List<GetProductDetails> products = new ArrayList<>();

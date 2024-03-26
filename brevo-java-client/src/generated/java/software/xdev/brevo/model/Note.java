@@ -42,7 +42,6 @@ import java.util.StringJoiner;
   Note.JSON_PROPERTY_CREATED_AT,
   Note.JSON_PROPERTY_UPDATED_AT
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class Note {
   public static final String JSON_PROPERTY_ID = "id";
   private String id;

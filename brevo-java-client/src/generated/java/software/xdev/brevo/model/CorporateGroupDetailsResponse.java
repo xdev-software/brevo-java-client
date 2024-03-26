@@ -41,7 +41,6 @@ import java.util.StringJoiner;
   CorporateGroupDetailsResponse.JSON_PROPERTY_USERS
 })
 @JsonTypeName("corporateGroupDetailsResponse")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CorporateGroupDetailsResponse {
   public static final String JSON_PROPERTY_GROUP = "group";
   private CorporateGroupDetailsResponseGroup group;

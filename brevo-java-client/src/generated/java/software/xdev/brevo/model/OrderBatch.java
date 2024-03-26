@@ -39,7 +39,6 @@ import java.util.StringJoiner;
   OrderBatch.JSON_PROPERTY_HISTORICAL
 })
 @JsonTypeName("orderBatch")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class OrderBatch {
   public static final String JSON_PROPERTY_ORDERS = "orders";
   private List<Order> orders = new ArrayList<>();

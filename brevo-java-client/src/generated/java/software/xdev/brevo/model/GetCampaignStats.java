@@ -48,7 +48,6 @@ import java.util.StringJoiner;
   GetCampaignStats.JSON_PROPERTY_RETURN_BOUNCE
 })
 @JsonTypeName("getCampaignStats")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetCampaignStats {
   public static final String JSON_PROPERTY_LIST_ID = "listId";
   private Long listId;

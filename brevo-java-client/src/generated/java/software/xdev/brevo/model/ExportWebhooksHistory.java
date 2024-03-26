@@ -42,7 +42,6 @@ import java.util.StringJoiner;
   ExportWebhooksHistory.JSON_PROPERTY_MESSAGE_ID
 })
 @JsonTypeName("exportWebhooksHistory")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class ExportWebhooksHistory {
   public static final String JSON_PROPERTY_DAYS = "days";
   private Integer days;

@@ -36,7 +36,6 @@ import java.util.StringJoiner;
   RequestContactImportJsonBodyInner.JSON_PROPERTY_ATTRIBUTES
 })
 @JsonTypeName("requestContactImport_jsonBody_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class RequestContactImportJsonBodyInner {
   public static final String JSON_PROPERTY_EMAIL = "email";
   private String email;

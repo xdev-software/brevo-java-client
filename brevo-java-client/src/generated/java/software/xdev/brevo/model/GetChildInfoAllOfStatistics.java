@@ -35,7 +35,6 @@ import java.util.StringJoiner;
   GetChildInfoAllOfStatistics.JSON_PROPERTY_TOTAL_SENT
 })
 @JsonTypeName("getChildInfo_allOf_statistics")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetChildInfoAllOfStatistics {
   public static final String JSON_PROPERTY_PREVIOUS_MONTH_TOTAL_SENT = "previousMonthTotalSent";
   private Long previousMonthTotalSent;

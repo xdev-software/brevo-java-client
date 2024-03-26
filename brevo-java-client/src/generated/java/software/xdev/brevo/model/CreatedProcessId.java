@@ -33,7 +33,6 @@ import java.util.StringJoiner;
   CreatedProcessId.JSON_PROPERTY_PROCESS_ID
 })
 @JsonTypeName("createdProcessId")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CreatedProcessId {
   public static final String JSON_PROPERTY_PROCESS_ID = "processId";
   private Long processId;

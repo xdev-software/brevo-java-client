@@ -67,7 +67,6 @@ import java.util.StringJoiner;
   GetEmailCampaign.JSON_PROPERTY_STATISTICS
 })
 @JsonTypeName("getEmailCampaign")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetEmailCampaign {
   public static final String JSON_PROPERTY_ID = "id";
   private Long id;

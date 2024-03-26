@@ -45,7 +45,6 @@ import java.util.StringJoiner;
   GetAggregatedReport.JSON_PROPERTY_UNSUBSCRIBED
 })
 @JsonTypeName("getAggregatedReport")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetAggregatedReport {
   public static final String JSON_PROPERTY_RANGE = "range";
   private String range;

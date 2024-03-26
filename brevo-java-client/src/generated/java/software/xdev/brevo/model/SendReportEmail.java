@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   SendReportEmail.JSON_PROPERTY_BODY
 })
 @JsonTypeName("sendReport_email")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class SendReportEmail {
   public static final String JSON_PROPERTY_TO = "to";
   private List<String> to = new ArrayList<>();

@@ -39,7 +39,6 @@ import java.util.StringJoiner;
   GetUserPermission.JSON_PROPERTY_PRIVILEGES
 })
 @JsonTypeName("getUserPermission")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetUserPermission {
   public static final String JSON_PROPERTY_EMAIL = "email";
   private String email;

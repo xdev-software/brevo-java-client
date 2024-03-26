@@ -43,7 +43,6 @@ import java.util.StringJoiner;
   GetTransacEmailsListTransactionalEmailsInner.JSON_PROPERTY_TAGS
 })
 @JsonTypeName("getTransacEmailsList_transactionalEmails_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetTransacEmailsListTransactionalEmailsInner {
   public static final String JSON_PROPERTY_EMAIL = "email";
   private String email;

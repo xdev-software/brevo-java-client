@@ -34,7 +34,6 @@ import java.util.StringJoiner;
   ComponentItems.JSON_PROPERTY_TEXT
 })
 @JsonTypeName("componentItems")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class ComponentItems {
   public static final String JSON_PROPERTY_TYPE = "type";
   private String type;

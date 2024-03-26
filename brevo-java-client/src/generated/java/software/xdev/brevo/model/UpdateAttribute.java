@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   UpdateAttribute.JSON_PROPERTY_ENUMERATION
 })
 @JsonTypeName("updateAttribute")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class UpdateAttribute {
   public static final String JSON_PROPERTY_VALUE = "value";
   private String value;

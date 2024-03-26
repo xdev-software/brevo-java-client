@@ -33,7 +33,6 @@ import java.util.StringJoiner;
   SubAccountUpdatePlanRequestCredits.JSON_PROPERTY_EMAIL
 })
 @JsonTypeName("subAccountUpdatePlanRequest_credits")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class SubAccountUpdatePlanRequestCredits {
   public static final String JSON_PROPERTY_EMAIL = "email";
   private Long email;

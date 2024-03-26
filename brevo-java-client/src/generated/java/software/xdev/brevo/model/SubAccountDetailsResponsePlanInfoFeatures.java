@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   SubAccountDetailsResponsePlanInfoFeatures.JSON_PROPERTY_USERS
 })
 @JsonTypeName("subAccountDetailsResponse_planInfo_features")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class SubAccountDetailsResponsePlanInfoFeatures {
   public static final String JSON_PROPERTY_INBOX = "inbox";
   private SubAccountDetailsResponsePlanInfoFeaturesInbox inbox;

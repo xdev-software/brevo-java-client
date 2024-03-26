@@ -36,7 +36,6 @@ import java.util.StringJoiner;
   GetDeviceBrowserStats.JSON_PROPERTY_UNIQUE_VIEWS
 })
 @JsonTypeName("getDeviceBrowserStats")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetDeviceBrowserStats {
   public static final String JSON_PROPERTY_CLICKERS = "clickers";
   private Long clickers;

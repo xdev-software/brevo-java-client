@@ -35,7 +35,6 @@ import java.util.StringJoiner;
   GetExtendedListAllOfCampaignStats.JSON_PROPERTY_STATS
 })
 @JsonTypeName("getExtendedList_allOf_campaignStats")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetExtendedListAllOfCampaignStats {
   public static final String JSON_PROPERTY_CAMPAIGN_ID = "campaignId";
   private Long campaignId;

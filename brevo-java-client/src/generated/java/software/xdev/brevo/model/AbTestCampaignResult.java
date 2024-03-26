@@ -42,7 +42,6 @@ import java.util.StringJoiner;
   AbTestCampaignResult.JSON_PROPERTY_CLICKED_LINKS
 })
 @JsonTypeName("abTestCampaignResult")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class AbTestCampaignResult {
   /**
    * Winning Campaign Info. pending &#x3D; Campaign has been picked for sending and winning version is yet to be decided, tie &#x3D; A tie happened between both the versions, notAvailable &#x3D; Campaign has not yet been picked for sending.

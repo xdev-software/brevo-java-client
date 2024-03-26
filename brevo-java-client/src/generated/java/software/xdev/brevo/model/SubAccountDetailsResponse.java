@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   SubAccountDetailsResponse.JSON_PROPERTY_PLAN_INFO
 })
 @JsonTypeName("subAccountDetailsResponse")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class SubAccountDetailsResponse {
   public static final String JSON_PROPERTY_NAME = "name";
   private String name;

@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   GetSmsCampaigns.JSON_PROPERTY_COUNT
 })
 @JsonTypeName("getSmsCampaigns")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetSmsCampaigns {
   public static final String JSON_PROPERTY_CAMPAIGNS = "campaigns";
   private List<GetSmsCampaignsCampaignsInner> campaigns;

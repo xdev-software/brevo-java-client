@@ -35,7 +35,6 @@ import java.util.StringJoiner;
   UpdateEmailCampaignSender.JSON_PROPERTY_ID
 })
 @JsonTypeName("updateEmailCampaign_sender")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class UpdateEmailCampaignSender {
   public static final String JSON_PROPERTY_NAME = "name";
   private String name;

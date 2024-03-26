@@ -33,7 +33,6 @@ import java.util.StringJoiner;
   TaskTypes.JSON_PROPERTY_ID,
   TaskTypes.JSON_PROPERTY_TITLE
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class TaskTypes {
   public static final String JSON_PROPERTY_ID = "id";
   private String id;

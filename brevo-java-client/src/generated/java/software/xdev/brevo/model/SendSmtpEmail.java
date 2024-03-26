@@ -61,7 +61,6 @@ import java.util.StringJoiner;
   SendSmtpEmail.JSON_PROPERTY_BATCH_ID
 })
 @JsonTypeName("sendSmtpEmail")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class SendSmtpEmail {
   public static final String JSON_PROPERTY_SENDER = "sender";
   private SendSmtpEmailSender sender;

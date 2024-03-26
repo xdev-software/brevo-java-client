@@ -43,7 +43,6 @@ import java.util.StringJoiner;
   GetWhatsappCampaignOverview.JSON_PROPERTY_MODIFIED_AT
 })
 @JsonTypeName("getWhatsappCampaignOverview")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetWhatsappCampaignOverview {
   public static final String JSON_PROPERTY_ID = "id";
   private Long id;

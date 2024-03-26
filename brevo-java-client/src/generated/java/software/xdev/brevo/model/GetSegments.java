@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   GetSegments.JSON_PROPERTY_COUNT
 })
 @JsonTypeName("getSegments")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetSegments {
   public static final String JSON_PROPERTY_SEGMENTS = "segments";
   private List<Object> segments;

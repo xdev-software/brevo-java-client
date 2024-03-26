@@ -42,7 +42,6 @@ import java.util.StringJoiner;
   SendWhatsappMessageRequest.JSON_PROPERTY_TEXT
 })
 @JsonTypeName("sendWhatsappMessage_request")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class SendWhatsappMessageRequest {
   public static final String JSON_PROPERTY_TEMPLATE_ID = "templateId";
   private Integer templateId;

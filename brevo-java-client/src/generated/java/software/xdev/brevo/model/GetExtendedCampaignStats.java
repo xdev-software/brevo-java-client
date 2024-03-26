@@ -48,7 +48,6 @@ import java.util.StringJoiner;
   GetExtendedCampaignStats.JSON_PROPERTY_STATS_BY_BROWSER
 })
 @JsonTypeName("getExtendedCampaignStats")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetExtendedCampaignStats {
   public static final String JSON_PROPERTY_GLOBAL_STATS = "globalStats";
   private GetCampaignStats globalStats;

@@ -35,7 +35,6 @@ import java.util.StringJoiner;
   SendReport.JSON_PROPERTY_EMAIL
 })
 @JsonTypeName("sendReport")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class SendReport {
   /**
    * Language of email content for campaign report sending.

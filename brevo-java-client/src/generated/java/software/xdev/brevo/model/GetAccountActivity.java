@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   GetAccountActivity.JSON_PROPERTY_LOGS
 })
 @JsonTypeName("getAccountActivity")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetAccountActivity {
   public static final String JSON_PROPERTY_LOGS = "logs";
   private List<GetAccountActivityLogsInner> logs;

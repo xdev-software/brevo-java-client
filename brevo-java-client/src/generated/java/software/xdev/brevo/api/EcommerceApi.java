@@ -45,7 +45,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.StringJoiner;
 
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class EcommerceApi {
 
 
@@ -578,7 +577,7 @@ public class EcommerceApi {
    * @param limit Number of documents per page (optional, default to 50)
    * @param offset Index of the first document in the page (optional, default to 0)
    * @param sort Sort the results in the ascending/descending order of record creation. Default order is **descending** if &#x60;sort&#x60; is not passed (optional, default to desc)
-   * @param ids Filter by category ids (optional
+   * @param ids Filter by category ids (optional)
    * @param name Filter by category name (optional)
    * @param modifiedSince Filter (urlencoded) the categories modified after a given UTC date-time (YYYY-MM-DDTHH:mm:ss.SSSZ). **Prefer to pass your timezone in date-time format for accurate result.**  (optional)
    * @param createdSince Filter (urlencoded) the categories created after a given UTC date-time (YYYY-MM-DDTHH:mm:ss.SSSZ). **Prefer to pass your timezone in date-time format for accurate result.**  (optional)
@@ -596,7 +595,7 @@ public class EcommerceApi {
    * @param limit Number of documents per page (optional, default to 50)
    * @param offset Index of the first document in the page (optional, default to 0)
    * @param sort Sort the results in the ascending/descending order of record creation. Default order is **descending** if &#x60;sort&#x60; is not passed (optional, default to desc)
-   * @param ids Filter by category ids (optional
+   * @param ids Filter by category ids (optional)
    * @param name Filter by category name (optional)
    * @param modifiedSince Filter (urlencoded) the categories modified after a given UTC date-time (YYYY-MM-DDTHH:mm:ss.SSSZ). **Prefer to pass your timezone in date-time format for accurate result.**  (optional)
    * @param createdSince Filter (urlencoded) the categories created after a given UTC date-time (YYYY-MM-DDTHH:mm:ss.SSSZ). **Prefer to pass your timezone in date-time format for accurate result.**  (optional)
@@ -895,7 +894,7 @@ public class EcommerceApi {
    * @param limit Number of documents per page (optional, default to 50)
    * @param offset Index of the first document in the page (optional, default to 0)
    * @param sort Sort the results in the ascending/descending order of record creation. Default order is **descending** if &#x60;sort&#x60; is not passed (optional, default to desc)
-   * @param ids Filter by product ids (optional
+   * @param ids Filter by product ids (optional)
    * @param name Filter by product name, minimum 3 characters should be present for search (optional)
    * @param priceLte Price filter for products less than and equals to particular amount (optional)
    * @param priceGte Price filter for products greater than and equals to particular amount (optional)
@@ -903,7 +902,7 @@ public class EcommerceApi {
    * @param priceGt Price filter for products greater than particular amount (optional)
    * @param priceEq Price filter for products equals to particular amount (optional)
    * @param priceNe Price filter for products not equals to particular amount (optional)
-   * @param categories Filter by product categories (optional
+   * @param categories Filter by product categories (optional)
    * @param modifiedSince Filter (urlencoded) the orders modified after a given UTC date-time (YYYY-MM-DDTHH:mm:ss.SSSZ). **Prefer to pass your timezone in date-time format for accurate result.**  (optional)
    * @param createdSince Filter (urlencoded) the orders created after a given UTC date-time (YYYY-MM-DDTHH:mm:ss.SSSZ). **Prefer to pass your timezone in date-time format for accurate result.**  (optional)
    * @return GetProducts
@@ -920,7 +919,7 @@ public class EcommerceApi {
    * @param limit Number of documents per page (optional, default to 50)
    * @param offset Index of the first document in the page (optional, default to 0)
    * @param sort Sort the results in the ascending/descending order of record creation. Default order is **descending** if &#x60;sort&#x60; is not passed (optional, default to desc)
-   * @param ids Filter by product ids (optional
+   * @param ids Filter by product ids (optional)
    * @param name Filter by product name, minimum 3 characters should be present for search (optional)
    * @param priceLte Price filter for products less than and equals to particular amount (optional)
    * @param priceGte Price filter for products greater than and equals to particular amount (optional)
@@ -928,7 +927,7 @@ public class EcommerceApi {
    * @param priceGt Price filter for products greater than particular amount (optional)
    * @param priceEq Price filter for products equals to particular amount (optional)
    * @param priceNe Price filter for products not equals to particular amount (optional)
-   * @param categories Filter by product categories (optional
+   * @param categories Filter by product categories (optional)
    * @param modifiedSince Filter (urlencoded) the orders modified after a given UTC date-time (YYYY-MM-DDTHH:mm:ss.SSSZ). **Prefer to pass your timezone in date-time format for accurate result.**  (optional)
    * @param createdSince Filter (urlencoded) the orders created after a given UTC date-time (YYYY-MM-DDTHH:mm:ss.SSSZ). **Prefer to pass your timezone in date-time format for accurate result.**  (optional)
    * @param additionalHeaders additionalHeaders for this call

@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   UpdateBatchContacts.JSON_PROPERTY_CONTACTS
 })
 @JsonTypeName("updateBatchContacts")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class UpdateBatchContacts {
   public static final String JSON_PROPERTY_CONTACTS = "contacts";
   private List<UpdateBatchContactsContactsInner> contacts;

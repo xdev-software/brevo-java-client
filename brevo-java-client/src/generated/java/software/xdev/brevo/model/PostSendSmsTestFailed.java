@@ -39,7 +39,6 @@ import java.util.StringJoiner;
   PostSendSmsTestFailed.JSON_PROPERTY_WITHOUT_LIST_SMS
 })
 @JsonTypeName("postSendSmsTestFailed")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class PostSendSmsTestFailed {
   public static final String JSON_PROPERTY_CODE = "code";
   private String code;

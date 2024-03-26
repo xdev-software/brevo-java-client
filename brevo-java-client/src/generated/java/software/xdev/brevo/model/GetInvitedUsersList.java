@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   GetInvitedUsersList.JSON_PROPERTY_USERS
 })
 @JsonTypeName("getInvitedUsersList")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetInvitedUsersList {
   public static final String JSON_PROPERTY_USERS = "users";
   private List<GetInvitedUsersListUsersInner> users;

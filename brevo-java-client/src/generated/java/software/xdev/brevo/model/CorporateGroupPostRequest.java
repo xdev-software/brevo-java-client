@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   CorporateGroupPostRequest.JSON_PROPERTY_SUB_ACCOUNT_IDS
 })
 @JsonTypeName("_corporate_group_post_request")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CorporateGroupPostRequest {
   public static final String JSON_PROPERTY_GROUP_NAME = "groupName";
   private String groupName;

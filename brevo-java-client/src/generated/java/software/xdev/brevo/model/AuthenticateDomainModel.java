@@ -34,7 +34,6 @@ import java.util.StringJoiner;
   AuthenticateDomainModel.JSON_PROPERTY_MESSAGE
 })
 @JsonTypeName("authenticateDomainModel")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class AuthenticateDomainModel {
   public static final String JSON_PROPERTY_DOMAIN_NAME = "domain_name";
   private String domainName;

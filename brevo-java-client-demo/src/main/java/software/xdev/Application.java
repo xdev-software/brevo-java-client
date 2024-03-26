@@ -23,6 +23,8 @@ public final class Application
 {
 	private static final Logger LOG = LoggerFactory.getLogger(Application.class);
 	
+	static Scanner scanner = new Scanner(System.in);
+	
 	// Tries to add an email/contact to a list
 	public static void main(final String[] args)
 	{
@@ -70,10 +72,7 @@ public final class Application
 			LOG.error("Required {} not set in environment variables or system properties", identifier);
 			
 			LOG.info("Please provide {} over console:", identifier);
-			try(final Scanner scanner = new Scanner(System.in))
-			{
-				value = scanner.nextLine();
-			}
+			value = scanner.nextLine();
 			
 			if(value == null || value.isBlank())
 			{

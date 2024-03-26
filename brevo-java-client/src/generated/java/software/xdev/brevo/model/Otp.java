@@ -33,7 +33,6 @@ import java.util.StringJoiner;
   Otp.JSON_PROPERTY_OTP
 })
 @JsonTypeName("otp")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class Otp {
   public static final String JSON_PROPERTY_OTP = "otp";
   private Integer otp;

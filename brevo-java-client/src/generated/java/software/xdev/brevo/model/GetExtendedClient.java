@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   GetExtendedClient.JSON_PROPERTY_ADDRESS
 })
 @JsonTypeName("getExtendedClient")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetExtendedClient {
   public static final String JSON_PROPERTY_EMAIL = "email";
   private String email;

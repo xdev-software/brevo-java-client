@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   GetUserPermissionPrivilegesInner.JSON_PROPERTY_PERMISSIONS
 })
 @JsonTypeName("getUserPermission_privileges_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetUserPermissionPrivilegesInner {
   public static final String JSON_PROPERTY_FEATURE = "feature";
   private String feature;

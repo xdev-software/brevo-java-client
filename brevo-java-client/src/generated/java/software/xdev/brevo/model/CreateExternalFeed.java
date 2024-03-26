@@ -45,7 +45,6 @@ import java.util.StringJoiner;
   CreateExternalFeed.JSON_PROPERTY_CACHE
 })
 @JsonTypeName("createExternalFeed")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CreateExternalFeed {
   public static final String JSON_PROPERTY_NAME = "name";
   private String name;

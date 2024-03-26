@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   GetTransacBlockedContacts.JSON_PROPERTY_CONTACTS
 })
 @JsonTypeName("getTransacBlockedContacts")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetTransacBlockedContacts {
   public static final String JSON_PROPERTY_COUNT = "count";
   private Long count;

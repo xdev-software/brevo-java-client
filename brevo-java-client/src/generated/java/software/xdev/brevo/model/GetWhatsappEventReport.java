@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   GetWhatsappEventReport.JSON_PROPERTY_EVENTS
 })
 @JsonTypeName("getWhatsappEventReport")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetWhatsappEventReport {
   public static final String JSON_PROPERTY_EVENTS = "events";
   private List<GetWhatsappEventReportEventsInner> events;

@@ -45,7 +45,6 @@ import java.util.StringJoiner;
   CreateContact.JSON_PROPERTY_SMTP_BLACKLIST_SENDER
 })
 @JsonTypeName("createContact")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CreateContact {
   public static final String JSON_PROPERTY_EMAIL = "email";
   private String email;

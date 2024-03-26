@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   GetList.JSON_PROPERTY_UNIQUE_SUBSCRIBERS
 })
 @JsonTypeName("getList")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetList {
   public static final String JSON_PROPERTY_ID = "id";
   private Long id;

@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   GetScheduledEmailByBatchId.JSON_PROPERTY_BATCHES
 })
 @JsonTypeName("getScheduledEmailByBatchId")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetScheduledEmailByBatchId {
   public static final String JSON_PROPERTY_COUNT = "count";
   private Integer count;

@@ -42,7 +42,6 @@ import java.util.StringJoiner;
   GetTransacAggregatedSmsReport.JSON_PROPERTY_REJECTED
 })
 @JsonTypeName("getTransacAggregatedSmsReport")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetTransacAggregatedSmsReport {
   public static final String JSON_PROPERTY_RANGE = "range";
   private String range;

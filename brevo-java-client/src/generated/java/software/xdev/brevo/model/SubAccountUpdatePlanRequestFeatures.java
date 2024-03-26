@@ -35,7 +35,6 @@ import java.util.StringJoiner;
   SubAccountUpdatePlanRequestFeatures.JSON_PROPERTY_INBOX
 })
 @JsonTypeName("subAccountUpdatePlanRequest_features")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class SubAccountUpdatePlanRequestFeatures {
   public static final String JSON_PROPERTY_USERS = "users";
   private Long users;

@@ -33,7 +33,6 @@ import java.util.StringJoiner;
   Putresendcancelinvitation.JSON_PROPERTY_EMAIL
 })
 @JsonTypeName("putresendcancelinvitation")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class Putresendcancelinvitation {
   public static final String JSON_PROPERTY_EMAIL = "email";
   private String email;

@@ -36,7 +36,6 @@ import java.util.StringJoiner;
   CorporateGroupUnlinkGroupIdSubAccountsPutRequest.JSON_PROPERTY_SUB_ACCOUNT_IDS
 })
 @JsonTypeName("_corporate_group_unlink__groupId__subAccounts_put_request")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CorporateGroupUnlinkGroupIdSubAccountsPutRequest {
   public static final String JSON_PROPERTY_SUB_ACCOUNT_IDS = "subAccountIds";
   private List<Long> subAccountIds = new ArrayList<>();

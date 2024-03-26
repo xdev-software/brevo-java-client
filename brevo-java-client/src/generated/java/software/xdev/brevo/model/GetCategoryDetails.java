@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   GetCategoryDetails.JSON_PROPERTY_IS_DELETED
 })
 @JsonTypeName("getCategoryDetails")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetCategoryDetails {
   public static final String JSON_PROPERTY_ID = "id";
   private String id;

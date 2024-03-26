@@ -28,7 +28,6 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
 })
 @JsonTypeName("getContactInfo_identifier_parameter")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetContactInfoIdentifierParameter {
   public GetContactInfoIdentifierParameter() {
   }

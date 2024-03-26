@@ -57,7 +57,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.StringJoiner;
 
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class ContactsApi {
 
 
@@ -1075,7 +1074,7 @@ public class ContactsApi {
    * @param createdSince Filter (urlencoded) the contacts created after a given UTC date-time (YYYY-MM-DDTHH:mm:ss.SSSZ). **Prefer to pass your timezone in date-time format for accurate result.**  (optional)
    * @param sort Sort the results in the ascending/descending order of record creation. Default order is **descending** if &#x60;sort&#x60; is not passed (optional, default to desc)
    * @param segmentId Id of the segment. **Either listIds or segmentId can be passed.** (optional)
-   * @param listIds Ids of the list. **Either listIds or segmentId can be passed.** (optional
+   * @param listIds Ids of the list. **Either listIds or segmentId can be passed.** (optional)
    * @return GetContacts
    * @throws ApiException if fails to make API call
    */
@@ -1093,7 +1092,7 @@ public class ContactsApi {
    * @param createdSince Filter (urlencoded) the contacts created after a given UTC date-time (YYYY-MM-DDTHH:mm:ss.SSSZ). **Prefer to pass your timezone in date-time format for accurate result.**  (optional)
    * @param sort Sort the results in the ascending/descending order of record creation. Default order is **descending** if &#x60;sort&#x60; is not passed (optional, default to desc)
    * @param segmentId Id of the segment. **Either listIds or segmentId can be passed.** (optional)
-   * @param listIds Ids of the list. **Either listIds or segmentId can be passed.** (optional
+   * @param listIds Ids of the list. **Either listIds or segmentId can be passed.** (optional)
    * @param additionalHeaders additionalHeaders for this call
    * @return GetContacts
    * @throws ApiException if fails to make API call

@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   PostContactInfoContacts.JSON_PROPERTY_PROCESS_ID
 })
 @JsonTypeName("postContactInfo_contacts")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class PostContactInfoContacts {
   public static final String JSON_PROPERTY_SUCCESS = "success";
   private PostContactInfoContactsSuccess success;

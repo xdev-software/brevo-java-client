@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   GetAttributes.JSON_PROPERTY_ATTRIBUTES
 })
 @JsonTypeName("getAttributes")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetAttributes {
   public static final String JSON_PROPERTY_ATTRIBUTES = "attributes";
   private List<GetAttributesAttributesInner> attributes = new ArrayList<>();

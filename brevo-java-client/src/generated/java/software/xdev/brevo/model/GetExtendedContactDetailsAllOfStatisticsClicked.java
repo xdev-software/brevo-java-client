@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   GetExtendedContactDetailsAllOfStatisticsClicked.JSON_PROPERTY_LINKS
 })
 @JsonTypeName("getExtendedContactDetails_allOf_statistics_clicked")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetExtendedContactDetailsAllOfStatisticsClicked {
   public static final String JSON_PROPERTY_CAMPAIGN_ID = "campaignId";
   private Long campaignId;

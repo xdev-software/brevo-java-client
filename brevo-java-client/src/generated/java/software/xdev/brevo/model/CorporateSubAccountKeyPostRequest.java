@@ -34,7 +34,6 @@ import java.util.StringJoiner;
   CorporateSubAccountKeyPostRequest.JSON_PROPERTY_NAME
 })
 @JsonTypeName("_corporate_subAccount_key_post_request")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CorporateSubAccountKeyPostRequest {
   public static final String JSON_PROPERTY_ID = "id";
   private Long id;

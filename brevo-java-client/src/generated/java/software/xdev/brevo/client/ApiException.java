@@ -16,10 +16,7 @@ package software.xdev.brevo.client;
 import java.util.Map;
 import java.util.List;
 
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class ApiException extends RuntimeException {
-    private static final long serialVersionUID = 1L;
-
     private int code = 0;
     private Map<String, List<String>> responseHeaders = null;
     private String responseBody = null;

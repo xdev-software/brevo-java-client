@@ -34,7 +34,6 @@ import java.util.StringJoiner;
   GetChildDomain.JSON_PROPERTY_ACTIVE
 })
 @JsonTypeName("getChildDomain")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetChildDomain {
   public static final String JSON_PROPERTY_DOMAIN = "domain";
   private String domain;

@@ -36,7 +36,6 @@ import java.util.StringJoiner;
   GetScheduledEmailByBatchIdBatchesInner.JSON_PROPERTY_STATUS
 })
 @JsonTypeName("getScheduledEmailByBatchId_batches_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetScheduledEmailByBatchIdBatchesInner {
   public static final String JSON_PROPERTY_SCHEDULED_AT = "scheduledAt";
   private OffsetDateTime scheduledAt;

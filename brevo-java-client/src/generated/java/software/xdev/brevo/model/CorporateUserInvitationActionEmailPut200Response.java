@@ -33,7 +33,6 @@ import java.util.StringJoiner;
   CorporateUserInvitationActionEmailPut200Response.JSON_PROPERTY_MESSAGE
 })
 @JsonTypeName("_corporate_user_invitation__action___email__put_200_response")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CorporateUserInvitationActionEmailPut200Response {
   public static final String JSON_PROPERTY_MESSAGE = "message";
   private String message;

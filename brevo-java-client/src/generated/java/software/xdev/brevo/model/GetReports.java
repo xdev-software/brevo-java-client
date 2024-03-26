@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   GetReports.JSON_PROPERTY_REPORTS
 })
 @JsonTypeName("getReports")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetReports {
   public static final String JSON_PROPERTY_REPORTS = "reports";
   private List<GetReportsReportsInner> reports;

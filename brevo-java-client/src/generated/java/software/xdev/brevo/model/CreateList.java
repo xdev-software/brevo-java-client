@@ -34,7 +34,6 @@ import java.util.StringJoiner;
   CreateList.JSON_PROPERTY_FOLDER_ID
 })
 @JsonTypeName("createList")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CreateList {
   public static final String JSON_PROPERTY_NAME = "name";
   private String name;

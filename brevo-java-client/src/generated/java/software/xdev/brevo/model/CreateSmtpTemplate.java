@@ -43,7 +43,6 @@ import java.util.StringJoiner;
   CreateSmtpTemplate.JSON_PROPERTY_IS_ACTIVE
 })
 @JsonTypeName("createSmtpTemplate")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CreateSmtpTemplate {
   public static final String JSON_PROPERTY_TAG = "tag";
   private String tag;

@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   CreateWhatsAppCampaign.JSON_PROPERTY_RECIPIENTS
 })
 @JsonTypeName("createWhatsAppCampaign")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CreateWhatsAppCampaign {
   public static final String JSON_PROPERTY_NAME = "name";
   private String name;

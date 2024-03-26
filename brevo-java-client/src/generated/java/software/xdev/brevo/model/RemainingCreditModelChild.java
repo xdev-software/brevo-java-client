@@ -34,7 +34,6 @@ import java.util.StringJoiner;
   RemainingCreditModelChild.JSON_PROPERTY_EMAIL
 })
 @JsonTypeName("remainingCreditModel_child")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class RemainingCreditModelChild {
   public static final String JSON_PROPERTY_SMS = "sms";
   private Double sms;

@@ -36,7 +36,6 @@ import java.util.StringJoiner;
   CreateUpdateCategories.JSON_PROPERTY_DELETED_AT
 })
 @JsonTypeName("createUpdateCategories")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CreateUpdateCategories {
   public static final String JSON_PROPERTY_ID = "id";
   private String id;

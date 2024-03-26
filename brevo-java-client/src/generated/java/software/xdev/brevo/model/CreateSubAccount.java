@@ -36,7 +36,6 @@ import java.util.StringJoiner;
   CreateSubAccount.JSON_PROPERTY_TIMEZONE
 })
 @JsonTypeName("createSubAccount")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CreateSubAccount {
   public static final String JSON_PROPERTY_COMPANY_NAME = "companyName";
   private String companyName;

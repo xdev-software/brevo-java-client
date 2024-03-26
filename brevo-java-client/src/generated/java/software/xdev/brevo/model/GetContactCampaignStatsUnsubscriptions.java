@@ -39,7 +39,6 @@ import java.util.StringJoiner;
   GetContactCampaignStatsUnsubscriptions.JSON_PROPERTY_ADMIN_UNSUBSCRIPTION
 })
 @JsonTypeName("getContactCampaignStats_unsubscriptions")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetContactCampaignStatsUnsubscriptions {
   public static final String JSON_PROPERTY_USER_UNSUBSCRIPTION = "userUnsubscription";
   private List<GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsUserUnsubscription> userUnsubscription = new ArrayList<>();

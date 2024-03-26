@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   GetFolders.JSON_PROPERTY_COUNT
 })
 @JsonTypeName("getFolders")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetFolders {
   public static final String JSON_PROPERTY_FOLDERS = "folders";
   private List<GetFolder> folders;

@@ -49,7 +49,6 @@ import java.util.StringJoiner;
   GetExternalFeedByUUID.JSON_PROPERTY_MODIFIED_AT
 })
 @JsonTypeName("getExternalFeedByUUID")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetExternalFeedByUUID {
   public static final String JSON_PROPERTY_ID = "id";
   private String id;

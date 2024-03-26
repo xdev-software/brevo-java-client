@@ -34,7 +34,6 @@ import java.util.StringJoiner;
   RequestSmsRecipientExport.JSON_PROPERTY_RECIPIENTS_TYPE
 })
 @JsonTypeName("requestSmsRecipientExport")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class RequestSmsRecipientExport {
   public static final String JSON_PROPERTY_NOTIFY_U_R_L = "notifyURL";
   private String notifyURL;

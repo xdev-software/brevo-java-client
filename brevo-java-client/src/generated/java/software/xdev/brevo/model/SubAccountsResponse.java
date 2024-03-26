@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   SubAccountsResponse.JSON_PROPERTY_SUB_ACCOUNTS
 })
 @JsonTypeName("subAccountsResponse")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class SubAccountsResponse {
   public static final String JSON_PROPERTY_COUNT = "count";
   private Integer count;

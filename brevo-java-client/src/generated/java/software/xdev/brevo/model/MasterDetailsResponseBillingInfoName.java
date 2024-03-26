@@ -34,7 +34,6 @@ import java.util.StringJoiner;
   MasterDetailsResponseBillingInfoName.JSON_PROPERTY_FAMILY_NAME
 })
 @JsonTypeName("masterDetailsResponse_billingInfo_name")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class MasterDetailsResponseBillingInfoName {
   public static final String JSON_PROPERTY_GIVEN_NAME = "givenName";
   private String givenName;

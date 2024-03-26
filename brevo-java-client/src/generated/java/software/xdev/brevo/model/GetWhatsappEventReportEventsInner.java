@@ -40,7 +40,6 @@ import java.util.StringJoiner;
   GetWhatsappEventReportEventsInner.JSON_PROPERTY_SENDER_NUMBER
 })
 @JsonTypeName("getWhatsappEventReport_events_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetWhatsappEventReportEventsInner {
   public static final String JSON_PROPERTY_CONTACT_NUMBER = "contactNumber";
   private String contactNumber;

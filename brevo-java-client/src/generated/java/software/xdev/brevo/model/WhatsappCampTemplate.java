@@ -47,7 +47,6 @@ import java.util.StringJoiner;
   WhatsappCampTemplate.JSON_PROPERTY_BUTTON_TYPE,
   WhatsappCampTemplate.JSON_PROPERTY_HIDE_FOOTER
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class WhatsappCampTemplate {
   public static final String JSON_PROPERTY_NAME = "name";
   private String name;

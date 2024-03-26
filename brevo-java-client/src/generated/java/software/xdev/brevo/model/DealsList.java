@@ -36,7 +36,6 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   DealsList.JSON_PROPERTY_ITEMS
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class DealsList {
   public static final String JSON_PROPERTY_ITEMS = "items";
   private List<Deal> items;

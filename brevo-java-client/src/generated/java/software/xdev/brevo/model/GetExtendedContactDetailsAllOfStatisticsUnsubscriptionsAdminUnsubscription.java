@@ -34,7 +34,6 @@ import java.util.StringJoiner;
   GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsAdminUnsubscription.JSON_PROPERTY_IP
 })
 @JsonTypeName("getExtendedContactDetails_allOf_statistics_unsubscriptions_adminUnsubscription")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsAdminUnsubscription {
   public static final String JSON_PROPERTY_EVENT_TIME = "eventTime";
   private String eventTime;

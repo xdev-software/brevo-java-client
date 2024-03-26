@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   GetListsListsInner.JSON_PROPERTY_FOLDER_ID
 })
 @JsonTypeName("getLists_lists_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetListsListsInner {
   public static final String JSON_PROPERTY_ID = "id";
   private Long id;

@@ -34,7 +34,6 @@ import java.util.StringJoiner;
   CreateUpdateBatchCategoryModel.JSON_PROPERTY_UPDATED_COUNT
 })
 @JsonTypeName("createUpdateBatchCategoryModel")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CreateUpdateBatchCategoryModel {
   public static final String JSON_PROPERTY_CREATED_COUNT = "createdCount";
   private Long createdCount;

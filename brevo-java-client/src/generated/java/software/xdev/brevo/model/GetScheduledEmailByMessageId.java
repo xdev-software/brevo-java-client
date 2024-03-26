@@ -36,7 +36,6 @@ import java.util.StringJoiner;
   GetScheduledEmailByMessageId.JSON_PROPERTY_STATUS
 })
 @JsonTypeName("getScheduledEmailByMessageId")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetScheduledEmailByMessageId {
   public static final String JSON_PROPERTY_SCHEDULED_AT = "scheduledAt";
   private OffsetDateTime scheduledAt;

@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   GetIps.JSON_PROPERTY_IPS
 })
 @JsonTypeName("getIps")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetIps {
   public static final String JSON_PROPERTY_IPS = "ips";
   private List<GetIp> ips = new ArrayList<>();

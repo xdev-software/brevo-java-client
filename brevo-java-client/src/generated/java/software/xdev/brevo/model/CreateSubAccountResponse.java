@@ -33,7 +33,6 @@ import java.util.StringJoiner;
   CreateSubAccountResponse.JSON_PROPERTY_ID
 })
 @JsonTypeName("createSubAccountResponse")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CreateSubAccountResponse {
   public static final String JSON_PROPERTY_ID = "id";
   private Long id;

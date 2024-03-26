@@ -34,7 +34,6 @@ import java.util.StringJoiner;
   RemoveCredits.JSON_PROPERTY_EMAIL
 })
 @JsonTypeName("removeCredits")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class RemoveCredits {
   public static final String JSON_PROPERTY_SMS = "sms";
   private Long sms;

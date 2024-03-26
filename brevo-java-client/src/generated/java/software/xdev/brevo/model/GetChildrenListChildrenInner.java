@@ -48,7 +48,6 @@ import java.util.StringJoiner;
   GetChildrenListChildrenInner.JSON_PROPERTY_ID
 })
 @JsonTypeName("getChildrenList_children_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetChildrenListChildrenInner {
   public static final String JSON_PROPERTY_EMAIL = "email";
   private String email;

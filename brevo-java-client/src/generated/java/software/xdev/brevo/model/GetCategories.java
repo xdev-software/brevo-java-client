@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   GetCategories.JSON_PROPERTY_COUNT
 })
 @JsonTypeName("getCategories")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetCategories {
   public static final String JSON_PROPERTY_CATEGORIES = "categories";
   private List<GetCategoryDetails> categories = new ArrayList<>();

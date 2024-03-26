@@ -40,7 +40,6 @@ import java.util.StringJoiner;
   CreateAttribute.JSON_PROPERTY_TYPE
 })
 @JsonTypeName("createAttribute")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CreateAttribute {
   public static final String JSON_PROPERTY_VALUE = "value";
   private String value;

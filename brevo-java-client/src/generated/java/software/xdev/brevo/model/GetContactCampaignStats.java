@@ -49,7 +49,6 @@ import java.util.StringJoiner;
   GetContactCampaignStats.JSON_PROPERTY_DELIVERED
 })
 @JsonTypeName("getContactCampaignStats")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetContactCampaignStats {
   public static final String JSON_PROPERTY_MESSAGES_SENT = "messagesSent";
   private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> messagesSent;

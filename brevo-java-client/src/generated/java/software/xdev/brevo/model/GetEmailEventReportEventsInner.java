@@ -43,7 +43,6 @@ import java.util.StringJoiner;
   GetEmailEventReportEventsInner.JSON_PROPERTY_TEMPLATE_ID
 })
 @JsonTypeName("getEmailEventReport_events_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetEmailEventReportEventsInner {
   public static final String JSON_PROPERTY_EMAIL = "email";
   private String email;

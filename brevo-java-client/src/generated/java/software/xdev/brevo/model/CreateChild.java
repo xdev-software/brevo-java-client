@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   CreateChild.JSON_PROPERTY_LANGUAGE
 })
 @JsonTypeName("createChild")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CreateChild {
   public static final String JSON_PROPERTY_EMAIL = "email";
   private String email;

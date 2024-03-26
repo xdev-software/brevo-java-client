@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   OrderProductsInner.JSON_PROPERTY_PRICE
 })
 @JsonTypeName("order_products_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class OrderProductsInner {
   public static final String JSON_PROPERTY_PRODUCT_ID = "productId";
   private String productId;

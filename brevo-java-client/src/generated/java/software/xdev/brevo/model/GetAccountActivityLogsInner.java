@@ -37,7 +37,6 @@ import java.util.StringJoiner;
   GetAccountActivityLogsInner.JSON_PROPERTY_USER_AGENT
 })
 @JsonTypeName("getAccountActivity_logs_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetAccountActivityLogsInner {
   public static final String JSON_PROPERTY_ACTION = "action";
   private String action;

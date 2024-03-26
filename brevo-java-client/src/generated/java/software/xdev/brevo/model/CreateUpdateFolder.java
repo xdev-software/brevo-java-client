@@ -33,7 +33,6 @@ import java.util.StringJoiner;
   CreateUpdateFolder.JSON_PROPERTY_NAME
 })
 @JsonTypeName("createUpdateFolder")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CreateUpdateFolder {
   public static final String JSON_PROPERTY_NAME = "name";
   private String name;

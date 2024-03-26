@@ -39,7 +39,6 @@ import java.util.StringJoiner;
   OrderBilling.JSON_PROPERTY_REGION
 })
 @JsonTypeName("order_billing")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class OrderBilling {
   public static final String JSON_PROPERTY_ADDRESS = "address";
   private String address;

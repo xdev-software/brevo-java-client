@@ -36,7 +36,6 @@ import java.util.StringJoiner;
   CreateDomainModelDnsRecordsDkimRecord.JSON_PROPERTY_STATUS
 })
 @JsonTypeName("createDomainModel_dns_records_dkim_record")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CreateDomainModelDnsRecordsDkimRecord {
   public static final String JSON_PROPERTY_TYPE = "type";
   private String type;

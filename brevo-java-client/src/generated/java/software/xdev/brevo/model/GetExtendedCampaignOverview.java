@@ -63,7 +63,6 @@ import java.util.StringJoiner;
   GetExtendedCampaignOverview.JSON_PROPERTY_RETURN_BOUNCE
 })
 @JsonTypeName("getExtendedCampaignOverview")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetExtendedCampaignOverview {
   public static final String JSON_PROPERTY_ID = "id";
   private Long id;

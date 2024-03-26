@@ -35,7 +35,6 @@ import java.util.StringJoiner;
   VariablesItems.JSON_PROPERTY_DATATYPE
 })
 @JsonTypeName("variablesItems")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class VariablesItems {
   public static final String JSON_PROPERTY_NAME = "name";
   private String name;

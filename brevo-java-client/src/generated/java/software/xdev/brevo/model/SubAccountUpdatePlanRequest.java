@@ -36,7 +36,6 @@ import java.util.StringJoiner;
   SubAccountUpdatePlanRequest.JSON_PROPERTY_FEATURES
 })
 @JsonTypeName("subAccountUpdatePlanRequest")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class SubAccountUpdatePlanRequest {
   public static final String JSON_PROPERTY_CREDITS = "credits";
   private SubAccountUpdatePlanRequestCredits credits;

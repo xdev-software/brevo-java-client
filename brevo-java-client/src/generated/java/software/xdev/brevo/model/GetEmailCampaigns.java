@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   GetEmailCampaigns.JSON_PROPERTY_COUNT
 })
 @JsonTypeName("getEmailCampaigns")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetEmailCampaigns {
   public static final String JSON_PROPERTY_CAMPAIGNS = "campaigns";
   private List<GetEmailCampaignsCampaignsInner> campaigns;

@@ -47,7 +47,6 @@ import java.util.StringJoiner;
   SendSmtpEmailMessageVersionsInner.JSON_PROPERTY_SUBJECT
 })
 @JsonTypeName("sendSmtpEmail_messageVersions_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class SendSmtpEmailMessageVersionsInner {
   public static final String JSON_PROPERTY_TO = "to";
   private List<SendSmtpEmailToInner> to = new ArrayList<>();

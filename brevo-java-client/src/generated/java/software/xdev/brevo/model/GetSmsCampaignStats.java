@@ -39,7 +39,6 @@ import java.util.StringJoiner;
   GetSmsCampaignStats.JSON_PROPERTY_ANSWERED
 })
 @JsonTypeName("getSmsCampaignStats")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetSmsCampaignStats {
   public static final String JSON_PROPERTY_DELIVERED = "delivered";
   private Long delivered;

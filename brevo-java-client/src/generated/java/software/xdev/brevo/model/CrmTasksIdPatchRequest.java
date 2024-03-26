@@ -48,7 +48,6 @@ import java.util.StringJoiner;
   CrmTasksIdPatchRequest.JSON_PROPERTY_REMINDER
 })
 @JsonTypeName("_crm_tasks__id__patch_request")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CrmTasksIdPatchRequest {
   public static final String JSON_PROPERTY_NAME = "name";
   private String name;

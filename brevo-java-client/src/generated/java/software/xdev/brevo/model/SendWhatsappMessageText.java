@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   SendWhatsappMessageText.JSON_PROPERTY_CONTACT_NUMBERS
 })
 @JsonTypeName("sendWhatsappMessageText")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class SendWhatsappMessageText {
   public static final String JSON_PROPERTY_SENDER_NUMBER = "senderNumber";
   private String senderNumber;

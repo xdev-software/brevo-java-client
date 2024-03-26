@@ -34,7 +34,6 @@ import java.util.StringJoiner;
   PostContactInfo.JSON_PROPERTY_CONTACTS
 })
 @JsonTypeName("postContactInfo")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class PostContactInfo {
   public static final String JSON_PROPERTY_CONTACTS = "contacts";
   private PostContactInfoContacts contacts;

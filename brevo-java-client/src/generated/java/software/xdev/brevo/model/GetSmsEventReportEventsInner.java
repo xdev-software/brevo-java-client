@@ -39,7 +39,6 @@ import java.util.StringJoiner;
   GetSmsEventReportEventsInner.JSON_PROPERTY_TAG
 })
 @JsonTypeName("getSmsEventReport_events_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetSmsEventReportEventsInner {
   public static final String JSON_PROPERTY_PHONE_NUMBER = "phoneNumber";
   private String phoneNumber;

@@ -38,7 +38,6 @@ import java.util.StringJoiner;
   GetTransacEmailsList.JSON_PROPERTY_TRANSACTIONAL_EMAILS
 })
 @JsonTypeName("getTransacEmailsList")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetTransacEmailsList {
   public static final String JSON_PROPERTY_COUNT = "count";
   private Long count;

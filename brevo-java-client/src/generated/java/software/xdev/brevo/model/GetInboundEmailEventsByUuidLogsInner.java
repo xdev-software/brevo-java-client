@@ -35,7 +35,6 @@ import java.util.StringJoiner;
   GetInboundEmailEventsByUuidLogsInner.JSON_PROPERTY_TYPE
 })
 @JsonTypeName("getInboundEmailEventsByUuid_logs_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class GetInboundEmailEventsByUuidLogsInner {
   public static final String JSON_PROPERTY_DATE = "date";
   private OffsetDateTime date;

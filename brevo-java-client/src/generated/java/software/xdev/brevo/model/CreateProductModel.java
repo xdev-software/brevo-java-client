@@ -33,7 +33,6 @@ import java.util.StringJoiner;
   CreateProductModel.JSON_PROPERTY_ID
 })
 @JsonTypeName("createProductModel")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CreateProductModel {
   public static final String JSON_PROPERTY_ID = "id";
   private Long id;
