@@ -137,7 +137,7 @@
 		<dependency>
 			<groupId>jakarta.annotation</groupId>
 			<artifactId>jakarta.annotation-api</artifactId>
-			<version>2.1.1</version>
+			<version>3.0.0</version>
 		</dependency>
 	</dependencies>
 
@@ -218,7 +218,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>
-				<version>3.3.0</version>
+				<version>3.3.1</version>
 				<executions>
 					<execution>
 						<id>attach-sources</id>
@@ -464,7 +464,7 @@
 							<dependency>
 								<groupId>com.puppycrawl.tools</groupId>
 								<artifactId>checkstyle</artifactId>
-								<version>10.14.2</version>
+								<version>10.15.0</version>
 							</dependency>
 						</dependencies>
 						<configuration>
