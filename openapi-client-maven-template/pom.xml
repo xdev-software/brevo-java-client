@@ -5,17 +5,17 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>software.xdev</groupId>
-	<artifactId>openapi-client-maven-template</artifactId>
+	<artifactId>template-placeholder</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>openapi-client-maven-template</name>
-	<description>openapi-client-maven-template</description>
-	<url>https://github.com/xdev-software/openapi-client-maven-template</url>
+	<name>template-placeholder</name>
+	<description>template-placeholder</description>
+	<url>https://github.com/xdev-software/template-placeholder</url>
 
 	<scm>
-		<url>https://github.com/xdev-software/openapi-client-maven-template</url>
-		<connection>scm:git:https://github.com/xdev-software/openapi-client-maven-template.git</connection>
+		<url>https://github.com/xdev-software/template-placeholder</url>
+		<connection>scm:git:https://github.com/xdev-software/template-placeholder.git</connection>
 	</scm>
 
 	<inceptionYear>2023</inceptionYear>
