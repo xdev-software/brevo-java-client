@@ -20,8 +20,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import software.xdev.brevo.model.GetCampaignRecipients;
-import software.xdev.brevo.model.GetSmsCampaignStats;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import java.io.UnsupportedEncodingException;
@@ -113,10 +111,10 @@ public class GetSmsCampaign {
   private String modifiedAt;
 
   public static final String JSON_PROPERTY_RECIPIENTS = "recipients";
-  private GetCampaignRecipients recipients;
+  private Object recipients;
 
   public static final String JSON_PROPERTY_STATISTICS = "statistics";
-  private GetSmsCampaignStats statistics;
+  private Object statistics;
 
   public GetSmsCampaign() {
   }
@@ -329,7 +327,7 @@ public class GetSmsCampaign {
   }
 
 
-  public GetSmsCampaign recipients(GetCampaignRecipients recipients) {
+  public GetSmsCampaign recipients(Object recipients) {
     
     this.recipients = recipients;
     return this;
@@ -343,19 +341,19 @@ public class GetSmsCampaign {
   @JsonProperty(JSON_PROPERTY_RECIPIENTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public GetCampaignRecipients getRecipients() {
+  public Object getRecipients() {
     return recipients;
   }
 
 
   @JsonProperty(JSON_PROPERTY_RECIPIENTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRecipients(GetCampaignRecipients recipients) {
+  public void setRecipients(Object recipients) {
     this.recipients = recipients;
   }
 
 
-  public GetSmsCampaign statistics(GetSmsCampaignStats statistics) {
+  public GetSmsCampaign statistics(Object statistics) {
     
     this.statistics = statistics;
     return this;
@@ -369,14 +367,14 @@ public class GetSmsCampaign {
   @JsonProperty(JSON_PROPERTY_STATISTICS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public GetSmsCampaignStats getStatistics() {
+  public Object getStatistics() {
     return statistics;
   }
 
 
   @JsonProperty(JSON_PROPERTY_STATISTICS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatistics(GetSmsCampaignStats statistics) {
+  public void setStatistics(Object statistics) {
     this.statistics = statistics;
   }
 
@@ -549,12 +547,22 @@ public class GetSmsCampaign {
 
     // add `recipients` to the URL query string
     if (getRecipients() != null) {
-      joiner.add(getRecipients().toUrlQueryString(prefix + "recipients" + suffix));
+      try {
+        joiner.add(String.format("%srecipients%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRecipients()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
 
     // add `statistics` to the URL query string
     if (getStatistics() != null) {
-      joiner.add(getStatistics().toUrlQueryString(prefix + "statistics" + suffix));
+      try {
+        joiner.add(String.format("%sstatistics%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatistics()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
 
     return joiner.toString();

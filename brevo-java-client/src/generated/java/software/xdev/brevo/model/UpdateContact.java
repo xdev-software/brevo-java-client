@@ -58,13 +58,13 @@ public class UpdateContact {
   private Boolean smsBlacklisted;
 
   public static final String JSON_PROPERTY_LIST_IDS = "listIds";
-  private List<Long> listIds;
+  private List<Long> listIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_UNLINK_LIST_IDS = "unlinkListIds";
-  private List<Long> unlinkListIds;
+  private List<Long> unlinkListIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_SMTP_BLACKLIST_SENDER = "smtpBlacklistSender";
-  private List<String> smtpBlacklistSender;
+  private List<String> smtpBlacklistSender = new ArrayList<>();
 
   public UpdateContact() {
   }

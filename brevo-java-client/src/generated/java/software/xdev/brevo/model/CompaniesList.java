@@ -38,7 +38,7 @@ import java.util.StringJoiner;
 })
 public class CompaniesList {
   public static final String JSON_PROPERTY_ITEMS = "items";
-  private List<Company> items;
+  private List<Company> items = new ArrayList<>();
 
   public CompaniesList() {
   }

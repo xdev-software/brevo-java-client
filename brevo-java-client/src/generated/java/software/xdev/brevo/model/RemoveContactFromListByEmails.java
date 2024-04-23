@@ -38,7 +38,7 @@ import java.util.StringJoiner;
 @JsonTypeName("removeContactFromListByEmails")
 public class RemoveContactFromListByEmails {
   public static final String JSON_PROPERTY_EMAILS = "emails";
-  private List<String> emails;
+  private List<String> emails = new ArrayList<>();
 
   public RemoveContactFromListByEmails() {
   }

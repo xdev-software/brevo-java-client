@@ -44,7 +44,7 @@ public class GetChildInfoAllOfApiKeys {
   private List<GetChildInfoAllOfApiKeysV2> v2 = new ArrayList<>();
 
   public static final String JSON_PROPERTY_V3 = "v3";
-  private List<GetChildInfoAllOfApiKeysV3> v3;
+  private List<GetChildInfoAllOfApiKeysV3> v3 = new ArrayList<>();
 
   public GetChildInfoAllOfApiKeys() {
   }

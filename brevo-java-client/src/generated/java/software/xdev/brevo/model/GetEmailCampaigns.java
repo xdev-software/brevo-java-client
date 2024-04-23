@@ -40,7 +40,7 @@ import java.util.StringJoiner;
 @JsonTypeName("getEmailCampaigns")
 public class GetEmailCampaigns {
   public static final String JSON_PROPERTY_CAMPAIGNS = "campaigns";
-  private List<GetEmailCampaignsCampaignsInner> campaigns;
+  private List<GetEmailCampaignsCampaignsInner> campaigns = new ArrayList<>();
 
   public static final String JSON_PROPERTY_COUNT = "count";
   private Long count;

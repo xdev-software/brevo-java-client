@@ -46,7 +46,7 @@ public class Pipeline {
   private String pipeline;
 
   public static final String JSON_PROPERTY_STAGES = "stages";
-  private List<PipelineStage> stages;
+  private List<PipelineStage> stages = new ArrayList<>();
 
   public Pipeline() {
   }

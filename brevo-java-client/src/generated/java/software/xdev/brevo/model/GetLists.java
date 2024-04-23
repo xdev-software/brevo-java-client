@@ -40,7 +40,7 @@ import java.util.StringJoiner;
 @JsonTypeName("getLists")
 public class GetLists {
   public static final String JSON_PROPERTY_LISTS = "lists";
-  private List<GetListsListsInner> lists;
+  private List<GetListsListsInner> lists = new ArrayList<>();
 
   public static final String JSON_PROPERTY_COUNT = "count";
   private Long count;

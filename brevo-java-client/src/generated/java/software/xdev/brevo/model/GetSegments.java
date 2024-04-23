@@ -39,7 +39,7 @@ import java.util.StringJoiner;
 @JsonTypeName("getSegments")
 public class GetSegments {
   public static final String JSON_PROPERTY_SEGMENTS = "segments";
-  private List<Object> segments;
+  private List<Object> segments = new ArrayList<>();
 
   public static final String JSON_PROPERTY_COUNT = "count";
   private Long count;

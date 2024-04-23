@@ -134,7 +134,7 @@ public class GetAttributesAttributesInner {
   private TypeEnum type;
 
   public static final String JSON_PROPERTY_ENUMERATION = "enumeration";
-  private List<GetAttributesAttributesInnerEnumerationInner> enumeration;
+  private List<GetAttributesAttributesInnerEnumerationInner> enumeration = new ArrayList<>();
 
   public static final String JSON_PROPERTY_CALCULATED_VALUE = "calculatedValue";
   private String calculatedValue;

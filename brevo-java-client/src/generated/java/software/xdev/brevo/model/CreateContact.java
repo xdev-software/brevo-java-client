@@ -62,13 +62,13 @@ public class CreateContact {
   private Boolean smsBlacklisted;
 
   public static final String JSON_PROPERTY_LIST_IDS = "listIds";
-  private List<Long> listIds;
+  private List<Long> listIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_UPDATE_ENABLED = "updateEnabled";
   private Boolean updateEnabled = false;
 
   public static final String JSON_PROPERTY_SMTP_BLACKLIST_SENDER = "smtpBlacklistSender";
-  private List<String> smtpBlacklistSender;
+  private List<String> smtpBlacklistSender = new ArrayList<>();
 
   public CreateContact() {
   }

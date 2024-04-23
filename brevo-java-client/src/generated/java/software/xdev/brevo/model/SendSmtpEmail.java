@@ -66,13 +66,13 @@ public class SendSmtpEmail {
   private SendSmtpEmailSender sender;
 
   public static final String JSON_PROPERTY_TO = "to";
-  private List<SendSmtpEmailToInner> to;
+  private List<SendSmtpEmailToInner> to = new ArrayList<>();
 
   public static final String JSON_PROPERTY_BCC = "bcc";
-  private List<SendSmtpEmailBccInner> bcc;
+  private List<SendSmtpEmailBccInner> bcc = new ArrayList<>();
 
   public static final String JSON_PROPERTY_CC = "cc";
-  private List<SendSmtpEmailCcInner> cc;
+  private List<SendSmtpEmailCcInner> cc = new ArrayList<>();
 
   public static final String JSON_PROPERTY_HTML_CONTENT = "htmlContent";
   private String htmlContent;
@@ -87,7 +87,7 @@ public class SendSmtpEmail {
   private SendSmtpEmailReplyTo replyTo;
 
   public static final String JSON_PROPERTY_ATTACHMENT = "attachment";
-  private List<SendSmtpEmailAttachmentInner> attachment;
+  private List<SendSmtpEmailAttachmentInner> attachment = new ArrayList<>();
 
   public static final String JSON_PROPERTY_HEADERS = "headers";
   private Map<String, Object> headers = new HashMap<>();
@@ -99,10 +99,10 @@ public class SendSmtpEmail {
   private Map<String, Object> params = new HashMap<>();
 
   public static final String JSON_PROPERTY_MESSAGE_VERSIONS = "messageVersions";
-  private List<SendSmtpEmailMessageVersionsInner> messageVersions;
+  private List<SendSmtpEmailMessageVersionsInner> messageVersions = new ArrayList<>();
 
   public static final String JSON_PROPERTY_TAGS = "tags";
-  private List<String> tags;
+  private List<String> tags = new ArrayList<>();
 
   public static final String JSON_PROPERTY_SCHEDULED_AT = "scheduledAt";
   private OffsetDateTime scheduledAt;

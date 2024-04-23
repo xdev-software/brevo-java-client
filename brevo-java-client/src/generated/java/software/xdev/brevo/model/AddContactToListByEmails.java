@@ -38,7 +38,7 @@ import java.util.StringJoiner;
 @JsonTypeName("addContactToListByEmails")
 public class AddContactToListByEmails {
   public static final String JSON_PROPERTY_EMAILS = "emails";
-  private List<String> emails;
+  private List<String> emails = new ArrayList<>();
 
   public AddContactToListByEmails() {
   }

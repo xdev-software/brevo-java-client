@@ -76,7 +76,7 @@ public class GetProductDetails {
   private Float price;
 
   public static final String JSON_PROPERTY_CATEGORIES = "categories";
-  private List<String> categories;
+  private List<String> categories = new ArrayList<>();
 
   public static final String JSON_PROPERTY_PARENT_ID = "parentId";
   private String parentId;

@@ -48,7 +48,7 @@ public class InviteAdminUser {
   private Boolean allFeaturesAccess;
 
   public static final String JSON_PROPERTY_GROUP_IDS = "groupIds";
-  private List<String> groupIds;
+  private List<String> groupIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_PRIVILEGES = "privileges";
   private List<InviteAdminUserPrivilegesInner> privileges = new ArrayList<>();

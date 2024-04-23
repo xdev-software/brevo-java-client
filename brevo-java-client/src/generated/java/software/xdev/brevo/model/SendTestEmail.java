@@ -38,7 +38,7 @@ import java.util.StringJoiner;
 @JsonTypeName("sendTestEmail")
 public class SendTestEmail {
   public static final String JSON_PROPERTY_EMAIL_TO = "emailTo";
-  private List<String> emailTo;
+  private List<String> emailTo = new ArrayList<>();
 
   public SendTestEmail() {
   }

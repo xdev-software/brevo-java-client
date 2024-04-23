@@ -43,7 +43,7 @@ public class GetTransacBlockedContacts {
   private Long count;
 
   public static final String JSON_PROPERTY_CONTACTS = "contacts";
-  private List<GetTransacBlockedContactsContactsInner> contacts;
+  private List<GetTransacBlockedContactsContactsInner> contacts = new ArrayList<>();
 
   public GetTransacBlockedContacts() {
   }

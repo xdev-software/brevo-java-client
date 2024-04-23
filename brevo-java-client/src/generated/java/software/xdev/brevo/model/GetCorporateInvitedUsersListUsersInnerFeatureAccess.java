@@ -41,16 +41,16 @@ import java.util.StringJoiner;
 @JsonTypeName("getCorporateInvitedUsersList_users_inner_feature_access")
 public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
   public static final String JSON_PROPERTY_USER_MANAGEMENT = "user_management";
-  private List<String> userManagement;
+  private List<String> userManagement = new ArrayList<>();
 
   public static final String JSON_PROPERTY_API_KEYS = "api_keys";
-  private List<String> apiKeys;
+  private List<String> apiKeys = new ArrayList<>();
 
   public static final String JSON_PROPERTY_MY_PLAN = "my_plan";
-  private List<String> myPlan;
+  private List<String> myPlan = new ArrayList<>();
 
   public static final String JSON_PROPERTY_APPS_MANAGEMENT = "apps_management";
-  private List<String> appsManagement;
+  private List<String> appsManagement = new ArrayList<>();
 
   public GetCorporateInvitedUsersListUsersInnerFeatureAccess() {
   }

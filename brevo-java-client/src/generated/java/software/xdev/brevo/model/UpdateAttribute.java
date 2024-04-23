@@ -43,7 +43,7 @@ public class UpdateAttribute {
   private String value;
 
   public static final String JSON_PROPERTY_ENUMERATION = "enumeration";
-  private List<UpdateAttributeEnumerationInner> enumeration;
+  private List<UpdateAttributeEnumerationInner> enumeration = new ArrayList<>();
 
   public UpdateAttribute() {
   }

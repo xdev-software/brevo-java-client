@@ -43,7 +43,7 @@ public class GetSmtpTemplates {
   private Long count;
 
   public static final String JSON_PROPERTY_TEMPLATES = "templates";
-  private List<GetSmtpTemplateOverview> templates;
+  private List<GetSmtpTemplateOverview> templates = new ArrayList<>();
 
   public GetSmtpTemplates() {
   }

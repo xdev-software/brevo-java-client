@@ -48,7 +48,7 @@ public class CreateAttribute {
   private Boolean isRecurring;
 
   public static final String JSON_PROPERTY_ENUMERATION = "enumeration";
-  private List<CreateAttributeEnumerationInner> enumeration;
+  private List<CreateAttributeEnumerationInner> enumeration = new ArrayList<>();
 
   /**
    * Type of the attribute. **Use only if the attribute&#39;s category is &#39;normal&#39;, &#39;category&#39; or &#39;transactional&#39;** Type **boolean** is only available if the category is **normal** attribute Type **id** is only available if the category is **transactional** attribute Type **category** is only available if the category is **category** attribute 

@@ -39,7 +39,7 @@ import java.util.StringJoiner;
 @JsonTypeName("getDomainsList")
 public class GetDomainsList {
   public static final String JSON_PROPERTY_DOMAINS = "domains";
-  private List<GetDomainsListDomainsInner> domains;
+  private List<GetDomainsListDomainsInner> domains = new ArrayList<>();
 
   public GetDomainsList() {
   }

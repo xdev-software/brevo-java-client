@@ -46,10 +46,10 @@ public class Deal {
   private Object attributes;
 
   public static final String JSON_PROPERTY_LINKED_CONTACTS_IDS = "linkedContactsIds";
-  private List<Integer> linkedContactsIds;
+  private List<Integer> linkedContactsIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_LINKED_COMPANIES_IDS = "linkedCompaniesIds";
-  private List<String> linkedCompaniesIds;
+  private List<String> linkedCompaniesIds = new ArrayList<>();
 
   public Deal() {
   }

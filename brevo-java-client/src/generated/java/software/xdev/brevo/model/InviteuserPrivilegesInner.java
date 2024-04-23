@@ -188,7 +188,7 @@ public class InviteuserPrivilegesInner {
   }
 
   public static final String JSON_PROPERTY_PERMISSIONS = "permissions";
-  private List<PermissionsEnum> permissions;
+  private List<PermissionsEnum> permissions = new ArrayList<>();
 
   public InviteuserPrivilegesInner() {
   }

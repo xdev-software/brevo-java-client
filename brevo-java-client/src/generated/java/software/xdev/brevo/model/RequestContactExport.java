@@ -41,7 +41,7 @@ import java.util.StringJoiner;
 @JsonTypeName("requestContactExport")
 public class RequestContactExport {
   public static final String JSON_PROPERTY_EXPORT_ATTRIBUTES = "exportAttributes";
-  private List<String> exportAttributes;
+  private List<String> exportAttributes = new ArrayList<>();
 
   public static final String JSON_PROPERTY_CUSTOM_CONTACT_FILTER = "customContactFilter";
   private RequestContactExportCustomContactFilter customContactFilter;

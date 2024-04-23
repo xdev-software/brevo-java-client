@@ -43,7 +43,7 @@ public class GetTransacEmailsList {
   private Long count;
 
   public static final String JSON_PROPERTY_TRANSACTIONAL_EMAILS = "transactionalEmails";
-  private List<GetTransacEmailsListTransactionalEmailsInner> transactionalEmails;
+  private List<GetTransacEmailsListTransactionalEmailsInner> transactionalEmails = new ArrayList<>();
 
   public GetTransacEmailsList() {
   }

@@ -115,7 +115,7 @@ public class UpdateWebhook {
   }
 
   public static final String JSON_PROPERTY_EVENTS = "events";
-  private List<EventsEnum> events;
+  private List<EventsEnum> events = new ArrayList<>();
 
   public static final String JSON_PROPERTY_DOMAIN = "domain";
   private String domain;
@@ -127,7 +127,7 @@ public class UpdateWebhook {
   private Object auth;
 
   public static final String JSON_PROPERTY_HEADERS = "headers";
-  private List<Object> headers;
+  private List<Object> headers = new ArrayList<>();
 
   public UpdateWebhook() {
   }

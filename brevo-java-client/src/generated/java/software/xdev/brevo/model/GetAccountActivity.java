@@ -39,7 +39,7 @@ import java.util.StringJoiner;
 @JsonTypeName("getAccountActivity")
 public class GetAccountActivity {
   public static final String JSON_PROPERTY_LOGS = "logs";
-  private List<GetAccountActivityLogsInner> logs;
+  private List<GetAccountActivityLogsInner> logs = new ArrayList<>();
 
   public GetAccountActivity() {
   }

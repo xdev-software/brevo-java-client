@@ -71,7 +71,7 @@ public class GetChildrenListChildrenInner {
   private String password;
 
   public static final String JSON_PROPERTY_IPS = "ips";
-  private List<String> ips;
+  private List<String> ips = new ArrayList<>();
 
   public static final String JSON_PROPERTY_API_KEYS = "apiKeys";
   private GetChildInfoAllOfApiKeys apiKeys;

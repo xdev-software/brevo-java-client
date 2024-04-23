@@ -109,7 +109,7 @@ public class GetWebhook {
   private Object auth;
 
   public static final String JSON_PROPERTY_HEADERS = "headers";
-  private List<Object> headers;
+  private List<Object> headers = new ArrayList<>();
 
   public GetWebhook() {
   }

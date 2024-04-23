@@ -102,7 +102,7 @@ public class CreateExternalFeed {
   private String token;
 
   public static final String JSON_PROPERTY_HEADERS = "headers";
-  private List<GetExternalFeedByUUIDHeadersInner> headers;
+  private List<GetExternalFeedByUUIDHeadersInner> headers = new ArrayList<>();
 
   public static final String JSON_PROPERTY_MAX_RETRIES = "maxRetries";
   private Integer maxRetries = 5;

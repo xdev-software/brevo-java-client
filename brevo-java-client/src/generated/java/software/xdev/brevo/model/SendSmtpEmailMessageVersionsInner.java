@@ -55,10 +55,10 @@ public class SendSmtpEmailMessageVersionsInner {
   private Map<String, Object> params = new HashMap<>();
 
   public static final String JSON_PROPERTY_BCC = "bcc";
-  private List<SendSmtpEmailBccInner> bcc;
+  private List<SendSmtpEmailBccInner> bcc = new ArrayList<>();
 
   public static final String JSON_PROPERTY_CC = "cc";
-  private List<SendSmtpEmailCcInner> cc;
+  private List<SendSmtpEmailCcInner> cc = new ArrayList<>();
 
   public static final String JSON_PROPERTY_REPLY_TO = "replyTo";
   private SendSmtpEmailReplyTo replyTo;

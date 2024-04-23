@@ -41,16 +41,16 @@ import java.util.StringJoiner;
 @JsonTypeName("_companies_link_unlink__id__patch_request")
 public class CompaniesLinkUnlinkIdPatchRequest {
   public static final String JSON_PROPERTY_LINK_CONTACT_IDS = "linkContactIds";
-  private List<Long> linkContactIds;
+  private List<Long> linkContactIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_UNLINK_CONTACT_IDS = "unlinkContactIds";
-  private List<Long> unlinkContactIds;
+  private List<Long> unlinkContactIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_LINK_DEALS_IDS = "linkDealsIds";
-  private List<String> linkDealsIds;
+  private List<String> linkDealsIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_UNLINK_DEALS_IDS = "unlinkDealsIds";
-  private List<String> unlinkDealsIds;
+  private List<String> unlinkDealsIds = new ArrayList<>();
 
   public CompaniesLinkUnlinkIdPatchRequest() {
   }

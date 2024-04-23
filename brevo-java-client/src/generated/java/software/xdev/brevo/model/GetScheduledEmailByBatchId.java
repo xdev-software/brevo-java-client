@@ -43,7 +43,7 @@ public class GetScheduledEmailByBatchId {
   private Integer count;
 
   public static final String JSON_PROPERTY_BATCHES = "batches";
-  private List<GetScheduledEmailByBatchIdBatchesInner> batches;
+  private List<GetScheduledEmailByBatchIdBatchesInner> batches = new ArrayList<>();
 
   public GetScheduledEmailByBatchId() {
   }

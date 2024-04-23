@@ -69,7 +69,7 @@ public class GetExtendedContactDetails {
   private List<Long> listIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_LIST_UNSUBSCRIBED = "listUnsubscribed";
-  private List<Long> listUnsubscribed;
+  private List<Long> listUnsubscribed = new ArrayList<>();
 
   public static final String JSON_PROPERTY_ATTRIBUTES = "attributes";
   private Object attributes;

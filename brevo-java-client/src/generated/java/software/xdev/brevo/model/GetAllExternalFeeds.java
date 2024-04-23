@@ -43,7 +43,7 @@ public class GetAllExternalFeeds {
   private Integer count;
 
   public static final String JSON_PROPERTY_FEEDS = "feeds";
-  private List<GetAllExternalFeedsFeedsInner> feeds;
+  private List<GetAllExternalFeedsFeedsInner> feeds = new ArrayList<>();
 
   public GetAllExternalFeeds() {
   }

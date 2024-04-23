@@ -42,7 +42,7 @@ public class CreateSmtpEmail {
   private String messageId;
 
   public static final String JSON_PROPERTY_MESSAGE_IDS = "messageIds";
-  private List<String> messageIds;
+  private List<String> messageIds = new ArrayList<>();
 
   public CreateSmtpEmail() {
   }

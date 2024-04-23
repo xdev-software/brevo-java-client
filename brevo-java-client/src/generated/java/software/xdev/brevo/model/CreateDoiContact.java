@@ -54,7 +54,7 @@ public class CreateDoiContact {
   private List<Long> includeListIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_EXCLUDE_LIST_IDS = "excludeListIds";
-  private List<Long> excludeListIds;
+  private List<Long> excludeListIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_TEMPLATE_ID = "templateId";
   private Long templateId;

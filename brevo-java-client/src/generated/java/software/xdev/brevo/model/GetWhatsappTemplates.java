@@ -40,7 +40,7 @@ import java.util.StringJoiner;
 @JsonTypeName("getWhatsappTemplates")
 public class GetWhatsappTemplates {
   public static final String JSON_PROPERTY_TEMPLATES = "templates";
-  private List<GetWhatsappTemplatesTemplatesInner> templates;
+  private List<GetWhatsappTemplatesTemplatesInner> templates = new ArrayList<>();
 
   public static final String JSON_PROPERTY_COUNT = "count";
   private Long count;

@@ -46,10 +46,10 @@ public class CorporateGroupDetailsResponse {
   private CorporateGroupDetailsResponseGroup group;
 
   public static final String JSON_PROPERTY_SUB_ACCOUNTS = "sub-accounts";
-  private List<CorporateGroupDetailsResponseSubAccountsInner> subAccounts;
+  private List<CorporateGroupDetailsResponseSubAccountsInner> subAccounts = new ArrayList<>();
 
   public static final String JSON_PROPERTY_USERS = "users";
-  private List<CorporateGroupDetailsResponseUsersInner> users;
+  private List<CorporateGroupDetailsResponseUsersInner> users = new ArrayList<>();
 
   public CorporateGroupDetailsResponse() {
   }

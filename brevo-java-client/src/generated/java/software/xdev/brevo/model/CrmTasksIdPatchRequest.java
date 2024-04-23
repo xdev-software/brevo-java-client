@@ -71,13 +71,13 @@ public class CrmTasksIdPatchRequest {
   private String assignToId;
 
   public static final String JSON_PROPERTY_CONTACTS_IDS = "contactsIds";
-  private List<Integer> contactsIds;
+  private List<Integer> contactsIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_DEALS_IDS = "dealsIds";
-  private List<String> dealsIds;
+  private List<String> dealsIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_COMPANIES_IDS = "companiesIds";
-  private List<String> companiesIds;
+  private List<String> companiesIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_REMINDER = "reminder";
   private TaskReminder reminder;

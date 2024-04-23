@@ -42,7 +42,7 @@ public class InviteuserResponse {
   private String status;
 
   public static final String JSON_PROPERTY_INVOICE_ID = "invoice_id";
-  private List<String> invoiceId;
+  private List<String> invoiceId = new ArrayList<>();
 
   public InviteuserResponse() {
   }

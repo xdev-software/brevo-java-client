@@ -47,7 +47,7 @@ public class CreateSender {
   private String email;
 
   public static final String JSON_PROPERTY_IPS = "ips";
-  private List<CreateSenderIpsInner> ips;
+  private List<CreateSenderIpsInner> ips = new ArrayList<>();
 
   public CreateSender() {
   }

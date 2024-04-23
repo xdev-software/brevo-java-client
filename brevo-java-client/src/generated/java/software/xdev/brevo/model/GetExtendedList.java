@@ -68,7 +68,7 @@ public class GetExtendedList {
   private String createdAt;
 
   public static final String JSON_PROPERTY_CAMPAIGN_STATS = "campaignStats";
-  private List<GetExtendedListAllOfCampaignStats> campaignStats;
+  private List<GetExtendedListAllOfCampaignStats> campaignStats = new ArrayList<>();
 
   public static final String JSON_PROPERTY_DYNAMIC_LIST = "dynamicList";
   private Boolean dynamicList;

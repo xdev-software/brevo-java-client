@@ -50,10 +50,10 @@ public class Note {
   private String text;
 
   public static final String JSON_PROPERTY_CONTACT_IDS = "contactIds";
-  private List<Integer> contactIds;
+  private List<Integer> contactIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_DEAL_IDS = "dealIds";
-  private List<String> dealIds;
+  private List<String> dealIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_AUTHOR_ID = "authorId";
   private Object authorId;

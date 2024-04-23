@@ -67,13 +67,13 @@ public class WhatsappCampTemplate {
   private String headerType;
 
   public static final String JSON_PROPERTY_COMPONENTS = "components";
-  private List<ComponentItems> components;
+  private List<ComponentItems> components = new ArrayList<>();
 
   public static final String JSON_PROPERTY_HEADER_VARIABLES = "header_variables";
-  private List<VariablesItems> headerVariables;
+  private List<VariablesItems> headerVariables = new ArrayList<>();
 
   public static final String JSON_PROPERTY_BODY_VARIABLES = "body_variables";
-  private List<VariablesItems> bodyVariables;
+  private List<VariablesItems> bodyVariables = new ArrayList<>();
 
   public static final String JSON_PROPERTY_BUTTON_TYPE = "button_type";
   private String buttonType;

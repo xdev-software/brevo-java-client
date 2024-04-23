@@ -42,7 +42,7 @@ public class PutresendcancelinvitationResponse {
   private String status;
 
   public static final String JSON_PROPERTY_CREDIT_NOTES = "credit_notes";
-  private List<String> creditNotes;
+  private List<String> creditNotes = new ArrayList<>();
 
   public PutresendcancelinvitationResponse() {
   }

@@ -56,10 +56,10 @@ public class RequestContactImport {
   private String fileBody;
 
   public static final String JSON_PROPERTY_JSON_BODY = "jsonBody";
-  private List<RequestContactImportJsonBodyInner> jsonBody;
+  private List<RequestContactImportJsonBodyInner> jsonBody = new ArrayList<>();
 
   public static final String JSON_PROPERTY_LIST_IDS = "listIds";
-  private List<Long> listIds;
+  private List<Long> listIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_NOTIFY_URL = "notifyUrl";
   private String notifyUrl;

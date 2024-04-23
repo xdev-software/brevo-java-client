@@ -42,7 +42,7 @@ public class CorporateGroupPostRequest {
   private String groupName;
 
   public static final String JSON_PROPERTY_SUB_ACCOUNT_IDS = "subAccountIds";
-  private List<Long> subAccountIds;
+  private List<Long> subAccountIds = new ArrayList<>();
 
   public CorporateGroupPostRequest() {
   }

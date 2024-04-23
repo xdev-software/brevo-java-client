@@ -39,7 +39,7 @@ import java.util.StringJoiner;
 @JsonTypeName("getSmsEventReport")
 public class GetSmsEventReport {
   public static final String JSON_PROPERTY_EVENTS = "events";
-  private List<GetSmsEventReportEventsInner> events;
+  private List<GetSmsEventReportEventsInner> events = new ArrayList<>();
 
   public GetSmsEventReport() {
   }

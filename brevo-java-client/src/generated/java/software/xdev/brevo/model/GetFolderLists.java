@@ -40,7 +40,7 @@ import java.util.StringJoiner;
 @JsonTypeName("getFolderLists")
 public class GetFolderLists {
   public static final String JSON_PROPERTY_LISTS = "lists";
-  private List<GetList> lists;
+  private List<GetList> lists = new ArrayList<>();
 
   public static final String JSON_PROPERTY_COUNT = "count";
   private Long count;

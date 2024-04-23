@@ -43,10 +43,10 @@ import java.util.StringJoiner;
 @JsonTypeName("removeContactFromList_request")
 public class RemoveContactFromListRequest {
   public static final String JSON_PROPERTY_EMAILS = "emails";
-  private List<String> emails;
+  private List<String> emails = new ArrayList<>();
 
   public static final String JSON_PROPERTY_IDS = "ids";
-  private List<Long> ids;
+  private List<Long> ids = new ArrayList<>();
 
   public static final String JSON_PROPERTY_ALL = "all";
   private Boolean all;

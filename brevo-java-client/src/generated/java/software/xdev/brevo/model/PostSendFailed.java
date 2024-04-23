@@ -48,13 +48,13 @@ public class PostSendFailed {
   private String message;
 
   public static final String JSON_PROPERTY_UNEXISTING_EMAILS = "unexistingEmails";
-  private List<String> unexistingEmails;
+  private List<String> unexistingEmails = new ArrayList<>();
 
   public static final String JSON_PROPERTY_WITHOUT_LIST_EMAILS = "withoutListEmails";
-  private List<String> withoutListEmails;
+  private List<String> withoutListEmails = new ArrayList<>();
 
   public static final String JSON_PROPERTY_BLACK_LISTED_EMAILS = "blackListedEmails";
-  private List<String> blackListedEmails;
+  private List<String> blackListedEmails = new ArrayList<>();
 
   public PostSendFailed() {
   }

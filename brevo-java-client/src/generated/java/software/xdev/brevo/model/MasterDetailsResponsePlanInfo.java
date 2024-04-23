@@ -95,7 +95,7 @@ public class MasterDetailsResponsePlanInfo {
   private Integer subAccounts;
 
   public static final String JSON_PROPERTY_FEATURES = "features";
-  private List<MasterDetailsResponsePlanInfoFeaturesInner> features;
+  private List<MasterDetailsResponsePlanInfoFeaturesInner> features = new ArrayList<>();
 
   public MasterDetailsResponsePlanInfo() {
   }

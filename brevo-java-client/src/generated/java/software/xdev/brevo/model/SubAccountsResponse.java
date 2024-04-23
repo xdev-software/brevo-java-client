@@ -43,7 +43,7 @@ public class SubAccountsResponse {
   private Integer count;
 
   public static final String JSON_PROPERTY_SUB_ACCOUNTS = "subAccounts";
-  private List<SubAccountsResponseSubAccountsInner> subAccounts;
+  private List<SubAccountsResponseSubAccountsInner> subAccounts = new ArrayList<>();
 
   public SubAccountsResponse() {
   }

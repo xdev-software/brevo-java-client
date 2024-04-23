@@ -42,7 +42,7 @@ public class CreateSmsCampaignRecipients {
   private List<Long> listIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_EXCLUSION_LIST_IDS = "exclusionListIds";
-  private List<Long> exclusionListIds;
+  private List<Long> exclusionListIds = new ArrayList<>();
 
   public CreateSmsCampaignRecipients() {
   }

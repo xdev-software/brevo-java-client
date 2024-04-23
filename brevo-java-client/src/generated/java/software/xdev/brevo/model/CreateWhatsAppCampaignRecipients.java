@@ -40,13 +40,13 @@ import java.util.StringJoiner;
 @JsonTypeName("createWhatsAppCampaign_recipients")
 public class CreateWhatsAppCampaignRecipients {
   public static final String JSON_PROPERTY_EXCLUDED_LIST_IDS = "excludedListIds";
-  private List<Long> excludedListIds;
+  private List<Long> excludedListIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_LIST_IDS = "listIds";
-  private List<Long> listIds;
+  private List<Long> listIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_SEGMENTS = "segments";
-  private List<Long> segments;
+  private List<Long> segments = new ArrayList<>();
 
   public CreateWhatsAppCampaignRecipients() {
   }

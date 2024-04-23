@@ -73,7 +73,7 @@ public class Order {
   private OrderBilling billing;
 
   public static final String JSON_PROPERTY_COUPONS = "coupons";
-  private List<String> coupons;
+  private List<String> coupons = new ArrayList<>();
 
   public Order() {
   }

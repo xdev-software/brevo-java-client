@@ -40,13 +40,13 @@ import java.util.StringJoiner;
 @JsonTypeName("updateEmailCampaign_recipients")
 public class UpdateEmailCampaignRecipients {
   public static final String JSON_PROPERTY_EXCLUSION_LIST_IDS = "exclusionListIds";
-  private List<Long> exclusionListIds;
+  private List<Long> exclusionListIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_LIST_IDS = "listIds";
-  private List<Long> listIds;
+  private List<Long> listIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_SEGMENT_IDS = "segmentIds";
-  private List<Long> segmentIds;
+  private List<Long> segmentIds = new ArrayList<>();
 
   public UpdateEmailCampaignRecipients() {
   }

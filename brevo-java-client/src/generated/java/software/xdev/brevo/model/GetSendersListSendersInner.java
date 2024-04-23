@@ -55,7 +55,7 @@ public class GetSendersListSendersInner {
   private Boolean active;
 
   public static final String JSON_PROPERTY_IPS = "ips";
-  private List<GetSendersListSendersInnerIpsInner> ips;
+  private List<GetSendersListSendersInnerIpsInner> ips = new ArrayList<>();
 
   public GetSendersListSendersInner() {
   }

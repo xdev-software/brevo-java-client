@@ -47,10 +47,10 @@ public class PostSendSmsTestFailed {
   private String message;
 
   public static final String JSON_PROPERTY_UNEXISTING_SMS = "unexistingSms";
-  private List<String> unexistingSms;
+  private List<String> unexistingSms = new ArrayList<>();
 
   public static final String JSON_PROPERTY_WITHOUT_LIST_SMS = "withoutListSms";
-  private List<String> withoutListSms;
+  private List<String> withoutListSms = new ArrayList<>();
 
   public PostSendSmsTestFailed() {
   }

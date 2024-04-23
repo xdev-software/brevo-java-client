@@ -51,31 +51,31 @@ import java.util.StringJoiner;
 @JsonTypeName("getContactCampaignStats")
 public class GetContactCampaignStats {
   public static final String JSON_PROPERTY_MESSAGES_SENT = "messagesSent";
-  private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> messagesSent;
+  private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> messagesSent = new ArrayList<>();
 
   public static final String JSON_PROPERTY_HARD_BOUNCES = "hardBounces";
-  private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> hardBounces;
+  private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> hardBounces = new ArrayList<>();
 
   public static final String JSON_PROPERTY_SOFT_BOUNCES = "softBounces";
-  private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> softBounces;
+  private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> softBounces = new ArrayList<>();
 
   public static final String JSON_PROPERTY_COMPLAINTS = "complaints";
-  private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> complaints;
+  private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> complaints = new ArrayList<>();
 
   public static final String JSON_PROPERTY_UNSUBSCRIPTIONS = "unsubscriptions";
   private GetContactCampaignStatsUnsubscriptions unsubscriptions;
 
   public static final String JSON_PROPERTY_OPENED = "opened";
-  private List<GetContactCampaignStatsOpenedInner> opened;
+  private List<GetContactCampaignStatsOpenedInner> opened = new ArrayList<>();
 
   public static final String JSON_PROPERTY_CLICKED = "clicked";
-  private List<GetContactCampaignStatsClickedInner> clicked;
+  private List<GetContactCampaignStatsClickedInner> clicked = new ArrayList<>();
 
   public static final String JSON_PROPERTY_TRANSAC_ATTRIBUTES = "transacAttributes";
-  private List<GetContactCampaignStatsTransacAttributesInner> transacAttributes;
+  private List<GetContactCampaignStatsTransacAttributesInner> transacAttributes = new ArrayList<>();
 
   public static final String JSON_PROPERTY_DELIVERED = "delivered";
-  private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> delivered;
+  private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> delivered = new ArrayList<>();
 
   public GetContactCampaignStats() {
   }

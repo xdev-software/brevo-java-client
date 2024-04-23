@@ -70,10 +70,10 @@ public class GetInboundEmailEventsByUuid {
   private String subject;
 
   public static final String JSON_PROPERTY_ATTACHMENTS = "attachments";
-  private List<GetInboundEmailEventsByUuidAttachmentsInner> attachments;
+  private List<GetInboundEmailEventsByUuidAttachmentsInner> attachments = new ArrayList<>();
 
   public static final String JSON_PROPERTY_LOGS = "logs";
-  private List<GetInboundEmailEventsByUuidLogsInner> logs;
+  private List<GetInboundEmailEventsByUuidLogsInner> logs = new ArrayList<>();
 
   public GetInboundEmailEventsByUuid() {
   }

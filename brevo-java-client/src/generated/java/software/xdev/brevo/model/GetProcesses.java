@@ -40,7 +40,7 @@ import java.util.StringJoiner;
 @JsonTypeName("getProcesses")
 public class GetProcesses {
   public static final String JSON_PROPERTY_PROCESSES = "processes";
-  private List<GetProcess> processes;
+  private List<GetProcess> processes = new ArrayList<>();
 
   public static final String JSON_PROPERTY_COUNT = "count";
   private Long count;

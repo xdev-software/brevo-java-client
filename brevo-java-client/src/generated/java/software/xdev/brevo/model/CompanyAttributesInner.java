@@ -51,7 +51,7 @@ public class CompanyAttributesInner {
   private String attributeTypeName;
 
   public static final String JSON_PROPERTY_ATTRIBUTE_OPTIONS = "attributeOptions";
-  private List<Object> attributeOptions;
+  private List<Object> attributeOptions = new ArrayList<>();
 
   public static final String JSON_PROPERTY_IS_REQUIRED = "isRequired";
   private Boolean isRequired;

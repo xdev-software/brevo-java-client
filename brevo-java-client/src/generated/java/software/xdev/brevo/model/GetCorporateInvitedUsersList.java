@@ -39,7 +39,7 @@ import java.util.StringJoiner;
 @JsonTypeName("getCorporateInvitedUsersList")
 public class GetCorporateInvitedUsersList {
   public static final String JSON_PROPERTY_USERS = "users";
-  private List<GetCorporateInvitedUsersListUsersInner> users;
+  private List<GetCorporateInvitedUsersListUsersInner> users = new ArrayList<>();
 
   public GetCorporateInvitedUsersList() {
   }

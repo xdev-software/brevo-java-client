@@ -39,10 +39,10 @@ import java.util.StringJoiner;
 @JsonTypeName("updateBatchContactsModel")
 public class UpdateBatchContactsModel {
   public static final String JSON_PROPERTY_SUCCESS_IDS = "successIds";
-  private List<Long> successIds;
+  private List<Long> successIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_FAILURE_IDS = "failureIds";
-  private List<Long> failureIds;
+  private List<Long> failureIds = new ArrayList<>();
 
   public UpdateBatchContactsModel() {
   }
