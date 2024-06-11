@@ -1,5 +1,5 @@
 [![Latest version](https://img.shields.io/maven-central/v/software.xdev/brevo-java-client?logo=apache%20maven)](https://mvnrepository.com/artifact/software.xdev/brevo-java-client)
-[![Build](https://img.shields.io/github/actions/workflow/status/xdev-software/brevo-java-client/checkBuild.yml?branch=develop)](https://github.com/xdev-software/brevo-java-client/actions/workflows/checkBuild.yml?query=branch%3Adevelop)
+[![Build](https://img.shields.io/github/actions/workflow/status/xdev-software/brevo-java-client/check-build.yml?branch=develop)](https://github.com/xdev-software/brevo-java-client/actions/workflows/check-build.yml?query=branch%3Adevelop)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=xdev-software_brevo-java-client&metric=alert_status)](https://sonarcloud.io/dashboard?id=xdev-software_brevo-java-client)
 [![API Specification Editor](https://img.shields.io/badge/API--Spec-Editor-85ea2d?logo=swagger)](https://editor.swagger.io/?url=https://raw.githubusercontent.com/xdev-software/brevo-java-client/develop/openapi/openapi.yml)
 
