@@ -69,7 +69,6 @@ public class GetChildDomain {
     this.domain = domain;
   }
 
-
   public GetChildDomain active(Boolean active) {
     
     this.active = active;

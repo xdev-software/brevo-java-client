@@ -113,7 +113,6 @@ public class GetScheduledEmailByBatchIdBatchesInner {
     this.scheduledAt = scheduledAt;
   }
 
-
   public GetScheduledEmailByBatchIdBatchesInner createdAt(OffsetDateTime createdAt) {
     
     this.createdAt = createdAt;
@@ -138,7 +137,6 @@ public class GetScheduledEmailByBatchIdBatchesInner {
   public void setCreatedAt(OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
-
 
   public GetScheduledEmailByBatchIdBatchesInner status(StatusEnum status) {
     

@@ -89,7 +89,6 @@ public class FileData {
     this.name = name;
   }
 
-
   public FileData authorId(String authorId) {
     
     this.authorId = authorId;
@@ -114,7 +113,6 @@ public class FileData {
   public void setAuthorId(String authorId) {
     this.authorId = authorId;
   }
-
 
   public FileData contactId(Long contactId) {
     
@@ -141,7 +139,6 @@ public class FileData {
     this.contactId = contactId;
   }
 
-
   public FileData dealId(String dealId) {
     
     this.dealId = dealId;
@@ -166,7 +163,6 @@ public class FileData {
   public void setDealId(String dealId) {
     this.dealId = dealId;
   }
-
 
   public FileData companyId(String companyId) {
     
@@ -193,7 +189,6 @@ public class FileData {
     this.companyId = companyId;
   }
 
-
   public FileData size(Long size) {
     
     this.size = size;
@@ -218,7 +213,6 @@ public class FileData {
   public void setSize(Long size) {
     this.size = size;
   }
-
 
   public FileData createdAt(OffsetDateTime createdAt) {
     

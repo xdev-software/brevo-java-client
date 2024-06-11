@@ -81,7 +81,6 @@ public class GetFolderLists {
     this.lists = lists;
   }
 
-
   public GetFolderLists count(Long count) {
     
     this.count = count;

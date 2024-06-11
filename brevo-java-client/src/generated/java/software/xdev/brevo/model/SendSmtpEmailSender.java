@@ -73,7 +73,6 @@ public class SendSmtpEmailSender {
     this.name = name;
   }
 
-
   public SendSmtpEmailSender email(String email) {
     
     this.email = email;
@@ -98,7 +97,6 @@ public class SendSmtpEmailSender {
   public void setEmail(String email) {
     this.email = email;
   }
-
 
   public SendSmtpEmailSender id(Long id) {
     

@@ -84,7 +84,6 @@ public class PostSendFailed {
     this.code = code;
   }
 
-
   public PostSendFailed message(String message) {
     
     this.message = message;
@@ -109,7 +108,6 @@ public class PostSendFailed {
   public void setMessage(String message) {
     this.message = message;
   }
-
 
   public PostSendFailed unexistingEmails(List<String> unexistingEmails) {
     
@@ -144,7 +142,6 @@ public class PostSendFailed {
     this.unexistingEmails = unexistingEmails;
   }
 
-
   public PostSendFailed withoutListEmails(List<String> withoutListEmails) {
     
     this.withoutListEmails = withoutListEmails;
@@ -177,7 +174,6 @@ public class PostSendFailed {
   public void setWithoutListEmails(List<String> withoutListEmails) {
     this.withoutListEmails = withoutListEmails;
   }
-
 
   public PostSendFailed blackListedEmails(List<String> blackListedEmails) {
     

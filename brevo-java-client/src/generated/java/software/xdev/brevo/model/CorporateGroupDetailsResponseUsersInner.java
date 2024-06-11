@@ -73,7 +73,6 @@ public class CorporateGroupDetailsResponseUsersInner {
     this.email = email;
   }
 
-
   public CorporateGroupDetailsResponseUsersInner lastName(String lastName) {
     
     this.lastName = lastName;
@@ -98,7 +97,6 @@ public class CorporateGroupDetailsResponseUsersInner {
   public void setLastName(String lastName) {
     this.lastName = lastName;
   }
-
 
   public CorporateGroupDetailsResponseUsersInner firstName(String firstName) {
     

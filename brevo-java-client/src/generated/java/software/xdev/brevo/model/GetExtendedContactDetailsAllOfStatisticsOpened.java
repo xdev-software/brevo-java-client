@@ -77,7 +77,6 @@ public class GetExtendedContactDetailsAllOfStatisticsOpened {
     this.campaignId = campaignId;
   }
 
-
   public GetExtendedContactDetailsAllOfStatisticsOpened count(Long count) {
     
     this.count = count;
@@ -103,7 +102,6 @@ public class GetExtendedContactDetailsAllOfStatisticsOpened {
     this.count = count;
   }
 
-
   public GetExtendedContactDetailsAllOfStatisticsOpened eventTime(String eventTime) {
     
     this.eventTime = eventTime;
@@ -128,7 +126,6 @@ public class GetExtendedContactDetailsAllOfStatisticsOpened {
   public void setEventTime(String eventTime) {
     this.eventTime = eventTime;
   }
-
 
   public GetExtendedContactDetailsAllOfStatisticsOpened ip(String ip) {
     

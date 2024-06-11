@@ -105,7 +105,6 @@ public class GetExtendedContactDetails {
     this.email = email;
   }
 
-
   public GetExtendedContactDetails id(Long id) {
     
     this.id = id;
@@ -130,7 +129,6 @@ public class GetExtendedContactDetails {
   public void setId(Long id) {
     this.id = id;
   }
-
 
   public GetExtendedContactDetails emailBlacklisted(Boolean emailBlacklisted) {
     
@@ -157,7 +155,6 @@ public class GetExtendedContactDetails {
     this.emailBlacklisted = emailBlacklisted;
   }
 
-
   public GetExtendedContactDetails smsBlacklisted(Boolean smsBlacklisted) {
     
     this.smsBlacklisted = smsBlacklisted;
@@ -182,7 +179,6 @@ public class GetExtendedContactDetails {
   public void setSmsBlacklisted(Boolean smsBlacklisted) {
     this.smsBlacklisted = smsBlacklisted;
   }
-
 
   public GetExtendedContactDetails createdAt(String createdAt) {
     
@@ -209,7 +205,6 @@ public class GetExtendedContactDetails {
     this.createdAt = createdAt;
   }
 
-
   public GetExtendedContactDetails modifiedAt(String modifiedAt) {
     
     this.modifiedAt = modifiedAt;
@@ -234,7 +229,6 @@ public class GetExtendedContactDetails {
   public void setModifiedAt(String modifiedAt) {
     this.modifiedAt = modifiedAt;
   }
-
 
   public GetExtendedContactDetails listIds(List<Long> listIds) {
     
@@ -269,7 +263,6 @@ public class GetExtendedContactDetails {
     this.listIds = listIds;
   }
 
-
   public GetExtendedContactDetails listUnsubscribed(List<Long> listUnsubscribed) {
     
     this.listUnsubscribed = listUnsubscribed;
@@ -303,7 +296,6 @@ public class GetExtendedContactDetails {
     this.listUnsubscribed = listUnsubscribed;
   }
 
-
   public GetExtendedContactDetails attributes(Object attributes) {
     
     this.attributes = attributes;
@@ -328,7 +320,6 @@ public class GetExtendedContactDetails {
   public void setAttributes(Object attributes) {
     this.attributes = attributes;
   }
-
 
   public GetExtendedContactDetails statistics(GetExtendedContactDetailsAllOfStatistics statistics) {
     

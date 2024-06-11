@@ -69,7 +69,6 @@ public class AuthenticateDomainModel {
     this.domainName = domainName;
   }
 
-
   public AuthenticateDomainModel message(String message) {
     
     this.message = message;

@@ -113,7 +113,6 @@ public class GetContactCampaignStats {
     this.messagesSent = messagesSent;
   }
 
-
   public GetContactCampaignStats hardBounces(List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> hardBounces) {
     
     this.hardBounces = hardBounces;
@@ -146,7 +145,6 @@ public class GetContactCampaignStats {
   public void setHardBounces(List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> hardBounces) {
     this.hardBounces = hardBounces;
   }
-
 
   public GetContactCampaignStats softBounces(List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> softBounces) {
     
@@ -181,7 +179,6 @@ public class GetContactCampaignStats {
     this.softBounces = softBounces;
   }
 
-
   public GetContactCampaignStats complaints(List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> complaints) {
     
     this.complaints = complaints;
@@ -215,7 +212,6 @@ public class GetContactCampaignStats {
     this.complaints = complaints;
   }
 
-
   public GetContactCampaignStats unsubscriptions(GetContactCampaignStatsUnsubscriptions unsubscriptions) {
     
     this.unsubscriptions = unsubscriptions;
@@ -240,7 +236,6 @@ public class GetContactCampaignStats {
   public void setUnsubscriptions(GetContactCampaignStatsUnsubscriptions unsubscriptions) {
     this.unsubscriptions = unsubscriptions;
   }
-
 
   public GetContactCampaignStats opened(List<GetContactCampaignStatsOpenedInner> opened) {
     
@@ -275,7 +270,6 @@ public class GetContactCampaignStats {
     this.opened = opened;
   }
 
-
   public GetContactCampaignStats clicked(List<GetContactCampaignStatsClickedInner> clicked) {
     
     this.clicked = clicked;
@@ -309,7 +303,6 @@ public class GetContactCampaignStats {
     this.clicked = clicked;
   }
 
-
   public GetContactCampaignStats transacAttributes(List<GetContactCampaignStatsTransacAttributesInner> transacAttributes) {
     
     this.transacAttributes = transacAttributes;
@@ -342,7 +335,6 @@ public class GetContactCampaignStats {
   public void setTransacAttributes(List<GetContactCampaignStatsTransacAttributesInner> transacAttributes) {
     this.transacAttributes = transacAttributes;
   }
-
 
   public GetContactCampaignStats delivered(List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> delivered) {
     

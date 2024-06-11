@@ -73,7 +73,6 @@ public class AbTestVersionClicksInner {
     this.link = link;
   }
 
-
   public AbTestVersionClicksInner clicksCount(Long clicksCount) {
     
     this.clicksCount = clicksCount;
@@ -98,7 +97,6 @@ public class AbTestVersionClicksInner {
   public void setClicksCount(Long clicksCount) {
     this.clicksCount = clicksCount;
   }
-
 
   public AbTestVersionClicksInner clickRate(String clickRate) {
     

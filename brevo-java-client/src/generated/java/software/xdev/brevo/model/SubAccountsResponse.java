@@ -73,7 +73,6 @@ public class SubAccountsResponse {
     this.count = count;
   }
 
-
   public SubAccountsResponse subAccounts(List<SubAccountsResponseSubAccountsInner> subAccounts) {
     
     this.subAccounts = subAccounts;

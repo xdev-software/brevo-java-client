@@ -69,7 +69,6 @@ public class SubAccountDetailsResponsePlanInfoFeaturesLandingPage {
     this.quantity = quantity;
   }
 
-
   public SubAccountDetailsResponsePlanInfoFeaturesLandingPage remaining(Long remaining) {
     
     this.remaining = remaining;

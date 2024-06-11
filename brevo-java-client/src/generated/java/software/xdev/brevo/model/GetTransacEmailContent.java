@@ -93,7 +93,6 @@ public class GetTransacEmailContent {
     this.email = email;
   }
 
-
   public GetTransacEmailContent subject(String subject) {
     
     this.subject = subject;
@@ -118,7 +117,6 @@ public class GetTransacEmailContent {
   public void setSubject(String subject) {
     this.subject = subject;
   }
-
 
   public GetTransacEmailContent templateId(Long templateId) {
     
@@ -145,7 +143,6 @@ public class GetTransacEmailContent {
     this.templateId = templateId;
   }
 
-
   public GetTransacEmailContent date(String date) {
     
     this.date = date;
@@ -170,7 +167,6 @@ public class GetTransacEmailContent {
   public void setDate(String date) {
     this.date = date;
   }
-
 
   public GetTransacEmailContent events(List<GetTransacEmailContentEventsInner> events) {
     
@@ -205,7 +201,6 @@ public class GetTransacEmailContent {
     this.events = events;
   }
 
-
   public GetTransacEmailContent body(String body) {
     
     this.body = body;
@@ -230,7 +225,6 @@ public class GetTransacEmailContent {
   public void setBody(String body) {
     this.body = body;
   }
-
 
   public GetTransacEmailContent attachmentCount(Long attachmentCount) {
     

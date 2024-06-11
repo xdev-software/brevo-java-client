@@ -69,7 +69,6 @@ public class RemainingCreditModelReseller {
     this.sms = sms;
   }
 
-
   public RemainingCreditModelReseller email(Double email) {
     
     this.email = email;

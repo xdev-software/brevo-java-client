@@ -81,7 +81,6 @@ public class GetContacts {
     this.contacts = contacts;
   }
 
-
   public GetContacts count(Long count) {
     
     this.count = count;

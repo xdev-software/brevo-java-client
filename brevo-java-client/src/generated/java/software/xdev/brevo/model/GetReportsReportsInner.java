@@ -114,7 +114,6 @@ public class GetReportsReportsInner {
     this.date = date;
   }
 
-
   public GetReportsReportsInner requests(Long requests) {
     
     this.requests = requests;
@@ -139,7 +138,6 @@ public class GetReportsReportsInner {
   public void setRequests(Long requests) {
     this.requests = requests;
   }
-
 
   public GetReportsReportsInner delivered(Long delivered) {
     
@@ -166,7 +164,6 @@ public class GetReportsReportsInner {
     this.delivered = delivered;
   }
 
-
   public GetReportsReportsInner hardBounces(Long hardBounces) {
     
     this.hardBounces = hardBounces;
@@ -191,7 +188,6 @@ public class GetReportsReportsInner {
   public void setHardBounces(Long hardBounces) {
     this.hardBounces = hardBounces;
   }
-
 
   public GetReportsReportsInner softBounces(Long softBounces) {
     
@@ -218,7 +214,6 @@ public class GetReportsReportsInner {
     this.softBounces = softBounces;
   }
 
-
   public GetReportsReportsInner clicks(Long clicks) {
     
     this.clicks = clicks;
@@ -243,7 +238,6 @@ public class GetReportsReportsInner {
   public void setClicks(Long clicks) {
     this.clicks = clicks;
   }
-
 
   public GetReportsReportsInner uniqueClicks(Long uniqueClicks) {
     
@@ -270,7 +264,6 @@ public class GetReportsReportsInner {
     this.uniqueClicks = uniqueClicks;
   }
 
-
   public GetReportsReportsInner opens(Long opens) {
     
     this.opens = opens;
@@ -295,7 +288,6 @@ public class GetReportsReportsInner {
   public void setOpens(Long opens) {
     this.opens = opens;
   }
-
 
   public GetReportsReportsInner uniqueOpens(Long uniqueOpens) {
     
@@ -322,7 +314,6 @@ public class GetReportsReportsInner {
     this.uniqueOpens = uniqueOpens;
   }
 
-
   public GetReportsReportsInner spamReports(Long spamReports) {
     
     this.spamReports = spamReports;
@@ -347,7 +338,6 @@ public class GetReportsReportsInner {
   public void setSpamReports(Long spamReports) {
     this.spamReports = spamReports;
   }
-
 
   public GetReportsReportsInner blocked(Long blocked) {
     
@@ -374,7 +364,6 @@ public class GetReportsReportsInner {
     this.blocked = blocked;
   }
 
-
   public GetReportsReportsInner invalid(Long invalid) {
     
     this.invalid = invalid;
@@ -399,7 +388,6 @@ public class GetReportsReportsInner {
   public void setInvalid(Long invalid) {
     this.invalid = invalid;
   }
-
 
   public GetReportsReportsInner unsubscribed(Long unsubscribed) {
     

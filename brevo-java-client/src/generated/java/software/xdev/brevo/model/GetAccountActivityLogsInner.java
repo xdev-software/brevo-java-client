@@ -81,7 +81,6 @@ public class GetAccountActivityLogsInner {
     this.action = action;
   }
 
-
   public GetAccountActivityLogsInner date(String date) {
     
     this.date = date;
@@ -106,7 +105,6 @@ public class GetAccountActivityLogsInner {
   public void setDate(String date) {
     this.date = date;
   }
-
 
   public GetAccountActivityLogsInner userEmail(String userEmail) {
     
@@ -133,7 +131,6 @@ public class GetAccountActivityLogsInner {
     this.userEmail = userEmail;
   }
 
-
   public GetAccountActivityLogsInner userIp(String userIp) {
     
     this.userIp = userIp;
@@ -158,7 +155,6 @@ public class GetAccountActivityLogsInner {
   public void setUserIp(String userIp) {
     this.userIp = userIp;
   }
-
 
   public GetAccountActivityLogsInner userAgent(String userAgent) {
     

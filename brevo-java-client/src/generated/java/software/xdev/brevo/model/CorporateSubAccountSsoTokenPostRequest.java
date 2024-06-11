@@ -124,7 +124,6 @@ public class CorporateSubAccountSsoTokenPostRequest {
     this.id = id;
   }
 
-
   public CorporateSubAccountSsoTokenPostRequest email(String email) {
     
     this.email = email;
@@ -150,7 +149,6 @@ public class CorporateSubAccountSsoTokenPostRequest {
     this.email = email;
   }
 
-
   public CorporateSubAccountSsoTokenPostRequest target(TargetEnum target) {
     
     this.target = target;
@@ -175,7 +173,6 @@ public class CorporateSubAccountSsoTokenPostRequest {
   public void setTarget(TargetEnum target) {
     this.target = target;
   }
-
 
   public CorporateSubAccountSsoTokenPostRequest url(String url) {
     

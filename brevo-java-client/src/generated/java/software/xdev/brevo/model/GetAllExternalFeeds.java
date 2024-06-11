@@ -73,7 +73,6 @@ public class GetAllExternalFeeds {
     this.count = count;
   }
 
-
   public GetAllExternalFeeds feeds(List<GetAllExternalFeedsFeedsInner> feeds) {
     
     this.feeds = feeds;

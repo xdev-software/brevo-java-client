@@ -81,7 +81,6 @@ public class InviteAdminUser {
     this.email = email;
   }
 
-
   public InviteAdminUser allFeaturesAccess(Boolean allFeaturesAccess) {
     
     this.allFeaturesAccess = allFeaturesAccess;
@@ -106,7 +105,6 @@ public class InviteAdminUser {
   public void setAllFeaturesAccess(Boolean allFeaturesAccess) {
     this.allFeaturesAccess = allFeaturesAccess;
   }
-
 
   public InviteAdminUser groupIds(List<String> groupIds) {
     
@@ -140,7 +138,6 @@ public class InviteAdminUser {
   public void setGroupIds(List<String> groupIds) {
     this.groupIds = groupIds;
   }
-
 
   public InviteAdminUser privileges(List<InviteAdminUserPrivilegesInner> privileges) {
     

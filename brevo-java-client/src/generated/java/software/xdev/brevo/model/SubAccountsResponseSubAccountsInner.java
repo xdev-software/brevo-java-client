@@ -77,7 +77,6 @@ public class SubAccountsResponseSubAccountsInner {
     this.id = id;
   }
 
-
   public SubAccountsResponseSubAccountsInner companyName(String companyName) {
     
     this.companyName = companyName;
@@ -103,7 +102,6 @@ public class SubAccountsResponseSubAccountsInner {
     this.companyName = companyName;
   }
 
-
   public SubAccountsResponseSubAccountsInner active(Boolean active) {
     
     this.active = active;
@@ -128,7 +126,6 @@ public class SubAccountsResponseSubAccountsInner {
   public void setActive(Boolean active) {
     this.active = active;
   }
-
 
   public SubAccountsResponseSubAccountsInner createdAt(Long createdAt) {
     

@@ -69,7 +69,6 @@ public class CrmDealsIdPatchRequest {
     this.name = name;
   }
 
-
   public CrmDealsIdPatchRequest attributes(Object attributes) {
     
     this.attributes = attributes;

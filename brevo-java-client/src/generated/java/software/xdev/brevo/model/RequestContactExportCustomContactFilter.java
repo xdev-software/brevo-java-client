@@ -206,7 +206,6 @@ public class RequestContactExportCustomContactFilter {
     this.actionForContacts = actionForContacts;
   }
 
-
   public RequestContactExportCustomContactFilter actionForEmailCampaigns(ActionForEmailCampaignsEnum actionForEmailCampaigns) {
     
     this.actionForEmailCampaigns = actionForEmailCampaigns;
@@ -231,7 +230,6 @@ public class RequestContactExportCustomContactFilter {
   public void setActionForEmailCampaigns(ActionForEmailCampaignsEnum actionForEmailCampaigns) {
     this.actionForEmailCampaigns = actionForEmailCampaigns;
   }
-
 
   public RequestContactExportCustomContactFilter actionForSmsCampaigns(ActionForSmsCampaignsEnum actionForSmsCampaigns) {
     
@@ -258,7 +256,6 @@ public class RequestContactExportCustomContactFilter {
     this.actionForSmsCampaigns = actionForSmsCampaigns;
   }
 
-
   public RequestContactExportCustomContactFilter listId(Long listId) {
     
     this.listId = listId;
@@ -284,7 +281,6 @@ public class RequestContactExportCustomContactFilter {
     this.listId = listId;
   }
 
-
   public RequestContactExportCustomContactFilter emailCampaignId(Long emailCampaignId) {
     
     this.emailCampaignId = emailCampaignId;
@@ -309,7 +305,6 @@ public class RequestContactExportCustomContactFilter {
   public void setEmailCampaignId(Long emailCampaignId) {
     this.emailCampaignId = emailCampaignId;
   }
-
 
   public RequestContactExportCustomContactFilter smsCampaignId(Long smsCampaignId) {
     

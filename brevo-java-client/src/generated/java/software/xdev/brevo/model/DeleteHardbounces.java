@@ -73,7 +73,6 @@ public class DeleteHardbounces {
     this.startDate = startDate;
   }
 
-
   public DeleteHardbounces endDate(String endDate) {
     
     this.endDate = endDate;
@@ -98,7 +97,6 @@ public class DeleteHardbounces {
   public void setEndDate(String endDate) {
     this.endDate = endDate;
   }
-
 
   public DeleteHardbounces contactEmail(String contactEmail) {
     

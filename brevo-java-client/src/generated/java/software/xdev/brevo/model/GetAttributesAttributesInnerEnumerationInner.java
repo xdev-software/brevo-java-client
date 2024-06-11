@@ -69,7 +69,6 @@ public class GetAttributesAttributesInnerEnumerationInner {
     this.value = value;
   }
 
-
   public GetAttributesAttributesInnerEnumerationInner label(String label) {
     
     this.label = label;

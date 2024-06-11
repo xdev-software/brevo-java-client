@@ -72,7 +72,6 @@ public class PutRevokeUserPermissionResponse {
     this.status = status;
   }
 
-
   public PutRevokeUserPermissionResponse creditNotes(List<String> creditNotes) {
     
     this.creditNotes = creditNotes;

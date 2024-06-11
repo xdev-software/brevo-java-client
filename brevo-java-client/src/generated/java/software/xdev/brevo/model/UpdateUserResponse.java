@@ -76,7 +76,6 @@ public class UpdateUserResponse {
     this.status = status;
   }
 
-
   public UpdateUserResponse creditNotes(List<String> creditNotes) {
     
     this.creditNotes = creditNotes;
@@ -109,7 +108,6 @@ public class UpdateUserResponse {
   public void setCreditNotes(List<String> creditNotes) {
     this.creditNotes = creditNotes;
   }
-
 
   public UpdateUserResponse invoiceId(List<String> invoiceId) {
     

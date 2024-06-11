@@ -73,7 +73,6 @@ public class GetAccountAllOfRelayData {
     this.userName = userName;
   }
 
-
   public GetAccountAllOfRelayData relay(String relay) {
     
     this.relay = relay;
@@ -98,7 +97,6 @@ public class GetAccountAllOfRelayData {
   public void setRelay(String relay) {
     this.relay = relay;
   }
-
 
   public GetAccountAllOfRelayData port(Integer port) {
     

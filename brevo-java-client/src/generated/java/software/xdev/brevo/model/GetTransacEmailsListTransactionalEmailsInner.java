@@ -96,7 +96,6 @@ public class GetTransacEmailsListTransactionalEmailsInner {
     this.email = email;
   }
 
-
   public GetTransacEmailsListTransactionalEmailsInner subject(String subject) {
     
     this.subject = subject;
@@ -121,7 +120,6 @@ public class GetTransacEmailsListTransactionalEmailsInner {
   public void setSubject(String subject) {
     this.subject = subject;
   }
-
 
   public GetTransacEmailsListTransactionalEmailsInner templateId(Long templateId) {
     
@@ -148,7 +146,6 @@ public class GetTransacEmailsListTransactionalEmailsInner {
     this.templateId = templateId;
   }
 
-
   public GetTransacEmailsListTransactionalEmailsInner messageId(String messageId) {
     
     this.messageId = messageId;
@@ -173,7 +170,6 @@ public class GetTransacEmailsListTransactionalEmailsInner {
   public void setMessageId(String messageId) {
     this.messageId = messageId;
   }
-
 
   public GetTransacEmailsListTransactionalEmailsInner uuid(String uuid) {
     
@@ -200,7 +196,6 @@ public class GetTransacEmailsListTransactionalEmailsInner {
     this.uuid = uuid;
   }
 
-
   public GetTransacEmailsListTransactionalEmailsInner date(String date) {
     
     this.date = date;
@@ -226,7 +221,6 @@ public class GetTransacEmailsListTransactionalEmailsInner {
     this.date = date;
   }
 
-
   public GetTransacEmailsListTransactionalEmailsInner from(String from) {
     
     this.from = from;
@@ -251,7 +245,6 @@ public class GetTransacEmailsListTransactionalEmailsInner {
   public void setFrom(String from) {
     this.from = from;
   }
-
 
   public GetTransacEmailsListTransactionalEmailsInner tags(List<String> tags) {
     

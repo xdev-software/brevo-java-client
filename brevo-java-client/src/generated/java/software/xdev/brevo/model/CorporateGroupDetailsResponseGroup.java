@@ -73,7 +73,6 @@ public class CorporateGroupDetailsResponseGroup {
     this.id = id;
   }
 
-
   public CorporateGroupDetailsResponseGroup groupName(String groupName) {
     
     this.groupName = groupName;
@@ -98,7 +97,6 @@ public class CorporateGroupDetailsResponseGroup {
   public void setGroupName(String groupName) {
     this.groupName = groupName;
   }
-
 
   public CorporateGroupDetailsResponseGroup createdAt(String createdAt) {
     

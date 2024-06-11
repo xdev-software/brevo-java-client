@@ -32,6 +32,7 @@ import java.util.StringJoiner;
 public class PostContactInfoContactsFailure {
   public PostContactInfoContactsFailure() {
   }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {

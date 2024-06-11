@@ -128,7 +128,6 @@ public class CreateChild {
     this.email = email;
   }
 
-
   public CreateChild firstName(String firstName) {
     
     this.firstName = firstName;
@@ -153,7 +152,6 @@ public class CreateChild {
   public void setFirstName(String firstName) {
     this.firstName = firstName;
   }
-
 
   public CreateChild lastName(String lastName) {
     
@@ -180,7 +178,6 @@ public class CreateChild {
     this.lastName = lastName;
   }
 
-
   public CreateChild companyName(String companyName) {
     
     this.companyName = companyName;
@@ -206,7 +203,6 @@ public class CreateChild {
     this.companyName = companyName;
   }
 
-
   public CreateChild password(String password) {
     
     this.password = password;
@@ -231,7 +227,6 @@ public class CreateChild {
   public void setPassword(String password) {
     this.password = password;
   }
-
 
   public CreateChild language(LanguageEnum language) {
     

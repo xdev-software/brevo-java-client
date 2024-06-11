@@ -151,7 +151,6 @@ public class GetExternalFeedByUUID {
     this.id = id;
   }
 
-
   public GetExternalFeedByUUID name(String name) {
     
     this.name = name;
@@ -176,7 +175,6 @@ public class GetExternalFeedByUUID {
   public void setName(String name) {
     this.name = name;
   }
-
 
   public GetExternalFeedByUUID url(String url) {
     
@@ -203,7 +201,6 @@ public class GetExternalFeedByUUID {
     this.url = url;
   }
 
-
   public GetExternalFeedByUUID authType(AuthTypeEnum authType) {
     
     this.authType = authType;
@@ -228,7 +225,6 @@ public class GetExternalFeedByUUID {
   public void setAuthType(AuthTypeEnum authType) {
     this.authType = authType;
   }
-
 
   public GetExternalFeedByUUID username(String username) {
     
@@ -255,7 +251,6 @@ public class GetExternalFeedByUUID {
     this.username = username;
   }
 
-
   public GetExternalFeedByUUID password(String password) {
     
     this.password = password;
@@ -281,7 +276,6 @@ public class GetExternalFeedByUUID {
     this.password = password;
   }
 
-
   public GetExternalFeedByUUID token(String token) {
     
     this.token = token;
@@ -306,7 +300,6 @@ public class GetExternalFeedByUUID {
   public void setToken(String token) {
     this.token = token;
   }
-
 
   public GetExternalFeedByUUID headers(List<GetExternalFeedByUUIDHeadersInner> headers) {
     
@@ -341,7 +334,6 @@ public class GetExternalFeedByUUID {
     this.headers = headers;
   }
 
-
   public GetExternalFeedByUUID maxRetries(Integer maxRetries) {
     
     this.maxRetries = maxRetries;
@@ -369,7 +361,6 @@ public class GetExternalFeedByUUID {
     this.maxRetries = maxRetries;
   }
 
-
   public GetExternalFeedByUUID cache(Boolean cache) {
     
     this.cache = cache;
@@ -395,7 +386,6 @@ public class GetExternalFeedByUUID {
     this.cache = cache;
   }
 
-
   public GetExternalFeedByUUID createdAt(OffsetDateTime createdAt) {
     
     this.createdAt = createdAt;
@@ -420,7 +410,6 @@ public class GetExternalFeedByUUID {
   public void setCreatedAt(OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
-
 
   public GetExternalFeedByUUID modifiedAt(OffsetDateTime modifiedAt) {
     

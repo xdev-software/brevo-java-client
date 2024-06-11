@@ -88,7 +88,6 @@ public class GetStatsByDevice {
     this.desktop = desktop;
   }
 
-
   public GetStatsByDevice mobile(Map<String, GetDeviceBrowserStats> mobile) {
     
     this.mobile = mobile;
@@ -122,7 +121,6 @@ public class GetStatsByDevice {
     this.mobile = mobile;
   }
 
-
   public GetStatsByDevice tablet(Map<String, GetDeviceBrowserStats> tablet) {
     
     this.tablet = tablet;
@@ -155,7 +153,6 @@ public class GetStatsByDevice {
   public void setTablet(Map<String, GetDeviceBrowserStats> tablet) {
     this.tablet = tablet;
   }
-
 
   public GetStatsByDevice unknown(Map<String, GetDeviceBrowserStats> unknown) {
     

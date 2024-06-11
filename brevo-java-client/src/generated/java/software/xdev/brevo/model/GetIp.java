@@ -77,7 +77,6 @@ public class GetIp {
     this.id = id;
   }
 
-
   public GetIp ip(String ip) {
     
     this.ip = ip;
@@ -103,7 +102,6 @@ public class GetIp {
     this.ip = ip;
   }
 
-
   public GetIp active(Boolean active) {
     
     this.active = active;
@@ -128,7 +126,6 @@ public class GetIp {
   public void setActive(Boolean active) {
     this.active = active;
   }
-
 
   public GetIp domain(String domain) {
     

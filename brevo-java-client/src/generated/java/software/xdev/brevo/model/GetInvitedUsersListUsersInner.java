@@ -78,7 +78,6 @@ public class GetInvitedUsersListUsersInner {
     this.email = email;
   }
 
-
   public GetInvitedUsersListUsersInner isOwner(String isOwner) {
     
     this.isOwner = isOwner;
@@ -104,7 +103,6 @@ public class GetInvitedUsersListUsersInner {
     this.isOwner = isOwner;
   }
 
-
   public GetInvitedUsersListUsersInner status(String status) {
     
     this.status = status;
@@ -129,7 +127,6 @@ public class GetInvitedUsersListUsersInner {
   public void setStatus(String status) {
     this.status = status;
   }
-
 
   public GetInvitedUsersListUsersInner featureAccess(GetInvitedUsersListUsersInnerFeatureAccess featureAccess) {
     

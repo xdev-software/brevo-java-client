@@ -81,7 +81,6 @@ public class GetChildrenList {
     this.children = children;
   }
 
-
   public GetChildrenList count(Long count) {
     
     this.count = count;

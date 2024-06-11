@@ -73,7 +73,6 @@ public class UpdateCouponCollection200Response {
     this.id = id;
   }
 
-
   public UpdateCouponCollection200Response name(String name) {
     
     this.name = name;
@@ -98,7 +97,6 @@ public class UpdateCouponCollection200Response {
   public void setName(String name) {
     this.name = name;
   }
-
 
   public UpdateCouponCollection200Response defaultCoupon(String defaultCoupon) {
     

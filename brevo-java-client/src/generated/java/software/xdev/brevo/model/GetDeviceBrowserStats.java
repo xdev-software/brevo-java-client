@@ -77,7 +77,6 @@ public class GetDeviceBrowserStats {
     this.clickers = clickers;
   }
 
-
   public GetDeviceBrowserStats uniqueClicks(Long uniqueClicks) {
     
     this.uniqueClicks = uniqueClicks;
@@ -103,7 +102,6 @@ public class GetDeviceBrowserStats {
     this.uniqueClicks = uniqueClicks;
   }
 
-
   public GetDeviceBrowserStats viewed(Long viewed) {
     
     this.viewed = viewed;
@@ -128,7 +126,6 @@ public class GetDeviceBrowserStats {
   public void setViewed(Long viewed) {
     this.viewed = viewed;
   }
-
 
   public GetDeviceBrowserStats uniqueViews(Long uniqueViews) {
     

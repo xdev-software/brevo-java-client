@@ -87,7 +87,6 @@ public class RemoveContactFromListRequest {
     this.emails = emails;
   }
 
-
   public RemoveContactFromListRequest ids(List<Long> ids) {
     
     this.ids = ids;
@@ -120,7 +119,6 @@ public class RemoveContactFromListRequest {
   public void setIds(List<Long> ids) {
     this.ids = ids;
   }
-
 
   public RemoveContactFromListRequest all(Boolean all) {
     

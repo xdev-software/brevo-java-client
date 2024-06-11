@@ -101,7 +101,6 @@ public class GetExtendedCampaignStats {
     this.globalStats = globalStats;
   }
 
-
   public GetExtendedCampaignStats campaignStats(List<GetCampaignStats> campaignStats) {
     
     this.campaignStats = campaignStats;
@@ -135,7 +134,6 @@ public class GetExtendedCampaignStats {
     this.campaignStats = campaignStats;
   }
 
-
   public GetExtendedCampaignStats mirrorClick(Long mirrorClick) {
     
     this.mirrorClick = mirrorClick;
@@ -160,7 +158,6 @@ public class GetExtendedCampaignStats {
   public void setMirrorClick(Long mirrorClick) {
     this.mirrorClick = mirrorClick;
   }
-
 
   public GetExtendedCampaignStats remaining(Long remaining) {
     
@@ -187,7 +184,6 @@ public class GetExtendedCampaignStats {
     this.remaining = remaining;
   }
 
-
   public GetExtendedCampaignStats linksStats(Object linksStats) {
     
     this.linksStats = linksStats;
@@ -212,7 +208,6 @@ public class GetExtendedCampaignStats {
   public void setLinksStats(Object linksStats) {
     this.linksStats = linksStats;
   }
-
 
   public GetExtendedCampaignStats statsByDomain(Map<String, GetCampaignStats> statsByDomain) {
     
@@ -244,7 +239,6 @@ public class GetExtendedCampaignStats {
     this.statsByDomain = statsByDomain;
   }
 
-
   public GetExtendedCampaignStats statsByDevice(GetStatsByDevice statsByDevice) {
     
     this.statsByDevice = statsByDevice;
@@ -269,7 +263,6 @@ public class GetExtendedCampaignStats {
   public void setStatsByDevice(GetStatsByDevice statsByDevice) {
     this.statsByDevice = statsByDevice;
   }
-
 
   public GetExtendedCampaignStats statsByBrowser(Map<String, GetDeviceBrowserStats> statsByBrowser) {
     

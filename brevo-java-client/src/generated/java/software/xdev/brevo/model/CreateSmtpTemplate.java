@@ -102,7 +102,6 @@ public class CreateSmtpTemplate {
     this.tag = tag;
   }
 
-
   public CreateSmtpTemplate sender(CreateSmtpTemplateSender sender) {
     
     this.sender = sender;
@@ -127,7 +126,6 @@ public class CreateSmtpTemplate {
   public void setSender(CreateSmtpTemplateSender sender) {
     this.sender = sender;
   }
-
 
   public CreateSmtpTemplate templateName(String templateName) {
     
@@ -154,7 +152,6 @@ public class CreateSmtpTemplate {
     this.templateName = templateName;
   }
 
-
   public CreateSmtpTemplate htmlContent(String htmlContent) {
     
     this.htmlContent = htmlContent;
@@ -179,7 +176,6 @@ public class CreateSmtpTemplate {
   public void setHtmlContent(String htmlContent) {
     this.htmlContent = htmlContent;
   }
-
 
   public CreateSmtpTemplate htmlUrl(String htmlUrl) {
     
@@ -206,7 +202,6 @@ public class CreateSmtpTemplate {
     this.htmlUrl = htmlUrl;
   }
 
-
   public CreateSmtpTemplate subject(String subject) {
     
     this.subject = subject;
@@ -231,7 +226,6 @@ public class CreateSmtpTemplate {
   public void setSubject(String subject) {
     this.subject = subject;
   }
-
 
   public CreateSmtpTemplate replyTo(String replyTo) {
     
@@ -258,7 +252,6 @@ public class CreateSmtpTemplate {
     this.replyTo = replyTo;
   }
 
-
   public CreateSmtpTemplate toField(String toField) {
     
     this.toField = toField;
@@ -284,7 +277,6 @@ public class CreateSmtpTemplate {
     this.toField = toField;
   }
 
-
   public CreateSmtpTemplate attachmentUrl(String attachmentUrl) {
     
     this.attachmentUrl = attachmentUrl;
@@ -309,7 +301,6 @@ public class CreateSmtpTemplate {
   public void setAttachmentUrl(String attachmentUrl) {
     this.attachmentUrl = attachmentUrl;
   }
-
 
   public CreateSmtpTemplate isActive(Boolean isActive) {
     

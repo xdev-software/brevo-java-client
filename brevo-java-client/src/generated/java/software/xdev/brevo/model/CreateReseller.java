@@ -69,7 +69,6 @@ public class CreateReseller {
     this.authKey = authKey;
   }
 
-
   public CreateReseller id(Long id) {
     
     this.id = id;

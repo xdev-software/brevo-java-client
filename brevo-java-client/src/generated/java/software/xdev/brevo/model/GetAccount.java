@@ -100,7 +100,6 @@ public class GetAccount {
     this.email = email;
   }
 
-
   public GetAccount firstName(String firstName) {
     
     this.firstName = firstName;
@@ -125,7 +124,6 @@ public class GetAccount {
   public void setFirstName(String firstName) {
     this.firstName = firstName;
   }
-
 
   public GetAccount lastName(String lastName) {
     
@@ -152,7 +150,6 @@ public class GetAccount {
     this.lastName = lastName;
   }
 
-
   public GetAccount companyName(String companyName) {
     
     this.companyName = companyName;
@@ -178,7 +175,6 @@ public class GetAccount {
     this.companyName = companyName;
   }
 
-
   public GetAccount address(GetExtendedClientAllOfAddress address) {
     
     this.address = address;
@@ -203,7 +199,6 @@ public class GetAccount {
   public void setAddress(GetExtendedClientAllOfAddress address) {
     this.address = address;
   }
-
 
   public GetAccount plan(List<GetAccountAllOfPlan> plan) {
     
@@ -238,7 +233,6 @@ public class GetAccount {
     this.plan = plan;
   }
 
-
   public GetAccount relay(GetAccountAllOfRelay relay) {
     
     this.relay = relay;
@@ -263,7 +257,6 @@ public class GetAccount {
   public void setRelay(GetAccountAllOfRelay relay) {
     this.relay = relay;
   }
-
 
   public GetAccount marketingAutomation(GetAccountAllOfMarketingAutomation marketingAutomation) {
     

@@ -78,7 +78,6 @@ public class GetTransacBlockedContactsContactsInner {
     this.email = email;
   }
 
-
   public GetTransacBlockedContactsContactsInner senderEmail(String senderEmail) {
     
     this.senderEmail = senderEmail;
@@ -104,7 +103,6 @@ public class GetTransacBlockedContactsContactsInner {
     this.senderEmail = senderEmail;
   }
 
-
   public GetTransacBlockedContactsContactsInner reason(GetTransacBlockedContactsContactsInnerReason reason) {
     
     this.reason = reason;
@@ -129,7 +127,6 @@ public class GetTransacBlockedContactsContactsInner {
   public void setReason(GetTransacBlockedContactsContactsInnerReason reason) {
     this.reason = reason;
   }
-
 
   public GetTransacBlockedContactsContactsInner blockedAt(String blockedAt) {
     

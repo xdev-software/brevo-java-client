@@ -69,7 +69,6 @@ public class CreateUpdateBatchCategoryModel {
     this.createdCount = createdCount;
   }
 
-
   public CreateUpdateBatchCategoryModel updatedCount(Long updatedCount) {
     
     this.updatedCount = updatedCount;

@@ -73,7 +73,6 @@ public class VariablesItems {
     this.name = name;
   }
 
-
   public VariablesItems _default(String _default) {
     
     this._default = _default;
@@ -98,7 +97,6 @@ public class VariablesItems {
   public void setDefault(String _default) {
     this._default = _default;
   }
-
 
   public VariablesItems datatype(String datatype) {
     

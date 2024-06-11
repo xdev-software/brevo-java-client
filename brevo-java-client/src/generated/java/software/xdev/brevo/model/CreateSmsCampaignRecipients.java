@@ -80,7 +80,6 @@ public class CreateSmsCampaignRecipients {
     this.listIds = listIds;
   }
 
-
   public CreateSmsCampaignRecipients exclusionListIds(List<Long> exclusionListIds) {
     
     this.exclusionListIds = exclusionListIds;

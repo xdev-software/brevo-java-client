@@ -73,7 +73,6 @@ public class CreateEmailCampaignSender {
     this.name = name;
   }
 
-
   public CreateEmailCampaignSender email(String email) {
     
     this.email = email;
@@ -98,7 +97,6 @@ public class CreateEmailCampaignSender {
   public void setEmail(String email) {
     this.email = email;
   }
-
 
   public CreateEmailCampaignSender id(Long id) {
     

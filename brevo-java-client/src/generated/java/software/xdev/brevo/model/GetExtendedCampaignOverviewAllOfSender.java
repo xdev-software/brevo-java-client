@@ -73,7 +73,6 @@ public class GetExtendedCampaignOverviewAllOfSender {
     this.name = name;
   }
 
-
   public GetExtendedCampaignOverviewAllOfSender email(String email) {
     
     this.email = email;
@@ -98,7 +97,6 @@ public class GetExtendedCampaignOverviewAllOfSender {
   public void setEmail(String email) {
     this.email = email;
   }
-
 
   public GetExtendedCampaignOverviewAllOfSender id(Long id) {
     

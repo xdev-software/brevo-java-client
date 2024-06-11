@@ -114,7 +114,6 @@ public class GetProcess {
     this.id = id;
   }
 
-
   public GetProcess status(StatusEnum status) {
     
     this.status = status;
@@ -140,7 +139,6 @@ public class GetProcess {
     this.status = status;
   }
 
-
   public GetProcess name(String name) {
     
     this.name = name;
@@ -165,7 +163,6 @@ public class GetProcess {
   public void setName(String name) {
     this.name = name;
   }
-
 
   public GetProcess exportUrl(String exportUrl) {
     

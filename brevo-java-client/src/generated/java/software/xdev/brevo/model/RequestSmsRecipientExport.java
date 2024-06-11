@@ -112,7 +112,6 @@ public class RequestSmsRecipientExport {
     this.notifyURL = notifyURL;
   }
 
-
   public RequestSmsRecipientExport recipientsType(RecipientsTypeEnum recipientsType) {
     
     this.recipientsType = recipientsType;

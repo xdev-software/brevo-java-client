@@ -195,7 +195,6 @@ public class GetCampaignOverview {
     this.id = id;
   }
 
-
   public GetCampaignOverview name(String name) {
     
     this.name = name;
@@ -220,7 +219,6 @@ public class GetCampaignOverview {
   public void setName(String name) {
     this.name = name;
   }
-
 
   public GetCampaignOverview subject(String subject) {
     
@@ -247,7 +245,6 @@ public class GetCampaignOverview {
     this.subject = subject;
   }
 
-
   public GetCampaignOverview previewText(String previewText) {
     
     this.previewText = previewText;
@@ -272,7 +269,6 @@ public class GetCampaignOverview {
   public void setPreviewText(String previewText) {
     this.previewText = previewText;
   }
-
 
   public GetCampaignOverview type(TypeEnum type) {
     
@@ -299,7 +295,6 @@ public class GetCampaignOverview {
     this.type = type;
   }
 
-
   public GetCampaignOverview status(StatusEnum status) {
     
     this.status = status;
@@ -324,7 +319,6 @@ public class GetCampaignOverview {
   public void setStatus(StatusEnum status) {
     this.status = status;
   }
-
 
   public GetCampaignOverview scheduledAt(String scheduledAt) {
     
@@ -351,7 +345,6 @@ public class GetCampaignOverview {
     this.scheduledAt = scheduledAt;
   }
 
-
   public GetCampaignOverview abTesting(Boolean abTesting) {
     
     this.abTesting = abTesting;
@@ -376,7 +369,6 @@ public class GetCampaignOverview {
   public void setAbTesting(Boolean abTesting) {
     this.abTesting = abTesting;
   }
-
 
   public GetCampaignOverview subjectA(String subjectA) {
     
@@ -403,7 +395,6 @@ public class GetCampaignOverview {
     this.subjectA = subjectA;
   }
 
-
   public GetCampaignOverview subjectB(String subjectB) {
     
     this.subjectB = subjectB;
@@ -428,7 +419,6 @@ public class GetCampaignOverview {
   public void setSubjectB(String subjectB) {
     this.subjectB = subjectB;
   }
-
 
   public GetCampaignOverview splitRule(Integer splitRule) {
     
@@ -455,7 +445,6 @@ public class GetCampaignOverview {
     this.splitRule = splitRule;
   }
 
-
   public GetCampaignOverview winnerCriteria(String winnerCriteria) {
     
     this.winnerCriteria = winnerCriteria;
@@ -481,7 +470,6 @@ public class GetCampaignOverview {
     this.winnerCriteria = winnerCriteria;
   }
 
-
   public GetCampaignOverview winnerDelay(Integer winnerDelay) {
     
     this.winnerDelay = winnerDelay;
@@ -506,7 +494,6 @@ public class GetCampaignOverview {
   public void setWinnerDelay(Integer winnerDelay) {
     this.winnerDelay = winnerDelay;
   }
-
 
   public GetCampaignOverview sendAtBestTime(Boolean sendAtBestTime) {
     

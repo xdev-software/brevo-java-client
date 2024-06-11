@@ -81,7 +81,6 @@ public class GetDomainsListDomainsInner {
     this.id = id;
   }
 
-
   public GetDomainsListDomainsInner domainName(String domainName) {
     
     this.domainName = domainName;
@@ -106,7 +105,6 @@ public class GetDomainsListDomainsInner {
   public void setDomainName(String domainName) {
     this.domainName = domainName;
   }
-
 
   public GetDomainsListDomainsInner authenticated(Boolean authenticated) {
     
@@ -133,7 +131,6 @@ public class GetDomainsListDomainsInner {
     this.authenticated = authenticated;
   }
 
-
   public GetDomainsListDomainsInner verified(Boolean verified) {
     
     this.verified = verified;
@@ -158,7 +155,6 @@ public class GetDomainsListDomainsInner {
   public void setVerified(Boolean verified) {
     this.verified = verified;
   }
-
 
   public GetDomainsListDomainsInner ip(String ip) {
     

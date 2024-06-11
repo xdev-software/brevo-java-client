@@ -85,7 +85,6 @@ public class RequestContactExport {
     this.exportAttributes = exportAttributes;
   }
 
-
   public RequestContactExport customContactFilter(RequestContactExportCustomContactFilter customContactFilter) {
     
     this.customContactFilter = customContactFilter;
@@ -110,7 +109,6 @@ public class RequestContactExport {
   public void setCustomContactFilter(RequestContactExportCustomContactFilter customContactFilter) {
     this.customContactFilter = customContactFilter;
   }
-
 
   public RequestContactExport notifyUrl(String notifyUrl) {
     

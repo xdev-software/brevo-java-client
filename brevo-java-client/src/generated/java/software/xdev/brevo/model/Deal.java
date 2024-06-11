@@ -79,7 +79,6 @@ public class Deal {
     this.id = id;
   }
 
-
   public Deal attributes(Object attributes) {
     
     this.attributes = attributes;
@@ -104,7 +103,6 @@ public class Deal {
   public void setAttributes(Object attributes) {
     this.attributes = attributes;
   }
-
 
   public Deal linkedContactsIds(List<Integer> linkedContactsIds) {
     
@@ -138,7 +136,6 @@ public class Deal {
   public void setLinkedContactsIds(List<Integer> linkedContactsIds) {
     this.linkedContactsIds = linkedContactsIds;
   }
-
 
   public Deal linkedCompaniesIds(List<String> linkedCompaniesIds) {
     

@@ -73,7 +73,6 @@ public class SubAccountUpdatePlanRequestFeatures {
     this.users = users;
   }
 
-
   public SubAccountUpdatePlanRequestFeatures landingPage(Long landingPage) {
     
     this.landingPage = landingPage;
@@ -98,7 +97,6 @@ public class SubAccountUpdatePlanRequestFeatures {
   public void setLandingPage(Long landingPage) {
     this.landingPage = landingPage;
   }
-
 
   public SubAccountUpdatePlanRequestFeatures inbox(Long inbox) {
     

@@ -88,7 +88,6 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
     this.userManagement = userManagement;
   }
 
-
   public GetCorporateInvitedUsersListUsersInnerFeatureAccess apiKeys(List<String> apiKeys) {
     
     this.apiKeys = apiKeys;
@@ -122,7 +121,6 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
     this.apiKeys = apiKeys;
   }
 
-
   public GetCorporateInvitedUsersListUsersInnerFeatureAccess myPlan(List<String> myPlan) {
     
     this.myPlan = myPlan;
@@ -155,7 +153,6 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
   public void setMyPlan(List<String> myPlan) {
     this.myPlan = myPlan;
   }
-
 
   public GetCorporateInvitedUsersListUsersInnerFeatureAccess appsManagement(List<String> appsManagement) {
     

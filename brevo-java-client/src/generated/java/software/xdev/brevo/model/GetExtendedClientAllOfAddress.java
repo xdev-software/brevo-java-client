@@ -77,7 +77,6 @@ public class GetExtendedClientAllOfAddress {
     this.street = street;
   }
 
-
   public GetExtendedClientAllOfAddress city(String city) {
     
     this.city = city;
@@ -103,7 +102,6 @@ public class GetExtendedClientAllOfAddress {
     this.city = city;
   }
 
-
   public GetExtendedClientAllOfAddress zipCode(String zipCode) {
     
     this.zipCode = zipCode;
@@ -128,7 +126,6 @@ public class GetExtendedClientAllOfAddress {
   public void setZipCode(String zipCode) {
     this.zipCode = zipCode;
   }
-
 
   public GetExtendedClientAllOfAddress country(String country) {
     

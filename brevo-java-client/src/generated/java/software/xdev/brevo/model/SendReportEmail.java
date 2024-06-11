@@ -80,7 +80,6 @@ public class SendReportEmail {
     this.to = to;
   }
 
-
   public SendReportEmail body(String body) {
     
     this.body = body;

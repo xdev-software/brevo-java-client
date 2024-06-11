@@ -87,7 +87,6 @@ public class Task {
     this.id = id;
   }
 
-
   public Task taskTypeId(String taskTypeId) {
     
     this.taskTypeId = taskTypeId;
@@ -113,7 +112,6 @@ public class Task {
     this.taskTypeId = taskTypeId;
   }
 
-
   public Task name(String name) {
     
     this.name = name;
@@ -138,7 +136,6 @@ public class Task {
   public void setName(String name) {
     this.name = name;
   }
-
 
   public Task contactsIds(List<Integer> contactsIds) {
     
@@ -173,7 +170,6 @@ public class Task {
     this.contactsIds = contactsIds;
   }
 
-
   public Task dealsIds(List<String> dealsIds) {
     
     this.dealsIds = dealsIds;
@@ -206,7 +202,6 @@ public class Task {
   public void setDealsIds(List<String> dealsIds) {
     this.dealsIds = dealsIds;
   }
-
 
   public Task companiesIds(List<String> companiesIds) {
     

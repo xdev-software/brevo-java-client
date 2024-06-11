@@ -112,7 +112,6 @@ public class GetTransacBlockedContactsContactsInnerReason {
     this.code = code;
   }
 
-
   public GetTransacBlockedContactsContactsInnerReason message(String message) {
     
     this.message = message;

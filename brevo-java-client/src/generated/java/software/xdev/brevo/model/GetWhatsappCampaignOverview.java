@@ -146,7 +146,6 @@ public class GetWhatsappCampaignOverview {
     this.id = id;
   }
 
-
   public GetWhatsappCampaignOverview campaignName(String campaignName) {
     
     this.campaignName = campaignName;
@@ -171,7 +170,6 @@ public class GetWhatsappCampaignOverview {
   public void setCampaignName(String campaignName) {
     this.campaignName = campaignName;
   }
-
 
   public GetWhatsappCampaignOverview campaignStatus(CampaignStatusEnum campaignStatus) {
     
@@ -198,7 +196,6 @@ public class GetWhatsappCampaignOverview {
     this.campaignStatus = campaignStatus;
   }
 
-
   public GetWhatsappCampaignOverview scheduledAt(String scheduledAt) {
     
     this.scheduledAt = scheduledAt;
@@ -223,7 +220,6 @@ public class GetWhatsappCampaignOverview {
   public void setScheduledAt(String scheduledAt) {
     this.scheduledAt = scheduledAt;
   }
-
 
   public GetWhatsappCampaignOverview senderNumber(String senderNumber) {
     
@@ -250,7 +246,6 @@ public class GetWhatsappCampaignOverview {
     this.senderNumber = senderNumber;
   }
 
-
   public GetWhatsappCampaignOverview stats(WhatsappCampStats stats) {
     
     this.stats = stats;
@@ -275,7 +270,6 @@ public class GetWhatsappCampaignOverview {
   public void setStats(WhatsappCampStats stats) {
     this.stats = stats;
   }
-
 
   public GetWhatsappCampaignOverview template(WhatsappCampTemplate template) {
     
@@ -302,7 +296,6 @@ public class GetWhatsappCampaignOverview {
     this.template = template;
   }
 
-
   public GetWhatsappCampaignOverview createdAt(String createdAt) {
     
     this.createdAt = createdAt;
@@ -327,7 +320,6 @@ public class GetWhatsappCampaignOverview {
   public void setCreatedAt(String createdAt) {
     this.createdAt = createdAt;
   }
-
 
   public GetWhatsappCampaignOverview modifiedAt(String modifiedAt) {
     

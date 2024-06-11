@@ -157,7 +157,6 @@ public class UpdateWebhook {
     this.url = url;
   }
 
-
   public UpdateWebhook description(String description) {
     
     this.description = description;
@@ -182,7 +181,6 @@ public class UpdateWebhook {
   public void setDescription(String description) {
     this.description = description;
   }
-
 
   public UpdateWebhook events(List<EventsEnum> events) {
     
@@ -217,7 +215,6 @@ public class UpdateWebhook {
     this.events = events;
   }
 
-
   public UpdateWebhook domain(String domain) {
     
     this.domain = domain;
@@ -242,7 +239,6 @@ public class UpdateWebhook {
   public void setDomain(String domain) {
     this.domain = domain;
   }
-
 
   public UpdateWebhook batched(Boolean batched) {
     
@@ -269,7 +265,6 @@ public class UpdateWebhook {
     this.batched = batched;
   }
 
-
   public UpdateWebhook auth(Object auth) {
     
     this.auth = auth;
@@ -294,7 +289,6 @@ public class UpdateWebhook {
   public void setAuth(Object auth) {
     this.auth = auth;
   }
-
 
   public UpdateWebhook headers(List<Object> headers) {
     

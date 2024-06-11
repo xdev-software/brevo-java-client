@@ -107,7 +107,6 @@ public class CreateUpdateProducts {
     this.id = id;
   }
 
-
   public CreateUpdateProducts name(String name) {
     
     this.name = name;
@@ -132,7 +131,6 @@ public class CreateUpdateProducts {
   public void setName(String name) {
     this.name = name;
   }
-
 
   public CreateUpdateProducts url(String url) {
     
@@ -159,7 +157,6 @@ public class CreateUpdateProducts {
     this.url = url;
   }
 
-
   public CreateUpdateProducts imageUrl(String imageUrl) {
     
     this.imageUrl = imageUrl;
@@ -184,7 +181,6 @@ public class CreateUpdateProducts {
   public void setImageUrl(String imageUrl) {
     this.imageUrl = imageUrl;
   }
-
 
   public CreateUpdateProducts sku(String sku) {
     
@@ -211,7 +207,6 @@ public class CreateUpdateProducts {
     this.sku = sku;
   }
 
-
   public CreateUpdateProducts price(Float price) {
     
     this.price = price;
@@ -236,7 +231,6 @@ public class CreateUpdateProducts {
   public void setPrice(Float price) {
     this.price = price;
   }
-
 
   public CreateUpdateProducts categories(List<String> categories) {
     
@@ -271,7 +265,6 @@ public class CreateUpdateProducts {
     this.categories = categories;
   }
 
-
   public CreateUpdateProducts parentId(String parentId) {
     
     this.parentId = parentId;
@@ -296,7 +289,6 @@ public class CreateUpdateProducts {
   public void setParentId(String parentId) {
     this.parentId = parentId;
   }
-
 
   public CreateUpdateProducts metaInfo(Map<String, GetContactInfoIdentifierParameter> metaInfo) {
     
@@ -330,7 +322,6 @@ public class CreateUpdateProducts {
   public void setMetaInfo(Map<String, GetContactInfoIdentifierParameter> metaInfo) {
     this.metaInfo = metaInfo;
   }
-
 
   public CreateUpdateProducts deletedAt(String deletedAt) {
     

@@ -79,7 +79,6 @@ public class CorporateGroupDetailsResponse {
     this.group = group;
   }
 
-
   public CorporateGroupDetailsResponse subAccounts(List<CorporateGroupDetailsResponseSubAccountsInner> subAccounts) {
     
     this.subAccounts = subAccounts;
@@ -112,7 +111,6 @@ public class CorporateGroupDetailsResponse {
   public void setSubAccounts(List<CorporateGroupDetailsResponseSubAccountsInner> subAccounts) {
     this.subAccounts = subAccounts;
   }
-
 
   public CorporateGroupDetailsResponse users(List<CorporateGroupDetailsResponseUsersInner> users) {
     

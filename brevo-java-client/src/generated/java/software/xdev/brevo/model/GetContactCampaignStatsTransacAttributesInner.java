@@ -74,7 +74,6 @@ public class GetContactCampaignStatsTransacAttributesInner {
     this.orderDate = orderDate;
   }
 
-
   public GetContactCampaignStatsTransacAttributesInner orderPrice(Float orderPrice) {
     
     this.orderPrice = orderPrice;
@@ -99,7 +98,6 @@ public class GetContactCampaignStatsTransacAttributesInner {
   public void setOrderPrice(Float orderPrice) {
     this.orderPrice = orderPrice;
   }
-
 
   public GetContactCampaignStatsTransacAttributesInner orderId(Long orderId) {
     

@@ -125,7 +125,6 @@ public class MasterDetailsResponsePlanInfo {
     this.currencyCode = currencyCode;
   }
 
-
   public MasterDetailsResponsePlanInfo nextBillingAt(Long nextBillingAt) {
     
     this.nextBillingAt = nextBillingAt;
@@ -150,7 +149,6 @@ public class MasterDetailsResponsePlanInfo {
   public void setNextBillingAt(Long nextBillingAt) {
     this.nextBillingAt = nextBillingAt;
   }
-
 
   public MasterDetailsResponsePlanInfo price(BigDecimal price) {
     
@@ -177,7 +175,6 @@ public class MasterDetailsResponsePlanInfo {
     this.price = price;
   }
 
-
   public MasterDetailsResponsePlanInfo planPeriod(PlanPeriodEnum planPeriod) {
     
     this.planPeriod = planPeriod;
@@ -203,7 +200,6 @@ public class MasterDetailsResponsePlanInfo {
     this.planPeriod = planPeriod;
   }
 
-
   public MasterDetailsResponsePlanInfo subAccounts(Integer subAccounts) {
     
     this.subAccounts = subAccounts;
@@ -228,7 +224,6 @@ public class MasterDetailsResponsePlanInfo {
   public void setSubAccounts(Integer subAccounts) {
     this.subAccounts = subAccounts;
   }
-
 
   public MasterDetailsResponsePlanInfo features(List<MasterDetailsResponsePlanInfoFeaturesInner> features) {
     

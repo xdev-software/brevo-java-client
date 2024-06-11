@@ -86,7 +86,6 @@ public class GetCouponCollection {
     this.id = id;
   }
 
-
   public GetCouponCollection name(String name) {
     
     this.name = name;
@@ -111,7 +110,6 @@ public class GetCouponCollection {
   public void setName(String name) {
     this.name = name;
   }
-
 
   public GetCouponCollection defaultCoupon(String defaultCoupon) {
     
@@ -138,7 +136,6 @@ public class GetCouponCollection {
     this.defaultCoupon = defaultCoupon;
   }
 
-
   public GetCouponCollection createdAt(OffsetDateTime createdAt) {
     
     this.createdAt = createdAt;
@@ -164,7 +161,6 @@ public class GetCouponCollection {
     this.createdAt = createdAt;
   }
 
-
   public GetCouponCollection totalCoupons(Long totalCoupons) {
     
     this.totalCoupons = totalCoupons;
@@ -189,7 +185,6 @@ public class GetCouponCollection {
   public void setTotalCoupons(Long totalCoupons) {
     this.totalCoupons = totalCoupons;
   }
-
 
   public GetCouponCollection remainingCoupons(Long remainingCoupons) {
     

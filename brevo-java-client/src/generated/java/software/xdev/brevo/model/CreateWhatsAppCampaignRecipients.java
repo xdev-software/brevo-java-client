@@ -84,7 +84,6 @@ public class CreateWhatsAppCampaignRecipients {
     this.excludedListIds = excludedListIds;
   }
 
-
   public CreateWhatsAppCampaignRecipients listIds(List<Long> listIds) {
     
     this.listIds = listIds;
@@ -117,7 +116,6 @@ public class CreateWhatsAppCampaignRecipients {
   public void setListIds(List<Long> listIds) {
     this.listIds = listIds;
   }
-
 
   public CreateWhatsAppCampaignRecipients segments(List<Long> segments) {
     

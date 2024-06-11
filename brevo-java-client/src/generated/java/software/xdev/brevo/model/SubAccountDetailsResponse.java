@@ -78,7 +78,6 @@ public class SubAccountDetailsResponse {
     this.name = name;
   }
 
-
   public SubAccountDetailsResponse email(String email) {
     
     this.email = email;
@@ -104,7 +103,6 @@ public class SubAccountDetailsResponse {
     this.email = email;
   }
 
-
   public SubAccountDetailsResponse companyName(String companyName) {
     
     this.companyName = companyName;
@@ -129,7 +127,6 @@ public class SubAccountDetailsResponse {
   public void setCompanyName(String companyName) {
     this.companyName = companyName;
   }
-
 
   public SubAccountDetailsResponse planInfo(SubAccountDetailsResponsePlanInfo planInfo) {
     

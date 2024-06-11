@@ -196,7 +196,6 @@ public class GetWhatsAppConfig {
     this.whatsappBusinessAccountId = whatsappBusinessAccountId;
   }
 
-
   public GetWhatsAppConfig sendingLimit(String sendingLimit) {
     
     this.sendingLimit = sendingLimit;
@@ -221,7 +220,6 @@ public class GetWhatsAppConfig {
   public void setSendingLimit(String sendingLimit) {
     this.sendingLimit = sendingLimit;
   }
-
 
   public GetWhatsAppConfig phoneNumberQuality(PhoneNumberQualityEnum phoneNumberQuality) {
     
@@ -248,7 +246,6 @@ public class GetWhatsAppConfig {
     this.phoneNumberQuality = phoneNumberQuality;
   }
 
-
   public GetWhatsAppConfig whatsappBusinessAccountStatus(WhatsappBusinessAccountStatusEnum whatsappBusinessAccountStatus) {
     
     this.whatsappBusinessAccountStatus = whatsappBusinessAccountStatus;
@@ -274,7 +271,6 @@ public class GetWhatsAppConfig {
     this.whatsappBusinessAccountStatus = whatsappBusinessAccountStatus;
   }
 
-
   public GetWhatsAppConfig businessStatus(String businessStatus) {
     
     this.businessStatus = businessStatus;
@@ -299,7 +295,6 @@ public class GetWhatsAppConfig {
   public void setBusinessStatus(String businessStatus) {
     this.businessStatus = businessStatus;
   }
-
 
   public GetWhatsAppConfig phoneNumberNameStatus(PhoneNumberNameStatusEnum phoneNumberNameStatus) {
     

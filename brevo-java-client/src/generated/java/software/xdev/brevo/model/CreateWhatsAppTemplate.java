@@ -159,7 +159,6 @@ public class CreateWhatsAppTemplate {
     this.name = name;
   }
 
-
   public CreateWhatsAppTemplate language(String language) {
     
     this.language = language;
@@ -184,7 +183,6 @@ public class CreateWhatsAppTemplate {
   public void setLanguage(String language) {
     this.language = language;
   }
-
 
   public CreateWhatsAppTemplate category(CategoryEnum category) {
     
@@ -211,7 +209,6 @@ public class CreateWhatsAppTemplate {
     this.category = category;
   }
 
-
   public CreateWhatsAppTemplate mediaUrl(String mediaUrl) {
     
     this.mediaUrl = mediaUrl;
@@ -236,7 +233,6 @@ public class CreateWhatsAppTemplate {
   public void setMediaUrl(String mediaUrl) {
     this.mediaUrl = mediaUrl;
   }
-
 
   public CreateWhatsAppTemplate bodyText(String bodyText) {
     
@@ -263,7 +259,6 @@ public class CreateWhatsAppTemplate {
     this.bodyText = bodyText;
   }
 
-
   public CreateWhatsAppTemplate headerText(String headerText) {
     
     this.headerText = headerText;
@@ -288,7 +283,6 @@ public class CreateWhatsAppTemplate {
   public void setHeaderText(String headerText) {
     this.headerText = headerText;
   }
-
 
   public CreateWhatsAppTemplate source(SourceEnum source) {
     

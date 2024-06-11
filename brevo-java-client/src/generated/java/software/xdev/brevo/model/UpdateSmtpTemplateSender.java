@@ -73,7 +73,6 @@ public class UpdateSmtpTemplateSender {
     this.name = name;
   }
 
-
   public UpdateSmtpTemplateSender email(String email) {
     
     this.email = email;
@@ -98,7 +97,6 @@ public class UpdateSmtpTemplateSender {
   public void setEmail(String email) {
     this.email = email;
   }
-
 
   public UpdateSmtpTemplateSender id(Long id) {
     

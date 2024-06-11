@@ -81,7 +81,6 @@ public class SendSms {
     this.reference = reference;
   }
 
-
   public SendSms messageId(Long messageId) {
     
     this.messageId = messageId;
@@ -106,7 +105,6 @@ public class SendSms {
   public void setMessageId(Long messageId) {
     this.messageId = messageId;
   }
-
 
   public SendSms smsCount(Long smsCount) {
     
@@ -133,7 +131,6 @@ public class SendSms {
     this.smsCount = smsCount;
   }
 
-
   public SendSms usedCredits(Float usedCredits) {
     
     this.usedCredits = usedCredits;
@@ -158,7 +155,6 @@ public class SendSms {
   public void setUsedCredits(Float usedCredits) {
     this.usedCredits = usedCredits;
   }
-
 
   public SendSms remainingCredits(Float remainingCredits) {
     

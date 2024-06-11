@@ -80,7 +80,6 @@ public class WhatsappCampStats {
     this.sent = sent;
   }
 
-
   public WhatsappCampStats delivered(Integer delivered) {
     
     this.delivered = delivered;
@@ -105,7 +104,6 @@ public class WhatsappCampStats {
   public void setDelivered(Integer delivered) {
     this.delivered = delivered;
   }
-
 
   public WhatsappCampStats read(Integer read) {
     
@@ -132,7 +130,6 @@ public class WhatsappCampStats {
     this.read = read;
   }
 
-
   public WhatsappCampStats unsubscribe(Integer unsubscribe) {
     
     this.unsubscribe = unsubscribe;
@@ -157,7 +154,6 @@ public class WhatsappCampStats {
   public void setUnsubscribe(Integer unsubscribe) {
     this.unsubscribe = unsubscribe;
   }
-
 
   public WhatsappCampStats notSent(Integer notSent) {
     

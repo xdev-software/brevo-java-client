@@ -113,7 +113,6 @@ public class SendReport {
     this.language = language;
   }
 
-
   public SendReport email(SendReportEmail email) {
     
     this.email = email;

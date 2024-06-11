@@ -113,7 +113,6 @@ public class GetAggregatedReport {
     this.range = range;
   }
 
-
   public GetAggregatedReport requests(Long requests) {
     
     this.requests = requests;
@@ -138,7 +137,6 @@ public class GetAggregatedReport {
   public void setRequests(Long requests) {
     this.requests = requests;
   }
-
 
   public GetAggregatedReport delivered(Long delivered) {
     
@@ -165,7 +163,6 @@ public class GetAggregatedReport {
     this.delivered = delivered;
   }
 
-
   public GetAggregatedReport hardBounces(Long hardBounces) {
     
     this.hardBounces = hardBounces;
@@ -190,7 +187,6 @@ public class GetAggregatedReport {
   public void setHardBounces(Long hardBounces) {
     this.hardBounces = hardBounces;
   }
-
 
   public GetAggregatedReport softBounces(Long softBounces) {
     
@@ -217,7 +213,6 @@ public class GetAggregatedReport {
     this.softBounces = softBounces;
   }
 
-
   public GetAggregatedReport clicks(Long clicks) {
     
     this.clicks = clicks;
@@ -242,7 +237,6 @@ public class GetAggregatedReport {
   public void setClicks(Long clicks) {
     this.clicks = clicks;
   }
-
 
   public GetAggregatedReport uniqueClicks(Long uniqueClicks) {
     
@@ -269,7 +263,6 @@ public class GetAggregatedReport {
     this.uniqueClicks = uniqueClicks;
   }
 
-
   public GetAggregatedReport opens(Long opens) {
     
     this.opens = opens;
@@ -294,7 +287,6 @@ public class GetAggregatedReport {
   public void setOpens(Long opens) {
     this.opens = opens;
   }
-
 
   public GetAggregatedReport uniqueOpens(Long uniqueOpens) {
     
@@ -321,7 +313,6 @@ public class GetAggregatedReport {
     this.uniqueOpens = uniqueOpens;
   }
 
-
   public GetAggregatedReport spamReports(Long spamReports) {
     
     this.spamReports = spamReports;
@@ -346,7 +337,6 @@ public class GetAggregatedReport {
   public void setSpamReports(Long spamReports) {
     this.spamReports = spamReports;
   }
-
 
   public GetAggregatedReport blocked(Long blocked) {
     
@@ -373,7 +363,6 @@ public class GetAggregatedReport {
     this.blocked = blocked;
   }
 
-
   public GetAggregatedReport invalid(Long invalid) {
     
     this.invalid = invalid;
@@ -398,7 +387,6 @@ public class GetAggregatedReport {
   public void setInvalid(Long invalid) {
     this.invalid = invalid;
   }
-
 
   public GetAggregatedReport unsubscribed(Long unsubscribed) {
     

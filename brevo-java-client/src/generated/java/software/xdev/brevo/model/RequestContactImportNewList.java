@@ -69,7 +69,6 @@ public class RequestContactImportNewList {
     this.listName = listName;
   }
 
-
   public RequestContactImportNewList folderId(Long folderId) {
     
     this.folderId = folderId;

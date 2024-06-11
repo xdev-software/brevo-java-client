@@ -140,7 +140,6 @@ public class GetSmsEventReportEventsInner {
     this.phoneNumber = phoneNumber;
   }
 
-
   public GetSmsEventReportEventsInner date(String date) {
     
     this.date = date;
@@ -165,7 +164,6 @@ public class GetSmsEventReportEventsInner {
   public void setDate(String date) {
     this.date = date;
   }
-
 
   public GetSmsEventReportEventsInner messageId(String messageId) {
     
@@ -192,7 +190,6 @@ public class GetSmsEventReportEventsInner {
     this.messageId = messageId;
   }
 
-
   public GetSmsEventReportEventsInner event(EventEnum event) {
     
     this.event = event;
@@ -217,7 +214,6 @@ public class GetSmsEventReportEventsInner {
   public void setEvent(EventEnum event) {
     this.event = event;
   }
-
 
   public GetSmsEventReportEventsInner reason(String reason) {
     
@@ -244,7 +240,6 @@ public class GetSmsEventReportEventsInner {
     this.reason = reason;
   }
 
-
   public GetSmsEventReportEventsInner reply(String reply) {
     
     this.reply = reply;
@@ -269,7 +264,6 @@ public class GetSmsEventReportEventsInner {
   public void setReply(String reply) {
     this.reply = reply;
   }
-
 
   public GetSmsEventReportEventsInner tag(String tag) {
     

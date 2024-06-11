@@ -92,7 +92,6 @@ public class Note {
     this.id = id;
   }
 
-
   public Note text(String text) {
     
     this.text = text;
@@ -117,7 +116,6 @@ public class Note {
   public void setText(String text) {
     this.text = text;
   }
-
 
   public Note contactIds(List<Integer> contactIds) {
     
@@ -152,7 +150,6 @@ public class Note {
     this.contactIds = contactIds;
   }
 
-
   public Note dealIds(List<String> dealIds) {
     
     this.dealIds = dealIds;
@@ -186,7 +183,6 @@ public class Note {
     this.dealIds = dealIds;
   }
 
-
   public Note authorId(Object authorId) {
     
     this.authorId = authorId;
@@ -212,7 +208,6 @@ public class Note {
     this.authorId = authorId;
   }
 
-
   public Note createdAt(OffsetDateTime createdAt) {
     
     this.createdAt = createdAt;
@@ -237,7 +232,6 @@ public class Note {
   public void setCreatedAt(OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
-
 
   public Note updatedAt(OffsetDateTime updatedAt) {
     

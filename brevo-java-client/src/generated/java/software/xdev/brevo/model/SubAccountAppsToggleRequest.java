@@ -113,7 +113,6 @@ public class SubAccountAppsToggleRequest {
     this.inbox = inbox;
   }
 
-
   public SubAccountAppsToggleRequest whatsapp(Boolean whatsapp) {
     
     this.whatsapp = whatsapp;
@@ -138,7 +137,6 @@ public class SubAccountAppsToggleRequest {
   public void setWhatsapp(Boolean whatsapp) {
     this.whatsapp = whatsapp;
   }
-
 
   public SubAccountAppsToggleRequest automation(Boolean automation) {
     
@@ -165,7 +163,6 @@ public class SubAccountAppsToggleRequest {
     this.automation = automation;
   }
 
-
   public SubAccountAppsToggleRequest emailCampaigns(Boolean emailCampaigns) {
     
     this.emailCampaigns = emailCampaigns;
@@ -190,7 +187,6 @@ public class SubAccountAppsToggleRequest {
   public void setEmailCampaigns(Boolean emailCampaigns) {
     this.emailCampaigns = emailCampaigns;
   }
-
 
   public SubAccountAppsToggleRequest smsCampaigns(Boolean smsCampaigns) {
     
@@ -217,7 +213,6 @@ public class SubAccountAppsToggleRequest {
     this.smsCampaigns = smsCampaigns;
   }
 
-
   public SubAccountAppsToggleRequest landingPages(Boolean landingPages) {
     
     this.landingPages = landingPages;
@@ -242,7 +237,6 @@ public class SubAccountAppsToggleRequest {
   public void setLandingPages(Boolean landingPages) {
     this.landingPages = landingPages;
   }
-
 
   public SubAccountAppsToggleRequest transactionalEmails(Boolean transactionalEmails) {
     
@@ -269,7 +263,6 @@ public class SubAccountAppsToggleRequest {
     this.transactionalEmails = transactionalEmails;
   }
 
-
   public SubAccountAppsToggleRequest transactionalSms(Boolean transactionalSms) {
     
     this.transactionalSms = transactionalSms;
@@ -294,7 +287,6 @@ public class SubAccountAppsToggleRequest {
   public void setTransactionalSms(Boolean transactionalSms) {
     this.transactionalSms = transactionalSms;
   }
-
 
   public SubAccountAppsToggleRequest facebookAds(Boolean facebookAds) {
     
@@ -321,7 +313,6 @@ public class SubAccountAppsToggleRequest {
     this.facebookAds = facebookAds;
   }
 
-
   public SubAccountAppsToggleRequest webPush(Boolean webPush) {
     
     this.webPush = webPush;
@@ -346,7 +337,6 @@ public class SubAccountAppsToggleRequest {
   public void setWebPush(Boolean webPush) {
     this.webPush = webPush;
   }
-
 
   public SubAccountAppsToggleRequest meetings(Boolean meetings) {
     
@@ -373,7 +363,6 @@ public class SubAccountAppsToggleRequest {
     this.meetings = meetings;
   }
 
-
   public SubAccountAppsToggleRequest conversations(Boolean conversations) {
     
     this.conversations = conversations;
@@ -398,7 +387,6 @@ public class SubAccountAppsToggleRequest {
   public void setConversations(Boolean conversations) {
     this.conversations = conversations;
   }
-
 
   public SubAccountAppsToggleRequest crm(Boolean crm) {
     

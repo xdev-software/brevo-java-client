@@ -81,7 +81,6 @@ public class CreateUpdateBatchProducts {
     this.products = products;
   }
 
-
   public CreateUpdateBatchProducts updateEnabled(Boolean updateEnabled) {
     
     this.updateEnabled = updateEnabled;

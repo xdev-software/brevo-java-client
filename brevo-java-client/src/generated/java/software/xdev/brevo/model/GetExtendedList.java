@@ -101,7 +101,6 @@ public class GetExtendedList {
     this.id = id;
   }
 
-
   public GetExtendedList name(String name) {
     
     this.name = name;
@@ -126,7 +125,6 @@ public class GetExtendedList {
   public void setName(String name) {
     this.name = name;
   }
-
 
   public GetExtendedList totalBlacklisted(Long totalBlacklisted) {
     
@@ -153,7 +151,6 @@ public class GetExtendedList {
     this.totalBlacklisted = totalBlacklisted;
   }
 
-
   public GetExtendedList totalSubscribers(Long totalSubscribers) {
     
     this.totalSubscribers = totalSubscribers;
@@ -178,7 +175,6 @@ public class GetExtendedList {
   public void setTotalSubscribers(Long totalSubscribers) {
     this.totalSubscribers = totalSubscribers;
   }
-
 
   public GetExtendedList uniqueSubscribers(Long uniqueSubscribers) {
     
@@ -205,7 +201,6 @@ public class GetExtendedList {
     this.uniqueSubscribers = uniqueSubscribers;
   }
 
-
   public GetExtendedList folderId(Long folderId) {
     
     this.folderId = folderId;
@@ -231,7 +226,6 @@ public class GetExtendedList {
     this.folderId = folderId;
   }
 
-
   public GetExtendedList createdAt(String createdAt) {
     
     this.createdAt = createdAt;
@@ -256,7 +250,6 @@ public class GetExtendedList {
   public void setCreatedAt(String createdAt) {
     this.createdAt = createdAt;
   }
-
 
   public GetExtendedList campaignStats(List<GetExtendedListAllOfCampaignStats> campaignStats) {
     
@@ -290,7 +283,6 @@ public class GetExtendedList {
   public void setCampaignStats(List<GetExtendedListAllOfCampaignStats> campaignStats) {
     this.campaignStats = campaignStats;
   }
-
 
   public GetExtendedList dynamicList(Boolean dynamicList) {
     

@@ -69,7 +69,6 @@ public class GetChildInfoAllOfApiKeysV2 {
     this.name = name;
   }
 
-
   public GetChildInfoAllOfApiKeysV2 key(String key) {
     
     this.key = key;

@@ -73,7 +73,6 @@ public class GetTransacBlockedContacts {
     this.count = count;
   }
 
-
   public GetTransacBlockedContacts contacts(List<GetTransacBlockedContactsContactsInner> contacts) {
     
     this.contacts = contacts;

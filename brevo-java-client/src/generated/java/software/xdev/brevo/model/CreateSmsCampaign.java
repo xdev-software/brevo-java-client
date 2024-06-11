@@ -94,7 +94,6 @@ public class CreateSmsCampaign {
     this.name = name;
   }
 
-
   public CreateSmsCampaign sender(String sender) {
     
     this.sender = sender;
@@ -119,7 +118,6 @@ public class CreateSmsCampaign {
   public void setSender(String sender) {
     this.sender = sender;
   }
-
 
   public CreateSmsCampaign content(String content) {
     
@@ -146,7 +144,6 @@ public class CreateSmsCampaign {
     this.content = content;
   }
 
-
   public CreateSmsCampaign recipients(CreateSmsCampaignRecipients recipients) {
     
     this.recipients = recipients;
@@ -171,7 +168,6 @@ public class CreateSmsCampaign {
   public void setRecipients(CreateSmsCampaignRecipients recipients) {
     this.recipients = recipients;
   }
-
 
   public CreateSmsCampaign scheduledAt(String scheduledAt) {
     
@@ -198,7 +194,6 @@ public class CreateSmsCampaign {
     this.scheduledAt = scheduledAt;
   }
 
-
   public CreateSmsCampaign unicodeEnabled(Boolean unicodeEnabled) {
     
     this.unicodeEnabled = unicodeEnabled;
@@ -224,7 +219,6 @@ public class CreateSmsCampaign {
     this.unicodeEnabled = unicodeEnabled;
   }
 
-
   public CreateSmsCampaign organisationPrefix(String organisationPrefix) {
     
     this.organisationPrefix = organisationPrefix;
@@ -249,7 +243,6 @@ public class CreateSmsCampaign {
   public void setOrganisationPrefix(String organisationPrefix) {
     this.organisationPrefix = organisationPrefix;
   }
-
 
   public CreateSmsCampaign unsubscribeInstruction(String unsubscribeInstruction) {
     

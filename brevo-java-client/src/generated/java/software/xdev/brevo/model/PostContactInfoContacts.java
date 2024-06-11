@@ -79,7 +79,6 @@ public class PostContactInfoContacts {
     this.success = success;
   }
 
-
   public PostContactInfoContacts failure(PostContactInfoContactsFailure failure) {
     
     this.failure = failure;
@@ -105,7 +104,6 @@ public class PostContactInfoContacts {
     this.failure = failure;
   }
 
-
   public PostContactInfoContacts total(Long total) {
     
     this.total = total;
@@ -130,7 +128,6 @@ public class PostContactInfoContacts {
   public void setTotal(Long total) {
     this.total = total;
   }
-
 
   public PostContactInfoContacts processId(Long processId) {
     

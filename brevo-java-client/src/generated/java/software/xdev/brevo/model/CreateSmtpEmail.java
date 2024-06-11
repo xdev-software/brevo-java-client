@@ -72,7 +72,6 @@ public class CreateSmtpEmail {
     this.messageId = messageId;
   }
 
-
   public CreateSmtpEmail messageIds(List<String> messageIds) {
     
     this.messageIds = messageIds;

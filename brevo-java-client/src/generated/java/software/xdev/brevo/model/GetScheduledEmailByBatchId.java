@@ -73,7 +73,6 @@ public class GetScheduledEmailByBatchId {
     this.count = count;
   }
 
-
   public GetScheduledEmailByBatchId batches(List<GetScheduledEmailByBatchIdBatchesInner> batches) {
     
     this.batches = batches;

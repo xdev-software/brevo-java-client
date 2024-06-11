@@ -171,7 +171,6 @@ public class AbTestCampaignResult {
     this.winningVersion = winningVersion;
   }
 
-
   public AbTestCampaignResult winningCriteria(WinningCriteriaEnum winningCriteria) {
     
     this.winningCriteria = winningCriteria;
@@ -196,7 +195,6 @@ public class AbTestCampaignResult {
   public void setWinningCriteria(WinningCriteriaEnum winningCriteria) {
     this.winningCriteria = winningCriteria;
   }
-
 
   public AbTestCampaignResult winningSubjectLine(String winningSubjectLine) {
     
@@ -223,7 +221,6 @@ public class AbTestCampaignResult {
     this.winningSubjectLine = winningSubjectLine;
   }
 
-
   public AbTestCampaignResult openRate(String openRate) {
     
     this.openRate = openRate;
@@ -248,7 +245,6 @@ public class AbTestCampaignResult {
   public void setOpenRate(String openRate) {
     this.openRate = openRate;
   }
-
 
   public AbTestCampaignResult clickRate(String clickRate) {
     
@@ -275,7 +271,6 @@ public class AbTestCampaignResult {
     this.clickRate = clickRate;
   }
 
-
   public AbTestCampaignResult winningVersionRate(String winningVersionRate) {
     
     this.winningVersionRate = winningVersionRate;
@@ -301,7 +296,6 @@ public class AbTestCampaignResult {
     this.winningVersionRate = winningVersionRate;
   }
 
-
   public AbTestCampaignResult statistics(AbTestCampaignResultStatistics statistics) {
     
     this.statistics = statistics;
@@ -326,7 +320,6 @@ public class AbTestCampaignResult {
   public void setStatistics(AbTestCampaignResultStatistics statistics) {
     this.statistics = statistics;
   }
-
 
   public AbTestCampaignResult clickedLinks(AbTestCampaignResultClickedLinks clickedLinks) {
     

@@ -79,7 +79,6 @@ public class NoteData {
     this.text = text;
   }
 
-
   public NoteData contactIds(List<Integer> contactIds) {
     
     this.contactIds = contactIds;
@@ -113,7 +112,6 @@ public class NoteData {
     this.contactIds = contactIds;
   }
 
-
   public NoteData dealIds(List<String> dealIds) {
     
     this.dealIds = dealIds;
@@ -146,7 +144,6 @@ public class NoteData {
   public void setDealIds(List<String> dealIds) {
     this.dealIds = dealIds;
   }
-
 
   public NoteData companyIds(List<String> companyIds) {
     

@@ -86,7 +86,6 @@ public class AbTestCampaignResultStatistics {
     this.openers = openers;
   }
 
-
   public AbTestCampaignResultStatistics clicks(AbTestVersionStats clicks) {
     
     this.clicks = clicks;
@@ -111,7 +110,6 @@ public class AbTestCampaignResultStatistics {
   public void setClicks(AbTestVersionStats clicks) {
     this.clicks = clicks;
   }
-
 
   public AbTestCampaignResultStatistics unsubscribed(AbTestVersionStats unsubscribed) {
     
@@ -138,7 +136,6 @@ public class AbTestCampaignResultStatistics {
     this.unsubscribed = unsubscribed;
   }
 
-
   public AbTestCampaignResultStatistics hardBounces(AbTestVersionStats hardBounces) {
     
     this.hardBounces = hardBounces;
@@ -164,7 +161,6 @@ public class AbTestCampaignResultStatistics {
     this.hardBounces = hardBounces;
   }
 
-
   public AbTestCampaignResultStatistics softBounces(AbTestVersionStats softBounces) {
     
     this.softBounces = softBounces;
@@ -189,7 +185,6 @@ public class AbTestCampaignResultStatistics {
   public void setSoftBounces(AbTestVersionStats softBounces) {
     this.softBounces = softBounces;
   }
-
 
   public AbTestCampaignResultStatistics complaints(AbTestVersionStats complaints) {
     

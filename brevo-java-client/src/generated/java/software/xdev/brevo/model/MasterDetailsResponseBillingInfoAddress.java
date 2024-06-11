@@ -81,7 +81,6 @@ public class MasterDetailsResponseBillingInfoAddress {
     this.streetAddress = streetAddress;
   }
 
-
   public MasterDetailsResponseBillingInfoAddress locality(String locality) {
     
     this.locality = locality;
@@ -106,7 +105,6 @@ public class MasterDetailsResponseBillingInfoAddress {
   public void setLocality(String locality) {
     this.locality = locality;
   }
-
 
   public MasterDetailsResponseBillingInfoAddress postalCode(String postalCode) {
     
@@ -133,7 +131,6 @@ public class MasterDetailsResponseBillingInfoAddress {
     this.postalCode = postalCode;
   }
 
-
   public MasterDetailsResponseBillingInfoAddress stateCode(String stateCode) {
     
     this.stateCode = stateCode;
@@ -158,7 +155,6 @@ public class MasterDetailsResponseBillingInfoAddress {
   public void setStateCode(String stateCode) {
     this.stateCode = stateCode;
   }
-
 
   public MasterDetailsResponseBillingInfoAddress countryCode(String countryCode) {
     

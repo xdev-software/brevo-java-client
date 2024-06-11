@@ -75,7 +75,6 @@ public class SubAccountDetailsResponsePlanInfo {
     this.credits = credits;
   }
 
-
   public SubAccountDetailsResponsePlanInfo features(SubAccountDetailsResponsePlanInfoFeatures features) {
     
     this.features = features;
@@ -100,7 +99,6 @@ public class SubAccountDetailsResponsePlanInfo {
   public void setFeatures(SubAccountDetailsResponsePlanInfoFeatures features) {
     this.features = features;
   }
-
 
   public SubAccountDetailsResponsePlanInfo planType(String planType) {
     

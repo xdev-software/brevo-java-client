@@ -69,7 +69,6 @@ public class UploadImageToGallery {
     this.imageUrl = imageUrl;
   }
 
-
   public UploadImageToGallery name(String name) {
     
     this.name = name;

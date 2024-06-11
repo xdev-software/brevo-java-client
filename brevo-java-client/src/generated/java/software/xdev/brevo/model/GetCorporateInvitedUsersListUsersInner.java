@@ -83,7 +83,6 @@ public class GetCorporateInvitedUsersListUsersInner {
     this.groups = groups;
   }
 
-
   public GetCorporateInvitedUsersListUsersInner email(String email) {
     
     this.email = email;
@@ -108,7 +107,6 @@ public class GetCorporateInvitedUsersListUsersInner {
   public void setEmail(String email) {
     this.email = email;
   }
-
 
   public GetCorporateInvitedUsersListUsersInner isOwner(String isOwner) {
     
@@ -135,7 +133,6 @@ public class GetCorporateInvitedUsersListUsersInner {
     this.isOwner = isOwner;
   }
 
-
   public GetCorporateInvitedUsersListUsersInner status(String status) {
     
     this.status = status;
@@ -160,7 +157,6 @@ public class GetCorporateInvitedUsersListUsersInner {
   public void setStatus(String status) {
     this.status = status;
   }
-
 
   public GetCorporateInvitedUsersListUsersInner featureAccess(GetCorporateInvitedUsersListUsersInnerFeatureAccess featureAccess) {
     

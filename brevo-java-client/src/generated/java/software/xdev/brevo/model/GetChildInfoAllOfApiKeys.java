@@ -82,7 +82,6 @@ public class GetChildInfoAllOfApiKeys {
     this.v2 = v2;
   }
 
-
   public GetChildInfoAllOfApiKeys v3(List<GetChildInfoAllOfApiKeysV3> v3) {
     
     this.v3 = v3;

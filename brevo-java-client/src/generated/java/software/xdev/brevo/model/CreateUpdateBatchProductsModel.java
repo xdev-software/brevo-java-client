@@ -69,7 +69,6 @@ public class CreateUpdateBatchProductsModel {
     this.createdCount = createdCount;
   }
 
-
   public CreateUpdateBatchProductsModel updatedCount(Long updatedCount) {
     
     this.updatedCount = updatedCount;

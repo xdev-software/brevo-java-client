@@ -73,7 +73,6 @@ public class UpdateAttribute {
     this.value = value;
   }
 
-
   public UpdateAttribute enumeration(List<UpdateAttributeEnumerationInner> enumeration) {
     
     this.enumeration = enumeration;

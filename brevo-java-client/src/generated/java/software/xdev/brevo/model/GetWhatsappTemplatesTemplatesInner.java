@@ -93,7 +93,6 @@ public class GetWhatsappTemplatesTemplatesInner {
     this.id = id;
   }
 
-
   public GetWhatsappTemplatesTemplatesInner name(String name) {
     
     this.name = name;
@@ -118,7 +117,6 @@ public class GetWhatsappTemplatesTemplatesInner {
   public void setName(String name) {
     this.name = name;
   }
-
 
   public GetWhatsappTemplatesTemplatesInner status(String status) {
     
@@ -145,7 +143,6 @@ public class GetWhatsappTemplatesTemplatesInner {
     this.status = status;
   }
 
-
   public GetWhatsappTemplatesTemplatesInner language(String language) {
     
     this.language = language;
@@ -170,7 +167,6 @@ public class GetWhatsappTemplatesTemplatesInner {
   public void setLanguage(String language) {
     this.language = language;
   }
-
 
   public GetWhatsappTemplatesTemplatesInner category(String category) {
     
@@ -197,7 +193,6 @@ public class GetWhatsappTemplatesTemplatesInner {
     this.category = category;
   }
 
-
   public GetWhatsappTemplatesTemplatesInner errorReason(String errorReason) {
     
     this.errorReason = errorReason;
@@ -223,7 +218,6 @@ public class GetWhatsappTemplatesTemplatesInner {
     this.errorReason = errorReason;
   }
 
-
   public GetWhatsappTemplatesTemplatesInner createdAt(String createdAt) {
     
     this.createdAt = createdAt;
@@ -248,7 +242,6 @@ public class GetWhatsappTemplatesTemplatesInner {
   public void setCreatedAt(String createdAt) {
     this.createdAt = createdAt;
   }
-
 
   public GetWhatsappTemplatesTemplatesInner modifiedAt(String modifiedAt) {
     

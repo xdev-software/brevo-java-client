@@ -72,7 +72,6 @@ public class CorporateGroupPostRequest {
     this.groupName = groupName;
   }
 
-
   public CorporateGroupPostRequest subAccountIds(List<Long> subAccountIds) {
     
     this.subAccountIds = subAccountIds;

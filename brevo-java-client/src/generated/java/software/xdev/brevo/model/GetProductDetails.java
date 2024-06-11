@@ -124,7 +124,6 @@ public class GetProductDetails {
     this.id = id;
   }
 
-
   public GetProductDetails name(String name) {
     
     this.name = name;
@@ -149,7 +148,6 @@ public class GetProductDetails {
   public void setName(String name) {
     this.name = name;
   }
-
 
   public GetProductDetails createdAt(String createdAt) {
     
@@ -176,7 +174,6 @@ public class GetProductDetails {
     this.createdAt = createdAt;
   }
 
-
   public GetProductDetails modifiedAt(String modifiedAt) {
     
     this.modifiedAt = modifiedAt;
@@ -201,7 +198,6 @@ public class GetProductDetails {
   public void setModifiedAt(String modifiedAt) {
     this.modifiedAt = modifiedAt;
   }
-
 
   public GetProductDetails url(String url) {
     
@@ -228,7 +224,6 @@ public class GetProductDetails {
     this.url = url;
   }
 
-
   public GetProductDetails imageUrl(String imageUrl) {
     
     this.imageUrl = imageUrl;
@@ -253,7 +248,6 @@ public class GetProductDetails {
   public void setImageUrl(String imageUrl) {
     this.imageUrl = imageUrl;
   }
-
 
   public GetProductDetails sku(String sku) {
     
@@ -280,7 +274,6 @@ public class GetProductDetails {
     this.sku = sku;
   }
 
-
   public GetProductDetails price(Float price) {
     
     this.price = price;
@@ -305,7 +298,6 @@ public class GetProductDetails {
   public void setPrice(Float price) {
     this.price = price;
   }
-
 
   public GetProductDetails categories(List<String> categories) {
     
@@ -340,7 +332,6 @@ public class GetProductDetails {
     this.categories = categories;
   }
 
-
   public GetProductDetails parentId(String parentId) {
     
     this.parentId = parentId;
@@ -365,7 +356,6 @@ public class GetProductDetails {
   public void setParentId(String parentId) {
     this.parentId = parentId;
   }
-
 
   public GetProductDetails s3Original(String s3Original) {
     
@@ -392,7 +382,6 @@ public class GetProductDetails {
     this.s3Original = s3Original;
   }
 
-
   public GetProductDetails s3ThumbAnalytics(String s3ThumbAnalytics) {
     
     this.s3ThumbAnalytics = s3ThumbAnalytics;
@@ -417,7 +406,6 @@ public class GetProductDetails {
   public void setS3ThumbAnalytics(String s3ThumbAnalytics) {
     this.s3ThumbAnalytics = s3ThumbAnalytics;
   }
-
 
   public GetProductDetails s3ThumbEditor(String s3ThumbEditor) {
     
@@ -444,7 +432,6 @@ public class GetProductDetails {
     this.s3ThumbEditor = s3ThumbEditor;
   }
 
-
   public GetProductDetails metaInfo(Object metaInfo) {
     
     this.metaInfo = metaInfo;
@@ -469,7 +456,6 @@ public class GetProductDetails {
   public void setMetaInfo(Object metaInfo) {
     this.metaInfo = metaInfo;
   }
-
 
   public GetProductDetails isDeleted(Boolean isDeleted) {
     

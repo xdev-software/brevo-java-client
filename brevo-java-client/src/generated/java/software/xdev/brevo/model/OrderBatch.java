@@ -85,7 +85,6 @@ public class OrderBatch {
     this.orders = orders;
   }
 
-
   public OrderBatch notifyUrl(String notifyUrl) {
     
     this.notifyUrl = notifyUrl;
@@ -110,7 +109,6 @@ public class OrderBatch {
   public void setNotifyUrl(String notifyUrl) {
     this.notifyUrl = notifyUrl;
   }
-
 
   public OrderBatch historical(Boolean historical) {
     

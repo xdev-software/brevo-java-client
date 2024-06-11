@@ -69,7 +69,6 @@ public class GetChildInfoAllOfCredits {
     this.emailCredits = emailCredits;
   }
 
-
   public GetChildInfoAllOfCredits smsCredits(Long smsCredits) {
     
     this.smsCredits = smsCredits;

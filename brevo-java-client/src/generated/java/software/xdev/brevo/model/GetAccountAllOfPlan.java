@@ -160,7 +160,6 @@ public class GetAccountAllOfPlan {
     this.type = type;
   }
 
-
   public GetAccountAllOfPlan creditsType(CreditsTypeEnum creditsType) {
     
     this.creditsType = creditsType;
@@ -185,7 +184,6 @@ public class GetAccountAllOfPlan {
   public void setCreditsType(CreditsTypeEnum creditsType) {
     this.creditsType = creditsType;
   }
-
 
   public GetAccountAllOfPlan credits(Float credits) {
     
@@ -212,7 +210,6 @@ public class GetAccountAllOfPlan {
     this.credits = credits;
   }
 
-
   public GetAccountAllOfPlan startDate(LocalDate startDate) {
     
     this.startDate = startDate;
@@ -238,7 +235,6 @@ public class GetAccountAllOfPlan {
     this.startDate = startDate;
   }
 
-
   public GetAccountAllOfPlan endDate(LocalDate endDate) {
     
     this.endDate = endDate;
@@ -263,7 +259,6 @@ public class GetAccountAllOfPlan {
   public void setEndDate(LocalDate endDate) {
     this.endDate = endDate;
   }
-
 
   public GetAccountAllOfPlan userLimit(Integer userLimit) {
     

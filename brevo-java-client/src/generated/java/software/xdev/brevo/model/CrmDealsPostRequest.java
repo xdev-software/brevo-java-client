@@ -69,7 +69,6 @@ public class CrmDealsPostRequest {
     this.name = name;
   }
 
-
   public CrmDealsPostRequest attributes(Object attributes) {
     
     this.attributes = attributes;

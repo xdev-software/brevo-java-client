@@ -110,7 +110,6 @@ public class RequestContactImport {
     this.fileUrl = fileUrl;
   }
 
-
   public RequestContactImport fileBody(String fileBody) {
     
     this.fileBody = fileBody;
@@ -135,7 +134,6 @@ public class RequestContactImport {
   public void setFileBody(String fileBody) {
     this.fileBody = fileBody;
   }
-
 
   public RequestContactImport jsonBody(List<RequestContactImportJsonBodyInner> jsonBody) {
     
@@ -170,7 +168,6 @@ public class RequestContactImport {
     this.jsonBody = jsonBody;
   }
 
-
   public RequestContactImport listIds(List<Long> listIds) {
     
     this.listIds = listIds;
@@ -204,7 +201,6 @@ public class RequestContactImport {
     this.listIds = listIds;
   }
 
-
   public RequestContactImport notifyUrl(String notifyUrl) {
     
     this.notifyUrl = notifyUrl;
@@ -229,7 +225,6 @@ public class RequestContactImport {
   public void setNotifyUrl(String notifyUrl) {
     this.notifyUrl = notifyUrl;
   }
-
 
   public RequestContactImport newList(RequestContactImportNewList newList) {
     
@@ -256,7 +251,6 @@ public class RequestContactImport {
     this.newList = newList;
   }
 
-
   public RequestContactImport emailBlacklist(Boolean emailBlacklist) {
     
     this.emailBlacklist = emailBlacklist;
@@ -281,7 +275,6 @@ public class RequestContactImport {
   public void setEmailBlacklist(Boolean emailBlacklist) {
     this.emailBlacklist = emailBlacklist;
   }
-
 
   public RequestContactImport disableNotification(Boolean disableNotification) {
     
@@ -308,7 +301,6 @@ public class RequestContactImport {
     this.disableNotification = disableNotification;
   }
 
-
   public RequestContactImport smsBlacklist(Boolean smsBlacklist) {
     
     this.smsBlacklist = smsBlacklist;
@@ -334,7 +326,6 @@ public class RequestContactImport {
     this.smsBlacklist = smsBlacklist;
   }
 
-
   public RequestContactImport updateExistingContacts(Boolean updateExistingContacts) {
     
     this.updateExistingContacts = updateExistingContacts;
@@ -359,7 +350,6 @@ public class RequestContactImport {
   public void setUpdateExistingContacts(Boolean updateExistingContacts) {
     this.updateExistingContacts = updateExistingContacts;
   }
-
 
   public RequestContactImport emptyContactsAttributes(Boolean emptyContactsAttributes) {
     

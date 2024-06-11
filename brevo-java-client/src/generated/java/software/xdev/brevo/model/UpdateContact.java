@@ -102,7 +102,6 @@ public class UpdateContact {
     this.attributes = attributes;
   }
 
-
   public UpdateContact extId(String extId) {
     
     this.extId = extId;
@@ -127,7 +126,6 @@ public class UpdateContact {
   public void setExtId(String extId) {
     this.extId = extId;
   }
-
 
   public UpdateContact emailBlacklisted(Boolean emailBlacklisted) {
     
@@ -154,7 +152,6 @@ public class UpdateContact {
     this.emailBlacklisted = emailBlacklisted;
   }
 
-
   public UpdateContact smsBlacklisted(Boolean smsBlacklisted) {
     
     this.smsBlacklisted = smsBlacklisted;
@@ -179,7 +176,6 @@ public class UpdateContact {
   public void setSmsBlacklisted(Boolean smsBlacklisted) {
     this.smsBlacklisted = smsBlacklisted;
   }
-
 
   public UpdateContact listIds(List<Long> listIds) {
     
@@ -214,7 +210,6 @@ public class UpdateContact {
     this.listIds = listIds;
   }
 
-
   public UpdateContact unlinkListIds(List<Long> unlinkListIds) {
     
     this.unlinkListIds = unlinkListIds;
@@ -247,7 +242,6 @@ public class UpdateContact {
   public void setUnlinkListIds(List<Long> unlinkListIds) {
     this.unlinkListIds = unlinkListIds;
   }
-
 
   public UpdateContact smtpBlacklistSender(List<String> smtpBlacklistSender) {
     

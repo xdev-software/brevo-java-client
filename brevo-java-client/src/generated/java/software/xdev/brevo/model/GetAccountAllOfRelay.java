@@ -70,7 +70,6 @@ public class GetAccountAllOfRelay {
     this.enabled = enabled;
   }
 
-
   public GetAccountAllOfRelay data(GetAccountAllOfRelayData data) {
     
     this.data = data;

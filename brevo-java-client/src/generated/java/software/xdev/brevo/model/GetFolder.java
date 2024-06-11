@@ -81,7 +81,6 @@ public class GetFolder {
     this.id = id;
   }
 
-
   public GetFolder name(String name) {
     
     this.name = name;
@@ -106,7 +105,6 @@ public class GetFolder {
   public void setName(String name) {
     this.name = name;
   }
-
 
   public GetFolder totalBlacklisted(Long totalBlacklisted) {
     
@@ -133,7 +131,6 @@ public class GetFolder {
     this.totalBlacklisted = totalBlacklisted;
   }
 
-
   public GetFolder totalSubscribers(Long totalSubscribers) {
     
     this.totalSubscribers = totalSubscribers;
@@ -158,7 +155,6 @@ public class GetFolder {
   public void setTotalSubscribers(Long totalSubscribers) {
     this.totalSubscribers = totalSubscribers;
   }
-
 
   public GetFolder uniqueSubscribers(Long uniqueSubscribers) {
     

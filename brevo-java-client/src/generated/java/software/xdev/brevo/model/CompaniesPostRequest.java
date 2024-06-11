@@ -73,7 +73,6 @@ public class CompaniesPostRequest {
     this.name = name;
   }
 
-
   public CompaniesPostRequest attributes(Object attributes) {
     
     this.attributes = attributes;
@@ -98,7 +97,6 @@ public class CompaniesPostRequest {
   public void setAttributes(Object attributes) {
     this.attributes = attributes;
   }
-
 
   public CompaniesPostRequest countryCode(Long countryCode) {
     

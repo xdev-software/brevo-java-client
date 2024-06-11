@@ -69,7 +69,6 @@ public class UpdateAttributeEnumerationInner {
     this.value = value;
   }
 
-
   public UpdateAttributeEnumerationInner label(String label) {
     
     this.label = label;

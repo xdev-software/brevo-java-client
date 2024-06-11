@@ -77,7 +77,6 @@ public class GetUserPermission {
     this.email = email;
   }
 
-
   public GetUserPermission status(String status) {
     
     this.status = status;
@@ -102,7 +101,6 @@ public class GetUserPermission {
   public void setStatus(String status) {
     this.status = status;
   }
-
 
   public GetUserPermission privileges(List<GetUserPermissionPrivilegesInner> privileges) {
     

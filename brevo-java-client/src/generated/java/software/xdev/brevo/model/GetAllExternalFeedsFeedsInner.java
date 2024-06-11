@@ -151,7 +151,6 @@ public class GetAllExternalFeedsFeedsInner {
     this.id = id;
   }
 
-
   public GetAllExternalFeedsFeedsInner name(String name) {
     
     this.name = name;
@@ -176,7 +175,6 @@ public class GetAllExternalFeedsFeedsInner {
   public void setName(String name) {
     this.name = name;
   }
-
 
   public GetAllExternalFeedsFeedsInner url(String url) {
     
@@ -203,7 +201,6 @@ public class GetAllExternalFeedsFeedsInner {
     this.url = url;
   }
 
-
   public GetAllExternalFeedsFeedsInner authType(AuthTypeEnum authType) {
     
     this.authType = authType;
@@ -228,7 +225,6 @@ public class GetAllExternalFeedsFeedsInner {
   public void setAuthType(AuthTypeEnum authType) {
     this.authType = authType;
   }
-
 
   public GetAllExternalFeedsFeedsInner username(String username) {
     
@@ -255,7 +251,6 @@ public class GetAllExternalFeedsFeedsInner {
     this.username = username;
   }
 
-
   public GetAllExternalFeedsFeedsInner password(String password) {
     
     this.password = password;
@@ -281,7 +276,6 @@ public class GetAllExternalFeedsFeedsInner {
     this.password = password;
   }
 
-
   public GetAllExternalFeedsFeedsInner token(String token) {
     
     this.token = token;
@@ -306,7 +300,6 @@ public class GetAllExternalFeedsFeedsInner {
   public void setToken(String token) {
     this.token = token;
   }
-
 
   public GetAllExternalFeedsFeedsInner headers(List<GetExternalFeedByUUIDHeadersInner> headers) {
     
@@ -341,7 +334,6 @@ public class GetAllExternalFeedsFeedsInner {
     this.headers = headers;
   }
 
-
   public GetAllExternalFeedsFeedsInner maxRetries(Integer maxRetries) {
     
     this.maxRetries = maxRetries;
@@ -369,7 +361,6 @@ public class GetAllExternalFeedsFeedsInner {
     this.maxRetries = maxRetries;
   }
 
-
   public GetAllExternalFeedsFeedsInner cache(Boolean cache) {
     
     this.cache = cache;
@@ -395,7 +386,6 @@ public class GetAllExternalFeedsFeedsInner {
     this.cache = cache;
   }
 
-
   public GetAllExternalFeedsFeedsInner createdAt(OffsetDateTime createdAt) {
     
     this.createdAt = createdAt;
@@ -420,7 +410,6 @@ public class GetAllExternalFeedsFeedsInner {
   public void setCreatedAt(OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
-
 
   public GetAllExternalFeedsFeedsInner modifiedAt(OffsetDateTime modifiedAt) {
     

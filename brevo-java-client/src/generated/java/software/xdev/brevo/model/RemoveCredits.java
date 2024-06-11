@@ -69,7 +69,6 @@ public class RemoveCredits {
     this.sms = sms;
   }
 
-
   public RemoveCredits email(Long email) {
     
     this.email = email;

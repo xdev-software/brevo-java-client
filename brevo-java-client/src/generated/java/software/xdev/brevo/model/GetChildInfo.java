@@ -103,7 +103,6 @@ public class GetChildInfo {
     this.email = email;
   }
 
-
   public GetChildInfo firstName(String firstName) {
     
     this.firstName = firstName;
@@ -128,7 +127,6 @@ public class GetChildInfo {
   public void setFirstName(String firstName) {
     this.firstName = firstName;
   }
-
 
   public GetChildInfo lastName(String lastName) {
     
@@ -155,7 +153,6 @@ public class GetChildInfo {
     this.lastName = lastName;
   }
 
-
   public GetChildInfo companyName(String companyName) {
     
     this.companyName = companyName;
@@ -180,7 +177,6 @@ public class GetChildInfo {
   public void setCompanyName(String companyName) {
     this.companyName = companyName;
   }
-
 
   public GetChildInfo credits(GetChildInfoAllOfCredits credits) {
     
@@ -207,7 +203,6 @@ public class GetChildInfo {
     this.credits = credits;
   }
 
-
   public GetChildInfo statistics(GetChildInfoAllOfStatistics statistics) {
     
     this.statistics = statistics;
@@ -233,7 +228,6 @@ public class GetChildInfo {
     this.statistics = statistics;
   }
 
-
   public GetChildInfo password(String password) {
     
     this.password = password;
@@ -258,7 +252,6 @@ public class GetChildInfo {
   public void setPassword(String password) {
     this.password = password;
   }
-
 
   public GetChildInfo ips(List<String> ips) {
     
@@ -292,7 +285,6 @@ public class GetChildInfo {
   public void setIps(List<String> ips) {
     this.ips = ips;
   }
-
 
   public GetChildInfo apiKeys(GetChildInfoAllOfApiKeys apiKeys) {
     

@@ -136,7 +136,6 @@ public class ConversationsMessage {
     this.id = id;
   }
 
-
   public ConversationsMessage type(TypeEnum type) {
     
     this.type = type;
@@ -161,7 +160,6 @@ public class ConversationsMessage {
   public void setType(TypeEnum type) {
     this.type = type;
   }
-
 
   public ConversationsMessage text(String text) {
     
@@ -188,7 +186,6 @@ public class ConversationsMessage {
     this.text = text;
   }
 
-
   public ConversationsMessage visitorId(String visitorId) {
     
     this.visitorId = visitorId;
@@ -213,7 +210,6 @@ public class ConversationsMessage {
   public void setVisitorId(String visitorId) {
     this.visitorId = visitorId;
   }
-
 
   public ConversationsMessage agentId(String agentId) {
     
@@ -240,7 +236,6 @@ public class ConversationsMessage {
     this.agentId = agentId;
   }
 
-
   public ConversationsMessage agentName(String agentName) {
     
     this.agentName = agentName;
@@ -265,7 +260,6 @@ public class ConversationsMessage {
   public void setAgentName(String agentName) {
     this.agentName = agentName;
   }
-
 
   public ConversationsMessage createdAt(Long createdAt) {
     
@@ -293,7 +287,6 @@ public class ConversationsMessage {
     this.createdAt = createdAt;
   }
 
-
   public ConversationsMessage isPushed(Boolean isPushed) {
     
     this.isPushed = isPushed;
@@ -319,7 +312,6 @@ public class ConversationsMessage {
     this.isPushed = isPushed;
   }
 
-
   public ConversationsMessage receivedFrom(String receivedFrom) {
     
     this.receivedFrom = receivedFrom;
@@ -344,7 +336,6 @@ public class ConversationsMessage {
   public void setReceivedFrom(String receivedFrom) {
     this.receivedFrom = receivedFrom;
   }
-
 
   public ConversationsMessage _file(ConversationsMessageFile _file) {
     

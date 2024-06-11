@@ -79,7 +79,6 @@ public class GetInboundEmailEventsEventsInner {
     this.uuid = uuid;
   }
 
-
   public GetInboundEmailEventsEventsInner date(OffsetDateTime date) {
     
     this.date = date;
@@ -105,7 +104,6 @@ public class GetInboundEmailEventsEventsInner {
     this.date = date;
   }
 
-
   public GetInboundEmailEventsEventsInner sender(String sender) {
     
     this.sender = sender;
@@ -130,7 +128,6 @@ public class GetInboundEmailEventsEventsInner {
   public void setSender(String sender) {
     this.sender = sender;
   }
-
 
   public GetInboundEmailEventsEventsInner recipient(String recipient) {
     

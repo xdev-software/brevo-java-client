@@ -127,7 +127,6 @@ public class GetScheduledEmailById200Response {
     this.count = count;
   }
 
-
   public GetScheduledEmailById200Response batches(List<GetScheduledEmailByBatchIdBatchesInner> batches) {
     
     this.batches = batches;
@@ -161,7 +160,6 @@ public class GetScheduledEmailById200Response {
     this.batches = batches;
   }
 
-
   public GetScheduledEmailById200Response scheduledAt(OffsetDateTime scheduledAt) {
     
     this.scheduledAt = scheduledAt;
@@ -187,7 +185,6 @@ public class GetScheduledEmailById200Response {
     this.scheduledAt = scheduledAt;
   }
 
-
   public GetScheduledEmailById200Response createdAt(OffsetDateTime createdAt) {
     
     this.createdAt = createdAt;
@@ -212,7 +209,6 @@ public class GetScheduledEmailById200Response {
   public void setCreatedAt(OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
-
 
   public GetScheduledEmailById200Response status(StatusEnum status) {
     

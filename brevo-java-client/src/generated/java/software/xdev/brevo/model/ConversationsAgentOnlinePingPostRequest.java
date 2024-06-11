@@ -89,7 +89,6 @@ public class ConversationsAgentOnlinePingPostRequest {
     this.agentId = JsonNullable.<Object>of(agentId);
   }
 
-
   public ConversationsAgentOnlinePingPostRequest receivedFrom(Object receivedFrom) {
     this.receivedFrom = JsonNullable.<Object>of(receivedFrom);
     
@@ -123,7 +122,6 @@ public class ConversationsAgentOnlinePingPostRequest {
     this.receivedFrom = JsonNullable.<Object>of(receivedFrom);
   }
 
-
   public ConversationsAgentOnlinePingPostRequest agentEmail(Object agentEmail) {
     this.agentEmail = JsonNullable.<Object>of(agentEmail);
     
@@ -156,7 +154,6 @@ public class ConversationsAgentOnlinePingPostRequest {
   public void setAgentEmail(Object agentEmail) {
     this.agentEmail = JsonNullable.<Object>of(agentEmail);
   }
-
 
   public ConversationsAgentOnlinePingPostRequest agentName(Object agentName) {
     this.agentName = JsonNullable.<Object>of(agentName);

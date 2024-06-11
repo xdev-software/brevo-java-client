@@ -73,7 +73,6 @@ public class GetInvitedUsersListUsersInnerFeatureAccess {
     this.marketing = marketing;
   }
 
-
   public GetInvitedUsersListUsersInnerFeatureAccess conversations(String conversations) {
     
     this.conversations = conversations;
@@ -98,7 +97,6 @@ public class GetInvitedUsersListUsersInnerFeatureAccess {
   public void setConversations(String conversations) {
     this.conversations = conversations;
   }
-
 
   public GetInvitedUsersListUsersInnerFeatureAccess crm(String crm) {
     

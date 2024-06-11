@@ -81,7 +81,6 @@ public class GetLists {
     this.lists = lists;
   }
 
-
   public GetLists count(Long count) {
     
     this.count = count;

@@ -89,7 +89,6 @@ public class GetSmsCampaignStats {
     this.delivered = delivered;
   }
 
-
   public GetSmsCampaignStats sent(Long sent) {
     
     this.sent = sent;
@@ -114,7 +113,6 @@ public class GetSmsCampaignStats {
   public void setSent(Long sent) {
     this.sent = sent;
   }
-
 
   public GetSmsCampaignStats processing(Long processing) {
     
@@ -141,7 +139,6 @@ public class GetSmsCampaignStats {
     this.processing = processing;
   }
 
-
   public GetSmsCampaignStats softBounces(Long softBounces) {
     
     this.softBounces = softBounces;
@@ -166,7 +163,6 @@ public class GetSmsCampaignStats {
   public void setSoftBounces(Long softBounces) {
     this.softBounces = softBounces;
   }
-
 
   public GetSmsCampaignStats hardBounces(Long hardBounces) {
     
@@ -193,7 +189,6 @@ public class GetSmsCampaignStats {
     this.hardBounces = hardBounces;
   }
 
-
   public GetSmsCampaignStats unsubscriptions(Long unsubscriptions) {
     
     this.unsubscriptions = unsubscriptions;
@@ -218,7 +213,6 @@ public class GetSmsCampaignStats {
   public void setUnsubscriptions(Long unsubscriptions) {
     this.unsubscriptions = unsubscriptions;
   }
-
 
   public GetSmsCampaignStats answered(Long answered) {
     

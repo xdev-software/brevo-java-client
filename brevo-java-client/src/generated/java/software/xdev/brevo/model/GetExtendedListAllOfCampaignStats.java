@@ -70,7 +70,6 @@ public class GetExtendedListAllOfCampaignStats {
     this.campaignId = campaignId;
   }
 
-
   public GetExtendedListAllOfCampaignStats stats(GetCampaignStats stats) {
     
     this.stats = stats;

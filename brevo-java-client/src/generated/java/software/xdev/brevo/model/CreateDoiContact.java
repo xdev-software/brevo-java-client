@@ -90,7 +90,6 @@ public class CreateDoiContact {
     this.email = email;
   }
 
-
   public CreateDoiContact attributes(Map<String, Object> attributes) {
     
     this.attributes = attributes;
@@ -123,7 +122,6 @@ public class CreateDoiContact {
   public void setAttributes(Map<String, Object> attributes) {
     this.attributes = attributes;
   }
-
 
   public CreateDoiContact includeListIds(List<Long> includeListIds) {
     
@@ -158,7 +156,6 @@ public class CreateDoiContact {
     this.includeListIds = includeListIds;
   }
 
-
   public CreateDoiContact excludeListIds(List<Long> excludeListIds) {
     
     this.excludeListIds = excludeListIds;
@@ -192,7 +189,6 @@ public class CreateDoiContact {
     this.excludeListIds = excludeListIds;
   }
 
-
   public CreateDoiContact templateId(Long templateId) {
     
     this.templateId = templateId;
@@ -217,7 +213,6 @@ public class CreateDoiContact {
   public void setTemplateId(Long templateId) {
     this.templateId = templateId;
   }
-
 
   public CreateDoiContact redirectionUrl(String redirectionUrl) {
     

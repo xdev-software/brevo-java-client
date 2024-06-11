@@ -106,7 +106,6 @@ public class UpdateBatchContactsContactsInner {
     this.email = email;
   }
 
-
   public UpdateBatchContactsContactsInner id(Long id) {
     
     this.id = id;
@@ -131,7 +130,6 @@ public class UpdateBatchContactsContactsInner {
   public void setId(Long id) {
     this.id = id;
   }
-
 
   public UpdateBatchContactsContactsInner sms(String sms) {
     
@@ -158,7 +156,6 @@ public class UpdateBatchContactsContactsInner {
     this.sms = sms;
   }
 
-
   public UpdateBatchContactsContactsInner extId(String extId) {
     
     this.extId = extId;
@@ -183,7 +180,6 @@ public class UpdateBatchContactsContactsInner {
   public void setExtId(String extId) {
     this.extId = extId;
   }
-
 
   public UpdateBatchContactsContactsInner attributes(Map<String, Object> attributes) {
     
@@ -218,7 +214,6 @@ public class UpdateBatchContactsContactsInner {
     this.attributes = attributes;
   }
 
-
   public UpdateBatchContactsContactsInner emailBlacklisted(Boolean emailBlacklisted) {
     
     this.emailBlacklisted = emailBlacklisted;
@@ -244,7 +239,6 @@ public class UpdateBatchContactsContactsInner {
     this.emailBlacklisted = emailBlacklisted;
   }
 
-
   public UpdateBatchContactsContactsInner smsBlacklisted(Boolean smsBlacklisted) {
     
     this.smsBlacklisted = smsBlacklisted;
@@ -269,7 +263,6 @@ public class UpdateBatchContactsContactsInner {
   public void setSmsBlacklisted(Boolean smsBlacklisted) {
     this.smsBlacklisted = smsBlacklisted;
   }
-
 
   public UpdateBatchContactsContactsInner listIds(List<Long> listIds) {
     
@@ -304,7 +297,6 @@ public class UpdateBatchContactsContactsInner {
     this.listIds = listIds;
   }
 
-
   public UpdateBatchContactsContactsInner unlinkListIds(List<Long> unlinkListIds) {
     
     this.unlinkListIds = unlinkListIds;
@@ -337,7 +329,6 @@ public class UpdateBatchContactsContactsInner {
   public void setUnlinkListIds(List<Long> unlinkListIds) {
     this.unlinkListIds = unlinkListIds;
   }
-
 
   public UpdateBatchContactsContactsInner smtpBlacklistSender(List<String> smtpBlacklistSender) {
     

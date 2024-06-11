@@ -82,7 +82,6 @@ public class GetContactCampaignStatsUnsubscriptions {
     this.userUnsubscription = userUnsubscription;
   }
 
-
   public GetContactCampaignStatsUnsubscriptions adminUnsubscription(List<GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsAdminUnsubscription> adminUnsubscription) {
     
     this.adminUnsubscription = adminUnsubscription;

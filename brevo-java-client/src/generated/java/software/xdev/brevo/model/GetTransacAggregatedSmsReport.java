@@ -101,7 +101,6 @@ public class GetTransacAggregatedSmsReport {
     this.range = range;
   }
 
-
   public GetTransacAggregatedSmsReport requests(Long requests) {
     
     this.requests = requests;
@@ -126,7 +125,6 @@ public class GetTransacAggregatedSmsReport {
   public void setRequests(Long requests) {
     this.requests = requests;
   }
-
 
   public GetTransacAggregatedSmsReport delivered(Long delivered) {
     
@@ -153,7 +151,6 @@ public class GetTransacAggregatedSmsReport {
     this.delivered = delivered;
   }
 
-
   public GetTransacAggregatedSmsReport hardBounces(Long hardBounces) {
     
     this.hardBounces = hardBounces;
@@ -178,7 +175,6 @@ public class GetTransacAggregatedSmsReport {
   public void setHardBounces(Long hardBounces) {
     this.hardBounces = hardBounces;
   }
-
 
   public GetTransacAggregatedSmsReport softBounces(Long softBounces) {
     
@@ -205,7 +201,6 @@ public class GetTransacAggregatedSmsReport {
     this.softBounces = softBounces;
   }
 
-
   public GetTransacAggregatedSmsReport blocked(Long blocked) {
     
     this.blocked = blocked;
@@ -230,7 +225,6 @@ public class GetTransacAggregatedSmsReport {
   public void setBlocked(Long blocked) {
     this.blocked = blocked;
   }
-
 
   public GetTransacAggregatedSmsReport unsubscribed(Long unsubscribed) {
     
@@ -257,7 +251,6 @@ public class GetTransacAggregatedSmsReport {
     this.unsubscribed = unsubscribed;
   }
 
-
   public GetTransacAggregatedSmsReport replied(Long replied) {
     
     this.replied = replied;
@@ -283,7 +276,6 @@ public class GetTransacAggregatedSmsReport {
     this.replied = replied;
   }
 
-
   public GetTransacAggregatedSmsReport accepted(Long accepted) {
     
     this.accepted = accepted;
@@ -308,7 +300,6 @@ public class GetTransacAggregatedSmsReport {
   public void setAccepted(Long accepted) {
     this.accepted = accepted;
   }
-
 
   public GetTransacAggregatedSmsReport rejected(Long rejected) {
     

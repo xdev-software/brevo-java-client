@@ -73,7 +73,6 @@ public class CompaniesIdPatchRequest {
     this.name = name;
   }
 
-
   public CompaniesIdPatchRequest attributes(Object attributes) {
     
     this.attributes = attributes;
@@ -98,7 +97,6 @@ public class CompaniesIdPatchRequest {
   public void setAttributes(Object attributes) {
     this.attributes = attributes;
   }
-
 
   public CompaniesIdPatchRequest countryCode(Long countryCode) {
     

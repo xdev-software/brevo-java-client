@@ -110,7 +110,6 @@ public class CrmTasksIdPatchRequest {
     this.name = name;
   }
 
-
   public CrmTasksIdPatchRequest duration(Long duration) {
     
     this.duration = duration;
@@ -135,7 +134,6 @@ public class CrmTasksIdPatchRequest {
   public void setDuration(Long duration) {
     this.duration = duration;
   }
-
 
   public CrmTasksIdPatchRequest taskTypeId(String taskTypeId) {
     
@@ -162,7 +160,6 @@ public class CrmTasksIdPatchRequest {
     this.taskTypeId = taskTypeId;
   }
 
-
   public CrmTasksIdPatchRequest date(OffsetDateTime date) {
     
     this.date = date;
@@ -187,7 +184,6 @@ public class CrmTasksIdPatchRequest {
   public void setDate(OffsetDateTime date) {
     this.date = date;
   }
-
 
   public CrmTasksIdPatchRequest notes(String notes) {
     
@@ -214,7 +210,6 @@ public class CrmTasksIdPatchRequest {
     this.notes = notes;
   }
 
-
   public CrmTasksIdPatchRequest done(Boolean done) {
     
     this.done = done;
@@ -240,7 +235,6 @@ public class CrmTasksIdPatchRequest {
     this.done = done;
   }
 
-
   public CrmTasksIdPatchRequest assignToId(String assignToId) {
     
     this.assignToId = assignToId;
@@ -265,7 +259,6 @@ public class CrmTasksIdPatchRequest {
   public void setAssignToId(String assignToId) {
     this.assignToId = assignToId;
   }
-
 
   public CrmTasksIdPatchRequest contactsIds(List<Integer> contactsIds) {
     
@@ -300,7 +293,6 @@ public class CrmTasksIdPatchRequest {
     this.contactsIds = contactsIds;
   }
 
-
   public CrmTasksIdPatchRequest dealsIds(List<String> dealsIds) {
     
     this.dealsIds = dealsIds;
@@ -334,7 +326,6 @@ public class CrmTasksIdPatchRequest {
     this.dealsIds = dealsIds;
   }
 
-
   public CrmTasksIdPatchRequest companiesIds(List<String> companiesIds) {
     
     this.companiesIds = companiesIds;
@@ -367,7 +358,6 @@ public class CrmTasksIdPatchRequest {
   public void setCompaniesIds(List<String> companiesIds) {
     this.companiesIds = companiesIds;
   }
-
 
   public CrmTasksIdPatchRequest reminder(TaskReminder reminder) {
     

@@ -76,7 +76,6 @@ public class SubAccountDetailsResponsePlanInfoFeatures {
     this.inbox = inbox;
   }
 
-
   public SubAccountDetailsResponsePlanInfoFeatures landingPage(SubAccountDetailsResponsePlanInfoFeaturesLandingPage landingPage) {
     
     this.landingPage = landingPage;
@@ -101,7 +100,6 @@ public class SubAccountDetailsResponsePlanInfoFeatures {
   public void setLandingPage(SubAccountDetailsResponsePlanInfoFeaturesLandingPage landingPage) {
     this.landingPage = landingPage;
   }
-
 
   public SubAccountDetailsResponsePlanInfoFeatures users(SubAccountDetailsResponsePlanInfoFeaturesUsers users) {
     

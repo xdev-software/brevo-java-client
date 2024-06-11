@@ -85,7 +85,6 @@ public class GetSendersListSendersInner {
     this.id = id;
   }
 
-
   public GetSendersListSendersInner name(String name) {
     
     this.name = name;
@@ -110,7 +109,6 @@ public class GetSendersListSendersInner {
   public void setName(String name) {
     this.name = name;
   }
-
 
   public GetSendersListSendersInner email(String email) {
     
@@ -137,7 +135,6 @@ public class GetSendersListSendersInner {
     this.email = email;
   }
 
-
   public GetSendersListSendersInner active(Boolean active) {
     
     this.active = active;
@@ -162,7 +159,6 @@ public class GetSendersListSendersInner {
   public void setActive(Boolean active) {
     this.active = active;
   }
-
 
   public GetSendersListSendersInner ips(List<GetSendersListSendersInnerIpsInner> ips) {
     

@@ -149,7 +149,6 @@ public class TaskReminder {
     this.value = value;
   }
 
-
   public TaskReminder unit(UnitEnum unit) {
     
     this.unit = unit;
@@ -174,7 +173,6 @@ public class TaskReminder {
   public void setUnit(UnitEnum unit) {
     this.unit = unit;
   }
-
 
   public TaskReminder types(List<TypesEnum> types) {
     

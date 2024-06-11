@@ -81,7 +81,6 @@ public class GetProducts {
     this.products = products;
   }
 
-
   public GetProducts count(Long count) {
     
     this.count = count;

@@ -84,7 +84,6 @@ public class DealAttributesInner {
     this.internalName = internalName;
   }
 
-
   public DealAttributesInner label(String label) {
     
     this.label = label;
@@ -110,7 +109,6 @@ public class DealAttributesInner {
     this.label = label;
   }
 
-
   public DealAttributesInner attributeTypeName(String attributeTypeName) {
     
     this.attributeTypeName = attributeTypeName;
@@ -135,7 +133,6 @@ public class DealAttributesInner {
   public void setAttributeTypeName(String attributeTypeName) {
     this.attributeTypeName = attributeTypeName;
   }
-
 
   public DealAttributesInner attributeOptions(List<Object> attributeOptions) {
     
@@ -169,7 +166,6 @@ public class DealAttributesInner {
   public void setAttributeOptions(List<Object> attributeOptions) {
     this.attributeOptions = attributeOptions;
   }
-
 
   public DealAttributesInner isRequired(Boolean isRequired) {
     

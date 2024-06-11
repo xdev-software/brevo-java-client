@@ -120,7 +120,6 @@ public class CreateSubAccount {
     this.companyName = companyName;
   }
 
-
   public CreateSubAccount email(String email) {
     
     this.email = email;
@@ -146,7 +145,6 @@ public class CreateSubAccount {
     this.email = email;
   }
 
-
   public CreateSubAccount language(LanguageEnum language) {
     
     this.language = language;
@@ -171,7 +169,6 @@ public class CreateSubAccount {
   public void setLanguage(LanguageEnum language) {
     this.language = language;
   }
-
 
   public CreateSubAccount timezone(String timezone) {
     

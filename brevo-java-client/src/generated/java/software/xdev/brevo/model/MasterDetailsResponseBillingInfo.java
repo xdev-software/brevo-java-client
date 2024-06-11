@@ -79,7 +79,6 @@ public class MasterDetailsResponseBillingInfo {
     this.email = email;
   }
 
-
   public MasterDetailsResponseBillingInfo companyName(String companyName) {
     
     this.companyName = companyName;
@@ -105,7 +104,6 @@ public class MasterDetailsResponseBillingInfo {
     this.companyName = companyName;
   }
 
-
   public MasterDetailsResponseBillingInfo name(MasterDetailsResponseBillingInfoName name) {
     
     this.name = name;
@@ -130,7 +128,6 @@ public class MasterDetailsResponseBillingInfo {
   public void setName(MasterDetailsResponseBillingInfoName name) {
     this.name = name;
   }
-
 
   public MasterDetailsResponseBillingInfo address(MasterDetailsResponseBillingInfoAddress address) {
     

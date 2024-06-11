@@ -138,7 +138,6 @@ public class SendSmtpEmail {
     this.sender = sender;
   }
 
-
   public SendSmtpEmail to(List<SendSmtpEmailToInner> to) {
     
     this.to = to;
@@ -171,7 +170,6 @@ public class SendSmtpEmail {
   public void setTo(List<SendSmtpEmailToInner> to) {
     this.to = to;
   }
-
 
   public SendSmtpEmail bcc(List<SendSmtpEmailBccInner> bcc) {
     
@@ -206,7 +204,6 @@ public class SendSmtpEmail {
     this.bcc = bcc;
   }
 
-
   public SendSmtpEmail cc(List<SendSmtpEmailCcInner> cc) {
     
     this.cc = cc;
@@ -240,7 +237,6 @@ public class SendSmtpEmail {
     this.cc = cc;
   }
 
-
   public SendSmtpEmail htmlContent(String htmlContent) {
     
     this.htmlContent = htmlContent;
@@ -265,7 +261,6 @@ public class SendSmtpEmail {
   public void setHtmlContent(String htmlContent) {
     this.htmlContent = htmlContent;
   }
-
 
   public SendSmtpEmail textContent(String textContent) {
     
@@ -292,7 +287,6 @@ public class SendSmtpEmail {
     this.textContent = textContent;
   }
 
-
   public SendSmtpEmail subject(String subject) {
     
     this.subject = subject;
@@ -318,7 +312,6 @@ public class SendSmtpEmail {
     this.subject = subject;
   }
 
-
   public SendSmtpEmail replyTo(SendSmtpEmailReplyTo replyTo) {
     
     this.replyTo = replyTo;
@@ -343,7 +336,6 @@ public class SendSmtpEmail {
   public void setReplyTo(SendSmtpEmailReplyTo replyTo) {
     this.replyTo = replyTo;
   }
-
 
   public SendSmtpEmail attachment(List<SendSmtpEmailAttachmentInner> attachment) {
     
@@ -378,7 +370,6 @@ public class SendSmtpEmail {
     this.attachment = attachment;
   }
 
-
   public SendSmtpEmail headers(Map<String, Object> headers) {
     
     this.headers = headers;
@@ -412,7 +403,6 @@ public class SendSmtpEmail {
     this.headers = headers;
   }
 
-
   public SendSmtpEmail templateId(Long templateId) {
     
     this.templateId = templateId;
@@ -437,7 +427,6 @@ public class SendSmtpEmail {
   public void setTemplateId(Long templateId) {
     this.templateId = templateId;
   }
-
 
   public SendSmtpEmail params(Map<String, Object> params) {
     
@@ -472,7 +461,6 @@ public class SendSmtpEmail {
     this.params = params;
   }
 
-
   public SendSmtpEmail messageVersions(List<SendSmtpEmailMessageVersionsInner> messageVersions) {
     
     this.messageVersions = messageVersions;
@@ -505,7 +493,6 @@ public class SendSmtpEmail {
   public void setMessageVersions(List<SendSmtpEmailMessageVersionsInner> messageVersions) {
     this.messageVersions = messageVersions;
   }
-
 
   public SendSmtpEmail tags(List<String> tags) {
     
@@ -540,7 +527,6 @@ public class SendSmtpEmail {
     this.tags = tags;
   }
 
-
   public SendSmtpEmail scheduledAt(OffsetDateTime scheduledAt) {
     
     this.scheduledAt = scheduledAt;
@@ -565,7 +551,6 @@ public class SendSmtpEmail {
   public void setScheduledAt(OffsetDateTime scheduledAt) {
     this.scheduledAt = scheduledAt;
   }
-
 
   public SendSmtpEmail batchId(String batchId) {
     

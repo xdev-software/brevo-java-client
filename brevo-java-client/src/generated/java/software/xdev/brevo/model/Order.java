@@ -103,7 +103,6 @@ public class Order {
     this.id = id;
   }
 
-
   public Order createdAt(String createdAt) {
     
     this.createdAt = createdAt;
@@ -128,7 +127,6 @@ public class Order {
   public void setCreatedAt(String createdAt) {
     this.createdAt = createdAt;
   }
-
 
   public Order updatedAt(String updatedAt) {
     
@@ -155,7 +153,6 @@ public class Order {
     this.updatedAt = updatedAt;
   }
 
-
   public Order status(String status) {
     
     this.status = status;
@@ -181,7 +178,6 @@ public class Order {
     this.status = status;
   }
 
-
   public Order amount(BigDecimal amount) {
     
     this.amount = amount;
@@ -206,7 +202,6 @@ public class Order {
   public void setAmount(BigDecimal amount) {
     this.amount = amount;
   }
-
 
   public Order products(List<OrderProductsInner> products) {
     
@@ -241,7 +236,6 @@ public class Order {
     this.products = products;
   }
 
-
   public Order email(String email) {
     
     this.email = email;
@@ -267,7 +261,6 @@ public class Order {
     this.email = email;
   }
 
-
   public Order billing(OrderBilling billing) {
     
     this.billing = billing;
@@ -292,7 +285,6 @@ public class Order {
   public void setBilling(OrderBilling billing) {
     this.billing = billing;
   }
-
 
   public Order coupons(List<String> coupons) {
     

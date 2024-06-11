@@ -73,7 +73,6 @@ public class GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsUserUnsubscr
     this.campaignId = campaignId;
   }
 
-
   public GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsUserUnsubscription eventTime(String eventTime) {
     
     this.eventTime = eventTime;
@@ -98,7 +97,6 @@ public class GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsUserUnsubscr
   public void setEventTime(String eventTime) {
     this.eventTime = eventTime;
   }
-
 
   public GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsUserUnsubscription ip(String ip) {
     

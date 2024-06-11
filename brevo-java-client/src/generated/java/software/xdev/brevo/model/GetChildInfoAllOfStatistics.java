@@ -73,7 +73,6 @@ public class GetChildInfoAllOfStatistics {
     this.previousMonthTotalSent = previousMonthTotalSent;
   }
 
-
   public GetChildInfoAllOfStatistics currentMonthTotalSent(Long currentMonthTotalSent) {
     
     this.currentMonthTotalSent = currentMonthTotalSent;
@@ -98,7 +97,6 @@ public class GetChildInfoAllOfStatistics {
   public void setCurrentMonthTotalSent(Long currentMonthTotalSent) {
     this.currentMonthTotalSent = currentMonthTotalSent;
   }
-
 
   public GetChildInfoAllOfStatistics totalSent(Long totalSent) {
     

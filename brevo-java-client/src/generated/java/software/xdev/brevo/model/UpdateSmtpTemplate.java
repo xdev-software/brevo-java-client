@@ -102,7 +102,6 @@ public class UpdateSmtpTemplate {
     this.tag = tag;
   }
 
-
   public UpdateSmtpTemplate sender(UpdateSmtpTemplateSender sender) {
     
     this.sender = sender;
@@ -127,7 +126,6 @@ public class UpdateSmtpTemplate {
   public void setSender(UpdateSmtpTemplateSender sender) {
     this.sender = sender;
   }
-
 
   public UpdateSmtpTemplate templateName(String templateName) {
     
@@ -154,7 +152,6 @@ public class UpdateSmtpTemplate {
     this.templateName = templateName;
   }
 
-
   public UpdateSmtpTemplate htmlContent(String htmlContent) {
     
     this.htmlContent = htmlContent;
@@ -179,7 +176,6 @@ public class UpdateSmtpTemplate {
   public void setHtmlContent(String htmlContent) {
     this.htmlContent = htmlContent;
   }
-
 
   public UpdateSmtpTemplate htmlUrl(String htmlUrl) {
     
@@ -206,7 +202,6 @@ public class UpdateSmtpTemplate {
     this.htmlUrl = htmlUrl;
   }
 
-
   public UpdateSmtpTemplate subject(String subject) {
     
     this.subject = subject;
@@ -231,7 +226,6 @@ public class UpdateSmtpTemplate {
   public void setSubject(String subject) {
     this.subject = subject;
   }
-
 
   public UpdateSmtpTemplate replyTo(String replyTo) {
     
@@ -258,7 +252,6 @@ public class UpdateSmtpTemplate {
     this.replyTo = replyTo;
   }
 
-
   public UpdateSmtpTemplate toField(String toField) {
     
     this.toField = toField;
@@ -284,7 +277,6 @@ public class UpdateSmtpTemplate {
     this.toField = toField;
   }
 
-
   public UpdateSmtpTemplate attachmentUrl(String attachmentUrl) {
     
     this.attachmentUrl = attachmentUrl;
@@ -309,7 +301,6 @@ public class UpdateSmtpTemplate {
   public void setAttachmentUrl(String attachmentUrl) {
     this.attachmentUrl = attachmentUrl;
   }
-
 
   public UpdateSmtpTemplate isActive(Boolean isActive) {
     

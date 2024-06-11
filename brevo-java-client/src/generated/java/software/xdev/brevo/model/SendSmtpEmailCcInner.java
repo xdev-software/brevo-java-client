@@ -69,7 +69,6 @@ public class SendSmtpEmailCcInner {
     this.email = email;
   }
 
-
   public SendSmtpEmailCcInner name(String name) {
     
     this.name = name;

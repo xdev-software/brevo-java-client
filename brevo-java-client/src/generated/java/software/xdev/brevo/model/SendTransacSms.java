@@ -128,7 +128,6 @@ public class SendTransacSms {
     this.sender = sender;
   }
 
-
   public SendTransacSms recipient(String recipient) {
     
     this.recipient = recipient;
@@ -153,7 +152,6 @@ public class SendTransacSms {
   public void setRecipient(String recipient) {
     this.recipient = recipient;
   }
-
 
   public SendTransacSms content(String content) {
     
@@ -180,7 +178,6 @@ public class SendTransacSms {
     this.content = content;
   }
 
-
   public SendTransacSms type(TypeEnum type) {
     
     this.type = type;
@@ -205,7 +202,6 @@ public class SendTransacSms {
   public void setType(TypeEnum type) {
     this.type = type;
   }
-
 
   public SendTransacSms tag(String tag) {
     
@@ -232,7 +228,6 @@ public class SendTransacSms {
     this.tag = tag;
   }
 
-
   public SendTransacSms webUrl(String webUrl) {
     
     this.webUrl = webUrl;
@@ -258,7 +253,6 @@ public class SendTransacSms {
     this.webUrl = webUrl;
   }
 
-
   public SendTransacSms unicodeEnabled(Boolean unicodeEnabled) {
     
     this.unicodeEnabled = unicodeEnabled;
@@ -283,7 +277,6 @@ public class SendTransacSms {
   public void setUnicodeEnabled(Boolean unicodeEnabled) {
     this.unicodeEnabled = unicodeEnabled;
   }
-
 
   public SendTransacSms organisationPrefix(String organisationPrefix) {
     

@@ -73,7 +73,6 @@ public class CreateSenderIpsInner {
     this.ip = ip;
   }
 
-
   public CreateSenderIpsInner domain(String domain) {
     
     this.domain = domain;
@@ -98,7 +97,6 @@ public class CreateSenderIpsInner {
   public void setDomain(String domain) {
     this.domain = domain;
   }
-
 
   public CreateSenderIpsInner weight(Long weight) {
     

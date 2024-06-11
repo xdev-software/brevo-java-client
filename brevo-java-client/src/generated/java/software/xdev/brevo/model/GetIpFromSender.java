@@ -77,7 +77,6 @@ public class GetIpFromSender {
     this.id = id;
   }
 
-
   public GetIpFromSender ip(String ip) {
     
     this.ip = ip;
@@ -103,7 +102,6 @@ public class GetIpFromSender {
     this.ip = ip;
   }
 
-
   public GetIpFromSender domain(String domain) {
     
     this.domain = domain;
@@ -128,7 +126,6 @@ public class GetIpFromSender {
   public void setDomain(String domain) {
     this.domain = domain;
   }
-
 
   public GetIpFromSender weight(Long weight) {
     

@@ -81,7 +81,6 @@ public class GetWhatsappCampaigns {
     this.campaigns = campaigns;
   }
 
-
   public GetWhatsappCampaigns count(Long count) {
     
     this.count = count;

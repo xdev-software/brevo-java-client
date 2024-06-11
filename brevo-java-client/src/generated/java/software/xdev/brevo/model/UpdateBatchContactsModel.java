@@ -80,7 +80,6 @@ public class UpdateBatchContactsModel {
     this.successIds = successIds;
   }
 
-
   public UpdateBatchContactsModel failureIds(List<Long> failureIds) {
     
     this.failureIds = failureIds;

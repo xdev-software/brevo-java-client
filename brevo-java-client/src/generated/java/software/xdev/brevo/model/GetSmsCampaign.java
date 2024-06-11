@@ -144,7 +144,6 @@ public class GetSmsCampaign {
     this.id = id;
   }
 
-
   public GetSmsCampaign name(String name) {
     
     this.name = name;
@@ -169,7 +168,6 @@ public class GetSmsCampaign {
   public void setName(String name) {
     this.name = name;
   }
-
 
   public GetSmsCampaign status(StatusEnum status) {
     
@@ -196,7 +194,6 @@ public class GetSmsCampaign {
     this.status = status;
   }
 
-
   public GetSmsCampaign content(String content) {
     
     this.content = content;
@@ -221,7 +218,6 @@ public class GetSmsCampaign {
   public void setContent(String content) {
     this.content = content;
   }
-
 
   public GetSmsCampaign scheduledAt(String scheduledAt) {
     
@@ -248,7 +244,6 @@ public class GetSmsCampaign {
     this.scheduledAt = scheduledAt;
   }
 
-
   public GetSmsCampaign sender(String sender) {
     
     this.sender = sender;
@@ -273,7 +268,6 @@ public class GetSmsCampaign {
   public void setSender(String sender) {
     this.sender = sender;
   }
-
 
   public GetSmsCampaign createdAt(String createdAt) {
     
@@ -300,7 +294,6 @@ public class GetSmsCampaign {
     this.createdAt = createdAt;
   }
 
-
   public GetSmsCampaign modifiedAt(String modifiedAt) {
     
     this.modifiedAt = modifiedAt;
@@ -326,7 +319,6 @@ public class GetSmsCampaign {
     this.modifiedAt = modifiedAt;
   }
 
-
   public GetSmsCampaign recipients(Object recipients) {
     
     this.recipients = recipients;
@@ -351,7 +343,6 @@ public class GetSmsCampaign {
   public void setRecipients(Object recipients) {
     this.recipients = recipients;
   }
-
 
   public GetSmsCampaign statistics(Object statistics) {
     

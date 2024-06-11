@@ -82,7 +82,6 @@ public class ConversationsMessageFile {
     this.filename = filename;
   }
 
-
   public ConversationsMessageFile size(Long size) {
     
     this.size = size;
@@ -109,7 +108,6 @@ public class ConversationsMessageFile {
     this.size = size;
   }
 
-
   public ConversationsMessageFile isImage(Boolean isImage) {
     
     this.isImage = isImage;
@@ -135,7 +133,6 @@ public class ConversationsMessageFile {
     this.isImage = isImage;
   }
 
-
   public ConversationsMessageFile url(String url) {
     
     this.url = url;
@@ -160,7 +157,6 @@ public class ConversationsMessageFile {
   public void setUrl(String url) {
     this.url = url;
   }
-
 
   public ConversationsMessageFile imageInfo(ConversationsMessageFileImageInfo imageInfo) {
     

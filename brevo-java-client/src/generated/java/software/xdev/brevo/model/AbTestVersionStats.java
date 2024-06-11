@@ -69,7 +69,6 @@ public class AbTestVersionStats {
     this.versionA = versionA;
   }
 
-
   public AbTestVersionStats versionB(String versionB) {
     
     this.versionB = versionB;

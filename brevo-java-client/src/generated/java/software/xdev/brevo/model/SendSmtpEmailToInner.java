@@ -69,7 +69,6 @@ public class SendSmtpEmailToInner {
     this.email = email;
   }
 
-
   public SendSmtpEmailToInner name(String name) {
     
     this.name = name;

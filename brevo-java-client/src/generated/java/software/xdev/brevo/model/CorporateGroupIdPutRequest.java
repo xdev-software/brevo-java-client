@@ -72,7 +72,6 @@ public class CorporateGroupIdPutRequest {
     this.groupName = groupName;
   }
 
-
   public CorporateGroupIdPutRequest subAccountIds(List<Long> subAccountIds) {
     
     this.subAccountIds = subAccountIds;

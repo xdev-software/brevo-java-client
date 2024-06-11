@@ -201,7 +201,6 @@ public class ExportWebhooksHistory {
     this.days = days;
   }
 
-
   public ExportWebhooksHistory startDate(String startDate) {
     
     this.startDate = startDate;
@@ -226,7 +225,6 @@ public class ExportWebhooksHistory {
   public void setStartDate(String startDate) {
     this.startDate = startDate;
   }
-
 
   public ExportWebhooksHistory endDate(String endDate) {
     
@@ -253,7 +251,6 @@ public class ExportWebhooksHistory {
     this.endDate = endDate;
   }
 
-
   public ExportWebhooksHistory sort(String sort) {
     
     this.sort = sort;
@@ -278,7 +275,6 @@ public class ExportWebhooksHistory {
   public void setSort(String sort) {
     this.sort = sort;
   }
-
 
   public ExportWebhooksHistory type(TypeEnum type) {
     
@@ -305,7 +301,6 @@ public class ExportWebhooksHistory {
     this.type = type;
   }
 
-
   public ExportWebhooksHistory event(EventEnum event) {
     
     this.event = event;
@@ -330,7 +325,6 @@ public class ExportWebhooksHistory {
   public void setEvent(EventEnum event) {
     this.event = event;
   }
-
 
   public ExportWebhooksHistory notifyURL(String notifyURL) {
     
@@ -357,7 +351,6 @@ public class ExportWebhooksHistory {
     this.notifyURL = notifyURL;
   }
 
-
   public ExportWebhooksHistory webhookId(Integer webhookId) {
     
     this.webhookId = webhookId;
@@ -383,7 +376,6 @@ public class ExportWebhooksHistory {
     this.webhookId = webhookId;
   }
 
-
   public ExportWebhooksHistory email(String email) {
     
     this.email = email;
@@ -408,7 +400,6 @@ public class ExportWebhooksHistory {
   public void setEmail(String email) {
     this.email = email;
   }
-
 
   public ExportWebhooksHistory messageId(Integer messageId) {
     

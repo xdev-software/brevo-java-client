@@ -69,7 +69,6 @@ public class CreateCouponCollectionRequest {
     this.name = name;
   }
 
-
   public CreateCouponCollectionRequest defaultCoupon(String defaultCoupon) {
     
     this.defaultCoupon = defaultCoupon;

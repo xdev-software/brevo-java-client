@@ -85,7 +85,6 @@ public class GetListsListsInner {
     this.id = id;
   }
 
-
   public GetListsListsInner name(String name) {
     
     this.name = name;
@@ -110,7 +109,6 @@ public class GetListsListsInner {
   public void setName(String name) {
     this.name = name;
   }
-
 
   public GetListsListsInner totalBlacklisted(Long totalBlacklisted) {
     
@@ -137,7 +135,6 @@ public class GetListsListsInner {
     this.totalBlacklisted = totalBlacklisted;
   }
 
-
   public GetListsListsInner totalSubscribers(Long totalSubscribers) {
     
     this.totalSubscribers = totalSubscribers;
@@ -163,7 +160,6 @@ public class GetListsListsInner {
     this.totalSubscribers = totalSubscribers;
   }
 
-
   public GetListsListsInner uniqueSubscribers(Long uniqueSubscribers) {
     
     this.uniqueSubscribers = uniqueSubscribers;
@@ -188,7 +184,6 @@ public class GetListsListsInner {
   public void setUniqueSubscribers(Long uniqueSubscribers) {
     this.uniqueSubscribers = uniqueSubscribers;
   }
-
 
   public GetListsListsInner folderId(Long folderId) {
     

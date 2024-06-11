@@ -270,7 +270,6 @@ public class GetEmailCampaignsCampaignsInner {
     this.id = id;
   }
 
-
   public GetEmailCampaignsCampaignsInner name(String name) {
     
     this.name = name;
@@ -295,7 +294,6 @@ public class GetEmailCampaignsCampaignsInner {
   public void setName(String name) {
     this.name = name;
   }
-
 
   public GetEmailCampaignsCampaignsInner subject(String subject) {
     
@@ -322,7 +320,6 @@ public class GetEmailCampaignsCampaignsInner {
     this.subject = subject;
   }
 
-
   public GetEmailCampaignsCampaignsInner previewText(String previewText) {
     
     this.previewText = previewText;
@@ -347,7 +344,6 @@ public class GetEmailCampaignsCampaignsInner {
   public void setPreviewText(String previewText) {
     this.previewText = previewText;
   }
-
 
   public GetEmailCampaignsCampaignsInner type(TypeEnum type) {
     
@@ -374,7 +370,6 @@ public class GetEmailCampaignsCampaignsInner {
     this.type = type;
   }
 
-
   public GetEmailCampaignsCampaignsInner status(StatusEnum status) {
     
     this.status = status;
@@ -399,7 +394,6 @@ public class GetEmailCampaignsCampaignsInner {
   public void setStatus(StatusEnum status) {
     this.status = status;
   }
-
 
   public GetEmailCampaignsCampaignsInner scheduledAt(String scheduledAt) {
     
@@ -426,7 +420,6 @@ public class GetEmailCampaignsCampaignsInner {
     this.scheduledAt = scheduledAt;
   }
 
-
   public GetEmailCampaignsCampaignsInner abTesting(Boolean abTesting) {
     
     this.abTesting = abTesting;
@@ -451,7 +444,6 @@ public class GetEmailCampaignsCampaignsInner {
   public void setAbTesting(Boolean abTesting) {
     this.abTesting = abTesting;
   }
-
 
   public GetEmailCampaignsCampaignsInner subjectA(String subjectA) {
     
@@ -478,7 +470,6 @@ public class GetEmailCampaignsCampaignsInner {
     this.subjectA = subjectA;
   }
 
-
   public GetEmailCampaignsCampaignsInner subjectB(String subjectB) {
     
     this.subjectB = subjectB;
@@ -503,7 +494,6 @@ public class GetEmailCampaignsCampaignsInner {
   public void setSubjectB(String subjectB) {
     this.subjectB = subjectB;
   }
-
 
   public GetEmailCampaignsCampaignsInner splitRule(Integer splitRule) {
     
@@ -530,7 +520,6 @@ public class GetEmailCampaignsCampaignsInner {
     this.splitRule = splitRule;
   }
 
-
   public GetEmailCampaignsCampaignsInner winnerCriteria(String winnerCriteria) {
     
     this.winnerCriteria = winnerCriteria;
@@ -555,7 +544,6 @@ public class GetEmailCampaignsCampaignsInner {
   public void setWinnerCriteria(String winnerCriteria) {
     this.winnerCriteria = winnerCriteria;
   }
-
 
   public GetEmailCampaignsCampaignsInner winnerDelay(Integer winnerDelay) {
     
@@ -582,7 +570,6 @@ public class GetEmailCampaignsCampaignsInner {
     this.winnerDelay = winnerDelay;
   }
 
-
   public GetEmailCampaignsCampaignsInner sendAtBestTime(Boolean sendAtBestTime) {
     
     this.sendAtBestTime = sendAtBestTime;
@@ -607,7 +594,6 @@ public class GetEmailCampaignsCampaignsInner {
   public void setSendAtBestTime(Boolean sendAtBestTime) {
     this.sendAtBestTime = sendAtBestTime;
   }
-
 
   public GetEmailCampaignsCampaignsInner testSent(Boolean testSent) {
     
@@ -634,7 +620,6 @@ public class GetEmailCampaignsCampaignsInner {
     this.testSent = testSent;
   }
 
-
   public GetEmailCampaignsCampaignsInner header(String header) {
     
     this.header = header;
@@ -659,7 +644,6 @@ public class GetEmailCampaignsCampaignsInner {
   public void setHeader(String header) {
     this.header = header;
   }
-
 
   public GetEmailCampaignsCampaignsInner footer(String footer) {
     
@@ -686,7 +670,6 @@ public class GetEmailCampaignsCampaignsInner {
     this.footer = footer;
   }
 
-
   public GetEmailCampaignsCampaignsInner sender(GetExtendedCampaignOverviewAllOfSender sender) {
     
     this.sender = sender;
@@ -711,7 +694,6 @@ public class GetEmailCampaignsCampaignsInner {
   public void setSender(GetExtendedCampaignOverviewAllOfSender sender) {
     this.sender = sender;
   }
-
 
   public GetEmailCampaignsCampaignsInner replyTo(String replyTo) {
     
@@ -738,7 +720,6 @@ public class GetEmailCampaignsCampaignsInner {
     this.replyTo = replyTo;
   }
 
-
   public GetEmailCampaignsCampaignsInner toField(String toField) {
     
     this.toField = toField;
@@ -763,7 +744,6 @@ public class GetEmailCampaignsCampaignsInner {
   public void setToField(String toField) {
     this.toField = toField;
   }
-
 
   public GetEmailCampaignsCampaignsInner htmlContent(String htmlContent) {
     
@@ -790,7 +770,6 @@ public class GetEmailCampaignsCampaignsInner {
     this.htmlContent = htmlContent;
   }
 
-
   public GetEmailCampaignsCampaignsInner shareLink(String shareLink) {
     
     this.shareLink = shareLink;
@@ -815,7 +794,6 @@ public class GetEmailCampaignsCampaignsInner {
   public void setShareLink(String shareLink) {
     this.shareLink = shareLink;
   }
-
 
   public GetEmailCampaignsCampaignsInner tag(String tag) {
     
@@ -842,7 +820,6 @@ public class GetEmailCampaignsCampaignsInner {
     this.tag = tag;
   }
 
-
   public GetEmailCampaignsCampaignsInner createdAt(String createdAt) {
     
     this.createdAt = createdAt;
@@ -867,7 +844,6 @@ public class GetEmailCampaignsCampaignsInner {
   public void setCreatedAt(String createdAt) {
     this.createdAt = createdAt;
   }
-
 
   public GetEmailCampaignsCampaignsInner modifiedAt(String modifiedAt) {
     
@@ -894,7 +870,6 @@ public class GetEmailCampaignsCampaignsInner {
     this.modifiedAt = modifiedAt;
   }
 
-
   public GetEmailCampaignsCampaignsInner inlineImageActivation(Boolean inlineImageActivation) {
     
     this.inlineImageActivation = inlineImageActivation;
@@ -919,7 +894,6 @@ public class GetEmailCampaignsCampaignsInner {
   public void setInlineImageActivation(Boolean inlineImageActivation) {
     this.inlineImageActivation = inlineImageActivation;
   }
-
 
   public GetEmailCampaignsCampaignsInner mirrorActive(Boolean mirrorActive) {
     
@@ -946,7 +920,6 @@ public class GetEmailCampaignsCampaignsInner {
     this.mirrorActive = mirrorActive;
   }
 
-
   public GetEmailCampaignsCampaignsInner recurring(Boolean recurring) {
     
     this.recurring = recurring;
@@ -971,7 +944,6 @@ public class GetEmailCampaignsCampaignsInner {
   public void setRecurring(Boolean recurring) {
     this.recurring = recurring;
   }
-
 
   public GetEmailCampaignsCampaignsInner sentDate(String sentDate) {
     
@@ -998,7 +970,6 @@ public class GetEmailCampaignsCampaignsInner {
     this.sentDate = sentDate;
   }
 
-
   public GetEmailCampaignsCampaignsInner returnBounce(Long returnBounce) {
     
     this.returnBounce = returnBounce;
@@ -1024,7 +995,6 @@ public class GetEmailCampaignsCampaignsInner {
     this.returnBounce = returnBounce;
   }
 
-
   public GetEmailCampaignsCampaignsInner recipients(GetCampaignRecipients recipients) {
     
     this.recipients = recipients;
@@ -1049,7 +1019,6 @@ public class GetEmailCampaignsCampaignsInner {
   public void setRecipients(GetCampaignRecipients recipients) {
     this.recipients = recipients;
   }
-
 
   public GetEmailCampaignsCampaignsInner statistics(GetExtendedCampaignStats statistics) {
     

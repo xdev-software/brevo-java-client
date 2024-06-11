@@ -164,7 +164,6 @@ public class GetEmailEventReportEventsInner {
     this.email = email;
   }
 
-
   public GetEmailEventReportEventsInner date(String date) {
     
     this.date = date;
@@ -189,7 +188,6 @@ public class GetEmailEventReportEventsInner {
   public void setDate(String date) {
     this.date = date;
   }
-
 
   public GetEmailEventReportEventsInner subject(String subject) {
     
@@ -216,7 +214,6 @@ public class GetEmailEventReportEventsInner {
     this.subject = subject;
   }
 
-
   public GetEmailEventReportEventsInner messageId(String messageId) {
     
     this.messageId = messageId;
@@ -241,7 +238,6 @@ public class GetEmailEventReportEventsInner {
   public void setMessageId(String messageId) {
     this.messageId = messageId;
   }
-
 
   public GetEmailEventReportEventsInner event(EventEnum event) {
     
@@ -268,7 +264,6 @@ public class GetEmailEventReportEventsInner {
     this.event = event;
   }
 
-
   public GetEmailEventReportEventsInner reason(String reason) {
     
     this.reason = reason;
@@ -293,7 +288,6 @@ public class GetEmailEventReportEventsInner {
   public void setReason(String reason) {
     this.reason = reason;
   }
-
 
   public GetEmailEventReportEventsInner tag(String tag) {
     
@@ -320,7 +314,6 @@ public class GetEmailEventReportEventsInner {
     this.tag = tag;
   }
 
-
   public GetEmailEventReportEventsInner ip(String ip) {
     
     this.ip = ip;
@@ -345,7 +338,6 @@ public class GetEmailEventReportEventsInner {
   public void setIp(String ip) {
     this.ip = ip;
   }
-
 
   public GetEmailEventReportEventsInner link(String link) {
     
@@ -372,7 +364,6 @@ public class GetEmailEventReportEventsInner {
     this.link = link;
   }
 
-
   public GetEmailEventReportEventsInner from(String from) {
     
     this.from = from;
@@ -397,7 +388,6 @@ public class GetEmailEventReportEventsInner {
   public void setFrom(String from) {
     this.from = from;
   }
-
 
   public GetEmailEventReportEventsInner templateId(Long templateId) {
     

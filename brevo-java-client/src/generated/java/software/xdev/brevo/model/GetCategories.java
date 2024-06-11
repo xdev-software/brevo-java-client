@@ -81,7 +81,6 @@ public class GetCategories {
     this.categories = categories;
   }
 
-
   public GetCategories count(Long count) {
     
     this.count = count;

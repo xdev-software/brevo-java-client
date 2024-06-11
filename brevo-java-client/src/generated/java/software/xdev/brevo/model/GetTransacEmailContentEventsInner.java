@@ -69,7 +69,6 @@ public class GetTransacEmailContentEventsInner {
     this.name = name;
   }
 
-
   public GetTransacEmailContentEventsInner time(String time) {
     
     this.time = time;

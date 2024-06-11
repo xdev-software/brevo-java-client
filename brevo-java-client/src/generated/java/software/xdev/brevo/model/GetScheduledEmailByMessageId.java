@@ -113,7 +113,6 @@ public class GetScheduledEmailByMessageId {
     this.scheduledAt = scheduledAt;
   }
 
-
   public GetScheduledEmailByMessageId createdAt(OffsetDateTime createdAt) {
     
     this.createdAt = createdAt;
@@ -138,7 +137,6 @@ public class GetScheduledEmailByMessageId {
   public void setCreatedAt(OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
-
 
   public GetScheduledEmailByMessageId status(StatusEnum status) {
     

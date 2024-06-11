@@ -77,7 +77,6 @@ public class GetExtendedContactDetailsAllOfStatisticsLinks {
     this.count = count;
   }
 
-
   public GetExtendedContactDetailsAllOfStatisticsLinks eventTime(String eventTime) {
     
     this.eventTime = eventTime;
@@ -103,7 +102,6 @@ public class GetExtendedContactDetailsAllOfStatisticsLinks {
     this.eventTime = eventTime;
   }
 
-
   public GetExtendedContactDetailsAllOfStatisticsLinks ip(String ip) {
     
     this.ip = ip;
@@ -128,7 +126,6 @@ public class GetExtendedContactDetailsAllOfStatisticsLinks {
   public void setIp(String ip) {
     this.ip = ip;
   }
-
 
   public GetExtendedContactDetailsAllOfStatisticsLinks url(String url) {
     

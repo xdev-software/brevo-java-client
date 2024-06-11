@@ -80,7 +80,6 @@ public class SendWhatsappMessageTemplate {
     this.templateId = templateId;
   }
 
-
   public SendWhatsappMessageTemplate senderNumber(String senderNumber) {
     
     this.senderNumber = senderNumber;
@@ -106,7 +105,6 @@ public class SendWhatsappMessageTemplate {
     this.senderNumber = senderNumber;
   }
 
-
   public SendWhatsappMessageTemplate params(Object params) {
     
     this.params = params;
@@ -131,7 +129,6 @@ public class SendWhatsappMessageTemplate {
   public void setParams(Object params) {
     this.params = params;
   }
-
 
   public SendWhatsappMessageTemplate contactNumbers(List<String> contactNumbers) {
     

@@ -81,7 +81,6 @@ public class AbTestCampaignResultClickedLinks {
     this.versionA = versionA;
   }
 
-
   public AbTestCampaignResultClickedLinks versionB(List<AbTestVersionClicksInner> versionB) {
     
     this.versionB = versionB;

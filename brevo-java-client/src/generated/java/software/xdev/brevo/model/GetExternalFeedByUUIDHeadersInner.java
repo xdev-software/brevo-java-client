@@ -69,7 +69,6 @@ public class GetExternalFeedByUUIDHeadersInner {
     this.name = name;
   }
 
-
   public GetExternalFeedByUUIDHeadersInner value(String value) {
     
     this.value = value;

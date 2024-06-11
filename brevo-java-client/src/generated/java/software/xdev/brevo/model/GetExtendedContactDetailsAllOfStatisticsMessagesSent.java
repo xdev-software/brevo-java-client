@@ -69,7 +69,6 @@ public class GetExtendedContactDetailsAllOfStatisticsMessagesSent {
     this.campaignId = campaignId;
   }
 
-
   public GetExtendedContactDetailsAllOfStatisticsMessagesSent eventTime(String eventTime) {
     
     this.eventTime = eventTime;

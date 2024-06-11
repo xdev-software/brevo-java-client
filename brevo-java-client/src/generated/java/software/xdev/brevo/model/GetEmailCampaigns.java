@@ -81,7 +81,6 @@ public class GetEmailCampaigns {
     this.campaigns = campaigns;
   }
 
-
   public GetEmailCampaigns count(Long count) {
     
     this.count = count;

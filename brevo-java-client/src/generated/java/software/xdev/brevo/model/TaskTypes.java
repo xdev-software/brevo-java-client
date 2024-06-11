@@ -68,7 +68,6 @@ public class TaskTypes {
     this.id = id;
   }
 
-
   public TaskTypes title(String title) {
     
     this.title = title;

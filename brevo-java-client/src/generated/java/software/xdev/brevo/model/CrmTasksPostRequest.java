@@ -110,7 +110,6 @@ public class CrmTasksPostRequest {
     this.name = name;
   }
 
-
   public CrmTasksPostRequest duration(Long duration) {
     
     this.duration = duration;
@@ -137,7 +136,6 @@ public class CrmTasksPostRequest {
     this.duration = duration;
   }
 
-
   public CrmTasksPostRequest taskTypeId(String taskTypeId) {
     
     this.taskTypeId = taskTypeId;
@@ -162,7 +160,6 @@ public class CrmTasksPostRequest {
   public void setTaskTypeId(String taskTypeId) {
     this.taskTypeId = taskTypeId;
   }
-
 
   public CrmTasksPostRequest date(OffsetDateTime date) {
     
@@ -189,7 +186,6 @@ public class CrmTasksPostRequest {
     this.date = date;
   }
 
-
   public CrmTasksPostRequest notes(String notes) {
     
     this.notes = notes;
@@ -214,7 +210,6 @@ public class CrmTasksPostRequest {
   public void setNotes(String notes) {
     this.notes = notes;
   }
-
 
   public CrmTasksPostRequest done(Boolean done) {
     
@@ -241,7 +236,6 @@ public class CrmTasksPostRequest {
     this.done = done;
   }
 
-
   public CrmTasksPostRequest assignToId(String assignToId) {
     
     this.assignToId = assignToId;
@@ -266,7 +260,6 @@ public class CrmTasksPostRequest {
   public void setAssignToId(String assignToId) {
     this.assignToId = assignToId;
   }
-
 
   public CrmTasksPostRequest contactsIds(List<Integer> contactsIds) {
     
@@ -301,7 +294,6 @@ public class CrmTasksPostRequest {
     this.contactsIds = contactsIds;
   }
 
-
   public CrmTasksPostRequest dealsIds(List<String> dealsIds) {
     
     this.dealsIds = dealsIds;
@@ -335,7 +327,6 @@ public class CrmTasksPostRequest {
     this.dealsIds = dealsIds;
   }
 
-
   public CrmTasksPostRequest companiesIds(List<String> companiesIds) {
     
     this.companiesIds = companiesIds;
@@ -368,7 +359,6 @@ public class CrmTasksPostRequest {
   public void setCompaniesIds(List<String> companiesIds) {
     this.companiesIds = companiesIds;
   }
-
 
   public CrmTasksPostRequest reminder(TaskReminder reminder) {
     

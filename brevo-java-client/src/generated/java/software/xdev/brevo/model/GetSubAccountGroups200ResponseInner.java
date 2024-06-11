@@ -69,7 +69,6 @@ public class GetSubAccountGroups200ResponseInner {
     this.id = id;
   }
 
-
   public GetSubAccountGroups200ResponseInner groupName(String groupName) {
     
     this.groupName = groupName;

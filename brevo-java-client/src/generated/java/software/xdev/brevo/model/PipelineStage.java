@@ -68,7 +68,6 @@ public class PipelineStage {
     this.id = id;
   }
 
-
   public PipelineStage name(String name) {
     
     this.name = name;

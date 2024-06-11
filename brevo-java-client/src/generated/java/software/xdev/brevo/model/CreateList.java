@@ -69,7 +69,6 @@ public class CreateList {
     this.name = name;
   }
 
-
   public CreateList folderId(Long folderId) {
     
     this.folderId = folderId;

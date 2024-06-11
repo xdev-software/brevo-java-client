@@ -81,7 +81,6 @@ public class UpdateChild {
     this.email = email;
   }
 
-
   public UpdateChild firstName(String firstName) {
     
     this.firstName = firstName;
@@ -106,7 +105,6 @@ public class UpdateChild {
   public void setFirstName(String firstName) {
     this.firstName = firstName;
   }
-
 
   public UpdateChild lastName(String lastName) {
     
@@ -133,7 +131,6 @@ public class UpdateChild {
     this.lastName = lastName;
   }
 
-
   public UpdateChild companyName(String companyName) {
     
     this.companyName = companyName;
@@ -158,7 +155,6 @@ public class UpdateChild {
   public void setCompanyName(String companyName) {
     this.companyName = companyName;
   }
-
 
   public UpdateChild password(String password) {
     

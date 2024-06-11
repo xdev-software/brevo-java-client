@@ -153,7 +153,6 @@ public class GetWhatsappCampaignsCampaignsInner {
     this.id = id;
   }
 
-
   public GetWhatsappCampaignsCampaignsInner campaignName(String campaignName) {
     
     this.campaignName = campaignName;
@@ -178,7 +177,6 @@ public class GetWhatsappCampaignsCampaignsInner {
   public void setCampaignName(String campaignName) {
     this.campaignName = campaignName;
   }
-
 
   public GetWhatsappCampaignsCampaignsInner templateId(String templateId) {
     
@@ -205,7 +203,6 @@ public class GetWhatsappCampaignsCampaignsInner {
     this.templateId = templateId;
   }
 
-
   public GetWhatsappCampaignsCampaignsInner campaignStatus(CampaignStatusEnum campaignStatus) {
     
     this.campaignStatus = campaignStatus;
@@ -230,7 +227,6 @@ public class GetWhatsappCampaignsCampaignsInner {
   public void setCampaignStatus(CampaignStatusEnum campaignStatus) {
     this.campaignStatus = campaignStatus;
   }
-
 
   public GetWhatsappCampaignsCampaignsInner scheduledAt(String scheduledAt) {
     
@@ -257,7 +253,6 @@ public class GetWhatsappCampaignsCampaignsInner {
     this.scheduledAt = scheduledAt;
   }
 
-
   public GetWhatsappCampaignsCampaignsInner errorReason(String errorReason) {
     
     this.errorReason = errorReason;
@@ -282,7 +277,6 @@ public class GetWhatsappCampaignsCampaignsInner {
   public void setErrorReason(String errorReason) {
     this.errorReason = errorReason;
   }
-
 
   public GetWhatsappCampaignsCampaignsInner invalidatedContacts(Long invalidatedContacts) {
     
@@ -309,7 +303,6 @@ public class GetWhatsappCampaignsCampaignsInner {
     this.invalidatedContacts = invalidatedContacts;
   }
 
-
   public GetWhatsappCampaignsCampaignsInner readPercentage(Float readPercentage) {
     
     this.readPercentage = readPercentage;
@@ -334,7 +327,6 @@ public class GetWhatsappCampaignsCampaignsInner {
   public void setReadPercentage(Float readPercentage) {
     this.readPercentage = readPercentage;
   }
-
 
   public GetWhatsappCampaignsCampaignsInner stats(WhatsappCampStats stats) {
     
@@ -361,7 +353,6 @@ public class GetWhatsappCampaignsCampaignsInner {
     this.stats = stats;
   }
 
-
   public GetWhatsappCampaignsCampaignsInner createdAt(String createdAt) {
     
     this.createdAt = createdAt;
@@ -386,7 +377,6 @@ public class GetWhatsappCampaignsCampaignsInner {
   public void setCreatedAt(String createdAt) {
     this.createdAt = createdAt;
   }
-
 
   public GetWhatsappCampaignsCampaignsInner modifiedAt(String modifiedAt) {
     

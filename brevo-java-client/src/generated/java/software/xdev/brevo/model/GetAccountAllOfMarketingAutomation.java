@@ -69,7 +69,6 @@ public class GetAccountAllOfMarketingAutomation {
     this.key = key;
   }
 
-
   public GetAccountAllOfMarketingAutomation enabled(Boolean enabled) {
     
     this.enabled = enabled;

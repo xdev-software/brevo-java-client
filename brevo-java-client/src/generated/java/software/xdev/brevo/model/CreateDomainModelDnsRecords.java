@@ -74,7 +74,6 @@ public class CreateDomainModelDnsRecords {
     this.dkimRecord = dkimRecord;
   }
 
-
   public CreateDomainModelDnsRecords brevoCode(CreateDomainModelDnsRecordsDkimRecord brevoCode) {
     
     this.brevoCode = brevoCode;
@@ -99,7 +98,6 @@ public class CreateDomainModelDnsRecords {
   public void setBrevoCode(CreateDomainModelDnsRecordsDkimRecord brevoCode) {
     this.brevoCode = brevoCode;
   }
-
 
   public CreateDomainModelDnsRecords dmarcRecord(CreateDomainModelDnsRecordsDkimRecord dmarcRecord) {
     

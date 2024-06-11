@@ -113,7 +113,6 @@ public class UpdateWhatsAppCampaign {
     this.campaignName = campaignName;
   }
 
-
   public UpdateWhatsAppCampaign campaignStatus(CampaignStatusEnum campaignStatus) {
     
     this.campaignStatus = campaignStatus;
@@ -139,7 +138,6 @@ public class UpdateWhatsAppCampaign {
     this.campaignStatus = campaignStatus;
   }
 
-
   public UpdateWhatsAppCampaign rescheduleFor(String rescheduleFor) {
     
     this.rescheduleFor = rescheduleFor;
@@ -164,7 +162,6 @@ public class UpdateWhatsAppCampaign {
   public void setRescheduleFor(String rescheduleFor) {
     this.rescheduleFor = rescheduleFor;
   }
-
 
   public UpdateWhatsAppCampaign recipients(CreateWhatsAppCampaignRecipients recipients) {
     

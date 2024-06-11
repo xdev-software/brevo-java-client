@@ -77,7 +77,6 @@ public class GetClient {
     this.email = email;
   }
 
-
   public GetClient firstName(String firstName) {
     
     this.firstName = firstName;
@@ -103,7 +102,6 @@ public class GetClient {
     this.firstName = firstName;
   }
 
-
   public GetClient lastName(String lastName) {
     
     this.lastName = lastName;
@@ -128,7 +126,6 @@ public class GetClient {
   public void setLastName(String lastName) {
     this.lastName = lastName;
   }
-
 
   public GetClient companyName(String companyName) {
     

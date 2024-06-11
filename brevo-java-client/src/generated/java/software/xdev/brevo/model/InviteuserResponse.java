@@ -72,7 +72,6 @@ public class InviteuserResponse {
     this.status = status;
   }
 
-
   public InviteuserResponse invoiceId(List<String> invoiceId) {
     
     this.invoiceId = invoiceId;

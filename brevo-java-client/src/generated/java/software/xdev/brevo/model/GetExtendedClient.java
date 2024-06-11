@@ -82,7 +82,6 @@ public class GetExtendedClient {
     this.email = email;
   }
 
-
   public GetExtendedClient firstName(String firstName) {
     
     this.firstName = firstName;
@@ -107,7 +106,6 @@ public class GetExtendedClient {
   public void setFirstName(String firstName) {
     this.firstName = firstName;
   }
-
 
   public GetExtendedClient lastName(String lastName) {
     
@@ -134,7 +132,6 @@ public class GetExtendedClient {
     this.lastName = lastName;
   }
 
-
   public GetExtendedClient companyName(String companyName) {
     
     this.companyName = companyName;
@@ -159,7 +156,6 @@ public class GetExtendedClient {
   public void setCompanyName(String companyName) {
     this.companyName = companyName;
   }
-
 
   public GetExtendedClient address(GetExtendedClientAllOfAddress address) {
     

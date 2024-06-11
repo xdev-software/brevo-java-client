@@ -71,7 +71,6 @@ public class RemainingCreditModel {
     this.child = child;
   }
 
-
   public RemainingCreditModel reseller(RemainingCreditModelReseller reseller) {
     
     this.reseller = reseller;

@@ -81,7 +81,6 @@ public class ConversationsPushedMessagesPostRequest {
     this.visitorId = visitorId;
   }
 
-
   public ConversationsPushedMessagesPostRequest text(Object text) {
     
     this.text = text;
@@ -106,7 +105,6 @@ public class ConversationsPushedMessagesPostRequest {
   public void setText(Object text) {
     this.text = text;
   }
-
 
   public ConversationsPushedMessagesPostRequest agentId(Object agentId) {
     this.agentId = JsonNullable.<Object>of(agentId);
@@ -140,7 +138,6 @@ public class ConversationsPushedMessagesPostRequest {
   public void setAgentId(Object agentId) {
     this.agentId = JsonNullable.<Object>of(agentId);
   }
-
 
   public ConversationsPushedMessagesPostRequest groupId(Object groupId) {
     this.groupId = JsonNullable.<Object>of(groupId);

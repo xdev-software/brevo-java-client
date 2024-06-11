@@ -84,7 +84,6 @@ public class CompanyAttributesInner {
     this.internalName = internalName;
   }
 
-
   public CompanyAttributesInner label(String label) {
     
     this.label = label;
@@ -110,7 +109,6 @@ public class CompanyAttributesInner {
     this.label = label;
   }
 
-
   public CompanyAttributesInner attributeTypeName(String attributeTypeName) {
     
     this.attributeTypeName = attributeTypeName;
@@ -135,7 +133,6 @@ public class CompanyAttributesInner {
   public void setAttributeTypeName(String attributeTypeName) {
     this.attributeTypeName = attributeTypeName;
   }
-
 
   public CompanyAttributesInner attributeOptions(List<Object> attributeOptions) {
     
@@ -169,7 +166,6 @@ public class CompanyAttributesInner {
   public void setAttributeOptions(List<Object> attributeOptions) {
     this.attributeOptions = attributeOptions;
   }
-
 
   public CompanyAttributesInner isRequired(Boolean isRequired) {
     

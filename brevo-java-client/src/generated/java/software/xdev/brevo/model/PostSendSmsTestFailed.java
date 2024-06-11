@@ -80,7 +80,6 @@ public class PostSendSmsTestFailed {
     this.code = code;
   }
 
-
   public PostSendSmsTestFailed message(String message) {
     
     this.message = message;
@@ -105,7 +104,6 @@ public class PostSendSmsTestFailed {
   public void setMessage(String message) {
     this.message = message;
   }
-
 
   public PostSendSmsTestFailed unexistingSms(List<String> unexistingSms) {
     
@@ -139,7 +137,6 @@ public class PostSendSmsTestFailed {
   public void setUnexistingSms(List<String> unexistingSms) {
     this.unexistingSms = unexistingSms;
   }
-
 
   public PostSendSmsTestFailed withoutListSms(List<String> withoutListSms) {
     

@@ -167,7 +167,6 @@ public class GetAttributesAttributesInner {
     this.name = name;
   }
 
-
   public GetAttributesAttributesInner category(CategoryEnum category) {
     
     this.category = category;
@@ -193,7 +192,6 @@ public class GetAttributesAttributesInner {
     this.category = category;
   }
 
-
   public GetAttributesAttributesInner type(TypeEnum type) {
     
     this.type = type;
@@ -218,7 +216,6 @@ public class GetAttributesAttributesInner {
   public void setType(TypeEnum type) {
     this.type = type;
   }
-
 
   public GetAttributesAttributesInner enumeration(List<GetAttributesAttributesInnerEnumerationInner> enumeration) {
     
@@ -252,7 +249,6 @@ public class GetAttributesAttributesInner {
   public void setEnumeration(List<GetAttributesAttributesInnerEnumerationInner> enumeration) {
     this.enumeration = enumeration;
   }
-
 
   public GetAttributesAttributesInner calculatedValue(String calculatedValue) {
     

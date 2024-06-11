@@ -77,7 +77,6 @@ public class CreateUpdateCategories {
     this.id = id;
   }
 
-
   public CreateUpdateCategories name(String name) {
     
     this.name = name;
@@ -103,7 +102,6 @@ public class CreateUpdateCategories {
     this.name = name;
   }
 
-
   public CreateUpdateCategories url(String url) {
     
     this.url = url;
@@ -128,7 +126,6 @@ public class CreateUpdateCategories {
   public void setUrl(String url) {
     this.url = url;
   }
-
 
   public CreateUpdateCategories deletedAt(String deletedAt) {
     

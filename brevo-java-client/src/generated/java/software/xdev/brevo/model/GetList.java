@@ -81,7 +81,6 @@ public class GetList {
     this.id = id;
   }
 
-
   public GetList name(String name) {
     
     this.name = name;
@@ -106,7 +105,6 @@ public class GetList {
   public void setName(String name) {
     this.name = name;
   }
-
 
   public GetList totalBlacklisted(Long totalBlacklisted) {
     
@@ -133,7 +131,6 @@ public class GetList {
     this.totalBlacklisted = totalBlacklisted;
   }
 
-
   public GetList totalSubscribers(Long totalSubscribers) {
     
     this.totalSubscribers = totalSubscribers;
@@ -158,7 +155,6 @@ public class GetList {
   public void setTotalSubscribers(Long totalSubscribers) {
     this.totalSubscribers = totalSubscribers;
   }
-
 
   public GetList uniqueSubscribers(Long uniqueSubscribers) {
     

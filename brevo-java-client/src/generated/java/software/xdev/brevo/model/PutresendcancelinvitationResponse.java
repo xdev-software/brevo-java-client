@@ -72,7 +72,6 @@ public class PutresendcancelinvitationResponse {
     this.status = status;
   }
 
-
   public PutresendcancelinvitationResponse creditNotes(List<String> creditNotes) {
     
     this.creditNotes = creditNotes;

@@ -77,7 +77,6 @@ public class GetContactCampaignStatsOpenedInner {
     this.campaignId = campaignId;
   }
 
-
   public GetContactCampaignStatsOpenedInner count(Long count) {
     
     this.count = count;
@@ -103,7 +102,6 @@ public class GetContactCampaignStatsOpenedInner {
     this.count = count;
   }
 
-
   public GetContactCampaignStatsOpenedInner eventTime(String eventTime) {
     
     this.eventTime = eventTime;
@@ -128,7 +126,6 @@ public class GetContactCampaignStatsOpenedInner {
   public void setEventTime(String eventTime) {
     this.eventTime = eventTime;
   }
-
 
   public GetContactCampaignStatsOpenedInner ip(String ip) {
     

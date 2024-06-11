@@ -78,7 +78,6 @@ public class CreateDomainModel {
     this.id = id;
   }
 
-
   public CreateDomainModel domainName(String domainName) {
     
     this.domainName = domainName;
@@ -104,7 +103,6 @@ public class CreateDomainModel {
     this.domainName = domainName;
   }
 
-
   public CreateDomainModel message(String message) {
     
     this.message = message;
@@ -129,7 +127,6 @@ public class CreateDomainModel {
   public void setMessage(String message) {
     this.message = message;
   }
-
 
   public CreateDomainModel dnsRecords(CreateDomainModelDnsRecords dnsRecords) {
     

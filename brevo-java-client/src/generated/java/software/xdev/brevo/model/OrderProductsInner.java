@@ -78,7 +78,6 @@ public class OrderProductsInner {
     this.productId = productId;
   }
 
-
   public OrderProductsInner quantity(BigDecimal quantity) {
     
     this.quantity = quantity;
@@ -104,7 +103,6 @@ public class OrderProductsInner {
     this.quantity = quantity;
   }
 
-
   public OrderProductsInner variantId(String variantId) {
     
     this.variantId = variantId;
@@ -129,7 +127,6 @@ public class OrderProductsInner {
   public void setVariantId(String variantId) {
     this.variantId = variantId;
   }
-
 
   public OrderProductsInner price(BigDecimal price) {
     

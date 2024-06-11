@@ -198,7 +198,6 @@ public class CreateWebhook {
     this.url = url;
   }
 
-
   public CreateWebhook description(String description) {
     
     this.description = description;
@@ -223,7 +222,6 @@ public class CreateWebhook {
   public void setDescription(String description) {
     this.description = description;
   }
-
 
   public CreateWebhook events(List<EventsEnum> events) {
     
@@ -258,7 +256,6 @@ public class CreateWebhook {
     this.events = events;
   }
 
-
   public CreateWebhook type(TypeEnum type) {
     
     this.type = type;
@@ -283,7 +280,6 @@ public class CreateWebhook {
   public void setType(TypeEnum type) {
     this.type = type;
   }
-
 
   public CreateWebhook domain(String domain) {
     
@@ -310,7 +306,6 @@ public class CreateWebhook {
     this.domain = domain;
   }
 
-
   public CreateWebhook batched(Boolean batched) {
     
     this.batched = batched;
@@ -336,7 +331,6 @@ public class CreateWebhook {
     this.batched = batched;
   }
 
-
   public CreateWebhook auth(Object auth) {
     
     this.auth = auth;
@@ -361,7 +355,6 @@ public class CreateWebhook {
   public void setAuth(Object auth) {
     this.auth = auth;
   }
-
 
   public CreateWebhook headers(List<Object> headers) {
     

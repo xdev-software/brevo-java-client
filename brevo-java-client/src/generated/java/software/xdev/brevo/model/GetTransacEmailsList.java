@@ -73,7 +73,6 @@ public class GetTransacEmailsList {
     this.count = count;
   }
 
-
   public GetTransacEmailsList transactionalEmails(List<GetTransacEmailsListTransactionalEmailsInner> transactionalEmails) {
     
     this.transactionalEmails = transactionalEmails;

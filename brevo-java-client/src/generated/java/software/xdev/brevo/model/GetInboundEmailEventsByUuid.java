@@ -103,7 +103,6 @@ public class GetInboundEmailEventsByUuid {
     this.receivedAt = receivedAt;
   }
 
-
   public GetInboundEmailEventsByUuid deliveredAt(OffsetDateTime deliveredAt) {
     this.deliveredAt = JsonNullable.<OffsetDateTime>of(deliveredAt);
     
@@ -137,7 +136,6 @@ public class GetInboundEmailEventsByUuid {
     this.deliveredAt = JsonNullable.<OffsetDateTime>of(deliveredAt);
   }
 
-
   public GetInboundEmailEventsByUuid recipient(String recipient) {
     
     this.recipient = recipient;
@@ -162,7 +160,6 @@ public class GetInboundEmailEventsByUuid {
   public void setRecipient(String recipient) {
     this.recipient = recipient;
   }
-
 
   public GetInboundEmailEventsByUuid sender(String sender) {
     
@@ -189,7 +186,6 @@ public class GetInboundEmailEventsByUuid {
     this.sender = sender;
   }
 
-
   public GetInboundEmailEventsByUuid messageId(String messageId) {
     
     this.messageId = messageId;
@@ -215,7 +211,6 @@ public class GetInboundEmailEventsByUuid {
     this.messageId = messageId;
   }
 
-
   public GetInboundEmailEventsByUuid subject(String subject) {
     
     this.subject = subject;
@@ -240,7 +235,6 @@ public class GetInboundEmailEventsByUuid {
   public void setSubject(String subject) {
     this.subject = subject;
   }
-
 
   public GetInboundEmailEventsByUuid attachments(List<GetInboundEmailEventsByUuidAttachmentsInner> attachments) {
     
@@ -274,7 +268,6 @@ public class GetInboundEmailEventsByUuid {
   public void setAttachments(List<GetInboundEmailEventsByUuidAttachmentsInner> attachments) {
     this.attachments = attachments;
   }
-
 
   public GetInboundEmailEventsByUuid logs(List<GetInboundEmailEventsByUuidLogsInner> logs) {
     

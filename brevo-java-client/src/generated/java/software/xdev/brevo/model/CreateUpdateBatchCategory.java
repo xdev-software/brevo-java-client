@@ -81,7 +81,6 @@ public class CreateUpdateBatchCategory {
     this.categories = categories;
   }
 
-
   public CreateUpdateBatchCategory updateEnabled(Boolean updateEnabled) {
     
     this.updateEnabled = updateEnabled;

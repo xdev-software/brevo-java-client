@@ -124,7 +124,6 @@ public class CreateAttribute {
     this.value = value;
   }
 
-
   public CreateAttribute isRecurring(Boolean isRecurring) {
     
     this.isRecurring = isRecurring;
@@ -149,7 +148,6 @@ public class CreateAttribute {
   public void setIsRecurring(Boolean isRecurring) {
     this.isRecurring = isRecurring;
   }
-
 
   public CreateAttribute enumeration(List<CreateAttributeEnumerationInner> enumeration) {
     
@@ -183,7 +181,6 @@ public class CreateAttribute {
   public void setEnumeration(List<CreateAttributeEnumerationInner> enumeration) {
     this.enumeration = enumeration;
   }
-
 
   public CreateAttribute type(TypeEnum type) {
     

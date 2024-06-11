@@ -138,7 +138,6 @@ public class UpdateExternalFeed {
     this.name = name;
   }
 
-
   public UpdateExternalFeed url(String url) {
     
     this.url = url;
@@ -163,7 +162,6 @@ public class UpdateExternalFeed {
   public void setUrl(String url) {
     this.url = url;
   }
-
 
   public UpdateExternalFeed authType(AuthTypeEnum authType) {
     
@@ -190,7 +188,6 @@ public class UpdateExternalFeed {
     this.authType = authType;
   }
 
-
   public UpdateExternalFeed username(String username) {
     
     this.username = username;
@@ -215,7 +212,6 @@ public class UpdateExternalFeed {
   public void setUsername(String username) {
     this.username = username;
   }
-
 
   public UpdateExternalFeed password(String password) {
     
@@ -242,7 +238,6 @@ public class UpdateExternalFeed {
     this.password = password;
   }
 
-
   public UpdateExternalFeed token(String token) {
     
     this.token = token;
@@ -267,7 +262,6 @@ public class UpdateExternalFeed {
   public void setToken(String token) {
     this.token = token;
   }
-
 
   public UpdateExternalFeed headers(List<GetExternalFeedByUUIDHeadersInner> headers) {
     
@@ -302,7 +296,6 @@ public class UpdateExternalFeed {
     this.headers = headers;
   }
 
-
   public UpdateExternalFeed maxRetries(Integer maxRetries) {
     
     this.maxRetries = maxRetries;
@@ -329,7 +322,6 @@ public class UpdateExternalFeed {
   public void setMaxRetries(Integer maxRetries) {
     this.maxRetries = maxRetries;
   }
-
 
   public UpdateExternalFeed cache(Boolean cache) {
     

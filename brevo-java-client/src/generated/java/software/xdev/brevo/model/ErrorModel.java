@@ -132,7 +132,6 @@ public class ErrorModel {
     this.code = code;
   }
 
-
   public ErrorModel message(String message) {
     
     this.message = message;

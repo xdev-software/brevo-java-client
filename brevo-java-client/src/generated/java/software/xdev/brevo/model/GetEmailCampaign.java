@@ -268,7 +268,6 @@ public class GetEmailCampaign {
     this.id = id;
   }
 
-
   public GetEmailCampaign name(String name) {
     
     this.name = name;
@@ -293,7 +292,6 @@ public class GetEmailCampaign {
   public void setName(String name) {
     this.name = name;
   }
-
 
   public GetEmailCampaign subject(String subject) {
     
@@ -320,7 +318,6 @@ public class GetEmailCampaign {
     this.subject = subject;
   }
 
-
   public GetEmailCampaign previewText(String previewText) {
     
     this.previewText = previewText;
@@ -345,7 +342,6 @@ public class GetEmailCampaign {
   public void setPreviewText(String previewText) {
     this.previewText = previewText;
   }
-
 
   public GetEmailCampaign type(TypeEnum type) {
     
@@ -372,7 +368,6 @@ public class GetEmailCampaign {
     this.type = type;
   }
 
-
   public GetEmailCampaign status(StatusEnum status) {
     
     this.status = status;
@@ -397,7 +392,6 @@ public class GetEmailCampaign {
   public void setStatus(StatusEnum status) {
     this.status = status;
   }
-
 
   public GetEmailCampaign scheduledAt(String scheduledAt) {
     
@@ -424,7 +418,6 @@ public class GetEmailCampaign {
     this.scheduledAt = scheduledAt;
   }
 
-
   public GetEmailCampaign abTesting(Boolean abTesting) {
     
     this.abTesting = abTesting;
@@ -449,7 +442,6 @@ public class GetEmailCampaign {
   public void setAbTesting(Boolean abTesting) {
     this.abTesting = abTesting;
   }
-
 
   public GetEmailCampaign subjectA(String subjectA) {
     
@@ -476,7 +468,6 @@ public class GetEmailCampaign {
     this.subjectA = subjectA;
   }
 
-
   public GetEmailCampaign subjectB(String subjectB) {
     
     this.subjectB = subjectB;
@@ -501,7 +492,6 @@ public class GetEmailCampaign {
   public void setSubjectB(String subjectB) {
     this.subjectB = subjectB;
   }
-
 
   public GetEmailCampaign splitRule(Integer splitRule) {
     
@@ -528,7 +518,6 @@ public class GetEmailCampaign {
     this.splitRule = splitRule;
   }
 
-
   public GetEmailCampaign winnerCriteria(String winnerCriteria) {
     
     this.winnerCriteria = winnerCriteria;
@@ -553,7 +542,6 @@ public class GetEmailCampaign {
   public void setWinnerCriteria(String winnerCriteria) {
     this.winnerCriteria = winnerCriteria;
   }
-
 
   public GetEmailCampaign winnerDelay(Integer winnerDelay) {
     
@@ -580,7 +568,6 @@ public class GetEmailCampaign {
     this.winnerDelay = winnerDelay;
   }
 
-
   public GetEmailCampaign sendAtBestTime(Boolean sendAtBestTime) {
     
     this.sendAtBestTime = sendAtBestTime;
@@ -605,7 +592,6 @@ public class GetEmailCampaign {
   public void setSendAtBestTime(Boolean sendAtBestTime) {
     this.sendAtBestTime = sendAtBestTime;
   }
-
 
   public GetEmailCampaign testSent(Boolean testSent) {
     
@@ -632,7 +618,6 @@ public class GetEmailCampaign {
     this.testSent = testSent;
   }
 
-
   public GetEmailCampaign header(String header) {
     
     this.header = header;
@@ -657,7 +642,6 @@ public class GetEmailCampaign {
   public void setHeader(String header) {
     this.header = header;
   }
-
 
   public GetEmailCampaign footer(String footer) {
     
@@ -684,7 +668,6 @@ public class GetEmailCampaign {
     this.footer = footer;
   }
 
-
   public GetEmailCampaign sender(GetExtendedCampaignOverviewAllOfSender sender) {
     
     this.sender = sender;
@@ -709,7 +692,6 @@ public class GetEmailCampaign {
   public void setSender(GetExtendedCampaignOverviewAllOfSender sender) {
     this.sender = sender;
   }
-
 
   public GetEmailCampaign replyTo(String replyTo) {
     
@@ -736,7 +718,6 @@ public class GetEmailCampaign {
     this.replyTo = replyTo;
   }
 
-
   public GetEmailCampaign toField(String toField) {
     
     this.toField = toField;
@@ -761,7 +742,6 @@ public class GetEmailCampaign {
   public void setToField(String toField) {
     this.toField = toField;
   }
-
 
   public GetEmailCampaign htmlContent(String htmlContent) {
     
@@ -788,7 +768,6 @@ public class GetEmailCampaign {
     this.htmlContent = htmlContent;
   }
 
-
   public GetEmailCampaign shareLink(String shareLink) {
     
     this.shareLink = shareLink;
@@ -813,7 +792,6 @@ public class GetEmailCampaign {
   public void setShareLink(String shareLink) {
     this.shareLink = shareLink;
   }
-
 
   public GetEmailCampaign tag(String tag) {
     
@@ -840,7 +818,6 @@ public class GetEmailCampaign {
     this.tag = tag;
   }
 
-
   public GetEmailCampaign createdAt(String createdAt) {
     
     this.createdAt = createdAt;
@@ -865,7 +842,6 @@ public class GetEmailCampaign {
   public void setCreatedAt(String createdAt) {
     this.createdAt = createdAt;
   }
-
 
   public GetEmailCampaign modifiedAt(String modifiedAt) {
     
@@ -892,7 +868,6 @@ public class GetEmailCampaign {
     this.modifiedAt = modifiedAt;
   }
 
-
   public GetEmailCampaign inlineImageActivation(Boolean inlineImageActivation) {
     
     this.inlineImageActivation = inlineImageActivation;
@@ -917,7 +892,6 @@ public class GetEmailCampaign {
   public void setInlineImageActivation(Boolean inlineImageActivation) {
     this.inlineImageActivation = inlineImageActivation;
   }
-
 
   public GetEmailCampaign mirrorActive(Boolean mirrorActive) {
     
@@ -944,7 +918,6 @@ public class GetEmailCampaign {
     this.mirrorActive = mirrorActive;
   }
 
-
   public GetEmailCampaign recurring(Boolean recurring) {
     
     this.recurring = recurring;
@@ -969,7 +942,6 @@ public class GetEmailCampaign {
   public void setRecurring(Boolean recurring) {
     this.recurring = recurring;
   }
-
 
   public GetEmailCampaign sentDate(String sentDate) {
     
@@ -996,7 +968,6 @@ public class GetEmailCampaign {
     this.sentDate = sentDate;
   }
 
-
   public GetEmailCampaign returnBounce(Long returnBounce) {
     
     this.returnBounce = returnBounce;
@@ -1022,7 +993,6 @@ public class GetEmailCampaign {
     this.returnBounce = returnBounce;
   }
 
-
   public GetEmailCampaign recipients(Object recipients) {
     
     this.recipients = recipients;
@@ -1047,7 +1017,6 @@ public class GetEmailCampaign {
   public void setRecipients(Object recipients) {
     this.recipients = recipients;
   }
-
 
   public GetEmailCampaign statistics(Object statistics) {
     

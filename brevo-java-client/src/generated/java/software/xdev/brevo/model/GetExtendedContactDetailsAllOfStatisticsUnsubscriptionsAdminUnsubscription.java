@@ -69,7 +69,6 @@ public class GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsAdminUnsubsc
     this.eventTime = eventTime;
   }
 
-
   public GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsAdminUnsubscription ip(String ip) {
     
     this.ip = ip;

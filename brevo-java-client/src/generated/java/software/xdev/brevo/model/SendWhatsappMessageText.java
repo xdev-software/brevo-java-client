@@ -76,7 +76,6 @@ public class SendWhatsappMessageText {
     this.senderNumber = senderNumber;
   }
 
-
   public SendWhatsappMessageText text(String text) {
     
     this.text = text;
@@ -101,7 +100,6 @@ public class SendWhatsappMessageText {
   public void setText(String text) {
     this.text = text;
   }
-
 
   public SendWhatsappMessageText contactNumbers(List<String> contactNumbers) {
     

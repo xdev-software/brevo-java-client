@@ -69,7 +69,6 @@ public class SendSmtpEmailReplyTo {
     this.email = email;
   }
 
-
   public SendSmtpEmailReplyTo name(String name) {
     
     this.name = name;

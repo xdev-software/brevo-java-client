@@ -85,7 +85,6 @@ public class GetCategoryDetails {
     this.id = id;
   }
 
-
   public GetCategoryDetails name(String name) {
     
     this.name = name;
@@ -110,7 +109,6 @@ public class GetCategoryDetails {
   public void setName(String name) {
     this.name = name;
   }
-
 
   public GetCategoryDetails createdAt(String createdAt) {
     
@@ -137,7 +135,6 @@ public class GetCategoryDetails {
     this.createdAt = createdAt;
   }
 
-
   public GetCategoryDetails modifiedAt(String modifiedAt) {
     
     this.modifiedAt = modifiedAt;
@@ -163,7 +160,6 @@ public class GetCategoryDetails {
     this.modifiedAt = modifiedAt;
   }
 
-
   public GetCategoryDetails url(String url) {
     
     this.url = url;
@@ -188,7 +184,6 @@ public class GetCategoryDetails {
   public void setUrl(String url) {
     this.url = url;
   }
-
 
   public GetCategoryDetails isDeleted(Boolean isDeleted) {
     

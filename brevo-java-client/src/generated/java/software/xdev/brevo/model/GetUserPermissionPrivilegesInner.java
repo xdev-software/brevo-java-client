@@ -72,7 +72,6 @@ public class GetUserPermissionPrivilegesInner {
     this.feature = feature;
   }
 
-
   public GetUserPermissionPrivilegesInner permissions(List<String> permissions) {
     
     this.permissions = permissions;

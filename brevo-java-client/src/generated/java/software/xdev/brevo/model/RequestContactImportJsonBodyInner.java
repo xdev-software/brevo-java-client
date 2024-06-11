@@ -71,7 +71,6 @@ public class RequestContactImportJsonBodyInner {
     this.email = email;
   }
 
-
   public RequestContactImportJsonBodyInner attributes(Map<String, Object> attributes) {
     
     this.attributes = attributes;

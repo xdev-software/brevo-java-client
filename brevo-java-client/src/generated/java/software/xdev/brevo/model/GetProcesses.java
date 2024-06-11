@@ -81,7 +81,6 @@ public class GetProcesses {
     this.processes = processes;
   }
 
-
   public GetProcesses count(Long count) {
     
     this.count = count;

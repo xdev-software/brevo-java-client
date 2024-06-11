@@ -260,7 +260,6 @@ public class GetExtendedCampaignOverview {
     this.id = id;
   }
 
-
   public GetExtendedCampaignOverview name(String name) {
     
     this.name = name;
@@ -285,7 +284,6 @@ public class GetExtendedCampaignOverview {
   public void setName(String name) {
     this.name = name;
   }
-
 
   public GetExtendedCampaignOverview subject(String subject) {
     
@@ -312,7 +310,6 @@ public class GetExtendedCampaignOverview {
     this.subject = subject;
   }
 
-
   public GetExtendedCampaignOverview previewText(String previewText) {
     
     this.previewText = previewText;
@@ -337,7 +334,6 @@ public class GetExtendedCampaignOverview {
   public void setPreviewText(String previewText) {
     this.previewText = previewText;
   }
-
 
   public GetExtendedCampaignOverview type(TypeEnum type) {
     
@@ -364,7 +360,6 @@ public class GetExtendedCampaignOverview {
     this.type = type;
   }
 
-
   public GetExtendedCampaignOverview status(StatusEnum status) {
     
     this.status = status;
@@ -389,7 +384,6 @@ public class GetExtendedCampaignOverview {
   public void setStatus(StatusEnum status) {
     this.status = status;
   }
-
 
   public GetExtendedCampaignOverview scheduledAt(String scheduledAt) {
     
@@ -416,7 +410,6 @@ public class GetExtendedCampaignOverview {
     this.scheduledAt = scheduledAt;
   }
 
-
   public GetExtendedCampaignOverview abTesting(Boolean abTesting) {
     
     this.abTesting = abTesting;
@@ -441,7 +434,6 @@ public class GetExtendedCampaignOverview {
   public void setAbTesting(Boolean abTesting) {
     this.abTesting = abTesting;
   }
-
 
   public GetExtendedCampaignOverview subjectA(String subjectA) {
     
@@ -468,7 +460,6 @@ public class GetExtendedCampaignOverview {
     this.subjectA = subjectA;
   }
 
-
   public GetExtendedCampaignOverview subjectB(String subjectB) {
     
     this.subjectB = subjectB;
@@ -493,7 +484,6 @@ public class GetExtendedCampaignOverview {
   public void setSubjectB(String subjectB) {
     this.subjectB = subjectB;
   }
-
 
   public GetExtendedCampaignOverview splitRule(Integer splitRule) {
     
@@ -520,7 +510,6 @@ public class GetExtendedCampaignOverview {
     this.splitRule = splitRule;
   }
 
-
   public GetExtendedCampaignOverview winnerCriteria(String winnerCriteria) {
     
     this.winnerCriteria = winnerCriteria;
@@ -545,7 +534,6 @@ public class GetExtendedCampaignOverview {
   public void setWinnerCriteria(String winnerCriteria) {
     this.winnerCriteria = winnerCriteria;
   }
-
 
   public GetExtendedCampaignOverview winnerDelay(Integer winnerDelay) {
     
@@ -572,7 +560,6 @@ public class GetExtendedCampaignOverview {
     this.winnerDelay = winnerDelay;
   }
 
-
   public GetExtendedCampaignOverview sendAtBestTime(Boolean sendAtBestTime) {
     
     this.sendAtBestTime = sendAtBestTime;
@@ -597,7 +584,6 @@ public class GetExtendedCampaignOverview {
   public void setSendAtBestTime(Boolean sendAtBestTime) {
     this.sendAtBestTime = sendAtBestTime;
   }
-
 
   public GetExtendedCampaignOverview testSent(Boolean testSent) {
     
@@ -624,7 +610,6 @@ public class GetExtendedCampaignOverview {
     this.testSent = testSent;
   }
 
-
   public GetExtendedCampaignOverview header(String header) {
     
     this.header = header;
@@ -649,7 +634,6 @@ public class GetExtendedCampaignOverview {
   public void setHeader(String header) {
     this.header = header;
   }
-
 
   public GetExtendedCampaignOverview footer(String footer) {
     
@@ -676,7 +660,6 @@ public class GetExtendedCampaignOverview {
     this.footer = footer;
   }
 
-
   public GetExtendedCampaignOverview sender(GetExtendedCampaignOverviewAllOfSender sender) {
     
     this.sender = sender;
@@ -701,7 +684,6 @@ public class GetExtendedCampaignOverview {
   public void setSender(GetExtendedCampaignOverviewAllOfSender sender) {
     this.sender = sender;
   }
-
 
   public GetExtendedCampaignOverview replyTo(String replyTo) {
     
@@ -728,7 +710,6 @@ public class GetExtendedCampaignOverview {
     this.replyTo = replyTo;
   }
 
-
   public GetExtendedCampaignOverview toField(String toField) {
     
     this.toField = toField;
@@ -753,7 +734,6 @@ public class GetExtendedCampaignOverview {
   public void setToField(String toField) {
     this.toField = toField;
   }
-
 
   public GetExtendedCampaignOverview htmlContent(String htmlContent) {
     
@@ -780,7 +760,6 @@ public class GetExtendedCampaignOverview {
     this.htmlContent = htmlContent;
   }
 
-
   public GetExtendedCampaignOverview shareLink(String shareLink) {
     
     this.shareLink = shareLink;
@@ -805,7 +784,6 @@ public class GetExtendedCampaignOverview {
   public void setShareLink(String shareLink) {
     this.shareLink = shareLink;
   }
-
 
   public GetExtendedCampaignOverview tag(String tag) {
     
@@ -832,7 +810,6 @@ public class GetExtendedCampaignOverview {
     this.tag = tag;
   }
 
-
   public GetExtendedCampaignOverview createdAt(String createdAt) {
     
     this.createdAt = createdAt;
@@ -857,7 +834,6 @@ public class GetExtendedCampaignOverview {
   public void setCreatedAt(String createdAt) {
     this.createdAt = createdAt;
   }
-
 
   public GetExtendedCampaignOverview modifiedAt(String modifiedAt) {
     
@@ -884,7 +860,6 @@ public class GetExtendedCampaignOverview {
     this.modifiedAt = modifiedAt;
   }
 
-
   public GetExtendedCampaignOverview inlineImageActivation(Boolean inlineImageActivation) {
     
     this.inlineImageActivation = inlineImageActivation;
@@ -909,7 +884,6 @@ public class GetExtendedCampaignOverview {
   public void setInlineImageActivation(Boolean inlineImageActivation) {
     this.inlineImageActivation = inlineImageActivation;
   }
-
 
   public GetExtendedCampaignOverview mirrorActive(Boolean mirrorActive) {
     
@@ -936,7 +910,6 @@ public class GetExtendedCampaignOverview {
     this.mirrorActive = mirrorActive;
   }
 
-
   public GetExtendedCampaignOverview recurring(Boolean recurring) {
     
     this.recurring = recurring;
@@ -962,7 +935,6 @@ public class GetExtendedCampaignOverview {
     this.recurring = recurring;
   }
 
-
   public GetExtendedCampaignOverview sentDate(String sentDate) {
     
     this.sentDate = sentDate;
@@ -987,7 +959,6 @@ public class GetExtendedCampaignOverview {
   public void setSentDate(String sentDate) {
     this.sentDate = sentDate;
   }
-
 
   public GetExtendedCampaignOverview returnBounce(Long returnBounce) {
     

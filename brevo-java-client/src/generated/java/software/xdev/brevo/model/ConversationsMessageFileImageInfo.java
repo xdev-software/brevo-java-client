@@ -74,7 +74,6 @@ public class ConversationsMessageFileImageInfo {
     this.width = width;
   }
 
-
   public ConversationsMessageFileImageInfo height(Long height) {
     
     this.height = height;
@@ -100,7 +99,6 @@ public class ConversationsMessageFileImageInfo {
   public void setHeight(Long height) {
     this.height = height;
   }
-
 
   public ConversationsMessageFileImageInfo previewUrl(String previewUrl) {
     

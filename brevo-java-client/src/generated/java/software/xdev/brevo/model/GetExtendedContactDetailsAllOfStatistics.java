@@ -112,7 +112,6 @@ public class GetExtendedContactDetailsAllOfStatistics {
     this.messagesSent = messagesSent;
   }
 
-
   public GetExtendedContactDetailsAllOfStatistics hardBounces(List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> hardBounces) {
     
     this.hardBounces = hardBounces;
@@ -145,7 +144,6 @@ public class GetExtendedContactDetailsAllOfStatistics {
   public void setHardBounces(List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> hardBounces) {
     this.hardBounces = hardBounces;
   }
-
 
   public GetExtendedContactDetailsAllOfStatistics softBounces(List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> softBounces) {
     
@@ -180,7 +178,6 @@ public class GetExtendedContactDetailsAllOfStatistics {
     this.softBounces = softBounces;
   }
 
-
   public GetExtendedContactDetailsAllOfStatistics complaints(List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> complaints) {
     
     this.complaints = complaints;
@@ -214,7 +211,6 @@ public class GetExtendedContactDetailsAllOfStatistics {
     this.complaints = complaints;
   }
 
-
   public GetExtendedContactDetailsAllOfStatistics unsubscriptions(GetExtendedContactDetailsAllOfStatisticsUnsubscriptions unsubscriptions) {
     
     this.unsubscriptions = unsubscriptions;
@@ -239,7 +235,6 @@ public class GetExtendedContactDetailsAllOfStatistics {
   public void setUnsubscriptions(GetExtendedContactDetailsAllOfStatisticsUnsubscriptions unsubscriptions) {
     this.unsubscriptions = unsubscriptions;
   }
-
 
   public GetExtendedContactDetailsAllOfStatistics opened(List<GetExtendedContactDetailsAllOfStatisticsOpened> opened) {
     
@@ -274,7 +269,6 @@ public class GetExtendedContactDetailsAllOfStatistics {
     this.opened = opened;
   }
 
-
   public GetExtendedContactDetailsAllOfStatistics clicked(List<GetExtendedContactDetailsAllOfStatisticsClicked> clicked) {
     
     this.clicked = clicked;
@@ -308,7 +302,6 @@ public class GetExtendedContactDetailsAllOfStatistics {
     this.clicked = clicked;
   }
 
-
   public GetExtendedContactDetailsAllOfStatistics transacAttributes(List<Object> transacAttributes) {
     
     this.transacAttributes = transacAttributes;
@@ -341,7 +334,6 @@ public class GetExtendedContactDetailsAllOfStatistics {
   public void setTransacAttributes(List<Object> transacAttributes) {
     this.transacAttributes = transacAttributes;
   }
-
 
   public GetExtendedContactDetailsAllOfStatistics delivered(List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> delivered) {
     

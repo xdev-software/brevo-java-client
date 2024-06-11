@@ -109,7 +109,6 @@ public class WhatsappCampTemplate {
     this.name = name;
   }
 
-
   public WhatsappCampTemplate category(String category) {
     
     this.category = category;
@@ -134,7 +133,6 @@ public class WhatsappCampTemplate {
   public void setCategory(String category) {
     this.category = category;
   }
-
 
   public WhatsappCampTemplate language(String language) {
     
@@ -161,7 +159,6 @@ public class WhatsappCampTemplate {
     this.language = language;
   }
 
-
   public WhatsappCampTemplate containsButton(Boolean containsButton) {
     
     this.containsButton = containsButton;
@@ -186,7 +183,6 @@ public class WhatsappCampTemplate {
   public void setContainsButton(Boolean containsButton) {
     this.containsButton = containsButton;
   }
-
 
   public WhatsappCampTemplate displayHeader(Boolean displayHeader) {
     
@@ -213,7 +209,6 @@ public class WhatsappCampTemplate {
     this.displayHeader = displayHeader;
   }
 
-
   public WhatsappCampTemplate headerType(String headerType) {
     
     this.headerType = headerType;
@@ -238,7 +233,6 @@ public class WhatsappCampTemplate {
   public void setHeaderType(String headerType) {
     this.headerType = headerType;
   }
-
 
   public WhatsappCampTemplate components(List<ComponentItems> components) {
     
@@ -273,7 +267,6 @@ public class WhatsappCampTemplate {
     this.components = components;
   }
 
-
   public WhatsappCampTemplate headerVariables(List<VariablesItems> headerVariables) {
     
     this.headerVariables = headerVariables;
@@ -306,7 +299,6 @@ public class WhatsappCampTemplate {
   public void setHeaderVariables(List<VariablesItems> headerVariables) {
     this.headerVariables = headerVariables;
   }
-
 
   public WhatsappCampTemplate bodyVariables(List<VariablesItems> bodyVariables) {
     
@@ -341,7 +333,6 @@ public class WhatsappCampTemplate {
     this.bodyVariables = bodyVariables;
   }
 
-
   public WhatsappCampTemplate buttonType(String buttonType) {
     
     this.buttonType = buttonType;
@@ -366,7 +357,6 @@ public class WhatsappCampTemplate {
   public void setButtonType(String buttonType) {
     this.buttonType = buttonType;
   }
-
 
   public WhatsappCampTemplate hideFooter(Boolean hideFooter) {
     

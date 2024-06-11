@@ -77,7 +77,6 @@ public class CreateDomainModelDnsRecordsDkimRecord {
     this.type = type;
   }
 
-
   public CreateDomainModelDnsRecordsDkimRecord value(String value) {
     
     this.value = value;
@@ -103,7 +102,6 @@ public class CreateDomainModelDnsRecordsDkimRecord {
     this.value = value;
   }
 
-
   public CreateDomainModelDnsRecordsDkimRecord hostName(String hostName) {
     
     this.hostName = hostName;
@@ -128,7 +126,6 @@ public class CreateDomainModelDnsRecordsDkimRecord {
   public void setHostName(String hostName) {
     this.hostName = hostName;
   }
-
 
   public CreateDomainModelDnsRecordsDkimRecord status(Boolean status) {
     

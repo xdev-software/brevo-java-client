@@ -73,7 +73,6 @@ public class SendSmtpEmailAttachmentInner {
     this.url = url;
   }
 
-
   public SendSmtpEmailAttachmentInner content(byte[] content) {
     
     this.content = content;
@@ -98,7 +97,6 @@ public class SendSmtpEmailAttachmentInner {
   public void setContent(byte[] content) {
     this.content = content;
   }
-
 
   public SendSmtpEmailAttachmentInner name(String name) {
     

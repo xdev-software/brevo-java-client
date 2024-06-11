@@ -78,7 +78,6 @@ public class GetDomainConfigurationModel {
     this.domain = domain;
   }
 
-
   public GetDomainConfigurationModel verified(Boolean verified) {
     
     this.verified = verified;
@@ -104,7 +103,6 @@ public class GetDomainConfigurationModel {
     this.verified = verified;
   }
 
-
   public GetDomainConfigurationModel authenticated(Boolean authenticated) {
     
     this.authenticated = authenticated;
@@ -129,7 +127,6 @@ public class GetDomainConfigurationModel {
   public void setAuthenticated(Boolean authenticated) {
     this.authenticated = authenticated;
   }
-
 
   public GetDomainConfigurationModel dnsRecords(CreateDomainModelDnsRecords dnsRecords) {
     

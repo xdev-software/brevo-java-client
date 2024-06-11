@@ -73,7 +73,6 @@ public class UpdateEmailCampaignSender {
     this.name = name;
   }
 
-
   public UpdateEmailCampaignSender email(String email) {
     
     this.email = email;
@@ -98,7 +97,6 @@ public class UpdateEmailCampaignSender {
   public void setEmail(String email) {
     this.email = email;
   }
-
 
   public UpdateEmailCampaignSender id(Long id) {
     

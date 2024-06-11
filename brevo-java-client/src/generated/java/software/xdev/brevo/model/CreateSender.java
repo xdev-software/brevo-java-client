@@ -77,7 +77,6 @@ public class CreateSender {
     this.name = name;
   }
 
-
   public CreateSender email(String email) {
     
     this.email = email;
@@ -102,7 +101,6 @@ public class CreateSender {
   public void setEmail(String email) {
     this.email = email;
   }
-
 
   public CreateSender ips(List<CreateSenderIpsInner> ips) {
     

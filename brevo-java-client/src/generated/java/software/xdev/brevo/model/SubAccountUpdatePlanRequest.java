@@ -71,7 +71,6 @@ public class SubAccountUpdatePlanRequest {
     this.credits = credits;
   }
 
-
   public SubAccountUpdatePlanRequest features(SubAccountUpdatePlanRequestFeatures features) {
     
     this.features = features;

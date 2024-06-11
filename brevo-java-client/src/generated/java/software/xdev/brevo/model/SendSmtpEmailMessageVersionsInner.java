@@ -102,7 +102,6 @@ public class SendSmtpEmailMessageVersionsInner {
     this.to = to;
   }
 
-
   public SendSmtpEmailMessageVersionsInner params(Map<String, Object> params) {
     
     this.params = params;
@@ -135,7 +134,6 @@ public class SendSmtpEmailMessageVersionsInner {
   public void setParams(Map<String, Object> params) {
     this.params = params;
   }
-
 
   public SendSmtpEmailMessageVersionsInner bcc(List<SendSmtpEmailBccInner> bcc) {
     
@@ -170,7 +168,6 @@ public class SendSmtpEmailMessageVersionsInner {
     this.bcc = bcc;
   }
 
-
   public SendSmtpEmailMessageVersionsInner cc(List<SendSmtpEmailCcInner> cc) {
     
     this.cc = cc;
@@ -204,7 +201,6 @@ public class SendSmtpEmailMessageVersionsInner {
     this.cc = cc;
   }
 
-
   public SendSmtpEmailMessageVersionsInner replyTo(SendSmtpEmailReplyTo replyTo) {
     
     this.replyTo = replyTo;
@@ -229,7 +225,6 @@ public class SendSmtpEmailMessageVersionsInner {
   public void setReplyTo(SendSmtpEmailReplyTo replyTo) {
     this.replyTo = replyTo;
   }
-
 
   public SendSmtpEmailMessageVersionsInner subject(String subject) {
     

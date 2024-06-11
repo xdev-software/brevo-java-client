@@ -81,7 +81,6 @@ public class GetSmsCampaigns {
     this.campaigns = campaigns;
   }
 
-
   public GetSmsCampaigns count(Long count) {
     
     this.count = count;

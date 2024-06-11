@@ -76,7 +76,6 @@ public class Pipeline {
     this.pipelineName = pipelineName;
   }
 
-
   public Pipeline pipeline(String pipeline) {
     
     this.pipeline = pipeline;
@@ -101,7 +100,6 @@ public class Pipeline {
   public void setPipeline(String pipeline) {
     this.pipeline = pipeline;
   }
-
 
   public Pipeline stages(List<PipelineStage> stages) {
     

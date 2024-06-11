@@ -73,7 +73,6 @@ public class GetSendersListSendersInnerIpsInner {
     this.ip = ip;
   }
 
-
   public GetSendersListSendersInnerIpsInner domain(String domain) {
     
     this.domain = domain;
@@ -98,7 +97,6 @@ public class GetSendersListSendersInnerIpsInner {
   public void setDomain(String domain) {
     this.domain = domain;
   }
-
 
   public GetSendersListSendersInnerIpsInner weight(Long weight) {
     

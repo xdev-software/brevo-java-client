@@ -114,7 +114,6 @@ public class GetSmtpTemplateOverview {
     this.id = id;
   }
 
-
   public GetSmtpTemplateOverview name(String name) {
     
     this.name = name;
@@ -139,7 +138,6 @@ public class GetSmtpTemplateOverview {
   public void setName(String name) {
     this.name = name;
   }
-
 
   public GetSmtpTemplateOverview subject(String subject) {
     
@@ -166,7 +164,6 @@ public class GetSmtpTemplateOverview {
     this.subject = subject;
   }
 
-
   public GetSmtpTemplateOverview isActive(Boolean isActive) {
     
     this.isActive = isActive;
@@ -191,7 +188,6 @@ public class GetSmtpTemplateOverview {
   public void setIsActive(Boolean isActive) {
     this.isActive = isActive;
   }
-
 
   public GetSmtpTemplateOverview testSent(Boolean testSent) {
     
@@ -218,7 +214,6 @@ public class GetSmtpTemplateOverview {
     this.testSent = testSent;
   }
 
-
   public GetSmtpTemplateOverview sender(GetSmtpTemplateOverviewSender sender) {
     
     this.sender = sender;
@@ -243,7 +238,6 @@ public class GetSmtpTemplateOverview {
   public void setSender(GetSmtpTemplateOverviewSender sender) {
     this.sender = sender;
   }
-
 
   public GetSmtpTemplateOverview replyTo(String replyTo) {
     
@@ -270,7 +264,6 @@ public class GetSmtpTemplateOverview {
     this.replyTo = replyTo;
   }
 
-
   public GetSmtpTemplateOverview toField(String toField) {
     
     this.toField = toField;
@@ -295,7 +288,6 @@ public class GetSmtpTemplateOverview {
   public void setToField(String toField) {
     this.toField = toField;
   }
-
 
   public GetSmtpTemplateOverview tag(String tag) {
     
@@ -322,7 +314,6 @@ public class GetSmtpTemplateOverview {
     this.tag = tag;
   }
 
-
   public GetSmtpTemplateOverview htmlContent(String htmlContent) {
     
     this.htmlContent = htmlContent;
@@ -347,7 +338,6 @@ public class GetSmtpTemplateOverview {
   public void setHtmlContent(String htmlContent) {
     this.htmlContent = htmlContent;
   }
-
 
   public GetSmtpTemplateOverview createdAt(String createdAt) {
     
@@ -374,7 +364,6 @@ public class GetSmtpTemplateOverview {
     this.createdAt = createdAt;
   }
 
-
   public GetSmtpTemplateOverview modifiedAt(String modifiedAt) {
     
     this.modifiedAt = modifiedAt;
@@ -399,7 +388,6 @@ public class GetSmtpTemplateOverview {
   public void setModifiedAt(String modifiedAt) {
     this.modifiedAt = modifiedAt;
   }
-
 
   public GetSmtpTemplateOverview doiTemplate(Boolean doiTemplate) {
     

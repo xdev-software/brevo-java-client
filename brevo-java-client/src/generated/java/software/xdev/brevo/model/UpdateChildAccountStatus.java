@@ -77,7 +77,6 @@ public class UpdateChildAccountStatus {
     this.transactionalEmail = transactionalEmail;
   }
 
-
   public UpdateChildAccountStatus transactionalSms(Boolean transactionalSms) {
     
     this.transactionalSms = transactionalSms;
@@ -103,7 +102,6 @@ public class UpdateChildAccountStatus {
     this.transactionalSms = transactionalSms;
   }
 
-
   public UpdateChildAccountStatus marketingAutomation(Boolean marketingAutomation) {
     
     this.marketingAutomation = marketingAutomation;
@@ -128,7 +126,6 @@ public class UpdateChildAccountStatus {
   public void setMarketingAutomation(Boolean marketingAutomation) {
     this.marketingAutomation = marketingAutomation;
   }
-
 
   public UpdateChildAccountStatus smsCampaign(Boolean smsCampaign) {
     

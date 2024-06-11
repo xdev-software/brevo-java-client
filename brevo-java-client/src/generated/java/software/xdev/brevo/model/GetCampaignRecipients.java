@@ -80,7 +80,6 @@ public class GetCampaignRecipients {
     this.lists = lists;
   }
 
-
   public GetCampaignRecipients exclusionLists(List<Long> exclusionLists) {
     
     this.exclusionLists = exclusionLists;

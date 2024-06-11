@@ -73,7 +73,6 @@ public class CorporateGroupDetailsResponseSubAccountsInner {
     this.id = id;
   }
 
-
   public CorporateGroupDetailsResponseSubAccountsInner companyName(String companyName) {
     
     this.companyName = companyName;
@@ -98,7 +97,6 @@ public class CorporateGroupDetailsResponseSubAccountsInner {
   public void setCompanyName(String companyName) {
     this.companyName = companyName;
   }
-
 
   public CorporateGroupDetailsResponseSubAccountsInner createdAt(String createdAt) {
     

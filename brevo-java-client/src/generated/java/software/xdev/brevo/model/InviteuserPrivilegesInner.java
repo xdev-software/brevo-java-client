@@ -218,7 +218,6 @@ public class InviteuserPrivilegesInner {
     this.feature = feature;
   }
 
-
   public InviteuserPrivilegesInner permissions(List<PermissionsEnum> permissions) {
     
     this.permissions = permissions;

@@ -69,7 +69,6 @@ public class UpdateList {
     this.name = name;
   }
 
-
   public UpdateList folderId(Long folderId) {
     
     this.folderId = folderId;

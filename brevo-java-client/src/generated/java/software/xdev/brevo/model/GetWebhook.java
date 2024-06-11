@@ -139,7 +139,6 @@ public class GetWebhook {
     this.url = url;
   }
 
-
   public GetWebhook id(Long id) {
     
     this.id = id;
@@ -165,7 +164,6 @@ public class GetWebhook {
     this.id = id;
   }
 
-
   public GetWebhook description(String description) {
     
     this.description = description;
@@ -190,7 +188,6 @@ public class GetWebhook {
   public void setDescription(String description) {
     this.description = description;
   }
-
 
   public GetWebhook events(List<String> events) {
     
@@ -225,7 +222,6 @@ public class GetWebhook {
     this.events = events;
   }
 
-
   public GetWebhook type(TypeEnum type) {
     
     this.type = type;
@@ -250,7 +246,6 @@ public class GetWebhook {
   public void setType(TypeEnum type) {
     this.type = type;
   }
-
 
   public GetWebhook createdAt(String createdAt) {
     
@@ -277,7 +272,6 @@ public class GetWebhook {
     this.createdAt = createdAt;
   }
 
-
   public GetWebhook modifiedAt(String modifiedAt) {
     
     this.modifiedAt = modifiedAt;
@@ -302,7 +296,6 @@ public class GetWebhook {
   public void setModifiedAt(String modifiedAt) {
     this.modifiedAt = modifiedAt;
   }
-
 
   public GetWebhook batched(Boolean batched) {
     
@@ -329,7 +322,6 @@ public class GetWebhook {
     this.batched = batched;
   }
 
-
   public GetWebhook auth(Object auth) {
     
     this.auth = auth;
@@ -354,7 +346,6 @@ public class GetWebhook {
   public void setAuth(Object auth) {
     this.auth = auth;
   }
-
 
   public GetWebhook headers(List<Object> headers) {
     

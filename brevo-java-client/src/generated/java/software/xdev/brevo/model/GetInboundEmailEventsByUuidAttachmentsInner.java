@@ -77,7 +77,6 @@ public class GetInboundEmailEventsByUuidAttachmentsInner {
     this.name = name;
   }
 
-
   public GetInboundEmailEventsByUuidAttachmentsInner contentType(String contentType) {
     
     this.contentType = contentType;
@@ -103,7 +102,6 @@ public class GetInboundEmailEventsByUuidAttachmentsInner {
     this.contentType = contentType;
   }
 
-
   public GetInboundEmailEventsByUuidAttachmentsInner contentId(String contentId) {
     
     this.contentId = contentId;
@@ -128,7 +126,6 @@ public class GetInboundEmailEventsByUuidAttachmentsInner {
   public void setContentId(String contentId) {
     this.contentId = contentId;
   }
-
 
   public GetInboundEmailEventsByUuidAttachmentsInner contentLength(Integer contentLength) {
     

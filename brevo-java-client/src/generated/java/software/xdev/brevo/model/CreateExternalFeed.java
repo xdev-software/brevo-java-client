@@ -138,7 +138,6 @@ public class CreateExternalFeed {
     this.name = name;
   }
 
-
   public CreateExternalFeed url(String url) {
     
     this.url = url;
@@ -163,7 +162,6 @@ public class CreateExternalFeed {
   public void setUrl(String url) {
     this.url = url;
   }
-
 
   public CreateExternalFeed authType(AuthTypeEnum authType) {
     
@@ -190,7 +188,6 @@ public class CreateExternalFeed {
     this.authType = authType;
   }
 
-
   public CreateExternalFeed username(String username) {
     
     this.username = username;
@@ -215,7 +212,6 @@ public class CreateExternalFeed {
   public void setUsername(String username) {
     this.username = username;
   }
-
 
   public CreateExternalFeed password(String password) {
     
@@ -242,7 +238,6 @@ public class CreateExternalFeed {
     this.password = password;
   }
 
-
   public CreateExternalFeed token(String token) {
     
     this.token = token;
@@ -267,7 +262,6 @@ public class CreateExternalFeed {
   public void setToken(String token) {
     this.token = token;
   }
-
 
   public CreateExternalFeed headers(List<GetExternalFeedByUUIDHeadersInner> headers) {
     
@@ -302,7 +296,6 @@ public class CreateExternalFeed {
     this.headers = headers;
   }
 
-
   public CreateExternalFeed maxRetries(Integer maxRetries) {
     
     this.maxRetries = maxRetries;
@@ -329,7 +322,6 @@ public class CreateExternalFeed {
   public void setMaxRetries(Integer maxRetries) {
     this.maxRetries = maxRetries;
   }
-
 
   public CreateExternalFeed cache(Boolean cache) {
     

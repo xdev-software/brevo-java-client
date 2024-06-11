@@ -78,7 +78,6 @@ public class CreateWhatsAppCampaign {
     this.name = name;
   }
 
-
   public CreateWhatsAppCampaign templateId(Integer templateId) {
     
     this.templateId = templateId;
@@ -104,7 +103,6 @@ public class CreateWhatsAppCampaign {
     this.templateId = templateId;
   }
 
-
   public CreateWhatsAppCampaign scheduledAt(String scheduledAt) {
     
     this.scheduledAt = scheduledAt;
@@ -129,7 +127,6 @@ public class CreateWhatsAppCampaign {
   public void setScheduledAt(String scheduledAt) {
     this.scheduledAt = scheduledAt;
   }
-
 
   public CreateWhatsAppCampaign recipients(CreateWhatsAppCampaignRecipients recipients) {
     

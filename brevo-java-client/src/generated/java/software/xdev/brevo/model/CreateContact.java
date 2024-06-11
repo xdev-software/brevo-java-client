@@ -98,7 +98,6 @@ public class CreateContact {
     this.email = email;
   }
 
-
   public CreateContact extId(String extId) {
     
     this.extId = extId;
@@ -123,7 +122,6 @@ public class CreateContact {
   public void setExtId(String extId) {
     this.extId = extId;
   }
-
 
   public CreateContact attributes(Map<String, Object> attributes) {
     
@@ -158,7 +156,6 @@ public class CreateContact {
     this.attributes = attributes;
   }
 
-
   public CreateContact emailBlacklisted(Boolean emailBlacklisted) {
     
     this.emailBlacklisted = emailBlacklisted;
@@ -184,7 +181,6 @@ public class CreateContact {
     this.emailBlacklisted = emailBlacklisted;
   }
 
-
   public CreateContact smsBlacklisted(Boolean smsBlacklisted) {
     
     this.smsBlacklisted = smsBlacklisted;
@@ -209,7 +205,6 @@ public class CreateContact {
   public void setSmsBlacklisted(Boolean smsBlacklisted) {
     this.smsBlacklisted = smsBlacklisted;
   }
-
 
   public CreateContact listIds(List<Long> listIds) {
     
@@ -244,7 +239,6 @@ public class CreateContact {
     this.listIds = listIds;
   }
 
-
   public CreateContact updateEnabled(Boolean updateEnabled) {
     
     this.updateEnabled = updateEnabled;
@@ -269,7 +263,6 @@ public class CreateContact {
   public void setUpdateEnabled(Boolean updateEnabled) {
     this.updateEnabled = updateEnabled;
   }
-
 
   public CreateContact smtpBlacklistSender(List<String> smtpBlacklistSender) {
     

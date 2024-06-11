@@ -77,7 +77,6 @@ public class Inviteuser {
     this.email = email;
   }
 
-
   public Inviteuser allFeaturesAccess(Boolean allFeaturesAccess) {
     
     this.allFeaturesAccess = allFeaturesAccess;
@@ -102,7 +101,6 @@ public class Inviteuser {
   public void setAllFeaturesAccess(Boolean allFeaturesAccess) {
     this.allFeaturesAccess = allFeaturesAccess;
   }
-
 
   public Inviteuser privileges(List<InviteuserPrivilegesInner> privileges) {
     

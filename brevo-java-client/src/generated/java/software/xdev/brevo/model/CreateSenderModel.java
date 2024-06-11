@@ -73,7 +73,6 @@ public class CreateSenderModel {
     this.id = id;
   }
 
-
   public CreateSenderModel spfError(Boolean spfError) {
     
     this.spfError = spfError;
@@ -98,7 +97,6 @@ public class CreateSenderModel {
   public void setSpfError(Boolean spfError) {
     this.spfError = spfError;
   }
-
 
   public CreateSenderModel dkimError(Boolean dkimError) {
     

@@ -91,7 +91,6 @@ public class MasterDetailsResponse {
     this.email = email;
   }
 
-
   public MasterDetailsResponse companyName(String companyName) {
     
     this.companyName = companyName;
@@ -116,7 +115,6 @@ public class MasterDetailsResponse {
   public void setCompanyName(String companyName) {
     this.companyName = companyName;
   }
-
 
   public MasterDetailsResponse id(Long id) {
     
@@ -143,7 +141,6 @@ public class MasterDetailsResponse {
     this.id = id;
   }
 
-
   public MasterDetailsResponse currencyCode(String currencyCode) {
     
     this.currencyCode = currencyCode;
@@ -168,7 +165,6 @@ public class MasterDetailsResponse {
   public void setCurrencyCode(String currencyCode) {
     this.currencyCode = currencyCode;
   }
-
 
   public MasterDetailsResponse timezone(String timezone) {
     
@@ -195,7 +191,6 @@ public class MasterDetailsResponse {
     this.timezone = timezone;
   }
 
-
   public MasterDetailsResponse billingInfo(MasterDetailsResponseBillingInfo billingInfo) {
     
     this.billingInfo = billingInfo;
@@ -220,7 +215,6 @@ public class MasterDetailsResponse {
   public void setBillingInfo(MasterDetailsResponseBillingInfo billingInfo) {
     this.billingInfo = billingInfo;
   }
-
 
   public MasterDetailsResponse planInfo(MasterDetailsResponsePlanInfo planInfo) {
     

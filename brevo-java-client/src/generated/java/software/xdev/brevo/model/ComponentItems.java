@@ -69,7 +69,6 @@ public class ComponentItems {
     this.type = type;
   }
 
-
   public ComponentItems text(String text) {
     
     this.text = text;

@@ -89,7 +89,6 @@ public class OrderBilling {
     this.address = address;
   }
 
-
   public OrderBilling city(String city) {
     
     this.city = city;
@@ -114,7 +113,6 @@ public class OrderBilling {
   public void setCity(String city) {
     this.city = city;
   }
-
 
   public OrderBilling countryCode(String countryCode) {
     
@@ -141,7 +139,6 @@ public class OrderBilling {
     this.countryCode = countryCode;
   }
 
-
   public OrderBilling phone(String phone) {
     
     this.phone = phone;
@@ -166,7 +163,6 @@ public class OrderBilling {
   public void setPhone(String phone) {
     this.phone = phone;
   }
-
 
   public OrderBilling postCode(String postCode) {
     
@@ -193,7 +189,6 @@ public class OrderBilling {
     this.postCode = postCode;
   }
 
-
   public OrderBilling paymentMethod(String paymentMethod) {
     
     this.paymentMethod = paymentMethod;
@@ -218,7 +213,6 @@ public class OrderBilling {
   public void setPaymentMethod(String paymentMethod) {
     this.paymentMethod = paymentMethod;
   }
-
 
   public OrderBilling region(String region) {
     

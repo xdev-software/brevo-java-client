@@ -82,7 +82,6 @@ public class AddContactToListRequest {
     this.emails = emails;
   }
 
-
   public AddContactToListRequest ids(List<Long> ids) {
     
     this.ids = ids;

@@ -77,7 +77,6 @@ public class UpdateSender {
     this.name = name;
   }
 
-
   public UpdateSender email(String email) {
     
     this.email = email;
@@ -102,7 +101,6 @@ public class UpdateSender {
   public void setEmail(String email) {
     this.email = email;
   }
-
 
   public UpdateSender ips(List<CreateSenderIpsInner> ips) {
     

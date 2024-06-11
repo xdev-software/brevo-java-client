@@ -107,7 +107,6 @@ public class GetChildrenListChildrenInner {
     this.email = email;
   }
 
-
   public GetChildrenListChildrenInner firstName(String firstName) {
     
     this.firstName = firstName;
@@ -132,7 +131,6 @@ public class GetChildrenListChildrenInner {
   public void setFirstName(String firstName) {
     this.firstName = firstName;
   }
-
 
   public GetChildrenListChildrenInner lastName(String lastName) {
     
@@ -159,7 +157,6 @@ public class GetChildrenListChildrenInner {
     this.lastName = lastName;
   }
 
-
   public GetChildrenListChildrenInner companyName(String companyName) {
     
     this.companyName = companyName;
@@ -184,7 +181,6 @@ public class GetChildrenListChildrenInner {
   public void setCompanyName(String companyName) {
     this.companyName = companyName;
   }
-
 
   public GetChildrenListChildrenInner credits(GetChildInfoAllOfCredits credits) {
     
@@ -211,7 +207,6 @@ public class GetChildrenListChildrenInner {
     this.credits = credits;
   }
 
-
   public GetChildrenListChildrenInner statistics(GetChildInfoAllOfStatistics statistics) {
     
     this.statistics = statistics;
@@ -237,7 +232,6 @@ public class GetChildrenListChildrenInner {
     this.statistics = statistics;
   }
 
-
   public GetChildrenListChildrenInner password(String password) {
     
     this.password = password;
@@ -262,7 +256,6 @@ public class GetChildrenListChildrenInner {
   public void setPassword(String password) {
     this.password = password;
   }
-
 
   public GetChildrenListChildrenInner ips(List<String> ips) {
     
@@ -297,7 +290,6 @@ public class GetChildrenListChildrenInner {
     this.ips = ips;
   }
 
-
   public GetChildrenListChildrenInner apiKeys(GetChildInfoAllOfApiKeys apiKeys) {
     
     this.apiKeys = apiKeys;
@@ -322,7 +314,6 @@ public class GetChildrenListChildrenInner {
   public void setApiKeys(GetChildInfoAllOfApiKeys apiKeys) {
     this.apiKeys = apiKeys;
   }
-
 
   public GetChildrenListChildrenInner id(Long id) {
     

@@ -73,7 +73,6 @@ public class GetSmtpTemplates {
     this.count = count;
   }
 
-
   public GetSmtpTemplates templates(List<GetSmtpTemplateOverview> templates) {
     
     this.templates = templates;

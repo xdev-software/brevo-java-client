@@ -125,7 +125,6 @@ public class GetCampaignStats {
     this.listId = listId;
   }
 
-
   public GetCampaignStats uniqueClicks(Long uniqueClicks) {
     
     this.uniqueClicks = uniqueClicks;
@@ -150,7 +149,6 @@ public class GetCampaignStats {
   public void setUniqueClicks(Long uniqueClicks) {
     this.uniqueClicks = uniqueClicks;
   }
-
 
   public GetCampaignStats clickers(Long clickers) {
     
@@ -177,7 +175,6 @@ public class GetCampaignStats {
     this.clickers = clickers;
   }
 
-
   public GetCampaignStats complaints(Long complaints) {
     
     this.complaints = complaints;
@@ -202,7 +199,6 @@ public class GetCampaignStats {
   public void setComplaints(Long complaints) {
     this.complaints = complaints;
   }
-
 
   public GetCampaignStats delivered(Long delivered) {
     
@@ -229,7 +225,6 @@ public class GetCampaignStats {
     this.delivered = delivered;
   }
 
-
   public GetCampaignStats sent(Long sent) {
     
     this.sent = sent;
@@ -254,7 +249,6 @@ public class GetCampaignStats {
   public void setSent(Long sent) {
     this.sent = sent;
   }
-
 
   public GetCampaignStats softBounces(Long softBounces) {
     
@@ -281,7 +275,6 @@ public class GetCampaignStats {
     this.softBounces = softBounces;
   }
 
-
   public GetCampaignStats hardBounces(Long hardBounces) {
     
     this.hardBounces = hardBounces;
@@ -306,7 +299,6 @@ public class GetCampaignStats {
   public void setHardBounces(Long hardBounces) {
     this.hardBounces = hardBounces;
   }
-
 
   public GetCampaignStats uniqueViews(Long uniqueViews) {
     
@@ -333,7 +325,6 @@ public class GetCampaignStats {
     this.uniqueViews = uniqueViews;
   }
 
-
   public GetCampaignStats trackableViews(Long trackableViews) {
     
     this.trackableViews = trackableViews;
@@ -358,7 +349,6 @@ public class GetCampaignStats {
   public void setTrackableViews(Long trackableViews) {
     this.trackableViews = trackableViews;
   }
-
 
   public GetCampaignStats trackableViewsRate(Float trackableViewsRate) {
     
@@ -385,7 +375,6 @@ public class GetCampaignStats {
     this.trackableViewsRate = trackableViewsRate;
   }
 
-
   public GetCampaignStats estimatedViews(Long estimatedViews) {
     
     this.estimatedViews = estimatedViews;
@@ -410,7 +399,6 @@ public class GetCampaignStats {
   public void setEstimatedViews(Long estimatedViews) {
     this.estimatedViews = estimatedViews;
   }
-
 
   public GetCampaignStats unsubscriptions(Long unsubscriptions) {
     
@@ -437,7 +425,6 @@ public class GetCampaignStats {
     this.unsubscriptions = unsubscriptions;
   }
 
-
   public GetCampaignStats viewed(Long viewed) {
     
     this.viewed = viewed;
@@ -463,7 +450,6 @@ public class GetCampaignStats {
     this.viewed = viewed;
   }
 
-
   public GetCampaignStats deferred(Long deferred) {
     
     this.deferred = deferred;
@@ -488,7 +474,6 @@ public class GetCampaignStats {
   public void setDeferred(Long deferred) {
     this.deferred = deferred;
   }
-
 
   public GetCampaignStats returnBounce(Long returnBounce) {
     

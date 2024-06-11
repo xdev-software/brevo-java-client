@@ -89,7 +89,6 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
     this.name = name;
   }
 
-
   public MasterDetailsResponsePlanInfoFeaturesInner unitValue(String unitValue) {
     
     this.unitValue = unitValue;
@@ -114,7 +113,6 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
   public void setUnitValue(String unitValue) {
     this.unitValue = unitValue;
   }
-
 
   public MasterDetailsResponsePlanInfoFeaturesInner quantity(Long quantity) {
     
@@ -141,7 +139,6 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
     this.quantity = quantity;
   }
 
-
   public MasterDetailsResponsePlanInfoFeaturesInner quantityWithOverages(Long quantityWithOverages) {
     
     this.quantityWithOverages = quantityWithOverages;
@@ -166,7 +163,6 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
   public void setQuantityWithOverages(Long quantityWithOverages) {
     this.quantityWithOverages = quantityWithOverages;
   }
-
 
   public MasterDetailsResponsePlanInfoFeaturesInner used(Long used) {
     
@@ -193,7 +189,6 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
     this.used = used;
   }
 
-
   public MasterDetailsResponsePlanInfoFeaturesInner usedOverages(Long usedOverages) {
     
     this.usedOverages = usedOverages;
@@ -218,7 +213,6 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
   public void setUsedOverages(Long usedOverages) {
     this.usedOverages = usedOverages;
   }
-
 
   public MasterDetailsResponsePlanInfoFeaturesInner remaining(Long remaining) {
     

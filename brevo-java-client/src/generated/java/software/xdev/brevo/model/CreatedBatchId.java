@@ -70,7 +70,6 @@ public class CreatedBatchId {
     this.batchId = batchId;
   }
 
-
   public CreatedBatchId count(Long count) {
     
     this.count = count;

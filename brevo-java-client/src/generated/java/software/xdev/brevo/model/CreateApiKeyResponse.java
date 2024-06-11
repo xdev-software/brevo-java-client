@@ -69,7 +69,6 @@ public class CreateApiKeyResponse {
     this.status = status;
   }
 
-
   public CreateApiKeyResponse key(String key) {
     
     this.key = key;

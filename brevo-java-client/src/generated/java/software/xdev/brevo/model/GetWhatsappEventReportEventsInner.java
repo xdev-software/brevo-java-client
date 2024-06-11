@@ -138,7 +138,6 @@ public class GetWhatsappEventReportEventsInner {
     this.contactNumber = contactNumber;
   }
 
-
   public GetWhatsappEventReportEventsInner date(String date) {
     
     this.date = date;
@@ -163,7 +162,6 @@ public class GetWhatsappEventReportEventsInner {
   public void setDate(String date) {
     this.date = date;
   }
-
 
   public GetWhatsappEventReportEventsInner messageId(String messageId) {
     
@@ -190,7 +188,6 @@ public class GetWhatsappEventReportEventsInner {
     this.messageId = messageId;
   }
 
-
   public GetWhatsappEventReportEventsInner event(EventEnum event) {
     
     this.event = event;
@@ -215,7 +212,6 @@ public class GetWhatsappEventReportEventsInner {
   public void setEvent(EventEnum event) {
     this.event = event;
   }
-
 
   public GetWhatsappEventReportEventsInner reason(String reason) {
     
@@ -242,7 +238,6 @@ public class GetWhatsappEventReportEventsInner {
     this.reason = reason;
   }
 
-
   public GetWhatsappEventReportEventsInner body(String body) {
     
     this.body = body;
@@ -268,7 +263,6 @@ public class GetWhatsappEventReportEventsInner {
     this.body = body;
   }
 
-
   public GetWhatsappEventReportEventsInner mediaUrl(String mediaUrl) {
     
     this.mediaUrl = mediaUrl;
@@ -293,7 +287,6 @@ public class GetWhatsappEventReportEventsInner {
   public void setMediaUrl(String mediaUrl) {
     this.mediaUrl = mediaUrl;
   }
-
 
   public GetWhatsappEventReportEventsInner senderNumber(String senderNumber) {
     

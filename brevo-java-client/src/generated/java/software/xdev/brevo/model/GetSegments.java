@@ -72,7 +72,6 @@ public class GetSegments {
     this.segments = segments;
   }
 
-
   public GetSegments count(Long count) {
     
     this.count = count;

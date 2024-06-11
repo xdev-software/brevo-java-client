@@ -72,7 +72,6 @@ public class CreateCouponsRequest {
     this.collectionId = collectionId;
   }
 
-
   public CreateCouponsRequest coupons(Set<String> coupons) {
     
     this.coupons = coupons;

@@ -81,7 +81,6 @@ public class CreateUpdateCategory {
     this.id = id;
   }
 
-
   public CreateUpdateCategory name(String name) {
     
     this.name = name;
@@ -106,7 +105,6 @@ public class CreateUpdateCategory {
   public void setName(String name) {
     this.name = name;
   }
-
 
   public CreateUpdateCategory url(String url) {
     
@@ -133,7 +131,6 @@ public class CreateUpdateCategory {
     this.url = url;
   }
 
-
   public CreateUpdateCategory updateEnabled(Boolean updateEnabled) {
     
     this.updateEnabled = updateEnabled;
@@ -158,7 +155,6 @@ public class CreateUpdateCategory {
   public void setUpdateEnabled(Boolean updateEnabled) {
     this.updateEnabled = updateEnabled;
   }
-
 
   public CreateUpdateCategory deletedAt(String deletedAt) {
     

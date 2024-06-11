@@ -109,7 +109,6 @@ public class GetInboundEmailEventsByUuidLogsInner {
     this.date = date;
   }
 
-
   public GetInboundEmailEventsByUuidLogsInner type(TypeEnum type) {
     
     this.type = type;

@@ -224,7 +224,6 @@ public class CreateEmailCampaign {
     this.tag = tag;
   }
 
-
   public CreateEmailCampaign sender(CreateEmailCampaignSender sender) {
     
     this.sender = sender;
@@ -249,7 +248,6 @@ public class CreateEmailCampaign {
   public void setSender(CreateEmailCampaignSender sender) {
     this.sender = sender;
   }
-
 
   public CreateEmailCampaign name(String name) {
     
@@ -276,7 +274,6 @@ public class CreateEmailCampaign {
     this.name = name;
   }
 
-
   public CreateEmailCampaign htmlContent(String htmlContent) {
     
     this.htmlContent = htmlContent;
@@ -301,7 +298,6 @@ public class CreateEmailCampaign {
   public void setHtmlContent(String htmlContent) {
     this.htmlContent = htmlContent;
   }
-
 
   public CreateEmailCampaign htmlUrl(String htmlUrl) {
     
@@ -328,7 +324,6 @@ public class CreateEmailCampaign {
     this.htmlUrl = htmlUrl;
   }
 
-
   public CreateEmailCampaign templateId(Long templateId) {
     
     this.templateId = templateId;
@@ -353,7 +348,6 @@ public class CreateEmailCampaign {
   public void setTemplateId(Long templateId) {
     this.templateId = templateId;
   }
-
 
   public CreateEmailCampaign scheduledAt(String scheduledAt) {
     
@@ -380,7 +374,6 @@ public class CreateEmailCampaign {
     this.scheduledAt = scheduledAt;
   }
 
-
   public CreateEmailCampaign subject(String subject) {
     
     this.subject = subject;
@@ -405,7 +398,6 @@ public class CreateEmailCampaign {
   public void setSubject(String subject) {
     this.subject = subject;
   }
-
 
   public CreateEmailCampaign previewText(String previewText) {
     
@@ -432,7 +424,6 @@ public class CreateEmailCampaign {
     this.previewText = previewText;
   }
 
-
   public CreateEmailCampaign replyTo(String replyTo) {
     
     this.replyTo = replyTo;
@@ -457,7 +448,6 @@ public class CreateEmailCampaign {
   public void setReplyTo(String replyTo) {
     this.replyTo = replyTo;
   }
-
 
   public CreateEmailCampaign toField(String toField) {
     
@@ -484,7 +474,6 @@ public class CreateEmailCampaign {
     this.toField = toField;
   }
 
-
   public CreateEmailCampaign recipients(CreateEmailCampaignRecipients recipients) {
     
     this.recipients = recipients;
@@ -509,7 +498,6 @@ public class CreateEmailCampaign {
   public void setRecipients(CreateEmailCampaignRecipients recipients) {
     this.recipients = recipients;
   }
-
 
   public CreateEmailCampaign attachmentUrl(String attachmentUrl) {
     
@@ -536,7 +524,6 @@ public class CreateEmailCampaign {
     this.attachmentUrl = attachmentUrl;
   }
 
-
   public CreateEmailCampaign inlineImageActivation(Boolean inlineImageActivation) {
     
     this.inlineImageActivation = inlineImageActivation;
@@ -561,7 +548,6 @@ public class CreateEmailCampaign {
   public void setInlineImageActivation(Boolean inlineImageActivation) {
     this.inlineImageActivation = inlineImageActivation;
   }
-
 
   public CreateEmailCampaign mirrorActive(Boolean mirrorActive) {
     
@@ -588,7 +574,6 @@ public class CreateEmailCampaign {
     this.mirrorActive = mirrorActive;
   }
 
-
   public CreateEmailCampaign footer(String footer) {
     
     this.footer = footer;
@@ -613,7 +598,6 @@ public class CreateEmailCampaign {
   public void setFooter(String footer) {
     this.footer = footer;
   }
-
 
   public CreateEmailCampaign header(String header) {
     
@@ -640,7 +624,6 @@ public class CreateEmailCampaign {
     this.header = header;
   }
 
-
   public CreateEmailCampaign utmCampaign(String utmCampaign) {
     
     this.utmCampaign = utmCampaign;
@@ -665,7 +648,6 @@ public class CreateEmailCampaign {
   public void setUtmCampaign(String utmCampaign) {
     this.utmCampaign = utmCampaign;
   }
-
 
   public CreateEmailCampaign params(Map<String, Object> params) {
     
@@ -700,7 +682,6 @@ public class CreateEmailCampaign {
     this.params = params;
   }
 
-
   public CreateEmailCampaign sendAtBestTime(Boolean sendAtBestTime) {
     
     this.sendAtBestTime = sendAtBestTime;
@@ -725,7 +706,6 @@ public class CreateEmailCampaign {
   public void setSendAtBestTime(Boolean sendAtBestTime) {
     this.sendAtBestTime = sendAtBestTime;
   }
-
 
   public CreateEmailCampaign abTesting(Boolean abTesting) {
     
@@ -752,7 +732,6 @@ public class CreateEmailCampaign {
     this.abTesting = abTesting;
   }
 
-
   public CreateEmailCampaign subjectA(String subjectA) {
     
     this.subjectA = subjectA;
@@ -778,7 +757,6 @@ public class CreateEmailCampaign {
     this.subjectA = subjectA;
   }
 
-
   public CreateEmailCampaign subjectB(String subjectB) {
     
     this.subjectB = subjectB;
@@ -803,7 +781,6 @@ public class CreateEmailCampaign {
   public void setSubjectB(String subjectB) {
     this.subjectB = subjectB;
   }
-
 
   public CreateEmailCampaign splitRule(Long splitRule) {
     
@@ -832,7 +809,6 @@ public class CreateEmailCampaign {
     this.splitRule = splitRule;
   }
 
-
   public CreateEmailCampaign winnerCriteria(WinnerCriteriaEnum winnerCriteria) {
     
     this.winnerCriteria = winnerCriteria;
@@ -857,7 +833,6 @@ public class CreateEmailCampaign {
   public void setWinnerCriteria(WinnerCriteriaEnum winnerCriteria) {
     this.winnerCriteria = winnerCriteria;
   }
-
 
   public CreateEmailCampaign winnerDelay(Long winnerDelay) {
     
@@ -886,7 +861,6 @@ public class CreateEmailCampaign {
     this.winnerDelay = winnerDelay;
   }
 
-
   public CreateEmailCampaign ipWarmupEnable(Boolean ipWarmupEnable) {
     
     this.ipWarmupEnable = ipWarmupEnable;
@@ -912,7 +886,6 @@ public class CreateEmailCampaign {
     this.ipWarmupEnable = ipWarmupEnable;
   }
 
-
   public CreateEmailCampaign initialQuota(Long initialQuota) {
     
     this.initialQuota = initialQuota;
@@ -937,7 +910,6 @@ public class CreateEmailCampaign {
   public void setInitialQuota(Long initialQuota) {
     this.initialQuota = initialQuota;
   }
-
 
   public CreateEmailCampaign increaseRate(Long increaseRate) {
     
@@ -966,7 +938,6 @@ public class CreateEmailCampaign {
     this.increaseRate = increaseRate;
   }
 
-
   public CreateEmailCampaign unsubscriptionPageId(String unsubscriptionPageId) {
     
     this.unsubscriptionPageId = unsubscriptionPageId;
@@ -991,7 +962,6 @@ public class CreateEmailCampaign {
   public void setUnsubscriptionPageId(String unsubscriptionPageId) {
     this.unsubscriptionPageId = unsubscriptionPageId;
   }
-
 
   public CreateEmailCampaign updateFormId(String updateFormId) {
     

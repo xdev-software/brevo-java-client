@@ -73,7 +73,6 @@ public class GetContactCampaignStatsClickedInner {
     this.campaignId = campaignId;
   }
 
-
   public GetContactCampaignStatsClickedInner links(List<GetExtendedContactDetailsAllOfStatisticsLinks> links) {
     
     this.links = links;

@@ -116,7 +116,6 @@ public class EmailExportRecipients {
     this.notifyURL = notifyURL;
   }
 
-
   public EmailExportRecipients recipientsType(RecipientsTypeEnum recipientsType) {
     
     this.recipientsType = recipientsType;

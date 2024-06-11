@@ -81,7 +81,6 @@ public class GetWhatsappTemplates {
     this.templates = templates;
   }
 
-
   public GetWhatsappTemplates count(Long count) {
     
     this.count = count;

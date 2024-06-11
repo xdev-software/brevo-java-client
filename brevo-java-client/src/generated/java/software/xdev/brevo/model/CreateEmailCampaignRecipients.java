@@ -84,7 +84,6 @@ public class CreateEmailCampaignRecipients {
     this.exclusionListIds = exclusionListIds;
   }
 
-
   public CreateEmailCampaignRecipients listIds(List<Long> listIds) {
     
     this.listIds = listIds;
@@ -117,7 +116,6 @@ public class CreateEmailCampaignRecipients {
   public void setListIds(List<Long> listIds) {
     this.listIds = listIds;
   }
-
 
   public CreateEmailCampaignRecipients segmentIds(List<Long> segmentIds) {
     

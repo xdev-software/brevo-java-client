@@ -70,7 +70,6 @@ public class SubAccountDetailsResponsePlanInfoCredits {
     this.sms = sms;
   }
 
-
   public SubAccountDetailsResponsePlanInfoCredits emails(SubAccountDetailsResponsePlanInfoCreditsEmails emails) {
     
     this.emails = emails;

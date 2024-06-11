@@ -69,7 +69,6 @@ public class CorporateSubAccountKeyPostRequest {
     this.id = id;
   }
 
-
   public CorporateSubAccountKeyPostRequest name(String name) {
     
     this.name = name;

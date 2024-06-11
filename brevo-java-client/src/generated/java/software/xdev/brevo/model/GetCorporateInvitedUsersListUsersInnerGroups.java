@@ -69,7 +69,6 @@ public class GetCorporateInvitedUsersListUsersInnerGroups {
     this.id = id;
   }
 
-
   public GetCorporateInvitedUsersListUsersInnerGroups name(String name) {
     
     this.name = name;

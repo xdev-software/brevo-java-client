@@ -69,7 +69,6 @@ public class SubAccountDetailsResponsePlanInfoCreditsEmails {
     this.quantity = quantity;
   }
 
-
   public SubAccountDetailsResponsePlanInfoCreditsEmails remaining(Long remaining) {
     
     this.remaining = remaining;

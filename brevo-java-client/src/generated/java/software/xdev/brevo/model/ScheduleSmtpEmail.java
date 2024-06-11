@@ -76,7 +76,6 @@ public class ScheduleSmtpEmail {
     this.messageId = messageId;
   }
 
-
   public ScheduleSmtpEmail messageIds(List<String> messageIds) {
     
     this.messageIds = messageIds;
@@ -109,7 +108,6 @@ public class ScheduleSmtpEmail {
   public void setMessageIds(List<String> messageIds) {
     this.messageIds = messageIds;
   }
-
 
   public ScheduleSmtpEmail batchId(String batchId) {
     

@@ -69,7 +69,6 @@ public class MasterDetailsResponseBillingInfoName {
     this.givenName = givenName;
   }
 
-
   public MasterDetailsResponseBillingInfoName familyName(String familyName) {
     
     this.familyName = familyName;

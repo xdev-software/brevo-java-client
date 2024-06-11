@@ -102,7 +102,6 @@ public class GetTransacSmsReportReportsInner {
     this.date = date;
   }
 
-
   public GetTransacSmsReportReportsInner requests(Long requests) {
     
     this.requests = requests;
@@ -127,7 +126,6 @@ public class GetTransacSmsReportReportsInner {
   public void setRequests(Long requests) {
     this.requests = requests;
   }
-
 
   public GetTransacSmsReportReportsInner delivered(Long delivered) {
     
@@ -154,7 +152,6 @@ public class GetTransacSmsReportReportsInner {
     this.delivered = delivered;
   }
 
-
   public GetTransacSmsReportReportsInner hardBounces(Long hardBounces) {
     
     this.hardBounces = hardBounces;
@@ -179,7 +176,6 @@ public class GetTransacSmsReportReportsInner {
   public void setHardBounces(Long hardBounces) {
     this.hardBounces = hardBounces;
   }
-
 
   public GetTransacSmsReportReportsInner softBounces(Long softBounces) {
     
@@ -206,7 +202,6 @@ public class GetTransacSmsReportReportsInner {
     this.softBounces = softBounces;
   }
 
-
   public GetTransacSmsReportReportsInner blocked(Long blocked) {
     
     this.blocked = blocked;
@@ -231,7 +226,6 @@ public class GetTransacSmsReportReportsInner {
   public void setBlocked(Long blocked) {
     this.blocked = blocked;
   }
-
 
   public GetTransacSmsReportReportsInner unsubscribed(Long unsubscribed) {
     
@@ -258,7 +252,6 @@ public class GetTransacSmsReportReportsInner {
     this.unsubscribed = unsubscribed;
   }
 
-
   public GetTransacSmsReportReportsInner replied(Long replied) {
     
     this.replied = replied;
@@ -284,7 +277,6 @@ public class GetTransacSmsReportReportsInner {
     this.replied = replied;
   }
 
-
   public GetTransacSmsReportReportsInner accepted(Long accepted) {
     
     this.accepted = accepted;
@@ -309,7 +301,6 @@ public class GetTransacSmsReportReportsInner {
   public void setAccepted(Long accepted) {
     this.accepted = accepted;
   }
-
 
   public GetTransacSmsReportReportsInner rejected(Long rejected) {
     

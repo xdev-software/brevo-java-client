@@ -69,7 +69,6 @@ public class SendSmtpEmailBccInner {
     this.email = email;
   }
 
-
   public SendSmtpEmailBccInner name(String name) {
     
     this.name = name;

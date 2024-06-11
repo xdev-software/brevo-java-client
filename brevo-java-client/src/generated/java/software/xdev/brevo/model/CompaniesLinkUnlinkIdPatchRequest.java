@@ -88,7 +88,6 @@ public class CompaniesLinkUnlinkIdPatchRequest {
     this.linkContactIds = linkContactIds;
   }
 
-
   public CompaniesLinkUnlinkIdPatchRequest unlinkContactIds(List<Long> unlinkContactIds) {
     
     this.unlinkContactIds = unlinkContactIds;
@@ -122,7 +121,6 @@ public class CompaniesLinkUnlinkIdPatchRequest {
     this.unlinkContactIds = unlinkContactIds;
   }
 
-
   public CompaniesLinkUnlinkIdPatchRequest linkDealsIds(List<String> linkDealsIds) {
     
     this.linkDealsIds = linkDealsIds;
@@ -155,7 +153,6 @@ public class CompaniesLinkUnlinkIdPatchRequest {
   public void setLinkDealsIds(List<String> linkDealsIds) {
     this.linkDealsIds = linkDealsIds;
   }
-
 
   public CompaniesLinkUnlinkIdPatchRequest unlinkDealsIds(List<String> unlinkDealsIds) {
     
