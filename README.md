@@ -5,7 +5,7 @@
 
 # <img src="https://corp-backend.brevo.com/wp-content/uploads/2023/05/favicon.svg" height="28" /> [brevo](https://brevo.com)-java-client
 
-A Java client for the [Brevo](https://brevo.com) (formerly [SendinBlue](https://help.brevo.com/hc/en-us/articles/11279317272722-FAQs-Sendinblue-becomes-Brevo)) API
+A Java client for the [Brevo](https://brevo.com) (formerly SendinBlue) API
 
 > [!IMPORTANT]
 > An API-Key is required.<br/>
