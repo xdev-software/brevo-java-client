@@ -513,6 +513,10 @@
 							<rulesets>
 								<ruleset>../.config/pmd/ruleset.xml</ruleset>
 							</rulesets>
+							<!-- All code is auto-generated -->
+							<excludes>
+								<exclude>**/**</exclude>
+							</excludes>
 						</configuration>
 						<dependencies>
 							<dependency>
