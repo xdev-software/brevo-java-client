@@ -3,9 +3,9 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=xdev-software_brevo-java-client&metric=alert_status)](https://sonarcloud.io/dashboard?id=xdev-software_brevo-java-client)
 [![API Specification Editor](https://img.shields.io/badge/API--Spec-Editor-85ea2d?logo=swagger)](https://editor.swagger.io/?url=https://raw.githubusercontent.com/xdev-software/brevo-java-client/develop/openapi/openapi.yml)
 
-# <img src="https://corp-backend.brevo.com/wp-content/uploads/2023/05/favicon.svg" height="28" /> [brevo](https://brevo.com)-java-client
+# <img src="https://corp-backend.brevo.com/wp-content/uploads/2023/05/favicon.svg" height="28" /> [brevo](https://www.brevo.com/?r=t)-java-client
 
-A Java client for the [Brevo](https://brevo.com) (formerly SendinBlue) API
+A Java client for the [Brevo](https://www.brevo.com/?r=t) (formerly SendinBlue) API
 
 > [!IMPORTANT]
 > An API-Key is required.<br/>
