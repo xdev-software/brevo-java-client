@@ -57,10 +57,10 @@ public class SendWhatsappMessageText {
     return this;
   }
 
-   /**
+  /**
    * WhatsApp Number with country code. Example, 85264318721
    * @return senderNumber
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SENDER_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -82,10 +82,10 @@ public class SendWhatsappMessageText {
     return this;
   }
 
-   /**
+  /**
    * Text to be sent as message body (will be overridden if templateId is passed in the same request)
    * @return text
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TEXT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -115,10 +115,10 @@ public class SendWhatsappMessageText {
     return this;
   }
 
-   /**
+  /**
    * List of phone numbers of the contacts
    * @return contactNumbers
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CONTACT_NUMBERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

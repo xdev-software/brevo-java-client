@@ -57,10 +57,10 @@ public class ScheduleSmtpEmail {
     return this;
   }
 
-   /**
+  /**
    * Message ID of the transactional email scheduled
    * @return messageId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -90,10 +90,10 @@ public class ScheduleSmtpEmail {
     return this;
   }
 
-   /**
+  /**
    * Get messageIds
    * @return messageIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MESSAGE_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -115,10 +115,10 @@ public class ScheduleSmtpEmail {
     return this;
   }
 
-   /**
+  /**
    * Batch ID of the batch transactional email scheduled
    * @return batchId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_BATCH_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -69,10 +69,10 @@ public class CrmDealsLinkUnlinkIdPatchRequest {
     return this;
   }
 
-   /**
+  /**
    * Contact ids for contacts to be linked with deal
    * @return linkContactIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LINK_CONTACT_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -102,10 +102,10 @@ public class CrmDealsLinkUnlinkIdPatchRequest {
     return this;
   }
 
-   /**
+  /**
    * Contact ids for contacts to be unlinked from deal
    * @return unlinkContactIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UNLINK_CONTACT_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -135,10 +135,10 @@ public class CrmDealsLinkUnlinkIdPatchRequest {
     return this;
   }
 
-   /**
+  /**
    * Company ids to be linked with deal
    * @return linkCompanyIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LINK_COMPANY_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -168,10 +168,10 @@ public class CrmDealsLinkUnlinkIdPatchRequest {
     return this;
   }
 
-   /**
+  /**
    * Company ids to be unlinked from deal
    * @return unlinkCompanyIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UNLINK_COMPANY_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

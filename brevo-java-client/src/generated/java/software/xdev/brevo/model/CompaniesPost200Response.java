@@ -46,10 +46,10 @@ public class CompaniesPost200Response {
     return this;
   }
 
-   /**
+  /**
    * Unique company id
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

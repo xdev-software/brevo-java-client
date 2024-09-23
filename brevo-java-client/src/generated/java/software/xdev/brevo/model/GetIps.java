@@ -58,10 +58,10 @@ public class GetIps {
     return this;
   }
 
-   /**
+  /**
    * Dedicated IP(s) available on your account
    * @return ips
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_IPS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

@@ -63,10 +63,10 @@ public class GetChildInfoAllOfApiKeys {
     return this;
   }
 
-   /**
+  /**
    * Get v2
    * @return v2
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_V2)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -96,10 +96,10 @@ public class GetChildInfoAllOfApiKeys {
     return this;
   }
 
-   /**
+  /**
    * Get v3
    * @return v3
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_V3)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

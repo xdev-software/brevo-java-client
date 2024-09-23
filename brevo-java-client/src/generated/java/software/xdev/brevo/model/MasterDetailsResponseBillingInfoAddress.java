@@ -62,10 +62,10 @@ public class MasterDetailsResponseBillingInfoAddress {
     return this;
   }
 
-   /**
+  /**
    * Street address
    * @return streetAddress
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_STREET_ADDRESS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -87,10 +87,10 @@ public class MasterDetailsResponseBillingInfoAddress {
     return this;
   }
 
-   /**
+  /**
    * Locality
    * @return locality
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LOCALITY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -112,10 +112,10 @@ public class MasterDetailsResponseBillingInfoAddress {
     return this;
   }
 
-   /**
+  /**
    * Postal code
    * @return postalCode
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_POSTAL_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -137,10 +137,10 @@ public class MasterDetailsResponseBillingInfoAddress {
     return this;
   }
 
-   /**
+  /**
    * State code
    * @return stateCode
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_STATE_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -162,10 +162,10 @@ public class MasterDetailsResponseBillingInfoAddress {
     return this;
   }
 
-   /**
+  /**
    * Country code
    * @return countryCode
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COUNTRY_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

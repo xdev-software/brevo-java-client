@@ -60,10 +60,10 @@ public class PostContactInfoContacts {
     return this;
   }
 
-   /**
+  /**
    * Get success
    * @return success
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUCCESS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -85,10 +85,10 @@ public class PostContactInfoContacts {
     return this;
   }
 
-   /**
+  /**
    * Get failure
    * @return failure
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_FAILURE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -110,10 +110,10 @@ public class PostContactInfoContacts {
     return this;
   }
 
-   /**
+  /**
    * Displays the count of total number of contacts removed from list when user opts for \&quot;all\&quot; option.
    * @return total
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TOTAL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -135,10 +135,10 @@ public class PostContactInfoContacts {
     return this;
   }
 
-   /**
+  /**
    * Id of the process created to remove contacts from list when user opts for \&quot;all\&quot; option.
    * @return processId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PROCESS_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

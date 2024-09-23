@@ -44,17 +44,17 @@ public class EmailExportRecipients {
   public enum RecipientsTypeEnum {
     ALL("all"),
     
-    NONCLICKERS("nonClickers"),
+    NON_CLICKERS("nonClickers"),
     
-    NONOPENERS("nonOpeners"),
+    NON_OPENERS("nonOpeners"),
     
     CLICKERS("clickers"),
     
     OPENERS("openers"),
     
-    SOFTBOUNCES("softBounces"),
+    SOFT_BOUNCES("softBounces"),
     
-    HARDBOUNCES("hardBounces"),
+    HARD_BOUNCES("hardBounces"),
     
     UNSUBSCRIBED("unsubscribed");
 
@@ -97,10 +97,10 @@ public class EmailExportRecipients {
     return this;
   }
 
-   /**
+  /**
    * Webhook called once the export process is finished. For reference, https://help.brevo.com/hc/en-us/articles/360007666479
    * @return notifyURL
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NOTIFY_U_R_L)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -122,10 +122,10 @@ public class EmailExportRecipients {
     return this;
   }
 
-   /**
+  /**
    * Type of recipients to export for a campaign
    * @return recipientsType
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_RECIPIENTS_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

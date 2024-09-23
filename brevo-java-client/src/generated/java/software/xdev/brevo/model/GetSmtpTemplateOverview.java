@@ -95,10 +95,10 @@ public class GetSmtpTemplateOverview {
     return this;
   }
 
-   /**
+  /**
    * ID of the template
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -120,10 +120,10 @@ public class GetSmtpTemplateOverview {
     return this;
   }
 
-   /**
+  /**
    * Name of the template
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -145,10 +145,10 @@ public class GetSmtpTemplateOverview {
     return this;
   }
 
-   /**
+  /**
    * Subject of the template
    * @return subject
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SUBJECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -170,10 +170,10 @@ public class GetSmtpTemplateOverview {
     return this;
   }
 
-   /**
+  /**
    * Status of template (true&#x3D;active, false&#x3D;inactive)
    * @return isActive
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_IS_ACTIVE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -195,10 +195,10 @@ public class GetSmtpTemplateOverview {
     return this;
   }
 
-   /**
+  /**
    * Status of test sending for the template (true&#x3D;test email has been sent, false&#x3D;test email has not been sent)
    * @return testSent
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TEST_SENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -220,10 +220,10 @@ public class GetSmtpTemplateOverview {
     return this;
   }
 
-   /**
+  /**
    * Get sender
    * @return sender
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SENDER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -245,10 +245,10 @@ public class GetSmtpTemplateOverview {
     return this;
   }
 
-   /**
+  /**
    * Email defined as the \&quot;Reply to\&quot; for the template
    * @return replyTo
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_REPLY_TO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -270,10 +270,10 @@ public class GetSmtpTemplateOverview {
     return this;
   }
 
-   /**
+  /**
    * Customisation of the \&quot;to\&quot; field for the template
    * @return toField
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TO_FIELD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -295,10 +295,10 @@ public class GetSmtpTemplateOverview {
     return this;
   }
 
-   /**
+  /**
    * Tag of the template
    * @return tag
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TAG)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -320,10 +320,10 @@ public class GetSmtpTemplateOverview {
     return this;
   }
 
-   /**
+  /**
    * HTML content of the template
    * @return htmlContent
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_HTML_CONTENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -345,10 +345,10 @@ public class GetSmtpTemplateOverview {
     return this;
   }
 
-   /**
+  /**
    * Creation UTC date-time of the template (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -370,10 +370,10 @@ public class GetSmtpTemplateOverview {
     return this;
   }
 
-   /**
+  /**
    * Last modification UTC date-time of the template (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return modifiedAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -395,10 +395,10 @@ public class GetSmtpTemplateOverview {
     return this;
   }
 
-   /**
+  /**
    * It is true if template is a valid Double opt-in (DOI) template, otherwise it is false. This field will be available only in case of single template detail call.
    * @return doiTemplate
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DOI_TEMPLATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

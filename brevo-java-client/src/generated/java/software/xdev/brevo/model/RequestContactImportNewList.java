@@ -50,10 +50,10 @@ public class RequestContactImportNewList {
     return this;
   }
 
-   /**
+  /**
    * List with listName will be created first and users will be imported in it. **Mandatory if listIds is empty**. 
    * @return listName
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LIST_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -75,10 +75,10 @@ public class RequestContactImportNewList {
     return this;
   }
 
-   /**
+  /**
    * Id of the folder where this new list shall be created. **Mandatory if listName is not empty** 
    * @return folderId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_FOLDER_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

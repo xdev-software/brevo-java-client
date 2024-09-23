@@ -84,10 +84,10 @@ public class GetInboundEmailEventsByUuid {
     return this;
   }
 
-   /**
+  /**
    * Date when email was received on SMTP relay
    * @return receivedAt
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RECEIVED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -109,10 +109,10 @@ public class GetInboundEmailEventsByUuid {
     return this;
   }
 
-   /**
+  /**
    * Date when email was delivered successfully to client’s webhook
    * @return deliveredAt
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonIgnore
 
@@ -142,10 +142,10 @@ public class GetInboundEmailEventsByUuid {
     return this;
   }
 
-   /**
+  /**
    * Recipient’s email address
    * @return recipient
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RECIPIENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -167,10 +167,10 @@ public class GetInboundEmailEventsByUuid {
     return this;
   }
 
-   /**
+  /**
    * Sender’s email address
    * @return sender
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SENDER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -192,10 +192,10 @@ public class GetInboundEmailEventsByUuid {
     return this;
   }
 
-   /**
+  /**
    * Value of the Message-ID header. This will be present only after the processing is done.
    * @return messageId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -217,10 +217,10 @@ public class GetInboundEmailEventsByUuid {
     return this;
   }
 
-   /**
+  /**
    * Value of the Subject header. This will be present only after the processing is done. 
    * @return subject
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUBJECT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -250,10 +250,10 @@ public class GetInboundEmailEventsByUuid {
     return this;
   }
 
-   /**
+  /**
    * List of attachments of the email. This will be present only after the processing is done.
    * @return attachments
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ATTACHMENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -283,10 +283,10 @@ public class GetInboundEmailEventsByUuid {
     return this;
   }
 
-   /**
+  /**
    * List of events/logs that describe the lifecycle of the email on SIB platform
    * @return logs
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LOGS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -50,10 +50,10 @@ public class CreateReseller {
     return this;
   }
 
-   /**
+  /**
    * AuthKey of Reseller child created
    * @return authKey
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_AUTH_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -75,10 +75,10 @@ public class CreateReseller {
     return this;
   }
 
-   /**
+  /**
    * Id of Reseller child created
    * @return id
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

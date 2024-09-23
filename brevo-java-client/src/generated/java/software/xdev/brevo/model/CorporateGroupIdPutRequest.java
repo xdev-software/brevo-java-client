@@ -53,10 +53,10 @@ public class CorporateGroupIdPutRequest {
     return this;
   }
 
-   /**
+  /**
    * The name of the group of sub-accounts
    * @return groupName
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_GROUP_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -86,10 +86,10 @@ public class CorporateGroupIdPutRequest {
     return this;
   }
 
-   /**
+  /**
    * Pass the list of sub-account Ids to be included in the group
    * @return subAccountIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUB_ACCOUNT_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

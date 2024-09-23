@@ -86,10 +86,10 @@ public class GetExtendedContactDetails {
     return this;
   }
 
-   /**
+  /**
    * Email address of the contact for which you requested the details
    * @return email
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -111,10 +111,10 @@ public class GetExtendedContactDetails {
     return this;
   }
 
-   /**
+  /**
    * ID of the contact for which you requested the details
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -136,10 +136,10 @@ public class GetExtendedContactDetails {
     return this;
   }
 
-   /**
+  /**
    * Blacklist status for email campaigns (true&#x3D;blacklisted, false&#x3D;not blacklisted)
    * @return emailBlacklisted
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EMAIL_BLACKLISTED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -161,10 +161,10 @@ public class GetExtendedContactDetails {
     return this;
   }
 
-   /**
+  /**
    * Blacklist status for SMS campaigns (true&#x3D;blacklisted, false&#x3D;not blacklisted)
    * @return smsBlacklisted
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SMS_BLACKLISTED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -186,10 +186,10 @@ public class GetExtendedContactDetails {
     return this;
   }
 
-   /**
+  /**
    * Creation UTC date-time of the contact (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -211,10 +211,10 @@ public class GetExtendedContactDetails {
     return this;
   }
 
-   /**
+  /**
    * Last modification UTC date-time of the contact (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return modifiedAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -244,10 +244,10 @@ public class GetExtendedContactDetails {
     return this;
   }
 
-   /**
+  /**
    * Get listIds
    * @return listIds
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LIST_IDS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -277,10 +277,10 @@ public class GetExtendedContactDetails {
     return this;
   }
 
-   /**
+  /**
    * Get listUnsubscribed
    * @return listUnsubscribed
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LIST_UNSUBSCRIBED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -302,10 +302,10 @@ public class GetExtendedContactDetails {
     return this;
   }
 
-   /**
+  /**
    * Set of attributes of the contact
    * @return attributes
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -327,10 +327,10 @@ public class GetExtendedContactDetails {
     return this;
   }
 
-   /**
+  /**
    * Get statistics
    * @return statistics
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATISTICS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

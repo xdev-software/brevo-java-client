@@ -59,10 +59,10 @@ public class CreateWhatsAppCampaign {
     return this;
   }
 
-   /**
+  /**
    * Name of the WhatsApp campaign creation
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -84,10 +84,10 @@ public class CreateWhatsAppCampaign {
     return this;
   }
 
-   /**
+  /**
    * Id of the WhatsApp template in **approved** state
    * @return templateId
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -109,10 +109,10 @@ public class CreateWhatsAppCampaign {
     return this;
   }
 
-   /**
+  /**
    * Sending UTC date-time (YYYY-MM-DDTHH:mm:ss.SSSZ). **Prefer to pass your timezone in date-time format for accurate result.For example: **2017-06-01T12:30:00+02:00** 
    * @return scheduledAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -134,10 +134,10 @@ public class CreateWhatsAppCampaign {
     return this;
   }
 
-   /**
+  /**
    * Get recipients
    * @return recipients
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_RECIPIENTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

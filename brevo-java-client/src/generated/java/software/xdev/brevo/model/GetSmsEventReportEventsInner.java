@@ -55,9 +55,9 @@ public class GetSmsEventReportEventsInner {
   public enum EventEnum {
     BOUNCES("bounces"),
     
-    HARDBOUNCES("hardBounces"),
+    HARD_BOUNCES("hardBounces"),
     
-    SOFTBOUNCES("softBounces"),
+    SOFT_BOUNCES("softBounces"),
     
     DELIVERED("delivered"),
     
@@ -121,10 +121,10 @@ public class GetSmsEventReportEventsInner {
     return this;
   }
 
-   /**
+  /**
    * Phone number which has generated the event
    * @return phoneNumber
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PHONE_NUMBER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -146,10 +146,10 @@ public class GetSmsEventReportEventsInner {
     return this;
   }
 
-   /**
+  /**
    * UTC date-time on which the event has been generated
    * @return date
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -171,10 +171,10 @@ public class GetSmsEventReportEventsInner {
     return this;
   }
 
-   /**
+  /**
    * Message ID which generated the event
    * @return messageId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -196,10 +196,10 @@ public class GetSmsEventReportEventsInner {
     return this;
   }
 
-   /**
+  /**
    * Event which occurred
    * @return event
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EVENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -221,10 +221,10 @@ public class GetSmsEventReportEventsInner {
     return this;
   }
 
-   /**
+  /**
    * Reason of bounce (only available if the event is hardbounce or softbounce)
    * @return reason
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REASON)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -246,10 +246,10 @@ public class GetSmsEventReportEventsInner {
     return this;
   }
 
-   /**
+  /**
    * Get reply
    * @return reply
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REPLY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -271,10 +271,10 @@ public class GetSmsEventReportEventsInner {
     return this;
   }
 
-   /**
+  /**
    * Tag of the SMS which generated the event
    * @return tag
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TAG)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

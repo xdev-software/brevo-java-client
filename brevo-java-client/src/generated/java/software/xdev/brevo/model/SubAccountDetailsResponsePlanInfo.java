@@ -56,10 +56,10 @@ public class SubAccountDetailsResponsePlanInfo {
     return this;
   }
 
-   /**
+  /**
    * Get credits
    * @return credits
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CREDITS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -81,10 +81,10 @@ public class SubAccountDetailsResponsePlanInfo {
     return this;
   }
 
-   /**
+  /**
    * Get features
    * @return features
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_FEATURES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -106,10 +106,10 @@ public class SubAccountDetailsResponsePlanInfo {
     return this;
   }
 
-   /**
+  /**
    * type of the plan
    * @return planType
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PLAN_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

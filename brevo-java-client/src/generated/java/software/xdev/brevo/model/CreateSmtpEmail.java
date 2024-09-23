@@ -53,10 +53,10 @@ public class CreateSmtpEmail {
     return this;
   }
 
-   /**
+  /**
    * Message ID of the transactional email sent
    * @return messageId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -86,10 +86,10 @@ public class CreateSmtpEmail {
     return this;
   }
 
-   /**
+  /**
    * Get messageIds
    * @return messageIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MESSAGE_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -67,10 +67,10 @@ public class GetCouponCollection {
     return this;
   }
 
-   /**
+  /**
    * The id of the collection
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -92,10 +92,10 @@ public class GetCouponCollection {
     return this;
   }
 
-   /**
+  /**
    * The name of the collection
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -117,10 +117,10 @@ public class GetCouponCollection {
     return this;
   }
 
-   /**
+  /**
    * The default coupon of the collection
    * @return defaultCoupon
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DEFAULT_COUPON)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -142,10 +142,10 @@ public class GetCouponCollection {
     return this;
   }
 
-   /**
+  /**
    * Datetime on which the collection was created
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -167,10 +167,10 @@ public class GetCouponCollection {
     return this;
   }
 
-   /**
+  /**
    * Total coupons in the collection
    * @return totalCoupons
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TOTAL_COUPONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -192,10 +192,10 @@ public class GetCouponCollection {
     return this;
   }
 
-   /**
+  /**
    * Not sent coupons in the collection
    * @return remainingCoupons
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_REMAINING_COUPONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

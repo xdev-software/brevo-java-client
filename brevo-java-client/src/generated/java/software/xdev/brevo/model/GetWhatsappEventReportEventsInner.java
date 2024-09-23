@@ -119,10 +119,10 @@ public class GetWhatsappEventReportEventsInner {
     return this;
   }
 
-   /**
+  /**
    * WhatsApp Number with country code. Example, 85264318721
    * @return contactNumber
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CONTACT_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -144,10 +144,10 @@ public class GetWhatsappEventReportEventsInner {
     return this;
   }
 
-   /**
+  /**
    * UTC date-time on which the event has been generated
    * @return date
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DATE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -169,10 +169,10 @@ public class GetWhatsappEventReportEventsInner {
     return this;
   }
 
-   /**
+  /**
    * Message ID which generated the event
    * @return messageId
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -194,10 +194,10 @@ public class GetWhatsappEventReportEventsInner {
     return this;
   }
 
-   /**
+  /**
    * Event which occurred
    * @return event
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EVENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -219,10 +219,10 @@ public class GetWhatsappEventReportEventsInner {
     return this;
   }
 
-   /**
+  /**
    * Reason for the event (will be there in case of &#x60;error&#x60; and &#x60;soft-bounce&#x60; events)
    * @return reason
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REASON)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -244,10 +244,10 @@ public class GetWhatsappEventReportEventsInner {
     return this;
   }
 
-   /**
+  /**
    * Text of the reply (will be there only in case of &#x60;reply&#x60; event with text)
    * @return body
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_BODY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -269,10 +269,10 @@ public class GetWhatsappEventReportEventsInner {
     return this;
   }
 
-   /**
+  /**
    * Url of the media reply (will be there only in case of &#x60;reply&#x60; event with media)
    * @return mediaUrl
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MEDIA_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -294,10 +294,10 @@ public class GetWhatsappEventReportEventsInner {
     return this;
   }
 
-   /**
+  /**
    * WhatsApp Number with country code. Example, 85264318721
    * @return senderNumber
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SENDER_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

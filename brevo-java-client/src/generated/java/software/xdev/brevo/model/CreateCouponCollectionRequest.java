@@ -50,10 +50,10 @@ public class CreateCouponCollectionRequest {
     return this;
   }
 
-   /**
+  /**
    * Name of the collection with no white spaces between words
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -75,10 +75,10 @@ public class CreateCouponCollectionRequest {
     return this;
   }
 
-   /**
+  /**
    * A default coupon to be used in case there are no coupons left
    * @return defaultCoupon
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DEFAULT_COUPON)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

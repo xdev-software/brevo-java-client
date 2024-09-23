@@ -59,10 +59,10 @@ public class GetDomainConfigurationModel {
     return this;
   }
 
-   /**
+  /**
    * Domain
    * @return domain
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DOMAIN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -84,10 +84,10 @@ public class GetDomainConfigurationModel {
     return this;
   }
 
-   /**
+  /**
    * Status of domain verification (true&#x3D;verified, false&#x3D;non verified)
    * @return verified
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VERIFIED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -109,10 +109,10 @@ public class GetDomainConfigurationModel {
     return this;
   }
 
-   /**
+  /**
    * Status of domain authentication (true&#x3D;authenticated, false&#x3D;non authenticated)
    * @return authenticated
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_AUTHENTICATED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -134,10 +134,10 @@ public class GetDomainConfigurationModel {
     return this;
   }
 
-   /**
+  /**
    * Get dnsRecords
    * @return dnsRecords
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DNS_RECORDS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

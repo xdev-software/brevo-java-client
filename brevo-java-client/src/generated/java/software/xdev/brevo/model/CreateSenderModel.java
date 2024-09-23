@@ -54,10 +54,10 @@ public class CreateSenderModel {
     return this;
   }
 
-   /**
+  /**
    * ID of the Sender created
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -79,10 +79,10 @@ public class CreateSenderModel {
     return this;
   }
 
-   /**
+  /**
    * Status of SPF configuration for the sender (true &#x3D; SPF not well configured, false &#x3D; SPF well configured)
    * @return spfError
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SPF_ERROR)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -104,10 +104,10 @@ public class CreateSenderModel {
     return this;
   }
 
-   /**
+  /**
    * Status of DKIM configuration for the sender (true &#x3D; DKIM not well configured, false &#x3D; DKIM well configured)
    * @return dkimError
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DKIM_ERROR)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

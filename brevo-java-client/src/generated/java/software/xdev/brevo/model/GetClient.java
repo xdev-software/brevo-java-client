@@ -58,10 +58,10 @@ public class GetClient {
     return this;
   }
 
-   /**
+  /**
    * Login Email
    * @return email
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -83,10 +83,10 @@ public class GetClient {
     return this;
   }
 
-   /**
+  /**
    * First Name
    * @return firstName
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_FIRST_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -108,10 +108,10 @@ public class GetClient {
     return this;
   }
 
-   /**
+  /**
    * Last Name
    * @return lastName
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LAST_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -133,10 +133,10 @@ public class GetClient {
     return this;
   }
 
-   /**
+  /**
    * Name of the company
    * @return companyName
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COMPANY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

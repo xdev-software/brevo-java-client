@@ -65,10 +65,10 @@ public class DealAttributesInner {
     return this;
   }
 
-   /**
+  /**
    * Get internalName
    * @return internalName
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_INTERNAL_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -90,10 +90,10 @@ public class DealAttributesInner {
     return this;
   }
 
-   /**
+  /**
    * Get label
    * @return label
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LABEL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -115,10 +115,10 @@ public class DealAttributesInner {
     return this;
   }
 
-   /**
+  /**
    * Get attributeTypeName
    * @return attributeTypeName
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ATTRIBUTE_TYPE_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -148,10 +148,10 @@ public class DealAttributesInner {
     return this;
   }
 
-   /**
+  /**
    * Get attributeOptions
    * @return attributeOptions
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ATTRIBUTE_OPTIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -173,10 +173,10 @@ public class DealAttributesInner {
     return this;
   }
 
-   /**
+  /**
    * Get isRequired
    * @return isRequired
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IS_REQUIRED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

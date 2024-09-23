@@ -94,10 +94,10 @@ public class GetAggregatedReport {
     return this;
   }
 
-   /**
+  /**
    * Time frame of the report
    * @return range
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RANGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -119,10 +119,10 @@ public class GetAggregatedReport {
     return this;
   }
 
-   /**
+  /**
    * Number of requests for the timeframe
    * @return requests
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REQUESTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -144,10 +144,10 @@ public class GetAggregatedReport {
     return this;
   }
 
-   /**
+  /**
    * Number of delivered emails for the timeframe
    * @return delivered
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DELIVERED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -169,10 +169,10 @@ public class GetAggregatedReport {
     return this;
   }
 
-   /**
+  /**
    * Number of hardbounces for the timeframe
    * @return hardBounces
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_HARD_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -194,10 +194,10 @@ public class GetAggregatedReport {
     return this;
   }
 
-   /**
+  /**
    * Number of softbounces for the timeframe
    * @return softBounces
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SOFT_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -219,10 +219,10 @@ public class GetAggregatedReport {
     return this;
   }
 
-   /**
+  /**
    * Number of clicks for the timeframe
    * @return clicks
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CLICKS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -244,10 +244,10 @@ public class GetAggregatedReport {
     return this;
   }
 
-   /**
+  /**
    * Number of unique clicks for the timeframe
    * @return uniqueClicks
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UNIQUE_CLICKS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -269,10 +269,10 @@ public class GetAggregatedReport {
     return this;
   }
 
-   /**
+  /**
    * Number of openings for the timeframe
    * @return opens
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_OPENS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -294,10 +294,10 @@ public class GetAggregatedReport {
     return this;
   }
 
-   /**
+  /**
    * Number of unique openings for the timeframe
    * @return uniqueOpens
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UNIQUE_OPENS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -319,10 +319,10 @@ public class GetAggregatedReport {
     return this;
   }
 
-   /**
+  /**
    * Number of complaint (spam report) for the timeframe
    * @return spamReports
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SPAM_REPORTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -344,10 +344,10 @@ public class GetAggregatedReport {
     return this;
   }
 
-   /**
+  /**
    * Number of blocked contact emails for the timeframe
    * @return blocked
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_BLOCKED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -369,10 +369,10 @@ public class GetAggregatedReport {
     return this;
   }
 
-   /**
+  /**
    * Number of invalid emails for the timeframe
    * @return invalid
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_INVALID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -394,10 +394,10 @@ public class GetAggregatedReport {
     return this;
   }
 
-   /**
+  /**
    * Number of unsubscribed emails for the timeframe
    * @return unsubscribed
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UNSUBSCRIBED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

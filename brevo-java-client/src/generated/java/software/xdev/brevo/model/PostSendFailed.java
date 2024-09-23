@@ -65,10 +65,10 @@ public class PostSendFailed {
     return this;
   }
 
-   /**
+  /**
    * Response code
    * @return code
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -90,10 +90,10 @@ public class PostSendFailed {
     return this;
   }
 
-   /**
+  /**
    * Response message
    * @return message
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MESSAGE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -123,10 +123,10 @@ public class PostSendFailed {
     return this;
   }
 
-   /**
+  /**
    * Get unexistingEmails
    * @return unexistingEmails
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UNEXISTING_EMAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -156,10 +156,10 @@ public class PostSendFailed {
     return this;
   }
 
-   /**
+  /**
    * Get withoutListEmails
    * @return withoutListEmails
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_WITHOUT_LIST_EMAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -189,10 +189,10 @@ public class PostSendFailed {
     return this;
   }
 
-   /**
+  /**
    * Get blackListedEmails
    * @return blackListedEmails
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_BLACK_LISTED_EMAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

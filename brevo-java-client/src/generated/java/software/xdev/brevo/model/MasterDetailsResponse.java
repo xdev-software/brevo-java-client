@@ -72,10 +72,10 @@ public class MasterDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * Email id of master account
    * @return email
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -97,10 +97,10 @@ public class MasterDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * Company name of master account organization
    * @return companyName
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COMPANY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -122,10 +122,10 @@ public class MasterDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * Unique identifier of the master account organization
    * @return id
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -147,10 +147,10 @@ public class MasterDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * Currency code of the master account organization
    * @return currencyCode
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CURRENCY_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -172,10 +172,10 @@ public class MasterDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * Timezone of the master account organization
    * @return timezone
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TIMEZONE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -197,10 +197,10 @@ public class MasterDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * Get billingInfo
    * @return billingInfo
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_BILLING_INFO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -222,10 +222,10 @@ public class MasterDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * Get planInfo
    * @return planInfo
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PLAN_INFO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

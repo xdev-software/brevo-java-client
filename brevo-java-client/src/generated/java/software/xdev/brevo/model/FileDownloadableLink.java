@@ -45,10 +45,10 @@ public class FileDownloadableLink {
     return this;
   }
 
-   /**
+  /**
    * A unique link to download the requested file.
    * @return fileUrl
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_FILE_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

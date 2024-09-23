@@ -54,10 +54,10 @@ public class GetSmtpTemplates {
     return this;
   }
 
-   /**
+  /**
    * Count of transactional email templates
    * @return count
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -87,10 +87,10 @@ public class GetSmtpTemplates {
     return this;
   }
 
-   /**
+  /**
    * Get templates
    * @return templates
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TEMPLATES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

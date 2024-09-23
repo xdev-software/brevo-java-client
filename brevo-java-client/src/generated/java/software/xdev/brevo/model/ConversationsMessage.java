@@ -117,10 +117,10 @@ public class ConversationsMessage {
     return this;
   }
 
-   /**
+  /**
    * Message ID. It can be used for further manipulations with the message.
    * @return id
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -142,10 +142,10 @@ public class ConversationsMessage {
     return this;
   }
 
-   /**
+  /**
    * &#x60;\&quot;agent\&quot;&#x60; for agents’ messages, &#x60;\&quot;visitor\&quot;&#x60; for visitors’ messages.
    * @return type
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -167,10 +167,10 @@ public class ConversationsMessage {
     return this;
   }
 
-   /**
+  /**
    * Message text or name of the attached file
    * @return text
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TEXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -192,10 +192,10 @@ public class ConversationsMessage {
     return this;
   }
 
-   /**
+  /**
    * visitor’s ID
    * @return visitorId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_VISITOR_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -217,10 +217,10 @@ public class ConversationsMessage {
     return this;
   }
 
-   /**
+  /**
    * ID of the agent on whose behalf the message was sent (only in messages sent by an agent).
    * @return agentId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_AGENT_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -242,10 +242,10 @@ public class ConversationsMessage {
     return this;
   }
 
-   /**
+  /**
    * Agent’s name as displayed to the visitor. Only in the messages sent by an agent.
    * @return agentName
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_AGENT_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -267,11 +267,11 @@ public class ConversationsMessage {
     return this;
   }
 
-   /**
+  /**
    * Timestamp in milliseconds.
    * minimum: 0
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -293,10 +293,10 @@ public class ConversationsMessage {
     return this;
   }
 
-   /**
+  /**
    * &#x60;true&#x60; for pushed messages
    * @return isPushed
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IS_PUSHED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -318,10 +318,10 @@ public class ConversationsMessage {
     return this;
   }
 
-   /**
+  /**
    * In two-way integrations, messages sent via REST API can be marked with receivedFrom property and then filtered out when received in a webhook to avoid infinite loop.
    * @return receivedFrom
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RECEIVED_FROM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -343,10 +343,10 @@ public class ConversationsMessage {
     return this;
   }
 
-   /**
+  /**
    * Get _file
    * @return _file
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_FILE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

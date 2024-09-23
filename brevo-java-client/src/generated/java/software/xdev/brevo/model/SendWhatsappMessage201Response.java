@@ -46,10 +46,10 @@ public class SendWhatsappMessage201Response {
     return this;
   }
 
-   /**
+  /**
    * messageId of sent message
    * @return messageId
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

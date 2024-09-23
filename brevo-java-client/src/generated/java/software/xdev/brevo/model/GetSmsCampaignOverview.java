@@ -61,7 +61,7 @@ public class GetSmsCampaignOverview {
     
     SUSPENDED("suspended"),
     
-    INPROCESS("inProcess");
+    IN_PROCESS("inProcess");
 
     private String value;
 
@@ -117,10 +117,10 @@ public class GetSmsCampaignOverview {
     return this;
   }
 
-   /**
+  /**
    * ID of the SMS Campaign
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -142,10 +142,10 @@ public class GetSmsCampaignOverview {
     return this;
   }
 
-   /**
+  /**
    * Name of the SMS Campaign
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -167,10 +167,10 @@ public class GetSmsCampaignOverview {
     return this;
   }
 
-   /**
+  /**
    * Status of the SMS Campaign
    * @return status
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -192,10 +192,10 @@ public class GetSmsCampaignOverview {
     return this;
   }
 
-   /**
+  /**
    * Content of the SMS Campaign
    * @return content
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CONTENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -217,10 +217,10 @@ public class GetSmsCampaignOverview {
     return this;
   }
 
-   /**
+  /**
    * UTC date-time on which SMS campaign is scheduled. Should be in YYYY-MM-DDTHH:mm:ss.SSSZ format
    * @return scheduledAt
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -242,10 +242,10 @@ public class GetSmsCampaignOverview {
     return this;
   }
 
-   /**
+  /**
    * Sender of the SMS Campaign
    * @return sender
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SENDER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -267,10 +267,10 @@ public class GetSmsCampaignOverview {
     return this;
   }
 
-   /**
+  /**
    * Creation UTC date-time of the SMS campaign (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -292,10 +292,10 @@ public class GetSmsCampaignOverview {
     return this;
   }
 
-   /**
+  /**
    * UTC date-time of last modification of the SMS campaign (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return modifiedAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

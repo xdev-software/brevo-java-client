@@ -46,10 +46,10 @@ public class GetChildAccountCreationStatus {
     return this;
   }
 
-   /**
+  /**
    * Status of child account creation whether it is successfully created (exists) or not.
    * @return childAccountCreated
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CHILD_ACCOUNT_CREATED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

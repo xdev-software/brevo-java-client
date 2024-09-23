@@ -50,10 +50,10 @@ public class SubAccountDetailsResponsePlanInfoFeaturesInbox {
     return this;
   }
 
-   /**
+  /**
    * Quantity of inbox provided
    * @return quantity
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_QUANTITY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -75,10 +75,10 @@ public class SubAccountDetailsResponsePlanInfoFeaturesInbox {
     return this;
   }
 
-   /**
+  /**
    * Available inboxes for use
    * @return remaining
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REMAINING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

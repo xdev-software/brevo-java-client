@@ -120,10 +120,10 @@ public class GetWebhook {
     return this;
   }
 
-   /**
+  /**
    * URL of the webhook
    * @return url
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -145,10 +145,10 @@ public class GetWebhook {
     return this;
   }
 
-   /**
+  /**
    * ID of the webhook
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -170,10 +170,10 @@ public class GetWebhook {
     return this;
   }
 
-   /**
+  /**
    * Description of the webhook
    * @return description
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -203,10 +203,10 @@ public class GetWebhook {
     return this;
   }
 
-   /**
+  /**
    * Get events
    * @return events
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EVENTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -228,10 +228,10 @@ public class GetWebhook {
     return this;
   }
 
-   /**
+  /**
    * Type of webhook (marketing or transactional)
    * @return type
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -253,10 +253,10 @@ public class GetWebhook {
     return this;
   }
 
-   /**
+  /**
    * Creation UTC date-time of the webhook (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -278,10 +278,10 @@ public class GetWebhook {
     return this;
   }
 
-   /**
+  /**
    * Last modification UTC date-time of the webhook (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return modifiedAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -303,10 +303,10 @@ public class GetWebhook {
     return this;
   }
 
-   /**
+  /**
    * Batching configuration of the webhook, we send batched webhooks if its true
    * @return batched
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_BATCHED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -328,10 +328,10 @@ public class GetWebhook {
     return this;
   }
 
-   /**
+  /**
    * Authentication header to be send with the webhook requests
    * @return auth
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_AUTH)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -361,10 +361,10 @@ public class GetWebhook {
     return this;
   }
 
-   /**
+  /**
    * Get headers
    * @return headers
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_HEADERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

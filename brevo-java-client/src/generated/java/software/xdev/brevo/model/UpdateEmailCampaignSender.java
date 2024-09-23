@@ -54,10 +54,10 @@ public class UpdateEmailCampaignSender {
     return this;
   }
 
-   /**
+  /**
    * Sender Name from which the campaign emails are sent
    * @return name
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -79,10 +79,10 @@ public class UpdateEmailCampaignSender {
     return this;
   }
 
-   /**
+  /**
    * Sender email from which the campaign emails are sent
    * @return email
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -104,10 +104,10 @@ public class UpdateEmailCampaignSender {
     return this;
   }
 
-   /**
+  /**
    * Select the sender for the campaign on the basis of sender id. **In order to select a sender with specific pool of IP’s, dedicated ip users shall pass id (instead of email)**. 
    * @return id
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

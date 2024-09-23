@@ -109,10 +109,10 @@ public class CreateChild {
     return this;
   }
 
-   /**
+  /**
    * Email address to create the child account
    * @return email
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -134,10 +134,10 @@ public class CreateChild {
     return this;
   }
 
-   /**
+  /**
    * First name to use to create the child account
    * @return firstName
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_FIRST_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -159,10 +159,10 @@ public class CreateChild {
     return this;
   }
 
-   /**
+  /**
    * Last name to use to create the child account
    * @return lastName
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LAST_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -184,10 +184,10 @@ public class CreateChild {
     return this;
   }
 
-   /**
+  /**
    * Company name to use to create the child account
    * @return companyName
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COMPANY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -209,10 +209,10 @@ public class CreateChild {
     return this;
   }
 
-   /**
+  /**
    * Password for the child account to login
    * @return password
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PASSWORD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -234,10 +234,10 @@ public class CreateChild {
     return this;
   }
 
-   /**
+  /**
    * Language of the child account
    * @return language
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LANGUAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

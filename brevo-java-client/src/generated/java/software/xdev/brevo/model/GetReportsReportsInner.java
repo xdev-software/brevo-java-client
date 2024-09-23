@@ -95,10 +95,10 @@ public class GetReportsReportsInner {
     return this;
   }
 
-   /**
+  /**
    * Date of the statistics
    * @return date
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DATE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -120,10 +120,10 @@ public class GetReportsReportsInner {
     return this;
   }
 
-   /**
+  /**
    * Number of requests for the date
    * @return requests
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_REQUESTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -145,10 +145,10 @@ public class GetReportsReportsInner {
     return this;
   }
 
-   /**
+  /**
    * Number of delivered emails for the date
    * @return delivered
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DELIVERED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -170,10 +170,10 @@ public class GetReportsReportsInner {
     return this;
   }
 
-   /**
+  /**
    * Number of hardbounces for the date
    * @return hardBounces
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_HARD_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -195,10 +195,10 @@ public class GetReportsReportsInner {
     return this;
   }
 
-   /**
+  /**
    * Number of softbounces for the date
    * @return softBounces
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SOFT_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -220,10 +220,10 @@ public class GetReportsReportsInner {
     return this;
   }
 
-   /**
+  /**
    * Number of clicks for the date
    * @return clicks
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CLICKS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -245,10 +245,10 @@ public class GetReportsReportsInner {
     return this;
   }
 
-   /**
+  /**
    * Number of unique clicks for the date
    * @return uniqueClicks
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UNIQUE_CLICKS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -270,10 +270,10 @@ public class GetReportsReportsInner {
     return this;
   }
 
-   /**
+  /**
    * Number of openings for the date
    * @return opens
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_OPENS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -295,10 +295,10 @@ public class GetReportsReportsInner {
     return this;
   }
 
-   /**
+  /**
    * Number of unique openings for the date
    * @return uniqueOpens
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UNIQUE_OPENS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -320,10 +320,10 @@ public class GetReportsReportsInner {
     return this;
   }
 
-   /**
+  /**
    * Number of complaints (spam reports) for the date
    * @return spamReports
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SPAM_REPORTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -345,10 +345,10 @@ public class GetReportsReportsInner {
     return this;
   }
 
-   /**
+  /**
    * Number of blocked emails for the date
    * @return blocked
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BLOCKED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -370,10 +370,10 @@ public class GetReportsReportsInner {
     return this;
   }
 
-   /**
+  /**
    * Number of invalid emails for the date
    * @return invalid
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_INVALID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -395,10 +395,10 @@ public class GetReportsReportsInner {
     return this;
   }
 
-   /**
+  /**
    * Number of unsubscribed emails for the date
    * @return unsubscribed
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UNSUBSCRIBED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

@@ -58,10 +58,10 @@ public class UpdateBatchContacts {
     return this;
   }
 
-   /**
+  /**
    * List of contacts to be updated
    * @return contacts
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CONTACTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

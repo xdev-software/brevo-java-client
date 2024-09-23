@@ -50,10 +50,10 @@ public class GetAccountAllOfMarketingAutomation {
     return this;
   }
 
-   /**
+  /**
    * Marketing Automation Tracker ID
    * @return key
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_KEY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -75,10 +75,10 @@ public class GetAccountAllOfMarketingAutomation {
     return this;
   }
 
-   /**
+  /**
    * Status of Marketing Automation Plateform activation for your account (true&#x3D;enabled, false&#x3D;disabled)
    * @return enabled
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

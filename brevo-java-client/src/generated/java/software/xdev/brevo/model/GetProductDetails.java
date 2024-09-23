@@ -105,10 +105,10 @@ public class GetProductDetails {
     return this;
   }
 
-   /**
+  /**
    * Product ID for which you requested the details
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -130,10 +130,10 @@ public class GetProductDetails {
     return this;
   }
 
-   /**
+  /**
    * Name of the product for which you requested the details
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -155,10 +155,10 @@ public class GetProductDetails {
     return this;
   }
 
-   /**
+  /**
    * Creation UTC date-time of the product (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -180,10 +180,10 @@ public class GetProductDetails {
     return this;
   }
 
-   /**
+  /**
    * Last modification UTC date-time of the product (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return modifiedAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -205,10 +205,10 @@ public class GetProductDetails {
     return this;
   }
 
-   /**
+  /**
    * URL to the product
    * @return url
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -230,10 +230,10 @@ public class GetProductDetails {
     return this;
   }
 
-   /**
+  /**
    * Absolute URL to the cover image of the product
    * @return imageUrl
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IMAGE_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -255,10 +255,10 @@ public class GetProductDetails {
     return this;
   }
 
-   /**
+  /**
    * Product identifier from the shop
    * @return sku
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SKU)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -280,10 +280,10 @@ public class GetProductDetails {
     return this;
   }
 
-   /**
+  /**
    * Price of the product
    * @return price
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PRICE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -313,10 +313,10 @@ public class GetProductDetails {
     return this;
   }
 
-   /**
+  /**
    * Category ID-s of the product
    * @return categories
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CATEGORIES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -338,10 +338,10 @@ public class GetProductDetails {
     return this;
   }
 
-   /**
+  /**
    * Parent product id of the product
    * @return parentId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PARENT_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -363,10 +363,10 @@ public class GetProductDetails {
     return this;
   }
 
-   /**
+  /**
    * S3 url of original image
    * @return s3Original
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_S3_ORIGINAL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -388,10 +388,10 @@ public class GetProductDetails {
     return this;
   }
 
-   /**
+  /**
    * S3 thumbnail url of original image in 120x120 dimension for analytics section
    * @return s3ThumbAnalytics
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_S3_THUMB_ANALYTICS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -413,10 +413,10 @@ public class GetProductDetails {
     return this;
   }
 
-   /**
+  /**
    * S3 thumbnail url of original image in 600x400 dimension for editor section
    * @return s3ThumbEditor
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_S3_THUMB_EDITOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -438,10 +438,10 @@ public class GetProductDetails {
     return this;
   }
 
-   /**
+  /**
    * Meta data of product such as description, vendor, producer, stock level, etc.
    * @return metaInfo
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_META_INFO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -463,10 +463,10 @@ public class GetProductDetails {
     return this;
   }
 
-   /**
+  /**
    * product deleted from the shop&#39;s database
    * @return isDeleted
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IS_DELETED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

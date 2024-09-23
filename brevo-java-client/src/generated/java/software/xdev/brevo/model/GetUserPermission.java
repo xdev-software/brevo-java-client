@@ -58,10 +58,10 @@ public class GetUserPermission {
     return this;
   }
 
-   /**
+  /**
    * Email address of the user.
    * @return email
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -83,10 +83,10 @@ public class GetUserPermission {
     return this;
   }
 
-   /**
+  /**
    * Status of the invited user.
    * @return status
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -116,10 +116,10 @@ public class GetUserPermission {
     return this;
   }
 
-   /**
+  /**
    * Granular feature permissions given to the user.
    * @return privileges
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PRIVILEGES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

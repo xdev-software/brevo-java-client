@@ -61,10 +61,10 @@ public class CreateSmsCampaignRecipients {
     return this;
   }
 
-   /**
+  /**
    * Lists Ids to send the campaign to. **REQUIRED if scheduledAt is not empty** 
    * @return listIds
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LIST_IDS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -94,10 +94,10 @@ public class CreateSmsCampaignRecipients {
     return this;
   }
 
-   /**
+  /**
    * List ids which have to be excluded from a campaign
    * @return exclusionListIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EXCLUSION_LIST_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

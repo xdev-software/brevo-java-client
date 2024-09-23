@@ -60,10 +60,10 @@ public class CorporateGroupDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * Get group
    * @return group
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_GROUP)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -93,10 +93,10 @@ public class CorporateGroupDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * Get subAccounts
    * @return subAccounts
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUB_ACCOUNTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -126,10 +126,10 @@ public class CorporateGroupDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * Get users
    * @return users
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_USERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

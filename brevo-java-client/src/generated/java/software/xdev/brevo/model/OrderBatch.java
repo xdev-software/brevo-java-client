@@ -66,10 +66,10 @@ public class OrderBatch {
     return this;
   }
 
-   /**
+  /**
    * array of order objects
    * @return orders
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ORDERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -91,10 +91,10 @@ public class OrderBatch {
     return this;
   }
 
-   /**
+  /**
    * Notify Url provided by client to get the status of batch request
    * @return notifyUrl
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NOTIFY_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -116,10 +116,10 @@ public class OrderBatch {
     return this;
   }
 
-   /**
+  /**
    * Defines wether you want your orders to be considered as live data or as historical data (import of past data, synchronising data). True: orders will not trigger any automation workflows. False: orders will trigger workflows as usual.
    * @return historical
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_HISTORICAL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -58,10 +58,10 @@ public class GetCorporateInvitedUsersList {
     return this;
   }
 
-   /**
+  /**
    * Get invited users list
    * @return users
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_USERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

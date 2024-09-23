@@ -50,10 +50,10 @@ public class AbTestVersionStats {
     return this;
   }
 
-   /**
+  /**
    * percentage of an event for version A
    * @return versionA
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VERSION_A)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -75,10 +75,10 @@ public class AbTestVersionStats {
     return this;
   }
 
-   /**
+  /**
    * percentage of an event for version B
    * @return versionB
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VERSION_B)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

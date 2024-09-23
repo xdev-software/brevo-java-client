@@ -91,10 +91,10 @@ public class CrmTasksPostRequest {
     return this;
   }
 
-   /**
+  /**
    * Name of task
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -116,11 +116,11 @@ public class CrmTasksPostRequest {
     return this;
   }
 
-   /**
+  /**
    * Duration of task in milliseconds [1 minute &#x3D; 60000 ms]
    * minimum: 0
    * @return duration
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DURATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -142,10 +142,10 @@ public class CrmTasksPostRequest {
     return this;
   }
 
-   /**
+  /**
    * Id for type of task e.g Call / Email / Meeting etc.
    * @return taskTypeId
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TASK_TYPE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -167,10 +167,10 @@ public class CrmTasksPostRequest {
     return this;
   }
 
-   /**
+  /**
    * Task due date and time
    * @return date
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DATE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -192,10 +192,10 @@ public class CrmTasksPostRequest {
     return this;
   }
 
-   /**
+  /**
    * Notes added to a task
    * @return notes
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NOTES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -217,10 +217,10 @@ public class CrmTasksPostRequest {
     return this;
   }
 
-   /**
+  /**
    * Task marked as done
    * @return done
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DONE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -242,10 +242,10 @@ public class CrmTasksPostRequest {
     return this;
   }
 
-   /**
+  /**
    * User id to whom task is assigned
    * @return assignToId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ASSIGN_TO_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -275,10 +275,10 @@ public class CrmTasksPostRequest {
     return this;
   }
 
-   /**
+  /**
    * Contact ids for contacts linked to this task
    * @return contactsIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CONTACTS_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -308,10 +308,10 @@ public class CrmTasksPostRequest {
     return this;
   }
 
-   /**
+  /**
    * Deal ids for deals a task is linked to
    * @return dealsIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DEALS_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -341,10 +341,10 @@ public class CrmTasksPostRequest {
     return this;
   }
 
-   /**
+  /**
    * Companies ids for companies a task is linked to
    * @return companiesIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COMPANIES_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -366,10 +366,10 @@ public class CrmTasksPostRequest {
     return this;
   }
 
-   /**
+  /**
    * Get reminder
    * @return reminder
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REMINDER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

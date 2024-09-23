@@ -54,10 +54,10 @@ public class SendSmtpEmailAttachmentInner {
     return this;
   }
 
-   /**
+  /**
    * Absolute url of the attachment (**no local file**). 
    * @return url
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -79,10 +79,10 @@ public class SendSmtpEmailAttachmentInner {
     return this;
   }
 
-   /**
+  /**
    * Base64 encoded chunk data of the attachment generated on the fly
    * @return content
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CONTENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -104,10 +104,10 @@ public class SendSmtpEmailAttachmentInner {
     return this;
   }
 
-   /**
+  /**
    * **Required if content is passed**. Name of the attachment 
    * @return name
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

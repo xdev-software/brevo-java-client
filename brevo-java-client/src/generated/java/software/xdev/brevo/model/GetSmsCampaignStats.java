@@ -70,10 +70,10 @@ public class GetSmsCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Number of delivered SMS
    * @return delivered
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DELIVERED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -95,10 +95,10 @@ public class GetSmsCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Number of sent SMS
    * @return sent
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -120,10 +120,10 @@ public class GetSmsCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Number of processing SMS
    * @return processing
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PROCESSING)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -145,10 +145,10 @@ public class GetSmsCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Number of softbounced SMS
    * @return softBounces
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SOFT_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -170,10 +170,10 @@ public class GetSmsCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Number of hardbounced SMS
    * @return hardBounces
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_HARD_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -195,10 +195,10 @@ public class GetSmsCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Number of unsubscription SMS
    * @return unsubscriptions
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UNSUBSCRIPTIONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -220,10 +220,10 @@ public class GetSmsCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Number of replies to the SMS
    * @return answered
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ANSWERED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

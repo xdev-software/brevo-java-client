@@ -88,10 +88,10 @@ public class GetChildrenListChildrenInner {
     return this;
   }
 
-   /**
+  /**
    * Login Email
    * @return email
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -113,10 +113,10 @@ public class GetChildrenListChildrenInner {
     return this;
   }
 
-   /**
+  /**
    * First Name
    * @return firstName
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_FIRST_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -138,10 +138,10 @@ public class GetChildrenListChildrenInner {
     return this;
   }
 
-   /**
+  /**
    * Last Name
    * @return lastName
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LAST_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -163,10 +163,10 @@ public class GetChildrenListChildrenInner {
     return this;
   }
 
-   /**
+  /**
    * Name of the company
    * @return companyName
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COMPANY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -188,10 +188,10 @@ public class GetChildrenListChildrenInner {
     return this;
   }
 
-   /**
+  /**
    * Get credits
    * @return credits
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CREDITS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -213,10 +213,10 @@ public class GetChildrenListChildrenInner {
     return this;
   }
 
-   /**
+  /**
    * Get statistics
    * @return statistics
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_STATISTICS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -238,10 +238,10 @@ public class GetChildrenListChildrenInner {
     return this;
   }
 
-   /**
+  /**
    * The encrypted password of child account
    * @return password
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PASSWORD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -271,10 +271,10 @@ public class GetChildrenListChildrenInner {
     return this;
   }
 
-   /**
+  /**
    * IP(s) associated to a child account user
    * @return ips
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IPS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -296,10 +296,10 @@ public class GetChildrenListChildrenInner {
     return this;
   }
 
-   /**
+  /**
    * Get apiKeys
    * @return apiKeys
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_API_KEYS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -321,10 +321,10 @@ public class GetChildrenListChildrenInner {
     return this;
   }
 
-   /**
+  /**
    * ID of the child
    * @return id
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

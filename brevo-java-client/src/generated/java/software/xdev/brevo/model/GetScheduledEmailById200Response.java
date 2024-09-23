@@ -61,7 +61,7 @@ public class GetScheduledEmailById200Response {
    * Current status of the scheduled email
    */
   public enum StatusEnum {
-    INPROGRESS("inProgress"),
+    IN_PROGRESS("inProgress"),
     
     QUEUED("queued"),
     
@@ -108,10 +108,10 @@ public class GetScheduledEmailById200Response {
     return this;
   }
 
-   /**
+  /**
    * Total number of batches
    * @return count
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -141,10 +141,10 @@ public class GetScheduledEmailById200Response {
     return this;
   }
 
-   /**
+  /**
    * Get batches
    * @return batches
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_BATCHES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -166,10 +166,10 @@ public class GetScheduledEmailById200Response {
     return this;
   }
 
-   /**
+  /**
    * Datetime for which the email was scheduled
    * @return scheduledAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -191,10 +191,10 @@ public class GetScheduledEmailById200Response {
     return this;
   }
 
-   /**
+  /**
    * Datetime on which the email was scheduled
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -216,10 +216,10 @@ public class GetScheduledEmailById200Response {
     return this;
   }
 
-   /**
+  /**
    * Current status of the scheduled email
    * @return status
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

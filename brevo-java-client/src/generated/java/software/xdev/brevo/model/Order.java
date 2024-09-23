@@ -84,10 +84,10 @@ public class Order {
     return this;
   }
 
-   /**
+  /**
    * Unique ID of the order.
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -109,10 +109,10 @@ public class Order {
     return this;
   }
 
-   /**
+  /**
    * Event occurrence UTC date-time (YYYY-MM-DDTHH:mm:ssZ), when order is actually created.
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -134,10 +134,10 @@ public class Order {
     return this;
   }
 
-   /**
+  /**
    * Event updated UTC date-time (YYYY-MM-DDTHH:mm:ssZ), when the status of the order is actually changed/updated.
    * @return updatedAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UPDATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -159,10 +159,10 @@ public class Order {
     return this;
   }
 
-   /**
+  /**
    * State of the order.
    * @return status
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -184,10 +184,10 @@ public class Order {
     return this;
   }
 
-   /**
+  /**
    * Total amount of the order, including all shipping expenses, tax and the price of items.
    * @return amount
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -217,10 +217,10 @@ public class Order {
     return this;
   }
 
-   /**
+  /**
    * Get products
    * @return products
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PRODUCTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -242,10 +242,10 @@ public class Order {
     return this;
   }
 
-   /**
+  /**
    * Email of the contact, Mandatory if \&quot;phone\&quot; field is not passed in \&quot;billing\&quot; parameter.
    * @return email
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -267,10 +267,10 @@ public class Order {
     return this;
   }
 
-   /**
+  /**
    * Get billing
    * @return billing
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_BILLING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -300,10 +300,10 @@ public class Order {
     return this;
   }
 
-   /**
+  /**
    * Coupons applied to the order. Stored case insensitive.
    * @return coupons
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COUPONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

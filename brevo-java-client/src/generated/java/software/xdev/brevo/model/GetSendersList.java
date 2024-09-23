@@ -58,10 +58,10 @@ public class GetSendersList {
     return this;
   }
 
-   /**
+  /**
    * List of the senders available in your account
    * @return senders
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SENDERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

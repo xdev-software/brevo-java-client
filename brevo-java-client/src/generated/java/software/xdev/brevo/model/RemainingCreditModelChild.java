@@ -50,10 +50,10 @@ public class RemainingCreditModelChild {
     return this;
   }
 
-   /**
+  /**
    * SMS Credits remaining for child account
    * @return sms
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SMS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -75,10 +75,10 @@ public class RemainingCreditModelChild {
     return this;
   }
 
-   /**
+  /**
    * Email Credits remaining for child account
    * @return email
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

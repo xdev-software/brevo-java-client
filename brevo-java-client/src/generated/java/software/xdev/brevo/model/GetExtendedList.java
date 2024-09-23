@@ -82,10 +82,10 @@ public class GetExtendedList {
     return this;
   }
 
-   /**
+  /**
    * ID of the list
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -107,10 +107,10 @@ public class GetExtendedList {
     return this;
   }
 
-   /**
+  /**
    * Name of the list
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -132,10 +132,10 @@ public class GetExtendedList {
     return this;
   }
 
-   /**
+  /**
    * Number of blacklisted contacts in the list
    * @return totalBlacklisted
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TOTAL_BLACKLISTED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -157,10 +157,10 @@ public class GetExtendedList {
     return this;
   }
 
-   /**
+  /**
    * Number of contacts in the list
    * @return totalSubscribers
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TOTAL_SUBSCRIBERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -182,10 +182,10 @@ public class GetExtendedList {
     return this;
   }
 
-   /**
+  /**
    * Number of unique contacts in the list
    * @return uniqueSubscribers
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UNIQUE_SUBSCRIBERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -207,10 +207,10 @@ public class GetExtendedList {
     return this;
   }
 
-   /**
+  /**
    * ID of the folder
    * @return folderId
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_FOLDER_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -232,10 +232,10 @@ public class GetExtendedList {
     return this;
   }
 
-   /**
+  /**
    * Creation UTC date-time of the list (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -265,10 +265,10 @@ public class GetExtendedList {
     return this;
   }
 
-   /**
+  /**
    * Get campaignStats
    * @return campaignStats
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CAMPAIGN_STATS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -290,10 +290,10 @@ public class GetExtendedList {
     return this;
   }
 
-   /**
+  /**
    * Status telling if the list is dynamic or not (true&#x3D;dynamic, false&#x3D;not dynamic)
    * @return dynamicList
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DYNAMIC_LIST)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

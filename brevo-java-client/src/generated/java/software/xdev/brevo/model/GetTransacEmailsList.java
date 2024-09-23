@@ -54,10 +54,10 @@ public class GetTransacEmailsList {
     return this;
   }
 
-   /**
+  /**
    * Total number of transactional emails available on your account according to the passed filter
    * @return count
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -87,10 +87,10 @@ public class GetTransacEmailsList {
     return this;
   }
 
-   /**
+  /**
    * Get transactionalEmails
    * @return transactionalEmails
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TRANSACTIONAL_EMAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

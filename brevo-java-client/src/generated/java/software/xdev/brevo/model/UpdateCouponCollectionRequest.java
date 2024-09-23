@@ -46,10 +46,10 @@ public class UpdateCouponCollectionRequest {
     return this;
   }
 
-   /**
+  /**
    * A default coupon to be used in case there are no coupons left
    * @return defaultCoupon
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DEFAULT_COUPON)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

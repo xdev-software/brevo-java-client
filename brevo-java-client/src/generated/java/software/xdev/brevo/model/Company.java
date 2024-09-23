@@ -60,10 +60,10 @@ public class Company {
     return this;
   }
 
-   /**
+  /**
    * Unique comoany id
    * @return id
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -85,10 +85,10 @@ public class Company {
     return this;
   }
 
-   /**
+  /**
    * Company attributes with values
    * @return attributes
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -118,10 +118,10 @@ public class Company {
     return this;
   }
 
-   /**
+  /**
    * Contact ids for contacts linked to this company
    * @return linkedContactsIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LINKED_CONTACTS_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -151,10 +151,10 @@ public class Company {
     return this;
   }
 
-   /**
+  /**
    * Deals ids for companies linked to this company
    * @return linkedDealsIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LINKED_DEALS_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -50,10 +50,10 @@ public class SubAccountDetailsResponsePlanInfoCreditsEmails {
     return this;
   }
 
-   /**
+  /**
    * Quantity of email messaging limits provided
    * @return quantity
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_QUANTITY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -75,10 +75,10 @@ public class SubAccountDetailsResponsePlanInfoCreditsEmails {
     return this;
   }
 
-   /**
+  /**
    * Available email messaging limits for use
    * @return remaining
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REMAINING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

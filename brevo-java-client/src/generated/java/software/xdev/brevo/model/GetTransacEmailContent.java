@@ -74,10 +74,10 @@ public class GetTransacEmailContent {
     return this;
   }
 
-   /**
+  /**
    * Email address to which transactional email has been sent
    * @return email
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -99,10 +99,10 @@ public class GetTransacEmailContent {
     return this;
   }
 
-   /**
+  /**
    * Subject of the sent email
    * @return subject
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SUBJECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -124,10 +124,10 @@ public class GetTransacEmailContent {
     return this;
   }
 
-   /**
+  /**
    * Id of the template
    * @return templateId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -149,10 +149,10 @@ public class GetTransacEmailContent {
     return this;
   }
 
-   /**
+  /**
    * Date on which transactional email was sent
    * @return date
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DATE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -182,10 +182,10 @@ public class GetTransacEmailContent {
     return this;
   }
 
-   /**
+  /**
    * Series of events which occurred on the transactional email
    * @return events
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EVENTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -207,10 +207,10 @@ public class GetTransacEmailContent {
     return this;
   }
 
-   /**
+  /**
    * Actual content of the transactional email that has been sent
    * @return body
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BODY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -232,10 +232,10 @@ public class GetTransacEmailContent {
     return this;
   }
 
-   /**
+  /**
    * Count of the attachments that were sent in the email
    * @return attachmentCount
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ATTACHMENT_COUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

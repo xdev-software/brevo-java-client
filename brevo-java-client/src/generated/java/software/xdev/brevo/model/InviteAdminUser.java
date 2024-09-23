@@ -62,10 +62,10 @@ public class InviteAdminUser {
     return this;
   }
 
-   /**
+  /**
    * Email address for the organization
    * @return email
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -87,10 +87,10 @@ public class InviteAdminUser {
     return this;
   }
 
-   /**
+  /**
    * All access to the features
    * @return allFeaturesAccess
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ALL_FEATURES_ACCESS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -120,10 +120,10 @@ public class InviteAdminUser {
     return this;
   }
 
-   /**
+  /**
    * Ids of Group
    * @return groupIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_GROUP_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -153,10 +153,10 @@ public class InviteAdminUser {
     return this;
   }
 
-   /**
+  /**
    * Get privileges
    * @return privileges
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PRIVILEGES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

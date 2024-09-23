@@ -53,10 +53,10 @@ public class GetSegments {
     return this;
   }
 
-   /**
+  /**
    * Listing of all the segments available in your account
    * @return segments
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SEGMENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -78,10 +78,10 @@ public class GetSegments {
     return this;
   }
 
-   /**
+  /**
    * Number of Segments in your account
    * @return count
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

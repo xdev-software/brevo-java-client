@@ -39,17 +39,17 @@ public class GetTransacBlockedContactsContactsInnerReason {
    * Reason code for blocking / unsubscribing (This code is safe for comparison)
    */
   public enum CodeEnum {
-    UNSUBSCRIBEDVIAMA("unsubscribedViaMA"),
+    UNSUBSCRIBED_VIA_MA("unsubscribedViaMA"),
     
-    UNSUBSCRIBEDVIAEMAIL("unsubscribedViaEmail"),
+    UNSUBSCRIBED_VIA_EMAIL("unsubscribedViaEmail"),
     
-    ADMINBLOCKED("adminBlocked"),
+    ADMIN_BLOCKED("adminBlocked"),
     
-    UNSUBSCRIBEDVIAAPI("unsubscribedViaApi"),
+    UNSUBSCRIBED_VIA_API("unsubscribedViaApi"),
     
-    HARDBOUNCE("hardBounce"),
+    HARD_BOUNCE("hardBounce"),
     
-    CONTACTFLAGGEDASSPAM("contactFlaggedAsSpam");
+    CONTACT_FLAGGED_AS_SPAM("contactFlaggedAsSpam");
 
     private String value;
 
@@ -93,10 +93,10 @@ public class GetTransacBlockedContactsContactsInnerReason {
     return this;
   }
 
-   /**
+  /**
    * Reason code for blocking / unsubscribing (This code is safe for comparison)
    * @return code
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -118,10 +118,10 @@ public class GetTransacBlockedContactsContactsInnerReason {
     return this;
   }
 
-   /**
+  /**
    * Reason for blocking / unsubscribing (This string is not safe for comparison)
    * @return message
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MESSAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -60,7 +60,7 @@ public class CreateExternalFeed {
     
     TOKEN("token"),
     
-    NOAUTH("noAuth");
+    NO_AUTH("noAuth");
 
     private String value;
 
@@ -90,7 +90,7 @@ public class CreateExternalFeed {
   }
 
   public static final String JSON_PROPERTY_AUTH_TYPE = "authType";
-  private AuthTypeEnum authType = AuthTypeEnum.NOAUTH;
+  private AuthTypeEnum authType = AuthTypeEnum.NO_AUTH;
 
   public static final String JSON_PROPERTY_USERNAME = "username";
   private String username;
@@ -119,10 +119,10 @@ public class CreateExternalFeed {
     return this;
   }
 
-   /**
+  /**
    * Name of the feed
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -144,10 +144,10 @@ public class CreateExternalFeed {
     return this;
   }
 
-   /**
+  /**
    * URL of the feed
    * @return url
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -169,10 +169,10 @@ public class CreateExternalFeed {
     return this;
   }
 
-   /**
+  /**
    * Auth type of the feed:  * &#x60;basic&#x60;  * &#x60;token&#x60;  * &#x60;noAuth&#x60; 
    * @return authType
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_AUTH_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -194,10 +194,10 @@ public class CreateExternalFeed {
     return this;
   }
 
-   /**
+  /**
    * Username for authType &#x60;basic&#x60;
    * @return username
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_USERNAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -219,10 +219,10 @@ public class CreateExternalFeed {
     return this;
   }
 
-   /**
+  /**
    * Password for authType &#x60;basic&#x60;
    * @return password
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PASSWORD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -244,10 +244,10 @@ public class CreateExternalFeed {
     return this;
   }
 
-   /**
+  /**
    * Token for authType &#x60;token&#x60;
    * @return token
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TOKEN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -277,10 +277,10 @@ public class CreateExternalFeed {
     return this;
   }
 
-   /**
+  /**
    * Custom headers for the feed
    * @return headers
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_HEADERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -302,12 +302,12 @@ public class CreateExternalFeed {
     return this;
   }
 
-   /**
+  /**
    * Maximum number of retries on the feed url
    * minimum: 0
    * maximum: 5
    * @return maxRetries
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MAX_RETRIES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -329,10 +329,10 @@ public class CreateExternalFeed {
     return this;
   }
 
-   /**
+  /**
    * Toggle caching of feed url response
    * @return cache
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CACHE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

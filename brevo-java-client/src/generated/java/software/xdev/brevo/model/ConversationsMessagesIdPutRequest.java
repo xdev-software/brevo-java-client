@@ -46,10 +46,10 @@ public class ConversationsMessagesIdPutRequest {
     return this;
   }
 
-   /**
+  /**
    * edited message text
    * @return text
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TEXT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

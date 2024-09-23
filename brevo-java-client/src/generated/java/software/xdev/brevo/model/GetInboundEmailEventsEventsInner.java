@@ -60,10 +60,10 @@ public class GetInboundEmailEventsEventsInner {
     return this;
   }
 
-   /**
+  /**
    * UUID that can be used to fetch additional data
    * @return uuid
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UUID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -85,10 +85,10 @@ public class GetInboundEmailEventsEventsInner {
     return this;
   }
 
-   /**
+  /**
    * Date when email was received on SMTP relay
    * @return date
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DATE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -110,10 +110,10 @@ public class GetInboundEmailEventsEventsInner {
     return this;
   }
 
-   /**
+  /**
    * Sender’s email address
    * @return sender
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SENDER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -135,10 +135,10 @@ public class GetInboundEmailEventsEventsInner {
     return this;
   }
 
-   /**
+  /**
    * Recipient’s email address
    * @return recipient
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_RECIPIENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

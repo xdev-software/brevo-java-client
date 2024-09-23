@@ -53,10 +53,10 @@ public class PutresendcancelinvitationResponse {
     return this;
   }
 
-   /**
+  /**
    * Status of the API operation.
    * @return status
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -86,10 +86,10 @@ public class PutresendcancelinvitationResponse {
     return this;
   }
 
-   /**
+  /**
    * Credit note
    * @return creditNotes
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CREDIT_NOTES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

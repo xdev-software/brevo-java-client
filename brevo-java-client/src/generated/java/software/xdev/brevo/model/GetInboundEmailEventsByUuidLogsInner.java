@@ -47,9 +47,9 @@ public class GetInboundEmailEventsByUuidLogsInner {
     
     PROCESSED("processed"),
     
-    WEBHOOKFAILED("webhookFailed"),
+    WEBHOOK_FAILED("webhookFailed"),
     
-    WEBHOOKDELIVERED("webhookDelivered");
+    WEBHOOK_DELIVERED("webhookDelivered");
 
     private String value;
 
@@ -90,10 +90,10 @@ public class GetInboundEmailEventsByUuidLogsInner {
     return this;
   }
 
-   /**
+  /**
    * Date of the event
    * @return date
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -115,10 +115,10 @@ public class GetInboundEmailEventsByUuidLogsInner {
     return this;
   }
 
-   /**
+  /**
    * Type of the event
    * @return type
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

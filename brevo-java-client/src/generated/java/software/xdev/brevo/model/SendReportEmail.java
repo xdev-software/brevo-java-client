@@ -61,10 +61,10 @@ public class SendReportEmail {
     return this;
   }
 
-   /**
+  /**
    * Email addresses of the recipients
    * @return to
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -86,10 +86,10 @@ public class SendReportEmail {
     return this;
   }
 
-   /**
+  /**
    * Custom text message to be presented in the report email.
    * @return body
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BODY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

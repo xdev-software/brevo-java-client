@@ -83,10 +83,10 @@ public class GetTransacSmsReportReportsInner {
     return this;
   }
 
-   /**
+  /**
    * Date for which statistics are retrieved
    * @return date
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -108,10 +108,10 @@ public class GetTransacSmsReportReportsInner {
     return this;
   }
 
-   /**
+  /**
    * Number of requests for the date
    * @return requests
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REQUESTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -133,10 +133,10 @@ public class GetTransacSmsReportReportsInner {
     return this;
   }
 
-   /**
+  /**
    * Number of delivered SMS for the date
    * @return delivered
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DELIVERED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -158,10 +158,10 @@ public class GetTransacSmsReportReportsInner {
     return this;
   }
 
-   /**
+  /**
    * Number of hardbounces for the date
    * @return hardBounces
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_HARD_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -183,10 +183,10 @@ public class GetTransacSmsReportReportsInner {
     return this;
   }
 
-   /**
+  /**
    * Number of softbounces for the date
    * @return softBounces
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SOFT_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -208,10 +208,10 @@ public class GetTransacSmsReportReportsInner {
     return this;
   }
 
-   /**
+  /**
    * Number of blocked contact for the date
    * @return blocked
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_BLOCKED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -233,10 +233,10 @@ public class GetTransacSmsReportReportsInner {
     return this;
   }
 
-   /**
+  /**
    * Number of unsubscription for the date
    * @return unsubscribed
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UNSUBSCRIBED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -258,10 +258,10 @@ public class GetTransacSmsReportReportsInner {
     return this;
   }
 
-   /**
+  /**
    * Number of answered SMS for the date
    * @return replied
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REPLIED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -283,10 +283,10 @@ public class GetTransacSmsReportReportsInner {
     return this;
   }
 
-   /**
+  /**
    * Number of accepted for the date
    * @return accepted
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ACCEPTED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -308,10 +308,10 @@ public class GetTransacSmsReportReportsInner {
     return this;
   }
 
-   /**
+  /**
    * Number of rejected for the date
    * @return rejected
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REJECTED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -54,10 +54,10 @@ public class SubAccountsResponse {
     return this;
   }
 
-   /**
+  /**
    * Total number of subaccounts
    * @return count
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -87,10 +87,10 @@ public class SubAccountsResponse {
     return this;
   }
 
-   /**
+  /**
    * Get subAccounts
    * @return subAccounts
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUB_ACCOUNTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

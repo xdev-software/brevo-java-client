@@ -54,10 +54,10 @@ public class GetTransacBlockedContacts {
     return this;
   }
 
-   /**
+  /**
    * Count of blocked or unsubscribed contact
    * @return count
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -87,10 +87,10 @@ public class GetTransacBlockedContacts {
     return this;
   }
 
-   /**
+  /**
    * Get contacts
    * @return contacts
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CONTACTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

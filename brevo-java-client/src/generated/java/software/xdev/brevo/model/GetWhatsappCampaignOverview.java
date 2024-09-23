@@ -127,10 +127,10 @@ public class GetWhatsappCampaignOverview {
     return this;
   }
 
-   /**
+  /**
    * ID of the WhatsApp Campaign
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -152,10 +152,10 @@ public class GetWhatsappCampaignOverview {
     return this;
   }
 
-   /**
+  /**
    * Name of the WhatsApp Campaign
    * @return campaignName
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CAMPAIGN_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -177,10 +177,10 @@ public class GetWhatsappCampaignOverview {
     return this;
   }
 
-   /**
+  /**
    * Status of the WhatsApp Campaign
    * @return campaignStatus
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CAMPAIGN_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -202,10 +202,10 @@ public class GetWhatsappCampaignOverview {
     return this;
   }
 
-   /**
+  /**
    * UTC date-time on which WhatsApp campaign is scheduled. Should be in YYYY-MM-DDTHH:mm:ss.SSSZ format
    * @return scheduledAt
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -227,10 +227,10 @@ public class GetWhatsappCampaignOverview {
     return this;
   }
 
-   /**
+  /**
    * Sender of the WhatsApp Campaign
    * @return senderNumber
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SENDER_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -252,10 +252,10 @@ public class GetWhatsappCampaignOverview {
     return this;
   }
 
-   /**
+  /**
    * Get stats
    * @return stats
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_STATS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -277,10 +277,10 @@ public class GetWhatsappCampaignOverview {
     return this;
   }
 
-   /**
+  /**
    * Get template
    * @return template
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TEMPLATE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -302,10 +302,10 @@ public class GetWhatsappCampaignOverview {
     return this;
   }
 
-   /**
+  /**
    * Creation UTC date-time of the WhatsApp campaign (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -327,10 +327,10 @@ public class GetWhatsappCampaignOverview {
     return this;
   }
 
-   /**
+  /**
    * UTC date-time of last modification of the WhatsApp campaign (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return modifiedAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

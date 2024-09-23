@@ -90,10 +90,10 @@ public class WhatsappCampTemplate {
     return this;
   }
 
-   /**
+  /**
    * name of the template
    * @return name
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -115,10 +115,10 @@ public class WhatsappCampTemplate {
     return this;
   }
 
-   /**
+  /**
    * description of the template
    * @return category
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CATEGORY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -140,10 +140,10 @@ public class WhatsappCampTemplate {
     return this;
   }
 
-   /**
+  /**
    * language of the template
    * @return language
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LANGUAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -165,10 +165,10 @@ public class WhatsappCampTemplate {
     return this;
   }
 
-   /**
+  /**
    * Get containsButton
    * @return containsButton
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CONTAINS_BUTTON)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -190,10 +190,10 @@ public class WhatsappCampTemplate {
     return this;
   }
 
-   /**
+  /**
    * Get displayHeader
    * @return displayHeader
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DISPLAY_HEADER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -215,10 +215,10 @@ public class WhatsappCampTemplate {
     return this;
   }
 
-   /**
+  /**
    * type of header
    * @return headerType
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_HEADER_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -248,10 +248,10 @@ public class WhatsappCampTemplate {
     return this;
   }
 
-   /**
+  /**
    * array of component item objects
    * @return components
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COMPONENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -281,10 +281,10 @@ public class WhatsappCampTemplate {
     return this;
   }
 
-   /**
+  /**
    * array of variables item object
    * @return headerVariables
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_HEADER_VARIABLES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -314,10 +314,10 @@ public class WhatsappCampTemplate {
     return this;
   }
 
-   /**
+  /**
    * array of variables item variables
    * @return bodyVariables
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_BODY_VARIABLES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -339,10 +339,10 @@ public class WhatsappCampTemplate {
     return this;
   }
 
-   /**
+  /**
    * Get buttonType
    * @return buttonType
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_BUTTON_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -364,10 +364,10 @@ public class WhatsappCampTemplate {
     return this;
   }
 
-   /**
+  /**
    * Get hideFooter
    * @return hideFooter
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_HIDE_FOOTER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

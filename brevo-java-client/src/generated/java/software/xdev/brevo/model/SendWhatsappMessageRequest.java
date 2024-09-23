@@ -67,10 +67,10 @@ public class SendWhatsappMessageRequest {
     return this;
   }
 
-   /**
+  /**
    * ID of the template to send
    * @return templateId
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -92,10 +92,10 @@ public class SendWhatsappMessageRequest {
     return this;
   }
 
-   /**
+  /**
    * WhatsApp Number with country code. Example, 85264318721
    * @return senderNumber
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SENDER_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -117,10 +117,10 @@ public class SendWhatsappMessageRequest {
     return this;
   }
 
-   /**
+  /**
    * Pass the set of attributes to customize the template. For example, {\&quot;FNAME\&quot;:\&quot;Joe\&quot;, \&quot;LNAME\&quot;:\&quot;Doe\&quot;}.
    * @return params
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PARAMS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -150,10 +150,10 @@ public class SendWhatsappMessageRequest {
     return this;
   }
 
-   /**
+  /**
    * List of phone numbers of the contacts
    * @return contactNumbers
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CONTACT_NUMBERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -175,10 +175,10 @@ public class SendWhatsappMessageRequest {
     return this;
   }
 
-   /**
+  /**
    * Text to be sent as message body (will be overridden if templateId is passed in the same request)
    * @return text
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TEXT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

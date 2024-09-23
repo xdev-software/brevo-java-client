@@ -62,10 +62,10 @@ public class GetContacts {
     return this;
   }
 
-   /**
+  /**
    * Get contacts
    * @return contacts
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CONTACTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -87,10 +87,10 @@ public class GetContacts {
     return this;
   }
 
-   /**
+  /**
    * Number of contacts
    * @return count
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

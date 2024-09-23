@@ -61,10 +61,10 @@ public class WhatsappCampStats {
     return this;
   }
 
-   /**
+  /**
    * Get sent
    * @return sent
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -86,10 +86,10 @@ public class WhatsappCampStats {
     return this;
   }
 
-   /**
+  /**
    * Get delivered
    * @return delivered
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DELIVERED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -111,10 +111,10 @@ public class WhatsappCampStats {
     return this;
   }
 
-   /**
+  /**
    * Get read
    * @return read
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_READ)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -136,10 +136,10 @@ public class WhatsappCampStats {
     return this;
   }
 
-   /**
+  /**
    * Get unsubscribe
    * @return unsubscribe
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UNSUBSCRIBE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -161,10 +161,10 @@ public class WhatsappCampStats {
     return this;
   }
 
-   /**
+  /**
    * Get notSent
    * @return notSent
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NOT_SENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

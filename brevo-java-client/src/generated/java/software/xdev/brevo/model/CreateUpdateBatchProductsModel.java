@@ -50,10 +50,10 @@ public class CreateUpdateBatchProductsModel {
     return this;
   }
 
-   /**
+  /**
    * Number of the new created products
    * @return createdCount
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CREATED_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -75,10 +75,10 @@ public class CreateUpdateBatchProductsModel {
     return this;
   }
 
-   /**
+  /**
    * Number of the existing products updated
    * @return updatedCount
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UPDATED_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

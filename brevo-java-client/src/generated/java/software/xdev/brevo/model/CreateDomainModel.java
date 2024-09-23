@@ -59,10 +59,10 @@ public class CreateDomainModel {
     return this;
   }
 
-   /**
+  /**
    * ID of the Domain created
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -84,10 +84,10 @@ public class CreateDomainModel {
     return this;
   }
 
-   /**
+  /**
    * Domain
    * @return domainName
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DOMAIN_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -109,10 +109,10 @@ public class CreateDomainModel {
     return this;
   }
 
-   /**
+  /**
    * Success message
    * @return message
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MESSAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -134,10 +134,10 @@ public class CreateDomainModel {
     return this;
   }
 
-   /**
+  /**
    * Get dnsRecords
    * @return dnsRecords
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DNS_RECORDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

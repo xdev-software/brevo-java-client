@@ -62,10 +62,10 @@ public class GetChildrenList {
     return this;
   }
 
-   /**
+  /**
    * Your children&#39;s account information
    * @return children
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CHILDREN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -87,10 +87,10 @@ public class GetChildrenList {
     return this;
   }
 
-   /**
+  /**
    * Number of child accounts
    * @return count
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

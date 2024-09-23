@@ -50,10 +50,10 @@ public class CreateApiKeyResponse {
     return this;
   }
 
-   /**
+  /**
    * Status of the API operation.
    * @return status
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -75,10 +75,10 @@ public class CreateApiKeyResponse {
     return this;
   }
 
-   /**
+  /**
    * API key
    * @return key
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

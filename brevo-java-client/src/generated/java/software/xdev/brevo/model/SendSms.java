@@ -62,10 +62,10 @@ public class SendSms {
     return this;
   }
 
-   /**
+  /**
    * Get reference
    * @return reference
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_REFERENCE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -87,10 +87,10 @@ public class SendSms {
     return this;
   }
 
-   /**
+  /**
    * Get messageId
    * @return messageId
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -112,10 +112,10 @@ public class SendSms {
     return this;
   }
 
-   /**
+  /**
    * Count of SMS&#39;s to send multiple text messages
    * @return smsCount
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SMS_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -137,10 +137,10 @@ public class SendSms {
     return this;
   }
 
-   /**
+  /**
    * SMS credits used per text message
    * @return usedCredits
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_USED_CREDITS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -162,10 +162,10 @@ public class SendSms {
     return this;
   }
 
-   /**
+  /**
    * Remaining SMS credits of the user
    * @return remainingCredits
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REMAINING_CREDITS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

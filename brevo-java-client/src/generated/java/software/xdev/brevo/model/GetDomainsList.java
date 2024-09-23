@@ -58,10 +58,10 @@ public class GetDomainsList {
     return this;
   }
 
-   /**
+  /**
    * List of the domains available in your account
    * @return domains
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DOMAINS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

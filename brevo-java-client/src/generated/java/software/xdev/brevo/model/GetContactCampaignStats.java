@@ -94,10 +94,10 @@ public class GetContactCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Get messagesSent
    * @return messagesSent
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MESSAGES_SENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -127,10 +127,10 @@ public class GetContactCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Get hardBounces
    * @return hardBounces
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_HARD_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -160,10 +160,10 @@ public class GetContactCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Get softBounces
    * @return softBounces
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SOFT_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -193,10 +193,10 @@ public class GetContactCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Get complaints
    * @return complaints
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COMPLAINTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -218,10 +218,10 @@ public class GetContactCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Get unsubscriptions
    * @return unsubscriptions
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UNSUBSCRIPTIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -251,10 +251,10 @@ public class GetContactCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Get opened
    * @return opened
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_OPENED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -284,10 +284,10 @@ public class GetContactCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Get clicked
    * @return clicked
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CLICKED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -317,10 +317,10 @@ public class GetContactCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Get transacAttributes
    * @return transacAttributes
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TRANSAC_ATTRIBUTES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -350,10 +350,10 @@ public class GetContactCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Get delivered
    * @return delivered
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DELIVERED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

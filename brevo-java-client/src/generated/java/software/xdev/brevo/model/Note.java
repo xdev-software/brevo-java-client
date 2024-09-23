@@ -73,10 +73,10 @@ public class Note {
     return this;
   }
 
-   /**
+  /**
    * Unique note Id
    * @return id
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -98,10 +98,10 @@ public class Note {
     return this;
   }
 
-   /**
+  /**
    * Text content of a note
    * @return text
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TEXT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -131,10 +131,10 @@ public class Note {
     return this;
   }
 
-   /**
+  /**
    * Contact ids linked to a note
    * @return contactIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CONTACT_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -164,10 +164,10 @@ public class Note {
     return this;
   }
 
-   /**
+  /**
    * Deal ids linked to a note
    * @return dealIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DEAL_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -189,10 +189,10 @@ public class Note {
     return this;
   }
 
-   /**
+  /**
    * Account details of user which created the note
    * @return authorId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_AUTHOR_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -214,10 +214,10 @@ public class Note {
     return this;
   }
 
-   /**
+  /**
    * Note created date/time
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -239,10 +239,10 @@ public class Note {
     return this;
   }
 
-   /**
+  /**
    * Note updated date/time
    * @return updatedAt
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UPDATED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -53,10 +53,10 @@ public class CreateCouponsRequest {
     return this;
   }
 
-   /**
+  /**
    * The id of the coupon collection for which the coupons will be created
    * @return collectionId
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COLLECTION_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -86,10 +86,10 @@ public class CreateCouponsRequest {
     return this;
   }
 
-   /**
+  /**
    * Get coupons
    * @return coupons
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COUPONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

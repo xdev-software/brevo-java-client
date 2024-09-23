@@ -54,10 +54,10 @@ public class GetAllExternalFeeds {
     return this;
   }
 
-   /**
+  /**
    * Total number of batches
    * @return count
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -87,10 +87,10 @@ public class GetAllExternalFeeds {
     return this;
   }
 
-   /**
+  /**
    * Get feeds
    * @return feeds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_FEEDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

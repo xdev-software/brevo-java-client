@@ -50,10 +50,10 @@ public class CorporateSubAccountKeyPostRequest {
     return this;
   }
 
-   /**
+  /**
    * Id of the sub-account organization
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -75,10 +75,10 @@ public class CorporateSubAccountKeyPostRequest {
     return this;
   }
 
-   /**
+  /**
    * Name of the API key
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

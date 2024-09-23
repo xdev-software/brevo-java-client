@@ -46,10 +46,10 @@ public class AddChildDomain {
     return this;
   }
 
-   /**
+  /**
    * Sender domain to add for a specific child account
    * @return domain
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DOMAIN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

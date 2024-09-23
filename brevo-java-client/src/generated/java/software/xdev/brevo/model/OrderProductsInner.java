@@ -59,10 +59,10 @@ public class OrderProductsInner {
     return this;
   }
 
-   /**
+  /**
    * ID of the product.
    * @return productId
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PRODUCT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -84,10 +84,10 @@ public class OrderProductsInner {
     return this;
   }
 
-   /**
+  /**
    * How many pieces of the product the visitor has added to the cart.
    * @return quantity
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_QUANTITY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -109,10 +109,10 @@ public class OrderProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Product ID of the red color shirts.
    * @return variantId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_VARIANT_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -134,10 +134,10 @@ public class OrderProductsInner {
     return this;
   }
 
-   /**
+  /**
    * The price of a unit of product
    * @return price
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PRICE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

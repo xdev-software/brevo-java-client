@@ -106,10 +106,10 @@ public class MasterDetailsResponsePlanInfo {
     return this;
   }
 
-   /**
+  /**
    * Plan currency
    * @return currencyCode
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CURRENCY_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -131,10 +131,10 @@ public class MasterDetailsResponsePlanInfo {
     return this;
   }
 
-   /**
+  /**
    * Timestamp of next billing date
    * @return nextBillingAt
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NEXT_BILLING_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -156,10 +156,10 @@ public class MasterDetailsResponsePlanInfo {
     return this;
   }
 
-   /**
+  /**
    * Plan amount
    * @return price
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PRICE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -181,10 +181,10 @@ public class MasterDetailsResponsePlanInfo {
     return this;
   }
 
-   /**
+  /**
    * Plan period type
    * @return planPeriod
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PLAN_PERIOD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -206,10 +206,10 @@ public class MasterDetailsResponsePlanInfo {
     return this;
   }
 
-   /**
+  /**
    * Number of sub-accounts
    * @return subAccounts
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUB_ACCOUNTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -239,10 +239,10 @@ public class MasterDetailsResponsePlanInfo {
     return this;
   }
 
-   /**
+  /**
    * List of provided features in the plan
    * @return features
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_FEATURES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

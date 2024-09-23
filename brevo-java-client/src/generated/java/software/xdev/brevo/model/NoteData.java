@@ -60,10 +60,10 @@ public class NoteData {
     return this;
   }
 
-   /**
+  /**
    * Text content of a note
    * @return text
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TEXT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -93,10 +93,10 @@ public class NoteData {
     return this;
   }
 
-   /**
+  /**
    * Contact Ids linked to a note
    * @return contactIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CONTACT_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -126,10 +126,10 @@ public class NoteData {
     return this;
   }
 
-   /**
+  /**
    * Deal Ids linked to a note
    * @return dealIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DEAL_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -159,10 +159,10 @@ public class NoteData {
     return this;
   }
 
-   /**
+  /**
    * Company Ids linked to a note
    * @return companyIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COMPANY_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

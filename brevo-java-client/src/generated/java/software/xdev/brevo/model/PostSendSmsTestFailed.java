@@ -61,10 +61,10 @@ public class PostSendSmsTestFailed {
     return this;
   }
 
-   /**
+  /**
    * Response code
    * @return code
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -86,10 +86,10 @@ public class PostSendSmsTestFailed {
     return this;
   }
 
-   /**
+  /**
    * Response message
    * @return message
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MESSAGE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -119,10 +119,10 @@ public class PostSendSmsTestFailed {
     return this;
   }
 
-   /**
+  /**
    * Get unexistingSms
    * @return unexistingSms
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UNEXISTING_SMS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -152,10 +152,10 @@ public class PostSendSmsTestFailed {
     return this;
   }
 
-   /**
+  /**
    * Get withoutListSms
    * @return withoutListSms
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_WITHOUT_LIST_SMS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

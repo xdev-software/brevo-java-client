@@ -127,10 +127,10 @@ public class InviteAdminUserPrivilegesInner {
     return this;
   }
 
-   /**
+  /**
    * Feature name
    * @return feature
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_FEATURE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -160,10 +160,10 @@ public class InviteAdminUserPrivilegesInner {
     return this;
   }
 
-   /**
+  /**
    * Permissions for a given feature
    * @return permissions
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PERMISSIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

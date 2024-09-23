@@ -134,10 +134,10 @@ public class GetWhatsappCampaignsCampaignsInner {
     return this;
   }
 
-   /**
+  /**
    * ID of the WhatsApp Campaign
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -159,10 +159,10 @@ public class GetWhatsappCampaignsCampaignsInner {
     return this;
   }
 
-   /**
+  /**
    * Name of the WhatsApp Campaign
    * @return campaignName
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CAMPAIGN_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -184,10 +184,10 @@ public class GetWhatsappCampaignsCampaignsInner {
     return this;
   }
 
-   /**
+  /**
    * Id of the WhatsApp template
    * @return templateId
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -209,10 +209,10 @@ public class GetWhatsappCampaignsCampaignsInner {
     return this;
   }
 
-   /**
+  /**
    * Status of the WhatsApp Campaign
    * @return campaignStatus
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CAMPAIGN_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -234,10 +234,10 @@ public class GetWhatsappCampaignsCampaignsInner {
     return this;
   }
 
-   /**
+  /**
    * UTC date-time on which WhatsApp campaign is scheduled. Should be in YYYY-MM-DDTHH:mm:ss.SSSZ format
    * @return scheduledAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -259,10 +259,10 @@ public class GetWhatsappCampaignsCampaignsInner {
     return this;
   }
 
-   /**
+  /**
    * Error Reason associated with the WhatsApp campaign sending
    * @return errorReason
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ERROR_REASON)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -284,10 +284,10 @@ public class GetWhatsappCampaignsCampaignsInner {
     return this;
   }
 
-   /**
+  /**
    * Count of invalidated contacts
    * @return invalidatedContacts
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_INVALIDATED_CONTACTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -309,10 +309,10 @@ public class GetWhatsappCampaignsCampaignsInner {
     return this;
   }
 
-   /**
+  /**
    * Read percentage of the the WhatsApp campaign created
    * @return readPercentage
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_READ_PERCENTAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -334,10 +334,10 @@ public class GetWhatsappCampaignsCampaignsInner {
     return this;
   }
 
-   /**
+  /**
    * Get stats
    * @return stats
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_STATS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -359,10 +359,10 @@ public class GetWhatsappCampaignsCampaignsInner {
     return this;
   }
 
-   /**
+  /**
    * Creation UTC date-time of the WhatsApp template (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -384,10 +384,10 @@ public class GetWhatsappCampaignsCampaignsInner {
     return this;
   }
 
-   /**
+  /**
    * UTC date-time of last modification of the WhatsApp template (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return modifiedAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

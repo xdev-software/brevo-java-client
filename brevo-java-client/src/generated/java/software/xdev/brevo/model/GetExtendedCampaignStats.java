@@ -82,10 +82,10 @@ public class GetExtendedCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Overall statistics of the campaign
    * @return globalStats
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_GLOBAL_STATS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -115,10 +115,10 @@ public class GetExtendedCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * List-wise statistics of the campaign.
    * @return campaignStats
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CAMPAIGN_STATS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -140,10 +140,10 @@ public class GetExtendedCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Number of clicks on mirror link
    * @return mirrorClick
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MIRROR_CLICK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -165,10 +165,10 @@ public class GetExtendedCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Number of remaning emails to send
    * @return remaining
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_REMAINING)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -190,10 +190,10 @@ public class GetExtendedCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Statistics about the number of clicks for the links
    * @return linksStats
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LINKS_STATS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -220,10 +220,10 @@ public class GetExtendedCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Get statsByDomain
    * @return statsByDomain
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATS_BY_DOMAIN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -245,10 +245,10 @@ public class GetExtendedCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Get statsByDevice
    * @return statsByDevice
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATS_BY_DEVICE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -275,10 +275,10 @@ public class GetExtendedCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Get statsByBrowser
    * @return statsByBrowser
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATS_BY_BROWSER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

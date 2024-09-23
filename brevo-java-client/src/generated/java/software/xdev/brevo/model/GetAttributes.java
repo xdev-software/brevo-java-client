@@ -58,10 +58,10 @@ public class GetAttributes {
     return this;
   }
 
-   /**
+  /**
    * Listing of available contact attributes in your account
    * @return attributes
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

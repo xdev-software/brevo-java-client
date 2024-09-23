@@ -62,10 +62,10 @@ public class GetEmailCampaigns {
     return this;
   }
 
-   /**
+  /**
    * Get campaigns
    * @return campaigns
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CAMPAIGNS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -87,10 +87,10 @@ public class GetEmailCampaigns {
     return this;
   }
 
-   /**
+  /**
    * Number of Email campaigns retrieved
    * @return count
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -58,10 +58,10 @@ public class UpdateSender {
     return this;
   }
 
-   /**
+  /**
    * From Name to update the sender
    * @return name
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -83,10 +83,10 @@ public class UpdateSender {
     return this;
   }
 
-   /**
+  /**
    * From Email to update the sender
    * @return email
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -116,10 +116,10 @@ public class UpdateSender {
     return this;
   }
 
-   /**
+  /**
    * **Only in case of dedicated IP**. IPs to associate to the sender. If passed, will replace all the existing IPs. 
    * @return ips
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IPS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

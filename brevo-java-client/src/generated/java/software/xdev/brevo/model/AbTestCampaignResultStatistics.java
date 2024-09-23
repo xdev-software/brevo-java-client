@@ -67,10 +67,10 @@ public class AbTestCampaignResultStatistics {
     return this;
   }
 
-   /**
+  /**
    * Get openers
    * @return openers
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_OPENERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -92,10 +92,10 @@ public class AbTestCampaignResultStatistics {
     return this;
   }
 
-   /**
+  /**
    * Get clicks
    * @return clicks
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CLICKS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -117,10 +117,10 @@ public class AbTestCampaignResultStatistics {
     return this;
   }
 
-   /**
+  /**
    * Get unsubscribed
    * @return unsubscribed
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UNSUBSCRIBED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -142,10 +142,10 @@ public class AbTestCampaignResultStatistics {
     return this;
   }
 
-   /**
+  /**
    * Get hardBounces
    * @return hardBounces
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_HARD_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -167,10 +167,10 @@ public class AbTestCampaignResultStatistics {
     return this;
   }
 
-   /**
+  /**
    * Get softBounces
    * @return softBounces
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SOFT_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -192,10 +192,10 @@ public class AbTestCampaignResultStatistics {
     return this;
   }
 
-   /**
+  /**
    * Get complaints
    * @return complaints
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COMPLAINTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

@@ -61,10 +61,10 @@ public class UpdateBatchContactsModel {
     return this;
   }
 
-   /**
+  /**
    * Get successIds
    * @return successIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUCCESS_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -94,10 +94,10 @@ public class UpdateBatchContactsModel {
     return this;
   }
 
-   /**
+  /**
    * Get failureIds
    * @return failureIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_FAILURE_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

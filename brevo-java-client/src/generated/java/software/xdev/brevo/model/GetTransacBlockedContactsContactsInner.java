@@ -59,10 +59,10 @@ public class GetTransacBlockedContactsContactsInner {
     return this;
   }
 
-   /**
+  /**
    * Email address of the blocked or unsubscribed contact
    * @return email
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -84,10 +84,10 @@ public class GetTransacBlockedContactsContactsInner {
     return this;
   }
 
-   /**
+  /**
    * Sender email address of the blocked or unsubscribed contact
    * @return senderEmail
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SENDER_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -109,10 +109,10 @@ public class GetTransacBlockedContactsContactsInner {
     return this;
   }
 
-   /**
+  /**
    * Get reason
    * @return reason
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_REASON)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -134,10 +134,10 @@ public class GetTransacBlockedContactsContactsInner {
     return this;
   }
 
-   /**
+  /**
    * Date when the contact was blocked or unsubscribed on
    * @return blockedAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BLOCKED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

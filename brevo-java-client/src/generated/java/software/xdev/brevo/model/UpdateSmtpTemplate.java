@@ -83,10 +83,10 @@ public class UpdateSmtpTemplate {
     return this;
   }
 
-   /**
+  /**
    * Tag of the template
    * @return tag
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TAG)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -108,10 +108,10 @@ public class UpdateSmtpTemplate {
     return this;
   }
 
-   /**
+  /**
    * Get sender
    * @return sender
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SENDER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -133,10 +133,10 @@ public class UpdateSmtpTemplate {
     return this;
   }
 
-   /**
+  /**
    * Name of the template
    * @return templateName
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TEMPLATE_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -158,10 +158,10 @@ public class UpdateSmtpTemplate {
     return this;
   }
 
-   /**
+  /**
    * **Required if htmlUrl is empty**. If the template is designed using Drag &amp; Drop editor via HTML content, then the design page will not have Drag &amp; Drop editor access for that template. Body of the message (HTML must have more than 10 characters) 
    * @return htmlContent
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_HTML_CONTENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -183,10 +183,10 @@ public class UpdateSmtpTemplate {
     return this;
   }
 
-   /**
+  /**
    * **Required if htmlContent is empty**. URL to the body of the email (HTML) 
    * @return htmlUrl
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_HTML_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -208,10 +208,10 @@ public class UpdateSmtpTemplate {
     return this;
   }
 
-   /**
+  /**
    * Subject of the email
    * @return subject
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUBJECT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -233,10 +233,10 @@ public class UpdateSmtpTemplate {
     return this;
   }
 
-   /**
+  /**
    * Email on which campaign recipients will be able to reply to
    * @return replyTo
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REPLY_TO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -258,10 +258,10 @@ public class UpdateSmtpTemplate {
     return this;
   }
 
-   /**
+  /**
    * To personalize the **To** Field. If you want to include the first name and last name of your recipient, add **{FNAME} {LNAME}**. These contact attributes must already exist in your Brevo account. If input parameter **params** used please use **{{contact.FNAME}} {{contact.LNAME}}** for personalization 
    * @return toField
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TO_FIELD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -283,10 +283,10 @@ public class UpdateSmtpTemplate {
     return this;
   }
 
-   /**
+  /**
    * Absolute url of the attachment (**no local file**). Extensions allowed: #### xlsx, xls, ods, docx, docm, doc, csv, pdf, txt, gif, jpg, jpeg, png, tif, tiff, rtf, bmp, cgm, css, shtml, html, htm, zip, xml, ppt, pptx, tar, ez, ics, mobi, msg, pub and eps 
    * @return attachmentUrl
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ATTACHMENT_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -308,10 +308,10 @@ public class UpdateSmtpTemplate {
     return this;
   }
 
-   /**
+  /**
    * Status of the template. isActive &#x3D; false means template is inactive, isActive &#x3D; true means template is active
    * @return isActive
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IS_ACTIVE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

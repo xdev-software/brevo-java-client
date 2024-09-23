@@ -62,10 +62,10 @@ public class GetFolderLists {
     return this;
   }
 
-   /**
+  /**
    * Get lists
    * @return lists
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LISTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -87,10 +87,10 @@ public class GetFolderLists {
     return this;
   }
 
-   /**
+  /**
    * Number of lists in the folder
    * @return count
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

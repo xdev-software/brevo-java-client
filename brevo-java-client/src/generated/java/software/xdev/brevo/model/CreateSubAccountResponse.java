@@ -46,10 +46,10 @@ public class CreateSubAccountResponse {
     return this;
   }
 
-   /**
+  /**
    * ID of the sub-account created
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

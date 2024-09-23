@@ -51,10 +51,10 @@ public class GetAccountAllOfRelay {
     return this;
   }
 
-   /**
+  /**
    * Status of your transactional email Account (true&#x3D;Enabled, false&#x3D;Disabled)
    * @return enabled
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -76,10 +76,10 @@ public class GetAccountAllOfRelay {
     return this;
   }
 
-   /**
+  /**
    * Get data
    * @return data
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

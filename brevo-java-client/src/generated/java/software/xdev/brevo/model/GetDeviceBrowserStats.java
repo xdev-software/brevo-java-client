@@ -58,10 +58,10 @@ public class GetDeviceBrowserStats {
     return this;
   }
 
-   /**
+  /**
    * Number of total clicks for the campaign using the particular browser
    * @return clickers
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CLICKERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -83,10 +83,10 @@ public class GetDeviceBrowserStats {
     return this;
   }
 
-   /**
+  /**
    * Number of unique clicks for the campaign using the particular browser
    * @return uniqueClicks
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UNIQUE_CLICKS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -108,10 +108,10 @@ public class GetDeviceBrowserStats {
     return this;
   }
 
-   /**
+  /**
    * Number of openings for the campaign using the particular browser
    * @return viewed
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VIEWED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -133,10 +133,10 @@ public class GetDeviceBrowserStats {
     return this;
   }
 
-   /**
+  /**
    * Number of unique openings for the campaign using the particular browser
    * @return uniqueViews
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UNIQUE_VIEWS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

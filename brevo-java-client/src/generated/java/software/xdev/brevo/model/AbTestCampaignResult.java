@@ -47,7 +47,7 @@ public class AbTestCampaignResult {
    * Winning Campaign Info. pending &#x3D; Campaign has been picked for sending and winning version is yet to be decided, tie &#x3D; A tie happened between both the versions, notAvailable &#x3D; Campaign has not yet been picked for sending.
    */
   public enum WinningVersionEnum {
-    NOTAVAILABLE("notAvailable"),
+    NOT_AVAILABLE("notAvailable"),
     
     PENDING("pending"),
     
@@ -152,10 +152,10 @@ public class AbTestCampaignResult {
     return this;
   }
 
-   /**
+  /**
    * Winning Campaign Info. pending &#x3D; Campaign has been picked for sending and winning version is yet to be decided, tie &#x3D; A tie happened between both the versions, notAvailable &#x3D; Campaign has not yet been picked for sending.
    * @return winningVersion
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_WINNING_VERSION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -177,10 +177,10 @@ public class AbTestCampaignResult {
     return this;
   }
 
-   /**
+  /**
    * Criteria choosen for winning version (Open/Click)
    * @return winningCriteria
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_WINNING_CRITERIA)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -202,10 +202,10 @@ public class AbTestCampaignResult {
     return this;
   }
 
-   /**
+  /**
    * Subject Line of current winning version
    * @return winningSubjectLine
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_WINNING_SUBJECT_LINE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -227,10 +227,10 @@ public class AbTestCampaignResult {
     return this;
   }
 
-   /**
+  /**
    * Open rate for current winning version
    * @return openRate
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_OPEN_RATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -252,10 +252,10 @@ public class AbTestCampaignResult {
     return this;
   }
 
-   /**
+  /**
    * Click rate for current winning version
    * @return clickRate
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CLICK_RATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -277,10 +277,10 @@ public class AbTestCampaignResult {
     return this;
   }
 
-   /**
+  /**
    * Open/Click rate for the winner version
    * @return winningVersionRate
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_WINNING_VERSION_RATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -302,10 +302,10 @@ public class AbTestCampaignResult {
     return this;
   }
 
-   /**
+  /**
    * Get statistics
    * @return statistics
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_STATISTICS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -327,10 +327,10 @@ public class AbTestCampaignResult {
     return this;
   }
 
-   /**
+  /**
    * Get clickedLinks
    * @return clickedLinks
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CLICKED_LINKS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

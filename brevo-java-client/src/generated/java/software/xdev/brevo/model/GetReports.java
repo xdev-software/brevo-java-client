@@ -58,10 +58,10 @@ public class GetReports {
     return this;
   }
 
-   /**
+  /**
    * Get reports
    * @return reports
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REPORTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

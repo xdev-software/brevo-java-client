@@ -54,10 +54,10 @@ public class CorporateGroupDetailsResponseSubAccountsInner {
     return this;
   }
 
-   /**
+  /**
    * Id of the sub-account organzation
    * @return id
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -79,10 +79,10 @@ public class CorporateGroupDetailsResponseSubAccountsInner {
     return this;
   }
 
-   /**
+  /**
    * Name of the sub-account organzation
    * @return companyName
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COMPANY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -104,10 +104,10 @@ public class CorporateGroupDetailsResponseSubAccountsInner {
     return this;
   }
 
-   /**
+  /**
    * Creation date of the sub-account organzation
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

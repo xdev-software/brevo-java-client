@@ -58,10 +58,10 @@ public class GetAccountActivity {
     return this;
   }
 
-   /**
+  /**
    * Get user activity logs
    * @return logs
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LOGS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

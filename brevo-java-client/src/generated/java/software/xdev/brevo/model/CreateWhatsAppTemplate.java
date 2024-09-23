@@ -140,10 +140,10 @@ public class CreateWhatsAppTemplate {
     return this;
   }
 
-   /**
+  /**
    * Name of the template
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -165,10 +165,10 @@ public class CreateWhatsAppTemplate {
     return this;
   }
 
-   /**
+  /**
    * Language of the template. For Example : **en** for English 
    * @return language
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LANGUAGE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -190,10 +190,10 @@ public class CreateWhatsAppTemplate {
     return this;
   }
 
-   /**
+  /**
    * Category of the template
    * @return category
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CATEGORY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -215,10 +215,10 @@ public class CreateWhatsAppTemplate {
     return this;
   }
 
-   /**
+  /**
    * Absolute url of the media file **(no local file)** for the header. **Use this field in you want to add media in Template header and headerText is empty**. Allowed extensions for media files are: #### jpeg | png | mp4 | pdf 
    * @return mediaUrl
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MEDIA_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -240,10 +240,10 @@ public class CreateWhatsAppTemplate {
     return this;
   }
 
-   /**
+  /**
    * Body of the template. **Maximum allowed characters are 1024**
    * @return bodyText
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BODY_TEXT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -265,10 +265,10 @@ public class CreateWhatsAppTemplate {
     return this;
   }
 
-   /**
+  /**
    * Text content of the header in the template. **Maximum allowed characters are 45** **Use this field to add text content in template header and if mediaUrl is empty** 
    * @return headerText
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_HEADER_TEXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -290,10 +290,10 @@ public class CreateWhatsAppTemplate {
     return this;
   }
 
-   /**
+  /**
    * source of the template
    * @return source
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SOURCE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

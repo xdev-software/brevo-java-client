@@ -55,10 +55,10 @@ public class CreateDomainModelDnsRecords {
     return this;
   }
 
-   /**
+  /**
    * Get dkimRecord
    * @return dkimRecord
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DKIM_RECORD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -80,10 +80,10 @@ public class CreateDomainModelDnsRecords {
     return this;
   }
 
-   /**
+  /**
    * Get brevoCode
    * @return brevoCode
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_BREVO_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -105,10 +105,10 @@ public class CreateDomainModelDnsRecords {
     return this;
   }
 
-   /**
+  /**
    * Get dmarcRecord
    * @return dmarcRecord
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DMARC_RECORD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -66,10 +66,10 @@ public class GetListsListsInner {
     return this;
   }
 
-   /**
+  /**
    * ID of the list
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -91,10 +91,10 @@ public class GetListsListsInner {
     return this;
   }
 
-   /**
+  /**
    * Name of the list
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -116,10 +116,10 @@ public class GetListsListsInner {
     return this;
   }
 
-   /**
+  /**
    * Number of blacklisted contacts in the list
    * @return totalBlacklisted
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TOTAL_BLACKLISTED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -141,10 +141,10 @@ public class GetListsListsInner {
     return this;
   }
 
-   /**
+  /**
    * Number of contacts in the list
    * @return totalSubscribers
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TOTAL_SUBSCRIBERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -166,10 +166,10 @@ public class GetListsListsInner {
     return this;
   }
 
-   /**
+  /**
    * Number of unique contacts in the list
    * @return uniqueSubscribers
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UNIQUE_SUBSCRIBERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -191,10 +191,10 @@ public class GetListsListsInner {
     return this;
   }
 
-   /**
+  /**
    * ID of the folder
    * @return folderId
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_FOLDER_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

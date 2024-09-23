@@ -62,10 +62,10 @@ public class GetLists {
     return this;
   }
 
-   /**
+  /**
    * Listing of all the lists available in your account
    * @return lists
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LISTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -87,10 +87,10 @@ public class GetLists {
     return this;
   }
 
-   /**
+  /**
    * Number of lists in your account
    * @return count
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -50,10 +50,10 @@ public class GetTransacEmailContentEventsInner {
     return this;
   }
 
-   /**
+  /**
    * Name of the event that occurred on the sent email
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -75,10 +75,10 @@ public class GetTransacEmailContentEventsInner {
     return this;
   }
 
-   /**
+  /**
    * Time at which the event occurred
    * @return time
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TIME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

@@ -177,10 +177,10 @@ public class GetWhatsAppConfig {
     return this;
   }
 
-   /**
+  /**
    * Id of the WhatsApp business account
    * @return whatsappBusinessAccountId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_WHATSAPP_BUSINESS_ACCOUNT_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -202,10 +202,10 @@ public class GetWhatsAppConfig {
     return this;
   }
 
-   /**
+  /**
    * Sending limit Information of the WhatsApp API account
    * @return sendingLimit
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SENDING_LIMIT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -227,10 +227,10 @@ public class GetWhatsAppConfig {
     return this;
   }
 
-   /**
+  /**
    * Quality status of phone number associated with WhatsApp account. There are three quality ratings. example - **High (GREEN) , Medium (YELLOW) and Low(RED)**
    * @return phoneNumberQuality
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PHONE_NUMBER_QUALITY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -252,10 +252,10 @@ public class GetWhatsAppConfig {
     return this;
   }
 
-   /**
+  /**
    * Status information related to WhatsApp API account
    * @return whatsappBusinessAccountStatus
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_WHATSAPP_BUSINESS_ACCOUNT_STATUS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -277,10 +277,10 @@ public class GetWhatsAppConfig {
     return this;
   }
 
-   /**
+  /**
    * Verification status information of the Business account
    * @return businessStatus
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_BUSINESS_STATUS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -302,10 +302,10 @@ public class GetWhatsAppConfig {
     return this;
   }
 
-   /**
+  /**
    * Status of the name associated with WhatsApp Phone number
    * @return phoneNumberNameStatus
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PHONE_NUMBER_NAME_STATUS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

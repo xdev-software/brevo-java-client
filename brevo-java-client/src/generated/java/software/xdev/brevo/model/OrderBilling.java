@@ -70,10 +70,10 @@ public class OrderBilling {
     return this;
   }
 
-   /**
+  /**
    * Full billing address.
    * @return address
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ADDRESS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -95,10 +95,10 @@ public class OrderBilling {
     return this;
   }
 
-   /**
+  /**
    * Exact city of the address.
    * @return city
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CITY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -120,10 +120,10 @@ public class OrderBilling {
     return this;
   }
 
-   /**
+  /**
    * Billing country 2-letter ISO code.
    * @return countryCode
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COUNTRY_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -145,10 +145,10 @@ public class OrderBilling {
     return this;
   }
 
-   /**
+  /**
    * Phone number to contact for further details about the order, Mandatory if \&quot;email\&quot; field is not passed.
    * @return phone
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PHONE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -170,10 +170,10 @@ public class OrderBilling {
     return this;
   }
 
-   /**
+  /**
    * Postcode for delivery and billing.
    * @return postCode
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_POST_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -195,10 +195,10 @@ public class OrderBilling {
     return this;
   }
 
-   /**
+  /**
    * How the visitor will pay for the item(s), e.g. paypal, check, etc.
    * @return paymentMethod
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -220,10 +220,10 @@ public class OrderBilling {
     return this;
   }
 
-   /**
+  /**
    * Exact region (state/province) for delivery and billing.
    * @return region
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REGION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

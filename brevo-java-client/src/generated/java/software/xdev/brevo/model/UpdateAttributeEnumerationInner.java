@@ -50,10 +50,10 @@ public class UpdateAttributeEnumerationInner {
     return this;
   }
 
-   /**
+  /**
    * Id of the value
    * @return value
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -75,10 +75,10 @@ public class UpdateAttributeEnumerationInner {
     return this;
   }
 
-   /**
+  /**
    * Label of the value
    * @return label
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LABEL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

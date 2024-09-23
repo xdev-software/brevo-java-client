@@ -47,7 +47,7 @@ public class GetScheduledEmailByBatchIdBatchesInner {
    * Current status of the scheduled batch
    */
   public enum StatusEnum {
-    INPROGRESS("inProgress"),
+    IN_PROGRESS("inProgress"),
     
     QUEUED("queued"),
     
@@ -94,10 +94,10 @@ public class GetScheduledEmailByBatchIdBatchesInner {
     return this;
   }
 
-   /**
+  /**
    * Datetime for which the batch was scheduled
    * @return scheduledAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -119,10 +119,10 @@ public class GetScheduledEmailByBatchIdBatchesInner {
     return this;
   }
 
-   /**
+  /**
    * Datetime on which the batch was scheduled
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -144,10 +144,10 @@ public class GetScheduledEmailByBatchIdBatchesInner {
     return this;
   }
 
-   /**
+  /**
    * Current status of the scheduled batch
    * @return status
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

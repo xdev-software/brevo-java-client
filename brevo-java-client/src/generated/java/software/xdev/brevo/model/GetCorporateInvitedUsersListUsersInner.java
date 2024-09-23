@@ -64,10 +64,10 @@ public class GetCorporateInvitedUsersListUsersInner {
     return this;
   }
 
-   /**
+  /**
    * Get groups
    * @return groups
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_GROUPS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -89,10 +89,10 @@ public class GetCorporateInvitedUsersListUsersInner {
     return this;
   }
 
-   /**
+  /**
    * Email address of the user.
    * @return email
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -114,10 +114,10 @@ public class GetCorporateInvitedUsersListUsersInner {
     return this;
   }
 
-   /**
+  /**
    * Flag for indicating is user owner of the organization.
    * @return isOwner
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_IS_OWNER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -139,10 +139,10 @@ public class GetCorporateInvitedUsersListUsersInner {
     return this;
   }
 
-   /**
+  /**
    * Status of the invited user.
    * @return status
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -164,10 +164,10 @@ public class GetCorporateInvitedUsersListUsersInner {
     return this;
   }
 
-   /**
+  /**
    * Get featureAccess
    * @return featureAccess
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_FEATURE_ACCESS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

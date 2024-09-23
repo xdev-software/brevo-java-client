@@ -57,10 +57,10 @@ public class RemoveContactFromListByEmails {
     return this;
   }
 
-   /**
+  /**
    * **Required if &#39;all&#39; is false and &#39;ids&#39; is empty.** Emails to remove from a list. You can pass a **maximum of 150 emails** for removal in one request. 
    * @return emails
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EMAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

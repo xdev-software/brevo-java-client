@@ -63,10 +63,10 @@ public class GetContactCampaignStatsUnsubscriptions {
     return this;
   }
 
-   /**
+  /**
    * Contact has unsubscribed via the unsubscription link in the email
    * @return userUnsubscription
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_USER_UNSUBSCRIPTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -96,10 +96,10 @@ public class GetContactCampaignStatsUnsubscriptions {
     return this;
   }
 
-   /**
+  /**
    * Contact has been unsubscribed from the administrator
    * @return adminUnsubscription
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ADMIN_UNSUBSCRIPTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

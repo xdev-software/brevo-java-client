@@ -74,10 +74,10 @@ public class GetWhatsappTemplatesTemplatesInner {
     return this;
   }
 
-   /**
+  /**
    * ID of the WhatsApp template
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -99,10 +99,10 @@ public class GetWhatsappTemplatesTemplatesInner {
     return this;
   }
 
-   /**
+  /**
    * Name of the WhatsApp template
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -124,10 +124,10 @@ public class GetWhatsappTemplatesTemplatesInner {
     return this;
   }
 
-   /**
+  /**
    * Status of the WhatsApp template
    * @return status
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -149,10 +149,10 @@ public class GetWhatsappTemplatesTemplatesInner {
     return this;
   }
 
-   /**
+  /**
    * Language in which template exists
    * @return language
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LANGUAGE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -174,10 +174,10 @@ public class GetWhatsappTemplatesTemplatesInner {
     return this;
   }
 
-   /**
+  /**
    * category of the template
    * @return category
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CATEGORY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -199,10 +199,10 @@ public class GetWhatsappTemplatesTemplatesInner {
     return this;
   }
 
-   /**
+  /**
    * Error reason in the template creation
    * @return errorReason
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ERROR_REASON)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -224,10 +224,10 @@ public class GetWhatsappTemplatesTemplatesInner {
     return this;
   }
 
-   /**
+  /**
    * Creation UTC date-time of the WhatsApp template (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -249,10 +249,10 @@ public class GetWhatsappTemplatesTemplatesInner {
     return this;
   }
 
-   /**
+  /**
    * UTC date-time of last modification of the WhatsApp template (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return modifiedAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

@@ -57,10 +57,10 @@ public class UpdateUserResponse {
     return this;
   }
 
-   /**
+  /**
    * Status of the API operation.
    * @return status
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -90,10 +90,10 @@ public class UpdateUserResponse {
     return this;
   }
 
-   /**
+  /**
    * Credit note
    * @return creditNotes
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CREDIT_NOTES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -123,10 +123,10 @@ public class UpdateUserResponse {
     return this;
   }
 
-   /**
+  /**
    * Invoice id
    * @return invoiceId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_INVOICE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

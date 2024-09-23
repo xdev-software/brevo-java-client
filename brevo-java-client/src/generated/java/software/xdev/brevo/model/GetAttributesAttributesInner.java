@@ -148,10 +148,10 @@ public class GetAttributesAttributesInner {
     return this;
   }
 
-   /**
+  /**
    * Name of the attribute
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -173,10 +173,10 @@ public class GetAttributesAttributesInner {
     return this;
   }
 
-   /**
+  /**
    * Category of the attribute
    * @return category
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CATEGORY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -198,10 +198,10 @@ public class GetAttributesAttributesInner {
     return this;
   }
 
-   /**
+  /**
    * Type of the attribute
    * @return type
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -231,10 +231,10 @@ public class GetAttributesAttributesInner {
     return this;
   }
 
-   /**
+  /**
    * Parameter only available for \&quot;category\&quot; type attributes.
    * @return enumeration
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ENUMERATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -256,10 +256,10 @@ public class GetAttributesAttributesInner {
     return this;
   }
 
-   /**
+  /**
    * Calculated value formula
    * @return calculatedValue
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CALCULATED_VALUE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

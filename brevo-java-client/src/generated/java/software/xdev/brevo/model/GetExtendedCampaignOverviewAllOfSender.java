@@ -54,10 +54,10 @@ public class GetExtendedCampaignOverviewAllOfSender {
     return this;
   }
 
-   /**
+  /**
    * Sender name of the campaign
    * @return name
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -79,10 +79,10 @@ public class GetExtendedCampaignOverviewAllOfSender {
     return this;
   }
 
-   /**
+  /**
    * Sender email of the campaign
    * @return email
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -104,10 +104,10 @@ public class GetExtendedCampaignOverviewAllOfSender {
     return this;
   }
 
-   /**
+  /**
    * Sender id of the campaign
    * @return id
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

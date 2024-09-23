@@ -46,10 +46,10 @@ public class CrmDealsPost201Response {
     return this;
   }
 
-   /**
+  /**
    * Unique deal id
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

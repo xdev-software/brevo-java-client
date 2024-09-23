@@ -50,10 +50,10 @@ public class GetCorporateInvitedUsersListUsersInnerGroups {
     return this;
   }
 
-   /**
+  /**
    * group id
    * @return id
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -75,10 +75,10 @@ public class GetCorporateInvitedUsersListUsersInnerGroups {
     return this;
   }
 
-   /**
+  /**
    * group name
    * @return name
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

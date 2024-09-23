@@ -46,10 +46,10 @@ public class Otp {
     return this;
   }
 
-   /**
+  /**
    * 6 digit OTP received on email
    * @return otp
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_OTP)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

@@ -62,9 +62,9 @@ public class GetEmailEventReportEventsInner {
   public enum EventEnum {
     BOUNCES("bounces"),
     
-    HARDBOUNCES("hardBounces"),
+    HARD_BOUNCES("hardBounces"),
     
-    SOFTBOUNCES("softBounces"),
+    SOFT_BOUNCES("softBounces"),
     
     DELIVERED("delivered"),
     
@@ -86,7 +86,7 @@ public class GetEmailEventReportEventsInner {
     
     ERROR("error"),
     
-    LOADEDBYPROXY("loadedByProxy");
+    LOADED_BY_PROXY("loadedByProxy");
 
     private String value;
 
@@ -145,10 +145,10 @@ public class GetEmailEventReportEventsInner {
     return this;
   }
 
-   /**
+  /**
    * Email address which generates the event
    * @return email
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -170,10 +170,10 @@ public class GetEmailEventReportEventsInner {
     return this;
   }
 
-   /**
+  /**
    * UTC date-time on which the event has been generated
    * @return date
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DATE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -195,10 +195,10 @@ public class GetEmailEventReportEventsInner {
     return this;
   }
 
-   /**
+  /**
    * Subject of the event
    * @return subject
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUBJECT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -220,10 +220,10 @@ public class GetEmailEventReportEventsInner {
     return this;
   }
 
-   /**
+  /**
    * Message ID which generated the event
    * @return messageId
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -245,10 +245,10 @@ public class GetEmailEventReportEventsInner {
     return this;
   }
 
-   /**
+  /**
    * Event which occurred
    * @return event
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EVENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -270,10 +270,10 @@ public class GetEmailEventReportEventsInner {
     return this;
   }
 
-   /**
+  /**
    * Reason of bounce (only available if the event is hardbounce or softbounce)
    * @return reason
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REASON)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -295,10 +295,10 @@ public class GetEmailEventReportEventsInner {
     return this;
   }
 
-   /**
+  /**
    * Tag of the email which generated the event
    * @return tag
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TAG)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -320,10 +320,10 @@ public class GetEmailEventReportEventsInner {
     return this;
   }
 
-   /**
+  /**
    * IP from which the user has opened the email or clicked on the link (only available if the event is opened or clicks)
    * @return ip
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IP)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -345,10 +345,10 @@ public class GetEmailEventReportEventsInner {
     return this;
   }
 
-   /**
+  /**
    * The link which is sent to the user (only available if the event is requests or opened or clicks)
    * @return link
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LINK)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -370,10 +370,10 @@ public class GetEmailEventReportEventsInner {
     return this;
   }
 
-   /**
+  /**
    * Sender email from which the emails are sent
    * @return from
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_FROM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -395,10 +395,10 @@ public class GetEmailEventReportEventsInner {
     return this;
   }
 
-   /**
+  /**
    * ID of the template (only available if the email is template based)
    * @return templateId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

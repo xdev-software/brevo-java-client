@@ -46,10 +46,10 @@ public class BlockDomain {
     return this;
   }
 
-   /**
+  /**
    * name of the domain to be blocked
    * @return domain
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DOMAIN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

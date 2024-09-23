@@ -62,10 +62,10 @@ public class GetProcesses {
     return this;
   }
 
-   /**
+  /**
    * List of processes available on your account
    * @return processes
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PROCESSES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -87,10 +87,10 @@ public class GetProcesses {
     return this;
   }
 
-   /**
+  /**
    * Number of processes available on your account
    * @return count
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

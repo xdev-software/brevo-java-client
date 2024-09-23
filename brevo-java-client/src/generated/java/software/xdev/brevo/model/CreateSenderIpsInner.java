@@ -54,10 +54,10 @@ public class CreateSenderIpsInner {
     return this;
   }
 
-   /**
+  /**
    * Dedicated IP available in your account
    * @return ip
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_IP)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -79,10 +79,10 @@ public class CreateSenderIpsInner {
     return this;
   }
 
-   /**
+  /**
    * Domain of the IP
    * @return domain
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DOMAIN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -104,12 +104,12 @@ public class CreateSenderIpsInner {
     return this;
   }
 
-   /**
+  /**
    * Weight to apply to the IP. Sum of all IP weights must be 100. Should be passed for either ALL or NONE of the IPs. If it&#39;s not passed, the sending will be equally balanced on all IPs.
    * minimum: 1
    * maximum: 100
    * @return weight
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_WEIGHT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

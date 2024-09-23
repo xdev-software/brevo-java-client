@@ -57,10 +57,10 @@ public class Pipeline {
     return this;
   }
 
-   /**
+  /**
    * Pipeline name
    * @return pipelineName
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PIPELINE_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -82,10 +82,10 @@ public class Pipeline {
     return this;
   }
 
-   /**
+  /**
    * Pipeline id
    * @return pipeline
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PIPELINE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -115,10 +115,10 @@ public class Pipeline {
     return this;
   }
 
-   /**
+  /**
    * List of stages
    * @return stages
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_STAGES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

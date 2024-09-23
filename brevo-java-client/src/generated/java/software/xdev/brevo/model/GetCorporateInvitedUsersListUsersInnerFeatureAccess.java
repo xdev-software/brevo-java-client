@@ -69,10 +69,10 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
     return this;
   }
 
-   /**
+  /**
    * User management accessiblity.
    * @return userManagement
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_USER_MANAGEMENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -102,10 +102,10 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
     return this;
   }
 
-   /**
+  /**
    * Api keys accessiblity.
    * @return apiKeys
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_API_KEYS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -135,10 +135,10 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
     return this;
   }
 
-   /**
+  /**
    * My plan accessiblity.
    * @return myPlan
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MY_PLAN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -168,10 +168,10 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
     return this;
   }
 
-   /**
+  /**
    * Apps management accessiblity | Not available in ENTv2
    * @return appsManagement
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_APPS_MANAGEMENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

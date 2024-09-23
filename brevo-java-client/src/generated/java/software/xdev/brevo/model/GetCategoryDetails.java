@@ -66,10 +66,10 @@ public class GetCategoryDetails {
     return this;
   }
 
-   /**
+  /**
    * Category ID for which you requested the details
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -91,10 +91,10 @@ public class GetCategoryDetails {
     return this;
   }
 
-   /**
+  /**
    * Name of the category for which you requested the details
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -116,10 +116,10 @@ public class GetCategoryDetails {
     return this;
   }
 
-   /**
+  /**
    * Creation UTC date-time of the category (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -141,10 +141,10 @@ public class GetCategoryDetails {
     return this;
   }
 
-   /**
+  /**
    * Last modification UTC date-time of the category (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return modifiedAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -166,10 +166,10 @@ public class GetCategoryDetails {
     return this;
   }
 
-   /**
+  /**
    * URL to the category
    * @return url
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -191,10 +191,10 @@ public class GetCategoryDetails {
     return this;
   }
 
-   /**
+  /**
    * category deleted from the shop&#39;s database
    * @return isDeleted
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IS_DELETED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

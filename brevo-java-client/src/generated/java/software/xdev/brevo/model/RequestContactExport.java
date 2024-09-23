@@ -66,10 +66,10 @@ public class RequestContactExport {
     return this;
   }
 
-   /**
+  /**
    * List of all the attributes that you want to export. **These attributes must be present in your contact database.** For example: **[&#39;fname&#39;, &#39;lname&#39;, &#39;email&#39;]** 
    * @return exportAttributes
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EXPORT_ATTRIBUTES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -91,10 +91,10 @@ public class RequestContactExport {
     return this;
   }
 
-   /**
+  /**
    * Get customContactFilter
    * @return customContactFilter
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CUSTOM_CONTACT_FILTER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -116,10 +116,10 @@ public class RequestContactExport {
     return this;
   }
 
-   /**
+  /**
    * Webhook that will be called once the export process is finished. For reference, https://help.brevo.com/hc/en-us/articles/360007666479
    * @return notifyUrl
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NOTIFY_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

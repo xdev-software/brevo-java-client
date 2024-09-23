@@ -94,10 +94,10 @@ public class SubAccountAppsToggleRequest {
     return this;
   }
 
-   /**
+  /**
    * Set this field to enable or disable Inbox on the sub-account / Not applicable on ENTv2
    * @return inbox
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_INBOX)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -119,10 +119,10 @@ public class SubAccountAppsToggleRequest {
     return this;
   }
 
-   /**
+  /**
    * Set this field to enable or disable Whatsapp campaigns on the sub-account
    * @return whatsapp
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_WHATSAPP)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -144,10 +144,10 @@ public class SubAccountAppsToggleRequest {
     return this;
   }
 
-   /**
+  /**
    * Set this field to enable or disable Automation on the sub-account
    * @return automation
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_AUTOMATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -169,10 +169,10 @@ public class SubAccountAppsToggleRequest {
     return this;
   }
 
-   /**
+  /**
    * Set this field to enable or disable Email Campaigns on the sub-account
    * @return emailCampaigns
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EMAIL_CAMPAIGNS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -194,10 +194,10 @@ public class SubAccountAppsToggleRequest {
     return this;
   }
 
-   /**
+  /**
    * Set this field to enable or disable SMS Marketing on the sub-account
    * @return smsCampaigns
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SMS_CAMPAIGNS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -219,10 +219,10 @@ public class SubAccountAppsToggleRequest {
     return this;
   }
 
-   /**
+  /**
    * Set this field to enable or disable Landing pages on the sub-account
    * @return landingPages
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LANDING_PAGES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -244,10 +244,10 @@ public class SubAccountAppsToggleRequest {
     return this;
   }
 
-   /**
+  /**
    * Set this field to enable or disable Transactional Email on the sub-account
    * @return transactionalEmails
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TRANSACTIONAL_EMAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -269,10 +269,10 @@ public class SubAccountAppsToggleRequest {
     return this;
   }
 
-   /**
+  /**
    * Set this field to enable or disable Transactional SMS on the sub-account
    * @return transactionalSms
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TRANSACTIONAL_SMS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -294,10 +294,10 @@ public class SubAccountAppsToggleRequest {
     return this;
   }
 
-   /**
+  /**
    * Set this field to enable or disable Facebook ads on the sub-account
    * @return facebookAds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_FACEBOOK_ADS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -319,10 +319,10 @@ public class SubAccountAppsToggleRequest {
     return this;
   }
 
-   /**
+  /**
    * Set this field to enable or disable Web Push on the sub-account
    * @return webPush
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_WEB_PUSH)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -344,10 +344,10 @@ public class SubAccountAppsToggleRequest {
     return this;
   }
 
-   /**
+  /**
    * Set this field to enable or disable Meetings on the sub-account
    * @return meetings
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MEETINGS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -369,10 +369,10 @@ public class SubAccountAppsToggleRequest {
     return this;
   }
 
-   /**
+  /**
    * Set this field to enable or disable Conversations on the sub-account
    * @return conversations
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CONVERSATIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -394,10 +394,10 @@ public class SubAccountAppsToggleRequest {
     return this;
   }
 
-   /**
+  /**
    * Set this field to enable or disable Sales CRM on the sub-account
    * @return crm
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CRM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

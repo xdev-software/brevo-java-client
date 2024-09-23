@@ -65,10 +65,10 @@ public class CreateEmailCampaignRecipients {
     return this;
   }
 
-   /**
+  /**
    * List ids to exclude from the campaign
    * @return exclusionListIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EXCLUSION_LIST_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -98,10 +98,10 @@ public class CreateEmailCampaignRecipients {
     return this;
   }
 
-   /**
+  /**
    * **Mandatory if scheduledAt is not empty**. List Ids to send the campaign to 
    * @return listIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LIST_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -131,10 +131,10 @@ public class CreateEmailCampaignRecipients {
     return this;
   }
 
-   /**
+  /**
    * **Mandatory if listIds are not used**. Segment ids to send the campaign to. 
    * @return segmentIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SEGMENT_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

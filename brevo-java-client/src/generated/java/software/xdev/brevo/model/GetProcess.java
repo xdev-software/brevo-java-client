@@ -95,10 +95,10 @@ public class GetProcess {
     return this;
   }
 
-   /**
+  /**
    * Id of the process
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -120,10 +120,10 @@ public class GetProcess {
     return this;
   }
 
-   /**
+  /**
    * Status of the process
    * @return status
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -145,10 +145,10 @@ public class GetProcess {
     return this;
   }
 
-   /**
+  /**
    * Process name
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -170,10 +170,10 @@ public class GetProcess {
     return this;
   }
 
-   /**
+  /**
    * URL on which send export the of contacts once the process is completed
    * @return exportUrl
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EXPORT_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

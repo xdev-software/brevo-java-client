@@ -46,10 +46,10 @@ public class CorporateUserInvitationActionEmailPut200Response {
     return this;
   }
 
-   /**
+  /**
    * Action success message
    * @return message
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MESSAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

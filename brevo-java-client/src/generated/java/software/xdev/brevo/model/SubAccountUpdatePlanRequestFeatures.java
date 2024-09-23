@@ -54,10 +54,10 @@ public class SubAccountUpdatePlanRequestFeatures {
     return this;
   }
 
-   /**
+  /**
    * Number of multi-users
    * @return users
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_USERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -79,10 +79,10 @@ public class SubAccountUpdatePlanRequestFeatures {
     return this;
   }
 
-   /**
+  /**
    * Number of landing pages / Not required on ENTv2
    * @return landingPage
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LANDING_PAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -104,10 +104,10 @@ public class SubAccountUpdatePlanRequestFeatures {
     return this;
   }
 
-   /**
+  /**
    * Number of inboxes / Not required on ENTv2
    * @return inbox
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_INBOX)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

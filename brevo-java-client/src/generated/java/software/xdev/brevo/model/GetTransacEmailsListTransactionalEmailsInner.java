@@ -77,10 +77,10 @@ public class GetTransacEmailsListTransactionalEmailsInner {
     return this;
   }
 
-   /**
+  /**
    * Email address to which transactional email has been sent
    * @return email
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -102,10 +102,10 @@ public class GetTransacEmailsListTransactionalEmailsInner {
     return this;
   }
 
-   /**
+  /**
    * Subject of the sent email
    * @return subject
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SUBJECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -127,10 +127,10 @@ public class GetTransacEmailsListTransactionalEmailsInner {
     return this;
   }
 
-   /**
+  /**
    * Id of the template
    * @return templateId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -152,10 +152,10 @@ public class GetTransacEmailsListTransactionalEmailsInner {
     return this;
   }
 
-   /**
+  /**
    * Message Id of the sent email
    * @return messageId
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -177,10 +177,10 @@ public class GetTransacEmailsListTransactionalEmailsInner {
     return this;
   }
 
-   /**
+  /**
    * Unique id of the email sent to a particular contact
    * @return uuid
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UUID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -202,10 +202,10 @@ public class GetTransacEmailsListTransactionalEmailsInner {
     return this;
   }
 
-   /**
+  /**
    * Date on which transactional email was sent
    * @return date
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DATE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -227,10 +227,10 @@ public class GetTransacEmailsListTransactionalEmailsInner {
     return this;
   }
 
-   /**
+  /**
    * Email address of the sender from which the email was sent
    * @return from
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_FROM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -260,10 +260,10 @@ public class GetTransacEmailsListTransactionalEmailsInner {
     return this;
   }
 
-   /**
+  /**
    * Tags used for your email
    * @return tags
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TAGS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

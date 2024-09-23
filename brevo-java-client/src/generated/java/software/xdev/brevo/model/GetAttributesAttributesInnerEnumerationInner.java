@@ -50,10 +50,10 @@ public class GetAttributesAttributesInnerEnumerationInner {
     return this;
   }
 
-   /**
+  /**
    * ID of Value of the \&quot;category\&quot; type attribute
    * @return value
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -75,10 +75,10 @@ public class GetAttributesAttributesInnerEnumerationInner {
     return this;
   }
 
-   /**
+  /**
    * Label of the \&quot;category\&quot; type attribute
    * @return label
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LABEL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

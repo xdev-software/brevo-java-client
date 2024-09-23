@@ -54,10 +54,10 @@ public class CorporateGroupDetailsResponseUsersInner {
     return this;
   }
 
-   /**
+  /**
    * Email address of the user
    * @return email
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -79,10 +79,10 @@ public class CorporateGroupDetailsResponseUsersInner {
     return this;
   }
 
-   /**
+  /**
    * Last name of the user
    * @return lastName
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LAST_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -104,10 +104,10 @@ public class CorporateGroupDetailsResponseUsersInner {
     return this;
   }
 
-   /**
+  /**
    * First name of the user
    * @return firstName
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_FIRST_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

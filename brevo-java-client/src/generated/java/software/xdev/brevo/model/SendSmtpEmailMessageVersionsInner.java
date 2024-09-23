@@ -83,10 +83,10 @@ public class SendSmtpEmailMessageVersionsInner {
     return this;
   }
 
-   /**
+  /**
    * List of email addresses and names (_optional_) of the recipients. For example, **[{\&quot;name\&quot;:\&quot;Jimmy\&quot;, \&quot;email\&quot;:\&quot;jimmy98@example.com\&quot;}, {\&quot;name\&quot;:\&quot;Joe\&quot;, \&quot;email\&quot;:\&quot;joe@example.com\&quot;}]** 
    * @return to
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -116,10 +116,10 @@ public class SendSmtpEmailMessageVersionsInner {
     return this;
   }
 
-   /**
+  /**
    * Pass the set of attributes to customize the template. For example, **{\&quot;FNAME\&quot;:\&quot;Joe\&quot;, \&quot;LNAME\&quot;:\&quot;Doe\&quot;}**. It&#39;s **considered only if template is in New Template Language format**. 
    * @return params
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PARAMS)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
@@ -149,10 +149,10 @@ public class SendSmtpEmailMessageVersionsInner {
     return this;
   }
 
-   /**
+  /**
    * List of email addresses and names (_optional_) of the recipients in bcc 
    * @return bcc
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_BCC)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -182,10 +182,10 @@ public class SendSmtpEmailMessageVersionsInner {
     return this;
   }
 
-   /**
+  /**
    * List of email addresses and names (_optional_) of the recipients in cc 
    * @return cc
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CC)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -207,10 +207,10 @@ public class SendSmtpEmailMessageVersionsInner {
     return this;
   }
 
-   /**
+  /**
    * Get replyTo
    * @return replyTo
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REPLY_TO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -232,10 +232,10 @@ public class SendSmtpEmailMessageVersionsInner {
     return this;
   }
 
-   /**
+  /**
    * Custom subject specific to message version 
    * @return subject
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUBJECT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
