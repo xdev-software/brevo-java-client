@@ -41,16 +41,16 @@ import java.util.StringJoiner;
 @JsonTypeName("_companies_link_unlink__id__patch_request")
 public class CompaniesLinkUnlinkIdPatchRequest {
   public static final String JSON_PROPERTY_LINK_CONTACT_IDS = "linkContactIds";
-  private List<Long> linkContactIds;
+  private List<Long> linkContactIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_UNLINK_CONTACT_IDS = "unlinkContactIds";
-  private List<Long> unlinkContactIds;
+  private List<Long> unlinkContactIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_LINK_DEALS_IDS = "linkDealsIds";
-  private List<String> linkDealsIds;
+  private List<String> linkDealsIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_UNLINK_DEALS_IDS = "unlinkDealsIds";
-  private List<String> unlinkDealsIds;
+  private List<String> unlinkDealsIds = new ArrayList<>();
 
   public CompaniesLinkUnlinkIdPatchRequest() {
   }
@@ -69,10 +69,10 @@ public class CompaniesLinkUnlinkIdPatchRequest {
     return this;
   }
 
-   /**
+  /**
    * Contact ids for contacts to be linked with company
    * @return linkContactIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LINK_CONTACT_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -88,7 +88,6 @@ public class CompaniesLinkUnlinkIdPatchRequest {
     this.linkContactIds = linkContactIds;
   }
 
-
   public CompaniesLinkUnlinkIdPatchRequest unlinkContactIds(List<Long> unlinkContactIds) {
     
     this.unlinkContactIds = unlinkContactIds;
@@ -103,10 +102,10 @@ public class CompaniesLinkUnlinkIdPatchRequest {
     return this;
   }
 
-   /**
+  /**
    * Contact ids for contacts to be unlinked from company
    * @return unlinkContactIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UNLINK_CONTACT_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -122,7 +121,6 @@ public class CompaniesLinkUnlinkIdPatchRequest {
     this.unlinkContactIds = unlinkContactIds;
   }
 
-
   public CompaniesLinkUnlinkIdPatchRequest linkDealsIds(List<String> linkDealsIds) {
     
     this.linkDealsIds = linkDealsIds;
@@ -137,10 +135,10 @@ public class CompaniesLinkUnlinkIdPatchRequest {
     return this;
   }
 
-   /**
+  /**
    * Deal ids for deals to be linked with company
    * @return linkDealsIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LINK_DEALS_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -156,7 +154,6 @@ public class CompaniesLinkUnlinkIdPatchRequest {
     this.linkDealsIds = linkDealsIds;
   }
 
-
   public CompaniesLinkUnlinkIdPatchRequest unlinkDealsIds(List<String> unlinkDealsIds) {
     
     this.unlinkDealsIds = unlinkDealsIds;
@@ -171,10 +168,10 @@ public class CompaniesLinkUnlinkIdPatchRequest {
     return this;
   }
 
-   /**
+  /**
    * Deal ids for deals to be unlinked from company
    * @return unlinkDealsIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UNLINK_DEALS_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

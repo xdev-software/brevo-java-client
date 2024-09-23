@@ -50,10 +50,10 @@ public class SubAccountDetailsResponsePlanInfoFeaturesUsers {
     return this;
   }
 
-   /**
+  /**
    * Quantity of multi-account&#39;s provided
    * @return quantity
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_QUANTITY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -69,17 +69,16 @@ public class SubAccountDetailsResponsePlanInfoFeaturesUsers {
     this.quantity = quantity;
   }
 
-
   public SubAccountDetailsResponsePlanInfoFeaturesUsers remaining(Long remaining) {
     
     this.remaining = remaining;
     return this;
   }
 
-   /**
+  /**
    * Available multi-accounts for use
    * @return remaining
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REMAINING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

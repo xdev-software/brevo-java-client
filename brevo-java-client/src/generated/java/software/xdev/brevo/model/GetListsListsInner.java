@@ -66,10 +66,10 @@ public class GetListsListsInner {
     return this;
   }
 
-   /**
+  /**
    * ID of the list
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -85,17 +85,16 @@ public class GetListsListsInner {
     this.id = id;
   }
 
-
   public GetListsListsInner name(String name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * Name of the list
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -111,17 +110,16 @@ public class GetListsListsInner {
     this.name = name;
   }
 
-
   public GetListsListsInner totalBlacklisted(Long totalBlacklisted) {
     
     this.totalBlacklisted = totalBlacklisted;
     return this;
   }
 
-   /**
+  /**
    * Number of blacklisted contacts in the list
    * @return totalBlacklisted
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TOTAL_BLACKLISTED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -137,17 +135,16 @@ public class GetListsListsInner {
     this.totalBlacklisted = totalBlacklisted;
   }
 
-
   public GetListsListsInner totalSubscribers(Long totalSubscribers) {
     
     this.totalSubscribers = totalSubscribers;
     return this;
   }
 
-   /**
+  /**
    * Number of contacts in the list
    * @return totalSubscribers
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TOTAL_SUBSCRIBERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -163,17 +160,16 @@ public class GetListsListsInner {
     this.totalSubscribers = totalSubscribers;
   }
 
-
   public GetListsListsInner uniqueSubscribers(Long uniqueSubscribers) {
     
     this.uniqueSubscribers = uniqueSubscribers;
     return this;
   }
 
-   /**
+  /**
    * Number of unique contacts in the list
    * @return uniqueSubscribers
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UNIQUE_SUBSCRIBERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -189,17 +185,16 @@ public class GetListsListsInner {
     this.uniqueSubscribers = uniqueSubscribers;
   }
 
-
   public GetListsListsInner folderId(Long folderId) {
     
     this.folderId = folderId;
     return this;
   }
 
-   /**
+  /**
    * ID of the folder
    * @return folderId
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_FOLDER_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

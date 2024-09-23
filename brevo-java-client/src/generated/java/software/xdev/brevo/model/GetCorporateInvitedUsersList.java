@@ -39,7 +39,7 @@ import java.util.StringJoiner;
 @JsonTypeName("getCorporateInvitedUsersList")
 public class GetCorporateInvitedUsersList {
   public static final String JSON_PROPERTY_USERS = "users";
-  private List<GetCorporateInvitedUsersListUsersInner> users;
+  private List<GetCorporateInvitedUsersListUsersInner> users = new ArrayList<>();
 
   public GetCorporateInvitedUsersList() {
   }
@@ -58,10 +58,10 @@ public class GetCorporateInvitedUsersList {
     return this;
   }
 
-   /**
+  /**
    * Get invited users list
    * @return users
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_USERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -46,10 +46,10 @@ public class Company {
   private Object attributes;
 
   public static final String JSON_PROPERTY_LINKED_CONTACTS_IDS = "linkedContactsIds";
-  private List<Integer> linkedContactsIds;
+  private List<Integer> linkedContactsIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_LINKED_DEALS_IDS = "linkedDealsIds";
-  private List<String> linkedDealsIds;
+  private List<String> linkedDealsIds = new ArrayList<>();
 
   public Company() {
   }
@@ -60,10 +60,10 @@ public class Company {
     return this;
   }
 
-   /**
+  /**
    * Unique comoany id
    * @return id
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -79,17 +79,16 @@ public class Company {
     this.id = id;
   }
 
-
   public Company attributes(Object attributes) {
     
     this.attributes = attributes;
     return this;
   }
 
-   /**
+  /**
    * Company attributes with values
    * @return attributes
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -105,7 +104,6 @@ public class Company {
     this.attributes = attributes;
   }
 
-
   public Company linkedContactsIds(List<Integer> linkedContactsIds) {
     
     this.linkedContactsIds = linkedContactsIds;
@@ -120,10 +118,10 @@ public class Company {
     return this;
   }
 
-   /**
+  /**
    * Contact ids for contacts linked to this company
    * @return linkedContactsIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LINKED_CONTACTS_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -139,7 +137,6 @@ public class Company {
     this.linkedContactsIds = linkedContactsIds;
   }
 
-
   public Company linkedDealsIds(List<String> linkedDealsIds) {
     
     this.linkedDealsIds = linkedDealsIds;
@@ -154,10 +151,10 @@ public class Company {
     return this;
   }
 
-   /**
+  /**
    * Deals ids for companies linked to this company
    * @return linkedDealsIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LINKED_DEALS_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

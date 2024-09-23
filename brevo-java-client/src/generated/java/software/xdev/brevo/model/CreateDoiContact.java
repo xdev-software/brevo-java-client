@@ -54,7 +54,7 @@ public class CreateDoiContact {
   private List<Long> includeListIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_EXCLUDE_LIST_IDS = "excludeListIds";
-  private List<Long> excludeListIds;
+  private List<Long> excludeListIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_TEMPLATE_ID = "templateId";
   private Long templateId;
@@ -71,10 +71,10 @@ public class CreateDoiContact {
     return this;
   }
 
-   /**
+  /**
    * Email address where the confirmation email will be sent. This email address will be the identifier for all other contact attributes.
    * @return email
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -90,7 +90,6 @@ public class CreateDoiContact {
     this.email = email;
   }
 
-
   public CreateDoiContact attributes(Map<String, Object> attributes) {
     
     this.attributes = attributes;
@@ -105,10 +104,10 @@ public class CreateDoiContact {
     return this;
   }
 
-   /**
+  /**
    * Pass the set of attributes and their values. **These attributes must be present in your Brevo account**. For eg. **{&#39;FNAME&#39;:&#39;Elly&#39;, &#39;LNAME&#39;:&#39;Roger&#39;}** 
    * @return attributes
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
@@ -124,7 +123,6 @@ public class CreateDoiContact {
     this.attributes = attributes;
   }
 
-
   public CreateDoiContact includeListIds(List<Long> includeListIds) {
     
     this.includeListIds = includeListIds;
@@ -139,10 +137,10 @@ public class CreateDoiContact {
     return this;
   }
 
-   /**
+  /**
    * Lists under user account where contact should be added
    * @return includeListIds
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_INCLUDE_LIST_IDS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -158,7 +156,6 @@ public class CreateDoiContact {
     this.includeListIds = includeListIds;
   }
 
-
   public CreateDoiContact excludeListIds(List<Long> excludeListIds) {
     
     this.excludeListIds = excludeListIds;
@@ -173,10 +170,10 @@ public class CreateDoiContact {
     return this;
   }
 
-   /**
+  /**
    * Lists under user account where contact should not be added
    * @return excludeListIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EXCLUDE_LIST_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -192,17 +189,16 @@ public class CreateDoiContact {
     this.excludeListIds = excludeListIds;
   }
 
-
   public CreateDoiContact templateId(Long templateId) {
     
     this.templateId = templateId;
     return this;
   }
 
-   /**
+  /**
    * Id of the Double opt-in (DOI) template
    * @return templateId
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -218,17 +214,16 @@ public class CreateDoiContact {
     this.templateId = templateId;
   }
 
-
   public CreateDoiContact redirectionUrl(String redirectionUrl) {
     
     this.redirectionUrl = redirectionUrl;
     return this;
   }
 
-   /**
+  /**
    * URL of the web page that user will be redirected to after clicking on the double opt in URL. When editing your DOI template you can reference this URL by using the tag **{{ params.DOIurl }}**. 
    * @return redirectionUrl
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_REDIRECTION_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

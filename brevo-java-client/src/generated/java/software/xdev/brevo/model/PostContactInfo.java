@@ -47,10 +47,10 @@ public class PostContactInfo {
     return this;
   }
 
-   /**
+  /**
    * Get contacts
    * @return contacts
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CONTACTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

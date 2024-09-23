@@ -39,7 +39,7 @@ import java.util.StringJoiner;
 @JsonTypeName("getAccountActivity")
 public class GetAccountActivity {
   public static final String JSON_PROPERTY_LOGS = "logs";
-  private List<GetAccountActivityLogsInner> logs;
+  private List<GetAccountActivityLogsInner> logs = new ArrayList<>();
 
   public GetAccountActivity() {
   }
@@ -58,10 +58,10 @@ public class GetAccountActivity {
     return this;
   }
 
-   /**
+  /**
    * Get user activity logs
    * @return logs
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LOGS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

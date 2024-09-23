@@ -55,10 +55,10 @@ public class GetContactCampaignStatsTransacAttributesInner {
     return this;
   }
 
-   /**
+  /**
    * Date of the order
    * @return orderDate
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ORDER_DATE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -74,17 +74,16 @@ public class GetContactCampaignStatsTransacAttributesInner {
     this.orderDate = orderDate;
   }
 
-
   public GetContactCampaignStatsTransacAttributesInner orderPrice(Float orderPrice) {
     
     this.orderPrice = orderPrice;
     return this;
   }
 
-   /**
+  /**
    * Price of the order
    * @return orderPrice
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ORDER_PRICE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -100,17 +99,16 @@ public class GetContactCampaignStatsTransacAttributesInner {
     this.orderPrice = orderPrice;
   }
 
-
   public GetContactCampaignStatsTransacAttributesInner orderId(Long orderId) {
     
     this.orderId = orderId;
     return this;
   }
 
-   /**
+  /**
    * ID of the order
    * @return orderId
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ORDER_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

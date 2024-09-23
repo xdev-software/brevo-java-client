@@ -58,10 +58,10 @@ public class SubAccountsResponseSubAccountsInner {
     return this;
   }
 
-   /**
+  /**
    * id of the sub-account
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -77,17 +77,16 @@ public class SubAccountsResponseSubAccountsInner {
     this.id = id;
   }
 
-
   public SubAccountsResponseSubAccountsInner companyName(String companyName) {
     
     this.companyName = companyName;
     return this;
   }
 
-   /**
+  /**
    * Name of the sub-account company
    * @return companyName
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COMPANY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -103,17 +102,16 @@ public class SubAccountsResponseSubAccountsInner {
     this.companyName = companyName;
   }
 
-
   public SubAccountsResponseSubAccountsInner active(Boolean active) {
     
     this.active = active;
     return this;
   }
 
-   /**
+  /**
    * Whether the sub-account is active or not
    * @return active
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ACTIVE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -129,17 +127,16 @@ public class SubAccountsResponseSubAccountsInner {
     this.active = active;
   }
 
-
   public SubAccountsResponseSubAccountsInner createdAt(Long createdAt) {
     
     this.createdAt = createdAt;
     return this;
   }
 
-   /**
+  /**
    * Timestamp when the sub-account was created
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

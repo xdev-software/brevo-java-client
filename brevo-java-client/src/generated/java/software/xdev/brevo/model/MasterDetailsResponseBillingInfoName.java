@@ -50,10 +50,10 @@ public class MasterDetailsResponseBillingInfoName {
     return this;
   }
 
-   /**
+  /**
    * First name for billing
    * @return givenName
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_GIVEN_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -69,17 +69,16 @@ public class MasterDetailsResponseBillingInfoName {
     this.givenName = givenName;
   }
 
-
   public MasterDetailsResponseBillingInfoName familyName(String familyName) {
     
     this.familyName = familyName;
     return this;
   }
 
-   /**
+  /**
    * Last name for billing
    * @return familyName
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_FAMILY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

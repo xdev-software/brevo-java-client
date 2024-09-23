@@ -68,7 +68,7 @@ public class GetExtendedList {
   private String createdAt;
 
   public static final String JSON_PROPERTY_CAMPAIGN_STATS = "campaignStats";
-  private List<GetExtendedListAllOfCampaignStats> campaignStats;
+  private List<GetExtendedListAllOfCampaignStats> campaignStats = new ArrayList<>();
 
   public static final String JSON_PROPERTY_DYNAMIC_LIST = "dynamicList";
   private Boolean dynamicList;
@@ -82,10 +82,10 @@ public class GetExtendedList {
     return this;
   }
 
-   /**
+  /**
    * ID of the list
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -101,17 +101,16 @@ public class GetExtendedList {
     this.id = id;
   }
 
-
   public GetExtendedList name(String name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * Name of the list
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -127,17 +126,16 @@ public class GetExtendedList {
     this.name = name;
   }
 
-
   public GetExtendedList totalBlacklisted(Long totalBlacklisted) {
     
     this.totalBlacklisted = totalBlacklisted;
     return this;
   }
 
-   /**
+  /**
    * Number of blacklisted contacts in the list
    * @return totalBlacklisted
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TOTAL_BLACKLISTED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -153,17 +151,16 @@ public class GetExtendedList {
     this.totalBlacklisted = totalBlacklisted;
   }
 
-
   public GetExtendedList totalSubscribers(Long totalSubscribers) {
     
     this.totalSubscribers = totalSubscribers;
     return this;
   }
 
-   /**
+  /**
    * Number of contacts in the list
    * @return totalSubscribers
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TOTAL_SUBSCRIBERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -179,17 +176,16 @@ public class GetExtendedList {
     this.totalSubscribers = totalSubscribers;
   }
 
-
   public GetExtendedList uniqueSubscribers(Long uniqueSubscribers) {
     
     this.uniqueSubscribers = uniqueSubscribers;
     return this;
   }
 
-   /**
+  /**
    * Number of unique contacts in the list
    * @return uniqueSubscribers
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UNIQUE_SUBSCRIBERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -205,17 +201,16 @@ public class GetExtendedList {
     this.uniqueSubscribers = uniqueSubscribers;
   }
 
-
   public GetExtendedList folderId(Long folderId) {
     
     this.folderId = folderId;
     return this;
   }
 
-   /**
+  /**
    * ID of the folder
    * @return folderId
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_FOLDER_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -231,17 +226,16 @@ public class GetExtendedList {
     this.folderId = folderId;
   }
 
-
   public GetExtendedList createdAt(String createdAt) {
     
     this.createdAt = createdAt;
     return this;
   }
 
-   /**
+  /**
    * Creation UTC date-time of the list (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -257,7 +251,6 @@ public class GetExtendedList {
     this.createdAt = createdAt;
   }
 
-
   public GetExtendedList campaignStats(List<GetExtendedListAllOfCampaignStats> campaignStats) {
     
     this.campaignStats = campaignStats;
@@ -272,10 +265,10 @@ public class GetExtendedList {
     return this;
   }
 
-   /**
+  /**
    * Get campaignStats
    * @return campaignStats
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CAMPAIGN_STATS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -291,17 +284,16 @@ public class GetExtendedList {
     this.campaignStats = campaignStats;
   }
 
-
   public GetExtendedList dynamicList(Boolean dynamicList) {
     
     this.dynamicList = dynamicList;
     return this;
   }
 
-   /**
+  /**
    * Status telling if the list is dynamic or not (true&#x3D;dynamic, false&#x3D;not dynamic)
    * @return dynamicList
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DYNAMIC_LIST)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

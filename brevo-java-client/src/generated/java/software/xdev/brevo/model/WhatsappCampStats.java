@@ -61,10 +61,10 @@ public class WhatsappCampStats {
     return this;
   }
 
-   /**
+  /**
    * Get sent
    * @return sent
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -80,17 +80,16 @@ public class WhatsappCampStats {
     this.sent = sent;
   }
 
-
   public WhatsappCampStats delivered(Integer delivered) {
     
     this.delivered = delivered;
     return this;
   }
 
-   /**
+  /**
    * Get delivered
    * @return delivered
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DELIVERED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -106,17 +105,16 @@ public class WhatsappCampStats {
     this.delivered = delivered;
   }
 
-
   public WhatsappCampStats read(Integer read) {
     
     this.read = read;
     return this;
   }
 
-   /**
+  /**
    * Get read
    * @return read
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_READ)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -132,17 +130,16 @@ public class WhatsappCampStats {
     this.read = read;
   }
 
-
   public WhatsappCampStats unsubscribe(Integer unsubscribe) {
     
     this.unsubscribe = unsubscribe;
     return this;
   }
 
-   /**
+  /**
    * Get unsubscribe
    * @return unsubscribe
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UNSUBSCRIBE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -158,17 +155,16 @@ public class WhatsappCampStats {
     this.unsubscribe = unsubscribe;
   }
 
-
   public WhatsappCampStats notSent(Integer notSent) {
     
     this.notSent = notSent;
     return this;
   }
 
-   /**
+  /**
    * Get notSent
    * @return notSent
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NOT_SENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

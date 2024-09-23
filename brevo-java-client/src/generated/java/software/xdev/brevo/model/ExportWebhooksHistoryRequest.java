@@ -102,9 +102,9 @@ public class ExportWebhooksHistoryRequest {
     
     MISSING_PARAMETER("missing_parameter"),
     
-    HARDBOUNCE("hardBounce"),
+    HARD_BOUNCE("hardBounce"),
     
-    SOFTBOUNCE("softBounce"),
+    SOFT_BOUNCE("softBounce"),
     
     DELIVERED("delivered"),
     
@@ -126,11 +126,11 @@ public class ExportWebhooksHistoryRequest {
     
     ERROR("error"),
     
-    UNIQUEOPENED("uniqueOpened"),
+    UNIQUE_OPENED("uniqueOpened"),
     
-    LOADEDBYPROXY("loadedByProxy"),
+    LOADED_BY_PROXY("loadedByProxy"),
     
-    ALLEVENTS("allEvents");
+    ALL_EVENTS("allEvents");
 
     private String value;
 
@@ -183,10 +183,10 @@ public class ExportWebhooksHistoryRequest {
     return this;
   }
 
-   /**
+  /**
    * Number of days in the past including today (positive integer). _Not compatible with &#39;startDate&#39; and &#39;endDate&#39;_
    * @return days
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DAYS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -202,17 +202,16 @@ public class ExportWebhooksHistoryRequest {
     this.days = days;
   }
 
-
   public ExportWebhooksHistoryRequest startDate(String startDate) {
     
     this.startDate = startDate;
     return this;
   }
 
-   /**
+  /**
    * Mandatory if endDate is used. Starting date of the history (YYYY-MM-DD). Must be lower than equal to endDate
    * @return startDate
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_START_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -228,17 +227,16 @@ public class ExportWebhooksHistoryRequest {
     this.startDate = startDate;
   }
 
-
   public ExportWebhooksHistoryRequest endDate(String endDate) {
     
     this.endDate = endDate;
     return this;
   }
 
-   /**
+  /**
    * Mandatory if startDate is used. Ending date of the report (YYYY-MM-DD). Must be greater than equal to startDate
    * @return endDate
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_END_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -254,17 +252,16 @@ public class ExportWebhooksHistoryRequest {
     this.endDate = endDate;
   }
 
-
   public ExportWebhooksHistoryRequest sort(String sort) {
     
     this.sort = sort;
     return this;
   }
 
-   /**
+  /**
    * Sorting order of records (asc or desc)
    * @return sort
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SORT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -280,17 +277,16 @@ public class ExportWebhooksHistoryRequest {
     this.sort = sort;
   }
 
-
   public ExportWebhooksHistoryRequest type(TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Filter the history based on webhook type
    * @return type
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -306,17 +302,16 @@ public class ExportWebhooksHistoryRequest {
     this.type = type;
   }
 
-
   public ExportWebhooksHistoryRequest event(EventEnum event) {
     
     this.event = event;
     return this;
   }
 
-   /**
+  /**
    * Filter the history for a specific event type
    * @return event
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EVENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -332,17 +327,16 @@ public class ExportWebhooksHistoryRequest {
     this.event = event;
   }
 
-
   public ExportWebhooksHistoryRequest notifyURL(String notifyURL) {
     
     this.notifyURL = notifyURL;
     return this;
   }
 
-   /**
+  /**
    * Webhook URL to receive CSV file link
    * @return notifyURL
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NOTIFY_U_R_L)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -358,17 +352,16 @@ public class ExportWebhooksHistoryRequest {
     this.notifyURL = notifyURL;
   }
 
-
   public ExportWebhooksHistoryRequest webhookId(Integer webhookId) {
     
     this.webhookId = webhookId;
     return this;
   }
 
-   /**
+  /**
    * Filter the history for a specific webhook id
    * @return webhookId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_WEBHOOK_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -384,17 +377,16 @@ public class ExportWebhooksHistoryRequest {
     this.webhookId = webhookId;
   }
 
-
   public ExportWebhooksHistoryRequest email(String email) {
     
     this.email = email;
     return this;
   }
 
-   /**
+  /**
    * Filter the history for a specific email
    * @return email
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -410,17 +402,16 @@ public class ExportWebhooksHistoryRequest {
     this.email = email;
   }
 
-
   public ExportWebhooksHistoryRequest messageId(Integer messageId) {
     
     this.messageId = messageId;
     return this;
   }
 
-   /**
+  /**
    * Filter the history for a specific message id. Applicable only for transactional webhooks.
    * @return messageId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

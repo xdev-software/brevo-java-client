@@ -134,10 +134,10 @@ public class GetWhatsappCampaignsCampaignsInner {
     return this;
   }
 
-   /**
+  /**
    * ID of the WhatsApp Campaign
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -153,17 +153,16 @@ public class GetWhatsappCampaignsCampaignsInner {
     this.id = id;
   }
 
-
   public GetWhatsappCampaignsCampaignsInner campaignName(String campaignName) {
     
     this.campaignName = campaignName;
     return this;
   }
 
-   /**
+  /**
    * Name of the WhatsApp Campaign
    * @return campaignName
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CAMPAIGN_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -179,17 +178,16 @@ public class GetWhatsappCampaignsCampaignsInner {
     this.campaignName = campaignName;
   }
 
-
   public GetWhatsappCampaignsCampaignsInner templateId(String templateId) {
     
     this.templateId = templateId;
     return this;
   }
 
-   /**
+  /**
    * Id of the WhatsApp template
    * @return templateId
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -205,17 +203,16 @@ public class GetWhatsappCampaignsCampaignsInner {
     this.templateId = templateId;
   }
 
-
   public GetWhatsappCampaignsCampaignsInner campaignStatus(CampaignStatusEnum campaignStatus) {
     
     this.campaignStatus = campaignStatus;
     return this;
   }
 
-   /**
+  /**
    * Status of the WhatsApp Campaign
    * @return campaignStatus
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CAMPAIGN_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -231,17 +228,16 @@ public class GetWhatsappCampaignsCampaignsInner {
     this.campaignStatus = campaignStatus;
   }
 
-
   public GetWhatsappCampaignsCampaignsInner scheduledAt(String scheduledAt) {
     
     this.scheduledAt = scheduledAt;
     return this;
   }
 
-   /**
+  /**
    * UTC date-time on which WhatsApp campaign is scheduled. Should be in YYYY-MM-DDTHH:mm:ss.SSSZ format
    * @return scheduledAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -257,17 +253,16 @@ public class GetWhatsappCampaignsCampaignsInner {
     this.scheduledAt = scheduledAt;
   }
 
-
   public GetWhatsappCampaignsCampaignsInner errorReason(String errorReason) {
     
     this.errorReason = errorReason;
     return this;
   }
 
-   /**
+  /**
    * Error Reason associated with the WhatsApp campaign sending
    * @return errorReason
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ERROR_REASON)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -283,17 +278,16 @@ public class GetWhatsappCampaignsCampaignsInner {
     this.errorReason = errorReason;
   }
 
-
   public GetWhatsappCampaignsCampaignsInner invalidatedContacts(Long invalidatedContacts) {
     
     this.invalidatedContacts = invalidatedContacts;
     return this;
   }
 
-   /**
+  /**
    * Count of invalidated contacts
    * @return invalidatedContacts
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_INVALIDATED_CONTACTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -309,17 +303,16 @@ public class GetWhatsappCampaignsCampaignsInner {
     this.invalidatedContacts = invalidatedContacts;
   }
 
-
   public GetWhatsappCampaignsCampaignsInner readPercentage(Float readPercentage) {
     
     this.readPercentage = readPercentage;
     return this;
   }
 
-   /**
+  /**
    * Read percentage of the the WhatsApp campaign created
    * @return readPercentage
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_READ_PERCENTAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -335,17 +328,16 @@ public class GetWhatsappCampaignsCampaignsInner {
     this.readPercentage = readPercentage;
   }
 
-
   public GetWhatsappCampaignsCampaignsInner stats(WhatsappCampStats stats) {
     
     this.stats = stats;
     return this;
   }
 
-   /**
+  /**
    * Get stats
    * @return stats
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_STATS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -361,17 +353,16 @@ public class GetWhatsappCampaignsCampaignsInner {
     this.stats = stats;
   }
 
-
   public GetWhatsappCampaignsCampaignsInner createdAt(String createdAt) {
     
     this.createdAt = createdAt;
     return this;
   }
 
-   /**
+  /**
    * Creation UTC date-time of the WhatsApp template (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -387,17 +378,16 @@ public class GetWhatsappCampaignsCampaignsInner {
     this.createdAt = createdAt;
   }
 
-
   public GetWhatsappCampaignsCampaignsInner modifiedAt(String modifiedAt) {
     
     this.modifiedAt = modifiedAt;
     return this;
   }
 
-   /**
+  /**
    * UTC date-time of last modification of the WhatsApp template (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return modifiedAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

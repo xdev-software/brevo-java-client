@@ -51,10 +51,10 @@ public class GetExtendedListAllOfCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * ID of the campaign
    * @return campaignId
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CAMPAIGN_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -70,17 +70,16 @@ public class GetExtendedListAllOfCampaignStats {
     this.campaignId = campaignId;
   }
 
-
   public GetExtendedListAllOfCampaignStats stats(GetCampaignStats stats) {
     
     this.stats = stats;
     return this;
   }
 
-   /**
+  /**
    * Get stats
    * @return stats
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

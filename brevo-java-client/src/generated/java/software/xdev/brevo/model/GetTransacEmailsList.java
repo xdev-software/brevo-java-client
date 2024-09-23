@@ -43,7 +43,7 @@ public class GetTransacEmailsList {
   private Long count;
 
   public static final String JSON_PROPERTY_TRANSACTIONAL_EMAILS = "transactionalEmails";
-  private List<GetTransacEmailsListTransactionalEmailsInner> transactionalEmails;
+  private List<GetTransacEmailsListTransactionalEmailsInner> transactionalEmails = new ArrayList<>();
 
   public GetTransacEmailsList() {
   }
@@ -54,10 +54,10 @@ public class GetTransacEmailsList {
     return this;
   }
 
-   /**
+  /**
    * Total number of transactional emails available on your account according to the passed filter
    * @return count
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -73,7 +73,6 @@ public class GetTransacEmailsList {
     this.count = count;
   }
 
-
   public GetTransacEmailsList transactionalEmails(List<GetTransacEmailsListTransactionalEmailsInner> transactionalEmails) {
     
     this.transactionalEmails = transactionalEmails;
@@ -88,10 +87,10 @@ public class GetTransacEmailsList {
     return this;
   }
 
-   /**
+  /**
    * Get transactionalEmails
    * @return transactionalEmails
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TRANSACTIONAL_EMAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

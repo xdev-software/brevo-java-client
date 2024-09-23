@@ -43,7 +43,7 @@ public class GetScheduledEmailByBatchId {
   private Integer count;
 
   public static final String JSON_PROPERTY_BATCHES = "batches";
-  private List<GetScheduledEmailByBatchIdBatchesInner> batches;
+  private List<GetScheduledEmailByBatchIdBatchesInner> batches = new ArrayList<>();
 
   public GetScheduledEmailByBatchId() {
   }
@@ -54,10 +54,10 @@ public class GetScheduledEmailByBatchId {
     return this;
   }
 
-   /**
+  /**
    * Total number of batches
    * @return count
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -73,7 +73,6 @@ public class GetScheduledEmailByBatchId {
     this.count = count;
   }
 
-
   public GetScheduledEmailByBatchId batches(List<GetScheduledEmailByBatchIdBatchesInner> batches) {
     
     this.batches = batches;
@@ -88,10 +87,10 @@ public class GetScheduledEmailByBatchId {
     return this;
   }
 
-   /**
+  /**
    * Get batches
    * @return batches
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_BATCHES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

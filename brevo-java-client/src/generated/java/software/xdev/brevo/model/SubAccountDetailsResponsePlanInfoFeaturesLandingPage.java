@@ -50,10 +50,10 @@ public class SubAccountDetailsResponsePlanInfoFeaturesLandingPage {
     return this;
   }
 
-   /**
+  /**
    * Quantity of landing pages provided
    * @return quantity
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_QUANTITY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -69,17 +69,16 @@ public class SubAccountDetailsResponsePlanInfoFeaturesLandingPage {
     this.quantity = quantity;
   }
 
-
   public SubAccountDetailsResponsePlanInfoFeaturesLandingPage remaining(Long remaining) {
     
     this.remaining = remaining;
     return this;
   }
 
-   /**
+  /**
    * Available landing pages for use
    * @return remaining
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REMAINING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

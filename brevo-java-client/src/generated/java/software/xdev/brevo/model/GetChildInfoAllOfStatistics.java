@@ -54,10 +54,10 @@ public class GetChildInfoAllOfStatistics {
     return this;
   }
 
-   /**
+  /**
    * Overall emails sent for the previous month
    * @return previousMonthTotalSent
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PREVIOUS_MONTH_TOTAL_SENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -73,17 +73,16 @@ public class GetChildInfoAllOfStatistics {
     this.previousMonthTotalSent = previousMonthTotalSent;
   }
 
-
   public GetChildInfoAllOfStatistics currentMonthTotalSent(Long currentMonthTotalSent) {
     
     this.currentMonthTotalSent = currentMonthTotalSent;
     return this;
   }
 
-   /**
+  /**
    * Overall emails sent for current month
    * @return currentMonthTotalSent
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CURRENT_MONTH_TOTAL_SENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -99,17 +98,16 @@ public class GetChildInfoAllOfStatistics {
     this.currentMonthTotalSent = currentMonthTotalSent;
   }
 
-
   public GetChildInfoAllOfStatistics totalSent(Long totalSent) {
     
     this.totalSent = totalSent;
     return this;
   }
 
-   /**
+  /**
    * Overall emails sent for since the account exists
    * @return totalSent
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TOTAL_SENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -62,10 +62,10 @@ public class AbTestCampaignResultClickedLinks {
     return this;
   }
 
-   /**
+  /**
    * Information on clicked links for a particular version
    * @return versionA
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VERSION_A)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -81,7 +81,6 @@ public class AbTestCampaignResultClickedLinks {
     this.versionA = versionA;
   }
 
-
   public AbTestCampaignResultClickedLinks versionB(List<AbTestVersionClicksInner> versionB) {
     
     this.versionB = versionB;
@@ -96,10 +95,10 @@ public class AbTestCampaignResultClickedLinks {
     return this;
   }
 
-   /**
+  /**
    * Information on clicked links for a particular version
    * @return versionB
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VERSION_B)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

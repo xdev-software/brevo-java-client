@@ -70,10 +70,10 @@ public class GetSmsCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Number of delivered SMS
    * @return delivered
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DELIVERED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -89,17 +89,16 @@ public class GetSmsCampaignStats {
     this.delivered = delivered;
   }
 
-
   public GetSmsCampaignStats sent(Long sent) {
     
     this.sent = sent;
     return this;
   }
 
-   /**
+  /**
    * Number of sent SMS
    * @return sent
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -115,17 +114,16 @@ public class GetSmsCampaignStats {
     this.sent = sent;
   }
 
-
   public GetSmsCampaignStats processing(Long processing) {
     
     this.processing = processing;
     return this;
   }
 
-   /**
+  /**
    * Number of processing SMS
    * @return processing
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PROCESSING)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -141,17 +139,16 @@ public class GetSmsCampaignStats {
     this.processing = processing;
   }
 
-
   public GetSmsCampaignStats softBounces(Long softBounces) {
     
     this.softBounces = softBounces;
     return this;
   }
 
-   /**
+  /**
    * Number of softbounced SMS
    * @return softBounces
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SOFT_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -167,17 +164,16 @@ public class GetSmsCampaignStats {
     this.softBounces = softBounces;
   }
 
-
   public GetSmsCampaignStats hardBounces(Long hardBounces) {
     
     this.hardBounces = hardBounces;
     return this;
   }
 
-   /**
+  /**
    * Number of hardbounced SMS
    * @return hardBounces
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_HARD_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -193,17 +189,16 @@ public class GetSmsCampaignStats {
     this.hardBounces = hardBounces;
   }
 
-
   public GetSmsCampaignStats unsubscriptions(Long unsubscriptions) {
     
     this.unsubscriptions = unsubscriptions;
     return this;
   }
 
-   /**
+  /**
    * Number of unsubscription SMS
    * @return unsubscriptions
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UNSUBSCRIPTIONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -219,17 +214,16 @@ public class GetSmsCampaignStats {
     this.unsubscriptions = unsubscriptions;
   }
 
-
   public GetSmsCampaignStats answered(Long answered) {
     
     this.answered = answered;
     return this;
   }
 
-   /**
+  /**
    * Number of replies to the SMS
    * @return answered
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ANSWERED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

@@ -51,13 +51,13 @@ public class Task {
   private String name;
 
   public static final String JSON_PROPERTY_CONTACTS_IDS = "contactsIds";
-  private List<Integer> contactsIds;
+  private List<Integer> contactsIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_DEALS_IDS = "dealsIds";
-  private List<String> dealsIds;
+  private List<String> dealsIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_COMPANIES_IDS = "companiesIds";
-  private List<String> companiesIds;
+  private List<String> companiesIds = new ArrayList<>();
 
   public Task() {
   }
@@ -68,10 +68,10 @@ public class Task {
     return this;
   }
 
-   /**
+  /**
    * Unique task id
    * @return id
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -87,17 +87,16 @@ public class Task {
     this.id = id;
   }
 
-
   public Task taskTypeId(String taskTypeId) {
     
     this.taskTypeId = taskTypeId;
     return this;
   }
 
-   /**
+  /**
    * Id for type of task e.g Call / Email / Meeting etc.
    * @return taskTypeId
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TASK_TYPE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -113,17 +112,16 @@ public class Task {
     this.taskTypeId = taskTypeId;
   }
 
-
   public Task name(String name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * Name of task
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -139,7 +137,6 @@ public class Task {
     this.name = name;
   }
 
-
   public Task contactsIds(List<Integer> contactsIds) {
     
     this.contactsIds = contactsIds;
@@ -154,10 +151,10 @@ public class Task {
     return this;
   }
 
-   /**
+  /**
    * Contact ids for contacts linked to this task
    * @return contactsIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CONTACTS_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -173,7 +170,6 @@ public class Task {
     this.contactsIds = contactsIds;
   }
 
-
   public Task dealsIds(List<String> dealsIds) {
     
     this.dealsIds = dealsIds;
@@ -188,10 +184,10 @@ public class Task {
     return this;
   }
 
-   /**
+  /**
    * Deal ids for deals a task is linked to
    * @return dealsIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DEALS_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -207,7 +203,6 @@ public class Task {
     this.dealsIds = dealsIds;
   }
 
-
   public Task companiesIds(List<String> companiesIds) {
     
     this.companiesIds = companiesIds;
@@ -222,10 +217,10 @@ public class Task {
     return this;
   }
 
-   /**
+  /**
    * Companies ids for companies a task is linked to
    * @return companiesIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COMPANIES_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

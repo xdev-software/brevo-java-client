@@ -39,7 +39,7 @@ import java.util.StringJoiner;
 @JsonTypeName("getWhatsappEventReport")
 public class GetWhatsappEventReport {
   public static final String JSON_PROPERTY_EVENTS = "events";
-  private List<GetWhatsappEventReportEventsInner> events;
+  private List<GetWhatsappEventReportEventsInner> events = new ArrayList<>();
 
   public GetWhatsappEventReport() {
   }
@@ -58,10 +58,10 @@ public class GetWhatsappEventReport {
     return this;
   }
 
-   /**
+  /**
    * Get events
    * @return events
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EVENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

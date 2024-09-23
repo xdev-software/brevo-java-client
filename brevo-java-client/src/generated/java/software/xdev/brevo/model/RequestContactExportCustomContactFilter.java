@@ -43,13 +43,13 @@ public class RequestContactExportCustomContactFilter {
    * **Mandatory if neither actionForEmailCampaigns nor actionForSmsCampaigns is passed.** This will export the contacts on the basis of provided action applied on contacts as per the list id. * **allContacts** - Fetch the list of all contacts for a particular list. * **subscribed &amp; unsubscribed** - Fetch the list of subscribed / unsubscribed (blacklisted via any means) contacts for a particular list. * **unsubscribedPerList** - Fetch the list of contacts that are unsubscribed from a particular list only. 
    */
   public enum ActionForContactsEnum {
-    ALLCONTACTS("allContacts"),
+    ALL_CONTACTS("allContacts"),
     
     SUBSCRIBED("subscribed"),
     
     UNSUBSCRIBED("unsubscribed"),
     
-    UNSUBSCRIBEDPERLIST("unsubscribedPerList");
+    UNSUBSCRIBED_PER_LIST("unsubscribedPerList");
 
     private String value;
 
@@ -87,17 +87,17 @@ public class RequestContactExportCustomContactFilter {
   public enum ActionForEmailCampaignsEnum {
     OPENERS("openers"),
     
-    NONOPENERS("nonOpeners"),
+    NON_OPENERS("nonOpeners"),
     
     CLICKERS("clickers"),
     
-    NONCLICKERS("nonClickers"),
+    NON_CLICKERS("nonClickers"),
     
     UNSUBSCRIBED("unsubscribed"),
     
-    HARDBOUNCES("hardBounces"),
+    HARD_BOUNCES("hardBounces"),
     
-    SOFTBOUNCES("softBounces");
+    SOFT_BOUNCES("softBounces");
 
     private String value;
 
@@ -133,9 +133,9 @@ public class RequestContactExportCustomContactFilter {
    * **Mandatory if neither actionForContacts nor actionForEmailCampaigns is passed.** This will export the contacts on the basis of provided action applied on sms campaigns. * **unsubscribed** - Fetch the list of all unsubscribed (blacklisted via any means) contacts for all / particular sms campaigns. * **hardBounces &amp; softBounces** - Fetch the list of hard bounces / soft bounces for all / particular sms campaigns. 
    */
   public enum ActionForSmsCampaignsEnum {
-    HARDBOUNCES("hardBounces"),
+    HARD_BOUNCES("hardBounces"),
     
-    SOFTBOUNCES("softBounces"),
+    SOFT_BOUNCES("softBounces"),
     
     UNSUBSCRIBED("unsubscribed");
 
@@ -187,10 +187,10 @@ public class RequestContactExportCustomContactFilter {
     return this;
   }
 
-   /**
+  /**
    * **Mandatory if neither actionForEmailCampaigns nor actionForSmsCampaigns is passed.** This will export the contacts on the basis of provided action applied on contacts as per the list id. * **allContacts** - Fetch the list of all contacts for a particular list. * **subscribed &amp; unsubscribed** - Fetch the list of subscribed / unsubscribed (blacklisted via any means) contacts for a particular list. * **unsubscribedPerList** - Fetch the list of contacts that are unsubscribed from a particular list only. 
    * @return actionForContacts
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ACTION_FOR_CONTACTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -206,17 +206,16 @@ public class RequestContactExportCustomContactFilter {
     this.actionForContacts = actionForContacts;
   }
 
-
   public RequestContactExportCustomContactFilter actionForEmailCampaigns(ActionForEmailCampaignsEnum actionForEmailCampaigns) {
     
     this.actionForEmailCampaigns = actionForEmailCampaigns;
     return this;
   }
 
-   /**
+  /**
    * **Mandatory if neither actionForContacts nor actionForSmsCampaigns is passed.** This will export the contacts on the basis of provided action applied on email campaigns. * **openers &amp; nonOpeners** - emailCampaignId is mandatory. Fetch the list of readers / non-readers for a particular email campaign. * **clickers &amp; nonClickers** - emailCampaignId is mandatory. Fetch the list of clickers / non-clickers for a particular email campaign. * **unsubscribed** - emailCampaignId is mandatory. Fetch the list of all unsubscribed (blacklisted via any means) contacts for a particular email campaign. * **hardBounces &amp; softBounces** - emailCampaignId is optional. Fetch the list of hard bounces / soft bounces for a particular / all email campaign(s). 
    * @return actionForEmailCampaigns
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ACTION_FOR_EMAIL_CAMPAIGNS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -232,17 +231,16 @@ public class RequestContactExportCustomContactFilter {
     this.actionForEmailCampaigns = actionForEmailCampaigns;
   }
 
-
   public RequestContactExportCustomContactFilter actionForSmsCampaigns(ActionForSmsCampaignsEnum actionForSmsCampaigns) {
     
     this.actionForSmsCampaigns = actionForSmsCampaigns;
     return this;
   }
 
-   /**
+  /**
    * **Mandatory if neither actionForContacts nor actionForEmailCampaigns is passed.** This will export the contacts on the basis of provided action applied on sms campaigns. * **unsubscribed** - Fetch the list of all unsubscribed (blacklisted via any means) contacts for all / particular sms campaigns. * **hardBounces &amp; softBounces** - Fetch the list of hard bounces / soft bounces for all / particular sms campaigns. 
    * @return actionForSmsCampaigns
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ACTION_FOR_SMS_CAMPAIGNS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -258,17 +256,16 @@ public class RequestContactExportCustomContactFilter {
     this.actionForSmsCampaigns = actionForSmsCampaigns;
   }
 
-
   public RequestContactExportCustomContactFilter listId(Long listId) {
     
     this.listId = listId;
     return this;
   }
 
-   /**
+  /**
    * **Mandatory if actionForContacts is passed, ignored otherwise.** Id of the list for which the corresponding action shall be applied in the filter. 
    * @return listId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LIST_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -284,17 +281,16 @@ public class RequestContactExportCustomContactFilter {
     this.listId = listId;
   }
 
-
   public RequestContactExportCustomContactFilter emailCampaignId(Long emailCampaignId) {
     
     this.emailCampaignId = emailCampaignId;
     return this;
   }
 
-   /**
+  /**
    * Considered only if **actionForEmailCampaigns** is passed, ignored otherwise. **Mandatory if action is one of the following - openers, nonOpeners, clickers, nonClickers, unsubscribed.** The id of the email campaign for which the corresponding action shall be applied in the filter. 
    * @return emailCampaignId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EMAIL_CAMPAIGN_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -310,17 +306,16 @@ public class RequestContactExportCustomContactFilter {
     this.emailCampaignId = emailCampaignId;
   }
 
-
   public RequestContactExportCustomContactFilter smsCampaignId(Long smsCampaignId) {
     
     this.smsCampaignId = smsCampaignId;
     return this;
   }
 
-   /**
+  /**
    * Considered only if **actionForSmsCampaigns** is passed, ignored otherwise. The id of sms campaign for which the corresponding action shall be applied in the filter. 
    * @return smsCampaignId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SMS_CAMPAIGN_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

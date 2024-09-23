@@ -46,7 +46,7 @@ public class Pipeline {
   private String pipeline;
 
   public static final String JSON_PROPERTY_STAGES = "stages";
-  private List<PipelineStage> stages;
+  private List<PipelineStage> stages = new ArrayList<>();
 
   public Pipeline() {
   }
@@ -57,10 +57,10 @@ public class Pipeline {
     return this;
   }
 
-   /**
+  /**
    * Pipeline name
    * @return pipelineName
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PIPELINE_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -76,17 +76,16 @@ public class Pipeline {
     this.pipelineName = pipelineName;
   }
 
-
   public Pipeline pipeline(String pipeline) {
     
     this.pipeline = pipeline;
     return this;
   }
 
-   /**
+  /**
    * Pipeline id
    * @return pipeline
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PIPELINE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -102,7 +101,6 @@ public class Pipeline {
     this.pipeline = pipeline;
   }
 
-
   public Pipeline stages(List<PipelineStage> stages) {
     
     this.stages = stages;
@@ -117,10 +115,10 @@ public class Pipeline {
     return this;
   }
 
-   /**
+  /**
    * List of stages
    * @return stages
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_STAGES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -39,7 +39,7 @@ import java.util.StringJoiner;
 @JsonTypeName("getInboundEmailEvents")
 public class GetInboundEmailEvents {
   public static final String JSON_PROPERTY_EVENTS = "events";
-  private List<GetInboundEmailEventsEventsInner> events;
+  private List<GetInboundEmailEventsEventsInner> events = new ArrayList<>();
 
   public GetInboundEmailEvents() {
   }
@@ -58,10 +58,10 @@ public class GetInboundEmailEvents {
     return this;
   }
 
-   /**
+  /**
    * Get events
    * @return events
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EVENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

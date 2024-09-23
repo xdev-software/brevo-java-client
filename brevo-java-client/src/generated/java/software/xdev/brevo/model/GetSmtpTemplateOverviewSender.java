@@ -54,10 +54,10 @@ public class GetSmtpTemplateOverviewSender {
     return this;
   }
 
-   /**
+  /**
    * From email for the template
    * @return name
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -73,17 +73,16 @@ public class GetSmtpTemplateOverviewSender {
     this.name = name;
   }
 
-
   public GetSmtpTemplateOverviewSender email(String email) {
     
     this.email = email;
     return this;
   }
 
-   /**
+  /**
    * From email for the template
    * @return email
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -99,17 +98,16 @@ public class GetSmtpTemplateOverviewSender {
     this.email = email;
   }
 
-
   public GetSmtpTemplateOverviewSender id(String id) {
     
     this.id = id;
     return this;
   }
 
-   /**
+  /**
    * Sender id of the template
    * @return id
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

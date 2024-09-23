@@ -57,10 +57,10 @@ public class CorporateGroupUnlinkGroupIdSubAccountsPutRequest {
     return this;
   }
 
-   /**
+  /**
    * List of sub-account ids
    * @return subAccountIds
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SUB_ACCOUNT_IDS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

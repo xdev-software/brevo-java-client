@@ -54,10 +54,10 @@ public class GetSendersListSendersInnerIpsInner {
     return this;
   }
 
-   /**
+  /**
    * Dedicated IP available in your account
    * @return ip
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_IP)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -73,17 +73,16 @@ public class GetSendersListSendersInnerIpsInner {
     this.ip = ip;
   }
 
-
   public GetSendersListSendersInnerIpsInner domain(String domain) {
     
     this.domain = domain;
     return this;
   }
 
-   /**
+  /**
    * Domain of the IP
    * @return domain
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DOMAIN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -99,17 +98,16 @@ public class GetSendersListSendersInnerIpsInner {
     this.domain = domain;
   }
 
-
   public GetSendersListSendersInnerIpsInner weight(Long weight) {
     
     this.weight = weight;
     return this;
   }
 
-   /**
+  /**
    * Weight of the IP for this sender
    * @return weight
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_WEIGHT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

@@ -31,6 +31,7 @@ import java.util.StringJoiner;
 public class GetContactInfoIdentifierParameter {
   public GetContactInfoIdentifierParameter() {
   }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {

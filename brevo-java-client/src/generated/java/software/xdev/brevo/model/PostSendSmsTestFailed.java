@@ -47,10 +47,10 @@ public class PostSendSmsTestFailed {
   private String message;
 
   public static final String JSON_PROPERTY_UNEXISTING_SMS = "unexistingSms";
-  private List<String> unexistingSms;
+  private List<String> unexistingSms = new ArrayList<>();
 
   public static final String JSON_PROPERTY_WITHOUT_LIST_SMS = "withoutListSms";
-  private List<String> withoutListSms;
+  private List<String> withoutListSms = new ArrayList<>();
 
   public PostSendSmsTestFailed() {
   }
@@ -61,10 +61,10 @@ public class PostSendSmsTestFailed {
     return this;
   }
 
-   /**
+  /**
    * Response code
    * @return code
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -80,17 +80,16 @@ public class PostSendSmsTestFailed {
     this.code = code;
   }
 
-
   public PostSendSmsTestFailed message(String message) {
     
     this.message = message;
     return this;
   }
 
-   /**
+  /**
    * Response message
    * @return message
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MESSAGE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -106,7 +105,6 @@ public class PostSendSmsTestFailed {
     this.message = message;
   }
 
-
   public PostSendSmsTestFailed unexistingSms(List<String> unexistingSms) {
     
     this.unexistingSms = unexistingSms;
@@ -121,10 +119,10 @@ public class PostSendSmsTestFailed {
     return this;
   }
 
-   /**
+  /**
    * Get unexistingSms
    * @return unexistingSms
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UNEXISTING_SMS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -140,7 +138,6 @@ public class PostSendSmsTestFailed {
     this.unexistingSms = unexistingSms;
   }
 
-
   public PostSendSmsTestFailed withoutListSms(List<String> withoutListSms) {
     
     this.withoutListSms = withoutListSms;
@@ -155,10 +152,10 @@ public class PostSendSmsTestFailed {
     return this;
   }
 
-   /**
+  /**
    * Get withoutListSms
    * @return withoutListSms
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_WITHOUT_LIST_SMS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

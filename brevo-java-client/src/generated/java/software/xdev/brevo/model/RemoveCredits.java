@@ -50,10 +50,10 @@ public class RemoveCredits {
     return this;
   }
 
-   /**
+  /**
    * **Required if email credits are empty.** SMS credits to be removed from the child account 
    * @return sms
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SMS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -69,17 +69,16 @@ public class RemoveCredits {
     this.sms = sms;
   }
 
-
   public RemoveCredits email(Long email) {
     
     this.email = email;
     return this;
   }
 
-   /**
+  /**
    * **Required if sms credits are empty.** Email credits to be removed from the child account 
    * @return email
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

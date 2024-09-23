@@ -20,9 +20,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import software.xdev.brevo.model.GetCampaignRecipients;
 import software.xdev.brevo.model.GetExtendedCampaignOverviewAllOfSender;
-import software.xdev.brevo.model.GetExtendedCampaignStats;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import java.io.UnsupportedEncodingException;
@@ -237,10 +235,10 @@ public class GetEmailCampaign {
   private Long returnBounce;
 
   public static final String JSON_PROPERTY_RECIPIENTS = "recipients";
-  private GetCampaignRecipients recipients;
+  private Object recipients;
 
   public static final String JSON_PROPERTY_STATISTICS = "statistics";
-  private GetExtendedCampaignStats statistics;
+  private Object statistics;
 
   public GetEmailCampaign() {
   }
@@ -251,10 +249,10 @@ public class GetEmailCampaign {
     return this;
   }
 
-   /**
+  /**
    * ID of the campaign
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -270,17 +268,16 @@ public class GetEmailCampaign {
     this.id = id;
   }
 
-
   public GetEmailCampaign name(String name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * Name of the campaign
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -296,17 +293,16 @@ public class GetEmailCampaign {
     this.name = name;
   }
 
-
   public GetEmailCampaign subject(String subject) {
     
     this.subject = subject;
     return this;
   }
 
-   /**
+  /**
    * Subject of the campaign. Only available if &#x60;abTesting&#x60; flag of the campaign is &#x60;false&#x60;
    * @return subject
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUBJECT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -322,17 +318,16 @@ public class GetEmailCampaign {
     this.subject = subject;
   }
 
-
   public GetEmailCampaign previewText(String previewText) {
     
     this.previewText = previewText;
     return this;
   }
 
-   /**
+  /**
    * Preview text or preheader of the email campaign
    * @return previewText
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PREVIEW_TEXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -348,17 +343,16 @@ public class GetEmailCampaign {
     this.previewText = previewText;
   }
 
-
   public GetEmailCampaign type(TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Type of campaign
    * @return type
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -374,17 +368,16 @@ public class GetEmailCampaign {
     this.type = type;
   }
 
-
   public GetEmailCampaign status(StatusEnum status) {
     
     this.status = status;
     return this;
   }
 
-   /**
+  /**
    * Status of the campaign
    * @return status
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -400,17 +393,16 @@ public class GetEmailCampaign {
     this.status = status;
   }
 
-
   public GetEmailCampaign scheduledAt(String scheduledAt) {
     
     this.scheduledAt = scheduledAt;
     return this;
   }
 
-   /**
+  /**
    * UTC date-time on which campaign is scheduled (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return scheduledAt
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -426,17 +418,16 @@ public class GetEmailCampaign {
     this.scheduledAt = scheduledAt;
   }
 
-
   public GetEmailCampaign abTesting(Boolean abTesting) {
     
     this.abTesting = abTesting;
     return this;
   }
 
-   /**
+  /**
    * Status of A/B Test for the campaign. abTesting &#x3D; false means it is disabled, &amp; abTesting &#x3D; true means it is enabled.
    * @return abTesting
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_AB_TESTING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -452,17 +443,16 @@ public class GetEmailCampaign {
     this.abTesting = abTesting;
   }
 
-
   public GetEmailCampaign subjectA(String subjectA) {
     
     this.subjectA = subjectA;
     return this;
   }
 
-   /**
+  /**
    * Subject A of the ab-test campaign. Only available if &#x60;abTesting&#x60; flag of the campaign is &#x60;true&#x60;
    * @return subjectA
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUBJECT_A)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -478,17 +468,16 @@ public class GetEmailCampaign {
     this.subjectA = subjectA;
   }
 
-
   public GetEmailCampaign subjectB(String subjectB) {
     
     this.subjectB = subjectB;
     return this;
   }
 
-   /**
+  /**
    * Subject B of the ab-test campaign. Only available if &#x60;abTesting&#x60; flag of the campaign is &#x60;true&#x60;
    * @return subjectB
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUBJECT_B)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -504,17 +493,16 @@ public class GetEmailCampaign {
     this.subjectB = subjectB;
   }
 
-
   public GetEmailCampaign splitRule(Integer splitRule) {
     
     this.splitRule = splitRule;
     return this;
   }
 
-   /**
+  /**
    * The size of your ab-test groups. Only available if &#x60;abTesting&#x60; flag of the campaign is &#x60;true&#x60;
    * @return splitRule
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SPLIT_RULE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -530,17 +518,16 @@ public class GetEmailCampaign {
     this.splitRule = splitRule;
   }
 
-
   public GetEmailCampaign winnerCriteria(String winnerCriteria) {
     
     this.winnerCriteria = winnerCriteria;
     return this;
   }
 
-   /**
+  /**
    * Criteria for the winning version. Only available if &#x60;abTesting&#x60; flag of the campaign is &#x60;true&#x60;
    * @return winnerCriteria
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_WINNER_CRITERIA)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -556,17 +543,16 @@ public class GetEmailCampaign {
     this.winnerCriteria = winnerCriteria;
   }
 
-
   public GetEmailCampaign winnerDelay(Integer winnerDelay) {
     
     this.winnerDelay = winnerDelay;
     return this;
   }
 
-   /**
+  /**
    * The duration of the test in hours at the end of which the winning version will be sent. Only available if &#x60;abTesting&#x60; flag of the campaign is &#x60;true&#x60;
    * @return winnerDelay
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_WINNER_DELAY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -582,17 +568,16 @@ public class GetEmailCampaign {
     this.winnerDelay = winnerDelay;
   }
 
-
   public GetEmailCampaign sendAtBestTime(Boolean sendAtBestTime) {
     
     this.sendAtBestTime = sendAtBestTime;
     return this;
   }
 
-   /**
+  /**
    * It is true if you have chosen to send your campaign at best time, otherwise it is false
    * @return sendAtBestTime
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SEND_AT_BEST_TIME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -608,17 +593,16 @@ public class GetEmailCampaign {
     this.sendAtBestTime = sendAtBestTime;
   }
 
-
   public GetEmailCampaign testSent(Boolean testSent) {
     
     this.testSent = testSent;
     return this;
   }
 
-   /**
+  /**
    * Retrieved the status of test email sending. (true&#x3D;Test email has been sent  false&#x3D;Test email has not been sent)
    * @return testSent
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TEST_SENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -634,17 +618,16 @@ public class GetEmailCampaign {
     this.testSent = testSent;
   }
 
-
   public GetEmailCampaign header(String header) {
     
     this.header = header;
     return this;
   }
 
-   /**
+  /**
    * Header of the campaign
    * @return header
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_HEADER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -660,17 +643,16 @@ public class GetEmailCampaign {
     this.header = header;
   }
 
-
   public GetEmailCampaign footer(String footer) {
     
     this.footer = footer;
     return this;
   }
 
-   /**
+  /**
    * Footer of the campaign
    * @return footer
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_FOOTER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -686,17 +668,16 @@ public class GetEmailCampaign {
     this.footer = footer;
   }
 
-
   public GetEmailCampaign sender(GetExtendedCampaignOverviewAllOfSender sender) {
     
     this.sender = sender;
     return this;
   }
 
-   /**
+  /**
    * Get sender
    * @return sender
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SENDER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -712,17 +693,16 @@ public class GetEmailCampaign {
     this.sender = sender;
   }
 
-
   public GetEmailCampaign replyTo(String replyTo) {
     
     this.replyTo = replyTo;
     return this;
   }
 
-   /**
+  /**
    * Email defined as the \&quot;Reply to\&quot; of the campaign
    * @return replyTo
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_REPLY_TO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -738,17 +718,16 @@ public class GetEmailCampaign {
     this.replyTo = replyTo;
   }
 
-
   public GetEmailCampaign toField(String toField) {
     
     this.toField = toField;
     return this;
   }
 
-   /**
+  /**
    * Customisation of the \&quot;to\&quot; field of the campaign
    * @return toField
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TO_FIELD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -764,17 +743,16 @@ public class GetEmailCampaign {
     this.toField = toField;
   }
 
-
   public GetEmailCampaign htmlContent(String htmlContent) {
     
     this.htmlContent = htmlContent;
     return this;
   }
 
-   /**
+  /**
    * HTML content of the campaign
    * @return htmlContent
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_HTML_CONTENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -790,17 +768,16 @@ public class GetEmailCampaign {
     this.htmlContent = htmlContent;
   }
 
-
   public GetEmailCampaign shareLink(String shareLink) {
     
     this.shareLink = shareLink;
     return this;
   }
 
-   /**
+  /**
    * Link to share the campaign on social medias
    * @return shareLink
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SHARE_LINK)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -816,17 +793,16 @@ public class GetEmailCampaign {
     this.shareLink = shareLink;
   }
 
-
   public GetEmailCampaign tag(String tag) {
     
     this.tag = tag;
     return this;
   }
 
-   /**
+  /**
    * Tag of the campaign
    * @return tag
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TAG)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -842,17 +818,16 @@ public class GetEmailCampaign {
     this.tag = tag;
   }
 
-
   public GetEmailCampaign createdAt(String createdAt) {
     
     this.createdAt = createdAt;
     return this;
   }
 
-   /**
+  /**
    * Creation UTC date-time of the campaign (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -868,17 +843,16 @@ public class GetEmailCampaign {
     this.createdAt = createdAt;
   }
 
-
   public GetEmailCampaign modifiedAt(String modifiedAt) {
     
     this.modifiedAt = modifiedAt;
     return this;
   }
 
-   /**
+  /**
    * UTC date-time of last modification of the campaign (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return modifiedAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -894,17 +868,16 @@ public class GetEmailCampaign {
     this.modifiedAt = modifiedAt;
   }
 
-
   public GetEmailCampaign inlineImageActivation(Boolean inlineImageActivation) {
     
     this.inlineImageActivation = inlineImageActivation;
     return this;
   }
 
-   /**
+  /**
    * Status of inline image. inlineImageActivation &#x3D; false means image can’t be embedded, &amp; inlineImageActivation &#x3D; true means image can be embedded, in the email.
    * @return inlineImageActivation
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_INLINE_IMAGE_ACTIVATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -920,17 +893,16 @@ public class GetEmailCampaign {
     this.inlineImageActivation = inlineImageActivation;
   }
 
-
   public GetEmailCampaign mirrorActive(Boolean mirrorActive) {
     
     this.mirrorActive = mirrorActive;
     return this;
   }
 
-   /**
+  /**
    * Status of mirror links in campaign. mirrorActive &#x3D; false means mirror links are deactivated, &amp; mirrorActive &#x3D; true means mirror links are activated, in the campaign
    * @return mirrorActive
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MIRROR_ACTIVE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -946,17 +918,16 @@ public class GetEmailCampaign {
     this.mirrorActive = mirrorActive;
   }
 
-
   public GetEmailCampaign recurring(Boolean recurring) {
     
     this.recurring = recurring;
     return this;
   }
 
-   /**
+  /**
    * FOR TRIGGER ONLY ! Type of trigger campaign.recurring &#x3D; false means contact can receive the same Trigger campaign only once, &amp; recurring &#x3D; true means contact can receive the same Trigger campaign several times
    * @return recurring
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RECURRING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -972,17 +943,16 @@ public class GetEmailCampaign {
     this.recurring = recurring;
   }
 
-
   public GetEmailCampaign sentDate(String sentDate) {
     
     this.sentDate = sentDate;
     return this;
   }
 
-   /**
+  /**
    * Sent UTC date-time of the campaign (YYYY-MM-DDTHH:mm:ss.SSSZ). Only available if &#39;status&#39; of the campaign is &#39;sent&#39;
    * @return sentDate
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SENT_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -998,17 +968,16 @@ public class GetEmailCampaign {
     this.sentDate = sentDate;
   }
 
-
   public GetEmailCampaign returnBounce(Long returnBounce) {
     
     this.returnBounce = returnBounce;
     return this;
   }
 
-   /**
+  /**
    * Total number of non-delivered campaigns for a particular campaign id.
    * @return returnBounce
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RETURN_BOUNCE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -1024,55 +993,53 @@ public class GetEmailCampaign {
     this.returnBounce = returnBounce;
   }
 
-
-  public GetEmailCampaign recipients(GetCampaignRecipients recipients) {
+  public GetEmailCampaign recipients(Object recipients) {
     
     this.recipients = recipients;
     return this;
   }
 
-   /**
+  /**
    * Get recipients
    * @return recipients
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_RECIPIENTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public GetCampaignRecipients getRecipients() {
+  public Object getRecipients() {
     return recipients;
   }
 
 
   @JsonProperty(JSON_PROPERTY_RECIPIENTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRecipients(GetCampaignRecipients recipients) {
+  public void setRecipients(Object recipients) {
     this.recipients = recipients;
   }
 
-
-  public GetEmailCampaign statistics(GetExtendedCampaignStats statistics) {
+  public GetEmailCampaign statistics(Object statistics) {
     
     this.statistics = statistics;
     return this;
   }
 
-   /**
+  /**
    * Get statistics
    * @return statistics
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATISTICS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public GetExtendedCampaignStats getStatistics() {
+  public Object getStatistics() {
     return statistics;
   }
 
 
   @JsonProperty(JSON_PROPERTY_STATISTICS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatistics(GetExtendedCampaignStats statistics) {
+  public void setStatistics(Object statistics) {
     this.statistics = statistics;
   }
 
@@ -1504,12 +1471,22 @@ public class GetEmailCampaign {
 
     // add `recipients` to the URL query string
     if (getRecipients() != null) {
-      joiner.add(getRecipients().toUrlQueryString(prefix + "recipients" + suffix));
+      try {
+        joiner.add(String.format("%srecipients%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRecipients()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
 
     // add `statistics` to the URL query string
     if (getStatistics() != null) {
-      joiner.add(getStatistics().toUrlQueryString(prefix + "statistics" + suffix));
+      try {
+        joiner.add(String.format("%sstatistics%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatistics()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
 
     return joiner.toString();

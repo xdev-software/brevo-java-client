@@ -82,10 +82,10 @@ public class GetExtendedCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Overall statistics of the campaign
    * @return globalStats
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_GLOBAL_STATS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -101,7 +101,6 @@ public class GetExtendedCampaignStats {
     this.globalStats = globalStats;
   }
 
-
   public GetExtendedCampaignStats campaignStats(List<GetCampaignStats> campaignStats) {
     
     this.campaignStats = campaignStats;
@@ -116,10 +115,10 @@ public class GetExtendedCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * List-wise statistics of the campaign.
    * @return campaignStats
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CAMPAIGN_STATS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -135,17 +134,16 @@ public class GetExtendedCampaignStats {
     this.campaignStats = campaignStats;
   }
 
-
   public GetExtendedCampaignStats mirrorClick(Long mirrorClick) {
     
     this.mirrorClick = mirrorClick;
     return this;
   }
 
-   /**
+  /**
    * Number of clicks on mirror link
    * @return mirrorClick
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MIRROR_CLICK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -161,17 +159,16 @@ public class GetExtendedCampaignStats {
     this.mirrorClick = mirrorClick;
   }
 
-
   public GetExtendedCampaignStats remaining(Long remaining) {
     
     this.remaining = remaining;
     return this;
   }
 
-   /**
+  /**
    * Number of remaning emails to send
    * @return remaining
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_REMAINING)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -187,17 +184,16 @@ public class GetExtendedCampaignStats {
     this.remaining = remaining;
   }
 
-
   public GetExtendedCampaignStats linksStats(Object linksStats) {
     
     this.linksStats = linksStats;
     return this;
   }
 
-   /**
+  /**
    * Statistics about the number of clicks for the links
    * @return linksStats
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LINKS_STATS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -213,7 +209,6 @@ public class GetExtendedCampaignStats {
     this.linksStats = linksStats;
   }
 
-
   public GetExtendedCampaignStats statsByDomain(Map<String, GetCampaignStats> statsByDomain) {
     
     this.statsByDomain = statsByDomain;
@@ -225,10 +220,10 @@ public class GetExtendedCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Get statsByDomain
    * @return statsByDomain
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATS_BY_DOMAIN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -244,17 +239,16 @@ public class GetExtendedCampaignStats {
     this.statsByDomain = statsByDomain;
   }
 
-
   public GetExtendedCampaignStats statsByDevice(GetStatsByDevice statsByDevice) {
     
     this.statsByDevice = statsByDevice;
     return this;
   }
 
-   /**
+  /**
    * Get statsByDevice
    * @return statsByDevice
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATS_BY_DEVICE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -270,7 +264,6 @@ public class GetExtendedCampaignStats {
     this.statsByDevice = statsByDevice;
   }
 
-
   public GetExtendedCampaignStats statsByBrowser(Map<String, GetDeviceBrowserStats> statsByBrowser) {
     
     this.statsByBrowser = statsByBrowser;
@@ -282,10 +275,10 @@ public class GetExtendedCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Get statsByBrowser
    * @return statsByBrowser
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATS_BY_BROWSER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

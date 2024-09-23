@@ -67,7 +67,7 @@ public class GetAllExternalFeedsFeedsInner {
     
     TOKEN("token"),
     
-    NOAUTH("noAuth");
+    NO_AUTH("noAuth");
 
     private String value;
 
@@ -132,10 +132,10 @@ public class GetAllExternalFeedsFeedsInner {
     return this;
   }
 
-   /**
+  /**
    * ID of the feed
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -151,17 +151,16 @@ public class GetAllExternalFeedsFeedsInner {
     this.id = id;
   }
 
-
   public GetAllExternalFeedsFeedsInner name(String name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * Name of the feed
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -177,17 +176,16 @@ public class GetAllExternalFeedsFeedsInner {
     this.name = name;
   }
 
-
   public GetAllExternalFeedsFeedsInner url(String url) {
     
     this.url = url;
     return this;
   }
 
-   /**
+  /**
    * URL of the feed
    * @return url
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -203,17 +201,16 @@ public class GetAllExternalFeedsFeedsInner {
     this.url = url;
   }
 
-
   public GetAllExternalFeedsFeedsInner authType(AuthTypeEnum authType) {
     
     this.authType = authType;
     return this;
   }
 
-   /**
+  /**
    * Auth type of the feed: * &#x60;basic&#x60; * &#x60;token&#x60; * &#x60;noAuth&#x60; 
    * @return authType
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_AUTH_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -229,17 +226,16 @@ public class GetAllExternalFeedsFeedsInner {
     this.authType = authType;
   }
 
-
   public GetAllExternalFeedsFeedsInner username(String username) {
     
     this.username = username;
     return this;
   }
 
-   /**
+  /**
    * Username for authType &#x60;basic&#x60;
    * @return username
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_USERNAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -255,17 +251,16 @@ public class GetAllExternalFeedsFeedsInner {
     this.username = username;
   }
 
-
   public GetAllExternalFeedsFeedsInner password(String password) {
     
     this.password = password;
     return this;
   }
 
-   /**
+  /**
    * Password for authType &#x60;basic&#x60;
    * @return password
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PASSWORD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -281,17 +276,16 @@ public class GetAllExternalFeedsFeedsInner {
     this.password = password;
   }
 
-
   public GetAllExternalFeedsFeedsInner token(String token) {
     
     this.token = token;
     return this;
   }
 
-   /**
+  /**
    * Token for authType &#x60;token&#x60;
    * @return token
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TOKEN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -307,7 +301,6 @@ public class GetAllExternalFeedsFeedsInner {
     this.token = token;
   }
 
-
   public GetAllExternalFeedsFeedsInner headers(List<GetExternalFeedByUUIDHeadersInner> headers) {
     
     this.headers = headers;
@@ -322,10 +315,10 @@ public class GetAllExternalFeedsFeedsInner {
     return this;
   }
 
-   /**
+  /**
    * Custom headers for the feed
    * @return headers
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_HEADERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -341,19 +334,18 @@ public class GetAllExternalFeedsFeedsInner {
     this.headers = headers;
   }
 
-
   public GetAllExternalFeedsFeedsInner maxRetries(Integer maxRetries) {
     
     this.maxRetries = maxRetries;
     return this;
   }
 
-   /**
+  /**
    * Maximum number of retries on the feed url
    * minimum: 0
    * maximum: 5
    * @return maxRetries
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MAX_RETRIES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -369,17 +361,16 @@ public class GetAllExternalFeedsFeedsInner {
     this.maxRetries = maxRetries;
   }
 
-
   public GetAllExternalFeedsFeedsInner cache(Boolean cache) {
     
     this.cache = cache;
     return this;
   }
 
-   /**
+  /**
    * Toggle caching of feed url response
    * @return cache
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CACHE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -395,17 +386,16 @@ public class GetAllExternalFeedsFeedsInner {
     this.cache = cache;
   }
 
-
   public GetAllExternalFeedsFeedsInner createdAt(OffsetDateTime createdAt) {
     
     this.createdAt = createdAt;
     return this;
   }
 
-   /**
+  /**
    * Datetime on which the feed was created
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -421,17 +411,16 @@ public class GetAllExternalFeedsFeedsInner {
     this.createdAt = createdAt;
   }
 
-
   public GetAllExternalFeedsFeedsInner modifiedAt(OffsetDateTime modifiedAt) {
     
     this.modifiedAt = modifiedAt;
     return this;
   }
 
-   /**
+  /**
    * Datetime on which the feed was modified
    * @return modifiedAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

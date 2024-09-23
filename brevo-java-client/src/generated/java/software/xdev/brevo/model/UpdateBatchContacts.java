@@ -39,7 +39,7 @@ import java.util.StringJoiner;
 @JsonTypeName("updateBatchContacts")
 public class UpdateBatchContacts {
   public static final String JSON_PROPERTY_CONTACTS = "contacts";
-  private List<UpdateBatchContactsContactsInner> contacts;
+  private List<UpdateBatchContactsContactsInner> contacts = new ArrayList<>();
 
   public UpdateBatchContacts() {
   }
@@ -58,10 +58,10 @@ public class UpdateBatchContacts {
     return this;
   }
 
-   /**
+  /**
    * List of contacts to be updated
    * @return contacts
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CONTACTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

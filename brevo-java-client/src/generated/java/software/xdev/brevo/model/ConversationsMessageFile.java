@@ -63,10 +63,10 @@ public class ConversationsMessageFile {
     return this;
   }
 
-   /**
+  /**
    * Name of the file
    * @return filename
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_FILENAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -82,18 +82,17 @@ public class ConversationsMessageFile {
     this.filename = filename;
   }
 
-
   public ConversationsMessageFile size(Long size) {
     
     this.size = size;
     return this;
   }
 
-   /**
+  /**
    * Size in bytes
    * minimum: 0
    * @return size
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SIZE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -109,17 +108,16 @@ public class ConversationsMessageFile {
     this.size = size;
   }
 
-
   public ConversationsMessageFile isImage(Boolean isImage) {
     
     this.isImage = isImage;
     return this;
   }
 
-   /**
+  /**
    * Whether the file is an image
    * @return isImage
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IS_IMAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -135,17 +133,16 @@ public class ConversationsMessageFile {
     this.isImage = isImage;
   }
 
-
   public ConversationsMessageFile url(String url) {
     
     this.url = url;
     return this;
   }
 
-   /**
+  /**
    * URL of the file
    * @return url
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -161,17 +158,16 @@ public class ConversationsMessageFile {
     this.url = url;
   }
 
-
   public ConversationsMessageFile imageInfo(ConversationsMessageFileImageInfo imageInfo) {
     
     this.imageInfo = imageInfo;
     return this;
   }
 
-   /**
+  /**
    * Get imageInfo
    * @return imageInfo
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IMAGE_INFO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -50,10 +50,10 @@ public class UploadImageToGallery {
     return this;
   }
 
-   /**
+  /**
    * The absolute url of the image (**no local file**). Maximum allowed size for image is **2MB**. Allowed extensions for images are: #### jpeg, jpg, png, bmp, gif. 
    * @return imageUrl
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_IMAGE_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -69,17 +69,16 @@ public class UploadImageToGallery {
     this.imageUrl = imageUrl;
   }
 
-
   public UploadImageToGallery name(String name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * Name of the image.
    * @return name
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

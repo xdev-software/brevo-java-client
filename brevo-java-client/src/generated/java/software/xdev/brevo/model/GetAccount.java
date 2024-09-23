@@ -81,10 +81,10 @@ public class GetAccount {
     return this;
   }
 
-   /**
+  /**
    * Login Email
    * @return email
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -100,17 +100,16 @@ public class GetAccount {
     this.email = email;
   }
 
-
   public GetAccount firstName(String firstName) {
     
     this.firstName = firstName;
     return this;
   }
 
-   /**
+  /**
    * First Name
    * @return firstName
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_FIRST_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -126,17 +125,16 @@ public class GetAccount {
     this.firstName = firstName;
   }
 
-
   public GetAccount lastName(String lastName) {
     
     this.lastName = lastName;
     return this;
   }
 
-   /**
+  /**
    * Last Name
    * @return lastName
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LAST_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -152,17 +150,16 @@ public class GetAccount {
     this.lastName = lastName;
   }
 
-
   public GetAccount companyName(String companyName) {
     
     this.companyName = companyName;
     return this;
   }
 
-   /**
+  /**
    * Name of the company
    * @return companyName
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COMPANY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -178,17 +175,16 @@ public class GetAccount {
     this.companyName = companyName;
   }
 
-
   public GetAccount address(GetExtendedClientAllOfAddress address) {
     
     this.address = address;
     return this;
   }
 
-   /**
+  /**
    * Get address
    * @return address
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ADDRESS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -204,7 +200,6 @@ public class GetAccount {
     this.address = address;
   }
 
-
   public GetAccount plan(List<GetAccountAllOfPlan> plan) {
     
     this.plan = plan;
@@ -219,10 +214,10 @@ public class GetAccount {
     return this;
   }
 
-   /**
+  /**
    * Information about your plans and credits
    * @return plan
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PLAN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -238,17 +233,16 @@ public class GetAccount {
     this.plan = plan;
   }
 
-
   public GetAccount relay(GetAccountAllOfRelay relay) {
     
     this.relay = relay;
     return this;
   }
 
-   /**
+  /**
    * Get relay
    * @return relay
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_RELAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -264,17 +258,16 @@ public class GetAccount {
     this.relay = relay;
   }
 
-
   public GetAccount marketingAutomation(GetAccountAllOfMarketingAutomation marketingAutomation) {
     
     this.marketingAutomation = marketingAutomation;
     return this;
   }
 
-   /**
+  /**
    * Get marketingAutomation
    * @return marketingAutomation
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MARKETING_AUTOMATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

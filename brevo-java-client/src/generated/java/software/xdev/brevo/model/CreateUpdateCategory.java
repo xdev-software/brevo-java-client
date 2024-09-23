@@ -62,10 +62,10 @@ public class CreateUpdateCategory {
     return this;
   }
 
-   /**
+  /**
    * Unique Category ID as saved in the shop 
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -81,17 +81,16 @@ public class CreateUpdateCategory {
     this.id = id;
   }
 
-
   public CreateUpdateCategory name(String name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * **Mandatory in case of creation**. Name of the Category, as displayed in the shop 
    * @return name
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -107,17 +106,16 @@ public class CreateUpdateCategory {
     this.name = name;
   }
 
-
   public CreateUpdateCategory url(String url) {
     
     this.url = url;
     return this;
   }
 
-   /**
+  /**
    * URL to the category
    * @return url
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -133,17 +131,16 @@ public class CreateUpdateCategory {
     this.url = url;
   }
 
-
   public CreateUpdateCategory updateEnabled(Boolean updateEnabled) {
     
     this.updateEnabled = updateEnabled;
     return this;
   }
 
-   /**
+  /**
    * Facilitate to update the existing category in the same request (updateEnabled &#x3D; true)
    * @return updateEnabled
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UPDATE_ENABLED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -159,17 +156,16 @@ public class CreateUpdateCategory {
     this.updateEnabled = updateEnabled;
   }
 
-
   public CreateUpdateCategory deletedAt(String deletedAt) {
     
     this.deletedAt = deletedAt;
     return this;
   }
 
-   /**
+  /**
    * UTC date-time (YYYY-MM-DDTHH:mm:ss.SSSZ) of the category deleted from the shop&#39;s database
    * @return deletedAt
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DELETED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

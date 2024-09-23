@@ -46,10 +46,10 @@ public class PutRevokeUserPermission {
     return this;
   }
 
-   /**
+  /**
    * Email address of the user.
    * @return email
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

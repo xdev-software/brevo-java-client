@@ -83,10 +83,10 @@ public class CreateSmtpTemplate {
     return this;
   }
 
-   /**
+  /**
    * Tag of the template
    * @return tag
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TAG)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -102,17 +102,16 @@ public class CreateSmtpTemplate {
     this.tag = tag;
   }
 
-
   public CreateSmtpTemplate sender(CreateSmtpTemplateSender sender) {
     
     this.sender = sender;
     return this;
   }
 
-   /**
+  /**
    * Get sender
    * @return sender
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SENDER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -128,17 +127,16 @@ public class CreateSmtpTemplate {
     this.sender = sender;
   }
 
-
   public CreateSmtpTemplate templateName(String templateName) {
     
     this.templateName = templateName;
     return this;
   }
 
-   /**
+  /**
    * Name of the template
    * @return templateName
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TEMPLATE_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -154,17 +152,16 @@ public class CreateSmtpTemplate {
     this.templateName = templateName;
   }
 
-
   public CreateSmtpTemplate htmlContent(String htmlContent) {
     
     this.htmlContent = htmlContent;
     return this;
   }
 
-   /**
+  /**
    * Body of the message (HTML version). The field must have more than 10 characters. **REQUIRED if htmlUrl is empty** 
    * @return htmlContent
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_HTML_CONTENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -180,17 +177,16 @@ public class CreateSmtpTemplate {
     this.htmlContent = htmlContent;
   }
 
-
   public CreateSmtpTemplate htmlUrl(String htmlUrl) {
     
     this.htmlUrl = htmlUrl;
     return this;
   }
 
-   /**
+  /**
    * Url which contents the body of the email message. REQUIRED if htmlContent is empty
    * @return htmlUrl
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_HTML_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -206,17 +202,16 @@ public class CreateSmtpTemplate {
     this.htmlUrl = htmlUrl;
   }
 
-
   public CreateSmtpTemplate subject(String subject) {
     
     this.subject = subject;
     return this;
   }
 
-   /**
+  /**
    * Subject of the template
    * @return subject
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SUBJECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -232,17 +227,16 @@ public class CreateSmtpTemplate {
     this.subject = subject;
   }
 
-
   public CreateSmtpTemplate replyTo(String replyTo) {
     
     this.replyTo = replyTo;
     return this;
   }
 
-   /**
+  /**
    * Email on which campaign recipients will be able to reply to
    * @return replyTo
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REPLY_TO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -258,17 +252,16 @@ public class CreateSmtpTemplate {
     this.replyTo = replyTo;
   }
 
-
   public CreateSmtpTemplate toField(String toField) {
     
     this.toField = toField;
     return this;
   }
 
-   /**
+  /**
    * To personalize the **To** Field. If you want to include the first name and last name of your recipient, add **{FNAME} {LNAME}**. These contact attributes must already exist in your Brevo account. If input parameter **params** used please use **{{contact.FNAME}} {{contact.LNAME}}** for personalization 
    * @return toField
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TO_FIELD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -284,17 +277,16 @@ public class CreateSmtpTemplate {
     this.toField = toField;
   }
 
-
   public CreateSmtpTemplate attachmentUrl(String attachmentUrl) {
     
     this.attachmentUrl = attachmentUrl;
     return this;
   }
 
-   /**
+  /**
    * Absolute url of the attachment (**no local file**). Extension allowed: #### xlsx, xls, ods, docx, docm, doc, csv, pdf, txt, gif, jpg, jpeg, png, tif, tiff, rtf, bmp, cgm, css, shtml, html, htm, zip, xml, ppt, pptx, tar, ez, ics, mobi, msg, pub and eps&#39; 
    * @return attachmentUrl
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ATTACHMENT_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -310,17 +302,16 @@ public class CreateSmtpTemplate {
     this.attachmentUrl = attachmentUrl;
   }
 
-
   public CreateSmtpTemplate isActive(Boolean isActive) {
     
     this.isActive = isActive;
     return this;
   }
 
-   /**
+  /**
    * Status of template. isActive &#x3D; true means template is active and isActive &#x3D; false means template is inactive
    * @return isActive
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IS_ACTIVE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

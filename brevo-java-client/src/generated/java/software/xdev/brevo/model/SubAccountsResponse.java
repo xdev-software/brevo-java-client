@@ -43,7 +43,7 @@ public class SubAccountsResponse {
   private Integer count;
 
   public static final String JSON_PROPERTY_SUB_ACCOUNTS = "subAccounts";
-  private List<SubAccountsResponseSubAccountsInner> subAccounts;
+  private List<SubAccountsResponseSubAccountsInner> subAccounts = new ArrayList<>();
 
   public SubAccountsResponse() {
   }
@@ -54,10 +54,10 @@ public class SubAccountsResponse {
     return this;
   }
 
-   /**
+  /**
    * Total number of subaccounts
    * @return count
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -73,7 +73,6 @@ public class SubAccountsResponse {
     this.count = count;
   }
 
-
   public SubAccountsResponse subAccounts(List<SubAccountsResponseSubAccountsInner> subAccounts) {
     
     this.subAccounts = subAccounts;
@@ -88,10 +87,10 @@ public class SubAccountsResponse {
     return this;
   }
 
-   /**
+  /**
    * Get subAccounts
    * @return subAccounts
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUB_ACCOUNTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

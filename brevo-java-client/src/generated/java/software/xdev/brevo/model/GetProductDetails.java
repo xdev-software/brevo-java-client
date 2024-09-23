@@ -76,7 +76,7 @@ public class GetProductDetails {
   private Float price;
 
   public static final String JSON_PROPERTY_CATEGORIES = "categories";
-  private List<String> categories;
+  private List<String> categories = new ArrayList<>();
 
   public static final String JSON_PROPERTY_PARENT_ID = "parentId";
   private String parentId;
@@ -105,10 +105,10 @@ public class GetProductDetails {
     return this;
   }
 
-   /**
+  /**
    * Product ID for which you requested the details
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -124,17 +124,16 @@ public class GetProductDetails {
     this.id = id;
   }
 
-
   public GetProductDetails name(String name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * Name of the product for which you requested the details
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -150,17 +149,16 @@ public class GetProductDetails {
     this.name = name;
   }
 
-
   public GetProductDetails createdAt(String createdAt) {
     
     this.createdAt = createdAt;
     return this;
   }
 
-   /**
+  /**
    * Creation UTC date-time of the product (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -176,17 +174,16 @@ public class GetProductDetails {
     this.createdAt = createdAt;
   }
 
-
   public GetProductDetails modifiedAt(String modifiedAt) {
     
     this.modifiedAt = modifiedAt;
     return this;
   }
 
-   /**
+  /**
    * Last modification UTC date-time of the product (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return modifiedAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -202,17 +199,16 @@ public class GetProductDetails {
     this.modifiedAt = modifiedAt;
   }
 
-
   public GetProductDetails url(String url) {
     
     this.url = url;
     return this;
   }
 
-   /**
+  /**
    * URL to the product
    * @return url
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -228,17 +224,16 @@ public class GetProductDetails {
     this.url = url;
   }
 
-
   public GetProductDetails imageUrl(String imageUrl) {
     
     this.imageUrl = imageUrl;
     return this;
   }
 
-   /**
+  /**
    * Absolute URL to the cover image of the product
    * @return imageUrl
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IMAGE_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -254,17 +249,16 @@ public class GetProductDetails {
     this.imageUrl = imageUrl;
   }
 
-
   public GetProductDetails sku(String sku) {
     
     this.sku = sku;
     return this;
   }
 
-   /**
+  /**
    * Product identifier from the shop
    * @return sku
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SKU)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -280,17 +274,16 @@ public class GetProductDetails {
     this.sku = sku;
   }
 
-
   public GetProductDetails price(Float price) {
     
     this.price = price;
     return this;
   }
 
-   /**
+  /**
    * Price of the product
    * @return price
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PRICE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -306,7 +299,6 @@ public class GetProductDetails {
     this.price = price;
   }
 
-
   public GetProductDetails categories(List<String> categories) {
     
     this.categories = categories;
@@ -321,10 +313,10 @@ public class GetProductDetails {
     return this;
   }
 
-   /**
+  /**
    * Category ID-s of the product
    * @return categories
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CATEGORIES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -340,17 +332,16 @@ public class GetProductDetails {
     this.categories = categories;
   }
 
-
   public GetProductDetails parentId(String parentId) {
     
     this.parentId = parentId;
     return this;
   }
 
-   /**
+  /**
    * Parent product id of the product
    * @return parentId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PARENT_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -366,17 +357,16 @@ public class GetProductDetails {
     this.parentId = parentId;
   }
 
-
   public GetProductDetails s3Original(String s3Original) {
     
     this.s3Original = s3Original;
     return this;
   }
 
-   /**
+  /**
    * S3 url of original image
    * @return s3Original
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_S3_ORIGINAL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -392,17 +382,16 @@ public class GetProductDetails {
     this.s3Original = s3Original;
   }
 
-
   public GetProductDetails s3ThumbAnalytics(String s3ThumbAnalytics) {
     
     this.s3ThumbAnalytics = s3ThumbAnalytics;
     return this;
   }
 
-   /**
+  /**
    * S3 thumbnail url of original image in 120x120 dimension for analytics section
    * @return s3ThumbAnalytics
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_S3_THUMB_ANALYTICS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -418,17 +407,16 @@ public class GetProductDetails {
     this.s3ThumbAnalytics = s3ThumbAnalytics;
   }
 
-
   public GetProductDetails s3ThumbEditor(String s3ThumbEditor) {
     
     this.s3ThumbEditor = s3ThumbEditor;
     return this;
   }
 
-   /**
+  /**
    * S3 thumbnail url of original image in 600x400 dimension for editor section
    * @return s3ThumbEditor
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_S3_THUMB_EDITOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -444,17 +432,16 @@ public class GetProductDetails {
     this.s3ThumbEditor = s3ThumbEditor;
   }
 
-
   public GetProductDetails metaInfo(Object metaInfo) {
     
     this.metaInfo = metaInfo;
     return this;
   }
 
-   /**
+  /**
    * Meta data of product such as description, vendor, producer, stock level, etc.
    * @return metaInfo
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_META_INFO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -470,17 +457,16 @@ public class GetProductDetails {
     this.metaInfo = metaInfo;
   }
 
-
   public GetProductDetails isDeleted(Boolean isDeleted) {
     
     this.isDeleted = isDeleted;
     return this;
   }
 
-   /**
+  /**
    * product deleted from the shop&#39;s database
    * @return isDeleted
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IS_DELETED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

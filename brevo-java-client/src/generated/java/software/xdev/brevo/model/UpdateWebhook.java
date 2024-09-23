@@ -55,9 +55,9 @@ public class UpdateWebhook {
   public enum EventsEnum {
     SENT("sent"),
     
-    HARDBOUNCE("hardBounce"),
+    HARD_BOUNCE("hardBounce"),
     
-    SOFTBOUNCE("softBounce"),
+    SOFT_BOUNCE("softBounce"),
     
     BLOCKED("blocked"),
     
@@ -75,17 +75,17 @@ public class UpdateWebhook {
     
     OPENED("opened"),
     
-    UNIQUEOPENED("uniqueOpened"),
+    UNIQUE_OPENED("uniqueOpened"),
     
     UNSUBSCRIBED("unsubscribed"),
     
-    LISTADDITION("listAddition"),
+    LIST_ADDITION("listAddition"),
     
-    CONTACTUPDATED("contactUpdated"),
+    CONTACT_UPDATED("contactUpdated"),
     
-    CONTACTDELETED("contactDeleted"),
+    CONTACT_DELETED("contactDeleted"),
     
-    INBOUNDEMAILPROCESSED("inboundEmailProcessed");
+    INBOUND_EMAIL_PROCESSED("inboundEmailProcessed");
 
     private String value;
 
@@ -115,7 +115,7 @@ public class UpdateWebhook {
   }
 
   public static final String JSON_PROPERTY_EVENTS = "events";
-  private List<EventsEnum> events;
+  private List<EventsEnum> events = new ArrayList<>();
 
   public static final String JSON_PROPERTY_DOMAIN = "domain";
   private String domain;
@@ -127,7 +127,7 @@ public class UpdateWebhook {
   private Object auth;
 
   public static final String JSON_PROPERTY_HEADERS = "headers";
-  private List<Object> headers;
+  private List<Object> headers = new ArrayList<>();
 
   public UpdateWebhook() {
   }
@@ -138,10 +138,10 @@ public class UpdateWebhook {
     return this;
   }
 
-   /**
+  /**
    * URL of the webhook
    * @return url
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -157,17 +157,16 @@ public class UpdateWebhook {
     this.url = url;
   }
 
-
   public UpdateWebhook description(String description) {
     
     this.description = description;
     return this;
   }
 
-   /**
+  /**
    * Description of the webhook
    * @return description
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -183,7 +182,6 @@ public class UpdateWebhook {
     this.description = description;
   }
 
-
   public UpdateWebhook events(List<EventsEnum> events) {
     
     this.events = events;
@@ -198,10 +196,10 @@ public class UpdateWebhook {
     return this;
   }
 
-   /**
+  /**
    * - Events triggering the webhook. Possible values for **Transactional** type webhook: #### &#x60;sent&#x60; OR &#x60;request&#x60;, &#x60;delivered&#x60;, &#x60;hardBounce&#x60;, &#x60;softBounce&#x60;, &#x60;blocked&#x60;, &#x60;spam&#x60;, &#x60;invalid&#x60;, &#x60;deferred&#x60;, &#x60;click&#x60;, &#x60;opened&#x60;, &#x60;uniqueOpened&#x60; and &#x60;unsubscribed&#x60; - Possible values for **Marketing** type webhook: #### &#x60;spam&#x60;, &#x60;opened&#x60;, &#x60;click&#x60;, &#x60;hardBounce&#x60;, &#x60;softBounce&#x60;, &#x60;unsubscribed&#x60;, &#x60;listAddition&#x60; &amp; &#x60;delivered&#x60; - Possible values for **Inbound** type webhook: #### &#x60;inboundEmailProcessed&#x60; 
    * @return events
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EVENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -217,17 +215,16 @@ public class UpdateWebhook {
     this.events = events;
   }
 
-
   public UpdateWebhook domain(String domain) {
     
     this.domain = domain;
     return this;
   }
 
-   /**
+  /**
    * Inbound domain of webhook, used in case of event type &#x60;inbound&#x60;
    * @return domain
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DOMAIN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -243,17 +240,16 @@ public class UpdateWebhook {
     this.domain = domain;
   }
 
-
   public UpdateWebhook batched(Boolean batched) {
     
     this.batched = batched;
     return this;
   }
 
-   /**
+  /**
    * Batching configuration of the webhook, we send batched webhooks if its true
    * @return batched
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_BATCHED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -269,17 +265,16 @@ public class UpdateWebhook {
     this.batched = batched;
   }
 
-
   public UpdateWebhook auth(Object auth) {
     
     this.auth = auth;
     return this;
   }
 
-   /**
+  /**
    * Authentication header to be send with the webhook requests
    * @return auth
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_AUTH)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -295,7 +290,6 @@ public class UpdateWebhook {
     this.auth = auth;
   }
 
-
   public UpdateWebhook headers(List<Object> headers) {
     
     this.headers = headers;
@@ -310,10 +304,10 @@ public class UpdateWebhook {
     return this;
   }
 
-   /**
+  /**
    * Get headers
    * @return headers
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_HEADERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -57,10 +57,10 @@ public class GetBlockedDomains {
     return this;
   }
 
-   /**
+  /**
    * List of all blocked domains
    * @return domains
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DOMAINS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

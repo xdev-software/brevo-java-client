@@ -70,10 +70,10 @@ public class FileData {
     return this;
   }
 
-   /**
+  /**
    * Name of uploaded file
    * @return name
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -89,17 +89,16 @@ public class FileData {
     this.name = name;
   }
 
-
   public FileData authorId(String authorId) {
     
     this.authorId = authorId;
     return this;
   }
 
-   /**
+  /**
    * Account id of user which created the file
    * @return authorId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_AUTHOR_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -115,17 +114,16 @@ public class FileData {
     this.authorId = authorId;
   }
 
-
   public FileData contactId(Long contactId) {
     
     this.contactId = contactId;
     return this;
   }
 
-   /**
+  /**
    * Contact id of contact on which file is uploaded
    * @return contactId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CONTACT_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -141,17 +139,16 @@ public class FileData {
     this.contactId = contactId;
   }
 
-
   public FileData dealId(String dealId) {
     
     this.dealId = dealId;
     return this;
   }
 
-   /**
+  /**
    * Deal id linked to a file
    * @return dealId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DEAL_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -167,17 +164,16 @@ public class FileData {
     this.dealId = dealId;
   }
 
-
   public FileData companyId(String companyId) {
     
     this.companyId = companyId;
     return this;
   }
 
-   /**
+  /**
    * Company id linked to a file
    * @return companyId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COMPANY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -193,17 +189,16 @@ public class FileData {
     this.companyId = companyId;
   }
 
-
   public FileData size(Long size) {
     
     this.size = size;
     return this;
   }
 
-   /**
+  /**
    * Size of file in bytes
    * @return size
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SIZE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -219,17 +214,16 @@ public class FileData {
     this.size = size;
   }
 
-
   public FileData createdAt(OffsetDateTime createdAt) {
     
     this.createdAt = createdAt;
     return this;
   }
 
-   /**
+  /**
    * File created date/time
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

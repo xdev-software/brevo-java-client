@@ -130,10 +130,10 @@ public class TaskReminder {
     return this;
   }
 
-   /**
+  /**
    * Value of time unit before reminder is to be sent
    * @return value
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -149,17 +149,16 @@ public class TaskReminder {
     this.value = value;
   }
 
-
   public TaskReminder unit(UnitEnum unit) {
     
     this.unit = unit;
     return this;
   }
 
-   /**
+  /**
    * Unit of time before reminder is to be sent
    * @return unit
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UNIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -175,7 +174,6 @@ public class TaskReminder {
     this.unit = unit;
   }
 
-
   public TaskReminder types(List<TypesEnum> types) {
     
     this.types = types;
@@ -190,10 +188,10 @@ public class TaskReminder {
     return this;
   }
 
-   /**
+  /**
    * Type of task reminder e.g email, push
    * @return types
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

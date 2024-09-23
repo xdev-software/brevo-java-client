@@ -38,7 +38,7 @@ import java.util.StringJoiner;
 })
 public class DealsList {
   public static final String JSON_PROPERTY_ITEMS = "items";
-  private List<Deal> items;
+  private List<Deal> items = new ArrayList<>();
 
   public DealsList() {
   }
@@ -57,10 +57,10 @@ public class DealsList {
     return this;
   }
 
-   /**
+  /**
    * List of deals
    * @return items
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ITEMS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

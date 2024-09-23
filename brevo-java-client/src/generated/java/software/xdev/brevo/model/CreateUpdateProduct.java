@@ -69,7 +69,7 @@ public class CreateUpdateProduct {
   private Float price;
 
   public static final String JSON_PROPERTY_CATEGORIES = "categories";
-  private List<String> categories;
+  private List<String> categories = new ArrayList<>();
 
   public static final String JSON_PROPERTY_PARENT_ID = "parentId";
   private String parentId;
@@ -92,10 +92,10 @@ public class CreateUpdateProduct {
     return this;
   }
 
-   /**
+  /**
    * Product ID for which you requested the details
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -111,17 +111,16 @@ public class CreateUpdateProduct {
     this.id = id;
   }
 
-
   public CreateUpdateProduct name(String name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * Mandatory in case of creation**. Name of the product for which you requested the details
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -137,17 +136,16 @@ public class CreateUpdateProduct {
     this.name = name;
   }
 
-
   public CreateUpdateProduct url(String url) {
     
     this.url = url;
     return this;
   }
 
-   /**
+  /**
    * URL to the product
    * @return url
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -163,17 +161,16 @@ public class CreateUpdateProduct {
     this.url = url;
   }
 
-
   public CreateUpdateProduct imageUrl(String imageUrl) {
     
     this.imageUrl = imageUrl;
     return this;
   }
 
-   /**
+  /**
    * Absolute URL to the cover image of the product
    * @return imageUrl
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IMAGE_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -189,17 +186,16 @@ public class CreateUpdateProduct {
     this.imageUrl = imageUrl;
   }
 
-
   public CreateUpdateProduct sku(String sku) {
     
     this.sku = sku;
     return this;
   }
 
-   /**
+  /**
    * Product identifier from the shop
    * @return sku
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SKU)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -215,17 +211,16 @@ public class CreateUpdateProduct {
     this.sku = sku;
   }
 
-
   public CreateUpdateProduct price(Float price) {
     
     this.price = price;
     return this;
   }
 
-   /**
+  /**
    * Price of the product
    * @return price
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PRICE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -241,7 +236,6 @@ public class CreateUpdateProduct {
     this.price = price;
   }
 
-
   public CreateUpdateProduct categories(List<String> categories) {
     
     this.categories = categories;
@@ -256,10 +250,10 @@ public class CreateUpdateProduct {
     return this;
   }
 
-   /**
+  /**
    * Category ID-s of the product
    * @return categories
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CATEGORIES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -275,17 +269,16 @@ public class CreateUpdateProduct {
     this.categories = categories;
   }
 
-
   public CreateUpdateProduct parentId(String parentId) {
     
     this.parentId = parentId;
     return this;
   }
 
-   /**
+  /**
    * Parent product id of the product
    * @return parentId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PARENT_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -301,7 +294,6 @@ public class CreateUpdateProduct {
     this.parentId = parentId;
   }
 
-
   public CreateUpdateProduct metaInfo(Map<String, GetContactInfoIdentifierParameter> metaInfo) {
     
     this.metaInfo = metaInfo;
@@ -316,10 +308,10 @@ public class CreateUpdateProduct {
     return this;
   }
 
-   /**
+  /**
    * Meta data of product such as description, vendor, producer, stock level. The size of cumulative metaInfo shall not exceed **1000 KB**. Maximum length of metaInfo object can be 10.
    * @return metaInfo
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_META_INFO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -335,17 +327,16 @@ public class CreateUpdateProduct {
     this.metaInfo = metaInfo;
   }
 
-
   public CreateUpdateProduct updateEnabled(Boolean updateEnabled) {
     
     this.updateEnabled = updateEnabled;
     return this;
   }
 
-   /**
+  /**
    * Facilitate to update the existing category in the same request (updateEnabled &#x3D; true)
    * @return updateEnabled
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UPDATE_ENABLED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -361,17 +352,16 @@ public class CreateUpdateProduct {
     this.updateEnabled = updateEnabled;
   }
 
-
   public CreateUpdateProduct deletedAt(String deletedAt) {
     
     this.deletedAt = deletedAt;
     return this;
   }
 
-   /**
+  /**
    * UTC date-time (YYYY-MM-DDTHH:mm:ss.SSSZ) of the product deleted from the shop&#39;s database
    * @return deletedAt
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DELETED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

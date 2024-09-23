@@ -50,10 +50,10 @@ public class SendSmtpEmailToInner {
     return this;
   }
 
-   /**
+  /**
    * Email address of the recipient
    * @return email
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -69,17 +69,16 @@ public class SendSmtpEmailToInner {
     this.email = email;
   }
 
-
   public SendSmtpEmailToInner name(String name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * Name of the recipient. **Maximum allowed characters are 70**. 
    * @return name
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

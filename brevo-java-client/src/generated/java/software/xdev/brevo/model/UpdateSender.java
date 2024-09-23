@@ -47,7 +47,7 @@ public class UpdateSender {
   private String email;
 
   public static final String JSON_PROPERTY_IPS = "ips";
-  private List<CreateSenderIpsInner> ips;
+  private List<CreateSenderIpsInner> ips = new ArrayList<>();
 
   public UpdateSender() {
   }
@@ -58,10 +58,10 @@ public class UpdateSender {
     return this;
   }
 
-   /**
+  /**
    * From Name to update the sender
    * @return name
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -77,17 +77,16 @@ public class UpdateSender {
     this.name = name;
   }
 
-
   public UpdateSender email(String email) {
     
     this.email = email;
     return this;
   }
 
-   /**
+  /**
    * From Email to update the sender
    * @return email
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -103,7 +102,6 @@ public class UpdateSender {
     this.email = email;
   }
 
-
   public UpdateSender ips(List<CreateSenderIpsInner> ips) {
     
     this.ips = ips;
@@ -118,10 +116,10 @@ public class UpdateSender {
     return this;
   }
 
-   /**
+  /**
    * **Only in case of dedicated IP**. IPs to associate to the sender. If passed, will replace all the existing IPs. 
    * @return ips
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IPS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

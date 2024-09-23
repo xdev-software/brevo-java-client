@@ -176,10 +176,10 @@ public class GetCampaignOverview {
     return this;
   }
 
-   /**
+  /**
    * ID of the campaign
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -195,17 +195,16 @@ public class GetCampaignOverview {
     this.id = id;
   }
 
-
   public GetCampaignOverview name(String name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * Name of the campaign
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -221,17 +220,16 @@ public class GetCampaignOverview {
     this.name = name;
   }
 
-
   public GetCampaignOverview subject(String subject) {
     
     this.subject = subject;
     return this;
   }
 
-   /**
+  /**
    * Subject of the campaign. Only available if &#x60;abTesting&#x60; flag of the campaign is &#x60;false&#x60;
    * @return subject
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUBJECT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -247,17 +245,16 @@ public class GetCampaignOverview {
     this.subject = subject;
   }
 
-
   public GetCampaignOverview previewText(String previewText) {
     
     this.previewText = previewText;
     return this;
   }
 
-   /**
+  /**
    * Preview text or preheader of the email campaign
    * @return previewText
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PREVIEW_TEXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -273,17 +270,16 @@ public class GetCampaignOverview {
     this.previewText = previewText;
   }
 
-
   public GetCampaignOverview type(TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Type of campaign
    * @return type
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -299,17 +295,16 @@ public class GetCampaignOverview {
     this.type = type;
   }
 
-
   public GetCampaignOverview status(StatusEnum status) {
     
     this.status = status;
     return this;
   }
 
-   /**
+  /**
    * Status of the campaign
    * @return status
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -325,17 +320,16 @@ public class GetCampaignOverview {
     this.status = status;
   }
 
-
   public GetCampaignOverview scheduledAt(String scheduledAt) {
     
     this.scheduledAt = scheduledAt;
     return this;
   }
 
-   /**
+  /**
    * UTC date-time on which campaign is scheduled (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return scheduledAt
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -351,17 +345,16 @@ public class GetCampaignOverview {
     this.scheduledAt = scheduledAt;
   }
 
-
   public GetCampaignOverview abTesting(Boolean abTesting) {
     
     this.abTesting = abTesting;
     return this;
   }
 
-   /**
+  /**
    * Status of A/B Test for the campaign. abTesting &#x3D; false means it is disabled, &amp; abTesting &#x3D; true means it is enabled.
    * @return abTesting
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_AB_TESTING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -377,17 +370,16 @@ public class GetCampaignOverview {
     this.abTesting = abTesting;
   }
 
-
   public GetCampaignOverview subjectA(String subjectA) {
     
     this.subjectA = subjectA;
     return this;
   }
 
-   /**
+  /**
    * Subject A of the ab-test campaign. Only available if &#x60;abTesting&#x60; flag of the campaign is &#x60;true&#x60;
    * @return subjectA
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUBJECT_A)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -403,17 +395,16 @@ public class GetCampaignOverview {
     this.subjectA = subjectA;
   }
 
-
   public GetCampaignOverview subjectB(String subjectB) {
     
     this.subjectB = subjectB;
     return this;
   }
 
-   /**
+  /**
    * Subject B of the ab-test campaign. Only available if &#x60;abTesting&#x60; flag of the campaign is &#x60;true&#x60;
    * @return subjectB
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUBJECT_B)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -429,17 +420,16 @@ public class GetCampaignOverview {
     this.subjectB = subjectB;
   }
 
-
   public GetCampaignOverview splitRule(Integer splitRule) {
     
     this.splitRule = splitRule;
     return this;
   }
 
-   /**
+  /**
    * The size of your ab-test groups. Only available if &#x60;abTesting&#x60; flag of the campaign is &#x60;true&#x60;
    * @return splitRule
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SPLIT_RULE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -455,17 +445,16 @@ public class GetCampaignOverview {
     this.splitRule = splitRule;
   }
 
-
   public GetCampaignOverview winnerCriteria(String winnerCriteria) {
     
     this.winnerCriteria = winnerCriteria;
     return this;
   }
 
-   /**
+  /**
    * Criteria for the winning version. Only available if &#x60;abTesting&#x60; flag of the campaign is &#x60;true&#x60;
    * @return winnerCriteria
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_WINNER_CRITERIA)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -481,17 +470,16 @@ public class GetCampaignOverview {
     this.winnerCriteria = winnerCriteria;
   }
 
-
   public GetCampaignOverview winnerDelay(Integer winnerDelay) {
     
     this.winnerDelay = winnerDelay;
     return this;
   }
 
-   /**
+  /**
    * The duration of the test in hours at the end of which the winning version will be sent. Only available if &#x60;abTesting&#x60; flag of the campaign is &#x60;true&#x60;
    * @return winnerDelay
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_WINNER_DELAY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -507,17 +495,16 @@ public class GetCampaignOverview {
     this.winnerDelay = winnerDelay;
   }
 
-
   public GetCampaignOverview sendAtBestTime(Boolean sendAtBestTime) {
     
     this.sendAtBestTime = sendAtBestTime;
     return this;
   }
 
-   /**
+  /**
    * It is true if you have chosen to send your campaign at best time, otherwise it is false
    * @return sendAtBestTime
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SEND_AT_BEST_TIME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

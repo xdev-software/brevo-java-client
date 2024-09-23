@@ -95,10 +95,10 @@ public class GetSmtpTemplateOverview {
     return this;
   }
 
-   /**
+  /**
    * ID of the template
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -114,17 +114,16 @@ public class GetSmtpTemplateOverview {
     this.id = id;
   }
 
-
   public GetSmtpTemplateOverview name(String name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * Name of the template
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -140,17 +139,16 @@ public class GetSmtpTemplateOverview {
     this.name = name;
   }
 
-
   public GetSmtpTemplateOverview subject(String subject) {
     
     this.subject = subject;
     return this;
   }
 
-   /**
+  /**
    * Subject of the template
    * @return subject
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SUBJECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -166,17 +164,16 @@ public class GetSmtpTemplateOverview {
     this.subject = subject;
   }
 
-
   public GetSmtpTemplateOverview isActive(Boolean isActive) {
     
     this.isActive = isActive;
     return this;
   }
 
-   /**
+  /**
    * Status of template (true&#x3D;active, false&#x3D;inactive)
    * @return isActive
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_IS_ACTIVE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -192,17 +189,16 @@ public class GetSmtpTemplateOverview {
     this.isActive = isActive;
   }
 
-
   public GetSmtpTemplateOverview testSent(Boolean testSent) {
     
     this.testSent = testSent;
     return this;
   }
 
-   /**
+  /**
    * Status of test sending for the template (true&#x3D;test email has been sent, false&#x3D;test email has not been sent)
    * @return testSent
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TEST_SENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -218,17 +214,16 @@ public class GetSmtpTemplateOverview {
     this.testSent = testSent;
   }
 
-
   public GetSmtpTemplateOverview sender(GetSmtpTemplateOverviewSender sender) {
     
     this.sender = sender;
     return this;
   }
 
-   /**
+  /**
    * Get sender
    * @return sender
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SENDER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -244,17 +239,16 @@ public class GetSmtpTemplateOverview {
     this.sender = sender;
   }
 
-
   public GetSmtpTemplateOverview replyTo(String replyTo) {
     
     this.replyTo = replyTo;
     return this;
   }
 
-   /**
+  /**
    * Email defined as the \&quot;Reply to\&quot; for the template
    * @return replyTo
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_REPLY_TO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -270,17 +264,16 @@ public class GetSmtpTemplateOverview {
     this.replyTo = replyTo;
   }
 
-
   public GetSmtpTemplateOverview toField(String toField) {
     
     this.toField = toField;
     return this;
   }
 
-   /**
+  /**
    * Customisation of the \&quot;to\&quot; field for the template
    * @return toField
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TO_FIELD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -296,17 +289,16 @@ public class GetSmtpTemplateOverview {
     this.toField = toField;
   }
 
-
   public GetSmtpTemplateOverview tag(String tag) {
     
     this.tag = tag;
     return this;
   }
 
-   /**
+  /**
    * Tag of the template
    * @return tag
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TAG)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -322,17 +314,16 @@ public class GetSmtpTemplateOverview {
     this.tag = tag;
   }
 
-
   public GetSmtpTemplateOverview htmlContent(String htmlContent) {
     
     this.htmlContent = htmlContent;
     return this;
   }
 
-   /**
+  /**
    * HTML content of the template
    * @return htmlContent
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_HTML_CONTENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -348,17 +339,16 @@ public class GetSmtpTemplateOverview {
     this.htmlContent = htmlContent;
   }
 
-
   public GetSmtpTemplateOverview createdAt(String createdAt) {
     
     this.createdAt = createdAt;
     return this;
   }
 
-   /**
+  /**
    * Creation UTC date-time of the template (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -374,17 +364,16 @@ public class GetSmtpTemplateOverview {
     this.createdAt = createdAt;
   }
 
-
   public GetSmtpTemplateOverview modifiedAt(String modifiedAt) {
     
     this.modifiedAt = modifiedAt;
     return this;
   }
 
-   /**
+  /**
    * Last modification UTC date-time of the template (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return modifiedAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -400,17 +389,16 @@ public class GetSmtpTemplateOverview {
     this.modifiedAt = modifiedAt;
   }
 
-
   public GetSmtpTemplateOverview doiTemplate(Boolean doiTemplate) {
     
     this.doiTemplate = doiTemplate;
     return this;
   }
 
-   /**
+  /**
    * It is true if template is a valid Double opt-in (DOI) template, otherwise it is false. This field will be available only in case of single template detail call.
    * @return doiTemplate
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DOI_TEMPLATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

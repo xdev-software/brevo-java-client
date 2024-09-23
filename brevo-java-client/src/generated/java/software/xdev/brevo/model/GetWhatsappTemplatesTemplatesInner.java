@@ -74,10 +74,10 @@ public class GetWhatsappTemplatesTemplatesInner {
     return this;
   }
 
-   /**
+  /**
    * ID of the WhatsApp template
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -93,17 +93,16 @@ public class GetWhatsappTemplatesTemplatesInner {
     this.id = id;
   }
 
-
   public GetWhatsappTemplatesTemplatesInner name(String name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * Name of the WhatsApp template
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -119,17 +118,16 @@ public class GetWhatsappTemplatesTemplatesInner {
     this.name = name;
   }
 
-
   public GetWhatsappTemplatesTemplatesInner status(String status) {
     
     this.status = status;
     return this;
   }
 
-   /**
+  /**
    * Status of the WhatsApp template
    * @return status
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -145,17 +143,16 @@ public class GetWhatsappTemplatesTemplatesInner {
     this.status = status;
   }
 
-
   public GetWhatsappTemplatesTemplatesInner language(String language) {
     
     this.language = language;
     return this;
   }
 
-   /**
+  /**
    * Language in which template exists
    * @return language
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LANGUAGE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -171,17 +168,16 @@ public class GetWhatsappTemplatesTemplatesInner {
     this.language = language;
   }
 
-
   public GetWhatsappTemplatesTemplatesInner category(String category) {
     
     this.category = category;
     return this;
   }
 
-   /**
+  /**
    * category of the template
    * @return category
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CATEGORY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -197,17 +193,16 @@ public class GetWhatsappTemplatesTemplatesInner {
     this.category = category;
   }
 
-
   public GetWhatsappTemplatesTemplatesInner errorReason(String errorReason) {
     
     this.errorReason = errorReason;
     return this;
   }
 
-   /**
+  /**
    * Error reason in the template creation
    * @return errorReason
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ERROR_REASON)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -223,17 +218,16 @@ public class GetWhatsappTemplatesTemplatesInner {
     this.errorReason = errorReason;
   }
 
-
   public GetWhatsappTemplatesTemplatesInner createdAt(String createdAt) {
     
     this.createdAt = createdAt;
     return this;
   }
 
-   /**
+  /**
    * Creation UTC date-time of the WhatsApp template (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -249,17 +243,16 @@ public class GetWhatsappTemplatesTemplatesInner {
     this.createdAt = createdAt;
   }
 
-
   public GetWhatsappTemplatesTemplatesInner modifiedAt(String modifiedAt) {
     
     this.modifiedAt = modifiedAt;
     return this;
   }
 
-   /**
+  /**
    * UTC date-time of last modification of the WhatsApp template (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return modifiedAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

@@ -50,10 +50,10 @@ public class SendSmtpEmailReplyTo {
     return this;
   }
 
-   /**
+  /**
    * Email address in reply to
    * @return email
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -69,17 +69,16 @@ public class SendSmtpEmailReplyTo {
     this.email = email;
   }
 
-
   public SendSmtpEmailReplyTo name(String name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * Name in reply to. **Maximum allowed characters are 70**. 
    * @return name
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

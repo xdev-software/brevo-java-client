@@ -58,10 +58,10 @@ public class GetIpFromSender {
     return this;
   }
 
-   /**
+  /**
    * ID of the dedicated IP
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -77,17 +77,16 @@ public class GetIpFromSender {
     this.id = id;
   }
 
-
   public GetIpFromSender ip(String ip) {
     
     this.ip = ip;
     return this;
   }
 
-   /**
+  /**
    * Dedicated IP
    * @return ip
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_IP)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -103,17 +102,16 @@ public class GetIpFromSender {
     this.ip = ip;
   }
 
-
   public GetIpFromSender domain(String domain) {
     
     this.domain = domain;
     return this;
   }
 
-   /**
+  /**
    * Domain associated to the IP
    * @return domain
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DOMAIN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -129,17 +127,16 @@ public class GetIpFromSender {
     this.domain = domain;
   }
 
-
   public GetIpFromSender weight(Long weight) {
     
     this.weight = weight;
     return this;
   }
 
-   /**
+  /**
    * Weight of the IP
    * @return weight
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_WEIGHT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

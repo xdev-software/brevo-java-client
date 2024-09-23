@@ -72,10 +72,10 @@ public class MasterDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * Email id of master account
    * @return email
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -91,17 +91,16 @@ public class MasterDetailsResponse {
     this.email = email;
   }
 
-
   public MasterDetailsResponse companyName(String companyName) {
     
     this.companyName = companyName;
     return this;
   }
 
-   /**
+  /**
    * Company name of master account organization
    * @return companyName
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COMPANY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -117,17 +116,16 @@ public class MasterDetailsResponse {
     this.companyName = companyName;
   }
 
-
   public MasterDetailsResponse id(Long id) {
     
     this.id = id;
     return this;
   }
 
-   /**
+  /**
    * Unique identifier of the master account organization
    * @return id
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -143,17 +141,16 @@ public class MasterDetailsResponse {
     this.id = id;
   }
 
-
   public MasterDetailsResponse currencyCode(String currencyCode) {
     
     this.currencyCode = currencyCode;
     return this;
   }
 
-   /**
+  /**
    * Currency code of the master account organization
    * @return currencyCode
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CURRENCY_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -169,17 +166,16 @@ public class MasterDetailsResponse {
     this.currencyCode = currencyCode;
   }
 
-
   public MasterDetailsResponse timezone(String timezone) {
     
     this.timezone = timezone;
     return this;
   }
 
-   /**
+  /**
    * Timezone of the master account organization
    * @return timezone
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TIMEZONE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -195,17 +191,16 @@ public class MasterDetailsResponse {
     this.timezone = timezone;
   }
 
-
   public MasterDetailsResponse billingInfo(MasterDetailsResponseBillingInfo billingInfo) {
     
     this.billingInfo = billingInfo;
     return this;
   }
 
-   /**
+  /**
    * Get billingInfo
    * @return billingInfo
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_BILLING_INFO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -221,17 +216,16 @@ public class MasterDetailsResponse {
     this.billingInfo = billingInfo;
   }
 
-
   public MasterDetailsResponse planInfo(MasterDetailsResponsePlanInfo planInfo) {
     
     this.planInfo = planInfo;
     return this;
   }
 
-   /**
+  /**
    * Get planInfo
    * @return planInfo
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PLAN_INFO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

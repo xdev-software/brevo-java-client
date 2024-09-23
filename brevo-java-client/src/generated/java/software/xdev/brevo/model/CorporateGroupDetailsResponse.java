@@ -46,10 +46,10 @@ public class CorporateGroupDetailsResponse {
   private CorporateGroupDetailsResponseGroup group;
 
   public static final String JSON_PROPERTY_SUB_ACCOUNTS = "sub-accounts";
-  private List<CorporateGroupDetailsResponseSubAccountsInner> subAccounts;
+  private List<CorporateGroupDetailsResponseSubAccountsInner> subAccounts = new ArrayList<>();
 
   public static final String JSON_PROPERTY_USERS = "users";
-  private List<CorporateGroupDetailsResponseUsersInner> users;
+  private List<CorporateGroupDetailsResponseUsersInner> users = new ArrayList<>();
 
   public CorporateGroupDetailsResponse() {
   }
@@ -60,10 +60,10 @@ public class CorporateGroupDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * Get group
    * @return group
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_GROUP)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -79,7 +79,6 @@ public class CorporateGroupDetailsResponse {
     this.group = group;
   }
 
-
   public CorporateGroupDetailsResponse subAccounts(List<CorporateGroupDetailsResponseSubAccountsInner> subAccounts) {
     
     this.subAccounts = subAccounts;
@@ -94,10 +93,10 @@ public class CorporateGroupDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * Get subAccounts
    * @return subAccounts
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUB_ACCOUNTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -113,7 +112,6 @@ public class CorporateGroupDetailsResponse {
     this.subAccounts = subAccounts;
   }
 
-
   public CorporateGroupDetailsResponse users(List<CorporateGroupDetailsResponseUsersInner> users) {
     
     this.users = users;
@@ -128,10 +126,10 @@ public class CorporateGroupDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * Get users
    * @return users
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_USERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

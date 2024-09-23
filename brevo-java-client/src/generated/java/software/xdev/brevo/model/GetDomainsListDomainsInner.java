@@ -62,10 +62,10 @@ public class GetDomainsListDomainsInner {
     return this;
   }
 
-   /**
+  /**
    * Id of the domain
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -81,17 +81,16 @@ public class GetDomainsListDomainsInner {
     this.id = id;
   }
 
-
   public GetDomainsListDomainsInner domainName(String domainName) {
     
     this.domainName = domainName;
     return this;
   }
 
-   /**
+  /**
    * Domain name
    * @return domainName
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DOMAIN_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -107,17 +106,16 @@ public class GetDomainsListDomainsInner {
     this.domainName = domainName;
   }
 
-
   public GetDomainsListDomainsInner authenticated(Boolean authenticated) {
     
     this.authenticated = authenticated;
     return this;
   }
 
-   /**
+  /**
    * Status of domain authentication (true&#x3D;authenticated, false&#x3D;non authenticated)
    * @return authenticated
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_AUTHENTICATED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -133,17 +131,16 @@ public class GetDomainsListDomainsInner {
     this.authenticated = authenticated;
   }
 
-
   public GetDomainsListDomainsInner verified(Boolean verified) {
     
     this.verified = verified;
     return this;
   }
 
-   /**
+  /**
    * Status of domain verification (true&#x3D;verified, false&#x3D;non verified)
    * @return verified
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VERIFIED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -159,17 +156,16 @@ public class GetDomainsListDomainsInner {
     this.verified = verified;
   }
 
-
   public GetDomainsListDomainsInner ip(String ip) {
     
     this.ip = ip;
     return this;
   }
 
-   /**
+  /**
    * Dedicated IP associated with domain
    * @return ip
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IP)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -46,10 +46,10 @@ public class UploadImageModel {
     return this;
   }
 
-   /**
+  /**
    * URL of the image uploaded
    * @return url
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

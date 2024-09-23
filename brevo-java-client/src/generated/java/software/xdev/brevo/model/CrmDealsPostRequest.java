@@ -50,10 +50,10 @@ public class CrmDealsPostRequest {
     return this;
   }
 
-   /**
+  /**
    * Name of deal
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -69,17 +69,16 @@ public class CrmDealsPostRequest {
     this.name = name;
   }
 
-
   public CrmDealsPostRequest attributes(Object attributes) {
     
     this.attributes = attributes;
     return this;
   }
 
-   /**
+  /**
    * Attributes for deal creation  If you want to create a deal on a specific pipeline and stage you can use the following attributes &#x60;pipeline&#x60; and &#x60;deal_stage&#x60;.  Pipeline and deal_stage are ids you can fetch using this endpoint &#x60;/crm/pipeline/details/{pipelineID}&#x60; 
    * @return attributes
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

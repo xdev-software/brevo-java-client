@@ -39,10 +39,10 @@ import java.util.StringJoiner;
 @JsonTypeName("updateBatchContactsModel")
 public class UpdateBatchContactsModel {
   public static final String JSON_PROPERTY_SUCCESS_IDS = "successIds";
-  private List<Long> successIds;
+  private List<Long> successIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_FAILURE_IDS = "failureIds";
-  private List<Long> failureIds;
+  private List<Long> failureIds = new ArrayList<>();
 
   public UpdateBatchContactsModel() {
   }
@@ -61,10 +61,10 @@ public class UpdateBatchContactsModel {
     return this;
   }
 
-   /**
+  /**
    * Get successIds
    * @return successIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUCCESS_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -80,7 +80,6 @@ public class UpdateBatchContactsModel {
     this.successIds = successIds;
   }
 
-
   public UpdateBatchContactsModel failureIds(List<Long> failureIds) {
     
     this.failureIds = failureIds;
@@ -95,10 +94,10 @@ public class UpdateBatchContactsModel {
     return this;
   }
 
-   /**
+  /**
    * Get failureIds
    * @return failureIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_FAILURE_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

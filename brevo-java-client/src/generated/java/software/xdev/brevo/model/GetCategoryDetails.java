@@ -66,10 +66,10 @@ public class GetCategoryDetails {
     return this;
   }
 
-   /**
+  /**
    * Category ID for which you requested the details
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -85,17 +85,16 @@ public class GetCategoryDetails {
     this.id = id;
   }
 
-
   public GetCategoryDetails name(String name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * Name of the category for which you requested the details
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -111,17 +110,16 @@ public class GetCategoryDetails {
     this.name = name;
   }
 
-
   public GetCategoryDetails createdAt(String createdAt) {
     
     this.createdAt = createdAt;
     return this;
   }
 
-   /**
+  /**
    * Creation UTC date-time of the category (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -137,17 +135,16 @@ public class GetCategoryDetails {
     this.createdAt = createdAt;
   }
 
-
   public GetCategoryDetails modifiedAt(String modifiedAt) {
     
     this.modifiedAt = modifiedAt;
     return this;
   }
 
-   /**
+  /**
    * Last modification UTC date-time of the category (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return modifiedAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -163,17 +160,16 @@ public class GetCategoryDetails {
     this.modifiedAt = modifiedAt;
   }
 
-
   public GetCategoryDetails url(String url) {
     
     this.url = url;
     return this;
   }
 
-   /**
+  /**
    * URL to the category
    * @return url
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -189,17 +185,16 @@ public class GetCategoryDetails {
     this.url = url;
   }
 
-
   public GetCategoryDetails isDeleted(Boolean isDeleted) {
     
     this.isDeleted = isDeleted;
     return this;
   }
 
-   /**
+  /**
    * category deleted from the shop&#39;s database
    * @return isDeleted
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IS_DELETED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

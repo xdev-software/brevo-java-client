@@ -63,10 +63,10 @@ public class GetExtendedContactDetailsAllOfStatisticsUnsubscriptions {
     return this;
   }
 
-   /**
+  /**
    * Contact unsubscribe via unsubscription link in a campaign
    * @return userUnsubscription
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_USER_UNSUBSCRIPTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -82,7 +82,6 @@ public class GetExtendedContactDetailsAllOfStatisticsUnsubscriptions {
     this.userUnsubscription = userUnsubscription;
   }
 
-
   public GetExtendedContactDetailsAllOfStatisticsUnsubscriptions adminUnsubscription(List<GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsAdminUnsubscription> adminUnsubscription) {
     
     this.adminUnsubscription = adminUnsubscription;
@@ -97,10 +96,10 @@ public class GetExtendedContactDetailsAllOfStatisticsUnsubscriptions {
     return this;
   }
 
-   /**
+  /**
    * Contact has been unsubscribed from the administrator
    * @return adminUnsubscription
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ADMIN_UNSUBSCRIPTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

@@ -66,7 +66,7 @@ public class GetTransacEmailsListTransactionalEmailsInner {
   private String from;
 
   public static final String JSON_PROPERTY_TAGS = "tags";
-  private List<String> tags;
+  private List<String> tags = new ArrayList<>();
 
   public GetTransacEmailsListTransactionalEmailsInner() {
   }
@@ -77,10 +77,10 @@ public class GetTransacEmailsListTransactionalEmailsInner {
     return this;
   }
 
-   /**
+  /**
    * Email address to which transactional email has been sent
    * @return email
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -96,17 +96,16 @@ public class GetTransacEmailsListTransactionalEmailsInner {
     this.email = email;
   }
 
-
   public GetTransacEmailsListTransactionalEmailsInner subject(String subject) {
     
     this.subject = subject;
     return this;
   }
 
-   /**
+  /**
    * Subject of the sent email
    * @return subject
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SUBJECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -122,17 +121,16 @@ public class GetTransacEmailsListTransactionalEmailsInner {
     this.subject = subject;
   }
 
-
   public GetTransacEmailsListTransactionalEmailsInner templateId(Long templateId) {
     
     this.templateId = templateId;
     return this;
   }
 
-   /**
+  /**
    * Id of the template
    * @return templateId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -148,17 +146,16 @@ public class GetTransacEmailsListTransactionalEmailsInner {
     this.templateId = templateId;
   }
 
-
   public GetTransacEmailsListTransactionalEmailsInner messageId(String messageId) {
     
     this.messageId = messageId;
     return this;
   }
 
-   /**
+  /**
    * Message Id of the sent email
    * @return messageId
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -174,17 +171,16 @@ public class GetTransacEmailsListTransactionalEmailsInner {
     this.messageId = messageId;
   }
 
-
   public GetTransacEmailsListTransactionalEmailsInner uuid(String uuid) {
     
     this.uuid = uuid;
     return this;
   }
 
-   /**
+  /**
    * Unique id of the email sent to a particular contact
    * @return uuid
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UUID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -200,17 +196,16 @@ public class GetTransacEmailsListTransactionalEmailsInner {
     this.uuid = uuid;
   }
 
-
   public GetTransacEmailsListTransactionalEmailsInner date(String date) {
     
     this.date = date;
     return this;
   }
 
-   /**
+  /**
    * Date on which transactional email was sent
    * @return date
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DATE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -226,17 +221,16 @@ public class GetTransacEmailsListTransactionalEmailsInner {
     this.date = date;
   }
 
-
   public GetTransacEmailsListTransactionalEmailsInner from(String from) {
     
     this.from = from;
     return this;
   }
 
-   /**
+  /**
    * Email address of the sender from which the email was sent
    * @return from
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_FROM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -252,7 +246,6 @@ public class GetTransacEmailsListTransactionalEmailsInner {
     this.from = from;
   }
 
-
   public GetTransacEmailsListTransactionalEmailsInner tags(List<String> tags) {
     
     this.tags = tags;
@@ -267,10 +260,10 @@ public class GetTransacEmailsListTransactionalEmailsInner {
     return this;
   }
 
-   /**
+  /**
    * Tags used for your email
    * @return tags
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TAGS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -60,10 +60,10 @@ public class MasterDetailsResponseBillingInfo {
     return this;
   }
 
-   /**
+  /**
    * Billing email id of master account
    * @return email
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -79,17 +79,16 @@ public class MasterDetailsResponseBillingInfo {
     this.email = email;
   }
 
-
   public MasterDetailsResponseBillingInfo companyName(String companyName) {
     
     this.companyName = companyName;
     return this;
   }
 
-   /**
+  /**
    * Company name of master account
    * @return companyName
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COMPANY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -105,17 +104,16 @@ public class MasterDetailsResponseBillingInfo {
     this.companyName = companyName;
   }
 
-
   public MasterDetailsResponseBillingInfo name(MasterDetailsResponseBillingInfoName name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * Get name
    * @return name
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -131,17 +129,16 @@ public class MasterDetailsResponseBillingInfo {
     this.name = name;
   }
 
-
   public MasterDetailsResponseBillingInfo address(MasterDetailsResponseBillingInfoAddress address) {
     
     this.address = address;
     return this;
   }
 
-   /**
+  /**
    * Get address
    * @return address
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ADDRESS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

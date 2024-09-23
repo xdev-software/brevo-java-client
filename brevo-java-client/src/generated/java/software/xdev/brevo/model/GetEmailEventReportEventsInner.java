@@ -62,9 +62,9 @@ public class GetEmailEventReportEventsInner {
   public enum EventEnum {
     BOUNCES("bounces"),
     
-    HARDBOUNCES("hardBounces"),
+    HARD_BOUNCES("hardBounces"),
     
-    SOFTBOUNCES("softBounces"),
+    SOFT_BOUNCES("softBounces"),
     
     DELIVERED("delivered"),
     
@@ -86,7 +86,7 @@ public class GetEmailEventReportEventsInner {
     
     ERROR("error"),
     
-    LOADEDBYPROXY("loadedByProxy");
+    LOADED_BY_PROXY("loadedByProxy");
 
     private String value;
 
@@ -145,10 +145,10 @@ public class GetEmailEventReportEventsInner {
     return this;
   }
 
-   /**
+  /**
    * Email address which generates the event
    * @return email
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -164,17 +164,16 @@ public class GetEmailEventReportEventsInner {
     this.email = email;
   }
 
-
   public GetEmailEventReportEventsInner date(String date) {
     
     this.date = date;
     return this;
   }
 
-   /**
+  /**
    * UTC date-time on which the event has been generated
    * @return date
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DATE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -190,17 +189,16 @@ public class GetEmailEventReportEventsInner {
     this.date = date;
   }
 
-
   public GetEmailEventReportEventsInner subject(String subject) {
     
     this.subject = subject;
     return this;
   }
 
-   /**
+  /**
    * Subject of the event
    * @return subject
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUBJECT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -216,17 +214,16 @@ public class GetEmailEventReportEventsInner {
     this.subject = subject;
   }
 
-
   public GetEmailEventReportEventsInner messageId(String messageId) {
     
     this.messageId = messageId;
     return this;
   }
 
-   /**
+  /**
    * Message ID which generated the event
    * @return messageId
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -242,17 +239,16 @@ public class GetEmailEventReportEventsInner {
     this.messageId = messageId;
   }
 
-
   public GetEmailEventReportEventsInner event(EventEnum event) {
     
     this.event = event;
     return this;
   }
 
-   /**
+  /**
    * Event which occurred
    * @return event
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EVENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -268,17 +264,16 @@ public class GetEmailEventReportEventsInner {
     this.event = event;
   }
 
-
   public GetEmailEventReportEventsInner reason(String reason) {
     
     this.reason = reason;
     return this;
   }
 
-   /**
+  /**
    * Reason of bounce (only available if the event is hardbounce or softbounce)
    * @return reason
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REASON)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -294,17 +289,16 @@ public class GetEmailEventReportEventsInner {
     this.reason = reason;
   }
 
-
   public GetEmailEventReportEventsInner tag(String tag) {
     
     this.tag = tag;
     return this;
   }
 
-   /**
+  /**
    * Tag of the email which generated the event
    * @return tag
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TAG)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -320,17 +314,16 @@ public class GetEmailEventReportEventsInner {
     this.tag = tag;
   }
 
-
   public GetEmailEventReportEventsInner ip(String ip) {
     
     this.ip = ip;
     return this;
   }
 
-   /**
+  /**
    * IP from which the user has opened the email or clicked on the link (only available if the event is opened or clicks)
    * @return ip
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IP)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -346,17 +339,16 @@ public class GetEmailEventReportEventsInner {
     this.ip = ip;
   }
 
-
   public GetEmailEventReportEventsInner link(String link) {
     
     this.link = link;
     return this;
   }
 
-   /**
+  /**
    * The link which is sent to the user (only available if the event is requests or opened or clicks)
    * @return link
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LINK)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -372,17 +364,16 @@ public class GetEmailEventReportEventsInner {
     this.link = link;
   }
 
-
   public GetEmailEventReportEventsInner from(String from) {
     
     this.from = from;
     return this;
   }
 
-   /**
+  /**
    * Sender email from which the emails are sent
    * @return from
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_FROM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -398,17 +389,16 @@ public class GetEmailEventReportEventsInner {
     this.from = from;
   }
 
-
   public GetEmailEventReportEventsInner templateId(Long templateId) {
     
     this.templateId = templateId;
     return this;
   }
 
-   /**
+  /**
    * ID of the template (only available if the email is template based)
    * @return templateId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

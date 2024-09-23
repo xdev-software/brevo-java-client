@@ -58,10 +58,10 @@ public class GetIp {
     return this;
   }
 
-   /**
+  /**
    * ID of the dedicated IP
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -77,17 +77,16 @@ public class GetIp {
     this.id = id;
   }
 
-
   public GetIp ip(String ip) {
     
     this.ip = ip;
     return this;
   }
 
-   /**
+  /**
    * Dedicated IP
    * @return ip
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_IP)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -103,17 +102,16 @@ public class GetIp {
     this.ip = ip;
   }
 
-
   public GetIp active(Boolean active) {
     
     this.active = active;
     return this;
   }
 
-   /**
+  /**
    * Status of the IP (true&#x3D;active, false&#x3D;inactive)
    * @return active
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ACTIVE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -129,17 +127,16 @@ public class GetIp {
     this.active = active;
   }
 
-
   public GetIp domain(String domain) {
     
     this.domain = domain;
     return this;
   }
 
-   /**
+  /**
    * Domain associated to the IP
    * @return domain
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DOMAIN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

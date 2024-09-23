@@ -51,10 +51,10 @@ public class CreatedBatchId {
     return this;
   }
 
-   /**
+  /**
    * Batch ID of the request
    * @return batchId
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_BATCH_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -70,17 +70,16 @@ public class CreatedBatchId {
     this.batchId = batchId;
   }
 
-
   public CreatedBatchId count(Long count) {
     
     this.count = count;
     return this;
   }
 
-   /**
+  /**
    * Number of orders
    * @return count
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

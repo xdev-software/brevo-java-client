@@ -69,10 +69,10 @@ public class GetStatsByDevice {
     return this;
   }
 
-   /**
+  /**
    * Statistics of the campaign on the basis of desktop devices
    * @return desktop
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DESKTOP)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -88,7 +88,6 @@ public class GetStatsByDevice {
     this.desktop = desktop;
   }
 
-
   public GetStatsByDevice mobile(Map<String, GetDeviceBrowserStats> mobile) {
     
     this.mobile = mobile;
@@ -103,10 +102,10 @@ public class GetStatsByDevice {
     return this;
   }
 
-   /**
+  /**
    * Statistics of the campaign on the basis of mobile devices
    * @return mobile
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MOBILE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -122,7 +121,6 @@ public class GetStatsByDevice {
     this.mobile = mobile;
   }
 
-
   public GetStatsByDevice tablet(Map<String, GetDeviceBrowserStats> tablet) {
     
     this.tablet = tablet;
@@ -137,10 +135,10 @@ public class GetStatsByDevice {
     return this;
   }
 
-   /**
+  /**
    * Statistics of the campaign on the basis of tablet devices
    * @return tablet
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TABLET)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -156,7 +154,6 @@ public class GetStatsByDevice {
     this.tablet = tablet;
   }
 
-
   public GetStatsByDevice unknown(Map<String, GetDeviceBrowserStats> unknown) {
     
     this.unknown = unknown;
@@ -171,10 +168,10 @@ public class GetStatsByDevice {
     return this;
   }
 
-   /**
+  /**
    * Statistics of the campaign on the basis of unknown devices
    * @return unknown
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UNKNOWN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

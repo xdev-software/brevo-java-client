@@ -62,10 +62,10 @@ public class SendSms {
     return this;
   }
 
-   /**
+  /**
    * Get reference
    * @return reference
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_REFERENCE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -81,17 +81,16 @@ public class SendSms {
     this.reference = reference;
   }
 
-
   public SendSms messageId(Long messageId) {
     
     this.messageId = messageId;
     return this;
   }
 
-   /**
+  /**
    * Get messageId
    * @return messageId
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -107,17 +106,16 @@ public class SendSms {
     this.messageId = messageId;
   }
 
-
   public SendSms smsCount(Long smsCount) {
     
     this.smsCount = smsCount;
     return this;
   }
 
-   /**
+  /**
    * Count of SMS&#39;s to send multiple text messages
    * @return smsCount
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SMS_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -133,17 +131,16 @@ public class SendSms {
     this.smsCount = smsCount;
   }
 
-
   public SendSms usedCredits(Float usedCredits) {
     
     this.usedCredits = usedCredits;
     return this;
   }
 
-   /**
+  /**
    * SMS credits used per text message
    * @return usedCredits
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_USED_CREDITS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -159,17 +156,16 @@ public class SendSms {
     this.usedCredits = usedCredits;
   }
 
-
   public SendSms remainingCredits(Float remainingCredits) {
     
     this.remainingCredits = remainingCredits;
     return this;
   }
 
-   /**
+  /**
    * Remaining SMS credits of the user
    * @return remainingCredits
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REMAINING_CREDITS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

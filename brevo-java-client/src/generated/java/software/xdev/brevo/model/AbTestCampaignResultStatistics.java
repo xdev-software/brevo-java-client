@@ -67,10 +67,10 @@ public class AbTestCampaignResultStatistics {
     return this;
   }
 
-   /**
+  /**
    * Get openers
    * @return openers
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_OPENERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -86,17 +86,16 @@ public class AbTestCampaignResultStatistics {
     this.openers = openers;
   }
 
-
   public AbTestCampaignResultStatistics clicks(AbTestVersionStats clicks) {
     
     this.clicks = clicks;
     return this;
   }
 
-   /**
+  /**
    * Get clicks
    * @return clicks
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CLICKS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -112,17 +111,16 @@ public class AbTestCampaignResultStatistics {
     this.clicks = clicks;
   }
 
-
   public AbTestCampaignResultStatistics unsubscribed(AbTestVersionStats unsubscribed) {
     
     this.unsubscribed = unsubscribed;
     return this;
   }
 
-   /**
+  /**
    * Get unsubscribed
    * @return unsubscribed
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UNSUBSCRIBED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -138,17 +136,16 @@ public class AbTestCampaignResultStatistics {
     this.unsubscribed = unsubscribed;
   }
 
-
   public AbTestCampaignResultStatistics hardBounces(AbTestVersionStats hardBounces) {
     
     this.hardBounces = hardBounces;
     return this;
   }
 
-   /**
+  /**
    * Get hardBounces
    * @return hardBounces
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_HARD_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -164,17 +161,16 @@ public class AbTestCampaignResultStatistics {
     this.hardBounces = hardBounces;
   }
 
-
   public AbTestCampaignResultStatistics softBounces(AbTestVersionStats softBounces) {
     
     this.softBounces = softBounces;
     return this;
   }
 
-   /**
+  /**
    * Get softBounces
    * @return softBounces
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SOFT_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -190,17 +186,16 @@ public class AbTestCampaignResultStatistics {
     this.softBounces = softBounces;
   }
 
-
   public AbTestCampaignResultStatistics complaints(AbTestVersionStats complaints) {
     
     this.complaints = complaints;
     return this;
   }
 
-   /**
+  /**
    * Get complaints
    * @return complaints
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COMPLAINTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

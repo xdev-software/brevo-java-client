@@ -41,7 +41,7 @@ import java.util.StringJoiner;
 @JsonTypeName("requestContactExport")
 public class RequestContactExport {
   public static final String JSON_PROPERTY_EXPORT_ATTRIBUTES = "exportAttributes";
-  private List<String> exportAttributes;
+  private List<String> exportAttributes = new ArrayList<>();
 
   public static final String JSON_PROPERTY_CUSTOM_CONTACT_FILTER = "customContactFilter";
   private RequestContactExportCustomContactFilter customContactFilter;
@@ -66,10 +66,10 @@ public class RequestContactExport {
     return this;
   }
 
-   /**
+  /**
    * List of all the attributes that you want to export. **These attributes must be present in your contact database.** For example: **[&#39;fname&#39;, &#39;lname&#39;, &#39;email&#39;]** 
    * @return exportAttributes
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EXPORT_ATTRIBUTES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -85,17 +85,16 @@ public class RequestContactExport {
     this.exportAttributes = exportAttributes;
   }
 
-
   public RequestContactExport customContactFilter(RequestContactExportCustomContactFilter customContactFilter) {
     
     this.customContactFilter = customContactFilter;
     return this;
   }
 
-   /**
+  /**
    * Get customContactFilter
    * @return customContactFilter
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CUSTOM_CONTACT_FILTER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -111,17 +110,16 @@ public class RequestContactExport {
     this.customContactFilter = customContactFilter;
   }
 
-
   public RequestContactExport notifyUrl(String notifyUrl) {
     
     this.notifyUrl = notifyUrl;
     return this;
   }
 
-   /**
+  /**
    * Webhook that will be called once the export process is finished. For reference, https://help.brevo.com/hc/en-us/articles/360007666479
    * @return notifyUrl
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NOTIFY_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

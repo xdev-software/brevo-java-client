@@ -44,7 +44,7 @@ public class GetAccountAllOfPlan {
    * Displays the plan type of the user
    */
   public enum TypeEnum {
-    PAYASYOUGO("payAsYouGo"),
+    PAY_AS_YOU_GO("payAsYouGo"),
     
     FREE("free"),
     
@@ -88,7 +88,7 @@ public class GetAccountAllOfPlan {
    * This is the type of the credit, \&quot;Send Limit\&quot; is one of the possible types of credit of a user. \&quot;Send Limit\&quot; implies the total number of emails you can send to the subscribers in your account.
    */
   public enum CreditsTypeEnum {
-    SENDLIMIT("sendLimit");
+    SEND_LIMIT("sendLimit");
 
     private String value;
 
@@ -141,10 +141,10 @@ public class GetAccountAllOfPlan {
     return this;
   }
 
-   /**
+  /**
    * Displays the plan type of the user
    * @return type
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -160,17 +160,16 @@ public class GetAccountAllOfPlan {
     this.type = type;
   }
 
-
   public GetAccountAllOfPlan creditsType(CreditsTypeEnum creditsType) {
     
     this.creditsType = creditsType;
     return this;
   }
 
-   /**
+  /**
    * This is the type of the credit, \&quot;Send Limit\&quot; is one of the possible types of credit of a user. \&quot;Send Limit\&quot; implies the total number of emails you can send to the subscribers in your account.
    * @return creditsType
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREDITS_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -186,17 +185,16 @@ public class GetAccountAllOfPlan {
     this.creditsType = creditsType;
   }
 
-
   public GetAccountAllOfPlan credits(Float credits) {
     
     this.credits = credits;
     return this;
   }
 
-   /**
+  /**
    * Remaining credits of the user
    * @return credits
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREDITS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -212,17 +210,16 @@ public class GetAccountAllOfPlan {
     this.credits = credits;
   }
 
-
   public GetAccountAllOfPlan startDate(LocalDate startDate) {
     
     this.startDate = startDate;
     return this;
   }
 
-   /**
+  /**
    * Date of the period from which the plan will start (only available for \&quot;subscription\&quot; and \&quot;reseller\&quot; plan type)
    * @return startDate
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_START_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -238,17 +235,16 @@ public class GetAccountAllOfPlan {
     this.startDate = startDate;
   }
 
-
   public GetAccountAllOfPlan endDate(LocalDate endDate) {
     
     this.endDate = endDate;
     return this;
   }
 
-   /**
+  /**
    * Date of the period from which the plan will end (only available for \&quot;subscription\&quot; and \&quot;reseller\&quot; plan type)
    * @return endDate
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_END_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -264,17 +260,16 @@ public class GetAccountAllOfPlan {
     this.endDate = endDate;
   }
 
-
   public GetAccountAllOfPlan userLimit(Integer userLimit) {
     
     this.userLimit = userLimit;
     return this;
   }
 
-   /**
+  /**
    * Only in case of reseller account. It implies the total number of child accounts you can add to your account.
    * @return userLimit
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_USER_LIMIT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

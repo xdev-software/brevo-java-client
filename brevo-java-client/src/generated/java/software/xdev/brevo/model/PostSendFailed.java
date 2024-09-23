@@ -48,13 +48,13 @@ public class PostSendFailed {
   private String message;
 
   public static final String JSON_PROPERTY_UNEXISTING_EMAILS = "unexistingEmails";
-  private List<String> unexistingEmails;
+  private List<String> unexistingEmails = new ArrayList<>();
 
   public static final String JSON_PROPERTY_WITHOUT_LIST_EMAILS = "withoutListEmails";
-  private List<String> withoutListEmails;
+  private List<String> withoutListEmails = new ArrayList<>();
 
   public static final String JSON_PROPERTY_BLACK_LISTED_EMAILS = "blackListedEmails";
-  private List<String> blackListedEmails;
+  private List<String> blackListedEmails = new ArrayList<>();
 
   public PostSendFailed() {
   }
@@ -65,10 +65,10 @@ public class PostSendFailed {
     return this;
   }
 
-   /**
+  /**
    * Response code
    * @return code
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -84,17 +84,16 @@ public class PostSendFailed {
     this.code = code;
   }
 
-
   public PostSendFailed message(String message) {
     
     this.message = message;
     return this;
   }
 
-   /**
+  /**
    * Response message
    * @return message
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MESSAGE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -110,7 +109,6 @@ public class PostSendFailed {
     this.message = message;
   }
 
-
   public PostSendFailed unexistingEmails(List<String> unexistingEmails) {
     
     this.unexistingEmails = unexistingEmails;
@@ -125,10 +123,10 @@ public class PostSendFailed {
     return this;
   }
 
-   /**
+  /**
    * Get unexistingEmails
    * @return unexistingEmails
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UNEXISTING_EMAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -144,7 +142,6 @@ public class PostSendFailed {
     this.unexistingEmails = unexistingEmails;
   }
 
-
   public PostSendFailed withoutListEmails(List<String> withoutListEmails) {
     
     this.withoutListEmails = withoutListEmails;
@@ -159,10 +156,10 @@ public class PostSendFailed {
     return this;
   }
 
-   /**
+  /**
    * Get withoutListEmails
    * @return withoutListEmails
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_WITHOUT_LIST_EMAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -178,7 +175,6 @@ public class PostSendFailed {
     this.withoutListEmails = withoutListEmails;
   }
 
-
   public PostSendFailed blackListedEmails(List<String> blackListedEmails) {
     
     this.blackListedEmails = blackListedEmails;
@@ -193,10 +189,10 @@ public class PostSendFailed {
     return this;
   }
 
-   /**
+  /**
    * Get blackListedEmails
    * @return blackListedEmails
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_BLACK_LISTED_EMAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

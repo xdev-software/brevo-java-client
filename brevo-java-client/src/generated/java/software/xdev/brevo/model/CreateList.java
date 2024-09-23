@@ -50,10 +50,10 @@ public class CreateList {
     return this;
   }
 
-   /**
+  /**
    * Name of the list
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -69,17 +69,16 @@ public class CreateList {
     this.name = name;
   }
 
-
   public CreateList folderId(Long folderId) {
     
     this.folderId = folderId;
     return this;
   }
 
-   /**
+  /**
    * Id of the parent folder in which this list is to be created
    * @return folderId
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_FOLDER_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

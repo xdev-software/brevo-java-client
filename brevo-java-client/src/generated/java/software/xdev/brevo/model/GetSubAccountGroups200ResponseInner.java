@@ -50,10 +50,10 @@ public class GetSubAccountGroups200ResponseInner {
     return this;
   }
 
-   /**
+  /**
    * Unique id of the group
    * @return id
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -69,17 +69,16 @@ public class GetSubAccountGroups200ResponseInner {
     this.id = id;
   }
 
-
   public GetSubAccountGroups200ResponseInner groupName(String groupName) {
     
     this.groupName = groupName;
     return this;
   }
 
-   /**
+  /**
    * The name of the group of sub-accounts
    * @return groupName
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_GROUP_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

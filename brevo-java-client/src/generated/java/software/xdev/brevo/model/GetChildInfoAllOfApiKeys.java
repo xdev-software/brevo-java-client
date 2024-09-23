@@ -44,7 +44,7 @@ public class GetChildInfoAllOfApiKeys {
   private List<GetChildInfoAllOfApiKeysV2> v2 = new ArrayList<>();
 
   public static final String JSON_PROPERTY_V3 = "v3";
-  private List<GetChildInfoAllOfApiKeysV3> v3;
+  private List<GetChildInfoAllOfApiKeysV3> v3 = new ArrayList<>();
 
   public GetChildInfoAllOfApiKeys() {
   }
@@ -63,10 +63,10 @@ public class GetChildInfoAllOfApiKeys {
     return this;
   }
 
-   /**
+  /**
    * Get v2
    * @return v2
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_V2)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -82,7 +82,6 @@ public class GetChildInfoAllOfApiKeys {
     this.v2 = v2;
   }
 
-
   public GetChildInfoAllOfApiKeys v3(List<GetChildInfoAllOfApiKeysV3> v3) {
     
     this.v3 = v3;
@@ -97,10 +96,10 @@ public class GetChildInfoAllOfApiKeys {
     return this;
   }
 
-   /**
+  /**
    * Get v3
    * @return v3
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_V3)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

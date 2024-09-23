@@ -62,10 +62,10 @@ public class MasterDetailsResponseBillingInfoAddress {
     return this;
   }
 
-   /**
+  /**
    * Street address
    * @return streetAddress
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_STREET_ADDRESS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -81,17 +81,16 @@ public class MasterDetailsResponseBillingInfoAddress {
     this.streetAddress = streetAddress;
   }
 
-
   public MasterDetailsResponseBillingInfoAddress locality(String locality) {
     
     this.locality = locality;
     return this;
   }
 
-   /**
+  /**
    * Locality
    * @return locality
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LOCALITY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -107,17 +106,16 @@ public class MasterDetailsResponseBillingInfoAddress {
     this.locality = locality;
   }
 
-
   public MasterDetailsResponseBillingInfoAddress postalCode(String postalCode) {
     
     this.postalCode = postalCode;
     return this;
   }
 
-   /**
+  /**
    * Postal code
    * @return postalCode
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_POSTAL_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -133,17 +131,16 @@ public class MasterDetailsResponseBillingInfoAddress {
     this.postalCode = postalCode;
   }
 
-
   public MasterDetailsResponseBillingInfoAddress stateCode(String stateCode) {
     
     this.stateCode = stateCode;
     return this;
   }
 
-   /**
+  /**
    * State code
    * @return stateCode
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_STATE_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -159,17 +156,16 @@ public class MasterDetailsResponseBillingInfoAddress {
     this.stateCode = stateCode;
   }
 
-
   public MasterDetailsResponseBillingInfoAddress countryCode(String countryCode) {
     
     this.countryCode = countryCode;
     return this;
   }
 
-   /**
+  /**
    * Country code
    * @return countryCode
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COUNTRY_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

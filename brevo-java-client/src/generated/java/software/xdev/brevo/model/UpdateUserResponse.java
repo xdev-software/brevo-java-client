@@ -43,10 +43,10 @@ public class UpdateUserResponse {
   private String status;
 
   public static final String JSON_PROPERTY_CREDIT_NOTES = "credit_notes";
-  private List<String> creditNotes;
+  private List<String> creditNotes = new ArrayList<>();
 
   public static final String JSON_PROPERTY_INVOICE_ID = "invoice_id";
-  private List<String> invoiceId;
+  private List<String> invoiceId = new ArrayList<>();
 
   public UpdateUserResponse() {
   }
@@ -57,10 +57,10 @@ public class UpdateUserResponse {
     return this;
   }
 
-   /**
+  /**
    * Status of the API operation.
    * @return status
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -76,7 +76,6 @@ public class UpdateUserResponse {
     this.status = status;
   }
 
-
   public UpdateUserResponse creditNotes(List<String> creditNotes) {
     
     this.creditNotes = creditNotes;
@@ -91,10 +90,10 @@ public class UpdateUserResponse {
     return this;
   }
 
-   /**
+  /**
    * Credit note
    * @return creditNotes
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CREDIT_NOTES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -110,7 +109,6 @@ public class UpdateUserResponse {
     this.creditNotes = creditNotes;
   }
 
-
   public UpdateUserResponse invoiceId(List<String> invoiceId) {
     
     this.invoiceId = invoiceId;
@@ -125,10 +123,10 @@ public class UpdateUserResponse {
     return this;
   }
 
-   /**
+  /**
    * Invoice id
    * @return invoiceId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_INVOICE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

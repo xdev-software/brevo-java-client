@@ -58,10 +58,10 @@ public class GetExtendedClientAllOfAddress {
     return this;
   }
 
-   /**
+  /**
    * Street information
    * @return street
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STREET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -77,17 +77,16 @@ public class GetExtendedClientAllOfAddress {
     this.street = street;
   }
 
-
   public GetExtendedClientAllOfAddress city(String city) {
     
     this.city = city;
     return this;
   }
 
-   /**
+  /**
    * City information
    * @return city
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CITY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -103,17 +102,16 @@ public class GetExtendedClientAllOfAddress {
     this.city = city;
   }
 
-
   public GetExtendedClientAllOfAddress zipCode(String zipCode) {
     
     this.zipCode = zipCode;
     return this;
   }
 
-   /**
+  /**
    * Zip Code information
    * @return zipCode
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ZIP_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -129,17 +127,16 @@ public class GetExtendedClientAllOfAddress {
     this.zipCode = zipCode;
   }
 
-
   public GetExtendedClientAllOfAddress country(String country) {
     
     this.country = country;
     return this;
   }
 
-   /**
+  /**
    * Country information
    * @return country
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

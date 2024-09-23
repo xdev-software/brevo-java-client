@@ -70,10 +70,10 @@ public class OrderBilling {
     return this;
   }
 
-   /**
+  /**
    * Full billing address.
    * @return address
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ADDRESS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -89,17 +89,16 @@ public class OrderBilling {
     this.address = address;
   }
 
-
   public OrderBilling city(String city) {
     
     this.city = city;
     return this;
   }
 
-   /**
+  /**
    * Exact city of the address.
    * @return city
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CITY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -115,17 +114,16 @@ public class OrderBilling {
     this.city = city;
   }
 
-
   public OrderBilling countryCode(String countryCode) {
     
     this.countryCode = countryCode;
     return this;
   }
 
-   /**
+  /**
    * Billing country 2-letter ISO code.
    * @return countryCode
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COUNTRY_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -141,17 +139,16 @@ public class OrderBilling {
     this.countryCode = countryCode;
   }
 
-
   public OrderBilling phone(String phone) {
     
     this.phone = phone;
     return this;
   }
 
-   /**
+  /**
    * Phone number to contact for further details about the order, Mandatory if \&quot;email\&quot; field is not passed.
    * @return phone
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PHONE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -167,17 +164,16 @@ public class OrderBilling {
     this.phone = phone;
   }
 
-
   public OrderBilling postCode(String postCode) {
     
     this.postCode = postCode;
     return this;
   }
 
-   /**
+  /**
    * Postcode for delivery and billing.
    * @return postCode
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_POST_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -193,17 +189,16 @@ public class OrderBilling {
     this.postCode = postCode;
   }
 
-
   public OrderBilling paymentMethod(String paymentMethod) {
     
     this.paymentMethod = paymentMethod;
     return this;
   }
 
-   /**
+  /**
    * How the visitor will pay for the item(s), e.g. paypal, check, etc.
    * @return paymentMethod
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -219,17 +214,16 @@ public class OrderBilling {
     this.paymentMethod = paymentMethod;
   }
 
-
   public OrderBilling region(String region) {
     
     this.region = region;
     return this;
   }
 
-   /**
+  /**
    * Exact region (state/province) for delivery and billing.
    * @return region
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REGION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -46,10 +46,10 @@ public class ManageIp {
     return this;
   }
 
-   /**
+  /**
    * Dedicated ID
    * @return ip
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IP)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

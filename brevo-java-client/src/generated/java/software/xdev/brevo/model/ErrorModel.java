@@ -113,10 +113,10 @@ public class ErrorModel {
     return this;
   }
 
-   /**
+  /**
    * Error code displayed in case of a failure
    * @return code
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -132,17 +132,16 @@ public class ErrorModel {
     this.code = code;
   }
 
-
   public ErrorModel message(String message) {
     
     this.message = message;
     return this;
   }
 
-   /**
+  /**
    * Readable message associated to the failure
    * @return message
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MESSAGE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

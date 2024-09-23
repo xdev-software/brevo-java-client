@@ -241,10 +241,10 @@ public class GetExtendedCampaignOverview {
     return this;
   }
 
-   /**
+  /**
    * ID of the campaign
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -260,17 +260,16 @@ public class GetExtendedCampaignOverview {
     this.id = id;
   }
 
-
   public GetExtendedCampaignOverview name(String name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * Name of the campaign
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -286,17 +285,16 @@ public class GetExtendedCampaignOverview {
     this.name = name;
   }
 
-
   public GetExtendedCampaignOverview subject(String subject) {
     
     this.subject = subject;
     return this;
   }
 
-   /**
+  /**
    * Subject of the campaign. Only available if &#x60;abTesting&#x60; flag of the campaign is &#x60;false&#x60;
    * @return subject
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUBJECT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -312,17 +310,16 @@ public class GetExtendedCampaignOverview {
     this.subject = subject;
   }
 
-
   public GetExtendedCampaignOverview previewText(String previewText) {
     
     this.previewText = previewText;
     return this;
   }
 
-   /**
+  /**
    * Preview text or preheader of the email campaign
    * @return previewText
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PREVIEW_TEXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -338,17 +335,16 @@ public class GetExtendedCampaignOverview {
     this.previewText = previewText;
   }
 
-
   public GetExtendedCampaignOverview type(TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Type of campaign
    * @return type
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -364,17 +360,16 @@ public class GetExtendedCampaignOverview {
     this.type = type;
   }
 
-
   public GetExtendedCampaignOverview status(StatusEnum status) {
     
     this.status = status;
     return this;
   }
 
-   /**
+  /**
    * Status of the campaign
    * @return status
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -390,17 +385,16 @@ public class GetExtendedCampaignOverview {
     this.status = status;
   }
 
-
   public GetExtendedCampaignOverview scheduledAt(String scheduledAt) {
     
     this.scheduledAt = scheduledAt;
     return this;
   }
 
-   /**
+  /**
    * UTC date-time on which campaign is scheduled (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return scheduledAt
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -416,17 +410,16 @@ public class GetExtendedCampaignOverview {
     this.scheduledAt = scheduledAt;
   }
 
-
   public GetExtendedCampaignOverview abTesting(Boolean abTesting) {
     
     this.abTesting = abTesting;
     return this;
   }
 
-   /**
+  /**
    * Status of A/B Test for the campaign. abTesting &#x3D; false means it is disabled, &amp; abTesting &#x3D; true means it is enabled.
    * @return abTesting
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_AB_TESTING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -442,17 +435,16 @@ public class GetExtendedCampaignOverview {
     this.abTesting = abTesting;
   }
 
-
   public GetExtendedCampaignOverview subjectA(String subjectA) {
     
     this.subjectA = subjectA;
     return this;
   }
 
-   /**
+  /**
    * Subject A of the ab-test campaign. Only available if &#x60;abTesting&#x60; flag of the campaign is &#x60;true&#x60;
    * @return subjectA
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUBJECT_A)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -468,17 +460,16 @@ public class GetExtendedCampaignOverview {
     this.subjectA = subjectA;
   }
 
-
   public GetExtendedCampaignOverview subjectB(String subjectB) {
     
     this.subjectB = subjectB;
     return this;
   }
 
-   /**
+  /**
    * Subject B of the ab-test campaign. Only available if &#x60;abTesting&#x60; flag of the campaign is &#x60;true&#x60;
    * @return subjectB
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUBJECT_B)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -494,17 +485,16 @@ public class GetExtendedCampaignOverview {
     this.subjectB = subjectB;
   }
 
-
   public GetExtendedCampaignOverview splitRule(Integer splitRule) {
     
     this.splitRule = splitRule;
     return this;
   }
 
-   /**
+  /**
    * The size of your ab-test groups. Only available if &#x60;abTesting&#x60; flag of the campaign is &#x60;true&#x60;
    * @return splitRule
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SPLIT_RULE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -520,17 +510,16 @@ public class GetExtendedCampaignOverview {
     this.splitRule = splitRule;
   }
 
-
   public GetExtendedCampaignOverview winnerCriteria(String winnerCriteria) {
     
     this.winnerCriteria = winnerCriteria;
     return this;
   }
 
-   /**
+  /**
    * Criteria for the winning version. Only available if &#x60;abTesting&#x60; flag of the campaign is &#x60;true&#x60;
    * @return winnerCriteria
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_WINNER_CRITERIA)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -546,17 +535,16 @@ public class GetExtendedCampaignOverview {
     this.winnerCriteria = winnerCriteria;
   }
 
-
   public GetExtendedCampaignOverview winnerDelay(Integer winnerDelay) {
     
     this.winnerDelay = winnerDelay;
     return this;
   }
 
-   /**
+  /**
    * The duration of the test in hours at the end of which the winning version will be sent. Only available if &#x60;abTesting&#x60; flag of the campaign is &#x60;true&#x60;
    * @return winnerDelay
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_WINNER_DELAY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -572,17 +560,16 @@ public class GetExtendedCampaignOverview {
     this.winnerDelay = winnerDelay;
   }
 
-
   public GetExtendedCampaignOverview sendAtBestTime(Boolean sendAtBestTime) {
     
     this.sendAtBestTime = sendAtBestTime;
     return this;
   }
 
-   /**
+  /**
    * It is true if you have chosen to send your campaign at best time, otherwise it is false
    * @return sendAtBestTime
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SEND_AT_BEST_TIME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -598,17 +585,16 @@ public class GetExtendedCampaignOverview {
     this.sendAtBestTime = sendAtBestTime;
   }
 
-
   public GetExtendedCampaignOverview testSent(Boolean testSent) {
     
     this.testSent = testSent;
     return this;
   }
 
-   /**
+  /**
    * Retrieved the status of test email sending. (true&#x3D;Test email has been sent  false&#x3D;Test email has not been sent)
    * @return testSent
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TEST_SENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -624,17 +610,16 @@ public class GetExtendedCampaignOverview {
     this.testSent = testSent;
   }
 
-
   public GetExtendedCampaignOverview header(String header) {
     
     this.header = header;
     return this;
   }
 
-   /**
+  /**
    * Header of the campaign
    * @return header
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_HEADER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -650,17 +635,16 @@ public class GetExtendedCampaignOverview {
     this.header = header;
   }
 
-
   public GetExtendedCampaignOverview footer(String footer) {
     
     this.footer = footer;
     return this;
   }
 
-   /**
+  /**
    * Footer of the campaign
    * @return footer
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_FOOTER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -676,17 +660,16 @@ public class GetExtendedCampaignOverview {
     this.footer = footer;
   }
 
-
   public GetExtendedCampaignOverview sender(GetExtendedCampaignOverviewAllOfSender sender) {
     
     this.sender = sender;
     return this;
   }
 
-   /**
+  /**
    * Get sender
    * @return sender
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SENDER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -702,17 +685,16 @@ public class GetExtendedCampaignOverview {
     this.sender = sender;
   }
 
-
   public GetExtendedCampaignOverview replyTo(String replyTo) {
     
     this.replyTo = replyTo;
     return this;
   }
 
-   /**
+  /**
    * Email defined as the \&quot;Reply to\&quot; of the campaign
    * @return replyTo
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_REPLY_TO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -728,17 +710,16 @@ public class GetExtendedCampaignOverview {
     this.replyTo = replyTo;
   }
 
-
   public GetExtendedCampaignOverview toField(String toField) {
     
     this.toField = toField;
     return this;
   }
 
-   /**
+  /**
    * Customisation of the \&quot;to\&quot; field of the campaign
    * @return toField
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TO_FIELD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -754,17 +735,16 @@ public class GetExtendedCampaignOverview {
     this.toField = toField;
   }
 
-
   public GetExtendedCampaignOverview htmlContent(String htmlContent) {
     
     this.htmlContent = htmlContent;
     return this;
   }
 
-   /**
+  /**
    * HTML content of the campaign
    * @return htmlContent
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_HTML_CONTENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -780,17 +760,16 @@ public class GetExtendedCampaignOverview {
     this.htmlContent = htmlContent;
   }
 
-
   public GetExtendedCampaignOverview shareLink(String shareLink) {
     
     this.shareLink = shareLink;
     return this;
   }
 
-   /**
+  /**
    * Link to share the campaign on social medias
    * @return shareLink
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SHARE_LINK)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -806,17 +785,16 @@ public class GetExtendedCampaignOverview {
     this.shareLink = shareLink;
   }
 
-
   public GetExtendedCampaignOverview tag(String tag) {
     
     this.tag = tag;
     return this;
   }
 
-   /**
+  /**
    * Tag of the campaign
    * @return tag
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TAG)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -832,17 +810,16 @@ public class GetExtendedCampaignOverview {
     this.tag = tag;
   }
 
-
   public GetExtendedCampaignOverview createdAt(String createdAt) {
     
     this.createdAt = createdAt;
     return this;
   }
 
-   /**
+  /**
    * Creation UTC date-time of the campaign (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -858,17 +835,16 @@ public class GetExtendedCampaignOverview {
     this.createdAt = createdAt;
   }
 
-
   public GetExtendedCampaignOverview modifiedAt(String modifiedAt) {
     
     this.modifiedAt = modifiedAt;
     return this;
   }
 
-   /**
+  /**
    * UTC date-time of last modification of the campaign (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return modifiedAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -884,17 +860,16 @@ public class GetExtendedCampaignOverview {
     this.modifiedAt = modifiedAt;
   }
 
-
   public GetExtendedCampaignOverview inlineImageActivation(Boolean inlineImageActivation) {
     
     this.inlineImageActivation = inlineImageActivation;
     return this;
   }
 
-   /**
+  /**
    * Status of inline image. inlineImageActivation &#x3D; false means image can’t be embedded, &amp; inlineImageActivation &#x3D; true means image can be embedded, in the email.
    * @return inlineImageActivation
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_INLINE_IMAGE_ACTIVATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -910,17 +885,16 @@ public class GetExtendedCampaignOverview {
     this.inlineImageActivation = inlineImageActivation;
   }
 
-
   public GetExtendedCampaignOverview mirrorActive(Boolean mirrorActive) {
     
     this.mirrorActive = mirrorActive;
     return this;
   }
 
-   /**
+  /**
    * Status of mirror links in campaign. mirrorActive &#x3D; false means mirror links are deactivated, &amp; mirrorActive &#x3D; true means mirror links are activated, in the campaign
    * @return mirrorActive
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MIRROR_ACTIVE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -936,17 +910,16 @@ public class GetExtendedCampaignOverview {
     this.mirrorActive = mirrorActive;
   }
 
-
   public GetExtendedCampaignOverview recurring(Boolean recurring) {
     
     this.recurring = recurring;
     return this;
   }
 
-   /**
+  /**
    * FOR TRIGGER ONLY ! Type of trigger campaign.recurring &#x3D; false means contact can receive the same Trigger campaign only once, &amp; recurring &#x3D; true means contact can receive the same Trigger campaign several times
    * @return recurring
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RECURRING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -962,17 +935,16 @@ public class GetExtendedCampaignOverview {
     this.recurring = recurring;
   }
 
-
   public GetExtendedCampaignOverview sentDate(String sentDate) {
     
     this.sentDate = sentDate;
     return this;
   }
 
-   /**
+  /**
    * Sent UTC date-time of the campaign (YYYY-MM-DDTHH:mm:ss.SSSZ). Only available if &#39;status&#39; of the campaign is &#39;sent&#39;
    * @return sentDate
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SENT_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -988,17 +960,16 @@ public class GetExtendedCampaignOverview {
     this.sentDate = sentDate;
   }
 
-
   public GetExtendedCampaignOverview returnBounce(Long returnBounce) {
     
     this.returnBounce = returnBounce;
     return this;
   }
 
-   /**
+  /**
    * Total number of non-delivered campaigns for a particular campaign id.
    * @return returnBounce
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RETURN_BOUNCE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

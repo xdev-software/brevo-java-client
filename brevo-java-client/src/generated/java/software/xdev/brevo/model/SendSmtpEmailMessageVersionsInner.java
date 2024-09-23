@@ -55,10 +55,10 @@ public class SendSmtpEmailMessageVersionsInner {
   private Map<String, Object> params = new HashMap<>();
 
   public static final String JSON_PROPERTY_BCC = "bcc";
-  private List<SendSmtpEmailBccInner> bcc;
+  private List<SendSmtpEmailBccInner> bcc = new ArrayList<>();
 
   public static final String JSON_PROPERTY_CC = "cc";
-  private List<SendSmtpEmailCcInner> cc;
+  private List<SendSmtpEmailCcInner> cc = new ArrayList<>();
 
   public static final String JSON_PROPERTY_REPLY_TO = "replyTo";
   private SendSmtpEmailReplyTo replyTo;
@@ -83,10 +83,10 @@ public class SendSmtpEmailMessageVersionsInner {
     return this;
   }
 
-   /**
+  /**
    * List of email addresses and names (_optional_) of the recipients. For example, **[{\&quot;name\&quot;:\&quot;Jimmy\&quot;, \&quot;email\&quot;:\&quot;jimmy98@example.com\&quot;}, {\&quot;name\&quot;:\&quot;Joe\&quot;, \&quot;email\&quot;:\&quot;joe@example.com\&quot;}]** 
    * @return to
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -102,7 +102,6 @@ public class SendSmtpEmailMessageVersionsInner {
     this.to = to;
   }
 
-
   public SendSmtpEmailMessageVersionsInner params(Map<String, Object> params) {
     
     this.params = params;
@@ -117,10 +116,10 @@ public class SendSmtpEmailMessageVersionsInner {
     return this;
   }
 
-   /**
+  /**
    * Pass the set of attributes to customize the template. For example, **{\&quot;FNAME\&quot;:\&quot;Joe\&quot;, \&quot;LNAME\&quot;:\&quot;Doe\&quot;}**. It&#39;s **considered only if template is in New Template Language format**. 
    * @return params
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PARAMS)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
@@ -136,7 +135,6 @@ public class SendSmtpEmailMessageVersionsInner {
     this.params = params;
   }
 
-
   public SendSmtpEmailMessageVersionsInner bcc(List<SendSmtpEmailBccInner> bcc) {
     
     this.bcc = bcc;
@@ -151,10 +149,10 @@ public class SendSmtpEmailMessageVersionsInner {
     return this;
   }
 
-   /**
+  /**
    * List of email addresses and names (_optional_) of the recipients in bcc 
    * @return bcc
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_BCC)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -170,7 +168,6 @@ public class SendSmtpEmailMessageVersionsInner {
     this.bcc = bcc;
   }
 
-
   public SendSmtpEmailMessageVersionsInner cc(List<SendSmtpEmailCcInner> cc) {
     
     this.cc = cc;
@@ -185,10 +182,10 @@ public class SendSmtpEmailMessageVersionsInner {
     return this;
   }
 
-   /**
+  /**
    * List of email addresses and names (_optional_) of the recipients in cc 
    * @return cc
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CC)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -204,17 +201,16 @@ public class SendSmtpEmailMessageVersionsInner {
     this.cc = cc;
   }
 
-
   public SendSmtpEmailMessageVersionsInner replyTo(SendSmtpEmailReplyTo replyTo) {
     
     this.replyTo = replyTo;
     return this;
   }
 
-   /**
+  /**
    * Get replyTo
    * @return replyTo
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REPLY_TO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -230,17 +226,16 @@ public class SendSmtpEmailMessageVersionsInner {
     this.replyTo = replyTo;
   }
 
-
   public SendSmtpEmailMessageVersionsInner subject(String subject) {
     
     this.subject = subject;
     return this;
   }
 
-   /**
+  /**
    * Custom subject specific to message version 
    * @return subject
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUBJECT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

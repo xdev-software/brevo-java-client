@@ -38,7 +38,7 @@ import java.util.StringJoiner;
 @JsonTypeName("sendTestEmail")
 public class SendTestEmail {
   public static final String JSON_PROPERTY_EMAIL_TO = "emailTo";
-  private List<String> emailTo;
+  private List<String> emailTo = new ArrayList<>();
 
   public SendTestEmail() {
   }
@@ -57,10 +57,10 @@ public class SendTestEmail {
     return this;
   }
 
-   /**
+  /**
    * List of the email addresses of the recipients whom you wish to send the test mail. _If left empty, the test mail will be sent to your entire test list. You can not send more than 50 test emails per day_. 
    * @return emailTo
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EMAIL_TO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

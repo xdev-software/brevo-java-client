@@ -62,10 +62,10 @@ public class GetList {
     return this;
   }
 
-   /**
+  /**
    * ID of the list
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -81,17 +81,16 @@ public class GetList {
     this.id = id;
   }
 
-
   public GetList name(String name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * Name of the list
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -107,17 +106,16 @@ public class GetList {
     this.name = name;
   }
 
-
   public GetList totalBlacklisted(Long totalBlacklisted) {
     
     this.totalBlacklisted = totalBlacklisted;
     return this;
   }
 
-   /**
+  /**
    * Number of blacklisted contacts in the list
    * @return totalBlacklisted
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TOTAL_BLACKLISTED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -133,17 +131,16 @@ public class GetList {
     this.totalBlacklisted = totalBlacklisted;
   }
 
-
   public GetList totalSubscribers(Long totalSubscribers) {
     
     this.totalSubscribers = totalSubscribers;
     return this;
   }
 
-   /**
+  /**
    * Number of contacts in the list
    * @return totalSubscribers
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TOTAL_SUBSCRIBERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -159,17 +156,16 @@ public class GetList {
     this.totalSubscribers = totalSubscribers;
   }
 
-
   public GetList uniqueSubscribers(Long uniqueSubscribers) {
     
     this.uniqueSubscribers = uniqueSubscribers;
     return this;
   }
 
-   /**
+  /**
    * Number of unique contacts in the list
    * @return uniqueSubscribers
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UNIQUE_SUBSCRIBERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

@@ -54,10 +54,10 @@ public class GetAccountAllOfRelayData {
     return this;
   }
 
-   /**
+  /**
    * Email to use as login on transactional platform
    * @return userName
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_USER_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -73,17 +73,16 @@ public class GetAccountAllOfRelayData {
     this.userName = userName;
   }
 
-
   public GetAccountAllOfRelayData relay(String relay) {
     
     this.relay = relay;
     return this;
   }
 
-   /**
+  /**
    * URL of the SMTP Relay
    * @return relay
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_RELAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -99,17 +98,16 @@ public class GetAccountAllOfRelayData {
     this.relay = relay;
   }
 
-
   public GetAccountAllOfRelayData port(Integer port) {
     
     this.port = port;
     return this;
   }
 
-   /**
+  /**
    * Port used for SMTP Relay
    * @return port
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PORT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

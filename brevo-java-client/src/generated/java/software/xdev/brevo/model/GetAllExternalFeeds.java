@@ -43,7 +43,7 @@ public class GetAllExternalFeeds {
   private Integer count;
 
   public static final String JSON_PROPERTY_FEEDS = "feeds";
-  private List<GetAllExternalFeedsFeedsInner> feeds;
+  private List<GetAllExternalFeedsFeedsInner> feeds = new ArrayList<>();
 
   public GetAllExternalFeeds() {
   }
@@ -54,10 +54,10 @@ public class GetAllExternalFeeds {
     return this;
   }
 
-   /**
+  /**
    * Total number of batches
    * @return count
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -73,7 +73,6 @@ public class GetAllExternalFeeds {
     this.count = count;
   }
 
-
   public GetAllExternalFeeds feeds(List<GetAllExternalFeedsFeedsInner> feeds) {
     
     this.feeds = feeds;
@@ -88,10 +87,10 @@ public class GetAllExternalFeeds {
     return this;
   }
 
-   /**
+  /**
    * Get feeds
    * @return feeds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_FEEDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

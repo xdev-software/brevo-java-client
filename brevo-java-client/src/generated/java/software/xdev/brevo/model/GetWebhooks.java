@@ -58,10 +58,10 @@ public class GetWebhooks {
     return this;
   }
 
-   /**
+  /**
    * Get webhooks
    * @return webhooks
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_WEBHOOKS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

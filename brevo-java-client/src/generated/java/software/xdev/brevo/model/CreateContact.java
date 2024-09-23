@@ -62,13 +62,13 @@ public class CreateContact {
   private Boolean smsBlacklisted;
 
   public static final String JSON_PROPERTY_LIST_IDS = "listIds";
-  private List<Long> listIds;
+  private List<Long> listIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_UPDATE_ENABLED = "updateEnabled";
   private Boolean updateEnabled = false;
 
   public static final String JSON_PROPERTY_SMTP_BLACKLIST_SENDER = "smtpBlacklistSender";
-  private List<String> smtpBlacklistSender;
+  private List<String> smtpBlacklistSender = new ArrayList<>();
 
   public CreateContact() {
   }
@@ -79,10 +79,10 @@ public class CreateContact {
     return this;
   }
 
-   /**
+  /**
    * Email address of the user. **Mandatory if \&quot;SMS\&quot; field is not passed in \&quot;attributes\&quot; parameter**. Mobile Number in **SMS** field should be passed with proper country code. For example: **{\&quot;SMS\&quot;:\&quot;+91xxxxxxxxxx\&quot;}** or **{\&quot;SMS\&quot;:\&quot;0091xxxxxxxxxx\&quot;}** 
    * @return email
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -98,17 +98,16 @@ public class CreateContact {
     this.email = email;
   }
 
-
   public CreateContact extId(String extId) {
     
     this.extId = extId;
     return this;
   }
 
-   /**
+  /**
    * Pass your own Id to create a contact.
    * @return extId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EXT_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -124,7 +123,6 @@ public class CreateContact {
     this.extId = extId;
   }
 
-
   public CreateContact attributes(Map<String, Object> attributes) {
     
     this.attributes = attributes;
@@ -139,10 +137,10 @@ public class CreateContact {
     return this;
   }
 
-   /**
+  /**
    * Pass the set of attributes and their values. The attribute&#39;s parameter should be passed in capital letter while creating a contact. Values that don&#39;t match the attribute type (e.g. text or string in a date attribute) will be ignored. **These attributes must be present in your Brevo account.**. For eg: **{\&quot;FNAME\&quot;:\&quot;Elly\&quot;, \&quot;LNAME\&quot;:\&quot;Roger\&quot;}** 
    * @return attributes
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
@@ -158,17 +156,16 @@ public class CreateContact {
     this.attributes = attributes;
   }
 
-
   public CreateContact emailBlacklisted(Boolean emailBlacklisted) {
     
     this.emailBlacklisted = emailBlacklisted;
     return this;
   }
 
-   /**
+  /**
    * Set this field to blacklist the contact for emails (emailBlacklisted &#x3D; true)
    * @return emailBlacklisted
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EMAIL_BLACKLISTED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -184,17 +181,16 @@ public class CreateContact {
     this.emailBlacklisted = emailBlacklisted;
   }
 
-
   public CreateContact smsBlacklisted(Boolean smsBlacklisted) {
     
     this.smsBlacklisted = smsBlacklisted;
     return this;
   }
 
-   /**
+  /**
    * Set this field to blacklist the contact for SMS (smsBlacklisted &#x3D; true)
    * @return smsBlacklisted
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SMS_BLACKLISTED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -210,7 +206,6 @@ public class CreateContact {
     this.smsBlacklisted = smsBlacklisted;
   }
 
-
   public CreateContact listIds(List<Long> listIds) {
     
     this.listIds = listIds;
@@ -225,10 +220,10 @@ public class CreateContact {
     return this;
   }
 
-   /**
+  /**
    * Ids of the lists to add the contact to
    * @return listIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LIST_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -244,17 +239,16 @@ public class CreateContact {
     this.listIds = listIds;
   }
 
-
   public CreateContact updateEnabled(Boolean updateEnabled) {
     
     this.updateEnabled = updateEnabled;
     return this;
   }
 
-   /**
+  /**
    * Facilitate to update the existing contact in the same request (updateEnabled &#x3D; true)
    * @return updateEnabled
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UPDATE_ENABLED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -270,7 +264,6 @@ public class CreateContact {
     this.updateEnabled = updateEnabled;
   }
 
-
   public CreateContact smtpBlacklistSender(List<String> smtpBlacklistSender) {
     
     this.smtpBlacklistSender = smtpBlacklistSender;
@@ -285,10 +278,10 @@ public class CreateContact {
     return this;
   }
 
-   /**
+  /**
    * transactional email forbidden sender for contact. Use only for email Contact ( only available if updateEnabled &#x3D; true )
    * @return smtpBlacklistSender
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SMTP_BLACKLIST_SENDER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

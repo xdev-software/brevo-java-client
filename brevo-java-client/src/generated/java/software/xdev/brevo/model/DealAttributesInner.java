@@ -51,7 +51,7 @@ public class DealAttributesInner {
   private String attributeTypeName;
 
   public static final String JSON_PROPERTY_ATTRIBUTE_OPTIONS = "attributeOptions";
-  private List<Object> attributeOptions;
+  private List<Object> attributeOptions = new ArrayList<>();
 
   public static final String JSON_PROPERTY_IS_REQUIRED = "isRequired";
   private Boolean isRequired;
@@ -65,10 +65,10 @@ public class DealAttributesInner {
     return this;
   }
 
-   /**
+  /**
    * Get internalName
    * @return internalName
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_INTERNAL_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -84,17 +84,16 @@ public class DealAttributesInner {
     this.internalName = internalName;
   }
 
-
   public DealAttributesInner label(String label) {
     
     this.label = label;
     return this;
   }
 
-   /**
+  /**
    * Get label
    * @return label
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LABEL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -110,17 +109,16 @@ public class DealAttributesInner {
     this.label = label;
   }
 
-
   public DealAttributesInner attributeTypeName(String attributeTypeName) {
     
     this.attributeTypeName = attributeTypeName;
     return this;
   }
 
-   /**
+  /**
    * Get attributeTypeName
    * @return attributeTypeName
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ATTRIBUTE_TYPE_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -136,7 +134,6 @@ public class DealAttributesInner {
     this.attributeTypeName = attributeTypeName;
   }
 
-
   public DealAttributesInner attributeOptions(List<Object> attributeOptions) {
     
     this.attributeOptions = attributeOptions;
@@ -151,10 +148,10 @@ public class DealAttributesInner {
     return this;
   }
 
-   /**
+  /**
    * Get attributeOptions
    * @return attributeOptions
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ATTRIBUTE_OPTIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -170,17 +167,16 @@ public class DealAttributesInner {
     this.attributeOptions = attributeOptions;
   }
 
-
   public DealAttributesInner isRequired(Boolean isRequired) {
     
     this.isRequired = isRequired;
     return this;
   }
 
-   /**
+  /**
    * Get isRequired
    * @return isRequired
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IS_REQUIRED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

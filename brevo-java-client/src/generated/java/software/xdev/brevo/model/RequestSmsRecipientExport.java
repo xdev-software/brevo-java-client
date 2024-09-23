@@ -48,9 +48,9 @@ public class RequestSmsRecipientExport {
     
     ANSWERED("answered"),
     
-    SOFTBOUNCES("softBounces"),
+    SOFT_BOUNCES("softBounces"),
     
-    HARDBOUNCES("hardBounces"),
+    HARD_BOUNCES("hardBounces"),
     
     UNSUBSCRIBED("unsubscribed");
 
@@ -93,10 +93,10 @@ public class RequestSmsRecipientExport {
     return this;
   }
 
-   /**
+  /**
    * URL that will be called once the export process is finished. For reference, https://help.brevo.com/hc/en-us/articles/360007666479
    * @return notifyURL
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NOTIFY_U_R_L)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -112,17 +112,16 @@ public class RequestSmsRecipientExport {
     this.notifyURL = notifyURL;
   }
 
-
   public RequestSmsRecipientExport recipientsType(RecipientsTypeEnum recipientsType) {
     
     this.recipientsType = recipientsType;
     return this;
   }
 
-   /**
+  /**
    * Filter the recipients based on how they interacted with the campaign
    * @return recipientsType
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_RECIPIENTS_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

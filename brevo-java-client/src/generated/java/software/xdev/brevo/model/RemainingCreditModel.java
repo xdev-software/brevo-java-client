@@ -52,10 +52,10 @@ public class RemainingCreditModel {
     return this;
   }
 
-   /**
+  /**
    * Get child
    * @return child
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CHILD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -71,17 +71,16 @@ public class RemainingCreditModel {
     this.child = child;
   }
 
-
   public RemainingCreditModel reseller(RemainingCreditModelReseller reseller) {
     
     this.reseller = reseller;
     return this;
   }
 
-   /**
+  /**
    * Get reseller
    * @return reseller
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_RESELLER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

@@ -65,7 +65,7 @@ public class GetSmsCampaignsCampaignsInner {
     
     SUSPENDED("suspended"),
     
-    INPROCESS("inProcess");
+    IN_PROCESS("inProcess");
 
     private String value;
 
@@ -127,10 +127,10 @@ public class GetSmsCampaignsCampaignsInner {
     return this;
   }
 
-   /**
+  /**
    * ID of the SMS Campaign
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -146,17 +146,16 @@ public class GetSmsCampaignsCampaignsInner {
     this.id = id;
   }
 
-
   public GetSmsCampaignsCampaignsInner name(String name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * Name of the SMS Campaign
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -172,17 +171,16 @@ public class GetSmsCampaignsCampaignsInner {
     this.name = name;
   }
 
-
   public GetSmsCampaignsCampaignsInner status(StatusEnum status) {
     
     this.status = status;
     return this;
   }
 
-   /**
+  /**
    * Status of the SMS Campaign
    * @return status
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -198,17 +196,16 @@ public class GetSmsCampaignsCampaignsInner {
     this.status = status;
   }
 
-
   public GetSmsCampaignsCampaignsInner content(String content) {
     
     this.content = content;
     return this;
   }
 
-   /**
+  /**
    * Content of the SMS Campaign
    * @return content
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CONTENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -224,17 +221,16 @@ public class GetSmsCampaignsCampaignsInner {
     this.content = content;
   }
 
-
   public GetSmsCampaignsCampaignsInner scheduledAt(String scheduledAt) {
     
     this.scheduledAt = scheduledAt;
     return this;
   }
 
-   /**
+  /**
    * UTC date-time on which SMS campaign is scheduled. Should be in YYYY-MM-DDTHH:mm:ss.SSSZ format
    * @return scheduledAt
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -250,17 +246,16 @@ public class GetSmsCampaignsCampaignsInner {
     this.scheduledAt = scheduledAt;
   }
 
-
   public GetSmsCampaignsCampaignsInner sender(String sender) {
     
     this.sender = sender;
     return this;
   }
 
-   /**
+  /**
    * Sender of the SMS Campaign
    * @return sender
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SENDER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -276,17 +271,16 @@ public class GetSmsCampaignsCampaignsInner {
     this.sender = sender;
   }
 
-
   public GetSmsCampaignsCampaignsInner createdAt(String createdAt) {
     
     this.createdAt = createdAt;
     return this;
   }
 
-   /**
+  /**
    * Creation UTC date-time of the SMS campaign (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -302,17 +296,16 @@ public class GetSmsCampaignsCampaignsInner {
     this.createdAt = createdAt;
   }
 
-
   public GetSmsCampaignsCampaignsInner modifiedAt(String modifiedAt) {
     
     this.modifiedAt = modifiedAt;
     return this;
   }
 
-   /**
+  /**
    * UTC date-time of last modification of the SMS campaign (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return modifiedAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -328,17 +321,16 @@ public class GetSmsCampaignsCampaignsInner {
     this.modifiedAt = modifiedAt;
   }
 
-
   public GetSmsCampaignsCampaignsInner recipients(GetCampaignRecipients recipients) {
     
     this.recipients = recipients;
     return this;
   }
 
-   /**
+  /**
    * Get recipients
    * @return recipients
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_RECIPIENTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -354,17 +346,16 @@ public class GetSmsCampaignsCampaignsInner {
     this.recipients = recipients;
   }
 
-
   public GetSmsCampaignsCampaignsInner statistics(GetSmsCampaignStats statistics) {
     
     this.statistics = statistics;
     return this;
   }
 
-   /**
+  /**
    * Get statistics
    * @return statistics
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATISTICS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

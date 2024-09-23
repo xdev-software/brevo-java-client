@@ -54,10 +54,10 @@ public class CompaniesIdPatchRequest {
     return this;
   }
 
-   /**
+  /**
    * Name of company
    * @return name
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -73,17 +73,16 @@ public class CompaniesIdPatchRequest {
     this.name = name;
   }
 
-
   public CompaniesIdPatchRequest attributes(Object attributes) {
     
     this.attributes = attributes;
     return this;
   }
 
-   /**
+  /**
    * Attributes for company update
    * @return attributes
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -99,17 +98,16 @@ public class CompaniesIdPatchRequest {
     this.attributes = attributes;
   }
 
-
   public CompaniesIdPatchRequest countryCode(Long countryCode) {
     
     this.countryCode = countryCode;
     return this;
   }
 
-   /**
+  /**
    * Country code if phone_number is passed in attributes.
    * @return countryCode
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COUNTRY_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

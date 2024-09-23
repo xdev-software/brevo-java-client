@@ -94,10 +94,10 @@ public class GetAggregatedReport {
     return this;
   }
 
-   /**
+  /**
    * Time frame of the report
    * @return range
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RANGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -113,17 +113,16 @@ public class GetAggregatedReport {
     this.range = range;
   }
 
-
   public GetAggregatedReport requests(Long requests) {
     
     this.requests = requests;
     return this;
   }
 
-   /**
+  /**
    * Number of requests for the timeframe
    * @return requests
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REQUESTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -139,17 +138,16 @@ public class GetAggregatedReport {
     this.requests = requests;
   }
 
-
   public GetAggregatedReport delivered(Long delivered) {
     
     this.delivered = delivered;
     return this;
   }
 
-   /**
+  /**
    * Number of delivered emails for the timeframe
    * @return delivered
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DELIVERED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -165,17 +163,16 @@ public class GetAggregatedReport {
     this.delivered = delivered;
   }
 
-
   public GetAggregatedReport hardBounces(Long hardBounces) {
     
     this.hardBounces = hardBounces;
     return this;
   }
 
-   /**
+  /**
    * Number of hardbounces for the timeframe
    * @return hardBounces
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_HARD_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -191,17 +188,16 @@ public class GetAggregatedReport {
     this.hardBounces = hardBounces;
   }
 
-
   public GetAggregatedReport softBounces(Long softBounces) {
     
     this.softBounces = softBounces;
     return this;
   }
 
-   /**
+  /**
    * Number of softbounces for the timeframe
    * @return softBounces
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SOFT_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -217,17 +213,16 @@ public class GetAggregatedReport {
     this.softBounces = softBounces;
   }
 
-
   public GetAggregatedReport clicks(Long clicks) {
     
     this.clicks = clicks;
     return this;
   }
 
-   /**
+  /**
    * Number of clicks for the timeframe
    * @return clicks
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CLICKS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -243,17 +238,16 @@ public class GetAggregatedReport {
     this.clicks = clicks;
   }
 
-
   public GetAggregatedReport uniqueClicks(Long uniqueClicks) {
     
     this.uniqueClicks = uniqueClicks;
     return this;
   }
 
-   /**
+  /**
    * Number of unique clicks for the timeframe
    * @return uniqueClicks
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UNIQUE_CLICKS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -269,17 +263,16 @@ public class GetAggregatedReport {
     this.uniqueClicks = uniqueClicks;
   }
 
-
   public GetAggregatedReport opens(Long opens) {
     
     this.opens = opens;
     return this;
   }
 
-   /**
+  /**
    * Number of openings for the timeframe
    * @return opens
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_OPENS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -295,17 +288,16 @@ public class GetAggregatedReport {
     this.opens = opens;
   }
 
-
   public GetAggregatedReport uniqueOpens(Long uniqueOpens) {
     
     this.uniqueOpens = uniqueOpens;
     return this;
   }
 
-   /**
+  /**
    * Number of unique openings for the timeframe
    * @return uniqueOpens
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UNIQUE_OPENS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -321,17 +313,16 @@ public class GetAggregatedReport {
     this.uniqueOpens = uniqueOpens;
   }
 
-
   public GetAggregatedReport spamReports(Long spamReports) {
     
     this.spamReports = spamReports;
     return this;
   }
 
-   /**
+  /**
    * Number of complaint (spam report) for the timeframe
    * @return spamReports
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SPAM_REPORTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -347,17 +338,16 @@ public class GetAggregatedReport {
     this.spamReports = spamReports;
   }
 
-
   public GetAggregatedReport blocked(Long blocked) {
     
     this.blocked = blocked;
     return this;
   }
 
-   /**
+  /**
    * Number of blocked contact emails for the timeframe
    * @return blocked
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_BLOCKED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -373,17 +363,16 @@ public class GetAggregatedReport {
     this.blocked = blocked;
   }
 
-
   public GetAggregatedReport invalid(Long invalid) {
     
     this.invalid = invalid;
     return this;
   }
 
-   /**
+  /**
    * Number of invalid emails for the timeframe
    * @return invalid
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_INVALID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -399,17 +388,16 @@ public class GetAggregatedReport {
     this.invalid = invalid;
   }
 
-
   public GetAggregatedReport unsubscribed(Long unsubscribed) {
     
     this.unsubscribed = unsubscribed;
     return this;
   }
 
-   /**
+  /**
    * Number of unsubscribed emails for the timeframe
    * @return unsubscribed
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UNSUBSCRIBED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

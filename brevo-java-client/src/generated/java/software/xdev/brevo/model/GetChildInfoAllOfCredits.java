@@ -50,10 +50,10 @@ public class GetChildInfoAllOfCredits {
     return this;
   }
 
-   /**
+  /**
    * Email credits available for your child
    * @return emailCredits
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EMAIL_CREDITS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -69,17 +69,16 @@ public class GetChildInfoAllOfCredits {
     this.emailCredits = emailCredits;
   }
 
-
   public GetChildInfoAllOfCredits smsCredits(Long smsCredits) {
     
     this.smsCredits = smsCredits;
     return this;
   }
 
-   /**
+  /**
    * SMS credits available for your child
    * @return smsCredits
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SMS_CREDITS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

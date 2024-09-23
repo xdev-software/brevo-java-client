@@ -59,10 +59,10 @@ public class OrderProductsInner {
     return this;
   }
 
-   /**
+  /**
    * ID of the product.
    * @return productId
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PRODUCT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -78,17 +78,16 @@ public class OrderProductsInner {
     this.productId = productId;
   }
 
-
   public OrderProductsInner quantity(BigDecimal quantity) {
     
     this.quantity = quantity;
     return this;
   }
 
-   /**
+  /**
    * How many pieces of the product the visitor has added to the cart.
    * @return quantity
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_QUANTITY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -104,17 +103,16 @@ public class OrderProductsInner {
     this.quantity = quantity;
   }
 
-
   public OrderProductsInner variantId(String variantId) {
     
     this.variantId = variantId;
     return this;
   }
 
-   /**
+  /**
    * Product ID of the red color shirts.
    * @return variantId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_VARIANT_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -130,17 +128,16 @@ public class OrderProductsInner {
     this.variantId = variantId;
   }
 
-
   public OrderProductsInner price(BigDecimal price) {
     
     this.price = price;
     return this;
   }
 
-   /**
+  /**
    * The price of a unit of product
    * @return price
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PRICE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

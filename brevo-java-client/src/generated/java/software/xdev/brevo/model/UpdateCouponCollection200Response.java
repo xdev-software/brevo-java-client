@@ -54,10 +54,10 @@ public class UpdateCouponCollection200Response {
     return this;
   }
 
-   /**
+  /**
    * The id of the collection
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -73,17 +73,16 @@ public class UpdateCouponCollection200Response {
     this.id = id;
   }
 
-
   public UpdateCouponCollection200Response name(String name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * The name of the collection
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -99,17 +98,16 @@ public class UpdateCouponCollection200Response {
     this.name = name;
   }
 
-
   public UpdateCouponCollection200Response defaultCoupon(String defaultCoupon) {
     
     this.defaultCoupon = defaultCoupon;
     return this;
   }
 
-   /**
+  /**
    * The default coupon of the collection
    * @return defaultCoupon
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DEFAULT_COUPON)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

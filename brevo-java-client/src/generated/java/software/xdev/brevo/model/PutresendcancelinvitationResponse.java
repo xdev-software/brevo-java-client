@@ -42,7 +42,7 @@ public class PutresendcancelinvitationResponse {
   private String status;
 
   public static final String JSON_PROPERTY_CREDIT_NOTES = "credit_notes";
-  private List<String> creditNotes;
+  private List<String> creditNotes = new ArrayList<>();
 
   public PutresendcancelinvitationResponse() {
   }
@@ -53,10 +53,10 @@ public class PutresendcancelinvitationResponse {
     return this;
   }
 
-   /**
+  /**
    * Status of the API operation.
    * @return status
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -72,7 +72,6 @@ public class PutresendcancelinvitationResponse {
     this.status = status;
   }
 
-
   public PutresendcancelinvitationResponse creditNotes(List<String> creditNotes) {
     
     this.creditNotes = creditNotes;
@@ -87,10 +86,10 @@ public class PutresendcancelinvitationResponse {
     return this;
   }
 
-   /**
+  /**
    * Credit note
    * @return creditNotes
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CREDIT_NOTES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

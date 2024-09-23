@@ -82,10 +82,10 @@ public class GetTransacAggregatedSmsReport {
     return this;
   }
 
-   /**
+  /**
    * Time frame of the report
    * @return range
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RANGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -101,17 +101,16 @@ public class GetTransacAggregatedSmsReport {
     this.range = range;
   }
 
-
   public GetTransacAggregatedSmsReport requests(Long requests) {
     
     this.requests = requests;
     return this;
   }
 
-   /**
+  /**
    * Number of requests for the timeframe
    * @return requests
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REQUESTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -127,17 +126,16 @@ public class GetTransacAggregatedSmsReport {
     this.requests = requests;
   }
 
-
   public GetTransacAggregatedSmsReport delivered(Long delivered) {
     
     this.delivered = delivered;
     return this;
   }
 
-   /**
+  /**
    * Number of delivered SMS for the timeframe
    * @return delivered
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DELIVERED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -153,17 +151,16 @@ public class GetTransacAggregatedSmsReport {
     this.delivered = delivered;
   }
 
-
   public GetTransacAggregatedSmsReport hardBounces(Long hardBounces) {
     
     this.hardBounces = hardBounces;
     return this;
   }
 
-   /**
+  /**
    * Number of hardbounces for the timeframe
    * @return hardBounces
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_HARD_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -179,17 +176,16 @@ public class GetTransacAggregatedSmsReport {
     this.hardBounces = hardBounces;
   }
 
-
   public GetTransacAggregatedSmsReport softBounces(Long softBounces) {
     
     this.softBounces = softBounces;
     return this;
   }
 
-   /**
+  /**
    * Number of softbounces for the timeframe
    * @return softBounces
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SOFT_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -205,17 +201,16 @@ public class GetTransacAggregatedSmsReport {
     this.softBounces = softBounces;
   }
 
-
   public GetTransacAggregatedSmsReport blocked(Long blocked) {
     
     this.blocked = blocked;
     return this;
   }
 
-   /**
+  /**
    * Number of blocked contact for the timeframe
    * @return blocked
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_BLOCKED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -231,17 +226,16 @@ public class GetTransacAggregatedSmsReport {
     this.blocked = blocked;
   }
 
-
   public GetTransacAggregatedSmsReport unsubscribed(Long unsubscribed) {
     
     this.unsubscribed = unsubscribed;
     return this;
   }
 
-   /**
+  /**
    * Number of unsubscription for the timeframe
    * @return unsubscribed
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UNSUBSCRIBED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -257,17 +251,16 @@ public class GetTransacAggregatedSmsReport {
     this.unsubscribed = unsubscribed;
   }
 
-
   public GetTransacAggregatedSmsReport replied(Long replied) {
     
     this.replied = replied;
     return this;
   }
 
-   /**
+  /**
    * Number of answered SMS for the timeframe
    * @return replied
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REPLIED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -283,17 +276,16 @@ public class GetTransacAggregatedSmsReport {
     this.replied = replied;
   }
 
-
   public GetTransacAggregatedSmsReport accepted(Long accepted) {
     
     this.accepted = accepted;
     return this;
   }
 
-   /**
+  /**
    * Number of accepted for the timeframe
    * @return accepted
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ACCEPTED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -309,17 +301,16 @@ public class GetTransacAggregatedSmsReport {
     this.accepted = accepted;
   }
 
-
   public GetTransacAggregatedSmsReport rejected(Long rejected) {
     
     this.rejected = rejected;
     return this;
   }
 
-   /**
+  /**
    * Number of rejected for the timeframe
    * @return rejected
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REJECTED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

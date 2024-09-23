@@ -54,10 +54,10 @@ public class CorporateGroupDetailsResponseUsersInner {
     return this;
   }
 
-   /**
+  /**
    * Email address of the user
    * @return email
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -73,17 +73,16 @@ public class CorporateGroupDetailsResponseUsersInner {
     this.email = email;
   }
 
-
   public CorporateGroupDetailsResponseUsersInner lastName(String lastName) {
     
     this.lastName = lastName;
     return this;
   }
 
-   /**
+  /**
    * Last name of the user
    * @return lastName
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LAST_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -99,17 +98,16 @@ public class CorporateGroupDetailsResponseUsersInner {
     this.lastName = lastName;
   }
 
-
   public CorporateGroupDetailsResponseUsersInner firstName(String firstName) {
     
     this.firstName = firstName;
     return this;
   }
 
-   /**
+  /**
    * First name of the user
    * @return firstName
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_FIRST_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -39,7 +39,7 @@ import java.util.StringJoiner;
 @JsonTypeName("getSegments")
 public class GetSegments {
   public static final String JSON_PROPERTY_SEGMENTS = "segments";
-  private List<Object> segments;
+  private List<Object> segments = new ArrayList<>();
 
   public static final String JSON_PROPERTY_COUNT = "count";
   private Long count;
@@ -53,10 +53,10 @@ public class GetSegments {
     return this;
   }
 
-   /**
+  /**
    * Listing of all the segments available in your account
    * @return segments
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SEGMENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -72,17 +72,16 @@ public class GetSegments {
     this.segments = segments;
   }
 
-
   public GetSegments count(Long count) {
     
     this.count = count;
     return this;
   }
 
-   /**
+  /**
    * Number of Segments in your account
    * @return count
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

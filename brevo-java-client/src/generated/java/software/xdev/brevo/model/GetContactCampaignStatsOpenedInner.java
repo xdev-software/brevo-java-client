@@ -58,10 +58,10 @@ public class GetContactCampaignStatsOpenedInner {
     return this;
   }
 
-   /**
+  /**
    * ID of the campaign which generated the event
    * @return campaignId
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CAMPAIGN_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -77,17 +77,16 @@ public class GetContactCampaignStatsOpenedInner {
     this.campaignId = campaignId;
   }
 
-
   public GetContactCampaignStatsOpenedInner count(Long count) {
     
     this.count = count;
     return this;
   }
 
-   /**
+  /**
    * Number of openings of the campaign
    * @return count
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -103,17 +102,16 @@ public class GetContactCampaignStatsOpenedInner {
     this.count = count;
   }
 
-
   public GetContactCampaignStatsOpenedInner eventTime(String eventTime) {
     
     this.eventTime = eventTime;
     return this;
   }
 
-   /**
+  /**
    * UTC date-time of the event
    * @return eventTime
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EVENT_TIME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -129,17 +127,16 @@ public class GetContactCampaignStatsOpenedInner {
     this.eventTime = eventTime;
   }
 
-
   public GetContactCampaignStatsOpenedInner ip(String ip) {
     
     this.ip = ip;
     return this;
   }
 
-   /**
+  /**
    * IP from which the user has opened the campaign
    * @return ip
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_IP)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

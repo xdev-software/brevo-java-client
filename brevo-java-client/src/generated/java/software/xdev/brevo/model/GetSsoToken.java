@@ -46,10 +46,10 @@ public class GetSsoToken {
     return this;
   }
 
-   /**
+  /**
    * Session token, it will remain valid for 15 days.
    * @return token
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

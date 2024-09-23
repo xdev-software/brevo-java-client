@@ -54,11 +54,11 @@ public class ConversationsMessageFileImageInfo {
     return this;
   }
 
-   /**
+  /**
    * Width of the image
    * minimum: 0
    * @return width
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_WIDTH)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -74,18 +74,17 @@ public class ConversationsMessageFileImageInfo {
     this.width = width;
   }
 
-
   public ConversationsMessageFileImageInfo height(Long height) {
     
     this.height = height;
     return this;
   }
 
-   /**
+  /**
    * height of the image
    * minimum: 0
    * @return height
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_HEIGHT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -101,17 +100,16 @@ public class ConversationsMessageFileImageInfo {
     this.height = height;
   }
 
-
   public ConversationsMessageFileImageInfo previewUrl(String previewUrl) {
     
     this.previewUrl = previewUrl;
     return this;
   }
 
-   /**
+  /**
    * URL of the preview
    * @return previewUrl
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PREVIEW_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

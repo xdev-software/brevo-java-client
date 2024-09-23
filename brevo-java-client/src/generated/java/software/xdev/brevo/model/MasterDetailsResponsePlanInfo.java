@@ -95,7 +95,7 @@ public class MasterDetailsResponsePlanInfo {
   private Integer subAccounts;
 
   public static final String JSON_PROPERTY_FEATURES = "features";
-  private List<MasterDetailsResponsePlanInfoFeaturesInner> features;
+  private List<MasterDetailsResponsePlanInfoFeaturesInner> features = new ArrayList<>();
 
   public MasterDetailsResponsePlanInfo() {
   }
@@ -106,10 +106,10 @@ public class MasterDetailsResponsePlanInfo {
     return this;
   }
 
-   /**
+  /**
    * Plan currency
    * @return currencyCode
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CURRENCY_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -125,17 +125,16 @@ public class MasterDetailsResponsePlanInfo {
     this.currencyCode = currencyCode;
   }
 
-
   public MasterDetailsResponsePlanInfo nextBillingAt(Long nextBillingAt) {
     
     this.nextBillingAt = nextBillingAt;
     return this;
   }
 
-   /**
+  /**
    * Timestamp of next billing date
    * @return nextBillingAt
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NEXT_BILLING_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -151,17 +150,16 @@ public class MasterDetailsResponsePlanInfo {
     this.nextBillingAt = nextBillingAt;
   }
 
-
   public MasterDetailsResponsePlanInfo price(BigDecimal price) {
     
     this.price = price;
     return this;
   }
 
-   /**
+  /**
    * Plan amount
    * @return price
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PRICE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -177,17 +175,16 @@ public class MasterDetailsResponsePlanInfo {
     this.price = price;
   }
 
-
   public MasterDetailsResponsePlanInfo planPeriod(PlanPeriodEnum planPeriod) {
     
     this.planPeriod = planPeriod;
     return this;
   }
 
-   /**
+  /**
    * Plan period type
    * @return planPeriod
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PLAN_PERIOD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -203,17 +200,16 @@ public class MasterDetailsResponsePlanInfo {
     this.planPeriod = planPeriod;
   }
 
-
   public MasterDetailsResponsePlanInfo subAccounts(Integer subAccounts) {
     
     this.subAccounts = subAccounts;
     return this;
   }
 
-   /**
+  /**
    * Number of sub-accounts
    * @return subAccounts
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUB_ACCOUNTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -229,7 +225,6 @@ public class MasterDetailsResponsePlanInfo {
     this.subAccounts = subAccounts;
   }
 
-
   public MasterDetailsResponsePlanInfo features(List<MasterDetailsResponsePlanInfoFeaturesInner> features) {
     
     this.features = features;
@@ -244,10 +239,10 @@ public class MasterDetailsResponsePlanInfo {
     return this;
   }
 
-   /**
+  /**
    * List of provided features in the plan
    * @return features
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_FEATURES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

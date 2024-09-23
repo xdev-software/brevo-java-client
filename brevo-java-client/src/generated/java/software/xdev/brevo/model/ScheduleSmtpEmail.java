@@ -43,7 +43,7 @@ public class ScheduleSmtpEmail {
   private String messageId;
 
   public static final String JSON_PROPERTY_MESSAGE_IDS = "messageIds";
-  private List<String> messageIds;
+  private List<String> messageIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_BATCH_ID = "batchId";
   private String batchId;
@@ -57,10 +57,10 @@ public class ScheduleSmtpEmail {
     return this;
   }
 
-   /**
+  /**
    * Message ID of the transactional email scheduled
    * @return messageId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -76,7 +76,6 @@ public class ScheduleSmtpEmail {
     this.messageId = messageId;
   }
 
-
   public ScheduleSmtpEmail messageIds(List<String> messageIds) {
     
     this.messageIds = messageIds;
@@ -91,10 +90,10 @@ public class ScheduleSmtpEmail {
     return this;
   }
 
-   /**
+  /**
    * Get messageIds
    * @return messageIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MESSAGE_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -110,17 +109,16 @@ public class ScheduleSmtpEmail {
     this.messageIds = messageIds;
   }
 
-
   public ScheduleSmtpEmail batchId(String batchId) {
     
     this.batchId = batchId;
     return this;
   }
 
-   /**
+  /**
    * Batch ID of the batch transactional email scheduled
    * @return batchId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_BATCH_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -42,7 +42,7 @@ public class CreateSmtpEmail {
   private String messageId;
 
   public static final String JSON_PROPERTY_MESSAGE_IDS = "messageIds";
-  private List<String> messageIds;
+  private List<String> messageIds = new ArrayList<>();
 
   public CreateSmtpEmail() {
   }
@@ -53,10 +53,10 @@ public class CreateSmtpEmail {
     return this;
   }
 
-   /**
+  /**
    * Message ID of the transactional email sent
    * @return messageId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -72,7 +72,6 @@ public class CreateSmtpEmail {
     this.messageId = messageId;
   }
 
-
   public CreateSmtpEmail messageIds(List<String> messageIds) {
     
     this.messageIds = messageIds;
@@ -87,10 +86,10 @@ public class CreateSmtpEmail {
     return this;
   }
 
-   /**
+  /**
    * Get messageIds
    * @return messageIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MESSAGE_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

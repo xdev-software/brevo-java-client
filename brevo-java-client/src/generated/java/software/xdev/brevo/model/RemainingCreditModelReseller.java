@@ -50,10 +50,10 @@ public class RemainingCreditModelReseller {
     return this;
   }
 
-   /**
+  /**
    * SMS Credits remaining for reseller account
    * @return sms
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SMS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -69,17 +69,16 @@ public class RemainingCreditModelReseller {
     this.sms = sms;
   }
 
-
   public RemainingCreditModelReseller email(Double email) {
     
     this.email = email;
     return this;
   }
 
-   /**
+  /**
    * Email Credits remaining for reseller account
    * @return email
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

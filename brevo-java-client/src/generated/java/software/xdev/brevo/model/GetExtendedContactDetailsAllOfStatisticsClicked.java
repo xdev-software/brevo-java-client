@@ -54,10 +54,10 @@ public class GetExtendedContactDetailsAllOfStatisticsClicked {
     return this;
   }
 
-   /**
+  /**
    * ID of the campaign which generated the event
    * @return campaignId
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CAMPAIGN_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -73,7 +73,6 @@ public class GetExtendedContactDetailsAllOfStatisticsClicked {
     this.campaignId = campaignId;
   }
 
-
   public GetExtendedContactDetailsAllOfStatisticsClicked links(List<GetExtendedContactDetailsAllOfStatisticsLinks> links) {
     
     this.links = links;
@@ -88,10 +87,10 @@ public class GetExtendedContactDetailsAllOfStatisticsClicked {
     return this;
   }
 
-   /**
+  /**
    * Listing of the clicked links for the campaign
    * @return links
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LINKS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

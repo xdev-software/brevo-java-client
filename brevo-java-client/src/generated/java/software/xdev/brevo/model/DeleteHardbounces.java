@@ -54,10 +54,10 @@ public class DeleteHardbounces {
     return this;
   }
 
-   /**
+  /**
    * Starting date (YYYY-MM-DD) of the time period for deletion. The hardbounces occurred after this date will be deleted. Must be less than or equal to the endDate
    * @return startDate
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_START_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -73,17 +73,16 @@ public class DeleteHardbounces {
     this.startDate = startDate;
   }
 
-
   public DeleteHardbounces endDate(String endDate) {
     
     this.endDate = endDate;
     return this;
   }
 
-   /**
+  /**
    * Ending date (YYYY-MM-DD) of the time period for deletion. The hardbounces until this date will be deleted. Must be greater than or equal to the startDate
    * @return endDate
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_END_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -99,17 +98,16 @@ public class DeleteHardbounces {
     this.endDate = endDate;
   }
 
-
   public DeleteHardbounces contactEmail(String contactEmail) {
     
     this.contactEmail = contactEmail;
     return this;
   }
 
-   /**
+  /**
    * Target a specific email address
    * @return contactEmail
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CONTACT_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

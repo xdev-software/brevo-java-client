@@ -62,10 +62,10 @@ public class GetAccountActivityLogsInner {
     return this;
   }
 
-   /**
+  /**
    * Type of activity in the account.
    * @return action
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ACTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -81,17 +81,16 @@ public class GetAccountActivityLogsInner {
     this.action = action;
   }
 
-
   public GetAccountActivityLogsInner date(String date) {
     
     this.date = date;
     return this;
   }
 
-   /**
+  /**
    * Time of the activity.
    * @return date
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DATE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -107,17 +106,16 @@ public class GetAccountActivityLogsInner {
     this.date = date;
   }
 
-
   public GetAccountActivityLogsInner userEmail(String userEmail) {
     
     this.userEmail = userEmail;
     return this;
   }
 
-   /**
+  /**
    * Email address of the user who performed activity in the account.
    * @return userEmail
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_USER_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -133,17 +131,16 @@ public class GetAccountActivityLogsInner {
     this.userEmail = userEmail;
   }
 
-
   public GetAccountActivityLogsInner userIp(String userIp) {
     
     this.userIp = userIp;
     return this;
   }
 
-   /**
+  /**
    * IP address of the user who performed activity in the account.
    * @return userIp
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_USER_IP)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -159,17 +156,16 @@ public class GetAccountActivityLogsInner {
     this.userIp = userIp;
   }
 
-
   public GetAccountActivityLogsInner userAgent(String userAgent) {
     
     this.userAgent = userAgent;
     return this;
   }
 
-   /**
+  /**
    * Browser details of the user who performed the activity.
    * @return userAgent
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_USER_AGENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

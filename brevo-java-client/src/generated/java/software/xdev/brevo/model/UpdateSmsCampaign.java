@@ -75,10 +75,10 @@ public class UpdateSmsCampaign {
     return this;
   }
 
-   /**
+  /**
    * Name of the campaign
    * @return name
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -94,17 +94,16 @@ public class UpdateSmsCampaign {
     this.name = name;
   }
 
-
   public UpdateSmsCampaign sender(String sender) {
     
     this.sender = sender;
     return this;
   }
 
-   /**
+  /**
    * Name of the sender. **The number of characters is limited to 11 for alphanumeric characters and 15 for numeric characters** 
    * @return sender
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SENDER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -120,17 +119,16 @@ public class UpdateSmsCampaign {
     this.sender = sender;
   }
 
-
   public UpdateSmsCampaign content(String content) {
     
     this.content = content;
     return this;
   }
 
-   /**
+  /**
    * Content of the message. The **maximum characters used per SMS is 160**, if used more than that, it will be counted as more than one SMS 
    * @return content
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CONTENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -146,17 +144,16 @@ public class UpdateSmsCampaign {
     this.content = content;
   }
 
-
   public UpdateSmsCampaign recipients(CreateSmsCampaignRecipients recipients) {
     
     this.recipients = recipients;
     return this;
   }
 
-   /**
+  /**
    * Get recipients
    * @return recipients
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RECIPIENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -172,17 +169,16 @@ public class UpdateSmsCampaign {
     this.recipients = recipients;
   }
 
-
   public UpdateSmsCampaign scheduledAt(String scheduledAt) {
     
     this.scheduledAt = scheduledAt;
     return this;
   }
 
-   /**
+  /**
    * UTC date-time on which the campaign has to run (YYYY-MM-DDTHH:mm:ss.SSSZ). **Prefer to pass your timezone in date-time format for accurate result.** 
    * @return scheduledAt
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -198,17 +194,16 @@ public class UpdateSmsCampaign {
     this.scheduledAt = scheduledAt;
   }
 
-
   public UpdateSmsCampaign unicodeEnabled(Boolean unicodeEnabled) {
     
     this.unicodeEnabled = unicodeEnabled;
     return this;
   }
 
-   /**
+  /**
    * Format of the message. It indicates whether the content should be treated as unicode or not. 
    * @return unicodeEnabled
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UNICODE_ENABLED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -224,17 +219,16 @@ public class UpdateSmsCampaign {
     this.unicodeEnabled = unicodeEnabled;
   }
 
-
   public UpdateSmsCampaign organisationPrefix(String organisationPrefix) {
     
     this.organisationPrefix = organisationPrefix;
     return this;
   }
 
-   /**
+  /**
    * A recognizable prefix will ensure your audience knows who you are. Recommended by U.S. carriers. This will be added as your Brand Name before the message content. **Prefer verifying maximum length of 160 characters including this prefix in message content to avoid multiple sending of same sms.**
    * @return organisationPrefix
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ORGANISATION_PREFIX)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -250,17 +244,16 @@ public class UpdateSmsCampaign {
     this.organisationPrefix = organisationPrefix;
   }
 
-
   public UpdateSmsCampaign unsubscribeInstruction(String unsubscribeInstruction) {
     
     this.unsubscribeInstruction = unsubscribeInstruction;
     return this;
   }
 
-   /**
+  /**
    * Instructions to unsubscribe from future communications. Recommended by U.S. carriers. Must include **STOP** keyword. This will be added as instructions after the end of message content. **Prefer verifying maximum length of 160 characters including this instructions in message content to avoid multiple sending of same sms.**
    * @return unsubscribeInstruction
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UNSUBSCRIBE_INSTRUCTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -70,10 +70,10 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
     return this;
   }
 
-   /**
+  /**
    * Name of the feature
    * @return name
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -89,17 +89,16 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
     this.name = name;
   }
 
-
   public MasterDetailsResponsePlanInfoFeaturesInner unitValue(String unitValue) {
     
     this.unitValue = unitValue;
     return this;
   }
 
-   /**
+  /**
    * Unit value of the feature
    * @return unitValue
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UNIT_VALUE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -115,17 +114,16 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
     this.unitValue = unitValue;
   }
 
-
   public MasterDetailsResponsePlanInfoFeaturesInner quantity(Long quantity) {
     
     this.quantity = quantity;
     return this;
   }
 
-   /**
+  /**
    * Quantity provided in the plan
    * @return quantity
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_QUANTITY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -141,17 +139,16 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
     this.quantity = quantity;
   }
 
-
   public MasterDetailsResponsePlanInfoFeaturesInner quantityWithOverages(Long quantityWithOverages) {
     
     this.quantityWithOverages = quantityWithOverages;
     return this;
   }
 
-   /**
+  /**
    * Quantity with overages provided in the plan (only applicable on ENTv2)
    * @return quantityWithOverages
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_QUANTITY_WITH_OVERAGES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -167,17 +164,16 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
     this.quantityWithOverages = quantityWithOverages;
   }
 
-
   public MasterDetailsResponsePlanInfoFeaturesInner used(Long used) {
     
     this.used = used;
     return this;
   }
 
-   /**
+  /**
    * Quantity consumed by master
    * @return used
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_USED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -193,17 +189,16 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
     this.used = used;
   }
 
-
   public MasterDetailsResponsePlanInfoFeaturesInner usedOverages(Long usedOverages) {
     
     this.usedOverages = usedOverages;
     return this;
   }
 
-   /**
+  /**
    * Quantity consumed by sub-organizations over the admin plan limit (only applicable on ENTv2)
    * @return usedOverages
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_USED_OVERAGES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -219,17 +214,16 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
     this.usedOverages = usedOverages;
   }
 
-
   public MasterDetailsResponsePlanInfoFeaturesInner remaining(Long remaining) {
     
     this.remaining = remaining;
     return this;
   }
 
-   /**
+  /**
    * Quantity remaining in the plan
    * @return remaining
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REMAINING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

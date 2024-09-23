@@ -101,10 +101,10 @@ public class CreateSubAccount {
     return this;
   }
 
-   /**
+  /**
    * Set the name of the sub-account company
    * @return companyName
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COMPANY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -120,17 +120,16 @@ public class CreateSubAccount {
     this.companyName = companyName;
   }
 
-
   public CreateSubAccount email(String email) {
     
     this.email = email;
     return this;
   }
 
-   /**
+  /**
    * Email address for the organization
    * @return email
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -146,17 +145,16 @@ public class CreateSubAccount {
     this.email = email;
   }
 
-
   public CreateSubAccount language(LanguageEnum language) {
     
     this.language = language;
     return this;
   }
 
-   /**
+  /**
    * Set the language of the sub-account
    * @return language
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LANGUAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -172,17 +170,16 @@ public class CreateSubAccount {
     this.language = language;
   }
 
-
   public CreateSubAccount timezone(String timezone) {
     
     this.timezone = timezone;
     return this;
   }
 
-   /**
+  /**
    * Set the timezone of the sub-account
    * @return timezone
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TIMEZONE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

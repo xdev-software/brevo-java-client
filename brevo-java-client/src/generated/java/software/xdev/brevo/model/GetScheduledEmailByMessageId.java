@@ -47,7 +47,7 @@ public class GetScheduledEmailByMessageId {
    * Current status of the scheduled email
    */
   public enum StatusEnum {
-    INPROGRESS("inProgress"),
+    IN_PROGRESS("inProgress"),
     
     QUEUED("queued"),
     
@@ -94,10 +94,10 @@ public class GetScheduledEmailByMessageId {
     return this;
   }
 
-   /**
+  /**
    * Datetime for which the email was scheduled
    * @return scheduledAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -113,17 +113,16 @@ public class GetScheduledEmailByMessageId {
     this.scheduledAt = scheduledAt;
   }
 
-
   public GetScheduledEmailByMessageId createdAt(OffsetDateTime createdAt) {
     
     this.createdAt = createdAt;
     return this;
   }
 
-   /**
+  /**
    * Datetime on which the email was scheduled
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -139,17 +138,16 @@ public class GetScheduledEmailByMessageId {
     this.createdAt = createdAt;
   }
 
-
   public GetScheduledEmailByMessageId status(StatusEnum status) {
     
     this.status = status;
     return this;
   }
 
-   /**
+  /**
    * Current status of the scheduled email
    * @return status
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

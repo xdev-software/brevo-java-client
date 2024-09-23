@@ -94,10 +94,10 @@ public class UpdateWhatsAppCampaign {
     return this;
   }
 
-   /**
+  /**
    * Name of the campaign
    * @return campaignName
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CAMPAIGN_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -113,17 +113,16 @@ public class UpdateWhatsAppCampaign {
     this.campaignName = campaignName;
   }
 
-
   public UpdateWhatsAppCampaign campaignStatus(CampaignStatusEnum campaignStatus) {
     
     this.campaignStatus = campaignStatus;
     return this;
   }
 
-   /**
+  /**
    * Status of the campaign
    * @return campaignStatus
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CAMPAIGN_STATUS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -139,17 +138,16 @@ public class UpdateWhatsAppCampaign {
     this.campaignStatus = campaignStatus;
   }
 
-
   public UpdateWhatsAppCampaign rescheduleFor(String rescheduleFor) {
     
     this.rescheduleFor = rescheduleFor;
     return this;
   }
 
-   /**
+  /**
    * Reschedule the sending UTC date-time (YYYY-MM-DDTHH:mm:ss.SSSZ) of campaign. **Prefer to pass your timezone in date-time format for accurate result.For example: **2017-06-01T12:30:00+02:00** Use this field to update the scheduledAt of any existing draft or scheduled WhatsApp campaign. 
    * @return rescheduleFor
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RESCHEDULE_FOR)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -165,17 +163,16 @@ public class UpdateWhatsAppCampaign {
     this.rescheduleFor = rescheduleFor;
   }
 
-
   public UpdateWhatsAppCampaign recipients(CreateWhatsAppCampaignRecipients recipients) {
     
     this.recipients = recipients;
     return this;
   }
 
-   /**
+  /**
    * Get recipients
    * @return recipients
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RECIPIENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

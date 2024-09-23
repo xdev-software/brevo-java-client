@@ -42,7 +42,7 @@ public class CorporateGroupPostRequest {
   private String groupName;
 
   public static final String JSON_PROPERTY_SUB_ACCOUNT_IDS = "subAccountIds";
-  private List<Long> subAccountIds;
+  private List<Long> subAccountIds = new ArrayList<>();
 
   public CorporateGroupPostRequest() {
   }
@@ -53,10 +53,10 @@ public class CorporateGroupPostRequest {
     return this;
   }
 
-   /**
+  /**
    * The name of the group of sub-accounts
    * @return groupName
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_GROUP_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -72,7 +72,6 @@ public class CorporateGroupPostRequest {
     this.groupName = groupName;
   }
 
-
   public CorporateGroupPostRequest subAccountIds(List<Long> subAccountIds) {
     
     this.subAccountIds = subAccountIds;
@@ -87,10 +86,10 @@ public class CorporateGroupPostRequest {
     return this;
   }
 
-   /**
+  /**
    * Pass the list of sub-account Ids to be included in the group
    * @return subAccountIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUB_ACCOUNT_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -46,10 +46,10 @@ public class GetSharedTemplateUrl {
     return this;
   }
 
-   /**
+  /**
    * A unique URL for the email campaign or transactional template. This URL can be shared with other Brevo users.
    * @return sharedUrl
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SHARED_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

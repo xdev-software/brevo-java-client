@@ -50,10 +50,10 @@ public class GetExternalFeedByUUIDHeadersInner {
     return this;
   }
 
-   /**
+  /**
    * Name of the header
    * @return name
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -69,17 +69,16 @@ public class GetExternalFeedByUUIDHeadersInner {
     this.name = name;
   }
 
-
   public GetExternalFeedByUUIDHeadersInner value(String value) {
     
     this.value = value;
     return this;
   }
 
-   /**
+  /**
    * Value of the header
    * @return value
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

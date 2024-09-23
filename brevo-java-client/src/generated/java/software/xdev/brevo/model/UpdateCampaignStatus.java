@@ -50,7 +50,7 @@ public class UpdateCampaignStatus {
     
     REPLICATE("replicate"),
     
-    REPLICATETEMPLATE("replicateTemplate"),
+    REPLICATE_TEMPLATE("replicateTemplate"),
     
     DRAFT("draft");
 
@@ -93,10 +93,10 @@ public class UpdateCampaignStatus {
     return this;
   }
 
-   /**
+  /**
    * Note:- **replicateTemplate** status will be available **only for template type campaigns.** 
    * @return status
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

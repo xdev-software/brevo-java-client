@@ -49,10 +49,10 @@ public class TaskTypes {
     return this;
   }
 
-   /**
+  /**
    * Id of task type
    * @return id
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -68,17 +68,16 @@ public class TaskTypes {
     this.id = id;
   }
 
-
   public TaskTypes title(String title) {
     
     this.title = title;
     return this;
   }
 
-   /**
+  /**
    * Title of task type
    * @return title
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TITLE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

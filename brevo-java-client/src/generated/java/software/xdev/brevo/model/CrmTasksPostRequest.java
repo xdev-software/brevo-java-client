@@ -71,13 +71,13 @@ public class CrmTasksPostRequest {
   private String assignToId;
 
   public static final String JSON_PROPERTY_CONTACTS_IDS = "contactsIds";
-  private List<Integer> contactsIds;
+  private List<Integer> contactsIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_DEALS_IDS = "dealsIds";
-  private List<String> dealsIds;
+  private List<String> dealsIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_COMPANIES_IDS = "companiesIds";
-  private List<String> companiesIds;
+  private List<String> companiesIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_REMINDER = "reminder";
   private TaskReminder reminder;
@@ -91,10 +91,10 @@ public class CrmTasksPostRequest {
     return this;
   }
 
-   /**
+  /**
    * Name of task
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -110,18 +110,17 @@ public class CrmTasksPostRequest {
     this.name = name;
   }
 
-
   public CrmTasksPostRequest duration(Long duration) {
     
     this.duration = duration;
     return this;
   }
 
-   /**
+  /**
    * Duration of task in milliseconds [1 minute &#x3D; 60000 ms]
    * minimum: 0
    * @return duration
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DURATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -137,17 +136,16 @@ public class CrmTasksPostRequest {
     this.duration = duration;
   }
 
-
   public CrmTasksPostRequest taskTypeId(String taskTypeId) {
     
     this.taskTypeId = taskTypeId;
     return this;
   }
 
-   /**
+  /**
    * Id for type of task e.g Call / Email / Meeting etc.
    * @return taskTypeId
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TASK_TYPE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -163,17 +161,16 @@ public class CrmTasksPostRequest {
     this.taskTypeId = taskTypeId;
   }
 
-
   public CrmTasksPostRequest date(OffsetDateTime date) {
     
     this.date = date;
     return this;
   }
 
-   /**
+  /**
    * Task due date and time
    * @return date
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DATE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -189,17 +186,16 @@ public class CrmTasksPostRequest {
     this.date = date;
   }
 
-
   public CrmTasksPostRequest notes(String notes) {
     
     this.notes = notes;
     return this;
   }
 
-   /**
+  /**
    * Notes added to a task
    * @return notes
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NOTES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -215,17 +211,16 @@ public class CrmTasksPostRequest {
     this.notes = notes;
   }
 
-
   public CrmTasksPostRequest done(Boolean done) {
     
     this.done = done;
     return this;
   }
 
-   /**
+  /**
    * Task marked as done
    * @return done
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DONE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -241,17 +236,16 @@ public class CrmTasksPostRequest {
     this.done = done;
   }
 
-
   public CrmTasksPostRequest assignToId(String assignToId) {
     
     this.assignToId = assignToId;
     return this;
   }
 
-   /**
+  /**
    * User id to whom task is assigned
    * @return assignToId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ASSIGN_TO_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -267,7 +261,6 @@ public class CrmTasksPostRequest {
     this.assignToId = assignToId;
   }
 
-
   public CrmTasksPostRequest contactsIds(List<Integer> contactsIds) {
     
     this.contactsIds = contactsIds;
@@ -282,10 +275,10 @@ public class CrmTasksPostRequest {
     return this;
   }
 
-   /**
+  /**
    * Contact ids for contacts linked to this task
    * @return contactsIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CONTACTS_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -301,7 +294,6 @@ public class CrmTasksPostRequest {
     this.contactsIds = contactsIds;
   }
 
-
   public CrmTasksPostRequest dealsIds(List<String> dealsIds) {
     
     this.dealsIds = dealsIds;
@@ -316,10 +308,10 @@ public class CrmTasksPostRequest {
     return this;
   }
 
-   /**
+  /**
    * Deal ids for deals a task is linked to
    * @return dealsIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DEALS_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -335,7 +327,6 @@ public class CrmTasksPostRequest {
     this.dealsIds = dealsIds;
   }
 
-
   public CrmTasksPostRequest companiesIds(List<String> companiesIds) {
     
     this.companiesIds = companiesIds;
@@ -350,10 +341,10 @@ public class CrmTasksPostRequest {
     return this;
   }
 
-   /**
+  /**
    * Companies ids for companies a task is linked to
    * @return companiesIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COMPANIES_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -369,17 +360,16 @@ public class CrmTasksPostRequest {
     this.companiesIds = companiesIds;
   }
 
-
   public CrmTasksPostRequest reminder(TaskReminder reminder) {
     
     this.reminder = reminder;
     return this;
   }
 
-   /**
+  /**
    * Get reminder
    * @return reminder
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REMINDER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

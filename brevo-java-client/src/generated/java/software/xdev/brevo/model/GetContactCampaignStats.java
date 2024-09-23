@@ -51,31 +51,31 @@ import java.util.StringJoiner;
 @JsonTypeName("getContactCampaignStats")
 public class GetContactCampaignStats {
   public static final String JSON_PROPERTY_MESSAGES_SENT = "messagesSent";
-  private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> messagesSent;
+  private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> messagesSent = new ArrayList<>();
 
   public static final String JSON_PROPERTY_HARD_BOUNCES = "hardBounces";
-  private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> hardBounces;
+  private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> hardBounces = new ArrayList<>();
 
   public static final String JSON_PROPERTY_SOFT_BOUNCES = "softBounces";
-  private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> softBounces;
+  private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> softBounces = new ArrayList<>();
 
   public static final String JSON_PROPERTY_COMPLAINTS = "complaints";
-  private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> complaints;
+  private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> complaints = new ArrayList<>();
 
   public static final String JSON_PROPERTY_UNSUBSCRIPTIONS = "unsubscriptions";
   private GetContactCampaignStatsUnsubscriptions unsubscriptions;
 
   public static final String JSON_PROPERTY_OPENED = "opened";
-  private List<GetContactCampaignStatsOpenedInner> opened;
+  private List<GetContactCampaignStatsOpenedInner> opened = new ArrayList<>();
 
   public static final String JSON_PROPERTY_CLICKED = "clicked";
-  private List<GetContactCampaignStatsClickedInner> clicked;
+  private List<GetContactCampaignStatsClickedInner> clicked = new ArrayList<>();
 
   public static final String JSON_PROPERTY_TRANSAC_ATTRIBUTES = "transacAttributes";
-  private List<GetContactCampaignStatsTransacAttributesInner> transacAttributes;
+  private List<GetContactCampaignStatsTransacAttributesInner> transacAttributes = new ArrayList<>();
 
   public static final String JSON_PROPERTY_DELIVERED = "delivered";
-  private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> delivered;
+  private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> delivered = new ArrayList<>();
 
   public GetContactCampaignStats() {
   }
@@ -94,10 +94,10 @@ public class GetContactCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Get messagesSent
    * @return messagesSent
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MESSAGES_SENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -113,7 +113,6 @@ public class GetContactCampaignStats {
     this.messagesSent = messagesSent;
   }
 
-
   public GetContactCampaignStats hardBounces(List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> hardBounces) {
     
     this.hardBounces = hardBounces;
@@ -128,10 +127,10 @@ public class GetContactCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Get hardBounces
    * @return hardBounces
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_HARD_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -147,7 +146,6 @@ public class GetContactCampaignStats {
     this.hardBounces = hardBounces;
   }
 
-
   public GetContactCampaignStats softBounces(List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> softBounces) {
     
     this.softBounces = softBounces;
@@ -162,10 +160,10 @@ public class GetContactCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Get softBounces
    * @return softBounces
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SOFT_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -181,7 +179,6 @@ public class GetContactCampaignStats {
     this.softBounces = softBounces;
   }
 
-
   public GetContactCampaignStats complaints(List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> complaints) {
     
     this.complaints = complaints;
@@ -196,10 +193,10 @@ public class GetContactCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Get complaints
    * @return complaints
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COMPLAINTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -215,17 +212,16 @@ public class GetContactCampaignStats {
     this.complaints = complaints;
   }
 
-
   public GetContactCampaignStats unsubscriptions(GetContactCampaignStatsUnsubscriptions unsubscriptions) {
     
     this.unsubscriptions = unsubscriptions;
     return this;
   }
 
-   /**
+  /**
    * Get unsubscriptions
    * @return unsubscriptions
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UNSUBSCRIPTIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -241,7 +237,6 @@ public class GetContactCampaignStats {
     this.unsubscriptions = unsubscriptions;
   }
 
-
   public GetContactCampaignStats opened(List<GetContactCampaignStatsOpenedInner> opened) {
     
     this.opened = opened;
@@ -256,10 +251,10 @@ public class GetContactCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Get opened
    * @return opened
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_OPENED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -275,7 +270,6 @@ public class GetContactCampaignStats {
     this.opened = opened;
   }
 
-
   public GetContactCampaignStats clicked(List<GetContactCampaignStatsClickedInner> clicked) {
     
     this.clicked = clicked;
@@ -290,10 +284,10 @@ public class GetContactCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Get clicked
    * @return clicked
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CLICKED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -309,7 +303,6 @@ public class GetContactCampaignStats {
     this.clicked = clicked;
   }
 
-
   public GetContactCampaignStats transacAttributes(List<GetContactCampaignStatsTransacAttributesInner> transacAttributes) {
     
     this.transacAttributes = transacAttributes;
@@ -324,10 +317,10 @@ public class GetContactCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Get transacAttributes
    * @return transacAttributes
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TRANSAC_ATTRIBUTES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -343,7 +336,6 @@ public class GetContactCampaignStats {
     this.transacAttributes = transacAttributes;
   }
 
-
   public GetContactCampaignStats delivered(List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> delivered) {
     
     this.delivered = delivered;
@@ -358,10 +350,10 @@ public class GetContactCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * Get delivered
    * @return delivered
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DELIVERED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

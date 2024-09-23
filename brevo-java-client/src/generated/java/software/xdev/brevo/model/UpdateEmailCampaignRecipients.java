@@ -40,13 +40,13 @@ import java.util.StringJoiner;
 @JsonTypeName("updateEmailCampaign_recipients")
 public class UpdateEmailCampaignRecipients {
   public static final String JSON_PROPERTY_EXCLUSION_LIST_IDS = "exclusionListIds";
-  private List<Long> exclusionListIds;
+  private List<Long> exclusionListIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_LIST_IDS = "listIds";
-  private List<Long> listIds;
+  private List<Long> listIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_SEGMENT_IDS = "segmentIds";
-  private List<Long> segmentIds;
+  private List<Long> segmentIds = new ArrayList<>();
 
   public UpdateEmailCampaignRecipients() {
   }
@@ -65,10 +65,10 @@ public class UpdateEmailCampaignRecipients {
     return this;
   }
 
-   /**
+  /**
    * List ids which have to be excluded from a campaign
    * @return exclusionListIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EXCLUSION_LIST_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -84,7 +84,6 @@ public class UpdateEmailCampaignRecipients {
     this.exclusionListIds = exclusionListIds;
   }
 
-
   public UpdateEmailCampaignRecipients listIds(List<Long> listIds) {
     
     this.listIds = listIds;
@@ -99,10 +98,10 @@ public class UpdateEmailCampaignRecipients {
     return this;
   }
 
-   /**
+  /**
    * Lists Ids to send the campaign to. **Campaign should only be updated with listIds if listIds were used to create it. REQUIRED if already not present in campaign and scheduledAt is not empty** 
    * @return listIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LIST_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -118,7 +117,6 @@ public class UpdateEmailCampaignRecipients {
     this.listIds = listIds;
   }
 
-
   public UpdateEmailCampaignRecipients segmentIds(List<Long> segmentIds) {
     
     this.segmentIds = segmentIds;
@@ -133,10 +131,10 @@ public class UpdateEmailCampaignRecipients {
     return this;
   }
 
-   /**
+  /**
    * **Mandatory if listIds are not used. Campaign should only be updated with segmentIds if segmentIds were used to create it.** Segment ids to send the campaign to. 
    * @return segmentIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SEGMENT_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

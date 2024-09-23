@@ -50,10 +50,10 @@ public class AuthenticateDomainModel {
     return this;
   }
 
-   /**
+  /**
    * Domain
    * @return domainName
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DOMAIN_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -69,17 +69,16 @@ public class AuthenticateDomainModel {
     this.domainName = domainName;
   }
 
-
   public AuthenticateDomainModel message(String message) {
     
     this.message = message;
     return this;
   }
 
-   /**
+  /**
    * Success message
    * @return message
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MESSAGE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

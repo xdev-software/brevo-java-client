@@ -50,10 +50,10 @@ public class UpdateList {
     return this;
   }
 
-   /**
+  /**
    * Name of the list. Either of the two parameters (name, folderId) can be updated at a time.
    * @return name
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -69,17 +69,16 @@ public class UpdateList {
     this.name = name;
   }
 
-
   public UpdateList folderId(Long folderId) {
     
     this.folderId = folderId;
     return this;
   }
 
-   /**
+  /**
    * Id of the folder in which the list is to be moved. Either of the two parameters (name, folderId) can be updated at a time.
    * @return folderId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_FOLDER_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -109,10 +109,10 @@ public class CreateChild {
     return this;
   }
 
-   /**
+  /**
    * Email address to create the child account
    * @return email
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -128,17 +128,16 @@ public class CreateChild {
     this.email = email;
   }
 
-
   public CreateChild firstName(String firstName) {
     
     this.firstName = firstName;
     return this;
   }
 
-   /**
+  /**
    * First name to use to create the child account
    * @return firstName
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_FIRST_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -154,17 +153,16 @@ public class CreateChild {
     this.firstName = firstName;
   }
 
-
   public CreateChild lastName(String lastName) {
     
     this.lastName = lastName;
     return this;
   }
 
-   /**
+  /**
    * Last name to use to create the child account
    * @return lastName
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LAST_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -180,17 +178,16 @@ public class CreateChild {
     this.lastName = lastName;
   }
 
-
   public CreateChild companyName(String companyName) {
     
     this.companyName = companyName;
     return this;
   }
 
-   /**
+  /**
    * Company name to use to create the child account
    * @return companyName
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COMPANY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -206,17 +203,16 @@ public class CreateChild {
     this.companyName = companyName;
   }
 
-
   public CreateChild password(String password) {
     
     this.password = password;
     return this;
   }
 
-   /**
+  /**
    * Password for the child account to login
    * @return password
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PASSWORD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -232,17 +228,16 @@ public class CreateChild {
     this.password = password;
   }
 
-
   public CreateChild language(LanguageEnum language) {
     
     this.language = language;
     return this;
   }
 
-   /**
+  /**
    * Language of the child account
    * @return language
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LANGUAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

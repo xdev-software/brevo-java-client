@@ -55,7 +55,7 @@ public class GetSendersListSendersInner {
   private Boolean active;
 
   public static final String JSON_PROPERTY_IPS = "ips";
-  private List<GetSendersListSendersInnerIpsInner> ips;
+  private List<GetSendersListSendersInnerIpsInner> ips = new ArrayList<>();
 
   public GetSendersListSendersInner() {
   }
@@ -66,10 +66,10 @@ public class GetSendersListSendersInner {
     return this;
   }
 
-   /**
+  /**
    * Id of the sender
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -85,17 +85,16 @@ public class GetSendersListSendersInner {
     this.id = id;
   }
 
-
   public GetSendersListSendersInner name(String name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * From Name associated to the sender
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -111,17 +110,16 @@ public class GetSendersListSendersInner {
     this.name = name;
   }
 
-
   public GetSendersListSendersInner email(String email) {
     
     this.email = email;
     return this;
   }
 
-   /**
+  /**
    * From Email associated to the sender
    * @return email
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -137,17 +135,16 @@ public class GetSendersListSendersInner {
     this.email = email;
   }
 
-
   public GetSendersListSendersInner active(Boolean active) {
     
     this.active = active;
     return this;
   }
 
-   /**
+  /**
    * Status of sender (true&#x3D;activated, false&#x3D;deactivated)
    * @return active
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ACTIVE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -163,7 +160,6 @@ public class GetSendersListSendersInner {
     this.active = active;
   }
 
-
   public GetSendersListSendersInner ips(List<GetSendersListSendersInnerIpsInner> ips) {
     
     this.ips = ips;
@@ -178,10 +174,10 @@ public class GetSendersListSendersInner {
     return this;
   }
 
-   /**
+  /**
    * List of dedicated IP(s) available in the account. This data is displayed only for dedicated IPs
    * @return ips
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IPS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

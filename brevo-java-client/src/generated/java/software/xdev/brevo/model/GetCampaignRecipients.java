@@ -61,10 +61,10 @@ public class GetCampaignRecipients {
     return this;
   }
 
-   /**
+  /**
    * Get lists
    * @return lists
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LISTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -80,7 +80,6 @@ public class GetCampaignRecipients {
     this.lists = lists;
   }
 
-
   public GetCampaignRecipients exclusionLists(List<Long> exclusionLists) {
     
     this.exclusionLists = exclusionLists;
@@ -95,10 +94,10 @@ public class GetCampaignRecipients {
     return this;
   }
 
-   /**
+  /**
    * Get exclusionLists
    * @return exclusionLists
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EXCLUSION_LISTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

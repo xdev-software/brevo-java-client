@@ -50,10 +50,10 @@ public class AddCredits {
     return this;
   }
 
-   /**
+  /**
    * **Required if email credits are empty.** SMS credits to be added to the child account 
    * @return sms
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SMS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -69,17 +69,16 @@ public class AddCredits {
     this.sms = sms;
   }
 
-
   public AddCredits email(Long email) {
     
     this.email = email;
     return this;
   }
 
-   /**
+  /**
    * **Required if sms credits are empty.** Email credits to be added to the child account 
    * @return email
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

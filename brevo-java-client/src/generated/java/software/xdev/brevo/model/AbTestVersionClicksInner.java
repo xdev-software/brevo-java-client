@@ -54,10 +54,10 @@ public class AbTestVersionClicksInner {
     return this;
   }
 
-   /**
+  /**
    * URL of the link
    * @return link
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LINK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -73,17 +73,16 @@ public class AbTestVersionClicksInner {
     this.link = link;
   }
 
-
   public AbTestVersionClicksInner clicksCount(Long clicksCount) {
     
     this.clicksCount = clicksCount;
     return this;
   }
 
-   /**
+  /**
    * Number of times a link is clicked
    * @return clicksCount
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CLICKS_COUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -99,17 +98,16 @@ public class AbTestVersionClicksInner {
     this.clicksCount = clicksCount;
   }
 
-
   public AbTestVersionClicksInner clickRate(String clickRate) {
     
     this.clickRate = clickRate;
     return this;
   }
 
-   /**
+  /**
    * Percentage of clicks of link with respect to total clicks
    * @return clickRate
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CLICK_RATE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

@@ -38,7 +38,7 @@ import java.util.StringJoiner;
 @JsonTypeName("addContactToListByIDs")
 public class AddContactToListByIDs {
   public static final String JSON_PROPERTY_IDS = "ids";
-  private List<Long> ids;
+  private List<Long> ids = new ArrayList<>();
 
   public AddContactToListByIDs() {
   }
@@ -57,10 +57,10 @@ public class AddContactToListByIDs {
     return this;
   }
 
-   /**
+  /**
    * IDs to add to a list. You can pass a **maximum of 150 IDs** for addition in one request. **_If you need to add the emails in bulk, please prefer /contacts/import api._** 
    * @return ids
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

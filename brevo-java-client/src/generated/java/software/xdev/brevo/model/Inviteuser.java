@@ -58,10 +58,10 @@ public class Inviteuser {
     return this;
   }
 
-   /**
+  /**
    * Email address for the organization
    * @return email
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -77,17 +77,16 @@ public class Inviteuser {
     this.email = email;
   }
 
-
   public Inviteuser allFeaturesAccess(Boolean allFeaturesAccess) {
     
     this.allFeaturesAccess = allFeaturesAccess;
     return this;
   }
 
-   /**
+  /**
    * All access to the features
    * @return allFeaturesAccess
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ALL_FEATURES_ACCESS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -103,7 +102,6 @@ public class Inviteuser {
     this.allFeaturesAccess = allFeaturesAccess;
   }
 
-
   public Inviteuser privileges(List<InviteuserPrivilegesInner> privileges) {
     
     this.privileges = privileges;
@@ -118,10 +116,10 @@ public class Inviteuser {
     return this;
   }
 
-   /**
+  /**
    * Get privileges
    * @return privileges
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PRIVILEGES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

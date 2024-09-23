@@ -57,10 +57,10 @@ public class SubAccountDetailsResponsePlanInfoFeatures {
     return this;
   }
 
-   /**
+  /**
    * Get inbox
    * @return inbox
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_INBOX)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -76,17 +76,16 @@ public class SubAccountDetailsResponsePlanInfoFeatures {
     this.inbox = inbox;
   }
 
-
   public SubAccountDetailsResponsePlanInfoFeatures landingPage(SubAccountDetailsResponsePlanInfoFeaturesLandingPage landingPage) {
     
     this.landingPage = landingPage;
     return this;
   }
 
-   /**
+  /**
    * Get landingPage
    * @return landingPage
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LANDING_PAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -102,17 +101,16 @@ public class SubAccountDetailsResponsePlanInfoFeatures {
     this.landingPage = landingPage;
   }
 
-
   public SubAccountDetailsResponsePlanInfoFeatures users(SubAccountDetailsResponsePlanInfoFeaturesUsers users) {
     
     this.users = users;
     return this;
   }
 
-   /**
+  /**
    * Get users
    * @return users
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_USERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -205,10 +205,10 @@ public class CreateEmailCampaign {
     return this;
   }
 
-   /**
+  /**
    * Tag of the campaign
    * @return tag
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TAG)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -224,17 +224,16 @@ public class CreateEmailCampaign {
     this.tag = tag;
   }
 
-
   public CreateEmailCampaign sender(CreateEmailCampaignSender sender) {
     
     this.sender = sender;
     return this;
   }
 
-   /**
+  /**
    * Get sender
    * @return sender
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SENDER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -250,17 +249,16 @@ public class CreateEmailCampaign {
     this.sender = sender;
   }
 
-
   public CreateEmailCampaign name(String name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * Name of the campaign
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -276,17 +274,16 @@ public class CreateEmailCampaign {
     this.name = name;
   }
 
-
   public CreateEmailCampaign htmlContent(String htmlContent) {
     
     this.htmlContent = htmlContent;
     return this;
   }
 
-   /**
+  /**
    * Mandatory if htmlUrl and templateId are empty. Body of the message (HTML). 
    * @return htmlContent
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_HTML_CONTENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -302,17 +299,16 @@ public class CreateEmailCampaign {
     this.htmlContent = htmlContent;
   }
 
-
   public CreateEmailCampaign htmlUrl(String htmlUrl) {
     
     this.htmlUrl = htmlUrl;
     return this;
   }
 
-   /**
+  /**
    * **Mandatory if htmlContent and templateId are empty**. Url to the message (HTML). For example: **https://html.domain.com** 
    * @return htmlUrl
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_HTML_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -328,17 +324,16 @@ public class CreateEmailCampaign {
     this.htmlUrl = htmlUrl;
   }
 
-
   public CreateEmailCampaign templateId(Long templateId) {
     
     this.templateId = templateId;
     return this;
   }
 
-   /**
+  /**
    * **Mandatory if htmlContent and htmlUrl are empty**. Id of the transactional email template with status _active_. Used to copy only its content fetched from htmlContent/htmlUrl to an email campaign for RSS feature. 
    * @return templateId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -354,17 +349,16 @@ public class CreateEmailCampaign {
     this.templateId = templateId;
   }
 
-
   public CreateEmailCampaign scheduledAt(String scheduledAt) {
     
     this.scheduledAt = scheduledAt;
     return this;
   }
 
-   /**
+  /**
    * Sending UTC date-time (YYYY-MM-DDTHH:mm:ss.SSSZ). **Prefer to pass your timezone in date-time format for accurate result**. If sendAtBestTime is set to true, your campaign will be sent according to the date passed (ignoring the time part). For example: **2017-06-01T12:30:00+02:00** 
    * @return scheduledAt
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -380,17 +374,16 @@ public class CreateEmailCampaign {
     this.scheduledAt = scheduledAt;
   }
 
-
   public CreateEmailCampaign subject(String subject) {
     
     this.subject = subject;
     return this;
   }
 
-   /**
+  /**
    * Subject of the campaign. **Mandatory if abTesting is false**. Ignored if abTesting is true. 
    * @return subject
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUBJECT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -406,17 +399,16 @@ public class CreateEmailCampaign {
     this.subject = subject;
   }
 
-
   public CreateEmailCampaign previewText(String previewText) {
     
     this.previewText = previewText;
     return this;
   }
 
-   /**
+  /**
    * Preview text or preheader of the email campaign
    * @return previewText
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PREVIEW_TEXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -432,17 +424,16 @@ public class CreateEmailCampaign {
     this.previewText = previewText;
   }
 
-
   public CreateEmailCampaign replyTo(String replyTo) {
     
     this.replyTo = replyTo;
     return this;
   }
 
-   /**
+  /**
    * Email on which the campaign recipients will be able to reply to
    * @return replyTo
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REPLY_TO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -458,17 +449,16 @@ public class CreateEmailCampaign {
     this.replyTo = replyTo;
   }
 
-
   public CreateEmailCampaign toField(String toField) {
     
     this.toField = toField;
     return this;
   }
 
-   /**
+  /**
    * To personalize the **To** Field. If you want to include the first name and last name of your recipient, add **{FNAME} {LNAME}**. These contact attributes must already exist in your Brevo account. If input parameter **params** used please use **{{contact.FNAME}} {{contact.LNAME}}** for personalization 
    * @return toField
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TO_FIELD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -484,17 +474,16 @@ public class CreateEmailCampaign {
     this.toField = toField;
   }
 
-
   public CreateEmailCampaign recipients(CreateEmailCampaignRecipients recipients) {
     
     this.recipients = recipients;
     return this;
   }
 
-   /**
+  /**
    * Get recipients
    * @return recipients
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RECIPIENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -510,17 +499,16 @@ public class CreateEmailCampaign {
     this.recipients = recipients;
   }
 
-
   public CreateEmailCampaign attachmentUrl(String attachmentUrl) {
     
     this.attachmentUrl = attachmentUrl;
     return this;
   }
 
-   /**
+  /**
    * Absolute url of the attachment (no local file). Extension allowed: #### xlsx, xls, ods, docx, docm, doc, csv, pdf, txt, gif, jpg, jpeg, png, tif, tiff, rtf, bmp, cgm, css, shtml, html, htm, zip, xml, ppt, pptx, tar, ez, ics, mobi, msg, pub and eps 
    * @return attachmentUrl
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ATTACHMENT_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -536,17 +524,16 @@ public class CreateEmailCampaign {
     this.attachmentUrl = attachmentUrl;
   }
 
-
   public CreateEmailCampaign inlineImageActivation(Boolean inlineImageActivation) {
     
     this.inlineImageActivation = inlineImageActivation;
     return this;
   }
 
-   /**
+  /**
    * Use true to embedded the images in your email. Final size of the email should be less than **4MB**. Campaigns with embedded images can _not be sent to more than 5000 contacts_ 
    * @return inlineImageActivation
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_INLINE_IMAGE_ACTIVATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -562,17 +549,16 @@ public class CreateEmailCampaign {
     this.inlineImageActivation = inlineImageActivation;
   }
 
-
   public CreateEmailCampaign mirrorActive(Boolean mirrorActive) {
     
     this.mirrorActive = mirrorActive;
     return this;
   }
 
-   /**
+  /**
    * Use true to enable the mirror link
    * @return mirrorActive
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MIRROR_ACTIVE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -588,17 +574,16 @@ public class CreateEmailCampaign {
     this.mirrorActive = mirrorActive;
   }
 
-
   public CreateEmailCampaign footer(String footer) {
     
     this.footer = footer;
     return this;
   }
 
-   /**
+  /**
    * Footer of the email campaign
    * @return footer
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_FOOTER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -614,17 +599,16 @@ public class CreateEmailCampaign {
     this.footer = footer;
   }
 
-
   public CreateEmailCampaign header(String header) {
     
     this.header = header;
     return this;
   }
 
-   /**
+  /**
    * Header of the email campaign
    * @return header
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_HEADER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -640,17 +624,16 @@ public class CreateEmailCampaign {
     this.header = header;
   }
 
-
   public CreateEmailCampaign utmCampaign(String utmCampaign) {
     
     this.utmCampaign = utmCampaign;
     return this;
   }
 
-   /**
+  /**
    * Customize the utm_campaign value. If this field is empty, the campaign name will be used. Only alphanumeric characters and spaces are allowed
    * @return utmCampaign
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UTM_CAMPAIGN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -666,7 +649,6 @@ public class CreateEmailCampaign {
     this.utmCampaign = utmCampaign;
   }
 
-
   public CreateEmailCampaign params(Map<String, Object> params) {
     
     this.params = params;
@@ -681,10 +663,10 @@ public class CreateEmailCampaign {
     return this;
   }
 
-   /**
+  /**
    * Pass the set of attributes to customize the type classic campaign. For example: **{\&quot;FNAME\&quot;:\&quot;Joe\&quot;, \&quot;LNAME\&quot;:\&quot;Doe\&quot;}**. Only available if **type** is **classic**. It&#39;s considered only if campaign is in _New Template Language format_. The New Template Language is dependent on the values of **subject, htmlContent/htmlUrl, sender.name &amp; toField** 
    * @return params
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PARAMS)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
@@ -700,17 +682,16 @@ public class CreateEmailCampaign {
     this.params = params;
   }
 
-
   public CreateEmailCampaign sendAtBestTime(Boolean sendAtBestTime) {
     
     this.sendAtBestTime = sendAtBestTime;
     return this;
   }
 
-   /**
+  /**
    * Set this to true if you want to send your campaign at best time.
    * @return sendAtBestTime
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SEND_AT_BEST_TIME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -726,17 +707,16 @@ public class CreateEmailCampaign {
     this.sendAtBestTime = sendAtBestTime;
   }
 
-
   public CreateEmailCampaign abTesting(Boolean abTesting) {
     
     this.abTesting = abTesting;
     return this;
   }
 
-   /**
+  /**
    * Status of A/B Test. abTesting &#x3D; false means it is disabled &amp; abTesting &#x3D; true means it is enabled. **subjectA, subjectB, splitRule, winnerCriteria &amp; winnerDelay** will be considered when abTesting is set to true. subjectA &amp; subjectB are mandatory together &amp; subject if passed is ignored. **Can be set to true only if sendAtBestTime is false**. You will be able to set up two subject lines for your campaign and send them to a random sample of your total recipients. Half of the test group will receive version A, and the other half will receive version B 
    * @return abTesting
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_AB_TESTING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -752,17 +732,16 @@ public class CreateEmailCampaign {
     this.abTesting = abTesting;
   }
 
-
   public CreateEmailCampaign subjectA(String subjectA) {
     
     this.subjectA = subjectA;
     return this;
   }
 
-   /**
+  /**
    * Subject A of the campaign. **Mandatory if abTesting &#x3D; true**. subjectA &amp; subjectB should have unique value 
    * @return subjectA
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUBJECT_A)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -778,17 +757,16 @@ public class CreateEmailCampaign {
     this.subjectA = subjectA;
   }
 
-
   public CreateEmailCampaign subjectB(String subjectB) {
     
     this.subjectB = subjectB;
     return this;
   }
 
-   /**
+  /**
    * Subject B of the campaign. **Mandatory if abTesting &#x3D; true**. subjectA &amp; subjectB should have unique value 
    * @return subjectB
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUBJECT_B)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -804,19 +782,18 @@ public class CreateEmailCampaign {
     this.subjectB = subjectB;
   }
 
-
   public CreateEmailCampaign splitRule(Long splitRule) {
     
     this.splitRule = splitRule;
     return this;
   }
 
-   /**
+  /**
    * Add the size of your test groups. **Mandatory if abTesting &#x3D; true &amp; &#39;recipients&#39; is passed**. We&#39;ll send version A and B to a random sample of recipients, and then the winning version to everyone else 
    * minimum: 1
    * maximum: 50
    * @return splitRule
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SPLIT_RULE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -832,17 +809,16 @@ public class CreateEmailCampaign {
     this.splitRule = splitRule;
   }
 
-
   public CreateEmailCampaign winnerCriteria(WinnerCriteriaEnum winnerCriteria) {
     
     this.winnerCriteria = winnerCriteria;
     return this;
   }
 
-   /**
+  /**
    * Choose the metrics that will determinate the winning version. **Mandatory if _splitRule_ &gt;&#x3D; 1 and &lt; 50**. If splitRule &#x3D; 50, &#x60;winnerCriteria&#x60; is ignored if passed 
    * @return winnerCriteria
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_WINNER_CRITERIA)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -858,19 +834,18 @@ public class CreateEmailCampaign {
     this.winnerCriteria = winnerCriteria;
   }
 
-
   public CreateEmailCampaign winnerDelay(Long winnerDelay) {
     
     this.winnerDelay = winnerDelay;
     return this;
   }
 
-   /**
+  /**
    * Choose the duration of the test in hours. Maximum is 7 days, pass 24*7 &#x3D; 168 hours. The winning version will be sent at the end of the test. **Mandatory if _splitRule_ &gt;&#x3D; 1 and &lt; 50**. If splitRule &#x3D; 50, &#x60;winnerDelay&#x60; is ignored if passed 
    * minimum: 1
    * maximum: 168
    * @return winnerDelay
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_WINNER_DELAY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -886,17 +861,16 @@ public class CreateEmailCampaign {
     this.winnerDelay = winnerDelay;
   }
 
-
   public CreateEmailCampaign ipWarmupEnable(Boolean ipWarmupEnable) {
     
     this.ipWarmupEnable = ipWarmupEnable;
     return this;
   }
 
-   /**
+  /**
    * **Available for dedicated ip clients**. Set this to true if you wish to warm up your ip. 
    * @return ipWarmupEnable
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IP_WARMUP_ENABLE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -912,17 +886,16 @@ public class CreateEmailCampaign {
     this.ipWarmupEnable = ipWarmupEnable;
   }
 
-
   public CreateEmailCampaign initialQuota(Long initialQuota) {
     
     this.initialQuota = initialQuota;
     return this;
   }
 
-   /**
+  /**
    * **Mandatory if ipWarmupEnable is set to true**. Set an initial quota greater than 1 for warming up your ip. We recommend you set a value of 3000. 
    * @return initialQuota
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_INITIAL_QUOTA)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -938,19 +911,18 @@ public class CreateEmailCampaign {
     this.initialQuota = initialQuota;
   }
 
-
   public CreateEmailCampaign increaseRate(Long increaseRate) {
     
     this.increaseRate = increaseRate;
     return this;
   }
 
-   /**
+  /**
    * **Mandatory if ipWarmupEnable is set to true**. Set a percentage increase rate for warming up your ip. We recommend you set the increase rate to 30% per day. If you want to send the same number of emails every day, set the daily increase value to 0%. 
    * minimum: 0
    * maximum: 100
    * @return increaseRate
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_INCREASE_RATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -966,17 +938,16 @@ public class CreateEmailCampaign {
     this.increaseRate = increaseRate;
   }
 
-
   public CreateEmailCampaign unsubscriptionPageId(String unsubscriptionPageId) {
     
     this.unsubscriptionPageId = unsubscriptionPageId;
     return this;
   }
 
-   /**
+  /**
    * Enter an unsubscription page id. The page id is a 24 digit alphanumeric id that can be found in the URL when editing the page. If not entered, then the default unsubscription page will be used. 
    * @return unsubscriptionPageId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UNSUBSCRIPTION_PAGE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -992,17 +963,16 @@ public class CreateEmailCampaign {
     this.unsubscriptionPageId = unsubscriptionPageId;
   }
 
-
   public CreateEmailCampaign updateFormId(String updateFormId) {
     
     this.updateFormId = updateFormId;
     return this;
   }
 
-   /**
+  /**
    * **Mandatory if templateId is used containing the {{ update_profile }} tag**. Enter an update profile form id. The form id is a 24 digit alphanumeric id that can be found in the URL when editing the form. If not entered, then the default update profile form will be used. 
    * @return updateFormId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UPDATE_FORM_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

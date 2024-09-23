@@ -66,13 +66,13 @@ public class SendSmtpEmail {
   private SendSmtpEmailSender sender;
 
   public static final String JSON_PROPERTY_TO = "to";
-  private List<SendSmtpEmailToInner> to;
+  private List<SendSmtpEmailToInner> to = new ArrayList<>();
 
   public static final String JSON_PROPERTY_BCC = "bcc";
-  private List<SendSmtpEmailBccInner> bcc;
+  private List<SendSmtpEmailBccInner> bcc = new ArrayList<>();
 
   public static final String JSON_PROPERTY_CC = "cc";
-  private List<SendSmtpEmailCcInner> cc;
+  private List<SendSmtpEmailCcInner> cc = new ArrayList<>();
 
   public static final String JSON_PROPERTY_HTML_CONTENT = "htmlContent";
   private String htmlContent;
@@ -87,7 +87,7 @@ public class SendSmtpEmail {
   private SendSmtpEmailReplyTo replyTo;
 
   public static final String JSON_PROPERTY_ATTACHMENT = "attachment";
-  private List<SendSmtpEmailAttachmentInner> attachment;
+  private List<SendSmtpEmailAttachmentInner> attachment = new ArrayList<>();
 
   public static final String JSON_PROPERTY_HEADERS = "headers";
   private Map<String, Object> headers = new HashMap<>();
@@ -99,10 +99,10 @@ public class SendSmtpEmail {
   private Map<String, Object> params = new HashMap<>();
 
   public static final String JSON_PROPERTY_MESSAGE_VERSIONS = "messageVersions";
-  private List<SendSmtpEmailMessageVersionsInner> messageVersions;
+  private List<SendSmtpEmailMessageVersionsInner> messageVersions = new ArrayList<>();
 
   public static final String JSON_PROPERTY_TAGS = "tags";
-  private List<String> tags;
+  private List<String> tags = new ArrayList<>();
 
   public static final String JSON_PROPERTY_SCHEDULED_AT = "scheduledAt";
   private OffsetDateTime scheduledAt;
@@ -119,10 +119,10 @@ public class SendSmtpEmail {
     return this;
   }
 
-   /**
+  /**
    * Get sender
    * @return sender
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SENDER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -138,7 +138,6 @@ public class SendSmtpEmail {
     this.sender = sender;
   }
 
-
   public SendSmtpEmail to(List<SendSmtpEmailToInner> to) {
     
     this.to = to;
@@ -153,10 +152,10 @@ public class SendSmtpEmail {
     return this;
   }
 
-   /**
+  /**
    * **Mandatory if messageVersions are not passed, ignored if messageVersions are passed** List of email addresses and names (_optional_) of the recipients. For example, **[{\&quot;name\&quot;:\&quot;Jimmy\&quot;, \&quot;email\&quot;:\&quot;jimmy98@example.com\&quot;}, {\&quot;name\&quot;:\&quot;Joe\&quot;, \&quot;email\&quot;:\&quot;joe@example.com\&quot;}]** 
    * @return to
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -172,7 +171,6 @@ public class SendSmtpEmail {
     this.to = to;
   }
 
-
   public SendSmtpEmail bcc(List<SendSmtpEmailBccInner> bcc) {
     
     this.bcc = bcc;
@@ -187,10 +185,10 @@ public class SendSmtpEmail {
     return this;
   }
 
-   /**
+  /**
    * List of email addresses and names (_optional_) of the recipients in bcc 
    * @return bcc
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_BCC)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -206,7 +204,6 @@ public class SendSmtpEmail {
     this.bcc = bcc;
   }
 
-
   public SendSmtpEmail cc(List<SendSmtpEmailCcInner> cc) {
     
     this.cc = cc;
@@ -221,10 +218,10 @@ public class SendSmtpEmail {
     return this;
   }
 
-   /**
+  /**
    * List of email addresses and names (_optional_) of the recipients in cc 
    * @return cc
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CC)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -240,17 +237,16 @@ public class SendSmtpEmail {
     this.cc = cc;
   }
 
-
   public SendSmtpEmail htmlContent(String htmlContent) {
     
     this.htmlContent = htmlContent;
     return this;
   }
 
-   /**
+  /**
    * HTML body of the message. **Mandatory if &#39;templateId&#39; is not passed, ignored if &#39;templateId&#39; is passed** 
    * @return htmlContent
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_HTML_CONTENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -266,17 +262,16 @@ public class SendSmtpEmail {
     this.htmlContent = htmlContent;
   }
 
-
   public SendSmtpEmail textContent(String textContent) {
     
     this.textContent = textContent;
     return this;
   }
 
-   /**
+  /**
    * Plain Text body of the message. **Ignored if &#39;templateId&#39; is passed** 
    * @return textContent
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TEXT_CONTENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -292,17 +287,16 @@ public class SendSmtpEmail {
     this.textContent = textContent;
   }
 
-
   public SendSmtpEmail subject(String subject) {
     
     this.subject = subject;
     return this;
   }
 
-   /**
+  /**
    * Subject of the message. **Mandatory if &#39;templateId&#39; is not passed** 
    * @return subject
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SUBJECT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -318,17 +312,16 @@ public class SendSmtpEmail {
     this.subject = subject;
   }
 
-
   public SendSmtpEmail replyTo(SendSmtpEmailReplyTo replyTo) {
     
     this.replyTo = replyTo;
     return this;
   }
 
-   /**
+  /**
    * Get replyTo
    * @return replyTo
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_REPLY_TO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -344,7 +337,6 @@ public class SendSmtpEmail {
     this.replyTo = replyTo;
   }
 
-
   public SendSmtpEmail attachment(List<SendSmtpEmailAttachmentInner> attachment) {
     
     this.attachment = attachment;
@@ -359,10 +351,10 @@ public class SendSmtpEmail {
     return this;
   }
 
-   /**
+  /**
    * Pass the _absolute URL_ (**no local file**) or the _base64 content_ of the attachment along with the attachment name. **Mandatory if attachment content is passed**. For example, **[{\&quot;url\&quot;:\&quot;https://attachment.domain.com/myAttachmentFromUrl.jpg\&quot;, \&quot;name\&quot;:\&quot;myAttachmentFromUrl.jpg\&quot;}, {\&quot;content\&quot;:\&quot;base64 example content\&quot;, \&quot;name\&quot;:\&quot;myAttachmentFromBase64.jpg\&quot;}]**. Allowed extensions for attachment file: #### xlsx, xls, ods, docx, docm, doc, csv, pdf, txt, gif, jpg, jpeg, png, tif, tiff, rtf, bmp, cgm, css, shtml, html, htm, zip, xml, ppt, pptx, tar, ez, ics, mobi, msg, pub, eps, odt, mp3, m4a, m4v, wma, ogg, flac, wav, aif, aifc, aiff, mp4, mov, avi, mkv, mpeg, mpg, wmv, pkpass and xlsm. If &#x60;templateId&#x60; is passed and is in New Template Language format then both attachment url and content are accepted. If template is in Old template Language format, then &#x60;attachment&#x60; is ignored 
    * @return attachment
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ATTACHMENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -378,7 +370,6 @@ public class SendSmtpEmail {
     this.attachment = attachment;
   }
 
-
   public SendSmtpEmail headers(Map<String, Object> headers) {
     
     this.headers = headers;
@@ -393,10 +384,10 @@ public class SendSmtpEmail {
     return this;
   }
 
-   /**
+  /**
    * Pass the set of custom headers (_not the standard headers_) that shall be sent along the mail headers in the original email. **&#39;sender.ip&#39;** header can be set (**only for dedicated ip users**) to mention the IP to be used for sending transactional emails. Headers are allowed in &#x60;This-Case-Only&#x60; (i.e. words separated by hyphen with first letter of each word in capital letter), they will be converted to such case styling if not in this format in the request payload. For example, **{\&quot;sender.ip\&quot;:\&quot;1.2.3.4\&quot;, \&quot;X-Mailin-custom\&quot;:\&quot;some_custom_header\&quot;, \&quot;idempotencyKey\&quot;:\&quot;abc-123\&quot;}**. 
    * @return headers
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_HEADERS)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
@@ -412,17 +403,16 @@ public class SendSmtpEmail {
     this.headers = headers;
   }
 
-
   public SendSmtpEmail templateId(Long templateId) {
     
     this.templateId = templateId;
     return this;
   }
 
-   /**
+  /**
    * Id of the template.
    * @return templateId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -438,7 +428,6 @@ public class SendSmtpEmail {
     this.templateId = templateId;
   }
 
-
   public SendSmtpEmail params(Map<String, Object> params) {
     
     this.params = params;
@@ -453,10 +442,10 @@ public class SendSmtpEmail {
     return this;
   }
 
-   /**
+  /**
    * Pass the set of attributes to customize the template. For example, **{\&quot;FNAME\&quot;:\&quot;Joe\&quot;, \&quot;LNAME\&quot;:\&quot;Doe\&quot;}**. It&#39;s **considered only if template is in New Template Language format**. 
    * @return params
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PARAMS)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
@@ -472,7 +461,6 @@ public class SendSmtpEmail {
     this.params = params;
   }
 
-
   public SendSmtpEmail messageVersions(List<SendSmtpEmailMessageVersionsInner> messageVersions) {
     
     this.messageVersions = messageVersions;
@@ -487,10 +475,10 @@ public class SendSmtpEmail {
     return this;
   }
 
-   /**
+  /**
    * You can customize and send out multiple versions of a mail. **templateId** can be customized only if global parameter contains templateId. **htmlContent and textContent** can be customized only if any of the two, htmlContent or textContent, is present in global parameters. Some global parameters such as **to(mandatory), bcc, cc, replyTo, subject** can also be customized specific to each version. Total number of recipients in one API request must not exceed 2000. However, you can still pass upto 99 recipients maximum in one message version. The size of individual params in all the messageVersions shall not exceed **100 KB** limit and that of cumulative params shall not exceed **1000 KB**. You can follow this **step-by-step guide** on how to use **messageVersions** to batch send emails - **https://developers.brevo.com/docs/batch-send-transactional-emails** 
    * @return messageVersions
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MESSAGE_VERSIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -506,7 +494,6 @@ public class SendSmtpEmail {
     this.messageVersions = messageVersions;
   }
 
-
   public SendSmtpEmail tags(List<String> tags) {
     
     this.tags = tags;
@@ -521,10 +508,10 @@ public class SendSmtpEmail {
     return this;
   }
 
-   /**
+  /**
    * Tag your emails to find them more easily
    * @return tags
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TAGS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -540,17 +527,16 @@ public class SendSmtpEmail {
     this.tags = tags;
   }
 
-
   public SendSmtpEmail scheduledAt(OffsetDateTime scheduledAt) {
     
     this.scheduledAt = scheduledAt;
     return this;
   }
 
-   /**
+  /**
    * UTC date-time on which the email has to schedule (YYYY-MM-DDTHH:mm:ss.SSSZ). Prefer to pass your timezone in date-time format for scheduling. There can be an expected delay of +5 minutes in scheduled email delivery. **Please note this feature is currently a public beta**.
    * @return scheduledAt
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -566,17 +552,16 @@ public class SendSmtpEmail {
     this.scheduledAt = scheduledAt;
   }
 
-
   public SendSmtpEmail batchId(String batchId) {
     
     this.batchId = batchId;
     return this;
   }
 
-   /**
+  /**
    * Valid UUIDv4 batch id to identify the scheduled batches transactional email. If not passed we will create a valid UUIDv4 batch id at our end.
    * @return batchId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_BATCH_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -54,10 +54,10 @@ public class SendSmtpEmailSender {
     return this;
   }
 
-   /**
+  /**
    * description: Name of the sender from which the emails will be sent. **Maximum allowed characters are 70**. Applicable only when email is passed. 
    * @return name
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -73,17 +73,16 @@ public class SendSmtpEmailSender {
     this.name = name;
   }
 
-
   public SendSmtpEmailSender email(String email) {
     
     this.email = email;
     return this;
   }
 
-   /**
+  /**
    * Email of the sender from which the emails will be sent. Mandatory if sender id is not passed.
    * @return email
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -99,17 +98,16 @@ public class SendSmtpEmailSender {
     this.email = email;
   }
 
-
   public SendSmtpEmailSender id(Long id) {
     
     this.id = id;
     return this;
   }
 
-   /**
+  /**
    * Id of the sender from which the emails will be sent. In order to select a sender with specific pool of IP’s, dedicated ip users shall pass id (instead of email). Mandatory if email is not passed.
    * @return id
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

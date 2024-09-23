@@ -109,7 +109,7 @@ public class GetWebhook {
   private Object auth;
 
   public static final String JSON_PROPERTY_HEADERS = "headers";
-  private List<Object> headers;
+  private List<Object> headers = new ArrayList<>();
 
   public GetWebhook() {
   }
@@ -120,10 +120,10 @@ public class GetWebhook {
     return this;
   }
 
-   /**
+  /**
    * URL of the webhook
    * @return url
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -139,17 +139,16 @@ public class GetWebhook {
     this.url = url;
   }
 
-
   public GetWebhook id(Long id) {
     
     this.id = id;
     return this;
   }
 
-   /**
+  /**
    * ID of the webhook
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -165,17 +164,16 @@ public class GetWebhook {
     this.id = id;
   }
 
-
   public GetWebhook description(String description) {
     
     this.description = description;
     return this;
   }
 
-   /**
+  /**
    * Description of the webhook
    * @return description
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -191,7 +189,6 @@ public class GetWebhook {
     this.description = description;
   }
 
-
   public GetWebhook events(List<String> events) {
     
     this.events = events;
@@ -206,10 +203,10 @@ public class GetWebhook {
     return this;
   }
 
-   /**
+  /**
    * Get events
    * @return events
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EVENTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -225,17 +222,16 @@ public class GetWebhook {
     this.events = events;
   }
 
-
   public GetWebhook type(TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Type of webhook (marketing or transactional)
    * @return type
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -251,17 +247,16 @@ public class GetWebhook {
     this.type = type;
   }
 
-
   public GetWebhook createdAt(String createdAt) {
     
     this.createdAt = createdAt;
     return this;
   }
 
-   /**
+  /**
    * Creation UTC date-time of the webhook (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -277,17 +272,16 @@ public class GetWebhook {
     this.createdAt = createdAt;
   }
 
-
   public GetWebhook modifiedAt(String modifiedAt) {
     
     this.modifiedAt = modifiedAt;
     return this;
   }
 
-   /**
+  /**
    * Last modification UTC date-time of the webhook (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return modifiedAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -303,17 +297,16 @@ public class GetWebhook {
     this.modifiedAt = modifiedAt;
   }
 
-
   public GetWebhook batched(Boolean batched) {
     
     this.batched = batched;
     return this;
   }
 
-   /**
+  /**
    * Batching configuration of the webhook, we send batched webhooks if its true
    * @return batched
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_BATCHED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -329,17 +322,16 @@ public class GetWebhook {
     this.batched = batched;
   }
 
-
   public GetWebhook auth(Object auth) {
     
     this.auth = auth;
     return this;
   }
 
-   /**
+  /**
    * Authentication header to be send with the webhook requests
    * @return auth
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_AUTH)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -355,7 +347,6 @@ public class GetWebhook {
     this.auth = auth;
   }
 
-
   public GetWebhook headers(List<Object> headers) {
     
     this.headers = headers;
@@ -370,10 +361,10 @@ public class GetWebhook {
     return this;
   }
 
-   /**
+  /**
    * Get headers
    * @return headers
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_HEADERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

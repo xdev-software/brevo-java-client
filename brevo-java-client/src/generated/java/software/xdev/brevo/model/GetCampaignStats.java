@@ -106,10 +106,10 @@ public class GetCampaignStats {
     return this;
   }
 
-   /**
+  /**
    * List Id of email campaign (only in case of get email campaign(s)(not for global stats))
    * @return listId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LIST_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -125,17 +125,16 @@ public class GetCampaignStats {
     this.listId = listId;
   }
 
-
   public GetCampaignStats uniqueClicks(Long uniqueClicks) {
     
     this.uniqueClicks = uniqueClicks;
     return this;
   }
 
-   /**
+  /**
    * Number of unique clicks for the campaign
    * @return uniqueClicks
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UNIQUE_CLICKS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -151,17 +150,16 @@ public class GetCampaignStats {
     this.uniqueClicks = uniqueClicks;
   }
 
-
   public GetCampaignStats clickers(Long clickers) {
     
     this.clickers = clickers;
     return this;
   }
 
-   /**
+  /**
    * Number of total clicks for the campaign
    * @return clickers
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CLICKERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -177,17 +175,16 @@ public class GetCampaignStats {
     this.clickers = clickers;
   }
 
-
   public GetCampaignStats complaints(Long complaints) {
     
     this.complaints = complaints;
     return this;
   }
 
-   /**
+  /**
    * Number of complaints (Spam reports) for the campaign
    * @return complaints
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COMPLAINTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -203,17 +200,16 @@ public class GetCampaignStats {
     this.complaints = complaints;
   }
 
-
   public GetCampaignStats delivered(Long delivered) {
     
     this.delivered = delivered;
     return this;
   }
 
-   /**
+  /**
    * Number of delivered emails for the campaign
    * @return delivered
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_DELIVERED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -229,17 +225,16 @@ public class GetCampaignStats {
     this.delivered = delivered;
   }
 
-
   public GetCampaignStats sent(Long sent) {
     
     this.sent = sent;
     return this;
   }
 
-   /**
+  /**
    * Number of sent emails for the campaign
    * @return sent
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -255,17 +250,16 @@ public class GetCampaignStats {
     this.sent = sent;
   }
 
-
   public GetCampaignStats softBounces(Long softBounces) {
     
     this.softBounces = softBounces;
     return this;
   }
 
-   /**
+  /**
    * Number of softbounce for the campaign
    * @return softBounces
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SOFT_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -281,17 +275,16 @@ public class GetCampaignStats {
     this.softBounces = softBounces;
   }
 
-
   public GetCampaignStats hardBounces(Long hardBounces) {
     
     this.hardBounces = hardBounces;
     return this;
   }
 
-   /**
+  /**
    * Number of harbounce for the campaign
    * @return hardBounces
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_HARD_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -307,17 +300,16 @@ public class GetCampaignStats {
     this.hardBounces = hardBounces;
   }
 
-
   public GetCampaignStats uniqueViews(Long uniqueViews) {
     
     this.uniqueViews = uniqueViews;
     return this;
   }
 
-   /**
+  /**
    * Number of unique openings for the campaign
    * @return uniqueViews
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UNIQUE_VIEWS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -333,17 +325,16 @@ public class GetCampaignStats {
     this.uniqueViews = uniqueViews;
   }
 
-
   public GetCampaignStats trackableViews(Long trackableViews) {
     
     this.trackableViews = trackableViews;
     return this;
   }
 
-   /**
+  /**
    * Recipients without any privacy protection option enabled in their email client
    * @return trackableViews
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TRACKABLE_VIEWS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -359,17 +350,16 @@ public class GetCampaignStats {
     this.trackableViews = trackableViews;
   }
 
-
   public GetCampaignStats trackableViewsRate(Float trackableViewsRate) {
     
     this.trackableViewsRate = trackableViewsRate;
     return this;
   }
 
-   /**
+  /**
    * Rate of recipients without any privacy protection option enabled in their email client
    * @return trackableViewsRate
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TRACKABLE_VIEWS_RATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -385,17 +375,16 @@ public class GetCampaignStats {
     this.trackableViewsRate = trackableViewsRate;
   }
 
-
   public GetCampaignStats estimatedViews(Long estimatedViews) {
     
     this.estimatedViews = estimatedViews;
     return this;
   }
 
-   /**
+  /**
    * Rate of recipients without any privacy protection option enabled in their email client, applied to all delivered emails
    * @return estimatedViews
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ESTIMATED_VIEWS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -411,17 +400,16 @@ public class GetCampaignStats {
     this.estimatedViews = estimatedViews;
   }
 
-
   public GetCampaignStats unsubscriptions(Long unsubscriptions) {
     
     this.unsubscriptions = unsubscriptions;
     return this;
   }
 
-   /**
+  /**
    * Number of unsubscription for the campaign
    * @return unsubscriptions
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UNSUBSCRIPTIONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -437,17 +425,16 @@ public class GetCampaignStats {
     this.unsubscriptions = unsubscriptions;
   }
 
-
   public GetCampaignStats viewed(Long viewed) {
     
     this.viewed = viewed;
     return this;
   }
 
-   /**
+  /**
    * Number of openings for the campaign
    * @return viewed
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_VIEWED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -463,17 +450,16 @@ public class GetCampaignStats {
     this.viewed = viewed;
   }
 
-
   public GetCampaignStats deferred(Long deferred) {
     
     this.deferred = deferred;
     return this;
   }
 
-   /**
+  /**
    * Number of deferred emails for the campaign
    * @return deferred
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DEFERRED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -489,17 +475,16 @@ public class GetCampaignStats {
     this.deferred = deferred;
   }
 
-
   public GetCampaignStats returnBounce(Long returnBounce) {
     
     this.returnBounce = returnBounce;
     return this;
   }
 
-   /**
+  /**
    * Total number of non-delivered campaigns for a particular campaign id.
    * @return returnBounce
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_RETURN_BOUNCE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

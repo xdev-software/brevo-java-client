@@ -41,10 +41,10 @@ import java.util.StringJoiner;
 @JsonTypeName("addContactToList_request")
 public class AddContactToListRequest {
   public static final String JSON_PROPERTY_EMAILS = "emails";
-  private List<String> emails;
+  private List<String> emails = new ArrayList<>();
 
   public static final String JSON_PROPERTY_IDS = "ids";
-  private List<Long> ids;
+  private List<Long> ids = new ArrayList<>();
 
   public AddContactToListRequest() {
   }
@@ -63,10 +63,10 @@ public class AddContactToListRequest {
     return this;
   }
 
-   /**
+  /**
    * Emails to add to a list. You can pass a **maximum of 150 emails** for addition in one request. **_If you need to add the emails in bulk, please prefer /contacts/import api._** 
    * @return emails
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EMAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -82,7 +82,6 @@ public class AddContactToListRequest {
     this.emails = emails;
   }
 
-
   public AddContactToListRequest ids(List<Long> ids) {
     
     this.ids = ids;
@@ -97,10 +96,10 @@ public class AddContactToListRequest {
     return this;
   }
 
-   /**
+  /**
    * IDs to add to a list. You can pass a **maximum of 150 IDs** for addition in one request. **_If you need to add the emails in bulk, please prefer /contacts/import api._** 
    * @return ids
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

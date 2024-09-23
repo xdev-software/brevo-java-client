@@ -70,7 +70,7 @@ public class GetChildInfo {
   private String password;
 
   public static final String JSON_PROPERTY_IPS = "ips";
-  private List<String> ips;
+  private List<String> ips = new ArrayList<>();
 
   public static final String JSON_PROPERTY_API_KEYS = "apiKeys";
   private GetChildInfoAllOfApiKeys apiKeys;
@@ -84,10 +84,10 @@ public class GetChildInfo {
     return this;
   }
 
-   /**
+  /**
    * Login Email
    * @return email
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -103,17 +103,16 @@ public class GetChildInfo {
     this.email = email;
   }
 
-
   public GetChildInfo firstName(String firstName) {
     
     this.firstName = firstName;
     return this;
   }
 
-   /**
+  /**
    * First Name
    * @return firstName
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_FIRST_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -129,17 +128,16 @@ public class GetChildInfo {
     this.firstName = firstName;
   }
 
-
   public GetChildInfo lastName(String lastName) {
     
     this.lastName = lastName;
     return this;
   }
 
-   /**
+  /**
    * Last Name
    * @return lastName
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_LAST_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -155,17 +153,16 @@ public class GetChildInfo {
     this.lastName = lastName;
   }
 
-
   public GetChildInfo companyName(String companyName) {
     
     this.companyName = companyName;
     return this;
   }
 
-   /**
+  /**
    * Name of the company
    * @return companyName
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COMPANY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -181,17 +178,16 @@ public class GetChildInfo {
     this.companyName = companyName;
   }
 
-
   public GetChildInfo credits(GetChildInfoAllOfCredits credits) {
     
     this.credits = credits;
     return this;
   }
 
-   /**
+  /**
    * Get credits
    * @return credits
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CREDITS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -207,17 +203,16 @@ public class GetChildInfo {
     this.credits = credits;
   }
 
-
   public GetChildInfo statistics(GetChildInfoAllOfStatistics statistics) {
     
     this.statistics = statistics;
     return this;
   }
 
-   /**
+  /**
    * Get statistics
    * @return statistics
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_STATISTICS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -233,17 +228,16 @@ public class GetChildInfo {
     this.statistics = statistics;
   }
 
-
   public GetChildInfo password(String password) {
     
     this.password = password;
     return this;
   }
 
-   /**
+  /**
    * The encrypted password of child account
    * @return password
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PASSWORD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -259,7 +253,6 @@ public class GetChildInfo {
     this.password = password;
   }
 
-
   public GetChildInfo ips(List<String> ips) {
     
     this.ips = ips;
@@ -274,10 +267,10 @@ public class GetChildInfo {
     return this;
   }
 
-   /**
+  /**
    * IP(s) associated to a child account user
    * @return ips
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IPS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -293,17 +286,16 @@ public class GetChildInfo {
     this.ips = ips;
   }
 
-
   public GetChildInfo apiKeys(GetChildInfoAllOfApiKeys apiKeys) {
     
     this.apiKeys = apiKeys;
     return this;
   }
 
-   /**
+  /**
    * Get apiKeys
    * @return apiKeys
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_API_KEYS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

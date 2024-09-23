@@ -50,10 +50,10 @@ public class Note {
   private String text;
 
   public static final String JSON_PROPERTY_CONTACT_IDS = "contactIds";
-  private List<Integer> contactIds;
+  private List<Integer> contactIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_DEAL_IDS = "dealIds";
-  private List<String> dealIds;
+  private List<String> dealIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_AUTHOR_ID = "authorId";
   private Object authorId;
@@ -73,10 +73,10 @@ public class Note {
     return this;
   }
 
-   /**
+  /**
    * Unique note Id
    * @return id
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -92,17 +92,16 @@ public class Note {
     this.id = id;
   }
 
-
   public Note text(String text) {
     
     this.text = text;
     return this;
   }
 
-   /**
+  /**
    * Text content of a note
    * @return text
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TEXT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -118,7 +117,6 @@ public class Note {
     this.text = text;
   }
 
-
   public Note contactIds(List<Integer> contactIds) {
     
     this.contactIds = contactIds;
@@ -133,10 +131,10 @@ public class Note {
     return this;
   }
 
-   /**
+  /**
    * Contact ids linked to a note
    * @return contactIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CONTACT_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -152,7 +150,6 @@ public class Note {
     this.contactIds = contactIds;
   }
 
-
   public Note dealIds(List<String> dealIds) {
     
     this.dealIds = dealIds;
@@ -167,10 +164,10 @@ public class Note {
     return this;
   }
 
-   /**
+  /**
    * Deal ids linked to a note
    * @return dealIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DEAL_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -186,17 +183,16 @@ public class Note {
     this.dealIds = dealIds;
   }
 
-
   public Note authorId(Object authorId) {
     
     this.authorId = authorId;
     return this;
   }
 
-   /**
+  /**
    * Account details of user which created the note
    * @return authorId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_AUTHOR_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -212,17 +208,16 @@ public class Note {
     this.authorId = authorId;
   }
 
-
   public Note createdAt(OffsetDateTime createdAt) {
     
     this.createdAt = createdAt;
     return this;
   }
 
-   /**
+  /**
    * Note created date/time
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -238,17 +233,16 @@ public class Note {
     this.createdAt = createdAt;
   }
 
-
   public Note updatedAt(OffsetDateTime updatedAt) {
     
     this.updatedAt = updatedAt;
     return this;
   }
 
-   /**
+  /**
    * Note updated date/time
    * @return updatedAt
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UPDATED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -48,7 +48,7 @@ public class CreateAttribute {
   private Boolean isRecurring;
 
   public static final String JSON_PROPERTY_ENUMERATION = "enumeration";
-  private List<CreateAttributeEnumerationInner> enumeration;
+  private List<CreateAttributeEnumerationInner> enumeration = new ArrayList<>();
 
   /**
    * Type of the attribute. **Use only if the attribute&#39;s category is &#39;normal&#39;, &#39;category&#39; or &#39;transactional&#39;** Type **boolean** is only available if the category is **normal** attribute Type **id** is only available if the category is **transactional** attribute Type **category** is only available if the category is **category** attribute 
@@ -105,10 +105,10 @@ public class CreateAttribute {
     return this;
   }
 
-   /**
+  /**
    * Value of the attribute. **Use only if the attribute&#39;s category is &#39;calculated&#39; or &#39;global&#39;** 
    * @return value
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -124,17 +124,16 @@ public class CreateAttribute {
     this.value = value;
   }
 
-
   public CreateAttribute isRecurring(Boolean isRecurring) {
     
     this.isRecurring = isRecurring;
     return this;
   }
 
-   /**
+  /**
    * Type of the attribute. **Use only if the attribute&#39;s category is &#39;calculated&#39; or &#39;global&#39;** 
    * @return isRecurring
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IS_RECURRING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -150,7 +149,6 @@ public class CreateAttribute {
     this.isRecurring = isRecurring;
   }
 
-
   public CreateAttribute enumeration(List<CreateAttributeEnumerationInner> enumeration) {
     
     this.enumeration = enumeration;
@@ -165,10 +163,10 @@ public class CreateAttribute {
     return this;
   }
 
-   /**
+  /**
    * List of values and labels that the attribute can take. **Use only if the attribute&#39;s category is \&quot;category\&quot;**. For example: **[{\&quot;value\&quot;:1, \&quot;label\&quot;:\&quot;male\&quot;}, {\&quot;value\&quot;:2, \&quot;label\&quot;:\&quot;female\&quot;}]** 
    * @return enumeration
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ENUMERATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -184,17 +182,16 @@ public class CreateAttribute {
     this.enumeration = enumeration;
   }
 
-
   public CreateAttribute type(TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Type of the attribute. **Use only if the attribute&#39;s category is &#39;normal&#39;, &#39;category&#39; or &#39;transactional&#39;** Type **boolean** is only available if the category is **normal** attribute Type **id** is only available if the category is **transactional** attribute Type **category** is only available if the category is **category** attribute 
    * @return type
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

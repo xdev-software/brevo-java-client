@@ -58,10 +58,10 @@ public class UpdateChildAccountStatus {
     return this;
   }
 
-   /**
+  /**
    * Status of Transactional Email Platform activation for your account (true&#x3D;enabled, false&#x3D;disabled)
    * @return transactionalEmail
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TRANSACTIONAL_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -77,17 +77,16 @@ public class UpdateChildAccountStatus {
     this.transactionalEmail = transactionalEmail;
   }
 
-
   public UpdateChildAccountStatus transactionalSms(Boolean transactionalSms) {
     
     this.transactionalSms = transactionalSms;
     return this;
   }
 
-   /**
+  /**
    * Status of Transactional SMS Platform activation for your account (true&#x3D;enabled, false&#x3D;disabled)
    * @return transactionalSms
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TRANSACTIONAL_SMS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -103,17 +102,16 @@ public class UpdateChildAccountStatus {
     this.transactionalSms = transactionalSms;
   }
 
-
   public UpdateChildAccountStatus marketingAutomation(Boolean marketingAutomation) {
     
     this.marketingAutomation = marketingAutomation;
     return this;
   }
 
-   /**
+  /**
    * Status of Marketing Automation Platform activation for your account (true&#x3D;enabled, false&#x3D;disabled)
    * @return marketingAutomation
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MARKETING_AUTOMATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -129,17 +127,16 @@ public class UpdateChildAccountStatus {
     this.marketingAutomation = marketingAutomation;
   }
 
-
   public UpdateChildAccountStatus smsCampaign(Boolean smsCampaign) {
     
     this.smsCampaign = smsCampaign;
     return this;
   }
 
-   /**
+  /**
    * Status of SMS Campaign Platform activation for your account (true&#x3D;enabled, false&#x3D;disabled)
    * @return smsCampaign
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SMS_CAMPAIGN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

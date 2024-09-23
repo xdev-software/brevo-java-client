@@ -43,7 +43,7 @@ public class GetTransacBlockedContacts {
   private Long count;
 
   public static final String JSON_PROPERTY_CONTACTS = "contacts";
-  private List<GetTransacBlockedContactsContactsInner> contacts;
+  private List<GetTransacBlockedContactsContactsInner> contacts = new ArrayList<>();
 
   public GetTransacBlockedContacts() {
   }
@@ -54,10 +54,10 @@ public class GetTransacBlockedContacts {
     return this;
   }
 
-   /**
+  /**
    * Count of blocked or unsubscribed contact
    * @return count
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -73,7 +73,6 @@ public class GetTransacBlockedContacts {
     this.count = count;
   }
 
-
   public GetTransacBlockedContacts contacts(List<GetTransacBlockedContactsContactsInner> contacts) {
     
     this.contacts = contacts;
@@ -88,10 +87,10 @@ public class GetTransacBlockedContacts {
     return this;
   }
 
-   /**
+  /**
    * Get contacts
    * @return contacts
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CONTACTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

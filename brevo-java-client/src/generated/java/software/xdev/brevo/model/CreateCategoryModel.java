@@ -46,10 +46,10 @@ public class CreateCategoryModel {
     return this;
   }
 
-   /**
+  /**
    * ID of the category when a new category is created
    * @return id
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

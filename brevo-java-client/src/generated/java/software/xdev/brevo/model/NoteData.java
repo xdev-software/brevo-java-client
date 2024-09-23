@@ -43,13 +43,13 @@ public class NoteData {
   private String text;
 
   public static final String JSON_PROPERTY_CONTACT_IDS = "contactIds";
-  private List<Integer> contactIds;
+  private List<Integer> contactIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_DEAL_IDS = "dealIds";
-  private List<String> dealIds;
+  private List<String> dealIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_COMPANY_IDS = "companyIds";
-  private List<String> companyIds;
+  private List<String> companyIds = new ArrayList<>();
 
   public NoteData() {
   }
@@ -60,10 +60,10 @@ public class NoteData {
     return this;
   }
 
-   /**
+  /**
    * Text content of a note
    * @return text
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TEXT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -79,7 +79,6 @@ public class NoteData {
     this.text = text;
   }
 
-
   public NoteData contactIds(List<Integer> contactIds) {
     
     this.contactIds = contactIds;
@@ -94,10 +93,10 @@ public class NoteData {
     return this;
   }
 
-   /**
+  /**
    * Contact Ids linked to a note
    * @return contactIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CONTACT_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -113,7 +112,6 @@ public class NoteData {
     this.contactIds = contactIds;
   }
 
-
   public NoteData dealIds(List<String> dealIds) {
     
     this.dealIds = dealIds;
@@ -128,10 +126,10 @@ public class NoteData {
     return this;
   }
 
-   /**
+  /**
    * Deal Ids linked to a note
    * @return dealIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DEAL_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -147,7 +145,6 @@ public class NoteData {
     this.dealIds = dealIds;
   }
 
-
   public NoteData companyIds(List<String> companyIds) {
     
     this.companyIds = companyIds;
@@ -162,10 +159,10 @@ public class NoteData {
     return this;
   }
 
-   /**
+  /**
    * Company Ids linked to a note
    * @return companyIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COMPANY_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

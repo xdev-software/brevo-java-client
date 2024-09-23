@@ -50,10 +50,10 @@ public class GetChildDomain {
     return this;
   }
 
-   /**
+  /**
    * Sender domain
    * @return domain
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DOMAIN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -69,17 +69,16 @@ public class GetChildDomain {
     this.domain = domain;
   }
 
-
   public GetChildDomain active(Boolean active) {
     
     this.active = active;
     return this;
   }
 
-   /**
+  /**
    * indicates whether a domain is verified or not
    * @return active
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ACTIVE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

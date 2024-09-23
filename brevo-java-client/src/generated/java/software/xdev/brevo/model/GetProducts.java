@@ -62,10 +62,10 @@ public class GetProducts {
     return this;
   }
 
-   /**
+  /**
    * Get products
    * @return products
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PRODUCTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -81,17 +81,16 @@ public class GetProducts {
     this.products = products;
   }
 
-
   public GetProducts count(Long count) {
     
     this.count = count;
     return this;
   }
 
-   /**
+  /**
    * Number of products
    * @return count
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

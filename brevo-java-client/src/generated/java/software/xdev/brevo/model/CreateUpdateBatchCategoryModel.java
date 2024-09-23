@@ -50,10 +50,10 @@ public class CreateUpdateBatchCategoryModel {
     return this;
   }
 
-   /**
+  /**
    * Number of the new created categories
    * @return createdCount
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CREATED_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -69,17 +69,16 @@ public class CreateUpdateBatchCategoryModel {
     this.createdCount = createdCount;
   }
 
-
   public CreateUpdateBatchCategoryModel updatedCount(Long updatedCount) {
     
     this.updatedCount = updatedCount;
     return this;
   }
 
-   /**
+  /**
    * Number of the existing categories updated
    * @return updatedCount
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UPDATED_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

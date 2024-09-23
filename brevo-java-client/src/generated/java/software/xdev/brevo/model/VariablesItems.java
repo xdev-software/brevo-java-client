@@ -54,10 +54,10 @@ public class VariablesItems {
     return this;
   }
 
-   /**
+  /**
    * Get name
    * @return name
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -73,17 +73,16 @@ public class VariablesItems {
     this.name = name;
   }
 
-
   public VariablesItems _default(String _default) {
     
     this._default = _default;
     return this;
   }
 
-   /**
+  /**
    * Get _default
    * @return _default
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DEFAULT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -99,17 +98,16 @@ public class VariablesItems {
     this._default = _default;
   }
 
-
   public VariablesItems datatype(String datatype) {
     
     this.datatype = datatype;
     return this;
   }
 
-   /**
+  /**
    * Get datatype
    * @return datatype
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DATATYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

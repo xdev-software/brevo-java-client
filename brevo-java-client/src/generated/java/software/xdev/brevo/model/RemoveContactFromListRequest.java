@@ -43,10 +43,10 @@ import java.util.StringJoiner;
 @JsonTypeName("removeContactFromList_request")
 public class RemoveContactFromListRequest {
   public static final String JSON_PROPERTY_EMAILS = "emails";
-  private List<String> emails;
+  private List<String> emails = new ArrayList<>();
 
   public static final String JSON_PROPERTY_IDS = "ids";
-  private List<Long> ids;
+  private List<Long> ids = new ArrayList<>();
 
   public static final String JSON_PROPERTY_ALL = "all";
   private Boolean all;
@@ -68,10 +68,10 @@ public class RemoveContactFromListRequest {
     return this;
   }
 
-   /**
+  /**
    * **Required if &#39;all&#39; is false and &#39;ids&#39; is empty.** Emails to remove from a list. You can pass a **maximum of 150 emails** for removal in one request. 
    * @return emails
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EMAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -87,7 +87,6 @@ public class RemoveContactFromListRequest {
     this.emails = emails;
   }
 
-
   public RemoveContactFromListRequest ids(List<Long> ids) {
     
     this.ids = ids;
@@ -102,10 +101,10 @@ public class RemoveContactFromListRequest {
     return this;
   }
 
-   /**
+  /**
    * **Required if &#39;all&#39; is false and &#39;emails&#39; is empty.** IDs to remove from a list. You can pass a **maximum of 150 IDs** for removal in one request. 
    * @return ids
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -121,17 +120,16 @@ public class RemoveContactFromListRequest {
     this.ids = ids;
   }
 
-
   public RemoveContactFromListRequest all(Boolean all) {
     
     this.all = all;
     return this;
   }
 
-   /**
+  /**
    * **Required if &#39;emails&#39; and &#39;ids&#39; are empty.** Remove all existing contacts from a list. A process will be created in this scenario. You can fetch the process details to know about the progress 
    * @return all
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ALL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

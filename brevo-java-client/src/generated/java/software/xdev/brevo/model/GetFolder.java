@@ -62,10 +62,10 @@ public class GetFolder {
     return this;
   }
 
-   /**
+  /**
    * ID of the folder
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -81,17 +81,16 @@ public class GetFolder {
     this.id = id;
   }
 
-
   public GetFolder name(String name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * Name of the folder
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -107,17 +106,16 @@ public class GetFolder {
     this.name = name;
   }
 
-
   public GetFolder totalBlacklisted(Long totalBlacklisted) {
     
     this.totalBlacklisted = totalBlacklisted;
     return this;
   }
 
-   /**
+  /**
    * Number of blacklisted contacts in the folder
    * @return totalBlacklisted
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TOTAL_BLACKLISTED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -133,17 +131,16 @@ public class GetFolder {
     this.totalBlacklisted = totalBlacklisted;
   }
 
-
   public GetFolder totalSubscribers(Long totalSubscribers) {
     
     this.totalSubscribers = totalSubscribers;
     return this;
   }
 
-   /**
+  /**
    * Number of contacts in the folder
    * @return totalSubscribers
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_TOTAL_SUBSCRIBERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -159,17 +156,16 @@ public class GetFolder {
     this.totalSubscribers = totalSubscribers;
   }
 
-
   public GetFolder uniqueSubscribers(Long uniqueSubscribers) {
     
     this.uniqueSubscribers = uniqueSubscribers;
     return this;
   }
 
-   /**
+  /**
    * Number of unique contacts in the folder
    * @return uniqueSubscribers
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UNIQUE_SUBSCRIBERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

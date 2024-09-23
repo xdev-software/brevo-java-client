@@ -39,7 +39,7 @@ import java.util.StringJoiner;
 @JsonTypeName("getSendersList")
 public class GetSendersList {
   public static final String JSON_PROPERTY_SENDERS = "senders";
-  private List<GetSendersListSendersInner> senders;
+  private List<GetSendersListSendersInner> senders = new ArrayList<>();
 
   public GetSendersList() {
   }
@@ -58,10 +58,10 @@ public class GetSendersList {
     return this;
   }
 
-   /**
+  /**
    * List of the senders available in your account
    * @return senders
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SENDERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -62,10 +62,10 @@ public class UpdateChild {
     return this;
   }
 
-   /**
+  /**
    * New Email address to update the child account
    * @return email
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -81,17 +81,16 @@ public class UpdateChild {
     this.email = email;
   }
 
-
   public UpdateChild firstName(String firstName) {
     
     this.firstName = firstName;
     return this;
   }
 
-   /**
+  /**
    * New First name to use to update the child account
    * @return firstName
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_FIRST_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -107,17 +106,16 @@ public class UpdateChild {
     this.firstName = firstName;
   }
 
-
   public UpdateChild lastName(String lastName) {
     
     this.lastName = lastName;
     return this;
   }
 
-   /**
+  /**
    * New Last name to use to update the child account
    * @return lastName
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LAST_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -133,17 +131,16 @@ public class UpdateChild {
     this.lastName = lastName;
   }
 
-
   public UpdateChild companyName(String companyName) {
     
     this.companyName = companyName;
     return this;
   }
 
-   /**
+  /**
    * New Company name to use to update the child account
    * @return companyName
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COMPANY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -159,17 +156,16 @@ public class UpdateChild {
     this.companyName = companyName;
   }
 
-
   public UpdateChild password(String password) {
     
     this.password = password;
     return this;
   }
 
-   /**
+  /**
    * New password for the child account to login
    * @return password
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PASSWORD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

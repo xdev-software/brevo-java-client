@@ -51,10 +51,10 @@ public class SubAccountDetailsResponsePlanInfoCredits {
     return this;
   }
 
-   /**
+  /**
    * SMS credits remaining on the sub-account
    * @return sms
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SMS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -70,17 +70,16 @@ public class SubAccountDetailsResponsePlanInfoCredits {
     this.sms = sms;
   }
 
-
   public SubAccountDetailsResponsePlanInfoCredits emails(SubAccountDetailsResponsePlanInfoCreditsEmails emails) {
     
     this.emails = emails;
     return this;
   }
 
-   /**
+  /**
    * Get emails
    * @return emails
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EMAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

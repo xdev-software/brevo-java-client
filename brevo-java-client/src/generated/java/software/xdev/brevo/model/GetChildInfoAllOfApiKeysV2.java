@@ -50,10 +50,10 @@ public class GetChildInfoAllOfApiKeysV2 {
     return this;
   }
 
-   /**
+  /**
    * Name of the key for version 2
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -69,17 +69,16 @@ public class GetChildInfoAllOfApiKeysV2 {
     this.name = name;
   }
 
-
   public GetChildInfoAllOfApiKeysV2 key(String key) {
     
     this.key = key;
     return this;
   }
 
-   /**
+  /**
    * API Key for version 2
    * @return key
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

@@ -56,9 +56,9 @@ public class CreateWebhook {
   public enum EventsEnum {
     SENT("sent"),
     
-    HARDBOUNCE("hardBounce"),
+    HARD_BOUNCE("hardBounce"),
     
-    SOFTBOUNCE("softBounce"),
+    SOFT_BOUNCE("softBounce"),
     
     BLOCKED("blocked"),
     
@@ -76,17 +76,17 @@ public class CreateWebhook {
     
     OPENED("opened"),
     
-    UNIQUEOPENED("uniqueOpened"),
+    UNIQUE_OPENED("uniqueOpened"),
     
     UNSUBSCRIBED("unsubscribed"),
     
-    LISTADDITION("listAddition"),
+    LIST_ADDITION("listAddition"),
     
-    CONTACTUPDATED("contactUpdated"),
+    CONTACT_UPDATED("contactUpdated"),
     
-    CONTACTDELETED("contactDeleted"),
+    CONTACT_DELETED("contactDeleted"),
     
-    INBOUNDEMAILPROCESSED("inboundEmailProcessed");
+    INBOUND_EMAIL_PROCESSED("inboundEmailProcessed");
 
     private String value;
 
@@ -168,7 +168,7 @@ public class CreateWebhook {
   private Object auth;
 
   public static final String JSON_PROPERTY_HEADERS = "headers";
-  private List<Object> headers;
+  private List<Object> headers = new ArrayList<>();
 
   public CreateWebhook() {
   }
@@ -179,10 +179,10 @@ public class CreateWebhook {
     return this;
   }
 
-   /**
+  /**
    * URL of the webhook
    * @return url
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -198,17 +198,16 @@ public class CreateWebhook {
     this.url = url;
   }
 
-
   public CreateWebhook description(String description) {
     
     this.description = description;
     return this;
   }
 
-   /**
+  /**
    * Description of the webhook
    * @return description
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -224,7 +223,6 @@ public class CreateWebhook {
     this.description = description;
   }
 
-
   public CreateWebhook events(List<EventsEnum> events) {
     
     this.events = events;
@@ -239,10 +237,10 @@ public class CreateWebhook {
     return this;
   }
 
-   /**
+  /**
    * - Events triggering the webhook. Possible values for **Transactional** type webhook: #### &#x60;sent&#x60; OR &#x60;request&#x60;, &#x60;delivered&#x60;, &#x60;hardBounce&#x60;, &#x60;softBounce&#x60;, &#x60;blocked&#x60;, &#x60;spam&#x60;, &#x60;invalid&#x60;, &#x60;deferred&#x60;, &#x60;click&#x60;, &#x60;opened&#x60;, &#x60;uniqueOpened&#x60; and &#x60;unsubscribed&#x60; - Possible values for **Marketing** type webhook: #### &#x60;spam&#x60;, &#x60;opened&#x60;, &#x60;click&#x60;, &#x60;hardBounce&#x60;, &#x60;softBounce&#x60;, &#x60;unsubscribed&#x60;, &#x60;listAddition&#x60; &amp; &#x60;delivered&#x60; - Possible values for **Inbound** type webhook: #### &#x60;inboundEmailProcessed&#x60; 
    * @return events
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EVENTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -258,17 +256,16 @@ public class CreateWebhook {
     this.events = events;
   }
 
-
   public CreateWebhook type(TypeEnum type) {
     
     this.type = type;
     return this;
   }
 
-   /**
+  /**
    * Type of the webhook
    * @return type
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -284,17 +281,16 @@ public class CreateWebhook {
     this.type = type;
   }
 
-
   public CreateWebhook domain(String domain) {
     
     this.domain = domain;
     return this;
   }
 
-   /**
+  /**
    * Inbound domain of webhook, required in case of event type &#x60;inbound&#x60;
    * @return domain
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DOMAIN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -310,17 +306,16 @@ public class CreateWebhook {
     this.domain = domain;
   }
 
-
   public CreateWebhook batched(Boolean batched) {
     
     this.batched = batched;
     return this;
   }
 
-   /**
+  /**
    * Batching configuration of the webhook, we send batched webhooks if its true
    * @return batched
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_BATCHED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -336,17 +331,16 @@ public class CreateWebhook {
     this.batched = batched;
   }
 
-
   public CreateWebhook auth(Object auth) {
     
     this.auth = auth;
     return this;
   }
 
-   /**
+  /**
    * Authentication header to be send with the webhook requests
    * @return auth
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_AUTH)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -362,7 +356,6 @@ public class CreateWebhook {
     this.auth = auth;
   }
 
-
   public CreateWebhook headers(List<Object> headers) {
     
     this.headers = headers;
@@ -377,10 +370,10 @@ public class CreateWebhook {
     return this;
   }
 
-   /**
+  /**
    * Get headers
    * @return headers
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_HEADERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

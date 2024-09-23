@@ -116,7 +116,7 @@ public class InviteAdminUserPrivilegesInner {
   }
 
   public static final String JSON_PROPERTY_PERMISSIONS = "permissions";
-  private List<PermissionsEnum> permissions;
+  private List<PermissionsEnum> permissions = new ArrayList<>();
 
   public InviteAdminUserPrivilegesInner() {
   }
@@ -127,10 +127,10 @@ public class InviteAdminUserPrivilegesInner {
     return this;
   }
 
-   /**
+  /**
    * Feature name
    * @return feature
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_FEATURE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -146,7 +146,6 @@ public class InviteAdminUserPrivilegesInner {
     this.feature = feature;
   }
 
-
   public InviteAdminUserPrivilegesInner permissions(List<PermissionsEnum> permissions) {
     
     this.permissions = permissions;
@@ -161,10 +160,10 @@ public class InviteAdminUserPrivilegesInner {
     return this;
   }
 
-   /**
+  /**
    * Permissions for a given feature
    * @return permissions
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PERMISSIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

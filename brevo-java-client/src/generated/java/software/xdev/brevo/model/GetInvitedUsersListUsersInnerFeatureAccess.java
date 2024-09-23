@@ -54,10 +54,10 @@ public class GetInvitedUsersListUsersInnerFeatureAccess {
     return this;
   }
 
-   /**
+  /**
    * Marketing features accessiblity.
    * @return marketing
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MARKETING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -73,17 +73,16 @@ public class GetInvitedUsersListUsersInnerFeatureAccess {
     this.marketing = marketing;
   }
 
-
   public GetInvitedUsersListUsersInnerFeatureAccess conversations(String conversations) {
     
     this.conversations = conversations;
     return this;
   }
 
-   /**
+  /**
    * Conversations features accessiblity.
    * @return conversations
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CONVERSATIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -99,17 +98,16 @@ public class GetInvitedUsersListUsersInnerFeatureAccess {
     this.conversations = conversations;
   }
 
-
   public GetInvitedUsersListUsersInnerFeatureAccess crm(String crm) {
     
     this.crm = crm;
     return this;
   }
 
-   /**
+  /**
    * CRM features accessiblity.
    * @return crm
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CRM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

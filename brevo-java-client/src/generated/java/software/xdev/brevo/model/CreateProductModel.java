@@ -46,10 +46,10 @@ public class CreateProductModel {
     return this;
   }
 
-   /**
+  /**
    * ID of the Product when a new product is created
    * @return id
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

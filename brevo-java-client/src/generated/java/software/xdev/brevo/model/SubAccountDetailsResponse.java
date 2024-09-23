@@ -59,10 +59,10 @@ public class SubAccountDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * Name of the sub-account user
    * @return name
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -78,17 +78,16 @@ public class SubAccountDetailsResponse {
     this.name = name;
   }
 
-
   public SubAccountDetailsResponse email(String email) {
     
     this.email = email;
     return this;
   }
 
-   /**
+  /**
    * Email id of the sub-account organization
    * @return email
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -104,17 +103,16 @@ public class SubAccountDetailsResponse {
     this.email = email;
   }
 
-
   public SubAccountDetailsResponse companyName(String companyName) {
     
     this.companyName = companyName;
     return this;
   }
 
-   /**
+  /**
    * Sub-account company name
    * @return companyName
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COMPANY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -130,17 +128,16 @@ public class SubAccountDetailsResponse {
     this.companyName = companyName;
   }
 
-
   public SubAccountDetailsResponse planInfo(SubAccountDetailsResponsePlanInfo planInfo) {
     
     this.planInfo = planInfo;
     return this;
   }
 
-   /**
+  /**
    * Get planInfo
    * @return planInfo
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PLAN_INFO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

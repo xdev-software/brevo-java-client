@@ -54,10 +54,10 @@ public class GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsUserUnsubscr
     return this;
   }
 
-   /**
+  /**
    * ID of the campaign which generated the event
    * @return campaignId
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CAMPAIGN_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -73,17 +73,16 @@ public class GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsUserUnsubscr
     this.campaignId = campaignId;
   }
 
-
   public GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsUserUnsubscription eventTime(String eventTime) {
     
     this.eventTime = eventTime;
     return this;
   }
 
-   /**
+  /**
    * UTC date-time of the event
    * @return eventTime
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EVENT_TIME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -99,17 +98,16 @@ public class GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsUserUnsubscr
     this.eventTime = eventTime;
   }
 
-
   public GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsUserUnsubscription ip(String ip) {
     
     this.ip = ip;
     return this;
   }
 
-   /**
+  /**
    * IP from which the user has unsubscribed
    * @return ip
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IP)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

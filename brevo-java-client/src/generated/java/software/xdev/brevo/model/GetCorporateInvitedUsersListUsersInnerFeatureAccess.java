@@ -41,16 +41,16 @@ import java.util.StringJoiner;
 @JsonTypeName("getCorporateInvitedUsersList_users_inner_feature_access")
 public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
   public static final String JSON_PROPERTY_USER_MANAGEMENT = "user_management";
-  private List<String> userManagement;
+  private List<String> userManagement = new ArrayList<>();
 
   public static final String JSON_PROPERTY_API_KEYS = "api_keys";
-  private List<String> apiKeys;
+  private List<String> apiKeys = new ArrayList<>();
 
   public static final String JSON_PROPERTY_MY_PLAN = "my_plan";
-  private List<String> myPlan;
+  private List<String> myPlan = new ArrayList<>();
 
   public static final String JSON_PROPERTY_APPS_MANAGEMENT = "apps_management";
-  private List<String> appsManagement;
+  private List<String> appsManagement = new ArrayList<>();
 
   public GetCorporateInvitedUsersListUsersInnerFeatureAccess() {
   }
@@ -69,10 +69,10 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
     return this;
   }
 
-   /**
+  /**
    * User management accessiblity.
    * @return userManagement
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_USER_MANAGEMENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -88,7 +88,6 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
     this.userManagement = userManagement;
   }
 
-
   public GetCorporateInvitedUsersListUsersInnerFeatureAccess apiKeys(List<String> apiKeys) {
     
     this.apiKeys = apiKeys;
@@ -103,10 +102,10 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
     return this;
   }
 
-   /**
+  /**
    * Api keys accessiblity.
    * @return apiKeys
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_API_KEYS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -122,7 +121,6 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
     this.apiKeys = apiKeys;
   }
 
-
   public GetCorporateInvitedUsersListUsersInnerFeatureAccess myPlan(List<String> myPlan) {
     
     this.myPlan = myPlan;
@@ -137,10 +135,10 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
     return this;
   }
 
-   /**
+  /**
    * My plan accessiblity.
    * @return myPlan
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MY_PLAN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -156,7 +154,6 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
     this.myPlan = myPlan;
   }
 
-
   public GetCorporateInvitedUsersListUsersInnerFeatureAccess appsManagement(List<String> appsManagement) {
     
     this.appsManagement = appsManagement;
@@ -171,10 +168,10 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
     return this;
   }
 
-   /**
+  /**
    * Apps management accessiblity | Not available in ENTv2
    * @return appsManagement
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_APPS_MANAGEMENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -60,7 +60,7 @@ public class UpdateExternalFeed {
     
     TOKEN("token"),
     
-    NOAUTH("noAuth");
+    NO_AUTH("noAuth");
 
     private String value;
 
@@ -102,7 +102,7 @@ public class UpdateExternalFeed {
   private String token;
 
   public static final String JSON_PROPERTY_HEADERS = "headers";
-  private List<GetExternalFeedByUUIDHeadersInner> headers;
+  private List<GetExternalFeedByUUIDHeadersInner> headers = new ArrayList<>();
 
   public static final String JSON_PROPERTY_MAX_RETRIES = "maxRetries";
   private Integer maxRetries = 5;
@@ -119,10 +119,10 @@ public class UpdateExternalFeed {
     return this;
   }
 
-   /**
+  /**
    * Name of the feed
    * @return name
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -138,17 +138,16 @@ public class UpdateExternalFeed {
     this.name = name;
   }
 
-
   public UpdateExternalFeed url(String url) {
     
     this.url = url;
     return this;
   }
 
-   /**
+  /**
    * URL of the feed
    * @return url
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -164,17 +163,16 @@ public class UpdateExternalFeed {
     this.url = url;
   }
 
-
   public UpdateExternalFeed authType(AuthTypeEnum authType) {
     
     this.authType = authType;
     return this;
   }
 
-   /**
+  /**
    * Auth type of the feed:  * &#x60;basic&#x60;  * &#x60;token&#x60;  * &#x60;noAuth&#x60; 
    * @return authType
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_AUTH_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -190,17 +188,16 @@ public class UpdateExternalFeed {
     this.authType = authType;
   }
 
-
   public UpdateExternalFeed username(String username) {
     
     this.username = username;
     return this;
   }
 
-   /**
+  /**
    * Username for authType &#x60;basic&#x60;
    * @return username
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_USERNAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -216,17 +213,16 @@ public class UpdateExternalFeed {
     this.username = username;
   }
 
-
   public UpdateExternalFeed password(String password) {
     
     this.password = password;
     return this;
   }
 
-   /**
+  /**
    * Password for authType &#x60;basic&#x60;
    * @return password
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_PASSWORD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -242,17 +238,16 @@ public class UpdateExternalFeed {
     this.password = password;
   }
 
-
   public UpdateExternalFeed token(String token) {
     
     this.token = token;
     return this;
   }
 
-   /**
+  /**
    * Token for authType &#x60;token&#x60;
    * @return token
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TOKEN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -268,7 +263,6 @@ public class UpdateExternalFeed {
     this.token = token;
   }
 
-
   public UpdateExternalFeed headers(List<GetExternalFeedByUUIDHeadersInner> headers) {
     
     this.headers = headers;
@@ -283,10 +277,10 @@ public class UpdateExternalFeed {
     return this;
   }
 
-   /**
+  /**
    * Custom headers for the feed
    * @return headers
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_HEADERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -302,19 +296,18 @@ public class UpdateExternalFeed {
     this.headers = headers;
   }
 
-
   public UpdateExternalFeed maxRetries(Integer maxRetries) {
     
     this.maxRetries = maxRetries;
     return this;
   }
 
-   /**
+  /**
    * Maximum number of retries on the feed url
    * minimum: 0
    * maximum: 5
    * @return maxRetries
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_MAX_RETRIES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -330,17 +323,16 @@ public class UpdateExternalFeed {
     this.maxRetries = maxRetries;
   }
 
-
   public UpdateExternalFeed cache(Boolean cache) {
     
     this.cache = cache;
     return this;
   }
 
-   /**
+  /**
    * Toggle caching of feed url response
    * @return cache
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CACHE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -40,13 +40,13 @@ import java.util.StringJoiner;
 @JsonTypeName("createWhatsAppCampaign_recipients")
 public class CreateWhatsAppCampaignRecipients {
   public static final String JSON_PROPERTY_EXCLUDED_LIST_IDS = "excludedListIds";
-  private List<Long> excludedListIds;
+  private List<Long> excludedListIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_LIST_IDS = "listIds";
-  private List<Long> listIds;
+  private List<Long> listIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_SEGMENTS = "segments";
-  private List<Long> segments;
+  private List<Long> segments = new ArrayList<>();
 
   public CreateWhatsAppCampaignRecipients() {
   }
@@ -65,10 +65,10 @@ public class CreateWhatsAppCampaignRecipients {
     return this;
   }
 
-   /**
+  /**
    * List ids to exclude from the campaign
    * @return excludedListIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EXCLUDED_LIST_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -84,7 +84,6 @@ public class CreateWhatsAppCampaignRecipients {
     this.excludedListIds = excludedListIds;
   }
 
-
   public CreateWhatsAppCampaignRecipients listIds(List<Long> listIds) {
     
     this.listIds = listIds;
@@ -99,10 +98,10 @@ public class CreateWhatsAppCampaignRecipients {
     return this;
   }
 
-   /**
+  /**
    * **Mandatory if scheduledAt is not empty**. List Ids to send the campaign to 
    * @return listIds
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_LIST_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -118,7 +117,6 @@ public class CreateWhatsAppCampaignRecipients {
     this.listIds = listIds;
   }
 
-
   public CreateWhatsAppCampaignRecipients segments(List<Long> segments) {
     
     this.segments = segments;
@@ -133,10 +131,10 @@ public class CreateWhatsAppCampaignRecipients {
     return this;
   }
 
-   /**
+  /**
    * **Mandatory if listIds are not used**. Segment ids to send the campaign to. 
    * @return segments
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SEGMENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

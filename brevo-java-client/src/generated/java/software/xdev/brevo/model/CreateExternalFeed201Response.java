@@ -46,10 +46,10 @@ public class CreateExternalFeed201Response {
     return this;
   }
 
-   /**
+  /**
    * ID of the object created
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

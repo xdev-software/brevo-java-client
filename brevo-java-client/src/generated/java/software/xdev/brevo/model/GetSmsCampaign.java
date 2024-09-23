@@ -20,8 +20,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import software.xdev.brevo.model.GetCampaignRecipients;
-import software.xdev.brevo.model.GetSmsCampaignStats;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import java.io.UnsupportedEncodingException;
@@ -65,7 +63,7 @@ public class GetSmsCampaign {
     
     SUSPENDED("suspended"),
     
-    INPROCESS("inProcess");
+    IN_PROCESS("inProcess");
 
     private String value;
 
@@ -113,10 +111,10 @@ public class GetSmsCampaign {
   private String modifiedAt;
 
   public static final String JSON_PROPERTY_RECIPIENTS = "recipients";
-  private GetCampaignRecipients recipients;
+  private Object recipients;
 
   public static final String JSON_PROPERTY_STATISTICS = "statistics";
-  private GetSmsCampaignStats statistics;
+  private Object statistics;
 
   public GetSmsCampaign() {
   }
@@ -127,10 +125,10 @@ public class GetSmsCampaign {
     return this;
   }
 
-   /**
+  /**
    * ID of the SMS Campaign
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -146,17 +144,16 @@ public class GetSmsCampaign {
     this.id = id;
   }
 
-
   public GetSmsCampaign name(String name) {
     
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * Name of the SMS Campaign
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -172,17 +169,16 @@ public class GetSmsCampaign {
     this.name = name;
   }
 
-
   public GetSmsCampaign status(StatusEnum status) {
     
     this.status = status;
     return this;
   }
 
-   /**
+  /**
    * Status of the SMS Campaign
    * @return status
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -198,17 +194,16 @@ public class GetSmsCampaign {
     this.status = status;
   }
 
-
   public GetSmsCampaign content(String content) {
     
     this.content = content;
     return this;
   }
 
-   /**
+  /**
    * Content of the SMS Campaign
    * @return content
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CONTENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -224,17 +219,16 @@ public class GetSmsCampaign {
     this.content = content;
   }
 
-
   public GetSmsCampaign scheduledAt(String scheduledAt) {
     
     this.scheduledAt = scheduledAt;
     return this;
   }
 
-   /**
+  /**
    * UTC date-time on which SMS campaign is scheduled. Should be in YYYY-MM-DDTHH:mm:ss.SSSZ format
    * @return scheduledAt
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -250,17 +244,16 @@ public class GetSmsCampaign {
     this.scheduledAt = scheduledAt;
   }
 
-
   public GetSmsCampaign sender(String sender) {
     
     this.sender = sender;
     return this;
   }
 
-   /**
+  /**
    * Sender of the SMS Campaign
    * @return sender
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SENDER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -276,17 +269,16 @@ public class GetSmsCampaign {
     this.sender = sender;
   }
 
-
   public GetSmsCampaign createdAt(String createdAt) {
     
     this.createdAt = createdAt;
     return this;
   }
 
-   /**
+  /**
    * Creation UTC date-time of the SMS campaign (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -302,17 +294,16 @@ public class GetSmsCampaign {
     this.createdAt = createdAt;
   }
 
-
   public GetSmsCampaign modifiedAt(String modifiedAt) {
     
     this.modifiedAt = modifiedAt;
     return this;
   }
 
-   /**
+  /**
    * UTC date-time of last modification of the SMS campaign (YYYY-MM-DDTHH:mm:ss.SSSZ)
    * @return modifiedAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -328,55 +319,53 @@ public class GetSmsCampaign {
     this.modifiedAt = modifiedAt;
   }
 
-
-  public GetSmsCampaign recipients(GetCampaignRecipients recipients) {
+  public GetSmsCampaign recipients(Object recipients) {
     
     this.recipients = recipients;
     return this;
   }
 
-   /**
+  /**
    * Get recipients
    * @return recipients
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_RECIPIENTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public GetCampaignRecipients getRecipients() {
+  public Object getRecipients() {
     return recipients;
   }
 
 
   @JsonProperty(JSON_PROPERTY_RECIPIENTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRecipients(GetCampaignRecipients recipients) {
+  public void setRecipients(Object recipients) {
     this.recipients = recipients;
   }
 
-
-  public GetSmsCampaign statistics(GetSmsCampaignStats statistics) {
+  public GetSmsCampaign statistics(Object statistics) {
     
     this.statistics = statistics;
     return this;
   }
 
-   /**
+  /**
    * Get statistics
    * @return statistics
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATISTICS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public GetSmsCampaignStats getStatistics() {
+  public Object getStatistics() {
     return statistics;
   }
 
 
   @JsonProperty(JSON_PROPERTY_STATISTICS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatistics(GetSmsCampaignStats statistics) {
+  public void setStatistics(Object statistics) {
     this.statistics = statistics;
   }
 
@@ -549,12 +538,22 @@ public class GetSmsCampaign {
 
     // add `recipients` to the URL query string
     if (getRecipients() != null) {
-      joiner.add(getRecipients().toUrlQueryString(prefix + "recipients" + suffix));
+      try {
+        joiner.add(String.format("%srecipients%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRecipients()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
 
     // add `statistics` to the URL query string
     if (getStatistics() != null) {
-      joiner.add(getStatistics().toUrlQueryString(prefix + "statistics" + suffix));
+      try {
+        joiner.add(String.format("%sstatistics%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatistics()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
     }
 
     return joiner.toString();

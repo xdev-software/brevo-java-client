@@ -52,10 +52,10 @@ public class SubAccountUpdatePlanRequest {
     return this;
   }
 
-   /**
+  /**
    * Get credits
    * @return credits
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CREDITS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -71,17 +71,16 @@ public class SubAccountUpdatePlanRequest {
     this.credits = credits;
   }
 
-
   public SubAccountUpdatePlanRequest features(SubAccountUpdatePlanRequestFeatures features) {
     
     this.features = features;
     return this;
   }
 
-   /**
+  /**
    * Get features
    * @return features
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_FEATURES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

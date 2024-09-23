@@ -58,10 +58,10 @@ public class GetInboundEmailEventsByUuidAttachmentsInner {
     return this;
   }
 
-   /**
+  /**
    * filename specified in the Content-Disposition header of the attachment
    * @return name
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -77,17 +77,16 @@ public class GetInboundEmailEventsByUuidAttachmentsInner {
     this.name = name;
   }
 
-
   public GetInboundEmailEventsByUuidAttachmentsInner contentType(String contentType) {
     
     this.contentType = contentType;
     return this;
   }
 
-   /**
+  /**
    * value of the Content-Type header of the attachment
    * @return contentType
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CONTENT_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -103,17 +102,16 @@ public class GetInboundEmailEventsByUuidAttachmentsInner {
     this.contentType = contentType;
   }
 
-
   public GetInboundEmailEventsByUuidAttachmentsInner contentId(String contentId) {
     
     this.contentId = contentId;
     return this;
   }
 
-   /**
+  /**
    * value of the Content-ID header of the attachment.
    * @return contentId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CONTENT_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -129,17 +127,16 @@ public class GetInboundEmailEventsByUuidAttachmentsInner {
     this.contentId = contentId;
   }
 
-
   public GetInboundEmailEventsByUuidAttachmentsInner contentLength(Integer contentLength) {
     
     this.contentLength = contentLength;
     return this;
   }
 
-   /**
+  /**
    * size of the attachment in bytes
    * @return contentLength
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_CONTENT_LENGTH)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

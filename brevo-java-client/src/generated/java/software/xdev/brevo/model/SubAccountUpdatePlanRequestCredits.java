@@ -46,10 +46,10 @@ public class SubAccountUpdatePlanRequestCredits {
     return this;
   }
 
-   /**
+  /**
    * Number of email credits
    * @return email
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

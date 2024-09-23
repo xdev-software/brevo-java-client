@@ -42,7 +42,7 @@ public class InviteuserResponse {
   private String status;
 
   public static final String JSON_PROPERTY_INVOICE_ID = "invoice_id";
-  private List<String> invoiceId;
+  private List<String> invoiceId = new ArrayList<>();
 
   public InviteuserResponse() {
   }
@@ -53,10 +53,10 @@ public class InviteuserResponse {
     return this;
   }
 
-   /**
+  /**
    * Status of the API operation.
    * @return status
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -72,7 +72,6 @@ public class InviteuserResponse {
     this.status = status;
   }
 
-
   public InviteuserResponse invoiceId(List<String> invoiceId) {
     
     this.invoiceId = invoiceId;
@@ -87,10 +86,10 @@ public class InviteuserResponse {
     return this;
   }
 
-   /**
+  /**
    * Invoice id
    * @return invoiceId
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_INVOICE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

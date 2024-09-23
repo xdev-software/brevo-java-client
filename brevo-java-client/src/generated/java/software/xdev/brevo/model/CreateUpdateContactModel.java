@@ -46,10 +46,10 @@ public class CreateUpdateContactModel {
     return this;
   }
 
-   /**
+  /**
    * ID of the contact when a new contact is created
    * @return id
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

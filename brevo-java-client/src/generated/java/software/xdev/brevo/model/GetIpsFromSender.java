@@ -58,10 +58,10 @@ public class GetIpsFromSender {
     return this;
   }
 
-   /**
+  /**
    * Dedicated IP(s) linked to a sender
    * @return ips
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_IPS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)

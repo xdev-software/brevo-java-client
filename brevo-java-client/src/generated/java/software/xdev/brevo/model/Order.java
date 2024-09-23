@@ -73,7 +73,7 @@ public class Order {
   private OrderBilling billing;
 
   public static final String JSON_PROPERTY_COUPONS = "coupons";
-  private List<String> coupons;
+  private List<String> coupons = new ArrayList<>();
 
   public Order() {
   }
@@ -84,10 +84,10 @@ public class Order {
     return this;
   }
 
-   /**
+  /**
    * Unique ID of the order.
    * @return id
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -103,17 +103,16 @@ public class Order {
     this.id = id;
   }
 
-
   public Order createdAt(String createdAt) {
     
     this.createdAt = createdAt;
     return this;
   }
 
-   /**
+  /**
    * Event occurrence UTC date-time (YYYY-MM-DDTHH:mm:ssZ), when order is actually created.
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -129,17 +128,16 @@ public class Order {
     this.createdAt = createdAt;
   }
 
-
   public Order updatedAt(String updatedAt) {
     
     this.updatedAt = updatedAt;
     return this;
   }
 
-   /**
+  /**
    * Event updated UTC date-time (YYYY-MM-DDTHH:mm:ssZ), when the status of the order is actually changed/updated.
    * @return updatedAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_UPDATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -155,17 +153,16 @@ public class Order {
     this.updatedAt = updatedAt;
   }
 
-
   public Order status(String status) {
     
     this.status = status;
     return this;
   }
 
-   /**
+  /**
    * State of the order.
    * @return status
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -181,17 +178,16 @@ public class Order {
     this.status = status;
   }
 
-
   public Order amount(BigDecimal amount) {
     
     this.amount = amount;
     return this;
   }
 
-   /**
+  /**
    * Total amount of the order, including all shipping expenses, tax and the price of items.
    * @return amount
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -207,7 +203,6 @@ public class Order {
     this.amount = amount;
   }
 
-
   public Order products(List<OrderProductsInner> products) {
     
     this.products = products;
@@ -222,10 +217,10 @@ public class Order {
     return this;
   }
 
-   /**
+  /**
    * Get products
    * @return products
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_PRODUCTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -241,17 +236,16 @@ public class Order {
     this.products = products;
   }
 
-
   public Order email(String email) {
     
     this.email = email;
     return this;
   }
 
-   /**
+  /**
    * Email of the contact, Mandatory if \&quot;phone\&quot; field is not passed in \&quot;billing\&quot; parameter.
    * @return email
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -267,17 +261,16 @@ public class Order {
     this.email = email;
   }
 
-
   public Order billing(OrderBilling billing) {
     
     this.billing = billing;
     return this;
   }
 
-   /**
+  /**
    * Get billing
    * @return billing
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_BILLING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -293,7 +286,6 @@ public class Order {
     this.billing = billing;
   }
 
-
   public Order coupons(List<String> coupons) {
     
     this.coupons = coupons;
@@ -308,10 +300,10 @@ public class Order {
     return this;
   }
 
-   /**
+  /**
    * Coupons applied to the order. Stored case insensitive.
    * @return coupons
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COUPONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

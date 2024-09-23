@@ -50,10 +50,10 @@ public class GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsAdminUnsubsc
     return this;
   }
 
-   /**
+  /**
    * UTC date-time of the event
    * @return eventTime
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EVENT_TIME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -69,17 +69,16 @@ public class GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsAdminUnsubsc
     this.eventTime = eventTime;
   }
 
-
   public GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsAdminUnsubscription ip(String ip) {
     
     this.ip = ip;
     return this;
   }
 
-   /**
+  /**
    * IP from which the user has been unsubscribed
    * @return ip
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IP)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

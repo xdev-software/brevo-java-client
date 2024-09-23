@@ -46,10 +46,10 @@ public class UpdateChildDomain {
     return this;
   }
 
-   /**
+  /**
    * Value for the sender domain that will replace the existing domain
    * @return domain
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_DOMAIN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

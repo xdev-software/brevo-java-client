@@ -40,7 +40,7 @@ import java.util.StringJoiner;
 @JsonTypeName("getWhatsappTemplates")
 public class GetWhatsappTemplates {
   public static final String JSON_PROPERTY_TEMPLATES = "templates";
-  private List<GetWhatsappTemplatesTemplatesInner> templates;
+  private List<GetWhatsappTemplatesTemplatesInner> templates = new ArrayList<>();
 
   public static final String JSON_PROPERTY_COUNT = "count";
   private Long count;
@@ -62,10 +62,10 @@ public class GetWhatsappTemplates {
     return this;
   }
 
-   /**
+  /**
    * Get templates
    * @return templates
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_TEMPLATES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -81,17 +81,16 @@ public class GetWhatsappTemplates {
     this.templates = templates;
   }
 
-
   public GetWhatsappTemplates count(Long count) {
     
     this.count = count;
     return this;
   }
 
-   /**
+  /**
    * Number of WhatsApp templates retrieved
    * @return count
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -47,7 +47,7 @@ public class CreateSender {
   private String email;
 
   public static final String JSON_PROPERTY_IPS = "ips";
-  private List<CreateSenderIpsInner> ips;
+  private List<CreateSenderIpsInner> ips = new ArrayList<>();
 
   public CreateSender() {
   }
@@ -58,10 +58,10 @@ public class CreateSender {
     return this;
   }
 
-   /**
+  /**
    * From Name to use for the sender
    * @return name
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -77,17 +77,16 @@ public class CreateSender {
     this.name = name;
   }
 
-
   public CreateSender email(String email) {
     
     this.email = email;
     return this;
   }
 
-   /**
+  /**
    * From email to use for the sender. A verification email will be sent to this address.
    * @return email
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -103,7 +102,6 @@ public class CreateSender {
     this.email = email;
   }
 
-
   public CreateSender ips(List<CreateSenderIpsInner> ips) {
     
     this.ips = ips;
@@ -118,10 +116,10 @@ public class CreateSender {
     return this;
   }
 
-   /**
+  /**
    * **Mandatory in case of dedicated IP**. IPs to associate to the sender 
    * @return ips
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_IPS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

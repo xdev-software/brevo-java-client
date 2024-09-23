@@ -62,10 +62,10 @@ public class CreateUpdateBatchCategory {
     return this;
   }
 
-   /**
+  /**
    * array of categories objects
    * @return categories
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CATEGORIES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -81,17 +81,16 @@ public class CreateUpdateBatchCategory {
     this.categories = categories;
   }
 
-
   public CreateUpdateBatchCategory updateEnabled(Boolean updateEnabled) {
     
     this.updateEnabled = updateEnabled;
     return this;
   }
 
-   /**
+  /**
    * Facilitate to update the existing categories in the same request (updateEnabled &#x3D; true)
    * @return updateEnabled
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_UPDATE_ENABLED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

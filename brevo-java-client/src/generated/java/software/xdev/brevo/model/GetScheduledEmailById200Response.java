@@ -49,7 +49,7 @@ public class GetScheduledEmailById200Response {
   private Integer count;
 
   public static final String JSON_PROPERTY_BATCHES = "batches";
-  private List<GetScheduledEmailByBatchIdBatchesInner> batches;
+  private List<GetScheduledEmailByBatchIdBatchesInner> batches = new ArrayList<>();
 
   public static final String JSON_PROPERTY_SCHEDULED_AT = "scheduledAt";
   private OffsetDateTime scheduledAt;
@@ -61,7 +61,7 @@ public class GetScheduledEmailById200Response {
    * Current status of the scheduled email
    */
   public enum StatusEnum {
-    INPROGRESS("inProgress"),
+    IN_PROGRESS("inProgress"),
     
     QUEUED("queued"),
     
@@ -108,10 +108,10 @@ public class GetScheduledEmailById200Response {
     return this;
   }
 
-   /**
+  /**
    * Total number of batches
    * @return count
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -127,7 +127,6 @@ public class GetScheduledEmailById200Response {
     this.count = count;
   }
 
-
   public GetScheduledEmailById200Response batches(List<GetScheduledEmailByBatchIdBatchesInner> batches) {
     
     this.batches = batches;
@@ -142,10 +141,10 @@ public class GetScheduledEmailById200Response {
     return this;
   }
 
-   /**
+  /**
    * Get batches
    * @return batches
-  **/
+   */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_BATCHES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -161,17 +160,16 @@ public class GetScheduledEmailById200Response {
     this.batches = batches;
   }
 
-
   public GetScheduledEmailById200Response scheduledAt(OffsetDateTime scheduledAt) {
     
     this.scheduledAt = scheduledAt;
     return this;
   }
 
-   /**
+  /**
    * Datetime for which the email was scheduled
    * @return scheduledAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -187,17 +185,16 @@ public class GetScheduledEmailById200Response {
     this.scheduledAt = scheduledAt;
   }
 
-
   public GetScheduledEmailById200Response createdAt(OffsetDateTime createdAt) {
     
     this.createdAt = createdAt;
     return this;
   }
 
-   /**
+  /**
    * Datetime on which the email was scheduled
    * @return createdAt
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
@@ -213,17 +210,16 @@ public class GetScheduledEmailById200Response {
     this.createdAt = createdAt;
   }
 
-
   public GetScheduledEmailById200Response status(StatusEnum status) {
     
     this.status = status;
     return this;
   }
 
-   /**
+  /**
    * Current status of the scheduled email
    * @return status
-  **/
+   */
   @jakarta.annotation.Nonnull
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
