@@ -39,12 +39,13 @@ import java.util.StringJoiner;
 @JsonTypeName("getInvitedUsersList")
 public class GetInvitedUsersList {
   public static final String JSON_PROPERTY_USERS = "users";
+  @jakarta.annotation.Nullable
   private List<GetInvitedUsersListUsersInner> users = new ArrayList<>();
 
   public GetInvitedUsersList() {
   }
 
-  public GetInvitedUsersList users(List<GetInvitedUsersListUsersInner> users) {
+  public GetInvitedUsersList users(@jakarta.annotation.Nullable List<GetInvitedUsersListUsersInner> users) {
     
     this.users = users;
     return this;
@@ -73,7 +74,7 @@ public class GetInvitedUsersList {
 
   @JsonProperty(JSON_PROPERTY_USERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUsers(List<GetInvitedUsersListUsersInner> users) {
+  public void setUsers(@jakarta.annotation.Nullable List<GetInvitedUsersListUsersInner> users) {
     this.users = users;
   }
 

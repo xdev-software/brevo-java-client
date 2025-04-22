@@ -40,15 +40,17 @@ import java.util.StringJoiner;
 @JsonTypeName("abTestCampaignResult_clickedLinks")
 public class AbTestCampaignResultClickedLinks {
   public static final String JSON_PROPERTY_VERSION_A = "Version A";
+  @jakarta.annotation.Nonnull
   private List<AbTestVersionClicksInner> versionA = new ArrayList<>();
 
   public static final String JSON_PROPERTY_VERSION_B = "Version B";
+  @jakarta.annotation.Nonnull
   private List<AbTestVersionClicksInner> versionB = new ArrayList<>();
 
   public AbTestCampaignResultClickedLinks() {
   }
 
-  public AbTestCampaignResultClickedLinks versionA(List<AbTestVersionClicksInner> versionA) {
+  public AbTestCampaignResultClickedLinks versionA(@jakarta.annotation.Nonnull List<AbTestVersionClicksInner> versionA) {
     
     this.versionA = versionA;
     return this;
@@ -77,11 +79,11 @@ public class AbTestCampaignResultClickedLinks {
 
   @JsonProperty(JSON_PROPERTY_VERSION_A)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setVersionA(List<AbTestVersionClicksInner> versionA) {
+  public void setVersionA(@jakarta.annotation.Nonnull List<AbTestVersionClicksInner> versionA) {
     this.versionA = versionA;
   }
 
-  public AbTestCampaignResultClickedLinks versionB(List<AbTestVersionClicksInner> versionB) {
+  public AbTestCampaignResultClickedLinks versionB(@jakarta.annotation.Nonnull List<AbTestVersionClicksInner> versionB) {
     
     this.versionB = versionB;
     return this;
@@ -110,7 +112,7 @@ public class AbTestCampaignResultClickedLinks {
 
   @JsonProperty(JSON_PROPERTY_VERSION_B)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setVersionB(List<AbTestVersionClicksInner> versionB) {
+  public void setVersionB(@jakarta.annotation.Nonnull List<AbTestVersionClicksInner> versionB) {
     this.versionB = versionB;
   }
 

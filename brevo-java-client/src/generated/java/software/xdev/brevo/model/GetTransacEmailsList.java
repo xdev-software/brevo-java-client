@@ -40,15 +40,17 @@ import java.util.StringJoiner;
 @JsonTypeName("getTransacEmailsList")
 public class GetTransacEmailsList {
   public static final String JSON_PROPERTY_COUNT = "count";
+  @jakarta.annotation.Nullable
   private Long count;
 
   public static final String JSON_PROPERTY_TRANSACTIONAL_EMAILS = "transactionalEmails";
+  @jakarta.annotation.Nullable
   private List<GetTransacEmailsListTransactionalEmailsInner> transactionalEmails = new ArrayList<>();
 
   public GetTransacEmailsList() {
   }
 
-  public GetTransacEmailsList count(Long count) {
+  public GetTransacEmailsList count(@jakarta.annotation.Nullable Long count) {
     
     this.count = count;
     return this;
@@ -69,11 +71,11 @@ public class GetTransacEmailsList {
 
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCount(Long count) {
+  public void setCount(@jakarta.annotation.Nullable Long count) {
     this.count = count;
   }
 
-  public GetTransacEmailsList transactionalEmails(List<GetTransacEmailsListTransactionalEmailsInner> transactionalEmails) {
+  public GetTransacEmailsList transactionalEmails(@jakarta.annotation.Nullable List<GetTransacEmailsListTransactionalEmailsInner> transactionalEmails) {
     
     this.transactionalEmails = transactionalEmails;
     return this;
@@ -102,7 +104,7 @@ public class GetTransacEmailsList {
 
   @JsonProperty(JSON_PROPERTY_TRANSACTIONAL_EMAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setTransactionalEmails(List<GetTransacEmailsListTransactionalEmailsInner> transactionalEmails) {
+  public void setTransactionalEmails(@jakarta.annotation.Nullable List<GetTransacEmailsListTransactionalEmailsInner> transactionalEmails) {
     this.transactionalEmails = transactionalEmails;
   }
 

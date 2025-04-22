@@ -37,15 +37,17 @@ import java.util.StringJoiner;
 @JsonTypeName("getExtendedList_allOf_campaignStats")
 public class GetExtendedListAllOfCampaignStats {
   public static final String JSON_PROPERTY_CAMPAIGN_ID = "campaignId";
+  @jakarta.annotation.Nonnull
   private Long campaignId;
 
   public static final String JSON_PROPERTY_STATS = "stats";
+  @jakarta.annotation.Nonnull
   private GetCampaignStats stats;
 
   public GetExtendedListAllOfCampaignStats() {
   }
 
-  public GetExtendedListAllOfCampaignStats campaignId(Long campaignId) {
+  public GetExtendedListAllOfCampaignStats campaignId(@jakarta.annotation.Nonnull Long campaignId) {
     
     this.campaignId = campaignId;
     return this;
@@ -66,11 +68,11 @@ public class GetExtendedListAllOfCampaignStats {
 
   @JsonProperty(JSON_PROPERTY_CAMPAIGN_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCampaignId(Long campaignId) {
+  public void setCampaignId(@jakarta.annotation.Nonnull Long campaignId) {
     this.campaignId = campaignId;
   }
 
-  public GetExtendedListAllOfCampaignStats stats(GetCampaignStats stats) {
+  public GetExtendedListAllOfCampaignStats stats(@jakarta.annotation.Nonnull GetCampaignStats stats) {
     
     this.stats = stats;
     return this;
@@ -91,7 +93,7 @@ public class GetExtendedListAllOfCampaignStats {
 
   @JsonProperty(JSON_PROPERTY_STATS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStats(GetCampaignStats stats) {
+  public void setStats(@jakarta.annotation.Nonnull GetCampaignStats stats) {
     this.stats = stats;
   }
 

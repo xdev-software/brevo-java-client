@@ -39,12 +39,13 @@ import java.util.StringJoiner;
 @JsonTypeName("getSendersList")
 public class GetSendersList {
   public static final String JSON_PROPERTY_SENDERS = "senders";
+  @jakarta.annotation.Nullable
   private List<GetSendersListSendersInner> senders = new ArrayList<>();
 
   public GetSendersList() {
   }
 
-  public GetSendersList senders(List<GetSendersListSendersInner> senders) {
+  public GetSendersList senders(@jakarta.annotation.Nullable List<GetSendersListSendersInner> senders) {
     
     this.senders = senders;
     return this;
@@ -73,7 +74,7 @@ public class GetSendersList {
 
   @JsonProperty(JSON_PROPERTY_SENDERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSenders(List<GetSendersListSendersInner> senders) {
+  public void setSenders(@jakarta.annotation.Nullable List<GetSendersListSendersInner> senders) {
     this.senders = senders;
   }
 

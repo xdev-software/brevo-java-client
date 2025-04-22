@@ -41,27 +41,33 @@ import java.util.StringJoiner;
 @JsonTypeName("getCouponCollection")
 public class GetCouponCollection {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nonnull
   private String id;
 
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_DEFAULT_COUPON = "defaultCoupon";
+  @jakarta.annotation.Nonnull
   private String defaultCoupon;
 
   public static final String JSON_PROPERTY_CREATED_AT = "createdAt";
+  @jakarta.annotation.Nonnull
   private OffsetDateTime createdAt;
 
   public static final String JSON_PROPERTY_TOTAL_COUPONS = "totalCoupons";
+  @jakarta.annotation.Nonnull
   private Long totalCoupons;
 
   public static final String JSON_PROPERTY_REMAINING_COUPONS = "remainingCoupons";
+  @jakarta.annotation.Nonnull
   private Long remainingCoupons;
 
   public GetCouponCollection() {
   }
 
-  public GetCouponCollection id(String id) {
+  public GetCouponCollection id(@jakarta.annotation.Nonnull String id) {
     
     this.id = id;
     return this;
@@ -82,11 +88,11 @@ public class GetCouponCollection {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(String id) {
+  public void setId(@jakarta.annotation.Nonnull String id) {
     this.id = id;
   }
 
-  public GetCouponCollection name(String name) {
+  public GetCouponCollection name(@jakarta.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
@@ -107,11 +113,11 @@ public class GetCouponCollection {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
   }
 
-  public GetCouponCollection defaultCoupon(String defaultCoupon) {
+  public GetCouponCollection defaultCoupon(@jakarta.annotation.Nonnull String defaultCoupon) {
     
     this.defaultCoupon = defaultCoupon;
     return this;
@@ -132,11 +138,11 @@ public class GetCouponCollection {
 
   @JsonProperty(JSON_PROPERTY_DEFAULT_COUPON)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDefaultCoupon(String defaultCoupon) {
+  public void setDefaultCoupon(@jakarta.annotation.Nonnull String defaultCoupon) {
     this.defaultCoupon = defaultCoupon;
   }
 
-  public GetCouponCollection createdAt(OffsetDateTime createdAt) {
+  public GetCouponCollection createdAt(@jakarta.annotation.Nonnull OffsetDateTime createdAt) {
     
     this.createdAt = createdAt;
     return this;
@@ -157,11 +163,11 @@ public class GetCouponCollection {
 
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@jakarta.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
-  public GetCouponCollection totalCoupons(Long totalCoupons) {
+  public GetCouponCollection totalCoupons(@jakarta.annotation.Nonnull Long totalCoupons) {
     
     this.totalCoupons = totalCoupons;
     return this;
@@ -182,11 +188,11 @@ public class GetCouponCollection {
 
   @JsonProperty(JSON_PROPERTY_TOTAL_COUPONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTotalCoupons(Long totalCoupons) {
+  public void setTotalCoupons(@jakarta.annotation.Nonnull Long totalCoupons) {
     this.totalCoupons = totalCoupons;
   }
 
-  public GetCouponCollection remainingCoupons(Long remainingCoupons) {
+  public GetCouponCollection remainingCoupons(@jakarta.annotation.Nonnull Long remainingCoupons) {
     
     this.remainingCoupons = remainingCoupons;
     return this;
@@ -207,7 +213,7 @@ public class GetCouponCollection {
 
   @JsonProperty(JSON_PROPERTY_REMAINING_COUPONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRemainingCoupons(Long remainingCoupons) {
+  public void setRemainingCoupons(@jakarta.annotation.Nonnull Long remainingCoupons) {
     this.remainingCoupons = remainingCoupons;
   }
 

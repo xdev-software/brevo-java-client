@@ -35,12 +35,13 @@ import java.util.StringJoiner;
 @JsonTypeName("createExternalFeed_201_response")
 public class CreateExternalFeed201Response {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nonnull
   private String id;
 
   public CreateExternalFeed201Response() {
   }
 
-  public CreateExternalFeed201Response id(String id) {
+  public CreateExternalFeed201Response id(@jakarta.annotation.Nonnull String id) {
     
     this.id = id;
     return this;
@@ -61,7 +62,7 @@ public class CreateExternalFeed201Response {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(String id) {
+  public void setId(@jakarta.annotation.Nonnull String id) {
     this.id = id;
   }
 

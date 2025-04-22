@@ -36,15 +36,17 @@ import java.util.StringJoiner;
 @JsonTypeName("addCredits")
 public class AddCredits {
   public static final String JSON_PROPERTY_SMS = "sms";
+  @jakarta.annotation.Nullable
   private Long sms;
 
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nullable
   private Long email;
 
   public AddCredits() {
   }
 
-  public AddCredits sms(Long sms) {
+  public AddCredits sms(@jakarta.annotation.Nullable Long sms) {
     
     this.sms = sms;
     return this;
@@ -65,11 +67,11 @@ public class AddCredits {
 
   @JsonProperty(JSON_PROPERTY_SMS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSms(Long sms) {
+  public void setSms(@jakarta.annotation.Nullable Long sms) {
     this.sms = sms;
   }
 
-  public AddCredits email(Long email) {
+  public AddCredits email(@jakarta.annotation.Nullable Long email) {
     
     this.email = email;
     return this;
@@ -90,7 +92,7 @@ public class AddCredits {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEmail(Long email) {
+  public void setEmail(@jakarta.annotation.Nullable Long email) {
     this.email = email;
   }
 

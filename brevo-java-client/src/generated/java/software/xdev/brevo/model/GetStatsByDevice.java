@@ -41,21 +41,25 @@ import java.util.StringJoiner;
 @JsonTypeName("getStatsByDevice")
 public class GetStatsByDevice {
   public static final String JSON_PROPERTY_DESKTOP = "desktop";
+  @jakarta.annotation.Nullable
   private Map<String, GetDeviceBrowserStats> desktop = new HashMap<>();
 
   public static final String JSON_PROPERTY_MOBILE = "mobile";
+  @jakarta.annotation.Nullable
   private Map<String, GetDeviceBrowserStats> mobile = new HashMap<>();
 
   public static final String JSON_PROPERTY_TABLET = "tablet";
+  @jakarta.annotation.Nullable
   private Map<String, GetDeviceBrowserStats> tablet = new HashMap<>();
 
   public static final String JSON_PROPERTY_UNKNOWN = "unknown";
+  @jakarta.annotation.Nullable
   private Map<String, GetDeviceBrowserStats> unknown = new HashMap<>();
 
   public GetStatsByDevice() {
   }
 
-  public GetStatsByDevice desktop(Map<String, GetDeviceBrowserStats> desktop) {
+  public GetStatsByDevice desktop(@jakarta.annotation.Nullable Map<String, GetDeviceBrowserStats> desktop) {
     
     this.desktop = desktop;
     return this;
@@ -84,11 +88,11 @@ public class GetStatsByDevice {
 
   @JsonProperty(JSON_PROPERTY_DESKTOP)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDesktop(Map<String, GetDeviceBrowserStats> desktop) {
+  public void setDesktop(@jakarta.annotation.Nullable Map<String, GetDeviceBrowserStats> desktop) {
     this.desktop = desktop;
   }
 
-  public GetStatsByDevice mobile(Map<String, GetDeviceBrowserStats> mobile) {
+  public GetStatsByDevice mobile(@jakarta.annotation.Nullable Map<String, GetDeviceBrowserStats> mobile) {
     
     this.mobile = mobile;
     return this;
@@ -117,11 +121,11 @@ public class GetStatsByDevice {
 
   @JsonProperty(JSON_PROPERTY_MOBILE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setMobile(Map<String, GetDeviceBrowserStats> mobile) {
+  public void setMobile(@jakarta.annotation.Nullable Map<String, GetDeviceBrowserStats> mobile) {
     this.mobile = mobile;
   }
 
-  public GetStatsByDevice tablet(Map<String, GetDeviceBrowserStats> tablet) {
+  public GetStatsByDevice tablet(@jakarta.annotation.Nullable Map<String, GetDeviceBrowserStats> tablet) {
     
     this.tablet = tablet;
     return this;
@@ -150,11 +154,11 @@ public class GetStatsByDevice {
 
   @JsonProperty(JSON_PROPERTY_TABLET)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setTablet(Map<String, GetDeviceBrowserStats> tablet) {
+  public void setTablet(@jakarta.annotation.Nullable Map<String, GetDeviceBrowserStats> tablet) {
     this.tablet = tablet;
   }
 
-  public GetStatsByDevice unknown(Map<String, GetDeviceBrowserStats> unknown) {
+  public GetStatsByDevice unknown(@jakarta.annotation.Nullable Map<String, GetDeviceBrowserStats> unknown) {
     
     this.unknown = unknown;
     return this;
@@ -183,7 +187,7 @@ public class GetStatsByDevice {
 
   @JsonProperty(JSON_PROPERTY_UNKNOWN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUnknown(Map<String, GetDeviceBrowserStats> unknown) {
+  public void setUnknown(@jakarta.annotation.Nullable Map<String, GetDeviceBrowserStats> unknown) {
     this.unknown = unknown;
   }
 

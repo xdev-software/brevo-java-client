@@ -37,18 +37,21 @@ import java.util.StringJoiner;
 @JsonTypeName("_companies_post_request")
 public class CompaniesPostRequest {
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_ATTRIBUTES = "attributes";
+  @jakarta.annotation.Nullable
   private Object attributes;
 
   public static final String JSON_PROPERTY_COUNTRY_CODE = "countryCode";
+  @jakarta.annotation.Nullable
   private Long countryCode;
 
   public CompaniesPostRequest() {
   }
 
-  public CompaniesPostRequest name(String name) {
+  public CompaniesPostRequest name(@jakarta.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
@@ -69,11 +72,11 @@ public class CompaniesPostRequest {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
   }
 
-  public CompaniesPostRequest attributes(Object attributes) {
+  public CompaniesPostRequest attributes(@jakarta.annotation.Nullable Object attributes) {
     
     this.attributes = attributes;
     return this;
@@ -94,11 +97,11 @@ public class CompaniesPostRequest {
 
   @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setAttributes(Object attributes) {
+  public void setAttributes(@jakarta.annotation.Nullable Object attributes) {
     this.attributes = attributes;
   }
 
-  public CompaniesPostRequest countryCode(Long countryCode) {
+  public CompaniesPostRequest countryCode(@jakarta.annotation.Nullable Long countryCode) {
     
     this.countryCode = countryCode;
     return this;
@@ -119,7 +122,7 @@ public class CompaniesPostRequest {
 
   @JsonProperty(JSON_PROPERTY_COUNTRY_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCountryCode(Long countryCode) {
+  public void setCountryCode(@jakarta.annotation.Nullable Long countryCode) {
     this.countryCode = countryCode;
   }
 

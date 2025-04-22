@@ -41,30 +41,37 @@ import java.util.StringJoiner;
 @JsonTypeName("order_billing")
 public class OrderBilling {
   public static final String JSON_PROPERTY_ADDRESS = "address";
+  @jakarta.annotation.Nullable
   private String address;
 
   public static final String JSON_PROPERTY_CITY = "city";
+  @jakarta.annotation.Nullable
   private String city;
 
   public static final String JSON_PROPERTY_COUNTRY_CODE = "countryCode";
+  @jakarta.annotation.Nullable
   private String countryCode;
 
   public static final String JSON_PROPERTY_PHONE = "phone";
+  @jakarta.annotation.Nullable
   private String phone;
 
   public static final String JSON_PROPERTY_POST_CODE = "postCode";
+  @jakarta.annotation.Nullable
   private String postCode;
 
   public static final String JSON_PROPERTY_PAYMENT_METHOD = "paymentMethod";
+  @jakarta.annotation.Nullable
   private String paymentMethod;
 
   public static final String JSON_PROPERTY_REGION = "region";
+  @jakarta.annotation.Nullable
   private String region;
 
   public OrderBilling() {
   }
 
-  public OrderBilling address(String address) {
+  public OrderBilling address(@jakarta.annotation.Nullable String address) {
     
     this.address = address;
     return this;
@@ -85,11 +92,11 @@ public class OrderBilling {
 
   @JsonProperty(JSON_PROPERTY_ADDRESS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setAddress(String address) {
+  public void setAddress(@jakarta.annotation.Nullable String address) {
     this.address = address;
   }
 
-  public OrderBilling city(String city) {
+  public OrderBilling city(@jakarta.annotation.Nullable String city) {
     
     this.city = city;
     return this;
@@ -110,11 +117,11 @@ public class OrderBilling {
 
   @JsonProperty(JSON_PROPERTY_CITY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCity(String city) {
+  public void setCity(@jakarta.annotation.Nullable String city) {
     this.city = city;
   }
 
-  public OrderBilling countryCode(String countryCode) {
+  public OrderBilling countryCode(@jakarta.annotation.Nullable String countryCode) {
     
     this.countryCode = countryCode;
     return this;
@@ -135,11 +142,11 @@ public class OrderBilling {
 
   @JsonProperty(JSON_PROPERTY_COUNTRY_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCountryCode(String countryCode) {
+  public void setCountryCode(@jakarta.annotation.Nullable String countryCode) {
     this.countryCode = countryCode;
   }
 
-  public OrderBilling phone(String phone) {
+  public OrderBilling phone(@jakarta.annotation.Nullable String phone) {
     
     this.phone = phone;
     return this;
@@ -160,11 +167,11 @@ public class OrderBilling {
 
   @JsonProperty(JSON_PROPERTY_PHONE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setPhone(String phone) {
+  public void setPhone(@jakarta.annotation.Nullable String phone) {
     this.phone = phone;
   }
 
-  public OrderBilling postCode(String postCode) {
+  public OrderBilling postCode(@jakarta.annotation.Nullable String postCode) {
     
     this.postCode = postCode;
     return this;
@@ -185,11 +192,11 @@ public class OrderBilling {
 
   @JsonProperty(JSON_PROPERTY_POST_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setPostCode(String postCode) {
+  public void setPostCode(@jakarta.annotation.Nullable String postCode) {
     this.postCode = postCode;
   }
 
-  public OrderBilling paymentMethod(String paymentMethod) {
+  public OrderBilling paymentMethod(@jakarta.annotation.Nullable String paymentMethod) {
     
     this.paymentMethod = paymentMethod;
     return this;
@@ -210,11 +217,11 @@ public class OrderBilling {
 
   @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setPaymentMethod(String paymentMethod) {
+  public void setPaymentMethod(@jakarta.annotation.Nullable String paymentMethod) {
     this.paymentMethod = paymentMethod;
   }
 
-  public OrderBilling region(String region) {
+  public OrderBilling region(@jakarta.annotation.Nullable String region) {
     
     this.region = region;
     return this;
@@ -235,7 +242,7 @@ public class OrderBilling {
 
   @JsonProperty(JSON_PROPERTY_REGION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setRegion(String region) {
+  public void setRegion(@jakarta.annotation.Nullable String region) {
     this.region = region;
   }
 

@@ -38,21 +38,25 @@ import java.util.StringJoiner;
 @JsonTypeName("getExtendedClient_allOf_address")
 public class GetExtendedClientAllOfAddress {
   public static final String JSON_PROPERTY_STREET = "street";
+  @jakarta.annotation.Nonnull
   private String street;
 
   public static final String JSON_PROPERTY_CITY = "city";
+  @jakarta.annotation.Nonnull
   private String city;
 
   public static final String JSON_PROPERTY_ZIP_CODE = "zipCode";
+  @jakarta.annotation.Nonnull
   private String zipCode;
 
   public static final String JSON_PROPERTY_COUNTRY = "country";
+  @jakarta.annotation.Nonnull
   private String country;
 
   public GetExtendedClientAllOfAddress() {
   }
 
-  public GetExtendedClientAllOfAddress street(String street) {
+  public GetExtendedClientAllOfAddress street(@jakarta.annotation.Nonnull String street) {
     
     this.street = street;
     return this;
@@ -73,11 +77,11 @@ public class GetExtendedClientAllOfAddress {
 
   @JsonProperty(JSON_PROPERTY_STREET)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStreet(String street) {
+  public void setStreet(@jakarta.annotation.Nonnull String street) {
     this.street = street;
   }
 
-  public GetExtendedClientAllOfAddress city(String city) {
+  public GetExtendedClientAllOfAddress city(@jakarta.annotation.Nonnull String city) {
     
     this.city = city;
     return this;
@@ -98,11 +102,11 @@ public class GetExtendedClientAllOfAddress {
 
   @JsonProperty(JSON_PROPERTY_CITY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCity(String city) {
+  public void setCity(@jakarta.annotation.Nonnull String city) {
     this.city = city;
   }
 
-  public GetExtendedClientAllOfAddress zipCode(String zipCode) {
+  public GetExtendedClientAllOfAddress zipCode(@jakarta.annotation.Nonnull String zipCode) {
     
     this.zipCode = zipCode;
     return this;
@@ -123,11 +127,11 @@ public class GetExtendedClientAllOfAddress {
 
   @JsonProperty(JSON_PROPERTY_ZIP_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setZipCode(String zipCode) {
+  public void setZipCode(@jakarta.annotation.Nonnull String zipCode) {
     this.zipCode = zipCode;
   }
 
-  public GetExtendedClientAllOfAddress country(String country) {
+  public GetExtendedClientAllOfAddress country(@jakarta.annotation.Nonnull String country) {
     
     this.country = country;
     return this;
@@ -148,7 +152,7 @@ public class GetExtendedClientAllOfAddress {
 
   @JsonProperty(JSON_PROPERTY_COUNTRY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCountry(String country) {
+  public void setCountry(@jakarta.annotation.Nonnull String country) {
     this.country = country;
   }
 

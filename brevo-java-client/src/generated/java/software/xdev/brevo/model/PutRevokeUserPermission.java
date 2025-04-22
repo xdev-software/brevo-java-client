@@ -35,12 +35,13 @@ import java.util.StringJoiner;
 @JsonTypeName("putRevokeUserPermission")
 public class PutRevokeUserPermission {
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nonnull
   private String email;
 
   public PutRevokeUserPermission() {
   }
 
-  public PutRevokeUserPermission email(String email) {
+  public PutRevokeUserPermission email(@jakarta.annotation.Nonnull String email) {
     
     this.email = email;
     return this;
@@ -61,7 +62,7 @@ public class PutRevokeUserPermission {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEmail(String email) {
+  public void setEmail(@jakarta.annotation.Nonnull String email) {
     this.email = email;
   }
 

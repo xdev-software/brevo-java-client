@@ -40,15 +40,17 @@ import java.util.StringJoiner;
 @JsonTypeName("getTransacBlockedContacts")
 public class GetTransacBlockedContacts {
   public static final String JSON_PROPERTY_COUNT = "count";
+  @jakarta.annotation.Nullable
   private Long count;
 
   public static final String JSON_PROPERTY_CONTACTS = "contacts";
+  @jakarta.annotation.Nullable
   private List<GetTransacBlockedContactsContactsInner> contacts = new ArrayList<>();
 
   public GetTransacBlockedContacts() {
   }
 
-  public GetTransacBlockedContacts count(Long count) {
+  public GetTransacBlockedContacts count(@jakarta.annotation.Nullable Long count) {
     
     this.count = count;
     return this;
@@ -69,11 +71,11 @@ public class GetTransacBlockedContacts {
 
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCount(Long count) {
+  public void setCount(@jakarta.annotation.Nullable Long count) {
     this.count = count;
   }
 
-  public GetTransacBlockedContacts contacts(List<GetTransacBlockedContactsContactsInner> contacts) {
+  public GetTransacBlockedContacts contacts(@jakarta.annotation.Nullable List<GetTransacBlockedContactsContactsInner> contacts) {
     
     this.contacts = contacts;
     return this;
@@ -102,7 +104,7 @@ public class GetTransacBlockedContacts {
 
   @JsonProperty(JSON_PROPERTY_CONTACTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setContacts(List<GetTransacBlockedContactsContactsInner> contacts) {
+  public void setContacts(@jakarta.annotation.Nullable List<GetTransacBlockedContactsContactsInner> contacts) {
     this.contacts = contacts;
   }
 

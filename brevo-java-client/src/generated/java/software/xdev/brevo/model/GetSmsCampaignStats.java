@@ -41,30 +41,37 @@ import java.util.StringJoiner;
 @JsonTypeName("getSmsCampaignStats")
 public class GetSmsCampaignStats {
   public static final String JSON_PROPERTY_DELIVERED = "delivered";
+  @jakarta.annotation.Nonnull
   private Long delivered;
 
   public static final String JSON_PROPERTY_SENT = "sent";
+  @jakarta.annotation.Nonnull
   private Long sent;
 
   public static final String JSON_PROPERTY_PROCESSING = "processing";
+  @jakarta.annotation.Nonnull
   private Long processing;
 
   public static final String JSON_PROPERTY_SOFT_BOUNCES = "softBounces";
+  @jakarta.annotation.Nonnull
   private Long softBounces;
 
   public static final String JSON_PROPERTY_HARD_BOUNCES = "hardBounces";
+  @jakarta.annotation.Nonnull
   private Long hardBounces;
 
   public static final String JSON_PROPERTY_UNSUBSCRIPTIONS = "unsubscriptions";
+  @jakarta.annotation.Nonnull
   private Long unsubscriptions;
 
   public static final String JSON_PROPERTY_ANSWERED = "answered";
+  @jakarta.annotation.Nonnull
   private Long answered;
 
   public GetSmsCampaignStats() {
   }
 
-  public GetSmsCampaignStats delivered(Long delivered) {
+  public GetSmsCampaignStats delivered(@jakarta.annotation.Nonnull Long delivered) {
     
     this.delivered = delivered;
     return this;
@@ -85,11 +92,11 @@ public class GetSmsCampaignStats {
 
   @JsonProperty(JSON_PROPERTY_DELIVERED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDelivered(Long delivered) {
+  public void setDelivered(@jakarta.annotation.Nonnull Long delivered) {
     this.delivered = delivered;
   }
 
-  public GetSmsCampaignStats sent(Long sent) {
+  public GetSmsCampaignStats sent(@jakarta.annotation.Nonnull Long sent) {
     
     this.sent = sent;
     return this;
@@ -110,11 +117,11 @@ public class GetSmsCampaignStats {
 
   @JsonProperty(JSON_PROPERTY_SENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSent(Long sent) {
+  public void setSent(@jakarta.annotation.Nonnull Long sent) {
     this.sent = sent;
   }
 
-  public GetSmsCampaignStats processing(Long processing) {
+  public GetSmsCampaignStats processing(@jakarta.annotation.Nonnull Long processing) {
     
     this.processing = processing;
     return this;
@@ -135,11 +142,11 @@ public class GetSmsCampaignStats {
 
   @JsonProperty(JSON_PROPERTY_PROCESSING)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setProcessing(Long processing) {
+  public void setProcessing(@jakarta.annotation.Nonnull Long processing) {
     this.processing = processing;
   }
 
-  public GetSmsCampaignStats softBounces(Long softBounces) {
+  public GetSmsCampaignStats softBounces(@jakarta.annotation.Nonnull Long softBounces) {
     
     this.softBounces = softBounces;
     return this;
@@ -160,11 +167,11 @@ public class GetSmsCampaignStats {
 
   @JsonProperty(JSON_PROPERTY_SOFT_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSoftBounces(Long softBounces) {
+  public void setSoftBounces(@jakarta.annotation.Nonnull Long softBounces) {
     this.softBounces = softBounces;
   }
 
-  public GetSmsCampaignStats hardBounces(Long hardBounces) {
+  public GetSmsCampaignStats hardBounces(@jakarta.annotation.Nonnull Long hardBounces) {
     
     this.hardBounces = hardBounces;
     return this;
@@ -185,11 +192,11 @@ public class GetSmsCampaignStats {
 
   @JsonProperty(JSON_PROPERTY_HARD_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setHardBounces(Long hardBounces) {
+  public void setHardBounces(@jakarta.annotation.Nonnull Long hardBounces) {
     this.hardBounces = hardBounces;
   }
 
-  public GetSmsCampaignStats unsubscriptions(Long unsubscriptions) {
+  public GetSmsCampaignStats unsubscriptions(@jakarta.annotation.Nonnull Long unsubscriptions) {
     
     this.unsubscriptions = unsubscriptions;
     return this;
@@ -210,11 +217,11 @@ public class GetSmsCampaignStats {
 
   @JsonProperty(JSON_PROPERTY_UNSUBSCRIPTIONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUnsubscriptions(Long unsubscriptions) {
+  public void setUnsubscriptions(@jakarta.annotation.Nonnull Long unsubscriptions) {
     this.unsubscriptions = unsubscriptions;
   }
 
-  public GetSmsCampaignStats answered(Long answered) {
+  public GetSmsCampaignStats answered(@jakarta.annotation.Nonnull Long answered) {
     
     this.answered = answered;
     return this;
@@ -235,7 +242,7 @@ public class GetSmsCampaignStats {
 
   @JsonProperty(JSON_PROPERTY_ANSWERED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAnswered(Long answered) {
+  public void setAnswered(@jakarta.annotation.Nonnull Long answered) {
     this.answered = answered;
   }
 

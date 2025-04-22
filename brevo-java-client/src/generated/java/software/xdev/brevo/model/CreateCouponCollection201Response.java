@@ -35,12 +35,13 @@ import java.util.StringJoiner;
 @JsonTypeName("createCouponCollection_201_response")
 public class CreateCouponCollection201Response {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nonnull
   private String id;
 
   public CreateCouponCollection201Response() {
   }
 
-  public CreateCouponCollection201Response id(String id) {
+  public CreateCouponCollection201Response id(@jakarta.annotation.Nonnull String id) {
     
     this.id = id;
     return this;
@@ -61,7 +62,7 @@ public class CreateCouponCollection201Response {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(String id) {
+  public void setId(@jakarta.annotation.Nonnull String id) {
     this.id = id;
   }
 

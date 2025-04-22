@@ -42,21 +42,25 @@ import java.util.StringJoiner;
 @JsonTypeName("_conversations_agentOnlinePing_post_request")
 public class ConversationsAgentOnlinePingPostRequest {
   public static final String JSON_PROPERTY_AGENT_ID = "agentId";
+  @jakarta.annotation.Nullable
   private JsonNullable<Object> agentId = JsonNullable.<Object>of(null);
 
   public static final String JSON_PROPERTY_RECEIVED_FROM = "receivedFrom";
+  @jakarta.annotation.Nullable
   private JsonNullable<Object> receivedFrom = JsonNullable.<Object>of(null);
 
   public static final String JSON_PROPERTY_AGENT_EMAIL = "agentEmail";
+  @jakarta.annotation.Nullable
   private JsonNullable<Object> agentEmail = JsonNullable.<Object>of(null);
 
   public static final String JSON_PROPERTY_AGENT_NAME = "agentName";
+  @jakarta.annotation.Nullable
   private JsonNullable<Object> agentName = JsonNullable.<Object>of(null);
 
   public ConversationsAgentOnlinePingPostRequest() {
   }
 
-  public ConversationsAgentOnlinePingPostRequest agentId(Object agentId) {
+  public ConversationsAgentOnlinePingPostRequest agentId(@jakarta.annotation.Nullable Object agentId) {
     this.agentId = JsonNullable.<Object>of(agentId);
     
     return this;
@@ -85,11 +89,11 @@ public class ConversationsAgentOnlinePingPostRequest {
     this.agentId = agentId;
   }
 
-  public void setAgentId(Object agentId) {
+  public void setAgentId(@jakarta.annotation.Nullable Object agentId) {
     this.agentId = JsonNullable.<Object>of(agentId);
   }
 
-  public ConversationsAgentOnlinePingPostRequest receivedFrom(Object receivedFrom) {
+  public ConversationsAgentOnlinePingPostRequest receivedFrom(@jakarta.annotation.Nullable Object receivedFrom) {
     this.receivedFrom = JsonNullable.<Object>of(receivedFrom);
     
     return this;
@@ -118,11 +122,11 @@ public class ConversationsAgentOnlinePingPostRequest {
     this.receivedFrom = receivedFrom;
   }
 
-  public void setReceivedFrom(Object receivedFrom) {
+  public void setReceivedFrom(@jakarta.annotation.Nullable Object receivedFrom) {
     this.receivedFrom = JsonNullable.<Object>of(receivedFrom);
   }
 
-  public ConversationsAgentOnlinePingPostRequest agentEmail(Object agentEmail) {
+  public ConversationsAgentOnlinePingPostRequest agentEmail(@jakarta.annotation.Nullable Object agentEmail) {
     this.agentEmail = JsonNullable.<Object>of(agentEmail);
     
     return this;
@@ -151,11 +155,11 @@ public class ConversationsAgentOnlinePingPostRequest {
     this.agentEmail = agentEmail;
   }
 
-  public void setAgentEmail(Object agentEmail) {
+  public void setAgentEmail(@jakarta.annotation.Nullable Object agentEmail) {
     this.agentEmail = JsonNullable.<Object>of(agentEmail);
   }
 
-  public ConversationsAgentOnlinePingPostRequest agentName(Object agentName) {
+  public ConversationsAgentOnlinePingPostRequest agentName(@jakarta.annotation.Nullable Object agentName) {
     this.agentName = JsonNullable.<Object>of(agentName);
     
     return this;
@@ -184,7 +188,7 @@ public class ConversationsAgentOnlinePingPostRequest {
     this.agentName = agentName;
   }
 
-  public void setAgentName(Object agentName) {
+  public void setAgentName(@jakarta.annotation.Nullable Object agentName) {
     this.agentName = JsonNullable.<Object>of(agentName);
   }
 

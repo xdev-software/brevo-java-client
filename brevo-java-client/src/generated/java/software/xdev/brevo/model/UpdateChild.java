@@ -39,24 +39,29 @@ import java.util.StringJoiner;
 @JsonTypeName("updateChild")
 public class UpdateChild {
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nullable
   private String email;
 
   public static final String JSON_PROPERTY_FIRST_NAME = "firstName";
+  @jakarta.annotation.Nullable
   private String firstName;
 
   public static final String JSON_PROPERTY_LAST_NAME = "lastName";
+  @jakarta.annotation.Nullable
   private String lastName;
 
   public static final String JSON_PROPERTY_COMPANY_NAME = "companyName";
+  @jakarta.annotation.Nullable
   private String companyName;
 
   public static final String JSON_PROPERTY_PASSWORD = "password";
+  @jakarta.annotation.Nullable
   private String password;
 
   public UpdateChild() {
   }
 
-  public UpdateChild email(String email) {
+  public UpdateChild email(@jakarta.annotation.Nullable String email) {
     
     this.email = email;
     return this;
@@ -77,11 +82,11 @@ public class UpdateChild {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEmail(String email) {
+  public void setEmail(@jakarta.annotation.Nullable String email) {
     this.email = email;
   }
 
-  public UpdateChild firstName(String firstName) {
+  public UpdateChild firstName(@jakarta.annotation.Nullable String firstName) {
     
     this.firstName = firstName;
     return this;
@@ -102,11 +107,11 @@ public class UpdateChild {
 
   @JsonProperty(JSON_PROPERTY_FIRST_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setFirstName(String firstName) {
+  public void setFirstName(@jakarta.annotation.Nullable String firstName) {
     this.firstName = firstName;
   }
 
-  public UpdateChild lastName(String lastName) {
+  public UpdateChild lastName(@jakarta.annotation.Nullable String lastName) {
     
     this.lastName = lastName;
     return this;
@@ -127,11 +132,11 @@ public class UpdateChild {
 
   @JsonProperty(JSON_PROPERTY_LAST_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setLastName(String lastName) {
+  public void setLastName(@jakarta.annotation.Nullable String lastName) {
     this.lastName = lastName;
   }
 
-  public UpdateChild companyName(String companyName) {
+  public UpdateChild companyName(@jakarta.annotation.Nullable String companyName) {
     
     this.companyName = companyName;
     return this;
@@ -152,11 +157,11 @@ public class UpdateChild {
 
   @JsonProperty(JSON_PROPERTY_COMPANY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCompanyName(String companyName) {
+  public void setCompanyName(@jakarta.annotation.Nullable String companyName) {
     this.companyName = companyName;
   }
 
-  public UpdateChild password(String password) {
+  public UpdateChild password(@jakarta.annotation.Nullable String password) {
     
     this.password = password;
     return this;
@@ -177,7 +182,7 @@ public class UpdateChild {
 
   @JsonProperty(JSON_PROPERTY_PASSWORD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setPassword(String password) {
+  public void setPassword(@jakarta.annotation.Nullable String password) {
     this.password = password;
   }
 

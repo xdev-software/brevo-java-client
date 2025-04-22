@@ -36,27 +36,28 @@ import java.util.StringJoiner;
 @JsonTypeName("emailExportRecipients")
 public class EmailExportRecipients {
   public static final String JSON_PROPERTY_NOTIFY_U_R_L = "notifyURL";
+  @jakarta.annotation.Nullable
   private String notifyURL;
 
   /**
    * Type of recipients to export for a campaign
    */
   public enum RecipientsTypeEnum {
-    ALL("all"),
+    ALL(String.valueOf("all")),
     
-    NON_CLICKERS("nonClickers"),
+    NON_CLICKERS(String.valueOf("nonClickers")),
     
-    NON_OPENERS("nonOpeners"),
+    NON_OPENERS(String.valueOf("nonOpeners")),
     
-    CLICKERS("clickers"),
+    CLICKERS(String.valueOf("clickers")),
     
-    OPENERS("openers"),
+    OPENERS(String.valueOf("openers")),
     
-    SOFT_BOUNCES("softBounces"),
+    SOFT_BOUNCES(String.valueOf("softBounces")),
     
-    HARD_BOUNCES("hardBounces"),
+    HARD_BOUNCES(String.valueOf("hardBounces")),
     
-    UNSUBSCRIBED("unsubscribed");
+    UNSUBSCRIBED(String.valueOf("unsubscribed"));
 
     private String value;
 
@@ -86,12 +87,13 @@ public class EmailExportRecipients {
   }
 
   public static final String JSON_PROPERTY_RECIPIENTS_TYPE = "recipientsType";
+  @jakarta.annotation.Nonnull
   private RecipientsTypeEnum recipientsType;
 
   public EmailExportRecipients() {
   }
 
-  public EmailExportRecipients notifyURL(String notifyURL) {
+  public EmailExportRecipients notifyURL(@jakarta.annotation.Nullable String notifyURL) {
     
     this.notifyURL = notifyURL;
     return this;
@@ -112,11 +114,11 @@ public class EmailExportRecipients {
 
   @JsonProperty(JSON_PROPERTY_NOTIFY_U_R_L)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setNotifyURL(String notifyURL) {
+  public void setNotifyURL(@jakarta.annotation.Nullable String notifyURL) {
     this.notifyURL = notifyURL;
   }
 
-  public EmailExportRecipients recipientsType(RecipientsTypeEnum recipientsType) {
+  public EmailExportRecipients recipientsType(@jakarta.annotation.Nonnull RecipientsTypeEnum recipientsType) {
     
     this.recipientsType = recipientsType;
     return this;
@@ -137,7 +139,7 @@ public class EmailExportRecipients {
 
   @JsonProperty(JSON_PROPERTY_RECIPIENTS_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRecipientsType(RecipientsTypeEnum recipientsType) {
+  public void setRecipientsType(@jakarta.annotation.Nonnull RecipientsTypeEnum recipientsType) {
     this.recipientsType = recipientsType;
   }
 

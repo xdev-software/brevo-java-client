@@ -36,12 +36,13 @@ import java.util.StringJoiner;
 @JsonTypeName("postContactInfo")
 public class PostContactInfo {
   public static final String JSON_PROPERTY_CONTACTS = "contacts";
+  @jakarta.annotation.Nonnull
   private PostContactInfoContacts contacts;
 
   public PostContactInfo() {
   }
 
-  public PostContactInfo contacts(PostContactInfoContacts contacts) {
+  public PostContactInfo contacts(@jakarta.annotation.Nonnull PostContactInfoContacts contacts) {
     
     this.contacts = contacts;
     return this;
@@ -62,7 +63,7 @@ public class PostContactInfo {
 
   @JsonProperty(JSON_PROPERTY_CONTACTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setContacts(PostContactInfoContacts contacts) {
+  public void setContacts(@jakarta.annotation.Nonnull PostContactInfoContacts contacts) {
     this.contacts = contacts;
   }
 

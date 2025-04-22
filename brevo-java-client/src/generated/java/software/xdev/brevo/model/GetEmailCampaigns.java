@@ -40,15 +40,17 @@ import java.util.StringJoiner;
 @JsonTypeName("getEmailCampaigns")
 public class GetEmailCampaigns {
   public static final String JSON_PROPERTY_CAMPAIGNS = "campaigns";
+  @jakarta.annotation.Nullable
   private List<GetEmailCampaignsCampaignsInner> campaigns = new ArrayList<>();
 
   public static final String JSON_PROPERTY_COUNT = "count";
+  @jakarta.annotation.Nullable
   private Long count;
 
   public GetEmailCampaigns() {
   }
 
-  public GetEmailCampaigns campaigns(List<GetEmailCampaignsCampaignsInner> campaigns) {
+  public GetEmailCampaigns campaigns(@jakarta.annotation.Nullable List<GetEmailCampaignsCampaignsInner> campaigns) {
     
     this.campaigns = campaigns;
     return this;
@@ -77,11 +79,11 @@ public class GetEmailCampaigns {
 
   @JsonProperty(JSON_PROPERTY_CAMPAIGNS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCampaigns(List<GetEmailCampaignsCampaignsInner> campaigns) {
+  public void setCampaigns(@jakarta.annotation.Nullable List<GetEmailCampaignsCampaignsInner> campaigns) {
     this.campaigns = campaigns;
   }
 
-  public GetEmailCampaigns count(Long count) {
+  public GetEmailCampaigns count(@jakarta.annotation.Nullable Long count) {
     
     this.count = count;
     return this;
@@ -102,7 +104,7 @@ public class GetEmailCampaigns {
 
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCount(Long count) {
+  public void setCount(@jakarta.annotation.Nullable Long count) {
     this.count = count;
   }
 

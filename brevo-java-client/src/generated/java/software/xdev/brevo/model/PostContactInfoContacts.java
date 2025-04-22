@@ -40,21 +40,25 @@ import java.util.StringJoiner;
 @JsonTypeName("postContactInfo_contacts")
 public class PostContactInfoContacts {
   public static final String JSON_PROPERTY_SUCCESS = "success";
+  @jakarta.annotation.Nullable
   private PostContactInfoContactsSuccess success;
 
   public static final String JSON_PROPERTY_FAILURE = "failure";
+  @jakarta.annotation.Nullable
   private PostContactInfoContactsFailure failure;
 
   public static final String JSON_PROPERTY_TOTAL = "total";
+  @jakarta.annotation.Nullable
   private Long total;
 
   public static final String JSON_PROPERTY_PROCESS_ID = "processId";
+  @jakarta.annotation.Nullable
   private Long processId;
 
   public PostContactInfoContacts() {
   }
 
-  public PostContactInfoContacts success(PostContactInfoContactsSuccess success) {
+  public PostContactInfoContacts success(@jakarta.annotation.Nullable PostContactInfoContactsSuccess success) {
     
     this.success = success;
     return this;
@@ -75,11 +79,11 @@ public class PostContactInfoContacts {
 
   @JsonProperty(JSON_PROPERTY_SUCCESS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSuccess(PostContactInfoContactsSuccess success) {
+  public void setSuccess(@jakarta.annotation.Nullable PostContactInfoContactsSuccess success) {
     this.success = success;
   }
 
-  public PostContactInfoContacts failure(PostContactInfoContactsFailure failure) {
+  public PostContactInfoContacts failure(@jakarta.annotation.Nullable PostContactInfoContactsFailure failure) {
     
     this.failure = failure;
     return this;
@@ -100,11 +104,11 @@ public class PostContactInfoContacts {
 
   @JsonProperty(JSON_PROPERTY_FAILURE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setFailure(PostContactInfoContactsFailure failure) {
+  public void setFailure(@jakarta.annotation.Nullable PostContactInfoContactsFailure failure) {
     this.failure = failure;
   }
 
-  public PostContactInfoContacts total(Long total) {
+  public PostContactInfoContacts total(@jakarta.annotation.Nullable Long total) {
     
     this.total = total;
     return this;
@@ -125,11 +129,11 @@ public class PostContactInfoContacts {
 
   @JsonProperty(JSON_PROPERTY_TOTAL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setTotal(Long total) {
+  public void setTotal(@jakarta.annotation.Nullable Long total) {
     this.total = total;
   }
 
-  public PostContactInfoContacts processId(Long processId) {
+  public PostContactInfoContacts processId(@jakarta.annotation.Nullable Long processId) {
     
     this.processId = processId;
     return this;
@@ -150,7 +154,7 @@ public class PostContactInfoContacts {
 
   @JsonProperty(JSON_PROPERTY_PROCESS_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setProcessId(Long processId) {
+  public void setProcessId(@jakarta.annotation.Nullable Long processId) {
     this.processId = processId;
   }
 

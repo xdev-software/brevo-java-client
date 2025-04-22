@@ -36,15 +36,17 @@ import java.util.StringJoiner;
 @JsonTypeName("createApiKeyResponse")
 public class CreateApiKeyResponse {
   public static final String JSON_PROPERTY_STATUS = "status";
+  @jakarta.annotation.Nonnull
   private String status;
 
   public static final String JSON_PROPERTY_KEY = "key";
+  @jakarta.annotation.Nonnull
   private String key;
 
   public CreateApiKeyResponse() {
   }
 
-  public CreateApiKeyResponse status(String status) {
+  public CreateApiKeyResponse status(@jakarta.annotation.Nonnull String status) {
     
     this.status = status;
     return this;
@@ -65,11 +67,11 @@ public class CreateApiKeyResponse {
 
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatus(String status) {
+  public void setStatus(@jakarta.annotation.Nonnull String status) {
     this.status = status;
   }
 
-  public CreateApiKeyResponse key(String key) {
+  public CreateApiKeyResponse key(@jakarta.annotation.Nonnull String key) {
     
     this.key = key;
     return this;
@@ -90,7 +92,7 @@ public class CreateApiKeyResponse {
 
   @JsonProperty(JSON_PROPERTY_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setKey(String key) {
+  public void setKey(@jakarta.annotation.Nonnull String key) {
     this.key = key;
   }
 

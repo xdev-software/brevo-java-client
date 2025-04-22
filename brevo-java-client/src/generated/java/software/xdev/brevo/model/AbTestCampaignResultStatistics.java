@@ -41,27 +41,33 @@ import java.util.StringJoiner;
 @JsonTypeName("abTestCampaignResult_statistics")
 public class AbTestCampaignResultStatistics {
   public static final String JSON_PROPERTY_OPENERS = "openers";
+  @jakarta.annotation.Nonnull
   private AbTestVersionStats openers;
 
   public static final String JSON_PROPERTY_CLICKS = "clicks";
+  @jakarta.annotation.Nonnull
   private AbTestVersionStats clicks;
 
   public static final String JSON_PROPERTY_UNSUBSCRIBED = "unsubscribed";
+  @jakarta.annotation.Nonnull
   private AbTestVersionStats unsubscribed;
 
   public static final String JSON_PROPERTY_HARD_BOUNCES = "hardBounces";
+  @jakarta.annotation.Nonnull
   private AbTestVersionStats hardBounces;
 
   public static final String JSON_PROPERTY_SOFT_BOUNCES = "softBounces";
+  @jakarta.annotation.Nonnull
   private AbTestVersionStats softBounces;
 
   public static final String JSON_PROPERTY_COMPLAINTS = "complaints";
+  @jakarta.annotation.Nonnull
   private AbTestVersionStats complaints;
 
   public AbTestCampaignResultStatistics() {
   }
 
-  public AbTestCampaignResultStatistics openers(AbTestVersionStats openers) {
+  public AbTestCampaignResultStatistics openers(@jakarta.annotation.Nonnull AbTestVersionStats openers) {
     
     this.openers = openers;
     return this;
@@ -82,11 +88,11 @@ public class AbTestCampaignResultStatistics {
 
   @JsonProperty(JSON_PROPERTY_OPENERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOpeners(AbTestVersionStats openers) {
+  public void setOpeners(@jakarta.annotation.Nonnull AbTestVersionStats openers) {
     this.openers = openers;
   }
 
-  public AbTestCampaignResultStatistics clicks(AbTestVersionStats clicks) {
+  public AbTestCampaignResultStatistics clicks(@jakarta.annotation.Nonnull AbTestVersionStats clicks) {
     
     this.clicks = clicks;
     return this;
@@ -107,11 +113,11 @@ public class AbTestCampaignResultStatistics {
 
   @JsonProperty(JSON_PROPERTY_CLICKS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setClicks(AbTestVersionStats clicks) {
+  public void setClicks(@jakarta.annotation.Nonnull AbTestVersionStats clicks) {
     this.clicks = clicks;
   }
 
-  public AbTestCampaignResultStatistics unsubscribed(AbTestVersionStats unsubscribed) {
+  public AbTestCampaignResultStatistics unsubscribed(@jakarta.annotation.Nonnull AbTestVersionStats unsubscribed) {
     
     this.unsubscribed = unsubscribed;
     return this;
@@ -132,11 +138,11 @@ public class AbTestCampaignResultStatistics {
 
   @JsonProperty(JSON_PROPERTY_UNSUBSCRIBED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUnsubscribed(AbTestVersionStats unsubscribed) {
+  public void setUnsubscribed(@jakarta.annotation.Nonnull AbTestVersionStats unsubscribed) {
     this.unsubscribed = unsubscribed;
   }
 
-  public AbTestCampaignResultStatistics hardBounces(AbTestVersionStats hardBounces) {
+  public AbTestCampaignResultStatistics hardBounces(@jakarta.annotation.Nonnull AbTestVersionStats hardBounces) {
     
     this.hardBounces = hardBounces;
     return this;
@@ -157,11 +163,11 @@ public class AbTestCampaignResultStatistics {
 
   @JsonProperty(JSON_PROPERTY_HARD_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setHardBounces(AbTestVersionStats hardBounces) {
+  public void setHardBounces(@jakarta.annotation.Nonnull AbTestVersionStats hardBounces) {
     this.hardBounces = hardBounces;
   }
 
-  public AbTestCampaignResultStatistics softBounces(AbTestVersionStats softBounces) {
+  public AbTestCampaignResultStatistics softBounces(@jakarta.annotation.Nonnull AbTestVersionStats softBounces) {
     
     this.softBounces = softBounces;
     return this;
@@ -182,11 +188,11 @@ public class AbTestCampaignResultStatistics {
 
   @JsonProperty(JSON_PROPERTY_SOFT_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSoftBounces(AbTestVersionStats softBounces) {
+  public void setSoftBounces(@jakarta.annotation.Nonnull AbTestVersionStats softBounces) {
     this.softBounces = softBounces;
   }
 
-  public AbTestCampaignResultStatistics complaints(AbTestVersionStats complaints) {
+  public AbTestCampaignResultStatistics complaints(@jakarta.annotation.Nonnull AbTestVersionStats complaints) {
     
     this.complaints = complaints;
     return this;
@@ -207,7 +213,7 @@ public class AbTestCampaignResultStatistics {
 
   @JsonProperty(JSON_PROPERTY_COMPLAINTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setComplaints(AbTestVersionStats complaints) {
+  public void setComplaints(@jakarta.annotation.Nonnull AbTestVersionStats complaints) {
     this.complaints = complaints;
   }
 

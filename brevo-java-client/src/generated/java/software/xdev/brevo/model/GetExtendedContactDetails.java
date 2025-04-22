@@ -48,39 +48,49 @@ import java.util.StringJoiner;
 @JsonTypeName("getExtendedContactDetails")
 public class GetExtendedContactDetails {
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nullable
   private String email;
 
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nonnull
   private Long id;
 
   public static final String JSON_PROPERTY_EMAIL_BLACKLISTED = "emailBlacklisted";
+  @jakarta.annotation.Nonnull
   private Boolean emailBlacklisted;
 
   public static final String JSON_PROPERTY_SMS_BLACKLISTED = "smsBlacklisted";
+  @jakarta.annotation.Nonnull
   private Boolean smsBlacklisted;
 
   public static final String JSON_PROPERTY_CREATED_AT = "createdAt";
+  @jakarta.annotation.Nonnull
   private String createdAt;
 
   public static final String JSON_PROPERTY_MODIFIED_AT = "modifiedAt";
+  @jakarta.annotation.Nonnull
   private String modifiedAt;
 
   public static final String JSON_PROPERTY_LIST_IDS = "listIds";
+  @jakarta.annotation.Nonnull
   private List<Long> listIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_LIST_UNSUBSCRIBED = "listUnsubscribed";
+  @jakarta.annotation.Nullable
   private List<Long> listUnsubscribed = new ArrayList<>();
 
   public static final String JSON_PROPERTY_ATTRIBUTES = "attributes";
+  @jakarta.annotation.Nonnull
   private Object attributes;
 
   public static final String JSON_PROPERTY_STATISTICS = "statistics";
+  @jakarta.annotation.Nonnull
   private GetExtendedContactDetailsAllOfStatistics statistics;
 
   public GetExtendedContactDetails() {
   }
 
-  public GetExtendedContactDetails email(String email) {
+  public GetExtendedContactDetails email(@jakarta.annotation.Nullable String email) {
     
     this.email = email;
     return this;
@@ -101,11 +111,11 @@ public class GetExtendedContactDetails {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEmail(String email) {
+  public void setEmail(@jakarta.annotation.Nullable String email) {
     this.email = email;
   }
 
-  public GetExtendedContactDetails id(Long id) {
+  public GetExtendedContactDetails id(@jakarta.annotation.Nonnull Long id) {
     
     this.id = id;
     return this;
@@ -126,11 +136,11 @@ public class GetExtendedContactDetails {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(Long id) {
+  public void setId(@jakarta.annotation.Nonnull Long id) {
     this.id = id;
   }
 
-  public GetExtendedContactDetails emailBlacklisted(Boolean emailBlacklisted) {
+  public GetExtendedContactDetails emailBlacklisted(@jakarta.annotation.Nonnull Boolean emailBlacklisted) {
     
     this.emailBlacklisted = emailBlacklisted;
     return this;
@@ -151,11 +161,11 @@ public class GetExtendedContactDetails {
 
   @JsonProperty(JSON_PROPERTY_EMAIL_BLACKLISTED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEmailBlacklisted(Boolean emailBlacklisted) {
+  public void setEmailBlacklisted(@jakarta.annotation.Nonnull Boolean emailBlacklisted) {
     this.emailBlacklisted = emailBlacklisted;
   }
 
-  public GetExtendedContactDetails smsBlacklisted(Boolean smsBlacklisted) {
+  public GetExtendedContactDetails smsBlacklisted(@jakarta.annotation.Nonnull Boolean smsBlacklisted) {
     
     this.smsBlacklisted = smsBlacklisted;
     return this;
@@ -176,11 +186,11 @@ public class GetExtendedContactDetails {
 
   @JsonProperty(JSON_PROPERTY_SMS_BLACKLISTED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSmsBlacklisted(Boolean smsBlacklisted) {
+  public void setSmsBlacklisted(@jakarta.annotation.Nonnull Boolean smsBlacklisted) {
     this.smsBlacklisted = smsBlacklisted;
   }
 
-  public GetExtendedContactDetails createdAt(String createdAt) {
+  public GetExtendedContactDetails createdAt(@jakarta.annotation.Nonnull String createdAt) {
     
     this.createdAt = createdAt;
     return this;
@@ -201,11 +211,11 @@ public class GetExtendedContactDetails {
 
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCreatedAt(String createdAt) {
+  public void setCreatedAt(@jakarta.annotation.Nonnull String createdAt) {
     this.createdAt = createdAt;
   }
 
-  public GetExtendedContactDetails modifiedAt(String modifiedAt) {
+  public GetExtendedContactDetails modifiedAt(@jakarta.annotation.Nonnull String modifiedAt) {
     
     this.modifiedAt = modifiedAt;
     return this;
@@ -226,11 +236,11 @@ public class GetExtendedContactDetails {
 
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setModifiedAt(String modifiedAt) {
+  public void setModifiedAt(@jakarta.annotation.Nonnull String modifiedAt) {
     this.modifiedAt = modifiedAt;
   }
 
-  public GetExtendedContactDetails listIds(List<Long> listIds) {
+  public GetExtendedContactDetails listIds(@jakarta.annotation.Nonnull List<Long> listIds) {
     
     this.listIds = listIds;
     return this;
@@ -259,11 +269,11 @@ public class GetExtendedContactDetails {
 
   @JsonProperty(JSON_PROPERTY_LIST_IDS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setListIds(List<Long> listIds) {
+  public void setListIds(@jakarta.annotation.Nonnull List<Long> listIds) {
     this.listIds = listIds;
   }
 
-  public GetExtendedContactDetails listUnsubscribed(List<Long> listUnsubscribed) {
+  public GetExtendedContactDetails listUnsubscribed(@jakarta.annotation.Nullable List<Long> listUnsubscribed) {
     
     this.listUnsubscribed = listUnsubscribed;
     return this;
@@ -292,11 +302,11 @@ public class GetExtendedContactDetails {
 
   @JsonProperty(JSON_PROPERTY_LIST_UNSUBSCRIBED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setListUnsubscribed(List<Long> listUnsubscribed) {
+  public void setListUnsubscribed(@jakarta.annotation.Nullable List<Long> listUnsubscribed) {
     this.listUnsubscribed = listUnsubscribed;
   }
 
-  public GetExtendedContactDetails attributes(Object attributes) {
+  public GetExtendedContactDetails attributes(@jakarta.annotation.Nonnull Object attributes) {
     
     this.attributes = attributes;
     return this;
@@ -317,11 +327,11 @@ public class GetExtendedContactDetails {
 
   @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAttributes(Object attributes) {
+  public void setAttributes(@jakarta.annotation.Nonnull Object attributes) {
     this.attributes = attributes;
   }
 
-  public GetExtendedContactDetails statistics(GetExtendedContactDetailsAllOfStatistics statistics) {
+  public GetExtendedContactDetails statistics(@jakarta.annotation.Nonnull GetExtendedContactDetailsAllOfStatistics statistics) {
     
     this.statistics = statistics;
     return this;
@@ -342,7 +352,7 @@ public class GetExtendedContactDetails {
 
   @JsonProperty(JSON_PROPERTY_STATISTICS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatistics(GetExtendedContactDetailsAllOfStatistics statistics) {
+  public void setStatistics(@jakarta.annotation.Nonnull GetExtendedContactDetailsAllOfStatistics statistics) {
     this.statistics = statistics;
   }
 

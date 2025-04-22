@@ -40,18 +40,21 @@ import java.util.StringJoiner;
 @JsonTypeName("createWhatsAppCampaign_recipients")
 public class CreateWhatsAppCampaignRecipients {
   public static final String JSON_PROPERTY_EXCLUDED_LIST_IDS = "excludedListIds";
+  @jakarta.annotation.Nullable
   private List<Long> excludedListIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_LIST_IDS = "listIds";
+  @jakarta.annotation.Nullable
   private List<Long> listIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_SEGMENTS = "segments";
+  @jakarta.annotation.Nullable
   private List<Long> segments = new ArrayList<>();
 
   public CreateWhatsAppCampaignRecipients() {
   }
 
-  public CreateWhatsAppCampaignRecipients excludedListIds(List<Long> excludedListIds) {
+  public CreateWhatsAppCampaignRecipients excludedListIds(@jakarta.annotation.Nullable List<Long> excludedListIds) {
     
     this.excludedListIds = excludedListIds;
     return this;
@@ -80,11 +83,11 @@ public class CreateWhatsAppCampaignRecipients {
 
   @JsonProperty(JSON_PROPERTY_EXCLUDED_LIST_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setExcludedListIds(List<Long> excludedListIds) {
+  public void setExcludedListIds(@jakarta.annotation.Nullable List<Long> excludedListIds) {
     this.excludedListIds = excludedListIds;
   }
 
-  public CreateWhatsAppCampaignRecipients listIds(List<Long> listIds) {
+  public CreateWhatsAppCampaignRecipients listIds(@jakarta.annotation.Nullable List<Long> listIds) {
     
     this.listIds = listIds;
     return this;
@@ -113,11 +116,11 @@ public class CreateWhatsAppCampaignRecipients {
 
   @JsonProperty(JSON_PROPERTY_LIST_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setListIds(List<Long> listIds) {
+  public void setListIds(@jakarta.annotation.Nullable List<Long> listIds) {
     this.listIds = listIds;
   }
 
-  public CreateWhatsAppCampaignRecipients segments(List<Long> segments) {
+  public CreateWhatsAppCampaignRecipients segments(@jakarta.annotation.Nullable List<Long> segments) {
     
     this.segments = segments;
     return this;
@@ -146,7 +149,7 @@ public class CreateWhatsAppCampaignRecipients {
 
   @JsonProperty(JSON_PROPERTY_SEGMENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSegments(List<Long> segments) {
+  public void setSegments(@jakarta.annotation.Nullable List<Long> segments) {
     this.segments = segments;
   }
 

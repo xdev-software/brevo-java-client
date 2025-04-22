@@ -40,18 +40,21 @@ import java.util.StringJoiner;
 @JsonTypeName("subAccountDetailsResponse_planInfo_features")
 public class SubAccountDetailsResponsePlanInfoFeatures {
   public static final String JSON_PROPERTY_INBOX = "inbox";
+  @jakarta.annotation.Nullable
   private SubAccountDetailsResponsePlanInfoFeaturesInbox inbox;
 
   public static final String JSON_PROPERTY_LANDING_PAGE = "landingPage";
+  @jakarta.annotation.Nullable
   private SubAccountDetailsResponsePlanInfoFeaturesLandingPage landingPage;
 
   public static final String JSON_PROPERTY_USERS = "users";
+  @jakarta.annotation.Nullable
   private SubAccountDetailsResponsePlanInfoFeaturesUsers users;
 
   public SubAccountDetailsResponsePlanInfoFeatures() {
   }
 
-  public SubAccountDetailsResponsePlanInfoFeatures inbox(SubAccountDetailsResponsePlanInfoFeaturesInbox inbox) {
+  public SubAccountDetailsResponsePlanInfoFeatures inbox(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfoFeaturesInbox inbox) {
     
     this.inbox = inbox;
     return this;
@@ -72,11 +75,11 @@ public class SubAccountDetailsResponsePlanInfoFeatures {
 
   @JsonProperty(JSON_PROPERTY_INBOX)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setInbox(SubAccountDetailsResponsePlanInfoFeaturesInbox inbox) {
+  public void setInbox(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfoFeaturesInbox inbox) {
     this.inbox = inbox;
   }
 
-  public SubAccountDetailsResponsePlanInfoFeatures landingPage(SubAccountDetailsResponsePlanInfoFeaturesLandingPage landingPage) {
+  public SubAccountDetailsResponsePlanInfoFeatures landingPage(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfoFeaturesLandingPage landingPage) {
     
     this.landingPage = landingPage;
     return this;
@@ -97,11 +100,11 @@ public class SubAccountDetailsResponsePlanInfoFeatures {
 
   @JsonProperty(JSON_PROPERTY_LANDING_PAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setLandingPage(SubAccountDetailsResponsePlanInfoFeaturesLandingPage landingPage) {
+  public void setLandingPage(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfoFeaturesLandingPage landingPage) {
     this.landingPage = landingPage;
   }
 
-  public SubAccountDetailsResponsePlanInfoFeatures users(SubAccountDetailsResponsePlanInfoFeaturesUsers users) {
+  public SubAccountDetailsResponsePlanInfoFeatures users(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfoFeaturesUsers users) {
     
     this.users = users;
     return this;
@@ -122,7 +125,7 @@ public class SubAccountDetailsResponsePlanInfoFeatures {
 
   @JsonProperty(JSON_PROPERTY_USERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUsers(SubAccountDetailsResponsePlanInfoFeaturesUsers users) {
+  public void setUsers(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfoFeaturesUsers users) {
     this.users = users;
   }
 

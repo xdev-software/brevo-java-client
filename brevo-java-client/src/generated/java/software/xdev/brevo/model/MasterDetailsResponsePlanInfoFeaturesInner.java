@@ -41,30 +41,37 @@ import java.util.StringJoiner;
 @JsonTypeName("masterDetailsResponse_planInfo_features_inner")
 public class MasterDetailsResponsePlanInfoFeaturesInner {
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nullable
   private String name;
 
   public static final String JSON_PROPERTY_UNIT_VALUE = "unitValue";
+  @jakarta.annotation.Nullable
   private String unitValue;
 
   public static final String JSON_PROPERTY_QUANTITY = "quantity";
+  @jakarta.annotation.Nullable
   private Long quantity;
 
   public static final String JSON_PROPERTY_QUANTITY_WITH_OVERAGES = "quantityWithOverages";
+  @jakarta.annotation.Nullable
   private Long quantityWithOverages;
 
   public static final String JSON_PROPERTY_USED = "used";
+  @jakarta.annotation.Nullable
   private Long used;
 
   public static final String JSON_PROPERTY_USED_OVERAGES = "usedOverages";
+  @jakarta.annotation.Nullable
   private Long usedOverages;
 
   public static final String JSON_PROPERTY_REMAINING = "remaining";
+  @jakarta.annotation.Nullable
   private Long remaining;
 
   public MasterDetailsResponsePlanInfoFeaturesInner() {
   }
 
-  public MasterDetailsResponsePlanInfoFeaturesInner name(String name) {
+  public MasterDetailsResponsePlanInfoFeaturesInner name(@jakarta.annotation.Nullable String name) {
     
     this.name = name;
     return this;
@@ -85,11 +92,11 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nullable String name) {
     this.name = name;
   }
 
-  public MasterDetailsResponsePlanInfoFeaturesInner unitValue(String unitValue) {
+  public MasterDetailsResponsePlanInfoFeaturesInner unitValue(@jakarta.annotation.Nullable String unitValue) {
     
     this.unitValue = unitValue;
     return this;
@@ -110,11 +117,11 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
 
   @JsonProperty(JSON_PROPERTY_UNIT_VALUE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUnitValue(String unitValue) {
+  public void setUnitValue(@jakarta.annotation.Nullable String unitValue) {
     this.unitValue = unitValue;
   }
 
-  public MasterDetailsResponsePlanInfoFeaturesInner quantity(Long quantity) {
+  public MasterDetailsResponsePlanInfoFeaturesInner quantity(@jakarta.annotation.Nullable Long quantity) {
     
     this.quantity = quantity;
     return this;
@@ -135,11 +142,11 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
 
   @JsonProperty(JSON_PROPERTY_QUANTITY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setQuantity(Long quantity) {
+  public void setQuantity(@jakarta.annotation.Nullable Long quantity) {
     this.quantity = quantity;
   }
 
-  public MasterDetailsResponsePlanInfoFeaturesInner quantityWithOverages(Long quantityWithOverages) {
+  public MasterDetailsResponsePlanInfoFeaturesInner quantityWithOverages(@jakarta.annotation.Nullable Long quantityWithOverages) {
     
     this.quantityWithOverages = quantityWithOverages;
     return this;
@@ -160,11 +167,11 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
 
   @JsonProperty(JSON_PROPERTY_QUANTITY_WITH_OVERAGES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setQuantityWithOverages(Long quantityWithOverages) {
+  public void setQuantityWithOverages(@jakarta.annotation.Nullable Long quantityWithOverages) {
     this.quantityWithOverages = quantityWithOverages;
   }
 
-  public MasterDetailsResponsePlanInfoFeaturesInner used(Long used) {
+  public MasterDetailsResponsePlanInfoFeaturesInner used(@jakarta.annotation.Nullable Long used) {
     
     this.used = used;
     return this;
@@ -185,11 +192,11 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
 
   @JsonProperty(JSON_PROPERTY_USED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUsed(Long used) {
+  public void setUsed(@jakarta.annotation.Nullable Long used) {
     this.used = used;
   }
 
-  public MasterDetailsResponsePlanInfoFeaturesInner usedOverages(Long usedOverages) {
+  public MasterDetailsResponsePlanInfoFeaturesInner usedOverages(@jakarta.annotation.Nullable Long usedOverages) {
     
     this.usedOverages = usedOverages;
     return this;
@@ -210,11 +217,11 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
 
   @JsonProperty(JSON_PROPERTY_USED_OVERAGES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUsedOverages(Long usedOverages) {
+  public void setUsedOverages(@jakarta.annotation.Nullable Long usedOverages) {
     this.usedOverages = usedOverages;
   }
 
-  public MasterDetailsResponsePlanInfoFeaturesInner remaining(Long remaining) {
+  public MasterDetailsResponsePlanInfoFeaturesInner remaining(@jakarta.annotation.Nullable Long remaining) {
     
     this.remaining = remaining;
     return this;
@@ -235,7 +242,7 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
 
   @JsonProperty(JSON_PROPERTY_REMAINING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setRemaining(Long remaining) {
+  public void setRemaining(@jakarta.annotation.Nullable Long remaining) {
     this.remaining = remaining;
   }
 

@@ -39,15 +39,17 @@ import java.util.StringJoiner;
 @JsonTypeName("createCoupons_request")
 public class CreateCouponsRequest {
   public static final String JSON_PROPERTY_COLLECTION_ID = "collectionId";
+  @jakarta.annotation.Nonnull
   private String collectionId;
 
   public static final String JSON_PROPERTY_COUPONS = "coupons";
+  @jakarta.annotation.Nonnull
   private Set<String> coupons = new LinkedHashSet<>();
 
   public CreateCouponsRequest() {
   }
 
-  public CreateCouponsRequest collectionId(String collectionId) {
+  public CreateCouponsRequest collectionId(@jakarta.annotation.Nonnull String collectionId) {
     
     this.collectionId = collectionId;
     return this;
@@ -68,11 +70,11 @@ public class CreateCouponsRequest {
 
   @JsonProperty(JSON_PROPERTY_COLLECTION_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCollectionId(String collectionId) {
+  public void setCollectionId(@jakarta.annotation.Nonnull String collectionId) {
     this.collectionId = collectionId;
   }
 
-  public CreateCouponsRequest coupons(Set<String> coupons) {
+  public CreateCouponsRequest coupons(@jakarta.annotation.Nonnull Set<String> coupons) {
     
     this.coupons = coupons;
     return this;
@@ -102,7 +104,7 @@ public class CreateCouponsRequest {
   @JsonDeserialize(as = LinkedHashSet.class)
   @JsonProperty(JSON_PROPERTY_COUPONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCoupons(Set<String> coupons) {
+  public void setCoupons(@jakarta.annotation.Nonnull Set<String> coupons) {
     this.coupons = coupons;
   }
 

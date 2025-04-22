@@ -37,15 +37,17 @@ import java.util.StringJoiner;
 @JsonTypeName("subAccountDetailsResponse_planInfo_credits")
 public class SubAccountDetailsResponsePlanInfoCredits {
   public static final String JSON_PROPERTY_SMS = "sms";
+  @jakarta.annotation.Nullable
   private Long sms;
 
   public static final String JSON_PROPERTY_EMAILS = "emails";
+  @jakarta.annotation.Nullable
   private SubAccountDetailsResponsePlanInfoCreditsEmails emails;
 
   public SubAccountDetailsResponsePlanInfoCredits() {
   }
 
-  public SubAccountDetailsResponsePlanInfoCredits sms(Long sms) {
+  public SubAccountDetailsResponsePlanInfoCredits sms(@jakarta.annotation.Nullable Long sms) {
     
     this.sms = sms;
     return this;
@@ -66,11 +68,11 @@ public class SubAccountDetailsResponsePlanInfoCredits {
 
   @JsonProperty(JSON_PROPERTY_SMS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSms(Long sms) {
+  public void setSms(@jakarta.annotation.Nullable Long sms) {
     this.sms = sms;
   }
 
-  public SubAccountDetailsResponsePlanInfoCredits emails(SubAccountDetailsResponsePlanInfoCreditsEmails emails) {
+  public SubAccountDetailsResponsePlanInfoCredits emails(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfoCreditsEmails emails) {
     
     this.emails = emails;
     return this;
@@ -91,7 +93,7 @@ public class SubAccountDetailsResponsePlanInfoCredits {
 
   @JsonProperty(JSON_PROPERTY_EMAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEmails(SubAccountDetailsResponsePlanInfoCreditsEmails emails) {
+  public void setEmails(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfoCreditsEmails emails) {
     this.emails = emails;
   }
 

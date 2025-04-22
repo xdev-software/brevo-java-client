@@ -38,21 +38,21 @@ public class UpdateCampaignStatus {
    * Note:- **replicateTemplate** status will be available **only for template type campaigns.** 
    */
   public enum StatusEnum {
-    SUSPENDED("suspended"),
+    SUSPENDED(String.valueOf("suspended")),
     
-    ARCHIVE("archive"),
+    ARCHIVE(String.valueOf("archive")),
     
-    DARCHIVE("darchive"),
+    DARCHIVE(String.valueOf("darchive")),
     
-    SENT("sent"),
+    SENT(String.valueOf("sent")),
     
-    QUEUED("queued"),
+    QUEUED(String.valueOf("queued")),
     
-    REPLICATE("replicate"),
+    REPLICATE(String.valueOf("replicate")),
     
-    REPLICATE_TEMPLATE("replicateTemplate"),
+    REPLICATE_TEMPLATE(String.valueOf("replicateTemplate")),
     
-    DRAFT("draft");
+    DRAFT(String.valueOf("draft"));
 
     private String value;
 
@@ -82,12 +82,13 @@ public class UpdateCampaignStatus {
   }
 
   public static final String JSON_PROPERTY_STATUS = "status";
+  @jakarta.annotation.Nullable
   private StatusEnum status;
 
   public UpdateCampaignStatus() {
   }
 
-  public UpdateCampaignStatus status(StatusEnum status) {
+  public UpdateCampaignStatus status(@jakarta.annotation.Nullable StatusEnum status) {
     
     this.status = status;
     return this;
@@ -108,7 +109,7 @@ public class UpdateCampaignStatus {
 
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setStatus(StatusEnum status) {
+  public void setStatus(@jakarta.annotation.Nullable StatusEnum status) {
     this.status = status;
   }
 

@@ -38,21 +38,25 @@ import java.util.StringJoiner;
 @JsonTypeName("createDomainModel_dns_records_dkim_record")
 public class CreateDomainModelDnsRecordsDkimRecord {
   public static final String JSON_PROPERTY_TYPE = "type";
+  @jakarta.annotation.Nullable
   private String type;
 
   public static final String JSON_PROPERTY_VALUE = "value";
+  @jakarta.annotation.Nullable
   private String value;
 
   public static final String JSON_PROPERTY_HOST_NAME = "host_name";
+  @jakarta.annotation.Nullable
   private String hostName;
 
   public static final String JSON_PROPERTY_STATUS = "status";
+  @jakarta.annotation.Nullable
   private Boolean status;
 
   public CreateDomainModelDnsRecordsDkimRecord() {
   }
 
-  public CreateDomainModelDnsRecordsDkimRecord type(String type) {
+  public CreateDomainModelDnsRecordsDkimRecord type(@jakarta.annotation.Nullable String type) {
     
     this.type = type;
     return this;
@@ -73,11 +77,11 @@ public class CreateDomainModelDnsRecordsDkimRecord {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setType(String type) {
+  public void setType(@jakarta.annotation.Nullable String type) {
     this.type = type;
   }
 
-  public CreateDomainModelDnsRecordsDkimRecord value(String value) {
+  public CreateDomainModelDnsRecordsDkimRecord value(@jakarta.annotation.Nullable String value) {
     
     this.value = value;
     return this;
@@ -98,11 +102,11 @@ public class CreateDomainModelDnsRecordsDkimRecord {
 
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setValue(String value) {
+  public void setValue(@jakarta.annotation.Nullable String value) {
     this.value = value;
   }
 
-  public CreateDomainModelDnsRecordsDkimRecord hostName(String hostName) {
+  public CreateDomainModelDnsRecordsDkimRecord hostName(@jakarta.annotation.Nullable String hostName) {
     
     this.hostName = hostName;
     return this;
@@ -123,11 +127,11 @@ public class CreateDomainModelDnsRecordsDkimRecord {
 
   @JsonProperty(JSON_PROPERTY_HOST_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setHostName(String hostName) {
+  public void setHostName(@jakarta.annotation.Nullable String hostName) {
     this.hostName = hostName;
   }
 
-  public CreateDomainModelDnsRecordsDkimRecord status(Boolean status) {
+  public CreateDomainModelDnsRecordsDkimRecord status(@jakarta.annotation.Nullable Boolean status) {
     
     this.status = status;
     return this;
@@ -148,7 +152,7 @@ public class CreateDomainModelDnsRecordsDkimRecord {
 
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setStatus(Boolean status) {
+  public void setStatus(@jakarta.annotation.Nullable Boolean status) {
     this.status = status;
   }
 

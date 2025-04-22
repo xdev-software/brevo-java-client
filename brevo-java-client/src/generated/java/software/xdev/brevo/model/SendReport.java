@@ -40,17 +40,17 @@ public class SendReport {
    * Language of email content for campaign report sending.
    */
   public enum LanguageEnum {
-    FR("fr"),
+    FR(String.valueOf("fr")),
     
-    ES("es"),
+    ES(String.valueOf("es")),
     
-    PT("pt"),
+    PT(String.valueOf("pt")),
     
-    IT("it"),
+    IT(String.valueOf("it")),
     
-    DE("de"),
+    DE(String.valueOf("de")),
     
-    EN("en");
+    EN(String.valueOf("en"));
 
     private String value;
 
@@ -80,15 +80,17 @@ public class SendReport {
   }
 
   public static final String JSON_PROPERTY_LANGUAGE = "language";
+  @jakarta.annotation.Nullable
   private LanguageEnum language = LanguageEnum.FR;
 
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nonnull
   private SendReportEmail email;
 
   public SendReport() {
   }
 
-  public SendReport language(LanguageEnum language) {
+  public SendReport language(@jakarta.annotation.Nullable LanguageEnum language) {
     
     this.language = language;
     return this;
@@ -109,11 +111,11 @@ public class SendReport {
 
   @JsonProperty(JSON_PROPERTY_LANGUAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setLanguage(LanguageEnum language) {
+  public void setLanguage(@jakarta.annotation.Nullable LanguageEnum language) {
     this.language = language;
   }
 
-  public SendReport email(SendReportEmail email) {
+  public SendReport email(@jakarta.annotation.Nonnull SendReportEmail email) {
     
     this.email = email;
     return this;
@@ -134,7 +136,7 @@ public class SendReport {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEmail(SendReportEmail email) {
+  public void setEmail(@jakarta.annotation.Nonnull SendReportEmail email) {
     this.email = email;
   }
 

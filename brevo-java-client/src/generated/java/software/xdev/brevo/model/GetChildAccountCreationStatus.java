@@ -35,12 +35,13 @@ import java.util.StringJoiner;
 @JsonTypeName("getChildAccountCreationStatus")
 public class GetChildAccountCreationStatus {
   public static final String JSON_PROPERTY_CHILD_ACCOUNT_CREATED = "childAccountCreated";
+  @jakarta.annotation.Nonnull
   private Boolean childAccountCreated;
 
   public GetChildAccountCreationStatus() {
   }
 
-  public GetChildAccountCreationStatus childAccountCreated(Boolean childAccountCreated) {
+  public GetChildAccountCreationStatus childAccountCreated(@jakarta.annotation.Nonnull Boolean childAccountCreated) {
     
     this.childAccountCreated = childAccountCreated;
     return this;
@@ -61,7 +62,7 @@ public class GetChildAccountCreationStatus {
 
   @JsonProperty(JSON_PROPERTY_CHILD_ACCOUNT_CREATED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setChildAccountCreated(Boolean childAccountCreated) {
+  public void setChildAccountCreated(@jakarta.annotation.Nonnull Boolean childAccountCreated) {
     this.childAccountCreated = childAccountCreated;
   }
 

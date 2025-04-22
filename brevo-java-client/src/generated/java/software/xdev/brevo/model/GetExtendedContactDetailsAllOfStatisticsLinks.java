@@ -38,21 +38,25 @@ import java.util.StringJoiner;
 @JsonTypeName("getExtendedContactDetails_allOf_statistics_links")
 public class GetExtendedContactDetailsAllOfStatisticsLinks {
   public static final String JSON_PROPERTY_COUNT = "count";
+  @jakarta.annotation.Nonnull
   private Long count;
 
   public static final String JSON_PROPERTY_EVENT_TIME = "eventTime";
+  @jakarta.annotation.Nonnull
   private String eventTime;
 
   public static final String JSON_PROPERTY_IP = "ip";
+  @jakarta.annotation.Nonnull
   private String ip;
 
   public static final String JSON_PROPERTY_URL = "url";
+  @jakarta.annotation.Nonnull
   private String url;
 
   public GetExtendedContactDetailsAllOfStatisticsLinks() {
   }
 
-  public GetExtendedContactDetailsAllOfStatisticsLinks count(Long count) {
+  public GetExtendedContactDetailsAllOfStatisticsLinks count(@jakarta.annotation.Nonnull Long count) {
     
     this.count = count;
     return this;
@@ -73,11 +77,11 @@ public class GetExtendedContactDetailsAllOfStatisticsLinks {
 
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCount(Long count) {
+  public void setCount(@jakarta.annotation.Nonnull Long count) {
     this.count = count;
   }
 
-  public GetExtendedContactDetailsAllOfStatisticsLinks eventTime(String eventTime) {
+  public GetExtendedContactDetailsAllOfStatisticsLinks eventTime(@jakarta.annotation.Nonnull String eventTime) {
     
     this.eventTime = eventTime;
     return this;
@@ -98,11 +102,11 @@ public class GetExtendedContactDetailsAllOfStatisticsLinks {
 
   @JsonProperty(JSON_PROPERTY_EVENT_TIME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEventTime(String eventTime) {
+  public void setEventTime(@jakarta.annotation.Nonnull String eventTime) {
     this.eventTime = eventTime;
   }
 
-  public GetExtendedContactDetailsAllOfStatisticsLinks ip(String ip) {
+  public GetExtendedContactDetailsAllOfStatisticsLinks ip(@jakarta.annotation.Nonnull String ip) {
     
     this.ip = ip;
     return this;
@@ -123,11 +127,11 @@ public class GetExtendedContactDetailsAllOfStatisticsLinks {
 
   @JsonProperty(JSON_PROPERTY_IP)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIp(String ip) {
+  public void setIp(@jakarta.annotation.Nonnull String ip) {
     this.ip = ip;
   }
 
-  public GetExtendedContactDetailsAllOfStatisticsLinks url(String url) {
+  public GetExtendedContactDetailsAllOfStatisticsLinks url(@jakarta.annotation.Nonnull String url) {
     
     this.url = url;
     return this;
@@ -148,7 +152,7 @@ public class GetExtendedContactDetailsAllOfStatisticsLinks {
 
   @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUrl(String url) {
+  public void setUrl(@jakarta.annotation.Nonnull String url) {
     this.url = url;
   }
 

@@ -40,27 +40,33 @@ import java.util.StringJoiner;
 @JsonTypeName("getCategoryDetails")
 public class GetCategoryDetails {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nonnull
   private String id;
 
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_CREATED_AT = "createdAt";
+  @jakarta.annotation.Nonnull
   private String createdAt;
 
   public static final String JSON_PROPERTY_MODIFIED_AT = "modifiedAt";
+  @jakarta.annotation.Nonnull
   private String modifiedAt;
 
   public static final String JSON_PROPERTY_URL = "url";
+  @jakarta.annotation.Nullable
   private String url;
 
   public static final String JSON_PROPERTY_IS_DELETED = "isDeleted";
+  @jakarta.annotation.Nullable
   private Boolean isDeleted;
 
   public GetCategoryDetails() {
   }
 
-  public GetCategoryDetails id(String id) {
+  public GetCategoryDetails id(@jakarta.annotation.Nonnull String id) {
     
     this.id = id;
     return this;
@@ -81,11 +87,11 @@ public class GetCategoryDetails {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(String id) {
+  public void setId(@jakarta.annotation.Nonnull String id) {
     this.id = id;
   }
 
-  public GetCategoryDetails name(String name) {
+  public GetCategoryDetails name(@jakarta.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
@@ -106,11 +112,11 @@ public class GetCategoryDetails {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
   }
 
-  public GetCategoryDetails createdAt(String createdAt) {
+  public GetCategoryDetails createdAt(@jakarta.annotation.Nonnull String createdAt) {
     
     this.createdAt = createdAt;
     return this;
@@ -131,11 +137,11 @@ public class GetCategoryDetails {
 
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCreatedAt(String createdAt) {
+  public void setCreatedAt(@jakarta.annotation.Nonnull String createdAt) {
     this.createdAt = createdAt;
   }
 
-  public GetCategoryDetails modifiedAt(String modifiedAt) {
+  public GetCategoryDetails modifiedAt(@jakarta.annotation.Nonnull String modifiedAt) {
     
     this.modifiedAt = modifiedAt;
     return this;
@@ -156,11 +162,11 @@ public class GetCategoryDetails {
 
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setModifiedAt(String modifiedAt) {
+  public void setModifiedAt(@jakarta.annotation.Nonnull String modifiedAt) {
     this.modifiedAt = modifiedAt;
   }
 
-  public GetCategoryDetails url(String url) {
+  public GetCategoryDetails url(@jakarta.annotation.Nullable String url) {
     
     this.url = url;
     return this;
@@ -181,11 +187,11 @@ public class GetCategoryDetails {
 
   @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUrl(String url) {
+  public void setUrl(@jakarta.annotation.Nullable String url) {
     this.url = url;
   }
 
-  public GetCategoryDetails isDeleted(Boolean isDeleted) {
+  public GetCategoryDetails isDeleted(@jakarta.annotation.Nullable Boolean isDeleted) {
     
     this.isDeleted = isDeleted;
     return this;
@@ -206,7 +212,7 @@ public class GetCategoryDetails {
 
   @JsonProperty(JSON_PROPERTY_IS_DELETED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setIsDeleted(Boolean isDeleted) {
+  public void setIsDeleted(@jakarta.annotation.Nullable Boolean isDeleted) {
     this.isDeleted = isDeleted;
   }
 

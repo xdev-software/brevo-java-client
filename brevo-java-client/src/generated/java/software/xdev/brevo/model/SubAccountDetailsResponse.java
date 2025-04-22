@@ -39,21 +39,25 @@ import java.util.StringJoiner;
 @JsonTypeName("subAccountDetailsResponse")
 public class SubAccountDetailsResponse {
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nullable
   private String name;
 
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nullable
   private String email;
 
   public static final String JSON_PROPERTY_COMPANY_NAME = "companyName";
+  @jakarta.annotation.Nullable
   private String companyName;
 
   public static final String JSON_PROPERTY_PLAN_INFO = "planInfo";
+  @jakarta.annotation.Nullable
   private SubAccountDetailsResponsePlanInfo planInfo;
 
   public SubAccountDetailsResponse() {
   }
 
-  public SubAccountDetailsResponse name(String name) {
+  public SubAccountDetailsResponse name(@jakarta.annotation.Nullable String name) {
     
     this.name = name;
     return this;
@@ -74,11 +78,11 @@ public class SubAccountDetailsResponse {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nullable String name) {
     this.name = name;
   }
 
-  public SubAccountDetailsResponse email(String email) {
+  public SubAccountDetailsResponse email(@jakarta.annotation.Nullable String email) {
     
     this.email = email;
     return this;
@@ -99,11 +103,11 @@ public class SubAccountDetailsResponse {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEmail(String email) {
+  public void setEmail(@jakarta.annotation.Nullable String email) {
     this.email = email;
   }
 
-  public SubAccountDetailsResponse companyName(String companyName) {
+  public SubAccountDetailsResponse companyName(@jakarta.annotation.Nullable String companyName) {
     
     this.companyName = companyName;
     return this;
@@ -124,11 +128,11 @@ public class SubAccountDetailsResponse {
 
   @JsonProperty(JSON_PROPERTY_COMPANY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCompanyName(String companyName) {
+  public void setCompanyName(@jakarta.annotation.Nullable String companyName) {
     this.companyName = companyName;
   }
 
-  public SubAccountDetailsResponse planInfo(SubAccountDetailsResponsePlanInfo planInfo) {
+  public SubAccountDetailsResponse planInfo(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfo planInfo) {
     
     this.planInfo = planInfo;
     return this;
@@ -149,7 +153,7 @@ public class SubAccountDetailsResponse {
 
   @JsonProperty(JSON_PROPERTY_PLAN_INFO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setPlanInfo(SubAccountDetailsResponsePlanInfo planInfo) {
+  public void setPlanInfo(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfo planInfo) {
     this.planInfo = planInfo;
   }
 

@@ -37,18 +37,21 @@ import java.util.StringJoiner;
 @JsonTypeName("abTestVersionClicks_inner")
 public class AbTestVersionClicksInner {
   public static final String JSON_PROPERTY_LINK = "link";
+  @jakarta.annotation.Nonnull
   private String link;
 
   public static final String JSON_PROPERTY_CLICKS_COUNT = "clicksCount";
+  @jakarta.annotation.Nonnull
   private Long clicksCount;
 
   public static final String JSON_PROPERTY_CLICK_RATE = "clickRate";
+  @jakarta.annotation.Nonnull
   private String clickRate;
 
   public AbTestVersionClicksInner() {
   }
 
-  public AbTestVersionClicksInner link(String link) {
+  public AbTestVersionClicksInner link(@jakarta.annotation.Nonnull String link) {
     
     this.link = link;
     return this;
@@ -69,11 +72,11 @@ public class AbTestVersionClicksInner {
 
   @JsonProperty(JSON_PROPERTY_LINK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setLink(String link) {
+  public void setLink(@jakarta.annotation.Nonnull String link) {
     this.link = link;
   }
 
-  public AbTestVersionClicksInner clicksCount(Long clicksCount) {
+  public AbTestVersionClicksInner clicksCount(@jakarta.annotation.Nonnull Long clicksCount) {
     
     this.clicksCount = clicksCount;
     return this;
@@ -94,11 +97,11 @@ public class AbTestVersionClicksInner {
 
   @JsonProperty(JSON_PROPERTY_CLICKS_COUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setClicksCount(Long clicksCount) {
+  public void setClicksCount(@jakarta.annotation.Nonnull Long clicksCount) {
     this.clicksCount = clicksCount;
   }
 
-  public AbTestVersionClicksInner clickRate(String clickRate) {
+  public AbTestVersionClicksInner clickRate(@jakarta.annotation.Nonnull String clickRate) {
     
     this.clickRate = clickRate;
     return this;
@@ -119,7 +122,7 @@ public class AbTestVersionClicksInner {
 
   @JsonProperty(JSON_PROPERTY_CLICK_RATE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setClickRate(String clickRate) {
+  public void setClickRate(@jakarta.annotation.Nonnull String clickRate) {
     this.clickRate = clickRate;
   }
 

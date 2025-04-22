@@ -40,21 +40,25 @@ import java.util.StringJoiner;
 })
 public class NoteData {
   public static final String JSON_PROPERTY_TEXT = "text";
+  @jakarta.annotation.Nonnull
   private String text;
 
   public static final String JSON_PROPERTY_CONTACT_IDS = "contactIds";
+  @jakarta.annotation.Nullable
   private List<Integer> contactIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_DEAL_IDS = "dealIds";
+  @jakarta.annotation.Nullable
   private List<String> dealIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_COMPANY_IDS = "companyIds";
+  @jakarta.annotation.Nullable
   private List<String> companyIds = new ArrayList<>();
 
   public NoteData() {
   }
 
-  public NoteData text(String text) {
+  public NoteData text(@jakarta.annotation.Nonnull String text) {
     
     this.text = text;
     return this;
@@ -75,11 +79,11 @@ public class NoteData {
 
   @JsonProperty(JSON_PROPERTY_TEXT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setText(String text) {
+  public void setText(@jakarta.annotation.Nonnull String text) {
     this.text = text;
   }
 
-  public NoteData contactIds(List<Integer> contactIds) {
+  public NoteData contactIds(@jakarta.annotation.Nullable List<Integer> contactIds) {
     
     this.contactIds = contactIds;
     return this;
@@ -108,11 +112,11 @@ public class NoteData {
 
   @JsonProperty(JSON_PROPERTY_CONTACT_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setContactIds(List<Integer> contactIds) {
+  public void setContactIds(@jakarta.annotation.Nullable List<Integer> contactIds) {
     this.contactIds = contactIds;
   }
 
-  public NoteData dealIds(List<String> dealIds) {
+  public NoteData dealIds(@jakarta.annotation.Nullable List<String> dealIds) {
     
     this.dealIds = dealIds;
     return this;
@@ -141,11 +145,11 @@ public class NoteData {
 
   @JsonProperty(JSON_PROPERTY_DEAL_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDealIds(List<String> dealIds) {
+  public void setDealIds(@jakarta.annotation.Nullable List<String> dealIds) {
     this.dealIds = dealIds;
   }
 
-  public NoteData companyIds(List<String> companyIds) {
+  public NoteData companyIds(@jakarta.annotation.Nullable List<String> companyIds) {
     
     this.companyIds = companyIds;
     return this;
@@ -174,7 +178,7 @@ public class NoteData {
 
   @JsonProperty(JSON_PROPERTY_COMPANY_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCompanyIds(List<String> companyIds) {
+  public void setCompanyIds(@jakarta.annotation.Nullable List<String> companyIds) {
     this.companyIds = companyIds;
   }
 

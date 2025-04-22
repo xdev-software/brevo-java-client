@@ -36,15 +36,17 @@ import java.util.StringJoiner;
 @JsonTypeName("getTransacEmailContent_events_inner")
 public class GetTransacEmailContentEventsInner {
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_TIME = "time";
+  @jakarta.annotation.Nonnull
   private String time;
 
   public GetTransacEmailContentEventsInner() {
   }
 
-  public GetTransacEmailContentEventsInner name(String name) {
+  public GetTransacEmailContentEventsInner name(@jakarta.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
@@ -65,11 +67,11 @@ public class GetTransacEmailContentEventsInner {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
   }
 
-  public GetTransacEmailContentEventsInner time(String time) {
+  public GetTransacEmailContentEventsInner time(@jakarta.annotation.Nonnull String time) {
     
     this.time = time;
     return this;
@@ -90,7 +92,7 @@ public class GetTransacEmailContentEventsInner {
 
   @JsonProperty(JSON_PROPERTY_TIME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTime(String time) {
+  public void setTime(@jakarta.annotation.Nonnull String time) {
     this.time = time;
   }
 

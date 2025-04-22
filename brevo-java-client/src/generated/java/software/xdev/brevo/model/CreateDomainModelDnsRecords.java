@@ -38,18 +38,21 @@ import java.util.StringJoiner;
 @JsonTypeName("createDomainModel_dns_records")
 public class CreateDomainModelDnsRecords {
   public static final String JSON_PROPERTY_DKIM_RECORD = "dkim_record";
+  @jakarta.annotation.Nullable
   private CreateDomainModelDnsRecordsDkimRecord dkimRecord;
 
   public static final String JSON_PROPERTY_BREVO_CODE = "brevo_code";
+  @jakarta.annotation.Nullable
   private CreateDomainModelDnsRecordsDkimRecord brevoCode;
 
   public static final String JSON_PROPERTY_DMARC_RECORD = "dmarc_record";
+  @jakarta.annotation.Nullable
   private CreateDomainModelDnsRecordsDkimRecord dmarcRecord;
 
   public CreateDomainModelDnsRecords() {
   }
 
-  public CreateDomainModelDnsRecords dkimRecord(CreateDomainModelDnsRecordsDkimRecord dkimRecord) {
+  public CreateDomainModelDnsRecords dkimRecord(@jakarta.annotation.Nullable CreateDomainModelDnsRecordsDkimRecord dkimRecord) {
     
     this.dkimRecord = dkimRecord;
     return this;
@@ -70,11 +73,11 @@ public class CreateDomainModelDnsRecords {
 
   @JsonProperty(JSON_PROPERTY_DKIM_RECORD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDkimRecord(CreateDomainModelDnsRecordsDkimRecord dkimRecord) {
+  public void setDkimRecord(@jakarta.annotation.Nullable CreateDomainModelDnsRecordsDkimRecord dkimRecord) {
     this.dkimRecord = dkimRecord;
   }
 
-  public CreateDomainModelDnsRecords brevoCode(CreateDomainModelDnsRecordsDkimRecord brevoCode) {
+  public CreateDomainModelDnsRecords brevoCode(@jakarta.annotation.Nullable CreateDomainModelDnsRecordsDkimRecord brevoCode) {
     
     this.brevoCode = brevoCode;
     return this;
@@ -95,11 +98,11 @@ public class CreateDomainModelDnsRecords {
 
   @JsonProperty(JSON_PROPERTY_BREVO_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setBrevoCode(CreateDomainModelDnsRecordsDkimRecord brevoCode) {
+  public void setBrevoCode(@jakarta.annotation.Nullable CreateDomainModelDnsRecordsDkimRecord brevoCode) {
     this.brevoCode = brevoCode;
   }
 
-  public CreateDomainModelDnsRecords dmarcRecord(CreateDomainModelDnsRecordsDkimRecord dmarcRecord) {
+  public CreateDomainModelDnsRecords dmarcRecord(@jakarta.annotation.Nullable CreateDomainModelDnsRecordsDkimRecord dmarcRecord) {
     
     this.dmarcRecord = dmarcRecord;
     return this;
@@ -120,7 +123,7 @@ public class CreateDomainModelDnsRecords {
 
   @JsonProperty(JSON_PROPERTY_DMARC_RECORD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDmarcRecord(CreateDomainModelDnsRecordsDkimRecord dmarcRecord) {
+  public void setDmarcRecord(@jakarta.annotation.Nullable CreateDomainModelDnsRecordsDkimRecord dmarcRecord) {
     this.dmarcRecord = dmarcRecord;
   }
 

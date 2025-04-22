@@ -35,12 +35,13 @@ import java.util.StringJoiner;
 @JsonTypeName("createCategoryModel")
 public class CreateCategoryModel {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nullable
   private Long id;
 
   public CreateCategoryModel() {
   }
 
-  public CreateCategoryModel id(Long id) {
+  public CreateCategoryModel id(@jakarta.annotation.Nullable Long id) {
     
     this.id = id;
     return this;
@@ -61,7 +62,7 @@ public class CreateCategoryModel {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setId(Long id) {
+  public void setId(@jakarta.annotation.Nullable Long id) {
     this.id = id;
   }
 

@@ -42,21 +42,25 @@ import java.util.StringJoiner;
 @JsonTypeName("inviteAdminUser")
 public class InviteAdminUser {
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nonnull
   private String email;
 
   public static final String JSON_PROPERTY_ALL_FEATURES_ACCESS = "all_features_access";
+  @jakarta.annotation.Nonnull
   private Boolean allFeaturesAccess;
 
   public static final String JSON_PROPERTY_GROUP_IDS = "groupIds";
+  @jakarta.annotation.Nullable
   private List<String> groupIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_PRIVILEGES = "privileges";
+  @jakarta.annotation.Nonnull
   private List<InviteAdminUserPrivilegesInner> privileges = new ArrayList<>();
 
   public InviteAdminUser() {
   }
 
-  public InviteAdminUser email(String email) {
+  public InviteAdminUser email(@jakarta.annotation.Nonnull String email) {
     
     this.email = email;
     return this;
@@ -77,11 +81,11 @@ public class InviteAdminUser {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEmail(String email) {
+  public void setEmail(@jakarta.annotation.Nonnull String email) {
     this.email = email;
   }
 
-  public InviteAdminUser allFeaturesAccess(Boolean allFeaturesAccess) {
+  public InviteAdminUser allFeaturesAccess(@jakarta.annotation.Nonnull Boolean allFeaturesAccess) {
     
     this.allFeaturesAccess = allFeaturesAccess;
     return this;
@@ -102,11 +106,11 @@ public class InviteAdminUser {
 
   @JsonProperty(JSON_PROPERTY_ALL_FEATURES_ACCESS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAllFeaturesAccess(Boolean allFeaturesAccess) {
+  public void setAllFeaturesAccess(@jakarta.annotation.Nonnull Boolean allFeaturesAccess) {
     this.allFeaturesAccess = allFeaturesAccess;
   }
 
-  public InviteAdminUser groupIds(List<String> groupIds) {
+  public InviteAdminUser groupIds(@jakarta.annotation.Nullable List<String> groupIds) {
     
     this.groupIds = groupIds;
     return this;
@@ -135,11 +139,11 @@ public class InviteAdminUser {
 
   @JsonProperty(JSON_PROPERTY_GROUP_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setGroupIds(List<String> groupIds) {
+  public void setGroupIds(@jakarta.annotation.Nullable List<String> groupIds) {
     this.groupIds = groupIds;
   }
 
-  public InviteAdminUser privileges(List<InviteAdminUserPrivilegesInner> privileges) {
+  public InviteAdminUser privileges(@jakarta.annotation.Nonnull List<InviteAdminUserPrivilegesInner> privileges) {
     
     this.privileges = privileges;
     return this;
@@ -168,7 +172,7 @@ public class InviteAdminUser {
 
   @JsonProperty(JSON_PROPERTY_PRIVILEGES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPrivileges(List<InviteAdminUserPrivilegesInner> privileges) {
+  public void setPrivileges(@jakarta.annotation.Nonnull List<InviteAdminUserPrivilegesInner> privileges) {
     this.privileges = privileges;
   }
 

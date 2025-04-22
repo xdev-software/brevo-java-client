@@ -39,37 +39,37 @@ public class ErrorModel {
    * Error code displayed in case of a failure
    */
   public enum CodeEnum {
-    INVALID_PARAMETER("invalid_parameter"),
+    INVALID_PARAMETER(String.valueOf("invalid_parameter")),
     
-    MISSING_PARAMETER("missing_parameter"),
+    MISSING_PARAMETER(String.valueOf("missing_parameter")),
     
-    OUT_OF_RANGE("out_of_range"),
+    OUT_OF_RANGE(String.valueOf("out_of_range")),
     
-    CAMPAIGN_PROCESSING("campaign_processing"),
+    CAMPAIGN_PROCESSING(String.valueOf("campaign_processing")),
     
-    CAMPAIGN_SENT("campaign_sent"),
+    CAMPAIGN_SENT(String.valueOf("campaign_sent")),
     
-    DOCUMENT_NOT_FOUND("document_not_found"),
+    DOCUMENT_NOT_FOUND(String.valueOf("document_not_found")),
     
-    RESELLER_PERMISSION_DENIED("reseller_permission_denied"),
+    RESELLER_PERMISSION_DENIED(String.valueOf("reseller_permission_denied")),
     
-    NOT_ENOUGH_CREDITS("not_enough_credits"),
+    NOT_ENOUGH_CREDITS(String.valueOf("not_enough_credits")),
     
-    PERMISSION_DENIED("permission_denied"),
+    PERMISSION_DENIED(String.valueOf("permission_denied")),
     
-    DUPLICATE_PARAMETER("duplicate_parameter"),
+    DUPLICATE_PARAMETER(String.valueOf("duplicate_parameter")),
     
-    DUPLICATE_REQUEST("duplicate_request"),
+    DUPLICATE_REQUEST(String.valueOf("duplicate_request")),
     
-    METHOD_NOT_ALLOWED("method_not_allowed"),
+    METHOD_NOT_ALLOWED(String.valueOf("method_not_allowed")),
     
-    UNAUTHORIZED("unauthorized"),
+    UNAUTHORIZED(String.valueOf("unauthorized")),
     
-    ACCOUNT_UNDER_VALIDATION("account_under_validation"),
+    ACCOUNT_UNDER_VALIDATION(String.valueOf("account_under_validation")),
     
-    NOT_ACCEPTABLE("not_acceptable"),
+    NOT_ACCEPTABLE(String.valueOf("not_acceptable")),
     
-    BAD_REQUEST("bad_request");
+    BAD_REQUEST(String.valueOf("bad_request"));
 
     private String value;
 
@@ -99,15 +99,17 @@ public class ErrorModel {
   }
 
   public static final String JSON_PROPERTY_CODE = "code";
+  @jakarta.annotation.Nonnull
   private CodeEnum code;
 
   public static final String JSON_PROPERTY_MESSAGE = "message";
+  @jakarta.annotation.Nonnull
   private String message;
 
   public ErrorModel() {
   }
 
-  public ErrorModel code(CodeEnum code) {
+  public ErrorModel code(@jakarta.annotation.Nonnull CodeEnum code) {
     
     this.code = code;
     return this;
@@ -128,11 +130,11 @@ public class ErrorModel {
 
   @JsonProperty(JSON_PROPERTY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCode(CodeEnum code) {
+  public void setCode(@jakarta.annotation.Nonnull CodeEnum code) {
     this.code = code;
   }
 
-  public ErrorModel message(String message) {
+  public ErrorModel message(@jakarta.annotation.Nonnull String message) {
     
     this.message = message;
     return this;
@@ -153,7 +155,7 @@ public class ErrorModel {
 
   @JsonProperty(JSON_PROPERTY_MESSAGE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMessage(String message) {
+  public void setMessage(@jakarta.annotation.Nonnull String message) {
     this.message = message;
   }
 

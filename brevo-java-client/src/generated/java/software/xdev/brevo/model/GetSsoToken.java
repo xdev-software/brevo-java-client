@@ -35,12 +35,13 @@ import java.util.StringJoiner;
 @JsonTypeName("getSsoToken")
 public class GetSsoToken {
   public static final String JSON_PROPERTY_TOKEN = "token";
+  @jakarta.annotation.Nonnull
   private String token;
 
   public GetSsoToken() {
   }
 
-  public GetSsoToken token(String token) {
+  public GetSsoToken token(@jakarta.annotation.Nonnull String token) {
     
     this.token = token;
     return this;
@@ -61,7 +62,7 @@ public class GetSsoToken {
 
   @JsonProperty(JSON_PROPERTY_TOKEN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setToken(String token) {
+  public void setToken(@jakarta.annotation.Nonnull String token) {
     this.token = token;
   }
 

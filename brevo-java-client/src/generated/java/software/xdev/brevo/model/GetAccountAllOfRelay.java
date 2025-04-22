@@ -37,15 +37,17 @@ import java.util.StringJoiner;
 @JsonTypeName("getAccount_allOf_relay")
 public class GetAccountAllOfRelay {
   public static final String JSON_PROPERTY_ENABLED = "enabled";
+  @jakarta.annotation.Nonnull
   private Boolean enabled;
 
   public static final String JSON_PROPERTY_DATA = "data";
+  @jakarta.annotation.Nonnull
   private GetAccountAllOfRelayData data;
 
   public GetAccountAllOfRelay() {
   }
 
-  public GetAccountAllOfRelay enabled(Boolean enabled) {
+  public GetAccountAllOfRelay enabled(@jakarta.annotation.Nonnull Boolean enabled) {
     
     this.enabled = enabled;
     return this;
@@ -66,11 +68,11 @@ public class GetAccountAllOfRelay {
 
   @JsonProperty(JSON_PROPERTY_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEnabled(Boolean enabled) {
+  public void setEnabled(@jakarta.annotation.Nonnull Boolean enabled) {
     this.enabled = enabled;
   }
 
-  public GetAccountAllOfRelay data(GetAccountAllOfRelayData data) {
+  public GetAccountAllOfRelay data(@jakarta.annotation.Nonnull GetAccountAllOfRelayData data) {
     
     this.data = data;
     return this;
@@ -91,7 +93,7 @@ public class GetAccountAllOfRelay {
 
   @JsonProperty(JSON_PROPERTY_DATA)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setData(GetAccountAllOfRelayData data) {
+  public void setData(@jakarta.annotation.Nonnull GetAccountAllOfRelayData data) {
     this.data = data;
   }
 

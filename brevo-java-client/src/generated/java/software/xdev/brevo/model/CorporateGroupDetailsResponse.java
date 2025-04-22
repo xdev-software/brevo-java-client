@@ -43,18 +43,21 @@ import java.util.StringJoiner;
 @JsonTypeName("corporateGroupDetailsResponse")
 public class CorporateGroupDetailsResponse {
   public static final String JSON_PROPERTY_GROUP = "group";
+  @jakarta.annotation.Nullable
   private CorporateGroupDetailsResponseGroup group;
 
   public static final String JSON_PROPERTY_SUB_ACCOUNTS = "sub-accounts";
+  @jakarta.annotation.Nullable
   private List<CorporateGroupDetailsResponseSubAccountsInner> subAccounts = new ArrayList<>();
 
   public static final String JSON_PROPERTY_USERS = "users";
+  @jakarta.annotation.Nullable
   private List<CorporateGroupDetailsResponseUsersInner> users = new ArrayList<>();
 
   public CorporateGroupDetailsResponse() {
   }
 
-  public CorporateGroupDetailsResponse group(CorporateGroupDetailsResponseGroup group) {
+  public CorporateGroupDetailsResponse group(@jakarta.annotation.Nullable CorporateGroupDetailsResponseGroup group) {
     
     this.group = group;
     return this;
@@ -75,11 +78,11 @@ public class CorporateGroupDetailsResponse {
 
   @JsonProperty(JSON_PROPERTY_GROUP)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setGroup(CorporateGroupDetailsResponseGroup group) {
+  public void setGroup(@jakarta.annotation.Nullable CorporateGroupDetailsResponseGroup group) {
     this.group = group;
   }
 
-  public CorporateGroupDetailsResponse subAccounts(List<CorporateGroupDetailsResponseSubAccountsInner> subAccounts) {
+  public CorporateGroupDetailsResponse subAccounts(@jakarta.annotation.Nullable List<CorporateGroupDetailsResponseSubAccountsInner> subAccounts) {
     
     this.subAccounts = subAccounts;
     return this;
@@ -108,11 +111,11 @@ public class CorporateGroupDetailsResponse {
 
   @JsonProperty(JSON_PROPERTY_SUB_ACCOUNTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSubAccounts(List<CorporateGroupDetailsResponseSubAccountsInner> subAccounts) {
+  public void setSubAccounts(@jakarta.annotation.Nullable List<CorporateGroupDetailsResponseSubAccountsInner> subAccounts) {
     this.subAccounts = subAccounts;
   }
 
-  public CorporateGroupDetailsResponse users(List<CorporateGroupDetailsResponseUsersInner> users) {
+  public CorporateGroupDetailsResponse users(@jakarta.annotation.Nullable List<CorporateGroupDetailsResponseUsersInner> users) {
     
     this.users = users;
     return this;
@@ -141,7 +144,7 @@ public class CorporateGroupDetailsResponse {
 
   @JsonProperty(JSON_PROPERTY_USERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUsers(List<CorporateGroupDetailsResponseUsersInner> users) {
+  public void setUsers(@jakarta.annotation.Nullable List<CorporateGroupDetailsResponseUsersInner> users) {
     this.users = users;
   }
 

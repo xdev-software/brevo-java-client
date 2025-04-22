@@ -40,15 +40,17 @@ import java.util.StringJoiner;
 @JsonTypeName("getProcesses")
 public class GetProcesses {
   public static final String JSON_PROPERTY_PROCESSES = "processes";
+  @jakarta.annotation.Nullable
   private List<GetProcess> processes = new ArrayList<>();
 
   public static final String JSON_PROPERTY_COUNT = "count";
+  @jakarta.annotation.Nullable
   private Long count;
 
   public GetProcesses() {
   }
 
-  public GetProcesses processes(List<GetProcess> processes) {
+  public GetProcesses processes(@jakarta.annotation.Nullable List<GetProcess> processes) {
     
     this.processes = processes;
     return this;
@@ -77,11 +79,11 @@ public class GetProcesses {
 
   @JsonProperty(JSON_PROPERTY_PROCESSES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setProcesses(List<GetProcess> processes) {
+  public void setProcesses(@jakarta.annotation.Nullable List<GetProcess> processes) {
     this.processes = processes;
   }
 
-  public GetProcesses count(Long count) {
+  public GetProcesses count(@jakarta.annotation.Nullable Long count) {
     
     this.count = count;
     return this;
@@ -102,7 +104,7 @@ public class GetProcesses {
 
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCount(Long count) {
+  public void setCount(@jakarta.annotation.Nullable Long count) {
     this.count = count;
   }
 

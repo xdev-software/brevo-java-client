@@ -35,12 +35,13 @@ import java.util.StringJoiner;
 @JsonTypeName("_companies_post_200_response")
 public class CompaniesPost200Response {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nonnull
   private String id;
 
   public CompaniesPost200Response() {
   }
 
-  public CompaniesPost200Response id(String id) {
+  public CompaniesPost200Response id(@jakarta.annotation.Nonnull String id) {
     
     this.id = id;
     return this;
@@ -61,7 +62,7 @@ public class CompaniesPost200Response {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(String id) {
+  public void setId(@jakarta.annotation.Nonnull String id) {
     this.id = id;
   }
 

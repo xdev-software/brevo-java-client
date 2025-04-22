@@ -42,21 +42,24 @@ import java.util.StringJoiner;
 @JsonTypeName("sendTransacSms")
 public class SendTransacSms {
   public static final String JSON_PROPERTY_SENDER = "sender";
+  @jakarta.annotation.Nonnull
   private String sender;
 
   public static final String JSON_PROPERTY_RECIPIENT = "recipient";
+  @jakarta.annotation.Nonnull
   private String recipient;
 
   public static final String JSON_PROPERTY_CONTENT = "content";
+  @jakarta.annotation.Nonnull
   private String content;
 
   /**
    * Type of the SMS. Marketing SMS messages are those sent typically with marketing content. Transactional SMS messages are sent to individuals and are triggered in response to some action, such as a sign-up, purchase, etc.
    */
   public enum TypeEnum {
-    TRANSACTIONAL("transactional"),
+    TRANSACTIONAL(String.valueOf("transactional")),
     
-    MARKETING("marketing");
+    MARKETING(String.valueOf("marketing"));
 
     private String value;
 
@@ -86,24 +89,29 @@ public class SendTransacSms {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @jakarta.annotation.Nullable
   private TypeEnum type = TypeEnum.TRANSACTIONAL;
 
   public static final String JSON_PROPERTY_TAG = "tag";
+  @jakarta.annotation.Nullable
   private String tag;
 
   public static final String JSON_PROPERTY_WEB_URL = "webUrl";
+  @jakarta.annotation.Nullable
   private String webUrl;
 
   public static final String JSON_PROPERTY_UNICODE_ENABLED = "unicodeEnabled";
+  @jakarta.annotation.Nullable
   private Boolean unicodeEnabled = false;
 
   public static final String JSON_PROPERTY_ORGANISATION_PREFIX = "organisationPrefix";
+  @jakarta.annotation.Nullable
   private String organisationPrefix;
 
   public SendTransacSms() {
   }
 
-  public SendTransacSms sender(String sender) {
+  public SendTransacSms sender(@jakarta.annotation.Nonnull String sender) {
     
     this.sender = sender;
     return this;
@@ -124,11 +132,11 @@ public class SendTransacSms {
 
   @JsonProperty(JSON_PROPERTY_SENDER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSender(String sender) {
+  public void setSender(@jakarta.annotation.Nonnull String sender) {
     this.sender = sender;
   }
 
-  public SendTransacSms recipient(String recipient) {
+  public SendTransacSms recipient(@jakarta.annotation.Nonnull String recipient) {
     
     this.recipient = recipient;
     return this;
@@ -149,11 +157,11 @@ public class SendTransacSms {
 
   @JsonProperty(JSON_PROPERTY_RECIPIENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRecipient(String recipient) {
+  public void setRecipient(@jakarta.annotation.Nonnull String recipient) {
     this.recipient = recipient;
   }
 
-  public SendTransacSms content(String content) {
+  public SendTransacSms content(@jakarta.annotation.Nonnull String content) {
     
     this.content = content;
     return this;
@@ -174,11 +182,11 @@ public class SendTransacSms {
 
   @JsonProperty(JSON_PROPERTY_CONTENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setContent(String content) {
+  public void setContent(@jakarta.annotation.Nonnull String content) {
     this.content = content;
   }
 
-  public SendTransacSms type(TypeEnum type) {
+  public SendTransacSms type(@jakarta.annotation.Nullable TypeEnum type) {
     
     this.type = type;
     return this;
@@ -199,11 +207,11 @@ public class SendTransacSms {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setType(TypeEnum type) {
+  public void setType(@jakarta.annotation.Nullable TypeEnum type) {
     this.type = type;
   }
 
-  public SendTransacSms tag(String tag) {
+  public SendTransacSms tag(@jakarta.annotation.Nullable String tag) {
     
     this.tag = tag;
     return this;
@@ -224,11 +232,11 @@ public class SendTransacSms {
 
   @JsonProperty(JSON_PROPERTY_TAG)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setTag(String tag) {
+  public void setTag(@jakarta.annotation.Nullable String tag) {
     this.tag = tag;
   }
 
-  public SendTransacSms webUrl(String webUrl) {
+  public SendTransacSms webUrl(@jakarta.annotation.Nullable String webUrl) {
     
     this.webUrl = webUrl;
     return this;
@@ -249,11 +257,11 @@ public class SendTransacSms {
 
   @JsonProperty(JSON_PROPERTY_WEB_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setWebUrl(String webUrl) {
+  public void setWebUrl(@jakarta.annotation.Nullable String webUrl) {
     this.webUrl = webUrl;
   }
 
-  public SendTransacSms unicodeEnabled(Boolean unicodeEnabled) {
+  public SendTransacSms unicodeEnabled(@jakarta.annotation.Nullable Boolean unicodeEnabled) {
     
     this.unicodeEnabled = unicodeEnabled;
     return this;
@@ -274,11 +282,11 @@ public class SendTransacSms {
 
   @JsonProperty(JSON_PROPERTY_UNICODE_ENABLED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUnicodeEnabled(Boolean unicodeEnabled) {
+  public void setUnicodeEnabled(@jakarta.annotation.Nullable Boolean unicodeEnabled) {
     this.unicodeEnabled = unicodeEnabled;
   }
 
-  public SendTransacSms organisationPrefix(String organisationPrefix) {
+  public SendTransacSms organisationPrefix(@jakarta.annotation.Nullable String organisationPrefix) {
     
     this.organisationPrefix = organisationPrefix;
     return this;
@@ -299,7 +307,7 @@ public class SendTransacSms {
 
   @JsonProperty(JSON_PROPERTY_ORGANISATION_PREFIX)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setOrganisationPrefix(String organisationPrefix) {
+  public void setOrganisationPrefix(@jakarta.annotation.Nullable String organisationPrefix) {
     this.organisationPrefix = organisationPrefix;
   }
 

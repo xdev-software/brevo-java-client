@@ -40,35 +40,40 @@ import java.util.StringJoiner;
 @JsonTypeName("createChild")
 public class CreateChild {
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nonnull
   private String email;
 
   public static final String JSON_PROPERTY_FIRST_NAME = "firstName";
+  @jakarta.annotation.Nonnull
   private String firstName;
 
   public static final String JSON_PROPERTY_LAST_NAME = "lastName";
+  @jakarta.annotation.Nonnull
   private String lastName;
 
   public static final String JSON_PROPERTY_COMPANY_NAME = "companyName";
+  @jakarta.annotation.Nonnull
   private String companyName;
 
   public static final String JSON_PROPERTY_PASSWORD = "password";
+  @jakarta.annotation.Nonnull
   private String password;
 
   /**
    * Language of the child account
    */
   public enum LanguageEnum {
-    FR("fr"),
+    FR(String.valueOf("fr")),
     
-    ES("es"),
+    ES(String.valueOf("es")),
     
-    PT("pt"),
+    PT(String.valueOf("pt")),
     
-    IT("it"),
+    IT(String.valueOf("it")),
     
-    DE("de"),
+    DE(String.valueOf("de")),
     
-    EN("en");
+    EN(String.valueOf("en"));
 
     private String value;
 
@@ -98,12 +103,13 @@ public class CreateChild {
   }
 
   public static final String JSON_PROPERTY_LANGUAGE = "language";
+  @jakarta.annotation.Nullable
   private LanguageEnum language;
 
   public CreateChild() {
   }
 
-  public CreateChild email(String email) {
+  public CreateChild email(@jakarta.annotation.Nonnull String email) {
     
     this.email = email;
     return this;
@@ -124,11 +130,11 @@ public class CreateChild {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEmail(String email) {
+  public void setEmail(@jakarta.annotation.Nonnull String email) {
     this.email = email;
   }
 
-  public CreateChild firstName(String firstName) {
+  public CreateChild firstName(@jakarta.annotation.Nonnull String firstName) {
     
     this.firstName = firstName;
     return this;
@@ -149,11 +155,11 @@ public class CreateChild {
 
   @JsonProperty(JSON_PROPERTY_FIRST_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setFirstName(String firstName) {
+  public void setFirstName(@jakarta.annotation.Nonnull String firstName) {
     this.firstName = firstName;
   }
 
-  public CreateChild lastName(String lastName) {
+  public CreateChild lastName(@jakarta.annotation.Nonnull String lastName) {
     
     this.lastName = lastName;
     return this;
@@ -174,11 +180,11 @@ public class CreateChild {
 
   @JsonProperty(JSON_PROPERTY_LAST_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setLastName(String lastName) {
+  public void setLastName(@jakarta.annotation.Nonnull String lastName) {
     this.lastName = lastName;
   }
 
-  public CreateChild companyName(String companyName) {
+  public CreateChild companyName(@jakarta.annotation.Nonnull String companyName) {
     
     this.companyName = companyName;
     return this;
@@ -199,11 +205,11 @@ public class CreateChild {
 
   @JsonProperty(JSON_PROPERTY_COMPANY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCompanyName(String companyName) {
+  public void setCompanyName(@jakarta.annotation.Nonnull String companyName) {
     this.companyName = companyName;
   }
 
-  public CreateChild password(String password) {
+  public CreateChild password(@jakarta.annotation.Nonnull String password) {
     
     this.password = password;
     return this;
@@ -224,11 +230,11 @@ public class CreateChild {
 
   @JsonProperty(JSON_PROPERTY_PASSWORD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPassword(String password) {
+  public void setPassword(@jakarta.annotation.Nonnull String password) {
     this.password = password;
   }
 
-  public CreateChild language(LanguageEnum language) {
+  public CreateChild language(@jakarta.annotation.Nullable LanguageEnum language) {
     
     this.language = language;
     return this;
@@ -249,7 +255,7 @@ public class CreateChild {
 
   @JsonProperty(JSON_PROPERTY_LANGUAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setLanguage(LanguageEnum language) {
+  public void setLanguage(@jakarta.annotation.Nullable LanguageEnum language) {
     this.language = language;
   }
 

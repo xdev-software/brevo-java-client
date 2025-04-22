@@ -40,15 +40,17 @@ import java.util.StringJoiner;
 @JsonTypeName("subAccountsResponse")
 public class SubAccountsResponse {
   public static final String JSON_PROPERTY_COUNT = "count";
+  @jakarta.annotation.Nullable
   private Integer count;
 
   public static final String JSON_PROPERTY_SUB_ACCOUNTS = "subAccounts";
+  @jakarta.annotation.Nullable
   private List<SubAccountsResponseSubAccountsInner> subAccounts = new ArrayList<>();
 
   public SubAccountsResponse() {
   }
 
-  public SubAccountsResponse count(Integer count) {
+  public SubAccountsResponse count(@jakarta.annotation.Nullable Integer count) {
     
     this.count = count;
     return this;
@@ -69,11 +71,11 @@ public class SubAccountsResponse {
 
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCount(Integer count) {
+  public void setCount(@jakarta.annotation.Nullable Integer count) {
     this.count = count;
   }
 
-  public SubAccountsResponse subAccounts(List<SubAccountsResponseSubAccountsInner> subAccounts) {
+  public SubAccountsResponse subAccounts(@jakarta.annotation.Nullable List<SubAccountsResponseSubAccountsInner> subAccounts) {
     
     this.subAccounts = subAccounts;
     return this;
@@ -102,7 +104,7 @@ public class SubAccountsResponse {
 
   @JsonProperty(JSON_PROPERTY_SUB_ACCOUNTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSubAccounts(List<SubAccountsResponseSubAccountsInner> subAccounts) {
+  public void setSubAccounts(@jakarta.annotation.Nullable List<SubAccountsResponseSubAccountsInner> subAccounts) {
     this.subAccounts = subAccounts;
   }
 

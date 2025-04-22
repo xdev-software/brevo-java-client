@@ -46,33 +46,36 @@ import java.util.StringJoiner;
 @JsonTypeName("getWhatsappCampaigns_campaigns_inner")
 public class GetWhatsappCampaignsCampaignsInner {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nonnull
   private Long id;
 
   public static final String JSON_PROPERTY_CAMPAIGN_NAME = "campaignName";
+  @jakarta.annotation.Nonnull
   private String campaignName;
 
   public static final String JSON_PROPERTY_TEMPLATE_ID = "templateId";
+  @jakarta.annotation.Nonnull
   private String templateId;
 
   /**
    * Status of the WhatsApp Campaign
    */
   public enum CampaignStatusEnum {
-    DRAFT("draft"),
+    DRAFT(String.valueOf("draft")),
     
-    SCHEDULED("scheduled"),
+    SCHEDULED(String.valueOf("scheduled")),
     
-    PENDING("pending"),
+    PENDING(String.valueOf("pending")),
     
-    APPROVED("approved"),
+    APPROVED(String.valueOf("approved")),
     
-    RUNNING("running"),
+    RUNNING(String.valueOf("running")),
     
-    SUSPENDED("suspended"),
+    SUSPENDED(String.valueOf("suspended")),
     
-    REJECTED("rejected"),
+    REJECTED(String.valueOf("rejected")),
     
-    SENT("sent");
+    SENT(String.valueOf("sent"));
 
     private String value;
 
@@ -102,33 +105,41 @@ public class GetWhatsappCampaignsCampaignsInner {
   }
 
   public static final String JSON_PROPERTY_CAMPAIGN_STATUS = "campaignStatus";
+  @jakarta.annotation.Nonnull
   private CampaignStatusEnum campaignStatus;
 
   public static final String JSON_PROPERTY_SCHEDULED_AT = "scheduledAt";
+  @jakarta.annotation.Nonnull
   private String scheduledAt;
 
   public static final String JSON_PROPERTY_ERROR_REASON = "errorReason";
+  @jakarta.annotation.Nullable
   private String errorReason;
 
   public static final String JSON_PROPERTY_INVALIDATED_CONTACTS = "invalidatedContacts";
+  @jakarta.annotation.Nullable
   private Long invalidatedContacts;
 
   public static final String JSON_PROPERTY_READ_PERCENTAGE = "readPercentage";
+  @jakarta.annotation.Nullable
   private Float readPercentage;
 
   public static final String JSON_PROPERTY_STATS = "stats";
+  @jakarta.annotation.Nullable
   private WhatsappCampStats stats;
 
   public static final String JSON_PROPERTY_CREATED_AT = "createdAt";
+  @jakarta.annotation.Nonnull
   private String createdAt;
 
   public static final String JSON_PROPERTY_MODIFIED_AT = "modifiedAt";
+  @jakarta.annotation.Nonnull
   private String modifiedAt;
 
   public GetWhatsappCampaignsCampaignsInner() {
   }
 
-  public GetWhatsappCampaignsCampaignsInner id(Long id) {
+  public GetWhatsappCampaignsCampaignsInner id(@jakarta.annotation.Nonnull Long id) {
     
     this.id = id;
     return this;
@@ -149,11 +160,11 @@ public class GetWhatsappCampaignsCampaignsInner {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(Long id) {
+  public void setId(@jakarta.annotation.Nonnull Long id) {
     this.id = id;
   }
 
-  public GetWhatsappCampaignsCampaignsInner campaignName(String campaignName) {
+  public GetWhatsappCampaignsCampaignsInner campaignName(@jakarta.annotation.Nonnull String campaignName) {
     
     this.campaignName = campaignName;
     return this;
@@ -174,11 +185,11 @@ public class GetWhatsappCampaignsCampaignsInner {
 
   @JsonProperty(JSON_PROPERTY_CAMPAIGN_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCampaignName(String campaignName) {
+  public void setCampaignName(@jakarta.annotation.Nonnull String campaignName) {
     this.campaignName = campaignName;
   }
 
-  public GetWhatsappCampaignsCampaignsInner templateId(String templateId) {
+  public GetWhatsappCampaignsCampaignsInner templateId(@jakarta.annotation.Nonnull String templateId) {
     
     this.templateId = templateId;
     return this;
@@ -199,11 +210,11 @@ public class GetWhatsappCampaignsCampaignsInner {
 
   @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTemplateId(String templateId) {
+  public void setTemplateId(@jakarta.annotation.Nonnull String templateId) {
     this.templateId = templateId;
   }
 
-  public GetWhatsappCampaignsCampaignsInner campaignStatus(CampaignStatusEnum campaignStatus) {
+  public GetWhatsappCampaignsCampaignsInner campaignStatus(@jakarta.annotation.Nonnull CampaignStatusEnum campaignStatus) {
     
     this.campaignStatus = campaignStatus;
     return this;
@@ -224,11 +235,11 @@ public class GetWhatsappCampaignsCampaignsInner {
 
   @JsonProperty(JSON_PROPERTY_CAMPAIGN_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCampaignStatus(CampaignStatusEnum campaignStatus) {
+  public void setCampaignStatus(@jakarta.annotation.Nonnull CampaignStatusEnum campaignStatus) {
     this.campaignStatus = campaignStatus;
   }
 
-  public GetWhatsappCampaignsCampaignsInner scheduledAt(String scheduledAt) {
+  public GetWhatsappCampaignsCampaignsInner scheduledAt(@jakarta.annotation.Nonnull String scheduledAt) {
     
     this.scheduledAt = scheduledAt;
     return this;
@@ -249,11 +260,11 @@ public class GetWhatsappCampaignsCampaignsInner {
 
   @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setScheduledAt(String scheduledAt) {
+  public void setScheduledAt(@jakarta.annotation.Nonnull String scheduledAt) {
     this.scheduledAt = scheduledAt;
   }
 
-  public GetWhatsappCampaignsCampaignsInner errorReason(String errorReason) {
+  public GetWhatsappCampaignsCampaignsInner errorReason(@jakarta.annotation.Nullable String errorReason) {
     
     this.errorReason = errorReason;
     return this;
@@ -274,11 +285,11 @@ public class GetWhatsappCampaignsCampaignsInner {
 
   @JsonProperty(JSON_PROPERTY_ERROR_REASON)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setErrorReason(String errorReason) {
+  public void setErrorReason(@jakarta.annotation.Nullable String errorReason) {
     this.errorReason = errorReason;
   }
 
-  public GetWhatsappCampaignsCampaignsInner invalidatedContacts(Long invalidatedContacts) {
+  public GetWhatsappCampaignsCampaignsInner invalidatedContacts(@jakarta.annotation.Nullable Long invalidatedContacts) {
     
     this.invalidatedContacts = invalidatedContacts;
     return this;
@@ -299,11 +310,11 @@ public class GetWhatsappCampaignsCampaignsInner {
 
   @JsonProperty(JSON_PROPERTY_INVALIDATED_CONTACTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setInvalidatedContacts(Long invalidatedContacts) {
+  public void setInvalidatedContacts(@jakarta.annotation.Nullable Long invalidatedContacts) {
     this.invalidatedContacts = invalidatedContacts;
   }
 
-  public GetWhatsappCampaignsCampaignsInner readPercentage(Float readPercentage) {
+  public GetWhatsappCampaignsCampaignsInner readPercentage(@jakarta.annotation.Nullable Float readPercentage) {
     
     this.readPercentage = readPercentage;
     return this;
@@ -324,11 +335,11 @@ public class GetWhatsappCampaignsCampaignsInner {
 
   @JsonProperty(JSON_PROPERTY_READ_PERCENTAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setReadPercentage(Float readPercentage) {
+  public void setReadPercentage(@jakarta.annotation.Nullable Float readPercentage) {
     this.readPercentage = readPercentage;
   }
 
-  public GetWhatsappCampaignsCampaignsInner stats(WhatsappCampStats stats) {
+  public GetWhatsappCampaignsCampaignsInner stats(@jakarta.annotation.Nullable WhatsappCampStats stats) {
     
     this.stats = stats;
     return this;
@@ -349,11 +360,11 @@ public class GetWhatsappCampaignsCampaignsInner {
 
   @JsonProperty(JSON_PROPERTY_STATS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setStats(WhatsappCampStats stats) {
+  public void setStats(@jakarta.annotation.Nullable WhatsappCampStats stats) {
     this.stats = stats;
   }
 
-  public GetWhatsappCampaignsCampaignsInner createdAt(String createdAt) {
+  public GetWhatsappCampaignsCampaignsInner createdAt(@jakarta.annotation.Nonnull String createdAt) {
     
     this.createdAt = createdAt;
     return this;
@@ -374,11 +385,11 @@ public class GetWhatsappCampaignsCampaignsInner {
 
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCreatedAt(String createdAt) {
+  public void setCreatedAt(@jakarta.annotation.Nonnull String createdAt) {
     this.createdAt = createdAt;
   }
 
-  public GetWhatsappCampaignsCampaignsInner modifiedAt(String modifiedAt) {
+  public GetWhatsappCampaignsCampaignsInner modifiedAt(@jakarta.annotation.Nonnull String modifiedAt) {
     
     this.modifiedAt = modifiedAt;
     return this;
@@ -399,7 +410,7 @@ public class GetWhatsappCampaignsCampaignsInner {
 
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setModifiedAt(String modifiedAt) {
+  public void setModifiedAt(@jakarta.annotation.Nonnull String modifiedAt) {
     this.modifiedAt = modifiedAt;
   }
 

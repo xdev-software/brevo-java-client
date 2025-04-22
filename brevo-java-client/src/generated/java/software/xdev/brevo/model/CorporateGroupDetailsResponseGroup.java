@@ -37,18 +37,21 @@ import java.util.StringJoiner;
 @JsonTypeName("corporateGroupDetailsResponse_group")
 public class CorporateGroupDetailsResponseGroup {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nullable
   private String id;
 
   public static final String JSON_PROPERTY_GROUP_NAME = "groupName";
+  @jakarta.annotation.Nullable
   private String groupName;
 
   public static final String JSON_PROPERTY_CREATED_AT = "createdAt";
+  @jakarta.annotation.Nullable
   private String createdAt;
 
   public CorporateGroupDetailsResponseGroup() {
   }
 
-  public CorporateGroupDetailsResponseGroup id(String id) {
+  public CorporateGroupDetailsResponseGroup id(@jakarta.annotation.Nullable String id) {
     
     this.id = id;
     return this;
@@ -69,11 +72,11 @@ public class CorporateGroupDetailsResponseGroup {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setId(String id) {
+  public void setId(@jakarta.annotation.Nullable String id) {
     this.id = id;
   }
 
-  public CorporateGroupDetailsResponseGroup groupName(String groupName) {
+  public CorporateGroupDetailsResponseGroup groupName(@jakarta.annotation.Nullable String groupName) {
     
     this.groupName = groupName;
     return this;
@@ -94,11 +97,11 @@ public class CorporateGroupDetailsResponseGroup {
 
   @JsonProperty(JSON_PROPERTY_GROUP_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setGroupName(String groupName) {
+  public void setGroupName(@jakarta.annotation.Nullable String groupName) {
     this.groupName = groupName;
   }
 
-  public CorporateGroupDetailsResponseGroup createdAt(String createdAt) {
+  public CorporateGroupDetailsResponseGroup createdAt(@jakarta.annotation.Nullable String createdAt) {
     
     this.createdAt = createdAt;
     return this;
@@ -119,7 +122,7 @@ public class CorporateGroupDetailsResponseGroup {
 
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCreatedAt(String createdAt) {
+  public void setCreatedAt(@jakarta.annotation.Nullable String createdAt) {
     this.createdAt = createdAt;
   }
 

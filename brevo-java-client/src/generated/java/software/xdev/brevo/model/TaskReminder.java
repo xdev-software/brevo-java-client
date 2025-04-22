@@ -39,19 +39,20 @@ import java.util.StringJoiner;
 })
 public class TaskReminder {
   public static final String JSON_PROPERTY_VALUE = "value";
+  @jakarta.annotation.Nonnull
   private Integer value;
 
   /**
    * Unit of time before reminder is to be sent
    */
   public enum UnitEnum {
-    MINUTES("minutes"),
+    MINUTES(String.valueOf("minutes")),
     
-    HOURS("hours"),
+    HOURS(String.valueOf("hours")),
     
-    WEEKS("weeks"),
+    WEEKS(String.valueOf("weeks")),
     
-    DAYS("days");
+    DAYS(String.valueOf("days"));
 
     private String value;
 
@@ -81,15 +82,16 @@ public class TaskReminder {
   }
 
   public static final String JSON_PROPERTY_UNIT = "unit";
+  @jakarta.annotation.Nonnull
   private UnitEnum unit;
 
   /**
    * Gets or Sets types
    */
   public enum TypesEnum {
-    EMAIL("email"),
+    EMAIL(String.valueOf("email")),
     
-    PUSH("push");
+    PUSH(String.valueOf("push"));
 
     private String value;
 
@@ -119,12 +121,13 @@ public class TaskReminder {
   }
 
   public static final String JSON_PROPERTY_TYPES = "types";
+  @jakarta.annotation.Nonnull
   private List<TypesEnum> types = new ArrayList<>();
 
   public TaskReminder() {
   }
 
-  public TaskReminder value(Integer value) {
+  public TaskReminder value(@jakarta.annotation.Nonnull Integer value) {
     
     this.value = value;
     return this;
@@ -145,11 +148,11 @@ public class TaskReminder {
 
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setValue(Integer value) {
+  public void setValue(@jakarta.annotation.Nonnull Integer value) {
     this.value = value;
   }
 
-  public TaskReminder unit(UnitEnum unit) {
+  public TaskReminder unit(@jakarta.annotation.Nonnull UnitEnum unit) {
     
     this.unit = unit;
     return this;
@@ -170,11 +173,11 @@ public class TaskReminder {
 
   @JsonProperty(JSON_PROPERTY_UNIT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUnit(UnitEnum unit) {
+  public void setUnit(@jakarta.annotation.Nonnull UnitEnum unit) {
     this.unit = unit;
   }
 
-  public TaskReminder types(List<TypesEnum> types) {
+  public TaskReminder types(@jakarta.annotation.Nonnull List<TypesEnum> types) {
     
     this.types = types;
     return this;
@@ -203,7 +206,7 @@ public class TaskReminder {
 
   @JsonProperty(JSON_PROPERTY_TYPES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTypes(List<TypesEnum> types) {
+  public void setTypes(@jakarta.annotation.Nonnull List<TypesEnum> types) {
     this.types = types;
   }
 

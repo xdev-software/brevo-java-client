@@ -40,18 +40,21 @@ import java.util.StringJoiner;
 @JsonTypeName("updateUserResponse")
 public class UpdateUserResponse {
   public static final String JSON_PROPERTY_STATUS = "status";
+  @jakarta.annotation.Nonnull
   private String status;
 
   public static final String JSON_PROPERTY_CREDIT_NOTES = "credit_notes";
+  @jakarta.annotation.Nullable
   private List<String> creditNotes = new ArrayList<>();
 
   public static final String JSON_PROPERTY_INVOICE_ID = "invoice_id";
+  @jakarta.annotation.Nullable
   private List<String> invoiceId = new ArrayList<>();
 
   public UpdateUserResponse() {
   }
 
-  public UpdateUserResponse status(String status) {
+  public UpdateUserResponse status(@jakarta.annotation.Nonnull String status) {
     
     this.status = status;
     return this;
@@ -72,11 +75,11 @@ public class UpdateUserResponse {
 
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatus(String status) {
+  public void setStatus(@jakarta.annotation.Nonnull String status) {
     this.status = status;
   }
 
-  public UpdateUserResponse creditNotes(List<String> creditNotes) {
+  public UpdateUserResponse creditNotes(@jakarta.annotation.Nullable List<String> creditNotes) {
     
     this.creditNotes = creditNotes;
     return this;
@@ -105,11 +108,11 @@ public class UpdateUserResponse {
 
   @JsonProperty(JSON_PROPERTY_CREDIT_NOTES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCreditNotes(List<String> creditNotes) {
+  public void setCreditNotes(@jakarta.annotation.Nullable List<String> creditNotes) {
     this.creditNotes = creditNotes;
   }
 
-  public UpdateUserResponse invoiceId(List<String> invoiceId) {
+  public UpdateUserResponse invoiceId(@jakarta.annotation.Nullable List<String> invoiceId) {
     
     this.invoiceId = invoiceId;
     return this;
@@ -138,7 +141,7 @@ public class UpdateUserResponse {
 
   @JsonProperty(JSON_PROPERTY_INVOICE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setInvoiceId(List<String> invoiceId) {
+  public void setInvoiceId(@jakarta.annotation.Nullable List<String> invoiceId) {
     this.invoiceId = invoiceId;
   }
 

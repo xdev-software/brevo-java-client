@@ -35,12 +35,13 @@ import java.util.StringJoiner;
 @JsonTypeName("blockDomain")
 public class BlockDomain {
   public static final String JSON_PROPERTY_DOMAIN = "domain";
+  @jakarta.annotation.Nonnull
   private String domain;
 
   public BlockDomain() {
   }
 
-  public BlockDomain domain(String domain) {
+  public BlockDomain domain(@jakarta.annotation.Nonnull String domain) {
     
     this.domain = domain;
     return this;
@@ -61,7 +62,7 @@ public class BlockDomain {
 
   @JsonProperty(JSON_PROPERTY_DOMAIN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDomain(String domain) {
+  public void setDomain(@jakarta.annotation.Nonnull String domain) {
     this.domain = domain;
   }
 

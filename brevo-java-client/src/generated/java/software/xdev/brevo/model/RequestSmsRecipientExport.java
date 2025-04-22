@@ -36,23 +36,24 @@ import java.util.StringJoiner;
 @JsonTypeName("requestSmsRecipientExport")
 public class RequestSmsRecipientExport {
   public static final String JSON_PROPERTY_NOTIFY_U_R_L = "notifyURL";
+  @jakarta.annotation.Nullable
   private String notifyURL;
 
   /**
    * Filter the recipients based on how they interacted with the campaign
    */
   public enum RecipientsTypeEnum {
-    ALL("all"),
+    ALL(String.valueOf("all")),
     
-    DELIVERED("delivered"),
+    DELIVERED(String.valueOf("delivered")),
     
-    ANSWERED("answered"),
+    ANSWERED(String.valueOf("answered")),
     
-    SOFT_BOUNCES("softBounces"),
+    SOFT_BOUNCES(String.valueOf("softBounces")),
     
-    HARD_BOUNCES("hardBounces"),
+    HARD_BOUNCES(String.valueOf("hardBounces")),
     
-    UNSUBSCRIBED("unsubscribed");
+    UNSUBSCRIBED(String.valueOf("unsubscribed"));
 
     private String value;
 
@@ -82,12 +83,13 @@ public class RequestSmsRecipientExport {
   }
 
   public static final String JSON_PROPERTY_RECIPIENTS_TYPE = "recipientsType";
+  @jakarta.annotation.Nonnull
   private RecipientsTypeEnum recipientsType;
 
   public RequestSmsRecipientExport() {
   }
 
-  public RequestSmsRecipientExport notifyURL(String notifyURL) {
+  public RequestSmsRecipientExport notifyURL(@jakarta.annotation.Nullable String notifyURL) {
     
     this.notifyURL = notifyURL;
     return this;
@@ -108,11 +110,11 @@ public class RequestSmsRecipientExport {
 
   @JsonProperty(JSON_PROPERTY_NOTIFY_U_R_L)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setNotifyURL(String notifyURL) {
+  public void setNotifyURL(@jakarta.annotation.Nullable String notifyURL) {
     this.notifyURL = notifyURL;
   }
 
-  public RequestSmsRecipientExport recipientsType(RecipientsTypeEnum recipientsType) {
+  public RequestSmsRecipientExport recipientsType(@jakarta.annotation.Nonnull RecipientsTypeEnum recipientsType) {
     
     this.recipientsType = recipientsType;
     return this;
@@ -133,7 +135,7 @@ public class RequestSmsRecipientExport {
 
   @JsonProperty(JSON_PROPERTY_RECIPIENTS_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRecipientsType(RecipientsTypeEnum recipientsType) {
+  public void setRecipientsType(@jakarta.annotation.Nonnull RecipientsTypeEnum recipientsType) {
     this.recipientsType = recipientsType;
   }
 

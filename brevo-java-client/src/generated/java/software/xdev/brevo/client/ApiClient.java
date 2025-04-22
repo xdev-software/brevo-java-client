@@ -330,7 +330,7 @@ public class ApiClient extends JavaTimeFormatter {
    * @param userAgent User agent
    * @return API client
    */
-  public ApiClient setUserAgent(String userAgent) {
+  public final ApiClient setUserAgent(String userAgent) {
     addDefaultHeader("User-Agent", userAgent);
     return this;
   }
@@ -508,7 +508,7 @@ public class ApiClient extends JavaTimeFormatter {
    * @param value The value of the parameter.
    * @return A list of {@code Pair} objects.
    */
-  public List<Pair> parameterToPairs(String collectionFormat, String name, Collection value) {
+  public List<Pair> parameterToPairs(String collectionFormat, String name, Collection<?> value) {
     List<Pair> params = new ArrayList<Pair>();
 
     // preconditions

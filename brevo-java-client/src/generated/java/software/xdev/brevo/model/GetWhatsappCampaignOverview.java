@@ -45,30 +45,32 @@ import java.util.StringJoiner;
 @JsonTypeName("getWhatsappCampaignOverview")
 public class GetWhatsappCampaignOverview {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nonnull
   private Long id;
 
   public static final String JSON_PROPERTY_CAMPAIGN_NAME = "campaignName";
+  @jakarta.annotation.Nonnull
   private String campaignName;
 
   /**
    * Status of the WhatsApp Campaign
    */
   public enum CampaignStatusEnum {
-    DRAFT("draft"),
+    DRAFT(String.valueOf("draft")),
     
-    SCHEDULED("scheduled"),
+    SCHEDULED(String.valueOf("scheduled")),
     
-    PENDING("pending"),
+    PENDING(String.valueOf("pending")),
     
-    APPROVED("approved"),
+    APPROVED(String.valueOf("approved")),
     
-    RUNNING("running"),
+    RUNNING(String.valueOf("running")),
     
-    SUSPENDED("suspended"),
+    SUSPENDED(String.valueOf("suspended")),
     
-    REJECTED("rejected"),
+    REJECTED(String.valueOf("rejected")),
     
-    SENT("sent");
+    SENT(String.valueOf("sent"));
 
     private String value;
 
@@ -98,30 +100,37 @@ public class GetWhatsappCampaignOverview {
   }
 
   public static final String JSON_PROPERTY_CAMPAIGN_STATUS = "campaignStatus";
+  @jakarta.annotation.Nonnull
   private CampaignStatusEnum campaignStatus;
 
   public static final String JSON_PROPERTY_SCHEDULED_AT = "scheduledAt";
+  @jakarta.annotation.Nullable
   private String scheduledAt;
 
   public static final String JSON_PROPERTY_SENDER_NUMBER = "senderNumber";
+  @jakarta.annotation.Nonnull
   private String senderNumber;
 
   public static final String JSON_PROPERTY_STATS = "stats";
+  @jakarta.annotation.Nullable
   private WhatsappCampStats stats;
 
   public static final String JSON_PROPERTY_TEMPLATE = "template";
+  @jakarta.annotation.Nonnull
   private WhatsappCampTemplate template;
 
   public static final String JSON_PROPERTY_CREATED_AT = "createdAt";
+  @jakarta.annotation.Nonnull
   private String createdAt;
 
   public static final String JSON_PROPERTY_MODIFIED_AT = "modifiedAt";
+  @jakarta.annotation.Nonnull
   private String modifiedAt;
 
   public GetWhatsappCampaignOverview() {
   }
 
-  public GetWhatsappCampaignOverview id(Long id) {
+  public GetWhatsappCampaignOverview id(@jakarta.annotation.Nonnull Long id) {
     
     this.id = id;
     return this;
@@ -142,11 +151,11 @@ public class GetWhatsappCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(Long id) {
+  public void setId(@jakarta.annotation.Nonnull Long id) {
     this.id = id;
   }
 
-  public GetWhatsappCampaignOverview campaignName(String campaignName) {
+  public GetWhatsappCampaignOverview campaignName(@jakarta.annotation.Nonnull String campaignName) {
     
     this.campaignName = campaignName;
     return this;
@@ -167,11 +176,11 @@ public class GetWhatsappCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_CAMPAIGN_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCampaignName(String campaignName) {
+  public void setCampaignName(@jakarta.annotation.Nonnull String campaignName) {
     this.campaignName = campaignName;
   }
 
-  public GetWhatsappCampaignOverview campaignStatus(CampaignStatusEnum campaignStatus) {
+  public GetWhatsappCampaignOverview campaignStatus(@jakarta.annotation.Nonnull CampaignStatusEnum campaignStatus) {
     
     this.campaignStatus = campaignStatus;
     return this;
@@ -192,11 +201,11 @@ public class GetWhatsappCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_CAMPAIGN_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCampaignStatus(CampaignStatusEnum campaignStatus) {
+  public void setCampaignStatus(@jakarta.annotation.Nonnull CampaignStatusEnum campaignStatus) {
     this.campaignStatus = campaignStatus;
   }
 
-  public GetWhatsappCampaignOverview scheduledAt(String scheduledAt) {
+  public GetWhatsappCampaignOverview scheduledAt(@jakarta.annotation.Nullable String scheduledAt) {
     
     this.scheduledAt = scheduledAt;
     return this;
@@ -217,11 +226,11 @@ public class GetWhatsappCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setScheduledAt(String scheduledAt) {
+  public void setScheduledAt(@jakarta.annotation.Nullable String scheduledAt) {
     this.scheduledAt = scheduledAt;
   }
 
-  public GetWhatsappCampaignOverview senderNumber(String senderNumber) {
+  public GetWhatsappCampaignOverview senderNumber(@jakarta.annotation.Nonnull String senderNumber) {
     
     this.senderNumber = senderNumber;
     return this;
@@ -242,11 +251,11 @@ public class GetWhatsappCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_SENDER_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSenderNumber(String senderNumber) {
+  public void setSenderNumber(@jakarta.annotation.Nonnull String senderNumber) {
     this.senderNumber = senderNumber;
   }
 
-  public GetWhatsappCampaignOverview stats(WhatsappCampStats stats) {
+  public GetWhatsappCampaignOverview stats(@jakarta.annotation.Nullable WhatsappCampStats stats) {
     
     this.stats = stats;
     return this;
@@ -267,11 +276,11 @@ public class GetWhatsappCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_STATS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setStats(WhatsappCampStats stats) {
+  public void setStats(@jakarta.annotation.Nullable WhatsappCampStats stats) {
     this.stats = stats;
   }
 
-  public GetWhatsappCampaignOverview template(WhatsappCampTemplate template) {
+  public GetWhatsappCampaignOverview template(@jakarta.annotation.Nonnull WhatsappCampTemplate template) {
     
     this.template = template;
     return this;
@@ -292,11 +301,11 @@ public class GetWhatsappCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_TEMPLATE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTemplate(WhatsappCampTemplate template) {
+  public void setTemplate(@jakarta.annotation.Nonnull WhatsappCampTemplate template) {
     this.template = template;
   }
 
-  public GetWhatsappCampaignOverview createdAt(String createdAt) {
+  public GetWhatsappCampaignOverview createdAt(@jakarta.annotation.Nonnull String createdAt) {
     
     this.createdAt = createdAt;
     return this;
@@ -317,11 +326,11 @@ public class GetWhatsappCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCreatedAt(String createdAt) {
+  public void setCreatedAt(@jakarta.annotation.Nonnull String createdAt) {
     this.createdAt = createdAt;
   }
 
-  public GetWhatsappCampaignOverview modifiedAt(String modifiedAt) {
+  public GetWhatsappCampaignOverview modifiedAt(@jakarta.annotation.Nonnull String modifiedAt) {
     
     this.modifiedAt = modifiedAt;
     return this;
@@ -342,7 +351,7 @@ public class GetWhatsappCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setModifiedAt(String modifiedAt) {
+  public void setModifiedAt(@jakarta.annotation.Nonnull String modifiedAt) {
     this.modifiedAt = modifiedAt;
   }
 

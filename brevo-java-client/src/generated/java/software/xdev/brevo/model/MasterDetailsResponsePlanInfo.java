@@ -45,21 +45,24 @@ import java.util.StringJoiner;
 @JsonTypeName("masterDetailsResponse_planInfo")
 public class MasterDetailsResponsePlanInfo {
   public static final String JSON_PROPERTY_CURRENCY_CODE = "currencyCode";
+  @jakarta.annotation.Nullable
   private String currencyCode;
 
   public static final String JSON_PROPERTY_NEXT_BILLING_AT = "nextBillingAt";
+  @jakarta.annotation.Nullable
   private Long nextBillingAt;
 
   public static final String JSON_PROPERTY_PRICE = "price";
+  @jakarta.annotation.Nullable
   private BigDecimal price;
 
   /**
    * Plan period type
    */
   public enum PlanPeriodEnum {
-    MONTH("month"),
+    MONTH(String.valueOf("month")),
     
-    YEAR("year");
+    YEAR(String.valueOf("year"));
 
     private String value;
 
@@ -89,18 +92,21 @@ public class MasterDetailsResponsePlanInfo {
   }
 
   public static final String JSON_PROPERTY_PLAN_PERIOD = "planPeriod";
+  @jakarta.annotation.Nullable
   private PlanPeriodEnum planPeriod;
 
   public static final String JSON_PROPERTY_SUB_ACCOUNTS = "subAccounts";
+  @jakarta.annotation.Nullable
   private Integer subAccounts;
 
   public static final String JSON_PROPERTY_FEATURES = "features";
+  @jakarta.annotation.Nullable
   private List<MasterDetailsResponsePlanInfoFeaturesInner> features = new ArrayList<>();
 
   public MasterDetailsResponsePlanInfo() {
   }
 
-  public MasterDetailsResponsePlanInfo currencyCode(String currencyCode) {
+  public MasterDetailsResponsePlanInfo currencyCode(@jakarta.annotation.Nullable String currencyCode) {
     
     this.currencyCode = currencyCode;
     return this;
@@ -121,11 +127,11 @@ public class MasterDetailsResponsePlanInfo {
 
   @JsonProperty(JSON_PROPERTY_CURRENCY_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCurrencyCode(String currencyCode) {
+  public void setCurrencyCode(@jakarta.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
   }
 
-  public MasterDetailsResponsePlanInfo nextBillingAt(Long nextBillingAt) {
+  public MasterDetailsResponsePlanInfo nextBillingAt(@jakarta.annotation.Nullable Long nextBillingAt) {
     
     this.nextBillingAt = nextBillingAt;
     return this;
@@ -146,11 +152,11 @@ public class MasterDetailsResponsePlanInfo {
 
   @JsonProperty(JSON_PROPERTY_NEXT_BILLING_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setNextBillingAt(Long nextBillingAt) {
+  public void setNextBillingAt(@jakarta.annotation.Nullable Long nextBillingAt) {
     this.nextBillingAt = nextBillingAt;
   }
 
-  public MasterDetailsResponsePlanInfo price(BigDecimal price) {
+  public MasterDetailsResponsePlanInfo price(@jakarta.annotation.Nullable BigDecimal price) {
     
     this.price = price;
     return this;
@@ -171,11 +177,11 @@ public class MasterDetailsResponsePlanInfo {
 
   @JsonProperty(JSON_PROPERTY_PRICE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setPrice(BigDecimal price) {
+  public void setPrice(@jakarta.annotation.Nullable BigDecimal price) {
     this.price = price;
   }
 
-  public MasterDetailsResponsePlanInfo planPeriod(PlanPeriodEnum planPeriod) {
+  public MasterDetailsResponsePlanInfo planPeriod(@jakarta.annotation.Nullable PlanPeriodEnum planPeriod) {
     
     this.planPeriod = planPeriod;
     return this;
@@ -196,11 +202,11 @@ public class MasterDetailsResponsePlanInfo {
 
   @JsonProperty(JSON_PROPERTY_PLAN_PERIOD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setPlanPeriod(PlanPeriodEnum planPeriod) {
+  public void setPlanPeriod(@jakarta.annotation.Nullable PlanPeriodEnum planPeriod) {
     this.planPeriod = planPeriod;
   }
 
-  public MasterDetailsResponsePlanInfo subAccounts(Integer subAccounts) {
+  public MasterDetailsResponsePlanInfo subAccounts(@jakarta.annotation.Nullable Integer subAccounts) {
     
     this.subAccounts = subAccounts;
     return this;
@@ -221,11 +227,11 @@ public class MasterDetailsResponsePlanInfo {
 
   @JsonProperty(JSON_PROPERTY_SUB_ACCOUNTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSubAccounts(Integer subAccounts) {
+  public void setSubAccounts(@jakarta.annotation.Nullable Integer subAccounts) {
     this.subAccounts = subAccounts;
   }
 
-  public MasterDetailsResponsePlanInfo features(List<MasterDetailsResponsePlanInfoFeaturesInner> features) {
+  public MasterDetailsResponsePlanInfo features(@jakarta.annotation.Nullable List<MasterDetailsResponsePlanInfoFeaturesInner> features) {
     
     this.features = features;
     return this;
@@ -254,7 +260,7 @@ public class MasterDetailsResponsePlanInfo {
 
   @JsonProperty(JSON_PROPERTY_FEATURES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setFeatures(List<MasterDetailsResponsePlanInfoFeaturesInner> features) {
+  public void setFeatures(@jakarta.annotation.Nullable List<MasterDetailsResponsePlanInfoFeaturesInner> features) {
     this.features = features;
   }
 

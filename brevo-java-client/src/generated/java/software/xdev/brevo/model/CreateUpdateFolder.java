@@ -35,12 +35,13 @@ import java.util.StringJoiner;
 @JsonTypeName("createUpdateFolder")
 public class CreateUpdateFolder {
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nullable
   private String name;
 
   public CreateUpdateFolder() {
   }
 
-  public CreateUpdateFolder name(String name) {
+  public CreateUpdateFolder name(@jakarta.annotation.Nullable String name) {
     
     this.name = name;
     return this;
@@ -61,7 +62,7 @@ public class CreateUpdateFolder {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nullable String name) {
     this.name = name;
   }
 

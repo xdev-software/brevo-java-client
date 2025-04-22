@@ -73,7 +73,7 @@ public class InboundParsingApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/inbound/attachments/{downloadToken}"
-      .replaceAll("\\{" + "downloadToken" + "\\}", apiClient.escapeString(downloadToken.toString()));
+      .replaceAll("\\{" + "downloadToken" + "\\}", apiClient.escapeString(apiClient.parameterToString(downloadToken)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -233,7 +233,7 @@ public class InboundParsingApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/inbound/events/{uuid}"
-      .replaceAll("\\{" + "uuid" + "\\}", apiClient.escapeString(uuid.toString()));
+      .replaceAll("\\{" + "uuid" + "\\}", apiClient.escapeString(apiClient.parameterToString(uuid)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;

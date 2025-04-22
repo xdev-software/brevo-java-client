@@ -39,12 +39,13 @@ import java.util.StringJoiner;
 @JsonTypeName("getReports")
 public class GetReports {
   public static final String JSON_PROPERTY_REPORTS = "reports";
+  @jakarta.annotation.Nullable
   private List<GetReportsReportsInner> reports = new ArrayList<>();
 
   public GetReports() {
   }
 
-  public GetReports reports(List<GetReportsReportsInner> reports) {
+  public GetReports reports(@jakarta.annotation.Nullable List<GetReportsReportsInner> reports) {
     
     this.reports = reports;
     return this;
@@ -73,7 +74,7 @@ public class GetReports {
 
   @JsonProperty(JSON_PROPERTY_REPORTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setReports(List<GetReportsReportsInner> reports) {
+  public void setReports(@jakarta.annotation.Nullable List<GetReportsReportsInner> reports) {
     this.reports = reports;
   }
 

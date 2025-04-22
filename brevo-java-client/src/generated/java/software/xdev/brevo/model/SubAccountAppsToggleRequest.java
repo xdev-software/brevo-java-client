@@ -47,48 +47,61 @@ import java.util.StringJoiner;
 @JsonTypeName("subAccountAppsToggleRequest")
 public class SubAccountAppsToggleRequest {
   public static final String JSON_PROPERTY_INBOX = "inbox";
+  @jakarta.annotation.Nullable
   private Boolean inbox;
 
   public static final String JSON_PROPERTY_WHATSAPP = "whatsapp";
+  @jakarta.annotation.Nullable
   private Boolean whatsapp;
 
   public static final String JSON_PROPERTY_AUTOMATION = "automation";
+  @jakarta.annotation.Nullable
   private Boolean automation;
 
   public static final String JSON_PROPERTY_EMAIL_CAMPAIGNS = "email-campaigns";
+  @jakarta.annotation.Nullable
   private Boolean emailCampaigns;
 
   public static final String JSON_PROPERTY_SMS_CAMPAIGNS = "sms-campaigns";
+  @jakarta.annotation.Nullable
   private Boolean smsCampaigns;
 
   public static final String JSON_PROPERTY_LANDING_PAGES = "landing-pages";
+  @jakarta.annotation.Nullable
   private Boolean landingPages;
 
   public static final String JSON_PROPERTY_TRANSACTIONAL_EMAILS = "transactional-emails";
+  @jakarta.annotation.Nullable
   private Boolean transactionalEmails;
 
   public static final String JSON_PROPERTY_TRANSACTIONAL_SMS = "transactional-sms";
+  @jakarta.annotation.Nullable
   private Boolean transactionalSms;
 
   public static final String JSON_PROPERTY_FACEBOOK_ADS = "facebook-ads";
+  @jakarta.annotation.Nullable
   private Boolean facebookAds;
 
   public static final String JSON_PROPERTY_WEB_PUSH = "web-push";
+  @jakarta.annotation.Nullable
   private Boolean webPush;
 
   public static final String JSON_PROPERTY_MEETINGS = "meetings";
+  @jakarta.annotation.Nullable
   private Boolean meetings;
 
   public static final String JSON_PROPERTY_CONVERSATIONS = "conversations";
+  @jakarta.annotation.Nullable
   private Boolean conversations;
 
   public static final String JSON_PROPERTY_CRM = "crm";
+  @jakarta.annotation.Nullable
   private Boolean crm;
 
   public SubAccountAppsToggleRequest() {
   }
 
-  public SubAccountAppsToggleRequest inbox(Boolean inbox) {
+  public SubAccountAppsToggleRequest inbox(@jakarta.annotation.Nullable Boolean inbox) {
     
     this.inbox = inbox;
     return this;
@@ -109,11 +122,11 @@ public class SubAccountAppsToggleRequest {
 
   @JsonProperty(JSON_PROPERTY_INBOX)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setInbox(Boolean inbox) {
+  public void setInbox(@jakarta.annotation.Nullable Boolean inbox) {
     this.inbox = inbox;
   }
 
-  public SubAccountAppsToggleRequest whatsapp(Boolean whatsapp) {
+  public SubAccountAppsToggleRequest whatsapp(@jakarta.annotation.Nullable Boolean whatsapp) {
     
     this.whatsapp = whatsapp;
     return this;
@@ -134,11 +147,11 @@ public class SubAccountAppsToggleRequest {
 
   @JsonProperty(JSON_PROPERTY_WHATSAPP)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setWhatsapp(Boolean whatsapp) {
+  public void setWhatsapp(@jakarta.annotation.Nullable Boolean whatsapp) {
     this.whatsapp = whatsapp;
   }
 
-  public SubAccountAppsToggleRequest automation(Boolean automation) {
+  public SubAccountAppsToggleRequest automation(@jakarta.annotation.Nullable Boolean automation) {
     
     this.automation = automation;
     return this;
@@ -159,11 +172,11 @@ public class SubAccountAppsToggleRequest {
 
   @JsonProperty(JSON_PROPERTY_AUTOMATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setAutomation(Boolean automation) {
+  public void setAutomation(@jakarta.annotation.Nullable Boolean automation) {
     this.automation = automation;
   }
 
-  public SubAccountAppsToggleRequest emailCampaigns(Boolean emailCampaigns) {
+  public SubAccountAppsToggleRequest emailCampaigns(@jakarta.annotation.Nullable Boolean emailCampaigns) {
     
     this.emailCampaigns = emailCampaigns;
     return this;
@@ -184,11 +197,11 @@ public class SubAccountAppsToggleRequest {
 
   @JsonProperty(JSON_PROPERTY_EMAIL_CAMPAIGNS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEmailCampaigns(Boolean emailCampaigns) {
+  public void setEmailCampaigns(@jakarta.annotation.Nullable Boolean emailCampaigns) {
     this.emailCampaigns = emailCampaigns;
   }
 
-  public SubAccountAppsToggleRequest smsCampaigns(Boolean smsCampaigns) {
+  public SubAccountAppsToggleRequest smsCampaigns(@jakarta.annotation.Nullable Boolean smsCampaigns) {
     
     this.smsCampaigns = smsCampaigns;
     return this;
@@ -209,11 +222,11 @@ public class SubAccountAppsToggleRequest {
 
   @JsonProperty(JSON_PROPERTY_SMS_CAMPAIGNS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSmsCampaigns(Boolean smsCampaigns) {
+  public void setSmsCampaigns(@jakarta.annotation.Nullable Boolean smsCampaigns) {
     this.smsCampaigns = smsCampaigns;
   }
 
-  public SubAccountAppsToggleRequest landingPages(Boolean landingPages) {
+  public SubAccountAppsToggleRequest landingPages(@jakarta.annotation.Nullable Boolean landingPages) {
     
     this.landingPages = landingPages;
     return this;
@@ -234,11 +247,11 @@ public class SubAccountAppsToggleRequest {
 
   @JsonProperty(JSON_PROPERTY_LANDING_PAGES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setLandingPages(Boolean landingPages) {
+  public void setLandingPages(@jakarta.annotation.Nullable Boolean landingPages) {
     this.landingPages = landingPages;
   }
 
-  public SubAccountAppsToggleRequest transactionalEmails(Boolean transactionalEmails) {
+  public SubAccountAppsToggleRequest transactionalEmails(@jakarta.annotation.Nullable Boolean transactionalEmails) {
     
     this.transactionalEmails = transactionalEmails;
     return this;
@@ -259,11 +272,11 @@ public class SubAccountAppsToggleRequest {
 
   @JsonProperty(JSON_PROPERTY_TRANSACTIONAL_EMAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setTransactionalEmails(Boolean transactionalEmails) {
+  public void setTransactionalEmails(@jakarta.annotation.Nullable Boolean transactionalEmails) {
     this.transactionalEmails = transactionalEmails;
   }
 
-  public SubAccountAppsToggleRequest transactionalSms(Boolean transactionalSms) {
+  public SubAccountAppsToggleRequest transactionalSms(@jakarta.annotation.Nullable Boolean transactionalSms) {
     
     this.transactionalSms = transactionalSms;
     return this;
@@ -284,11 +297,11 @@ public class SubAccountAppsToggleRequest {
 
   @JsonProperty(JSON_PROPERTY_TRANSACTIONAL_SMS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setTransactionalSms(Boolean transactionalSms) {
+  public void setTransactionalSms(@jakarta.annotation.Nullable Boolean transactionalSms) {
     this.transactionalSms = transactionalSms;
   }
 
-  public SubAccountAppsToggleRequest facebookAds(Boolean facebookAds) {
+  public SubAccountAppsToggleRequest facebookAds(@jakarta.annotation.Nullable Boolean facebookAds) {
     
     this.facebookAds = facebookAds;
     return this;
@@ -309,11 +322,11 @@ public class SubAccountAppsToggleRequest {
 
   @JsonProperty(JSON_PROPERTY_FACEBOOK_ADS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setFacebookAds(Boolean facebookAds) {
+  public void setFacebookAds(@jakarta.annotation.Nullable Boolean facebookAds) {
     this.facebookAds = facebookAds;
   }
 
-  public SubAccountAppsToggleRequest webPush(Boolean webPush) {
+  public SubAccountAppsToggleRequest webPush(@jakarta.annotation.Nullable Boolean webPush) {
     
     this.webPush = webPush;
     return this;
@@ -334,11 +347,11 @@ public class SubAccountAppsToggleRequest {
 
   @JsonProperty(JSON_PROPERTY_WEB_PUSH)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setWebPush(Boolean webPush) {
+  public void setWebPush(@jakarta.annotation.Nullable Boolean webPush) {
     this.webPush = webPush;
   }
 
-  public SubAccountAppsToggleRequest meetings(Boolean meetings) {
+  public SubAccountAppsToggleRequest meetings(@jakarta.annotation.Nullable Boolean meetings) {
     
     this.meetings = meetings;
     return this;
@@ -359,11 +372,11 @@ public class SubAccountAppsToggleRequest {
 
   @JsonProperty(JSON_PROPERTY_MEETINGS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setMeetings(Boolean meetings) {
+  public void setMeetings(@jakarta.annotation.Nullable Boolean meetings) {
     this.meetings = meetings;
   }
 
-  public SubAccountAppsToggleRequest conversations(Boolean conversations) {
+  public SubAccountAppsToggleRequest conversations(@jakarta.annotation.Nullable Boolean conversations) {
     
     this.conversations = conversations;
     return this;
@@ -384,11 +397,11 @@ public class SubAccountAppsToggleRequest {
 
   @JsonProperty(JSON_PROPERTY_CONVERSATIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setConversations(Boolean conversations) {
+  public void setConversations(@jakarta.annotation.Nullable Boolean conversations) {
     this.conversations = conversations;
   }
 
-  public SubAccountAppsToggleRequest crm(Boolean crm) {
+  public SubAccountAppsToggleRequest crm(@jakarta.annotation.Nullable Boolean crm) {
     
     this.crm = crm;
     return this;
@@ -409,7 +422,7 @@ public class SubAccountAppsToggleRequest {
 
   @JsonProperty(JSON_PROPERTY_CRM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCrm(Boolean crm) {
+  public void setCrm(@jakarta.annotation.Nullable Boolean crm) {
     this.crm = crm;
   }
 

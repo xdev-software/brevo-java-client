@@ -35,12 +35,13 @@ import java.util.StringJoiner;
 @JsonTypeName("_conversations_messages__id__put_request")
 public class ConversationsMessagesIdPutRequest {
   public static final String JSON_PROPERTY_TEXT = "text";
+  @jakarta.annotation.Nonnull
   private String text;
 
   public ConversationsMessagesIdPutRequest() {
   }
 
-  public ConversationsMessagesIdPutRequest text(String text) {
+  public ConversationsMessagesIdPutRequest text(@jakarta.annotation.Nonnull String text) {
     
     this.text = text;
     return this;
@@ -61,7 +62,7 @@ public class ConversationsMessagesIdPutRequest {
 
   @JsonProperty(JSON_PROPERTY_TEXT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setText(String text) {
+  public void setText(@jakarta.annotation.Nonnull String text) {
     this.text = text;
   }
 

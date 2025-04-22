@@ -40,15 +40,17 @@ import java.util.StringJoiner;
 @JsonTypeName("getExtendedContactDetails_allOf_statistics_clicked")
 public class GetExtendedContactDetailsAllOfStatisticsClicked {
   public static final String JSON_PROPERTY_CAMPAIGN_ID = "campaignId";
+  @jakarta.annotation.Nonnull
   private Long campaignId;
 
   public static final String JSON_PROPERTY_LINKS = "links";
+  @jakarta.annotation.Nonnull
   private List<GetExtendedContactDetailsAllOfStatisticsLinks> links = new ArrayList<>();
 
   public GetExtendedContactDetailsAllOfStatisticsClicked() {
   }
 
-  public GetExtendedContactDetailsAllOfStatisticsClicked campaignId(Long campaignId) {
+  public GetExtendedContactDetailsAllOfStatisticsClicked campaignId(@jakarta.annotation.Nonnull Long campaignId) {
     
     this.campaignId = campaignId;
     return this;
@@ -69,11 +71,11 @@ public class GetExtendedContactDetailsAllOfStatisticsClicked {
 
   @JsonProperty(JSON_PROPERTY_CAMPAIGN_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCampaignId(Long campaignId) {
+  public void setCampaignId(@jakarta.annotation.Nonnull Long campaignId) {
     this.campaignId = campaignId;
   }
 
-  public GetExtendedContactDetailsAllOfStatisticsClicked links(List<GetExtendedContactDetailsAllOfStatisticsLinks> links) {
+  public GetExtendedContactDetailsAllOfStatisticsClicked links(@jakarta.annotation.Nonnull List<GetExtendedContactDetailsAllOfStatisticsLinks> links) {
     
     this.links = links;
     return this;
@@ -102,7 +104,7 @@ public class GetExtendedContactDetailsAllOfStatisticsClicked {
 
   @JsonProperty(JSON_PROPERTY_LINKS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setLinks(List<GetExtendedContactDetailsAllOfStatisticsLinks> links) {
+  public void setLinks(@jakarta.annotation.Nonnull List<GetExtendedContactDetailsAllOfStatisticsLinks> links) {
     this.links = links;
   }
 

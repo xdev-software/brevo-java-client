@@ -36,15 +36,17 @@ import java.util.StringJoiner;
 @JsonTypeName("getExtendedContactDetails_allOf_statistics_messagesSent")
 public class GetExtendedContactDetailsAllOfStatisticsMessagesSent {
   public static final String JSON_PROPERTY_CAMPAIGN_ID = "campaignId";
+  @jakarta.annotation.Nonnull
   private Long campaignId;
 
   public static final String JSON_PROPERTY_EVENT_TIME = "eventTime";
+  @jakarta.annotation.Nonnull
   private String eventTime;
 
   public GetExtendedContactDetailsAllOfStatisticsMessagesSent() {
   }
 
-  public GetExtendedContactDetailsAllOfStatisticsMessagesSent campaignId(Long campaignId) {
+  public GetExtendedContactDetailsAllOfStatisticsMessagesSent campaignId(@jakarta.annotation.Nonnull Long campaignId) {
     
     this.campaignId = campaignId;
     return this;
@@ -65,11 +67,11 @@ public class GetExtendedContactDetailsAllOfStatisticsMessagesSent {
 
   @JsonProperty(JSON_PROPERTY_CAMPAIGN_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCampaignId(Long campaignId) {
+  public void setCampaignId(@jakarta.annotation.Nonnull Long campaignId) {
     this.campaignId = campaignId;
   }
 
-  public GetExtendedContactDetailsAllOfStatisticsMessagesSent eventTime(String eventTime) {
+  public GetExtendedContactDetailsAllOfStatisticsMessagesSent eventTime(@jakarta.annotation.Nonnull String eventTime) {
     
     this.eventTime = eventTime;
     return this;
@@ -90,7 +92,7 @@ public class GetExtendedContactDetailsAllOfStatisticsMessagesSent {
 
   @JsonProperty(JSON_PROPERTY_EVENT_TIME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEventTime(String eventTime) {
+  public void setEventTime(@jakarta.annotation.Nonnull String eventTime) {
     this.eventTime = eventTime;
   }
 

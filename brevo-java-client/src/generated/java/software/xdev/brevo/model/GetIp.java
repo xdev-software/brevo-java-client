@@ -38,21 +38,25 @@ import java.util.StringJoiner;
 @JsonTypeName("getIp")
 public class GetIp {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nonnull
   private Long id;
 
   public static final String JSON_PROPERTY_IP = "ip";
+  @jakarta.annotation.Nonnull
   private String ip;
 
   public static final String JSON_PROPERTY_ACTIVE = "active";
+  @jakarta.annotation.Nonnull
   private Boolean active;
 
   public static final String JSON_PROPERTY_DOMAIN = "domain";
+  @jakarta.annotation.Nonnull
   private String domain;
 
   public GetIp() {
   }
 
-  public GetIp id(Long id) {
+  public GetIp id(@jakarta.annotation.Nonnull Long id) {
     
     this.id = id;
     return this;
@@ -73,11 +77,11 @@ public class GetIp {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(Long id) {
+  public void setId(@jakarta.annotation.Nonnull Long id) {
     this.id = id;
   }
 
-  public GetIp ip(String ip) {
+  public GetIp ip(@jakarta.annotation.Nonnull String ip) {
     
     this.ip = ip;
     return this;
@@ -98,11 +102,11 @@ public class GetIp {
 
   @JsonProperty(JSON_PROPERTY_IP)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIp(String ip) {
+  public void setIp(@jakarta.annotation.Nonnull String ip) {
     this.ip = ip;
   }
 
-  public GetIp active(Boolean active) {
+  public GetIp active(@jakarta.annotation.Nonnull Boolean active) {
     
     this.active = active;
     return this;
@@ -123,11 +127,11 @@ public class GetIp {
 
   @JsonProperty(JSON_PROPERTY_ACTIVE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setActive(Boolean active) {
+  public void setActive(@jakarta.annotation.Nonnull Boolean active) {
     this.active = active;
   }
 
-  public GetIp domain(String domain) {
+  public GetIp domain(@jakarta.annotation.Nonnull String domain) {
     
     this.domain = domain;
     return this;
@@ -148,7 +152,7 @@ public class GetIp {
 
   @JsonProperty(JSON_PROPERTY_DOMAIN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDomain(String domain) {
+  public void setDomain(@jakarta.annotation.Nonnull String domain) {
     this.domain = domain;
   }
 

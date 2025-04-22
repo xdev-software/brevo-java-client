@@ -36,15 +36,17 @@ import java.util.StringJoiner;
 @JsonTypeName("getChildInfo_allOf_apiKeys_v2")
 public class GetChildInfoAllOfApiKeysV2 {
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_KEY = "key";
+  @jakarta.annotation.Nonnull
   private String key;
 
   public GetChildInfoAllOfApiKeysV2() {
   }
 
-  public GetChildInfoAllOfApiKeysV2 name(String name) {
+  public GetChildInfoAllOfApiKeysV2 name(@jakarta.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
@@ -65,11 +67,11 @@ public class GetChildInfoAllOfApiKeysV2 {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
   }
 
-  public GetChildInfoAllOfApiKeysV2 key(String key) {
+  public GetChildInfoAllOfApiKeysV2 key(@jakarta.annotation.Nonnull String key) {
     
     this.key = key;
     return this;
@@ -90,7 +92,7 @@ public class GetChildInfoAllOfApiKeysV2 {
 
   @JsonProperty(JSON_PROPERTY_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setKey(String key) {
+  public void setKey(@jakarta.annotation.Nonnull String key) {
     this.key = key;
   }
 

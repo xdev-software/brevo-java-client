@@ -38,21 +38,25 @@ import java.util.StringJoiner;
 @JsonTypeName("getIpFromSender")
 public class GetIpFromSender {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nonnull
   private Long id;
 
   public static final String JSON_PROPERTY_IP = "ip";
+  @jakarta.annotation.Nonnull
   private String ip;
 
   public static final String JSON_PROPERTY_DOMAIN = "domain";
+  @jakarta.annotation.Nonnull
   private String domain;
 
   public static final String JSON_PROPERTY_WEIGHT = "weight";
+  @jakarta.annotation.Nonnull
   private Long weight;
 
   public GetIpFromSender() {
   }
 
-  public GetIpFromSender id(Long id) {
+  public GetIpFromSender id(@jakarta.annotation.Nonnull Long id) {
     
     this.id = id;
     return this;
@@ -73,11 +77,11 @@ public class GetIpFromSender {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(Long id) {
+  public void setId(@jakarta.annotation.Nonnull Long id) {
     this.id = id;
   }
 
-  public GetIpFromSender ip(String ip) {
+  public GetIpFromSender ip(@jakarta.annotation.Nonnull String ip) {
     
     this.ip = ip;
     return this;
@@ -98,11 +102,11 @@ public class GetIpFromSender {
 
   @JsonProperty(JSON_PROPERTY_IP)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIp(String ip) {
+  public void setIp(@jakarta.annotation.Nonnull String ip) {
     this.ip = ip;
   }
 
-  public GetIpFromSender domain(String domain) {
+  public GetIpFromSender domain(@jakarta.annotation.Nonnull String domain) {
     
     this.domain = domain;
     return this;
@@ -123,11 +127,11 @@ public class GetIpFromSender {
 
   @JsonProperty(JSON_PROPERTY_DOMAIN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDomain(String domain) {
+  public void setDomain(@jakarta.annotation.Nonnull String domain) {
     this.domain = domain;
   }
 
-  public GetIpFromSender weight(Long weight) {
+  public GetIpFromSender weight(@jakarta.annotation.Nonnull Long weight) {
     
     this.weight = weight;
     return this;
@@ -148,7 +152,7 @@ public class GetIpFromSender {
 
   @JsonProperty(JSON_PROPERTY_WEIGHT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setWeight(Long weight) {
+  public void setWeight(@jakarta.annotation.Nonnull Long weight) {
     this.weight = weight;
   }
 

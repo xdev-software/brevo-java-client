@@ -39,12 +39,13 @@ import java.util.StringJoiner;
 @JsonTypeName("getAttributes")
 public class GetAttributes {
   public static final String JSON_PROPERTY_ATTRIBUTES = "attributes";
+  @jakarta.annotation.Nonnull
   private List<GetAttributesAttributesInner> attributes = new ArrayList<>();
 
   public GetAttributes() {
   }
 
-  public GetAttributes attributes(List<GetAttributesAttributesInner> attributes) {
+  public GetAttributes attributes(@jakarta.annotation.Nonnull List<GetAttributesAttributesInner> attributes) {
     
     this.attributes = attributes;
     return this;
@@ -73,7 +74,7 @@ public class GetAttributes {
 
   @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAttributes(List<GetAttributesAttributesInner> attributes) {
+  public void setAttributes(@jakarta.annotation.Nonnull List<GetAttributesAttributesInner> attributes) {
     this.attributes = attributes;
   }
 

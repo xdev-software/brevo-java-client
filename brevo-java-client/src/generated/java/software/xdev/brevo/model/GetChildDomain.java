@@ -36,15 +36,17 @@ import java.util.StringJoiner;
 @JsonTypeName("getChildDomain")
 public class GetChildDomain {
   public static final String JSON_PROPERTY_DOMAIN = "domain";
+  @jakarta.annotation.Nullable
   private String domain;
 
   public static final String JSON_PROPERTY_ACTIVE = "active";
+  @jakarta.annotation.Nullable
   private Boolean active;
 
   public GetChildDomain() {
   }
 
-  public GetChildDomain domain(String domain) {
+  public GetChildDomain domain(@jakarta.annotation.Nullable String domain) {
     
     this.domain = domain;
     return this;
@@ -65,11 +67,11 @@ public class GetChildDomain {
 
   @JsonProperty(JSON_PROPERTY_DOMAIN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDomain(String domain) {
+  public void setDomain(@jakarta.annotation.Nullable String domain) {
     this.domain = domain;
   }
 
-  public GetChildDomain active(Boolean active) {
+  public GetChildDomain active(@jakarta.annotation.Nullable Boolean active) {
     
     this.active = active;
     return this;
@@ -90,7 +92,7 @@ public class GetChildDomain {
 
   @JsonProperty(JSON_PROPERTY_ACTIVE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setActive(Boolean active) {
+  public void setActive(@jakarta.annotation.Nullable Boolean active) {
     this.active = active;
   }
 

@@ -46,28 +46,32 @@ import java.util.StringJoiner;
 @JsonTypeName("getScheduledEmailById_200_response")
 public class GetScheduledEmailById200Response {
   public static final String JSON_PROPERTY_COUNT = "count";
+  @jakarta.annotation.Nullable
   private Integer count;
 
   public static final String JSON_PROPERTY_BATCHES = "batches";
+  @jakarta.annotation.Nullable
   private List<GetScheduledEmailByBatchIdBatchesInner> batches = new ArrayList<>();
 
   public static final String JSON_PROPERTY_SCHEDULED_AT = "scheduledAt";
+  @jakarta.annotation.Nonnull
   private OffsetDateTime scheduledAt;
 
   public static final String JSON_PROPERTY_CREATED_AT = "createdAt";
+  @jakarta.annotation.Nonnull
   private OffsetDateTime createdAt;
 
   /**
    * Current status of the scheduled email
    */
   public enum StatusEnum {
-    IN_PROGRESS("inProgress"),
+    IN_PROGRESS(String.valueOf("inProgress")),
     
-    QUEUED("queued"),
+    QUEUED(String.valueOf("queued")),
     
-    PROCESSED("processed"),
+    PROCESSED(String.valueOf("processed")),
     
-    ERROR("error");
+    ERROR(String.valueOf("error"));
 
     private String value;
 
@@ -97,12 +101,13 @@ public class GetScheduledEmailById200Response {
   }
 
   public static final String JSON_PROPERTY_STATUS = "status";
+  @jakarta.annotation.Nonnull
   private StatusEnum status;
 
   public GetScheduledEmailById200Response() {
   }
 
-  public GetScheduledEmailById200Response count(Integer count) {
+  public GetScheduledEmailById200Response count(@jakarta.annotation.Nullable Integer count) {
     
     this.count = count;
     return this;
@@ -123,11 +128,11 @@ public class GetScheduledEmailById200Response {
 
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCount(Integer count) {
+  public void setCount(@jakarta.annotation.Nullable Integer count) {
     this.count = count;
   }
 
-  public GetScheduledEmailById200Response batches(List<GetScheduledEmailByBatchIdBatchesInner> batches) {
+  public GetScheduledEmailById200Response batches(@jakarta.annotation.Nullable List<GetScheduledEmailByBatchIdBatchesInner> batches) {
     
     this.batches = batches;
     return this;
@@ -156,11 +161,11 @@ public class GetScheduledEmailById200Response {
 
   @JsonProperty(JSON_PROPERTY_BATCHES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setBatches(List<GetScheduledEmailByBatchIdBatchesInner> batches) {
+  public void setBatches(@jakarta.annotation.Nullable List<GetScheduledEmailByBatchIdBatchesInner> batches) {
     this.batches = batches;
   }
 
-  public GetScheduledEmailById200Response scheduledAt(OffsetDateTime scheduledAt) {
+  public GetScheduledEmailById200Response scheduledAt(@jakarta.annotation.Nonnull OffsetDateTime scheduledAt) {
     
     this.scheduledAt = scheduledAt;
     return this;
@@ -181,11 +186,11 @@ public class GetScheduledEmailById200Response {
 
   @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setScheduledAt(OffsetDateTime scheduledAt) {
+  public void setScheduledAt(@jakarta.annotation.Nonnull OffsetDateTime scheduledAt) {
     this.scheduledAt = scheduledAt;
   }
 
-  public GetScheduledEmailById200Response createdAt(OffsetDateTime createdAt) {
+  public GetScheduledEmailById200Response createdAt(@jakarta.annotation.Nonnull OffsetDateTime createdAt) {
     
     this.createdAt = createdAt;
     return this;
@@ -206,11 +211,11 @@ public class GetScheduledEmailById200Response {
 
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@jakarta.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
-  public GetScheduledEmailById200Response status(StatusEnum status) {
+  public GetScheduledEmailById200Response status(@jakarta.annotation.Nonnull StatusEnum status) {
     
     this.status = status;
     return this;
@@ -231,7 +236,7 @@ public class GetScheduledEmailById200Response {
 
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatus(StatusEnum status) {
+  public void setStatus(@jakarta.annotation.Nonnull StatusEnum status) {
     this.status = status;
   }
 

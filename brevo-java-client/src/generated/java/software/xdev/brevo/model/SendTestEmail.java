@@ -38,12 +38,13 @@ import java.util.StringJoiner;
 @JsonTypeName("sendTestEmail")
 public class SendTestEmail {
   public static final String JSON_PROPERTY_EMAIL_TO = "emailTo";
+  @jakarta.annotation.Nullable
   private List<String> emailTo = new ArrayList<>();
 
   public SendTestEmail() {
   }
 
-  public SendTestEmail emailTo(List<String> emailTo) {
+  public SendTestEmail emailTo(@jakarta.annotation.Nullable List<String> emailTo) {
     
     this.emailTo = emailTo;
     return this;
@@ -72,7 +73,7 @@ public class SendTestEmail {
 
   @JsonProperty(JSON_PROPERTY_EMAIL_TO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEmailTo(List<String> emailTo) {
+  public void setEmailTo(@jakarta.annotation.Nullable List<String> emailTo) {
     this.emailTo = emailTo;
   }
 

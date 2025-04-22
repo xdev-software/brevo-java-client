@@ -37,18 +37,21 @@ import java.util.StringJoiner;
 @JsonTypeName("corporateGroupDetailsResponse_sub_accounts_inner")
 public class CorporateGroupDetailsResponseSubAccountsInner {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nullable
   private Long id;
 
   public static final String JSON_PROPERTY_COMPANY_NAME = "companyName";
+  @jakarta.annotation.Nullable
   private String companyName;
 
   public static final String JSON_PROPERTY_CREATED_AT = "createdAt";
+  @jakarta.annotation.Nullable
   private String createdAt;
 
   public CorporateGroupDetailsResponseSubAccountsInner() {
   }
 
-  public CorporateGroupDetailsResponseSubAccountsInner id(Long id) {
+  public CorporateGroupDetailsResponseSubAccountsInner id(@jakarta.annotation.Nullable Long id) {
     
     this.id = id;
     return this;
@@ -69,11 +72,11 @@ public class CorporateGroupDetailsResponseSubAccountsInner {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setId(Long id) {
+  public void setId(@jakarta.annotation.Nullable Long id) {
     this.id = id;
   }
 
-  public CorporateGroupDetailsResponseSubAccountsInner companyName(String companyName) {
+  public CorporateGroupDetailsResponseSubAccountsInner companyName(@jakarta.annotation.Nullable String companyName) {
     
     this.companyName = companyName;
     return this;
@@ -94,11 +97,11 @@ public class CorporateGroupDetailsResponseSubAccountsInner {
 
   @JsonProperty(JSON_PROPERTY_COMPANY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCompanyName(String companyName) {
+  public void setCompanyName(@jakarta.annotation.Nullable String companyName) {
     this.companyName = companyName;
   }
 
-  public CorporateGroupDetailsResponseSubAccountsInner createdAt(String createdAt) {
+  public CorporateGroupDetailsResponseSubAccountsInner createdAt(@jakarta.annotation.Nullable String createdAt) {
     
     this.createdAt = createdAt;
     return this;
@@ -119,7 +122,7 @@ public class CorporateGroupDetailsResponseSubAccountsInner {
 
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCreatedAt(String createdAt) {
+  public void setCreatedAt(@jakarta.annotation.Nullable String createdAt) {
     this.createdAt = createdAt;
   }
 

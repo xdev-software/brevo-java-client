@@ -39,21 +39,25 @@ import java.util.StringJoiner;
 @JsonTypeName("getDomainConfigurationModel")
 public class GetDomainConfigurationModel {
   public static final String JSON_PROPERTY_DOMAIN = "domain";
+  @jakarta.annotation.Nonnull
   private String domain;
 
   public static final String JSON_PROPERTY_VERIFIED = "verified";
+  @jakarta.annotation.Nonnull
   private Boolean verified;
 
   public static final String JSON_PROPERTY_AUTHENTICATED = "authenticated";
+  @jakarta.annotation.Nonnull
   private Boolean authenticated;
 
   public static final String JSON_PROPERTY_DNS_RECORDS = "dns_records";
+  @jakarta.annotation.Nonnull
   private CreateDomainModelDnsRecords dnsRecords;
 
   public GetDomainConfigurationModel() {
   }
 
-  public GetDomainConfigurationModel domain(String domain) {
+  public GetDomainConfigurationModel domain(@jakarta.annotation.Nonnull String domain) {
     
     this.domain = domain;
     return this;
@@ -74,11 +78,11 @@ public class GetDomainConfigurationModel {
 
   @JsonProperty(JSON_PROPERTY_DOMAIN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDomain(String domain) {
+  public void setDomain(@jakarta.annotation.Nonnull String domain) {
     this.domain = domain;
   }
 
-  public GetDomainConfigurationModel verified(Boolean verified) {
+  public GetDomainConfigurationModel verified(@jakarta.annotation.Nonnull Boolean verified) {
     
     this.verified = verified;
     return this;
@@ -99,11 +103,11 @@ public class GetDomainConfigurationModel {
 
   @JsonProperty(JSON_PROPERTY_VERIFIED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setVerified(Boolean verified) {
+  public void setVerified(@jakarta.annotation.Nonnull Boolean verified) {
     this.verified = verified;
   }
 
-  public GetDomainConfigurationModel authenticated(Boolean authenticated) {
+  public GetDomainConfigurationModel authenticated(@jakarta.annotation.Nonnull Boolean authenticated) {
     
     this.authenticated = authenticated;
     return this;
@@ -124,11 +128,11 @@ public class GetDomainConfigurationModel {
 
   @JsonProperty(JSON_PROPERTY_AUTHENTICATED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAuthenticated(Boolean authenticated) {
+  public void setAuthenticated(@jakarta.annotation.Nonnull Boolean authenticated) {
     this.authenticated = authenticated;
   }
 
-  public GetDomainConfigurationModel dnsRecords(CreateDomainModelDnsRecords dnsRecords) {
+  public GetDomainConfigurationModel dnsRecords(@jakarta.annotation.Nonnull CreateDomainModelDnsRecords dnsRecords) {
     
     this.dnsRecords = dnsRecords;
     return this;
@@ -149,7 +153,7 @@ public class GetDomainConfigurationModel {
 
   @JsonProperty(JSON_PROPERTY_DNS_RECORDS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDnsRecords(CreateDomainModelDnsRecords dnsRecords) {
+  public void setDnsRecords(@jakarta.annotation.Nonnull CreateDomainModelDnsRecords dnsRecords) {
     this.dnsRecords = dnsRecords;
   }
 

@@ -38,21 +38,25 @@ import java.util.StringJoiner;
 @JsonTypeName("createUpdateCategories")
 public class CreateUpdateCategories {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nonnull
   private String id;
 
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nullable
   private String name;
 
   public static final String JSON_PROPERTY_URL = "url";
+  @jakarta.annotation.Nullable
   private String url;
 
   public static final String JSON_PROPERTY_DELETED_AT = "deletedAt";
+  @jakarta.annotation.Nullable
   private String deletedAt;
 
   public CreateUpdateCategories() {
   }
 
-  public CreateUpdateCategories id(String id) {
+  public CreateUpdateCategories id(@jakarta.annotation.Nonnull String id) {
     
     this.id = id;
     return this;
@@ -73,11 +77,11 @@ public class CreateUpdateCategories {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(String id) {
+  public void setId(@jakarta.annotation.Nonnull String id) {
     this.id = id;
   }
 
-  public CreateUpdateCategories name(String name) {
+  public CreateUpdateCategories name(@jakarta.annotation.Nullable String name) {
     
     this.name = name;
     return this;
@@ -98,11 +102,11 @@ public class CreateUpdateCategories {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nullable String name) {
     this.name = name;
   }
 
-  public CreateUpdateCategories url(String url) {
+  public CreateUpdateCategories url(@jakarta.annotation.Nullable String url) {
     
     this.url = url;
     return this;
@@ -123,11 +127,11 @@ public class CreateUpdateCategories {
 
   @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUrl(String url) {
+  public void setUrl(@jakarta.annotation.Nullable String url) {
     this.url = url;
   }
 
-  public CreateUpdateCategories deletedAt(String deletedAt) {
+  public CreateUpdateCategories deletedAt(@jakarta.annotation.Nullable String deletedAt) {
     
     this.deletedAt = deletedAt;
     return this;
@@ -148,7 +152,7 @@ public class CreateUpdateCategories {
 
   @JsonProperty(JSON_PROPERTY_DELETED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDeletedAt(String deletedAt) {
+  public void setDeletedAt(@jakarta.annotation.Nullable String deletedAt) {
     this.deletedAt = deletedAt;
   }
 

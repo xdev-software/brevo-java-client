@@ -43,18 +43,21 @@ import java.util.StringJoiner;
 @JsonTypeName("removeContactFromList_request")
 public class RemoveContactFromListRequest {
   public static final String JSON_PROPERTY_EMAILS = "emails";
+  @jakarta.annotation.Nullable
   private List<String> emails = new ArrayList<>();
 
   public static final String JSON_PROPERTY_IDS = "ids";
+  @jakarta.annotation.Nullable
   private List<Long> ids = new ArrayList<>();
 
   public static final String JSON_PROPERTY_ALL = "all";
+  @jakarta.annotation.Nullable
   private Boolean all;
 
   public RemoveContactFromListRequest() {
   }
 
-  public RemoveContactFromListRequest emails(List<String> emails) {
+  public RemoveContactFromListRequest emails(@jakarta.annotation.Nullable List<String> emails) {
     
     this.emails = emails;
     return this;
@@ -83,11 +86,11 @@ public class RemoveContactFromListRequest {
 
   @JsonProperty(JSON_PROPERTY_EMAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEmails(List<String> emails) {
+  public void setEmails(@jakarta.annotation.Nullable List<String> emails) {
     this.emails = emails;
   }
 
-  public RemoveContactFromListRequest ids(List<Long> ids) {
+  public RemoveContactFromListRequest ids(@jakarta.annotation.Nullable List<Long> ids) {
     
     this.ids = ids;
     return this;
@@ -116,11 +119,11 @@ public class RemoveContactFromListRequest {
 
   @JsonProperty(JSON_PROPERTY_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setIds(List<Long> ids) {
+  public void setIds(@jakarta.annotation.Nullable List<Long> ids) {
     this.ids = ids;
   }
 
-  public RemoveContactFromListRequest all(Boolean all) {
+  public RemoveContactFromListRequest all(@jakarta.annotation.Nullable Boolean all) {
     
     this.all = all;
     return this;
@@ -141,7 +144,7 @@ public class RemoveContactFromListRequest {
 
   @JsonProperty(JSON_PROPERTY_ALL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setAll(Boolean all) {
+  public void setAll(@jakarta.annotation.Nullable Boolean all) {
     this.all = all;
   }
 

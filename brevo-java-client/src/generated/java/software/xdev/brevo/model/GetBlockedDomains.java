@@ -38,12 +38,13 @@ import java.util.StringJoiner;
 @JsonTypeName("getBlockedDomains")
 public class GetBlockedDomains {
   public static final String JSON_PROPERTY_DOMAINS = "domains";
+  @jakarta.annotation.Nonnull
   private List<String> domains = new ArrayList<>();
 
   public GetBlockedDomains() {
   }
 
-  public GetBlockedDomains domains(List<String> domains) {
+  public GetBlockedDomains domains(@jakarta.annotation.Nonnull List<String> domains) {
     
     this.domains = domains;
     return this;
@@ -72,7 +73,7 @@ public class GetBlockedDomains {
 
   @JsonProperty(JSON_PROPERTY_DOMAINS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDomains(List<String> domains) {
+  public void setDomains(@jakarta.annotation.Nonnull List<String> domains) {
     this.domains = domains;
   }
 

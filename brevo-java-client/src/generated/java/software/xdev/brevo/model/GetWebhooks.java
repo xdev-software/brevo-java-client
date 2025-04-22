@@ -39,12 +39,13 @@ import java.util.StringJoiner;
 @JsonTypeName("getWebhooks")
 public class GetWebhooks {
   public static final String JSON_PROPERTY_WEBHOOKS = "webhooks";
+  @jakarta.annotation.Nonnull
   private List<GetWebhook> webhooks = new ArrayList<>();
 
   public GetWebhooks() {
   }
 
-  public GetWebhooks webhooks(List<GetWebhook> webhooks) {
+  public GetWebhooks webhooks(@jakarta.annotation.Nonnull List<GetWebhook> webhooks) {
     
     this.webhooks = webhooks;
     return this;
@@ -73,7 +74,7 @@ public class GetWebhooks {
 
   @JsonProperty(JSON_PROPERTY_WEBHOOKS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setWebhooks(List<GetWebhook> webhooks) {
+  public void setWebhooks(@jakarta.annotation.Nonnull List<GetWebhook> webhooks) {
     this.webhooks = webhooks;
   }
 

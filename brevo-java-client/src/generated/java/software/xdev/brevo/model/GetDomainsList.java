@@ -39,12 +39,13 @@ import java.util.StringJoiner;
 @JsonTypeName("getDomainsList")
 public class GetDomainsList {
   public static final String JSON_PROPERTY_DOMAINS = "domains";
+  @jakarta.annotation.Nullable
   private List<GetDomainsListDomainsInner> domains = new ArrayList<>();
 
   public GetDomainsList() {
   }
 
-  public GetDomainsList domains(List<GetDomainsListDomainsInner> domains) {
+  public GetDomainsList domains(@jakarta.annotation.Nullable List<GetDomainsListDomainsInner> domains) {
     
     this.domains = domains;
     return this;
@@ -73,7 +74,7 @@ public class GetDomainsList {
 
   @JsonProperty(JSON_PROPERTY_DOMAINS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDomains(List<GetDomainsListDomainsInner> domains) {
+  public void setDomains(@jakarta.annotation.Nullable List<GetDomainsListDomainsInner> domains) {
     this.domains = domains;
   }
 

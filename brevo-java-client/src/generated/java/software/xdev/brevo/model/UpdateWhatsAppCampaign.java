@@ -39,15 +39,16 @@ import java.util.StringJoiner;
 @JsonTypeName("updateWhatsAppCampaign")
 public class UpdateWhatsAppCampaign {
   public static final String JSON_PROPERTY_CAMPAIGN_NAME = "campaignName";
+  @jakarta.annotation.Nullable
   private String campaignName;
 
   /**
    * Status of the campaign
    */
   public enum CampaignStatusEnum {
-    SCHEDULED("scheduled"),
+    SCHEDULED(String.valueOf("scheduled")),
     
-    SUSPENDED("suspended");
+    SUSPENDED(String.valueOf("suspended"));
 
     private String value;
 
@@ -77,18 +78,21 @@ public class UpdateWhatsAppCampaign {
   }
 
   public static final String JSON_PROPERTY_CAMPAIGN_STATUS = "campaignStatus";
+  @jakarta.annotation.Nullable
   private CampaignStatusEnum campaignStatus = CampaignStatusEnum.SCHEDULED;
 
   public static final String JSON_PROPERTY_RESCHEDULE_FOR = "rescheduleFor";
+  @jakarta.annotation.Nullable
   private String rescheduleFor;
 
   public static final String JSON_PROPERTY_RECIPIENTS = "recipients";
+  @jakarta.annotation.Nullable
   private CreateWhatsAppCampaignRecipients recipients;
 
   public UpdateWhatsAppCampaign() {
   }
 
-  public UpdateWhatsAppCampaign campaignName(String campaignName) {
+  public UpdateWhatsAppCampaign campaignName(@jakarta.annotation.Nullable String campaignName) {
     
     this.campaignName = campaignName;
     return this;
@@ -109,11 +113,11 @@ public class UpdateWhatsAppCampaign {
 
   @JsonProperty(JSON_PROPERTY_CAMPAIGN_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCampaignName(String campaignName) {
+  public void setCampaignName(@jakarta.annotation.Nullable String campaignName) {
     this.campaignName = campaignName;
   }
 
-  public UpdateWhatsAppCampaign campaignStatus(CampaignStatusEnum campaignStatus) {
+  public UpdateWhatsAppCampaign campaignStatus(@jakarta.annotation.Nullable CampaignStatusEnum campaignStatus) {
     
     this.campaignStatus = campaignStatus;
     return this;
@@ -134,11 +138,11 @@ public class UpdateWhatsAppCampaign {
 
   @JsonProperty(JSON_PROPERTY_CAMPAIGN_STATUS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCampaignStatus(CampaignStatusEnum campaignStatus) {
+  public void setCampaignStatus(@jakarta.annotation.Nullable CampaignStatusEnum campaignStatus) {
     this.campaignStatus = campaignStatus;
   }
 
-  public UpdateWhatsAppCampaign rescheduleFor(String rescheduleFor) {
+  public UpdateWhatsAppCampaign rescheduleFor(@jakarta.annotation.Nullable String rescheduleFor) {
     
     this.rescheduleFor = rescheduleFor;
     return this;
@@ -159,11 +163,11 @@ public class UpdateWhatsAppCampaign {
 
   @JsonProperty(JSON_PROPERTY_RESCHEDULE_FOR)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setRescheduleFor(String rescheduleFor) {
+  public void setRescheduleFor(@jakarta.annotation.Nullable String rescheduleFor) {
     this.rescheduleFor = rescheduleFor;
   }
 
-  public UpdateWhatsAppCampaign recipients(CreateWhatsAppCampaignRecipients recipients) {
+  public UpdateWhatsAppCampaign recipients(@jakarta.annotation.Nullable CreateWhatsAppCampaignRecipients recipients) {
     
     this.recipients = recipients;
     return this;
@@ -184,7 +188,7 @@ public class UpdateWhatsAppCampaign {
 
   @JsonProperty(JSON_PROPERTY_RECIPIENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setRecipients(CreateWhatsAppCampaignRecipients recipients) {
+  public void setRecipients(@jakarta.annotation.Nullable CreateWhatsAppCampaignRecipients recipients) {
     this.recipients = recipients;
   }
 

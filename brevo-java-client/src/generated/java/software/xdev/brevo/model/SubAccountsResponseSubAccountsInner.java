@@ -38,21 +38,25 @@ import java.util.StringJoiner;
 @JsonTypeName("subAccountsResponse_subAccounts_inner")
 public class SubAccountsResponseSubAccountsInner {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nonnull
   private Long id;
 
   public static final String JSON_PROPERTY_COMPANY_NAME = "companyName";
+  @jakarta.annotation.Nonnull
   private String companyName;
 
   public static final String JSON_PROPERTY_ACTIVE = "active";
+  @jakarta.annotation.Nonnull
   private Boolean active;
 
   public static final String JSON_PROPERTY_CREATED_AT = "createdAt";
+  @jakarta.annotation.Nonnull
   private Long createdAt;
 
   public SubAccountsResponseSubAccountsInner() {
   }
 
-  public SubAccountsResponseSubAccountsInner id(Long id) {
+  public SubAccountsResponseSubAccountsInner id(@jakarta.annotation.Nonnull Long id) {
     
     this.id = id;
     return this;
@@ -73,11 +77,11 @@ public class SubAccountsResponseSubAccountsInner {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(Long id) {
+  public void setId(@jakarta.annotation.Nonnull Long id) {
     this.id = id;
   }
 
-  public SubAccountsResponseSubAccountsInner companyName(String companyName) {
+  public SubAccountsResponseSubAccountsInner companyName(@jakarta.annotation.Nonnull String companyName) {
     
     this.companyName = companyName;
     return this;
@@ -98,11 +102,11 @@ public class SubAccountsResponseSubAccountsInner {
 
   @JsonProperty(JSON_PROPERTY_COMPANY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCompanyName(String companyName) {
+  public void setCompanyName(@jakarta.annotation.Nonnull String companyName) {
     this.companyName = companyName;
   }
 
-  public SubAccountsResponseSubAccountsInner active(Boolean active) {
+  public SubAccountsResponseSubAccountsInner active(@jakarta.annotation.Nonnull Boolean active) {
     
     this.active = active;
     return this;
@@ -123,11 +127,11 @@ public class SubAccountsResponseSubAccountsInner {
 
   @JsonProperty(JSON_PROPERTY_ACTIVE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setActive(Boolean active) {
+  public void setActive(@jakarta.annotation.Nonnull Boolean active) {
     this.active = active;
   }
 
-  public SubAccountsResponseSubAccountsInner createdAt(Long createdAt) {
+  public SubAccountsResponseSubAccountsInner createdAt(@jakarta.annotation.Nonnull Long createdAt) {
     
     this.createdAt = createdAt;
     return this;
@@ -148,7 +152,7 @@ public class SubAccountsResponseSubAccountsInner {
 
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCreatedAt(Long createdAt) {
+  public void setCreatedAt(@jakarta.annotation.Nonnull Long createdAt) {
     this.createdAt = createdAt;
   }
 

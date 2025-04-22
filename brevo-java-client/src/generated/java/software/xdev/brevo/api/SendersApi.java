@@ -144,7 +144,7 @@ public class SendersApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/senders/{senderId}"
-      .replaceAll("\\{" + "senderId" + "\\}", apiClient.escapeString(senderId.toString()));
+      .replaceAll("\\{" + "senderId" + "\\}", apiClient.escapeString(apiClient.parameterToString(senderId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -285,7 +285,7 @@ public class SendersApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/senders/{senderId}/ips"
-      .replaceAll("\\{" + "senderId" + "\\}", apiClient.escapeString(senderId.toString()));
+      .replaceAll("\\{" + "senderId" + "\\}", apiClient.escapeString(apiClient.parameterToString(senderId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -433,7 +433,7 @@ public class SendersApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/senders/{senderId}"
-      .replaceAll("\\{" + "senderId" + "\\}", apiClient.escapeString(senderId.toString()));
+      .replaceAll("\\{" + "senderId" + "\\}", apiClient.escapeString(apiClient.parameterToString(senderId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -507,7 +507,7 @@ public class SendersApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/senders/{senderId}/validate"
-      .replaceAll("\\{" + "senderId" + "\\}", apiClient.escapeString(senderId.toString()));
+      .replaceAll("\\{" + "senderId" + "\\}", apiClient.escapeString(apiClient.parameterToString(senderId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;

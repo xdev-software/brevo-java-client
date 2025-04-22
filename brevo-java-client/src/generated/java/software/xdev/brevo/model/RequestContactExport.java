@@ -41,18 +41,21 @@ import java.util.StringJoiner;
 @JsonTypeName("requestContactExport")
 public class RequestContactExport {
   public static final String JSON_PROPERTY_EXPORT_ATTRIBUTES = "exportAttributes";
+  @jakarta.annotation.Nullable
   private List<String> exportAttributes = new ArrayList<>();
 
   public static final String JSON_PROPERTY_CUSTOM_CONTACT_FILTER = "customContactFilter";
+  @jakarta.annotation.Nonnull
   private RequestContactExportCustomContactFilter customContactFilter;
 
   public static final String JSON_PROPERTY_NOTIFY_URL = "notifyUrl";
+  @jakarta.annotation.Nullable
   private String notifyUrl;
 
   public RequestContactExport() {
   }
 
-  public RequestContactExport exportAttributes(List<String> exportAttributes) {
+  public RequestContactExport exportAttributes(@jakarta.annotation.Nullable List<String> exportAttributes) {
     
     this.exportAttributes = exportAttributes;
     return this;
@@ -81,11 +84,11 @@ public class RequestContactExport {
 
   @JsonProperty(JSON_PROPERTY_EXPORT_ATTRIBUTES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setExportAttributes(List<String> exportAttributes) {
+  public void setExportAttributes(@jakarta.annotation.Nullable List<String> exportAttributes) {
     this.exportAttributes = exportAttributes;
   }
 
-  public RequestContactExport customContactFilter(RequestContactExportCustomContactFilter customContactFilter) {
+  public RequestContactExport customContactFilter(@jakarta.annotation.Nonnull RequestContactExportCustomContactFilter customContactFilter) {
     
     this.customContactFilter = customContactFilter;
     return this;
@@ -106,11 +109,11 @@ public class RequestContactExport {
 
   @JsonProperty(JSON_PROPERTY_CUSTOM_CONTACT_FILTER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCustomContactFilter(RequestContactExportCustomContactFilter customContactFilter) {
+  public void setCustomContactFilter(@jakarta.annotation.Nonnull RequestContactExportCustomContactFilter customContactFilter) {
     this.customContactFilter = customContactFilter;
   }
 
-  public RequestContactExport notifyUrl(String notifyUrl) {
+  public RequestContactExport notifyUrl(@jakarta.annotation.Nullable String notifyUrl) {
     
     this.notifyUrl = notifyUrl;
     return this;
@@ -131,7 +134,7 @@ public class RequestContactExport {
 
   @JsonProperty(JSON_PROPERTY_NOTIFY_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setNotifyUrl(String notifyUrl) {
+  public void setNotifyUrl(@jakarta.annotation.Nullable String notifyUrl) {
     this.notifyUrl = notifyUrl;
   }
 

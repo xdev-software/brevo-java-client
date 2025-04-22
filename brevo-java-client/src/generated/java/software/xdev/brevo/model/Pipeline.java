@@ -40,18 +40,21 @@ import java.util.StringJoiner;
 })
 public class Pipeline {
   public static final String JSON_PROPERTY_PIPELINE_NAME = "pipeline_name";
+  @jakarta.annotation.Nullable
   private String pipelineName;
 
   public static final String JSON_PROPERTY_PIPELINE = "pipeline";
+  @jakarta.annotation.Nullable
   private String pipeline;
 
   public static final String JSON_PROPERTY_STAGES = "stages";
+  @jakarta.annotation.Nullable
   private List<PipelineStage> stages = new ArrayList<>();
 
   public Pipeline() {
   }
 
-  public Pipeline pipelineName(String pipelineName) {
+  public Pipeline pipelineName(@jakarta.annotation.Nullable String pipelineName) {
     
     this.pipelineName = pipelineName;
     return this;
@@ -72,11 +75,11 @@ public class Pipeline {
 
   @JsonProperty(JSON_PROPERTY_PIPELINE_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setPipelineName(String pipelineName) {
+  public void setPipelineName(@jakarta.annotation.Nullable String pipelineName) {
     this.pipelineName = pipelineName;
   }
 
-  public Pipeline pipeline(String pipeline) {
+  public Pipeline pipeline(@jakarta.annotation.Nullable String pipeline) {
     
     this.pipeline = pipeline;
     return this;
@@ -97,11 +100,11 @@ public class Pipeline {
 
   @JsonProperty(JSON_PROPERTY_PIPELINE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setPipeline(String pipeline) {
+  public void setPipeline(@jakarta.annotation.Nullable String pipeline) {
     this.pipeline = pipeline;
   }
 
-  public Pipeline stages(List<PipelineStage> stages) {
+  public Pipeline stages(@jakarta.annotation.Nullable List<PipelineStage> stages) {
     
     this.stages = stages;
     return this;
@@ -130,7 +133,7 @@ public class Pipeline {
 
   @JsonProperty(JSON_PROPERTY_STAGES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setStages(List<PipelineStage> stages) {
+  public void setStages(@jakarta.annotation.Nullable List<PipelineStage> stages) {
     this.stages = stages;
   }
 

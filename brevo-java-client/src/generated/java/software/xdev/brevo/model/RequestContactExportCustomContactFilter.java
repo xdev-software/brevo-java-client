@@ -43,13 +43,13 @@ public class RequestContactExportCustomContactFilter {
    * **Mandatory if neither actionForEmailCampaigns nor actionForSmsCampaigns is passed.** This will export the contacts on the basis of provided action applied on contacts as per the list id. * **allContacts** - Fetch the list of all contacts for a particular list. * **subscribed &amp; unsubscribed** - Fetch the list of subscribed / unsubscribed (blacklisted via any means) contacts for a particular list. * **unsubscribedPerList** - Fetch the list of contacts that are unsubscribed from a particular list only. 
    */
   public enum ActionForContactsEnum {
-    ALL_CONTACTS("allContacts"),
+    ALL_CONTACTS(String.valueOf("allContacts")),
     
-    SUBSCRIBED("subscribed"),
+    SUBSCRIBED(String.valueOf("subscribed")),
     
-    UNSUBSCRIBED("unsubscribed"),
+    UNSUBSCRIBED(String.valueOf("unsubscribed")),
     
-    UNSUBSCRIBED_PER_LIST("unsubscribedPerList");
+    UNSUBSCRIBED_PER_LIST(String.valueOf("unsubscribedPerList"));
 
     private String value;
 
@@ -79,25 +79,26 @@ public class RequestContactExportCustomContactFilter {
   }
 
   public static final String JSON_PROPERTY_ACTION_FOR_CONTACTS = "actionForContacts";
+  @jakarta.annotation.Nullable
   private ActionForContactsEnum actionForContacts;
 
   /**
    * **Mandatory if neither actionForContacts nor actionForSmsCampaigns is passed.** This will export the contacts on the basis of provided action applied on email campaigns. * **openers &amp; nonOpeners** - emailCampaignId is mandatory. Fetch the list of readers / non-readers for a particular email campaign. * **clickers &amp; nonClickers** - emailCampaignId is mandatory. Fetch the list of clickers / non-clickers for a particular email campaign. * **unsubscribed** - emailCampaignId is mandatory. Fetch the list of all unsubscribed (blacklisted via any means) contacts for a particular email campaign. * **hardBounces &amp; softBounces** - emailCampaignId is optional. Fetch the list of hard bounces / soft bounces for a particular / all email campaign(s). 
    */
   public enum ActionForEmailCampaignsEnum {
-    OPENERS("openers"),
+    OPENERS(String.valueOf("openers")),
     
-    NON_OPENERS("nonOpeners"),
+    NON_OPENERS(String.valueOf("nonOpeners")),
     
-    CLICKERS("clickers"),
+    CLICKERS(String.valueOf("clickers")),
     
-    NON_CLICKERS("nonClickers"),
+    NON_CLICKERS(String.valueOf("nonClickers")),
     
-    UNSUBSCRIBED("unsubscribed"),
+    UNSUBSCRIBED(String.valueOf("unsubscribed")),
     
-    HARD_BOUNCES("hardBounces"),
+    HARD_BOUNCES(String.valueOf("hardBounces")),
     
-    SOFT_BOUNCES("softBounces");
+    SOFT_BOUNCES(String.valueOf("softBounces"));
 
     private String value;
 
@@ -127,17 +128,18 @@ public class RequestContactExportCustomContactFilter {
   }
 
   public static final String JSON_PROPERTY_ACTION_FOR_EMAIL_CAMPAIGNS = "actionForEmailCampaigns";
+  @jakarta.annotation.Nullable
   private ActionForEmailCampaignsEnum actionForEmailCampaigns;
 
   /**
    * **Mandatory if neither actionForContacts nor actionForEmailCampaigns is passed.** This will export the contacts on the basis of provided action applied on sms campaigns. * **unsubscribed** - Fetch the list of all unsubscribed (blacklisted via any means) contacts for all / particular sms campaigns. * **hardBounces &amp; softBounces** - Fetch the list of hard bounces / soft bounces for all / particular sms campaigns. 
    */
   public enum ActionForSmsCampaignsEnum {
-    HARD_BOUNCES("hardBounces"),
+    HARD_BOUNCES(String.valueOf("hardBounces")),
     
-    SOFT_BOUNCES("softBounces"),
+    SOFT_BOUNCES(String.valueOf("softBounces")),
     
-    UNSUBSCRIBED("unsubscribed");
+    UNSUBSCRIBED(String.valueOf("unsubscribed"));
 
     private String value;
 
@@ -167,21 +169,25 @@ public class RequestContactExportCustomContactFilter {
   }
 
   public static final String JSON_PROPERTY_ACTION_FOR_SMS_CAMPAIGNS = "actionForSmsCampaigns";
+  @jakarta.annotation.Nullable
   private ActionForSmsCampaignsEnum actionForSmsCampaigns;
 
   public static final String JSON_PROPERTY_LIST_ID = "listId";
+  @jakarta.annotation.Nullable
   private Long listId;
 
   public static final String JSON_PROPERTY_EMAIL_CAMPAIGN_ID = "emailCampaignId";
+  @jakarta.annotation.Nullable
   private Long emailCampaignId;
 
   public static final String JSON_PROPERTY_SMS_CAMPAIGN_ID = "smsCampaignId";
+  @jakarta.annotation.Nullable
   private Long smsCampaignId;
 
   public RequestContactExportCustomContactFilter() {
   }
 
-  public RequestContactExportCustomContactFilter actionForContacts(ActionForContactsEnum actionForContacts) {
+  public RequestContactExportCustomContactFilter actionForContacts(@jakarta.annotation.Nullable ActionForContactsEnum actionForContacts) {
     
     this.actionForContacts = actionForContacts;
     return this;
@@ -202,11 +208,11 @@ public class RequestContactExportCustomContactFilter {
 
   @JsonProperty(JSON_PROPERTY_ACTION_FOR_CONTACTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setActionForContacts(ActionForContactsEnum actionForContacts) {
+  public void setActionForContacts(@jakarta.annotation.Nullable ActionForContactsEnum actionForContacts) {
     this.actionForContacts = actionForContacts;
   }
 
-  public RequestContactExportCustomContactFilter actionForEmailCampaigns(ActionForEmailCampaignsEnum actionForEmailCampaigns) {
+  public RequestContactExportCustomContactFilter actionForEmailCampaigns(@jakarta.annotation.Nullable ActionForEmailCampaignsEnum actionForEmailCampaigns) {
     
     this.actionForEmailCampaigns = actionForEmailCampaigns;
     return this;
@@ -227,11 +233,11 @@ public class RequestContactExportCustomContactFilter {
 
   @JsonProperty(JSON_PROPERTY_ACTION_FOR_EMAIL_CAMPAIGNS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setActionForEmailCampaigns(ActionForEmailCampaignsEnum actionForEmailCampaigns) {
+  public void setActionForEmailCampaigns(@jakarta.annotation.Nullable ActionForEmailCampaignsEnum actionForEmailCampaigns) {
     this.actionForEmailCampaigns = actionForEmailCampaigns;
   }
 
-  public RequestContactExportCustomContactFilter actionForSmsCampaigns(ActionForSmsCampaignsEnum actionForSmsCampaigns) {
+  public RequestContactExportCustomContactFilter actionForSmsCampaigns(@jakarta.annotation.Nullable ActionForSmsCampaignsEnum actionForSmsCampaigns) {
     
     this.actionForSmsCampaigns = actionForSmsCampaigns;
     return this;
@@ -252,11 +258,11 @@ public class RequestContactExportCustomContactFilter {
 
   @JsonProperty(JSON_PROPERTY_ACTION_FOR_SMS_CAMPAIGNS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setActionForSmsCampaigns(ActionForSmsCampaignsEnum actionForSmsCampaigns) {
+  public void setActionForSmsCampaigns(@jakarta.annotation.Nullable ActionForSmsCampaignsEnum actionForSmsCampaigns) {
     this.actionForSmsCampaigns = actionForSmsCampaigns;
   }
 
-  public RequestContactExportCustomContactFilter listId(Long listId) {
+  public RequestContactExportCustomContactFilter listId(@jakarta.annotation.Nullable Long listId) {
     
     this.listId = listId;
     return this;
@@ -277,11 +283,11 @@ public class RequestContactExportCustomContactFilter {
 
   @JsonProperty(JSON_PROPERTY_LIST_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setListId(Long listId) {
+  public void setListId(@jakarta.annotation.Nullable Long listId) {
     this.listId = listId;
   }
 
-  public RequestContactExportCustomContactFilter emailCampaignId(Long emailCampaignId) {
+  public RequestContactExportCustomContactFilter emailCampaignId(@jakarta.annotation.Nullable Long emailCampaignId) {
     
     this.emailCampaignId = emailCampaignId;
     return this;
@@ -302,11 +308,11 @@ public class RequestContactExportCustomContactFilter {
 
   @JsonProperty(JSON_PROPERTY_EMAIL_CAMPAIGN_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEmailCampaignId(Long emailCampaignId) {
+  public void setEmailCampaignId(@jakarta.annotation.Nullable Long emailCampaignId) {
     this.emailCampaignId = emailCampaignId;
   }
 
-  public RequestContactExportCustomContactFilter smsCampaignId(Long smsCampaignId) {
+  public RequestContactExportCustomContactFilter smsCampaignId(@jakarta.annotation.Nullable Long smsCampaignId) {
     
     this.smsCampaignId = smsCampaignId;
     return this;
@@ -327,7 +333,7 @@ public class RequestContactExportCustomContactFilter {
 
   @JsonProperty(JSON_PROPERTY_SMS_CAMPAIGN_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSmsCampaignId(Long smsCampaignId) {
+  public void setSmsCampaignId(@jakarta.annotation.Nullable Long smsCampaignId) {
     this.smsCampaignId = smsCampaignId;
   }
 

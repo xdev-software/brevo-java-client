@@ -45,48 +45,50 @@ import java.util.StringJoiner;
 @JsonTypeName("createWebhook")
 public class CreateWebhook {
   public static final String JSON_PROPERTY_URL = "url";
+  @jakarta.annotation.Nonnull
   private String url;
 
   public static final String JSON_PROPERTY_DESCRIPTION = "description";
+  @jakarta.annotation.Nullable
   private String description;
 
   /**
    * Gets or Sets events
    */
   public enum EventsEnum {
-    SENT("sent"),
+    SENT(String.valueOf("sent")),
     
-    HARD_BOUNCE("hardBounce"),
+    HARD_BOUNCE(String.valueOf("hardBounce")),
     
-    SOFT_BOUNCE("softBounce"),
+    SOFT_BOUNCE(String.valueOf("softBounce")),
     
-    BLOCKED("blocked"),
+    BLOCKED(String.valueOf("blocked")),
     
-    SPAM("spam"),
+    SPAM(String.valueOf("spam")),
     
-    DELIVERED("delivered"),
+    DELIVERED(String.valueOf("delivered")),
     
-    REQUEST("request"),
+    REQUEST(String.valueOf("request")),
     
-    CLICK("click"),
+    CLICK(String.valueOf("click")),
     
-    INVALID("invalid"),
+    INVALID(String.valueOf("invalid")),
     
-    DEFERRED("deferred"),
+    DEFERRED(String.valueOf("deferred")),
     
-    OPENED("opened"),
+    OPENED(String.valueOf("opened")),
     
-    UNIQUE_OPENED("uniqueOpened"),
+    UNIQUE_OPENED(String.valueOf("uniqueOpened")),
     
-    UNSUBSCRIBED("unsubscribed"),
+    UNSUBSCRIBED(String.valueOf("unsubscribed")),
     
-    LIST_ADDITION("listAddition"),
+    LIST_ADDITION(String.valueOf("listAddition")),
     
-    CONTACT_UPDATED("contactUpdated"),
+    CONTACT_UPDATED(String.valueOf("contactUpdated")),
     
-    CONTACT_DELETED("contactDeleted"),
+    CONTACT_DELETED(String.valueOf("contactDeleted")),
     
-    INBOUND_EMAIL_PROCESSED("inboundEmailProcessed");
+    INBOUND_EMAIL_PROCESSED(String.valueOf("inboundEmailProcessed"));
 
     private String value;
 
@@ -116,17 +118,18 @@ public class CreateWebhook {
   }
 
   public static final String JSON_PROPERTY_EVENTS = "events";
+  @jakarta.annotation.Nonnull
   private List<EventsEnum> events = new ArrayList<>();
 
   /**
    * Type of the webhook
    */
   public enum TypeEnum {
-    TRANSACTIONAL("transactional"),
+    TRANSACTIONAL(String.valueOf("transactional")),
     
-    MARKETING("marketing"),
+    MARKETING(String.valueOf("marketing")),
     
-    INBOUND("inbound");
+    INBOUND(String.valueOf("inbound"));
 
     private String value;
 
@@ -156,24 +159,29 @@ public class CreateWebhook {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @jakarta.annotation.Nullable
   private TypeEnum type = TypeEnum.TRANSACTIONAL;
 
   public static final String JSON_PROPERTY_DOMAIN = "domain";
+  @jakarta.annotation.Nullable
   private String domain;
 
   public static final String JSON_PROPERTY_BATCHED = "batched";
+  @jakarta.annotation.Nullable
   private Boolean batched;
 
   public static final String JSON_PROPERTY_AUTH = "auth";
+  @jakarta.annotation.Nullable
   private Object auth;
 
   public static final String JSON_PROPERTY_HEADERS = "headers";
+  @jakarta.annotation.Nullable
   private List<Object> headers = new ArrayList<>();
 
   public CreateWebhook() {
   }
 
-  public CreateWebhook url(String url) {
+  public CreateWebhook url(@jakarta.annotation.Nonnull String url) {
     
     this.url = url;
     return this;
@@ -194,11 +202,11 @@ public class CreateWebhook {
 
   @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUrl(String url) {
+  public void setUrl(@jakarta.annotation.Nonnull String url) {
     this.url = url;
   }
 
-  public CreateWebhook description(String description) {
+  public CreateWebhook description(@jakarta.annotation.Nullable String description) {
     
     this.description = description;
     return this;
@@ -219,11 +227,11 @@ public class CreateWebhook {
 
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDescription(String description) {
+  public void setDescription(@jakarta.annotation.Nullable String description) {
     this.description = description;
   }
 
-  public CreateWebhook events(List<EventsEnum> events) {
+  public CreateWebhook events(@jakarta.annotation.Nonnull List<EventsEnum> events) {
     
     this.events = events;
     return this;
@@ -252,11 +260,11 @@ public class CreateWebhook {
 
   @JsonProperty(JSON_PROPERTY_EVENTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEvents(List<EventsEnum> events) {
+  public void setEvents(@jakarta.annotation.Nonnull List<EventsEnum> events) {
     this.events = events;
   }
 
-  public CreateWebhook type(TypeEnum type) {
+  public CreateWebhook type(@jakarta.annotation.Nullable TypeEnum type) {
     
     this.type = type;
     return this;
@@ -277,11 +285,11 @@ public class CreateWebhook {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setType(TypeEnum type) {
+  public void setType(@jakarta.annotation.Nullable TypeEnum type) {
     this.type = type;
   }
 
-  public CreateWebhook domain(String domain) {
+  public CreateWebhook domain(@jakarta.annotation.Nullable String domain) {
     
     this.domain = domain;
     return this;
@@ -302,11 +310,11 @@ public class CreateWebhook {
 
   @JsonProperty(JSON_PROPERTY_DOMAIN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDomain(String domain) {
+  public void setDomain(@jakarta.annotation.Nullable String domain) {
     this.domain = domain;
   }
 
-  public CreateWebhook batched(Boolean batched) {
+  public CreateWebhook batched(@jakarta.annotation.Nullable Boolean batched) {
     
     this.batched = batched;
     return this;
@@ -327,11 +335,11 @@ public class CreateWebhook {
 
   @JsonProperty(JSON_PROPERTY_BATCHED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setBatched(Boolean batched) {
+  public void setBatched(@jakarta.annotation.Nullable Boolean batched) {
     this.batched = batched;
   }
 
-  public CreateWebhook auth(Object auth) {
+  public CreateWebhook auth(@jakarta.annotation.Nullable Object auth) {
     
     this.auth = auth;
     return this;
@@ -352,11 +360,11 @@ public class CreateWebhook {
 
   @JsonProperty(JSON_PROPERTY_AUTH)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setAuth(Object auth) {
+  public void setAuth(@jakarta.annotation.Nullable Object auth) {
     this.auth = auth;
   }
 
-  public CreateWebhook headers(List<Object> headers) {
+  public CreateWebhook headers(@jakarta.annotation.Nullable List<Object> headers) {
     
     this.headers = headers;
     return this;
@@ -385,7 +393,7 @@ public class CreateWebhook {
 
   @JsonProperty(JSON_PROPERTY_HEADERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setHeaders(List<Object> headers) {
+  public void setHeaders(@jakarta.annotation.Nullable List<Object> headers) {
     this.headers = headers;
   }
 

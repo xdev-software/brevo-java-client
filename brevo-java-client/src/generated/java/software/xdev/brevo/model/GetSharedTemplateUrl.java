@@ -35,12 +35,13 @@ import java.util.StringJoiner;
 @JsonTypeName("getSharedTemplateUrl")
 public class GetSharedTemplateUrl {
   public static final String JSON_PROPERTY_SHARED_URL = "sharedUrl";
+  @jakarta.annotation.Nonnull
   private String sharedUrl;
 
   public GetSharedTemplateUrl() {
   }
 
-  public GetSharedTemplateUrl sharedUrl(String sharedUrl) {
+  public GetSharedTemplateUrl sharedUrl(@jakarta.annotation.Nonnull String sharedUrl) {
     
     this.sharedUrl = sharedUrl;
     return this;
@@ -61,7 +62,7 @@ public class GetSharedTemplateUrl {
 
   @JsonProperty(JSON_PROPERTY_SHARED_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSharedUrl(String sharedUrl) {
+  public void setSharedUrl(@jakarta.annotation.Nonnull String sharedUrl) {
     this.sharedUrl = sharedUrl;
   }
 

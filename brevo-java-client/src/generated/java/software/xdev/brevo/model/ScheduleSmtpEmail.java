@@ -40,18 +40,21 @@ import java.util.StringJoiner;
 @JsonTypeName("scheduleSmtpEmail")
 public class ScheduleSmtpEmail {
   public static final String JSON_PROPERTY_MESSAGE_ID = "messageId";
+  @jakarta.annotation.Nullable
   private String messageId;
 
   public static final String JSON_PROPERTY_MESSAGE_IDS = "messageIds";
+  @jakarta.annotation.Nullable
   private List<String> messageIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_BATCH_ID = "batchId";
+  @jakarta.annotation.Nullable
   private String batchId;
 
   public ScheduleSmtpEmail() {
   }
 
-  public ScheduleSmtpEmail messageId(String messageId) {
+  public ScheduleSmtpEmail messageId(@jakarta.annotation.Nullable String messageId) {
     
     this.messageId = messageId;
     return this;
@@ -72,11 +75,11 @@ public class ScheduleSmtpEmail {
 
   @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setMessageId(String messageId) {
+  public void setMessageId(@jakarta.annotation.Nullable String messageId) {
     this.messageId = messageId;
   }
 
-  public ScheduleSmtpEmail messageIds(List<String> messageIds) {
+  public ScheduleSmtpEmail messageIds(@jakarta.annotation.Nullable List<String> messageIds) {
     
     this.messageIds = messageIds;
     return this;
@@ -105,11 +108,11 @@ public class ScheduleSmtpEmail {
 
   @JsonProperty(JSON_PROPERTY_MESSAGE_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setMessageIds(List<String> messageIds) {
+  public void setMessageIds(@jakarta.annotation.Nullable List<String> messageIds) {
     this.messageIds = messageIds;
   }
 
-  public ScheduleSmtpEmail batchId(String batchId) {
+  public ScheduleSmtpEmail batchId(@jakarta.annotation.Nullable String batchId) {
     
     this.batchId = batchId;
     return this;
@@ -130,7 +133,7 @@ public class ScheduleSmtpEmail {
 
   @JsonProperty(JSON_PROPERTY_BATCH_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setBatchId(String batchId) {
+  public void setBatchId(@jakarta.annotation.Nullable String batchId) {
     this.batchId = batchId;
   }
 

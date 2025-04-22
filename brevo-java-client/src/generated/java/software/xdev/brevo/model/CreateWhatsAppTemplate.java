@@ -41,18 +41,20 @@ import java.util.StringJoiner;
 @JsonTypeName("createWhatsAppTemplate")
 public class CreateWhatsAppTemplate {
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_LANGUAGE = "language";
+  @jakarta.annotation.Nonnull
   private String language;
 
   /**
    * Category of the template
    */
   public enum CategoryEnum {
-    MARKETING("MARKETING"),
+    MARKETING(String.valueOf("MARKETING")),
     
-    UTILITY("UTILITY");
+    UTILITY(String.valueOf("UTILITY"));
 
     private String value;
 
@@ -82,24 +84,28 @@ public class CreateWhatsAppTemplate {
   }
 
   public static final String JSON_PROPERTY_CATEGORY = "category";
+  @jakarta.annotation.Nonnull
   private CategoryEnum category;
 
   public static final String JSON_PROPERTY_MEDIA_URL = "mediaUrl";
+  @jakarta.annotation.Nullable
   private String mediaUrl;
 
   public static final String JSON_PROPERTY_BODY_TEXT = "bodyText";
+  @jakarta.annotation.Nonnull
   private String bodyText;
 
   public static final String JSON_PROPERTY_HEADER_TEXT = "headerText";
+  @jakarta.annotation.Nullable
   private String headerText;
 
   /**
    * source of the template
    */
   public enum SourceEnum {
-    AUTOMATION("Automation"),
+    AUTOMATION(String.valueOf("Automation")),
     
-    CONVERSATIONS("Conversations");
+    CONVERSATIONS(String.valueOf("Conversations"));
 
     private String value;
 
@@ -129,12 +135,13 @@ public class CreateWhatsAppTemplate {
   }
 
   public static final String JSON_PROPERTY_SOURCE = "source";
+  @jakarta.annotation.Nullable
   private SourceEnum source;
 
   public CreateWhatsAppTemplate() {
   }
 
-  public CreateWhatsAppTemplate name(String name) {
+  public CreateWhatsAppTemplate name(@jakarta.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
@@ -155,11 +162,11 @@ public class CreateWhatsAppTemplate {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
   }
 
-  public CreateWhatsAppTemplate language(String language) {
+  public CreateWhatsAppTemplate language(@jakarta.annotation.Nonnull String language) {
     
     this.language = language;
     return this;
@@ -180,11 +187,11 @@ public class CreateWhatsAppTemplate {
 
   @JsonProperty(JSON_PROPERTY_LANGUAGE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setLanguage(String language) {
+  public void setLanguage(@jakarta.annotation.Nonnull String language) {
     this.language = language;
   }
 
-  public CreateWhatsAppTemplate category(CategoryEnum category) {
+  public CreateWhatsAppTemplate category(@jakarta.annotation.Nonnull CategoryEnum category) {
     
     this.category = category;
     return this;
@@ -205,11 +212,11 @@ public class CreateWhatsAppTemplate {
 
   @JsonProperty(JSON_PROPERTY_CATEGORY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCategory(CategoryEnum category) {
+  public void setCategory(@jakarta.annotation.Nonnull CategoryEnum category) {
     this.category = category;
   }
 
-  public CreateWhatsAppTemplate mediaUrl(String mediaUrl) {
+  public CreateWhatsAppTemplate mediaUrl(@jakarta.annotation.Nullable String mediaUrl) {
     
     this.mediaUrl = mediaUrl;
     return this;
@@ -230,11 +237,11 @@ public class CreateWhatsAppTemplate {
 
   @JsonProperty(JSON_PROPERTY_MEDIA_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setMediaUrl(String mediaUrl) {
+  public void setMediaUrl(@jakarta.annotation.Nullable String mediaUrl) {
     this.mediaUrl = mediaUrl;
   }
 
-  public CreateWhatsAppTemplate bodyText(String bodyText) {
+  public CreateWhatsAppTemplate bodyText(@jakarta.annotation.Nonnull String bodyText) {
     
     this.bodyText = bodyText;
     return this;
@@ -255,11 +262,11 @@ public class CreateWhatsAppTemplate {
 
   @JsonProperty(JSON_PROPERTY_BODY_TEXT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBodyText(String bodyText) {
+  public void setBodyText(@jakarta.annotation.Nonnull String bodyText) {
     this.bodyText = bodyText;
   }
 
-  public CreateWhatsAppTemplate headerText(String headerText) {
+  public CreateWhatsAppTemplate headerText(@jakarta.annotation.Nullable String headerText) {
     
     this.headerText = headerText;
     return this;
@@ -280,11 +287,11 @@ public class CreateWhatsAppTemplate {
 
   @JsonProperty(JSON_PROPERTY_HEADER_TEXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setHeaderText(String headerText) {
+  public void setHeaderText(@jakarta.annotation.Nullable String headerText) {
     this.headerText = headerText;
   }
 
-  public CreateWhatsAppTemplate source(SourceEnum source) {
+  public CreateWhatsAppTemplate source(@jakarta.annotation.Nullable SourceEnum source) {
     
     this.source = source;
     return this;
@@ -305,7 +312,7 @@ public class CreateWhatsAppTemplate {
 
   @JsonProperty(JSON_PROPERTY_SOURCE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSource(SourceEnum source) {
+  public void setSource(@jakarta.annotation.Nullable SourceEnum source) {
     this.source = source;
   }
 

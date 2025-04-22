@@ -40,24 +40,29 @@ import java.util.StringJoiner;
 @JsonTypeName("ConversationsMessage_file")
 public class ConversationsMessageFile {
   public static final String JSON_PROPERTY_FILENAME = "filename";
+  @jakarta.annotation.Nullable
   private String filename;
 
   public static final String JSON_PROPERTY_SIZE = "size";
+  @jakarta.annotation.Nullable
   private Long size;
 
   public static final String JSON_PROPERTY_IS_IMAGE = "isImage";
+  @jakarta.annotation.Nullable
   private Boolean isImage;
 
   public static final String JSON_PROPERTY_URL = "url";
+  @jakarta.annotation.Nullable
   private String url;
 
   public static final String JSON_PROPERTY_IMAGE_INFO = "imageInfo";
+  @jakarta.annotation.Nullable
   private ConversationsMessageFileImageInfo imageInfo;
 
   public ConversationsMessageFile() {
   }
 
-  public ConversationsMessageFile filename(String filename) {
+  public ConversationsMessageFile filename(@jakarta.annotation.Nullable String filename) {
     
     this.filename = filename;
     return this;
@@ -78,11 +83,11 @@ public class ConversationsMessageFile {
 
   @JsonProperty(JSON_PROPERTY_FILENAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setFilename(String filename) {
+  public void setFilename(@jakarta.annotation.Nullable String filename) {
     this.filename = filename;
   }
 
-  public ConversationsMessageFile size(Long size) {
+  public ConversationsMessageFile size(@jakarta.annotation.Nullable Long size) {
     
     this.size = size;
     return this;
@@ -104,11 +109,11 @@ public class ConversationsMessageFile {
 
   @JsonProperty(JSON_PROPERTY_SIZE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSize(Long size) {
+  public void setSize(@jakarta.annotation.Nullable Long size) {
     this.size = size;
   }
 
-  public ConversationsMessageFile isImage(Boolean isImage) {
+  public ConversationsMessageFile isImage(@jakarta.annotation.Nullable Boolean isImage) {
     
     this.isImage = isImage;
     return this;
@@ -129,11 +134,11 @@ public class ConversationsMessageFile {
 
   @JsonProperty(JSON_PROPERTY_IS_IMAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setIsImage(Boolean isImage) {
+  public void setIsImage(@jakarta.annotation.Nullable Boolean isImage) {
     this.isImage = isImage;
   }
 
-  public ConversationsMessageFile url(String url) {
+  public ConversationsMessageFile url(@jakarta.annotation.Nullable String url) {
     
     this.url = url;
     return this;
@@ -154,11 +159,11 @@ public class ConversationsMessageFile {
 
   @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUrl(String url) {
+  public void setUrl(@jakarta.annotation.Nullable String url) {
     this.url = url;
   }
 
-  public ConversationsMessageFile imageInfo(ConversationsMessageFileImageInfo imageInfo) {
+  public ConversationsMessageFile imageInfo(@jakarta.annotation.Nullable ConversationsMessageFileImageInfo imageInfo) {
     
     this.imageInfo = imageInfo;
     return this;
@@ -179,7 +184,7 @@ public class ConversationsMessageFile {
 
   @JsonProperty(JSON_PROPERTY_IMAGE_INFO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setImageInfo(ConversationsMessageFileImageInfo imageInfo) {
+  public void setImageInfo(@jakarta.annotation.Nullable ConversationsMessageFileImageInfo imageInfo) {
     this.imageInfo = imageInfo;
   }
 

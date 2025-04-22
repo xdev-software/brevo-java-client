@@ -41,18 +41,21 @@ import java.util.StringJoiner;
 @JsonTypeName("getUserPermission")
 public class GetUserPermission {
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nonnull
   private String email;
 
   public static final String JSON_PROPERTY_STATUS = "status";
+  @jakarta.annotation.Nonnull
   private String status;
 
   public static final String JSON_PROPERTY_PRIVILEGES = "privileges";
+  @jakarta.annotation.Nonnull
   private List<GetUserPermissionPrivilegesInner> privileges = new ArrayList<>();
 
   public GetUserPermission() {
   }
 
-  public GetUserPermission email(String email) {
+  public GetUserPermission email(@jakarta.annotation.Nonnull String email) {
     
     this.email = email;
     return this;
@@ -73,11 +76,11 @@ public class GetUserPermission {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEmail(String email) {
+  public void setEmail(@jakarta.annotation.Nonnull String email) {
     this.email = email;
   }
 
-  public GetUserPermission status(String status) {
+  public GetUserPermission status(@jakarta.annotation.Nonnull String status) {
     
     this.status = status;
     return this;
@@ -98,11 +101,11 @@ public class GetUserPermission {
 
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatus(String status) {
+  public void setStatus(@jakarta.annotation.Nonnull String status) {
     this.status = status;
   }
 
-  public GetUserPermission privileges(List<GetUserPermissionPrivilegesInner> privileges) {
+  public GetUserPermission privileges(@jakarta.annotation.Nonnull List<GetUserPermissionPrivilegesInner> privileges) {
     
     this.privileges = privileges;
     return this;
@@ -131,7 +134,7 @@ public class GetUserPermission {
 
   @JsonProperty(JSON_PROPERTY_PRIVILEGES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPrivileges(List<GetUserPermissionPrivilegesInner> privileges) {
+  public void setPrivileges(@jakarta.annotation.Nonnull List<GetUserPermissionPrivilegesInner> privileges) {
     this.privileges = privileges;
   }
 

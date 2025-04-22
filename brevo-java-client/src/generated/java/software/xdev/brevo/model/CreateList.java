@@ -36,15 +36,17 @@ import java.util.StringJoiner;
 @JsonTypeName("createList")
 public class CreateList {
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_FOLDER_ID = "folderId";
+  @jakarta.annotation.Nonnull
   private Long folderId;
 
   public CreateList() {
   }
 
-  public CreateList name(String name) {
+  public CreateList name(@jakarta.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
@@ -65,11 +67,11 @@ public class CreateList {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
   }
 
-  public CreateList folderId(Long folderId) {
+  public CreateList folderId(@jakarta.annotation.Nonnull Long folderId) {
     
     this.folderId = folderId;
     return this;
@@ -90,7 +92,7 @@ public class CreateList {
 
   @JsonProperty(JSON_PROPERTY_FOLDER_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setFolderId(Long folderId) {
+  public void setFolderId(@jakarta.annotation.Nonnull Long folderId) {
     this.folderId = folderId;
   }
 

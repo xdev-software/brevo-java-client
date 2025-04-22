@@ -42,35 +42,35 @@ public class InviteuserPrivilegesInner {
    * Feature name
    */
   public enum FeatureEnum {
-    EMAIL_CAMPAIGNS("email_campaigns"),
+    EMAIL_CAMPAIGNS(String.valueOf("email_campaigns")),
     
-    SMS_CAMPAIGNS("sms_campaigns"),
+    SMS_CAMPAIGNS(String.valueOf("sms_campaigns")),
     
-    CONTACTS("contacts"),
+    CONTACTS(String.valueOf("contacts")),
     
-    TEMPLATES("templates"),
+    TEMPLATES(String.valueOf("templates")),
     
-    WORKFLOWS("workflows"),
+    WORKFLOWS(String.valueOf("workflows")),
     
-    FACEBOOK_ADS("facebook_ads"),
+    FACEBOOK_ADS(String.valueOf("facebook_ads")),
     
-    LANDING_PAGES("landing_pages"),
+    LANDING_PAGES(String.valueOf("landing_pages")),
     
-    TRANSACTIONAL_EMAILS("transactional_emails"),
+    TRANSACTIONAL_EMAILS(String.valueOf("transactional_emails")),
     
-    SMTP_API("smtp_api"),
+    SMTP_API(String.valueOf("smtp_api")),
     
-    USER_MANAGEMENT("user_management"),
+    USER_MANAGEMENT(String.valueOf("user_management")),
     
-    SALES_PLATFORM("sales_platform"),
+    SALES_PLATFORM(String.valueOf("sales_platform")),
     
-    PHONE("phone"),
+    PHONE(String.valueOf("phone")),
     
-    CONVERSATIONS("conversations"),
+    CONVERSATIONS(String.valueOf("conversations")),
     
-    SENDERS_DOMAINS_DEDICATED_IPS("senders_domains_dedicated_ips"),
+    SENDERS_DOMAINS_DEDICATED_IPS(String.valueOf("senders_domains_dedicated_ips")),
     
-    PUSH_NOTIFICATIONS("push_notifications");
+    PUSH_NOTIFICATIONS(String.valueOf("push_notifications"));
 
     private String value;
 
@@ -100,65 +100,66 @@ public class InviteuserPrivilegesInner {
   }
 
   public static final String JSON_PROPERTY_FEATURE = "feature";
+  @jakarta.annotation.Nullable
   private FeatureEnum feature;
 
   /**
    * Gets or Sets permissions
    */
   public enum PermissionsEnum {
-    CREATE_EDIT_DELETE("create_edit_delete"),
+    CREATE_EDIT_DELETE(String.valueOf("create_edit_delete")),
     
-    SEND_SCHEDULE_SUSPEND("send_schedule_suspend"),
+    SEND_SCHEDULE_SUSPEND(String.valueOf("send_schedule_suspend")),
     
-    VIEW("view"),
+    VIEW(String.valueOf("view")),
     
-    IMPORT("import"),
+    IMPORT(String.valueOf("import")),
     
-    EXPORT("export"),
+    EXPORT(String.valueOf("export")),
     
-    LIST_AND_ATTRIBUTES("list_and_attributes"),
+    LIST_AND_ATTRIBUTES(String.valueOf("list_and_attributes")),
     
-    FORMS("forms"),
+    FORMS(String.valueOf("forms")),
     
-    ACTIVATE_DEACTIVATE("activate_deactivate"),
+    ACTIVATE_DEACTIVATE(String.valueOf("activate_deactivate")),
     
-    ACTIVATE_DEACTIVATE_PAUSE("activate_deactivate_pause"),
+    ACTIVATE_DEACTIVATE_PAUSE(String.valueOf("activate_deactivate_pause")),
     
-    SETTINGS("settings"),
+    SETTINGS(String.valueOf("settings")),
     
-    SCHEDULE_PAUSE("schedule_pause"),
+    SCHEDULE_PAUSE(String.valueOf("schedule_pause")),
     
-    ALL("all"),
+    ALL(String.valueOf("all")),
     
-    LOGS("logs"),
+    LOGS(String.valueOf("logs")),
     
-    ACCESS("access"),
+    ACCESS(String.valueOf("access")),
     
-    ASSIGN("assign"),
+    ASSIGN(String.valueOf("assign")),
     
-    CONFIGURE("configure"),
+    CONFIGURE(String.valueOf("configure")),
     
-    MANAGE_OWNED_DEALS_TASKS_COMPANIES("manage_owned_deals_tasks_companies"),
+    MANAGE_OWNED_DEALS_TASKS_COMPANIES(String.valueOf("manage_owned_deals_tasks_companies")),
     
-    MANAGE_OTHERS_DEALS_TASKS_COMPANIES("manage_others_deals_tasks_companies"),
+    MANAGE_OTHERS_DEALS_TASKS_COMPANIES(String.valueOf("manage_others_deals_tasks_companies")),
     
-    REPORTS("reports"),
+    REPORTS(String.valueOf("reports")),
     
-    SENDERS_MANAGEMENT("senders_management"),
+    SENDERS_MANAGEMENT(String.valueOf("senders_management")),
     
-    DOMAINS_MANAGEMENT("domains_management"),
+    DOMAINS_MANAGEMENT(String.valueOf("domains_management")),
     
-    DEDICATED_IPS_MANAGEMENT("dedicated_ips_management"),
+    DEDICATED_IPS_MANAGEMENT(String.valueOf("dedicated_ips_management")),
     
-    SEND("send"),
+    SEND(String.valueOf("send")),
     
-    SMTP("smtp"),
+    SMTP(String.valueOf("smtp")),
     
-    API_KEYS("api_keys"),
+    API_KEYS(String.valueOf("api_keys")),
     
-    AUTHORIZED_IPS("authorized_ips"),
+    AUTHORIZED_IPS(String.valueOf("authorized_ips")),
     
-    NONE("none");
+    NONE(String.valueOf("none"));
 
     private String value;
 
@@ -188,12 +189,13 @@ public class InviteuserPrivilegesInner {
   }
 
   public static final String JSON_PROPERTY_PERMISSIONS = "permissions";
+  @jakarta.annotation.Nullable
   private List<PermissionsEnum> permissions = new ArrayList<>();
 
   public InviteuserPrivilegesInner() {
   }
 
-  public InviteuserPrivilegesInner feature(FeatureEnum feature) {
+  public InviteuserPrivilegesInner feature(@jakarta.annotation.Nullable FeatureEnum feature) {
     
     this.feature = feature;
     return this;
@@ -214,11 +216,11 @@ public class InviteuserPrivilegesInner {
 
   @JsonProperty(JSON_PROPERTY_FEATURE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setFeature(FeatureEnum feature) {
+  public void setFeature(@jakarta.annotation.Nullable FeatureEnum feature) {
     this.feature = feature;
   }
 
-  public InviteuserPrivilegesInner permissions(List<PermissionsEnum> permissions) {
+  public InviteuserPrivilegesInner permissions(@jakarta.annotation.Nullable List<PermissionsEnum> permissions) {
     
     this.permissions = permissions;
     return this;
@@ -247,7 +249,7 @@ public class InviteuserPrivilegesInner {
 
   @JsonProperty(JSON_PROPERTY_PERMISSIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setPermissions(List<PermissionsEnum> permissions) {
+  public void setPermissions(@jakarta.annotation.Nullable List<PermissionsEnum> permissions) {
     this.permissions = permissions;
   }
 

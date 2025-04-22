@@ -36,15 +36,17 @@ import java.util.StringJoiner;
 @JsonTypeName("uploadImageToGallery")
 public class UploadImageToGallery {
   public static final String JSON_PROPERTY_IMAGE_URL = "imageUrl";
+  @jakarta.annotation.Nonnull
   private String imageUrl;
 
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nullable
   private String name;
 
   public UploadImageToGallery() {
   }
 
-  public UploadImageToGallery imageUrl(String imageUrl) {
+  public UploadImageToGallery imageUrl(@jakarta.annotation.Nonnull String imageUrl) {
     
     this.imageUrl = imageUrl;
     return this;
@@ -65,11 +67,11 @@ public class UploadImageToGallery {
 
   @JsonProperty(JSON_PROPERTY_IMAGE_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setImageUrl(String imageUrl) {
+  public void setImageUrl(@jakarta.annotation.Nonnull String imageUrl) {
     this.imageUrl = imageUrl;
   }
 
-  public UploadImageToGallery name(String name) {
+  public UploadImageToGallery name(@jakarta.annotation.Nullable String name) {
     
     this.name = name;
     return this;
@@ -90,7 +92,7 @@ public class UploadImageToGallery {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nullable String name) {
     this.name = name;
   }
 

@@ -41,15 +41,17 @@ import java.util.StringJoiner;
 @JsonTypeName("getExtendedContactDetails_allOf_statistics_unsubscriptions")
 public class GetExtendedContactDetailsAllOfStatisticsUnsubscriptions {
   public static final String JSON_PROPERTY_USER_UNSUBSCRIPTION = "userUnsubscription";
+  @jakarta.annotation.Nonnull
   private List<GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsUserUnsubscription> userUnsubscription = new ArrayList<>();
 
   public static final String JSON_PROPERTY_ADMIN_UNSUBSCRIPTION = "adminUnsubscription";
+  @jakarta.annotation.Nonnull
   private List<GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsAdminUnsubscription> adminUnsubscription = new ArrayList<>();
 
   public GetExtendedContactDetailsAllOfStatisticsUnsubscriptions() {
   }
 
-  public GetExtendedContactDetailsAllOfStatisticsUnsubscriptions userUnsubscription(List<GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsUserUnsubscription> userUnsubscription) {
+  public GetExtendedContactDetailsAllOfStatisticsUnsubscriptions userUnsubscription(@jakarta.annotation.Nonnull List<GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsUserUnsubscription> userUnsubscription) {
     
     this.userUnsubscription = userUnsubscription;
     return this;
@@ -78,11 +80,11 @@ public class GetExtendedContactDetailsAllOfStatisticsUnsubscriptions {
 
   @JsonProperty(JSON_PROPERTY_USER_UNSUBSCRIPTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUserUnsubscription(List<GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsUserUnsubscription> userUnsubscription) {
+  public void setUserUnsubscription(@jakarta.annotation.Nonnull List<GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsUserUnsubscription> userUnsubscription) {
     this.userUnsubscription = userUnsubscription;
   }
 
-  public GetExtendedContactDetailsAllOfStatisticsUnsubscriptions adminUnsubscription(List<GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsAdminUnsubscription> adminUnsubscription) {
+  public GetExtendedContactDetailsAllOfStatisticsUnsubscriptions adminUnsubscription(@jakarta.annotation.Nonnull List<GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsAdminUnsubscription> adminUnsubscription) {
     
     this.adminUnsubscription = adminUnsubscription;
     return this;
@@ -111,7 +113,7 @@ public class GetExtendedContactDetailsAllOfStatisticsUnsubscriptions {
 
   @JsonProperty(JSON_PROPERTY_ADMIN_UNSUBSCRIPTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAdminUnsubscription(List<GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsAdminUnsubscription> adminUnsubscription) {
+  public void setAdminUnsubscription(@jakarta.annotation.Nonnull List<GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsAdminUnsubscription> adminUnsubscription) {
     this.adminUnsubscription = adminUnsubscription;
   }
 

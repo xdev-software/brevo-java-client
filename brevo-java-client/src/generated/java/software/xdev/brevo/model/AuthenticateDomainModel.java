@@ -36,15 +36,17 @@ import java.util.StringJoiner;
 @JsonTypeName("authenticateDomainModel")
 public class AuthenticateDomainModel {
   public static final String JSON_PROPERTY_DOMAIN_NAME = "domain_name";
+  @jakarta.annotation.Nonnull
   private String domainName;
 
   public static final String JSON_PROPERTY_MESSAGE = "message";
+  @jakarta.annotation.Nonnull
   private String message;
 
   public AuthenticateDomainModel() {
   }
 
-  public AuthenticateDomainModel domainName(String domainName) {
+  public AuthenticateDomainModel domainName(@jakarta.annotation.Nonnull String domainName) {
     
     this.domainName = domainName;
     return this;
@@ -65,11 +67,11 @@ public class AuthenticateDomainModel {
 
   @JsonProperty(JSON_PROPERTY_DOMAIN_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDomainName(String domainName) {
+  public void setDomainName(@jakarta.annotation.Nonnull String domainName) {
     this.domainName = domainName;
   }
 
-  public AuthenticateDomainModel message(String message) {
+  public AuthenticateDomainModel message(@jakarta.annotation.Nonnull String message) {
     
     this.message = message;
     return this;
@@ -90,7 +92,7 @@ public class AuthenticateDomainModel {
 
   @JsonProperty(JSON_PROPERTY_MESSAGE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMessage(String message) {
+  public void setMessage(@jakarta.annotation.Nonnull String message) {
     this.message = message;
   }
 

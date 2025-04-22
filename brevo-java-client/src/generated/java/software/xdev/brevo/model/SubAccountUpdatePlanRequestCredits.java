@@ -35,12 +35,13 @@ import java.util.StringJoiner;
 @JsonTypeName("subAccountUpdatePlanRequest_credits")
 public class SubAccountUpdatePlanRequestCredits {
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nullable
   private Long email;
 
   public SubAccountUpdatePlanRequestCredits() {
   }
 
-  public SubAccountUpdatePlanRequestCredits email(Long email) {
+  public SubAccountUpdatePlanRequestCredits email(@jakarta.annotation.Nullable Long email) {
     
     this.email = email;
     return this;
@@ -61,7 +62,7 @@ public class SubAccountUpdatePlanRequestCredits {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEmail(Long email) {
+  public void setEmail(@jakarta.annotation.Nullable Long email) {
     this.email = email;
   }
 

@@ -37,18 +37,21 @@ import java.util.StringJoiner;
 @JsonTypeName("subAccountUpdatePlanRequest_features")
 public class SubAccountUpdatePlanRequestFeatures {
   public static final String JSON_PROPERTY_USERS = "users";
+  @jakarta.annotation.Nullable
   private Long users;
 
   public static final String JSON_PROPERTY_LANDING_PAGE = "landingPage";
+  @jakarta.annotation.Nullable
   private Long landingPage;
 
   public static final String JSON_PROPERTY_INBOX = "inbox";
+  @jakarta.annotation.Nullable
   private Long inbox;
 
   public SubAccountUpdatePlanRequestFeatures() {
   }
 
-  public SubAccountUpdatePlanRequestFeatures users(Long users) {
+  public SubAccountUpdatePlanRequestFeatures users(@jakarta.annotation.Nullable Long users) {
     
     this.users = users;
     return this;
@@ -69,11 +72,11 @@ public class SubAccountUpdatePlanRequestFeatures {
 
   @JsonProperty(JSON_PROPERTY_USERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUsers(Long users) {
+  public void setUsers(@jakarta.annotation.Nullable Long users) {
     this.users = users;
   }
 
-  public SubAccountUpdatePlanRequestFeatures landingPage(Long landingPage) {
+  public SubAccountUpdatePlanRequestFeatures landingPage(@jakarta.annotation.Nullable Long landingPage) {
     
     this.landingPage = landingPage;
     return this;
@@ -94,11 +97,11 @@ public class SubAccountUpdatePlanRequestFeatures {
 
   @JsonProperty(JSON_PROPERTY_LANDING_PAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setLandingPage(Long landingPage) {
+  public void setLandingPage(@jakarta.annotation.Nullable Long landingPage) {
     this.landingPage = landingPage;
   }
 
-  public SubAccountUpdatePlanRequestFeatures inbox(Long inbox) {
+  public SubAccountUpdatePlanRequestFeatures inbox(@jakarta.annotation.Nullable Long inbox) {
     
     this.inbox = inbox;
     return this;
@@ -119,7 +122,7 @@ public class SubAccountUpdatePlanRequestFeatures {
 
   @JsonProperty(JSON_PROPERTY_INBOX)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setInbox(Long inbox) {
+  public void setInbox(@jakarta.annotation.Nullable Long inbox) {
     this.inbox = inbox;
   }
 

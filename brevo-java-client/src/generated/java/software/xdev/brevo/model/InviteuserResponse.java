@@ -39,15 +39,17 @@ import java.util.StringJoiner;
 @JsonTypeName("inviteuserResponse")
 public class InviteuserResponse {
   public static final String JSON_PROPERTY_STATUS = "status";
+  @jakarta.annotation.Nonnull
   private String status;
 
   public static final String JSON_PROPERTY_INVOICE_ID = "invoice_id";
+  @jakarta.annotation.Nullable
   private List<String> invoiceId = new ArrayList<>();
 
   public InviteuserResponse() {
   }
 
-  public InviteuserResponse status(String status) {
+  public InviteuserResponse status(@jakarta.annotation.Nonnull String status) {
     
     this.status = status;
     return this;
@@ -68,11 +70,11 @@ public class InviteuserResponse {
 
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatus(String status) {
+  public void setStatus(@jakarta.annotation.Nonnull String status) {
     this.status = status;
   }
 
-  public InviteuserResponse invoiceId(List<String> invoiceId) {
+  public InviteuserResponse invoiceId(@jakarta.annotation.Nullable List<String> invoiceId) {
     
     this.invoiceId = invoiceId;
     return this;
@@ -101,7 +103,7 @@ public class InviteuserResponse {
 
   @JsonProperty(JSON_PROPERTY_INVOICE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setInvoiceId(List<String> invoiceId) {
+  public void setInvoiceId(@jakarta.annotation.Nullable List<String> invoiceId) {
     this.invoiceId = invoiceId;
   }
 

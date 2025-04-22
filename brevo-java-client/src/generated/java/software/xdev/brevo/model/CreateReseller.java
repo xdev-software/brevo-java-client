@@ -36,15 +36,17 @@ import java.util.StringJoiner;
 @JsonTypeName("createReseller")
 public class CreateReseller {
   public static final String JSON_PROPERTY_AUTH_KEY = "authKey";
+  @jakarta.annotation.Nonnull
   private String authKey;
 
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nullable
   private Long id;
 
   public CreateReseller() {
   }
 
-  public CreateReseller authKey(String authKey) {
+  public CreateReseller authKey(@jakarta.annotation.Nonnull String authKey) {
     
     this.authKey = authKey;
     return this;
@@ -65,11 +67,11 @@ public class CreateReseller {
 
   @JsonProperty(JSON_PROPERTY_AUTH_KEY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAuthKey(String authKey) {
+  public void setAuthKey(@jakarta.annotation.Nonnull String authKey) {
     this.authKey = authKey;
   }
 
-  public CreateReseller id(Long id) {
+  public CreateReseller id(@jakarta.annotation.Nullable Long id) {
     
     this.id = id;
     return this;
@@ -90,7 +92,7 @@ public class CreateReseller {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setId(Long id) {
+  public void setId(@jakarta.annotation.Nullable Long id) {
     this.id = id;
   }
 

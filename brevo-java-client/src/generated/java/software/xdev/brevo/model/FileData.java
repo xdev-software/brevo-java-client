@@ -41,30 +41,37 @@ import java.util.StringJoiner;
 })
 public class FileData {
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nullable
   private String name;
 
   public static final String JSON_PROPERTY_AUTHOR_ID = "authorId";
+  @jakarta.annotation.Nullable
   private String authorId;
 
   public static final String JSON_PROPERTY_CONTACT_ID = "contactId";
+  @jakarta.annotation.Nullable
   private Long contactId;
 
   public static final String JSON_PROPERTY_DEAL_ID = "dealId";
+  @jakarta.annotation.Nullable
   private String dealId;
 
   public static final String JSON_PROPERTY_COMPANY_ID = "companyId";
+  @jakarta.annotation.Nullable
   private String companyId;
 
   public static final String JSON_PROPERTY_SIZE = "size";
+  @jakarta.annotation.Nullable
   private Long size;
 
   public static final String JSON_PROPERTY_CREATED_AT = "createdAt";
+  @jakarta.annotation.Nullable
   private OffsetDateTime createdAt;
 
   public FileData() {
   }
 
-  public FileData name(String name) {
+  public FileData name(@jakarta.annotation.Nullable String name) {
     
     this.name = name;
     return this;
@@ -85,11 +92,11 @@ public class FileData {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nullable String name) {
     this.name = name;
   }
 
-  public FileData authorId(String authorId) {
+  public FileData authorId(@jakarta.annotation.Nullable String authorId) {
     
     this.authorId = authorId;
     return this;
@@ -110,11 +117,11 @@ public class FileData {
 
   @JsonProperty(JSON_PROPERTY_AUTHOR_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setAuthorId(String authorId) {
+  public void setAuthorId(@jakarta.annotation.Nullable String authorId) {
     this.authorId = authorId;
   }
 
-  public FileData contactId(Long contactId) {
+  public FileData contactId(@jakarta.annotation.Nullable Long contactId) {
     
     this.contactId = contactId;
     return this;
@@ -135,11 +142,11 @@ public class FileData {
 
   @JsonProperty(JSON_PROPERTY_CONTACT_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setContactId(Long contactId) {
+  public void setContactId(@jakarta.annotation.Nullable Long contactId) {
     this.contactId = contactId;
   }
 
-  public FileData dealId(String dealId) {
+  public FileData dealId(@jakarta.annotation.Nullable String dealId) {
     
     this.dealId = dealId;
     return this;
@@ -160,11 +167,11 @@ public class FileData {
 
   @JsonProperty(JSON_PROPERTY_DEAL_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDealId(String dealId) {
+  public void setDealId(@jakarta.annotation.Nullable String dealId) {
     this.dealId = dealId;
   }
 
-  public FileData companyId(String companyId) {
+  public FileData companyId(@jakarta.annotation.Nullable String companyId) {
     
     this.companyId = companyId;
     return this;
@@ -185,11 +192,11 @@ public class FileData {
 
   @JsonProperty(JSON_PROPERTY_COMPANY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCompanyId(String companyId) {
+  public void setCompanyId(@jakarta.annotation.Nullable String companyId) {
     this.companyId = companyId;
   }
 
-  public FileData size(Long size) {
+  public FileData size(@jakarta.annotation.Nullable Long size) {
     
     this.size = size;
     return this;
@@ -210,11 +217,11 @@ public class FileData {
 
   @JsonProperty(JSON_PROPERTY_SIZE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSize(Long size) {
+  public void setSize(@jakarta.annotation.Nullable Long size) {
     this.size = size;
   }
 
-  public FileData createdAt(OffsetDateTime createdAt) {
+  public FileData createdAt(@jakarta.annotation.Nullable OffsetDateTime createdAt) {
     
     this.createdAt = createdAt;
     return this;
@@ -235,7 +242,7 @@ public class FileData {
 
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@jakarta.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 

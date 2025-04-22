@@ -52,33 +52,41 @@ import java.util.StringJoiner;
 @JsonTypeName("getInboundEmailEventsByUuid")
 public class GetInboundEmailEventsByUuid {
   public static final String JSON_PROPERTY_RECEIVED_AT = "receivedAt";
+  @jakarta.annotation.Nullable
   private OffsetDateTime receivedAt;
 
   public static final String JSON_PROPERTY_DELIVERED_AT = "deliveredAt";
+  @jakarta.annotation.Nullable
   private JsonNullable<OffsetDateTime> deliveredAt = JsonNullable.<OffsetDateTime>undefined();
 
   public static final String JSON_PROPERTY_RECIPIENT = "recipient";
+  @jakarta.annotation.Nullable
   private String recipient;
 
   public static final String JSON_PROPERTY_SENDER = "sender";
+  @jakarta.annotation.Nullable
   private String sender;
 
   public static final String JSON_PROPERTY_MESSAGE_ID = "messageId";
+  @jakarta.annotation.Nullable
   private String messageId;
 
   public static final String JSON_PROPERTY_SUBJECT = "subject";
+  @jakarta.annotation.Nullable
   private String subject;
 
   public static final String JSON_PROPERTY_ATTACHMENTS = "attachments";
+  @jakarta.annotation.Nullable
   private List<GetInboundEmailEventsByUuidAttachmentsInner> attachments = new ArrayList<>();
 
   public static final String JSON_PROPERTY_LOGS = "logs";
+  @jakarta.annotation.Nullable
   private List<GetInboundEmailEventsByUuidLogsInner> logs = new ArrayList<>();
 
   public GetInboundEmailEventsByUuid() {
   }
 
-  public GetInboundEmailEventsByUuid receivedAt(OffsetDateTime receivedAt) {
+  public GetInboundEmailEventsByUuid receivedAt(@jakarta.annotation.Nullable OffsetDateTime receivedAt) {
     
     this.receivedAt = receivedAt;
     return this;
@@ -99,11 +107,11 @@ public class GetInboundEmailEventsByUuid {
 
   @JsonProperty(JSON_PROPERTY_RECEIVED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setReceivedAt(OffsetDateTime receivedAt) {
+  public void setReceivedAt(@jakarta.annotation.Nullable OffsetDateTime receivedAt) {
     this.receivedAt = receivedAt;
   }
 
-  public GetInboundEmailEventsByUuid deliveredAt(OffsetDateTime deliveredAt) {
+  public GetInboundEmailEventsByUuid deliveredAt(@jakarta.annotation.Nullable OffsetDateTime deliveredAt) {
     this.deliveredAt = JsonNullable.<OffsetDateTime>of(deliveredAt);
     
     return this;
@@ -132,11 +140,11 @@ public class GetInboundEmailEventsByUuid {
     this.deliveredAt = deliveredAt;
   }
 
-  public void setDeliveredAt(OffsetDateTime deliveredAt) {
+  public void setDeliveredAt(@jakarta.annotation.Nullable OffsetDateTime deliveredAt) {
     this.deliveredAt = JsonNullable.<OffsetDateTime>of(deliveredAt);
   }
 
-  public GetInboundEmailEventsByUuid recipient(String recipient) {
+  public GetInboundEmailEventsByUuid recipient(@jakarta.annotation.Nullable String recipient) {
     
     this.recipient = recipient;
     return this;
@@ -157,11 +165,11 @@ public class GetInboundEmailEventsByUuid {
 
   @JsonProperty(JSON_PROPERTY_RECIPIENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setRecipient(String recipient) {
+  public void setRecipient(@jakarta.annotation.Nullable String recipient) {
     this.recipient = recipient;
   }
 
-  public GetInboundEmailEventsByUuid sender(String sender) {
+  public GetInboundEmailEventsByUuid sender(@jakarta.annotation.Nullable String sender) {
     
     this.sender = sender;
     return this;
@@ -182,11 +190,11 @@ public class GetInboundEmailEventsByUuid {
 
   @JsonProperty(JSON_PROPERTY_SENDER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSender(String sender) {
+  public void setSender(@jakarta.annotation.Nullable String sender) {
     this.sender = sender;
   }
 
-  public GetInboundEmailEventsByUuid messageId(String messageId) {
+  public GetInboundEmailEventsByUuid messageId(@jakarta.annotation.Nullable String messageId) {
     
     this.messageId = messageId;
     return this;
@@ -207,11 +215,11 @@ public class GetInboundEmailEventsByUuid {
 
   @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setMessageId(String messageId) {
+  public void setMessageId(@jakarta.annotation.Nullable String messageId) {
     this.messageId = messageId;
   }
 
-  public GetInboundEmailEventsByUuid subject(String subject) {
+  public GetInboundEmailEventsByUuid subject(@jakarta.annotation.Nullable String subject) {
     
     this.subject = subject;
     return this;
@@ -232,11 +240,11 @@ public class GetInboundEmailEventsByUuid {
 
   @JsonProperty(JSON_PROPERTY_SUBJECT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSubject(String subject) {
+  public void setSubject(@jakarta.annotation.Nullable String subject) {
     this.subject = subject;
   }
 
-  public GetInboundEmailEventsByUuid attachments(List<GetInboundEmailEventsByUuidAttachmentsInner> attachments) {
+  public GetInboundEmailEventsByUuid attachments(@jakarta.annotation.Nullable List<GetInboundEmailEventsByUuidAttachmentsInner> attachments) {
     
     this.attachments = attachments;
     return this;
@@ -265,11 +273,11 @@ public class GetInboundEmailEventsByUuid {
 
   @JsonProperty(JSON_PROPERTY_ATTACHMENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setAttachments(List<GetInboundEmailEventsByUuidAttachmentsInner> attachments) {
+  public void setAttachments(@jakarta.annotation.Nullable List<GetInboundEmailEventsByUuidAttachmentsInner> attachments) {
     this.attachments = attachments;
   }
 
-  public GetInboundEmailEventsByUuid logs(List<GetInboundEmailEventsByUuidLogsInner> logs) {
+  public GetInboundEmailEventsByUuid logs(@jakarta.annotation.Nullable List<GetInboundEmailEventsByUuidLogsInner> logs) {
     
     this.logs = logs;
     return this;
@@ -298,7 +306,7 @@ public class GetInboundEmailEventsByUuid {
 
   @JsonProperty(JSON_PROPERTY_LOGS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setLogs(List<GetInboundEmailEventsByUuidLogsInner> logs) {
+  public void setLogs(@jakarta.annotation.Nullable List<GetInboundEmailEventsByUuidLogsInner> logs) {
     this.logs = logs;
   }
 

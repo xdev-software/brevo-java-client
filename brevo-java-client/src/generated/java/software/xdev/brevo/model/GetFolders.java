@@ -40,15 +40,17 @@ import java.util.StringJoiner;
 @JsonTypeName("getFolders")
 public class GetFolders {
   public static final String JSON_PROPERTY_FOLDERS = "folders";
+  @jakarta.annotation.Nullable
   private List<GetFolder> folders = new ArrayList<>();
 
   public static final String JSON_PROPERTY_COUNT = "count";
+  @jakarta.annotation.Nullable
   private Long count;
 
   public GetFolders() {
   }
 
-  public GetFolders folders(List<GetFolder> folders) {
+  public GetFolders folders(@jakarta.annotation.Nullable List<GetFolder> folders) {
     
     this.folders = folders;
     return this;
@@ -77,11 +79,11 @@ public class GetFolders {
 
   @JsonProperty(JSON_PROPERTY_FOLDERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setFolders(List<GetFolder> folders) {
+  public void setFolders(@jakarta.annotation.Nullable List<GetFolder> folders) {
     this.folders = folders;
   }
 
-  public GetFolders count(Long count) {
+  public GetFolders count(@jakarta.annotation.Nullable Long count) {
     
     this.count = count;
     return this;
@@ -102,7 +104,7 @@ public class GetFolders {
 
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCount(Long count) {
+  public void setCount(@jakarta.annotation.Nullable Long count) {
     this.count = count;
   }
 

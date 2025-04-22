@@ -38,15 +38,17 @@ import java.util.StringJoiner;
 @JsonTypeName("subAccountUpdatePlanRequest")
 public class SubAccountUpdatePlanRequest {
   public static final String JSON_PROPERTY_CREDITS = "credits";
+  @jakarta.annotation.Nullable
   private SubAccountUpdatePlanRequestCredits credits;
 
   public static final String JSON_PROPERTY_FEATURES = "features";
+  @jakarta.annotation.Nullable
   private SubAccountUpdatePlanRequestFeatures features;
 
   public SubAccountUpdatePlanRequest() {
   }
 
-  public SubAccountUpdatePlanRequest credits(SubAccountUpdatePlanRequestCredits credits) {
+  public SubAccountUpdatePlanRequest credits(@jakarta.annotation.Nullable SubAccountUpdatePlanRequestCredits credits) {
     
     this.credits = credits;
     return this;
@@ -67,11 +69,11 @@ public class SubAccountUpdatePlanRequest {
 
   @JsonProperty(JSON_PROPERTY_CREDITS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCredits(SubAccountUpdatePlanRequestCredits credits) {
+  public void setCredits(@jakarta.annotation.Nullable SubAccountUpdatePlanRequestCredits credits) {
     this.credits = credits;
   }
 
-  public SubAccountUpdatePlanRequest features(SubAccountUpdatePlanRequestFeatures features) {
+  public SubAccountUpdatePlanRequest features(@jakarta.annotation.Nullable SubAccountUpdatePlanRequestFeatures features) {
     
     this.features = features;
     return this;
@@ -92,7 +94,7 @@ public class SubAccountUpdatePlanRequest {
 
   @JsonProperty(JSON_PROPERTY_FEATURES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setFeatures(SubAccountUpdatePlanRequestFeatures features) {
+  public void setFeatures(@jakarta.annotation.Nullable SubAccountUpdatePlanRequestFeatures features) {
     this.features = features;
   }
 

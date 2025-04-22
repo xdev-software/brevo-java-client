@@ -40,15 +40,17 @@ import java.util.StringJoiner;
 @JsonTypeName("createUpdateBatchCategory")
 public class CreateUpdateBatchCategory {
   public static final String JSON_PROPERTY_CATEGORIES = "categories";
+  @jakarta.annotation.Nonnull
   private List<CreateUpdateCategories> categories = new ArrayList<>();
 
   public static final String JSON_PROPERTY_UPDATE_ENABLED = "updateEnabled";
+  @jakarta.annotation.Nullable
   private Boolean updateEnabled;
 
   public CreateUpdateBatchCategory() {
   }
 
-  public CreateUpdateBatchCategory categories(List<CreateUpdateCategories> categories) {
+  public CreateUpdateBatchCategory categories(@jakarta.annotation.Nonnull List<CreateUpdateCategories> categories) {
     
     this.categories = categories;
     return this;
@@ -77,11 +79,11 @@ public class CreateUpdateBatchCategory {
 
   @JsonProperty(JSON_PROPERTY_CATEGORIES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCategories(List<CreateUpdateCategories> categories) {
+  public void setCategories(@jakarta.annotation.Nonnull List<CreateUpdateCategories> categories) {
     this.categories = categories;
   }
 
-  public CreateUpdateBatchCategory updateEnabled(Boolean updateEnabled) {
+  public CreateUpdateBatchCategory updateEnabled(@jakarta.annotation.Nullable Boolean updateEnabled) {
     
     this.updateEnabled = updateEnabled;
     return this;
@@ -102,7 +104,7 @@ public class CreateUpdateBatchCategory {
 
   @JsonProperty(JSON_PROPERTY_UPDATE_ENABLED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUpdateEnabled(Boolean updateEnabled) {
+  public void setUpdateEnabled(@jakarta.annotation.Nullable Boolean updateEnabled) {
     this.updateEnabled = updateEnabled;
   }
 

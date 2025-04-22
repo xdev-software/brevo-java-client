@@ -40,18 +40,21 @@ import java.util.StringJoiner;
 @JsonTypeName("sendWhatsappMessageText")
 public class SendWhatsappMessageText {
   public static final String JSON_PROPERTY_SENDER_NUMBER = "senderNumber";
+  @jakarta.annotation.Nonnull
   private String senderNumber;
 
   public static final String JSON_PROPERTY_TEXT = "text";
+  @jakarta.annotation.Nonnull
   private String text;
 
   public static final String JSON_PROPERTY_CONTACT_NUMBERS = "contactNumbers";
+  @jakarta.annotation.Nonnull
   private List<String> contactNumbers = new ArrayList<>();
 
   public SendWhatsappMessageText() {
   }
 
-  public SendWhatsappMessageText senderNumber(String senderNumber) {
+  public SendWhatsappMessageText senderNumber(@jakarta.annotation.Nonnull String senderNumber) {
     
     this.senderNumber = senderNumber;
     return this;
@@ -72,11 +75,11 @@ public class SendWhatsappMessageText {
 
   @JsonProperty(JSON_PROPERTY_SENDER_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSenderNumber(String senderNumber) {
+  public void setSenderNumber(@jakarta.annotation.Nonnull String senderNumber) {
     this.senderNumber = senderNumber;
   }
 
-  public SendWhatsappMessageText text(String text) {
+  public SendWhatsappMessageText text(@jakarta.annotation.Nonnull String text) {
     
     this.text = text;
     return this;
@@ -97,11 +100,11 @@ public class SendWhatsappMessageText {
 
   @JsonProperty(JSON_PROPERTY_TEXT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setText(String text) {
+  public void setText(@jakarta.annotation.Nonnull String text) {
     this.text = text;
   }
 
-  public SendWhatsappMessageText contactNumbers(List<String> contactNumbers) {
+  public SendWhatsappMessageText contactNumbers(@jakarta.annotation.Nonnull List<String> contactNumbers) {
     
     this.contactNumbers = contactNumbers;
     return this;
@@ -130,7 +133,7 @@ public class SendWhatsappMessageText {
 
   @JsonProperty(JSON_PROPERTY_CONTACT_NUMBERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setContactNumbers(List<String> contactNumbers) {
+  public void setContactNumbers(@jakarta.annotation.Nonnull List<String> contactNumbers) {
     this.contactNumbers = contactNumbers;
   }
 

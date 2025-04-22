@@ -45,33 +45,41 @@ import java.util.StringJoiner;
 @JsonTypeName("getTransacEmailsList_transactionalEmails_inner")
 public class GetTransacEmailsListTransactionalEmailsInner {
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nonnull
   private String email;
 
   public static final String JSON_PROPERTY_SUBJECT = "subject";
+  @jakarta.annotation.Nonnull
   private String subject;
 
   public static final String JSON_PROPERTY_TEMPLATE_ID = "templateId";
+  @jakarta.annotation.Nullable
   private Long templateId;
 
   public static final String JSON_PROPERTY_MESSAGE_ID = "messageId";
+  @jakarta.annotation.Nonnull
   private String messageId;
 
   public static final String JSON_PROPERTY_UUID = "uuid";
+  @jakarta.annotation.Nonnull
   private String uuid;
 
   public static final String JSON_PROPERTY_DATE = "date";
+  @jakarta.annotation.Nonnull
   private String date;
 
   public static final String JSON_PROPERTY_FROM = "from";
+  @jakarta.annotation.Nullable
   private String from;
 
   public static final String JSON_PROPERTY_TAGS = "tags";
+  @jakarta.annotation.Nullable
   private List<String> tags = new ArrayList<>();
 
   public GetTransacEmailsListTransactionalEmailsInner() {
   }
 
-  public GetTransacEmailsListTransactionalEmailsInner email(String email) {
+  public GetTransacEmailsListTransactionalEmailsInner email(@jakarta.annotation.Nonnull String email) {
     
     this.email = email;
     return this;
@@ -92,11 +100,11 @@ public class GetTransacEmailsListTransactionalEmailsInner {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEmail(String email) {
+  public void setEmail(@jakarta.annotation.Nonnull String email) {
     this.email = email;
   }
 
-  public GetTransacEmailsListTransactionalEmailsInner subject(String subject) {
+  public GetTransacEmailsListTransactionalEmailsInner subject(@jakarta.annotation.Nonnull String subject) {
     
     this.subject = subject;
     return this;
@@ -117,11 +125,11 @@ public class GetTransacEmailsListTransactionalEmailsInner {
 
   @JsonProperty(JSON_PROPERTY_SUBJECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSubject(String subject) {
+  public void setSubject(@jakarta.annotation.Nonnull String subject) {
     this.subject = subject;
   }
 
-  public GetTransacEmailsListTransactionalEmailsInner templateId(Long templateId) {
+  public GetTransacEmailsListTransactionalEmailsInner templateId(@jakarta.annotation.Nullable Long templateId) {
     
     this.templateId = templateId;
     return this;
@@ -142,11 +150,11 @@ public class GetTransacEmailsListTransactionalEmailsInner {
 
   @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setTemplateId(Long templateId) {
+  public void setTemplateId(@jakarta.annotation.Nullable Long templateId) {
     this.templateId = templateId;
   }
 
-  public GetTransacEmailsListTransactionalEmailsInner messageId(String messageId) {
+  public GetTransacEmailsListTransactionalEmailsInner messageId(@jakarta.annotation.Nonnull String messageId) {
     
     this.messageId = messageId;
     return this;
@@ -167,11 +175,11 @@ public class GetTransacEmailsListTransactionalEmailsInner {
 
   @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMessageId(String messageId) {
+  public void setMessageId(@jakarta.annotation.Nonnull String messageId) {
     this.messageId = messageId;
   }
 
-  public GetTransacEmailsListTransactionalEmailsInner uuid(String uuid) {
+  public GetTransacEmailsListTransactionalEmailsInner uuid(@jakarta.annotation.Nonnull String uuid) {
     
     this.uuid = uuid;
     return this;
@@ -192,11 +200,11 @@ public class GetTransacEmailsListTransactionalEmailsInner {
 
   @JsonProperty(JSON_PROPERTY_UUID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUuid(String uuid) {
+  public void setUuid(@jakarta.annotation.Nonnull String uuid) {
     this.uuid = uuid;
   }
 
-  public GetTransacEmailsListTransactionalEmailsInner date(String date) {
+  public GetTransacEmailsListTransactionalEmailsInner date(@jakarta.annotation.Nonnull String date) {
     
     this.date = date;
     return this;
@@ -217,11 +225,11 @@ public class GetTransacEmailsListTransactionalEmailsInner {
 
   @JsonProperty(JSON_PROPERTY_DATE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDate(String date) {
+  public void setDate(@jakarta.annotation.Nonnull String date) {
     this.date = date;
   }
 
-  public GetTransacEmailsListTransactionalEmailsInner from(String from) {
+  public GetTransacEmailsListTransactionalEmailsInner from(@jakarta.annotation.Nullable String from) {
     
     this.from = from;
     return this;
@@ -242,11 +250,11 @@ public class GetTransacEmailsListTransactionalEmailsInner {
 
   @JsonProperty(JSON_PROPERTY_FROM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setFrom(String from) {
+  public void setFrom(@jakarta.annotation.Nullable String from) {
     this.from = from;
   }
 
-  public GetTransacEmailsListTransactionalEmailsInner tags(List<String> tags) {
+  public GetTransacEmailsListTransactionalEmailsInner tags(@jakarta.annotation.Nullable List<String> tags) {
     
     this.tags = tags;
     return this;
@@ -275,7 +283,7 @@ public class GetTransacEmailsListTransactionalEmailsInner {
 
   @JsonProperty(JSON_PROPERTY_TAGS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setTags(List<String> tags) {
+  public void setTags(@jakarta.annotation.Nullable List<String> tags) {
     this.tags = tags;
   }
 

@@ -35,12 +35,13 @@ import java.util.StringJoiner;
 @JsonTypeName("putresendcancelinvitation")
 public class Putresendcancelinvitation {
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nonnull
   private String email;
 
   public Putresendcancelinvitation() {
   }
 
-  public Putresendcancelinvitation email(String email) {
+  public Putresendcancelinvitation email(@jakarta.annotation.Nonnull String email) {
     
     this.email = email;
     return this;
@@ -61,7 +62,7 @@ public class Putresendcancelinvitation {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEmail(String email) {
+  public void setEmail(@jakarta.annotation.Nonnull String email) {
     this.email = email;
   }
 

@@ -92,7 +92,7 @@ public class ResellerApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/reseller/children/{childIdentifier}/credits/add"
-      .replaceAll("\\{" + "childIdentifier" + "\\}", apiClient.escapeString(childIdentifier.toString()));
+      .replaceAll("\\{" + "childIdentifier" + "\\}", apiClient.escapeString(apiClient.parameterToString(childIdentifier)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -172,7 +172,7 @@ public class ResellerApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/reseller/children/{childIdentifier}/ips/associate"
-      .replaceAll("\\{" + "childIdentifier" + "\\}", apiClient.escapeString(childIdentifier.toString()));
+      .replaceAll("\\{" + "childIdentifier" + "\\}", apiClient.escapeString(apiClient.parameterToString(childIdentifier)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -251,7 +251,7 @@ public class ResellerApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/reseller/children/{childIdentifier}/domains"
-      .replaceAll("\\{" + "childIdentifier" + "\\}", apiClient.escapeString(childIdentifier.toString()));
+      .replaceAll("\\{" + "childIdentifier" + "\\}", apiClient.escapeString(apiClient.parameterToString(childIdentifier)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -399,8 +399,8 @@ public class ResellerApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/reseller/children/{childIdentifier}/domains/{domainName}"
-      .replaceAll("\\{" + "childIdentifier" + "\\}", apiClient.escapeString(childIdentifier.toString()))
-      .replaceAll("\\{" + "domainName" + "\\}", apiClient.escapeString(domainName.toString()));
+      .replaceAll("\\{" + "childIdentifier" + "\\}", apiClient.escapeString(apiClient.parameterToString(childIdentifier)))
+      .replaceAll("\\{" + "domainName" + "\\}", apiClient.escapeString(apiClient.parameterToString(domainName)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -472,7 +472,7 @@ public class ResellerApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/reseller/children/{childIdentifier}"
-      .replaceAll("\\{" + "childIdentifier" + "\\}", apiClient.escapeString(childIdentifier.toString()));
+      .replaceAll("\\{" + "childIdentifier" + "\\}", apiClient.escapeString(apiClient.parameterToString(childIdentifier)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -551,7 +551,7 @@ public class ResellerApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/reseller/children/{childIdentifier}/ips/dissociate"
-      .replaceAll("\\{" + "childIdentifier" + "\\}", apiClient.escapeString(childIdentifier.toString()));
+      .replaceAll("\\{" + "childIdentifier" + "\\}", apiClient.escapeString(apiClient.parameterToString(childIdentifier)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -625,7 +625,7 @@ public class ResellerApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/reseller/children/{childIdentifier}/accountCreationStatus"
-      .replaceAll("\\{" + "childIdentifier" + "\\}", apiClient.escapeString(childIdentifier.toString()));
+      .replaceAll("\\{" + "childIdentifier" + "\\}", apiClient.escapeString(apiClient.parameterToString(childIdentifier)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -700,7 +700,7 @@ public class ResellerApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/reseller/children/{childIdentifier}/domains"
-      .replaceAll("\\{" + "childIdentifier" + "\\}", apiClient.escapeString(childIdentifier.toString()));
+      .replaceAll("\\{" + "childIdentifier" + "\\}", apiClient.escapeString(apiClient.parameterToString(childIdentifier)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -775,7 +775,7 @@ public class ResellerApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/reseller/children/{childIdentifier}"
-      .replaceAll("\\{" + "childIdentifier" + "\\}", apiClient.escapeString(childIdentifier.toString()));
+      .replaceAll("\\{" + "childIdentifier" + "\\}", apiClient.escapeString(apiClient.parameterToString(childIdentifier)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -923,7 +923,7 @@ public class ResellerApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/reseller/children/{childIdentifier}/auth"
-      .replaceAll("\\{" + "childIdentifier" + "\\}", apiClient.escapeString(childIdentifier.toString()));
+      .replaceAll("\\{" + "childIdentifier" + "\\}", apiClient.escapeString(apiClient.parameterToString(childIdentifier)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -1005,7 +1005,7 @@ public class ResellerApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/reseller/children/{childIdentifier}/credits/remove"
-      .replaceAll("\\{" + "childIdentifier" + "\\}", apiClient.escapeString(childIdentifier.toString()));
+      .replaceAll("\\{" + "childIdentifier" + "\\}", apiClient.escapeString(apiClient.parameterToString(childIdentifier)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -1085,7 +1085,7 @@ public class ResellerApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/reseller/children/{childIdentifier}/accountStatus"
-      .replaceAll("\\{" + "childIdentifier" + "\\}", apiClient.escapeString(childIdentifier.toString()));
+      .replaceAll("\\{" + "childIdentifier" + "\\}", apiClient.escapeString(apiClient.parameterToString(childIdentifier)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -1171,8 +1171,8 @@ public class ResellerApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/reseller/children/{childIdentifier}/domains/{domainName}"
-      .replaceAll("\\{" + "childIdentifier" + "\\}", apiClient.escapeString(childIdentifier.toString()))
-      .replaceAll("\\{" + "domainName" + "\\}", apiClient.escapeString(domainName.toString()));
+      .replaceAll("\\{" + "childIdentifier" + "\\}", apiClient.escapeString(apiClient.parameterToString(childIdentifier)))
+      .replaceAll("\\{" + "domainName" + "\\}", apiClient.escapeString(apiClient.parameterToString(domainName)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -1251,7 +1251,7 @@ public class ResellerApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/reseller/children/{childIdentifier}"
-      .replaceAll("\\{" + "childIdentifier" + "\\}", apiClient.escapeString(childIdentifier.toString()));
+      .replaceAll("\\{" + "childIdentifier" + "\\}", apiClient.escapeString(apiClient.parameterToString(childIdentifier)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;

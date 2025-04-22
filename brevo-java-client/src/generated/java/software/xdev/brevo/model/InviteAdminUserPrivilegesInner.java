@@ -42,13 +42,13 @@ public class InviteAdminUserPrivilegesInner {
    * Feature name
    */
   public enum FeatureEnum {
-    MY_PLAN("my_plan"),
+    MY_PLAN(String.valueOf("my_plan")),
     
-    API("api"),
+    API(String.valueOf("api")),
     
-    USER_MANAGEMENT("user_management"),
+    USER_MANAGEMENT(String.valueOf("user_management")),
     
-    APP_MANAGEMENT("app_management");
+    APP_MANAGEMENT(String.valueOf("app_management"));
 
     private String value;
 
@@ -78,15 +78,16 @@ public class InviteAdminUserPrivilegesInner {
   }
 
   public static final String JSON_PROPERTY_FEATURE = "feature";
+  @jakarta.annotation.Nullable
   private FeatureEnum feature;
 
   /**
    * Gets or Sets permissions
    */
   public enum PermissionsEnum {
-    ALL("all"),
+    ALL(String.valueOf("all")),
     
-    NONE("none");
+    NONE(String.valueOf("none"));
 
     private String value;
 
@@ -116,12 +117,13 @@ public class InviteAdminUserPrivilegesInner {
   }
 
   public static final String JSON_PROPERTY_PERMISSIONS = "permissions";
+  @jakarta.annotation.Nullable
   private List<PermissionsEnum> permissions = new ArrayList<>();
 
   public InviteAdminUserPrivilegesInner() {
   }
 
-  public InviteAdminUserPrivilegesInner feature(FeatureEnum feature) {
+  public InviteAdminUserPrivilegesInner feature(@jakarta.annotation.Nullable FeatureEnum feature) {
     
     this.feature = feature;
     return this;
@@ -142,11 +144,11 @@ public class InviteAdminUserPrivilegesInner {
 
   @JsonProperty(JSON_PROPERTY_FEATURE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setFeature(FeatureEnum feature) {
+  public void setFeature(@jakarta.annotation.Nullable FeatureEnum feature) {
     this.feature = feature;
   }
 
-  public InviteAdminUserPrivilegesInner permissions(List<PermissionsEnum> permissions) {
+  public InviteAdminUserPrivilegesInner permissions(@jakarta.annotation.Nullable List<PermissionsEnum> permissions) {
     
     this.permissions = permissions;
     return this;
@@ -175,7 +177,7 @@ public class InviteAdminUserPrivilegesInner {
 
   @JsonProperty(JSON_PROPERTY_PERMISSIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setPermissions(List<PermissionsEnum> permissions) {
+  public void setPermissions(@jakarta.annotation.Nullable List<PermissionsEnum> permissions) {
     this.permissions = permissions;
   }
 

@@ -49,27 +49,33 @@ import java.util.StringJoiner;
 @JsonTypeName("sendSmtpEmail_messageVersions_inner")
 public class SendSmtpEmailMessageVersionsInner {
   public static final String JSON_PROPERTY_TO = "to";
+  @jakarta.annotation.Nonnull
   private List<SendSmtpEmailToInner> to = new ArrayList<>();
 
   public static final String JSON_PROPERTY_PARAMS = "params";
+  @jakarta.annotation.Nullable
   private Map<String, Object> params = new HashMap<>();
 
   public static final String JSON_PROPERTY_BCC = "bcc";
+  @jakarta.annotation.Nullable
   private List<SendSmtpEmailBccInner> bcc = new ArrayList<>();
 
   public static final String JSON_PROPERTY_CC = "cc";
+  @jakarta.annotation.Nullable
   private List<SendSmtpEmailCcInner> cc = new ArrayList<>();
 
   public static final String JSON_PROPERTY_REPLY_TO = "replyTo";
+  @jakarta.annotation.Nullable
   private SendSmtpEmailReplyTo replyTo;
 
   public static final String JSON_PROPERTY_SUBJECT = "subject";
+  @jakarta.annotation.Nullable
   private String subject;
 
   public SendSmtpEmailMessageVersionsInner() {
   }
 
-  public SendSmtpEmailMessageVersionsInner to(List<SendSmtpEmailToInner> to) {
+  public SendSmtpEmailMessageVersionsInner to(@jakarta.annotation.Nonnull List<SendSmtpEmailToInner> to) {
     
     this.to = to;
     return this;
@@ -98,11 +104,11 @@ public class SendSmtpEmailMessageVersionsInner {
 
   @JsonProperty(JSON_PROPERTY_TO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTo(List<SendSmtpEmailToInner> to) {
+  public void setTo(@jakarta.annotation.Nonnull List<SendSmtpEmailToInner> to) {
     this.to = to;
   }
 
-  public SendSmtpEmailMessageVersionsInner params(Map<String, Object> params) {
+  public SendSmtpEmailMessageVersionsInner params(@jakarta.annotation.Nullable Map<String, Object> params) {
     
     this.params = params;
     return this;
@@ -131,11 +137,11 @@ public class SendSmtpEmailMessageVersionsInner {
 
   @JsonProperty(JSON_PROPERTY_PARAMS)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
-  public void setParams(Map<String, Object> params) {
+  public void setParams(@jakarta.annotation.Nullable Map<String, Object> params) {
     this.params = params;
   }
 
-  public SendSmtpEmailMessageVersionsInner bcc(List<SendSmtpEmailBccInner> bcc) {
+  public SendSmtpEmailMessageVersionsInner bcc(@jakarta.annotation.Nullable List<SendSmtpEmailBccInner> bcc) {
     
     this.bcc = bcc;
     return this;
@@ -164,11 +170,11 @@ public class SendSmtpEmailMessageVersionsInner {
 
   @JsonProperty(JSON_PROPERTY_BCC)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setBcc(List<SendSmtpEmailBccInner> bcc) {
+  public void setBcc(@jakarta.annotation.Nullable List<SendSmtpEmailBccInner> bcc) {
     this.bcc = bcc;
   }
 
-  public SendSmtpEmailMessageVersionsInner cc(List<SendSmtpEmailCcInner> cc) {
+  public SendSmtpEmailMessageVersionsInner cc(@jakarta.annotation.Nullable List<SendSmtpEmailCcInner> cc) {
     
     this.cc = cc;
     return this;
@@ -197,11 +203,11 @@ public class SendSmtpEmailMessageVersionsInner {
 
   @JsonProperty(JSON_PROPERTY_CC)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCc(List<SendSmtpEmailCcInner> cc) {
+  public void setCc(@jakarta.annotation.Nullable List<SendSmtpEmailCcInner> cc) {
     this.cc = cc;
   }
 
-  public SendSmtpEmailMessageVersionsInner replyTo(SendSmtpEmailReplyTo replyTo) {
+  public SendSmtpEmailMessageVersionsInner replyTo(@jakarta.annotation.Nullable SendSmtpEmailReplyTo replyTo) {
     
     this.replyTo = replyTo;
     return this;
@@ -222,11 +228,11 @@ public class SendSmtpEmailMessageVersionsInner {
 
   @JsonProperty(JSON_PROPERTY_REPLY_TO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setReplyTo(SendSmtpEmailReplyTo replyTo) {
+  public void setReplyTo(@jakarta.annotation.Nullable SendSmtpEmailReplyTo replyTo) {
     this.replyTo = replyTo;
   }
 
-  public SendSmtpEmailMessageVersionsInner subject(String subject) {
+  public SendSmtpEmailMessageVersionsInner subject(@jakarta.annotation.Nullable String subject) {
     
     this.subject = subject;
     return this;
@@ -247,7 +253,7 @@ public class SendSmtpEmailMessageVersionsInner {
 
   @JsonProperty(JSON_PROPERTY_SUBJECT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSubject(String subject) {
+  public void setSubject(@jakarta.annotation.Nullable String subject) {
     this.subject = subject;
   }
 

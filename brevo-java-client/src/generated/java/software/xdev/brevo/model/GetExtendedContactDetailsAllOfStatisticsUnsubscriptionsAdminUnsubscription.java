@@ -36,15 +36,17 @@ import java.util.StringJoiner;
 @JsonTypeName("getExtendedContactDetails_allOf_statistics_unsubscriptions_adminUnsubscription")
 public class GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsAdminUnsubscription {
   public static final String JSON_PROPERTY_EVENT_TIME = "eventTime";
+  @jakarta.annotation.Nonnull
   private String eventTime;
 
   public static final String JSON_PROPERTY_IP = "ip";
+  @jakarta.annotation.Nullable
   private String ip;
 
   public GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsAdminUnsubscription() {
   }
 
-  public GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsAdminUnsubscription eventTime(String eventTime) {
+  public GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsAdminUnsubscription eventTime(@jakarta.annotation.Nonnull String eventTime) {
     
     this.eventTime = eventTime;
     return this;
@@ -65,11 +67,11 @@ public class GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsAdminUnsubsc
 
   @JsonProperty(JSON_PROPERTY_EVENT_TIME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEventTime(String eventTime) {
+  public void setEventTime(@jakarta.annotation.Nonnull String eventTime) {
     this.eventTime = eventTime;
   }
 
-  public GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsAdminUnsubscription ip(String ip) {
+  public GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsAdminUnsubscription ip(@jakarta.annotation.Nullable String ip) {
     
     this.ip = ip;
     return this;
@@ -90,7 +92,7 @@ public class GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsAdminUnsubsc
 
   @JsonProperty(JSON_PROPERTY_IP)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setIp(String ip) {
+  public void setIp(@jakarta.annotation.Nullable String ip) {
     this.ip = ip;
   }
 

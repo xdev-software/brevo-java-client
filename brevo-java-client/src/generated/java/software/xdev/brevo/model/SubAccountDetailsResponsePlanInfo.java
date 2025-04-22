@@ -39,18 +39,21 @@ import java.util.StringJoiner;
 @JsonTypeName("subAccountDetailsResponse_planInfo")
 public class SubAccountDetailsResponsePlanInfo {
   public static final String JSON_PROPERTY_CREDITS = "credits";
+  @jakarta.annotation.Nullable
   private SubAccountDetailsResponsePlanInfoCredits credits;
 
   public static final String JSON_PROPERTY_FEATURES = "features";
+  @jakarta.annotation.Nullable
   private SubAccountDetailsResponsePlanInfoFeatures features;
 
   public static final String JSON_PROPERTY_PLAN_TYPE = "planType";
+  @jakarta.annotation.Nullable
   private String planType;
 
   public SubAccountDetailsResponsePlanInfo() {
   }
 
-  public SubAccountDetailsResponsePlanInfo credits(SubAccountDetailsResponsePlanInfoCredits credits) {
+  public SubAccountDetailsResponsePlanInfo credits(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfoCredits credits) {
     
     this.credits = credits;
     return this;
@@ -71,11 +74,11 @@ public class SubAccountDetailsResponsePlanInfo {
 
   @JsonProperty(JSON_PROPERTY_CREDITS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCredits(SubAccountDetailsResponsePlanInfoCredits credits) {
+  public void setCredits(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfoCredits credits) {
     this.credits = credits;
   }
 
-  public SubAccountDetailsResponsePlanInfo features(SubAccountDetailsResponsePlanInfoFeatures features) {
+  public SubAccountDetailsResponsePlanInfo features(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfoFeatures features) {
     
     this.features = features;
     return this;
@@ -96,11 +99,11 @@ public class SubAccountDetailsResponsePlanInfo {
 
   @JsonProperty(JSON_PROPERTY_FEATURES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setFeatures(SubAccountDetailsResponsePlanInfoFeatures features) {
+  public void setFeatures(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfoFeatures features) {
     this.features = features;
   }
 
-  public SubAccountDetailsResponsePlanInfo planType(String planType) {
+  public SubAccountDetailsResponsePlanInfo planType(@jakarta.annotation.Nullable String planType) {
     
     this.planType = planType;
     return this;
@@ -121,7 +124,7 @@ public class SubAccountDetailsResponsePlanInfo {
 
   @JsonProperty(JSON_PROPERTY_PLAN_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setPlanType(String planType) {
+  public void setPlanType(@jakarta.annotation.Nullable String planType) {
     this.planType = planType;
   }
 

@@ -40,15 +40,17 @@ import java.util.StringJoiner;
 @JsonTypeName("getContacts")
 public class GetContacts {
   public static final String JSON_PROPERTY_CONTACTS = "contacts";
+  @jakarta.annotation.Nonnull
   private List<GetContactDetails> contacts = new ArrayList<>();
 
   public static final String JSON_PROPERTY_COUNT = "count";
+  @jakarta.annotation.Nonnull
   private Long count;
 
   public GetContacts() {
   }
 
-  public GetContacts contacts(List<GetContactDetails> contacts) {
+  public GetContacts contacts(@jakarta.annotation.Nonnull List<GetContactDetails> contacts) {
     
     this.contacts = contacts;
     return this;
@@ -77,11 +79,11 @@ public class GetContacts {
 
   @JsonProperty(JSON_PROPERTY_CONTACTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setContacts(List<GetContactDetails> contacts) {
+  public void setContacts(@jakarta.annotation.Nonnull List<GetContactDetails> contacts) {
     this.contacts = contacts;
   }
 
-  public GetContacts count(Long count) {
+  public GetContacts count(@jakarta.annotation.Nonnull Long count) {
     
     this.count = count;
     return this;
@@ -102,7 +104,7 @@ public class GetContacts {
 
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCount(Long count) {
+  public void setCount(@jakarta.annotation.Nonnull Long count) {
     this.count = count;
   }
 

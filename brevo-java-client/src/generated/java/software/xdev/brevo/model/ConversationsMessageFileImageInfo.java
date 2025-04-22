@@ -37,18 +37,21 @@ import java.util.StringJoiner;
 @JsonTypeName("ConversationsMessage_file_imageInfo")
 public class ConversationsMessageFileImageInfo {
   public static final String JSON_PROPERTY_WIDTH = "width";
+  @jakarta.annotation.Nullable
   private Long width;
 
   public static final String JSON_PROPERTY_HEIGHT = "height";
+  @jakarta.annotation.Nullable
   private Long height;
 
   public static final String JSON_PROPERTY_PREVIEW_URL = "previewUrl";
+  @jakarta.annotation.Nullable
   private String previewUrl;
 
   public ConversationsMessageFileImageInfo() {
   }
 
-  public ConversationsMessageFileImageInfo width(Long width) {
+  public ConversationsMessageFileImageInfo width(@jakarta.annotation.Nullable Long width) {
     
     this.width = width;
     return this;
@@ -70,11 +73,11 @@ public class ConversationsMessageFileImageInfo {
 
   @JsonProperty(JSON_PROPERTY_WIDTH)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setWidth(Long width) {
+  public void setWidth(@jakarta.annotation.Nullable Long width) {
     this.width = width;
   }
 
-  public ConversationsMessageFileImageInfo height(Long height) {
+  public ConversationsMessageFileImageInfo height(@jakarta.annotation.Nullable Long height) {
     
     this.height = height;
     return this;
@@ -96,11 +99,11 @@ public class ConversationsMessageFileImageInfo {
 
   @JsonProperty(JSON_PROPERTY_HEIGHT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setHeight(Long height) {
+  public void setHeight(@jakarta.annotation.Nullable Long height) {
     this.height = height;
   }
 
-  public ConversationsMessageFileImageInfo previewUrl(String previewUrl) {
+  public ConversationsMessageFileImageInfo previewUrl(@jakarta.annotation.Nullable String previewUrl) {
     
     this.previewUrl = previewUrl;
     return this;
@@ -121,7 +124,7 @@ public class ConversationsMessageFileImageInfo {
 
   @JsonProperty(JSON_PROPERTY_PREVIEW_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setPreviewUrl(String previewUrl) {
+  public void setPreviewUrl(@jakarta.annotation.Nullable String previewUrl) {
     this.previewUrl = previewUrl;
   }
 

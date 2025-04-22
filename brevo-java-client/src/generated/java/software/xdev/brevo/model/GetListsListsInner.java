@@ -40,27 +40,33 @@ import java.util.StringJoiner;
 @JsonTypeName("getLists_lists_inner")
 public class GetListsListsInner {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nonnull
   private Long id;
 
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_TOTAL_BLACKLISTED = "totalBlacklisted";
+  @jakarta.annotation.Nonnull
   private Long totalBlacklisted;
 
   public static final String JSON_PROPERTY_TOTAL_SUBSCRIBERS = "totalSubscribers";
+  @jakarta.annotation.Nonnull
   private Long totalSubscribers;
 
   public static final String JSON_PROPERTY_UNIQUE_SUBSCRIBERS = "uniqueSubscribers";
+  @jakarta.annotation.Nonnull
   private Long uniqueSubscribers;
 
   public static final String JSON_PROPERTY_FOLDER_ID = "folderId";
+  @jakarta.annotation.Nonnull
   private Long folderId;
 
   public GetListsListsInner() {
   }
 
-  public GetListsListsInner id(Long id) {
+  public GetListsListsInner id(@jakarta.annotation.Nonnull Long id) {
     
     this.id = id;
     return this;
@@ -81,11 +87,11 @@ public class GetListsListsInner {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(Long id) {
+  public void setId(@jakarta.annotation.Nonnull Long id) {
     this.id = id;
   }
 
-  public GetListsListsInner name(String name) {
+  public GetListsListsInner name(@jakarta.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
@@ -106,11 +112,11 @@ public class GetListsListsInner {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
   }
 
-  public GetListsListsInner totalBlacklisted(Long totalBlacklisted) {
+  public GetListsListsInner totalBlacklisted(@jakarta.annotation.Nonnull Long totalBlacklisted) {
     
     this.totalBlacklisted = totalBlacklisted;
     return this;
@@ -131,11 +137,11 @@ public class GetListsListsInner {
 
   @JsonProperty(JSON_PROPERTY_TOTAL_BLACKLISTED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTotalBlacklisted(Long totalBlacklisted) {
+  public void setTotalBlacklisted(@jakarta.annotation.Nonnull Long totalBlacklisted) {
     this.totalBlacklisted = totalBlacklisted;
   }
 
-  public GetListsListsInner totalSubscribers(Long totalSubscribers) {
+  public GetListsListsInner totalSubscribers(@jakarta.annotation.Nonnull Long totalSubscribers) {
     
     this.totalSubscribers = totalSubscribers;
     return this;
@@ -156,11 +162,11 @@ public class GetListsListsInner {
 
   @JsonProperty(JSON_PROPERTY_TOTAL_SUBSCRIBERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTotalSubscribers(Long totalSubscribers) {
+  public void setTotalSubscribers(@jakarta.annotation.Nonnull Long totalSubscribers) {
     this.totalSubscribers = totalSubscribers;
   }
 
-  public GetListsListsInner uniqueSubscribers(Long uniqueSubscribers) {
+  public GetListsListsInner uniqueSubscribers(@jakarta.annotation.Nonnull Long uniqueSubscribers) {
     
     this.uniqueSubscribers = uniqueSubscribers;
     return this;
@@ -181,11 +187,11 @@ public class GetListsListsInner {
 
   @JsonProperty(JSON_PROPERTY_UNIQUE_SUBSCRIBERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUniqueSubscribers(Long uniqueSubscribers) {
+  public void setUniqueSubscribers(@jakarta.annotation.Nonnull Long uniqueSubscribers) {
     this.uniqueSubscribers = uniqueSubscribers;
   }
 
-  public GetListsListsInner folderId(Long folderId) {
+  public GetListsListsInner folderId(@jakarta.annotation.Nonnull Long folderId) {
     
     this.folderId = folderId;
     return this;
@@ -206,7 +212,7 @@ public class GetListsListsInner {
 
   @JsonProperty(JSON_PROPERTY_FOLDER_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setFolderId(Long folderId) {
+  public void setFolderId(@jakarta.annotation.Nonnull Long folderId) {
     this.folderId = folderId;
   }
 

@@ -48,48 +48,61 @@ import java.util.StringJoiner;
 @JsonTypeName("getSmtpTemplateOverview")
 public class GetSmtpTemplateOverview {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nonnull
   private Long id;
 
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_SUBJECT = "subject";
+  @jakarta.annotation.Nonnull
   private String subject;
 
   public static final String JSON_PROPERTY_IS_ACTIVE = "isActive";
+  @jakarta.annotation.Nonnull
   private Boolean isActive;
 
   public static final String JSON_PROPERTY_TEST_SENT = "testSent";
+  @jakarta.annotation.Nonnull
   private Boolean testSent;
 
   public static final String JSON_PROPERTY_SENDER = "sender";
+  @jakarta.annotation.Nonnull
   private GetSmtpTemplateOverviewSender sender;
 
   public static final String JSON_PROPERTY_REPLY_TO = "replyTo";
+  @jakarta.annotation.Nonnull
   private String replyTo;
 
   public static final String JSON_PROPERTY_TO_FIELD = "toField";
+  @jakarta.annotation.Nonnull
   private String toField;
 
   public static final String JSON_PROPERTY_TAG = "tag";
+  @jakarta.annotation.Nonnull
   private String tag;
 
   public static final String JSON_PROPERTY_HTML_CONTENT = "htmlContent";
+  @jakarta.annotation.Nonnull
   private String htmlContent;
 
   public static final String JSON_PROPERTY_CREATED_AT = "createdAt";
+  @jakarta.annotation.Nonnull
   private String createdAt;
 
   public static final String JSON_PROPERTY_MODIFIED_AT = "modifiedAt";
+  @jakarta.annotation.Nonnull
   private String modifiedAt;
 
   public static final String JSON_PROPERTY_DOI_TEMPLATE = "doiTemplate";
+  @jakarta.annotation.Nullable
   private Boolean doiTemplate;
 
   public GetSmtpTemplateOverview() {
   }
 
-  public GetSmtpTemplateOverview id(Long id) {
+  public GetSmtpTemplateOverview id(@jakarta.annotation.Nonnull Long id) {
     
     this.id = id;
     return this;
@@ -110,11 +123,11 @@ public class GetSmtpTemplateOverview {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(Long id) {
+  public void setId(@jakarta.annotation.Nonnull Long id) {
     this.id = id;
   }
 
-  public GetSmtpTemplateOverview name(String name) {
+  public GetSmtpTemplateOverview name(@jakarta.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
@@ -135,11 +148,11 @@ public class GetSmtpTemplateOverview {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
   }
 
-  public GetSmtpTemplateOverview subject(String subject) {
+  public GetSmtpTemplateOverview subject(@jakarta.annotation.Nonnull String subject) {
     
     this.subject = subject;
     return this;
@@ -160,11 +173,11 @@ public class GetSmtpTemplateOverview {
 
   @JsonProperty(JSON_PROPERTY_SUBJECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSubject(String subject) {
+  public void setSubject(@jakarta.annotation.Nonnull String subject) {
     this.subject = subject;
   }
 
-  public GetSmtpTemplateOverview isActive(Boolean isActive) {
+  public GetSmtpTemplateOverview isActive(@jakarta.annotation.Nonnull Boolean isActive) {
     
     this.isActive = isActive;
     return this;
@@ -185,11 +198,11 @@ public class GetSmtpTemplateOverview {
 
   @JsonProperty(JSON_PROPERTY_IS_ACTIVE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIsActive(Boolean isActive) {
+  public void setIsActive(@jakarta.annotation.Nonnull Boolean isActive) {
     this.isActive = isActive;
   }
 
-  public GetSmtpTemplateOverview testSent(Boolean testSent) {
+  public GetSmtpTemplateOverview testSent(@jakarta.annotation.Nonnull Boolean testSent) {
     
     this.testSent = testSent;
     return this;
@@ -210,11 +223,11 @@ public class GetSmtpTemplateOverview {
 
   @JsonProperty(JSON_PROPERTY_TEST_SENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTestSent(Boolean testSent) {
+  public void setTestSent(@jakarta.annotation.Nonnull Boolean testSent) {
     this.testSent = testSent;
   }
 
-  public GetSmtpTemplateOverview sender(GetSmtpTemplateOverviewSender sender) {
+  public GetSmtpTemplateOverview sender(@jakarta.annotation.Nonnull GetSmtpTemplateOverviewSender sender) {
     
     this.sender = sender;
     return this;
@@ -235,11 +248,11 @@ public class GetSmtpTemplateOverview {
 
   @JsonProperty(JSON_PROPERTY_SENDER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSender(GetSmtpTemplateOverviewSender sender) {
+  public void setSender(@jakarta.annotation.Nonnull GetSmtpTemplateOverviewSender sender) {
     this.sender = sender;
   }
 
-  public GetSmtpTemplateOverview replyTo(String replyTo) {
+  public GetSmtpTemplateOverview replyTo(@jakarta.annotation.Nonnull String replyTo) {
     
     this.replyTo = replyTo;
     return this;
@@ -260,11 +273,11 @@ public class GetSmtpTemplateOverview {
 
   @JsonProperty(JSON_PROPERTY_REPLY_TO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setReplyTo(String replyTo) {
+  public void setReplyTo(@jakarta.annotation.Nonnull String replyTo) {
     this.replyTo = replyTo;
   }
 
-  public GetSmtpTemplateOverview toField(String toField) {
+  public GetSmtpTemplateOverview toField(@jakarta.annotation.Nonnull String toField) {
     
     this.toField = toField;
     return this;
@@ -285,11 +298,11 @@ public class GetSmtpTemplateOverview {
 
   @JsonProperty(JSON_PROPERTY_TO_FIELD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setToField(String toField) {
+  public void setToField(@jakarta.annotation.Nonnull String toField) {
     this.toField = toField;
   }
 
-  public GetSmtpTemplateOverview tag(String tag) {
+  public GetSmtpTemplateOverview tag(@jakarta.annotation.Nonnull String tag) {
     
     this.tag = tag;
     return this;
@@ -310,11 +323,11 @@ public class GetSmtpTemplateOverview {
 
   @JsonProperty(JSON_PROPERTY_TAG)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTag(String tag) {
+  public void setTag(@jakarta.annotation.Nonnull String tag) {
     this.tag = tag;
   }
 
-  public GetSmtpTemplateOverview htmlContent(String htmlContent) {
+  public GetSmtpTemplateOverview htmlContent(@jakarta.annotation.Nonnull String htmlContent) {
     
     this.htmlContent = htmlContent;
     return this;
@@ -335,11 +348,11 @@ public class GetSmtpTemplateOverview {
 
   @JsonProperty(JSON_PROPERTY_HTML_CONTENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setHtmlContent(String htmlContent) {
+  public void setHtmlContent(@jakarta.annotation.Nonnull String htmlContent) {
     this.htmlContent = htmlContent;
   }
 
-  public GetSmtpTemplateOverview createdAt(String createdAt) {
+  public GetSmtpTemplateOverview createdAt(@jakarta.annotation.Nonnull String createdAt) {
     
     this.createdAt = createdAt;
     return this;
@@ -360,11 +373,11 @@ public class GetSmtpTemplateOverview {
 
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCreatedAt(String createdAt) {
+  public void setCreatedAt(@jakarta.annotation.Nonnull String createdAt) {
     this.createdAt = createdAt;
   }
 
-  public GetSmtpTemplateOverview modifiedAt(String modifiedAt) {
+  public GetSmtpTemplateOverview modifiedAt(@jakarta.annotation.Nonnull String modifiedAt) {
     
     this.modifiedAt = modifiedAt;
     return this;
@@ -385,11 +398,11 @@ public class GetSmtpTemplateOverview {
 
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setModifiedAt(String modifiedAt) {
+  public void setModifiedAt(@jakarta.annotation.Nonnull String modifiedAt) {
     this.modifiedAt = modifiedAt;
   }
 
-  public GetSmtpTemplateOverview doiTemplate(Boolean doiTemplate) {
+  public GetSmtpTemplateOverview doiTemplate(@jakarta.annotation.Nullable Boolean doiTemplate) {
     
     this.doiTemplate = doiTemplate;
     return this;
@@ -410,7 +423,7 @@ public class GetSmtpTemplateOverview {
 
   @JsonProperty(JSON_PROPERTY_DOI_TEMPLATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDoiTemplate(Boolean doiTemplate) {
+  public void setDoiTemplate(@jakarta.annotation.Nullable Boolean doiTemplate) {
     this.doiTemplate = doiTemplate;
   }
 

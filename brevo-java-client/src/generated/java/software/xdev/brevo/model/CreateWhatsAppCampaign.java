@@ -39,21 +39,25 @@ import java.util.StringJoiner;
 @JsonTypeName("createWhatsAppCampaign")
 public class CreateWhatsAppCampaign {
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_TEMPLATE_ID = "templateId";
+  @jakarta.annotation.Nonnull
   private Integer templateId;
 
   public static final String JSON_PROPERTY_SCHEDULED_AT = "scheduledAt";
+  @jakarta.annotation.Nonnull
   private String scheduledAt;
 
   public static final String JSON_PROPERTY_RECIPIENTS = "recipients";
+  @jakarta.annotation.Nonnull
   private CreateWhatsAppCampaignRecipients recipients;
 
   public CreateWhatsAppCampaign() {
   }
 
-  public CreateWhatsAppCampaign name(String name) {
+  public CreateWhatsAppCampaign name(@jakarta.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
@@ -74,11 +78,11 @@ public class CreateWhatsAppCampaign {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
   }
 
-  public CreateWhatsAppCampaign templateId(Integer templateId) {
+  public CreateWhatsAppCampaign templateId(@jakarta.annotation.Nonnull Integer templateId) {
     
     this.templateId = templateId;
     return this;
@@ -99,11 +103,11 @@ public class CreateWhatsAppCampaign {
 
   @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTemplateId(Integer templateId) {
+  public void setTemplateId(@jakarta.annotation.Nonnull Integer templateId) {
     this.templateId = templateId;
   }
 
-  public CreateWhatsAppCampaign scheduledAt(String scheduledAt) {
+  public CreateWhatsAppCampaign scheduledAt(@jakarta.annotation.Nonnull String scheduledAt) {
     
     this.scheduledAt = scheduledAt;
     return this;
@@ -124,11 +128,11 @@ public class CreateWhatsAppCampaign {
 
   @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setScheduledAt(String scheduledAt) {
+  public void setScheduledAt(@jakarta.annotation.Nonnull String scheduledAt) {
     this.scheduledAt = scheduledAt;
   }
 
-  public CreateWhatsAppCampaign recipients(CreateWhatsAppCampaignRecipients recipients) {
+  public CreateWhatsAppCampaign recipients(@jakarta.annotation.Nonnull CreateWhatsAppCampaignRecipients recipients) {
     
     this.recipients = recipients;
     return this;
@@ -149,7 +153,7 @@ public class CreateWhatsAppCampaign {
 
   @JsonProperty(JSON_PROPERTY_RECIPIENTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRecipients(CreateWhatsAppCampaignRecipients recipients) {
+  public void setRecipients(@jakarta.annotation.Nonnull CreateWhatsAppCampaignRecipients recipients) {
     this.recipients = recipients;
   }
 

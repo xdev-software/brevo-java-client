@@ -36,15 +36,17 @@ import java.util.StringJoiner;
 @JsonTypeName("getAccount_allOf_marketingAutomation")
 public class GetAccountAllOfMarketingAutomation {
   public static final String JSON_PROPERTY_KEY = "key";
+  @jakarta.annotation.Nullable
   private String key;
 
   public static final String JSON_PROPERTY_ENABLED = "enabled";
+  @jakarta.annotation.Nonnull
   private Boolean enabled;
 
   public GetAccountAllOfMarketingAutomation() {
   }
 
-  public GetAccountAllOfMarketingAutomation key(String key) {
+  public GetAccountAllOfMarketingAutomation key(@jakarta.annotation.Nullable String key) {
     
     this.key = key;
     return this;
@@ -65,11 +67,11 @@ public class GetAccountAllOfMarketingAutomation {
 
   @JsonProperty(JSON_PROPERTY_KEY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setKey(String key) {
+  public void setKey(@jakarta.annotation.Nullable String key) {
     this.key = key;
   }
 
-  public GetAccountAllOfMarketingAutomation enabled(Boolean enabled) {
+  public GetAccountAllOfMarketingAutomation enabled(@jakarta.annotation.Nonnull Boolean enabled) {
     
     this.enabled = enabled;
     return this;
@@ -90,7 +92,7 @@ public class GetAccountAllOfMarketingAutomation {
 
   @JsonProperty(JSON_PROPERTY_ENABLED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEnabled(Boolean enabled) {
+  public void setEnabled(@jakarta.annotation.Nonnull Boolean enabled) {
     this.enabled = enabled;
   }
 

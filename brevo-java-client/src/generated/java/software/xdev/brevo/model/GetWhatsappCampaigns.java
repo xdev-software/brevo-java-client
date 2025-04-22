@@ -40,15 +40,17 @@ import java.util.StringJoiner;
 @JsonTypeName("getWhatsappCampaigns")
 public class GetWhatsappCampaigns {
   public static final String JSON_PROPERTY_CAMPAIGNS = "campaigns";
+  @jakarta.annotation.Nullable
   private List<GetWhatsappCampaignsCampaignsInner> campaigns = new ArrayList<>();
 
   public static final String JSON_PROPERTY_COUNT = "count";
+  @jakarta.annotation.Nullable
   private Long count;
 
   public GetWhatsappCampaigns() {
   }
 
-  public GetWhatsappCampaigns campaigns(List<GetWhatsappCampaignsCampaignsInner> campaigns) {
+  public GetWhatsappCampaigns campaigns(@jakarta.annotation.Nullable List<GetWhatsappCampaignsCampaignsInner> campaigns) {
     
     this.campaigns = campaigns;
     return this;
@@ -77,11 +79,11 @@ public class GetWhatsappCampaigns {
 
   @JsonProperty(JSON_PROPERTY_CAMPAIGNS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCampaigns(List<GetWhatsappCampaignsCampaignsInner> campaigns) {
+  public void setCampaigns(@jakarta.annotation.Nullable List<GetWhatsappCampaignsCampaignsInner> campaigns) {
     this.campaigns = campaigns;
   }
 
-  public GetWhatsappCampaigns count(Long count) {
+  public GetWhatsappCampaigns count(@jakarta.annotation.Nullable Long count) {
     
     this.count = count;
     return this;
@@ -102,7 +104,7 @@ public class GetWhatsappCampaigns {
 
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCount(Long count) {
+  public void setCount(@jakarta.annotation.Nullable Long count) {
     this.count = count;
   }
 

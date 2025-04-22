@@ -50,36 +50,45 @@ import java.util.StringJoiner;
 @JsonTypeName("getExtendedContactDetails_allOf_statistics")
 public class GetExtendedContactDetailsAllOfStatistics {
   public static final String JSON_PROPERTY_MESSAGES_SENT = "messagesSent";
+  @jakarta.annotation.Nullable
   private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> messagesSent = new ArrayList<>();
 
   public static final String JSON_PROPERTY_HARD_BOUNCES = "hardBounces";
+  @jakarta.annotation.Nullable
   private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> hardBounces = new ArrayList<>();
 
   public static final String JSON_PROPERTY_SOFT_BOUNCES = "softBounces";
+  @jakarta.annotation.Nullable
   private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> softBounces = new ArrayList<>();
 
   public static final String JSON_PROPERTY_COMPLAINTS = "complaints";
+  @jakarta.annotation.Nullable
   private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> complaints = new ArrayList<>();
 
   public static final String JSON_PROPERTY_UNSUBSCRIPTIONS = "unsubscriptions";
+  @jakarta.annotation.Nullable
   private GetExtendedContactDetailsAllOfStatisticsUnsubscriptions unsubscriptions;
 
   public static final String JSON_PROPERTY_OPENED = "opened";
+  @jakarta.annotation.Nullable
   private List<GetExtendedContactDetailsAllOfStatisticsOpened> opened = new ArrayList<>();
 
   public static final String JSON_PROPERTY_CLICKED = "clicked";
+  @jakarta.annotation.Nullable
   private List<GetExtendedContactDetailsAllOfStatisticsClicked> clicked = new ArrayList<>();
 
   public static final String JSON_PROPERTY_TRANSAC_ATTRIBUTES = "transacAttributes";
+  @jakarta.annotation.Nullable
   private List<Object> transacAttributes = new ArrayList<>();
 
   public static final String JSON_PROPERTY_DELIVERED = "delivered";
+  @jakarta.annotation.Nullable
   private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> delivered = new ArrayList<>();
 
   public GetExtendedContactDetailsAllOfStatistics() {
   }
 
-  public GetExtendedContactDetailsAllOfStatistics messagesSent(List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> messagesSent) {
+  public GetExtendedContactDetailsAllOfStatistics messagesSent(@jakarta.annotation.Nullable List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> messagesSent) {
     
     this.messagesSent = messagesSent;
     return this;
@@ -108,11 +117,11 @@ public class GetExtendedContactDetailsAllOfStatistics {
 
   @JsonProperty(JSON_PROPERTY_MESSAGES_SENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setMessagesSent(List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> messagesSent) {
+  public void setMessagesSent(@jakarta.annotation.Nullable List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> messagesSent) {
     this.messagesSent = messagesSent;
   }
 
-  public GetExtendedContactDetailsAllOfStatistics hardBounces(List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> hardBounces) {
+  public GetExtendedContactDetailsAllOfStatistics hardBounces(@jakarta.annotation.Nullable List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> hardBounces) {
     
     this.hardBounces = hardBounces;
     return this;
@@ -141,11 +150,11 @@ public class GetExtendedContactDetailsAllOfStatistics {
 
   @JsonProperty(JSON_PROPERTY_HARD_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setHardBounces(List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> hardBounces) {
+  public void setHardBounces(@jakarta.annotation.Nullable List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> hardBounces) {
     this.hardBounces = hardBounces;
   }
 
-  public GetExtendedContactDetailsAllOfStatistics softBounces(List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> softBounces) {
+  public GetExtendedContactDetailsAllOfStatistics softBounces(@jakarta.annotation.Nullable List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> softBounces) {
     
     this.softBounces = softBounces;
     return this;
@@ -174,11 +183,11 @@ public class GetExtendedContactDetailsAllOfStatistics {
 
   @JsonProperty(JSON_PROPERTY_SOFT_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSoftBounces(List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> softBounces) {
+  public void setSoftBounces(@jakarta.annotation.Nullable List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> softBounces) {
     this.softBounces = softBounces;
   }
 
-  public GetExtendedContactDetailsAllOfStatistics complaints(List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> complaints) {
+  public GetExtendedContactDetailsAllOfStatistics complaints(@jakarta.annotation.Nullable List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> complaints) {
     
     this.complaints = complaints;
     return this;
@@ -207,11 +216,11 @@ public class GetExtendedContactDetailsAllOfStatistics {
 
   @JsonProperty(JSON_PROPERTY_COMPLAINTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setComplaints(List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> complaints) {
+  public void setComplaints(@jakarta.annotation.Nullable List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> complaints) {
     this.complaints = complaints;
   }
 
-  public GetExtendedContactDetailsAllOfStatistics unsubscriptions(GetExtendedContactDetailsAllOfStatisticsUnsubscriptions unsubscriptions) {
+  public GetExtendedContactDetailsAllOfStatistics unsubscriptions(@jakarta.annotation.Nullable GetExtendedContactDetailsAllOfStatisticsUnsubscriptions unsubscriptions) {
     
     this.unsubscriptions = unsubscriptions;
     return this;
@@ -232,11 +241,11 @@ public class GetExtendedContactDetailsAllOfStatistics {
 
   @JsonProperty(JSON_PROPERTY_UNSUBSCRIPTIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUnsubscriptions(GetExtendedContactDetailsAllOfStatisticsUnsubscriptions unsubscriptions) {
+  public void setUnsubscriptions(@jakarta.annotation.Nullable GetExtendedContactDetailsAllOfStatisticsUnsubscriptions unsubscriptions) {
     this.unsubscriptions = unsubscriptions;
   }
 
-  public GetExtendedContactDetailsAllOfStatistics opened(List<GetExtendedContactDetailsAllOfStatisticsOpened> opened) {
+  public GetExtendedContactDetailsAllOfStatistics opened(@jakarta.annotation.Nullable List<GetExtendedContactDetailsAllOfStatisticsOpened> opened) {
     
     this.opened = opened;
     return this;
@@ -265,11 +274,11 @@ public class GetExtendedContactDetailsAllOfStatistics {
 
   @JsonProperty(JSON_PROPERTY_OPENED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setOpened(List<GetExtendedContactDetailsAllOfStatisticsOpened> opened) {
+  public void setOpened(@jakarta.annotation.Nullable List<GetExtendedContactDetailsAllOfStatisticsOpened> opened) {
     this.opened = opened;
   }
 
-  public GetExtendedContactDetailsAllOfStatistics clicked(List<GetExtendedContactDetailsAllOfStatisticsClicked> clicked) {
+  public GetExtendedContactDetailsAllOfStatistics clicked(@jakarta.annotation.Nullable List<GetExtendedContactDetailsAllOfStatisticsClicked> clicked) {
     
     this.clicked = clicked;
     return this;
@@ -298,11 +307,11 @@ public class GetExtendedContactDetailsAllOfStatistics {
 
   @JsonProperty(JSON_PROPERTY_CLICKED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setClicked(List<GetExtendedContactDetailsAllOfStatisticsClicked> clicked) {
+  public void setClicked(@jakarta.annotation.Nullable List<GetExtendedContactDetailsAllOfStatisticsClicked> clicked) {
     this.clicked = clicked;
   }
 
-  public GetExtendedContactDetailsAllOfStatistics transacAttributes(List<Object> transacAttributes) {
+  public GetExtendedContactDetailsAllOfStatistics transacAttributes(@jakarta.annotation.Nullable List<Object> transacAttributes) {
     
     this.transacAttributes = transacAttributes;
     return this;
@@ -331,11 +340,11 @@ public class GetExtendedContactDetailsAllOfStatistics {
 
   @JsonProperty(JSON_PROPERTY_TRANSAC_ATTRIBUTES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setTransacAttributes(List<Object> transacAttributes) {
+  public void setTransacAttributes(@jakarta.annotation.Nullable List<Object> transacAttributes) {
     this.transacAttributes = transacAttributes;
   }
 
-  public GetExtendedContactDetailsAllOfStatistics delivered(List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> delivered) {
+  public GetExtendedContactDetailsAllOfStatistics delivered(@jakarta.annotation.Nullable List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> delivered) {
     
     this.delivered = delivered;
     return this;
@@ -364,7 +373,7 @@ public class GetExtendedContactDetailsAllOfStatistics {
 
   @JsonProperty(JSON_PROPERTY_DELIVERED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDelivered(List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> delivered) {
+  public void setDelivered(@jakarta.annotation.Nullable List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> delivered) {
     this.delivered = delivered;
   }
 

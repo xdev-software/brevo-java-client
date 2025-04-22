@@ -35,15 +35,17 @@ import java.util.StringJoiner;
 })
 public class TaskTypes {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nullable
   private String id;
 
   public static final String JSON_PROPERTY_TITLE = "title";
+  @jakarta.annotation.Nullable
   private String title;
 
   public TaskTypes() {
   }
 
-  public TaskTypes id(String id) {
+  public TaskTypes id(@jakarta.annotation.Nullable String id) {
     
     this.id = id;
     return this;
@@ -64,11 +66,11 @@ public class TaskTypes {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setId(String id) {
+  public void setId(@jakarta.annotation.Nullable String id) {
     this.id = id;
   }
 
-  public TaskTypes title(String title) {
+  public TaskTypes title(@jakarta.annotation.Nullable String title) {
     
     this.title = title;
     return this;
@@ -89,7 +91,7 @@ public class TaskTypes {
 
   @JsonProperty(JSON_PROPERTY_TITLE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setTitle(String title) {
+  public void setTitle(@jakarta.annotation.Nullable String title) {
     this.title = title;
   }
 

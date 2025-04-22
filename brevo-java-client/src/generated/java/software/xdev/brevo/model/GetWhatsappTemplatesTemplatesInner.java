@@ -42,33 +42,41 @@ import java.util.StringJoiner;
 @JsonTypeName("getWhatsappTemplates_templates_inner")
 public class GetWhatsappTemplatesTemplatesInner {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nonnull
   private Long id;
 
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_STATUS = "status";
+  @jakarta.annotation.Nonnull
   private String status;
 
   public static final String JSON_PROPERTY_LANGUAGE = "language";
+  @jakarta.annotation.Nonnull
   private String language;
 
   public static final String JSON_PROPERTY_CATEGORY = "category";
+  @jakarta.annotation.Nonnull
   private String category;
 
   public static final String JSON_PROPERTY_ERROR_REASON = "errorReason";
+  @jakarta.annotation.Nullable
   private String errorReason;
 
   public static final String JSON_PROPERTY_CREATED_AT = "createdAt";
+  @jakarta.annotation.Nonnull
   private String createdAt;
 
   public static final String JSON_PROPERTY_MODIFIED_AT = "modifiedAt";
+  @jakarta.annotation.Nonnull
   private String modifiedAt;
 
   public GetWhatsappTemplatesTemplatesInner() {
   }
 
-  public GetWhatsappTemplatesTemplatesInner id(Long id) {
+  public GetWhatsappTemplatesTemplatesInner id(@jakarta.annotation.Nonnull Long id) {
     
     this.id = id;
     return this;
@@ -89,11 +97,11 @@ public class GetWhatsappTemplatesTemplatesInner {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(Long id) {
+  public void setId(@jakarta.annotation.Nonnull Long id) {
     this.id = id;
   }
 
-  public GetWhatsappTemplatesTemplatesInner name(String name) {
+  public GetWhatsappTemplatesTemplatesInner name(@jakarta.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
@@ -114,11 +122,11 @@ public class GetWhatsappTemplatesTemplatesInner {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
   }
 
-  public GetWhatsappTemplatesTemplatesInner status(String status) {
+  public GetWhatsappTemplatesTemplatesInner status(@jakarta.annotation.Nonnull String status) {
     
     this.status = status;
     return this;
@@ -139,11 +147,11 @@ public class GetWhatsappTemplatesTemplatesInner {
 
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatus(String status) {
+  public void setStatus(@jakarta.annotation.Nonnull String status) {
     this.status = status;
   }
 
-  public GetWhatsappTemplatesTemplatesInner language(String language) {
+  public GetWhatsappTemplatesTemplatesInner language(@jakarta.annotation.Nonnull String language) {
     
     this.language = language;
     return this;
@@ -164,11 +172,11 @@ public class GetWhatsappTemplatesTemplatesInner {
 
   @JsonProperty(JSON_PROPERTY_LANGUAGE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setLanguage(String language) {
+  public void setLanguage(@jakarta.annotation.Nonnull String language) {
     this.language = language;
   }
 
-  public GetWhatsappTemplatesTemplatesInner category(String category) {
+  public GetWhatsappTemplatesTemplatesInner category(@jakarta.annotation.Nonnull String category) {
     
     this.category = category;
     return this;
@@ -189,11 +197,11 @@ public class GetWhatsappTemplatesTemplatesInner {
 
   @JsonProperty(JSON_PROPERTY_CATEGORY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCategory(String category) {
+  public void setCategory(@jakarta.annotation.Nonnull String category) {
     this.category = category;
   }
 
-  public GetWhatsappTemplatesTemplatesInner errorReason(String errorReason) {
+  public GetWhatsappTemplatesTemplatesInner errorReason(@jakarta.annotation.Nullable String errorReason) {
     
     this.errorReason = errorReason;
     return this;
@@ -214,11 +222,11 @@ public class GetWhatsappTemplatesTemplatesInner {
 
   @JsonProperty(JSON_PROPERTY_ERROR_REASON)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setErrorReason(String errorReason) {
+  public void setErrorReason(@jakarta.annotation.Nullable String errorReason) {
     this.errorReason = errorReason;
   }
 
-  public GetWhatsappTemplatesTemplatesInner createdAt(String createdAt) {
+  public GetWhatsappTemplatesTemplatesInner createdAt(@jakarta.annotation.Nonnull String createdAt) {
     
     this.createdAt = createdAt;
     return this;
@@ -239,11 +247,11 @@ public class GetWhatsappTemplatesTemplatesInner {
 
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCreatedAt(String createdAt) {
+  public void setCreatedAt(@jakarta.annotation.Nonnull String createdAt) {
     this.createdAt = createdAt;
   }
 
-  public GetWhatsappTemplatesTemplatesInner modifiedAt(String modifiedAt) {
+  public GetWhatsappTemplatesTemplatesInner modifiedAt(@jakarta.annotation.Nonnull String modifiedAt) {
     
     this.modifiedAt = modifiedAt;
     return this;
@@ -264,7 +272,7 @@ public class GetWhatsappTemplatesTemplatesInner {
 
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setModifiedAt(String modifiedAt) {
+  public void setModifiedAt(@jakarta.annotation.Nonnull String modifiedAt) {
     this.modifiedAt = modifiedAt;
   }
 

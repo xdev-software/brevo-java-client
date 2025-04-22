@@ -39,15 +39,17 @@ import java.util.StringJoiner;
 @JsonTypeName("getUserPermission_privileges_inner")
 public class GetUserPermissionPrivilegesInner {
   public static final String JSON_PROPERTY_FEATURE = "feature";
+  @jakarta.annotation.Nonnull
   private String feature;
 
   public static final String JSON_PROPERTY_PERMISSIONS = "permissions";
+  @jakarta.annotation.Nonnull
   private List<String> permissions = new ArrayList<>();
 
   public GetUserPermissionPrivilegesInner() {
   }
 
-  public GetUserPermissionPrivilegesInner feature(String feature) {
+  public GetUserPermissionPrivilegesInner feature(@jakarta.annotation.Nonnull String feature) {
     
     this.feature = feature;
     return this;
@@ -68,11 +70,11 @@ public class GetUserPermissionPrivilegesInner {
 
   @JsonProperty(JSON_PROPERTY_FEATURE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setFeature(String feature) {
+  public void setFeature(@jakarta.annotation.Nonnull String feature) {
     this.feature = feature;
   }
 
-  public GetUserPermissionPrivilegesInner permissions(List<String> permissions) {
+  public GetUserPermissionPrivilegesInner permissions(@jakarta.annotation.Nonnull List<String> permissions) {
     
     this.permissions = permissions;
     return this;
@@ -101,7 +103,7 @@ public class GetUserPermissionPrivilegesInner {
 
   @JsonProperty(JSON_PROPERTY_PERMISSIONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPermissions(List<String> permissions) {
+  public void setPermissions(@jakarta.annotation.Nonnull List<String> permissions) {
     this.permissions = permissions;
   }
 

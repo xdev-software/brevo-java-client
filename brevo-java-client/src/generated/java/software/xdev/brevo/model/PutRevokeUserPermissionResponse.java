@@ -39,15 +39,17 @@ import java.util.StringJoiner;
 @JsonTypeName("putRevokeUserPermissionResponse")
 public class PutRevokeUserPermissionResponse {
   public static final String JSON_PROPERTY_STATUS = "status";
+  @jakarta.annotation.Nonnull
   private String status;
 
   public static final String JSON_PROPERTY_CREDIT_NOTES = "credit_notes";
+  @jakarta.annotation.Nullable
   private List<String> creditNotes = new ArrayList<>();
 
   public PutRevokeUserPermissionResponse() {
   }
 
-  public PutRevokeUserPermissionResponse status(String status) {
+  public PutRevokeUserPermissionResponse status(@jakarta.annotation.Nonnull String status) {
     
     this.status = status;
     return this;
@@ -68,11 +70,11 @@ public class PutRevokeUserPermissionResponse {
 
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatus(String status) {
+  public void setStatus(@jakarta.annotation.Nonnull String status) {
     this.status = status;
   }
 
-  public PutRevokeUserPermissionResponse creditNotes(List<String> creditNotes) {
+  public PutRevokeUserPermissionResponse creditNotes(@jakarta.annotation.Nullable List<String> creditNotes) {
     
     this.creditNotes = creditNotes;
     return this;
@@ -101,7 +103,7 @@ public class PutRevokeUserPermissionResponse {
 
   @JsonProperty(JSON_PROPERTY_CREDIT_NOTES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCreditNotes(List<String> creditNotes) {
+  public void setCreditNotes(@jakarta.annotation.Nullable List<String> creditNotes) {
     this.creditNotes = creditNotes;
   }
 

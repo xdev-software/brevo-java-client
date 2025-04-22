@@ -35,12 +35,13 @@ import java.util.StringJoiner;
 @JsonTypeName("createdProcessId")
 public class CreatedProcessId {
   public static final String JSON_PROPERTY_PROCESS_ID = "processId";
+  @jakarta.annotation.Nonnull
   private Long processId;
 
   public CreatedProcessId() {
   }
 
-  public CreatedProcessId processId(Long processId) {
+  public CreatedProcessId processId(@jakarta.annotation.Nonnull Long processId) {
     
     this.processId = processId;
     return this;
@@ -61,7 +62,7 @@ public class CreatedProcessId {
 
   @JsonProperty(JSON_PROPERTY_PROCESS_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setProcessId(Long processId) {
+  public void setProcessId(@jakarta.annotation.Nonnull Long processId) {
     this.processId = processId;
   }
 

@@ -37,18 +37,21 @@ import java.util.StringJoiner;
 @JsonTypeName("getExtendedCampaignOverview_allOf_sender")
 public class GetExtendedCampaignOverviewAllOfSender {
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nullable
   private String name;
 
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nullable
   private String email;
 
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nullable
   private Long id;
 
   public GetExtendedCampaignOverviewAllOfSender() {
   }
 
-  public GetExtendedCampaignOverviewAllOfSender name(String name) {
+  public GetExtendedCampaignOverviewAllOfSender name(@jakarta.annotation.Nullable String name) {
     
     this.name = name;
     return this;
@@ -69,11 +72,11 @@ public class GetExtendedCampaignOverviewAllOfSender {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nullable String name) {
     this.name = name;
   }
 
-  public GetExtendedCampaignOverviewAllOfSender email(String email) {
+  public GetExtendedCampaignOverviewAllOfSender email(@jakarta.annotation.Nullable String email) {
     
     this.email = email;
     return this;
@@ -94,11 +97,11 @@ public class GetExtendedCampaignOverviewAllOfSender {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEmail(String email) {
+  public void setEmail(@jakarta.annotation.Nullable String email) {
     this.email = email;
   }
 
-  public GetExtendedCampaignOverviewAllOfSender id(Long id) {
+  public GetExtendedCampaignOverviewAllOfSender id(@jakarta.annotation.Nullable Long id) {
     
     this.id = id;
     return this;
@@ -119,7 +122,7 @@ public class GetExtendedCampaignOverviewAllOfSender {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setId(Long id) {
+  public void setId(@jakarta.annotation.Nullable Long id) {
     this.id = id;
   }
 

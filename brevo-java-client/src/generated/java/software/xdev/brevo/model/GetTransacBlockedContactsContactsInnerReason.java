@@ -39,17 +39,17 @@ public class GetTransacBlockedContactsContactsInnerReason {
    * Reason code for blocking / unsubscribing (This code is safe for comparison)
    */
   public enum CodeEnum {
-    UNSUBSCRIBED_VIA_MA("unsubscribedViaMA"),
+    UNSUBSCRIBED_VIA_MA(String.valueOf("unsubscribedViaMA")),
     
-    UNSUBSCRIBED_VIA_EMAIL("unsubscribedViaEmail"),
+    UNSUBSCRIBED_VIA_EMAIL(String.valueOf("unsubscribedViaEmail")),
     
-    ADMIN_BLOCKED("adminBlocked"),
+    ADMIN_BLOCKED(String.valueOf("adminBlocked")),
     
-    UNSUBSCRIBED_VIA_API("unsubscribedViaApi"),
+    UNSUBSCRIBED_VIA_API(String.valueOf("unsubscribedViaApi")),
     
-    HARD_BOUNCE("hardBounce"),
+    HARD_BOUNCE(String.valueOf("hardBounce")),
     
-    CONTACT_FLAGGED_AS_SPAM("contactFlaggedAsSpam");
+    CONTACT_FLAGGED_AS_SPAM(String.valueOf("contactFlaggedAsSpam"));
 
     private String value;
 
@@ -79,15 +79,17 @@ public class GetTransacBlockedContactsContactsInnerReason {
   }
 
   public static final String JSON_PROPERTY_CODE = "code";
+  @jakarta.annotation.Nullable
   private CodeEnum code;
 
   public static final String JSON_PROPERTY_MESSAGE = "message";
+  @jakarta.annotation.Nullable
   private String message;
 
   public GetTransacBlockedContactsContactsInnerReason() {
   }
 
-  public GetTransacBlockedContactsContactsInnerReason code(CodeEnum code) {
+  public GetTransacBlockedContactsContactsInnerReason code(@jakarta.annotation.Nullable CodeEnum code) {
     
     this.code = code;
     return this;
@@ -108,11 +110,11 @@ public class GetTransacBlockedContactsContactsInnerReason {
 
   @JsonProperty(JSON_PROPERTY_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCode(CodeEnum code) {
+  public void setCode(@jakarta.annotation.Nullable CodeEnum code) {
     this.code = code;
   }
 
-  public GetTransacBlockedContactsContactsInnerReason message(String message) {
+  public GetTransacBlockedContactsContactsInnerReason message(@jakarta.annotation.Nullable String message) {
     
     this.message = message;
     return this;
@@ -133,7 +135,7 @@ public class GetTransacBlockedContactsContactsInnerReason {
 
   @JsonProperty(JSON_PROPERTY_MESSAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setMessage(String message) {
+  public void setMessage(@jakarta.annotation.Nullable String message) {
     this.message = message;
   }
 
