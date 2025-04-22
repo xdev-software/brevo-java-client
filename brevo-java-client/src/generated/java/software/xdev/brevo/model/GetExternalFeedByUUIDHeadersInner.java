@@ -36,15 +36,17 @@ import java.util.StringJoiner;
 @JsonTypeName("getExternalFeedByUUID_headers_inner")
 public class GetExternalFeedByUUIDHeadersInner {
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nullable
   private String name;
 
   public static final String JSON_PROPERTY_VALUE = "value";
+  @jakarta.annotation.Nullable
   private String value;
 
   public GetExternalFeedByUUIDHeadersInner() {
   }
 
-  public GetExternalFeedByUUIDHeadersInner name(String name) {
+  public GetExternalFeedByUUIDHeadersInner name(@jakarta.annotation.Nullable String name) {
     
     this.name = name;
     return this;
@@ -65,11 +67,11 @@ public class GetExternalFeedByUUIDHeadersInner {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nullable String name) {
     this.name = name;
   }
 
-  public GetExternalFeedByUUIDHeadersInner value(String value) {
+  public GetExternalFeedByUUIDHeadersInner value(@jakarta.annotation.Nullable String value) {
     
     this.value = value;
     return this;
@@ -90,7 +92,7 @@ public class GetExternalFeedByUUIDHeadersInner {
 
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setValue(String value) {
+  public void setValue(@jakarta.annotation.Nullable String value) {
     this.value = value;
   }
 

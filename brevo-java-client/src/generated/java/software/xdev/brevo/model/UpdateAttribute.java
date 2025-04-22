@@ -40,15 +40,17 @@ import java.util.StringJoiner;
 @JsonTypeName("updateAttribute")
 public class UpdateAttribute {
   public static final String JSON_PROPERTY_VALUE = "value";
+  @jakarta.annotation.Nullable
   private String value;
 
   public static final String JSON_PROPERTY_ENUMERATION = "enumeration";
+  @jakarta.annotation.Nullable
   private List<UpdateAttributeEnumerationInner> enumeration = new ArrayList<>();
 
   public UpdateAttribute() {
   }
 
-  public UpdateAttribute value(String value) {
+  public UpdateAttribute value(@jakarta.annotation.Nullable String value) {
     
     this.value = value;
     return this;
@@ -69,11 +71,11 @@ public class UpdateAttribute {
 
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setValue(String value) {
+  public void setValue(@jakarta.annotation.Nullable String value) {
     this.value = value;
   }
 
-  public UpdateAttribute enumeration(List<UpdateAttributeEnumerationInner> enumeration) {
+  public UpdateAttribute enumeration(@jakarta.annotation.Nullable List<UpdateAttributeEnumerationInner> enumeration) {
     
     this.enumeration = enumeration;
     return this;
@@ -102,7 +104,7 @@ public class UpdateAttribute {
 
   @JsonProperty(JSON_PROPERTY_ENUMERATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEnumeration(List<UpdateAttributeEnumerationInner> enumeration) {
+  public void setEnumeration(@jakarta.annotation.Nullable List<UpdateAttributeEnumerationInner> enumeration) {
     this.enumeration = enumeration;
   }
 

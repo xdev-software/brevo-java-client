@@ -37,18 +37,21 @@ import java.util.StringJoiner;
 @JsonTypeName("getChildInfo_allOf_statistics")
 public class GetChildInfoAllOfStatistics {
   public static final String JSON_PROPERTY_PREVIOUS_MONTH_TOTAL_SENT = "previousMonthTotalSent";
+  @jakarta.annotation.Nullable
   private Long previousMonthTotalSent;
 
   public static final String JSON_PROPERTY_CURRENT_MONTH_TOTAL_SENT = "currentMonthTotalSent";
+  @jakarta.annotation.Nullable
   private Long currentMonthTotalSent;
 
   public static final String JSON_PROPERTY_TOTAL_SENT = "totalSent";
+  @jakarta.annotation.Nullable
   private Long totalSent;
 
   public GetChildInfoAllOfStatistics() {
   }
 
-  public GetChildInfoAllOfStatistics previousMonthTotalSent(Long previousMonthTotalSent) {
+  public GetChildInfoAllOfStatistics previousMonthTotalSent(@jakarta.annotation.Nullable Long previousMonthTotalSent) {
     
     this.previousMonthTotalSent = previousMonthTotalSent;
     return this;
@@ -69,11 +72,11 @@ public class GetChildInfoAllOfStatistics {
 
   @JsonProperty(JSON_PROPERTY_PREVIOUS_MONTH_TOTAL_SENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setPreviousMonthTotalSent(Long previousMonthTotalSent) {
+  public void setPreviousMonthTotalSent(@jakarta.annotation.Nullable Long previousMonthTotalSent) {
     this.previousMonthTotalSent = previousMonthTotalSent;
   }
 
-  public GetChildInfoAllOfStatistics currentMonthTotalSent(Long currentMonthTotalSent) {
+  public GetChildInfoAllOfStatistics currentMonthTotalSent(@jakarta.annotation.Nullable Long currentMonthTotalSent) {
     
     this.currentMonthTotalSent = currentMonthTotalSent;
     return this;
@@ -94,11 +97,11 @@ public class GetChildInfoAllOfStatistics {
 
   @JsonProperty(JSON_PROPERTY_CURRENT_MONTH_TOTAL_SENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCurrentMonthTotalSent(Long currentMonthTotalSent) {
+  public void setCurrentMonthTotalSent(@jakarta.annotation.Nullable Long currentMonthTotalSent) {
     this.currentMonthTotalSent = currentMonthTotalSent;
   }
 
-  public GetChildInfoAllOfStatistics totalSent(Long totalSent) {
+  public GetChildInfoAllOfStatistics totalSent(@jakarta.annotation.Nullable Long totalSent) {
     
     this.totalSent = totalSent;
     return this;
@@ -119,7 +122,7 @@ public class GetChildInfoAllOfStatistics {
 
   @JsonProperty(JSON_PROPERTY_TOTAL_SENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setTotalSent(Long totalSent) {
+  public void setTotalSent(@jakarta.annotation.Nullable Long totalSent) {
     this.totalSent = totalSent;
   }
 

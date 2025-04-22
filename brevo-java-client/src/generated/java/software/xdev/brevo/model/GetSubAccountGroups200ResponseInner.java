@@ -36,15 +36,17 @@ import java.util.StringJoiner;
 @JsonTypeName("getSubAccountGroups_200_response_inner")
 public class GetSubAccountGroups200ResponseInner {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nullable
   private String id;
 
   public static final String JSON_PROPERTY_GROUP_NAME = "groupName";
+  @jakarta.annotation.Nullable
   private String groupName;
 
   public GetSubAccountGroups200ResponseInner() {
   }
 
-  public GetSubAccountGroups200ResponseInner id(String id) {
+  public GetSubAccountGroups200ResponseInner id(@jakarta.annotation.Nullable String id) {
     
     this.id = id;
     return this;
@@ -65,11 +67,11 @@ public class GetSubAccountGroups200ResponseInner {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setId(String id) {
+  public void setId(@jakarta.annotation.Nullable String id) {
     this.id = id;
   }
 
-  public GetSubAccountGroups200ResponseInner groupName(String groupName) {
+  public GetSubAccountGroups200ResponseInner groupName(@jakarta.annotation.Nullable String groupName) {
     
     this.groupName = groupName;
     return this;
@@ -90,7 +92,7 @@ public class GetSubAccountGroups200ResponseInner {
 
   @JsonProperty(JSON_PROPERTY_GROUP_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setGroupName(String groupName) {
+  public void setGroupName(@jakarta.annotation.Nullable String groupName) {
     this.groupName = groupName;
   }
 

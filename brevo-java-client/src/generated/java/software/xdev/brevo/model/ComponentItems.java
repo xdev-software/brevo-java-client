@@ -36,15 +36,17 @@ import java.util.StringJoiner;
 @JsonTypeName("componentItems")
 public class ComponentItems {
   public static final String JSON_PROPERTY_TYPE = "type";
+  @jakarta.annotation.Nullable
   private String type;
 
   public static final String JSON_PROPERTY_TEXT = "text";
+  @jakarta.annotation.Nullable
   private String text;
 
   public ComponentItems() {
   }
 
-  public ComponentItems type(String type) {
+  public ComponentItems type(@jakarta.annotation.Nullable String type) {
     
     this.type = type;
     return this;
@@ -65,11 +67,11 @@ public class ComponentItems {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setType(String type) {
+  public void setType(@jakarta.annotation.Nullable String type) {
     this.type = type;
   }
 
-  public ComponentItems text(String text) {
+  public ComponentItems text(@jakarta.annotation.Nullable String text) {
     
     this.text = text;
     return this;
@@ -90,7 +92,7 @@ public class ComponentItems {
 
   @JsonProperty(JSON_PROPERTY_TEXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setText(String text) {
+  public void setText(@jakarta.annotation.Nullable String text) {
     this.text = text;
   }
 

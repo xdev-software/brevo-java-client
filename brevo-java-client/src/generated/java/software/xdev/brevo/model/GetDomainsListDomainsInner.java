@@ -39,24 +39,29 @@ import java.util.StringJoiner;
 @JsonTypeName("getDomainsList_domains_inner")
 public class GetDomainsListDomainsInner {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nonnull
   private Long id;
 
   public static final String JSON_PROPERTY_DOMAIN_NAME = "domain_name";
+  @jakarta.annotation.Nonnull
   private String domainName;
 
   public static final String JSON_PROPERTY_AUTHENTICATED = "authenticated";
+  @jakarta.annotation.Nonnull
   private Boolean authenticated;
 
   public static final String JSON_PROPERTY_VERIFIED = "verified";
+  @jakarta.annotation.Nonnull
   private Boolean verified;
 
   public static final String JSON_PROPERTY_IP = "ip";
+  @jakarta.annotation.Nullable
   private String ip;
 
   public GetDomainsListDomainsInner() {
   }
 
-  public GetDomainsListDomainsInner id(Long id) {
+  public GetDomainsListDomainsInner id(@jakarta.annotation.Nonnull Long id) {
     
     this.id = id;
     return this;
@@ -77,11 +82,11 @@ public class GetDomainsListDomainsInner {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(Long id) {
+  public void setId(@jakarta.annotation.Nonnull Long id) {
     this.id = id;
   }
 
-  public GetDomainsListDomainsInner domainName(String domainName) {
+  public GetDomainsListDomainsInner domainName(@jakarta.annotation.Nonnull String domainName) {
     
     this.domainName = domainName;
     return this;
@@ -102,11 +107,11 @@ public class GetDomainsListDomainsInner {
 
   @JsonProperty(JSON_PROPERTY_DOMAIN_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDomainName(String domainName) {
+  public void setDomainName(@jakarta.annotation.Nonnull String domainName) {
     this.domainName = domainName;
   }
 
-  public GetDomainsListDomainsInner authenticated(Boolean authenticated) {
+  public GetDomainsListDomainsInner authenticated(@jakarta.annotation.Nonnull Boolean authenticated) {
     
     this.authenticated = authenticated;
     return this;
@@ -127,11 +132,11 @@ public class GetDomainsListDomainsInner {
 
   @JsonProperty(JSON_PROPERTY_AUTHENTICATED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAuthenticated(Boolean authenticated) {
+  public void setAuthenticated(@jakarta.annotation.Nonnull Boolean authenticated) {
     this.authenticated = authenticated;
   }
 
-  public GetDomainsListDomainsInner verified(Boolean verified) {
+  public GetDomainsListDomainsInner verified(@jakarta.annotation.Nonnull Boolean verified) {
     
     this.verified = verified;
     return this;
@@ -152,11 +157,11 @@ public class GetDomainsListDomainsInner {
 
   @JsonProperty(JSON_PROPERTY_VERIFIED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setVerified(Boolean verified) {
+  public void setVerified(@jakarta.annotation.Nonnull Boolean verified) {
     this.verified = verified;
   }
 
-  public GetDomainsListDomainsInner ip(String ip) {
+  public GetDomainsListDomainsInner ip(@jakarta.annotation.Nullable String ip) {
     
     this.ip = ip;
     return this;
@@ -177,7 +182,7 @@ public class GetDomainsListDomainsInner {
 
   @JsonProperty(JSON_PROPERTY_IP)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setIp(String ip) {
+  public void setIp(@jakarta.annotation.Nullable String ip) {
     this.ip = ip;
   }
 

@@ -37,18 +37,21 @@ import java.util.StringJoiner;
 @JsonTypeName("deleteHardbounces")
 public class DeleteHardbounces {
   public static final String JSON_PROPERTY_START_DATE = "startDate";
+  @jakarta.annotation.Nullable
   private String startDate;
 
   public static final String JSON_PROPERTY_END_DATE = "endDate";
+  @jakarta.annotation.Nullable
   private String endDate;
 
   public static final String JSON_PROPERTY_CONTACT_EMAIL = "contactEmail";
+  @jakarta.annotation.Nullable
   private String contactEmail;
 
   public DeleteHardbounces() {
   }
 
-  public DeleteHardbounces startDate(String startDate) {
+  public DeleteHardbounces startDate(@jakarta.annotation.Nullable String startDate) {
     
     this.startDate = startDate;
     return this;
@@ -69,11 +72,11 @@ public class DeleteHardbounces {
 
   @JsonProperty(JSON_PROPERTY_START_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setStartDate(String startDate) {
+  public void setStartDate(@jakarta.annotation.Nullable String startDate) {
     this.startDate = startDate;
   }
 
-  public DeleteHardbounces endDate(String endDate) {
+  public DeleteHardbounces endDate(@jakarta.annotation.Nullable String endDate) {
     
     this.endDate = endDate;
     return this;
@@ -94,11 +97,11 @@ public class DeleteHardbounces {
 
   @JsonProperty(JSON_PROPERTY_END_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEndDate(String endDate) {
+  public void setEndDate(@jakarta.annotation.Nullable String endDate) {
     this.endDate = endDate;
   }
 
-  public DeleteHardbounces contactEmail(String contactEmail) {
+  public DeleteHardbounces contactEmail(@jakarta.annotation.Nullable String contactEmail) {
     
     this.contactEmail = contactEmail;
     return this;
@@ -119,7 +122,7 @@ public class DeleteHardbounces {
 
   @JsonProperty(JSON_PROPERTY_CONTACT_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setContactEmail(String contactEmail) {
+  public void setContactEmail(@jakarta.annotation.Nullable String contactEmail) {
     this.contactEmail = contactEmail;
   }
 

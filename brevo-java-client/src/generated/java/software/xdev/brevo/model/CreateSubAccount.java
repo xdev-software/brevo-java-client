@@ -38,26 +38,28 @@ import java.util.StringJoiner;
 @JsonTypeName("createSubAccount")
 public class CreateSubAccount {
   public static final String JSON_PROPERTY_COMPANY_NAME = "companyName";
+  @jakarta.annotation.Nonnull
   private String companyName;
 
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nonnull
   private String email;
 
   /**
    * Set the language of the sub-account
    */
   public enum LanguageEnum {
-    EN("en"),
+    EN(String.valueOf("en")),
     
-    FR("fr"),
+    FR(String.valueOf("fr")),
     
-    IT("it"),
+    IT(String.valueOf("it")),
     
-    ES("es"),
+    ES(String.valueOf("es")),
     
-    PT("pt"),
+    PT(String.valueOf("pt")),
     
-    DE("de");
+    DE(String.valueOf("de"));
 
     private String value;
 
@@ -87,15 +89,17 @@ public class CreateSubAccount {
   }
 
   public static final String JSON_PROPERTY_LANGUAGE = "language";
+  @jakarta.annotation.Nullable
   private LanguageEnum language;
 
   public static final String JSON_PROPERTY_TIMEZONE = "timezone";
+  @jakarta.annotation.Nullable
   private String timezone;
 
   public CreateSubAccount() {
   }
 
-  public CreateSubAccount companyName(String companyName) {
+  public CreateSubAccount companyName(@jakarta.annotation.Nonnull String companyName) {
     
     this.companyName = companyName;
     return this;
@@ -116,11 +120,11 @@ public class CreateSubAccount {
 
   @JsonProperty(JSON_PROPERTY_COMPANY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCompanyName(String companyName) {
+  public void setCompanyName(@jakarta.annotation.Nonnull String companyName) {
     this.companyName = companyName;
   }
 
-  public CreateSubAccount email(String email) {
+  public CreateSubAccount email(@jakarta.annotation.Nonnull String email) {
     
     this.email = email;
     return this;
@@ -141,11 +145,11 @@ public class CreateSubAccount {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEmail(String email) {
+  public void setEmail(@jakarta.annotation.Nonnull String email) {
     this.email = email;
   }
 
-  public CreateSubAccount language(LanguageEnum language) {
+  public CreateSubAccount language(@jakarta.annotation.Nullable LanguageEnum language) {
     
     this.language = language;
     return this;
@@ -166,11 +170,11 @@ public class CreateSubAccount {
 
   @JsonProperty(JSON_PROPERTY_LANGUAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setLanguage(LanguageEnum language) {
+  public void setLanguage(@jakarta.annotation.Nullable LanguageEnum language) {
     this.language = language;
   }
 
-  public CreateSubAccount timezone(String timezone) {
+  public CreateSubAccount timezone(@jakarta.annotation.Nullable String timezone) {
     
     this.timezone = timezone;
     return this;
@@ -191,7 +195,7 @@ public class CreateSubAccount {
 
   @JsonProperty(JSON_PROPERTY_TIMEZONE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setTimezone(String timezone) {
+  public void setTimezone(@jakarta.annotation.Nullable String timezone) {
     this.timezone = timezone;
   }
 

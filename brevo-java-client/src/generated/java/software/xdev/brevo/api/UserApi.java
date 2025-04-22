@@ -218,7 +218,7 @@ public class UserApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/organization/user/{email}/permissions"
-      .replaceAll("\\{" + "email" + "\\}", apiClient.escapeString(email.toString()));
+      .replaceAll("\\{" + "email" + "\\}", apiClient.escapeString(apiClient.parameterToString(email)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -367,7 +367,7 @@ public class UserApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/organization/user/invitation/revoke/{email}"
-      .replaceAll("\\{" + "email" + "\\}", apiClient.escapeString(email.toString()));
+      .replaceAll("\\{" + "email" + "\\}", apiClient.escapeString(apiClient.parameterToString(email)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -449,8 +449,8 @@ public class UserApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/organization/user/invitation/{action}/{email}"
-      .replaceAll("\\{" + "action" + "\\}", apiClient.escapeString(action.toString()))
-      .replaceAll("\\{" + "email" + "\\}", apiClient.escapeString(email.toString()));
+      .replaceAll("\\{" + "action" + "\\}", apiClient.escapeString(apiClient.parameterToString(action)))
+      .replaceAll("\\{" + "email" + "\\}", apiClient.escapeString(apiClient.parameterToString(email)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;

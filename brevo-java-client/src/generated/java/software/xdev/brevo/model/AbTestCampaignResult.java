@@ -47,15 +47,15 @@ public class AbTestCampaignResult {
    * Winning Campaign Info. pending &#x3D; Campaign has been picked for sending and winning version is yet to be decided, tie &#x3D; A tie happened between both the versions, notAvailable &#x3D; Campaign has not yet been picked for sending.
    */
   public enum WinningVersionEnum {
-    NOT_AVAILABLE("notAvailable"),
+    NOT_AVAILABLE(String.valueOf("notAvailable")),
     
-    PENDING("pending"),
+    PENDING(String.valueOf("pending")),
     
-    TIE("tie"),
+    TIE(String.valueOf("tie")),
     
-    A("A"),
+    A(String.valueOf("A")),
     
-    B("B");
+    B(String.valueOf("B"));
 
     private String value;
 
@@ -85,15 +85,16 @@ public class AbTestCampaignResult {
   }
 
   public static final String JSON_PROPERTY_WINNING_VERSION = "winningVersion";
+  @jakarta.annotation.Nullable
   private WinningVersionEnum winningVersion;
 
   /**
    * Criteria choosen for winning version (Open/Click)
    */
   public enum WinningCriteriaEnum {
-    OPEN("Open"),
+    OPEN(String.valueOf("Open")),
     
-    CLICK("Click");
+    CLICK(String.valueOf("Click"));
 
     private String value;
 
@@ -123,30 +124,37 @@ public class AbTestCampaignResult {
   }
 
   public static final String JSON_PROPERTY_WINNING_CRITERIA = "winningCriteria";
+  @jakarta.annotation.Nullable
   private WinningCriteriaEnum winningCriteria;
 
   public static final String JSON_PROPERTY_WINNING_SUBJECT_LINE = "winningSubjectLine";
+  @jakarta.annotation.Nullable
   private String winningSubjectLine;
 
   public static final String JSON_PROPERTY_OPEN_RATE = "openRate";
+  @jakarta.annotation.Nullable
   private String openRate;
 
   public static final String JSON_PROPERTY_CLICK_RATE = "clickRate";
+  @jakarta.annotation.Nullable
   private String clickRate;
 
   public static final String JSON_PROPERTY_WINNING_VERSION_RATE = "winningVersionRate";
+  @jakarta.annotation.Nullable
   private String winningVersionRate;
 
   public static final String JSON_PROPERTY_STATISTICS = "statistics";
+  @jakarta.annotation.Nullable
   private AbTestCampaignResultStatistics statistics;
 
   public static final String JSON_PROPERTY_CLICKED_LINKS = "clickedLinks";
+  @jakarta.annotation.Nullable
   private AbTestCampaignResultClickedLinks clickedLinks;
 
   public AbTestCampaignResult() {
   }
 
-  public AbTestCampaignResult winningVersion(WinningVersionEnum winningVersion) {
+  public AbTestCampaignResult winningVersion(@jakarta.annotation.Nullable WinningVersionEnum winningVersion) {
     
     this.winningVersion = winningVersion;
     return this;
@@ -167,11 +175,11 @@ public class AbTestCampaignResult {
 
   @JsonProperty(JSON_PROPERTY_WINNING_VERSION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setWinningVersion(WinningVersionEnum winningVersion) {
+  public void setWinningVersion(@jakarta.annotation.Nullable WinningVersionEnum winningVersion) {
     this.winningVersion = winningVersion;
   }
 
-  public AbTestCampaignResult winningCriteria(WinningCriteriaEnum winningCriteria) {
+  public AbTestCampaignResult winningCriteria(@jakarta.annotation.Nullable WinningCriteriaEnum winningCriteria) {
     
     this.winningCriteria = winningCriteria;
     return this;
@@ -192,11 +200,11 @@ public class AbTestCampaignResult {
 
   @JsonProperty(JSON_PROPERTY_WINNING_CRITERIA)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setWinningCriteria(WinningCriteriaEnum winningCriteria) {
+  public void setWinningCriteria(@jakarta.annotation.Nullable WinningCriteriaEnum winningCriteria) {
     this.winningCriteria = winningCriteria;
   }
 
-  public AbTestCampaignResult winningSubjectLine(String winningSubjectLine) {
+  public AbTestCampaignResult winningSubjectLine(@jakarta.annotation.Nullable String winningSubjectLine) {
     
     this.winningSubjectLine = winningSubjectLine;
     return this;
@@ -217,11 +225,11 @@ public class AbTestCampaignResult {
 
   @JsonProperty(JSON_PROPERTY_WINNING_SUBJECT_LINE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setWinningSubjectLine(String winningSubjectLine) {
+  public void setWinningSubjectLine(@jakarta.annotation.Nullable String winningSubjectLine) {
     this.winningSubjectLine = winningSubjectLine;
   }
 
-  public AbTestCampaignResult openRate(String openRate) {
+  public AbTestCampaignResult openRate(@jakarta.annotation.Nullable String openRate) {
     
     this.openRate = openRate;
     return this;
@@ -242,11 +250,11 @@ public class AbTestCampaignResult {
 
   @JsonProperty(JSON_PROPERTY_OPEN_RATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setOpenRate(String openRate) {
+  public void setOpenRate(@jakarta.annotation.Nullable String openRate) {
     this.openRate = openRate;
   }
 
-  public AbTestCampaignResult clickRate(String clickRate) {
+  public AbTestCampaignResult clickRate(@jakarta.annotation.Nullable String clickRate) {
     
     this.clickRate = clickRate;
     return this;
@@ -267,11 +275,11 @@ public class AbTestCampaignResult {
 
   @JsonProperty(JSON_PROPERTY_CLICK_RATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setClickRate(String clickRate) {
+  public void setClickRate(@jakarta.annotation.Nullable String clickRate) {
     this.clickRate = clickRate;
   }
 
-  public AbTestCampaignResult winningVersionRate(String winningVersionRate) {
+  public AbTestCampaignResult winningVersionRate(@jakarta.annotation.Nullable String winningVersionRate) {
     
     this.winningVersionRate = winningVersionRate;
     return this;
@@ -292,11 +300,11 @@ public class AbTestCampaignResult {
 
   @JsonProperty(JSON_PROPERTY_WINNING_VERSION_RATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setWinningVersionRate(String winningVersionRate) {
+  public void setWinningVersionRate(@jakarta.annotation.Nullable String winningVersionRate) {
     this.winningVersionRate = winningVersionRate;
   }
 
-  public AbTestCampaignResult statistics(AbTestCampaignResultStatistics statistics) {
+  public AbTestCampaignResult statistics(@jakarta.annotation.Nullable AbTestCampaignResultStatistics statistics) {
     
     this.statistics = statistics;
     return this;
@@ -317,11 +325,11 @@ public class AbTestCampaignResult {
 
   @JsonProperty(JSON_PROPERTY_STATISTICS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setStatistics(AbTestCampaignResultStatistics statistics) {
+  public void setStatistics(@jakarta.annotation.Nullable AbTestCampaignResultStatistics statistics) {
     this.statistics = statistics;
   }
 
-  public AbTestCampaignResult clickedLinks(AbTestCampaignResultClickedLinks clickedLinks) {
+  public AbTestCampaignResult clickedLinks(@jakarta.annotation.Nullable AbTestCampaignResultClickedLinks clickedLinks) {
     
     this.clickedLinks = clickedLinks;
     return this;
@@ -342,7 +350,7 @@ public class AbTestCampaignResult {
 
   @JsonProperty(JSON_PROPERTY_CLICKED_LINKS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setClickedLinks(AbTestCampaignResultClickedLinks clickedLinks) {
+  public void setClickedLinks(@jakarta.annotation.Nullable AbTestCampaignResultClickedLinks clickedLinks) {
     this.clickedLinks = clickedLinks;
   }
 

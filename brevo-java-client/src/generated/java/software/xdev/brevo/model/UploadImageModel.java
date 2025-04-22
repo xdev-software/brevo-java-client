@@ -35,12 +35,13 @@ import java.util.StringJoiner;
 @JsonTypeName("uploadImageModel")
 public class UploadImageModel {
   public static final String JSON_PROPERTY_URL = "url";
+  @jakarta.annotation.Nullable
   private String url;
 
   public UploadImageModel() {
   }
 
-  public UploadImageModel url(String url) {
+  public UploadImageModel url(@jakarta.annotation.Nullable String url) {
     
     this.url = url;
     return this;
@@ -61,7 +62,7 @@ public class UploadImageModel {
 
   @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUrl(String url) {
+  public void setUrl(@jakarta.annotation.Nullable String url) {
     this.url = url;
   }
 

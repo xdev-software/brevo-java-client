@@ -37,18 +37,21 @@ import java.util.StringJoiner;
 @JsonTypeName("corporateGroupDetailsResponse_users_inner")
 public class CorporateGroupDetailsResponseUsersInner {
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nullable
   private String email;
 
   public static final String JSON_PROPERTY_LAST_NAME = "lastName";
+  @jakarta.annotation.Nullable
   private String lastName;
 
   public static final String JSON_PROPERTY_FIRST_NAME = "firstName";
+  @jakarta.annotation.Nullable
   private String firstName;
 
   public CorporateGroupDetailsResponseUsersInner() {
   }
 
-  public CorporateGroupDetailsResponseUsersInner email(String email) {
+  public CorporateGroupDetailsResponseUsersInner email(@jakarta.annotation.Nullable String email) {
     
     this.email = email;
     return this;
@@ -69,11 +72,11 @@ public class CorporateGroupDetailsResponseUsersInner {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEmail(String email) {
+  public void setEmail(@jakarta.annotation.Nullable String email) {
     this.email = email;
   }
 
-  public CorporateGroupDetailsResponseUsersInner lastName(String lastName) {
+  public CorporateGroupDetailsResponseUsersInner lastName(@jakarta.annotation.Nullable String lastName) {
     
     this.lastName = lastName;
     return this;
@@ -94,11 +97,11 @@ public class CorporateGroupDetailsResponseUsersInner {
 
   @JsonProperty(JSON_PROPERTY_LAST_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setLastName(String lastName) {
+  public void setLastName(@jakarta.annotation.Nullable String lastName) {
     this.lastName = lastName;
   }
 
-  public CorporateGroupDetailsResponseUsersInner firstName(String firstName) {
+  public CorporateGroupDetailsResponseUsersInner firstName(@jakarta.annotation.Nullable String firstName) {
     
     this.firstName = firstName;
     return this;
@@ -119,7 +122,7 @@ public class CorporateGroupDetailsResponseUsersInner {
 
   @JsonProperty(JSON_PROPERTY_FIRST_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setFirstName(String firstName) {
+  public void setFirstName(@jakarta.annotation.Nullable String firstName) {
     this.firstName = firstName;
   }
 

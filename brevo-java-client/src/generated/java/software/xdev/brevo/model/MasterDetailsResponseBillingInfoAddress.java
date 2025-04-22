@@ -39,24 +39,29 @@ import java.util.StringJoiner;
 @JsonTypeName("masterDetailsResponse_billingInfo_address")
 public class MasterDetailsResponseBillingInfoAddress {
   public static final String JSON_PROPERTY_STREET_ADDRESS = "streetAddress";
+  @jakarta.annotation.Nullable
   private String streetAddress;
 
   public static final String JSON_PROPERTY_LOCALITY = "locality";
+  @jakarta.annotation.Nullable
   private String locality;
 
   public static final String JSON_PROPERTY_POSTAL_CODE = "postalCode";
+  @jakarta.annotation.Nullable
   private String postalCode;
 
   public static final String JSON_PROPERTY_STATE_CODE = "stateCode";
+  @jakarta.annotation.Nullable
   private String stateCode;
 
   public static final String JSON_PROPERTY_COUNTRY_CODE = "countryCode";
+  @jakarta.annotation.Nullable
   private String countryCode;
 
   public MasterDetailsResponseBillingInfoAddress() {
   }
 
-  public MasterDetailsResponseBillingInfoAddress streetAddress(String streetAddress) {
+  public MasterDetailsResponseBillingInfoAddress streetAddress(@jakarta.annotation.Nullable String streetAddress) {
     
     this.streetAddress = streetAddress;
     return this;
@@ -77,11 +82,11 @@ public class MasterDetailsResponseBillingInfoAddress {
 
   @JsonProperty(JSON_PROPERTY_STREET_ADDRESS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setStreetAddress(String streetAddress) {
+  public void setStreetAddress(@jakarta.annotation.Nullable String streetAddress) {
     this.streetAddress = streetAddress;
   }
 
-  public MasterDetailsResponseBillingInfoAddress locality(String locality) {
+  public MasterDetailsResponseBillingInfoAddress locality(@jakarta.annotation.Nullable String locality) {
     
     this.locality = locality;
     return this;
@@ -102,11 +107,11 @@ public class MasterDetailsResponseBillingInfoAddress {
 
   @JsonProperty(JSON_PROPERTY_LOCALITY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setLocality(String locality) {
+  public void setLocality(@jakarta.annotation.Nullable String locality) {
     this.locality = locality;
   }
 
-  public MasterDetailsResponseBillingInfoAddress postalCode(String postalCode) {
+  public MasterDetailsResponseBillingInfoAddress postalCode(@jakarta.annotation.Nullable String postalCode) {
     
     this.postalCode = postalCode;
     return this;
@@ -127,11 +132,11 @@ public class MasterDetailsResponseBillingInfoAddress {
 
   @JsonProperty(JSON_PROPERTY_POSTAL_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setPostalCode(String postalCode) {
+  public void setPostalCode(@jakarta.annotation.Nullable String postalCode) {
     this.postalCode = postalCode;
   }
 
-  public MasterDetailsResponseBillingInfoAddress stateCode(String stateCode) {
+  public MasterDetailsResponseBillingInfoAddress stateCode(@jakarta.annotation.Nullable String stateCode) {
     
     this.stateCode = stateCode;
     return this;
@@ -152,11 +157,11 @@ public class MasterDetailsResponseBillingInfoAddress {
 
   @JsonProperty(JSON_PROPERTY_STATE_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setStateCode(String stateCode) {
+  public void setStateCode(@jakarta.annotation.Nullable String stateCode) {
     this.stateCode = stateCode;
   }
 
-  public MasterDetailsResponseBillingInfoAddress countryCode(String countryCode) {
+  public MasterDetailsResponseBillingInfoAddress countryCode(@jakarta.annotation.Nullable String countryCode) {
     
     this.countryCode = countryCode;
     return this;
@@ -177,7 +182,7 @@ public class MasterDetailsResponseBillingInfoAddress {
 
   @JsonProperty(JSON_PROPERTY_COUNTRY_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCountryCode(String countryCode) {
+  public void setCountryCode(@jakarta.annotation.Nullable String countryCode) {
     this.countryCode = countryCode;
   }
 

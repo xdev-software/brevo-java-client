@@ -36,15 +36,17 @@ import java.util.StringJoiner;
 @JsonTypeName("createCouponCollection_request")
 public class CreateCouponCollectionRequest {
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_DEFAULT_COUPON = "defaultCoupon";
+  @jakarta.annotation.Nonnull
   private String defaultCoupon;
 
   public CreateCouponCollectionRequest() {
   }
 
-  public CreateCouponCollectionRequest name(String name) {
+  public CreateCouponCollectionRequest name(@jakarta.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
@@ -65,11 +67,11 @@ public class CreateCouponCollectionRequest {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
   }
 
-  public CreateCouponCollectionRequest defaultCoupon(String defaultCoupon) {
+  public CreateCouponCollectionRequest defaultCoupon(@jakarta.annotation.Nonnull String defaultCoupon) {
     
     this.defaultCoupon = defaultCoupon;
     return this;
@@ -90,7 +92,7 @@ public class CreateCouponCollectionRequest {
 
   @JsonProperty(JSON_PROPERTY_DEFAULT_COUPON)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDefaultCoupon(String defaultCoupon) {
+  public void setDefaultCoupon(@jakarta.annotation.Nonnull String defaultCoupon) {
     this.defaultCoupon = defaultCoupon;
   }
 

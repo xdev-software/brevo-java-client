@@ -39,24 +39,29 @@ import java.util.StringJoiner;
 @JsonTypeName("getFolder")
 public class GetFolder {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nonnull
   private Long id;
 
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_TOTAL_BLACKLISTED = "totalBlacklisted";
+  @jakarta.annotation.Nonnull
   private Long totalBlacklisted;
 
   public static final String JSON_PROPERTY_TOTAL_SUBSCRIBERS = "totalSubscribers";
+  @jakarta.annotation.Nonnull
   private Long totalSubscribers;
 
   public static final String JSON_PROPERTY_UNIQUE_SUBSCRIBERS = "uniqueSubscribers";
+  @jakarta.annotation.Nonnull
   private Long uniqueSubscribers;
 
   public GetFolder() {
   }
 
-  public GetFolder id(Long id) {
+  public GetFolder id(@jakarta.annotation.Nonnull Long id) {
     
     this.id = id;
     return this;
@@ -77,11 +82,11 @@ public class GetFolder {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(Long id) {
+  public void setId(@jakarta.annotation.Nonnull Long id) {
     this.id = id;
   }
 
-  public GetFolder name(String name) {
+  public GetFolder name(@jakarta.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
@@ -102,11 +107,11 @@ public class GetFolder {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
   }
 
-  public GetFolder totalBlacklisted(Long totalBlacklisted) {
+  public GetFolder totalBlacklisted(@jakarta.annotation.Nonnull Long totalBlacklisted) {
     
     this.totalBlacklisted = totalBlacklisted;
     return this;
@@ -127,11 +132,11 @@ public class GetFolder {
 
   @JsonProperty(JSON_PROPERTY_TOTAL_BLACKLISTED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTotalBlacklisted(Long totalBlacklisted) {
+  public void setTotalBlacklisted(@jakarta.annotation.Nonnull Long totalBlacklisted) {
     this.totalBlacklisted = totalBlacklisted;
   }
 
-  public GetFolder totalSubscribers(Long totalSubscribers) {
+  public GetFolder totalSubscribers(@jakarta.annotation.Nonnull Long totalSubscribers) {
     
     this.totalSubscribers = totalSubscribers;
     return this;
@@ -152,11 +157,11 @@ public class GetFolder {
 
   @JsonProperty(JSON_PROPERTY_TOTAL_SUBSCRIBERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTotalSubscribers(Long totalSubscribers) {
+  public void setTotalSubscribers(@jakarta.annotation.Nonnull Long totalSubscribers) {
     this.totalSubscribers = totalSubscribers;
   }
 
-  public GetFolder uniqueSubscribers(Long uniqueSubscribers) {
+  public GetFolder uniqueSubscribers(@jakarta.annotation.Nonnull Long uniqueSubscribers) {
     
     this.uniqueSubscribers = uniqueSubscribers;
     return this;
@@ -177,7 +182,7 @@ public class GetFolder {
 
   @JsonProperty(JSON_PROPERTY_UNIQUE_SUBSCRIBERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUniqueSubscribers(Long uniqueSubscribers) {
+  public void setUniqueSubscribers(@jakarta.annotation.Nonnull Long uniqueSubscribers) {
     this.uniqueSubscribers = uniqueSubscribers;
   }
 

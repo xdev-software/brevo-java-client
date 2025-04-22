@@ -37,18 +37,21 @@ import java.util.StringJoiner;
 @JsonTypeName("variablesItems")
 public class VariablesItems {
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nullable
   private String name;
 
   public static final String JSON_PROPERTY_DEFAULT = "default";
+  @jakarta.annotation.Nullable
   private String _default;
 
   public static final String JSON_PROPERTY_DATATYPE = "datatype";
+  @jakarta.annotation.Nullable
   private String datatype;
 
   public VariablesItems() {
   }
 
-  public VariablesItems name(String name) {
+  public VariablesItems name(@jakarta.annotation.Nullable String name) {
     
     this.name = name;
     return this;
@@ -69,11 +72,11 @@ public class VariablesItems {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nullable String name) {
     this.name = name;
   }
 
-  public VariablesItems _default(String _default) {
+  public VariablesItems _default(@jakarta.annotation.Nullable String _default) {
     
     this._default = _default;
     return this;
@@ -94,11 +97,11 @@ public class VariablesItems {
 
   @JsonProperty(JSON_PROPERTY_DEFAULT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDefault(String _default) {
+  public void setDefault(@jakarta.annotation.Nullable String _default) {
     this._default = _default;
   }
 
-  public VariablesItems datatype(String datatype) {
+  public VariablesItems datatype(@jakarta.annotation.Nullable String datatype) {
     
     this.datatype = datatype;
     return this;
@@ -119,7 +122,7 @@ public class VariablesItems {
 
   @JsonProperty(JSON_PROPERTY_DATATYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDatatype(String datatype) {
+  public void setDatatype(@jakarta.annotation.Nullable String datatype) {
     this.datatype = datatype;
   }
 

@@ -37,19 +37,20 @@ import java.util.StringJoiner;
 @JsonTypeName("getInboundEmailEventsByUuid_logs_inner")
 public class GetInboundEmailEventsByUuidLogsInner {
   public static final String JSON_PROPERTY_DATE = "date";
+  @jakarta.annotation.Nullable
   private OffsetDateTime date;
 
   /**
    * Type of the event
    */
   public enum TypeEnum {
-    RECEIVED("received"),
+    RECEIVED(String.valueOf("received")),
     
-    PROCESSED("processed"),
+    PROCESSED(String.valueOf("processed")),
     
-    WEBHOOK_FAILED("webhookFailed"),
+    WEBHOOK_FAILED(String.valueOf("webhookFailed")),
     
-    WEBHOOK_DELIVERED("webhookDelivered");
+    WEBHOOK_DELIVERED(String.valueOf("webhookDelivered"));
 
     private String value;
 
@@ -79,12 +80,13 @@ public class GetInboundEmailEventsByUuidLogsInner {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @jakarta.annotation.Nullable
   private TypeEnum type;
 
   public GetInboundEmailEventsByUuidLogsInner() {
   }
 
-  public GetInboundEmailEventsByUuidLogsInner date(OffsetDateTime date) {
+  public GetInboundEmailEventsByUuidLogsInner date(@jakarta.annotation.Nullable OffsetDateTime date) {
     
     this.date = date;
     return this;
@@ -105,11 +107,11 @@ public class GetInboundEmailEventsByUuidLogsInner {
 
   @JsonProperty(JSON_PROPERTY_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDate(OffsetDateTime date) {
+  public void setDate(@jakarta.annotation.Nullable OffsetDateTime date) {
     this.date = date;
   }
 
-  public GetInboundEmailEventsByUuidLogsInner type(TypeEnum type) {
+  public GetInboundEmailEventsByUuidLogsInner type(@jakarta.annotation.Nullable TypeEnum type) {
     
     this.type = type;
     return this;
@@ -130,7 +132,7 @@ public class GetInboundEmailEventsByUuidLogsInner {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setType(TypeEnum type) {
+  public void setType(@jakarta.annotation.Nullable TypeEnum type) {
     this.type = type;
   }
 

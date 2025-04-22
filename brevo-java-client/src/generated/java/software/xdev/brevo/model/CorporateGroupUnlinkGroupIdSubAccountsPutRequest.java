@@ -38,12 +38,13 @@ import java.util.StringJoiner;
 @JsonTypeName("_corporate_group_unlink__groupId__subAccounts_put_request")
 public class CorporateGroupUnlinkGroupIdSubAccountsPutRequest {
   public static final String JSON_PROPERTY_SUB_ACCOUNT_IDS = "subAccountIds";
+  @jakarta.annotation.Nonnull
   private List<Long> subAccountIds = new ArrayList<>();
 
   public CorporateGroupUnlinkGroupIdSubAccountsPutRequest() {
   }
 
-  public CorporateGroupUnlinkGroupIdSubAccountsPutRequest subAccountIds(List<Long> subAccountIds) {
+  public CorporateGroupUnlinkGroupIdSubAccountsPutRequest subAccountIds(@jakarta.annotation.Nonnull List<Long> subAccountIds) {
     
     this.subAccountIds = subAccountIds;
     return this;
@@ -72,7 +73,7 @@ public class CorporateGroupUnlinkGroupIdSubAccountsPutRequest {
 
   @JsonProperty(JSON_PROPERTY_SUB_ACCOUNT_IDS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSubAccountIds(List<Long> subAccountIds) {
+  public void setSubAccountIds(@jakarta.annotation.Nonnull List<Long> subAccountIds) {
     this.subAccountIds = subAccountIds;
   }
 

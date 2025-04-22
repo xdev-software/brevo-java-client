@@ -224,7 +224,7 @@ public class WhatsAppCampaignsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/whatsappCampaigns/{campaignId}"
-      .replaceAll("\\{" + "campaignId" + "\\}", apiClient.escapeString(campaignId.toString()));
+      .replaceAll("\\{" + "campaignId" + "\\}", apiClient.escapeString(apiClient.parameterToString(campaignId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -298,7 +298,7 @@ public class WhatsAppCampaignsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/whatsappCampaigns/{campaignId}"
-      .replaceAll("\\{" + "campaignId" + "\\}", apiClient.escapeString(campaignId.toString()));
+      .replaceAll("\\{" + "campaignId" + "\\}", apiClient.escapeString(apiClient.parameterToString(campaignId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -605,7 +605,7 @@ public class WhatsAppCampaignsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/whatsappCampaigns/template/approval/{templateId}"
-      .replaceAll("\\{" + "templateId" + "\\}", apiClient.escapeString(templateId.toString()));
+      .replaceAll("\\{" + "templateId" + "\\}", apiClient.escapeString(apiClient.parameterToString(templateId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -684,7 +684,7 @@ public class WhatsAppCampaignsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/whatsappCampaigns/{campaignId}"
-      .replaceAll("\\{" + "campaignId" + "\\}", apiClient.escapeString(campaignId.toString()));
+      .replaceAll("\\{" + "campaignId" + "\\}", apiClient.escapeString(apiClient.parameterToString(campaignId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;

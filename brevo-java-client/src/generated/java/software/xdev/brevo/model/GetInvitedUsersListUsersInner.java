@@ -39,21 +39,25 @@ import java.util.StringJoiner;
 @JsonTypeName("getInvitedUsersList_users_inner")
 public class GetInvitedUsersListUsersInner {
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nonnull
   private String email;
 
   public static final String JSON_PROPERTY_IS_OWNER = "is_owner";
+  @jakarta.annotation.Nonnull
   private String isOwner;
 
   public static final String JSON_PROPERTY_STATUS = "status";
+  @jakarta.annotation.Nonnull
   private String status;
 
   public static final String JSON_PROPERTY_FEATURE_ACCESS = "feature_access";
+  @jakarta.annotation.Nonnull
   private GetInvitedUsersListUsersInnerFeatureAccess featureAccess;
 
   public GetInvitedUsersListUsersInner() {
   }
 
-  public GetInvitedUsersListUsersInner email(String email) {
+  public GetInvitedUsersListUsersInner email(@jakarta.annotation.Nonnull String email) {
     
     this.email = email;
     return this;
@@ -74,11 +78,11 @@ public class GetInvitedUsersListUsersInner {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEmail(String email) {
+  public void setEmail(@jakarta.annotation.Nonnull String email) {
     this.email = email;
   }
 
-  public GetInvitedUsersListUsersInner isOwner(String isOwner) {
+  public GetInvitedUsersListUsersInner isOwner(@jakarta.annotation.Nonnull String isOwner) {
     
     this.isOwner = isOwner;
     return this;
@@ -99,11 +103,11 @@ public class GetInvitedUsersListUsersInner {
 
   @JsonProperty(JSON_PROPERTY_IS_OWNER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIsOwner(String isOwner) {
+  public void setIsOwner(@jakarta.annotation.Nonnull String isOwner) {
     this.isOwner = isOwner;
   }
 
-  public GetInvitedUsersListUsersInner status(String status) {
+  public GetInvitedUsersListUsersInner status(@jakarta.annotation.Nonnull String status) {
     
     this.status = status;
     return this;
@@ -124,11 +128,11 @@ public class GetInvitedUsersListUsersInner {
 
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatus(String status) {
+  public void setStatus(@jakarta.annotation.Nonnull String status) {
     this.status = status;
   }
 
-  public GetInvitedUsersListUsersInner featureAccess(GetInvitedUsersListUsersInnerFeatureAccess featureAccess) {
+  public GetInvitedUsersListUsersInner featureAccess(@jakarta.annotation.Nonnull GetInvitedUsersListUsersInnerFeatureAccess featureAccess) {
     
     this.featureAccess = featureAccess;
     return this;
@@ -149,7 +153,7 @@ public class GetInvitedUsersListUsersInner {
 
   @JsonProperty(JSON_PROPERTY_FEATURE_ACCESS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setFeatureAccess(GetInvitedUsersListUsersInnerFeatureAccess featureAccess) {
+  public void setFeatureAccess(@jakarta.annotation.Nonnull GetInvitedUsersListUsersInnerFeatureAccess featureAccess) {
     this.featureAccess = featureAccess;
   }
 

@@ -37,18 +37,21 @@ import java.util.StringJoiner;
 @JsonTypeName("getInvitedUsersList_users_inner_feature_access")
 public class GetInvitedUsersListUsersInnerFeatureAccess {
   public static final String JSON_PROPERTY_MARKETING = "marketing";
+  @jakarta.annotation.Nullable
   private String marketing;
 
   public static final String JSON_PROPERTY_CONVERSATIONS = "conversations";
+  @jakarta.annotation.Nullable
   private String conversations;
 
   public static final String JSON_PROPERTY_CRM = "crm";
+  @jakarta.annotation.Nullable
   private String crm;
 
   public GetInvitedUsersListUsersInnerFeatureAccess() {
   }
 
-  public GetInvitedUsersListUsersInnerFeatureAccess marketing(String marketing) {
+  public GetInvitedUsersListUsersInnerFeatureAccess marketing(@jakarta.annotation.Nullable String marketing) {
     
     this.marketing = marketing;
     return this;
@@ -69,11 +72,11 @@ public class GetInvitedUsersListUsersInnerFeatureAccess {
 
   @JsonProperty(JSON_PROPERTY_MARKETING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setMarketing(String marketing) {
+  public void setMarketing(@jakarta.annotation.Nullable String marketing) {
     this.marketing = marketing;
   }
 
-  public GetInvitedUsersListUsersInnerFeatureAccess conversations(String conversations) {
+  public GetInvitedUsersListUsersInnerFeatureAccess conversations(@jakarta.annotation.Nullable String conversations) {
     
     this.conversations = conversations;
     return this;
@@ -94,11 +97,11 @@ public class GetInvitedUsersListUsersInnerFeatureAccess {
 
   @JsonProperty(JSON_PROPERTY_CONVERSATIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setConversations(String conversations) {
+  public void setConversations(@jakarta.annotation.Nullable String conversations) {
     this.conversations = conversations;
   }
 
-  public GetInvitedUsersListUsersInnerFeatureAccess crm(String crm) {
+  public GetInvitedUsersListUsersInnerFeatureAccess crm(@jakarta.annotation.Nullable String crm) {
     
     this.crm = crm;
     return this;
@@ -119,7 +122,7 @@ public class GetInvitedUsersListUsersInnerFeatureAccess {
 
   @JsonProperty(JSON_PROPERTY_CRM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCrm(String crm) {
+  public void setCrm(@jakarta.annotation.Nullable String crm) {
     this.crm = crm;
   }
 

@@ -41,37 +41,40 @@ import java.util.StringJoiner;
 @JsonTypeName("getSmsEventReport_events_inner")
 public class GetSmsEventReportEventsInner {
   public static final String JSON_PROPERTY_PHONE_NUMBER = "phoneNumber";
+  @jakarta.annotation.Nullable
   private String phoneNumber;
 
   public static final String JSON_PROPERTY_DATE = "date";
+  @jakarta.annotation.Nullable
   private String date;
 
   public static final String JSON_PROPERTY_MESSAGE_ID = "messageId";
+  @jakarta.annotation.Nullable
   private String messageId;
 
   /**
    * Event which occurred
    */
   public enum EventEnum {
-    BOUNCES("bounces"),
+    BOUNCES(String.valueOf("bounces")),
     
-    HARD_BOUNCES("hardBounces"),
+    HARD_BOUNCES(String.valueOf("hardBounces")),
     
-    SOFT_BOUNCES("softBounces"),
+    SOFT_BOUNCES(String.valueOf("softBounces")),
     
-    DELIVERED("delivered"),
+    DELIVERED(String.valueOf("delivered")),
     
-    SENT("sent"),
+    SENT(String.valueOf("sent")),
     
-    ACCEPTED("accepted"),
+    ACCEPTED(String.valueOf("accepted")),
     
-    UNSUBSCRIPTION("unsubscription"),
+    UNSUBSCRIPTION(String.valueOf("unsubscription")),
     
-    REPLIES("replies"),
+    REPLIES(String.valueOf("replies")),
     
-    BLOCKED("blocked"),
+    BLOCKED(String.valueOf("blocked")),
     
-    REJECTED("rejected");
+    REJECTED(String.valueOf("rejected"));
 
     private String value;
 
@@ -101,21 +104,25 @@ public class GetSmsEventReportEventsInner {
   }
 
   public static final String JSON_PROPERTY_EVENT = "event";
+  @jakarta.annotation.Nullable
   private EventEnum event;
 
   public static final String JSON_PROPERTY_REASON = "reason";
+  @jakarta.annotation.Nullable
   private String reason;
 
   public static final String JSON_PROPERTY_REPLY = "reply";
+  @jakarta.annotation.Nullable
   private String reply;
 
   public static final String JSON_PROPERTY_TAG = "tag";
+  @jakarta.annotation.Nullable
   private String tag;
 
   public GetSmsEventReportEventsInner() {
   }
 
-  public GetSmsEventReportEventsInner phoneNumber(String phoneNumber) {
+  public GetSmsEventReportEventsInner phoneNumber(@jakarta.annotation.Nullable String phoneNumber) {
     
     this.phoneNumber = phoneNumber;
     return this;
@@ -136,11 +143,11 @@ public class GetSmsEventReportEventsInner {
 
   @JsonProperty(JSON_PROPERTY_PHONE_NUMBER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setPhoneNumber(String phoneNumber) {
+  public void setPhoneNumber(@jakarta.annotation.Nullable String phoneNumber) {
     this.phoneNumber = phoneNumber;
   }
 
-  public GetSmsEventReportEventsInner date(String date) {
+  public GetSmsEventReportEventsInner date(@jakarta.annotation.Nullable String date) {
     
     this.date = date;
     return this;
@@ -161,11 +168,11 @@ public class GetSmsEventReportEventsInner {
 
   @JsonProperty(JSON_PROPERTY_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDate(String date) {
+  public void setDate(@jakarta.annotation.Nullable String date) {
     this.date = date;
   }
 
-  public GetSmsEventReportEventsInner messageId(String messageId) {
+  public GetSmsEventReportEventsInner messageId(@jakarta.annotation.Nullable String messageId) {
     
     this.messageId = messageId;
     return this;
@@ -186,11 +193,11 @@ public class GetSmsEventReportEventsInner {
 
   @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setMessageId(String messageId) {
+  public void setMessageId(@jakarta.annotation.Nullable String messageId) {
     this.messageId = messageId;
   }
 
-  public GetSmsEventReportEventsInner event(EventEnum event) {
+  public GetSmsEventReportEventsInner event(@jakarta.annotation.Nullable EventEnum event) {
     
     this.event = event;
     return this;
@@ -211,11 +218,11 @@ public class GetSmsEventReportEventsInner {
 
   @JsonProperty(JSON_PROPERTY_EVENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEvent(EventEnum event) {
+  public void setEvent(@jakarta.annotation.Nullable EventEnum event) {
     this.event = event;
   }
 
-  public GetSmsEventReportEventsInner reason(String reason) {
+  public GetSmsEventReportEventsInner reason(@jakarta.annotation.Nullable String reason) {
     
     this.reason = reason;
     return this;
@@ -236,11 +243,11 @@ public class GetSmsEventReportEventsInner {
 
   @JsonProperty(JSON_PROPERTY_REASON)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setReason(String reason) {
+  public void setReason(@jakarta.annotation.Nullable String reason) {
     this.reason = reason;
   }
 
-  public GetSmsEventReportEventsInner reply(String reply) {
+  public GetSmsEventReportEventsInner reply(@jakarta.annotation.Nullable String reply) {
     
     this.reply = reply;
     return this;
@@ -261,11 +268,11 @@ public class GetSmsEventReportEventsInner {
 
   @JsonProperty(JSON_PROPERTY_REPLY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setReply(String reply) {
+  public void setReply(@jakarta.annotation.Nullable String reply) {
     this.reply = reply;
   }
 
-  public GetSmsEventReportEventsInner tag(String tag) {
+  public GetSmsEventReportEventsInner tag(@jakarta.annotation.Nullable String tag) {
     
     this.tag = tag;
     return this;
@@ -286,7 +293,7 @@ public class GetSmsEventReportEventsInner {
 
   @JsonProperty(JSON_PROPERTY_TAG)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setTag(String tag) {
+  public void setTag(@jakarta.annotation.Nullable String tag) {
     this.tag = tag;
   }
 

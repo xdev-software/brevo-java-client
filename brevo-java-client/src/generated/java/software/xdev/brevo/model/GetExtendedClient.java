@@ -40,24 +40,29 @@ import java.util.StringJoiner;
 @JsonTypeName("getExtendedClient")
 public class GetExtendedClient {
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nonnull
   private String email;
 
   public static final String JSON_PROPERTY_FIRST_NAME = "firstName";
+  @jakarta.annotation.Nonnull
   private String firstName;
 
   public static final String JSON_PROPERTY_LAST_NAME = "lastName";
+  @jakarta.annotation.Nonnull
   private String lastName;
 
   public static final String JSON_PROPERTY_COMPANY_NAME = "companyName";
+  @jakarta.annotation.Nonnull
   private String companyName;
 
   public static final String JSON_PROPERTY_ADDRESS = "address";
+  @jakarta.annotation.Nonnull
   private GetExtendedClientAllOfAddress address;
 
   public GetExtendedClient() {
   }
 
-  public GetExtendedClient email(String email) {
+  public GetExtendedClient email(@jakarta.annotation.Nonnull String email) {
     
     this.email = email;
     return this;
@@ -78,11 +83,11 @@ public class GetExtendedClient {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEmail(String email) {
+  public void setEmail(@jakarta.annotation.Nonnull String email) {
     this.email = email;
   }
 
-  public GetExtendedClient firstName(String firstName) {
+  public GetExtendedClient firstName(@jakarta.annotation.Nonnull String firstName) {
     
     this.firstName = firstName;
     return this;
@@ -103,11 +108,11 @@ public class GetExtendedClient {
 
   @JsonProperty(JSON_PROPERTY_FIRST_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setFirstName(String firstName) {
+  public void setFirstName(@jakarta.annotation.Nonnull String firstName) {
     this.firstName = firstName;
   }
 
-  public GetExtendedClient lastName(String lastName) {
+  public GetExtendedClient lastName(@jakarta.annotation.Nonnull String lastName) {
     
     this.lastName = lastName;
     return this;
@@ -128,11 +133,11 @@ public class GetExtendedClient {
 
   @JsonProperty(JSON_PROPERTY_LAST_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setLastName(String lastName) {
+  public void setLastName(@jakarta.annotation.Nonnull String lastName) {
     this.lastName = lastName;
   }
 
-  public GetExtendedClient companyName(String companyName) {
+  public GetExtendedClient companyName(@jakarta.annotation.Nonnull String companyName) {
     
     this.companyName = companyName;
     return this;
@@ -153,11 +158,11 @@ public class GetExtendedClient {
 
   @JsonProperty(JSON_PROPERTY_COMPANY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCompanyName(String companyName) {
+  public void setCompanyName(@jakarta.annotation.Nonnull String companyName) {
     this.companyName = companyName;
   }
 
-  public GetExtendedClient address(GetExtendedClientAllOfAddress address) {
+  public GetExtendedClient address(@jakarta.annotation.Nonnull GetExtendedClientAllOfAddress address) {
     
     this.address = address;
     return this;
@@ -178,7 +183,7 @@ public class GetExtendedClient {
 
   @JsonProperty(JSON_PROPERTY_ADDRESS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAddress(GetExtendedClientAllOfAddress address) {
+  public void setAddress(@jakarta.annotation.Nonnull GetExtendedClientAllOfAddress address) {
     this.address = address;
   }
 

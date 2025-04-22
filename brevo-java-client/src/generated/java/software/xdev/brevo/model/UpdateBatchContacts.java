@@ -39,12 +39,13 @@ import java.util.StringJoiner;
 @JsonTypeName("updateBatchContacts")
 public class UpdateBatchContacts {
   public static final String JSON_PROPERTY_CONTACTS = "contacts";
+  @jakarta.annotation.Nullable
   private List<UpdateBatchContactsContactsInner> contacts = new ArrayList<>();
 
   public UpdateBatchContacts() {
   }
 
-  public UpdateBatchContacts contacts(List<UpdateBatchContactsContactsInner> contacts) {
+  public UpdateBatchContacts contacts(@jakarta.annotation.Nullable List<UpdateBatchContactsContactsInner> contacts) {
     
     this.contacts = contacts;
     return this;
@@ -73,7 +74,7 @@ public class UpdateBatchContacts {
 
   @JsonProperty(JSON_PROPERTY_CONTACTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setContacts(List<UpdateBatchContactsContactsInner> contacts) {
+  public void setContacts(@jakarta.annotation.Nullable List<UpdateBatchContactsContactsInner> contacts) {
     this.contacts = contacts;
   }
 

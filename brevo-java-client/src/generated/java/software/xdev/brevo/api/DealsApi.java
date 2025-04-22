@@ -228,7 +228,7 @@ public class DealsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/crm/deals/{id}"
-      .replaceAll("\\{" + "id" + "\\}", apiClient.escapeString(id.toString()));
+      .replaceAll("\\{" + "id" + "\\}", apiClient.escapeString(apiClient.parameterToString(id)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -302,7 +302,7 @@ public class DealsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/crm/deals/{id}"
-      .replaceAll("\\{" + "id" + "\\}", apiClient.escapeString(id.toString()));
+      .replaceAll("\\{" + "id" + "\\}", apiClient.escapeString(apiClient.parameterToString(id)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -382,7 +382,7 @@ public class DealsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/crm/deals/{id}"
-      .replaceAll("\\{" + "id" + "\\}", apiClient.escapeString(id.toString()));
+      .replaceAll("\\{" + "id" + "\\}", apiClient.escapeString(apiClient.parameterToString(id)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -461,7 +461,7 @@ public class DealsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/crm/deals/link-unlink/{id}"
-      .replaceAll("\\{" + "id" + "\\}", apiClient.escapeString(id.toString()));
+      .replaceAll("\\{" + "id" + "\\}", apiClient.escapeString(apiClient.parameterToString(id)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -747,7 +747,7 @@ public class DealsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/crm/pipeline/details/{pipelineID}"
-      .replaceAll("\\{" + "pipelineID" + "\\}", apiClient.escapeString(pipelineID.toString()));
+      .replaceAll("\\{" + "pipelineID" + "\\}", apiClient.escapeString(apiClient.parameterToString(pipelineID)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;

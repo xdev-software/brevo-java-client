@@ -52,54 +52,69 @@ import java.util.StringJoiner;
 @JsonTypeName("getProductDetails")
 public class GetProductDetails {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nonnull
   private String id;
 
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_CREATED_AT = "createdAt";
+  @jakarta.annotation.Nonnull
   private String createdAt;
 
   public static final String JSON_PROPERTY_MODIFIED_AT = "modifiedAt";
+  @jakarta.annotation.Nonnull
   private String modifiedAt;
 
   public static final String JSON_PROPERTY_URL = "url";
+  @jakarta.annotation.Nullable
   private String url;
 
   public static final String JSON_PROPERTY_IMAGE_URL = "imageUrl";
+  @jakarta.annotation.Nullable
   private String imageUrl;
 
   public static final String JSON_PROPERTY_SKU = "sku";
+  @jakarta.annotation.Nullable
   private String sku;
 
   public static final String JSON_PROPERTY_PRICE = "price";
+  @jakarta.annotation.Nullable
   private Float price;
 
   public static final String JSON_PROPERTY_CATEGORIES = "categories";
+  @jakarta.annotation.Nullable
   private List<String> categories = new ArrayList<>();
 
   public static final String JSON_PROPERTY_PARENT_ID = "parentId";
+  @jakarta.annotation.Nullable
   private String parentId;
 
   public static final String JSON_PROPERTY_S3_ORIGINAL = "s3Original";
+  @jakarta.annotation.Nullable
   private String s3Original;
 
   public static final String JSON_PROPERTY_S3_THUMB_ANALYTICS = "s3ThumbAnalytics";
+  @jakarta.annotation.Nonnull
   private String s3ThumbAnalytics;
 
   public static final String JSON_PROPERTY_S3_THUMB_EDITOR = "s3ThumbEditor";
+  @jakarta.annotation.Nonnull
   private String s3ThumbEditor;
 
   public static final String JSON_PROPERTY_META_INFO = "metaInfo";
+  @jakarta.annotation.Nullable
   private Object metaInfo;
 
   public static final String JSON_PROPERTY_IS_DELETED = "isDeleted";
+  @jakarta.annotation.Nullable
   private Boolean isDeleted;
 
   public GetProductDetails() {
   }
 
-  public GetProductDetails id(String id) {
+  public GetProductDetails id(@jakarta.annotation.Nonnull String id) {
     
     this.id = id;
     return this;
@@ -120,11 +135,11 @@ public class GetProductDetails {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(String id) {
+  public void setId(@jakarta.annotation.Nonnull String id) {
     this.id = id;
   }
 
-  public GetProductDetails name(String name) {
+  public GetProductDetails name(@jakarta.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
@@ -145,11 +160,11 @@ public class GetProductDetails {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
   }
 
-  public GetProductDetails createdAt(String createdAt) {
+  public GetProductDetails createdAt(@jakarta.annotation.Nonnull String createdAt) {
     
     this.createdAt = createdAt;
     return this;
@@ -170,11 +185,11 @@ public class GetProductDetails {
 
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCreatedAt(String createdAt) {
+  public void setCreatedAt(@jakarta.annotation.Nonnull String createdAt) {
     this.createdAt = createdAt;
   }
 
-  public GetProductDetails modifiedAt(String modifiedAt) {
+  public GetProductDetails modifiedAt(@jakarta.annotation.Nonnull String modifiedAt) {
     
     this.modifiedAt = modifiedAt;
     return this;
@@ -195,11 +210,11 @@ public class GetProductDetails {
 
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setModifiedAt(String modifiedAt) {
+  public void setModifiedAt(@jakarta.annotation.Nonnull String modifiedAt) {
     this.modifiedAt = modifiedAt;
   }
 
-  public GetProductDetails url(String url) {
+  public GetProductDetails url(@jakarta.annotation.Nullable String url) {
     
     this.url = url;
     return this;
@@ -220,11 +235,11 @@ public class GetProductDetails {
 
   @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUrl(String url) {
+  public void setUrl(@jakarta.annotation.Nullable String url) {
     this.url = url;
   }
 
-  public GetProductDetails imageUrl(String imageUrl) {
+  public GetProductDetails imageUrl(@jakarta.annotation.Nullable String imageUrl) {
     
     this.imageUrl = imageUrl;
     return this;
@@ -245,11 +260,11 @@ public class GetProductDetails {
 
   @JsonProperty(JSON_PROPERTY_IMAGE_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setImageUrl(String imageUrl) {
+  public void setImageUrl(@jakarta.annotation.Nullable String imageUrl) {
     this.imageUrl = imageUrl;
   }
 
-  public GetProductDetails sku(String sku) {
+  public GetProductDetails sku(@jakarta.annotation.Nullable String sku) {
     
     this.sku = sku;
     return this;
@@ -270,11 +285,11 @@ public class GetProductDetails {
 
   @JsonProperty(JSON_PROPERTY_SKU)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSku(String sku) {
+  public void setSku(@jakarta.annotation.Nullable String sku) {
     this.sku = sku;
   }
 
-  public GetProductDetails price(Float price) {
+  public GetProductDetails price(@jakarta.annotation.Nullable Float price) {
     
     this.price = price;
     return this;
@@ -295,11 +310,11 @@ public class GetProductDetails {
 
   @JsonProperty(JSON_PROPERTY_PRICE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setPrice(Float price) {
+  public void setPrice(@jakarta.annotation.Nullable Float price) {
     this.price = price;
   }
 
-  public GetProductDetails categories(List<String> categories) {
+  public GetProductDetails categories(@jakarta.annotation.Nullable List<String> categories) {
     
     this.categories = categories;
     return this;
@@ -328,11 +343,11 @@ public class GetProductDetails {
 
   @JsonProperty(JSON_PROPERTY_CATEGORIES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCategories(List<String> categories) {
+  public void setCategories(@jakarta.annotation.Nullable List<String> categories) {
     this.categories = categories;
   }
 
-  public GetProductDetails parentId(String parentId) {
+  public GetProductDetails parentId(@jakarta.annotation.Nullable String parentId) {
     
     this.parentId = parentId;
     return this;
@@ -353,11 +368,11 @@ public class GetProductDetails {
 
   @JsonProperty(JSON_PROPERTY_PARENT_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setParentId(String parentId) {
+  public void setParentId(@jakarta.annotation.Nullable String parentId) {
     this.parentId = parentId;
   }
 
-  public GetProductDetails s3Original(String s3Original) {
+  public GetProductDetails s3Original(@jakarta.annotation.Nullable String s3Original) {
     
     this.s3Original = s3Original;
     return this;
@@ -378,11 +393,11 @@ public class GetProductDetails {
 
   @JsonProperty(JSON_PROPERTY_S3_ORIGINAL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setS3Original(String s3Original) {
+  public void setS3Original(@jakarta.annotation.Nullable String s3Original) {
     this.s3Original = s3Original;
   }
 
-  public GetProductDetails s3ThumbAnalytics(String s3ThumbAnalytics) {
+  public GetProductDetails s3ThumbAnalytics(@jakarta.annotation.Nonnull String s3ThumbAnalytics) {
     
     this.s3ThumbAnalytics = s3ThumbAnalytics;
     return this;
@@ -403,11 +418,11 @@ public class GetProductDetails {
 
   @JsonProperty(JSON_PROPERTY_S3_THUMB_ANALYTICS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setS3ThumbAnalytics(String s3ThumbAnalytics) {
+  public void setS3ThumbAnalytics(@jakarta.annotation.Nonnull String s3ThumbAnalytics) {
     this.s3ThumbAnalytics = s3ThumbAnalytics;
   }
 
-  public GetProductDetails s3ThumbEditor(String s3ThumbEditor) {
+  public GetProductDetails s3ThumbEditor(@jakarta.annotation.Nonnull String s3ThumbEditor) {
     
     this.s3ThumbEditor = s3ThumbEditor;
     return this;
@@ -428,11 +443,11 @@ public class GetProductDetails {
 
   @JsonProperty(JSON_PROPERTY_S3_THUMB_EDITOR)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setS3ThumbEditor(String s3ThumbEditor) {
+  public void setS3ThumbEditor(@jakarta.annotation.Nonnull String s3ThumbEditor) {
     this.s3ThumbEditor = s3ThumbEditor;
   }
 
-  public GetProductDetails metaInfo(Object metaInfo) {
+  public GetProductDetails metaInfo(@jakarta.annotation.Nullable Object metaInfo) {
     
     this.metaInfo = metaInfo;
     return this;
@@ -453,11 +468,11 @@ public class GetProductDetails {
 
   @JsonProperty(JSON_PROPERTY_META_INFO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setMetaInfo(Object metaInfo) {
+  public void setMetaInfo(@jakarta.annotation.Nullable Object metaInfo) {
     this.metaInfo = metaInfo;
   }
 
-  public GetProductDetails isDeleted(Boolean isDeleted) {
+  public GetProductDetails isDeleted(@jakarta.annotation.Nullable Boolean isDeleted) {
     
     this.isDeleted = isDeleted;
     return this;
@@ -478,7 +493,7 @@ public class GetProductDetails {
 
   @JsonProperty(JSON_PROPERTY_IS_DELETED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setIsDeleted(Boolean isDeleted) {
+  public void setIsDeleted(@jakarta.annotation.Nullable Boolean isDeleted) {
     this.isDeleted = isDeleted;
   }
 

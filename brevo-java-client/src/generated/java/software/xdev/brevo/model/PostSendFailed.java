@@ -42,24 +42,29 @@ import java.util.StringJoiner;
 @JsonTypeName("postSendFailed")
 public class PostSendFailed {
   public static final String JSON_PROPERTY_CODE = "code";
+  @jakarta.annotation.Nonnull
   private String code;
 
   public static final String JSON_PROPERTY_MESSAGE = "message";
+  @jakarta.annotation.Nonnull
   private String message;
 
   public static final String JSON_PROPERTY_UNEXISTING_EMAILS = "unexistingEmails";
+  @jakarta.annotation.Nullable
   private List<String> unexistingEmails = new ArrayList<>();
 
   public static final String JSON_PROPERTY_WITHOUT_LIST_EMAILS = "withoutListEmails";
+  @jakarta.annotation.Nullable
   private List<String> withoutListEmails = new ArrayList<>();
 
   public static final String JSON_PROPERTY_BLACK_LISTED_EMAILS = "blackListedEmails";
+  @jakarta.annotation.Nullable
   private List<String> blackListedEmails = new ArrayList<>();
 
   public PostSendFailed() {
   }
 
-  public PostSendFailed code(String code) {
+  public PostSendFailed code(@jakarta.annotation.Nonnull String code) {
     
     this.code = code;
     return this;
@@ -80,11 +85,11 @@ public class PostSendFailed {
 
   @JsonProperty(JSON_PROPERTY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCode(String code) {
+  public void setCode(@jakarta.annotation.Nonnull String code) {
     this.code = code;
   }
 
-  public PostSendFailed message(String message) {
+  public PostSendFailed message(@jakarta.annotation.Nonnull String message) {
     
     this.message = message;
     return this;
@@ -105,11 +110,11 @@ public class PostSendFailed {
 
   @JsonProperty(JSON_PROPERTY_MESSAGE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMessage(String message) {
+  public void setMessage(@jakarta.annotation.Nonnull String message) {
     this.message = message;
   }
 
-  public PostSendFailed unexistingEmails(List<String> unexistingEmails) {
+  public PostSendFailed unexistingEmails(@jakarta.annotation.Nullable List<String> unexistingEmails) {
     
     this.unexistingEmails = unexistingEmails;
     return this;
@@ -138,11 +143,11 @@ public class PostSendFailed {
 
   @JsonProperty(JSON_PROPERTY_UNEXISTING_EMAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUnexistingEmails(List<String> unexistingEmails) {
+  public void setUnexistingEmails(@jakarta.annotation.Nullable List<String> unexistingEmails) {
     this.unexistingEmails = unexistingEmails;
   }
 
-  public PostSendFailed withoutListEmails(List<String> withoutListEmails) {
+  public PostSendFailed withoutListEmails(@jakarta.annotation.Nullable List<String> withoutListEmails) {
     
     this.withoutListEmails = withoutListEmails;
     return this;
@@ -171,11 +176,11 @@ public class PostSendFailed {
 
   @JsonProperty(JSON_PROPERTY_WITHOUT_LIST_EMAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setWithoutListEmails(List<String> withoutListEmails) {
+  public void setWithoutListEmails(@jakarta.annotation.Nullable List<String> withoutListEmails) {
     this.withoutListEmails = withoutListEmails;
   }
 
-  public PostSendFailed blackListedEmails(List<String> blackListedEmails) {
+  public PostSendFailed blackListedEmails(@jakarta.annotation.Nullable List<String> blackListedEmails) {
     
     this.blackListedEmails = blackListedEmails;
     return this;
@@ -204,7 +209,7 @@ public class PostSendFailed {
 
   @JsonProperty(JSON_PROPERTY_BLACK_LISTED_EMAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setBlackListedEmails(List<String> blackListedEmails) {
+  public void setBlackListedEmails(@jakarta.annotation.Nullable List<String> blackListedEmails) {
     this.blackListedEmails = blackListedEmails;
   }
 

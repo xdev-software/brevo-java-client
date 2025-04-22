@@ -42,24 +42,29 @@ import java.util.StringJoiner;
 @JsonTypeName("DealAttributes_inner")
 public class DealAttributesInner {
   public static final String JSON_PROPERTY_INTERNAL_NAME = "internalName";
+  @jakarta.annotation.Nullable
   private String internalName;
 
   public static final String JSON_PROPERTY_LABEL = "label";
+  @jakarta.annotation.Nullable
   private String label;
 
   public static final String JSON_PROPERTY_ATTRIBUTE_TYPE_NAME = "attributeTypeName";
+  @jakarta.annotation.Nullable
   private String attributeTypeName;
 
   public static final String JSON_PROPERTY_ATTRIBUTE_OPTIONS = "attributeOptions";
+  @jakarta.annotation.Nullable
   private List<Object> attributeOptions = new ArrayList<>();
 
   public static final String JSON_PROPERTY_IS_REQUIRED = "isRequired";
+  @jakarta.annotation.Nullable
   private Boolean isRequired;
 
   public DealAttributesInner() {
   }
 
-  public DealAttributesInner internalName(String internalName) {
+  public DealAttributesInner internalName(@jakarta.annotation.Nullable String internalName) {
     
     this.internalName = internalName;
     return this;
@@ -80,11 +85,11 @@ public class DealAttributesInner {
 
   @JsonProperty(JSON_PROPERTY_INTERNAL_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setInternalName(String internalName) {
+  public void setInternalName(@jakarta.annotation.Nullable String internalName) {
     this.internalName = internalName;
   }
 
-  public DealAttributesInner label(String label) {
+  public DealAttributesInner label(@jakarta.annotation.Nullable String label) {
     
     this.label = label;
     return this;
@@ -105,11 +110,11 @@ public class DealAttributesInner {
 
   @JsonProperty(JSON_PROPERTY_LABEL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setLabel(String label) {
+  public void setLabel(@jakarta.annotation.Nullable String label) {
     this.label = label;
   }
 
-  public DealAttributesInner attributeTypeName(String attributeTypeName) {
+  public DealAttributesInner attributeTypeName(@jakarta.annotation.Nullable String attributeTypeName) {
     
     this.attributeTypeName = attributeTypeName;
     return this;
@@ -130,11 +135,11 @@ public class DealAttributesInner {
 
   @JsonProperty(JSON_PROPERTY_ATTRIBUTE_TYPE_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setAttributeTypeName(String attributeTypeName) {
+  public void setAttributeTypeName(@jakarta.annotation.Nullable String attributeTypeName) {
     this.attributeTypeName = attributeTypeName;
   }
 
-  public DealAttributesInner attributeOptions(List<Object> attributeOptions) {
+  public DealAttributesInner attributeOptions(@jakarta.annotation.Nullable List<Object> attributeOptions) {
     
     this.attributeOptions = attributeOptions;
     return this;
@@ -163,11 +168,11 @@ public class DealAttributesInner {
 
   @JsonProperty(JSON_PROPERTY_ATTRIBUTE_OPTIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setAttributeOptions(List<Object> attributeOptions) {
+  public void setAttributeOptions(@jakarta.annotation.Nullable List<Object> attributeOptions) {
     this.attributeOptions = attributeOptions;
   }
 
-  public DealAttributesInner isRequired(Boolean isRequired) {
+  public DealAttributesInner isRequired(@jakarta.annotation.Nullable Boolean isRequired) {
     
     this.isRequired = isRequired;
     return this;
@@ -188,7 +193,7 @@ public class DealAttributesInner {
 
   @JsonProperty(JSON_PROPERTY_IS_REQUIRED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setIsRequired(Boolean isRequired) {
+  public void setIsRequired(@jakarta.annotation.Nullable Boolean isRequired) {
     this.isRequired = isRequired;
   }
 

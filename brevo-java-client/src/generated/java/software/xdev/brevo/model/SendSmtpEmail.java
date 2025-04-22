@@ -63,57 +63,73 @@ import java.util.StringJoiner;
 @JsonTypeName("sendSmtpEmail")
 public class SendSmtpEmail {
   public static final String JSON_PROPERTY_SENDER = "sender";
+  @jakarta.annotation.Nullable
   private SendSmtpEmailSender sender;
 
   public static final String JSON_PROPERTY_TO = "to";
+  @jakarta.annotation.Nullable
   private List<SendSmtpEmailToInner> to = new ArrayList<>();
 
   public static final String JSON_PROPERTY_BCC = "bcc";
+  @jakarta.annotation.Nullable
   private List<SendSmtpEmailBccInner> bcc = new ArrayList<>();
 
   public static final String JSON_PROPERTY_CC = "cc";
+  @jakarta.annotation.Nullable
   private List<SendSmtpEmailCcInner> cc = new ArrayList<>();
 
   public static final String JSON_PROPERTY_HTML_CONTENT = "htmlContent";
+  @jakarta.annotation.Nullable
   private String htmlContent;
 
   public static final String JSON_PROPERTY_TEXT_CONTENT = "textContent";
+  @jakarta.annotation.Nullable
   private String textContent;
 
   public static final String JSON_PROPERTY_SUBJECT = "subject";
+  @jakarta.annotation.Nullable
   private String subject;
 
   public static final String JSON_PROPERTY_REPLY_TO = "replyTo";
+  @jakarta.annotation.Nullable
   private SendSmtpEmailReplyTo replyTo;
 
   public static final String JSON_PROPERTY_ATTACHMENT = "attachment";
+  @jakarta.annotation.Nullable
   private List<SendSmtpEmailAttachmentInner> attachment = new ArrayList<>();
 
   public static final String JSON_PROPERTY_HEADERS = "headers";
+  @jakarta.annotation.Nullable
   private Map<String, Object> headers = new HashMap<>();
 
   public static final String JSON_PROPERTY_TEMPLATE_ID = "templateId";
+  @jakarta.annotation.Nullable
   private Long templateId;
 
   public static final String JSON_PROPERTY_PARAMS = "params";
+  @jakarta.annotation.Nullable
   private Map<String, Object> params = new HashMap<>();
 
   public static final String JSON_PROPERTY_MESSAGE_VERSIONS = "messageVersions";
+  @jakarta.annotation.Nullable
   private List<SendSmtpEmailMessageVersionsInner> messageVersions = new ArrayList<>();
 
   public static final String JSON_PROPERTY_TAGS = "tags";
+  @jakarta.annotation.Nullable
   private List<String> tags = new ArrayList<>();
 
   public static final String JSON_PROPERTY_SCHEDULED_AT = "scheduledAt";
+  @jakarta.annotation.Nullable
   private OffsetDateTime scheduledAt;
 
   public static final String JSON_PROPERTY_BATCH_ID = "batchId";
+  @jakarta.annotation.Nullable
   private String batchId;
 
   public SendSmtpEmail() {
   }
 
-  public SendSmtpEmail sender(SendSmtpEmailSender sender) {
+  public SendSmtpEmail sender(@jakarta.annotation.Nullable SendSmtpEmailSender sender) {
     
     this.sender = sender;
     return this;
@@ -134,11 +150,11 @@ public class SendSmtpEmail {
 
   @JsonProperty(JSON_PROPERTY_SENDER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSender(SendSmtpEmailSender sender) {
+  public void setSender(@jakarta.annotation.Nullable SendSmtpEmailSender sender) {
     this.sender = sender;
   }
 
-  public SendSmtpEmail to(List<SendSmtpEmailToInner> to) {
+  public SendSmtpEmail to(@jakarta.annotation.Nullable List<SendSmtpEmailToInner> to) {
     
     this.to = to;
     return this;
@@ -167,11 +183,11 @@ public class SendSmtpEmail {
 
   @JsonProperty(JSON_PROPERTY_TO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setTo(List<SendSmtpEmailToInner> to) {
+  public void setTo(@jakarta.annotation.Nullable List<SendSmtpEmailToInner> to) {
     this.to = to;
   }
 
-  public SendSmtpEmail bcc(List<SendSmtpEmailBccInner> bcc) {
+  public SendSmtpEmail bcc(@jakarta.annotation.Nullable List<SendSmtpEmailBccInner> bcc) {
     
     this.bcc = bcc;
     return this;
@@ -200,11 +216,11 @@ public class SendSmtpEmail {
 
   @JsonProperty(JSON_PROPERTY_BCC)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setBcc(List<SendSmtpEmailBccInner> bcc) {
+  public void setBcc(@jakarta.annotation.Nullable List<SendSmtpEmailBccInner> bcc) {
     this.bcc = bcc;
   }
 
-  public SendSmtpEmail cc(List<SendSmtpEmailCcInner> cc) {
+  public SendSmtpEmail cc(@jakarta.annotation.Nullable List<SendSmtpEmailCcInner> cc) {
     
     this.cc = cc;
     return this;
@@ -233,11 +249,11 @@ public class SendSmtpEmail {
 
   @JsonProperty(JSON_PROPERTY_CC)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCc(List<SendSmtpEmailCcInner> cc) {
+  public void setCc(@jakarta.annotation.Nullable List<SendSmtpEmailCcInner> cc) {
     this.cc = cc;
   }
 
-  public SendSmtpEmail htmlContent(String htmlContent) {
+  public SendSmtpEmail htmlContent(@jakarta.annotation.Nullable String htmlContent) {
     
     this.htmlContent = htmlContent;
     return this;
@@ -258,11 +274,11 @@ public class SendSmtpEmail {
 
   @JsonProperty(JSON_PROPERTY_HTML_CONTENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setHtmlContent(String htmlContent) {
+  public void setHtmlContent(@jakarta.annotation.Nullable String htmlContent) {
     this.htmlContent = htmlContent;
   }
 
-  public SendSmtpEmail textContent(String textContent) {
+  public SendSmtpEmail textContent(@jakarta.annotation.Nullable String textContent) {
     
     this.textContent = textContent;
     return this;
@@ -283,11 +299,11 @@ public class SendSmtpEmail {
 
   @JsonProperty(JSON_PROPERTY_TEXT_CONTENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setTextContent(String textContent) {
+  public void setTextContent(@jakarta.annotation.Nullable String textContent) {
     this.textContent = textContent;
   }
 
-  public SendSmtpEmail subject(String subject) {
+  public SendSmtpEmail subject(@jakarta.annotation.Nullable String subject) {
     
     this.subject = subject;
     return this;
@@ -308,11 +324,11 @@ public class SendSmtpEmail {
 
   @JsonProperty(JSON_PROPERTY_SUBJECT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSubject(String subject) {
+  public void setSubject(@jakarta.annotation.Nullable String subject) {
     this.subject = subject;
   }
 
-  public SendSmtpEmail replyTo(SendSmtpEmailReplyTo replyTo) {
+  public SendSmtpEmail replyTo(@jakarta.annotation.Nullable SendSmtpEmailReplyTo replyTo) {
     
     this.replyTo = replyTo;
     return this;
@@ -333,11 +349,11 @@ public class SendSmtpEmail {
 
   @JsonProperty(JSON_PROPERTY_REPLY_TO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setReplyTo(SendSmtpEmailReplyTo replyTo) {
+  public void setReplyTo(@jakarta.annotation.Nullable SendSmtpEmailReplyTo replyTo) {
     this.replyTo = replyTo;
   }
 
-  public SendSmtpEmail attachment(List<SendSmtpEmailAttachmentInner> attachment) {
+  public SendSmtpEmail attachment(@jakarta.annotation.Nullable List<SendSmtpEmailAttachmentInner> attachment) {
     
     this.attachment = attachment;
     return this;
@@ -366,11 +382,11 @@ public class SendSmtpEmail {
 
   @JsonProperty(JSON_PROPERTY_ATTACHMENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setAttachment(List<SendSmtpEmailAttachmentInner> attachment) {
+  public void setAttachment(@jakarta.annotation.Nullable List<SendSmtpEmailAttachmentInner> attachment) {
     this.attachment = attachment;
   }
 
-  public SendSmtpEmail headers(Map<String, Object> headers) {
+  public SendSmtpEmail headers(@jakarta.annotation.Nullable Map<String, Object> headers) {
     
     this.headers = headers;
     return this;
@@ -399,11 +415,11 @@ public class SendSmtpEmail {
 
   @JsonProperty(JSON_PROPERTY_HEADERS)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
-  public void setHeaders(Map<String, Object> headers) {
+  public void setHeaders(@jakarta.annotation.Nullable Map<String, Object> headers) {
     this.headers = headers;
   }
 
-  public SendSmtpEmail templateId(Long templateId) {
+  public SendSmtpEmail templateId(@jakarta.annotation.Nullable Long templateId) {
     
     this.templateId = templateId;
     return this;
@@ -424,11 +440,11 @@ public class SendSmtpEmail {
 
   @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setTemplateId(Long templateId) {
+  public void setTemplateId(@jakarta.annotation.Nullable Long templateId) {
     this.templateId = templateId;
   }
 
-  public SendSmtpEmail params(Map<String, Object> params) {
+  public SendSmtpEmail params(@jakarta.annotation.Nullable Map<String, Object> params) {
     
     this.params = params;
     return this;
@@ -457,11 +473,11 @@ public class SendSmtpEmail {
 
   @JsonProperty(JSON_PROPERTY_PARAMS)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
-  public void setParams(Map<String, Object> params) {
+  public void setParams(@jakarta.annotation.Nullable Map<String, Object> params) {
     this.params = params;
   }
 
-  public SendSmtpEmail messageVersions(List<SendSmtpEmailMessageVersionsInner> messageVersions) {
+  public SendSmtpEmail messageVersions(@jakarta.annotation.Nullable List<SendSmtpEmailMessageVersionsInner> messageVersions) {
     
     this.messageVersions = messageVersions;
     return this;
@@ -490,11 +506,11 @@ public class SendSmtpEmail {
 
   @JsonProperty(JSON_PROPERTY_MESSAGE_VERSIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setMessageVersions(List<SendSmtpEmailMessageVersionsInner> messageVersions) {
+  public void setMessageVersions(@jakarta.annotation.Nullable List<SendSmtpEmailMessageVersionsInner> messageVersions) {
     this.messageVersions = messageVersions;
   }
 
-  public SendSmtpEmail tags(List<String> tags) {
+  public SendSmtpEmail tags(@jakarta.annotation.Nullable List<String> tags) {
     
     this.tags = tags;
     return this;
@@ -523,11 +539,11 @@ public class SendSmtpEmail {
 
   @JsonProperty(JSON_PROPERTY_TAGS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setTags(List<String> tags) {
+  public void setTags(@jakarta.annotation.Nullable List<String> tags) {
     this.tags = tags;
   }
 
-  public SendSmtpEmail scheduledAt(OffsetDateTime scheduledAt) {
+  public SendSmtpEmail scheduledAt(@jakarta.annotation.Nullable OffsetDateTime scheduledAt) {
     
     this.scheduledAt = scheduledAt;
     return this;
@@ -548,11 +564,11 @@ public class SendSmtpEmail {
 
   @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setScheduledAt(OffsetDateTime scheduledAt) {
+  public void setScheduledAt(@jakarta.annotation.Nullable OffsetDateTime scheduledAt) {
     this.scheduledAt = scheduledAt;
   }
 
-  public SendSmtpEmail batchId(String batchId) {
+  public SendSmtpEmail batchId(@jakarta.annotation.Nullable String batchId) {
     
     this.batchId = batchId;
     return this;
@@ -573,7 +589,7 @@ public class SendSmtpEmail {
 
   @JsonProperty(JSON_PROPERTY_BATCH_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setBatchId(String batchId) {
+  public void setBatchId(@jakarta.annotation.Nullable String batchId) {
     this.batchId = batchId;
   }
 

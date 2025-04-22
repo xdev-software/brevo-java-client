@@ -40,15 +40,17 @@ import java.util.StringJoiner;
 @JsonTypeName("getAllExternalFeeds")
 public class GetAllExternalFeeds {
   public static final String JSON_PROPERTY_COUNT = "count";
+  @jakarta.annotation.Nullable
   private Integer count;
 
   public static final String JSON_PROPERTY_FEEDS = "feeds";
+  @jakarta.annotation.Nullable
   private List<GetAllExternalFeedsFeedsInner> feeds = new ArrayList<>();
 
   public GetAllExternalFeeds() {
   }
 
-  public GetAllExternalFeeds count(Integer count) {
+  public GetAllExternalFeeds count(@jakarta.annotation.Nullable Integer count) {
     
     this.count = count;
     return this;
@@ -69,11 +71,11 @@ public class GetAllExternalFeeds {
 
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCount(Integer count) {
+  public void setCount(@jakarta.annotation.Nullable Integer count) {
     this.count = count;
   }
 
-  public GetAllExternalFeeds feeds(List<GetAllExternalFeedsFeedsInner> feeds) {
+  public GetAllExternalFeeds feeds(@jakarta.annotation.Nullable List<GetAllExternalFeedsFeedsInner> feeds) {
     
     this.feeds = feeds;
     return this;
@@ -102,7 +104,7 @@ public class GetAllExternalFeeds {
 
   @JsonProperty(JSON_PROPERTY_FEEDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setFeeds(List<GetAllExternalFeedsFeedsInner> feeds) {
+  public void setFeeds(@jakarta.annotation.Nullable List<GetAllExternalFeedsFeedsInner> feeds) {
     this.feeds = feeds;
   }
 

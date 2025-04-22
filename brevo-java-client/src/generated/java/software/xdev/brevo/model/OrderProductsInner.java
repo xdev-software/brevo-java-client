@@ -39,21 +39,25 @@ import java.util.StringJoiner;
 @JsonTypeName("order_products_inner")
 public class OrderProductsInner {
   public static final String JSON_PROPERTY_PRODUCT_ID = "productId";
+  @jakarta.annotation.Nonnull
   private String productId;
 
   public static final String JSON_PROPERTY_QUANTITY = "quantity";
+  @jakarta.annotation.Nonnull
   private BigDecimal quantity;
 
   public static final String JSON_PROPERTY_VARIANT_ID = "variantId";
+  @jakarta.annotation.Nullable
   private String variantId;
 
   public static final String JSON_PROPERTY_PRICE = "price";
+  @jakarta.annotation.Nonnull
   private BigDecimal price;
 
   public OrderProductsInner() {
   }
 
-  public OrderProductsInner productId(String productId) {
+  public OrderProductsInner productId(@jakarta.annotation.Nonnull String productId) {
     
     this.productId = productId;
     return this;
@@ -74,11 +78,11 @@ public class OrderProductsInner {
 
   @JsonProperty(JSON_PROPERTY_PRODUCT_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setProductId(String productId) {
+  public void setProductId(@jakarta.annotation.Nonnull String productId) {
     this.productId = productId;
   }
 
-  public OrderProductsInner quantity(BigDecimal quantity) {
+  public OrderProductsInner quantity(@jakarta.annotation.Nonnull BigDecimal quantity) {
     
     this.quantity = quantity;
     return this;
@@ -99,11 +103,11 @@ public class OrderProductsInner {
 
   @JsonProperty(JSON_PROPERTY_QUANTITY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setQuantity(BigDecimal quantity) {
+  public void setQuantity(@jakarta.annotation.Nonnull BigDecimal quantity) {
     this.quantity = quantity;
   }
 
-  public OrderProductsInner variantId(String variantId) {
+  public OrderProductsInner variantId(@jakarta.annotation.Nullable String variantId) {
     
     this.variantId = variantId;
     return this;
@@ -124,11 +128,11 @@ public class OrderProductsInner {
 
   @JsonProperty(JSON_PROPERTY_VARIANT_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setVariantId(String variantId) {
+  public void setVariantId(@jakarta.annotation.Nullable String variantId) {
     this.variantId = variantId;
   }
 
-  public OrderProductsInner price(BigDecimal price) {
+  public OrderProductsInner price(@jakarta.annotation.Nonnull BigDecimal price) {
     
     this.price = price;
     return this;
@@ -149,7 +153,7 @@ public class OrderProductsInner {
 
   @JsonProperty(JSON_PROPERTY_PRICE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPrice(BigDecimal price) {
+  public void setPrice(@jakarta.annotation.Nonnull BigDecimal price) {
     this.price = price;
   }
 

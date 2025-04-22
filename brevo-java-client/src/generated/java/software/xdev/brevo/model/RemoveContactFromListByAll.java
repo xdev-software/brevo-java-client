@@ -35,12 +35,13 @@ import java.util.StringJoiner;
 @JsonTypeName("removeContactFromListByAll")
 public class RemoveContactFromListByAll {
   public static final String JSON_PROPERTY_ALL = "all";
+  @jakarta.annotation.Nullable
   private Boolean all;
 
   public RemoveContactFromListByAll() {
   }
 
-  public RemoveContactFromListByAll all(Boolean all) {
+  public RemoveContactFromListByAll all(@jakarta.annotation.Nullable Boolean all) {
     
     this.all = all;
     return this;
@@ -61,7 +62,7 @@ public class RemoveContactFromListByAll {
 
   @JsonProperty(JSON_PROPERTY_ALL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setAll(Boolean all) {
+  public void setAll(@jakarta.annotation.Nullable Boolean all) {
     this.all = all;
   }
 

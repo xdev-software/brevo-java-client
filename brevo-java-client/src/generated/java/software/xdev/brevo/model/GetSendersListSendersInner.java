@@ -43,24 +43,29 @@ import java.util.StringJoiner;
 @JsonTypeName("getSendersList_senders_inner")
 public class GetSendersListSendersInner {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nonnull
   private Long id;
 
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nonnull
   private String email;
 
   public static final String JSON_PROPERTY_ACTIVE = "active";
+  @jakarta.annotation.Nonnull
   private Boolean active;
 
   public static final String JSON_PROPERTY_IPS = "ips";
+  @jakarta.annotation.Nullable
   private List<GetSendersListSendersInnerIpsInner> ips = new ArrayList<>();
 
   public GetSendersListSendersInner() {
   }
 
-  public GetSendersListSendersInner id(Long id) {
+  public GetSendersListSendersInner id(@jakarta.annotation.Nonnull Long id) {
     
     this.id = id;
     return this;
@@ -81,11 +86,11 @@ public class GetSendersListSendersInner {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(Long id) {
+  public void setId(@jakarta.annotation.Nonnull Long id) {
     this.id = id;
   }
 
-  public GetSendersListSendersInner name(String name) {
+  public GetSendersListSendersInner name(@jakarta.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
@@ -106,11 +111,11 @@ public class GetSendersListSendersInner {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
   }
 
-  public GetSendersListSendersInner email(String email) {
+  public GetSendersListSendersInner email(@jakarta.annotation.Nonnull String email) {
     
     this.email = email;
     return this;
@@ -131,11 +136,11 @@ public class GetSendersListSendersInner {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEmail(String email) {
+  public void setEmail(@jakarta.annotation.Nonnull String email) {
     this.email = email;
   }
 
-  public GetSendersListSendersInner active(Boolean active) {
+  public GetSendersListSendersInner active(@jakarta.annotation.Nonnull Boolean active) {
     
     this.active = active;
     return this;
@@ -156,11 +161,11 @@ public class GetSendersListSendersInner {
 
   @JsonProperty(JSON_PROPERTY_ACTIVE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setActive(Boolean active) {
+  public void setActive(@jakarta.annotation.Nonnull Boolean active) {
     this.active = active;
   }
 
-  public GetSendersListSendersInner ips(List<GetSendersListSendersInnerIpsInner> ips) {
+  public GetSendersListSendersInner ips(@jakarta.annotation.Nullable List<GetSendersListSendersInnerIpsInner> ips) {
     
     this.ips = ips;
     return this;
@@ -189,7 +194,7 @@ public class GetSendersListSendersInner {
 
   @JsonProperty(JSON_PROPERTY_IPS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setIps(List<GetSendersListSendersInnerIpsInner> ips) {
+  public void setIps(@jakarta.annotation.Nullable List<GetSendersListSendersInnerIpsInner> ips) {
     this.ips = ips;
   }
 

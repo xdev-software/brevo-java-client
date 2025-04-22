@@ -41,21 +41,25 @@ import java.util.StringJoiner;
 @JsonTypeName("postSendSmsTestFailed")
 public class PostSendSmsTestFailed {
   public static final String JSON_PROPERTY_CODE = "code";
+  @jakarta.annotation.Nonnull
   private String code;
 
   public static final String JSON_PROPERTY_MESSAGE = "message";
+  @jakarta.annotation.Nonnull
   private String message;
 
   public static final String JSON_PROPERTY_UNEXISTING_SMS = "unexistingSms";
+  @jakarta.annotation.Nullable
   private List<String> unexistingSms = new ArrayList<>();
 
   public static final String JSON_PROPERTY_WITHOUT_LIST_SMS = "withoutListSms";
+  @jakarta.annotation.Nullable
   private List<String> withoutListSms = new ArrayList<>();
 
   public PostSendSmsTestFailed() {
   }
 
-  public PostSendSmsTestFailed code(String code) {
+  public PostSendSmsTestFailed code(@jakarta.annotation.Nonnull String code) {
     
     this.code = code;
     return this;
@@ -76,11 +80,11 @@ public class PostSendSmsTestFailed {
 
   @JsonProperty(JSON_PROPERTY_CODE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCode(String code) {
+  public void setCode(@jakarta.annotation.Nonnull String code) {
     this.code = code;
   }
 
-  public PostSendSmsTestFailed message(String message) {
+  public PostSendSmsTestFailed message(@jakarta.annotation.Nonnull String message) {
     
     this.message = message;
     return this;
@@ -101,11 +105,11 @@ public class PostSendSmsTestFailed {
 
   @JsonProperty(JSON_PROPERTY_MESSAGE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMessage(String message) {
+  public void setMessage(@jakarta.annotation.Nonnull String message) {
     this.message = message;
   }
 
-  public PostSendSmsTestFailed unexistingSms(List<String> unexistingSms) {
+  public PostSendSmsTestFailed unexistingSms(@jakarta.annotation.Nullable List<String> unexistingSms) {
     
     this.unexistingSms = unexistingSms;
     return this;
@@ -134,11 +138,11 @@ public class PostSendSmsTestFailed {
 
   @JsonProperty(JSON_PROPERTY_UNEXISTING_SMS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUnexistingSms(List<String> unexistingSms) {
+  public void setUnexistingSms(@jakarta.annotation.Nullable List<String> unexistingSms) {
     this.unexistingSms = unexistingSms;
   }
 
-  public PostSendSmsTestFailed withoutListSms(List<String> withoutListSms) {
+  public PostSendSmsTestFailed withoutListSms(@jakarta.annotation.Nullable List<String> withoutListSms) {
     
     this.withoutListSms = withoutListSms;
     return this;
@@ -167,7 +171,7 @@ public class PostSendSmsTestFailed {
 
   @JsonProperty(JSON_PROPERTY_WITHOUT_LIST_SMS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setWithoutListSms(List<String> withoutListSms) {
+  public void setWithoutListSms(@jakarta.annotation.Nullable List<String> withoutListSms) {
     this.withoutListSms = withoutListSms;
   }
 

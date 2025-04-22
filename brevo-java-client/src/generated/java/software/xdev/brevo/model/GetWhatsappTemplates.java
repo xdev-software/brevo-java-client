@@ -40,15 +40,17 @@ import java.util.StringJoiner;
 @JsonTypeName("getWhatsappTemplates")
 public class GetWhatsappTemplates {
   public static final String JSON_PROPERTY_TEMPLATES = "templates";
+  @jakarta.annotation.Nullable
   private List<GetWhatsappTemplatesTemplatesInner> templates = new ArrayList<>();
 
   public static final String JSON_PROPERTY_COUNT = "count";
+  @jakarta.annotation.Nullable
   private Long count;
 
   public GetWhatsappTemplates() {
   }
 
-  public GetWhatsappTemplates templates(List<GetWhatsappTemplatesTemplatesInner> templates) {
+  public GetWhatsappTemplates templates(@jakarta.annotation.Nullable List<GetWhatsappTemplatesTemplatesInner> templates) {
     
     this.templates = templates;
     return this;
@@ -77,11 +79,11 @@ public class GetWhatsappTemplates {
 
   @JsonProperty(JSON_PROPERTY_TEMPLATES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setTemplates(List<GetWhatsappTemplatesTemplatesInner> templates) {
+  public void setTemplates(@jakarta.annotation.Nullable List<GetWhatsappTemplatesTemplatesInner> templates) {
     this.templates = templates;
   }
 
-  public GetWhatsappTemplates count(Long count) {
+  public GetWhatsappTemplates count(@jakarta.annotation.Nullable Long count) {
     
     this.count = count;
     return this;
@@ -102,7 +104,7 @@ public class GetWhatsappTemplates {
 
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCount(Long count) {
+  public void setCount(@jakarta.annotation.Nullable Long count) {
     this.count = count;
   }
 

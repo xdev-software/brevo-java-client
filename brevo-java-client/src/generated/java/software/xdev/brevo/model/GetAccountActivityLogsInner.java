@@ -39,24 +39,29 @@ import java.util.StringJoiner;
 @JsonTypeName("getAccountActivity_logs_inner")
 public class GetAccountActivityLogsInner {
   public static final String JSON_PROPERTY_ACTION = "action";
+  @jakarta.annotation.Nonnull
   private String action;
 
   public static final String JSON_PROPERTY_DATE = "date";
+  @jakarta.annotation.Nonnull
   private String date;
 
   public static final String JSON_PROPERTY_USER_EMAIL = "user_email";
+  @jakarta.annotation.Nonnull
   private String userEmail;
 
   public static final String JSON_PROPERTY_USER_IP = "user_ip";
+  @jakarta.annotation.Nonnull
   private String userIp;
 
   public static final String JSON_PROPERTY_USER_AGENT = "user_agent";
+  @jakarta.annotation.Nonnull
   private String userAgent;
 
   public GetAccountActivityLogsInner() {
   }
 
-  public GetAccountActivityLogsInner action(String action) {
+  public GetAccountActivityLogsInner action(@jakarta.annotation.Nonnull String action) {
     
     this.action = action;
     return this;
@@ -77,11 +82,11 @@ public class GetAccountActivityLogsInner {
 
   @JsonProperty(JSON_PROPERTY_ACTION)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAction(String action) {
+  public void setAction(@jakarta.annotation.Nonnull String action) {
     this.action = action;
   }
 
-  public GetAccountActivityLogsInner date(String date) {
+  public GetAccountActivityLogsInner date(@jakarta.annotation.Nonnull String date) {
     
     this.date = date;
     return this;
@@ -102,11 +107,11 @@ public class GetAccountActivityLogsInner {
 
   @JsonProperty(JSON_PROPERTY_DATE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDate(String date) {
+  public void setDate(@jakarta.annotation.Nonnull String date) {
     this.date = date;
   }
 
-  public GetAccountActivityLogsInner userEmail(String userEmail) {
+  public GetAccountActivityLogsInner userEmail(@jakarta.annotation.Nonnull String userEmail) {
     
     this.userEmail = userEmail;
     return this;
@@ -127,11 +132,11 @@ public class GetAccountActivityLogsInner {
 
   @JsonProperty(JSON_PROPERTY_USER_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUserEmail(String userEmail) {
+  public void setUserEmail(@jakarta.annotation.Nonnull String userEmail) {
     this.userEmail = userEmail;
   }
 
-  public GetAccountActivityLogsInner userIp(String userIp) {
+  public GetAccountActivityLogsInner userIp(@jakarta.annotation.Nonnull String userIp) {
     
     this.userIp = userIp;
     return this;
@@ -152,11 +157,11 @@ public class GetAccountActivityLogsInner {
 
   @JsonProperty(JSON_PROPERTY_USER_IP)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUserIp(String userIp) {
+  public void setUserIp(@jakarta.annotation.Nonnull String userIp) {
     this.userIp = userIp;
   }
 
-  public GetAccountActivityLogsInner userAgent(String userAgent) {
+  public GetAccountActivityLogsInner userAgent(@jakarta.annotation.Nonnull String userAgent) {
     
     this.userAgent = userAgent;
     return this;
@@ -177,7 +182,7 @@ public class GetAccountActivityLogsInner {
 
   @JsonProperty(JSON_PROPERTY_USER_AGENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUserAgent(String userAgent) {
+  public void setUserAgent(@jakarta.annotation.Nonnull String userAgent) {
     this.userAgent = userAgent;
   }
 

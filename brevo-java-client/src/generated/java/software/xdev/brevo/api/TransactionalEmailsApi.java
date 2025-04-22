@@ -234,7 +234,7 @@ public class TransactionalEmailsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/smtp/blockedDomains/{domain}"
-      .replaceAll("\\{" + "domain" + "\\}", apiClient.escapeString(domain.toString()));
+      .replaceAll("\\{" + "domain" + "\\}", apiClient.escapeString(apiClient.parameterToString(domain)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -372,7 +372,7 @@ public class TransactionalEmailsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/smtp/email/{identifier}"
-      .replaceAll("\\{" + "identifier" + "\\}", apiClient.escapeString(identifier.toString()));
+      .replaceAll("\\{" + "identifier" + "\\}", apiClient.escapeString(apiClient.parameterToString(identifier)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -444,7 +444,7 @@ public class TransactionalEmailsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/smtp/templates/{templateId}"
-      .replaceAll("\\{" + "templateId" + "\\}", apiClient.escapeString(templateId.toString()));
+      .replaceAll("\\{" + "templateId" + "\\}", apiClient.escapeString(apiClient.parameterToString(templateId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -776,7 +776,7 @@ public class TransactionalEmailsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/smtp/emailStatus/{identifier}"
-      .replaceAll("\\{" + "identifier" + "\\}", apiClient.escapeString(identifier.toString()));
+      .replaceAll("\\{" + "identifier" + "\\}", apiClient.escapeString(apiClient.parameterToString(identifier)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -945,7 +945,7 @@ public class TransactionalEmailsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/smtp/templates/{templateId}"
-      .replaceAll("\\{" + "templateId" + "\\}", apiClient.escapeString(templateId.toString()));
+      .replaceAll("\\{" + "templateId" + "\\}", apiClient.escapeString(apiClient.parameterToString(templateId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -1184,7 +1184,7 @@ public class TransactionalEmailsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/smtp/emails/{uuid}"
-      .replaceAll("\\{" + "uuid" + "\\}", apiClient.escapeString(uuid.toString()));
+      .replaceAll("\\{" + "uuid" + "\\}", apiClient.escapeString(apiClient.parameterToString(uuid)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -1355,7 +1355,7 @@ public class TransactionalEmailsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/smtp/templates/{templateId}/sendTest"
-      .replaceAll("\\{" + "templateId" + "\\}", apiClient.escapeString(templateId.toString()));
+      .replaceAll("\\{" + "templateId" + "\\}", apiClient.escapeString(apiClient.parameterToString(templateId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -1501,7 +1501,7 @@ public class TransactionalEmailsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/smtp/blockedContacts/{email}"
-      .replaceAll("\\{" + "email" + "\\}", apiClient.escapeString(email.toString()));
+      .replaceAll("\\{" + "email" + "\\}", apiClient.escapeString(apiClient.parameterToString(email)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -1573,7 +1573,7 @@ public class TransactionalEmailsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/smtp/log/{identifier}"
-      .replaceAll("\\{" + "identifier" + "\\}", apiClient.escapeString(identifier.toString()));
+      .replaceAll("\\{" + "identifier" + "\\}", apiClient.escapeString(apiClient.parameterToString(identifier)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -1652,7 +1652,7 @@ public class TransactionalEmailsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/smtp/templates/{templateId}"
-      .replaceAll("\\{" + "templateId" + "\\}", apiClient.escapeString(templateId.toString()));
+      .replaceAll("\\{" + "templateId" + "\\}", apiClient.escapeString(apiClient.parameterToString(templateId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;

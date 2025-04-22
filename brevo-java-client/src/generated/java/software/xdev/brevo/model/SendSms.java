@@ -39,24 +39,29 @@ import java.util.StringJoiner;
 @JsonTypeName("sendSms")
 public class SendSms {
   public static final String JSON_PROPERTY_REFERENCE = "reference";
+  @jakarta.annotation.Nonnull
   private String reference;
 
   public static final String JSON_PROPERTY_MESSAGE_ID = "messageId";
+  @jakarta.annotation.Nonnull
   private Long messageId;
 
   public static final String JSON_PROPERTY_SMS_COUNT = "smsCount";
+  @jakarta.annotation.Nullable
   private Long smsCount;
 
   public static final String JSON_PROPERTY_USED_CREDITS = "usedCredits";
+  @jakarta.annotation.Nullable
   private Float usedCredits;
 
   public static final String JSON_PROPERTY_REMAINING_CREDITS = "remainingCredits";
+  @jakarta.annotation.Nullable
   private Float remainingCredits;
 
   public SendSms() {
   }
 
-  public SendSms reference(String reference) {
+  public SendSms reference(@jakarta.annotation.Nonnull String reference) {
     
     this.reference = reference;
     return this;
@@ -77,11 +82,11 @@ public class SendSms {
 
   @JsonProperty(JSON_PROPERTY_REFERENCE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setReference(String reference) {
+  public void setReference(@jakarta.annotation.Nonnull String reference) {
     this.reference = reference;
   }
 
-  public SendSms messageId(Long messageId) {
+  public SendSms messageId(@jakarta.annotation.Nonnull Long messageId) {
     
     this.messageId = messageId;
     return this;
@@ -102,11 +107,11 @@ public class SendSms {
 
   @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMessageId(Long messageId) {
+  public void setMessageId(@jakarta.annotation.Nonnull Long messageId) {
     this.messageId = messageId;
   }
 
-  public SendSms smsCount(Long smsCount) {
+  public SendSms smsCount(@jakarta.annotation.Nullable Long smsCount) {
     
     this.smsCount = smsCount;
     return this;
@@ -127,11 +132,11 @@ public class SendSms {
 
   @JsonProperty(JSON_PROPERTY_SMS_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSmsCount(Long smsCount) {
+  public void setSmsCount(@jakarta.annotation.Nullable Long smsCount) {
     this.smsCount = smsCount;
   }
 
-  public SendSms usedCredits(Float usedCredits) {
+  public SendSms usedCredits(@jakarta.annotation.Nullable Float usedCredits) {
     
     this.usedCredits = usedCredits;
     return this;
@@ -152,11 +157,11 @@ public class SendSms {
 
   @JsonProperty(JSON_PROPERTY_USED_CREDITS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUsedCredits(Float usedCredits) {
+  public void setUsedCredits(@jakarta.annotation.Nullable Float usedCredits) {
     this.usedCredits = usedCredits;
   }
 
-  public SendSms remainingCredits(Float remainingCredits) {
+  public SendSms remainingCredits(@jakarta.annotation.Nullable Float remainingCredits) {
     
     this.remainingCredits = remainingCredits;
     return this;
@@ -177,7 +182,7 @@ public class SendSms {
 
   @JsonProperty(JSON_PROPERTY_REMAINING_CREDITS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setRemainingCredits(Float remainingCredits) {
+  public void setRemainingCredits(@jakarta.annotation.Nullable Float remainingCredits) {
     this.remainingCredits = remainingCredits;
   }
 

@@ -39,15 +39,17 @@ import java.util.StringJoiner;
 @JsonTypeName("createSmtpEmail")
 public class CreateSmtpEmail {
   public static final String JSON_PROPERTY_MESSAGE_ID = "messageId";
+  @jakarta.annotation.Nullable
   private String messageId;
 
   public static final String JSON_PROPERTY_MESSAGE_IDS = "messageIds";
+  @jakarta.annotation.Nullable
   private List<String> messageIds = new ArrayList<>();
 
   public CreateSmtpEmail() {
   }
 
-  public CreateSmtpEmail messageId(String messageId) {
+  public CreateSmtpEmail messageId(@jakarta.annotation.Nullable String messageId) {
     
     this.messageId = messageId;
     return this;
@@ -68,11 +70,11 @@ public class CreateSmtpEmail {
 
   @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setMessageId(String messageId) {
+  public void setMessageId(@jakarta.annotation.Nullable String messageId) {
     this.messageId = messageId;
   }
 
-  public CreateSmtpEmail messageIds(List<String> messageIds) {
+  public CreateSmtpEmail messageIds(@jakarta.annotation.Nullable List<String> messageIds) {
     
     this.messageIds = messageIds;
     return this;
@@ -101,7 +103,7 @@ public class CreateSmtpEmail {
 
   @JsonProperty(JSON_PROPERTY_MESSAGE_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setMessageIds(List<String> messageIds) {
+  public void setMessageIds(@jakarta.annotation.Nullable List<String> messageIds) {
     this.messageIds = messageIds;
   }
 

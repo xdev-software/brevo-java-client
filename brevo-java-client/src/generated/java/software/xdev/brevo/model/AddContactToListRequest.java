@@ -41,15 +41,17 @@ import java.util.StringJoiner;
 @JsonTypeName("addContactToList_request")
 public class AddContactToListRequest {
   public static final String JSON_PROPERTY_EMAILS = "emails";
+  @jakarta.annotation.Nullable
   private List<String> emails = new ArrayList<>();
 
   public static final String JSON_PROPERTY_IDS = "ids";
+  @jakarta.annotation.Nullable
   private List<Long> ids = new ArrayList<>();
 
   public AddContactToListRequest() {
   }
 
-  public AddContactToListRequest emails(List<String> emails) {
+  public AddContactToListRequest emails(@jakarta.annotation.Nullable List<String> emails) {
     
     this.emails = emails;
     return this;
@@ -78,11 +80,11 @@ public class AddContactToListRequest {
 
   @JsonProperty(JSON_PROPERTY_EMAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEmails(List<String> emails) {
+  public void setEmails(@jakarta.annotation.Nullable List<String> emails) {
     this.emails = emails;
   }
 
-  public AddContactToListRequest ids(List<Long> ids) {
+  public AddContactToListRequest ids(@jakarta.annotation.Nullable List<Long> ids) {
     
     this.ids = ids;
     return this;
@@ -111,7 +113,7 @@ public class AddContactToListRequest {
 
   @JsonProperty(JSON_PROPERTY_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setIds(List<Long> ids) {
+  public void setIds(@jakarta.annotation.Nullable List<Long> ids) {
     this.ids = ids;
   }
 

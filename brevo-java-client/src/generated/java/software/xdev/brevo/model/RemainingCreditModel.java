@@ -38,15 +38,17 @@ import java.util.StringJoiner;
 @JsonTypeName("remainingCreditModel")
 public class RemainingCreditModel {
   public static final String JSON_PROPERTY_CHILD = "child";
+  @jakarta.annotation.Nonnull
   private RemainingCreditModelChild child;
 
   public static final String JSON_PROPERTY_RESELLER = "reseller";
+  @jakarta.annotation.Nonnull
   private RemainingCreditModelReseller reseller;
 
   public RemainingCreditModel() {
   }
 
-  public RemainingCreditModel child(RemainingCreditModelChild child) {
+  public RemainingCreditModel child(@jakarta.annotation.Nonnull RemainingCreditModelChild child) {
     
     this.child = child;
     return this;
@@ -67,11 +69,11 @@ public class RemainingCreditModel {
 
   @JsonProperty(JSON_PROPERTY_CHILD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setChild(RemainingCreditModelChild child) {
+  public void setChild(@jakarta.annotation.Nonnull RemainingCreditModelChild child) {
     this.child = child;
   }
 
-  public RemainingCreditModel reseller(RemainingCreditModelReseller reseller) {
+  public RemainingCreditModel reseller(@jakarta.annotation.Nonnull RemainingCreditModelReseller reseller) {
     
     this.reseller = reseller;
     return this;
@@ -92,7 +94,7 @@ public class RemainingCreditModel {
 
   @JsonProperty(JSON_PROPERTY_RESELLER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setReseller(RemainingCreditModelReseller reseller) {
+  public void setReseller(@jakarta.annotation.Nonnull RemainingCreditModelReseller reseller) {
     this.reseller = reseller;
   }
 

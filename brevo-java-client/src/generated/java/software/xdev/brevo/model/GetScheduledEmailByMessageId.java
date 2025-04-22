@@ -38,22 +38,24 @@ import java.util.StringJoiner;
 @JsonTypeName("getScheduledEmailByMessageId")
 public class GetScheduledEmailByMessageId {
   public static final String JSON_PROPERTY_SCHEDULED_AT = "scheduledAt";
+  @jakarta.annotation.Nonnull
   private OffsetDateTime scheduledAt;
 
   public static final String JSON_PROPERTY_CREATED_AT = "createdAt";
+  @jakarta.annotation.Nonnull
   private OffsetDateTime createdAt;
 
   /**
    * Current status of the scheduled email
    */
   public enum StatusEnum {
-    IN_PROGRESS("inProgress"),
+    IN_PROGRESS(String.valueOf("inProgress")),
     
-    QUEUED("queued"),
+    QUEUED(String.valueOf("queued")),
     
-    PROCESSED("processed"),
+    PROCESSED(String.valueOf("processed")),
     
-    ERROR("error");
+    ERROR(String.valueOf("error"));
 
     private String value;
 
@@ -83,12 +85,13 @@ public class GetScheduledEmailByMessageId {
   }
 
   public static final String JSON_PROPERTY_STATUS = "status";
+  @jakarta.annotation.Nonnull
   private StatusEnum status;
 
   public GetScheduledEmailByMessageId() {
   }
 
-  public GetScheduledEmailByMessageId scheduledAt(OffsetDateTime scheduledAt) {
+  public GetScheduledEmailByMessageId scheduledAt(@jakarta.annotation.Nonnull OffsetDateTime scheduledAt) {
     
     this.scheduledAt = scheduledAt;
     return this;
@@ -109,11 +112,11 @@ public class GetScheduledEmailByMessageId {
 
   @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setScheduledAt(OffsetDateTime scheduledAt) {
+  public void setScheduledAt(@jakarta.annotation.Nonnull OffsetDateTime scheduledAt) {
     this.scheduledAt = scheduledAt;
   }
 
-  public GetScheduledEmailByMessageId createdAt(OffsetDateTime createdAt) {
+  public GetScheduledEmailByMessageId createdAt(@jakarta.annotation.Nonnull OffsetDateTime createdAt) {
     
     this.createdAt = createdAt;
     return this;
@@ -134,11 +137,11 @@ public class GetScheduledEmailByMessageId {
 
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@jakarta.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
-  public GetScheduledEmailByMessageId status(StatusEnum status) {
+  public GetScheduledEmailByMessageId status(@jakarta.annotation.Nonnull StatusEnum status) {
     
     this.status = status;
     return this;
@@ -159,7 +162,7 @@ public class GetScheduledEmailByMessageId {
 
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatus(StatusEnum status) {
+  public void setStatus(@jakarta.annotation.Nonnull StatusEnum status) {
     this.status = status;
   }
 

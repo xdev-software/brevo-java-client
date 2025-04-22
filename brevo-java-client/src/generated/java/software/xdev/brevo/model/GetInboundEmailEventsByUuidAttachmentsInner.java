@@ -38,21 +38,25 @@ import java.util.StringJoiner;
 @JsonTypeName("getInboundEmailEventsByUuid_attachments_inner")
 public class GetInboundEmailEventsByUuidAttachmentsInner {
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nullable
   private String name;
 
   public static final String JSON_PROPERTY_CONTENT_TYPE = "contentType";
+  @jakarta.annotation.Nullable
   private String contentType;
 
   public static final String JSON_PROPERTY_CONTENT_ID = "contentId";
+  @jakarta.annotation.Nullable
   private String contentId;
 
   public static final String JSON_PROPERTY_CONTENT_LENGTH = "contentLength";
+  @jakarta.annotation.Nullable
   private Integer contentLength;
 
   public GetInboundEmailEventsByUuidAttachmentsInner() {
   }
 
-  public GetInboundEmailEventsByUuidAttachmentsInner name(String name) {
+  public GetInboundEmailEventsByUuidAttachmentsInner name(@jakarta.annotation.Nullable String name) {
     
     this.name = name;
     return this;
@@ -73,11 +77,11 @@ public class GetInboundEmailEventsByUuidAttachmentsInner {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nullable String name) {
     this.name = name;
   }
 
-  public GetInboundEmailEventsByUuidAttachmentsInner contentType(String contentType) {
+  public GetInboundEmailEventsByUuidAttachmentsInner contentType(@jakarta.annotation.Nullable String contentType) {
     
     this.contentType = contentType;
     return this;
@@ -98,11 +102,11 @@ public class GetInboundEmailEventsByUuidAttachmentsInner {
 
   @JsonProperty(JSON_PROPERTY_CONTENT_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setContentType(String contentType) {
+  public void setContentType(@jakarta.annotation.Nullable String contentType) {
     this.contentType = contentType;
   }
 
-  public GetInboundEmailEventsByUuidAttachmentsInner contentId(String contentId) {
+  public GetInboundEmailEventsByUuidAttachmentsInner contentId(@jakarta.annotation.Nullable String contentId) {
     
     this.contentId = contentId;
     return this;
@@ -123,11 +127,11 @@ public class GetInboundEmailEventsByUuidAttachmentsInner {
 
   @JsonProperty(JSON_PROPERTY_CONTENT_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setContentId(String contentId) {
+  public void setContentId(@jakarta.annotation.Nullable String contentId) {
     this.contentId = contentId;
   }
 
-  public GetInboundEmailEventsByUuidAttachmentsInner contentLength(Integer contentLength) {
+  public GetInboundEmailEventsByUuidAttachmentsInner contentLength(@jakarta.annotation.Nullable Integer contentLength) {
     
     this.contentLength = contentLength;
     return this;
@@ -148,7 +152,7 @@ public class GetInboundEmailEventsByUuidAttachmentsInner {
 
   @JsonProperty(JSON_PROPERTY_CONTENT_LENGTH)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setContentLength(Integer contentLength) {
+  public void setContentLength(@jakarta.annotation.Nullable Integer contentLength) {
     this.contentLength = contentLength;
   }
 

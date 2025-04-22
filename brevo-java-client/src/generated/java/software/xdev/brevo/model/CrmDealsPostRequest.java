@@ -36,15 +36,17 @@ import java.util.StringJoiner;
 @JsonTypeName("_crm_deals_post_request")
 public class CrmDealsPostRequest {
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_ATTRIBUTES = "attributes";
+  @jakarta.annotation.Nullable
   private Object attributes;
 
   public CrmDealsPostRequest() {
   }
 
-  public CrmDealsPostRequest name(String name) {
+  public CrmDealsPostRequest name(@jakarta.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
@@ -65,11 +67,11 @@ public class CrmDealsPostRequest {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
   }
 
-  public CrmDealsPostRequest attributes(Object attributes) {
+  public CrmDealsPostRequest attributes(@jakarta.annotation.Nullable Object attributes) {
     
     this.attributes = attributes;
     return this;
@@ -90,7 +92,7 @@ public class CrmDealsPostRequest {
 
   @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setAttributes(Object attributes) {
+  public void setAttributes(@jakarta.annotation.Nullable Object attributes) {
     this.attributes = attributes;
   }
 

@@ -38,21 +38,25 @@ import java.util.StringJoiner;
 @JsonTypeName("updateChildAccountStatus")
 public class UpdateChildAccountStatus {
   public static final String JSON_PROPERTY_TRANSACTIONAL_EMAIL = "transactionalEmail";
+  @jakarta.annotation.Nullable
   private Boolean transactionalEmail;
 
   public static final String JSON_PROPERTY_TRANSACTIONAL_SMS = "transactionalSms";
+  @jakarta.annotation.Nullable
   private Boolean transactionalSms;
 
   public static final String JSON_PROPERTY_MARKETING_AUTOMATION = "marketingAutomation";
+  @jakarta.annotation.Nullable
   private Boolean marketingAutomation;
 
   public static final String JSON_PROPERTY_SMS_CAMPAIGN = "smsCampaign";
+  @jakarta.annotation.Nullable
   private Boolean smsCampaign;
 
   public UpdateChildAccountStatus() {
   }
 
-  public UpdateChildAccountStatus transactionalEmail(Boolean transactionalEmail) {
+  public UpdateChildAccountStatus transactionalEmail(@jakarta.annotation.Nullable Boolean transactionalEmail) {
     
     this.transactionalEmail = transactionalEmail;
     return this;
@@ -73,11 +77,11 @@ public class UpdateChildAccountStatus {
 
   @JsonProperty(JSON_PROPERTY_TRANSACTIONAL_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setTransactionalEmail(Boolean transactionalEmail) {
+  public void setTransactionalEmail(@jakarta.annotation.Nullable Boolean transactionalEmail) {
     this.transactionalEmail = transactionalEmail;
   }
 
-  public UpdateChildAccountStatus transactionalSms(Boolean transactionalSms) {
+  public UpdateChildAccountStatus transactionalSms(@jakarta.annotation.Nullable Boolean transactionalSms) {
     
     this.transactionalSms = transactionalSms;
     return this;
@@ -98,11 +102,11 @@ public class UpdateChildAccountStatus {
 
   @JsonProperty(JSON_PROPERTY_TRANSACTIONAL_SMS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setTransactionalSms(Boolean transactionalSms) {
+  public void setTransactionalSms(@jakarta.annotation.Nullable Boolean transactionalSms) {
     this.transactionalSms = transactionalSms;
   }
 
-  public UpdateChildAccountStatus marketingAutomation(Boolean marketingAutomation) {
+  public UpdateChildAccountStatus marketingAutomation(@jakarta.annotation.Nullable Boolean marketingAutomation) {
     
     this.marketingAutomation = marketingAutomation;
     return this;
@@ -123,11 +127,11 @@ public class UpdateChildAccountStatus {
 
   @JsonProperty(JSON_PROPERTY_MARKETING_AUTOMATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setMarketingAutomation(Boolean marketingAutomation) {
+  public void setMarketingAutomation(@jakarta.annotation.Nullable Boolean marketingAutomation) {
     this.marketingAutomation = marketingAutomation;
   }
 
-  public UpdateChildAccountStatus smsCampaign(Boolean smsCampaign) {
+  public UpdateChildAccountStatus smsCampaign(@jakarta.annotation.Nullable Boolean smsCampaign) {
     
     this.smsCampaign = smsCampaign;
     return this;
@@ -148,7 +152,7 @@ public class UpdateChildAccountStatus {
 
   @JsonProperty(JSON_PROPERTY_SMS_CAMPAIGN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSmsCampaign(Boolean smsCampaign) {
+  public void setSmsCampaign(@jakarta.annotation.Nullable Boolean smsCampaign) {
     this.smsCampaign = smsCampaign;
   }
 

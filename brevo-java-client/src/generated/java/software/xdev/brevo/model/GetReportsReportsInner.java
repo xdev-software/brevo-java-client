@@ -48,48 +48,61 @@ import java.util.StringJoiner;
 @JsonTypeName("getReports_reports_inner")
 public class GetReportsReportsInner {
   public static final String JSON_PROPERTY_DATE = "date";
+  @jakarta.annotation.Nonnull
   private LocalDate date;
 
   public static final String JSON_PROPERTY_REQUESTS = "requests";
+  @jakarta.annotation.Nonnull
   private Long requests;
 
   public static final String JSON_PROPERTY_DELIVERED = "delivered";
+  @jakarta.annotation.Nonnull
   private Long delivered;
 
   public static final String JSON_PROPERTY_HARD_BOUNCES = "hardBounces";
+  @jakarta.annotation.Nonnull
   private Long hardBounces;
 
   public static final String JSON_PROPERTY_SOFT_BOUNCES = "softBounces";
+  @jakarta.annotation.Nonnull
   private Long softBounces;
 
   public static final String JSON_PROPERTY_CLICKS = "clicks";
+  @jakarta.annotation.Nonnull
   private Long clicks;
 
   public static final String JSON_PROPERTY_UNIQUE_CLICKS = "uniqueClicks";
+  @jakarta.annotation.Nonnull
   private Long uniqueClicks;
 
   public static final String JSON_PROPERTY_OPENS = "opens";
+  @jakarta.annotation.Nonnull
   private Long opens;
 
   public static final String JSON_PROPERTY_UNIQUE_OPENS = "uniqueOpens";
+  @jakarta.annotation.Nonnull
   private Long uniqueOpens;
 
   public static final String JSON_PROPERTY_SPAM_REPORTS = "spamReports";
+  @jakarta.annotation.Nonnull
   private Long spamReports;
 
   public static final String JSON_PROPERTY_BLOCKED = "blocked";
+  @jakarta.annotation.Nonnull
   private Long blocked;
 
   public static final String JSON_PROPERTY_INVALID = "invalid";
+  @jakarta.annotation.Nonnull
   private Long invalid;
 
   public static final String JSON_PROPERTY_UNSUBSCRIBED = "unsubscribed";
+  @jakarta.annotation.Nonnull
   private Long unsubscribed;
 
   public GetReportsReportsInner() {
   }
 
-  public GetReportsReportsInner date(LocalDate date) {
+  public GetReportsReportsInner date(@jakarta.annotation.Nonnull LocalDate date) {
     
     this.date = date;
     return this;
@@ -110,11 +123,11 @@ public class GetReportsReportsInner {
 
   @JsonProperty(JSON_PROPERTY_DATE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDate(LocalDate date) {
+  public void setDate(@jakarta.annotation.Nonnull LocalDate date) {
     this.date = date;
   }
 
-  public GetReportsReportsInner requests(Long requests) {
+  public GetReportsReportsInner requests(@jakarta.annotation.Nonnull Long requests) {
     
     this.requests = requests;
     return this;
@@ -135,11 +148,11 @@ public class GetReportsReportsInner {
 
   @JsonProperty(JSON_PROPERTY_REQUESTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRequests(Long requests) {
+  public void setRequests(@jakarta.annotation.Nonnull Long requests) {
     this.requests = requests;
   }
 
-  public GetReportsReportsInner delivered(Long delivered) {
+  public GetReportsReportsInner delivered(@jakarta.annotation.Nonnull Long delivered) {
     
     this.delivered = delivered;
     return this;
@@ -160,11 +173,11 @@ public class GetReportsReportsInner {
 
   @JsonProperty(JSON_PROPERTY_DELIVERED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDelivered(Long delivered) {
+  public void setDelivered(@jakarta.annotation.Nonnull Long delivered) {
     this.delivered = delivered;
   }
 
-  public GetReportsReportsInner hardBounces(Long hardBounces) {
+  public GetReportsReportsInner hardBounces(@jakarta.annotation.Nonnull Long hardBounces) {
     
     this.hardBounces = hardBounces;
     return this;
@@ -185,11 +198,11 @@ public class GetReportsReportsInner {
 
   @JsonProperty(JSON_PROPERTY_HARD_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setHardBounces(Long hardBounces) {
+  public void setHardBounces(@jakarta.annotation.Nonnull Long hardBounces) {
     this.hardBounces = hardBounces;
   }
 
-  public GetReportsReportsInner softBounces(Long softBounces) {
+  public GetReportsReportsInner softBounces(@jakarta.annotation.Nonnull Long softBounces) {
     
     this.softBounces = softBounces;
     return this;
@@ -210,11 +223,11 @@ public class GetReportsReportsInner {
 
   @JsonProperty(JSON_PROPERTY_SOFT_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSoftBounces(Long softBounces) {
+  public void setSoftBounces(@jakarta.annotation.Nonnull Long softBounces) {
     this.softBounces = softBounces;
   }
 
-  public GetReportsReportsInner clicks(Long clicks) {
+  public GetReportsReportsInner clicks(@jakarta.annotation.Nonnull Long clicks) {
     
     this.clicks = clicks;
     return this;
@@ -235,11 +248,11 @@ public class GetReportsReportsInner {
 
   @JsonProperty(JSON_PROPERTY_CLICKS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setClicks(Long clicks) {
+  public void setClicks(@jakarta.annotation.Nonnull Long clicks) {
     this.clicks = clicks;
   }
 
-  public GetReportsReportsInner uniqueClicks(Long uniqueClicks) {
+  public GetReportsReportsInner uniqueClicks(@jakarta.annotation.Nonnull Long uniqueClicks) {
     
     this.uniqueClicks = uniqueClicks;
     return this;
@@ -260,11 +273,11 @@ public class GetReportsReportsInner {
 
   @JsonProperty(JSON_PROPERTY_UNIQUE_CLICKS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUniqueClicks(Long uniqueClicks) {
+  public void setUniqueClicks(@jakarta.annotation.Nonnull Long uniqueClicks) {
     this.uniqueClicks = uniqueClicks;
   }
 
-  public GetReportsReportsInner opens(Long opens) {
+  public GetReportsReportsInner opens(@jakarta.annotation.Nonnull Long opens) {
     
     this.opens = opens;
     return this;
@@ -285,11 +298,11 @@ public class GetReportsReportsInner {
 
   @JsonProperty(JSON_PROPERTY_OPENS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOpens(Long opens) {
+  public void setOpens(@jakarta.annotation.Nonnull Long opens) {
     this.opens = opens;
   }
 
-  public GetReportsReportsInner uniqueOpens(Long uniqueOpens) {
+  public GetReportsReportsInner uniqueOpens(@jakarta.annotation.Nonnull Long uniqueOpens) {
     
     this.uniqueOpens = uniqueOpens;
     return this;
@@ -310,11 +323,11 @@ public class GetReportsReportsInner {
 
   @JsonProperty(JSON_PROPERTY_UNIQUE_OPENS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUniqueOpens(Long uniqueOpens) {
+  public void setUniqueOpens(@jakarta.annotation.Nonnull Long uniqueOpens) {
     this.uniqueOpens = uniqueOpens;
   }
 
-  public GetReportsReportsInner spamReports(Long spamReports) {
+  public GetReportsReportsInner spamReports(@jakarta.annotation.Nonnull Long spamReports) {
     
     this.spamReports = spamReports;
     return this;
@@ -335,11 +348,11 @@ public class GetReportsReportsInner {
 
   @JsonProperty(JSON_PROPERTY_SPAM_REPORTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSpamReports(Long spamReports) {
+  public void setSpamReports(@jakarta.annotation.Nonnull Long spamReports) {
     this.spamReports = spamReports;
   }
 
-  public GetReportsReportsInner blocked(Long blocked) {
+  public GetReportsReportsInner blocked(@jakarta.annotation.Nonnull Long blocked) {
     
     this.blocked = blocked;
     return this;
@@ -360,11 +373,11 @@ public class GetReportsReportsInner {
 
   @JsonProperty(JSON_PROPERTY_BLOCKED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBlocked(Long blocked) {
+  public void setBlocked(@jakarta.annotation.Nonnull Long blocked) {
     this.blocked = blocked;
   }
 
-  public GetReportsReportsInner invalid(Long invalid) {
+  public GetReportsReportsInner invalid(@jakarta.annotation.Nonnull Long invalid) {
     
     this.invalid = invalid;
     return this;
@@ -385,11 +398,11 @@ public class GetReportsReportsInner {
 
   @JsonProperty(JSON_PROPERTY_INVALID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setInvalid(Long invalid) {
+  public void setInvalid(@jakarta.annotation.Nonnull Long invalid) {
     this.invalid = invalid;
   }
 
-  public GetReportsReportsInner unsubscribed(Long unsubscribed) {
+  public GetReportsReportsInner unsubscribed(@jakarta.annotation.Nonnull Long unsubscribed) {
     
     this.unsubscribed = unsubscribed;
     return this;
@@ -410,7 +423,7 @@ public class GetReportsReportsInner {
 
   @JsonProperty(JSON_PROPERTY_UNSUBSCRIBED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUnsubscribed(Long unsubscribed) {
+  public void setUnsubscribed(@jakarta.annotation.Nonnull Long unsubscribed) {
     this.unsubscribed = unsubscribed;
   }
 

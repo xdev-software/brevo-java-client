@@ -37,18 +37,21 @@ import java.util.StringJoiner;
 @JsonTypeName("updateCouponCollection_200_response")
 public class UpdateCouponCollection200Response {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nonnull
   private String id;
 
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_DEFAULT_COUPON = "defaultCoupon";
+  @jakarta.annotation.Nonnull
   private String defaultCoupon;
 
   public UpdateCouponCollection200Response() {
   }
 
-  public UpdateCouponCollection200Response id(String id) {
+  public UpdateCouponCollection200Response id(@jakarta.annotation.Nonnull String id) {
     
     this.id = id;
     return this;
@@ -69,11 +72,11 @@ public class UpdateCouponCollection200Response {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(String id) {
+  public void setId(@jakarta.annotation.Nonnull String id) {
     this.id = id;
   }
 
-  public UpdateCouponCollection200Response name(String name) {
+  public UpdateCouponCollection200Response name(@jakarta.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
@@ -94,11 +97,11 @@ public class UpdateCouponCollection200Response {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
   }
 
-  public UpdateCouponCollection200Response defaultCoupon(String defaultCoupon) {
+  public UpdateCouponCollection200Response defaultCoupon(@jakarta.annotation.Nonnull String defaultCoupon) {
     
     this.defaultCoupon = defaultCoupon;
     return this;
@@ -119,7 +122,7 @@ public class UpdateCouponCollection200Response {
 
   @JsonProperty(JSON_PROPERTY_DEFAULT_COUPON)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDefaultCoupon(String defaultCoupon) {
+  public void setDefaultCoupon(@jakarta.annotation.Nonnull String defaultCoupon) {
     this.defaultCoupon = defaultCoupon;
   }
 

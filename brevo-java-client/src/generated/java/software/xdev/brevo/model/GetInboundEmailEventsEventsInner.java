@@ -40,21 +40,25 @@ import java.util.StringJoiner;
 @JsonTypeName("getInboundEmailEvents_events_inner")
 public class GetInboundEmailEventsEventsInner {
   public static final String JSON_PROPERTY_UUID = "uuid";
+  @jakarta.annotation.Nonnull
   private UUID uuid;
 
   public static final String JSON_PROPERTY_DATE = "date";
+  @jakarta.annotation.Nonnull
   private OffsetDateTime date;
 
   public static final String JSON_PROPERTY_SENDER = "sender";
+  @jakarta.annotation.Nonnull
   private String sender;
 
   public static final String JSON_PROPERTY_RECIPIENT = "recipient";
+  @jakarta.annotation.Nonnull
   private String recipient;
 
   public GetInboundEmailEventsEventsInner() {
   }
 
-  public GetInboundEmailEventsEventsInner uuid(UUID uuid) {
+  public GetInboundEmailEventsEventsInner uuid(@jakarta.annotation.Nonnull UUID uuid) {
     
     this.uuid = uuid;
     return this;
@@ -75,11 +79,11 @@ public class GetInboundEmailEventsEventsInner {
 
   @JsonProperty(JSON_PROPERTY_UUID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUuid(UUID uuid) {
+  public void setUuid(@jakarta.annotation.Nonnull UUID uuid) {
     this.uuid = uuid;
   }
 
-  public GetInboundEmailEventsEventsInner date(OffsetDateTime date) {
+  public GetInboundEmailEventsEventsInner date(@jakarta.annotation.Nonnull OffsetDateTime date) {
     
     this.date = date;
     return this;
@@ -100,11 +104,11 @@ public class GetInboundEmailEventsEventsInner {
 
   @JsonProperty(JSON_PROPERTY_DATE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDate(OffsetDateTime date) {
+  public void setDate(@jakarta.annotation.Nonnull OffsetDateTime date) {
     this.date = date;
   }
 
-  public GetInboundEmailEventsEventsInner sender(String sender) {
+  public GetInboundEmailEventsEventsInner sender(@jakarta.annotation.Nonnull String sender) {
     
     this.sender = sender;
     return this;
@@ -125,11 +129,11 @@ public class GetInboundEmailEventsEventsInner {
 
   @JsonProperty(JSON_PROPERTY_SENDER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSender(String sender) {
+  public void setSender(@jakarta.annotation.Nonnull String sender) {
     this.sender = sender;
   }
 
-  public GetInboundEmailEventsEventsInner recipient(String recipient) {
+  public GetInboundEmailEventsEventsInner recipient(@jakarta.annotation.Nonnull String recipient) {
     
     this.recipient = recipient;
     return this;
@@ -150,7 +154,7 @@ public class GetInboundEmailEventsEventsInner {
 
   @JsonProperty(JSON_PROPERTY_RECIPIENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRecipient(String recipient) {
+  public void setRecipient(@jakarta.annotation.Nonnull String recipient) {
     this.recipient = recipient;
   }
 

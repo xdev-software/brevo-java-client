@@ -39,21 +39,25 @@ import java.util.StringJoiner;
 @JsonTypeName("getTransacBlockedContacts_contacts_inner")
 public class GetTransacBlockedContactsContactsInner {
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nonnull
   private String email;
 
   public static final String JSON_PROPERTY_SENDER_EMAIL = "senderEmail";
+  @jakarta.annotation.Nonnull
   private String senderEmail;
 
   public static final String JSON_PROPERTY_REASON = "reason";
+  @jakarta.annotation.Nonnull
   private GetTransacBlockedContactsContactsInnerReason reason;
 
   public static final String JSON_PROPERTY_BLOCKED_AT = "blockedAt";
+  @jakarta.annotation.Nonnull
   private String blockedAt;
 
   public GetTransacBlockedContactsContactsInner() {
   }
 
-  public GetTransacBlockedContactsContactsInner email(String email) {
+  public GetTransacBlockedContactsContactsInner email(@jakarta.annotation.Nonnull String email) {
     
     this.email = email;
     return this;
@@ -74,11 +78,11 @@ public class GetTransacBlockedContactsContactsInner {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEmail(String email) {
+  public void setEmail(@jakarta.annotation.Nonnull String email) {
     this.email = email;
   }
 
-  public GetTransacBlockedContactsContactsInner senderEmail(String senderEmail) {
+  public GetTransacBlockedContactsContactsInner senderEmail(@jakarta.annotation.Nonnull String senderEmail) {
     
     this.senderEmail = senderEmail;
     return this;
@@ -99,11 +103,11 @@ public class GetTransacBlockedContactsContactsInner {
 
   @JsonProperty(JSON_PROPERTY_SENDER_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSenderEmail(String senderEmail) {
+  public void setSenderEmail(@jakarta.annotation.Nonnull String senderEmail) {
     this.senderEmail = senderEmail;
   }
 
-  public GetTransacBlockedContactsContactsInner reason(GetTransacBlockedContactsContactsInnerReason reason) {
+  public GetTransacBlockedContactsContactsInner reason(@jakarta.annotation.Nonnull GetTransacBlockedContactsContactsInnerReason reason) {
     
     this.reason = reason;
     return this;
@@ -124,11 +128,11 @@ public class GetTransacBlockedContactsContactsInner {
 
   @JsonProperty(JSON_PROPERTY_REASON)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setReason(GetTransacBlockedContactsContactsInnerReason reason) {
+  public void setReason(@jakarta.annotation.Nonnull GetTransacBlockedContactsContactsInnerReason reason) {
     this.reason = reason;
   }
 
-  public GetTransacBlockedContactsContactsInner blockedAt(String blockedAt) {
+  public GetTransacBlockedContactsContactsInner blockedAt(@jakarta.annotation.Nonnull String blockedAt) {
     
     this.blockedAt = blockedAt;
     return this;
@@ -149,7 +153,7 @@ public class GetTransacBlockedContactsContactsInner {
 
   @JsonProperty(JSON_PROPERTY_BLOCKED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBlockedAt(String blockedAt) {
+  public void setBlockedAt(@jakarta.annotation.Nonnull String blockedAt) {
     this.blockedAt = blockedAt;
   }
 

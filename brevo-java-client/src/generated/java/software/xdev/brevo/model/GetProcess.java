@@ -38,17 +38,18 @@ import java.util.StringJoiner;
 @JsonTypeName("getProcess")
 public class GetProcess {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nonnull
   private Long id;
 
   /**
    * Status of the process
    */
   public enum StatusEnum {
-    QUEUED("queued"),
+    QUEUED(String.valueOf("queued")),
     
-    IN_PROCESS("in_process"),
+    IN_PROCESS(String.valueOf("in_process")),
     
-    COMPLETED("completed");
+    COMPLETED(String.valueOf("completed"));
 
     private String value;
 
@@ -78,18 +79,21 @@ public class GetProcess {
   }
 
   public static final String JSON_PROPERTY_STATUS = "status";
+  @jakarta.annotation.Nonnull
   private StatusEnum status;
 
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_EXPORT_URL = "export_url";
+  @jakarta.annotation.Nullable
   private String exportUrl;
 
   public GetProcess() {
   }
 
-  public GetProcess id(Long id) {
+  public GetProcess id(@jakarta.annotation.Nonnull Long id) {
     
     this.id = id;
     return this;
@@ -110,11 +114,11 @@ public class GetProcess {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(Long id) {
+  public void setId(@jakarta.annotation.Nonnull Long id) {
     this.id = id;
   }
 
-  public GetProcess status(StatusEnum status) {
+  public GetProcess status(@jakarta.annotation.Nonnull StatusEnum status) {
     
     this.status = status;
     return this;
@@ -135,11 +139,11 @@ public class GetProcess {
 
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatus(StatusEnum status) {
+  public void setStatus(@jakarta.annotation.Nonnull StatusEnum status) {
     this.status = status;
   }
 
-  public GetProcess name(String name) {
+  public GetProcess name(@jakarta.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
@@ -160,11 +164,11 @@ public class GetProcess {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
   }
 
-  public GetProcess exportUrl(String exportUrl) {
+  public GetProcess exportUrl(@jakarta.annotation.Nullable String exportUrl) {
     
     this.exportUrl = exportUrl;
     return this;
@@ -185,7 +189,7 @@ public class GetProcess {
 
   @JsonProperty(JSON_PROPERTY_EXPORT_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setExportUrl(String exportUrl) {
+  public void setExportUrl(@jakarta.annotation.Nullable String exportUrl) {
     this.exportUrl = exportUrl;
   }
 

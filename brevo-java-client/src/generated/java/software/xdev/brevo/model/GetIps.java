@@ -39,12 +39,13 @@ import java.util.StringJoiner;
 @JsonTypeName("getIps")
 public class GetIps {
   public static final String JSON_PROPERTY_IPS = "ips";
+  @jakarta.annotation.Nonnull
   private List<GetIp> ips = new ArrayList<>();
 
   public GetIps() {
   }
 
-  public GetIps ips(List<GetIp> ips) {
+  public GetIps ips(@jakarta.annotation.Nonnull List<GetIp> ips) {
     
     this.ips = ips;
     return this;
@@ -73,7 +74,7 @@ public class GetIps {
 
   @JsonProperty(JSON_PROPERTY_IPS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIps(List<GetIp> ips) {
+  public void setIps(@jakarta.annotation.Nonnull List<GetIp> ips) {
     this.ips = ips;
   }
 

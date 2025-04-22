@@ -35,12 +35,13 @@ import java.util.StringJoiner;
 @JsonTypeName("addChildDomain")
 public class AddChildDomain {
   public static final String JSON_PROPERTY_DOMAIN = "domain";
+  @jakarta.annotation.Nullable
   private String domain;
 
   public AddChildDomain() {
   }
 
-  public AddChildDomain domain(String domain) {
+  public AddChildDomain domain(@jakarta.annotation.Nullable String domain) {
     
     this.domain = domain;
     return this;
@@ -61,7 +62,7 @@ public class AddChildDomain {
 
   @JsonProperty(JSON_PROPERTY_DOMAIN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDomain(String domain) {
+  public void setDomain(@jakarta.annotation.Nullable String domain) {
     this.domain = domain;
   }
 

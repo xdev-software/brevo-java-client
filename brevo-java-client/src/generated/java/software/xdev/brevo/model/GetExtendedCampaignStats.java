@@ -50,33 +50,41 @@ import java.util.StringJoiner;
 @JsonTypeName("getExtendedCampaignStats")
 public class GetExtendedCampaignStats {
   public static final String JSON_PROPERTY_GLOBAL_STATS = "globalStats";
+  @jakarta.annotation.Nonnull
   private GetCampaignStats globalStats;
 
   public static final String JSON_PROPERTY_CAMPAIGN_STATS = "campaignStats";
+  @jakarta.annotation.Nonnull
   private List<GetCampaignStats> campaignStats = new ArrayList<>();
 
   public static final String JSON_PROPERTY_MIRROR_CLICK = "mirrorClick";
+  @jakarta.annotation.Nonnull
   private Long mirrorClick;
 
   public static final String JSON_PROPERTY_REMAINING = "remaining";
+  @jakarta.annotation.Nonnull
   private Long remaining;
 
   public static final String JSON_PROPERTY_LINKS_STATS = "linksStats";
+  @jakarta.annotation.Nonnull
   private Object linksStats;
 
   public static final String JSON_PROPERTY_STATS_BY_DOMAIN = "statsByDomain";
+  @jakarta.annotation.Nonnull
   private Map<String, GetCampaignStats> statsByDomain = new HashMap<>();
 
   public static final String JSON_PROPERTY_STATS_BY_DEVICE = "statsByDevice";
+  @jakarta.annotation.Nonnull
   private GetStatsByDevice statsByDevice;
 
   public static final String JSON_PROPERTY_STATS_BY_BROWSER = "statsByBrowser";
+  @jakarta.annotation.Nonnull
   private Map<String, GetDeviceBrowserStats> statsByBrowser = new HashMap<>();
 
   public GetExtendedCampaignStats() {
   }
 
-  public GetExtendedCampaignStats globalStats(GetCampaignStats globalStats) {
+  public GetExtendedCampaignStats globalStats(@jakarta.annotation.Nonnull GetCampaignStats globalStats) {
     
     this.globalStats = globalStats;
     return this;
@@ -97,11 +105,11 @@ public class GetExtendedCampaignStats {
 
   @JsonProperty(JSON_PROPERTY_GLOBAL_STATS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setGlobalStats(GetCampaignStats globalStats) {
+  public void setGlobalStats(@jakarta.annotation.Nonnull GetCampaignStats globalStats) {
     this.globalStats = globalStats;
   }
 
-  public GetExtendedCampaignStats campaignStats(List<GetCampaignStats> campaignStats) {
+  public GetExtendedCampaignStats campaignStats(@jakarta.annotation.Nonnull List<GetCampaignStats> campaignStats) {
     
     this.campaignStats = campaignStats;
     return this;
@@ -130,11 +138,11 @@ public class GetExtendedCampaignStats {
 
   @JsonProperty(JSON_PROPERTY_CAMPAIGN_STATS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCampaignStats(List<GetCampaignStats> campaignStats) {
+  public void setCampaignStats(@jakarta.annotation.Nonnull List<GetCampaignStats> campaignStats) {
     this.campaignStats = campaignStats;
   }
 
-  public GetExtendedCampaignStats mirrorClick(Long mirrorClick) {
+  public GetExtendedCampaignStats mirrorClick(@jakarta.annotation.Nonnull Long mirrorClick) {
     
     this.mirrorClick = mirrorClick;
     return this;
@@ -155,11 +163,11 @@ public class GetExtendedCampaignStats {
 
   @JsonProperty(JSON_PROPERTY_MIRROR_CLICK)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMirrorClick(Long mirrorClick) {
+  public void setMirrorClick(@jakarta.annotation.Nonnull Long mirrorClick) {
     this.mirrorClick = mirrorClick;
   }
 
-  public GetExtendedCampaignStats remaining(Long remaining) {
+  public GetExtendedCampaignStats remaining(@jakarta.annotation.Nonnull Long remaining) {
     
     this.remaining = remaining;
     return this;
@@ -180,11 +188,11 @@ public class GetExtendedCampaignStats {
 
   @JsonProperty(JSON_PROPERTY_REMAINING)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRemaining(Long remaining) {
+  public void setRemaining(@jakarta.annotation.Nonnull Long remaining) {
     this.remaining = remaining;
   }
 
-  public GetExtendedCampaignStats linksStats(Object linksStats) {
+  public GetExtendedCampaignStats linksStats(@jakarta.annotation.Nonnull Object linksStats) {
     
     this.linksStats = linksStats;
     return this;
@@ -205,11 +213,11 @@ public class GetExtendedCampaignStats {
 
   @JsonProperty(JSON_PROPERTY_LINKS_STATS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setLinksStats(Object linksStats) {
+  public void setLinksStats(@jakarta.annotation.Nonnull Object linksStats) {
     this.linksStats = linksStats;
   }
 
-  public GetExtendedCampaignStats statsByDomain(Map<String, GetCampaignStats> statsByDomain) {
+  public GetExtendedCampaignStats statsByDomain(@jakarta.annotation.Nonnull Map<String, GetCampaignStats> statsByDomain) {
     
     this.statsByDomain = statsByDomain;
     return this;
@@ -235,11 +243,11 @@ public class GetExtendedCampaignStats {
 
   @JsonProperty(JSON_PROPERTY_STATS_BY_DOMAIN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatsByDomain(Map<String, GetCampaignStats> statsByDomain) {
+  public void setStatsByDomain(@jakarta.annotation.Nonnull Map<String, GetCampaignStats> statsByDomain) {
     this.statsByDomain = statsByDomain;
   }
 
-  public GetExtendedCampaignStats statsByDevice(GetStatsByDevice statsByDevice) {
+  public GetExtendedCampaignStats statsByDevice(@jakarta.annotation.Nonnull GetStatsByDevice statsByDevice) {
     
     this.statsByDevice = statsByDevice;
     return this;
@@ -260,11 +268,11 @@ public class GetExtendedCampaignStats {
 
   @JsonProperty(JSON_PROPERTY_STATS_BY_DEVICE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatsByDevice(GetStatsByDevice statsByDevice) {
+  public void setStatsByDevice(@jakarta.annotation.Nonnull GetStatsByDevice statsByDevice) {
     this.statsByDevice = statsByDevice;
   }
 
-  public GetExtendedCampaignStats statsByBrowser(Map<String, GetDeviceBrowserStats> statsByBrowser) {
+  public GetExtendedCampaignStats statsByBrowser(@jakarta.annotation.Nonnull Map<String, GetDeviceBrowserStats> statsByBrowser) {
     
     this.statsByBrowser = statsByBrowser;
     return this;
@@ -290,7 +298,7 @@ public class GetExtendedCampaignStats {
 
   @JsonProperty(JSON_PROPERTY_STATS_BY_BROWSER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatsByBrowser(Map<String, GetDeviceBrowserStats> statsByBrowser) {
+  public void setStatsByBrowser(@jakarta.annotation.Nonnull Map<String, GetDeviceBrowserStats> statsByBrowser) {
     this.statsByBrowser = statsByBrowser;
   }
 

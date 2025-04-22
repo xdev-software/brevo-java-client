@@ -37,18 +37,21 @@ import java.util.StringJoiner;
 @JsonTypeName("createSenderModel")
 public class CreateSenderModel {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nonnull
   private Long id;
 
   public static final String JSON_PROPERTY_SPF_ERROR = "spfError";
+  @jakarta.annotation.Nullable
   private Boolean spfError;
 
   public static final String JSON_PROPERTY_DKIM_ERROR = "dkimError";
+  @jakarta.annotation.Nullable
   private Boolean dkimError;
 
   public CreateSenderModel() {
   }
 
-  public CreateSenderModel id(Long id) {
+  public CreateSenderModel id(@jakarta.annotation.Nonnull Long id) {
     
     this.id = id;
     return this;
@@ -69,11 +72,11 @@ public class CreateSenderModel {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(Long id) {
+  public void setId(@jakarta.annotation.Nonnull Long id) {
     this.id = id;
   }
 
-  public CreateSenderModel spfError(Boolean spfError) {
+  public CreateSenderModel spfError(@jakarta.annotation.Nullable Boolean spfError) {
     
     this.spfError = spfError;
     return this;
@@ -94,11 +97,11 @@ public class CreateSenderModel {
 
   @JsonProperty(JSON_PROPERTY_SPF_ERROR)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSpfError(Boolean spfError) {
+  public void setSpfError(@jakarta.annotation.Nullable Boolean spfError) {
     this.spfError = spfError;
   }
 
-  public CreateSenderModel dkimError(Boolean dkimError) {
+  public CreateSenderModel dkimError(@jakarta.annotation.Nullable Boolean dkimError) {
     
     this.dkimError = dkimError;
     return this;
@@ -119,7 +122,7 @@ public class CreateSenderModel {
 
   @JsonProperty(JSON_PROPERTY_DKIM_ERROR)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDkimError(Boolean dkimError) {
+  public void setDkimError(@jakarta.annotation.Nullable Boolean dkimError) {
     this.dkimError = dkimError;
   }
 

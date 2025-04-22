@@ -38,24 +38,29 @@ import java.util.StringJoiner;
 })
 public class WhatsappCampStats {
   public static final String JSON_PROPERTY_SENT = "sent";
+  @jakarta.annotation.Nonnull
   private Integer sent;
 
   public static final String JSON_PROPERTY_DELIVERED = "delivered";
+  @jakarta.annotation.Nonnull
   private Integer delivered;
 
   public static final String JSON_PROPERTY_READ = "read";
+  @jakarta.annotation.Nonnull
   private Integer read;
 
   public static final String JSON_PROPERTY_UNSUBSCRIBE = "unsubscribe";
+  @jakarta.annotation.Nonnull
   private Integer unsubscribe;
 
   public static final String JSON_PROPERTY_NOT_SENT = "notSent";
+  @jakarta.annotation.Nonnull
   private Integer notSent;
 
   public WhatsappCampStats() {
   }
 
-  public WhatsappCampStats sent(Integer sent) {
+  public WhatsappCampStats sent(@jakarta.annotation.Nonnull Integer sent) {
     
     this.sent = sent;
     return this;
@@ -76,11 +81,11 @@ public class WhatsappCampStats {
 
   @JsonProperty(JSON_PROPERTY_SENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSent(Integer sent) {
+  public void setSent(@jakarta.annotation.Nonnull Integer sent) {
     this.sent = sent;
   }
 
-  public WhatsappCampStats delivered(Integer delivered) {
+  public WhatsappCampStats delivered(@jakarta.annotation.Nonnull Integer delivered) {
     
     this.delivered = delivered;
     return this;
@@ -101,11 +106,11 @@ public class WhatsappCampStats {
 
   @JsonProperty(JSON_PROPERTY_DELIVERED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDelivered(Integer delivered) {
+  public void setDelivered(@jakarta.annotation.Nonnull Integer delivered) {
     this.delivered = delivered;
   }
 
-  public WhatsappCampStats read(Integer read) {
+  public WhatsappCampStats read(@jakarta.annotation.Nonnull Integer read) {
     
     this.read = read;
     return this;
@@ -126,11 +131,11 @@ public class WhatsappCampStats {
 
   @JsonProperty(JSON_PROPERTY_READ)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRead(Integer read) {
+  public void setRead(@jakarta.annotation.Nonnull Integer read) {
     this.read = read;
   }
 
-  public WhatsappCampStats unsubscribe(Integer unsubscribe) {
+  public WhatsappCampStats unsubscribe(@jakarta.annotation.Nonnull Integer unsubscribe) {
     
     this.unsubscribe = unsubscribe;
     return this;
@@ -151,11 +156,11 @@ public class WhatsappCampStats {
 
   @JsonProperty(JSON_PROPERTY_UNSUBSCRIBE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUnsubscribe(Integer unsubscribe) {
+  public void setUnsubscribe(@jakarta.annotation.Nonnull Integer unsubscribe) {
     this.unsubscribe = unsubscribe;
   }
 
-  public WhatsappCampStats notSent(Integer notSent) {
+  public WhatsappCampStats notSent(@jakarta.annotation.Nonnull Integer notSent) {
     
     this.notSent = notSent;
     return this;
@@ -176,7 +181,7 @@ public class WhatsappCampStats {
 
   @JsonProperty(JSON_PROPERTY_NOT_SENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setNotSent(Integer notSent) {
+  public void setNotSent(@jakarta.annotation.Nonnull Integer notSent) {
     this.notSent = notSent;
   }
 

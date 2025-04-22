@@ -38,30 +38,32 @@ import java.util.StringJoiner;
 @JsonTypeName("_corporate_subAccount_ssoToken_post_request")
 public class CorporateSubAccountSsoTokenPostRequest {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nonnull
   private Long id;
 
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nullable
   private String email;
 
   /**
    * **Set target after login success** * **automation** - Redirect to Automation after login * **email_campaign** - Redirect to Email Campaign after login * **contacts** - Redirect to Contacts after login * **landing_pages** - Redirect to Landing Pages after login * **email_transactional** - Redirect to Email Transactional after login * **senders** - Redirect to Senders after login * **sms_campaign** - Redirect to Sms Campaign after login * **sms_transactional** - Redirect to Sms Transactional after login 
    */
   public enum TargetEnum {
-    AUTOMATION("automation"),
+    AUTOMATION(String.valueOf("automation")),
     
-    EMAIL_CAMPAIGN("email_campaign"),
+    EMAIL_CAMPAIGN(String.valueOf("email_campaign")),
     
-    CONTACTS("contacts"),
+    CONTACTS(String.valueOf("contacts")),
     
-    LANDING_PAGES("landing_pages"),
+    LANDING_PAGES(String.valueOf("landing_pages")),
     
-    EMAIL_TRANSACTIONAL("email_transactional"),
+    EMAIL_TRANSACTIONAL(String.valueOf("email_transactional")),
     
-    SENDERS("senders"),
+    SENDERS(String.valueOf("senders")),
     
-    SMS_CAMPAIGN("sms_campaign"),
+    SMS_CAMPAIGN(String.valueOf("sms_campaign")),
     
-    SMS_TRANSACTIONAL("sms_transactional");
+    SMS_TRANSACTIONAL(String.valueOf("sms_transactional"));
 
     private String value;
 
@@ -91,15 +93,17 @@ public class CorporateSubAccountSsoTokenPostRequest {
   }
 
   public static final String JSON_PROPERTY_TARGET = "target";
+  @jakarta.annotation.Nullable
   private TargetEnum target;
 
   public static final String JSON_PROPERTY_URL = "url";
+  @jakarta.annotation.Nullable
   private String url;
 
   public CorporateSubAccountSsoTokenPostRequest() {
   }
 
-  public CorporateSubAccountSsoTokenPostRequest id(Long id) {
+  public CorporateSubAccountSsoTokenPostRequest id(@jakarta.annotation.Nonnull Long id) {
     
     this.id = id;
     return this;
@@ -120,11 +124,11 @@ public class CorporateSubAccountSsoTokenPostRequest {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(Long id) {
+  public void setId(@jakarta.annotation.Nonnull Long id) {
     this.id = id;
   }
 
-  public CorporateSubAccountSsoTokenPostRequest email(String email) {
+  public CorporateSubAccountSsoTokenPostRequest email(@jakarta.annotation.Nullable String email) {
     
     this.email = email;
     return this;
@@ -145,11 +149,11 @@ public class CorporateSubAccountSsoTokenPostRequest {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEmail(String email) {
+  public void setEmail(@jakarta.annotation.Nullable String email) {
     this.email = email;
   }
 
-  public CorporateSubAccountSsoTokenPostRequest target(TargetEnum target) {
+  public CorporateSubAccountSsoTokenPostRequest target(@jakarta.annotation.Nullable TargetEnum target) {
     
     this.target = target;
     return this;
@@ -170,11 +174,11 @@ public class CorporateSubAccountSsoTokenPostRequest {
 
   @JsonProperty(JSON_PROPERTY_TARGET)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setTarget(TargetEnum target) {
+  public void setTarget(@jakarta.annotation.Nullable TargetEnum target) {
     this.target = target;
   }
 
-  public CorporateSubAccountSsoTokenPostRequest url(String url) {
+  public CorporateSubAccountSsoTokenPostRequest url(@jakarta.annotation.Nullable String url) {
     
     this.url = url;
     return this;
@@ -195,7 +199,7 @@ public class CorporateSubAccountSsoTokenPostRequest {
 
   @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUrl(String url) {
+  public void setUrl(@jakarta.annotation.Nullable String url) {
     this.url = url;
   }
 

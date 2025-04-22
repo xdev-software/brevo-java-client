@@ -65,24 +65,28 @@ import java.util.StringJoiner;
 @JsonTypeName("getExtendedCampaignOverview")
 public class GetExtendedCampaignOverview {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nonnull
   private Long id;
 
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_SUBJECT = "subject";
+  @jakarta.annotation.Nullable
   private String subject;
 
   public static final String JSON_PROPERTY_PREVIEW_TEXT = "previewText";
+  @jakarta.annotation.Nullable
   private String previewText;
 
   /**
    * Type of campaign
    */
   public enum TypeEnum {
-    CLASSIC("classic"),
+    CLASSIC(String.valueOf("classic")),
     
-    TRIGGER("trigger");
+    TRIGGER(String.valueOf("trigger"));
 
     private String value;
 
@@ -112,23 +116,24 @@ public class GetExtendedCampaignOverview {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @jakarta.annotation.Nonnull
   private TypeEnum type;
 
   /**
    * Status of the campaign
    */
   public enum StatusEnum {
-    DRAFT("draft"),
+    DRAFT(String.valueOf("draft")),
     
-    SENT("sent"),
+    SENT(String.valueOf("sent")),
     
-    ARCHIVE("archive"),
+    ARCHIVE(String.valueOf("archive")),
     
-    QUEUED("queued"),
+    QUEUED(String.valueOf("queued")),
     
-    SUSPENDED("suspended"),
+    SUSPENDED(String.valueOf("suspended")),
     
-    IN_PROCESS("in_process");
+    IN_PROCESS(String.valueOf("in_process"));
 
     private String value;
 
@@ -158,84 +163,109 @@ public class GetExtendedCampaignOverview {
   }
 
   public static final String JSON_PROPERTY_STATUS = "status";
+  @jakarta.annotation.Nonnull
   private StatusEnum status;
 
   public static final String JSON_PROPERTY_SCHEDULED_AT = "scheduledAt";
+  @jakarta.annotation.Nullable
   private String scheduledAt;
 
   public static final String JSON_PROPERTY_AB_TESTING = "abTesting";
+  @jakarta.annotation.Nullable
   private Boolean abTesting;
 
   public static final String JSON_PROPERTY_SUBJECT_A = "subjectA";
+  @jakarta.annotation.Nullable
   private String subjectA;
 
   public static final String JSON_PROPERTY_SUBJECT_B = "subjectB";
+  @jakarta.annotation.Nullable
   private String subjectB;
 
   public static final String JSON_PROPERTY_SPLIT_RULE = "splitRule";
+  @jakarta.annotation.Nullable
   private Integer splitRule;
 
   public static final String JSON_PROPERTY_WINNER_CRITERIA = "winnerCriteria";
+  @jakarta.annotation.Nullable
   private String winnerCriteria;
 
   public static final String JSON_PROPERTY_WINNER_DELAY = "winnerDelay";
+  @jakarta.annotation.Nullable
   private Integer winnerDelay;
 
   public static final String JSON_PROPERTY_SEND_AT_BEST_TIME = "sendAtBestTime";
+  @jakarta.annotation.Nullable
   private Boolean sendAtBestTime;
 
   public static final String JSON_PROPERTY_TEST_SENT = "testSent";
+  @jakarta.annotation.Nonnull
   private Boolean testSent;
 
   public static final String JSON_PROPERTY_HEADER = "header";
+  @jakarta.annotation.Nonnull
   private String header;
 
   public static final String JSON_PROPERTY_FOOTER = "footer";
+  @jakarta.annotation.Nonnull
   private String footer;
 
   public static final String JSON_PROPERTY_SENDER = "sender";
+  @jakarta.annotation.Nonnull
   private GetExtendedCampaignOverviewAllOfSender sender;
 
   public static final String JSON_PROPERTY_REPLY_TO = "replyTo";
+  @jakarta.annotation.Nonnull
   private String replyTo;
 
   public static final String JSON_PROPERTY_TO_FIELD = "toField";
+  @jakarta.annotation.Nullable
   private String toField;
 
   public static final String JSON_PROPERTY_HTML_CONTENT = "htmlContent";
+  @jakarta.annotation.Nonnull
   private String htmlContent;
 
   public static final String JSON_PROPERTY_SHARE_LINK = "shareLink";
+  @jakarta.annotation.Nullable
   private String shareLink;
 
   public static final String JSON_PROPERTY_TAG = "tag";
+  @jakarta.annotation.Nullable
   private String tag;
 
   public static final String JSON_PROPERTY_CREATED_AT = "createdAt";
+  @jakarta.annotation.Nonnull
   private String createdAt;
 
   public static final String JSON_PROPERTY_MODIFIED_AT = "modifiedAt";
+  @jakarta.annotation.Nonnull
   private String modifiedAt;
 
   public static final String JSON_PROPERTY_INLINE_IMAGE_ACTIVATION = "inlineImageActivation";
+  @jakarta.annotation.Nullable
   private Boolean inlineImageActivation;
 
   public static final String JSON_PROPERTY_MIRROR_ACTIVE = "mirrorActive";
+  @jakarta.annotation.Nullable
   private Boolean mirrorActive;
 
   public static final String JSON_PROPERTY_RECURRING = "recurring";
+  @jakarta.annotation.Nullable
   private Boolean recurring;
 
   public static final String JSON_PROPERTY_SENT_DATE = "sentDate";
+  @jakarta.annotation.Nullable
   private String sentDate;
 
   public static final String JSON_PROPERTY_RETURN_BOUNCE = "returnBounce";
+  @jakarta.annotation.Nullable
   private Long returnBounce;
 
   public GetExtendedCampaignOverview() {
   }
 
-  public GetExtendedCampaignOverview id(Long id) {
+  public GetExtendedCampaignOverview id(@jakarta.annotation.Nonnull Long id) {
     
     this.id = id;
     return this;
@@ -256,11 +286,11 @@ public class GetExtendedCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(Long id) {
+  public void setId(@jakarta.annotation.Nonnull Long id) {
     this.id = id;
   }
 
-  public GetExtendedCampaignOverview name(String name) {
+  public GetExtendedCampaignOverview name(@jakarta.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
@@ -281,11 +311,11 @@ public class GetExtendedCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
   }
 
-  public GetExtendedCampaignOverview subject(String subject) {
+  public GetExtendedCampaignOverview subject(@jakarta.annotation.Nullable String subject) {
     
     this.subject = subject;
     return this;
@@ -306,11 +336,11 @@ public class GetExtendedCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_SUBJECT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSubject(String subject) {
+  public void setSubject(@jakarta.annotation.Nullable String subject) {
     this.subject = subject;
   }
 
-  public GetExtendedCampaignOverview previewText(String previewText) {
+  public GetExtendedCampaignOverview previewText(@jakarta.annotation.Nullable String previewText) {
     
     this.previewText = previewText;
     return this;
@@ -331,11 +361,11 @@ public class GetExtendedCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_PREVIEW_TEXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setPreviewText(String previewText) {
+  public void setPreviewText(@jakarta.annotation.Nullable String previewText) {
     this.previewText = previewText;
   }
 
-  public GetExtendedCampaignOverview type(TypeEnum type) {
+  public GetExtendedCampaignOverview type(@jakarta.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
@@ -356,11 +386,11 @@ public class GetExtendedCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@jakarta.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
-  public GetExtendedCampaignOverview status(StatusEnum status) {
+  public GetExtendedCampaignOverview status(@jakarta.annotation.Nonnull StatusEnum status) {
     
     this.status = status;
     return this;
@@ -381,11 +411,11 @@ public class GetExtendedCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatus(StatusEnum status) {
+  public void setStatus(@jakarta.annotation.Nonnull StatusEnum status) {
     this.status = status;
   }
 
-  public GetExtendedCampaignOverview scheduledAt(String scheduledAt) {
+  public GetExtendedCampaignOverview scheduledAt(@jakarta.annotation.Nullable String scheduledAt) {
     
     this.scheduledAt = scheduledAt;
     return this;
@@ -406,11 +436,11 @@ public class GetExtendedCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setScheduledAt(String scheduledAt) {
+  public void setScheduledAt(@jakarta.annotation.Nullable String scheduledAt) {
     this.scheduledAt = scheduledAt;
   }
 
-  public GetExtendedCampaignOverview abTesting(Boolean abTesting) {
+  public GetExtendedCampaignOverview abTesting(@jakarta.annotation.Nullable Boolean abTesting) {
     
     this.abTesting = abTesting;
     return this;
@@ -431,11 +461,11 @@ public class GetExtendedCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_AB_TESTING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setAbTesting(Boolean abTesting) {
+  public void setAbTesting(@jakarta.annotation.Nullable Boolean abTesting) {
     this.abTesting = abTesting;
   }
 
-  public GetExtendedCampaignOverview subjectA(String subjectA) {
+  public GetExtendedCampaignOverview subjectA(@jakarta.annotation.Nullable String subjectA) {
     
     this.subjectA = subjectA;
     return this;
@@ -456,11 +486,11 @@ public class GetExtendedCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_SUBJECT_A)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSubjectA(String subjectA) {
+  public void setSubjectA(@jakarta.annotation.Nullable String subjectA) {
     this.subjectA = subjectA;
   }
 
-  public GetExtendedCampaignOverview subjectB(String subjectB) {
+  public GetExtendedCampaignOverview subjectB(@jakarta.annotation.Nullable String subjectB) {
     
     this.subjectB = subjectB;
     return this;
@@ -481,11 +511,11 @@ public class GetExtendedCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_SUBJECT_B)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSubjectB(String subjectB) {
+  public void setSubjectB(@jakarta.annotation.Nullable String subjectB) {
     this.subjectB = subjectB;
   }
 
-  public GetExtendedCampaignOverview splitRule(Integer splitRule) {
+  public GetExtendedCampaignOverview splitRule(@jakarta.annotation.Nullable Integer splitRule) {
     
     this.splitRule = splitRule;
     return this;
@@ -506,11 +536,11 @@ public class GetExtendedCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_SPLIT_RULE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSplitRule(Integer splitRule) {
+  public void setSplitRule(@jakarta.annotation.Nullable Integer splitRule) {
     this.splitRule = splitRule;
   }
 
-  public GetExtendedCampaignOverview winnerCriteria(String winnerCriteria) {
+  public GetExtendedCampaignOverview winnerCriteria(@jakarta.annotation.Nullable String winnerCriteria) {
     
     this.winnerCriteria = winnerCriteria;
     return this;
@@ -531,11 +561,11 @@ public class GetExtendedCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_WINNER_CRITERIA)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setWinnerCriteria(String winnerCriteria) {
+  public void setWinnerCriteria(@jakarta.annotation.Nullable String winnerCriteria) {
     this.winnerCriteria = winnerCriteria;
   }
 
-  public GetExtendedCampaignOverview winnerDelay(Integer winnerDelay) {
+  public GetExtendedCampaignOverview winnerDelay(@jakarta.annotation.Nullable Integer winnerDelay) {
     
     this.winnerDelay = winnerDelay;
     return this;
@@ -556,11 +586,11 @@ public class GetExtendedCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_WINNER_DELAY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setWinnerDelay(Integer winnerDelay) {
+  public void setWinnerDelay(@jakarta.annotation.Nullable Integer winnerDelay) {
     this.winnerDelay = winnerDelay;
   }
 
-  public GetExtendedCampaignOverview sendAtBestTime(Boolean sendAtBestTime) {
+  public GetExtendedCampaignOverview sendAtBestTime(@jakarta.annotation.Nullable Boolean sendAtBestTime) {
     
     this.sendAtBestTime = sendAtBestTime;
     return this;
@@ -581,11 +611,11 @@ public class GetExtendedCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_SEND_AT_BEST_TIME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSendAtBestTime(Boolean sendAtBestTime) {
+  public void setSendAtBestTime(@jakarta.annotation.Nullable Boolean sendAtBestTime) {
     this.sendAtBestTime = sendAtBestTime;
   }
 
-  public GetExtendedCampaignOverview testSent(Boolean testSent) {
+  public GetExtendedCampaignOverview testSent(@jakarta.annotation.Nonnull Boolean testSent) {
     
     this.testSent = testSent;
     return this;
@@ -606,11 +636,11 @@ public class GetExtendedCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_TEST_SENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTestSent(Boolean testSent) {
+  public void setTestSent(@jakarta.annotation.Nonnull Boolean testSent) {
     this.testSent = testSent;
   }
 
-  public GetExtendedCampaignOverview header(String header) {
+  public GetExtendedCampaignOverview header(@jakarta.annotation.Nonnull String header) {
     
     this.header = header;
     return this;
@@ -631,11 +661,11 @@ public class GetExtendedCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_HEADER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setHeader(String header) {
+  public void setHeader(@jakarta.annotation.Nonnull String header) {
     this.header = header;
   }
 
-  public GetExtendedCampaignOverview footer(String footer) {
+  public GetExtendedCampaignOverview footer(@jakarta.annotation.Nonnull String footer) {
     
     this.footer = footer;
     return this;
@@ -656,11 +686,11 @@ public class GetExtendedCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_FOOTER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setFooter(String footer) {
+  public void setFooter(@jakarta.annotation.Nonnull String footer) {
     this.footer = footer;
   }
 
-  public GetExtendedCampaignOverview sender(GetExtendedCampaignOverviewAllOfSender sender) {
+  public GetExtendedCampaignOverview sender(@jakarta.annotation.Nonnull GetExtendedCampaignOverviewAllOfSender sender) {
     
     this.sender = sender;
     return this;
@@ -681,11 +711,11 @@ public class GetExtendedCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_SENDER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSender(GetExtendedCampaignOverviewAllOfSender sender) {
+  public void setSender(@jakarta.annotation.Nonnull GetExtendedCampaignOverviewAllOfSender sender) {
     this.sender = sender;
   }
 
-  public GetExtendedCampaignOverview replyTo(String replyTo) {
+  public GetExtendedCampaignOverview replyTo(@jakarta.annotation.Nonnull String replyTo) {
     
     this.replyTo = replyTo;
     return this;
@@ -706,11 +736,11 @@ public class GetExtendedCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_REPLY_TO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setReplyTo(String replyTo) {
+  public void setReplyTo(@jakarta.annotation.Nonnull String replyTo) {
     this.replyTo = replyTo;
   }
 
-  public GetExtendedCampaignOverview toField(String toField) {
+  public GetExtendedCampaignOverview toField(@jakarta.annotation.Nullable String toField) {
     
     this.toField = toField;
     return this;
@@ -731,11 +761,11 @@ public class GetExtendedCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_TO_FIELD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setToField(String toField) {
+  public void setToField(@jakarta.annotation.Nullable String toField) {
     this.toField = toField;
   }
 
-  public GetExtendedCampaignOverview htmlContent(String htmlContent) {
+  public GetExtendedCampaignOverview htmlContent(@jakarta.annotation.Nonnull String htmlContent) {
     
     this.htmlContent = htmlContent;
     return this;
@@ -756,11 +786,11 @@ public class GetExtendedCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_HTML_CONTENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setHtmlContent(String htmlContent) {
+  public void setHtmlContent(@jakarta.annotation.Nonnull String htmlContent) {
     this.htmlContent = htmlContent;
   }
 
-  public GetExtendedCampaignOverview shareLink(String shareLink) {
+  public GetExtendedCampaignOverview shareLink(@jakarta.annotation.Nullable String shareLink) {
     
     this.shareLink = shareLink;
     return this;
@@ -781,11 +811,11 @@ public class GetExtendedCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_SHARE_LINK)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setShareLink(String shareLink) {
+  public void setShareLink(@jakarta.annotation.Nullable String shareLink) {
     this.shareLink = shareLink;
   }
 
-  public GetExtendedCampaignOverview tag(String tag) {
+  public GetExtendedCampaignOverview tag(@jakarta.annotation.Nullable String tag) {
     
     this.tag = tag;
     return this;
@@ -806,11 +836,11 @@ public class GetExtendedCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_TAG)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setTag(String tag) {
+  public void setTag(@jakarta.annotation.Nullable String tag) {
     this.tag = tag;
   }
 
-  public GetExtendedCampaignOverview createdAt(String createdAt) {
+  public GetExtendedCampaignOverview createdAt(@jakarta.annotation.Nonnull String createdAt) {
     
     this.createdAt = createdAt;
     return this;
@@ -831,11 +861,11 @@ public class GetExtendedCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCreatedAt(String createdAt) {
+  public void setCreatedAt(@jakarta.annotation.Nonnull String createdAt) {
     this.createdAt = createdAt;
   }
 
-  public GetExtendedCampaignOverview modifiedAt(String modifiedAt) {
+  public GetExtendedCampaignOverview modifiedAt(@jakarta.annotation.Nonnull String modifiedAt) {
     
     this.modifiedAt = modifiedAt;
     return this;
@@ -856,11 +886,11 @@ public class GetExtendedCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setModifiedAt(String modifiedAt) {
+  public void setModifiedAt(@jakarta.annotation.Nonnull String modifiedAt) {
     this.modifiedAt = modifiedAt;
   }
 
-  public GetExtendedCampaignOverview inlineImageActivation(Boolean inlineImageActivation) {
+  public GetExtendedCampaignOverview inlineImageActivation(@jakarta.annotation.Nullable Boolean inlineImageActivation) {
     
     this.inlineImageActivation = inlineImageActivation;
     return this;
@@ -881,11 +911,11 @@ public class GetExtendedCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_INLINE_IMAGE_ACTIVATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setInlineImageActivation(Boolean inlineImageActivation) {
+  public void setInlineImageActivation(@jakarta.annotation.Nullable Boolean inlineImageActivation) {
     this.inlineImageActivation = inlineImageActivation;
   }
 
-  public GetExtendedCampaignOverview mirrorActive(Boolean mirrorActive) {
+  public GetExtendedCampaignOverview mirrorActive(@jakarta.annotation.Nullable Boolean mirrorActive) {
     
     this.mirrorActive = mirrorActive;
     return this;
@@ -906,11 +936,11 @@ public class GetExtendedCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_MIRROR_ACTIVE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setMirrorActive(Boolean mirrorActive) {
+  public void setMirrorActive(@jakarta.annotation.Nullable Boolean mirrorActive) {
     this.mirrorActive = mirrorActive;
   }
 
-  public GetExtendedCampaignOverview recurring(Boolean recurring) {
+  public GetExtendedCampaignOverview recurring(@jakarta.annotation.Nullable Boolean recurring) {
     
     this.recurring = recurring;
     return this;
@@ -931,11 +961,11 @@ public class GetExtendedCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_RECURRING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setRecurring(Boolean recurring) {
+  public void setRecurring(@jakarta.annotation.Nullable Boolean recurring) {
     this.recurring = recurring;
   }
 
-  public GetExtendedCampaignOverview sentDate(String sentDate) {
+  public GetExtendedCampaignOverview sentDate(@jakarta.annotation.Nullable String sentDate) {
     
     this.sentDate = sentDate;
     return this;
@@ -956,11 +986,11 @@ public class GetExtendedCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_SENT_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSentDate(String sentDate) {
+  public void setSentDate(@jakarta.annotation.Nullable String sentDate) {
     this.sentDate = sentDate;
   }
 
-  public GetExtendedCampaignOverview returnBounce(Long returnBounce) {
+  public GetExtendedCampaignOverview returnBounce(@jakarta.annotation.Nullable Long returnBounce) {
     
     this.returnBounce = returnBounce;
     return this;
@@ -981,7 +1011,7 @@ public class GetExtendedCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_RETURN_BOUNCE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setReturnBounce(Long returnBounce) {
+  public void setReturnBounce(@jakarta.annotation.Nullable Long returnBounce) {
     this.returnBounce = returnBounce;
   }
 

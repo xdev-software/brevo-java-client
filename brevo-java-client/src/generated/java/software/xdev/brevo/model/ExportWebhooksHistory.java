@@ -44,24 +44,28 @@ import java.util.StringJoiner;
 @JsonTypeName("exportWebhooksHistory")
 public class ExportWebhooksHistory {
   public static final String JSON_PROPERTY_DAYS = "days";
+  @jakarta.annotation.Nullable
   private Integer days;
 
   public static final String JSON_PROPERTY_START_DATE = "startDate";
+  @jakarta.annotation.Nullable
   private String startDate;
 
   public static final String JSON_PROPERTY_END_DATE = "endDate";
+  @jakarta.annotation.Nullable
   private String endDate;
 
   public static final String JSON_PROPERTY_SORT = "sort";
+  @jakarta.annotation.Nullable
   private String sort;
 
   /**
    * Filter the history based on webhook type
    */
   public enum TypeEnum {
-    TRANSACTIONAL("transactional"),
+    TRANSACTIONAL(String.valueOf("transactional")),
     
-    MARKETING("marketing");
+    MARKETING(String.valueOf("marketing"));
 
     private String value;
 
@@ -91,45 +95,46 @@ public class ExportWebhooksHistory {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @jakarta.annotation.Nonnull
   private TypeEnum type;
 
   /**
    * Filter the history for a specific event type
    */
   public enum EventEnum {
-    INVALID_PARAMETER("invalid_parameter"),
+    INVALID_PARAMETER(String.valueOf("invalid_parameter")),
     
-    MISSING_PARAMETER("missing_parameter"),
+    MISSING_PARAMETER(String.valueOf("missing_parameter")),
     
-    HARD_BOUNCE("hardBounce"),
+    HARD_BOUNCE(String.valueOf("hardBounce")),
     
-    SOFT_BOUNCE("softBounce"),
+    SOFT_BOUNCE(String.valueOf("softBounce")),
     
-    DELIVERED("delivered"),
+    DELIVERED(String.valueOf("delivered")),
     
-    SPAM("spam"),
+    SPAM(String.valueOf("spam")),
     
-    REQUEST("request"),
+    REQUEST(String.valueOf("request")),
     
-    OPENED("opened"),
+    OPENED(String.valueOf("opened")),
     
-    CLICK("click"),
+    CLICK(String.valueOf("click")),
     
-    INVALID("invalid"),
+    INVALID(String.valueOf("invalid")),
     
-    DEFERRED("deferred"),
+    DEFERRED(String.valueOf("deferred")),
     
-    BLOCKED("blocked"),
+    BLOCKED(String.valueOf("blocked")),
     
-    UNSUBSCRIBED("unsubscribed"),
+    UNSUBSCRIBED(String.valueOf("unsubscribed")),
     
-    ERROR("error"),
+    ERROR(String.valueOf("error")),
     
-    UNIQUE_OPENED("uniqueOpened"),
+    UNIQUE_OPENED(String.valueOf("uniqueOpened")),
     
-    LOADED_BY_PROXY("loadedByProxy"),
+    LOADED_BY_PROXY(String.valueOf("loadedByProxy")),
     
-    ALL_EVENTS("allEvents");
+    ALL_EVENTS(String.valueOf("allEvents"));
 
     private String value;
 
@@ -159,24 +164,29 @@ public class ExportWebhooksHistory {
   }
 
   public static final String JSON_PROPERTY_EVENT = "event";
+  @jakarta.annotation.Nonnull
   private EventEnum event;
 
   public static final String JSON_PROPERTY_NOTIFY_U_R_L = "notifyURL";
+  @jakarta.annotation.Nonnull
   private String notifyURL;
 
   public static final String JSON_PROPERTY_WEBHOOK_ID = "webhookId";
+  @jakarta.annotation.Nullable
   private Integer webhookId;
 
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nullable
   private String email;
 
   public static final String JSON_PROPERTY_MESSAGE_ID = "messageId";
+  @jakarta.annotation.Nullable
   private Integer messageId;
 
   public ExportWebhooksHistory() {
   }
 
-  public ExportWebhooksHistory days(Integer days) {
+  public ExportWebhooksHistory days(@jakarta.annotation.Nullable Integer days) {
     
     this.days = days;
     return this;
@@ -197,11 +207,11 @@ public class ExportWebhooksHistory {
 
   @JsonProperty(JSON_PROPERTY_DAYS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDays(Integer days) {
+  public void setDays(@jakarta.annotation.Nullable Integer days) {
     this.days = days;
   }
 
-  public ExportWebhooksHistory startDate(String startDate) {
+  public ExportWebhooksHistory startDate(@jakarta.annotation.Nullable String startDate) {
     
     this.startDate = startDate;
     return this;
@@ -222,11 +232,11 @@ public class ExportWebhooksHistory {
 
   @JsonProperty(JSON_PROPERTY_START_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setStartDate(String startDate) {
+  public void setStartDate(@jakarta.annotation.Nullable String startDate) {
     this.startDate = startDate;
   }
 
-  public ExportWebhooksHistory endDate(String endDate) {
+  public ExportWebhooksHistory endDate(@jakarta.annotation.Nullable String endDate) {
     
     this.endDate = endDate;
     return this;
@@ -247,11 +257,11 @@ public class ExportWebhooksHistory {
 
   @JsonProperty(JSON_PROPERTY_END_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEndDate(String endDate) {
+  public void setEndDate(@jakarta.annotation.Nullable String endDate) {
     this.endDate = endDate;
   }
 
-  public ExportWebhooksHistory sort(String sort) {
+  public ExportWebhooksHistory sort(@jakarta.annotation.Nullable String sort) {
     
     this.sort = sort;
     return this;
@@ -272,11 +282,11 @@ public class ExportWebhooksHistory {
 
   @JsonProperty(JSON_PROPERTY_SORT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSort(String sort) {
+  public void setSort(@jakarta.annotation.Nullable String sort) {
     this.sort = sort;
   }
 
-  public ExportWebhooksHistory type(TypeEnum type) {
+  public ExportWebhooksHistory type(@jakarta.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
@@ -297,11 +307,11 @@ public class ExportWebhooksHistory {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@jakarta.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
-  public ExportWebhooksHistory event(EventEnum event) {
+  public ExportWebhooksHistory event(@jakarta.annotation.Nonnull EventEnum event) {
     
     this.event = event;
     return this;
@@ -322,11 +332,11 @@ public class ExportWebhooksHistory {
 
   @JsonProperty(JSON_PROPERTY_EVENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEvent(EventEnum event) {
+  public void setEvent(@jakarta.annotation.Nonnull EventEnum event) {
     this.event = event;
   }
 
-  public ExportWebhooksHistory notifyURL(String notifyURL) {
+  public ExportWebhooksHistory notifyURL(@jakarta.annotation.Nonnull String notifyURL) {
     
     this.notifyURL = notifyURL;
     return this;
@@ -347,11 +357,11 @@ public class ExportWebhooksHistory {
 
   @JsonProperty(JSON_PROPERTY_NOTIFY_U_R_L)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setNotifyURL(String notifyURL) {
+  public void setNotifyURL(@jakarta.annotation.Nonnull String notifyURL) {
     this.notifyURL = notifyURL;
   }
 
-  public ExportWebhooksHistory webhookId(Integer webhookId) {
+  public ExportWebhooksHistory webhookId(@jakarta.annotation.Nullable Integer webhookId) {
     
     this.webhookId = webhookId;
     return this;
@@ -372,11 +382,11 @@ public class ExportWebhooksHistory {
 
   @JsonProperty(JSON_PROPERTY_WEBHOOK_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setWebhookId(Integer webhookId) {
+  public void setWebhookId(@jakarta.annotation.Nullable Integer webhookId) {
     this.webhookId = webhookId;
   }
 
-  public ExportWebhooksHistory email(String email) {
+  public ExportWebhooksHistory email(@jakarta.annotation.Nullable String email) {
     
     this.email = email;
     return this;
@@ -397,11 +407,11 @@ public class ExportWebhooksHistory {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEmail(String email) {
+  public void setEmail(@jakarta.annotation.Nullable String email) {
     this.email = email;
   }
 
-  public ExportWebhooksHistory messageId(Integer messageId) {
+  public ExportWebhooksHistory messageId(@jakarta.annotation.Nullable Integer messageId) {
     
     this.messageId = messageId;
     return this;
@@ -422,7 +432,7 @@ public class ExportWebhooksHistory {
 
   @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setMessageId(Integer messageId) {
+  public void setMessageId(@jakarta.annotation.Nullable Integer messageId) {
     this.messageId = messageId;
   }
 

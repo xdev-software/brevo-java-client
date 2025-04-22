@@ -50,39 +50,49 @@ import java.util.StringJoiner;
 @JsonTypeName("createUpdateProducts")
 public class CreateUpdateProducts {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nonnull
   private String id;
 
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_URL = "url";
+  @jakarta.annotation.Nullable
   private String url;
 
   public static final String JSON_PROPERTY_IMAGE_URL = "imageUrl";
+  @jakarta.annotation.Nullable
   private String imageUrl;
 
   public static final String JSON_PROPERTY_SKU = "sku";
+  @jakarta.annotation.Nullable
   private String sku;
 
   public static final String JSON_PROPERTY_PRICE = "price";
+  @jakarta.annotation.Nullable
   private Float price;
 
   public static final String JSON_PROPERTY_CATEGORIES = "categories";
+  @jakarta.annotation.Nullable
   private List<String> categories = new ArrayList<>();
 
   public static final String JSON_PROPERTY_PARENT_ID = "parentId";
+  @jakarta.annotation.Nullable
   private String parentId;
 
   public static final String JSON_PROPERTY_META_INFO = "metaInfo";
+  @jakarta.annotation.Nullable
   private Map<String, GetContactInfoIdentifierParameter> metaInfo = new HashMap<>();
 
   public static final String JSON_PROPERTY_DELETED_AT = "deletedAt";
+  @jakarta.annotation.Nullable
   private String deletedAt;
 
   public CreateUpdateProducts() {
   }
 
-  public CreateUpdateProducts id(String id) {
+  public CreateUpdateProducts id(@jakarta.annotation.Nonnull String id) {
     
     this.id = id;
     return this;
@@ -103,11 +113,11 @@ public class CreateUpdateProducts {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(String id) {
+  public void setId(@jakarta.annotation.Nonnull String id) {
     this.id = id;
   }
 
-  public CreateUpdateProducts name(String name) {
+  public CreateUpdateProducts name(@jakarta.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
@@ -128,11 +138,11 @@ public class CreateUpdateProducts {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
   }
 
-  public CreateUpdateProducts url(String url) {
+  public CreateUpdateProducts url(@jakarta.annotation.Nullable String url) {
     
     this.url = url;
     return this;
@@ -153,11 +163,11 @@ public class CreateUpdateProducts {
 
   @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUrl(String url) {
+  public void setUrl(@jakarta.annotation.Nullable String url) {
     this.url = url;
   }
 
-  public CreateUpdateProducts imageUrl(String imageUrl) {
+  public CreateUpdateProducts imageUrl(@jakarta.annotation.Nullable String imageUrl) {
     
     this.imageUrl = imageUrl;
     return this;
@@ -178,11 +188,11 @@ public class CreateUpdateProducts {
 
   @JsonProperty(JSON_PROPERTY_IMAGE_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setImageUrl(String imageUrl) {
+  public void setImageUrl(@jakarta.annotation.Nullable String imageUrl) {
     this.imageUrl = imageUrl;
   }
 
-  public CreateUpdateProducts sku(String sku) {
+  public CreateUpdateProducts sku(@jakarta.annotation.Nullable String sku) {
     
     this.sku = sku;
     return this;
@@ -203,11 +213,11 @@ public class CreateUpdateProducts {
 
   @JsonProperty(JSON_PROPERTY_SKU)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSku(String sku) {
+  public void setSku(@jakarta.annotation.Nullable String sku) {
     this.sku = sku;
   }
 
-  public CreateUpdateProducts price(Float price) {
+  public CreateUpdateProducts price(@jakarta.annotation.Nullable Float price) {
     
     this.price = price;
     return this;
@@ -228,11 +238,11 @@ public class CreateUpdateProducts {
 
   @JsonProperty(JSON_PROPERTY_PRICE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setPrice(Float price) {
+  public void setPrice(@jakarta.annotation.Nullable Float price) {
     this.price = price;
   }
 
-  public CreateUpdateProducts categories(List<String> categories) {
+  public CreateUpdateProducts categories(@jakarta.annotation.Nullable List<String> categories) {
     
     this.categories = categories;
     return this;
@@ -261,11 +271,11 @@ public class CreateUpdateProducts {
 
   @JsonProperty(JSON_PROPERTY_CATEGORIES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCategories(List<String> categories) {
+  public void setCategories(@jakarta.annotation.Nullable List<String> categories) {
     this.categories = categories;
   }
 
-  public CreateUpdateProducts parentId(String parentId) {
+  public CreateUpdateProducts parentId(@jakarta.annotation.Nullable String parentId) {
     
     this.parentId = parentId;
     return this;
@@ -286,11 +296,11 @@ public class CreateUpdateProducts {
 
   @JsonProperty(JSON_PROPERTY_PARENT_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setParentId(String parentId) {
+  public void setParentId(@jakarta.annotation.Nullable String parentId) {
     this.parentId = parentId;
   }
 
-  public CreateUpdateProducts metaInfo(Map<String, GetContactInfoIdentifierParameter> metaInfo) {
+  public CreateUpdateProducts metaInfo(@jakarta.annotation.Nullable Map<String, GetContactInfoIdentifierParameter> metaInfo) {
     
     this.metaInfo = metaInfo;
     return this;
@@ -319,11 +329,11 @@ public class CreateUpdateProducts {
 
   @JsonProperty(JSON_PROPERTY_META_INFO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setMetaInfo(Map<String, GetContactInfoIdentifierParameter> metaInfo) {
+  public void setMetaInfo(@jakarta.annotation.Nullable Map<String, GetContactInfoIdentifierParameter> metaInfo) {
     this.metaInfo = metaInfo;
   }
 
-  public CreateUpdateProducts deletedAt(String deletedAt) {
+  public CreateUpdateProducts deletedAt(@jakarta.annotation.Nullable String deletedAt) {
     
     this.deletedAt = deletedAt;
     return this;
@@ -344,7 +354,7 @@ public class CreateUpdateProducts {
 
   @JsonProperty(JSON_PROPERTY_DELETED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDeletedAt(String deletedAt) {
+  public void setDeletedAt(@jakarta.annotation.Nullable String deletedAt) {
     this.deletedAt = deletedAt;
   }
 

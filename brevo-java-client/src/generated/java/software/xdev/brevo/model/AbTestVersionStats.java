@@ -36,15 +36,17 @@ import java.util.StringJoiner;
 @JsonTypeName("abTestVersionStats")
 public class AbTestVersionStats {
   public static final String JSON_PROPERTY_VERSION_A = "Version A";
+  @jakarta.annotation.Nonnull
   private String versionA;
 
   public static final String JSON_PROPERTY_VERSION_B = "Version B";
+  @jakarta.annotation.Nonnull
   private String versionB;
 
   public AbTestVersionStats() {
   }
 
-  public AbTestVersionStats versionA(String versionA) {
+  public AbTestVersionStats versionA(@jakarta.annotation.Nonnull String versionA) {
     
     this.versionA = versionA;
     return this;
@@ -65,11 +67,11 @@ public class AbTestVersionStats {
 
   @JsonProperty(JSON_PROPERTY_VERSION_A)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setVersionA(String versionA) {
+  public void setVersionA(@jakarta.annotation.Nonnull String versionA) {
     this.versionA = versionA;
   }
 
-  public AbTestVersionStats versionB(String versionB) {
+  public AbTestVersionStats versionB(@jakarta.annotation.Nonnull String versionB) {
     
     this.versionB = versionB;
     return this;
@@ -90,7 +92,7 @@ public class AbTestVersionStats {
 
   @JsonProperty(JSON_PROPERTY_VERSION_B)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setVersionB(String versionB) {
+  public void setVersionB(@jakarta.annotation.Nonnull String versionB) {
     this.versionB = versionB;
   }
 

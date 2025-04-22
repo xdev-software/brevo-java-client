@@ -45,48 +45,52 @@ import java.util.StringJoiner;
 @JsonTypeName("getEmailEventReport_events_inner")
 public class GetEmailEventReportEventsInner {
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nonnull
   private String email;
 
   public static final String JSON_PROPERTY_DATE = "date";
+  @jakarta.annotation.Nonnull
   private String date;
 
   public static final String JSON_PROPERTY_SUBJECT = "subject";
+  @jakarta.annotation.Nullable
   private String subject;
 
   public static final String JSON_PROPERTY_MESSAGE_ID = "messageId";
+  @jakarta.annotation.Nonnull
   private String messageId;
 
   /**
    * Event which occurred
    */
   public enum EventEnum {
-    BOUNCES("bounces"),
+    BOUNCES(String.valueOf("bounces")),
     
-    HARD_BOUNCES("hardBounces"),
+    HARD_BOUNCES(String.valueOf("hardBounces")),
     
-    SOFT_BOUNCES("softBounces"),
+    SOFT_BOUNCES(String.valueOf("softBounces")),
     
-    DELIVERED("delivered"),
+    DELIVERED(String.valueOf("delivered")),
     
-    SPAM("spam"),
+    SPAM(String.valueOf("spam")),
     
-    REQUESTS("requests"),
+    REQUESTS(String.valueOf("requests")),
     
-    OPENED("opened"),
+    OPENED(String.valueOf("opened")),
     
-    CLICKS("clicks"),
+    CLICKS(String.valueOf("clicks")),
     
-    INVALID("invalid"),
+    INVALID(String.valueOf("invalid")),
     
-    DEFERRED("deferred"),
+    DEFERRED(String.valueOf("deferred")),
     
-    BLOCKED("blocked"),
+    BLOCKED(String.valueOf("blocked")),
     
-    UNSUBSCRIBED("unsubscribed"),
+    UNSUBSCRIBED(String.valueOf("unsubscribed")),
     
-    ERROR("error"),
+    ERROR(String.valueOf("error")),
     
-    LOADED_BY_PROXY("loadedByProxy");
+    LOADED_BY_PROXY(String.valueOf("loadedByProxy"));
 
     private String value;
 
@@ -116,30 +120,37 @@ public class GetEmailEventReportEventsInner {
   }
 
   public static final String JSON_PROPERTY_EVENT = "event";
+  @jakarta.annotation.Nonnull
   private EventEnum event;
 
   public static final String JSON_PROPERTY_REASON = "reason";
+  @jakarta.annotation.Nullable
   private String reason;
 
   public static final String JSON_PROPERTY_TAG = "tag";
+  @jakarta.annotation.Nullable
   private String tag;
 
   public static final String JSON_PROPERTY_IP = "ip";
+  @jakarta.annotation.Nullable
   private String ip;
 
   public static final String JSON_PROPERTY_LINK = "link";
+  @jakarta.annotation.Nullable
   private String link;
 
   public static final String JSON_PROPERTY_FROM = "from";
+  @jakarta.annotation.Nullable
   private String from;
 
   public static final String JSON_PROPERTY_TEMPLATE_ID = "templateId";
+  @jakarta.annotation.Nullable
   private Long templateId;
 
   public GetEmailEventReportEventsInner() {
   }
 
-  public GetEmailEventReportEventsInner email(String email) {
+  public GetEmailEventReportEventsInner email(@jakarta.annotation.Nonnull String email) {
     
     this.email = email;
     return this;
@@ -160,11 +171,11 @@ public class GetEmailEventReportEventsInner {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEmail(String email) {
+  public void setEmail(@jakarta.annotation.Nonnull String email) {
     this.email = email;
   }
 
-  public GetEmailEventReportEventsInner date(String date) {
+  public GetEmailEventReportEventsInner date(@jakarta.annotation.Nonnull String date) {
     
     this.date = date;
     return this;
@@ -185,11 +196,11 @@ public class GetEmailEventReportEventsInner {
 
   @JsonProperty(JSON_PROPERTY_DATE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDate(String date) {
+  public void setDate(@jakarta.annotation.Nonnull String date) {
     this.date = date;
   }
 
-  public GetEmailEventReportEventsInner subject(String subject) {
+  public GetEmailEventReportEventsInner subject(@jakarta.annotation.Nullable String subject) {
     
     this.subject = subject;
     return this;
@@ -210,11 +221,11 @@ public class GetEmailEventReportEventsInner {
 
   @JsonProperty(JSON_PROPERTY_SUBJECT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSubject(String subject) {
+  public void setSubject(@jakarta.annotation.Nullable String subject) {
     this.subject = subject;
   }
 
-  public GetEmailEventReportEventsInner messageId(String messageId) {
+  public GetEmailEventReportEventsInner messageId(@jakarta.annotation.Nonnull String messageId) {
     
     this.messageId = messageId;
     return this;
@@ -235,11 +246,11 @@ public class GetEmailEventReportEventsInner {
 
   @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMessageId(String messageId) {
+  public void setMessageId(@jakarta.annotation.Nonnull String messageId) {
     this.messageId = messageId;
   }
 
-  public GetEmailEventReportEventsInner event(EventEnum event) {
+  public GetEmailEventReportEventsInner event(@jakarta.annotation.Nonnull EventEnum event) {
     
     this.event = event;
     return this;
@@ -260,11 +271,11 @@ public class GetEmailEventReportEventsInner {
 
   @JsonProperty(JSON_PROPERTY_EVENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEvent(EventEnum event) {
+  public void setEvent(@jakarta.annotation.Nonnull EventEnum event) {
     this.event = event;
   }
 
-  public GetEmailEventReportEventsInner reason(String reason) {
+  public GetEmailEventReportEventsInner reason(@jakarta.annotation.Nullable String reason) {
     
     this.reason = reason;
     return this;
@@ -285,11 +296,11 @@ public class GetEmailEventReportEventsInner {
 
   @JsonProperty(JSON_PROPERTY_REASON)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setReason(String reason) {
+  public void setReason(@jakarta.annotation.Nullable String reason) {
     this.reason = reason;
   }
 
-  public GetEmailEventReportEventsInner tag(String tag) {
+  public GetEmailEventReportEventsInner tag(@jakarta.annotation.Nullable String tag) {
     
     this.tag = tag;
     return this;
@@ -310,11 +321,11 @@ public class GetEmailEventReportEventsInner {
 
   @JsonProperty(JSON_PROPERTY_TAG)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setTag(String tag) {
+  public void setTag(@jakarta.annotation.Nullable String tag) {
     this.tag = tag;
   }
 
-  public GetEmailEventReportEventsInner ip(String ip) {
+  public GetEmailEventReportEventsInner ip(@jakarta.annotation.Nullable String ip) {
     
     this.ip = ip;
     return this;
@@ -335,11 +346,11 @@ public class GetEmailEventReportEventsInner {
 
   @JsonProperty(JSON_PROPERTY_IP)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setIp(String ip) {
+  public void setIp(@jakarta.annotation.Nullable String ip) {
     this.ip = ip;
   }
 
-  public GetEmailEventReportEventsInner link(String link) {
+  public GetEmailEventReportEventsInner link(@jakarta.annotation.Nullable String link) {
     
     this.link = link;
     return this;
@@ -360,11 +371,11 @@ public class GetEmailEventReportEventsInner {
 
   @JsonProperty(JSON_PROPERTY_LINK)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setLink(String link) {
+  public void setLink(@jakarta.annotation.Nullable String link) {
     this.link = link;
   }
 
-  public GetEmailEventReportEventsInner from(String from) {
+  public GetEmailEventReportEventsInner from(@jakarta.annotation.Nullable String from) {
     
     this.from = from;
     return this;
@@ -385,11 +396,11 @@ public class GetEmailEventReportEventsInner {
 
   @JsonProperty(JSON_PROPERTY_FROM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setFrom(String from) {
+  public void setFrom(@jakarta.annotation.Nullable String from) {
     this.from = from;
   }
 
-  public GetEmailEventReportEventsInner templateId(Long templateId) {
+  public GetEmailEventReportEventsInner templateId(@jakarta.annotation.Nullable Long templateId) {
     
     this.templateId = templateId;
     return this;
@@ -410,7 +421,7 @@ public class GetEmailEventReportEventsInner {
 
   @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setTemplateId(Long templateId) {
+  public void setTemplateId(@jakarta.annotation.Nullable Long templateId) {
     this.templateId = templateId;
   }
 

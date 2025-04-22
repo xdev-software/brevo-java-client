@@ -39,15 +39,17 @@ import java.util.StringJoiner;
 @JsonTypeName("_corporate_group_post_request")
 public class CorporateGroupPostRequest {
   public static final String JSON_PROPERTY_GROUP_NAME = "groupName";
+  @jakarta.annotation.Nonnull
   private String groupName;
 
   public static final String JSON_PROPERTY_SUB_ACCOUNT_IDS = "subAccountIds";
+  @jakarta.annotation.Nullable
   private List<Long> subAccountIds = new ArrayList<>();
 
   public CorporateGroupPostRequest() {
   }
 
-  public CorporateGroupPostRequest groupName(String groupName) {
+  public CorporateGroupPostRequest groupName(@jakarta.annotation.Nonnull String groupName) {
     
     this.groupName = groupName;
     return this;
@@ -68,11 +70,11 @@ public class CorporateGroupPostRequest {
 
   @JsonProperty(JSON_PROPERTY_GROUP_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setGroupName(String groupName) {
+  public void setGroupName(@jakarta.annotation.Nonnull String groupName) {
     this.groupName = groupName;
   }
 
-  public CorporateGroupPostRequest subAccountIds(List<Long> subAccountIds) {
+  public CorporateGroupPostRequest subAccountIds(@jakarta.annotation.Nullable List<Long> subAccountIds) {
     
     this.subAccountIds = subAccountIds;
     return this;
@@ -101,7 +103,7 @@ public class CorporateGroupPostRequest {
 
   @JsonProperty(JSON_PROPERTY_SUB_ACCOUNT_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSubAccountIds(List<Long> subAccountIds) {
+  public void setSubAccountIds(@jakarta.annotation.Nullable List<Long> subAccountIds) {
     this.subAccountIds = subAccountIds;
   }
 

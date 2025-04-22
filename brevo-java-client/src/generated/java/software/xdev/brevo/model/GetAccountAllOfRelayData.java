@@ -37,18 +37,21 @@ import java.util.StringJoiner;
 @JsonTypeName("getAccount_allOf_relay_data")
 public class GetAccountAllOfRelayData {
   public static final String JSON_PROPERTY_USER_NAME = "userName";
+  @jakarta.annotation.Nonnull
   private String userName;
 
   public static final String JSON_PROPERTY_RELAY = "relay";
+  @jakarta.annotation.Nonnull
   private String relay;
 
   public static final String JSON_PROPERTY_PORT = "port";
+  @jakarta.annotation.Nonnull
   private Integer port;
 
   public GetAccountAllOfRelayData() {
   }
 
-  public GetAccountAllOfRelayData userName(String userName) {
+  public GetAccountAllOfRelayData userName(@jakarta.annotation.Nonnull String userName) {
     
     this.userName = userName;
     return this;
@@ -69,11 +72,11 @@ public class GetAccountAllOfRelayData {
 
   @JsonProperty(JSON_PROPERTY_USER_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUserName(String userName) {
+  public void setUserName(@jakarta.annotation.Nonnull String userName) {
     this.userName = userName;
   }
 
-  public GetAccountAllOfRelayData relay(String relay) {
+  public GetAccountAllOfRelayData relay(@jakarta.annotation.Nonnull String relay) {
     
     this.relay = relay;
     return this;
@@ -94,11 +97,11 @@ public class GetAccountAllOfRelayData {
 
   @JsonProperty(JSON_PROPERTY_RELAY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRelay(String relay) {
+  public void setRelay(@jakarta.annotation.Nonnull String relay) {
     this.relay = relay;
   }
 
-  public GetAccountAllOfRelayData port(Integer port) {
+  public GetAccountAllOfRelayData port(@jakarta.annotation.Nonnull Integer port) {
     
     this.port = port;
     return this;
@@ -119,7 +122,7 @@ public class GetAccountAllOfRelayData {
 
   @JsonProperty(JSON_PROPERTY_PORT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPort(Integer port) {
+  public void setPort(@jakarta.annotation.Nonnull Integer port) {
     this.port = port;
   }
 

@@ -41,24 +41,29 @@ import java.util.StringJoiner;
 @JsonTypeName("getCorporateInvitedUsersList_users_inner")
 public class GetCorporateInvitedUsersListUsersInner {
   public static final String JSON_PROPERTY_GROUPS = "groups";
+  @jakarta.annotation.Nullable
   private GetCorporateInvitedUsersListUsersInnerGroups groups;
 
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nonnull
   private String email;
 
   public static final String JSON_PROPERTY_IS_OWNER = "is_owner";
+  @jakarta.annotation.Nonnull
   private String isOwner;
 
   public static final String JSON_PROPERTY_STATUS = "status";
+  @jakarta.annotation.Nonnull
   private String status;
 
   public static final String JSON_PROPERTY_FEATURE_ACCESS = "feature_access";
+  @jakarta.annotation.Nonnull
   private GetCorporateInvitedUsersListUsersInnerFeatureAccess featureAccess;
 
   public GetCorporateInvitedUsersListUsersInner() {
   }
 
-  public GetCorporateInvitedUsersListUsersInner groups(GetCorporateInvitedUsersListUsersInnerGroups groups) {
+  public GetCorporateInvitedUsersListUsersInner groups(@jakarta.annotation.Nullable GetCorporateInvitedUsersListUsersInnerGroups groups) {
     
     this.groups = groups;
     return this;
@@ -79,11 +84,11 @@ public class GetCorporateInvitedUsersListUsersInner {
 
   @JsonProperty(JSON_PROPERTY_GROUPS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setGroups(GetCorporateInvitedUsersListUsersInnerGroups groups) {
+  public void setGroups(@jakarta.annotation.Nullable GetCorporateInvitedUsersListUsersInnerGroups groups) {
     this.groups = groups;
   }
 
-  public GetCorporateInvitedUsersListUsersInner email(String email) {
+  public GetCorporateInvitedUsersListUsersInner email(@jakarta.annotation.Nonnull String email) {
     
     this.email = email;
     return this;
@@ -104,11 +109,11 @@ public class GetCorporateInvitedUsersListUsersInner {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEmail(String email) {
+  public void setEmail(@jakarta.annotation.Nonnull String email) {
     this.email = email;
   }
 
-  public GetCorporateInvitedUsersListUsersInner isOwner(String isOwner) {
+  public GetCorporateInvitedUsersListUsersInner isOwner(@jakarta.annotation.Nonnull String isOwner) {
     
     this.isOwner = isOwner;
     return this;
@@ -129,11 +134,11 @@ public class GetCorporateInvitedUsersListUsersInner {
 
   @JsonProperty(JSON_PROPERTY_IS_OWNER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIsOwner(String isOwner) {
+  public void setIsOwner(@jakarta.annotation.Nonnull String isOwner) {
     this.isOwner = isOwner;
   }
 
-  public GetCorporateInvitedUsersListUsersInner status(String status) {
+  public GetCorporateInvitedUsersListUsersInner status(@jakarta.annotation.Nonnull String status) {
     
     this.status = status;
     return this;
@@ -154,11 +159,11 @@ public class GetCorporateInvitedUsersListUsersInner {
 
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatus(String status) {
+  public void setStatus(@jakarta.annotation.Nonnull String status) {
     this.status = status;
   }
 
-  public GetCorporateInvitedUsersListUsersInner featureAccess(GetCorporateInvitedUsersListUsersInnerFeatureAccess featureAccess) {
+  public GetCorporateInvitedUsersListUsersInner featureAccess(@jakarta.annotation.Nonnull GetCorporateInvitedUsersListUsersInnerFeatureAccess featureAccess) {
     
     this.featureAccess = featureAccess;
     return this;
@@ -179,7 +184,7 @@ public class GetCorporateInvitedUsersListUsersInner {
 
   @JsonProperty(JSON_PROPERTY_FEATURE_ACCESS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setFeatureAccess(GetCorporateInvitedUsersListUsersInnerFeatureAccess featureAccess) {
+  public void setFeatureAccess(@jakarta.annotation.Nonnull GetCorporateInvitedUsersListUsersInnerFeatureAccess featureAccess) {
     this.featureAccess = featureAccess;
   }
 

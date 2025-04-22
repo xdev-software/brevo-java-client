@@ -153,7 +153,7 @@ public class SmsCampaignsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/smsCampaigns/{campaignId}"
-      .replaceAll("\\{" + "campaignId" + "\\}", apiClient.escapeString(campaignId.toString()));
+      .replaceAll("\\{" + "campaignId" + "\\}", apiClient.escapeString(apiClient.parameterToString(campaignId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -227,7 +227,7 @@ public class SmsCampaignsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/smsCampaigns/{campaignId}"
-      .replaceAll("\\{" + "campaignId" + "\\}", apiClient.escapeString(campaignId.toString()));
+      .replaceAll("\\{" + "campaignId" + "\\}", apiClient.escapeString(apiClient.parameterToString(campaignId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -389,7 +389,7 @@ public class SmsCampaignsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/smsCampaigns/{campaignId}/exportRecipients"
-      .replaceAll("\\{" + "campaignId" + "\\}", apiClient.escapeString(campaignId.toString()));
+      .replaceAll("\\{" + "campaignId" + "\\}", apiClient.escapeString(apiClient.parameterToString(campaignId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -462,7 +462,7 @@ public class SmsCampaignsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/smsCampaigns/{campaignId}/sendNow"
-      .replaceAll("\\{" + "campaignId" + "\\}", apiClient.escapeString(campaignId.toString()));
+      .replaceAll("\\{" + "campaignId" + "\\}", apiClient.escapeString(apiClient.parameterToString(campaignId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -541,7 +541,7 @@ public class SmsCampaignsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/smsCampaigns/{campaignId}/sendReport"
-      .replaceAll("\\{" + "campaignId" + "\\}", apiClient.escapeString(campaignId.toString()));
+      .replaceAll("\\{" + "campaignId" + "\\}", apiClient.escapeString(apiClient.parameterToString(campaignId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -620,7 +620,7 @@ public class SmsCampaignsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/smsCampaigns/{campaignId}/sendTest"
-      .replaceAll("\\{" + "campaignId" + "\\}", apiClient.escapeString(campaignId.toString()));
+      .replaceAll("\\{" + "campaignId" + "\\}", apiClient.escapeString(apiClient.parameterToString(campaignId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -699,7 +699,7 @@ public class SmsCampaignsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/smsCampaigns/{campaignId}"
-      .replaceAll("\\{" + "campaignId" + "\\}", apiClient.escapeString(campaignId.toString()));
+      .replaceAll("\\{" + "campaignId" + "\\}", apiClient.escapeString(apiClient.parameterToString(campaignId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -778,7 +778,7 @@ public class SmsCampaignsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/smsCampaigns/{campaignId}/status"
-      .replaceAll("\\{" + "campaignId" + "\\}", apiClient.escapeString(campaignId.toString()));
+      .replaceAll("\\{" + "campaignId" + "\\}", apiClient.escapeString(apiClient.parameterToString(campaignId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;

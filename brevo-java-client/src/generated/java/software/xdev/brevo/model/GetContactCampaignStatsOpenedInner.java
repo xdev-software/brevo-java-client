@@ -38,21 +38,25 @@ import java.util.StringJoiner;
 @JsonTypeName("getContactCampaignStats_opened_inner")
 public class GetContactCampaignStatsOpenedInner {
   public static final String JSON_PROPERTY_CAMPAIGN_ID = "campaignId";
+  @jakarta.annotation.Nonnull
   private Long campaignId;
 
   public static final String JSON_PROPERTY_COUNT = "count";
+  @jakarta.annotation.Nonnull
   private Long count;
 
   public static final String JSON_PROPERTY_EVENT_TIME = "eventTime";
+  @jakarta.annotation.Nonnull
   private String eventTime;
 
   public static final String JSON_PROPERTY_IP = "ip";
+  @jakarta.annotation.Nonnull
   private String ip;
 
   public GetContactCampaignStatsOpenedInner() {
   }
 
-  public GetContactCampaignStatsOpenedInner campaignId(Long campaignId) {
+  public GetContactCampaignStatsOpenedInner campaignId(@jakarta.annotation.Nonnull Long campaignId) {
     
     this.campaignId = campaignId;
     return this;
@@ -73,11 +77,11 @@ public class GetContactCampaignStatsOpenedInner {
 
   @JsonProperty(JSON_PROPERTY_CAMPAIGN_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCampaignId(Long campaignId) {
+  public void setCampaignId(@jakarta.annotation.Nonnull Long campaignId) {
     this.campaignId = campaignId;
   }
 
-  public GetContactCampaignStatsOpenedInner count(Long count) {
+  public GetContactCampaignStatsOpenedInner count(@jakarta.annotation.Nonnull Long count) {
     
     this.count = count;
     return this;
@@ -98,11 +102,11 @@ public class GetContactCampaignStatsOpenedInner {
 
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCount(Long count) {
+  public void setCount(@jakarta.annotation.Nonnull Long count) {
     this.count = count;
   }
 
-  public GetContactCampaignStatsOpenedInner eventTime(String eventTime) {
+  public GetContactCampaignStatsOpenedInner eventTime(@jakarta.annotation.Nonnull String eventTime) {
     
     this.eventTime = eventTime;
     return this;
@@ -123,11 +127,11 @@ public class GetContactCampaignStatsOpenedInner {
 
   @JsonProperty(JSON_PROPERTY_EVENT_TIME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEventTime(String eventTime) {
+  public void setEventTime(@jakarta.annotation.Nonnull String eventTime) {
     this.eventTime = eventTime;
   }
 
-  public GetContactCampaignStatsOpenedInner ip(String ip) {
+  public GetContactCampaignStatsOpenedInner ip(@jakarta.annotation.Nonnull String ip) {
     
     this.ip = ip;
     return this;
@@ -148,7 +152,7 @@ public class GetContactCampaignStatsOpenedInner {
 
   @JsonProperty(JSON_PROPERTY_IP)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIp(String ip) {
+  public void setIp(@jakarta.annotation.Nonnull String ip) {
     this.ip = ip;
   }
 

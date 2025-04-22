@@ -35,12 +35,13 @@ import java.util.StringJoiner;
 @JsonTypeName("sendWhatsappMessage_201_response")
 public class SendWhatsappMessage201Response {
   public static final String JSON_PROPERTY_MESSAGE_ID = "messageId";
+  @jakarta.annotation.Nonnull
   private String messageId;
 
   public SendWhatsappMessage201Response() {
   }
 
-  public SendWhatsappMessage201Response messageId(String messageId) {
+  public SendWhatsappMessage201Response messageId(@jakarta.annotation.Nonnull String messageId) {
     
     this.messageId = messageId;
     return this;
@@ -61,7 +62,7 @@ public class SendWhatsappMessage201Response {
 
   @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMessageId(String messageId) {
+  public void setMessageId(@jakarta.annotation.Nonnull String messageId) {
     this.messageId = messageId;
   }
 

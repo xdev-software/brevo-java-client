@@ -36,15 +36,17 @@ import java.util.StringJoiner;
 @JsonTypeName("requestContactImport_newList")
 public class RequestContactImportNewList {
   public static final String JSON_PROPERTY_LIST_NAME = "listName";
+  @jakarta.annotation.Nullable
   private String listName;
 
   public static final String JSON_PROPERTY_FOLDER_ID = "folderId";
+  @jakarta.annotation.Nullable
   private Long folderId;
 
   public RequestContactImportNewList() {
   }
 
-  public RequestContactImportNewList listName(String listName) {
+  public RequestContactImportNewList listName(@jakarta.annotation.Nullable String listName) {
     
     this.listName = listName;
     return this;
@@ -65,11 +67,11 @@ public class RequestContactImportNewList {
 
   @JsonProperty(JSON_PROPERTY_LIST_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setListName(String listName) {
+  public void setListName(@jakarta.annotation.Nullable String listName) {
     this.listName = listName;
   }
 
-  public RequestContactImportNewList folderId(Long folderId) {
+  public RequestContactImportNewList folderId(@jakarta.annotation.Nullable Long folderId) {
     
     this.folderId = folderId;
     return this;
@@ -90,7 +92,7 @@ public class RequestContactImportNewList {
 
   @JsonProperty(JSON_PROPERTY_FOLDER_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setFolderId(Long folderId) {
+  public void setFolderId(@jakarta.annotation.Nullable Long folderId) {
     this.folderId = folderId;
   }
 

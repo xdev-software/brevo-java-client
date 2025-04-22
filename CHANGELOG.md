@@ -1,3 +1,7 @@
+# 1.0.3
+* Updated dependencies
+  * Updated to OpenAPI Generator 7.12
+
 # 1.0.2
 * Updated dependencies
   * Updated to OpenAPI Generator 7.8

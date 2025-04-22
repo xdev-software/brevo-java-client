@@ -50,57 +50,73 @@ import java.util.StringJoiner;
 @JsonTypeName("getCampaignStats")
 public class GetCampaignStats {
   public static final String JSON_PROPERTY_LIST_ID = "listId";
+  @jakarta.annotation.Nullable
   private Long listId;
 
   public static final String JSON_PROPERTY_UNIQUE_CLICKS = "uniqueClicks";
+  @jakarta.annotation.Nonnull
   private Long uniqueClicks;
 
   public static final String JSON_PROPERTY_CLICKERS = "clickers";
+  @jakarta.annotation.Nonnull
   private Long clickers;
 
   public static final String JSON_PROPERTY_COMPLAINTS = "complaints";
+  @jakarta.annotation.Nonnull
   private Long complaints;
 
   public static final String JSON_PROPERTY_DELIVERED = "delivered";
+  @jakarta.annotation.Nonnull
   private Long delivered;
 
   public static final String JSON_PROPERTY_SENT = "sent";
+  @jakarta.annotation.Nonnull
   private Long sent;
 
   public static final String JSON_PROPERTY_SOFT_BOUNCES = "softBounces";
+  @jakarta.annotation.Nonnull
   private Long softBounces;
 
   public static final String JSON_PROPERTY_HARD_BOUNCES = "hardBounces";
+  @jakarta.annotation.Nonnull
   private Long hardBounces;
 
   public static final String JSON_PROPERTY_UNIQUE_VIEWS = "uniqueViews";
+  @jakarta.annotation.Nonnull
   private Long uniqueViews;
 
   public static final String JSON_PROPERTY_TRACKABLE_VIEWS = "trackableViews";
+  @jakarta.annotation.Nonnull
   private Long trackableViews;
 
   public static final String JSON_PROPERTY_TRACKABLE_VIEWS_RATE = "trackableViewsRate";
+  @jakarta.annotation.Nullable
   private Float trackableViewsRate;
 
   public static final String JSON_PROPERTY_ESTIMATED_VIEWS = "estimatedViews";
+  @jakarta.annotation.Nullable
   private Long estimatedViews;
 
   public static final String JSON_PROPERTY_UNSUBSCRIPTIONS = "unsubscriptions";
+  @jakarta.annotation.Nonnull
   private Long unsubscriptions;
 
   public static final String JSON_PROPERTY_VIEWED = "viewed";
+  @jakarta.annotation.Nonnull
   private Long viewed;
 
   public static final String JSON_PROPERTY_DEFERRED = "deferred";
+  @jakarta.annotation.Nullable
   private Long deferred;
 
   public static final String JSON_PROPERTY_RETURN_BOUNCE = "returnBounce";
+  @jakarta.annotation.Nullable
   private Long returnBounce;
 
   public GetCampaignStats() {
   }
 
-  public GetCampaignStats listId(Long listId) {
+  public GetCampaignStats listId(@jakarta.annotation.Nullable Long listId) {
     
     this.listId = listId;
     return this;
@@ -121,11 +137,11 @@ public class GetCampaignStats {
 
   @JsonProperty(JSON_PROPERTY_LIST_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setListId(Long listId) {
+  public void setListId(@jakarta.annotation.Nullable Long listId) {
     this.listId = listId;
   }
 
-  public GetCampaignStats uniqueClicks(Long uniqueClicks) {
+  public GetCampaignStats uniqueClicks(@jakarta.annotation.Nonnull Long uniqueClicks) {
     
     this.uniqueClicks = uniqueClicks;
     return this;
@@ -146,11 +162,11 @@ public class GetCampaignStats {
 
   @JsonProperty(JSON_PROPERTY_UNIQUE_CLICKS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUniqueClicks(Long uniqueClicks) {
+  public void setUniqueClicks(@jakarta.annotation.Nonnull Long uniqueClicks) {
     this.uniqueClicks = uniqueClicks;
   }
 
-  public GetCampaignStats clickers(Long clickers) {
+  public GetCampaignStats clickers(@jakarta.annotation.Nonnull Long clickers) {
     
     this.clickers = clickers;
     return this;
@@ -171,11 +187,11 @@ public class GetCampaignStats {
 
   @JsonProperty(JSON_PROPERTY_CLICKERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setClickers(Long clickers) {
+  public void setClickers(@jakarta.annotation.Nonnull Long clickers) {
     this.clickers = clickers;
   }
 
-  public GetCampaignStats complaints(Long complaints) {
+  public GetCampaignStats complaints(@jakarta.annotation.Nonnull Long complaints) {
     
     this.complaints = complaints;
     return this;
@@ -196,11 +212,11 @@ public class GetCampaignStats {
 
   @JsonProperty(JSON_PROPERTY_COMPLAINTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setComplaints(Long complaints) {
+  public void setComplaints(@jakarta.annotation.Nonnull Long complaints) {
     this.complaints = complaints;
   }
 
-  public GetCampaignStats delivered(Long delivered) {
+  public GetCampaignStats delivered(@jakarta.annotation.Nonnull Long delivered) {
     
     this.delivered = delivered;
     return this;
@@ -221,11 +237,11 @@ public class GetCampaignStats {
 
   @JsonProperty(JSON_PROPERTY_DELIVERED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDelivered(Long delivered) {
+  public void setDelivered(@jakarta.annotation.Nonnull Long delivered) {
     this.delivered = delivered;
   }
 
-  public GetCampaignStats sent(Long sent) {
+  public GetCampaignStats sent(@jakarta.annotation.Nonnull Long sent) {
     
     this.sent = sent;
     return this;
@@ -246,11 +262,11 @@ public class GetCampaignStats {
 
   @JsonProperty(JSON_PROPERTY_SENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSent(Long sent) {
+  public void setSent(@jakarta.annotation.Nonnull Long sent) {
     this.sent = sent;
   }
 
-  public GetCampaignStats softBounces(Long softBounces) {
+  public GetCampaignStats softBounces(@jakarta.annotation.Nonnull Long softBounces) {
     
     this.softBounces = softBounces;
     return this;
@@ -271,11 +287,11 @@ public class GetCampaignStats {
 
   @JsonProperty(JSON_PROPERTY_SOFT_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSoftBounces(Long softBounces) {
+  public void setSoftBounces(@jakarta.annotation.Nonnull Long softBounces) {
     this.softBounces = softBounces;
   }
 
-  public GetCampaignStats hardBounces(Long hardBounces) {
+  public GetCampaignStats hardBounces(@jakarta.annotation.Nonnull Long hardBounces) {
     
     this.hardBounces = hardBounces;
     return this;
@@ -296,11 +312,11 @@ public class GetCampaignStats {
 
   @JsonProperty(JSON_PROPERTY_HARD_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setHardBounces(Long hardBounces) {
+  public void setHardBounces(@jakarta.annotation.Nonnull Long hardBounces) {
     this.hardBounces = hardBounces;
   }
 
-  public GetCampaignStats uniqueViews(Long uniqueViews) {
+  public GetCampaignStats uniqueViews(@jakarta.annotation.Nonnull Long uniqueViews) {
     
     this.uniqueViews = uniqueViews;
     return this;
@@ -321,11 +337,11 @@ public class GetCampaignStats {
 
   @JsonProperty(JSON_PROPERTY_UNIQUE_VIEWS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUniqueViews(Long uniqueViews) {
+  public void setUniqueViews(@jakarta.annotation.Nonnull Long uniqueViews) {
     this.uniqueViews = uniqueViews;
   }
 
-  public GetCampaignStats trackableViews(Long trackableViews) {
+  public GetCampaignStats trackableViews(@jakarta.annotation.Nonnull Long trackableViews) {
     
     this.trackableViews = trackableViews;
     return this;
@@ -346,11 +362,11 @@ public class GetCampaignStats {
 
   @JsonProperty(JSON_PROPERTY_TRACKABLE_VIEWS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTrackableViews(Long trackableViews) {
+  public void setTrackableViews(@jakarta.annotation.Nonnull Long trackableViews) {
     this.trackableViews = trackableViews;
   }
 
-  public GetCampaignStats trackableViewsRate(Float trackableViewsRate) {
+  public GetCampaignStats trackableViewsRate(@jakarta.annotation.Nullable Float trackableViewsRate) {
     
     this.trackableViewsRate = trackableViewsRate;
     return this;
@@ -371,11 +387,11 @@ public class GetCampaignStats {
 
   @JsonProperty(JSON_PROPERTY_TRACKABLE_VIEWS_RATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setTrackableViewsRate(Float trackableViewsRate) {
+  public void setTrackableViewsRate(@jakarta.annotation.Nullable Float trackableViewsRate) {
     this.trackableViewsRate = trackableViewsRate;
   }
 
-  public GetCampaignStats estimatedViews(Long estimatedViews) {
+  public GetCampaignStats estimatedViews(@jakarta.annotation.Nullable Long estimatedViews) {
     
     this.estimatedViews = estimatedViews;
     return this;
@@ -396,11 +412,11 @@ public class GetCampaignStats {
 
   @JsonProperty(JSON_PROPERTY_ESTIMATED_VIEWS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEstimatedViews(Long estimatedViews) {
+  public void setEstimatedViews(@jakarta.annotation.Nullable Long estimatedViews) {
     this.estimatedViews = estimatedViews;
   }
 
-  public GetCampaignStats unsubscriptions(Long unsubscriptions) {
+  public GetCampaignStats unsubscriptions(@jakarta.annotation.Nonnull Long unsubscriptions) {
     
     this.unsubscriptions = unsubscriptions;
     return this;
@@ -421,11 +437,11 @@ public class GetCampaignStats {
 
   @JsonProperty(JSON_PROPERTY_UNSUBSCRIPTIONS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUnsubscriptions(Long unsubscriptions) {
+  public void setUnsubscriptions(@jakarta.annotation.Nonnull Long unsubscriptions) {
     this.unsubscriptions = unsubscriptions;
   }
 
-  public GetCampaignStats viewed(Long viewed) {
+  public GetCampaignStats viewed(@jakarta.annotation.Nonnull Long viewed) {
     
     this.viewed = viewed;
     return this;
@@ -446,11 +462,11 @@ public class GetCampaignStats {
 
   @JsonProperty(JSON_PROPERTY_VIEWED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setViewed(Long viewed) {
+  public void setViewed(@jakarta.annotation.Nonnull Long viewed) {
     this.viewed = viewed;
   }
 
-  public GetCampaignStats deferred(Long deferred) {
+  public GetCampaignStats deferred(@jakarta.annotation.Nullable Long deferred) {
     
     this.deferred = deferred;
     return this;
@@ -471,11 +487,11 @@ public class GetCampaignStats {
 
   @JsonProperty(JSON_PROPERTY_DEFERRED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDeferred(Long deferred) {
+  public void setDeferred(@jakarta.annotation.Nullable Long deferred) {
     this.deferred = deferred;
   }
 
-  public GetCampaignStats returnBounce(Long returnBounce) {
+  public GetCampaignStats returnBounce(@jakarta.annotation.Nullable Long returnBounce) {
     
     this.returnBounce = returnBounce;
     return this;
@@ -496,7 +512,7 @@ public class GetCampaignStats {
 
   @JsonProperty(JSON_PROPERTY_RETURN_BOUNCE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setReturnBounce(Long returnBounce) {
+  public void setReturnBounce(@jakarta.annotation.Nullable Long returnBounce) {
     this.returnBounce = returnBounce;
   }
 

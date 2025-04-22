@@ -34,12 +34,13 @@ import java.util.StringJoiner;
 })
 public class NoteId {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nullable
   private String id;
 
   public NoteId() {
   }
 
-  public NoteId id(String id) {
+  public NoteId id(@jakarta.annotation.Nullable String id) {
     
     this.id = id;
     return this;
@@ -60,7 +61,7 @@ public class NoteId {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setId(String id) {
+  public void setId(@jakarta.annotation.Nullable String id) {
     this.id = id;
   }
 

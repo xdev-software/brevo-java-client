@@ -39,15 +39,17 @@ import java.util.StringJoiner;
 @JsonTypeName("updateBatchContactsModel")
 public class UpdateBatchContactsModel {
   public static final String JSON_PROPERTY_SUCCESS_IDS = "successIds";
+  @jakarta.annotation.Nullable
   private List<Long> successIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_FAILURE_IDS = "failureIds";
+  @jakarta.annotation.Nullable
   private List<Long> failureIds = new ArrayList<>();
 
   public UpdateBatchContactsModel() {
   }
 
-  public UpdateBatchContactsModel successIds(List<Long> successIds) {
+  public UpdateBatchContactsModel successIds(@jakarta.annotation.Nullable List<Long> successIds) {
     
     this.successIds = successIds;
     return this;
@@ -76,11 +78,11 @@ public class UpdateBatchContactsModel {
 
   @JsonProperty(JSON_PROPERTY_SUCCESS_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSuccessIds(List<Long> successIds) {
+  public void setSuccessIds(@jakarta.annotation.Nullable List<Long> successIds) {
     this.successIds = successIds;
   }
 
-  public UpdateBatchContactsModel failureIds(List<Long> failureIds) {
+  public UpdateBatchContactsModel failureIds(@jakarta.annotation.Nullable List<Long> failureIds) {
     
     this.failureIds = failureIds;
     return this;
@@ -109,7 +111,7 @@ public class UpdateBatchContactsModel {
 
   @JsonProperty(JSON_PROPERTY_FAILURE_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setFailureIds(List<Long> failureIds) {
+  public void setFailureIds(@jakarta.annotation.Nullable List<Long> failureIds) {
     this.failureIds = failureIds;
   }
 

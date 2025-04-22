@@ -49,42 +49,53 @@ import java.util.StringJoiner;
 })
 public class WhatsappCampTemplate {
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nullable
   private String name;
 
   public static final String JSON_PROPERTY_CATEGORY = "category";
+  @jakarta.annotation.Nullable
   private String category;
 
   public static final String JSON_PROPERTY_LANGUAGE = "language";
+  @jakarta.annotation.Nullable
   private String language;
 
   public static final String JSON_PROPERTY_CONTAINS_BUTTON = "contains_button";
+  @jakarta.annotation.Nullable
   private Boolean containsButton;
 
   public static final String JSON_PROPERTY_DISPLAY_HEADER = "display_header";
+  @jakarta.annotation.Nullable
   private Boolean displayHeader;
 
   public static final String JSON_PROPERTY_HEADER_TYPE = "header_type";
+  @jakarta.annotation.Nullable
   private String headerType;
 
   public static final String JSON_PROPERTY_COMPONENTS = "components";
+  @jakarta.annotation.Nullable
   private List<ComponentItems> components = new ArrayList<>();
 
   public static final String JSON_PROPERTY_HEADER_VARIABLES = "header_variables";
+  @jakarta.annotation.Nullable
   private List<VariablesItems> headerVariables = new ArrayList<>();
 
   public static final String JSON_PROPERTY_BODY_VARIABLES = "body_variables";
+  @jakarta.annotation.Nullable
   private List<VariablesItems> bodyVariables = new ArrayList<>();
 
   public static final String JSON_PROPERTY_BUTTON_TYPE = "button_type";
+  @jakarta.annotation.Nullable
   private String buttonType;
 
   public static final String JSON_PROPERTY_HIDE_FOOTER = "hide_footer";
+  @jakarta.annotation.Nullable
   private Boolean hideFooter;
 
   public WhatsappCampTemplate() {
   }
 
-  public WhatsappCampTemplate name(String name) {
+  public WhatsappCampTemplate name(@jakarta.annotation.Nullable String name) {
     
     this.name = name;
     return this;
@@ -105,11 +116,11 @@ public class WhatsappCampTemplate {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nullable String name) {
     this.name = name;
   }
 
-  public WhatsappCampTemplate category(String category) {
+  public WhatsappCampTemplate category(@jakarta.annotation.Nullable String category) {
     
     this.category = category;
     return this;
@@ -130,11 +141,11 @@ public class WhatsappCampTemplate {
 
   @JsonProperty(JSON_PROPERTY_CATEGORY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCategory(String category) {
+  public void setCategory(@jakarta.annotation.Nullable String category) {
     this.category = category;
   }
 
-  public WhatsappCampTemplate language(String language) {
+  public WhatsappCampTemplate language(@jakarta.annotation.Nullable String language) {
     
     this.language = language;
     return this;
@@ -155,11 +166,11 @@ public class WhatsappCampTemplate {
 
   @JsonProperty(JSON_PROPERTY_LANGUAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setLanguage(String language) {
+  public void setLanguage(@jakarta.annotation.Nullable String language) {
     this.language = language;
   }
 
-  public WhatsappCampTemplate containsButton(Boolean containsButton) {
+  public WhatsappCampTemplate containsButton(@jakarta.annotation.Nullable Boolean containsButton) {
     
     this.containsButton = containsButton;
     return this;
@@ -180,11 +191,11 @@ public class WhatsappCampTemplate {
 
   @JsonProperty(JSON_PROPERTY_CONTAINS_BUTTON)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setContainsButton(Boolean containsButton) {
+  public void setContainsButton(@jakarta.annotation.Nullable Boolean containsButton) {
     this.containsButton = containsButton;
   }
 
-  public WhatsappCampTemplate displayHeader(Boolean displayHeader) {
+  public WhatsappCampTemplate displayHeader(@jakarta.annotation.Nullable Boolean displayHeader) {
     
     this.displayHeader = displayHeader;
     return this;
@@ -205,11 +216,11 @@ public class WhatsappCampTemplate {
 
   @JsonProperty(JSON_PROPERTY_DISPLAY_HEADER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDisplayHeader(Boolean displayHeader) {
+  public void setDisplayHeader(@jakarta.annotation.Nullable Boolean displayHeader) {
     this.displayHeader = displayHeader;
   }
 
-  public WhatsappCampTemplate headerType(String headerType) {
+  public WhatsappCampTemplate headerType(@jakarta.annotation.Nullable String headerType) {
     
     this.headerType = headerType;
     return this;
@@ -230,11 +241,11 @@ public class WhatsappCampTemplate {
 
   @JsonProperty(JSON_PROPERTY_HEADER_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setHeaderType(String headerType) {
+  public void setHeaderType(@jakarta.annotation.Nullable String headerType) {
     this.headerType = headerType;
   }
 
-  public WhatsappCampTemplate components(List<ComponentItems> components) {
+  public WhatsappCampTemplate components(@jakarta.annotation.Nullable List<ComponentItems> components) {
     
     this.components = components;
     return this;
@@ -263,11 +274,11 @@ public class WhatsappCampTemplate {
 
   @JsonProperty(JSON_PROPERTY_COMPONENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setComponents(List<ComponentItems> components) {
+  public void setComponents(@jakarta.annotation.Nullable List<ComponentItems> components) {
     this.components = components;
   }
 
-  public WhatsappCampTemplate headerVariables(List<VariablesItems> headerVariables) {
+  public WhatsappCampTemplate headerVariables(@jakarta.annotation.Nullable List<VariablesItems> headerVariables) {
     
     this.headerVariables = headerVariables;
     return this;
@@ -296,11 +307,11 @@ public class WhatsappCampTemplate {
 
   @JsonProperty(JSON_PROPERTY_HEADER_VARIABLES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setHeaderVariables(List<VariablesItems> headerVariables) {
+  public void setHeaderVariables(@jakarta.annotation.Nullable List<VariablesItems> headerVariables) {
     this.headerVariables = headerVariables;
   }
 
-  public WhatsappCampTemplate bodyVariables(List<VariablesItems> bodyVariables) {
+  public WhatsappCampTemplate bodyVariables(@jakarta.annotation.Nullable List<VariablesItems> bodyVariables) {
     
     this.bodyVariables = bodyVariables;
     return this;
@@ -329,11 +340,11 @@ public class WhatsappCampTemplate {
 
   @JsonProperty(JSON_PROPERTY_BODY_VARIABLES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setBodyVariables(List<VariablesItems> bodyVariables) {
+  public void setBodyVariables(@jakarta.annotation.Nullable List<VariablesItems> bodyVariables) {
     this.bodyVariables = bodyVariables;
   }
 
-  public WhatsappCampTemplate buttonType(String buttonType) {
+  public WhatsappCampTemplate buttonType(@jakarta.annotation.Nullable String buttonType) {
     
     this.buttonType = buttonType;
     return this;
@@ -354,11 +365,11 @@ public class WhatsappCampTemplate {
 
   @JsonProperty(JSON_PROPERTY_BUTTON_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setButtonType(String buttonType) {
+  public void setButtonType(@jakarta.annotation.Nullable String buttonType) {
     this.buttonType = buttonType;
   }
 
-  public WhatsappCampTemplate hideFooter(Boolean hideFooter) {
+  public WhatsappCampTemplate hideFooter(@jakarta.annotation.Nullable Boolean hideFooter) {
     
     this.hideFooter = hideFooter;
     return this;
@@ -379,7 +390,7 @@ public class WhatsappCampTemplate {
 
   @JsonProperty(JSON_PROPERTY_HIDE_FOOTER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setHideFooter(Boolean hideFooter) {
+  public void setHideFooter(@jakarta.annotation.Nullable Boolean hideFooter) {
     this.hideFooter = hideFooter;
   }
 

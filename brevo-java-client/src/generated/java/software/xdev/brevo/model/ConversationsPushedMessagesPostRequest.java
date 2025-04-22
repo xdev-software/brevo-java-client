@@ -42,21 +42,25 @@ import java.util.StringJoiner;
 @JsonTypeName("_conversations_pushedMessages_post_request")
 public class ConversationsPushedMessagesPostRequest {
   public static final String JSON_PROPERTY_VISITOR_ID = "visitorId";
+  @jakarta.annotation.Nullable
   private Object visitorId = null;
 
   public static final String JSON_PROPERTY_TEXT = "text";
+  @jakarta.annotation.Nullable
   private Object text = null;
 
   public static final String JSON_PROPERTY_AGENT_ID = "agentId";
+  @jakarta.annotation.Nullable
   private JsonNullable<Object> agentId = JsonNullable.<Object>of(null);
 
   public static final String JSON_PROPERTY_GROUP_ID = "groupId";
+  @jakarta.annotation.Nullable
   private JsonNullable<Object> groupId = JsonNullable.<Object>of(null);
 
   public ConversationsPushedMessagesPostRequest() {
   }
 
-  public ConversationsPushedMessagesPostRequest visitorId(Object visitorId) {
+  public ConversationsPushedMessagesPostRequest visitorId(@jakarta.annotation.Nullable Object visitorId) {
     
     this.visitorId = visitorId;
     return this;
@@ -77,11 +81,11 @@ public class ConversationsPushedMessagesPostRequest {
 
   @JsonProperty(JSON_PROPERTY_VISITOR_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setVisitorId(Object visitorId) {
+  public void setVisitorId(@jakarta.annotation.Nullable Object visitorId) {
     this.visitorId = visitorId;
   }
 
-  public ConversationsPushedMessagesPostRequest text(Object text) {
+  public ConversationsPushedMessagesPostRequest text(@jakarta.annotation.Nullable Object text) {
     
     this.text = text;
     return this;
@@ -102,11 +106,11 @@ public class ConversationsPushedMessagesPostRequest {
 
   @JsonProperty(JSON_PROPERTY_TEXT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setText(Object text) {
+  public void setText(@jakarta.annotation.Nullable Object text) {
     this.text = text;
   }
 
-  public ConversationsPushedMessagesPostRequest agentId(Object agentId) {
+  public ConversationsPushedMessagesPostRequest agentId(@jakarta.annotation.Nullable Object agentId) {
     this.agentId = JsonNullable.<Object>of(agentId);
     
     return this;
@@ -135,11 +139,11 @@ public class ConversationsPushedMessagesPostRequest {
     this.agentId = agentId;
   }
 
-  public void setAgentId(Object agentId) {
+  public void setAgentId(@jakarta.annotation.Nullable Object agentId) {
     this.agentId = JsonNullable.<Object>of(agentId);
   }
 
-  public ConversationsPushedMessagesPostRequest groupId(Object groupId) {
+  public ConversationsPushedMessagesPostRequest groupId(@jakarta.annotation.Nullable Object groupId) {
     this.groupId = JsonNullable.<Object>of(groupId);
     
     return this;
@@ -168,7 +172,7 @@ public class ConversationsPushedMessagesPostRequest {
     this.groupId = groupId;
   }
 
-  public void setGroupId(Object groupId) {
+  public void setGroupId(@jakarta.annotation.Nullable Object groupId) {
     this.groupId = JsonNullable.<Object>of(groupId);
   }
 

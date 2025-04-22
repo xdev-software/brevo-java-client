@@ -36,15 +36,17 @@ import java.util.StringJoiner;
 @JsonTypeName("_corporate_subAccount_key_post_request")
 public class CorporateSubAccountKeyPostRequest {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nonnull
   private Long id;
 
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nonnull
   private String name;
 
   public CorporateSubAccountKeyPostRequest() {
   }
 
-  public CorporateSubAccountKeyPostRequest id(Long id) {
+  public CorporateSubAccountKeyPostRequest id(@jakarta.annotation.Nonnull Long id) {
     
     this.id = id;
     return this;
@@ -65,11 +67,11 @@ public class CorporateSubAccountKeyPostRequest {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(Long id) {
+  public void setId(@jakarta.annotation.Nonnull Long id) {
     this.id = id;
   }
 
-  public CorporateSubAccountKeyPostRequest name(String name) {
+  public CorporateSubAccountKeyPostRequest name(@jakarta.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
@@ -90,7 +92,7 @@ public class CorporateSubAccountKeyPostRequest {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
   }
 

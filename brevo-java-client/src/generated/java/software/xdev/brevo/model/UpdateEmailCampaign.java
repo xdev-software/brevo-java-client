@@ -69,84 +69,108 @@ import java.util.StringJoiner;
 @JsonTypeName("updateEmailCampaign")
 public class UpdateEmailCampaign {
   public static final String JSON_PROPERTY_TAG = "tag";
+  @jakarta.annotation.Nullable
   private String tag;
 
   public static final String JSON_PROPERTY_SENDER = "sender";
+  @jakarta.annotation.Nullable
   private UpdateEmailCampaignSender sender;
 
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nullable
   private String name;
 
   public static final String JSON_PROPERTY_HTML_CONTENT = "htmlContent";
+  @jakarta.annotation.Nullable
   private String htmlContent;
 
   public static final String JSON_PROPERTY_HTML_URL = "htmlUrl";
+  @jakarta.annotation.Nullable
   private String htmlUrl;
 
   public static final String JSON_PROPERTY_SCHEDULED_AT = "scheduledAt";
+  @jakarta.annotation.Nullable
   private String scheduledAt;
 
   public static final String JSON_PROPERTY_SUBJECT = "subject";
+  @jakarta.annotation.Nullable
   private String subject;
 
   public static final String JSON_PROPERTY_PREVIEW_TEXT = "previewText";
+  @jakarta.annotation.Nullable
   private String previewText;
 
   public static final String JSON_PROPERTY_REPLY_TO = "replyTo";
+  @jakarta.annotation.Nullable
   private String replyTo;
 
   public static final String JSON_PROPERTY_TO_FIELD = "toField";
+  @jakarta.annotation.Nullable
   private String toField;
 
   public static final String JSON_PROPERTY_RECIPIENTS = "recipients";
+  @jakarta.annotation.Nullable
   private UpdateEmailCampaignRecipients recipients;
 
   public static final String JSON_PROPERTY_ATTACHMENT_URL = "attachmentUrl";
+  @jakarta.annotation.Nullable
   private String attachmentUrl;
 
   public static final String JSON_PROPERTY_INLINE_IMAGE_ACTIVATION = "inlineImageActivation";
+  @jakarta.annotation.Nullable
   private Boolean inlineImageActivation = false;
 
   public static final String JSON_PROPERTY_MIRROR_ACTIVE = "mirrorActive";
+  @jakarta.annotation.Nullable
   private Boolean mirrorActive;
 
   public static final String JSON_PROPERTY_RECURRING = "recurring";
+  @jakarta.annotation.Nullable
   private Boolean recurring = false;
 
   public static final String JSON_PROPERTY_FOOTER = "footer";
+  @jakarta.annotation.Nullable
   private String footer;
 
   public static final String JSON_PROPERTY_HEADER = "header";
+  @jakarta.annotation.Nullable
   private String header;
 
   public static final String JSON_PROPERTY_UTM_CAMPAIGN = "utmCampaign";
+  @jakarta.annotation.Nullable
   private String utmCampaign;
 
   public static final String JSON_PROPERTY_PARAMS = "params";
+  @jakarta.annotation.Nullable
   private Map<String, Object> params = new HashMap<>();
 
   public static final String JSON_PROPERTY_SEND_AT_BEST_TIME = "sendAtBestTime";
+  @jakarta.annotation.Nullable
   private Boolean sendAtBestTime;
 
   public static final String JSON_PROPERTY_AB_TESTING = "abTesting";
+  @jakarta.annotation.Nullable
   private Boolean abTesting = false;
 
   public static final String JSON_PROPERTY_SUBJECT_A = "subjectA";
+  @jakarta.annotation.Nullable
   private String subjectA;
 
   public static final String JSON_PROPERTY_SUBJECT_B = "subjectB";
+  @jakarta.annotation.Nullable
   private String subjectB;
 
   public static final String JSON_PROPERTY_SPLIT_RULE = "splitRule";
+  @jakarta.annotation.Nullable
   private Long splitRule;
 
   /**
    * Choose the metrics that will determinate the winning version. **Mandatory if _splitRule_ &gt;&#x3D; 1 and &lt; 50**. If splitRule &#x3D; 50, &#x60;winnerCriteria&#x60; is ignored if passed 
    */
   public enum WinnerCriteriaEnum {
-    OPEN("open"),
+    OPEN(String.valueOf("open")),
     
-    CLICK("click");
+    CLICK(String.valueOf("click"));
 
     private String value;
 
@@ -176,30 +200,37 @@ public class UpdateEmailCampaign {
   }
 
   public static final String JSON_PROPERTY_WINNER_CRITERIA = "winnerCriteria";
+  @jakarta.annotation.Nullable
   private WinnerCriteriaEnum winnerCriteria;
 
   public static final String JSON_PROPERTY_WINNER_DELAY = "winnerDelay";
+  @jakarta.annotation.Nullable
   private Long winnerDelay;
 
   public static final String JSON_PROPERTY_IP_WARMUP_ENABLE = "ipWarmupEnable";
+  @jakarta.annotation.Nullable
   private Boolean ipWarmupEnable = false;
 
   public static final String JSON_PROPERTY_INITIAL_QUOTA = "initialQuota";
+  @jakarta.annotation.Nullable
   private Long initialQuota;
 
   public static final String JSON_PROPERTY_INCREASE_RATE = "increaseRate";
+  @jakarta.annotation.Nullable
   private Long increaseRate;
 
   public static final String JSON_PROPERTY_UNSUBSCRIPTION_PAGE_ID = "unsubscriptionPageId";
+  @jakarta.annotation.Nullable
   private String unsubscriptionPageId;
 
   public static final String JSON_PROPERTY_UPDATE_FORM_ID = "updateFormId";
+  @jakarta.annotation.Nullable
   private String updateFormId;
 
   public UpdateEmailCampaign() {
   }
 
-  public UpdateEmailCampaign tag(String tag) {
+  public UpdateEmailCampaign tag(@jakarta.annotation.Nullable String tag) {
     
     this.tag = tag;
     return this;
@@ -220,11 +251,11 @@ public class UpdateEmailCampaign {
 
   @JsonProperty(JSON_PROPERTY_TAG)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setTag(String tag) {
+  public void setTag(@jakarta.annotation.Nullable String tag) {
     this.tag = tag;
   }
 
-  public UpdateEmailCampaign sender(UpdateEmailCampaignSender sender) {
+  public UpdateEmailCampaign sender(@jakarta.annotation.Nullable UpdateEmailCampaignSender sender) {
     
     this.sender = sender;
     return this;
@@ -245,11 +276,11 @@ public class UpdateEmailCampaign {
 
   @JsonProperty(JSON_PROPERTY_SENDER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSender(UpdateEmailCampaignSender sender) {
+  public void setSender(@jakarta.annotation.Nullable UpdateEmailCampaignSender sender) {
     this.sender = sender;
   }
 
-  public UpdateEmailCampaign name(String name) {
+  public UpdateEmailCampaign name(@jakarta.annotation.Nullable String name) {
     
     this.name = name;
     return this;
@@ -270,11 +301,11 @@ public class UpdateEmailCampaign {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nullable String name) {
     this.name = name;
   }
 
-  public UpdateEmailCampaign htmlContent(String htmlContent) {
+  public UpdateEmailCampaign htmlContent(@jakarta.annotation.Nullable String htmlContent) {
     
     this.htmlContent = htmlContent;
     return this;
@@ -295,11 +326,11 @@ public class UpdateEmailCampaign {
 
   @JsonProperty(JSON_PROPERTY_HTML_CONTENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setHtmlContent(String htmlContent) {
+  public void setHtmlContent(@jakarta.annotation.Nullable String htmlContent) {
     this.htmlContent = htmlContent;
   }
 
-  public UpdateEmailCampaign htmlUrl(String htmlUrl) {
+  public UpdateEmailCampaign htmlUrl(@jakarta.annotation.Nullable String htmlUrl) {
     
     this.htmlUrl = htmlUrl;
     return this;
@@ -320,11 +351,11 @@ public class UpdateEmailCampaign {
 
   @JsonProperty(JSON_PROPERTY_HTML_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setHtmlUrl(String htmlUrl) {
+  public void setHtmlUrl(@jakarta.annotation.Nullable String htmlUrl) {
     this.htmlUrl = htmlUrl;
   }
 
-  public UpdateEmailCampaign scheduledAt(String scheduledAt) {
+  public UpdateEmailCampaign scheduledAt(@jakarta.annotation.Nullable String scheduledAt) {
     
     this.scheduledAt = scheduledAt;
     return this;
@@ -345,11 +376,11 @@ public class UpdateEmailCampaign {
 
   @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setScheduledAt(String scheduledAt) {
+  public void setScheduledAt(@jakarta.annotation.Nullable String scheduledAt) {
     this.scheduledAt = scheduledAt;
   }
 
-  public UpdateEmailCampaign subject(String subject) {
+  public UpdateEmailCampaign subject(@jakarta.annotation.Nullable String subject) {
     
     this.subject = subject;
     return this;
@@ -370,11 +401,11 @@ public class UpdateEmailCampaign {
 
   @JsonProperty(JSON_PROPERTY_SUBJECT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSubject(String subject) {
+  public void setSubject(@jakarta.annotation.Nullable String subject) {
     this.subject = subject;
   }
 
-  public UpdateEmailCampaign previewText(String previewText) {
+  public UpdateEmailCampaign previewText(@jakarta.annotation.Nullable String previewText) {
     
     this.previewText = previewText;
     return this;
@@ -395,11 +426,11 @@ public class UpdateEmailCampaign {
 
   @JsonProperty(JSON_PROPERTY_PREVIEW_TEXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setPreviewText(String previewText) {
+  public void setPreviewText(@jakarta.annotation.Nullable String previewText) {
     this.previewText = previewText;
   }
 
-  public UpdateEmailCampaign replyTo(String replyTo) {
+  public UpdateEmailCampaign replyTo(@jakarta.annotation.Nullable String replyTo) {
     
     this.replyTo = replyTo;
     return this;
@@ -420,11 +451,11 @@ public class UpdateEmailCampaign {
 
   @JsonProperty(JSON_PROPERTY_REPLY_TO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setReplyTo(String replyTo) {
+  public void setReplyTo(@jakarta.annotation.Nullable String replyTo) {
     this.replyTo = replyTo;
   }
 
-  public UpdateEmailCampaign toField(String toField) {
+  public UpdateEmailCampaign toField(@jakarta.annotation.Nullable String toField) {
     
     this.toField = toField;
     return this;
@@ -445,11 +476,11 @@ public class UpdateEmailCampaign {
 
   @JsonProperty(JSON_PROPERTY_TO_FIELD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setToField(String toField) {
+  public void setToField(@jakarta.annotation.Nullable String toField) {
     this.toField = toField;
   }
 
-  public UpdateEmailCampaign recipients(UpdateEmailCampaignRecipients recipients) {
+  public UpdateEmailCampaign recipients(@jakarta.annotation.Nullable UpdateEmailCampaignRecipients recipients) {
     
     this.recipients = recipients;
     return this;
@@ -470,11 +501,11 @@ public class UpdateEmailCampaign {
 
   @JsonProperty(JSON_PROPERTY_RECIPIENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setRecipients(UpdateEmailCampaignRecipients recipients) {
+  public void setRecipients(@jakarta.annotation.Nullable UpdateEmailCampaignRecipients recipients) {
     this.recipients = recipients;
   }
 
-  public UpdateEmailCampaign attachmentUrl(String attachmentUrl) {
+  public UpdateEmailCampaign attachmentUrl(@jakarta.annotation.Nullable String attachmentUrl) {
     
     this.attachmentUrl = attachmentUrl;
     return this;
@@ -495,11 +526,11 @@ public class UpdateEmailCampaign {
 
   @JsonProperty(JSON_PROPERTY_ATTACHMENT_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setAttachmentUrl(String attachmentUrl) {
+  public void setAttachmentUrl(@jakarta.annotation.Nullable String attachmentUrl) {
     this.attachmentUrl = attachmentUrl;
   }
 
-  public UpdateEmailCampaign inlineImageActivation(Boolean inlineImageActivation) {
+  public UpdateEmailCampaign inlineImageActivation(@jakarta.annotation.Nullable Boolean inlineImageActivation) {
     
     this.inlineImageActivation = inlineImageActivation;
     return this;
@@ -520,11 +551,11 @@ public class UpdateEmailCampaign {
 
   @JsonProperty(JSON_PROPERTY_INLINE_IMAGE_ACTIVATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setInlineImageActivation(Boolean inlineImageActivation) {
+  public void setInlineImageActivation(@jakarta.annotation.Nullable Boolean inlineImageActivation) {
     this.inlineImageActivation = inlineImageActivation;
   }
 
-  public UpdateEmailCampaign mirrorActive(Boolean mirrorActive) {
+  public UpdateEmailCampaign mirrorActive(@jakarta.annotation.Nullable Boolean mirrorActive) {
     
     this.mirrorActive = mirrorActive;
     return this;
@@ -545,11 +576,11 @@ public class UpdateEmailCampaign {
 
   @JsonProperty(JSON_PROPERTY_MIRROR_ACTIVE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setMirrorActive(Boolean mirrorActive) {
+  public void setMirrorActive(@jakarta.annotation.Nullable Boolean mirrorActive) {
     this.mirrorActive = mirrorActive;
   }
 
-  public UpdateEmailCampaign recurring(Boolean recurring) {
+  public UpdateEmailCampaign recurring(@jakarta.annotation.Nullable Boolean recurring) {
     
     this.recurring = recurring;
     return this;
@@ -570,11 +601,11 @@ public class UpdateEmailCampaign {
 
   @JsonProperty(JSON_PROPERTY_RECURRING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setRecurring(Boolean recurring) {
+  public void setRecurring(@jakarta.annotation.Nullable Boolean recurring) {
     this.recurring = recurring;
   }
 
-  public UpdateEmailCampaign footer(String footer) {
+  public UpdateEmailCampaign footer(@jakarta.annotation.Nullable String footer) {
     
     this.footer = footer;
     return this;
@@ -595,11 +626,11 @@ public class UpdateEmailCampaign {
 
   @JsonProperty(JSON_PROPERTY_FOOTER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setFooter(String footer) {
+  public void setFooter(@jakarta.annotation.Nullable String footer) {
     this.footer = footer;
   }
 
-  public UpdateEmailCampaign header(String header) {
+  public UpdateEmailCampaign header(@jakarta.annotation.Nullable String header) {
     
     this.header = header;
     return this;
@@ -620,11 +651,11 @@ public class UpdateEmailCampaign {
 
   @JsonProperty(JSON_PROPERTY_HEADER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setHeader(String header) {
+  public void setHeader(@jakarta.annotation.Nullable String header) {
     this.header = header;
   }
 
-  public UpdateEmailCampaign utmCampaign(String utmCampaign) {
+  public UpdateEmailCampaign utmCampaign(@jakarta.annotation.Nullable String utmCampaign) {
     
     this.utmCampaign = utmCampaign;
     return this;
@@ -645,11 +676,11 @@ public class UpdateEmailCampaign {
 
   @JsonProperty(JSON_PROPERTY_UTM_CAMPAIGN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUtmCampaign(String utmCampaign) {
+  public void setUtmCampaign(@jakarta.annotation.Nullable String utmCampaign) {
     this.utmCampaign = utmCampaign;
   }
 
-  public UpdateEmailCampaign params(Map<String, Object> params) {
+  public UpdateEmailCampaign params(@jakarta.annotation.Nullable Map<String, Object> params) {
     
     this.params = params;
     return this;
@@ -678,11 +709,11 @@ public class UpdateEmailCampaign {
 
   @JsonProperty(JSON_PROPERTY_PARAMS)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
-  public void setParams(Map<String, Object> params) {
+  public void setParams(@jakarta.annotation.Nullable Map<String, Object> params) {
     this.params = params;
   }
 
-  public UpdateEmailCampaign sendAtBestTime(Boolean sendAtBestTime) {
+  public UpdateEmailCampaign sendAtBestTime(@jakarta.annotation.Nullable Boolean sendAtBestTime) {
     
     this.sendAtBestTime = sendAtBestTime;
     return this;
@@ -703,11 +734,11 @@ public class UpdateEmailCampaign {
 
   @JsonProperty(JSON_PROPERTY_SEND_AT_BEST_TIME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSendAtBestTime(Boolean sendAtBestTime) {
+  public void setSendAtBestTime(@jakarta.annotation.Nullable Boolean sendAtBestTime) {
     this.sendAtBestTime = sendAtBestTime;
   }
 
-  public UpdateEmailCampaign abTesting(Boolean abTesting) {
+  public UpdateEmailCampaign abTesting(@jakarta.annotation.Nullable Boolean abTesting) {
     
     this.abTesting = abTesting;
     return this;
@@ -728,11 +759,11 @@ public class UpdateEmailCampaign {
 
   @JsonProperty(JSON_PROPERTY_AB_TESTING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setAbTesting(Boolean abTesting) {
+  public void setAbTesting(@jakarta.annotation.Nullable Boolean abTesting) {
     this.abTesting = abTesting;
   }
 
-  public UpdateEmailCampaign subjectA(String subjectA) {
+  public UpdateEmailCampaign subjectA(@jakarta.annotation.Nullable String subjectA) {
     
     this.subjectA = subjectA;
     return this;
@@ -753,11 +784,11 @@ public class UpdateEmailCampaign {
 
   @JsonProperty(JSON_PROPERTY_SUBJECT_A)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSubjectA(String subjectA) {
+  public void setSubjectA(@jakarta.annotation.Nullable String subjectA) {
     this.subjectA = subjectA;
   }
 
-  public UpdateEmailCampaign subjectB(String subjectB) {
+  public UpdateEmailCampaign subjectB(@jakarta.annotation.Nullable String subjectB) {
     
     this.subjectB = subjectB;
     return this;
@@ -778,11 +809,11 @@ public class UpdateEmailCampaign {
 
   @JsonProperty(JSON_PROPERTY_SUBJECT_B)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSubjectB(String subjectB) {
+  public void setSubjectB(@jakarta.annotation.Nullable String subjectB) {
     this.subjectB = subjectB;
   }
 
-  public UpdateEmailCampaign splitRule(Long splitRule) {
+  public UpdateEmailCampaign splitRule(@jakarta.annotation.Nullable Long splitRule) {
     
     this.splitRule = splitRule;
     return this;
@@ -805,11 +836,11 @@ public class UpdateEmailCampaign {
 
   @JsonProperty(JSON_PROPERTY_SPLIT_RULE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSplitRule(Long splitRule) {
+  public void setSplitRule(@jakarta.annotation.Nullable Long splitRule) {
     this.splitRule = splitRule;
   }
 
-  public UpdateEmailCampaign winnerCriteria(WinnerCriteriaEnum winnerCriteria) {
+  public UpdateEmailCampaign winnerCriteria(@jakarta.annotation.Nullable WinnerCriteriaEnum winnerCriteria) {
     
     this.winnerCriteria = winnerCriteria;
     return this;
@@ -830,11 +861,11 @@ public class UpdateEmailCampaign {
 
   @JsonProperty(JSON_PROPERTY_WINNER_CRITERIA)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setWinnerCriteria(WinnerCriteriaEnum winnerCriteria) {
+  public void setWinnerCriteria(@jakarta.annotation.Nullable WinnerCriteriaEnum winnerCriteria) {
     this.winnerCriteria = winnerCriteria;
   }
 
-  public UpdateEmailCampaign winnerDelay(Long winnerDelay) {
+  public UpdateEmailCampaign winnerDelay(@jakarta.annotation.Nullable Long winnerDelay) {
     
     this.winnerDelay = winnerDelay;
     return this;
@@ -857,11 +888,11 @@ public class UpdateEmailCampaign {
 
   @JsonProperty(JSON_PROPERTY_WINNER_DELAY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setWinnerDelay(Long winnerDelay) {
+  public void setWinnerDelay(@jakarta.annotation.Nullable Long winnerDelay) {
     this.winnerDelay = winnerDelay;
   }
 
-  public UpdateEmailCampaign ipWarmupEnable(Boolean ipWarmupEnable) {
+  public UpdateEmailCampaign ipWarmupEnable(@jakarta.annotation.Nullable Boolean ipWarmupEnable) {
     
     this.ipWarmupEnable = ipWarmupEnable;
     return this;
@@ -882,11 +913,11 @@ public class UpdateEmailCampaign {
 
   @JsonProperty(JSON_PROPERTY_IP_WARMUP_ENABLE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setIpWarmupEnable(Boolean ipWarmupEnable) {
+  public void setIpWarmupEnable(@jakarta.annotation.Nullable Boolean ipWarmupEnable) {
     this.ipWarmupEnable = ipWarmupEnable;
   }
 
-  public UpdateEmailCampaign initialQuota(Long initialQuota) {
+  public UpdateEmailCampaign initialQuota(@jakarta.annotation.Nullable Long initialQuota) {
     
     this.initialQuota = initialQuota;
     return this;
@@ -907,11 +938,11 @@ public class UpdateEmailCampaign {
 
   @JsonProperty(JSON_PROPERTY_INITIAL_QUOTA)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setInitialQuota(Long initialQuota) {
+  public void setInitialQuota(@jakarta.annotation.Nullable Long initialQuota) {
     this.initialQuota = initialQuota;
   }
 
-  public UpdateEmailCampaign increaseRate(Long increaseRate) {
+  public UpdateEmailCampaign increaseRate(@jakarta.annotation.Nullable Long increaseRate) {
     
     this.increaseRate = increaseRate;
     return this;
@@ -934,11 +965,11 @@ public class UpdateEmailCampaign {
 
   @JsonProperty(JSON_PROPERTY_INCREASE_RATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setIncreaseRate(Long increaseRate) {
+  public void setIncreaseRate(@jakarta.annotation.Nullable Long increaseRate) {
     this.increaseRate = increaseRate;
   }
 
-  public UpdateEmailCampaign unsubscriptionPageId(String unsubscriptionPageId) {
+  public UpdateEmailCampaign unsubscriptionPageId(@jakarta.annotation.Nullable String unsubscriptionPageId) {
     
     this.unsubscriptionPageId = unsubscriptionPageId;
     return this;
@@ -959,11 +990,11 @@ public class UpdateEmailCampaign {
 
   @JsonProperty(JSON_PROPERTY_UNSUBSCRIPTION_PAGE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUnsubscriptionPageId(String unsubscriptionPageId) {
+  public void setUnsubscriptionPageId(@jakarta.annotation.Nullable String unsubscriptionPageId) {
     this.unsubscriptionPageId = unsubscriptionPageId;
   }
 
-  public UpdateEmailCampaign updateFormId(String updateFormId) {
+  public UpdateEmailCampaign updateFormId(@jakarta.annotation.Nullable String updateFormId) {
     
     this.updateFormId = updateFormId;
     return this;
@@ -984,7 +1015,7 @@ public class UpdateEmailCampaign {
 
   @JsonProperty(JSON_PROPERTY_UPDATE_FORM_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUpdateFormId(String updateFormId) {
+  public void setUpdateFormId(@jakarta.annotation.Nullable String updateFormId) {
     this.updateFormId = updateFormId;
   }
 

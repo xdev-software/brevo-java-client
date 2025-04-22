@@ -44,24 +44,29 @@ import java.util.StringJoiner;
 @JsonTypeName("sendWhatsappMessage_request")
 public class SendWhatsappMessageRequest {
   public static final String JSON_PROPERTY_TEMPLATE_ID = "templateId";
+  @jakarta.annotation.Nonnull
   private Integer templateId;
 
   public static final String JSON_PROPERTY_SENDER_NUMBER = "senderNumber";
+  @jakarta.annotation.Nonnull
   private String senderNumber;
 
   public static final String JSON_PROPERTY_PARAMS = "params";
+  @jakarta.annotation.Nullable
   private Object params;
 
   public static final String JSON_PROPERTY_CONTACT_NUMBERS = "contactNumbers";
+  @jakarta.annotation.Nonnull
   private List<String> contactNumbers = new ArrayList<>();
 
   public static final String JSON_PROPERTY_TEXT = "text";
+  @jakarta.annotation.Nonnull
   private String text;
 
   public SendWhatsappMessageRequest() {
   }
 
-  public SendWhatsappMessageRequest templateId(Integer templateId) {
+  public SendWhatsappMessageRequest templateId(@jakarta.annotation.Nonnull Integer templateId) {
     
     this.templateId = templateId;
     return this;
@@ -82,11 +87,11 @@ public class SendWhatsappMessageRequest {
 
   @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTemplateId(Integer templateId) {
+  public void setTemplateId(@jakarta.annotation.Nonnull Integer templateId) {
     this.templateId = templateId;
   }
 
-  public SendWhatsappMessageRequest senderNumber(String senderNumber) {
+  public SendWhatsappMessageRequest senderNumber(@jakarta.annotation.Nonnull String senderNumber) {
     
     this.senderNumber = senderNumber;
     return this;
@@ -107,11 +112,11 @@ public class SendWhatsappMessageRequest {
 
   @JsonProperty(JSON_PROPERTY_SENDER_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSenderNumber(String senderNumber) {
+  public void setSenderNumber(@jakarta.annotation.Nonnull String senderNumber) {
     this.senderNumber = senderNumber;
   }
 
-  public SendWhatsappMessageRequest params(Object params) {
+  public SendWhatsappMessageRequest params(@jakarta.annotation.Nullable Object params) {
     
     this.params = params;
     return this;
@@ -132,11 +137,11 @@ public class SendWhatsappMessageRequest {
 
   @JsonProperty(JSON_PROPERTY_PARAMS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setParams(Object params) {
+  public void setParams(@jakarta.annotation.Nullable Object params) {
     this.params = params;
   }
 
-  public SendWhatsappMessageRequest contactNumbers(List<String> contactNumbers) {
+  public SendWhatsappMessageRequest contactNumbers(@jakarta.annotation.Nonnull List<String> contactNumbers) {
     
     this.contactNumbers = contactNumbers;
     return this;
@@ -165,11 +170,11 @@ public class SendWhatsappMessageRequest {
 
   @JsonProperty(JSON_PROPERTY_CONTACT_NUMBERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setContactNumbers(List<String> contactNumbers) {
+  public void setContactNumbers(@jakarta.annotation.Nonnull List<String> contactNumbers) {
     this.contactNumbers = contactNumbers;
   }
 
-  public SendWhatsappMessageRequest text(String text) {
+  public SendWhatsappMessageRequest text(@jakarta.annotation.Nonnull String text) {
     
     this.text = text;
     return this;
@@ -190,7 +195,7 @@ public class SendWhatsappMessageRequest {
 
   @JsonProperty(JSON_PROPERTY_TEXT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setText(String text) {
+  public void setText(@jakarta.annotation.Nonnull String text) {
     this.text = text;
   }
 

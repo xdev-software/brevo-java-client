@@ -37,15 +37,17 @@ import java.util.StringJoiner;
 @JsonTypeName("createdBatchId")
 public class CreatedBatchId {
   public static final String JSON_PROPERTY_BATCH_ID = "batchId";
+  @jakarta.annotation.Nonnull
   private BigDecimal batchId;
 
   public static final String JSON_PROPERTY_COUNT = "count";
+  @jakarta.annotation.Nullable
   private Long count;
 
   public CreatedBatchId() {
   }
 
-  public CreatedBatchId batchId(BigDecimal batchId) {
+  public CreatedBatchId batchId(@jakarta.annotation.Nonnull BigDecimal batchId) {
     
     this.batchId = batchId;
     return this;
@@ -66,11 +68,11 @@ public class CreatedBatchId {
 
   @JsonProperty(JSON_PROPERTY_BATCH_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBatchId(BigDecimal batchId) {
+  public void setBatchId(@jakarta.annotation.Nonnull BigDecimal batchId) {
     this.batchId = batchId;
   }
 
-  public CreatedBatchId count(Long count) {
+  public CreatedBatchId count(@jakarta.annotation.Nullable Long count) {
     
     this.count = count;
     return this;
@@ -91,7 +93,7 @@ public class CreatedBatchId {
 
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCount(Long count) {
+  public void setCount(@jakarta.annotation.Nullable Long count) {
     this.count = count;
   }
 

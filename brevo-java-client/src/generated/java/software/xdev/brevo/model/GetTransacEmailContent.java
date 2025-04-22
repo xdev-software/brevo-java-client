@@ -45,30 +45,37 @@ import java.util.StringJoiner;
 @JsonTypeName("getTransacEmailContent")
 public class GetTransacEmailContent {
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nonnull
   private String email;
 
   public static final String JSON_PROPERTY_SUBJECT = "subject";
+  @jakarta.annotation.Nonnull
   private String subject;
 
   public static final String JSON_PROPERTY_TEMPLATE_ID = "templateId";
+  @jakarta.annotation.Nullable
   private Long templateId;
 
   public static final String JSON_PROPERTY_DATE = "date";
+  @jakarta.annotation.Nonnull
   private String date;
 
   public static final String JSON_PROPERTY_EVENTS = "events";
+  @jakarta.annotation.Nonnull
   private List<GetTransacEmailContentEventsInner> events = new ArrayList<>();
 
   public static final String JSON_PROPERTY_BODY = "body";
+  @jakarta.annotation.Nonnull
   private String body;
 
   public static final String JSON_PROPERTY_ATTACHMENT_COUNT = "attachmentCount";
+  @jakarta.annotation.Nonnull
   private Long attachmentCount;
 
   public GetTransacEmailContent() {
   }
 
-  public GetTransacEmailContent email(String email) {
+  public GetTransacEmailContent email(@jakarta.annotation.Nonnull String email) {
     
     this.email = email;
     return this;
@@ -89,11 +96,11 @@ public class GetTransacEmailContent {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEmail(String email) {
+  public void setEmail(@jakarta.annotation.Nonnull String email) {
     this.email = email;
   }
 
-  public GetTransacEmailContent subject(String subject) {
+  public GetTransacEmailContent subject(@jakarta.annotation.Nonnull String subject) {
     
     this.subject = subject;
     return this;
@@ -114,11 +121,11 @@ public class GetTransacEmailContent {
 
   @JsonProperty(JSON_PROPERTY_SUBJECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSubject(String subject) {
+  public void setSubject(@jakarta.annotation.Nonnull String subject) {
     this.subject = subject;
   }
 
-  public GetTransacEmailContent templateId(Long templateId) {
+  public GetTransacEmailContent templateId(@jakarta.annotation.Nullable Long templateId) {
     
     this.templateId = templateId;
     return this;
@@ -139,11 +146,11 @@ public class GetTransacEmailContent {
 
   @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setTemplateId(Long templateId) {
+  public void setTemplateId(@jakarta.annotation.Nullable Long templateId) {
     this.templateId = templateId;
   }
 
-  public GetTransacEmailContent date(String date) {
+  public GetTransacEmailContent date(@jakarta.annotation.Nonnull String date) {
     
     this.date = date;
     return this;
@@ -164,11 +171,11 @@ public class GetTransacEmailContent {
 
   @JsonProperty(JSON_PROPERTY_DATE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDate(String date) {
+  public void setDate(@jakarta.annotation.Nonnull String date) {
     this.date = date;
   }
 
-  public GetTransacEmailContent events(List<GetTransacEmailContentEventsInner> events) {
+  public GetTransacEmailContent events(@jakarta.annotation.Nonnull List<GetTransacEmailContentEventsInner> events) {
     
     this.events = events;
     return this;
@@ -197,11 +204,11 @@ public class GetTransacEmailContent {
 
   @JsonProperty(JSON_PROPERTY_EVENTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEvents(List<GetTransacEmailContentEventsInner> events) {
+  public void setEvents(@jakarta.annotation.Nonnull List<GetTransacEmailContentEventsInner> events) {
     this.events = events;
   }
 
-  public GetTransacEmailContent body(String body) {
+  public GetTransacEmailContent body(@jakarta.annotation.Nonnull String body) {
     
     this.body = body;
     return this;
@@ -222,11 +229,11 @@ public class GetTransacEmailContent {
 
   @JsonProperty(JSON_PROPERTY_BODY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBody(String body) {
+  public void setBody(@jakarta.annotation.Nonnull String body) {
     this.body = body;
   }
 
-  public GetTransacEmailContent attachmentCount(Long attachmentCount) {
+  public GetTransacEmailContent attachmentCount(@jakarta.annotation.Nonnull Long attachmentCount) {
     
     this.attachmentCount = attachmentCount;
     return this;
@@ -247,7 +254,7 @@ public class GetTransacEmailContent {
 
   @JsonProperty(JSON_PROPERTY_ATTACHMENT_COUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAttachmentCount(Long attachmentCount) {
+  public void setAttachmentCount(@jakarta.annotation.Nonnull Long attachmentCount) {
     this.attachmentCount = attachmentCount;
   }
 

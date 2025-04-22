@@ -44,26 +44,28 @@ import java.util.StringJoiner;
 @JsonTypeName("getSmsCampaign")
 public class GetSmsCampaign {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nonnull
   private Long id;
 
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nonnull
   private String name;
 
   /**
    * Status of the SMS Campaign
    */
   public enum StatusEnum {
-    DRAFT("draft"),
+    DRAFT(String.valueOf("draft")),
     
-    SENT("sent"),
+    SENT(String.valueOf("sent")),
     
-    ARCHIVE("archive"),
+    ARCHIVE(String.valueOf("archive")),
     
-    QUEUED("queued"),
+    QUEUED(String.valueOf("queued")),
     
-    SUSPENDED("suspended"),
+    SUSPENDED(String.valueOf("suspended")),
     
-    IN_PROCESS("inProcess");
+    IN_PROCESS(String.valueOf("inProcess"));
 
     private String value;
 
@@ -93,33 +95,41 @@ public class GetSmsCampaign {
   }
 
   public static final String JSON_PROPERTY_STATUS = "status";
+  @jakarta.annotation.Nonnull
   private StatusEnum status;
 
   public static final String JSON_PROPERTY_CONTENT = "content";
+  @jakarta.annotation.Nonnull
   private String content;
 
   public static final String JSON_PROPERTY_SCHEDULED_AT = "scheduledAt";
+  @jakarta.annotation.Nullable
   private String scheduledAt;
 
   public static final String JSON_PROPERTY_SENDER = "sender";
+  @jakarta.annotation.Nonnull
   private String sender;
 
   public static final String JSON_PROPERTY_CREATED_AT = "createdAt";
+  @jakarta.annotation.Nonnull
   private String createdAt;
 
   public static final String JSON_PROPERTY_MODIFIED_AT = "modifiedAt";
+  @jakarta.annotation.Nonnull
   private String modifiedAt;
 
   public static final String JSON_PROPERTY_RECIPIENTS = "recipients";
+  @jakarta.annotation.Nonnull
   private Object recipients;
 
   public static final String JSON_PROPERTY_STATISTICS = "statistics";
+  @jakarta.annotation.Nonnull
   private Object statistics;
 
   public GetSmsCampaign() {
   }
 
-  public GetSmsCampaign id(Long id) {
+  public GetSmsCampaign id(@jakarta.annotation.Nonnull Long id) {
     
     this.id = id;
     return this;
@@ -140,11 +150,11 @@ public class GetSmsCampaign {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(Long id) {
+  public void setId(@jakarta.annotation.Nonnull Long id) {
     this.id = id;
   }
 
-  public GetSmsCampaign name(String name) {
+  public GetSmsCampaign name(@jakarta.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
@@ -165,11 +175,11 @@ public class GetSmsCampaign {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
   }
 
-  public GetSmsCampaign status(StatusEnum status) {
+  public GetSmsCampaign status(@jakarta.annotation.Nonnull StatusEnum status) {
     
     this.status = status;
     return this;
@@ -190,11 +200,11 @@ public class GetSmsCampaign {
 
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatus(StatusEnum status) {
+  public void setStatus(@jakarta.annotation.Nonnull StatusEnum status) {
     this.status = status;
   }
 
-  public GetSmsCampaign content(String content) {
+  public GetSmsCampaign content(@jakarta.annotation.Nonnull String content) {
     
     this.content = content;
     return this;
@@ -215,11 +225,11 @@ public class GetSmsCampaign {
 
   @JsonProperty(JSON_PROPERTY_CONTENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setContent(String content) {
+  public void setContent(@jakarta.annotation.Nonnull String content) {
     this.content = content;
   }
 
-  public GetSmsCampaign scheduledAt(String scheduledAt) {
+  public GetSmsCampaign scheduledAt(@jakarta.annotation.Nullable String scheduledAt) {
     
     this.scheduledAt = scheduledAt;
     return this;
@@ -240,11 +250,11 @@ public class GetSmsCampaign {
 
   @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setScheduledAt(String scheduledAt) {
+  public void setScheduledAt(@jakarta.annotation.Nullable String scheduledAt) {
     this.scheduledAt = scheduledAt;
   }
 
-  public GetSmsCampaign sender(String sender) {
+  public GetSmsCampaign sender(@jakarta.annotation.Nonnull String sender) {
     
     this.sender = sender;
     return this;
@@ -265,11 +275,11 @@ public class GetSmsCampaign {
 
   @JsonProperty(JSON_PROPERTY_SENDER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSender(String sender) {
+  public void setSender(@jakarta.annotation.Nonnull String sender) {
     this.sender = sender;
   }
 
-  public GetSmsCampaign createdAt(String createdAt) {
+  public GetSmsCampaign createdAt(@jakarta.annotation.Nonnull String createdAt) {
     
     this.createdAt = createdAt;
     return this;
@@ -290,11 +300,11 @@ public class GetSmsCampaign {
 
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCreatedAt(String createdAt) {
+  public void setCreatedAt(@jakarta.annotation.Nonnull String createdAt) {
     this.createdAt = createdAt;
   }
 
-  public GetSmsCampaign modifiedAt(String modifiedAt) {
+  public GetSmsCampaign modifiedAt(@jakarta.annotation.Nonnull String modifiedAt) {
     
     this.modifiedAt = modifiedAt;
     return this;
@@ -315,11 +325,11 @@ public class GetSmsCampaign {
 
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setModifiedAt(String modifiedAt) {
+  public void setModifiedAt(@jakarta.annotation.Nonnull String modifiedAt) {
     this.modifiedAt = modifiedAt;
   }
 
-  public GetSmsCampaign recipients(Object recipients) {
+  public GetSmsCampaign recipients(@jakarta.annotation.Nonnull Object recipients) {
     
     this.recipients = recipients;
     return this;
@@ -340,11 +350,11 @@ public class GetSmsCampaign {
 
   @JsonProperty(JSON_PROPERTY_RECIPIENTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRecipients(Object recipients) {
+  public void setRecipients(@jakarta.annotation.Nonnull Object recipients) {
     this.recipients = recipients;
   }
 
-  public GetSmsCampaign statistics(Object statistics) {
+  public GetSmsCampaign statistics(@jakarta.annotation.Nonnull Object statistics) {
     
     this.statistics = statistics;
     return this;
@@ -365,7 +375,7 @@ public class GetSmsCampaign {
 
   @JsonProperty(JSON_PROPERTY_STATISTICS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatistics(Object statistics) {
+  public void setStatistics(@jakarta.annotation.Nonnull Object statistics) {
     this.statistics = statistics;
   }
 

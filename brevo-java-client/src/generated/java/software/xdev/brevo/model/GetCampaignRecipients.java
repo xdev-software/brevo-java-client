@@ -39,15 +39,17 @@ import java.util.StringJoiner;
 @JsonTypeName("getCampaignRecipients")
 public class GetCampaignRecipients {
   public static final String JSON_PROPERTY_LISTS = "lists";
+  @jakarta.annotation.Nonnull
   private List<Long> lists = new ArrayList<>();
 
   public static final String JSON_PROPERTY_EXCLUSION_LISTS = "exclusionLists";
+  @jakarta.annotation.Nonnull
   private List<Long> exclusionLists = new ArrayList<>();
 
   public GetCampaignRecipients() {
   }
 
-  public GetCampaignRecipients lists(List<Long> lists) {
+  public GetCampaignRecipients lists(@jakarta.annotation.Nonnull List<Long> lists) {
     
     this.lists = lists;
     return this;
@@ -76,11 +78,11 @@ public class GetCampaignRecipients {
 
   @JsonProperty(JSON_PROPERTY_LISTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setLists(List<Long> lists) {
+  public void setLists(@jakarta.annotation.Nonnull List<Long> lists) {
     this.lists = lists;
   }
 
-  public GetCampaignRecipients exclusionLists(List<Long> exclusionLists) {
+  public GetCampaignRecipients exclusionLists(@jakarta.annotation.Nonnull List<Long> exclusionLists) {
     
     this.exclusionLists = exclusionLists;
     return this;
@@ -109,7 +111,7 @@ public class GetCampaignRecipients {
 
   @JsonProperty(JSON_PROPERTY_EXCLUSION_LISTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setExclusionLists(List<Long> exclusionLists) {
+  public void setExclusionLists(@jakarta.annotation.Nonnull List<Long> exclusionLists) {
     this.exclusionLists = exclusionLists;
   }
 

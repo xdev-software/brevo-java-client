@@ -35,15 +35,17 @@ import java.util.StringJoiner;
 })
 public class PipelineStage {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nullable
   private String id;
 
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nullable
   private String name;
 
   public PipelineStage() {
   }
 
-  public PipelineStage id(String id) {
+  public PipelineStage id(@jakarta.annotation.Nullable String id) {
     
     this.id = id;
     return this;
@@ -64,11 +66,11 @@ public class PipelineStage {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setId(String id) {
+  public void setId(@jakarta.annotation.Nullable String id) {
     this.id = id;
   }
 
-  public PipelineStage name(String name) {
+  public PipelineStage name(@jakarta.annotation.Nullable String name) {
     
     this.name = name;
     return this;
@@ -89,7 +91,7 @@ public class PipelineStage {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nullable String name) {
     this.name = name;
   }
 

@@ -43,33 +43,41 @@ import java.util.StringJoiner;
 @JsonTypeName("createSmsCampaign")
 public class CreateSmsCampaign {
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_SENDER = "sender";
+  @jakarta.annotation.Nonnull
   private String sender;
 
   public static final String JSON_PROPERTY_CONTENT = "content";
+  @jakarta.annotation.Nonnull
   private String content;
 
   public static final String JSON_PROPERTY_RECIPIENTS = "recipients";
+  @jakarta.annotation.Nullable
   private CreateSmsCampaignRecipients recipients;
 
   public static final String JSON_PROPERTY_SCHEDULED_AT = "scheduledAt";
+  @jakarta.annotation.Nullable
   private String scheduledAt;
 
   public static final String JSON_PROPERTY_UNICODE_ENABLED = "unicodeEnabled";
+  @jakarta.annotation.Nullable
   private Boolean unicodeEnabled = false;
 
   public static final String JSON_PROPERTY_ORGANISATION_PREFIX = "organisationPrefix";
+  @jakarta.annotation.Nullable
   private String organisationPrefix;
 
   public static final String JSON_PROPERTY_UNSUBSCRIBE_INSTRUCTION = "unsubscribeInstruction";
+  @jakarta.annotation.Nullable
   private String unsubscribeInstruction;
 
   public CreateSmsCampaign() {
   }
 
-  public CreateSmsCampaign name(String name) {
+  public CreateSmsCampaign name(@jakarta.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
@@ -90,11 +98,11 @@ public class CreateSmsCampaign {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
   }
 
-  public CreateSmsCampaign sender(String sender) {
+  public CreateSmsCampaign sender(@jakarta.annotation.Nonnull String sender) {
     
     this.sender = sender;
     return this;
@@ -115,11 +123,11 @@ public class CreateSmsCampaign {
 
   @JsonProperty(JSON_PROPERTY_SENDER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSender(String sender) {
+  public void setSender(@jakarta.annotation.Nonnull String sender) {
     this.sender = sender;
   }
 
-  public CreateSmsCampaign content(String content) {
+  public CreateSmsCampaign content(@jakarta.annotation.Nonnull String content) {
     
     this.content = content;
     return this;
@@ -140,11 +148,11 @@ public class CreateSmsCampaign {
 
   @JsonProperty(JSON_PROPERTY_CONTENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setContent(String content) {
+  public void setContent(@jakarta.annotation.Nonnull String content) {
     this.content = content;
   }
 
-  public CreateSmsCampaign recipients(CreateSmsCampaignRecipients recipients) {
+  public CreateSmsCampaign recipients(@jakarta.annotation.Nullable CreateSmsCampaignRecipients recipients) {
     
     this.recipients = recipients;
     return this;
@@ -165,11 +173,11 @@ public class CreateSmsCampaign {
 
   @JsonProperty(JSON_PROPERTY_RECIPIENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setRecipients(CreateSmsCampaignRecipients recipients) {
+  public void setRecipients(@jakarta.annotation.Nullable CreateSmsCampaignRecipients recipients) {
     this.recipients = recipients;
   }
 
-  public CreateSmsCampaign scheduledAt(String scheduledAt) {
+  public CreateSmsCampaign scheduledAt(@jakarta.annotation.Nullable String scheduledAt) {
     
     this.scheduledAt = scheduledAt;
     return this;
@@ -190,11 +198,11 @@ public class CreateSmsCampaign {
 
   @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setScheduledAt(String scheduledAt) {
+  public void setScheduledAt(@jakarta.annotation.Nullable String scheduledAt) {
     this.scheduledAt = scheduledAt;
   }
 
-  public CreateSmsCampaign unicodeEnabled(Boolean unicodeEnabled) {
+  public CreateSmsCampaign unicodeEnabled(@jakarta.annotation.Nullable Boolean unicodeEnabled) {
     
     this.unicodeEnabled = unicodeEnabled;
     return this;
@@ -215,11 +223,11 @@ public class CreateSmsCampaign {
 
   @JsonProperty(JSON_PROPERTY_UNICODE_ENABLED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUnicodeEnabled(Boolean unicodeEnabled) {
+  public void setUnicodeEnabled(@jakarta.annotation.Nullable Boolean unicodeEnabled) {
     this.unicodeEnabled = unicodeEnabled;
   }
 
-  public CreateSmsCampaign organisationPrefix(String organisationPrefix) {
+  public CreateSmsCampaign organisationPrefix(@jakarta.annotation.Nullable String organisationPrefix) {
     
     this.organisationPrefix = organisationPrefix;
     return this;
@@ -240,11 +248,11 @@ public class CreateSmsCampaign {
 
   @JsonProperty(JSON_PROPERTY_ORGANISATION_PREFIX)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setOrganisationPrefix(String organisationPrefix) {
+  public void setOrganisationPrefix(@jakarta.annotation.Nullable String organisationPrefix) {
     this.organisationPrefix = organisationPrefix;
   }
 
-  public CreateSmsCampaign unsubscribeInstruction(String unsubscribeInstruction) {
+  public CreateSmsCampaign unsubscribeInstruction(@jakarta.annotation.Nullable String unsubscribeInstruction) {
     
     this.unsubscribeInstruction = unsubscribeInstruction;
     return this;
@@ -265,7 +273,7 @@ public class CreateSmsCampaign {
 
   @JsonProperty(JSON_PROPERTY_UNSUBSCRIBE_INSTRUCTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUnsubscribeInstruction(String unsubscribeInstruction) {
+  public void setUnsubscribeInstruction(@jakarta.annotation.Nullable String unsubscribeInstruction) {
     this.unsubscribeInstruction = unsubscribeInstruction;
   }
 

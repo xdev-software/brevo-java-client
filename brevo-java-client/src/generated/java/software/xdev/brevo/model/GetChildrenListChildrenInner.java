@@ -50,39 +50,49 @@ import java.util.StringJoiner;
 @JsonTypeName("getChildrenList_children_inner")
 public class GetChildrenListChildrenInner {
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nonnull
   private String email;
 
   public static final String JSON_PROPERTY_FIRST_NAME = "firstName";
+  @jakarta.annotation.Nonnull
   private String firstName;
 
   public static final String JSON_PROPERTY_LAST_NAME = "lastName";
+  @jakarta.annotation.Nonnull
   private String lastName;
 
   public static final String JSON_PROPERTY_COMPANY_NAME = "companyName";
+  @jakarta.annotation.Nonnull
   private String companyName;
 
   public static final String JSON_PROPERTY_CREDITS = "credits";
+  @jakarta.annotation.Nullable
   private GetChildInfoAllOfCredits credits;
 
   public static final String JSON_PROPERTY_STATISTICS = "statistics";
+  @jakarta.annotation.Nullable
   private GetChildInfoAllOfStatistics statistics;
 
   public static final String JSON_PROPERTY_PASSWORD = "password";
+  @jakarta.annotation.Nonnull
   private String password;
 
   public static final String JSON_PROPERTY_IPS = "ips";
+  @jakarta.annotation.Nullable
   private List<String> ips = new ArrayList<>();
 
   public static final String JSON_PROPERTY_API_KEYS = "apiKeys";
+  @jakarta.annotation.Nullable
   private GetChildInfoAllOfApiKeys apiKeys;
 
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nullable
   private Long id;
 
   public GetChildrenListChildrenInner() {
   }
 
-  public GetChildrenListChildrenInner email(String email) {
+  public GetChildrenListChildrenInner email(@jakarta.annotation.Nonnull String email) {
     
     this.email = email;
     return this;
@@ -103,11 +113,11 @@ public class GetChildrenListChildrenInner {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEmail(String email) {
+  public void setEmail(@jakarta.annotation.Nonnull String email) {
     this.email = email;
   }
 
-  public GetChildrenListChildrenInner firstName(String firstName) {
+  public GetChildrenListChildrenInner firstName(@jakarta.annotation.Nonnull String firstName) {
     
     this.firstName = firstName;
     return this;
@@ -128,11 +138,11 @@ public class GetChildrenListChildrenInner {
 
   @JsonProperty(JSON_PROPERTY_FIRST_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setFirstName(String firstName) {
+  public void setFirstName(@jakarta.annotation.Nonnull String firstName) {
     this.firstName = firstName;
   }
 
-  public GetChildrenListChildrenInner lastName(String lastName) {
+  public GetChildrenListChildrenInner lastName(@jakarta.annotation.Nonnull String lastName) {
     
     this.lastName = lastName;
     return this;
@@ -153,11 +163,11 @@ public class GetChildrenListChildrenInner {
 
   @JsonProperty(JSON_PROPERTY_LAST_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setLastName(String lastName) {
+  public void setLastName(@jakarta.annotation.Nonnull String lastName) {
     this.lastName = lastName;
   }
 
-  public GetChildrenListChildrenInner companyName(String companyName) {
+  public GetChildrenListChildrenInner companyName(@jakarta.annotation.Nonnull String companyName) {
     
     this.companyName = companyName;
     return this;
@@ -178,11 +188,11 @@ public class GetChildrenListChildrenInner {
 
   @JsonProperty(JSON_PROPERTY_COMPANY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCompanyName(String companyName) {
+  public void setCompanyName(@jakarta.annotation.Nonnull String companyName) {
     this.companyName = companyName;
   }
 
-  public GetChildrenListChildrenInner credits(GetChildInfoAllOfCredits credits) {
+  public GetChildrenListChildrenInner credits(@jakarta.annotation.Nullable GetChildInfoAllOfCredits credits) {
     
     this.credits = credits;
     return this;
@@ -203,11 +213,11 @@ public class GetChildrenListChildrenInner {
 
   @JsonProperty(JSON_PROPERTY_CREDITS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCredits(GetChildInfoAllOfCredits credits) {
+  public void setCredits(@jakarta.annotation.Nullable GetChildInfoAllOfCredits credits) {
     this.credits = credits;
   }
 
-  public GetChildrenListChildrenInner statistics(GetChildInfoAllOfStatistics statistics) {
+  public GetChildrenListChildrenInner statistics(@jakarta.annotation.Nullable GetChildInfoAllOfStatistics statistics) {
     
     this.statistics = statistics;
     return this;
@@ -228,11 +238,11 @@ public class GetChildrenListChildrenInner {
 
   @JsonProperty(JSON_PROPERTY_STATISTICS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setStatistics(GetChildInfoAllOfStatistics statistics) {
+  public void setStatistics(@jakarta.annotation.Nullable GetChildInfoAllOfStatistics statistics) {
     this.statistics = statistics;
   }
 
-  public GetChildrenListChildrenInner password(String password) {
+  public GetChildrenListChildrenInner password(@jakarta.annotation.Nonnull String password) {
     
     this.password = password;
     return this;
@@ -253,11 +263,11 @@ public class GetChildrenListChildrenInner {
 
   @JsonProperty(JSON_PROPERTY_PASSWORD)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPassword(String password) {
+  public void setPassword(@jakarta.annotation.Nonnull String password) {
     this.password = password;
   }
 
-  public GetChildrenListChildrenInner ips(List<String> ips) {
+  public GetChildrenListChildrenInner ips(@jakarta.annotation.Nullable List<String> ips) {
     
     this.ips = ips;
     return this;
@@ -286,11 +296,11 @@ public class GetChildrenListChildrenInner {
 
   @JsonProperty(JSON_PROPERTY_IPS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setIps(List<String> ips) {
+  public void setIps(@jakarta.annotation.Nullable List<String> ips) {
     this.ips = ips;
   }
 
-  public GetChildrenListChildrenInner apiKeys(GetChildInfoAllOfApiKeys apiKeys) {
+  public GetChildrenListChildrenInner apiKeys(@jakarta.annotation.Nullable GetChildInfoAllOfApiKeys apiKeys) {
     
     this.apiKeys = apiKeys;
     return this;
@@ -311,11 +321,11 @@ public class GetChildrenListChildrenInner {
 
   @JsonProperty(JSON_PROPERTY_API_KEYS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setApiKeys(GetChildInfoAllOfApiKeys apiKeys) {
+  public void setApiKeys(@jakarta.annotation.Nullable GetChildInfoAllOfApiKeys apiKeys) {
     this.apiKeys = apiKeys;
   }
 
-  public GetChildrenListChildrenInner id(Long id) {
+  public GetChildrenListChildrenInner id(@jakarta.annotation.Nullable Long id) {
     
     this.id = id;
     return this;
@@ -336,7 +346,7 @@ public class GetChildrenListChildrenInner {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setId(Long id) {
+  public void setId(@jakarta.annotation.Nullable Long id) {
     this.id = id;
   }
 

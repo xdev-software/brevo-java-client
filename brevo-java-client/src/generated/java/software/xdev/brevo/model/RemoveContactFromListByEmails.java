@@ -38,12 +38,13 @@ import java.util.StringJoiner;
 @JsonTypeName("removeContactFromListByEmails")
 public class RemoveContactFromListByEmails {
   public static final String JSON_PROPERTY_EMAILS = "emails";
+  @jakarta.annotation.Nullable
   private List<String> emails = new ArrayList<>();
 
   public RemoveContactFromListByEmails() {
   }
 
-  public RemoveContactFromListByEmails emails(List<String> emails) {
+  public RemoveContactFromListByEmails emails(@jakarta.annotation.Nullable List<String> emails) {
     
     this.emails = emails;
     return this;
@@ -72,7 +73,7 @@ public class RemoveContactFromListByEmails {
 
   @JsonProperty(JSON_PROPERTY_EMAILS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEmails(List<String> emails) {
+  public void setEmails(@jakarta.annotation.Nullable List<String> emails) {
     this.emails = emails;
   }
 

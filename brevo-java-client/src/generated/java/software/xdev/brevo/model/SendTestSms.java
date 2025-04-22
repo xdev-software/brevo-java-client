@@ -35,12 +35,13 @@ import java.util.StringJoiner;
 @JsonTypeName("sendTestSms")
 public class SendTestSms {
   public static final String JSON_PROPERTY_PHONE_NUMBER = "phoneNumber";
+  @jakarta.annotation.Nullable
   private String phoneNumber;
 
   public SendTestSms() {
   }
 
-  public SendTestSms phoneNumber(String phoneNumber) {
+  public SendTestSms phoneNumber(@jakarta.annotation.Nullable String phoneNumber) {
     
     this.phoneNumber = phoneNumber;
     return this;
@@ -61,7 +62,7 @@ public class SendTestSms {
 
   @JsonProperty(JSON_PROPERTY_PHONE_NUMBER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setPhoneNumber(String phoneNumber) {
+  public void setPhoneNumber(@jakarta.annotation.Nullable String phoneNumber) {
     this.phoneNumber = phoneNumber;
   }
 

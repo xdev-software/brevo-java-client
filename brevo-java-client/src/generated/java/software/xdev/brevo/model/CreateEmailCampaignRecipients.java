@@ -40,18 +40,21 @@ import java.util.StringJoiner;
 @JsonTypeName("createEmailCampaign_recipients")
 public class CreateEmailCampaignRecipients {
   public static final String JSON_PROPERTY_EXCLUSION_LIST_IDS = "exclusionListIds";
+  @jakarta.annotation.Nullable
   private List<Long> exclusionListIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_LIST_IDS = "listIds";
+  @jakarta.annotation.Nullable
   private List<Long> listIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_SEGMENT_IDS = "segmentIds";
+  @jakarta.annotation.Nullable
   private List<Long> segmentIds = new ArrayList<>();
 
   public CreateEmailCampaignRecipients() {
   }
 
-  public CreateEmailCampaignRecipients exclusionListIds(List<Long> exclusionListIds) {
+  public CreateEmailCampaignRecipients exclusionListIds(@jakarta.annotation.Nullable List<Long> exclusionListIds) {
     
     this.exclusionListIds = exclusionListIds;
     return this;
@@ -80,11 +83,11 @@ public class CreateEmailCampaignRecipients {
 
   @JsonProperty(JSON_PROPERTY_EXCLUSION_LIST_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setExclusionListIds(List<Long> exclusionListIds) {
+  public void setExclusionListIds(@jakarta.annotation.Nullable List<Long> exclusionListIds) {
     this.exclusionListIds = exclusionListIds;
   }
 
-  public CreateEmailCampaignRecipients listIds(List<Long> listIds) {
+  public CreateEmailCampaignRecipients listIds(@jakarta.annotation.Nullable List<Long> listIds) {
     
     this.listIds = listIds;
     return this;
@@ -113,11 +116,11 @@ public class CreateEmailCampaignRecipients {
 
   @JsonProperty(JSON_PROPERTY_LIST_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setListIds(List<Long> listIds) {
+  public void setListIds(@jakarta.annotation.Nullable List<Long> listIds) {
     this.listIds = listIds;
   }
 
-  public CreateEmailCampaignRecipients segmentIds(List<Long> segmentIds) {
+  public CreateEmailCampaignRecipients segmentIds(@jakarta.annotation.Nullable List<Long> segmentIds) {
     
     this.segmentIds = segmentIds;
     return this;
@@ -146,7 +149,7 @@ public class CreateEmailCampaignRecipients {
 
   @JsonProperty(JSON_PROPERTY_SEGMENT_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSegmentIds(List<Long> segmentIds) {
+  public void setSegmentIds(@jakarta.annotation.Nullable List<Long> segmentIds) {
     this.segmentIds = segmentIds;
   }
 

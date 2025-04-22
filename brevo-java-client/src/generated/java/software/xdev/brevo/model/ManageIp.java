@@ -35,12 +35,13 @@ import java.util.StringJoiner;
 @JsonTypeName("manageIp")
 public class ManageIp {
   public static final String JSON_PROPERTY_IP = "ip";
+  @jakarta.annotation.Nullable
   private String ip;
 
   public ManageIp() {
   }
 
-  public ManageIp ip(String ip) {
+  public ManageIp ip(@jakarta.annotation.Nullable String ip) {
     
     this.ip = ip;
     return this;
@@ -61,7 +62,7 @@ public class ManageIp {
 
   @JsonProperty(JSON_PROPERTY_IP)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setIp(String ip) {
+  public void setIp(@jakarta.annotation.Nullable String ip) {
     this.ip = ip;
   }
 

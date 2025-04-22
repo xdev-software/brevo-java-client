@@ -37,18 +37,21 @@ import java.util.StringJoiner;
 @JsonTypeName("updateSmtpTemplate_sender")
 public class UpdateSmtpTemplateSender {
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nullable
   private String name;
 
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nullable
   private String email;
 
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nullable
   private Long id;
 
   public UpdateSmtpTemplateSender() {
   }
 
-  public UpdateSmtpTemplateSender name(String name) {
+  public UpdateSmtpTemplateSender name(@jakarta.annotation.Nullable String name) {
     
     this.name = name;
     return this;
@@ -69,11 +72,11 @@ public class UpdateSmtpTemplateSender {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nullable String name) {
     this.name = name;
   }
 
-  public UpdateSmtpTemplateSender email(String email) {
+  public UpdateSmtpTemplateSender email(@jakarta.annotation.Nullable String email) {
     
     this.email = email;
     return this;
@@ -94,11 +97,11 @@ public class UpdateSmtpTemplateSender {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEmail(String email) {
+  public void setEmail(@jakarta.annotation.Nullable String email) {
     this.email = email;
   }
 
-  public UpdateSmtpTemplateSender id(Long id) {
+  public UpdateSmtpTemplateSender id(@jakarta.annotation.Nullable Long id) {
     
     this.id = id;
     return this;
@@ -119,7 +122,7 @@ public class UpdateSmtpTemplateSender {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setId(Long id) {
+  public void setId(@jakarta.annotation.Nullable Long id) {
     this.id = id;
   }
 

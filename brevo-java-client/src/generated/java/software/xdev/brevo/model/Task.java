@@ -42,27 +42,33 @@ import java.util.StringJoiner;
 })
 public class Task {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nullable
   private String id;
 
   public static final String JSON_PROPERTY_TASK_TYPE_ID = "taskTypeId";
+  @jakarta.annotation.Nonnull
   private String taskTypeId;
 
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_CONTACTS_IDS = "contactsIds";
+  @jakarta.annotation.Nullable
   private List<Integer> contactsIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_DEALS_IDS = "dealsIds";
+  @jakarta.annotation.Nullable
   private List<String> dealsIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_COMPANIES_IDS = "companiesIds";
+  @jakarta.annotation.Nullable
   private List<String> companiesIds = new ArrayList<>();
 
   public Task() {
   }
 
-  public Task id(String id) {
+  public Task id(@jakarta.annotation.Nullable String id) {
     
     this.id = id;
     return this;
@@ -83,11 +89,11 @@ public class Task {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setId(String id) {
+  public void setId(@jakarta.annotation.Nullable String id) {
     this.id = id;
   }
 
-  public Task taskTypeId(String taskTypeId) {
+  public Task taskTypeId(@jakarta.annotation.Nonnull String taskTypeId) {
     
     this.taskTypeId = taskTypeId;
     return this;
@@ -108,11 +114,11 @@ public class Task {
 
   @JsonProperty(JSON_PROPERTY_TASK_TYPE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTaskTypeId(String taskTypeId) {
+  public void setTaskTypeId(@jakarta.annotation.Nonnull String taskTypeId) {
     this.taskTypeId = taskTypeId;
   }
 
-  public Task name(String name) {
+  public Task name(@jakarta.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
@@ -133,11 +139,11 @@ public class Task {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
   }
 
-  public Task contactsIds(List<Integer> contactsIds) {
+  public Task contactsIds(@jakarta.annotation.Nullable List<Integer> contactsIds) {
     
     this.contactsIds = contactsIds;
     return this;
@@ -166,11 +172,11 @@ public class Task {
 
   @JsonProperty(JSON_PROPERTY_CONTACTS_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setContactsIds(List<Integer> contactsIds) {
+  public void setContactsIds(@jakarta.annotation.Nullable List<Integer> contactsIds) {
     this.contactsIds = contactsIds;
   }
 
-  public Task dealsIds(List<String> dealsIds) {
+  public Task dealsIds(@jakarta.annotation.Nullable List<String> dealsIds) {
     
     this.dealsIds = dealsIds;
     return this;
@@ -199,11 +205,11 @@ public class Task {
 
   @JsonProperty(JSON_PROPERTY_DEALS_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDealsIds(List<String> dealsIds) {
+  public void setDealsIds(@jakarta.annotation.Nullable List<String> dealsIds) {
     this.dealsIds = dealsIds;
   }
 
-  public Task companiesIds(List<String> companiesIds) {
+  public Task companiesIds(@jakarta.annotation.Nullable List<String> companiesIds) {
     
     this.companiesIds = companiesIds;
     return this;
@@ -232,7 +238,7 @@ public class Task {
 
   @JsonProperty(JSON_PROPERTY_COMPANIES_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCompaniesIds(List<String> companiesIds) {
+  public void setCompaniesIds(@jakarta.annotation.Nullable List<String> companiesIds) {
     this.companiesIds = companiesIds;
   }
 

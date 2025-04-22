@@ -50,42 +50,53 @@ import java.util.StringJoiner;
 @JsonTypeName("requestContactImport")
 public class RequestContactImport {
   public static final String JSON_PROPERTY_FILE_URL = "fileUrl";
+  @jakarta.annotation.Nullable
   private String fileUrl;
 
   public static final String JSON_PROPERTY_FILE_BODY = "fileBody";
+  @jakarta.annotation.Nullable
   private String fileBody;
 
   public static final String JSON_PROPERTY_JSON_BODY = "jsonBody";
+  @jakarta.annotation.Nullable
   private List<RequestContactImportJsonBodyInner> jsonBody = new ArrayList<>();
 
   public static final String JSON_PROPERTY_LIST_IDS = "listIds";
+  @jakarta.annotation.Nullable
   private List<Long> listIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_NOTIFY_URL = "notifyUrl";
+  @jakarta.annotation.Nullable
   private String notifyUrl;
 
   public static final String JSON_PROPERTY_NEW_LIST = "newList";
+  @jakarta.annotation.Nullable
   private RequestContactImportNewList newList;
 
   public static final String JSON_PROPERTY_EMAIL_BLACKLIST = "emailBlacklist";
+  @jakarta.annotation.Nullable
   private Boolean emailBlacklist = false;
 
   public static final String JSON_PROPERTY_DISABLE_NOTIFICATION = "disableNotification";
+  @jakarta.annotation.Nullable
   private Boolean disableNotification = false;
 
   public static final String JSON_PROPERTY_SMS_BLACKLIST = "smsBlacklist";
+  @jakarta.annotation.Nullable
   private Boolean smsBlacklist = false;
 
   public static final String JSON_PROPERTY_UPDATE_EXISTING_CONTACTS = "updateExistingContacts";
+  @jakarta.annotation.Nullable
   private Boolean updateExistingContacts = true;
 
   public static final String JSON_PROPERTY_EMPTY_CONTACTS_ATTRIBUTES = "emptyContactsAttributes";
+  @jakarta.annotation.Nullable
   private Boolean emptyContactsAttributes = false;
 
   public RequestContactImport() {
   }
 
-  public RequestContactImport fileUrl(String fileUrl) {
+  public RequestContactImport fileUrl(@jakarta.annotation.Nullable String fileUrl) {
     
     this.fileUrl = fileUrl;
     return this;
@@ -106,11 +117,11 @@ public class RequestContactImport {
 
   @JsonProperty(JSON_PROPERTY_FILE_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setFileUrl(String fileUrl) {
+  public void setFileUrl(@jakarta.annotation.Nullable String fileUrl) {
     this.fileUrl = fileUrl;
   }
 
-  public RequestContactImport fileBody(String fileBody) {
+  public RequestContactImport fileBody(@jakarta.annotation.Nullable String fileBody) {
     
     this.fileBody = fileBody;
     return this;
@@ -131,11 +142,11 @@ public class RequestContactImport {
 
   @JsonProperty(JSON_PROPERTY_FILE_BODY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setFileBody(String fileBody) {
+  public void setFileBody(@jakarta.annotation.Nullable String fileBody) {
     this.fileBody = fileBody;
   }
 
-  public RequestContactImport jsonBody(List<RequestContactImportJsonBodyInner> jsonBody) {
+  public RequestContactImport jsonBody(@jakarta.annotation.Nullable List<RequestContactImportJsonBodyInner> jsonBody) {
     
     this.jsonBody = jsonBody;
     return this;
@@ -164,11 +175,11 @@ public class RequestContactImport {
 
   @JsonProperty(JSON_PROPERTY_JSON_BODY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setJsonBody(List<RequestContactImportJsonBodyInner> jsonBody) {
+  public void setJsonBody(@jakarta.annotation.Nullable List<RequestContactImportJsonBodyInner> jsonBody) {
     this.jsonBody = jsonBody;
   }
 
-  public RequestContactImport listIds(List<Long> listIds) {
+  public RequestContactImport listIds(@jakarta.annotation.Nullable List<Long> listIds) {
     
     this.listIds = listIds;
     return this;
@@ -197,11 +208,11 @@ public class RequestContactImport {
 
   @JsonProperty(JSON_PROPERTY_LIST_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setListIds(List<Long> listIds) {
+  public void setListIds(@jakarta.annotation.Nullable List<Long> listIds) {
     this.listIds = listIds;
   }
 
-  public RequestContactImport notifyUrl(String notifyUrl) {
+  public RequestContactImport notifyUrl(@jakarta.annotation.Nullable String notifyUrl) {
     
     this.notifyUrl = notifyUrl;
     return this;
@@ -222,11 +233,11 @@ public class RequestContactImport {
 
   @JsonProperty(JSON_PROPERTY_NOTIFY_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setNotifyUrl(String notifyUrl) {
+  public void setNotifyUrl(@jakarta.annotation.Nullable String notifyUrl) {
     this.notifyUrl = notifyUrl;
   }
 
-  public RequestContactImport newList(RequestContactImportNewList newList) {
+  public RequestContactImport newList(@jakarta.annotation.Nullable RequestContactImportNewList newList) {
     
     this.newList = newList;
     return this;
@@ -247,11 +258,11 @@ public class RequestContactImport {
 
   @JsonProperty(JSON_PROPERTY_NEW_LIST)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setNewList(RequestContactImportNewList newList) {
+  public void setNewList(@jakarta.annotation.Nullable RequestContactImportNewList newList) {
     this.newList = newList;
   }
 
-  public RequestContactImport emailBlacklist(Boolean emailBlacklist) {
+  public RequestContactImport emailBlacklist(@jakarta.annotation.Nullable Boolean emailBlacklist) {
     
     this.emailBlacklist = emailBlacklist;
     return this;
@@ -272,11 +283,11 @@ public class RequestContactImport {
 
   @JsonProperty(JSON_PROPERTY_EMAIL_BLACKLIST)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEmailBlacklist(Boolean emailBlacklist) {
+  public void setEmailBlacklist(@jakarta.annotation.Nullable Boolean emailBlacklist) {
     this.emailBlacklist = emailBlacklist;
   }
 
-  public RequestContactImport disableNotification(Boolean disableNotification) {
+  public RequestContactImport disableNotification(@jakarta.annotation.Nullable Boolean disableNotification) {
     
     this.disableNotification = disableNotification;
     return this;
@@ -297,11 +308,11 @@ public class RequestContactImport {
 
   @JsonProperty(JSON_PROPERTY_DISABLE_NOTIFICATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDisableNotification(Boolean disableNotification) {
+  public void setDisableNotification(@jakarta.annotation.Nullable Boolean disableNotification) {
     this.disableNotification = disableNotification;
   }
 
-  public RequestContactImport smsBlacklist(Boolean smsBlacklist) {
+  public RequestContactImport smsBlacklist(@jakarta.annotation.Nullable Boolean smsBlacklist) {
     
     this.smsBlacklist = smsBlacklist;
     return this;
@@ -322,11 +333,11 @@ public class RequestContactImport {
 
   @JsonProperty(JSON_PROPERTY_SMS_BLACKLIST)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSmsBlacklist(Boolean smsBlacklist) {
+  public void setSmsBlacklist(@jakarta.annotation.Nullable Boolean smsBlacklist) {
     this.smsBlacklist = smsBlacklist;
   }
 
-  public RequestContactImport updateExistingContacts(Boolean updateExistingContacts) {
+  public RequestContactImport updateExistingContacts(@jakarta.annotation.Nullable Boolean updateExistingContacts) {
     
     this.updateExistingContacts = updateExistingContacts;
     return this;
@@ -347,11 +358,11 @@ public class RequestContactImport {
 
   @JsonProperty(JSON_PROPERTY_UPDATE_EXISTING_CONTACTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUpdateExistingContacts(Boolean updateExistingContacts) {
+  public void setUpdateExistingContacts(@jakarta.annotation.Nullable Boolean updateExistingContacts) {
     this.updateExistingContacts = updateExistingContacts;
   }
 
-  public RequestContactImport emptyContactsAttributes(Boolean emptyContactsAttributes) {
+  public RequestContactImport emptyContactsAttributes(@jakarta.annotation.Nullable Boolean emptyContactsAttributes) {
     
     this.emptyContactsAttributes = emptyContactsAttributes;
     return this;
@@ -372,7 +383,7 @@ public class RequestContactImport {
 
   @JsonProperty(JSON_PROPERTY_EMPTY_CONTACTS_ATTRIBUTES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEmptyContactsAttributes(Boolean emptyContactsAttributes) {
+  public void setEmptyContactsAttributes(@jakarta.annotation.Nullable Boolean emptyContactsAttributes) {
     this.emptyContactsAttributes = emptyContactsAttributes;
   }
 

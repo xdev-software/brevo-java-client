@@ -45,39 +45,49 @@ import java.util.StringJoiner;
 @JsonTypeName("createSmtpTemplate")
 public class CreateSmtpTemplate {
   public static final String JSON_PROPERTY_TAG = "tag";
+  @jakarta.annotation.Nullable
   private String tag;
 
   public static final String JSON_PROPERTY_SENDER = "sender";
+  @jakarta.annotation.Nonnull
   private CreateSmtpTemplateSender sender;
 
   public static final String JSON_PROPERTY_TEMPLATE_NAME = "templateName";
+  @jakarta.annotation.Nonnull
   private String templateName;
 
   public static final String JSON_PROPERTY_HTML_CONTENT = "htmlContent";
+  @jakarta.annotation.Nullable
   private String htmlContent;
 
   public static final String JSON_PROPERTY_HTML_URL = "htmlUrl";
+  @jakarta.annotation.Nullable
   private String htmlUrl;
 
   public static final String JSON_PROPERTY_SUBJECT = "subject";
+  @jakarta.annotation.Nonnull
   private String subject;
 
   public static final String JSON_PROPERTY_REPLY_TO = "replyTo";
+  @jakarta.annotation.Nullable
   private String replyTo;
 
   public static final String JSON_PROPERTY_TO_FIELD = "toField";
+  @jakarta.annotation.Nullable
   private String toField;
 
   public static final String JSON_PROPERTY_ATTACHMENT_URL = "attachmentUrl";
+  @jakarta.annotation.Nullable
   private String attachmentUrl;
 
   public static final String JSON_PROPERTY_IS_ACTIVE = "isActive";
+  @jakarta.annotation.Nullable
   private Boolean isActive;
 
   public CreateSmtpTemplate() {
   }
 
-  public CreateSmtpTemplate tag(String tag) {
+  public CreateSmtpTemplate tag(@jakarta.annotation.Nullable String tag) {
     
     this.tag = tag;
     return this;
@@ -98,11 +108,11 @@ public class CreateSmtpTemplate {
 
   @JsonProperty(JSON_PROPERTY_TAG)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setTag(String tag) {
+  public void setTag(@jakarta.annotation.Nullable String tag) {
     this.tag = tag;
   }
 
-  public CreateSmtpTemplate sender(CreateSmtpTemplateSender sender) {
+  public CreateSmtpTemplate sender(@jakarta.annotation.Nonnull CreateSmtpTemplateSender sender) {
     
     this.sender = sender;
     return this;
@@ -123,11 +133,11 @@ public class CreateSmtpTemplate {
 
   @JsonProperty(JSON_PROPERTY_SENDER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSender(CreateSmtpTemplateSender sender) {
+  public void setSender(@jakarta.annotation.Nonnull CreateSmtpTemplateSender sender) {
     this.sender = sender;
   }
 
-  public CreateSmtpTemplate templateName(String templateName) {
+  public CreateSmtpTemplate templateName(@jakarta.annotation.Nonnull String templateName) {
     
     this.templateName = templateName;
     return this;
@@ -148,11 +158,11 @@ public class CreateSmtpTemplate {
 
   @JsonProperty(JSON_PROPERTY_TEMPLATE_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTemplateName(String templateName) {
+  public void setTemplateName(@jakarta.annotation.Nonnull String templateName) {
     this.templateName = templateName;
   }
 
-  public CreateSmtpTemplate htmlContent(String htmlContent) {
+  public CreateSmtpTemplate htmlContent(@jakarta.annotation.Nullable String htmlContent) {
     
     this.htmlContent = htmlContent;
     return this;
@@ -173,11 +183,11 @@ public class CreateSmtpTemplate {
 
   @JsonProperty(JSON_PROPERTY_HTML_CONTENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setHtmlContent(String htmlContent) {
+  public void setHtmlContent(@jakarta.annotation.Nullable String htmlContent) {
     this.htmlContent = htmlContent;
   }
 
-  public CreateSmtpTemplate htmlUrl(String htmlUrl) {
+  public CreateSmtpTemplate htmlUrl(@jakarta.annotation.Nullable String htmlUrl) {
     
     this.htmlUrl = htmlUrl;
     return this;
@@ -198,11 +208,11 @@ public class CreateSmtpTemplate {
 
   @JsonProperty(JSON_PROPERTY_HTML_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setHtmlUrl(String htmlUrl) {
+  public void setHtmlUrl(@jakarta.annotation.Nullable String htmlUrl) {
     this.htmlUrl = htmlUrl;
   }
 
-  public CreateSmtpTemplate subject(String subject) {
+  public CreateSmtpTemplate subject(@jakarta.annotation.Nonnull String subject) {
     
     this.subject = subject;
     return this;
@@ -223,11 +233,11 @@ public class CreateSmtpTemplate {
 
   @JsonProperty(JSON_PROPERTY_SUBJECT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSubject(String subject) {
+  public void setSubject(@jakarta.annotation.Nonnull String subject) {
     this.subject = subject;
   }
 
-  public CreateSmtpTemplate replyTo(String replyTo) {
+  public CreateSmtpTemplate replyTo(@jakarta.annotation.Nullable String replyTo) {
     
     this.replyTo = replyTo;
     return this;
@@ -248,11 +258,11 @@ public class CreateSmtpTemplate {
 
   @JsonProperty(JSON_PROPERTY_REPLY_TO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setReplyTo(String replyTo) {
+  public void setReplyTo(@jakarta.annotation.Nullable String replyTo) {
     this.replyTo = replyTo;
   }
 
-  public CreateSmtpTemplate toField(String toField) {
+  public CreateSmtpTemplate toField(@jakarta.annotation.Nullable String toField) {
     
     this.toField = toField;
     return this;
@@ -273,11 +283,11 @@ public class CreateSmtpTemplate {
 
   @JsonProperty(JSON_PROPERTY_TO_FIELD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setToField(String toField) {
+  public void setToField(@jakarta.annotation.Nullable String toField) {
     this.toField = toField;
   }
 
-  public CreateSmtpTemplate attachmentUrl(String attachmentUrl) {
+  public CreateSmtpTemplate attachmentUrl(@jakarta.annotation.Nullable String attachmentUrl) {
     
     this.attachmentUrl = attachmentUrl;
     return this;
@@ -298,11 +308,11 @@ public class CreateSmtpTemplate {
 
   @JsonProperty(JSON_PROPERTY_ATTACHMENT_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setAttachmentUrl(String attachmentUrl) {
+  public void setAttachmentUrl(@jakarta.annotation.Nullable String attachmentUrl) {
     this.attachmentUrl = attachmentUrl;
   }
 
-  public CreateSmtpTemplate isActive(Boolean isActive) {
+  public CreateSmtpTemplate isActive(@jakarta.annotation.Nullable Boolean isActive) {
     
     this.isActive = isActive;
     return this;
@@ -323,7 +333,7 @@ public class CreateSmtpTemplate {
 
   @JsonProperty(JSON_PROPERTY_IS_ACTIVE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setIsActive(Boolean isActive) {
+  public void setIsActive(@jakarta.annotation.Nullable Boolean isActive) {
     this.isActive = isActive;
   }
 

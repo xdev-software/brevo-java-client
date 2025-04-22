@@ -36,15 +36,17 @@ import java.util.StringJoiner;
 @JsonTypeName("remainingCreditModel_reseller")
 public class RemainingCreditModelReseller {
   public static final String JSON_PROPERTY_SMS = "sms";
+  @jakarta.annotation.Nonnull
   private Double sms;
 
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nonnull
   private Double email;
 
   public RemainingCreditModelReseller() {
   }
 
-  public RemainingCreditModelReseller sms(Double sms) {
+  public RemainingCreditModelReseller sms(@jakarta.annotation.Nonnull Double sms) {
     
     this.sms = sms;
     return this;
@@ -65,11 +67,11 @@ public class RemainingCreditModelReseller {
 
   @JsonProperty(JSON_PROPERTY_SMS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSms(Double sms) {
+  public void setSms(@jakarta.annotation.Nonnull Double sms) {
     this.sms = sms;
   }
 
-  public RemainingCreditModelReseller email(Double email) {
+  public RemainingCreditModelReseller email(@jakarta.annotation.Nonnull Double email) {
     
     this.email = email;
     return this;
@@ -90,7 +92,7 @@ public class RemainingCreditModelReseller {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEmail(Double email) {
+  public void setEmail(@jakarta.annotation.Nonnull Double email) {
     this.email = email;
   }
 

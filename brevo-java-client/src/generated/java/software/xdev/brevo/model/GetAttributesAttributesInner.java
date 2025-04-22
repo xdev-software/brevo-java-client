@@ -43,21 +43,22 @@ import java.util.StringJoiner;
 @JsonTypeName("getAttributes_attributes_inner")
 public class GetAttributesAttributesInner {
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nonnull
   private String name;
 
   /**
    * Category of the attribute
    */
   public enum CategoryEnum {
-    NORMAL("normal"),
+    NORMAL(String.valueOf("normal")),
     
-    TRANSACTIONAL("transactional"),
+    TRANSACTIONAL(String.valueOf("transactional")),
     
-    CATEGORY("category"),
+    CATEGORY(String.valueOf("category")),
     
-    CALCULATED("calculated"),
+    CALCULATED(String.valueOf("calculated")),
     
-    GLOBAL("global");
+    GLOBAL(String.valueOf("global"));
 
     private String value;
 
@@ -87,21 +88,22 @@ public class GetAttributesAttributesInner {
   }
 
   public static final String JSON_PROPERTY_CATEGORY = "category";
+  @jakarta.annotation.Nonnull
   private CategoryEnum category;
 
   /**
    * Type of the attribute
    */
   public enum TypeEnum {
-    TEXT("text"),
+    TEXT(String.valueOf("text")),
     
-    DATE("date"),
+    DATE(String.valueOf("date")),
     
-    FLOAT("float"),
+    FLOAT(String.valueOf("float")),
     
-    ID("id"),
+    ID(String.valueOf("id")),
     
-    BOOLEAN("boolean");
+    BOOLEAN(String.valueOf("boolean"));
 
     private String value;
 
@@ -131,18 +133,21 @@ public class GetAttributesAttributesInner {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @jakarta.annotation.Nullable
   private TypeEnum type;
 
   public static final String JSON_PROPERTY_ENUMERATION = "enumeration";
+  @jakarta.annotation.Nullable
   private List<GetAttributesAttributesInnerEnumerationInner> enumeration = new ArrayList<>();
 
   public static final String JSON_PROPERTY_CALCULATED_VALUE = "calculatedValue";
+  @jakarta.annotation.Nullable
   private String calculatedValue;
 
   public GetAttributesAttributesInner() {
   }
 
-  public GetAttributesAttributesInner name(String name) {
+  public GetAttributesAttributesInner name(@jakarta.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
@@ -163,11 +168,11 @@ public class GetAttributesAttributesInner {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
   }
 
-  public GetAttributesAttributesInner category(CategoryEnum category) {
+  public GetAttributesAttributesInner category(@jakarta.annotation.Nonnull CategoryEnum category) {
     
     this.category = category;
     return this;
@@ -188,11 +193,11 @@ public class GetAttributesAttributesInner {
 
   @JsonProperty(JSON_PROPERTY_CATEGORY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCategory(CategoryEnum category) {
+  public void setCategory(@jakarta.annotation.Nonnull CategoryEnum category) {
     this.category = category;
   }
 
-  public GetAttributesAttributesInner type(TypeEnum type) {
+  public GetAttributesAttributesInner type(@jakarta.annotation.Nullable TypeEnum type) {
     
     this.type = type;
     return this;
@@ -213,11 +218,11 @@ public class GetAttributesAttributesInner {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setType(TypeEnum type) {
+  public void setType(@jakarta.annotation.Nullable TypeEnum type) {
     this.type = type;
   }
 
-  public GetAttributesAttributesInner enumeration(List<GetAttributesAttributesInnerEnumerationInner> enumeration) {
+  public GetAttributesAttributesInner enumeration(@jakarta.annotation.Nullable List<GetAttributesAttributesInnerEnumerationInner> enumeration) {
     
     this.enumeration = enumeration;
     return this;
@@ -246,11 +251,11 @@ public class GetAttributesAttributesInner {
 
   @JsonProperty(JSON_PROPERTY_ENUMERATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEnumeration(List<GetAttributesAttributesInnerEnumerationInner> enumeration) {
+  public void setEnumeration(@jakarta.annotation.Nullable List<GetAttributesAttributesInnerEnumerationInner> enumeration) {
     this.enumeration = enumeration;
   }
 
-  public GetAttributesAttributesInner calculatedValue(String calculatedValue) {
+  public GetAttributesAttributesInner calculatedValue(@jakarta.annotation.Nullable String calculatedValue) {
     
     this.calculatedValue = calculatedValue;
     return this;
@@ -271,7 +276,7 @@ public class GetAttributesAttributesInner {
 
   @JsonProperty(JSON_PROPERTY_CALCULATED_VALUE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCalculatedValue(String calculatedValue) {
+  public void setCalculatedValue(@jakarta.annotation.Nullable String calculatedValue) {
     this.calculatedValue = calculatedValue;
   }
 

@@ -47,33 +47,41 @@ import java.util.StringJoiner;
 @JsonTypeName("createContact")
 public class CreateContact {
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nullable
   private String email;
 
   public static final String JSON_PROPERTY_EXT_ID = "ext_id";
+  @jakarta.annotation.Nullable
   private String extId;
 
   public static final String JSON_PROPERTY_ATTRIBUTES = "attributes";
+  @jakarta.annotation.Nullable
   private Map<String, Object> attributes = new HashMap<>();
 
   public static final String JSON_PROPERTY_EMAIL_BLACKLISTED = "emailBlacklisted";
+  @jakarta.annotation.Nullable
   private Boolean emailBlacklisted;
 
   public static final String JSON_PROPERTY_SMS_BLACKLISTED = "smsBlacklisted";
+  @jakarta.annotation.Nullable
   private Boolean smsBlacklisted;
 
   public static final String JSON_PROPERTY_LIST_IDS = "listIds";
+  @jakarta.annotation.Nullable
   private List<Long> listIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_UPDATE_ENABLED = "updateEnabled";
+  @jakarta.annotation.Nullable
   private Boolean updateEnabled = false;
 
   public static final String JSON_PROPERTY_SMTP_BLACKLIST_SENDER = "smtpBlacklistSender";
+  @jakarta.annotation.Nullable
   private List<String> smtpBlacklistSender = new ArrayList<>();
 
   public CreateContact() {
   }
 
-  public CreateContact email(String email) {
+  public CreateContact email(@jakarta.annotation.Nullable String email) {
     
     this.email = email;
     return this;
@@ -94,11 +102,11 @@ public class CreateContact {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEmail(String email) {
+  public void setEmail(@jakarta.annotation.Nullable String email) {
     this.email = email;
   }
 
-  public CreateContact extId(String extId) {
+  public CreateContact extId(@jakarta.annotation.Nullable String extId) {
     
     this.extId = extId;
     return this;
@@ -119,11 +127,11 @@ public class CreateContact {
 
   @JsonProperty(JSON_PROPERTY_EXT_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setExtId(String extId) {
+  public void setExtId(@jakarta.annotation.Nullable String extId) {
     this.extId = extId;
   }
 
-  public CreateContact attributes(Map<String, Object> attributes) {
+  public CreateContact attributes(@jakarta.annotation.Nullable Map<String, Object> attributes) {
     
     this.attributes = attributes;
     return this;
@@ -152,11 +160,11 @@ public class CreateContact {
 
   @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
-  public void setAttributes(Map<String, Object> attributes) {
+  public void setAttributes(@jakarta.annotation.Nullable Map<String, Object> attributes) {
     this.attributes = attributes;
   }
 
-  public CreateContact emailBlacklisted(Boolean emailBlacklisted) {
+  public CreateContact emailBlacklisted(@jakarta.annotation.Nullable Boolean emailBlacklisted) {
     
     this.emailBlacklisted = emailBlacklisted;
     return this;
@@ -177,11 +185,11 @@ public class CreateContact {
 
   @JsonProperty(JSON_PROPERTY_EMAIL_BLACKLISTED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEmailBlacklisted(Boolean emailBlacklisted) {
+  public void setEmailBlacklisted(@jakarta.annotation.Nullable Boolean emailBlacklisted) {
     this.emailBlacklisted = emailBlacklisted;
   }
 
-  public CreateContact smsBlacklisted(Boolean smsBlacklisted) {
+  public CreateContact smsBlacklisted(@jakarta.annotation.Nullable Boolean smsBlacklisted) {
     
     this.smsBlacklisted = smsBlacklisted;
     return this;
@@ -202,11 +210,11 @@ public class CreateContact {
 
   @JsonProperty(JSON_PROPERTY_SMS_BLACKLISTED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSmsBlacklisted(Boolean smsBlacklisted) {
+  public void setSmsBlacklisted(@jakarta.annotation.Nullable Boolean smsBlacklisted) {
     this.smsBlacklisted = smsBlacklisted;
   }
 
-  public CreateContact listIds(List<Long> listIds) {
+  public CreateContact listIds(@jakarta.annotation.Nullable List<Long> listIds) {
     
     this.listIds = listIds;
     return this;
@@ -235,11 +243,11 @@ public class CreateContact {
 
   @JsonProperty(JSON_PROPERTY_LIST_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setListIds(List<Long> listIds) {
+  public void setListIds(@jakarta.annotation.Nullable List<Long> listIds) {
     this.listIds = listIds;
   }
 
-  public CreateContact updateEnabled(Boolean updateEnabled) {
+  public CreateContact updateEnabled(@jakarta.annotation.Nullable Boolean updateEnabled) {
     
     this.updateEnabled = updateEnabled;
     return this;
@@ -260,11 +268,11 @@ public class CreateContact {
 
   @JsonProperty(JSON_PROPERTY_UPDATE_ENABLED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUpdateEnabled(Boolean updateEnabled) {
+  public void setUpdateEnabled(@jakarta.annotation.Nullable Boolean updateEnabled) {
     this.updateEnabled = updateEnabled;
   }
 
-  public CreateContact smtpBlacklistSender(List<String> smtpBlacklistSender) {
+  public CreateContact smtpBlacklistSender(@jakarta.annotation.Nullable List<String> smtpBlacklistSender) {
     
     this.smtpBlacklistSender = smtpBlacklistSender;
     return this;
@@ -293,7 +301,7 @@ public class CreateContact {
 
   @JsonProperty(JSON_PROPERTY_SMTP_BLACKLIST_SENDER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSmtpBlacklistSender(List<String> smtpBlacklistSender) {
+  public void setSmtpBlacklistSender(@jakarta.annotation.Nullable List<String> smtpBlacklistSender) {
     this.smtpBlacklistSender = smtpBlacklistSender;
   }
 

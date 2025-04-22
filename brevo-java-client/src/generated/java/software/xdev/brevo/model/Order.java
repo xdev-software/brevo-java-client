@@ -49,36 +49,45 @@ import java.util.StringJoiner;
 @JsonTypeName("order")
 public class Order {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nonnull
   private String id;
 
   public static final String JSON_PROPERTY_CREATED_AT = "createdAt";
+  @jakarta.annotation.Nonnull
   private String createdAt;
 
   public static final String JSON_PROPERTY_UPDATED_AT = "updatedAt";
+  @jakarta.annotation.Nonnull
   private String updatedAt;
 
   public static final String JSON_PROPERTY_STATUS = "status";
+  @jakarta.annotation.Nonnull
   private String status;
 
   public static final String JSON_PROPERTY_AMOUNT = "amount";
+  @jakarta.annotation.Nonnull
   private BigDecimal amount;
 
   public static final String JSON_PROPERTY_PRODUCTS = "products";
+  @jakarta.annotation.Nonnull
   private List<OrderProductsInner> products = new ArrayList<>();
 
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nullable
   private String email;
 
   public static final String JSON_PROPERTY_BILLING = "billing";
+  @jakarta.annotation.Nullable
   private OrderBilling billing;
 
   public static final String JSON_PROPERTY_COUPONS = "coupons";
+  @jakarta.annotation.Nullable
   private List<String> coupons = new ArrayList<>();
 
   public Order() {
   }
 
-  public Order id(String id) {
+  public Order id(@jakarta.annotation.Nonnull String id) {
     
     this.id = id;
     return this;
@@ -99,11 +108,11 @@ public class Order {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(String id) {
+  public void setId(@jakarta.annotation.Nonnull String id) {
     this.id = id;
   }
 
-  public Order createdAt(String createdAt) {
+  public Order createdAt(@jakarta.annotation.Nonnull String createdAt) {
     
     this.createdAt = createdAt;
     return this;
@@ -124,11 +133,11 @@ public class Order {
 
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCreatedAt(String createdAt) {
+  public void setCreatedAt(@jakarta.annotation.Nonnull String createdAt) {
     this.createdAt = createdAt;
   }
 
-  public Order updatedAt(String updatedAt) {
+  public Order updatedAt(@jakarta.annotation.Nonnull String updatedAt) {
     
     this.updatedAt = updatedAt;
     return this;
@@ -149,11 +158,11 @@ public class Order {
 
   @JsonProperty(JSON_PROPERTY_UPDATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUpdatedAt(String updatedAt) {
+  public void setUpdatedAt(@jakarta.annotation.Nonnull String updatedAt) {
     this.updatedAt = updatedAt;
   }
 
-  public Order status(String status) {
+  public Order status(@jakarta.annotation.Nonnull String status) {
     
     this.status = status;
     return this;
@@ -174,11 +183,11 @@ public class Order {
 
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatus(String status) {
+  public void setStatus(@jakarta.annotation.Nonnull String status) {
     this.status = status;
   }
 
-  public Order amount(BigDecimal amount) {
+  public Order amount(@jakarta.annotation.Nonnull BigDecimal amount) {
     
     this.amount = amount;
     return this;
@@ -199,11 +208,11 @@ public class Order {
 
   @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAmount(BigDecimal amount) {
+  public void setAmount(@jakarta.annotation.Nonnull BigDecimal amount) {
     this.amount = amount;
   }
 
-  public Order products(List<OrderProductsInner> products) {
+  public Order products(@jakarta.annotation.Nonnull List<OrderProductsInner> products) {
     
     this.products = products;
     return this;
@@ -232,11 +241,11 @@ public class Order {
 
   @JsonProperty(JSON_PROPERTY_PRODUCTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setProducts(List<OrderProductsInner> products) {
+  public void setProducts(@jakarta.annotation.Nonnull List<OrderProductsInner> products) {
     this.products = products;
   }
 
-  public Order email(String email) {
+  public Order email(@jakarta.annotation.Nullable String email) {
     
     this.email = email;
     return this;
@@ -257,11 +266,11 @@ public class Order {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEmail(String email) {
+  public void setEmail(@jakarta.annotation.Nullable String email) {
     this.email = email;
   }
 
-  public Order billing(OrderBilling billing) {
+  public Order billing(@jakarta.annotation.Nullable OrderBilling billing) {
     
     this.billing = billing;
     return this;
@@ -282,11 +291,11 @@ public class Order {
 
   @JsonProperty(JSON_PROPERTY_BILLING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setBilling(OrderBilling billing) {
+  public void setBilling(@jakarta.annotation.Nullable OrderBilling billing) {
     this.billing = billing;
   }
 
-  public Order coupons(List<String> coupons) {
+  public Order coupons(@jakarta.annotation.Nullable List<String> coupons) {
     
     this.coupons = coupons;
     return this;
@@ -315,7 +324,7 @@ public class Order {
 
   @JsonProperty(JSON_PROPERTY_COUPONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCoupons(List<String> coupons) {
+  public void setCoupons(@jakarta.annotation.Nullable List<String> coupons) {
     this.coupons = coupons;
   }
 

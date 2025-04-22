@@ -37,18 +37,21 @@ import java.util.StringJoiner;
 @JsonTypeName("getSendersList_senders_inner_ips_inner")
 public class GetSendersListSendersInnerIpsInner {
   public static final String JSON_PROPERTY_IP = "ip";
+  @jakarta.annotation.Nonnull
   private String ip;
 
   public static final String JSON_PROPERTY_DOMAIN = "domain";
+  @jakarta.annotation.Nonnull
   private String domain;
 
   public static final String JSON_PROPERTY_WEIGHT = "weight";
+  @jakarta.annotation.Nonnull
   private Long weight;
 
   public GetSendersListSendersInnerIpsInner() {
   }
 
-  public GetSendersListSendersInnerIpsInner ip(String ip) {
+  public GetSendersListSendersInnerIpsInner ip(@jakarta.annotation.Nonnull String ip) {
     
     this.ip = ip;
     return this;
@@ -69,11 +72,11 @@ public class GetSendersListSendersInnerIpsInner {
 
   @JsonProperty(JSON_PROPERTY_IP)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIp(String ip) {
+  public void setIp(@jakarta.annotation.Nonnull String ip) {
     this.ip = ip;
   }
 
-  public GetSendersListSendersInnerIpsInner domain(String domain) {
+  public GetSendersListSendersInnerIpsInner domain(@jakarta.annotation.Nonnull String domain) {
     
     this.domain = domain;
     return this;
@@ -94,11 +97,11 @@ public class GetSendersListSendersInnerIpsInner {
 
   @JsonProperty(JSON_PROPERTY_DOMAIN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDomain(String domain) {
+  public void setDomain(@jakarta.annotation.Nonnull String domain) {
     this.domain = domain;
   }
 
-  public GetSendersListSendersInnerIpsInner weight(Long weight) {
+  public GetSendersListSendersInnerIpsInner weight(@jakarta.annotation.Nonnull Long weight) {
     
     this.weight = weight;
     return this;
@@ -119,7 +122,7 @@ public class GetSendersListSendersInnerIpsInner {
 
   @JsonProperty(JSON_PROPERTY_WEIGHT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setWeight(Long weight) {
+  public void setWeight(@jakarta.annotation.Nonnull Long weight) {
     this.weight = weight;
   }
 

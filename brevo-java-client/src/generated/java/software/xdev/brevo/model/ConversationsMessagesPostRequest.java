@@ -44,27 +44,33 @@ import java.util.StringJoiner;
 @JsonTypeName("_conversations_messages_post_request")
 public class ConversationsMessagesPostRequest {
   public static final String JSON_PROPERTY_VISITOR_ID = "visitorId";
+  @jakarta.annotation.Nullable
   private Object visitorId = null;
 
   public static final String JSON_PROPERTY_TEXT = "text";
+  @jakarta.annotation.Nullable
   private Object text = null;
 
   public static final String JSON_PROPERTY_AGENT_ID = "agentId";
+  @jakarta.annotation.Nullable
   private JsonNullable<Object> agentId = JsonNullable.<Object>of(null);
 
   public static final String JSON_PROPERTY_RECEIVED_FROM = "receivedFrom";
+  @jakarta.annotation.Nullable
   private JsonNullable<Object> receivedFrom = JsonNullable.<Object>of(null);
 
   public static final String JSON_PROPERTY_AGENT_EMAIL = "agentEmail";
+  @jakarta.annotation.Nullable
   private JsonNullable<Object> agentEmail = JsonNullable.<Object>of(null);
 
   public static final String JSON_PROPERTY_AGENT_NAME = "agentName";
+  @jakarta.annotation.Nullable
   private JsonNullable<Object> agentName = JsonNullable.<Object>of(null);
 
   public ConversationsMessagesPostRequest() {
   }
 
-  public ConversationsMessagesPostRequest visitorId(Object visitorId) {
+  public ConversationsMessagesPostRequest visitorId(@jakarta.annotation.Nullable Object visitorId) {
     
     this.visitorId = visitorId;
     return this;
@@ -85,11 +91,11 @@ public class ConversationsMessagesPostRequest {
 
   @JsonProperty(JSON_PROPERTY_VISITOR_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setVisitorId(Object visitorId) {
+  public void setVisitorId(@jakarta.annotation.Nullable Object visitorId) {
     this.visitorId = visitorId;
   }
 
-  public ConversationsMessagesPostRequest text(Object text) {
+  public ConversationsMessagesPostRequest text(@jakarta.annotation.Nullable Object text) {
     
     this.text = text;
     return this;
@@ -110,11 +116,11 @@ public class ConversationsMessagesPostRequest {
 
   @JsonProperty(JSON_PROPERTY_TEXT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setText(Object text) {
+  public void setText(@jakarta.annotation.Nullable Object text) {
     this.text = text;
   }
 
-  public ConversationsMessagesPostRequest agentId(Object agentId) {
+  public ConversationsMessagesPostRequest agentId(@jakarta.annotation.Nullable Object agentId) {
     this.agentId = JsonNullable.<Object>of(agentId);
     
     return this;
@@ -143,11 +149,11 @@ public class ConversationsMessagesPostRequest {
     this.agentId = agentId;
   }
 
-  public void setAgentId(Object agentId) {
+  public void setAgentId(@jakarta.annotation.Nullable Object agentId) {
     this.agentId = JsonNullable.<Object>of(agentId);
   }
 
-  public ConversationsMessagesPostRequest receivedFrom(Object receivedFrom) {
+  public ConversationsMessagesPostRequest receivedFrom(@jakarta.annotation.Nullable Object receivedFrom) {
     this.receivedFrom = JsonNullable.<Object>of(receivedFrom);
     
     return this;
@@ -176,11 +182,11 @@ public class ConversationsMessagesPostRequest {
     this.receivedFrom = receivedFrom;
   }
 
-  public void setReceivedFrom(Object receivedFrom) {
+  public void setReceivedFrom(@jakarta.annotation.Nullable Object receivedFrom) {
     this.receivedFrom = JsonNullable.<Object>of(receivedFrom);
   }
 
-  public ConversationsMessagesPostRequest agentEmail(Object agentEmail) {
+  public ConversationsMessagesPostRequest agentEmail(@jakarta.annotation.Nullable Object agentEmail) {
     this.agentEmail = JsonNullable.<Object>of(agentEmail);
     
     return this;
@@ -209,11 +215,11 @@ public class ConversationsMessagesPostRequest {
     this.agentEmail = agentEmail;
   }
 
-  public void setAgentEmail(Object agentEmail) {
+  public void setAgentEmail(@jakarta.annotation.Nullable Object agentEmail) {
     this.agentEmail = JsonNullable.<Object>of(agentEmail);
   }
 
-  public ConversationsMessagesPostRequest agentName(Object agentName) {
+  public ConversationsMessagesPostRequest agentName(@jakarta.annotation.Nullable Object agentName) {
     this.agentName = JsonNullable.<Object>of(agentName);
     
     return this;
@@ -242,7 +248,7 @@ public class ConversationsMessagesPostRequest {
     this.agentName = agentName;
   }
 
-  public void setAgentName(Object agentName) {
+  public void setAgentName(@jakarta.annotation.Nullable Object agentName) {
     this.agentName = JsonNullable.<Object>of(agentName);
   }
 

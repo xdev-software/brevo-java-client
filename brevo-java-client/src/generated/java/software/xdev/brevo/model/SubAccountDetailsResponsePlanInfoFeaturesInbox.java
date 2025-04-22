@@ -36,15 +36,17 @@ import java.util.StringJoiner;
 @JsonTypeName("subAccountDetailsResponse_planInfo_features_inbox")
 public class SubAccountDetailsResponsePlanInfoFeaturesInbox {
   public static final String JSON_PROPERTY_QUANTITY = "quantity";
+  @jakarta.annotation.Nullable
   private Long quantity;
 
   public static final String JSON_PROPERTY_REMAINING = "remaining";
+  @jakarta.annotation.Nullable
   private Long remaining;
 
   public SubAccountDetailsResponsePlanInfoFeaturesInbox() {
   }
 
-  public SubAccountDetailsResponsePlanInfoFeaturesInbox quantity(Long quantity) {
+  public SubAccountDetailsResponsePlanInfoFeaturesInbox quantity(@jakarta.annotation.Nullable Long quantity) {
     
     this.quantity = quantity;
     return this;
@@ -65,11 +67,11 @@ public class SubAccountDetailsResponsePlanInfoFeaturesInbox {
 
   @JsonProperty(JSON_PROPERTY_QUANTITY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setQuantity(Long quantity) {
+  public void setQuantity(@jakarta.annotation.Nullable Long quantity) {
     this.quantity = quantity;
   }
 
-  public SubAccountDetailsResponsePlanInfoFeaturesInbox remaining(Long remaining) {
+  public SubAccountDetailsResponsePlanInfoFeaturesInbox remaining(@jakarta.annotation.Nullable Long remaining) {
     
     this.remaining = remaining;
     return this;
@@ -90,7 +92,7 @@ public class SubAccountDetailsResponsePlanInfoFeaturesInbox {
 
   @JsonProperty(JSON_PROPERTY_REMAINING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setRemaining(Long remaining) {
+  public void setRemaining(@jakarta.annotation.Nullable Long remaining) {
     this.remaining = remaining;
   }
 

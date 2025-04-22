@@ -36,15 +36,17 @@ import java.util.StringJoiner;
 @JsonTypeName("getAttributes_attributes_inner_enumeration_inner")
 public class GetAttributesAttributesInnerEnumerationInner {
   public static final String JSON_PROPERTY_VALUE = "value";
+  @jakarta.annotation.Nonnull
   private Long value;
 
   public static final String JSON_PROPERTY_LABEL = "label";
+  @jakarta.annotation.Nonnull
   private String label;
 
   public GetAttributesAttributesInnerEnumerationInner() {
   }
 
-  public GetAttributesAttributesInnerEnumerationInner value(Long value) {
+  public GetAttributesAttributesInnerEnumerationInner value(@jakarta.annotation.Nonnull Long value) {
     
     this.value = value;
     return this;
@@ -65,11 +67,11 @@ public class GetAttributesAttributesInnerEnumerationInner {
 
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setValue(Long value) {
+  public void setValue(@jakarta.annotation.Nonnull Long value) {
     this.value = value;
   }
 
-  public GetAttributesAttributesInnerEnumerationInner label(String label) {
+  public GetAttributesAttributesInnerEnumerationInner label(@jakarta.annotation.Nonnull String label) {
     
     this.label = label;
     return this;
@@ -90,7 +92,7 @@ public class GetAttributesAttributesInnerEnumerationInner {
 
   @JsonProperty(JSON_PROPERTY_LABEL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setLabel(String label) {
+  public void setLabel(@jakarta.annotation.Nonnull String label) {
     this.label = label;
   }
 

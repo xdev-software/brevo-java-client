@@ -41,18 +41,21 @@ import java.util.StringJoiner;
 @JsonTypeName("orderBatch")
 public class OrderBatch {
   public static final String JSON_PROPERTY_ORDERS = "orders";
+  @jakarta.annotation.Nonnull
   private List<Order> orders = new ArrayList<>();
 
   public static final String JSON_PROPERTY_NOTIFY_URL = "notifyUrl";
+  @jakarta.annotation.Nullable
   private String notifyUrl;
 
   public static final String JSON_PROPERTY_HISTORICAL = "historical";
+  @jakarta.annotation.Nullable
   private Boolean historical = true;
 
   public OrderBatch() {
   }
 
-  public OrderBatch orders(List<Order> orders) {
+  public OrderBatch orders(@jakarta.annotation.Nonnull List<Order> orders) {
     
     this.orders = orders;
     return this;
@@ -81,11 +84,11 @@ public class OrderBatch {
 
   @JsonProperty(JSON_PROPERTY_ORDERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOrders(List<Order> orders) {
+  public void setOrders(@jakarta.annotation.Nonnull List<Order> orders) {
     this.orders = orders;
   }
 
-  public OrderBatch notifyUrl(String notifyUrl) {
+  public OrderBatch notifyUrl(@jakarta.annotation.Nullable String notifyUrl) {
     
     this.notifyUrl = notifyUrl;
     return this;
@@ -106,11 +109,11 @@ public class OrderBatch {
 
   @JsonProperty(JSON_PROPERTY_NOTIFY_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setNotifyUrl(String notifyUrl) {
+  public void setNotifyUrl(@jakarta.annotation.Nullable String notifyUrl) {
     this.notifyUrl = notifyUrl;
   }
 
-  public OrderBatch historical(Boolean historical) {
+  public OrderBatch historical(@jakarta.annotation.Nullable Boolean historical) {
     
     this.historical = historical;
     return this;
@@ -131,7 +134,7 @@ public class OrderBatch {
 
   @JsonProperty(JSON_PROPERTY_HISTORICAL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setHistorical(Boolean historical) {
+  public void setHistorical(@jakarta.annotation.Nullable Boolean historical) {
     this.historical = historical;
   }
 

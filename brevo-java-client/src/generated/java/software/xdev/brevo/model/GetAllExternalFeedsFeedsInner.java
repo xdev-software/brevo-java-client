@@ -51,23 +51,26 @@ import java.util.StringJoiner;
 @JsonTypeName("getAllExternalFeeds_feeds_inner")
 public class GetAllExternalFeedsFeedsInner {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nonnull
   private String id;
 
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_URL = "url";
+  @jakarta.annotation.Nonnull
   private String url;
 
   /**
    * Auth type of the feed: * &#x60;basic&#x60; * &#x60;token&#x60; * &#x60;noAuth&#x60; 
    */
   public enum AuthTypeEnum {
-    BASIC("basic"),
+    BASIC(String.valueOf("basic")),
     
-    TOKEN("token"),
+    TOKEN(String.valueOf("token")),
     
-    NO_AUTH("noAuth");
+    NO_AUTH(String.valueOf("noAuth"));
 
     private String value;
 
@@ -97,36 +100,45 @@ public class GetAllExternalFeedsFeedsInner {
   }
 
   public static final String JSON_PROPERTY_AUTH_TYPE = "authType";
+  @jakarta.annotation.Nonnull
   private AuthTypeEnum authType;
 
   public static final String JSON_PROPERTY_USERNAME = "username";
+  @jakarta.annotation.Nullable
   private String username;
 
   public static final String JSON_PROPERTY_PASSWORD = "password";
+  @jakarta.annotation.Nullable
   private String password;
 
   public static final String JSON_PROPERTY_TOKEN = "token";
+  @jakarta.annotation.Nullable
   private String token;
 
   public static final String JSON_PROPERTY_HEADERS = "headers";
+  @jakarta.annotation.Nonnull
   private List<GetExternalFeedByUUIDHeadersInner> headers = new ArrayList<>();
 
   public static final String JSON_PROPERTY_MAX_RETRIES = "maxRetries";
+  @jakarta.annotation.Nonnull
   private Integer maxRetries = 5;
 
   public static final String JSON_PROPERTY_CACHE = "cache";
+  @jakarta.annotation.Nonnull
   private Boolean cache;
 
   public static final String JSON_PROPERTY_CREATED_AT = "createdAt";
+  @jakarta.annotation.Nonnull
   private OffsetDateTime createdAt;
 
   public static final String JSON_PROPERTY_MODIFIED_AT = "modifiedAt";
+  @jakarta.annotation.Nonnull
   private OffsetDateTime modifiedAt;
 
   public GetAllExternalFeedsFeedsInner() {
   }
 
-  public GetAllExternalFeedsFeedsInner id(String id) {
+  public GetAllExternalFeedsFeedsInner id(@jakarta.annotation.Nonnull String id) {
     
     this.id = id;
     return this;
@@ -147,11 +159,11 @@ public class GetAllExternalFeedsFeedsInner {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(String id) {
+  public void setId(@jakarta.annotation.Nonnull String id) {
     this.id = id;
   }
 
-  public GetAllExternalFeedsFeedsInner name(String name) {
+  public GetAllExternalFeedsFeedsInner name(@jakarta.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
@@ -172,11 +184,11 @@ public class GetAllExternalFeedsFeedsInner {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
   }
 
-  public GetAllExternalFeedsFeedsInner url(String url) {
+  public GetAllExternalFeedsFeedsInner url(@jakarta.annotation.Nonnull String url) {
     
     this.url = url;
     return this;
@@ -197,11 +209,11 @@ public class GetAllExternalFeedsFeedsInner {
 
   @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUrl(String url) {
+  public void setUrl(@jakarta.annotation.Nonnull String url) {
     this.url = url;
   }
 
-  public GetAllExternalFeedsFeedsInner authType(AuthTypeEnum authType) {
+  public GetAllExternalFeedsFeedsInner authType(@jakarta.annotation.Nonnull AuthTypeEnum authType) {
     
     this.authType = authType;
     return this;
@@ -222,11 +234,11 @@ public class GetAllExternalFeedsFeedsInner {
 
   @JsonProperty(JSON_PROPERTY_AUTH_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAuthType(AuthTypeEnum authType) {
+  public void setAuthType(@jakarta.annotation.Nonnull AuthTypeEnum authType) {
     this.authType = authType;
   }
 
-  public GetAllExternalFeedsFeedsInner username(String username) {
+  public GetAllExternalFeedsFeedsInner username(@jakarta.annotation.Nullable String username) {
     
     this.username = username;
     return this;
@@ -247,11 +259,11 @@ public class GetAllExternalFeedsFeedsInner {
 
   @JsonProperty(JSON_PROPERTY_USERNAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUsername(String username) {
+  public void setUsername(@jakarta.annotation.Nullable String username) {
     this.username = username;
   }
 
-  public GetAllExternalFeedsFeedsInner password(String password) {
+  public GetAllExternalFeedsFeedsInner password(@jakarta.annotation.Nullable String password) {
     
     this.password = password;
     return this;
@@ -272,11 +284,11 @@ public class GetAllExternalFeedsFeedsInner {
 
   @JsonProperty(JSON_PROPERTY_PASSWORD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setPassword(String password) {
+  public void setPassword(@jakarta.annotation.Nullable String password) {
     this.password = password;
   }
 
-  public GetAllExternalFeedsFeedsInner token(String token) {
+  public GetAllExternalFeedsFeedsInner token(@jakarta.annotation.Nullable String token) {
     
     this.token = token;
     return this;
@@ -297,11 +309,11 @@ public class GetAllExternalFeedsFeedsInner {
 
   @JsonProperty(JSON_PROPERTY_TOKEN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setToken(String token) {
+  public void setToken(@jakarta.annotation.Nullable String token) {
     this.token = token;
   }
 
-  public GetAllExternalFeedsFeedsInner headers(List<GetExternalFeedByUUIDHeadersInner> headers) {
+  public GetAllExternalFeedsFeedsInner headers(@jakarta.annotation.Nonnull List<GetExternalFeedByUUIDHeadersInner> headers) {
     
     this.headers = headers;
     return this;
@@ -330,11 +342,11 @@ public class GetAllExternalFeedsFeedsInner {
 
   @JsonProperty(JSON_PROPERTY_HEADERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setHeaders(List<GetExternalFeedByUUIDHeadersInner> headers) {
+  public void setHeaders(@jakarta.annotation.Nonnull List<GetExternalFeedByUUIDHeadersInner> headers) {
     this.headers = headers;
   }
 
-  public GetAllExternalFeedsFeedsInner maxRetries(Integer maxRetries) {
+  public GetAllExternalFeedsFeedsInner maxRetries(@jakarta.annotation.Nonnull Integer maxRetries) {
     
     this.maxRetries = maxRetries;
     return this;
@@ -357,11 +369,11 @@ public class GetAllExternalFeedsFeedsInner {
 
   @JsonProperty(JSON_PROPERTY_MAX_RETRIES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMaxRetries(Integer maxRetries) {
+  public void setMaxRetries(@jakarta.annotation.Nonnull Integer maxRetries) {
     this.maxRetries = maxRetries;
   }
 
-  public GetAllExternalFeedsFeedsInner cache(Boolean cache) {
+  public GetAllExternalFeedsFeedsInner cache(@jakarta.annotation.Nonnull Boolean cache) {
     
     this.cache = cache;
     return this;
@@ -382,11 +394,11 @@ public class GetAllExternalFeedsFeedsInner {
 
   @JsonProperty(JSON_PROPERTY_CACHE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCache(Boolean cache) {
+  public void setCache(@jakarta.annotation.Nonnull Boolean cache) {
     this.cache = cache;
   }
 
-  public GetAllExternalFeedsFeedsInner createdAt(OffsetDateTime createdAt) {
+  public GetAllExternalFeedsFeedsInner createdAt(@jakarta.annotation.Nonnull OffsetDateTime createdAt) {
     
     this.createdAt = createdAt;
     return this;
@@ -407,11 +419,11 @@ public class GetAllExternalFeedsFeedsInner {
 
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@jakarta.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
-  public GetAllExternalFeedsFeedsInner modifiedAt(OffsetDateTime modifiedAt) {
+  public GetAllExternalFeedsFeedsInner modifiedAt(@jakarta.annotation.Nonnull OffsetDateTime modifiedAt) {
     
     this.modifiedAt = modifiedAt;
     return this;
@@ -432,7 +444,7 @@ public class GetAllExternalFeedsFeedsInner {
 
   @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setModifiedAt(OffsetDateTime modifiedAt) {
+  public void setModifiedAt(@jakarta.annotation.Nonnull OffsetDateTime modifiedAt) {
     this.modifiedAt = modifiedAt;
   }
 

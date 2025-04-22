@@ -45,39 +45,49 @@ import java.util.StringJoiner;
 @JsonTypeName("getTransacSmsReport_reports_inner")
 public class GetTransacSmsReportReportsInner {
   public static final String JSON_PROPERTY_DATE = "date";
+  @jakarta.annotation.Nullable
   private LocalDate date;
 
   public static final String JSON_PROPERTY_REQUESTS = "requests";
+  @jakarta.annotation.Nullable
   private Long requests;
 
   public static final String JSON_PROPERTY_DELIVERED = "delivered";
+  @jakarta.annotation.Nullable
   private Long delivered;
 
   public static final String JSON_PROPERTY_HARD_BOUNCES = "hardBounces";
+  @jakarta.annotation.Nullable
   private Long hardBounces;
 
   public static final String JSON_PROPERTY_SOFT_BOUNCES = "softBounces";
+  @jakarta.annotation.Nullable
   private Long softBounces;
 
   public static final String JSON_PROPERTY_BLOCKED = "blocked";
+  @jakarta.annotation.Nullable
   private Long blocked;
 
   public static final String JSON_PROPERTY_UNSUBSCRIBED = "unsubscribed";
+  @jakarta.annotation.Nullable
   private Long unsubscribed;
 
   public static final String JSON_PROPERTY_REPLIED = "replied";
+  @jakarta.annotation.Nullable
   private Long replied;
 
   public static final String JSON_PROPERTY_ACCEPTED = "accepted";
+  @jakarta.annotation.Nullable
   private Long accepted;
 
   public static final String JSON_PROPERTY_REJECTED = "rejected";
+  @jakarta.annotation.Nullable
   private Long rejected;
 
   public GetTransacSmsReportReportsInner() {
   }
 
-  public GetTransacSmsReportReportsInner date(LocalDate date) {
+  public GetTransacSmsReportReportsInner date(@jakarta.annotation.Nullable LocalDate date) {
     
     this.date = date;
     return this;
@@ -98,11 +108,11 @@ public class GetTransacSmsReportReportsInner {
 
   @JsonProperty(JSON_PROPERTY_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDate(LocalDate date) {
+  public void setDate(@jakarta.annotation.Nullable LocalDate date) {
     this.date = date;
   }
 
-  public GetTransacSmsReportReportsInner requests(Long requests) {
+  public GetTransacSmsReportReportsInner requests(@jakarta.annotation.Nullable Long requests) {
     
     this.requests = requests;
     return this;
@@ -123,11 +133,11 @@ public class GetTransacSmsReportReportsInner {
 
   @JsonProperty(JSON_PROPERTY_REQUESTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setRequests(Long requests) {
+  public void setRequests(@jakarta.annotation.Nullable Long requests) {
     this.requests = requests;
   }
 
-  public GetTransacSmsReportReportsInner delivered(Long delivered) {
+  public GetTransacSmsReportReportsInner delivered(@jakarta.annotation.Nullable Long delivered) {
     
     this.delivered = delivered;
     return this;
@@ -148,11 +158,11 @@ public class GetTransacSmsReportReportsInner {
 
   @JsonProperty(JSON_PROPERTY_DELIVERED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDelivered(Long delivered) {
+  public void setDelivered(@jakarta.annotation.Nullable Long delivered) {
     this.delivered = delivered;
   }
 
-  public GetTransacSmsReportReportsInner hardBounces(Long hardBounces) {
+  public GetTransacSmsReportReportsInner hardBounces(@jakarta.annotation.Nullable Long hardBounces) {
     
     this.hardBounces = hardBounces;
     return this;
@@ -173,11 +183,11 @@ public class GetTransacSmsReportReportsInner {
 
   @JsonProperty(JSON_PROPERTY_HARD_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setHardBounces(Long hardBounces) {
+  public void setHardBounces(@jakarta.annotation.Nullable Long hardBounces) {
     this.hardBounces = hardBounces;
   }
 
-  public GetTransacSmsReportReportsInner softBounces(Long softBounces) {
+  public GetTransacSmsReportReportsInner softBounces(@jakarta.annotation.Nullable Long softBounces) {
     
     this.softBounces = softBounces;
     return this;
@@ -198,11 +208,11 @@ public class GetTransacSmsReportReportsInner {
 
   @JsonProperty(JSON_PROPERTY_SOFT_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSoftBounces(Long softBounces) {
+  public void setSoftBounces(@jakarta.annotation.Nullable Long softBounces) {
     this.softBounces = softBounces;
   }
 
-  public GetTransacSmsReportReportsInner blocked(Long blocked) {
+  public GetTransacSmsReportReportsInner blocked(@jakarta.annotation.Nullable Long blocked) {
     
     this.blocked = blocked;
     return this;
@@ -223,11 +233,11 @@ public class GetTransacSmsReportReportsInner {
 
   @JsonProperty(JSON_PROPERTY_BLOCKED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setBlocked(Long blocked) {
+  public void setBlocked(@jakarta.annotation.Nullable Long blocked) {
     this.blocked = blocked;
   }
 
-  public GetTransacSmsReportReportsInner unsubscribed(Long unsubscribed) {
+  public GetTransacSmsReportReportsInner unsubscribed(@jakarta.annotation.Nullable Long unsubscribed) {
     
     this.unsubscribed = unsubscribed;
     return this;
@@ -248,11 +258,11 @@ public class GetTransacSmsReportReportsInner {
 
   @JsonProperty(JSON_PROPERTY_UNSUBSCRIBED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUnsubscribed(Long unsubscribed) {
+  public void setUnsubscribed(@jakarta.annotation.Nullable Long unsubscribed) {
     this.unsubscribed = unsubscribed;
   }
 
-  public GetTransacSmsReportReportsInner replied(Long replied) {
+  public GetTransacSmsReportReportsInner replied(@jakarta.annotation.Nullable Long replied) {
     
     this.replied = replied;
     return this;
@@ -273,11 +283,11 @@ public class GetTransacSmsReportReportsInner {
 
   @JsonProperty(JSON_PROPERTY_REPLIED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setReplied(Long replied) {
+  public void setReplied(@jakarta.annotation.Nullable Long replied) {
     this.replied = replied;
   }
 
-  public GetTransacSmsReportReportsInner accepted(Long accepted) {
+  public GetTransacSmsReportReportsInner accepted(@jakarta.annotation.Nullable Long accepted) {
     
     this.accepted = accepted;
     return this;
@@ -298,11 +308,11 @@ public class GetTransacSmsReportReportsInner {
 
   @JsonProperty(JSON_PROPERTY_ACCEPTED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setAccepted(Long accepted) {
+  public void setAccepted(@jakarta.annotation.Nullable Long accepted) {
     this.accepted = accepted;
   }
 
-  public GetTransacSmsReportReportsInner rejected(Long rejected) {
+  public GetTransacSmsReportReportsInner rejected(@jakarta.annotation.Nullable Long rejected) {
     
     this.rejected = rejected;
     return this;
@@ -323,7 +333,7 @@ public class GetTransacSmsReportReportsInner {
 
   @JsonProperty(JSON_PROPERTY_REJECTED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setRejected(Long rejected) {
+  public void setRejected(@jakarta.annotation.Nullable Long rejected) {
     this.rejected = rejected;
   }
 

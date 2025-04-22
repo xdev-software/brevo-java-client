@@ -75,7 +75,7 @@ public class DomainsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/senders/domains/{domainName}/authenticate"
-      .replaceAll("\\{" + "domainName" + "\\}", apiClient.escapeString(domainName.toString()));
+      .replaceAll("\\{" + "domainName" + "\\}", apiClient.escapeString(apiClient.parameterToString(domainName)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -217,7 +217,7 @@ public class DomainsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/senders/domains/{domainName}"
-      .replaceAll("\\{" + "domainName" + "\\}", apiClient.escapeString(domainName.toString()));
+      .replaceAll("\\{" + "domainName" + "\\}", apiClient.escapeString(apiClient.parameterToString(domainName)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -291,7 +291,7 @@ public class DomainsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/senders/domains/{domainName}"
-      .replaceAll("\\{" + "domainName" + "\\}", apiClient.escapeString(domainName.toString()));
+      .replaceAll("\\{" + "domainName" + "\\}", apiClient.escapeString(apiClient.parameterToString(domainName)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;

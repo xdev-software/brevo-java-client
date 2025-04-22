@@ -47,48 +47,61 @@ import java.util.StringJoiner;
 @JsonTypeName("getAggregatedReport")
 public class GetAggregatedReport {
   public static final String JSON_PROPERTY_RANGE = "range";
+  @jakarta.annotation.Nullable
   private String range;
 
   public static final String JSON_PROPERTY_REQUESTS = "requests";
+  @jakarta.annotation.Nullable
   private Long requests;
 
   public static final String JSON_PROPERTY_DELIVERED = "delivered";
+  @jakarta.annotation.Nullable
   private Long delivered;
 
   public static final String JSON_PROPERTY_HARD_BOUNCES = "hardBounces";
+  @jakarta.annotation.Nullable
   private Long hardBounces;
 
   public static final String JSON_PROPERTY_SOFT_BOUNCES = "softBounces";
+  @jakarta.annotation.Nullable
   private Long softBounces;
 
   public static final String JSON_PROPERTY_CLICKS = "clicks";
+  @jakarta.annotation.Nullable
   private Long clicks;
 
   public static final String JSON_PROPERTY_UNIQUE_CLICKS = "uniqueClicks";
+  @jakarta.annotation.Nullable
   private Long uniqueClicks;
 
   public static final String JSON_PROPERTY_OPENS = "opens";
+  @jakarta.annotation.Nullable
   private Long opens;
 
   public static final String JSON_PROPERTY_UNIQUE_OPENS = "uniqueOpens";
+  @jakarta.annotation.Nullable
   private Long uniqueOpens;
 
   public static final String JSON_PROPERTY_SPAM_REPORTS = "spamReports";
+  @jakarta.annotation.Nullable
   private Long spamReports;
 
   public static final String JSON_PROPERTY_BLOCKED = "blocked";
+  @jakarta.annotation.Nullable
   private Long blocked;
 
   public static final String JSON_PROPERTY_INVALID = "invalid";
+  @jakarta.annotation.Nullable
   private Long invalid;
 
   public static final String JSON_PROPERTY_UNSUBSCRIBED = "unsubscribed";
+  @jakarta.annotation.Nullable
   private Long unsubscribed;
 
   public GetAggregatedReport() {
   }
 
-  public GetAggregatedReport range(String range) {
+  public GetAggregatedReport range(@jakarta.annotation.Nullable String range) {
     
     this.range = range;
     return this;
@@ -109,11 +122,11 @@ public class GetAggregatedReport {
 
   @JsonProperty(JSON_PROPERTY_RANGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setRange(String range) {
+  public void setRange(@jakarta.annotation.Nullable String range) {
     this.range = range;
   }
 
-  public GetAggregatedReport requests(Long requests) {
+  public GetAggregatedReport requests(@jakarta.annotation.Nullable Long requests) {
     
     this.requests = requests;
     return this;
@@ -134,11 +147,11 @@ public class GetAggregatedReport {
 
   @JsonProperty(JSON_PROPERTY_REQUESTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setRequests(Long requests) {
+  public void setRequests(@jakarta.annotation.Nullable Long requests) {
     this.requests = requests;
   }
 
-  public GetAggregatedReport delivered(Long delivered) {
+  public GetAggregatedReport delivered(@jakarta.annotation.Nullable Long delivered) {
     
     this.delivered = delivered;
     return this;
@@ -159,11 +172,11 @@ public class GetAggregatedReport {
 
   @JsonProperty(JSON_PROPERTY_DELIVERED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDelivered(Long delivered) {
+  public void setDelivered(@jakarta.annotation.Nullable Long delivered) {
     this.delivered = delivered;
   }
 
-  public GetAggregatedReport hardBounces(Long hardBounces) {
+  public GetAggregatedReport hardBounces(@jakarta.annotation.Nullable Long hardBounces) {
     
     this.hardBounces = hardBounces;
     return this;
@@ -184,11 +197,11 @@ public class GetAggregatedReport {
 
   @JsonProperty(JSON_PROPERTY_HARD_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setHardBounces(Long hardBounces) {
+  public void setHardBounces(@jakarta.annotation.Nullable Long hardBounces) {
     this.hardBounces = hardBounces;
   }
 
-  public GetAggregatedReport softBounces(Long softBounces) {
+  public GetAggregatedReport softBounces(@jakarta.annotation.Nullable Long softBounces) {
     
     this.softBounces = softBounces;
     return this;
@@ -209,11 +222,11 @@ public class GetAggregatedReport {
 
   @JsonProperty(JSON_PROPERTY_SOFT_BOUNCES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSoftBounces(Long softBounces) {
+  public void setSoftBounces(@jakarta.annotation.Nullable Long softBounces) {
     this.softBounces = softBounces;
   }
 
-  public GetAggregatedReport clicks(Long clicks) {
+  public GetAggregatedReport clicks(@jakarta.annotation.Nullable Long clicks) {
     
     this.clicks = clicks;
     return this;
@@ -234,11 +247,11 @@ public class GetAggregatedReport {
 
   @JsonProperty(JSON_PROPERTY_CLICKS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setClicks(Long clicks) {
+  public void setClicks(@jakarta.annotation.Nullable Long clicks) {
     this.clicks = clicks;
   }
 
-  public GetAggregatedReport uniqueClicks(Long uniqueClicks) {
+  public GetAggregatedReport uniqueClicks(@jakarta.annotation.Nullable Long uniqueClicks) {
     
     this.uniqueClicks = uniqueClicks;
     return this;
@@ -259,11 +272,11 @@ public class GetAggregatedReport {
 
   @JsonProperty(JSON_PROPERTY_UNIQUE_CLICKS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUniqueClicks(Long uniqueClicks) {
+  public void setUniqueClicks(@jakarta.annotation.Nullable Long uniqueClicks) {
     this.uniqueClicks = uniqueClicks;
   }
 
-  public GetAggregatedReport opens(Long opens) {
+  public GetAggregatedReport opens(@jakarta.annotation.Nullable Long opens) {
     
     this.opens = opens;
     return this;
@@ -284,11 +297,11 @@ public class GetAggregatedReport {
 
   @JsonProperty(JSON_PROPERTY_OPENS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setOpens(Long opens) {
+  public void setOpens(@jakarta.annotation.Nullable Long opens) {
     this.opens = opens;
   }
 
-  public GetAggregatedReport uniqueOpens(Long uniqueOpens) {
+  public GetAggregatedReport uniqueOpens(@jakarta.annotation.Nullable Long uniqueOpens) {
     
     this.uniqueOpens = uniqueOpens;
     return this;
@@ -309,11 +322,11 @@ public class GetAggregatedReport {
 
   @JsonProperty(JSON_PROPERTY_UNIQUE_OPENS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUniqueOpens(Long uniqueOpens) {
+  public void setUniqueOpens(@jakarta.annotation.Nullable Long uniqueOpens) {
     this.uniqueOpens = uniqueOpens;
   }
 
-  public GetAggregatedReport spamReports(Long spamReports) {
+  public GetAggregatedReport spamReports(@jakarta.annotation.Nullable Long spamReports) {
     
     this.spamReports = spamReports;
     return this;
@@ -334,11 +347,11 @@ public class GetAggregatedReport {
 
   @JsonProperty(JSON_PROPERTY_SPAM_REPORTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSpamReports(Long spamReports) {
+  public void setSpamReports(@jakarta.annotation.Nullable Long spamReports) {
     this.spamReports = spamReports;
   }
 
-  public GetAggregatedReport blocked(Long blocked) {
+  public GetAggregatedReport blocked(@jakarta.annotation.Nullable Long blocked) {
     
     this.blocked = blocked;
     return this;
@@ -359,11 +372,11 @@ public class GetAggregatedReport {
 
   @JsonProperty(JSON_PROPERTY_BLOCKED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setBlocked(Long blocked) {
+  public void setBlocked(@jakarta.annotation.Nullable Long blocked) {
     this.blocked = blocked;
   }
 
-  public GetAggregatedReport invalid(Long invalid) {
+  public GetAggregatedReport invalid(@jakarta.annotation.Nullable Long invalid) {
     
     this.invalid = invalid;
     return this;
@@ -384,11 +397,11 @@ public class GetAggregatedReport {
 
   @JsonProperty(JSON_PROPERTY_INVALID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setInvalid(Long invalid) {
+  public void setInvalid(@jakarta.annotation.Nullable Long invalid) {
     this.invalid = invalid;
   }
 
-  public GetAggregatedReport unsubscribed(Long unsubscribed) {
+  public GetAggregatedReport unsubscribed(@jakarta.annotation.Nullable Long unsubscribed) {
     
     this.unsubscribed = unsubscribed;
     return this;
@@ -409,7 +422,7 @@ public class GetAggregatedReport {
 
   @JsonProperty(JSON_PROPERTY_UNSUBSCRIBED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUnsubscribed(Long unsubscribed) {
+  public void setUnsubscribed(@jakarta.annotation.Nullable Long unsubscribed) {
     this.unsubscribed = unsubscribed;
   }
 

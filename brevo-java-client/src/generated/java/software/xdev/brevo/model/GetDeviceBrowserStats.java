@@ -38,21 +38,25 @@ import java.util.StringJoiner;
 @JsonTypeName("getDeviceBrowserStats")
 public class GetDeviceBrowserStats {
   public static final String JSON_PROPERTY_CLICKERS = "clickers";
+  @jakarta.annotation.Nonnull
   private Long clickers;
 
   public static final String JSON_PROPERTY_UNIQUE_CLICKS = "uniqueClicks";
+  @jakarta.annotation.Nonnull
   private Long uniqueClicks;
 
   public static final String JSON_PROPERTY_VIEWED = "viewed";
+  @jakarta.annotation.Nonnull
   private Long viewed;
 
   public static final String JSON_PROPERTY_UNIQUE_VIEWS = "uniqueViews";
+  @jakarta.annotation.Nonnull
   private Long uniqueViews;
 
   public GetDeviceBrowserStats() {
   }
 
-  public GetDeviceBrowserStats clickers(Long clickers) {
+  public GetDeviceBrowserStats clickers(@jakarta.annotation.Nonnull Long clickers) {
     
     this.clickers = clickers;
     return this;
@@ -73,11 +77,11 @@ public class GetDeviceBrowserStats {
 
   @JsonProperty(JSON_PROPERTY_CLICKERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setClickers(Long clickers) {
+  public void setClickers(@jakarta.annotation.Nonnull Long clickers) {
     this.clickers = clickers;
   }
 
-  public GetDeviceBrowserStats uniqueClicks(Long uniqueClicks) {
+  public GetDeviceBrowserStats uniqueClicks(@jakarta.annotation.Nonnull Long uniqueClicks) {
     
     this.uniqueClicks = uniqueClicks;
     return this;
@@ -98,11 +102,11 @@ public class GetDeviceBrowserStats {
 
   @JsonProperty(JSON_PROPERTY_UNIQUE_CLICKS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUniqueClicks(Long uniqueClicks) {
+  public void setUniqueClicks(@jakarta.annotation.Nonnull Long uniqueClicks) {
     this.uniqueClicks = uniqueClicks;
   }
 
-  public GetDeviceBrowserStats viewed(Long viewed) {
+  public GetDeviceBrowserStats viewed(@jakarta.annotation.Nonnull Long viewed) {
     
     this.viewed = viewed;
     return this;
@@ -123,11 +127,11 @@ public class GetDeviceBrowserStats {
 
   @JsonProperty(JSON_PROPERTY_VIEWED)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setViewed(Long viewed) {
+  public void setViewed(@jakarta.annotation.Nonnull Long viewed) {
     this.viewed = viewed;
   }
 
-  public GetDeviceBrowserStats uniqueViews(Long uniqueViews) {
+  public GetDeviceBrowserStats uniqueViews(@jakarta.annotation.Nonnull Long uniqueViews) {
     
     this.uniqueViews = uniqueViews;
     return this;
@@ -148,7 +152,7 @@ public class GetDeviceBrowserStats {
 
   @JsonProperty(JSON_PROPERTY_UNIQUE_VIEWS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUniqueViews(Long uniqueViews) {
+  public void setUniqueViews(@jakarta.annotation.Nonnull Long uniqueViews) {
     this.uniqueViews = uniqueViews;
   }
 

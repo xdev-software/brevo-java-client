@@ -36,15 +36,17 @@ import java.util.StringJoiner;
 @JsonTypeName("getChildInfo_allOf_credits")
 public class GetChildInfoAllOfCredits {
   public static final String JSON_PROPERTY_EMAIL_CREDITS = "emailCredits";
+  @jakarta.annotation.Nullable
   private Long emailCredits;
 
   public static final String JSON_PROPERTY_SMS_CREDITS = "smsCredits";
+  @jakarta.annotation.Nullable
   private Long smsCredits;
 
   public GetChildInfoAllOfCredits() {
   }
 
-  public GetChildInfoAllOfCredits emailCredits(Long emailCredits) {
+  public GetChildInfoAllOfCredits emailCredits(@jakarta.annotation.Nullable Long emailCredits) {
     
     this.emailCredits = emailCredits;
     return this;
@@ -65,11 +67,11 @@ public class GetChildInfoAllOfCredits {
 
   @JsonProperty(JSON_PROPERTY_EMAIL_CREDITS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEmailCredits(Long emailCredits) {
+  public void setEmailCredits(@jakarta.annotation.Nullable Long emailCredits) {
     this.emailCredits = emailCredits;
   }
 
-  public GetChildInfoAllOfCredits smsCredits(Long smsCredits) {
+  public GetChildInfoAllOfCredits smsCredits(@jakarta.annotation.Nullable Long smsCredits) {
     
     this.smsCredits = smsCredits;
     return this;
@@ -90,7 +92,7 @@ public class GetChildInfoAllOfCredits {
 
   @JsonProperty(JSON_PROPERTY_SMS_CREDITS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSmsCredits(Long smsCredits) {
+  public void setSmsCredits(@jakarta.annotation.Nullable Long smsCredits) {
     this.smsCredits = smsCredits;
   }
 

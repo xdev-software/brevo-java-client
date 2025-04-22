@@ -50,42 +50,53 @@ import java.util.StringJoiner;
 @JsonTypeName("_crm_tasks_post_request")
 public class CrmTasksPostRequest {
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_DURATION = "duration";
+  @jakarta.annotation.Nullable
   private Long duration;
 
   public static final String JSON_PROPERTY_TASK_TYPE_ID = "taskTypeId";
+  @jakarta.annotation.Nonnull
   private String taskTypeId;
 
   public static final String JSON_PROPERTY_DATE = "date";
+  @jakarta.annotation.Nonnull
   private OffsetDateTime date;
 
   public static final String JSON_PROPERTY_NOTES = "notes";
+  @jakarta.annotation.Nullable
   private String notes;
 
   public static final String JSON_PROPERTY_DONE = "done";
+  @jakarta.annotation.Nullable
   private Boolean done;
 
   public static final String JSON_PROPERTY_ASSIGN_TO_ID = "assignToId";
+  @jakarta.annotation.Nullable
   private String assignToId;
 
   public static final String JSON_PROPERTY_CONTACTS_IDS = "contactsIds";
+  @jakarta.annotation.Nullable
   private List<Integer> contactsIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_DEALS_IDS = "dealsIds";
+  @jakarta.annotation.Nullable
   private List<String> dealsIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_COMPANIES_IDS = "companiesIds";
+  @jakarta.annotation.Nullable
   private List<String> companiesIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_REMINDER = "reminder";
+  @jakarta.annotation.Nullable
   private TaskReminder reminder;
 
   public CrmTasksPostRequest() {
   }
 
-  public CrmTasksPostRequest name(String name) {
+  public CrmTasksPostRequest name(@jakarta.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
@@ -106,11 +117,11 @@ public class CrmTasksPostRequest {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
   }
 
-  public CrmTasksPostRequest duration(Long duration) {
+  public CrmTasksPostRequest duration(@jakarta.annotation.Nullable Long duration) {
     
     this.duration = duration;
     return this;
@@ -132,11 +143,11 @@ public class CrmTasksPostRequest {
 
   @JsonProperty(JSON_PROPERTY_DURATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDuration(Long duration) {
+  public void setDuration(@jakarta.annotation.Nullable Long duration) {
     this.duration = duration;
   }
 
-  public CrmTasksPostRequest taskTypeId(String taskTypeId) {
+  public CrmTasksPostRequest taskTypeId(@jakarta.annotation.Nonnull String taskTypeId) {
     
     this.taskTypeId = taskTypeId;
     return this;
@@ -157,11 +168,11 @@ public class CrmTasksPostRequest {
 
   @JsonProperty(JSON_PROPERTY_TASK_TYPE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTaskTypeId(String taskTypeId) {
+  public void setTaskTypeId(@jakarta.annotation.Nonnull String taskTypeId) {
     this.taskTypeId = taskTypeId;
   }
 
-  public CrmTasksPostRequest date(OffsetDateTime date) {
+  public CrmTasksPostRequest date(@jakarta.annotation.Nonnull OffsetDateTime date) {
     
     this.date = date;
     return this;
@@ -182,11 +193,11 @@ public class CrmTasksPostRequest {
 
   @JsonProperty(JSON_PROPERTY_DATE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDate(OffsetDateTime date) {
+  public void setDate(@jakarta.annotation.Nonnull OffsetDateTime date) {
     this.date = date;
   }
 
-  public CrmTasksPostRequest notes(String notes) {
+  public CrmTasksPostRequest notes(@jakarta.annotation.Nullable String notes) {
     
     this.notes = notes;
     return this;
@@ -207,11 +218,11 @@ public class CrmTasksPostRequest {
 
   @JsonProperty(JSON_PROPERTY_NOTES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setNotes(String notes) {
+  public void setNotes(@jakarta.annotation.Nullable String notes) {
     this.notes = notes;
   }
 
-  public CrmTasksPostRequest done(Boolean done) {
+  public CrmTasksPostRequest done(@jakarta.annotation.Nullable Boolean done) {
     
     this.done = done;
     return this;
@@ -232,11 +243,11 @@ public class CrmTasksPostRequest {
 
   @JsonProperty(JSON_PROPERTY_DONE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDone(Boolean done) {
+  public void setDone(@jakarta.annotation.Nullable Boolean done) {
     this.done = done;
   }
 
-  public CrmTasksPostRequest assignToId(String assignToId) {
+  public CrmTasksPostRequest assignToId(@jakarta.annotation.Nullable String assignToId) {
     
     this.assignToId = assignToId;
     return this;
@@ -257,11 +268,11 @@ public class CrmTasksPostRequest {
 
   @JsonProperty(JSON_PROPERTY_ASSIGN_TO_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setAssignToId(String assignToId) {
+  public void setAssignToId(@jakarta.annotation.Nullable String assignToId) {
     this.assignToId = assignToId;
   }
 
-  public CrmTasksPostRequest contactsIds(List<Integer> contactsIds) {
+  public CrmTasksPostRequest contactsIds(@jakarta.annotation.Nullable List<Integer> contactsIds) {
     
     this.contactsIds = contactsIds;
     return this;
@@ -290,11 +301,11 @@ public class CrmTasksPostRequest {
 
   @JsonProperty(JSON_PROPERTY_CONTACTS_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setContactsIds(List<Integer> contactsIds) {
+  public void setContactsIds(@jakarta.annotation.Nullable List<Integer> contactsIds) {
     this.contactsIds = contactsIds;
   }
 
-  public CrmTasksPostRequest dealsIds(List<String> dealsIds) {
+  public CrmTasksPostRequest dealsIds(@jakarta.annotation.Nullable List<String> dealsIds) {
     
     this.dealsIds = dealsIds;
     return this;
@@ -323,11 +334,11 @@ public class CrmTasksPostRequest {
 
   @JsonProperty(JSON_PROPERTY_DEALS_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDealsIds(List<String> dealsIds) {
+  public void setDealsIds(@jakarta.annotation.Nullable List<String> dealsIds) {
     this.dealsIds = dealsIds;
   }
 
-  public CrmTasksPostRequest companiesIds(List<String> companiesIds) {
+  public CrmTasksPostRequest companiesIds(@jakarta.annotation.Nullable List<String> companiesIds) {
     
     this.companiesIds = companiesIds;
     return this;
@@ -356,11 +367,11 @@ public class CrmTasksPostRequest {
 
   @JsonProperty(JSON_PROPERTY_COMPANIES_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCompaniesIds(List<String> companiesIds) {
+  public void setCompaniesIds(@jakarta.annotation.Nullable List<String> companiesIds) {
     this.companiesIds = companiesIds;
   }
 
-  public CrmTasksPostRequest reminder(TaskReminder reminder) {
+  public CrmTasksPostRequest reminder(@jakarta.annotation.Nullable TaskReminder reminder) {
     
     this.reminder = reminder;
     return this;
@@ -381,7 +392,7 @@ public class CrmTasksPostRequest {
 
   @JsonProperty(JSON_PROPERTY_REMINDER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setReminder(TaskReminder reminder) {
+  public void setReminder(@jakarta.annotation.Nullable TaskReminder reminder) {
     this.reminder = reminder;
   }
 

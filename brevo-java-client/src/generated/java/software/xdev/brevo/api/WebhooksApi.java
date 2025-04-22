@@ -149,7 +149,7 @@ public class WebhooksApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/webhooks/{webhookId}"
-      .replaceAll("\\{" + "webhookId" + "\\}", apiClient.escapeString(webhookId.toString()));
+      .replaceAll("\\{" + "webhookId" + "\\}", apiClient.escapeString(apiClient.parameterToString(webhookId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -297,7 +297,7 @@ public class WebhooksApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/webhooks/{webhookId}"
-      .replaceAll("\\{" + "webhookId" + "\\}", apiClient.escapeString(webhookId.toString()));
+      .replaceAll("\\{" + "webhookId" + "\\}", apiClient.escapeString(apiClient.parameterToString(webhookId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -450,7 +450,7 @@ public class WebhooksApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/webhooks/{webhookId}"
-      .replaceAll("\\{" + "webhookId" + "\\}", apiClient.escapeString(webhookId.toString()));
+      .replaceAll("\\{" + "webhookId" + "\\}", apiClient.escapeString(apiClient.parameterToString(webhookId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;

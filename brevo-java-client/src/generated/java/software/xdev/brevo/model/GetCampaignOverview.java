@@ -48,24 +48,28 @@ import java.util.StringJoiner;
 @JsonTypeName("getCampaignOverview")
 public class GetCampaignOverview {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nonnull
   private Long id;
 
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_SUBJECT = "subject";
+  @jakarta.annotation.Nullable
   private String subject;
 
   public static final String JSON_PROPERTY_PREVIEW_TEXT = "previewText";
+  @jakarta.annotation.Nullable
   private String previewText;
 
   /**
    * Type of campaign
    */
   public enum TypeEnum {
-    CLASSIC("classic"),
+    CLASSIC(String.valueOf("classic")),
     
-    TRIGGER("trigger");
+    TRIGGER(String.valueOf("trigger"));
 
     private String value;
 
@@ -95,23 +99,24 @@ public class GetCampaignOverview {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @jakarta.annotation.Nonnull
   private TypeEnum type;
 
   /**
    * Status of the campaign
    */
   public enum StatusEnum {
-    DRAFT("draft"),
+    DRAFT(String.valueOf("draft")),
     
-    SENT("sent"),
+    SENT(String.valueOf("sent")),
     
-    ARCHIVE("archive"),
+    ARCHIVE(String.valueOf("archive")),
     
-    QUEUED("queued"),
+    QUEUED(String.valueOf("queued")),
     
-    SUSPENDED("suspended"),
+    SUSPENDED(String.valueOf("suspended")),
     
-    IN_PROCESS("in_process");
+    IN_PROCESS(String.valueOf("in_process"));
 
     private String value;
 
@@ -141,36 +146,45 @@ public class GetCampaignOverview {
   }
 
   public static final String JSON_PROPERTY_STATUS = "status";
+  @jakarta.annotation.Nonnull
   private StatusEnum status;
 
   public static final String JSON_PROPERTY_SCHEDULED_AT = "scheduledAt";
+  @jakarta.annotation.Nullable
   private String scheduledAt;
 
   public static final String JSON_PROPERTY_AB_TESTING = "abTesting";
+  @jakarta.annotation.Nullable
   private Boolean abTesting;
 
   public static final String JSON_PROPERTY_SUBJECT_A = "subjectA";
+  @jakarta.annotation.Nullable
   private String subjectA;
 
   public static final String JSON_PROPERTY_SUBJECT_B = "subjectB";
+  @jakarta.annotation.Nullable
   private String subjectB;
 
   public static final String JSON_PROPERTY_SPLIT_RULE = "splitRule";
+  @jakarta.annotation.Nullable
   private Integer splitRule;
 
   public static final String JSON_PROPERTY_WINNER_CRITERIA = "winnerCriteria";
+  @jakarta.annotation.Nullable
   private String winnerCriteria;
 
   public static final String JSON_PROPERTY_WINNER_DELAY = "winnerDelay";
+  @jakarta.annotation.Nullable
   private Integer winnerDelay;
 
   public static final String JSON_PROPERTY_SEND_AT_BEST_TIME = "sendAtBestTime";
+  @jakarta.annotation.Nullable
   private Boolean sendAtBestTime;
 
   public GetCampaignOverview() {
   }
 
-  public GetCampaignOverview id(Long id) {
+  public GetCampaignOverview id(@jakarta.annotation.Nonnull Long id) {
     
     this.id = id;
     return this;
@@ -191,11 +205,11 @@ public class GetCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(Long id) {
+  public void setId(@jakarta.annotation.Nonnull Long id) {
     this.id = id;
   }
 
-  public GetCampaignOverview name(String name) {
+  public GetCampaignOverview name(@jakarta.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
@@ -216,11 +230,11 @@ public class GetCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
   }
 
-  public GetCampaignOverview subject(String subject) {
+  public GetCampaignOverview subject(@jakarta.annotation.Nullable String subject) {
     
     this.subject = subject;
     return this;
@@ -241,11 +255,11 @@ public class GetCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_SUBJECT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSubject(String subject) {
+  public void setSubject(@jakarta.annotation.Nullable String subject) {
     this.subject = subject;
   }
 
-  public GetCampaignOverview previewText(String previewText) {
+  public GetCampaignOverview previewText(@jakarta.annotation.Nullable String previewText) {
     
     this.previewText = previewText;
     return this;
@@ -266,11 +280,11 @@ public class GetCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_PREVIEW_TEXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setPreviewText(String previewText) {
+  public void setPreviewText(@jakarta.annotation.Nullable String previewText) {
     this.previewText = previewText;
   }
 
-  public GetCampaignOverview type(TypeEnum type) {
+  public GetCampaignOverview type(@jakarta.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
@@ -291,11 +305,11 @@ public class GetCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@jakarta.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
-  public GetCampaignOverview status(StatusEnum status) {
+  public GetCampaignOverview status(@jakarta.annotation.Nonnull StatusEnum status) {
     
     this.status = status;
     return this;
@@ -316,11 +330,11 @@ public class GetCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_STATUS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setStatus(StatusEnum status) {
+  public void setStatus(@jakarta.annotation.Nonnull StatusEnum status) {
     this.status = status;
   }
 
-  public GetCampaignOverview scheduledAt(String scheduledAt) {
+  public GetCampaignOverview scheduledAt(@jakarta.annotation.Nullable String scheduledAt) {
     
     this.scheduledAt = scheduledAt;
     return this;
@@ -341,11 +355,11 @@ public class GetCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setScheduledAt(String scheduledAt) {
+  public void setScheduledAt(@jakarta.annotation.Nullable String scheduledAt) {
     this.scheduledAt = scheduledAt;
   }
 
-  public GetCampaignOverview abTesting(Boolean abTesting) {
+  public GetCampaignOverview abTesting(@jakarta.annotation.Nullable Boolean abTesting) {
     
     this.abTesting = abTesting;
     return this;
@@ -366,11 +380,11 @@ public class GetCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_AB_TESTING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setAbTesting(Boolean abTesting) {
+  public void setAbTesting(@jakarta.annotation.Nullable Boolean abTesting) {
     this.abTesting = abTesting;
   }
 
-  public GetCampaignOverview subjectA(String subjectA) {
+  public GetCampaignOverview subjectA(@jakarta.annotation.Nullable String subjectA) {
     
     this.subjectA = subjectA;
     return this;
@@ -391,11 +405,11 @@ public class GetCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_SUBJECT_A)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSubjectA(String subjectA) {
+  public void setSubjectA(@jakarta.annotation.Nullable String subjectA) {
     this.subjectA = subjectA;
   }
 
-  public GetCampaignOverview subjectB(String subjectB) {
+  public GetCampaignOverview subjectB(@jakarta.annotation.Nullable String subjectB) {
     
     this.subjectB = subjectB;
     return this;
@@ -416,11 +430,11 @@ public class GetCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_SUBJECT_B)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSubjectB(String subjectB) {
+  public void setSubjectB(@jakarta.annotation.Nullable String subjectB) {
     this.subjectB = subjectB;
   }
 
-  public GetCampaignOverview splitRule(Integer splitRule) {
+  public GetCampaignOverview splitRule(@jakarta.annotation.Nullable Integer splitRule) {
     
     this.splitRule = splitRule;
     return this;
@@ -441,11 +455,11 @@ public class GetCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_SPLIT_RULE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSplitRule(Integer splitRule) {
+  public void setSplitRule(@jakarta.annotation.Nullable Integer splitRule) {
     this.splitRule = splitRule;
   }
 
-  public GetCampaignOverview winnerCriteria(String winnerCriteria) {
+  public GetCampaignOverview winnerCriteria(@jakarta.annotation.Nullable String winnerCriteria) {
     
     this.winnerCriteria = winnerCriteria;
     return this;
@@ -466,11 +480,11 @@ public class GetCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_WINNER_CRITERIA)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setWinnerCriteria(String winnerCriteria) {
+  public void setWinnerCriteria(@jakarta.annotation.Nullable String winnerCriteria) {
     this.winnerCriteria = winnerCriteria;
   }
 
-  public GetCampaignOverview winnerDelay(Integer winnerDelay) {
+  public GetCampaignOverview winnerDelay(@jakarta.annotation.Nullable Integer winnerDelay) {
     
     this.winnerDelay = winnerDelay;
     return this;
@@ -491,11 +505,11 @@ public class GetCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_WINNER_DELAY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setWinnerDelay(Integer winnerDelay) {
+  public void setWinnerDelay(@jakarta.annotation.Nullable Integer winnerDelay) {
     this.winnerDelay = winnerDelay;
   }
 
-  public GetCampaignOverview sendAtBestTime(Boolean sendAtBestTime) {
+  public GetCampaignOverview sendAtBestTime(@jakarta.annotation.Nullable Boolean sendAtBestTime) {
     
     this.sendAtBestTime = sendAtBestTime;
     return this;
@@ -516,7 +530,7 @@ public class GetCampaignOverview {
 
   @JsonProperty(JSON_PROPERTY_SEND_AT_BEST_TIME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSendAtBestTime(Boolean sendAtBestTime) {
+  public void setSendAtBestTime(@jakarta.annotation.Nullable Boolean sendAtBestTime) {
     this.sendAtBestTime = sendAtBestTime;
   }
 

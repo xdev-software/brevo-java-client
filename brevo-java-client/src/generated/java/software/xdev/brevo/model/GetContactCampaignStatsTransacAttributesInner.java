@@ -38,18 +38,21 @@ import java.util.StringJoiner;
 @JsonTypeName("getContactCampaignStats_transacAttributes_inner")
 public class GetContactCampaignStatsTransacAttributesInner {
   public static final String JSON_PROPERTY_ORDER_DATE = "orderDate";
+  @jakarta.annotation.Nonnull
   private LocalDate orderDate;
 
   public static final String JSON_PROPERTY_ORDER_PRICE = "orderPrice";
+  @jakarta.annotation.Nonnull
   private Float orderPrice;
 
   public static final String JSON_PROPERTY_ORDER_ID = "orderId";
+  @jakarta.annotation.Nonnull
   private Long orderId;
 
   public GetContactCampaignStatsTransacAttributesInner() {
   }
 
-  public GetContactCampaignStatsTransacAttributesInner orderDate(LocalDate orderDate) {
+  public GetContactCampaignStatsTransacAttributesInner orderDate(@jakarta.annotation.Nonnull LocalDate orderDate) {
     
     this.orderDate = orderDate;
     return this;
@@ -70,11 +73,11 @@ public class GetContactCampaignStatsTransacAttributesInner {
 
   @JsonProperty(JSON_PROPERTY_ORDER_DATE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOrderDate(LocalDate orderDate) {
+  public void setOrderDate(@jakarta.annotation.Nonnull LocalDate orderDate) {
     this.orderDate = orderDate;
   }
 
-  public GetContactCampaignStatsTransacAttributesInner orderPrice(Float orderPrice) {
+  public GetContactCampaignStatsTransacAttributesInner orderPrice(@jakarta.annotation.Nonnull Float orderPrice) {
     
     this.orderPrice = orderPrice;
     return this;
@@ -95,11 +98,11 @@ public class GetContactCampaignStatsTransacAttributesInner {
 
   @JsonProperty(JSON_PROPERTY_ORDER_PRICE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOrderPrice(Float orderPrice) {
+  public void setOrderPrice(@jakarta.annotation.Nonnull Float orderPrice) {
     this.orderPrice = orderPrice;
   }
 
-  public GetContactCampaignStatsTransacAttributesInner orderId(Long orderId) {
+  public GetContactCampaignStatsTransacAttributesInner orderId(@jakarta.annotation.Nonnull Long orderId) {
     
     this.orderId = orderId;
     return this;
@@ -120,7 +123,7 @@ public class GetContactCampaignStatsTransacAttributesInner {
 
   @JsonProperty(JSON_PROPERTY_ORDER_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOrderId(Long orderId) {
+  public void setOrderId(@jakarta.annotation.Nonnull Long orderId) {
     this.orderId = orderId;
   }
 

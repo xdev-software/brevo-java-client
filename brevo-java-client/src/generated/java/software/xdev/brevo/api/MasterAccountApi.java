@@ -89,7 +89,7 @@ public class MasterAccountApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/corporate/group/{id}"
-      .replaceAll("\\{" + "id" + "\\}", apiClient.escapeString(id.toString()));
+      .replaceAll("\\{" + "id" + "\\}", apiClient.escapeString(apiClient.parameterToString(id)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -163,7 +163,7 @@ public class MasterAccountApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/corporate/group/{id}"
-      .replaceAll("\\{" + "id" + "\\}", apiClient.escapeString(id.toString()));
+      .replaceAll("\\{" + "id" + "\\}", apiClient.escapeString(apiClient.parameterToString(id)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -243,7 +243,7 @@ public class MasterAccountApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/corporate/group/{id}"
-      .replaceAll("\\{" + "id" + "\\}", apiClient.escapeString(id.toString()));
+      .replaceAll("\\{" + "id" + "\\}", apiClient.escapeString(apiClient.parameterToString(id)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -391,7 +391,7 @@ public class MasterAccountApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/corporate/group/unlink/{groupId}/subAccounts"
-      .replaceAll("\\{" + "groupId" + "\\}", apiClient.escapeString(groupId.toString()));
+      .replaceAll("\\{" + "groupId" + "\\}", apiClient.escapeString(apiClient.parameterToString(groupId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -620,7 +620,7 @@ public class MasterAccountApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/corporate/subAccount/{id}/applications/toggle"
-      .replaceAll("\\{" + "id" + "\\}", apiClient.escapeString(id.toString()));
+      .replaceAll("\\{" + "id" + "\\}", apiClient.escapeString(apiClient.parameterToString(id)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -692,7 +692,7 @@ public class MasterAccountApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/corporate/subAccount/{id}"
-      .replaceAll("\\{" + "id" + "\\}", apiClient.escapeString(id.toString()));
+      .replaceAll("\\{" + "id" + "\\}", apiClient.escapeString(apiClient.parameterToString(id)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -766,7 +766,7 @@ public class MasterAccountApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/corporate/subAccount/{id}"
-      .replaceAll("\\{" + "id" + "\\}", apiClient.escapeString(id.toString()));
+      .replaceAll("\\{" + "id" + "\\}", apiClient.escapeString(apiClient.parameterToString(id)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -846,7 +846,7 @@ public class MasterAccountApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/corporate/subAccount/{id}/plan"
-      .replaceAll("\\{" + "id" + "\\}", apiClient.escapeString(id.toString()));
+      .replaceAll("\\{" + "id" + "\\}", apiClient.escapeString(apiClient.parameterToString(id)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -1139,8 +1139,8 @@ public class MasterAccountApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/corporate/user/invitation/{action}/{email}"
-      .replaceAll("\\{" + "action" + "\\}", apiClient.escapeString(action.toString()))
-      .replaceAll("\\{" + "email" + "\\}", apiClient.escapeString(email.toString()));
+      .replaceAll("\\{" + "action" + "\\}", apiClient.escapeString(apiClient.parameterToString(action)))
+      .replaceAll("\\{" + "email" + "\\}", apiClient.escapeString(apiClient.parameterToString(email)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -1213,7 +1213,7 @@ public class MasterAccountApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/corporate/user/revoke/{email}"
-      .replaceAll("\\{" + "email" + "\\}", apiClient.escapeString(email.toString()));
+      .replaceAll("\\{" + "email" + "\\}", apiClient.escapeString(apiClient.parameterToString(email)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;

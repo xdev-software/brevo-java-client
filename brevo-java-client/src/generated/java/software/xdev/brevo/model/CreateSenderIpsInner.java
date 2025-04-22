@@ -37,18 +37,21 @@ import java.util.StringJoiner;
 @JsonTypeName("createSender_ips_inner")
 public class CreateSenderIpsInner {
   public static final String JSON_PROPERTY_IP = "ip";
+  @jakarta.annotation.Nonnull
   private String ip;
 
   public static final String JSON_PROPERTY_DOMAIN = "domain";
+  @jakarta.annotation.Nonnull
   private String domain;
 
   public static final String JSON_PROPERTY_WEIGHT = "weight";
+  @jakarta.annotation.Nullable
   private Long weight;
 
   public CreateSenderIpsInner() {
   }
 
-  public CreateSenderIpsInner ip(String ip) {
+  public CreateSenderIpsInner ip(@jakarta.annotation.Nonnull String ip) {
     
     this.ip = ip;
     return this;
@@ -69,11 +72,11 @@ public class CreateSenderIpsInner {
 
   @JsonProperty(JSON_PROPERTY_IP)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIp(String ip) {
+  public void setIp(@jakarta.annotation.Nonnull String ip) {
     this.ip = ip;
   }
 
-  public CreateSenderIpsInner domain(String domain) {
+  public CreateSenderIpsInner domain(@jakarta.annotation.Nonnull String domain) {
     
     this.domain = domain;
     return this;
@@ -94,11 +97,11 @@ public class CreateSenderIpsInner {
 
   @JsonProperty(JSON_PROPERTY_DOMAIN)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDomain(String domain) {
+  public void setDomain(@jakarta.annotation.Nonnull String domain) {
     this.domain = domain;
   }
 
-  public CreateSenderIpsInner weight(Long weight) {
+  public CreateSenderIpsInner weight(@jakarta.annotation.Nullable Long weight) {
     
     this.weight = weight;
     return this;
@@ -121,7 +124,7 @@ public class CreateSenderIpsInner {
 
   @JsonProperty(JSON_PROPERTY_WEIGHT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setWeight(Long weight) {
+  public void setWeight(@jakarta.annotation.Nullable Long weight) {
     this.weight = weight;
   }
 

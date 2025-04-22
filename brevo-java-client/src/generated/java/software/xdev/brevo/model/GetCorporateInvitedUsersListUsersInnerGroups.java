@@ -36,15 +36,17 @@ import java.util.StringJoiner;
 @JsonTypeName("getCorporateInvitedUsersList_users_inner_groups")
 public class GetCorporateInvitedUsersListUsersInnerGroups {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nullable
   private String id;
 
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nullable
   private String name;
 
   public GetCorporateInvitedUsersListUsersInnerGroups() {
   }
 
-  public GetCorporateInvitedUsersListUsersInnerGroups id(String id) {
+  public GetCorporateInvitedUsersListUsersInnerGroups id(@jakarta.annotation.Nullable String id) {
     
     this.id = id;
     return this;
@@ -65,11 +67,11 @@ public class GetCorporateInvitedUsersListUsersInnerGroups {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setId(String id) {
+  public void setId(@jakarta.annotation.Nullable String id) {
     this.id = id;
   }
 
-  public GetCorporateInvitedUsersListUsersInnerGroups name(String name) {
+  public GetCorporateInvitedUsersListUsersInnerGroups name(@jakarta.annotation.Nullable String name) {
     
     this.name = name;
     return this;
@@ -90,7 +92,7 @@ public class GetCorporateInvitedUsersListUsersInnerGroups {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nullable String name) {
     this.name = name;
   }
 

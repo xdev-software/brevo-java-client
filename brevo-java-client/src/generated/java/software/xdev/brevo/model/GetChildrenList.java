@@ -40,15 +40,17 @@ import java.util.StringJoiner;
 @JsonTypeName("getChildrenList")
 public class GetChildrenList {
   public static final String JSON_PROPERTY_CHILDREN = "children";
+  @jakarta.annotation.Nullable
   private List<GetChildrenListChildrenInner> children = new ArrayList<>();
 
   public static final String JSON_PROPERTY_COUNT = "count";
+  @jakarta.annotation.Nullable
   private Long count;
 
   public GetChildrenList() {
   }
 
-  public GetChildrenList children(List<GetChildrenListChildrenInner> children) {
+  public GetChildrenList children(@jakarta.annotation.Nullable List<GetChildrenListChildrenInner> children) {
     
     this.children = children;
     return this;
@@ -77,11 +79,11 @@ public class GetChildrenList {
 
   @JsonProperty(JSON_PROPERTY_CHILDREN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setChildren(List<GetChildrenListChildrenInner> children) {
+  public void setChildren(@jakarta.annotation.Nullable List<GetChildrenListChildrenInner> children) {
     this.children = children;
   }
 
-  public GetChildrenList count(Long count) {
+  public GetChildrenList count(@jakarta.annotation.Nullable Long count) {
     
     this.count = count;
     return this;
@@ -102,7 +104,7 @@ public class GetChildrenList {
 
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCount(Long count) {
+  public void setCount(@jakarta.annotation.Nullable Long count) {
     this.count = count;
   }
 

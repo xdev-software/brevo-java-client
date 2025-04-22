@@ -40,20 +40,22 @@ import java.util.StringJoiner;
 @JsonTypeName("getWhatsAppConfig")
 public class GetWhatsAppConfig {
   public static final String JSON_PROPERTY_WHATSAPP_BUSINESS_ACCOUNT_ID = "whatsappBusinessAccountId";
+  @jakarta.annotation.Nullable
   private String whatsappBusinessAccountId;
 
   public static final String JSON_PROPERTY_SENDING_LIMIT = "sendingLimit";
+  @jakarta.annotation.Nullable
   private String sendingLimit;
 
   /**
    * Quality status of phone number associated with WhatsApp account. There are three quality ratings. example - **High (GREEN) , Medium (YELLOW) and Low(RED)**
    */
   public enum PhoneNumberQualityEnum {
-    GREEN("GREEN"),
+    GREEN(String.valueOf("GREEN")),
     
-    YELLOW("YELLOW"),
+    YELLOW(String.valueOf("YELLOW")),
     
-    RED("RED");
+    RED(String.valueOf("RED"));
 
     private String value;
 
@@ -83,17 +85,18 @@ public class GetWhatsAppConfig {
   }
 
   public static final String JSON_PROPERTY_PHONE_NUMBER_QUALITY = "phoneNumberQuality";
+  @jakarta.annotation.Nullable
   private PhoneNumberQualityEnum phoneNumberQuality;
 
   /**
    * Status information related to WhatsApp API account
    */
   public enum WhatsappBusinessAccountStatusEnum {
-    APPROVED("APPROVED"),
+    APPROVED(String.valueOf("APPROVED")),
     
-    PENDING("PENDING"),
+    PENDING(String.valueOf("PENDING")),
     
-    REJECTED("REJECTED");
+    REJECTED(String.valueOf("REJECTED"));
 
     private String value;
 
@@ -123,20 +126,22 @@ public class GetWhatsAppConfig {
   }
 
   public static final String JSON_PROPERTY_WHATSAPP_BUSINESS_ACCOUNT_STATUS = "whatsappBusinessAccountStatus";
+  @jakarta.annotation.Nullable
   private WhatsappBusinessAccountStatusEnum whatsappBusinessAccountStatus;
 
   public static final String JSON_PROPERTY_BUSINESS_STATUS = "businessStatus";
+  @jakarta.annotation.Nullable
   private String businessStatus;
 
   /**
    * Status of the name associated with WhatsApp Phone number
    */
   public enum PhoneNumberNameStatusEnum {
-    APPROVED("APPROVED"),
+    APPROVED(String.valueOf("APPROVED")),
     
-    PENDING("PENDING"),
+    PENDING(String.valueOf("PENDING")),
     
-    REJECTED("REJECTED");
+    REJECTED(String.valueOf("REJECTED"));
 
     private String value;
 
@@ -166,12 +171,13 @@ public class GetWhatsAppConfig {
   }
 
   public static final String JSON_PROPERTY_PHONE_NUMBER_NAME_STATUS = "phoneNumberNameStatus";
+  @jakarta.annotation.Nullable
   private PhoneNumberNameStatusEnum phoneNumberNameStatus;
 
   public GetWhatsAppConfig() {
   }
 
-  public GetWhatsAppConfig whatsappBusinessAccountId(String whatsappBusinessAccountId) {
+  public GetWhatsAppConfig whatsappBusinessAccountId(@jakarta.annotation.Nullable String whatsappBusinessAccountId) {
     
     this.whatsappBusinessAccountId = whatsappBusinessAccountId;
     return this;
@@ -192,11 +198,11 @@ public class GetWhatsAppConfig {
 
   @JsonProperty(JSON_PROPERTY_WHATSAPP_BUSINESS_ACCOUNT_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setWhatsappBusinessAccountId(String whatsappBusinessAccountId) {
+  public void setWhatsappBusinessAccountId(@jakarta.annotation.Nullable String whatsappBusinessAccountId) {
     this.whatsappBusinessAccountId = whatsappBusinessAccountId;
   }
 
-  public GetWhatsAppConfig sendingLimit(String sendingLimit) {
+  public GetWhatsAppConfig sendingLimit(@jakarta.annotation.Nullable String sendingLimit) {
     
     this.sendingLimit = sendingLimit;
     return this;
@@ -217,11 +223,11 @@ public class GetWhatsAppConfig {
 
   @JsonProperty(JSON_PROPERTY_SENDING_LIMIT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSendingLimit(String sendingLimit) {
+  public void setSendingLimit(@jakarta.annotation.Nullable String sendingLimit) {
     this.sendingLimit = sendingLimit;
   }
 
-  public GetWhatsAppConfig phoneNumberQuality(PhoneNumberQualityEnum phoneNumberQuality) {
+  public GetWhatsAppConfig phoneNumberQuality(@jakarta.annotation.Nullable PhoneNumberQualityEnum phoneNumberQuality) {
     
     this.phoneNumberQuality = phoneNumberQuality;
     return this;
@@ -242,11 +248,11 @@ public class GetWhatsAppConfig {
 
   @JsonProperty(JSON_PROPERTY_PHONE_NUMBER_QUALITY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setPhoneNumberQuality(PhoneNumberQualityEnum phoneNumberQuality) {
+  public void setPhoneNumberQuality(@jakarta.annotation.Nullable PhoneNumberQualityEnum phoneNumberQuality) {
     this.phoneNumberQuality = phoneNumberQuality;
   }
 
-  public GetWhatsAppConfig whatsappBusinessAccountStatus(WhatsappBusinessAccountStatusEnum whatsappBusinessAccountStatus) {
+  public GetWhatsAppConfig whatsappBusinessAccountStatus(@jakarta.annotation.Nullable WhatsappBusinessAccountStatusEnum whatsappBusinessAccountStatus) {
     
     this.whatsappBusinessAccountStatus = whatsappBusinessAccountStatus;
     return this;
@@ -267,11 +273,11 @@ public class GetWhatsAppConfig {
 
   @JsonProperty(JSON_PROPERTY_WHATSAPP_BUSINESS_ACCOUNT_STATUS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setWhatsappBusinessAccountStatus(WhatsappBusinessAccountStatusEnum whatsappBusinessAccountStatus) {
+  public void setWhatsappBusinessAccountStatus(@jakarta.annotation.Nullable WhatsappBusinessAccountStatusEnum whatsappBusinessAccountStatus) {
     this.whatsappBusinessAccountStatus = whatsappBusinessAccountStatus;
   }
 
-  public GetWhatsAppConfig businessStatus(String businessStatus) {
+  public GetWhatsAppConfig businessStatus(@jakarta.annotation.Nullable String businessStatus) {
     
     this.businessStatus = businessStatus;
     return this;
@@ -292,11 +298,11 @@ public class GetWhatsAppConfig {
 
   @JsonProperty(JSON_PROPERTY_BUSINESS_STATUS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setBusinessStatus(String businessStatus) {
+  public void setBusinessStatus(@jakarta.annotation.Nullable String businessStatus) {
     this.businessStatus = businessStatus;
   }
 
-  public GetWhatsAppConfig phoneNumberNameStatus(PhoneNumberNameStatusEnum phoneNumberNameStatus) {
+  public GetWhatsAppConfig phoneNumberNameStatus(@jakarta.annotation.Nullable PhoneNumberNameStatusEnum phoneNumberNameStatus) {
     
     this.phoneNumberNameStatus = phoneNumberNameStatus;
     return this;
@@ -317,7 +323,7 @@ public class GetWhatsAppConfig {
 
   @JsonProperty(JSON_PROPERTY_PHONE_NUMBER_NAME_STATUS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setPhoneNumberNameStatus(PhoneNumberNameStatusEnum phoneNumberNameStatus) {
+  public void setPhoneNumberNameStatus(@jakarta.annotation.Nullable PhoneNumberNameStatusEnum phoneNumberNameStatus) {
     this.phoneNumberNameStatus = phoneNumberNameStatus;
   }
 

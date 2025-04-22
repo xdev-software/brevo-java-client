@@ -39,15 +39,17 @@ import java.util.StringJoiner;
 @JsonTypeName("sendReport_email")
 public class SendReportEmail {
   public static final String JSON_PROPERTY_TO = "to";
+  @jakarta.annotation.Nonnull
   private List<String> to = new ArrayList<>();
 
   public static final String JSON_PROPERTY_BODY = "body";
+  @jakarta.annotation.Nonnull
   private String body;
 
   public SendReportEmail() {
   }
 
-  public SendReportEmail to(List<String> to) {
+  public SendReportEmail to(@jakarta.annotation.Nonnull List<String> to) {
     
     this.to = to;
     return this;
@@ -76,11 +78,11 @@ public class SendReportEmail {
 
   @JsonProperty(JSON_PROPERTY_TO)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTo(List<String> to) {
+  public void setTo(@jakarta.annotation.Nonnull List<String> to) {
     this.to = to;
   }
 
-  public SendReportEmail body(String body) {
+  public SendReportEmail body(@jakarta.annotation.Nonnull String body) {
     
     this.body = body;
     return this;
@@ -101,7 +103,7 @@ public class SendReportEmail {
 
   @JsonProperty(JSON_PROPERTY_BODY)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setBody(String body) {
+  public void setBody(@jakarta.annotation.Nonnull String body) {
     this.body = body;
   }
 

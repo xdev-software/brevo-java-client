@@ -44,30 +44,37 @@ import java.util.StringJoiner;
 })
 public class Note {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nullable
   private String id;
 
   public static final String JSON_PROPERTY_TEXT = "text";
+  @jakarta.annotation.Nonnull
   private String text;
 
   public static final String JSON_PROPERTY_CONTACT_IDS = "contactIds";
+  @jakarta.annotation.Nullable
   private List<Integer> contactIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_DEAL_IDS = "dealIds";
+  @jakarta.annotation.Nullable
   private List<String> dealIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_AUTHOR_ID = "authorId";
+  @jakarta.annotation.Nullable
   private Object authorId;
 
   public static final String JSON_PROPERTY_CREATED_AT = "createdAt";
+  @jakarta.annotation.Nullable
   private OffsetDateTime createdAt;
 
   public static final String JSON_PROPERTY_UPDATED_AT = "updatedAt";
+  @jakarta.annotation.Nullable
   private OffsetDateTime updatedAt;
 
   public Note() {
   }
 
-  public Note id(String id) {
+  public Note id(@jakarta.annotation.Nullable String id) {
     
     this.id = id;
     return this;
@@ -88,11 +95,11 @@ public class Note {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setId(String id) {
+  public void setId(@jakarta.annotation.Nullable String id) {
     this.id = id;
   }
 
-  public Note text(String text) {
+  public Note text(@jakarta.annotation.Nonnull String text) {
     
     this.text = text;
     return this;
@@ -113,11 +120,11 @@ public class Note {
 
   @JsonProperty(JSON_PROPERTY_TEXT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setText(String text) {
+  public void setText(@jakarta.annotation.Nonnull String text) {
     this.text = text;
   }
 
-  public Note contactIds(List<Integer> contactIds) {
+  public Note contactIds(@jakarta.annotation.Nullable List<Integer> contactIds) {
     
     this.contactIds = contactIds;
     return this;
@@ -146,11 +153,11 @@ public class Note {
 
   @JsonProperty(JSON_PROPERTY_CONTACT_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setContactIds(List<Integer> contactIds) {
+  public void setContactIds(@jakarta.annotation.Nullable List<Integer> contactIds) {
     this.contactIds = contactIds;
   }
 
-  public Note dealIds(List<String> dealIds) {
+  public Note dealIds(@jakarta.annotation.Nullable List<String> dealIds) {
     
     this.dealIds = dealIds;
     return this;
@@ -179,11 +186,11 @@ public class Note {
 
   @JsonProperty(JSON_PROPERTY_DEAL_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDealIds(List<String> dealIds) {
+  public void setDealIds(@jakarta.annotation.Nullable List<String> dealIds) {
     this.dealIds = dealIds;
   }
 
-  public Note authorId(Object authorId) {
+  public Note authorId(@jakarta.annotation.Nullable Object authorId) {
     
     this.authorId = authorId;
     return this;
@@ -204,11 +211,11 @@ public class Note {
 
   @JsonProperty(JSON_PROPERTY_AUTHOR_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setAuthorId(Object authorId) {
+  public void setAuthorId(@jakarta.annotation.Nullable Object authorId) {
     this.authorId = authorId;
   }
 
-  public Note createdAt(OffsetDateTime createdAt) {
+  public Note createdAt(@jakarta.annotation.Nullable OffsetDateTime createdAt) {
     
     this.createdAt = createdAt;
     return this;
@@ -229,11 +236,11 @@ public class Note {
 
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@jakarta.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
-  public Note updatedAt(OffsetDateTime updatedAt) {
+  public Note updatedAt(@jakarta.annotation.Nullable OffsetDateTime updatedAt) {
     
     this.updatedAt = updatedAt;
     return this;
@@ -254,7 +261,7 @@ public class Note {
 
   @JsonProperty(JSON_PROPERTY_UPDATED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUpdatedAt(OffsetDateTime updatedAt) {
+  public void setUpdatedAt(@jakarta.annotation.Nullable OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
   }
 

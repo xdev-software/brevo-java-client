@@ -41,21 +41,25 @@ import java.util.StringJoiner;
 @JsonTypeName("sendWhatsappMessageTemplate")
 public class SendWhatsappMessageTemplate {
   public static final String JSON_PROPERTY_TEMPLATE_ID = "templateId";
+  @jakarta.annotation.Nonnull
   private Integer templateId;
 
   public static final String JSON_PROPERTY_SENDER_NUMBER = "senderNumber";
+  @jakarta.annotation.Nonnull
   private String senderNumber;
 
   public static final String JSON_PROPERTY_PARAMS = "params";
+  @jakarta.annotation.Nullable
   private Object params;
 
   public static final String JSON_PROPERTY_CONTACT_NUMBERS = "contactNumbers";
+  @jakarta.annotation.Nonnull
   private List<String> contactNumbers = new ArrayList<>();
 
   public SendWhatsappMessageTemplate() {
   }
 
-  public SendWhatsappMessageTemplate templateId(Integer templateId) {
+  public SendWhatsappMessageTemplate templateId(@jakarta.annotation.Nonnull Integer templateId) {
     
     this.templateId = templateId;
     return this;
@@ -76,11 +80,11 @@ public class SendWhatsappMessageTemplate {
 
   @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTemplateId(Integer templateId) {
+  public void setTemplateId(@jakarta.annotation.Nonnull Integer templateId) {
     this.templateId = templateId;
   }
 
-  public SendWhatsappMessageTemplate senderNumber(String senderNumber) {
+  public SendWhatsappMessageTemplate senderNumber(@jakarta.annotation.Nonnull String senderNumber) {
     
     this.senderNumber = senderNumber;
     return this;
@@ -101,11 +105,11 @@ public class SendWhatsappMessageTemplate {
 
   @JsonProperty(JSON_PROPERTY_SENDER_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSenderNumber(String senderNumber) {
+  public void setSenderNumber(@jakarta.annotation.Nonnull String senderNumber) {
     this.senderNumber = senderNumber;
   }
 
-  public SendWhatsappMessageTemplate params(Object params) {
+  public SendWhatsappMessageTemplate params(@jakarta.annotation.Nullable Object params) {
     
     this.params = params;
     return this;
@@ -126,11 +130,11 @@ public class SendWhatsappMessageTemplate {
 
   @JsonProperty(JSON_PROPERTY_PARAMS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setParams(Object params) {
+  public void setParams(@jakarta.annotation.Nullable Object params) {
     this.params = params;
   }
 
-  public SendWhatsappMessageTemplate contactNumbers(List<String> contactNumbers) {
+  public SendWhatsappMessageTemplate contactNumbers(@jakarta.annotation.Nonnull List<String> contactNumbers) {
     
     this.contactNumbers = contactNumbers;
     return this;
@@ -159,7 +163,7 @@ public class SendWhatsappMessageTemplate {
 
   @JsonProperty(JSON_PROPERTY_CONTACT_NUMBERS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setContactNumbers(List<String> contactNumbers) {
+  public void setContactNumbers(@jakarta.annotation.Nonnull List<String> contactNumbers) {
     this.contactNumbers = contactNumbers;
   }
 

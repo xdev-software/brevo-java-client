@@ -34,12 +34,13 @@ import java.util.StringJoiner;
 })
 public class FileDownloadableLink {
   public static final String JSON_PROPERTY_FILE_URL = "fileUrl";
+  @jakarta.annotation.Nullable
   private String fileUrl;
 
   public FileDownloadableLink() {
   }
 
-  public FileDownloadableLink fileUrl(String fileUrl) {
+  public FileDownloadableLink fileUrl(@jakarta.annotation.Nullable String fileUrl) {
     
     this.fileUrl = fileUrl;
     return this;
@@ -60,7 +61,7 @@ public class FileDownloadableLink {
 
   @JsonProperty(JSON_PROPERTY_FILE_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setFileUrl(String fileUrl) {
+  public void setFileUrl(@jakarta.annotation.Nullable String fileUrl) {
     this.fileUrl = fileUrl;
   }
 

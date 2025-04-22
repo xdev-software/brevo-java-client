@@ -72,7 +72,7 @@ public class ProcessApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/processes/{processId}"
-      .replaceAll("\\{" + "processId" + "\\}", apiClient.escapeString(processId.toString()));
+      .replaceAll("\\{" + "processId" + "\\}", apiClient.escapeString(apiClient.parameterToString(processId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;

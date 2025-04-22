@@ -44,15 +44,16 @@ import java.util.StringJoiner;
 })
 public class ConversationsMessage {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nullable
   private String id;
 
   /**
    * &#x60;\&quot;agent\&quot;&#x60; for agents’ messages, &#x60;\&quot;visitor\&quot;&#x60; for visitors’ messages.
    */
   public enum TypeEnum {
-    AGENT("agent"),
+    AGENT(String.valueOf("agent")),
     
-    VISITOR("visitor");
+    VISITOR(String.valueOf("visitor"));
 
     private String value;
 
@@ -82,36 +83,45 @@ public class ConversationsMessage {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @jakarta.annotation.Nullable
   private TypeEnum type;
 
   public static final String JSON_PROPERTY_TEXT = "text";
+  @jakarta.annotation.Nullable
   private String text;
 
   public static final String JSON_PROPERTY_VISITOR_ID = "visitorId";
+  @jakarta.annotation.Nullable
   private String visitorId;
 
   public static final String JSON_PROPERTY_AGENT_ID = "agentId";
+  @jakarta.annotation.Nullable
   private String agentId;
 
   public static final String JSON_PROPERTY_AGENT_NAME = "agentName";
+  @jakarta.annotation.Nullable
   private String agentName;
 
   public static final String JSON_PROPERTY_CREATED_AT = "createdAt";
+  @jakarta.annotation.Nullable
   private Long createdAt;
 
   public static final String JSON_PROPERTY_IS_PUSHED = "isPushed";
+  @jakarta.annotation.Nullable
   private Boolean isPushed;
 
   public static final String JSON_PROPERTY_RECEIVED_FROM = "receivedFrom";
+  @jakarta.annotation.Nullable
   private String receivedFrom;
 
   public static final String JSON_PROPERTY_FILE = "file";
+  @jakarta.annotation.Nullable
   private ConversationsMessageFile _file;
 
   public ConversationsMessage() {
   }
 
-  public ConversationsMessage id(String id) {
+  public ConversationsMessage id(@jakarta.annotation.Nullable String id) {
     
     this.id = id;
     return this;
@@ -132,11 +142,11 @@ public class ConversationsMessage {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setId(String id) {
+  public void setId(@jakarta.annotation.Nullable String id) {
     this.id = id;
   }
 
-  public ConversationsMessage type(TypeEnum type) {
+  public ConversationsMessage type(@jakarta.annotation.Nullable TypeEnum type) {
     
     this.type = type;
     return this;
@@ -157,11 +167,11 @@ public class ConversationsMessage {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setType(TypeEnum type) {
+  public void setType(@jakarta.annotation.Nullable TypeEnum type) {
     this.type = type;
   }
 
-  public ConversationsMessage text(String text) {
+  public ConversationsMessage text(@jakarta.annotation.Nullable String text) {
     
     this.text = text;
     return this;
@@ -182,11 +192,11 @@ public class ConversationsMessage {
 
   @JsonProperty(JSON_PROPERTY_TEXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setText(String text) {
+  public void setText(@jakarta.annotation.Nullable String text) {
     this.text = text;
   }
 
-  public ConversationsMessage visitorId(String visitorId) {
+  public ConversationsMessage visitorId(@jakarta.annotation.Nullable String visitorId) {
     
     this.visitorId = visitorId;
     return this;
@@ -207,11 +217,11 @@ public class ConversationsMessage {
 
   @JsonProperty(JSON_PROPERTY_VISITOR_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setVisitorId(String visitorId) {
+  public void setVisitorId(@jakarta.annotation.Nullable String visitorId) {
     this.visitorId = visitorId;
   }
 
-  public ConversationsMessage agentId(String agentId) {
+  public ConversationsMessage agentId(@jakarta.annotation.Nullable String agentId) {
     
     this.agentId = agentId;
     return this;
@@ -232,11 +242,11 @@ public class ConversationsMessage {
 
   @JsonProperty(JSON_PROPERTY_AGENT_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setAgentId(String agentId) {
+  public void setAgentId(@jakarta.annotation.Nullable String agentId) {
     this.agentId = agentId;
   }
 
-  public ConversationsMessage agentName(String agentName) {
+  public ConversationsMessage agentName(@jakarta.annotation.Nullable String agentName) {
     
     this.agentName = agentName;
     return this;
@@ -257,11 +267,11 @@ public class ConversationsMessage {
 
   @JsonProperty(JSON_PROPERTY_AGENT_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setAgentName(String agentName) {
+  public void setAgentName(@jakarta.annotation.Nullable String agentName) {
     this.agentName = agentName;
   }
 
-  public ConversationsMessage createdAt(Long createdAt) {
+  public ConversationsMessage createdAt(@jakarta.annotation.Nullable Long createdAt) {
     
     this.createdAt = createdAt;
     return this;
@@ -283,11 +293,11 @@ public class ConversationsMessage {
 
   @JsonProperty(JSON_PROPERTY_CREATED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCreatedAt(Long createdAt) {
+  public void setCreatedAt(@jakarta.annotation.Nullable Long createdAt) {
     this.createdAt = createdAt;
   }
 
-  public ConversationsMessage isPushed(Boolean isPushed) {
+  public ConversationsMessage isPushed(@jakarta.annotation.Nullable Boolean isPushed) {
     
     this.isPushed = isPushed;
     return this;
@@ -308,11 +318,11 @@ public class ConversationsMessage {
 
   @JsonProperty(JSON_PROPERTY_IS_PUSHED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setIsPushed(Boolean isPushed) {
+  public void setIsPushed(@jakarta.annotation.Nullable Boolean isPushed) {
     this.isPushed = isPushed;
   }
 
-  public ConversationsMessage receivedFrom(String receivedFrom) {
+  public ConversationsMessage receivedFrom(@jakarta.annotation.Nullable String receivedFrom) {
     
     this.receivedFrom = receivedFrom;
     return this;
@@ -333,11 +343,11 @@ public class ConversationsMessage {
 
   @JsonProperty(JSON_PROPERTY_RECEIVED_FROM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setReceivedFrom(String receivedFrom) {
+  public void setReceivedFrom(@jakarta.annotation.Nullable String receivedFrom) {
     this.receivedFrom = receivedFrom;
   }
 
-  public ConversationsMessage _file(ConversationsMessageFile _file) {
+  public ConversationsMessage _file(@jakarta.annotation.Nullable ConversationsMessageFile _file) {
     
     this._file = _file;
     return this;
@@ -358,7 +368,7 @@ public class ConversationsMessage {
 
   @JsonProperty(JSON_PROPERTY_FILE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setFile(ConversationsMessageFile _file) {
+  public void setFile(@jakarta.annotation.Nullable ConversationsMessageFile _file) {
     this._file = _file;
   }
 

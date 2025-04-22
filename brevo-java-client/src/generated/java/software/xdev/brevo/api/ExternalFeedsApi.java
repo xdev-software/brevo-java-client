@@ -148,7 +148,7 @@ public class ExternalFeedsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/feeds/{uuid}"
-      .replaceAll("\\{" + "uuid" + "\\}", apiClient.escapeString(uuid.toString()));
+      .replaceAll("\\{" + "uuid" + "\\}", apiClient.escapeString(apiClient.parameterToString(uuid)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -310,7 +310,7 @@ public class ExternalFeedsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/feeds/{uuid}"
-      .replaceAll("\\{" + "uuid" + "\\}", apiClient.escapeString(uuid.toString()));
+      .replaceAll("\\{" + "uuid" + "\\}", apiClient.escapeString(apiClient.parameterToString(uuid)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -390,7 +390,7 @@ public class ExternalFeedsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/feeds/{uuid}"
-      .replaceAll("\\{" + "uuid" + "\\}", apiClient.escapeString(uuid.toString()));
+      .replaceAll("\\{" + "uuid" + "\\}", apiClient.escapeString(apiClient.parameterToString(uuid)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;

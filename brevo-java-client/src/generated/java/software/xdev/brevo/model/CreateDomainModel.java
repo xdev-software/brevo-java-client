@@ -39,21 +39,25 @@ import java.util.StringJoiner;
 @JsonTypeName("createDomainModel")
 public class CreateDomainModel {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nonnull
   private Long id;
 
   public static final String JSON_PROPERTY_DOMAIN_NAME = "domain_name";
+  @jakarta.annotation.Nullable
   private String domainName;
 
   public static final String JSON_PROPERTY_MESSAGE = "message";
+  @jakarta.annotation.Nullable
   private String message;
 
   public static final String JSON_PROPERTY_DNS_RECORDS = "dns_records";
+  @jakarta.annotation.Nullable
   private CreateDomainModelDnsRecords dnsRecords;
 
   public CreateDomainModel() {
   }
 
-  public CreateDomainModel id(Long id) {
+  public CreateDomainModel id(@jakarta.annotation.Nonnull Long id) {
     
     this.id = id;
     return this;
@@ -74,11 +78,11 @@ public class CreateDomainModel {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(Long id) {
+  public void setId(@jakarta.annotation.Nonnull Long id) {
     this.id = id;
   }
 
-  public CreateDomainModel domainName(String domainName) {
+  public CreateDomainModel domainName(@jakarta.annotation.Nullable String domainName) {
     
     this.domainName = domainName;
     return this;
@@ -99,11 +103,11 @@ public class CreateDomainModel {
 
   @JsonProperty(JSON_PROPERTY_DOMAIN_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDomainName(String domainName) {
+  public void setDomainName(@jakarta.annotation.Nullable String domainName) {
     this.domainName = domainName;
   }
 
-  public CreateDomainModel message(String message) {
+  public CreateDomainModel message(@jakarta.annotation.Nullable String message) {
     
     this.message = message;
     return this;
@@ -124,11 +128,11 @@ public class CreateDomainModel {
 
   @JsonProperty(JSON_PROPERTY_MESSAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setMessage(String message) {
+  public void setMessage(@jakarta.annotation.Nullable String message) {
     this.message = message;
   }
 
-  public CreateDomainModel dnsRecords(CreateDomainModelDnsRecords dnsRecords) {
+  public CreateDomainModel dnsRecords(@jakarta.annotation.Nullable CreateDomainModelDnsRecords dnsRecords) {
     
     this.dnsRecords = dnsRecords;
     return this;
@@ -149,7 +153,7 @@ public class CreateDomainModel {
 
   @JsonProperty(JSON_PROPERTY_DNS_RECORDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDnsRecords(CreateDomainModelDnsRecords dnsRecords) {
+  public void setDnsRecords(@jakarta.annotation.Nullable CreateDomainModelDnsRecords dnsRecords) {
     this.dnsRecords = dnsRecords;
   }
 

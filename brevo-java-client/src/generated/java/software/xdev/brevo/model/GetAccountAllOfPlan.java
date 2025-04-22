@@ -44,15 +44,15 @@ public class GetAccountAllOfPlan {
    * Displays the plan type of the user
    */
   public enum TypeEnum {
-    PAY_AS_YOU_GO("payAsYouGo"),
+    PAY_AS_YOU_GO(String.valueOf("payAsYouGo")),
     
-    FREE("free"),
+    FREE(String.valueOf("free")),
     
-    SUBSCRIPTION("subscription"),
+    SUBSCRIPTION(String.valueOf("subscription")),
     
-    SMS("sms"),
+    SMS(String.valueOf("sms")),
     
-    RESELLER("reseller");
+    RESELLER(String.valueOf("reseller"));
 
     private String value;
 
@@ -82,13 +82,14 @@ public class GetAccountAllOfPlan {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @jakarta.annotation.Nonnull
   private TypeEnum type;
 
   /**
    * This is the type of the credit, \&quot;Send Limit\&quot; is one of the possible types of credit of a user. \&quot;Send Limit\&quot; implies the total number of emails you can send to the subscribers in your account.
    */
   public enum CreditsTypeEnum {
-    SEND_LIMIT("sendLimit");
+    SEND_LIMIT(String.valueOf("sendLimit"));
 
     private String value;
 
@@ -118,24 +119,29 @@ public class GetAccountAllOfPlan {
   }
 
   public static final String JSON_PROPERTY_CREDITS_TYPE = "creditsType";
+  @jakarta.annotation.Nonnull
   private CreditsTypeEnum creditsType;
 
   public static final String JSON_PROPERTY_CREDITS = "credits";
+  @jakarta.annotation.Nonnull
   private Float credits;
 
   public static final String JSON_PROPERTY_START_DATE = "startDate";
+  @jakarta.annotation.Nullable
   private LocalDate startDate;
 
   public static final String JSON_PROPERTY_END_DATE = "endDate";
+  @jakarta.annotation.Nullable
   private LocalDate endDate;
 
   public static final String JSON_PROPERTY_USER_LIMIT = "userLimit";
+  @jakarta.annotation.Nullable
   private Integer userLimit;
 
   public GetAccountAllOfPlan() {
   }
 
-  public GetAccountAllOfPlan type(TypeEnum type) {
+  public GetAccountAllOfPlan type(@jakarta.annotation.Nonnull TypeEnum type) {
     
     this.type = type;
     return this;
@@ -156,11 +162,11 @@ public class GetAccountAllOfPlan {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setType(TypeEnum type) {
+  public void setType(@jakarta.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
-  public GetAccountAllOfPlan creditsType(CreditsTypeEnum creditsType) {
+  public GetAccountAllOfPlan creditsType(@jakarta.annotation.Nonnull CreditsTypeEnum creditsType) {
     
     this.creditsType = creditsType;
     return this;
@@ -181,11 +187,11 @@ public class GetAccountAllOfPlan {
 
   @JsonProperty(JSON_PROPERTY_CREDITS_TYPE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCreditsType(CreditsTypeEnum creditsType) {
+  public void setCreditsType(@jakarta.annotation.Nonnull CreditsTypeEnum creditsType) {
     this.creditsType = creditsType;
   }
 
-  public GetAccountAllOfPlan credits(Float credits) {
+  public GetAccountAllOfPlan credits(@jakarta.annotation.Nonnull Float credits) {
     
     this.credits = credits;
     return this;
@@ -206,11 +212,11 @@ public class GetAccountAllOfPlan {
 
   @JsonProperty(JSON_PROPERTY_CREDITS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setCredits(Float credits) {
+  public void setCredits(@jakarta.annotation.Nonnull Float credits) {
     this.credits = credits;
   }
 
-  public GetAccountAllOfPlan startDate(LocalDate startDate) {
+  public GetAccountAllOfPlan startDate(@jakarta.annotation.Nullable LocalDate startDate) {
     
     this.startDate = startDate;
     return this;
@@ -231,11 +237,11 @@ public class GetAccountAllOfPlan {
 
   @JsonProperty(JSON_PROPERTY_START_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setStartDate(LocalDate startDate) {
+  public void setStartDate(@jakarta.annotation.Nullable LocalDate startDate) {
     this.startDate = startDate;
   }
 
-  public GetAccountAllOfPlan endDate(LocalDate endDate) {
+  public GetAccountAllOfPlan endDate(@jakarta.annotation.Nullable LocalDate endDate) {
     
     this.endDate = endDate;
     return this;
@@ -256,11 +262,11 @@ public class GetAccountAllOfPlan {
 
   @JsonProperty(JSON_PROPERTY_END_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEndDate(LocalDate endDate) {
+  public void setEndDate(@jakarta.annotation.Nullable LocalDate endDate) {
     this.endDate = endDate;
   }
 
-  public GetAccountAllOfPlan userLimit(Integer userLimit) {
+  public GetAccountAllOfPlan userLimit(@jakarta.annotation.Nullable Integer userLimit) {
     
     this.userLimit = userLimit;
     return this;
@@ -281,7 +287,7 @@ public class GetAccountAllOfPlan {
 
   @JsonProperty(JSON_PROPERTY_USER_LIMIT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUserLimit(Integer userLimit) {
+  public void setUserLimit(@jakarta.annotation.Nullable Integer userLimit) {
     this.userLimit = userLimit;
   }
 

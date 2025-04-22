@@ -36,15 +36,17 @@ import java.util.StringJoiner;
 @JsonTypeName("sendSmtpEmail_replyTo")
 public class SendSmtpEmailReplyTo {
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nonnull
   private String email;
 
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nullable
   private String name;
 
   public SendSmtpEmailReplyTo() {
   }
 
-  public SendSmtpEmailReplyTo email(String email) {
+  public SendSmtpEmailReplyTo email(@jakarta.annotation.Nonnull String email) {
     
     this.email = email;
     return this;
@@ -65,11 +67,11 @@ public class SendSmtpEmailReplyTo {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEmail(String email) {
+  public void setEmail(@jakarta.annotation.Nonnull String email) {
     this.email = email;
   }
 
-  public SendSmtpEmailReplyTo name(String name) {
+  public SendSmtpEmailReplyTo name(@jakarta.annotation.Nullable String name) {
     
     this.name = name;
     return this;
@@ -90,7 +92,7 @@ public class SendSmtpEmailReplyTo {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nullable String name) {
     this.name = name;
   }
 

@@ -41,18 +41,21 @@ import java.util.StringJoiner;
 @JsonTypeName("createSender")
 public class CreateSender {
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nonnull
   private String email;
 
   public static final String JSON_PROPERTY_IPS = "ips";
+  @jakarta.annotation.Nullable
   private List<CreateSenderIpsInner> ips = new ArrayList<>();
 
   public CreateSender() {
   }
 
-  public CreateSender name(String name) {
+  public CreateSender name(@jakarta.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
@@ -73,11 +76,11 @@ public class CreateSender {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
   }
 
-  public CreateSender email(String email) {
+  public CreateSender email(@jakarta.annotation.Nonnull String email) {
     
     this.email = email;
     return this;
@@ -98,11 +101,11 @@ public class CreateSender {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEmail(String email) {
+  public void setEmail(@jakarta.annotation.Nonnull String email) {
     this.email = email;
   }
 
-  public CreateSender ips(List<CreateSenderIpsInner> ips) {
+  public CreateSender ips(@jakarta.annotation.Nullable List<CreateSenderIpsInner> ips) {
     
     this.ips = ips;
     return this;
@@ -131,7 +134,7 @@ public class CreateSender {
 
   @JsonProperty(JSON_PROPERTY_IPS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setIps(List<CreateSenderIpsInner> ips) {
+  public void setIps(@jakarta.annotation.Nullable List<CreateSenderIpsInner> ips) {
     this.ips = ips;
   }
 

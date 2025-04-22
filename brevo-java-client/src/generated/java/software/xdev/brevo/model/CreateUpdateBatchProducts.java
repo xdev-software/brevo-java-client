@@ -40,15 +40,17 @@ import java.util.StringJoiner;
 @JsonTypeName("createUpdateBatchProducts")
 public class CreateUpdateBatchProducts {
   public static final String JSON_PROPERTY_PRODUCTS = "products";
+  @jakarta.annotation.Nonnull
   private List<CreateUpdateProducts> products = new ArrayList<>();
 
   public static final String JSON_PROPERTY_UPDATE_ENABLED = "updateEnabled";
+  @jakarta.annotation.Nullable
   private Boolean updateEnabled;
 
   public CreateUpdateBatchProducts() {
   }
 
-  public CreateUpdateBatchProducts products(List<CreateUpdateProducts> products) {
+  public CreateUpdateBatchProducts products(@jakarta.annotation.Nonnull List<CreateUpdateProducts> products) {
     
     this.products = products;
     return this;
@@ -77,11 +79,11 @@ public class CreateUpdateBatchProducts {
 
   @JsonProperty(JSON_PROPERTY_PRODUCTS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setProducts(List<CreateUpdateProducts> products) {
+  public void setProducts(@jakarta.annotation.Nonnull List<CreateUpdateProducts> products) {
     this.products = products;
   }
 
-  public CreateUpdateBatchProducts updateEnabled(Boolean updateEnabled) {
+  public CreateUpdateBatchProducts updateEnabled(@jakarta.annotation.Nullable Boolean updateEnabled) {
     
     this.updateEnabled = updateEnabled;
     return this;
@@ -102,7 +104,7 @@ public class CreateUpdateBatchProducts {
 
   @JsonProperty(JSON_PROPERTY_UPDATE_ENABLED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUpdateEnabled(Boolean updateEnabled) {
+  public void setUpdateEnabled(@jakarta.annotation.Nullable Boolean updateEnabled) {
     this.updateEnabled = updateEnabled;
   }
 

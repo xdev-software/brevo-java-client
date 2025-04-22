@@ -42,31 +42,34 @@ import java.util.StringJoiner;
 @JsonTypeName("getWhatsappEventReport_events_inner")
 public class GetWhatsappEventReportEventsInner {
   public static final String JSON_PROPERTY_CONTACT_NUMBER = "contactNumber";
+  @jakarta.annotation.Nonnull
   private String contactNumber;
 
   public static final String JSON_PROPERTY_DATE = "date";
+  @jakarta.annotation.Nonnull
   private String date;
 
   public static final String JSON_PROPERTY_MESSAGE_ID = "messageId";
+  @jakarta.annotation.Nonnull
   private String messageId;
 
   /**
    * Event which occurred
    */
   public enum EventEnum {
-    SENT("sent"),
+    SENT(String.valueOf("sent")),
     
-    DELIVERED("delivered"),
+    DELIVERED(String.valueOf("delivered")),
     
-    READ("read"),
+    READ(String.valueOf("read")),
     
-    ERROR("error"),
+    ERROR(String.valueOf("error")),
     
-    UNSUBSCRIBE("unsubscribe"),
+    UNSUBSCRIBE(String.valueOf("unsubscribe")),
     
-    REPLY("reply"),
+    REPLY(String.valueOf("reply")),
     
-    SOFT_BOUNCE("soft-bounce");
+    SOFT_BOUNCE(String.valueOf("soft-bounce"));
 
     private String value;
 
@@ -96,24 +99,29 @@ public class GetWhatsappEventReportEventsInner {
   }
 
   public static final String JSON_PROPERTY_EVENT = "event";
+  @jakarta.annotation.Nonnull
   private EventEnum event;
 
   public static final String JSON_PROPERTY_REASON = "reason";
+  @jakarta.annotation.Nullable
   private String reason;
 
   public static final String JSON_PROPERTY_BODY = "body";
+  @jakarta.annotation.Nullable
   private String body;
 
   public static final String JSON_PROPERTY_MEDIA_URL = "mediaUrl";
+  @jakarta.annotation.Nullable
   private String mediaUrl;
 
   public static final String JSON_PROPERTY_SENDER_NUMBER = "senderNumber";
+  @jakarta.annotation.Nonnull
   private String senderNumber;
 
   public GetWhatsappEventReportEventsInner() {
   }
 
-  public GetWhatsappEventReportEventsInner contactNumber(String contactNumber) {
+  public GetWhatsappEventReportEventsInner contactNumber(@jakarta.annotation.Nonnull String contactNumber) {
     
     this.contactNumber = contactNumber;
     return this;
@@ -134,11 +142,11 @@ public class GetWhatsappEventReportEventsInner {
 
   @JsonProperty(JSON_PROPERTY_CONTACT_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setContactNumber(String contactNumber) {
+  public void setContactNumber(@jakarta.annotation.Nonnull String contactNumber) {
     this.contactNumber = contactNumber;
   }
 
-  public GetWhatsappEventReportEventsInner date(String date) {
+  public GetWhatsappEventReportEventsInner date(@jakarta.annotation.Nonnull String date) {
     
     this.date = date;
     return this;
@@ -159,11 +167,11 @@ public class GetWhatsappEventReportEventsInner {
 
   @JsonProperty(JSON_PROPERTY_DATE)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setDate(String date) {
+  public void setDate(@jakarta.annotation.Nonnull String date) {
     this.date = date;
   }
 
-  public GetWhatsappEventReportEventsInner messageId(String messageId) {
+  public GetWhatsappEventReportEventsInner messageId(@jakarta.annotation.Nonnull String messageId) {
     
     this.messageId = messageId;
     return this;
@@ -184,11 +192,11 @@ public class GetWhatsappEventReportEventsInner {
 
   @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setMessageId(String messageId) {
+  public void setMessageId(@jakarta.annotation.Nonnull String messageId) {
     this.messageId = messageId;
   }
 
-  public GetWhatsappEventReportEventsInner event(EventEnum event) {
+  public GetWhatsappEventReportEventsInner event(@jakarta.annotation.Nonnull EventEnum event) {
     
     this.event = event;
     return this;
@@ -209,11 +217,11 @@ public class GetWhatsappEventReportEventsInner {
 
   @JsonProperty(JSON_PROPERTY_EVENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEvent(EventEnum event) {
+  public void setEvent(@jakarta.annotation.Nonnull EventEnum event) {
     this.event = event;
   }
 
-  public GetWhatsappEventReportEventsInner reason(String reason) {
+  public GetWhatsappEventReportEventsInner reason(@jakarta.annotation.Nullable String reason) {
     
     this.reason = reason;
     return this;
@@ -234,11 +242,11 @@ public class GetWhatsappEventReportEventsInner {
 
   @JsonProperty(JSON_PROPERTY_REASON)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setReason(String reason) {
+  public void setReason(@jakarta.annotation.Nullable String reason) {
     this.reason = reason;
   }
 
-  public GetWhatsappEventReportEventsInner body(String body) {
+  public GetWhatsappEventReportEventsInner body(@jakarta.annotation.Nullable String body) {
     
     this.body = body;
     return this;
@@ -259,11 +267,11 @@ public class GetWhatsappEventReportEventsInner {
 
   @JsonProperty(JSON_PROPERTY_BODY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setBody(String body) {
+  public void setBody(@jakarta.annotation.Nullable String body) {
     this.body = body;
   }
 
-  public GetWhatsappEventReportEventsInner mediaUrl(String mediaUrl) {
+  public GetWhatsappEventReportEventsInner mediaUrl(@jakarta.annotation.Nullable String mediaUrl) {
     
     this.mediaUrl = mediaUrl;
     return this;
@@ -284,11 +292,11 @@ public class GetWhatsappEventReportEventsInner {
 
   @JsonProperty(JSON_PROPERTY_MEDIA_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setMediaUrl(String mediaUrl) {
+  public void setMediaUrl(@jakarta.annotation.Nullable String mediaUrl) {
     this.mediaUrl = mediaUrl;
   }
 
-  public GetWhatsappEventReportEventsInner senderNumber(String senderNumber) {
+  public GetWhatsappEventReportEventsInner senderNumber(@jakarta.annotation.Nonnull String senderNumber) {
     
     this.senderNumber = senderNumber;
     return this;
@@ -309,7 +317,7 @@ public class GetWhatsappEventReportEventsInner {
 
   @JsonProperty(JSON_PROPERTY_SENDER_NUMBER)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setSenderNumber(String senderNumber) {
+  public void setSenderNumber(@jakarta.annotation.Nonnull String senderNumber) {
     this.senderNumber = senderNumber;
   }
 

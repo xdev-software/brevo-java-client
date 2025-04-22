@@ -105,7 +105,7 @@ public class ContactsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/contacts/lists/{listId}/contacts/add"
-      .replaceAll("\\{" + "listId" + "\\}", apiClient.escapeString(listId.toString()));
+      .replaceAll("\\{" + "listId" + "\\}", apiClient.escapeString(apiClient.parameterToString(listId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -192,8 +192,8 @@ public class ContactsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/contacts/attributes/{attributeCategory}/{attributeName}"
-      .replaceAll("\\{" + "attributeCategory" + "\\}", apiClient.escapeString(attributeCategory.toString()))
-      .replaceAll("\\{" + "attributeName" + "\\}", apiClient.escapeString(attributeName.toString()));
+      .replaceAll("\\{" + "attributeCategory" + "\\}", apiClient.escapeString(apiClient.parameterToString(attributeCategory)))
+      .replaceAll("\\{" + "attributeName" + "\\}", apiClient.escapeString(apiClient.parameterToString(attributeName)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -565,8 +565,8 @@ public class ContactsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/contacts/attributes/{attributeCategory}/{attributeName}"
-      .replaceAll("\\{" + "attributeCategory" + "\\}", apiClient.escapeString(attributeCategory.toString()))
-      .replaceAll("\\{" + "attributeName" + "\\}", apiClient.escapeString(attributeName.toString()));
+      .replaceAll("\\{" + "attributeCategory" + "\\}", apiClient.escapeString(apiClient.parameterToString(attributeCategory)))
+      .replaceAll("\\{" + "attributeName" + "\\}", apiClient.escapeString(apiClient.parameterToString(attributeName)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -638,7 +638,7 @@ public class ContactsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/contacts/{identifier}"
-      .replaceAll("\\{" + "identifier" + "\\}", apiClient.escapeString(identifier.toString()));
+      .replaceAll("\\{" + "identifier" + "\\}", apiClient.escapeString(apiClient.parameterToString(identifier)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -710,7 +710,7 @@ public class ContactsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/contacts/folders/{folderId}"
-      .replaceAll("\\{" + "folderId" + "\\}", apiClient.escapeString(folderId.toString()));
+      .replaceAll("\\{" + "folderId" + "\\}", apiClient.escapeString(apiClient.parameterToString(folderId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -782,7 +782,7 @@ public class ContactsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/contacts/lists/{listId}"
-      .replaceAll("\\{" + "listId" + "\\}", apiClient.escapeString(listId.toString()));
+      .replaceAll("\\{" + "listId" + "\\}", apiClient.escapeString(apiClient.parameterToString(listId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -927,7 +927,7 @@ public class ContactsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/contacts/{identifier}"
-      .replaceAll("\\{" + "identifier" + "\\}", apiClient.escapeString(identifier.toString()));
+      .replaceAll("\\{" + "identifier" + "\\}", apiClient.escapeString(apiClient.parameterToString(identifier)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -1008,7 +1008,7 @@ public class ContactsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/contacts/{identifier}/campaignStats"
-      .replaceAll("\\{" + "identifier" + "\\}", apiClient.escapeString(identifier.toString()));
+      .replaceAll("\\{" + "identifier" + "\\}", apiClient.escapeString(apiClient.parameterToString(identifier)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -1181,7 +1181,7 @@ public class ContactsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/contacts/lists/{listId}/contacts"
-      .replaceAll("\\{" + "listId" + "\\}", apiClient.escapeString(listId.toString()));
+      .replaceAll("\\{" + "listId" + "\\}", apiClient.escapeString(apiClient.parameterToString(listId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -1260,7 +1260,7 @@ public class ContactsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/contacts/folders/{folderId}"
-      .replaceAll("\\{" + "folderId" + "\\}", apiClient.escapeString(folderId.toString()));
+      .replaceAll("\\{" + "folderId" + "\\}", apiClient.escapeString(apiClient.parameterToString(folderId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -1341,7 +1341,7 @@ public class ContactsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/contacts/folders/{folderId}/lists"
-      .replaceAll("\\{" + "folderId" + "\\}", apiClient.escapeString(folderId.toString()));
+      .replaceAll("\\{" + "folderId" + "\\}", apiClient.escapeString(apiClient.parameterToString(folderId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -1509,7 +1509,7 @@ public class ContactsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/contacts/lists/{listId}"
-      .replaceAll("\\{" + "listId" + "\\}", apiClient.escapeString(listId.toString()));
+      .replaceAll("\\{" + "listId" + "\\}", apiClient.escapeString(apiClient.parameterToString(listId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -1819,7 +1819,7 @@ public class ContactsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/contacts/lists/{listId}/contacts/remove"
-      .replaceAll("\\{" + "listId" + "\\}", apiClient.escapeString(listId.toString()));
+      .replaceAll("\\{" + "listId" + "\\}", apiClient.escapeString(apiClient.parameterToString(listId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -1980,8 +1980,8 @@ public class ContactsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/contacts/attributes/{attributeCategory}/{attributeName}"
-      .replaceAll("\\{" + "attributeCategory" + "\\}", apiClient.escapeString(attributeCategory.toString()))
-      .replaceAll("\\{" + "attributeName" + "\\}", apiClient.escapeString(attributeName.toString()));
+      .replaceAll("\\{" + "attributeCategory" + "\\}", apiClient.escapeString(apiClient.parameterToString(attributeCategory)))
+      .replaceAll("\\{" + "attributeName" + "\\}", apiClient.escapeString(apiClient.parameterToString(attributeName)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -2131,7 +2131,7 @@ public class ContactsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/contacts/{identifier}"
-      .replaceAll("\\{" + "identifier" + "\\}", apiClient.escapeString(identifier.toString()));
+      .replaceAll("\\{" + "identifier" + "\\}", apiClient.escapeString(apiClient.parameterToString(identifier)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -2210,7 +2210,7 @@ public class ContactsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/contacts/folders/{folderId}"
-      .replaceAll("\\{" + "folderId" + "\\}", apiClient.escapeString(folderId.toString()));
+      .replaceAll("\\{" + "folderId" + "\\}", apiClient.escapeString(apiClient.parameterToString(folderId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -2289,7 +2289,7 @@ public class ContactsApi extends BaseApi {
     
     // create path and map variables
     String localVarPath = "/contacts/lists/{listId}"
-      .replaceAll("\\{" + "listId" + "\\}", apiClient.escapeString(listId.toString()));
+      .replaceAll("\\{" + "listId" + "\\}", apiClient.escapeString(apiClient.parameterToString(listId)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;

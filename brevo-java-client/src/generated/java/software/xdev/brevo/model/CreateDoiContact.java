@@ -45,27 +45,33 @@ import java.util.StringJoiner;
 @JsonTypeName("createDoiContact")
 public class CreateDoiContact {
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nonnull
   private String email;
 
   public static final String JSON_PROPERTY_ATTRIBUTES = "attributes";
+  @jakarta.annotation.Nullable
   private Map<String, Object> attributes = new HashMap<>();
 
   public static final String JSON_PROPERTY_INCLUDE_LIST_IDS = "includeListIds";
+  @jakarta.annotation.Nonnull
   private List<Long> includeListIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_EXCLUDE_LIST_IDS = "excludeListIds";
+  @jakarta.annotation.Nullable
   private List<Long> excludeListIds = new ArrayList<>();
 
   public static final String JSON_PROPERTY_TEMPLATE_ID = "templateId";
+  @jakarta.annotation.Nonnull
   private Long templateId;
 
   public static final String JSON_PROPERTY_REDIRECTION_URL = "redirectionUrl";
+  @jakarta.annotation.Nonnull
   private String redirectionUrl;
 
   public CreateDoiContact() {
   }
 
-  public CreateDoiContact email(String email) {
+  public CreateDoiContact email(@jakarta.annotation.Nonnull String email) {
     
     this.email = email;
     return this;
@@ -86,11 +92,11 @@ public class CreateDoiContact {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEmail(String email) {
+  public void setEmail(@jakarta.annotation.Nonnull String email) {
     this.email = email;
   }
 
-  public CreateDoiContact attributes(Map<String, Object> attributes) {
+  public CreateDoiContact attributes(@jakarta.annotation.Nullable Map<String, Object> attributes) {
     
     this.attributes = attributes;
     return this;
@@ -119,11 +125,11 @@ public class CreateDoiContact {
 
   @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
-  public void setAttributes(Map<String, Object> attributes) {
+  public void setAttributes(@jakarta.annotation.Nullable Map<String, Object> attributes) {
     this.attributes = attributes;
   }
 
-  public CreateDoiContact includeListIds(List<Long> includeListIds) {
+  public CreateDoiContact includeListIds(@jakarta.annotation.Nonnull List<Long> includeListIds) {
     
     this.includeListIds = includeListIds;
     return this;
@@ -152,11 +158,11 @@ public class CreateDoiContact {
 
   @JsonProperty(JSON_PROPERTY_INCLUDE_LIST_IDS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setIncludeListIds(List<Long> includeListIds) {
+  public void setIncludeListIds(@jakarta.annotation.Nonnull List<Long> includeListIds) {
     this.includeListIds = includeListIds;
   }
 
-  public CreateDoiContact excludeListIds(List<Long> excludeListIds) {
+  public CreateDoiContact excludeListIds(@jakarta.annotation.Nullable List<Long> excludeListIds) {
     
     this.excludeListIds = excludeListIds;
     return this;
@@ -185,11 +191,11 @@ public class CreateDoiContact {
 
   @JsonProperty(JSON_PROPERTY_EXCLUDE_LIST_IDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setExcludeListIds(List<Long> excludeListIds) {
+  public void setExcludeListIds(@jakarta.annotation.Nullable List<Long> excludeListIds) {
     this.excludeListIds = excludeListIds;
   }
 
-  public CreateDoiContact templateId(Long templateId) {
+  public CreateDoiContact templateId(@jakarta.annotation.Nonnull Long templateId) {
     
     this.templateId = templateId;
     return this;
@@ -210,11 +216,11 @@ public class CreateDoiContact {
 
   @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setTemplateId(Long templateId) {
+  public void setTemplateId(@jakarta.annotation.Nonnull Long templateId) {
     this.templateId = templateId;
   }
 
-  public CreateDoiContact redirectionUrl(String redirectionUrl) {
+  public CreateDoiContact redirectionUrl(@jakarta.annotation.Nonnull String redirectionUrl) {
     
     this.redirectionUrl = redirectionUrl;
     return this;
@@ -235,7 +241,7 @@ public class CreateDoiContact {
 
   @JsonProperty(JSON_PROPERTY_REDIRECTION_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setRedirectionUrl(String redirectionUrl) {
+  public void setRedirectionUrl(@jakarta.annotation.Nonnull String redirectionUrl) {
     this.redirectionUrl = redirectionUrl;
   }
 

@@ -36,15 +36,17 @@ import java.util.StringJoiner;
 @JsonTypeName("createUpdateBatchCategoryModel")
 public class CreateUpdateBatchCategoryModel {
   public static final String JSON_PROPERTY_CREATED_COUNT = "createdCount";
+  @jakarta.annotation.Nullable
   private Long createdCount;
 
   public static final String JSON_PROPERTY_UPDATED_COUNT = "updatedCount";
+  @jakarta.annotation.Nullable
   private Long updatedCount;
 
   public CreateUpdateBatchCategoryModel() {
   }
 
-  public CreateUpdateBatchCategoryModel createdCount(Long createdCount) {
+  public CreateUpdateBatchCategoryModel createdCount(@jakarta.annotation.Nullable Long createdCount) {
     
     this.createdCount = createdCount;
     return this;
@@ -65,11 +67,11 @@ public class CreateUpdateBatchCategoryModel {
 
   @JsonProperty(JSON_PROPERTY_CREATED_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCreatedCount(Long createdCount) {
+  public void setCreatedCount(@jakarta.annotation.Nullable Long createdCount) {
     this.createdCount = createdCount;
   }
 
-  public CreateUpdateBatchCategoryModel updatedCount(Long updatedCount) {
+  public CreateUpdateBatchCategoryModel updatedCount(@jakarta.annotation.Nullable Long updatedCount) {
     
     this.updatedCount = updatedCount;
     return this;
@@ -90,7 +92,7 @@ public class CreateUpdateBatchCategoryModel {
 
   @JsonProperty(JSON_PROPERTY_UPDATED_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUpdatedCount(Long updatedCount) {
+  public void setUpdatedCount(@jakarta.annotation.Nullable Long updatedCount) {
     this.updatedCount = updatedCount;
   }
 

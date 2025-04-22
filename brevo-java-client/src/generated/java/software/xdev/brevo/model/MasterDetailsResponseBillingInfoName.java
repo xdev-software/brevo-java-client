@@ -36,15 +36,17 @@ import java.util.StringJoiner;
 @JsonTypeName("masterDetailsResponse_billingInfo_name")
 public class MasterDetailsResponseBillingInfoName {
   public static final String JSON_PROPERTY_GIVEN_NAME = "givenName";
+  @jakarta.annotation.Nullable
   private String givenName;
 
   public static final String JSON_PROPERTY_FAMILY_NAME = "familyName";
+  @jakarta.annotation.Nullable
   private String familyName;
 
   public MasterDetailsResponseBillingInfoName() {
   }
 
-  public MasterDetailsResponseBillingInfoName givenName(String givenName) {
+  public MasterDetailsResponseBillingInfoName givenName(@jakarta.annotation.Nullable String givenName) {
     
     this.givenName = givenName;
     return this;
@@ -65,11 +67,11 @@ public class MasterDetailsResponseBillingInfoName {
 
   @JsonProperty(JSON_PROPERTY_GIVEN_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setGivenName(String givenName) {
+  public void setGivenName(@jakarta.annotation.Nullable String givenName) {
     this.givenName = givenName;
   }
 
-  public MasterDetailsResponseBillingInfoName familyName(String familyName) {
+  public MasterDetailsResponseBillingInfoName familyName(@jakarta.annotation.Nullable String familyName) {
     
     this.familyName = familyName;
     return this;
@@ -90,7 +92,7 @@ public class MasterDetailsResponseBillingInfoName {
 
   @JsonProperty(JSON_PROPERTY_FAMILY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setFamilyName(String familyName) {
+  public void setFamilyName(@jakarta.annotation.Nullable String familyName) {
     this.familyName = familyName;
   }
 

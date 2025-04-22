@@ -41,21 +41,25 @@ import java.util.StringJoiner;
 @JsonTypeName("getCorporateInvitedUsersList_users_inner_feature_access")
 public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
   public static final String JSON_PROPERTY_USER_MANAGEMENT = "user_management";
+  @jakarta.annotation.Nullable
   private List<String> userManagement = new ArrayList<>();
 
   public static final String JSON_PROPERTY_API_KEYS = "api_keys";
+  @jakarta.annotation.Nullable
   private List<String> apiKeys = new ArrayList<>();
 
   public static final String JSON_PROPERTY_MY_PLAN = "my_plan";
+  @jakarta.annotation.Nullable
   private List<String> myPlan = new ArrayList<>();
 
   public static final String JSON_PROPERTY_APPS_MANAGEMENT = "apps_management";
+  @jakarta.annotation.Nullable
   private List<String> appsManagement = new ArrayList<>();
 
   public GetCorporateInvitedUsersListUsersInnerFeatureAccess() {
   }
 
-  public GetCorporateInvitedUsersListUsersInnerFeatureAccess userManagement(List<String> userManagement) {
+  public GetCorporateInvitedUsersListUsersInnerFeatureAccess userManagement(@jakarta.annotation.Nullable List<String> userManagement) {
     
     this.userManagement = userManagement;
     return this;
@@ -84,11 +88,11 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
 
   @JsonProperty(JSON_PROPERTY_USER_MANAGEMENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUserManagement(List<String> userManagement) {
+  public void setUserManagement(@jakarta.annotation.Nullable List<String> userManagement) {
     this.userManagement = userManagement;
   }
 
-  public GetCorporateInvitedUsersListUsersInnerFeatureAccess apiKeys(List<String> apiKeys) {
+  public GetCorporateInvitedUsersListUsersInnerFeatureAccess apiKeys(@jakarta.annotation.Nullable List<String> apiKeys) {
     
     this.apiKeys = apiKeys;
     return this;
@@ -117,11 +121,11 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
 
   @JsonProperty(JSON_PROPERTY_API_KEYS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setApiKeys(List<String> apiKeys) {
+  public void setApiKeys(@jakarta.annotation.Nullable List<String> apiKeys) {
     this.apiKeys = apiKeys;
   }
 
-  public GetCorporateInvitedUsersListUsersInnerFeatureAccess myPlan(List<String> myPlan) {
+  public GetCorporateInvitedUsersListUsersInnerFeatureAccess myPlan(@jakarta.annotation.Nullable List<String> myPlan) {
     
     this.myPlan = myPlan;
     return this;
@@ -150,11 +154,11 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
 
   @JsonProperty(JSON_PROPERTY_MY_PLAN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setMyPlan(List<String> myPlan) {
+  public void setMyPlan(@jakarta.annotation.Nullable List<String> myPlan) {
     this.myPlan = myPlan;
   }
 
-  public GetCorporateInvitedUsersListUsersInnerFeatureAccess appsManagement(List<String> appsManagement) {
+  public GetCorporateInvitedUsersListUsersInnerFeatureAccess appsManagement(@jakarta.annotation.Nullable List<String> appsManagement) {
     
     this.appsManagement = appsManagement;
     return this;
@@ -183,7 +187,7 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
 
   @JsonProperty(JSON_PROPERTY_APPS_MANAGEMENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setAppsManagement(List<String> appsManagement) {
+  public void setAppsManagement(@jakarta.annotation.Nullable List<String> appsManagement) {
     this.appsManagement = appsManagement;
   }
 

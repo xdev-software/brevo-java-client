@@ -38,15 +38,17 @@ import java.util.StringJoiner;
 @JsonTypeName("requestContactImport_jsonBody_inner")
 public class RequestContactImportJsonBodyInner {
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nullable
   private String email;
 
   public static final String JSON_PROPERTY_ATTRIBUTES = "attributes";
+  @jakarta.annotation.Nullable
   private Map<String, Object> attributes = new HashMap<>();
 
   public RequestContactImportJsonBodyInner() {
   }
 
-  public RequestContactImportJsonBodyInner email(String email) {
+  public RequestContactImportJsonBodyInner email(@jakarta.annotation.Nullable String email) {
     
     this.email = email;
     return this;
@@ -67,11 +69,11 @@ public class RequestContactImportJsonBodyInner {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEmail(String email) {
+  public void setEmail(@jakarta.annotation.Nullable String email) {
     this.email = email;
   }
 
-  public RequestContactImportJsonBodyInner attributes(Map<String, Object> attributes) {
+  public RequestContactImportJsonBodyInner attributes(@jakarta.annotation.Nullable Map<String, Object> attributes) {
     
     this.attributes = attributes;
     return this;
@@ -100,7 +102,7 @@ public class RequestContactImportJsonBodyInner {
 
   @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
-  public void setAttributes(Map<String, Object> attributes) {
+  public void setAttributes(@jakarta.annotation.Nullable Map<String, Object> attributes) {
     this.attributes = attributes;
   }
 

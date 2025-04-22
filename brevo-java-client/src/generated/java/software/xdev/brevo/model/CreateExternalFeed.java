@@ -47,20 +47,22 @@ import java.util.StringJoiner;
 @JsonTypeName("createExternalFeed")
 public class CreateExternalFeed {
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nonnull
   private String name;
 
   public static final String JSON_PROPERTY_URL = "url";
+  @jakarta.annotation.Nonnull
   private String url;
 
   /**
    * Auth type of the feed:  * &#x60;basic&#x60;  * &#x60;token&#x60;  * &#x60;noAuth&#x60; 
    */
   public enum AuthTypeEnum {
-    BASIC("basic"),
+    BASIC(String.valueOf("basic")),
     
-    TOKEN("token"),
+    TOKEN(String.valueOf("token")),
     
-    NO_AUTH("noAuth");
+    NO_AUTH(String.valueOf("noAuth"));
 
     private String value;
 
@@ -90,30 +92,37 @@ public class CreateExternalFeed {
   }
 
   public static final String JSON_PROPERTY_AUTH_TYPE = "authType";
+  @jakarta.annotation.Nullable
   private AuthTypeEnum authType = AuthTypeEnum.NO_AUTH;
 
   public static final String JSON_PROPERTY_USERNAME = "username";
+  @jakarta.annotation.Nullable
   private String username;
 
   public static final String JSON_PROPERTY_PASSWORD = "password";
+  @jakarta.annotation.Nullable
   private String password;
 
   public static final String JSON_PROPERTY_TOKEN = "token";
+  @jakarta.annotation.Nullable
   private String token;
 
   public static final String JSON_PROPERTY_HEADERS = "headers";
+  @jakarta.annotation.Nullable
   private List<GetExternalFeedByUUIDHeadersInner> headers = new ArrayList<>();
 
   public static final String JSON_PROPERTY_MAX_RETRIES = "maxRetries";
+  @jakarta.annotation.Nullable
   private Integer maxRetries = 5;
 
   public static final String JSON_PROPERTY_CACHE = "cache";
+  @jakarta.annotation.Nullable
   private Boolean cache = false;
 
   public CreateExternalFeed() {
   }
 
-  public CreateExternalFeed name(String name) {
+  public CreateExternalFeed name(@jakarta.annotation.Nonnull String name) {
     
     this.name = name;
     return this;
@@ -134,11 +143,11 @@ public class CreateExternalFeed {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
   }
 
-  public CreateExternalFeed url(String url) {
+  public CreateExternalFeed url(@jakarta.annotation.Nonnull String url) {
     
     this.url = url;
     return this;
@@ -159,11 +168,11 @@ public class CreateExternalFeed {
 
   @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setUrl(String url) {
+  public void setUrl(@jakarta.annotation.Nonnull String url) {
     this.url = url;
   }
 
-  public CreateExternalFeed authType(AuthTypeEnum authType) {
+  public CreateExternalFeed authType(@jakarta.annotation.Nullable AuthTypeEnum authType) {
     
     this.authType = authType;
     return this;
@@ -184,11 +193,11 @@ public class CreateExternalFeed {
 
   @JsonProperty(JSON_PROPERTY_AUTH_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setAuthType(AuthTypeEnum authType) {
+  public void setAuthType(@jakarta.annotation.Nullable AuthTypeEnum authType) {
     this.authType = authType;
   }
 
-  public CreateExternalFeed username(String username) {
+  public CreateExternalFeed username(@jakarta.annotation.Nullable String username) {
     
     this.username = username;
     return this;
@@ -209,11 +218,11 @@ public class CreateExternalFeed {
 
   @JsonProperty(JSON_PROPERTY_USERNAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUsername(String username) {
+  public void setUsername(@jakarta.annotation.Nullable String username) {
     this.username = username;
   }
 
-  public CreateExternalFeed password(String password) {
+  public CreateExternalFeed password(@jakarta.annotation.Nullable String password) {
     
     this.password = password;
     return this;
@@ -234,11 +243,11 @@ public class CreateExternalFeed {
 
   @JsonProperty(JSON_PROPERTY_PASSWORD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setPassword(String password) {
+  public void setPassword(@jakarta.annotation.Nullable String password) {
     this.password = password;
   }
 
-  public CreateExternalFeed token(String token) {
+  public CreateExternalFeed token(@jakarta.annotation.Nullable String token) {
     
     this.token = token;
     return this;
@@ -259,11 +268,11 @@ public class CreateExternalFeed {
 
   @JsonProperty(JSON_PROPERTY_TOKEN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setToken(String token) {
+  public void setToken(@jakarta.annotation.Nullable String token) {
     this.token = token;
   }
 
-  public CreateExternalFeed headers(List<GetExternalFeedByUUIDHeadersInner> headers) {
+  public CreateExternalFeed headers(@jakarta.annotation.Nullable List<GetExternalFeedByUUIDHeadersInner> headers) {
     
     this.headers = headers;
     return this;
@@ -292,11 +301,11 @@ public class CreateExternalFeed {
 
   @JsonProperty(JSON_PROPERTY_HEADERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setHeaders(List<GetExternalFeedByUUIDHeadersInner> headers) {
+  public void setHeaders(@jakarta.annotation.Nullable List<GetExternalFeedByUUIDHeadersInner> headers) {
     this.headers = headers;
   }
 
-  public CreateExternalFeed maxRetries(Integer maxRetries) {
+  public CreateExternalFeed maxRetries(@jakarta.annotation.Nullable Integer maxRetries) {
     
     this.maxRetries = maxRetries;
     return this;
@@ -319,11 +328,11 @@ public class CreateExternalFeed {
 
   @JsonProperty(JSON_PROPERTY_MAX_RETRIES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setMaxRetries(Integer maxRetries) {
+  public void setMaxRetries(@jakarta.annotation.Nullable Integer maxRetries) {
     this.maxRetries = maxRetries;
   }
 
-  public CreateExternalFeed cache(Boolean cache) {
+  public CreateExternalFeed cache(@jakarta.annotation.Nullable Boolean cache) {
     
     this.cache = cache;
     return this;
@@ -344,7 +353,7 @@ public class CreateExternalFeed {
 
   @JsonProperty(JSON_PROPERTY_CACHE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCache(Boolean cache) {
+  public void setCache(@jakarta.annotation.Nullable Boolean cache) {
     this.cache = cache;
   }
 

@@ -42,29 +42,32 @@ import java.util.StringJoiner;
 @JsonTypeName("createAttribute")
 public class CreateAttribute {
   public static final String JSON_PROPERTY_VALUE = "value";
+  @jakarta.annotation.Nullable
   private String value;
 
   public static final String JSON_PROPERTY_IS_RECURRING = "isRecurring";
+  @jakarta.annotation.Nullable
   private Boolean isRecurring;
 
   public static final String JSON_PROPERTY_ENUMERATION = "enumeration";
+  @jakarta.annotation.Nullable
   private List<CreateAttributeEnumerationInner> enumeration = new ArrayList<>();
 
   /**
    * Type of the attribute. **Use only if the attribute&#39;s category is &#39;normal&#39;, &#39;category&#39; or &#39;transactional&#39;** Type **boolean** is only available if the category is **normal** attribute Type **id** is only available if the category is **transactional** attribute Type **category** is only available if the category is **category** attribute 
    */
   public enum TypeEnum {
-    TEXT("text"),
+    TEXT(String.valueOf("text")),
     
-    DATE("date"),
+    DATE(String.valueOf("date")),
     
-    FLOAT("float"),
+    FLOAT(String.valueOf("float")),
     
-    BOOLEAN("boolean"),
+    BOOLEAN(String.valueOf("boolean")),
     
-    ID("id"),
+    ID(String.valueOf("id")),
     
-    CATEGORY("category");
+    CATEGORY(String.valueOf("category"));
 
     private String value;
 
@@ -94,12 +97,13 @@ public class CreateAttribute {
   }
 
   public static final String JSON_PROPERTY_TYPE = "type";
+  @jakarta.annotation.Nullable
   private TypeEnum type;
 
   public CreateAttribute() {
   }
 
-  public CreateAttribute value(String value) {
+  public CreateAttribute value(@jakarta.annotation.Nullable String value) {
     
     this.value = value;
     return this;
@@ -120,11 +124,11 @@ public class CreateAttribute {
 
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setValue(String value) {
+  public void setValue(@jakarta.annotation.Nullable String value) {
     this.value = value;
   }
 
-  public CreateAttribute isRecurring(Boolean isRecurring) {
+  public CreateAttribute isRecurring(@jakarta.annotation.Nullable Boolean isRecurring) {
     
     this.isRecurring = isRecurring;
     return this;
@@ -145,11 +149,11 @@ public class CreateAttribute {
 
   @JsonProperty(JSON_PROPERTY_IS_RECURRING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setIsRecurring(Boolean isRecurring) {
+  public void setIsRecurring(@jakarta.annotation.Nullable Boolean isRecurring) {
     this.isRecurring = isRecurring;
   }
 
-  public CreateAttribute enumeration(List<CreateAttributeEnumerationInner> enumeration) {
+  public CreateAttribute enumeration(@jakarta.annotation.Nullable List<CreateAttributeEnumerationInner> enumeration) {
     
     this.enumeration = enumeration;
     return this;
@@ -178,11 +182,11 @@ public class CreateAttribute {
 
   @JsonProperty(JSON_PROPERTY_ENUMERATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEnumeration(List<CreateAttributeEnumerationInner> enumeration) {
+  public void setEnumeration(@jakarta.annotation.Nullable List<CreateAttributeEnumerationInner> enumeration) {
     this.enumeration = enumeration;
   }
 
-  public CreateAttribute type(TypeEnum type) {
+  public CreateAttribute type(@jakarta.annotation.Nullable TypeEnum type) {
     
     this.type = type;
     return this;
@@ -203,7 +207,7 @@ public class CreateAttribute {
 
   @JsonProperty(JSON_PROPERTY_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setType(TypeEnum type) {
+  public void setType(@jakarta.annotation.Nullable TypeEnum type) {
     this.type = type;
   }
 

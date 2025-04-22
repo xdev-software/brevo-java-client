@@ -35,12 +35,13 @@ import java.util.StringJoiner;
 @JsonTypeName("otp")
 public class Otp {
   public static final String JSON_PROPERTY_OTP = "otp";
+  @jakarta.annotation.Nonnull
   private Integer otp;
 
   public Otp() {
   }
 
-  public Otp otp(Integer otp) {
+  public Otp otp(@jakarta.annotation.Nonnull Integer otp) {
     
     this.otp = otp;
     return this;
@@ -61,7 +62,7 @@ public class Otp {
 
   @JsonProperty(JSON_PROPERTY_OTP)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setOtp(Integer otp) {
+  public void setOtp(@jakarta.annotation.Nonnull Integer otp) {
     this.otp = otp;
   }
 

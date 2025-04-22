@@ -39,24 +39,29 @@ import java.util.StringJoiner;
 @JsonTypeName("createUpdateCategory")
 public class CreateUpdateCategory {
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nonnull
   private String id;
 
   public static final String JSON_PROPERTY_NAME = "name";
+  @jakarta.annotation.Nullable
   private String name;
 
   public static final String JSON_PROPERTY_URL = "url";
+  @jakarta.annotation.Nullable
   private String url;
 
   public static final String JSON_PROPERTY_UPDATE_ENABLED = "updateEnabled";
+  @jakarta.annotation.Nullable
   private Boolean updateEnabled = false;
 
   public static final String JSON_PROPERTY_DELETED_AT = "deletedAt";
+  @jakarta.annotation.Nullable
   private String deletedAt;
 
   public CreateUpdateCategory() {
   }
 
-  public CreateUpdateCategory id(String id) {
+  public CreateUpdateCategory id(@jakarta.annotation.Nonnull String id) {
     
     this.id = id;
     return this;
@@ -77,11 +82,11 @@ public class CreateUpdateCategory {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(String id) {
+  public void setId(@jakarta.annotation.Nonnull String id) {
     this.id = id;
   }
 
-  public CreateUpdateCategory name(String name) {
+  public CreateUpdateCategory name(@jakarta.annotation.Nullable String name) {
     
     this.name = name;
     return this;
@@ -102,11 +107,11 @@ public class CreateUpdateCategory {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setName(String name) {
+  public void setName(@jakarta.annotation.Nullable String name) {
     this.name = name;
   }
 
-  public CreateUpdateCategory url(String url) {
+  public CreateUpdateCategory url(@jakarta.annotation.Nullable String url) {
     
     this.url = url;
     return this;
@@ -127,11 +132,11 @@ public class CreateUpdateCategory {
 
   @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUrl(String url) {
+  public void setUrl(@jakarta.annotation.Nullable String url) {
     this.url = url;
   }
 
-  public CreateUpdateCategory updateEnabled(Boolean updateEnabled) {
+  public CreateUpdateCategory updateEnabled(@jakarta.annotation.Nullable Boolean updateEnabled) {
     
     this.updateEnabled = updateEnabled;
     return this;
@@ -152,11 +157,11 @@ public class CreateUpdateCategory {
 
   @JsonProperty(JSON_PROPERTY_UPDATE_ENABLED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUpdateEnabled(Boolean updateEnabled) {
+  public void setUpdateEnabled(@jakarta.annotation.Nullable Boolean updateEnabled) {
     this.updateEnabled = updateEnabled;
   }
 
-  public CreateUpdateCategory deletedAt(String deletedAt) {
+  public CreateUpdateCategory deletedAt(@jakarta.annotation.Nullable String deletedAt) {
     
     this.deletedAt = deletedAt;
     return this;
@@ -177,7 +182,7 @@ public class CreateUpdateCategory {
 
   @JsonProperty(JSON_PROPERTY_DELETED_AT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDeletedAt(String deletedAt) {
+  public void setDeletedAt(@jakarta.annotation.Nullable String deletedAt) {
     this.deletedAt = deletedAt;
   }
 

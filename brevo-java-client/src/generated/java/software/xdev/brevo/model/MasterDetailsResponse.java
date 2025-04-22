@@ -43,30 +43,37 @@ import java.util.StringJoiner;
 @JsonTypeName("masterDetailsResponse")
 public class MasterDetailsResponse {
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nullable
   private String email;
 
   public static final String JSON_PROPERTY_COMPANY_NAME = "companyName";
+  @jakarta.annotation.Nullable
   private String companyName;
 
   public static final String JSON_PROPERTY_ID = "id";
+  @jakarta.annotation.Nullable
   private Long id;
 
   public static final String JSON_PROPERTY_CURRENCY_CODE = "currencyCode";
+  @jakarta.annotation.Nullable
   private String currencyCode;
 
   public static final String JSON_PROPERTY_TIMEZONE = "timezone";
+  @jakarta.annotation.Nullable
   private String timezone;
 
   public static final String JSON_PROPERTY_BILLING_INFO = "billingInfo";
+  @jakarta.annotation.Nullable
   private MasterDetailsResponseBillingInfo billingInfo;
 
   public static final String JSON_PROPERTY_PLAN_INFO = "planInfo";
+  @jakarta.annotation.Nullable
   private MasterDetailsResponsePlanInfo planInfo;
 
   public MasterDetailsResponse() {
   }
 
-  public MasterDetailsResponse email(String email) {
+  public MasterDetailsResponse email(@jakarta.annotation.Nullable String email) {
     
     this.email = email;
     return this;
@@ -87,11 +94,11 @@ public class MasterDetailsResponse {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEmail(String email) {
+  public void setEmail(@jakarta.annotation.Nullable String email) {
     this.email = email;
   }
 
-  public MasterDetailsResponse companyName(String companyName) {
+  public MasterDetailsResponse companyName(@jakarta.annotation.Nullable String companyName) {
     
     this.companyName = companyName;
     return this;
@@ -112,11 +119,11 @@ public class MasterDetailsResponse {
 
   @JsonProperty(JSON_PROPERTY_COMPANY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCompanyName(String companyName) {
+  public void setCompanyName(@jakarta.annotation.Nullable String companyName) {
     this.companyName = companyName;
   }
 
-  public MasterDetailsResponse id(Long id) {
+  public MasterDetailsResponse id(@jakarta.annotation.Nullable Long id) {
     
     this.id = id;
     return this;
@@ -137,11 +144,11 @@ public class MasterDetailsResponse {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setId(Long id) {
+  public void setId(@jakarta.annotation.Nullable Long id) {
     this.id = id;
   }
 
-  public MasterDetailsResponse currencyCode(String currencyCode) {
+  public MasterDetailsResponse currencyCode(@jakarta.annotation.Nullable String currencyCode) {
     
     this.currencyCode = currencyCode;
     return this;
@@ -162,11 +169,11 @@ public class MasterDetailsResponse {
 
   @JsonProperty(JSON_PROPERTY_CURRENCY_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCurrencyCode(String currencyCode) {
+  public void setCurrencyCode(@jakarta.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
   }
 
-  public MasterDetailsResponse timezone(String timezone) {
+  public MasterDetailsResponse timezone(@jakarta.annotation.Nullable String timezone) {
     
     this.timezone = timezone;
     return this;
@@ -187,11 +194,11 @@ public class MasterDetailsResponse {
 
   @JsonProperty(JSON_PROPERTY_TIMEZONE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setTimezone(String timezone) {
+  public void setTimezone(@jakarta.annotation.Nullable String timezone) {
     this.timezone = timezone;
   }
 
-  public MasterDetailsResponse billingInfo(MasterDetailsResponseBillingInfo billingInfo) {
+  public MasterDetailsResponse billingInfo(@jakarta.annotation.Nullable MasterDetailsResponseBillingInfo billingInfo) {
     
     this.billingInfo = billingInfo;
     return this;
@@ -212,11 +219,11 @@ public class MasterDetailsResponse {
 
   @JsonProperty(JSON_PROPERTY_BILLING_INFO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setBillingInfo(MasterDetailsResponseBillingInfo billingInfo) {
+  public void setBillingInfo(@jakarta.annotation.Nullable MasterDetailsResponseBillingInfo billingInfo) {
     this.billingInfo = billingInfo;
   }
 
-  public MasterDetailsResponse planInfo(MasterDetailsResponsePlanInfo planInfo) {
+  public MasterDetailsResponse planInfo(@jakarta.annotation.Nullable MasterDetailsResponsePlanInfo planInfo) {
     
     this.planInfo = planInfo;
     return this;
@@ -237,7 +244,7 @@ public class MasterDetailsResponse {
 
   @JsonProperty(JSON_PROPERTY_PLAN_INFO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setPlanInfo(MasterDetailsResponsePlanInfo planInfo) {
+  public void setPlanInfo(@jakarta.annotation.Nullable MasterDetailsResponsePlanInfo planInfo) {
     this.planInfo = planInfo;
   }
 

@@ -28,7 +28,7 @@
 
 		<mainClass>software.xdev.Application</mainClass>
 
-		<log4j2-version>2.24.0</log4j2-version>
+		<log4j2-version>2.24.3</log4j2-version>
 	</properties>
 
 	<dependencies>
@@ -59,7 +59,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.13.0</version>
+				<version>3.14.0</version>
 				<configuration>
 					<release>${maven.compiler.release}</release>
 					<compilerArgs>

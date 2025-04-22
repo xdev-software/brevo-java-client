@@ -35,12 +35,13 @@ import java.util.StringJoiner;
 @JsonTypeName("_corporate_user_invitation__action___email__put_200_response")
 public class CorporateUserInvitationActionEmailPut200Response {
   public static final String JSON_PROPERTY_MESSAGE = "message";
+  @jakarta.annotation.Nullable
   private String message;
 
   public CorporateUserInvitationActionEmailPut200Response() {
   }
 
-  public CorporateUserInvitationActionEmailPut200Response message(String message) {
+  public CorporateUserInvitationActionEmailPut200Response message(@jakarta.annotation.Nullable String message) {
     
     this.message = message;
     return this;
@@ -61,7 +62,7 @@ public class CorporateUserInvitationActionEmailPut200Response {
 
   @JsonProperty(JSON_PROPERTY_MESSAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setMessage(String message) {
+  public void setMessage(@jakarta.annotation.Nullable String message) {
     this.message = message;
   }
 

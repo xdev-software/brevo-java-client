@@ -44,48 +44,50 @@ import java.util.StringJoiner;
 @JsonTypeName("updateWebhook")
 public class UpdateWebhook {
   public static final String JSON_PROPERTY_URL = "url";
+  @jakarta.annotation.Nullable
   private String url;
 
   public static final String JSON_PROPERTY_DESCRIPTION = "description";
+  @jakarta.annotation.Nullable
   private String description;
 
   /**
    * Gets or Sets events
    */
   public enum EventsEnum {
-    SENT("sent"),
+    SENT(String.valueOf("sent")),
     
-    HARD_BOUNCE("hardBounce"),
+    HARD_BOUNCE(String.valueOf("hardBounce")),
     
-    SOFT_BOUNCE("softBounce"),
+    SOFT_BOUNCE(String.valueOf("softBounce")),
     
-    BLOCKED("blocked"),
+    BLOCKED(String.valueOf("blocked")),
     
-    SPAM("spam"),
+    SPAM(String.valueOf("spam")),
     
-    DELIVERED("delivered"),
+    DELIVERED(String.valueOf("delivered")),
     
-    REQUEST("request"),
+    REQUEST(String.valueOf("request")),
     
-    CLICK("click"),
+    CLICK(String.valueOf("click")),
     
-    INVALID("invalid"),
+    INVALID(String.valueOf("invalid")),
     
-    DEFERRED("deferred"),
+    DEFERRED(String.valueOf("deferred")),
     
-    OPENED("opened"),
+    OPENED(String.valueOf("opened")),
     
-    UNIQUE_OPENED("uniqueOpened"),
+    UNIQUE_OPENED(String.valueOf("uniqueOpened")),
     
-    UNSUBSCRIBED("unsubscribed"),
+    UNSUBSCRIBED(String.valueOf("unsubscribed")),
     
-    LIST_ADDITION("listAddition"),
+    LIST_ADDITION(String.valueOf("listAddition")),
     
-    CONTACT_UPDATED("contactUpdated"),
+    CONTACT_UPDATED(String.valueOf("contactUpdated")),
     
-    CONTACT_DELETED("contactDeleted"),
+    CONTACT_DELETED(String.valueOf("contactDeleted")),
     
-    INBOUND_EMAIL_PROCESSED("inboundEmailProcessed");
+    INBOUND_EMAIL_PROCESSED(String.valueOf("inboundEmailProcessed"));
 
     private String value;
 
@@ -115,24 +117,29 @@ public class UpdateWebhook {
   }
 
   public static final String JSON_PROPERTY_EVENTS = "events";
+  @jakarta.annotation.Nullable
   private List<EventsEnum> events = new ArrayList<>();
 
   public static final String JSON_PROPERTY_DOMAIN = "domain";
+  @jakarta.annotation.Nullable
   private String domain;
 
   public static final String JSON_PROPERTY_BATCHED = "batched";
+  @jakarta.annotation.Nullable
   private Boolean batched;
 
   public static final String JSON_PROPERTY_AUTH = "auth";
+  @jakarta.annotation.Nullable
   private Object auth;
 
   public static final String JSON_PROPERTY_HEADERS = "headers";
+  @jakarta.annotation.Nullable
   private List<Object> headers = new ArrayList<>();
 
   public UpdateWebhook() {
   }
 
-  public UpdateWebhook url(String url) {
+  public UpdateWebhook url(@jakarta.annotation.Nullable String url) {
     
     this.url = url;
     return this;
@@ -153,11 +160,11 @@ public class UpdateWebhook {
 
   @JsonProperty(JSON_PROPERTY_URL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUrl(String url) {
+  public void setUrl(@jakarta.annotation.Nullable String url) {
     this.url = url;
   }
 
-  public UpdateWebhook description(String description) {
+  public UpdateWebhook description(@jakarta.annotation.Nullable String description) {
     
     this.description = description;
     return this;
@@ -178,11 +185,11 @@ public class UpdateWebhook {
 
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDescription(String description) {
+  public void setDescription(@jakarta.annotation.Nullable String description) {
     this.description = description;
   }
 
-  public UpdateWebhook events(List<EventsEnum> events) {
+  public UpdateWebhook events(@jakarta.annotation.Nullable List<EventsEnum> events) {
     
     this.events = events;
     return this;
@@ -211,11 +218,11 @@ public class UpdateWebhook {
 
   @JsonProperty(JSON_PROPERTY_EVENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEvents(List<EventsEnum> events) {
+  public void setEvents(@jakarta.annotation.Nullable List<EventsEnum> events) {
     this.events = events;
   }
 
-  public UpdateWebhook domain(String domain) {
+  public UpdateWebhook domain(@jakarta.annotation.Nullable String domain) {
     
     this.domain = domain;
     return this;
@@ -236,11 +243,11 @@ public class UpdateWebhook {
 
   @JsonProperty(JSON_PROPERTY_DOMAIN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setDomain(String domain) {
+  public void setDomain(@jakarta.annotation.Nullable String domain) {
     this.domain = domain;
   }
 
-  public UpdateWebhook batched(Boolean batched) {
+  public UpdateWebhook batched(@jakarta.annotation.Nullable Boolean batched) {
     
     this.batched = batched;
     return this;
@@ -261,11 +268,11 @@ public class UpdateWebhook {
 
   @JsonProperty(JSON_PROPERTY_BATCHED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setBatched(Boolean batched) {
+  public void setBatched(@jakarta.annotation.Nullable Boolean batched) {
     this.batched = batched;
   }
 
-  public UpdateWebhook auth(Object auth) {
+  public UpdateWebhook auth(@jakarta.annotation.Nullable Object auth) {
     
     this.auth = auth;
     return this;
@@ -286,11 +293,11 @@ public class UpdateWebhook {
 
   @JsonProperty(JSON_PROPERTY_AUTH)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setAuth(Object auth) {
+  public void setAuth(@jakarta.annotation.Nullable Object auth) {
     this.auth = auth;
   }
 
-  public UpdateWebhook headers(List<Object> headers) {
+  public UpdateWebhook headers(@jakarta.annotation.Nullable List<Object> headers) {
     
     this.headers = headers;
     return this;
@@ -319,7 +326,7 @@ public class UpdateWebhook {
 
   @JsonProperty(JSON_PROPERTY_HEADERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setHeaders(List<Object> headers) {
+  public void setHeaders(@jakarta.annotation.Nullable List<Object> headers) {
     this.headers = headers;
   }
 

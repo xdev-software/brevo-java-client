@@ -41,18 +41,21 @@ import java.util.StringJoiner;
 @JsonTypeName("inviteuser")
 public class Inviteuser {
   public static final String JSON_PROPERTY_EMAIL = "email";
+  @jakarta.annotation.Nonnull
   private String email;
 
   public static final String JSON_PROPERTY_ALL_FEATURES_ACCESS = "all_features_access";
+  @jakarta.annotation.Nonnull
   private Boolean allFeaturesAccess;
 
   public static final String JSON_PROPERTY_PRIVILEGES = "privileges";
+  @jakarta.annotation.Nonnull
   private List<InviteuserPrivilegesInner> privileges = new ArrayList<>();
 
   public Inviteuser() {
   }
 
-  public Inviteuser email(String email) {
+  public Inviteuser email(@jakarta.annotation.Nonnull String email) {
     
     this.email = email;
     return this;
@@ -73,11 +76,11 @@ public class Inviteuser {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setEmail(String email) {
+  public void setEmail(@jakarta.annotation.Nonnull String email) {
     this.email = email;
   }
 
-  public Inviteuser allFeaturesAccess(Boolean allFeaturesAccess) {
+  public Inviteuser allFeaturesAccess(@jakarta.annotation.Nonnull Boolean allFeaturesAccess) {
     
     this.allFeaturesAccess = allFeaturesAccess;
     return this;
@@ -98,11 +101,11 @@ public class Inviteuser {
 
   @JsonProperty(JSON_PROPERTY_ALL_FEATURES_ACCESS)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setAllFeaturesAccess(Boolean allFeaturesAccess) {
+  public void setAllFeaturesAccess(@jakarta.annotation.Nonnull Boolean allFeaturesAccess) {
     this.allFeaturesAccess = allFeaturesAccess;
   }
 
-  public Inviteuser privileges(List<InviteuserPrivilegesInner> privileges) {
+  public Inviteuser privileges(@jakarta.annotation.Nonnull List<InviteuserPrivilegesInner> privileges) {
     
     this.privileges = privileges;
     return this;
@@ -131,7 +134,7 @@ public class Inviteuser {
 
   @JsonProperty(JSON_PROPERTY_PRIVILEGES)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setPrivileges(List<InviteuserPrivilegesInner> privileges) {
+  public void setPrivileges(@jakarta.annotation.Nonnull List<InviteuserPrivilegesInner> privileges) {
     this.privileges = privileges;
   }
 

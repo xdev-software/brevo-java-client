@@ -41,15 +41,17 @@ import java.util.StringJoiner;
 @JsonTypeName("getChildInfo_allOf_apiKeys")
 public class GetChildInfoAllOfApiKeys {
   public static final String JSON_PROPERTY_V2 = "v2";
+  @jakarta.annotation.Nonnull
   private List<GetChildInfoAllOfApiKeysV2> v2 = new ArrayList<>();
 
   public static final String JSON_PROPERTY_V3 = "v3";
+  @jakarta.annotation.Nullable
   private List<GetChildInfoAllOfApiKeysV3> v3 = new ArrayList<>();
 
   public GetChildInfoAllOfApiKeys() {
   }
 
-  public GetChildInfoAllOfApiKeys v2(List<GetChildInfoAllOfApiKeysV2> v2) {
+  public GetChildInfoAllOfApiKeys v2(@jakarta.annotation.Nonnull List<GetChildInfoAllOfApiKeysV2> v2) {
     
     this.v2 = v2;
     return this;
@@ -78,11 +80,11 @@ public class GetChildInfoAllOfApiKeys {
 
   @JsonProperty(JSON_PROPERTY_V2)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setV2(List<GetChildInfoAllOfApiKeysV2> v2) {
+  public void setV2(@jakarta.annotation.Nonnull List<GetChildInfoAllOfApiKeysV2> v2) {
     this.v2 = v2;
   }
 
-  public GetChildInfoAllOfApiKeys v3(List<GetChildInfoAllOfApiKeysV3> v3) {
+  public GetChildInfoAllOfApiKeys v3(@jakarta.annotation.Nullable List<GetChildInfoAllOfApiKeysV3> v3) {
     
     this.v3 = v3;
     return this;
@@ -111,7 +113,7 @@ public class GetChildInfoAllOfApiKeys {
 
   @JsonProperty(JSON_PROPERTY_V3)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setV3(List<GetChildInfoAllOfApiKeysV3> v3) {
+  public void setV3(@jakarta.annotation.Nullable List<GetChildInfoAllOfApiKeysV3> v3) {
     this.v3 = v3;
   }
 

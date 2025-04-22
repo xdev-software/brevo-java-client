@@ -40,15 +40,17 @@ import java.util.StringJoiner;
 @JsonTypeName("getSmtpTemplates")
 public class GetSmtpTemplates {
   public static final String JSON_PROPERTY_COUNT = "count";
+  @jakarta.annotation.Nullable
   private Long count;
 
   public static final String JSON_PROPERTY_TEMPLATES = "templates";
+  @jakarta.annotation.Nullable
   private List<GetSmtpTemplateOverview> templates = new ArrayList<>();
 
   public GetSmtpTemplates() {
   }
 
-  public GetSmtpTemplates count(Long count) {
+  public GetSmtpTemplates count(@jakarta.annotation.Nullable Long count) {
     
     this.count = count;
     return this;
@@ -69,11 +71,11 @@ public class GetSmtpTemplates {
 
   @JsonProperty(JSON_PROPERTY_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setCount(Long count) {
+  public void setCount(@jakarta.annotation.Nullable Long count) {
     this.count = count;
   }
 
-  public GetSmtpTemplates templates(List<GetSmtpTemplateOverview> templates) {
+  public GetSmtpTemplates templates(@jakarta.annotation.Nullable List<GetSmtpTemplateOverview> templates) {
     
     this.templates = templates;
     return this;
@@ -102,7 +104,7 @@ public class GetSmtpTemplates {
 
   @JsonProperty(JSON_PROPERTY_TEMPLATES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setTemplates(List<GetSmtpTemplateOverview> templates) {
+  public void setTemplates(@jakarta.annotation.Nullable List<GetSmtpTemplateOverview> templates) {
     this.templates = templates;
   }
 
