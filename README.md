@@ -2,7 +2,7 @@
 [![Build](https://img.shields.io/github/actions/workflow/status/xdev-software/brevo-java-client/check-build.yml?branch=develop)](https://github.com/xdev-software/brevo-java-client/actions/workflows/check-build.yml?query=branch%3Adevelop)
 [![API Specification Editor](https://img.shields.io/badge/API--Spec-Editor-85ea2d?logo=swagger)](https://editor.swagger.io/?url=https://raw.githubusercontent.com/xdev-software/brevo-java-client/develop/openapi/openapi.yml)
 
-# <img src="https://corp-backend.brevo.com/wp-content/uploads/2023/05/favicon.svg" height="28" /> [brevo](https://www.brevo.com/?r=t)-java-client
+# <img src="https://corp-backend.brevo.com/wp-content/uploads/2023/05/favicon.svg" height="28" /> Java Client for [Brevo](https://www.brevo.com/?r=t)
 
 A Java client for the [Brevo](https://www.brevo.com/?r=t) (formerly SendinBlue) API
 
