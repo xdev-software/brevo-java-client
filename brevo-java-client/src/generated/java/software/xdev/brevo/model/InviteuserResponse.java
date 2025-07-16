@@ -20,9 +20,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import java.io.UnsupportedEncodingException;
@@ -44,7 +41,7 @@ public class InviteuserResponse {
 
   public static final String JSON_PROPERTY_INVOICE_ID = "invoice_id";
   @jakarta.annotation.Nullable
-  private List<String> invoiceId = new ArrayList<>();
+  private String invoiceId;
 
   public InviteuserResponse() {
   }
@@ -74,17 +71,9 @@ public class InviteuserResponse {
     this.status = status;
   }
 
-  public InviteuserResponse invoiceId(@jakarta.annotation.Nullable List<String> invoiceId) {
+  public InviteuserResponse invoiceId(@jakarta.annotation.Nullable String invoiceId) {
     
     this.invoiceId = invoiceId;
-    return this;
-  }
-
-  public InviteuserResponse addInvoiceIdItem(String invoiceIdItem) {
-    if (this.invoiceId == null) {
-      this.invoiceId = new ArrayList<>();
-    }
-    this.invoiceId.add(invoiceIdItem);
     return this;
   }
 
@@ -96,14 +85,14 @@ public class InviteuserResponse {
   @JsonProperty(JSON_PROPERTY_INVOICE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public List<String> getInvoiceId() {
+  public String getInvoiceId() {
     return invoiceId;
   }
 
 
   @JsonProperty(JSON_PROPERTY_INVOICE_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setInvoiceId(@jakarta.annotation.Nullable List<String> invoiceId) {
+  public void setInvoiceId(@jakarta.annotation.Nullable String invoiceId) {
     this.invoiceId = invoiceId;
   }
 
@@ -190,15 +179,11 @@ public class InviteuserResponse {
 
     // add `invoice_id` to the URL query string
     if (getInvoiceId() != null) {
-      for (int i = 0; i < getInvoiceId().size(); i++) {
-        try {
-          joiner.add(String.format("%sinvoice_id%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-              URLEncoder.encode(String.valueOf(getInvoiceId().get(i)), "UTF-8").replaceAll("\\+", "%20")));
-        } catch (UnsupportedEncodingException e) {
-          // Should never happen, UTF-8 is always supported
-          throw new RuntimeException(e);
-        }
+      try {
+        joiner.add(String.format("%sinvoice_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getInvoiceId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
       }
     }
 

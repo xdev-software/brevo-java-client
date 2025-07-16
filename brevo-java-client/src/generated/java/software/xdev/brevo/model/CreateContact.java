@@ -25,6 +25,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import software.xdev.brevo.model.CreateDoiContactAttributesValue;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import java.io.UnsupportedEncodingException;
@@ -56,7 +57,7 @@ public class CreateContact {
 
   public static final String JSON_PROPERTY_ATTRIBUTES = "attributes";
   @jakarta.annotation.Nullable
-  private Map<String, Object> attributes = new HashMap<>();
+  private Map<String, CreateDoiContactAttributesValue> attributes = new HashMap<>();
 
   public static final String JSON_PROPERTY_EMAIL_BLACKLISTED = "emailBlacklisted";
   @jakarta.annotation.Nullable
@@ -88,7 +89,7 @@ public class CreateContact {
   }
 
   /**
-   * Email address of the user. **Mandatory if \&quot;SMS\&quot; field is not passed in \&quot;attributes\&quot; parameter**. Mobile Number in **SMS** field should be passed with proper country code. For example: **{\&quot;SMS\&quot;:\&quot;+91xxxxxxxxxx\&quot;}** or **{\&quot;SMS\&quot;:\&quot;0091xxxxxxxxxx\&quot;}** 
+   * Email address of the user. **Mandatory if \&quot;ext_id\&quot;  &amp; \&quot;SMS\&quot; field is not passed.** 
    * @return email
    */
   @jakarta.annotation.Nullable
@@ -131,13 +132,13 @@ public class CreateContact {
     this.extId = extId;
   }
 
-  public CreateContact attributes(@jakarta.annotation.Nullable Map<String, Object> attributes) {
+  public CreateContact attributes(@jakarta.annotation.Nullable Map<String, CreateDoiContactAttributesValue> attributes) {
     
     this.attributes = attributes;
     return this;
   }
 
-  public CreateContact putAttributesItem(String key, Object attributesItem) {
+  public CreateContact putAttributesItem(String key, CreateDoiContactAttributesValue attributesItem) {
     if (this.attributes == null) {
       this.attributes = new HashMap<>();
     }
@@ -146,21 +147,21 @@ public class CreateContact {
   }
 
   /**
-   * Pass the set of attributes and their values. The attribute&#39;s parameter should be passed in capital letter while creating a contact. Values that don&#39;t match the attribute type (e.g. text or string in a date attribute) will be ignored. **These attributes must be present in your Brevo account.**. For eg: **{\&quot;FNAME\&quot;:\&quot;Elly\&quot;, \&quot;LNAME\&quot;:\&quot;Roger\&quot;}** 
+   * Pass the set of attributes and their values. The attribute&#39;s parameter should be passed in capital letter while creating a contact. Values that don&#39;t match the attribute type (e.g. text or string in a date attribute) will be ignored. **These attributes must be present in your Brevo account.**. For eg: **{\&quot;FNAME\&quot;:\&quot;Elly\&quot;, \&quot;LNAME\&quot;:\&quot;Roger\&quot;, \&quot;COUNTRIES\&quot;:[\&quot;India\&quot;,\&quot;China\&quot;]}** 
    * @return attributes
    */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
-  @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public Map<String, Object> getAttributes() {
+  public Map<String, CreateDoiContactAttributesValue> getAttributes() {
     return attributes;
   }
 
 
   @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
-  @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
-  public void setAttributes(@jakarta.annotation.Nullable Map<String, Object> attributes) {
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setAttributes(@jakarta.annotation.Nullable Map<String, CreateDoiContactAttributesValue> attributes) {
     this.attributes = attributes;
   }
 
@@ -411,13 +412,9 @@ public class CreateContact {
     // add `attributes` to the URL query string
     if (getAttributes() != null) {
       for (String _key : getAttributes().keySet()) {
-        try {
-          joiner.add(String.format("%sattributes%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix),
-              getAttributes().get(_key), URLEncoder.encode(String.valueOf(getAttributes().get(_key)), "UTF-8").replaceAll("\\+", "%20")));
-        } catch (UnsupportedEncodingException e) {
-          // Should never happen, UTF-8 is always supported
-          throw new RuntimeException(e);
+        if (getAttributes().get(_key) != null) {
+          joiner.add(getAttributes().get(_key).toUrlQueryString(String.format("%sattributes%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix))));
         }
       }
     }

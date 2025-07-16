@@ -25,6 +25,7 @@ import software.xdev.brevo.model.GetSmsEventReport;
 import software.xdev.brevo.model.GetTransacAggregatedSmsReport;
 import software.xdev.brevo.model.GetTransacSmsReport;
 import software.xdev.brevo.model.SendSms;
+import software.xdev.brevo.model.SendSmsAsync;
 import software.xdev.brevo.model.SendTransacSms;
 
 
@@ -60,7 +61,7 @@ public class TransactionalSmsApi extends BaseApi {
    * @return GetSmsEventReport
    * @throws ApiException if fails to make API call
    */
-  public GetSmsEventReport getSmsEvents(Long limit, String startDate, String endDate, Long offset, Long days, String phoneNumber, String event, String tags, String sort) throws ApiException {
+  public GetSmsEventReport getSmsEvents(@jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable Long days, @jakarta.annotation.Nullable String phoneNumber, @jakarta.annotation.Nullable String event, @jakarta.annotation.Nullable String tags, @jakarta.annotation.Nullable String sort) throws ApiException {
     return this.getSmsEvents(limit, startDate, endDate, offset, days, phoneNumber, event, tags, sort, Collections.emptyMap());
   }
 
@@ -81,7 +82,7 @@ public class TransactionalSmsApi extends BaseApi {
    * @return GetSmsEventReport
    * @throws ApiException if fails to make API call
    */
-  public GetSmsEventReport getSmsEvents(Long limit, String startDate, String endDate, Long offset, Long days, String phoneNumber, String event, String tags, String sort, Map<String, String> additionalHeaders) throws ApiException {
+  public GetSmsEventReport getSmsEvents(@jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable Long days, @jakarta.annotation.Nullable String phoneNumber, @jakarta.annotation.Nullable String event, @jakarta.annotation.Nullable String tags, @jakarta.annotation.Nullable String sort, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -149,7 +150,7 @@ public class TransactionalSmsApi extends BaseApi {
    * @return GetTransacAggregatedSmsReport
    * @throws ApiException if fails to make API call
    */
-  public GetTransacAggregatedSmsReport getTransacAggregatedSmsReport(String startDate, String endDate, Long days, String tag) throws ApiException {
+  public GetTransacAggregatedSmsReport getTransacAggregatedSmsReport(@jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, @jakarta.annotation.Nullable Long days, @jakarta.annotation.Nullable String tag) throws ApiException {
     return this.getTransacAggregatedSmsReport(startDate, endDate, days, tag, Collections.emptyMap());
   }
 
@@ -165,7 +166,7 @@ public class TransactionalSmsApi extends BaseApi {
    * @return GetTransacAggregatedSmsReport
    * @throws ApiException if fails to make API call
    */
-  public GetTransacAggregatedSmsReport getTransacAggregatedSmsReport(String startDate, String endDate, Long days, String tag, Map<String, String> additionalHeaders) throws ApiException {
+  public GetTransacAggregatedSmsReport getTransacAggregatedSmsReport(@jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, @jakarta.annotation.Nullable Long days, @jakarta.annotation.Nullable String tag, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -229,7 +230,7 @@ public class TransactionalSmsApi extends BaseApi {
    * @return GetTransacSmsReport
    * @throws ApiException if fails to make API call
    */
-  public GetTransacSmsReport getTransacSmsReport(String startDate, String endDate, Long days, String tag, String sort) throws ApiException {
+  public GetTransacSmsReport getTransacSmsReport(@jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, @jakarta.annotation.Nullable Long days, @jakarta.annotation.Nullable String tag, @jakarta.annotation.Nullable String sort) throws ApiException {
     return this.getTransacSmsReport(startDate, endDate, days, tag, sort, Collections.emptyMap());
   }
 
@@ -246,7 +247,7 @@ public class TransactionalSmsApi extends BaseApi {
    * @return GetTransacSmsReport
    * @throws ApiException if fails to make API call
    */
-  public GetTransacSmsReport getTransacSmsReport(String startDate, String endDate, Long days, String tag, String sort, Map<String, String> additionalHeaders) throws ApiException {
+  public GetTransacSmsReport getTransacSmsReport(@jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, @jakarta.annotation.Nullable Long days, @jakarta.annotation.Nullable String tag, @jakarta.annotation.Nullable String sort, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -301,13 +302,87 @@ public class TransactionalSmsApi extends BaseApi {
   }
 
   /**
+   * Send SMS message asynchronously to a mobile number
+   * 
+   * @param sendTransacSms Values to send a transactional SMS (required)
+   * @return SendSmsAsync
+   * @throws ApiException if fails to make API call
+   */
+  public SendSmsAsync sendAsyncTransactionalSms(@jakarta.annotation.Nonnull SendTransacSms sendTransacSms) throws ApiException {
+    return this.sendAsyncTransactionalSms(sendTransacSms, Collections.emptyMap());
+  }
+
+
+  /**
+   * Send SMS message asynchronously to a mobile number
+   * 
+   * @param sendTransacSms Values to send a transactional SMS (required)
+   * @param additionalHeaders additionalHeaders for this call
+   * @return SendSmsAsync
+   * @throws ApiException if fails to make API call
+   */
+  public SendSmsAsync sendAsyncTransactionalSms(@jakarta.annotation.Nonnull SendTransacSms sendTransacSms, Map<String, String> additionalHeaders) throws ApiException {
+    Object localVarPostBody = sendTransacSms;
+    
+    // verify the required parameter 'sendTransacSms' is set
+    if (sendTransacSms == null) {
+      throw new ApiException(400, "Missing the required parameter 'sendTransacSms' when calling sendAsyncTransactionalSms");
+    }
+    
+    // create path and map variables
+    String localVarPath = "/transactionalSMS/send";
+
+    StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
+    String localVarQueryParameterBaseName;
+    List<Pair> localVarQueryParams = new ArrayList<Pair>();
+    List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+    Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+    Map<String, String> localVarCookieParams = new HashMap<String, String>();
+    Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+    
+    localVarHeaderParams.putAll(additionalHeaders);
+
+    
+    
+    final String[] localVarAccepts = {
+      "application/json"
+    };
+    final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+
+    final String[] localVarContentTypes = {
+      "application/json"
+    };
+    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+    String[] localVarAuthNames = new String[] { "api-key" };
+
+    TypeReference<SendSmsAsync> localVarReturnType = new TypeReference<SendSmsAsync>() {};
+    return apiClient.invokeAPI(
+        localVarPath,
+        "POST",
+        localVarQueryParams,
+        localVarCollectionQueryParams,
+        localVarQueryStringJoiner.toString(),
+        localVarPostBody,
+        localVarHeaderParams,
+        localVarCookieParams,
+        localVarFormParams,
+        localVarAccept,
+        localVarContentType,
+        localVarAuthNames,
+        localVarReturnType
+    );
+  }
+
+  /**
    * Send SMS message to a mobile number
    * 
    * @param sendTransacSms Values to send a transactional SMS (required)
    * @return SendSms
    * @throws ApiException if fails to make API call
    */
-  public SendSms sendTransacSms(SendTransacSms sendTransacSms) throws ApiException {
+  public SendSms sendTransacSms(@jakarta.annotation.Nonnull SendTransacSms sendTransacSms) throws ApiException {
     return this.sendTransacSms(sendTransacSms, Collections.emptyMap());
   }
 
@@ -320,7 +395,7 @@ public class TransactionalSmsApi extends BaseApi {
    * @return SendSms
    * @throws ApiException if fails to make API call
    */
-  public SendSms sendTransacSms(SendTransacSms sendTransacSms, Map<String, String> additionalHeaders) throws ApiException {
+  public SendSms sendTransacSms(@jakarta.annotation.Nonnull SendTransacSms sendTransacSms, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = sendTransacSms;
     
     // verify the required parameter 'sendTransacSms' is set

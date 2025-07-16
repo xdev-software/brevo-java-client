@@ -20,6 +20,10 @@ import software.xdev.brevo.client.BaseApi;
 import software.xdev.brevo.client.Configuration;
 import software.xdev.brevo.client.Pair;
 
+import software.xdev.brevo.model.CompaniesImportPost200Response;
+import software.xdev.brevo.model.CompaniesImportPost400Response;
+import software.xdev.brevo.model.CrmAttributesPost200Response;
+import software.xdev.brevo.model.CrmAttributesPostRequest;
 import software.xdev.brevo.model.CrmDealsIdPatchRequest;
 import software.xdev.brevo.model.CrmDealsLinkUnlinkIdPatchRequest;
 import software.xdev.brevo.model.CrmDealsPost201Response;
@@ -28,6 +32,7 @@ import software.xdev.brevo.model.Deal;
 import software.xdev.brevo.model.DealAttributesInner;
 import software.xdev.brevo.model.DealsList;
 import software.xdev.brevo.model.ErrorModel;
+import java.io.File;
 import software.xdev.brevo.model.Pipeline;
 
 
@@ -116,28 +121,106 @@ public class DealsApi extends BaseApi {
   }
 
   /**
+   * Create a company/deal attribute
+   * 
+   * @param crmAttributesPostRequest Attribute creation data for a company/deal. (required)
+   * @return CrmAttributesPost200Response
+   * @throws ApiException if fails to make API call
+   */
+  public CrmAttributesPost200Response crmAttributesPost(@jakarta.annotation.Nonnull CrmAttributesPostRequest crmAttributesPostRequest) throws ApiException {
+    return this.crmAttributesPost(crmAttributesPostRequest, Collections.emptyMap());
+  }
+
+
+  /**
+   * Create a company/deal attribute
+   * 
+   * @param crmAttributesPostRequest Attribute creation data for a company/deal. (required)
+   * @param additionalHeaders additionalHeaders for this call
+   * @return CrmAttributesPost200Response
+   * @throws ApiException if fails to make API call
+   */
+  public CrmAttributesPost200Response crmAttributesPost(@jakarta.annotation.Nonnull CrmAttributesPostRequest crmAttributesPostRequest, Map<String, String> additionalHeaders) throws ApiException {
+    Object localVarPostBody = crmAttributesPostRequest;
+    
+    // verify the required parameter 'crmAttributesPostRequest' is set
+    if (crmAttributesPostRequest == null) {
+      throw new ApiException(400, "Missing the required parameter 'crmAttributesPostRequest' when calling crmAttributesPost");
+    }
+    
+    // create path and map variables
+    String localVarPath = "/crm/attributes";
+
+    StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
+    String localVarQueryParameterBaseName;
+    List<Pair> localVarQueryParams = new ArrayList<Pair>();
+    List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+    Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+    Map<String, String> localVarCookieParams = new HashMap<String, String>();
+    Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+    
+    localVarHeaderParams.putAll(additionalHeaders);
+
+    
+    
+    final String[] localVarAccepts = {
+      "application/json"
+    };
+    final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+
+    final String[] localVarContentTypes = {
+      "application/json"
+    };
+    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+    String[] localVarAuthNames = new String[] { "api-key" };
+
+    TypeReference<CrmAttributesPost200Response> localVarReturnType = new TypeReference<CrmAttributesPost200Response>() {};
+    return apiClient.invokeAPI(
+        localVarPath,
+        "POST",
+        localVarQueryParams,
+        localVarCollectionQueryParams,
+        localVarQueryStringJoiner.toString(),
+        localVarPostBody,
+        localVarHeaderParams,
+        localVarCookieParams,
+        localVarFormParams,
+        localVarAccept,
+        localVarContentType,
+        localVarAuthNames,
+        localVarReturnType
+    );
+  }
+
+  /**
    * Get all deals
    * 
-   * @param filtersAttributesDealName Filter by attributes. If you have filter for owner on your side please send it as &#x60;filters[attributes.deal_owner]&#x60;. (optional)
+   * @param filtersAttributesDealName Filter by attributes. If you have a filter for the owner on your end, please send it as filters[attributes.deal_owner] and utilize the account email for the filtering. (optional)
    * @param filtersLinkedCompaniesIds Filter by linked companies ids (optional)
    * @param filtersLinkedContactsIds Filter by linked companies ids (optional)
+   * @param modifiedSince Filter (urlencoded) the contacts modified after a given UTC date-time (YYYY-MM-DDTHH:mm:ss.SSSZ). Prefer to pass your timezone in date-time format for accurate result. (optional)
+   * @param createdSince Filter (urlencoded) the contacts created after a given UTC date-time (YYYY-MM-DDTHH:mm:ss.SSSZ). Prefer to pass your timezone in date-time format for accurate result. (optional)
    * @param offset Index of the first document of the page (optional)
    * @param limit Number of documents per page (optional)
    * @param sort Sort the results in the ascending/descending order. Default order is **descending** by creation if &#x60;sort&#x60; is not passed (optional)
    * @return DealsList
    * @throws ApiException if fails to make API call
    */
-  public DealsList crmDealsGet(String filtersAttributesDealName, String filtersLinkedCompaniesIds, String filtersLinkedContactsIds, Long offset, Long limit, String sort) throws ApiException {
-    return this.crmDealsGet(filtersAttributesDealName, filtersLinkedCompaniesIds, filtersLinkedContactsIds, offset, limit, sort, Collections.emptyMap());
+  public DealsList crmDealsGet(@jakarta.annotation.Nullable String filtersAttributesDealName, @jakarta.annotation.Nullable String filtersLinkedCompaniesIds, @jakarta.annotation.Nullable String filtersLinkedContactsIds, @jakarta.annotation.Nullable String modifiedSince, @jakarta.annotation.Nullable String createdSince, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable String sort) throws ApiException {
+    return this.crmDealsGet(filtersAttributesDealName, filtersLinkedCompaniesIds, filtersLinkedContactsIds, modifiedSince, createdSince, offset, limit, sort, Collections.emptyMap());
   }
 
 
   /**
    * Get all deals
    * 
-   * @param filtersAttributesDealName Filter by attributes. If you have filter for owner on your side please send it as &#x60;filters[attributes.deal_owner]&#x60;. (optional)
+   * @param filtersAttributesDealName Filter by attributes. If you have a filter for the owner on your end, please send it as filters[attributes.deal_owner] and utilize the account email for the filtering. (optional)
    * @param filtersLinkedCompaniesIds Filter by linked companies ids (optional)
    * @param filtersLinkedContactsIds Filter by linked companies ids (optional)
+   * @param modifiedSince Filter (urlencoded) the contacts modified after a given UTC date-time (YYYY-MM-DDTHH:mm:ss.SSSZ). Prefer to pass your timezone in date-time format for accurate result. (optional)
+   * @param createdSince Filter (urlencoded) the contacts created after a given UTC date-time (YYYY-MM-DDTHH:mm:ss.SSSZ). Prefer to pass your timezone in date-time format for accurate result. (optional)
    * @param offset Index of the first document of the page (optional)
    * @param limit Number of documents per page (optional)
    * @param sort Sort the results in the ascending/descending order. Default order is **descending** by creation if &#x60;sort&#x60; is not passed (optional)
@@ -145,7 +228,7 @@ public class DealsApi extends BaseApi {
    * @return DealsList
    * @throws ApiException if fails to make API call
    */
-  public DealsList crmDealsGet(String filtersAttributesDealName, String filtersLinkedCompaniesIds, String filtersLinkedContactsIds, Long offset, Long limit, String sort, Map<String, String> additionalHeaders) throws ApiException {
+  public DealsList crmDealsGet(@jakarta.annotation.Nullable String filtersAttributesDealName, @jakarta.annotation.Nullable String filtersLinkedCompaniesIds, @jakarta.annotation.Nullable String filtersLinkedContactsIds, @jakarta.annotation.Nullable String modifiedSince, @jakarta.annotation.Nullable String createdSince, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable String sort, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -162,6 +245,8 @@ public class DealsApi extends BaseApi {
     localVarQueryParams.addAll(apiClient.parameterToPair("filters[attributes.deal_name]", filtersAttributesDealName));
     localVarQueryParams.addAll(apiClient.parameterToPair("filters[linkedCompaniesIds]", filtersLinkedCompaniesIds));
     localVarQueryParams.addAll(apiClient.parameterToPair("filters[linkedContactsIds]", filtersLinkedContactsIds));
+    localVarQueryParams.addAll(apiClient.parameterToPair("modifiedSince", modifiedSince));
+    localVarQueryParams.addAll(apiClient.parameterToPair("createdSince", createdSince));
     localVarQueryParams.addAll(apiClient.parameterToPair("offset", offset));
     localVarQueryParams.addAll(apiClient.parameterToPair("limit", limit));
     localVarQueryParams.addAll(apiClient.parameterToPair("sort", sort));
@@ -206,7 +291,7 @@ public class DealsApi extends BaseApi {
    * @param id  (required)
    * @throws ApiException if fails to make API call
    */
-  public void crmDealsIdDelete(String id) throws ApiException {
+  public void crmDealsIdDelete(@jakarta.annotation.Nonnull String id) throws ApiException {
     this.crmDealsIdDelete(id, Collections.emptyMap());
   }
 
@@ -218,7 +303,7 @@ public class DealsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void crmDealsIdDelete(String id, Map<String, String> additionalHeaders) throws ApiException {
+  public void crmDealsIdDelete(@jakarta.annotation.Nonnull String id, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'id' is set
@@ -279,7 +364,7 @@ public class DealsApi extends BaseApi {
    * @return Deal
    * @throws ApiException if fails to make API call
    */
-  public Deal crmDealsIdGet(String id) throws ApiException {
+  public Deal crmDealsIdGet(@jakarta.annotation.Nonnull String id) throws ApiException {
     return this.crmDealsIdGet(id, Collections.emptyMap());
   }
 
@@ -292,7 +377,7 @@ public class DealsApi extends BaseApi {
    * @return Deal
    * @throws ApiException if fails to make API call
    */
-  public Deal crmDealsIdGet(String id, Map<String, String> additionalHeaders) throws ApiException {
+  public Deal crmDealsIdGet(@jakarta.annotation.Nonnull String id, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'id' is set
@@ -354,7 +439,7 @@ public class DealsApi extends BaseApi {
    * @param crmDealsIdPatchRequest Updated deal details. (required)
    * @throws ApiException if fails to make API call
    */
-  public void crmDealsIdPatch(String id, CrmDealsIdPatchRequest crmDealsIdPatchRequest) throws ApiException {
+  public void crmDealsIdPatch(@jakarta.annotation.Nonnull String id, @jakarta.annotation.Nonnull CrmDealsIdPatchRequest crmDealsIdPatchRequest) throws ApiException {
     this.crmDealsIdPatch(id, crmDealsIdPatchRequest, Collections.emptyMap());
   }
 
@@ -367,7 +452,7 @@ public class DealsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void crmDealsIdPatch(String id, CrmDealsIdPatchRequest crmDealsIdPatchRequest, Map<String, String> additionalHeaders) throws ApiException {
+  public void crmDealsIdPatch(@jakarta.annotation.Nonnull String id, @jakarta.annotation.Nonnull CrmDealsIdPatchRequest crmDealsIdPatchRequest, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = crmDealsIdPatchRequest;
     
     // verify the required parameter 'id' is set
@@ -427,13 +512,88 @@ public class DealsApi extends BaseApi {
   }
 
   /**
+   * Import deals(creation and updation)
+   * Import deals from a CSV file with mapping options.
+   * @param _file The CSV file to upload.The file should have the first row as the mapping attribute. Some default attribute names are (a) deal_id [brevo mongoID to update deals] (b) associated_contact (c) associated_company (f) any other attribute with internal name  (optional)
+   * @param mapping The mapping options in JSON format. Here is an example of the JSON structure:   &#x60;&#x60;&#x60;json {   \\\&quot;link_entities\\\&quot;: true, // Determines whether to link related entities during the import process   \\\&quot;unlink_entities\\\&quot;: false, // Determines whether to unlink related entities during the import process   \\\&quot;update_existing_records\\\&quot;: true, // Determines whether to update based on company ID or treat every row as create   \\\&quot;unset_empty_attributes\\\&quot;: false // Determines whether to unset a specific attribute during update if the values input is blank }  &#x60;&#x60;&#x60;  (optional)
+   * @return CompaniesImportPost200Response
+   * @throws ApiException if fails to make API call
+   */
+  public CompaniesImportPost200Response crmDealsImportPost(@jakarta.annotation.Nullable File _file, @jakarta.annotation.Nullable Object mapping) throws ApiException {
+    return this.crmDealsImportPost(_file, mapping, Collections.emptyMap());
+  }
+
+
+  /**
+   * Import deals(creation and updation)
+   * Import deals from a CSV file with mapping options.
+   * @param _file The CSV file to upload.The file should have the first row as the mapping attribute. Some default attribute names are (a) deal_id [brevo mongoID to update deals] (b) associated_contact (c) associated_company (f) any other attribute with internal name  (optional)
+   * @param mapping The mapping options in JSON format. Here is an example of the JSON structure:   &#x60;&#x60;&#x60;json {   \\\&quot;link_entities\\\&quot;: true, // Determines whether to link related entities during the import process   \\\&quot;unlink_entities\\\&quot;: false, // Determines whether to unlink related entities during the import process   \\\&quot;update_existing_records\\\&quot;: true, // Determines whether to update based on company ID or treat every row as create   \\\&quot;unset_empty_attributes\\\&quot;: false // Determines whether to unset a specific attribute during update if the values input is blank }  &#x60;&#x60;&#x60;  (optional)
+   * @param additionalHeaders additionalHeaders for this call
+   * @return CompaniesImportPost200Response
+   * @throws ApiException if fails to make API call
+   */
+  public CompaniesImportPost200Response crmDealsImportPost(@jakarta.annotation.Nullable File _file, @jakarta.annotation.Nullable Object mapping, Map<String, String> additionalHeaders) throws ApiException {
+    Object localVarPostBody = null;
+    
+    // create path and map variables
+    String localVarPath = "/crm/deals/import";
+
+    StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
+    String localVarQueryParameterBaseName;
+    List<Pair> localVarQueryParams = new ArrayList<Pair>();
+    List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+    Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+    Map<String, String> localVarCookieParams = new HashMap<String, String>();
+    Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+    
+    localVarHeaderParams.putAll(additionalHeaders);
+
+    
+    if (_file != null)
+      localVarFormParams.put("file", _file);
+if (mapping != null)
+      localVarFormParams.put("mapping", mapping);
+
+    final String[] localVarAccepts = {
+      "application/json"
+    };
+    final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+
+    final String[] localVarContentTypes = {
+      "multipart/form-data"
+    };
+    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+    String[] localVarAuthNames = new String[] { "api-key" };
+
+    TypeReference<CompaniesImportPost200Response> localVarReturnType = new TypeReference<CompaniesImportPost200Response>() {};
+    return apiClient.invokeAPI(
+        localVarPath,
+        "POST",
+        localVarQueryParams,
+        localVarCollectionQueryParams,
+        localVarQueryStringJoiner.toString(),
+        localVarPostBody,
+        localVarHeaderParams,
+        localVarCookieParams,
+        localVarFormParams,
+        localVarAccept,
+        localVarContentType,
+        localVarAuthNames,
+        localVarReturnType
+    );
+  }
+
+  /**
    * Link and Unlink a deal with contacts and companies
    * 
    * @param id  (required)
    * @param crmDealsLinkUnlinkIdPatchRequest Linked / Unlinked contacts and companies ids. (required)
    * @throws ApiException if fails to make API call
    */
-  public void crmDealsLinkUnlinkIdPatch(String id, CrmDealsLinkUnlinkIdPatchRequest crmDealsLinkUnlinkIdPatchRequest) throws ApiException {
+  public void crmDealsLinkUnlinkIdPatch(@jakarta.annotation.Nonnull String id, @jakarta.annotation.Nonnull CrmDealsLinkUnlinkIdPatchRequest crmDealsLinkUnlinkIdPatchRequest) throws ApiException {
     this.crmDealsLinkUnlinkIdPatch(id, crmDealsLinkUnlinkIdPatchRequest, Collections.emptyMap());
   }
 
@@ -446,7 +606,7 @@ public class DealsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void crmDealsLinkUnlinkIdPatch(String id, CrmDealsLinkUnlinkIdPatchRequest crmDealsLinkUnlinkIdPatchRequest, Map<String, String> additionalHeaders) throws ApiException {
+  public void crmDealsLinkUnlinkIdPatch(@jakarta.annotation.Nonnull String id, @jakarta.annotation.Nonnull CrmDealsLinkUnlinkIdPatchRequest crmDealsLinkUnlinkIdPatchRequest, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = crmDealsLinkUnlinkIdPatchRequest;
     
     // verify the required parameter 'id' is set
@@ -512,7 +672,7 @@ public class DealsApi extends BaseApi {
    * @return CrmDealsPost201Response
    * @throws ApiException if fails to make API call
    */
-  public CrmDealsPost201Response crmDealsPost(CrmDealsPostRequest crmDealsPostRequest) throws ApiException {
+  public CrmDealsPost201Response crmDealsPost(@jakarta.annotation.Nonnull CrmDealsPostRequest crmDealsPostRequest) throws ApiException {
     return this.crmDealsPost(crmDealsPostRequest, Collections.emptyMap());
   }
 
@@ -525,7 +685,7 @@ public class DealsApi extends BaseApi {
    * @return CrmDealsPost201Response
    * @throws ApiException if fails to make API call
    */
-  public CrmDealsPost201Response crmDealsPost(CrmDealsPostRequest crmDealsPostRequest, Map<String, String> additionalHeaders) throws ApiException {
+  public CrmDealsPost201Response crmDealsPost(@jakarta.annotation.Nonnull CrmDealsPostRequest crmDealsPostRequest, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = crmDealsPostRequest;
     
     // verify the required parameter 'crmDealsPostRequest' is set
@@ -724,7 +884,7 @@ public class DealsApi extends BaseApi {
    * @return List&lt;Pipeline&gt;
    * @throws ApiException if fails to make API call
    */
-  public List<Pipeline> crmPipelineDetailsPipelineIDGet(String pipelineID) throws ApiException {
+  public List<Pipeline> crmPipelineDetailsPipelineIDGet(@jakarta.annotation.Nonnull String pipelineID) throws ApiException {
     return this.crmPipelineDetailsPipelineIDGet(pipelineID, Collections.emptyMap());
   }
 
@@ -737,7 +897,7 @@ public class DealsApi extends BaseApi {
    * @return List&lt;Pipeline&gt;
    * @throws ApiException if fails to make API call
    */
-  public List<Pipeline> crmPipelineDetailsPipelineIDGet(String pipelineID, Map<String, String> additionalHeaders) throws ApiException {
+  public List<Pipeline> crmPipelineDetailsPipelineIDGet(@jakarta.annotation.Nonnull String pipelineID, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'pipelineID' is set

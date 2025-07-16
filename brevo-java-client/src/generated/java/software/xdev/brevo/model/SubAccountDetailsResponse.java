@@ -20,6 +20,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import software.xdev.brevo.model.SubAccountDetailsResponseGroupsInner;
 import software.xdev.brevo.model.SubAccountDetailsResponsePlanInfo;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -34,6 +38,7 @@ import java.util.StringJoiner;
   SubAccountDetailsResponse.JSON_PROPERTY_NAME,
   SubAccountDetailsResponse.JSON_PROPERTY_EMAIL,
   SubAccountDetailsResponse.JSON_PROPERTY_COMPANY_NAME,
+  SubAccountDetailsResponse.JSON_PROPERTY_GROUPS,
   SubAccountDetailsResponse.JSON_PROPERTY_PLAN_INFO
 })
 @JsonTypeName("subAccountDetailsResponse")
@@ -49,6 +54,10 @@ public class SubAccountDetailsResponse {
   public static final String JSON_PROPERTY_COMPANY_NAME = "companyName";
   @jakarta.annotation.Nullable
   private String companyName;
+
+  public static final String JSON_PROPERTY_GROUPS = "groups";
+  @jakarta.annotation.Nullable
+  private List<SubAccountDetailsResponseGroupsInner> groups = new ArrayList<>();
 
   public static final String JSON_PROPERTY_PLAN_INFO = "planInfo";
   @jakarta.annotation.Nullable
@@ -132,6 +141,39 @@ public class SubAccountDetailsResponse {
     this.companyName = companyName;
   }
 
+  public SubAccountDetailsResponse groups(@jakarta.annotation.Nullable List<SubAccountDetailsResponseGroupsInner> groups) {
+    
+    this.groups = groups;
+    return this;
+  }
+
+  public SubAccountDetailsResponse addGroupsItem(SubAccountDetailsResponseGroupsInner groupsItem) {
+    if (this.groups == null) {
+      this.groups = new ArrayList<>();
+    }
+    this.groups.add(groupsItem);
+    return this;
+  }
+
+  /**
+   * Get groups
+   * @return groups
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_GROUPS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public List<SubAccountDetailsResponseGroupsInner> getGroups() {
+    return groups;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_GROUPS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setGroups(@jakarta.annotation.Nullable List<SubAccountDetailsResponseGroupsInner> groups) {
+    this.groups = groups;
+  }
+
   public SubAccountDetailsResponse planInfo(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfo planInfo) {
     
     this.planInfo = planInfo;
@@ -169,12 +211,13 @@ public class SubAccountDetailsResponse {
     return Objects.equals(this.name, subAccountDetailsResponse.name) &&
         Objects.equals(this.email, subAccountDetailsResponse.email) &&
         Objects.equals(this.companyName, subAccountDetailsResponse.companyName) &&
+        Objects.equals(this.groups, subAccountDetailsResponse.groups) &&
         Objects.equals(this.planInfo, subAccountDetailsResponse.planInfo);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(name, email, companyName, planInfo);
+    return Objects.hash(name, email, companyName, groups, planInfo);
   }
 
   @Override
@@ -184,6 +227,7 @@ public class SubAccountDetailsResponse {
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    email: ").append(toIndentedString(email)).append("\n");
     sb.append("    companyName: ").append(toIndentedString(companyName)).append("\n");
+    sb.append("    groups: ").append(toIndentedString(groups)).append("\n");
     sb.append("    planInfo: ").append(toIndentedString(planInfo)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -259,6 +303,16 @@ public class SubAccountDetailsResponse {
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
+      }
+    }
+
+    // add `groups` to the URL query string
+    if (getGroups() != null) {
+      for (int i = 0; i < getGroups().size(); i++) {
+        if (getGroups().get(i) != null) {
+          joiner.add(getGroups().get(i).toUrlQueryString(String.format("%sgroups%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+        }
       }
     }
 

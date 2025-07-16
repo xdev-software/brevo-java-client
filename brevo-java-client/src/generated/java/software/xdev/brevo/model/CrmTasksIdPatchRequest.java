@@ -253,7 +253,7 @@ public class CrmTasksIdPatchRequest {
   }
 
   /**
-   * User id to whom task is assigned
+   * To assign a task to a user you can use either the account email or ID.
    * @return assignToId
    */
   @jakarta.annotation.Nullable

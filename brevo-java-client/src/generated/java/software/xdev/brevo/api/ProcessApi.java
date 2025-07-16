@@ -49,7 +49,7 @@ public class ProcessApi extends BaseApi {
    * @return GetProcess
    * @throws ApiException if fails to make API call
    */
-  public GetProcess getProcess(Long processId) throws ApiException {
+  public GetProcess getProcess(@jakarta.annotation.Nonnull Long processId) throws ApiException {
     return this.getProcess(processId, Collections.emptyMap());
   }
 
@@ -62,7 +62,7 @@ public class ProcessApi extends BaseApi {
    * @return GetProcess
    * @throws ApiException if fails to make API call
    */
-  public GetProcess getProcess(Long processId, Map<String, String> additionalHeaders) throws ApiException {
+  public GetProcess getProcess(@jakarta.annotation.Nonnull Long processId, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'processId' is set
@@ -126,7 +126,7 @@ public class ProcessApi extends BaseApi {
    * @return GetProcesses
    * @throws ApiException if fails to make API call
    */
-  public GetProcesses getProcesses(Long limit, Long offset, String sort) throws ApiException {
+  public GetProcesses getProcesses(@jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String sort) throws ApiException {
     return this.getProcesses(limit, offset, sort, Collections.emptyMap());
   }
 
@@ -141,7 +141,7 @@ public class ProcessApi extends BaseApi {
    * @return GetProcesses
    * @throws ApiException if fails to make API call
    */
-  public GetProcesses getProcesses(Long limit, Long offset, String sort, Map<String, String> additionalHeaders) throws ApiException {
+  public GetProcesses getProcesses(@jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String sort, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables

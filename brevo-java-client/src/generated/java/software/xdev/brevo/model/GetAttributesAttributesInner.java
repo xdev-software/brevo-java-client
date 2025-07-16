@@ -38,7 +38,8 @@ import java.util.StringJoiner;
   GetAttributesAttributesInner.JSON_PROPERTY_CATEGORY,
   GetAttributesAttributesInner.JSON_PROPERTY_TYPE,
   GetAttributesAttributesInner.JSON_PROPERTY_ENUMERATION,
-  GetAttributesAttributesInner.JSON_PROPERTY_CALCULATED_VALUE
+  GetAttributesAttributesInner.JSON_PROPERTY_CALCULATED_VALUE,
+  GetAttributesAttributesInner.JSON_PROPERTY_MULTI_CATEGORY_OPTIONS
 })
 @JsonTypeName("getAttributes_attributes_inner")
 public class GetAttributesAttributesInner {
@@ -103,7 +104,11 @@ public class GetAttributesAttributesInner {
     
     ID(String.valueOf("id")),
     
-    BOOLEAN(String.valueOf("boolean"));
+    BOOLEAN(String.valueOf("boolean")),
+    
+    MULTIPLE_CHOICE(String.valueOf("multiple-choice")),
+    
+    USER(String.valueOf("user"));
 
     private String value;
 
@@ -143,6 +148,10 @@ public class GetAttributesAttributesInner {
   public static final String JSON_PROPERTY_CALCULATED_VALUE = "calculatedValue";
   @jakarta.annotation.Nullable
   private String calculatedValue;
+
+  public static final String JSON_PROPERTY_MULTI_CATEGORY_OPTIONS = "multiCategoryOptions";
+  @jakarta.annotation.Nullable
+  private List<String> multiCategoryOptions = new ArrayList<>();
 
   public GetAttributesAttributesInner() {
   }
@@ -280,6 +289,39 @@ public class GetAttributesAttributesInner {
     this.calculatedValue = calculatedValue;
   }
 
+  public GetAttributesAttributesInner multiCategoryOptions(@jakarta.annotation.Nullable List<String> multiCategoryOptions) {
+    
+    this.multiCategoryOptions = multiCategoryOptions;
+    return this;
+  }
+
+  public GetAttributesAttributesInner addMultiCategoryOptionsItem(String multiCategoryOptionsItem) {
+    if (this.multiCategoryOptions == null) {
+      this.multiCategoryOptions = new ArrayList<>();
+    }
+    this.multiCategoryOptions.add(multiCategoryOptionsItem);
+    return this;
+  }
+
+  /**
+   * Parameter only available for \&quot;multiple-choice\&quot; type attributes.
+   * @return multiCategoryOptions
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_MULTI_CATEGORY_OPTIONS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public List<String> getMultiCategoryOptions() {
+    return multiCategoryOptions;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_MULTI_CATEGORY_OPTIONS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setMultiCategoryOptions(@jakarta.annotation.Nullable List<String> multiCategoryOptions) {
+    this.multiCategoryOptions = multiCategoryOptions;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -293,12 +335,13 @@ public class GetAttributesAttributesInner {
         Objects.equals(this.category, getAttributesAttributesInner.category) &&
         Objects.equals(this.type, getAttributesAttributesInner.type) &&
         Objects.equals(this.enumeration, getAttributesAttributesInner.enumeration) &&
-        Objects.equals(this.calculatedValue, getAttributesAttributesInner.calculatedValue);
+        Objects.equals(this.calculatedValue, getAttributesAttributesInner.calculatedValue) &&
+        Objects.equals(this.multiCategoryOptions, getAttributesAttributesInner.multiCategoryOptions);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(name, category, type, enumeration, calculatedValue);
+    return Objects.hash(name, category, type, enumeration, calculatedValue, multiCategoryOptions);
   }
 
   @Override
@@ -310,6 +353,7 @@ public class GetAttributesAttributesInner {
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("    enumeration: ").append(toIndentedString(enumeration)).append("\n");
     sb.append("    calculatedValue: ").append(toIndentedString(calculatedValue)).append("\n");
+    sb.append("    multiCategoryOptions: ").append(toIndentedString(multiCategoryOptions)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -404,6 +448,20 @@ public class GetAttributesAttributesInner {
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
+      }
+    }
+
+    // add `multiCategoryOptions` to the URL query string
+    if (getMultiCategoryOptions() != null) {
+      for (int i = 0; i < getMultiCategoryOptions().size(); i++) {
+        try {
+          joiner.add(String.format("%smultiCategoryOptions%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getMultiCategoryOptions().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
       }
     }
 

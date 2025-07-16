@@ -37,6 +37,7 @@ import java.util.StringJoiner;
   CreateWebhook.JSON_PROPERTY_DESCRIPTION,
   CreateWebhook.JSON_PROPERTY_EVENTS,
   CreateWebhook.JSON_PROPERTY_TYPE,
+  CreateWebhook.JSON_PROPERTY_CHANNEL,
   CreateWebhook.JSON_PROPERTY_DOMAIN,
   CreateWebhook.JSON_PROPERTY_BATCHED,
   CreateWebhook.JSON_PROPERTY_AUTH,
@@ -162,6 +163,45 @@ public class CreateWebhook {
   @jakarta.annotation.Nullable
   private TypeEnum type = TypeEnum.TRANSACTIONAL;
 
+  /**
+   * channel of webhook
+   */
+  public enum ChannelEnum {
+    SMS(String.valueOf("sms")),
+    
+    EMAIL(String.valueOf("email"));
+
+    private String value;
+
+    ChannelEnum(String value) {
+      this.value = value;
+    }
+
+    @JsonValue
+    public String getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    @JsonCreator
+    public static ChannelEnum fromValue(String value) {
+      for (ChannelEnum b : ChannelEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      throw new IllegalArgumentException("Unexpected value '" + value + "'");
+    }
+  }
+
+  public static final String JSON_PROPERTY_CHANNEL = "channel";
+  @jakarta.annotation.Nullable
+  private ChannelEnum channel = ChannelEnum.EMAIL;
+
   public static final String JSON_PROPERTY_DOMAIN = "domain";
   @jakarta.annotation.Nullable
   private String domain;
@@ -246,7 +286,7 @@ public class CreateWebhook {
   }
 
   /**
-   * - Events triggering the webhook. Possible values for **Transactional** type webhook: #### &#x60;sent&#x60; OR &#x60;request&#x60;, &#x60;delivered&#x60;, &#x60;hardBounce&#x60;, &#x60;softBounce&#x60;, &#x60;blocked&#x60;, &#x60;spam&#x60;, &#x60;invalid&#x60;, &#x60;deferred&#x60;, &#x60;click&#x60;, &#x60;opened&#x60;, &#x60;uniqueOpened&#x60; and &#x60;unsubscribed&#x60; - Possible values for **Marketing** type webhook: #### &#x60;spam&#x60;, &#x60;opened&#x60;, &#x60;click&#x60;, &#x60;hardBounce&#x60;, &#x60;softBounce&#x60;, &#x60;unsubscribed&#x60;, &#x60;listAddition&#x60; &amp; &#x60;delivered&#x60; - Possible values for **Inbound** type webhook: #### &#x60;inboundEmailProcessed&#x60; 
+   * - Events triggering the webhook. Possible values for **Transactional** type webhook: #### &#x60;sent&#x60; OR &#x60;request&#x60;, &#x60;delivered&#x60;, &#x60;hardBounce&#x60;, &#x60;softBounce&#x60;, &#x60;blocked&#x60;, &#x60;spam&#x60;, &#x60;invalid&#x60;, &#x60;deferred&#x60;, &#x60;click&#x60;, &#x60;opened&#x60;, &#x60;uniqueOpened&#x60; and &#x60;unsubscribed&#x60; - Possible values for **Marketing** type webhook: #### &#x60;spam&#x60;, &#x60;opened&#x60;, &#x60;click&#x60;, &#x60;hardBounce&#x60;, &#x60;softBounce&#x60;, &#x60;unsubscribed&#x60;, &#x60;listAddition&#x60; &amp; &#x60;delivered&#x60; - Possible values for **Inbound** type webhook: #### &#x60;inboundEmailProcessed&#x60; - Possible values for type **Transactional** and channel **SMS** #### &#x60;accepted&#x60;,&#x60;delivered&#x60;,&#x60;softBounce&#x60;,&#x60;hardBounce&#x60;,&#x60;unsubscribe&#x60;,&#x60;reply&#x60;, &#x60;subscribe&#x60;,&#x60;sent&#x60;,&#x60;blacklisted&#x60;,&#x60;skip&#x60; - Possible values for type **Marketing**  channel **SMS** #### &#x60;sent&#x60;,&#x60;delivered&#x60;,&#x60;softBounce&#x60;,&#x60;hardBounce&#x60;,&#x60;unsubscribe&#x60;,&#x60;reply&#x60;, &#x60;subscribe&#x60;,&#x60;skip&#x60; 
    * @return events
    */
   @jakarta.annotation.Nonnull
@@ -287,6 +327,31 @@ public class CreateWebhook {
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setType(@jakarta.annotation.Nullable TypeEnum type) {
     this.type = type;
+  }
+
+  public CreateWebhook channel(@jakarta.annotation.Nullable ChannelEnum channel) {
+    
+    this.channel = channel;
+    return this;
+  }
+
+  /**
+   * channel of webhook
+   * @return channel
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_CHANNEL)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public ChannelEnum getChannel() {
+    return channel;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_CHANNEL)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setChannel(@jakarta.annotation.Nullable ChannelEnum channel) {
+    this.channel = channel;
   }
 
   public CreateWebhook domain(@jakarta.annotation.Nullable String domain) {
@@ -410,6 +475,7 @@ public class CreateWebhook {
         Objects.equals(this.description, createWebhook.description) &&
         Objects.equals(this.events, createWebhook.events) &&
         Objects.equals(this.type, createWebhook.type) &&
+        Objects.equals(this.channel, createWebhook.channel) &&
         Objects.equals(this.domain, createWebhook.domain) &&
         Objects.equals(this.batched, createWebhook.batched) &&
         Objects.equals(this.auth, createWebhook.auth) &&
@@ -418,7 +484,7 @@ public class CreateWebhook {
 
   @Override
   public int hashCode() {
-    return Objects.hash(url, description, events, type, domain, batched, auth, headers);
+    return Objects.hash(url, description, events, type, channel, domain, batched, auth, headers);
   }
 
   @Override
@@ -429,6 +495,7 @@ public class CreateWebhook {
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    events: ").append(toIndentedString(events)).append("\n");
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
+    sb.append("    channel: ").append(toIndentedString(channel)).append("\n");
     sb.append("    domain: ").append(toIndentedString(domain)).append("\n");
     sb.append("    batched: ").append(toIndentedString(batched)).append("\n");
     sb.append("    auth: ").append(toIndentedString(auth)).append("\n");
@@ -518,6 +585,16 @@ public class CreateWebhook {
     if (getType() != null) {
       try {
         joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `channel` to the URL query string
+    if (getChannel() != null) {
+      try {
+        joiner.add(String.format("%schannel%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getChannel()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

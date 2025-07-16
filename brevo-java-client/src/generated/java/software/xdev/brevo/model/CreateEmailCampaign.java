@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.util.HashMap;
 import java.util.Map;
+import software.xdev.brevo.model.CreateEmailCampaignEmailExpirationDate;
 import software.xdev.brevo.model.CreateEmailCampaignRecipients;
 import software.xdev.brevo.model.CreateEmailCampaignSender;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -64,7 +65,8 @@ import java.util.StringJoiner;
   CreateEmailCampaign.JSON_PROPERTY_INITIAL_QUOTA,
   CreateEmailCampaign.JSON_PROPERTY_INCREASE_RATE,
   CreateEmailCampaign.JSON_PROPERTY_UNSUBSCRIPTION_PAGE_ID,
-  CreateEmailCampaign.JSON_PROPERTY_UPDATE_FORM_ID
+  CreateEmailCampaign.JSON_PROPERTY_UPDATE_FORM_ID,
+  CreateEmailCampaign.JSON_PROPERTY_EMAIL_EXPIRATION_DATE
 })
 @JsonTypeName("createEmailCampaign")
 public class CreateEmailCampaign {
@@ -226,6 +228,10 @@ public class CreateEmailCampaign {
   public static final String JSON_PROPERTY_UPDATE_FORM_ID = "updateFormId";
   @jakarta.annotation.Nullable
   private String updateFormId;
+
+  public static final String JSON_PROPERTY_EMAIL_EXPIRATION_DATE = "emailExpirationDate";
+  @jakarta.annotation.Nullable
+  private CreateEmailCampaignEmailExpirationDate emailExpirationDate;
 
   public CreateEmailCampaign() {
   }
@@ -1019,6 +1025,31 @@ public class CreateEmailCampaign {
     this.updateFormId = updateFormId;
   }
 
+  public CreateEmailCampaign emailExpirationDate(@jakarta.annotation.Nullable CreateEmailCampaignEmailExpirationDate emailExpirationDate) {
+    
+    this.emailExpirationDate = emailExpirationDate;
+    return this;
+  }
+
+  /**
+   * Get emailExpirationDate
+   * @return emailExpirationDate
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_EMAIL_EXPIRATION_DATE)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public CreateEmailCampaignEmailExpirationDate getEmailExpirationDate() {
+    return emailExpirationDate;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_EMAIL_EXPIRATION_DATE)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setEmailExpirationDate(@jakarta.annotation.Nullable CreateEmailCampaignEmailExpirationDate emailExpirationDate) {
+    this.emailExpirationDate = emailExpirationDate;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -1058,12 +1089,13 @@ public class CreateEmailCampaign {
         Objects.equals(this.initialQuota, createEmailCampaign.initialQuota) &&
         Objects.equals(this.increaseRate, createEmailCampaign.increaseRate) &&
         Objects.equals(this.unsubscriptionPageId, createEmailCampaign.unsubscriptionPageId) &&
-        Objects.equals(this.updateFormId, createEmailCampaign.updateFormId);
+        Objects.equals(this.updateFormId, createEmailCampaign.updateFormId) &&
+        Objects.equals(this.emailExpirationDate, createEmailCampaign.emailExpirationDate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(tag, sender, name, htmlContent, htmlUrl, templateId, scheduledAt, subject, previewText, replyTo, toField, recipients, attachmentUrl, inlineImageActivation, mirrorActive, footer, header, utmCampaign, params, sendAtBestTime, abTesting, subjectA, subjectB, splitRule, winnerCriteria, winnerDelay, ipWarmupEnable, initialQuota, increaseRate, unsubscriptionPageId, updateFormId);
+    return Objects.hash(tag, sender, name, htmlContent, htmlUrl, templateId, scheduledAt, subject, previewText, replyTo, toField, recipients, attachmentUrl, inlineImageActivation, mirrorActive, footer, header, utmCampaign, params, sendAtBestTime, abTesting, subjectA, subjectB, splitRule, winnerCriteria, winnerDelay, ipWarmupEnable, initialQuota, increaseRate, unsubscriptionPageId, updateFormId, emailExpirationDate);
   }
 
   @Override
@@ -1101,6 +1133,7 @@ public class CreateEmailCampaign {
     sb.append("    increaseRate: ").append(toIndentedString(increaseRate)).append("\n");
     sb.append("    unsubscriptionPageId: ").append(toIndentedString(unsubscriptionPageId)).append("\n");
     sb.append("    updateFormId: ").append(toIndentedString(updateFormId)).append("\n");
+    sb.append("    emailExpirationDate: ").append(toIndentedString(emailExpirationDate)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -1450,6 +1483,11 @@ public class CreateEmailCampaign {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
       }
+    }
+
+    // add `emailExpirationDate` to the URL query string
+    if (getEmailExpirationDate() != null) {
+      joiner.add(getEmailExpirationDate().toUrlQueryString(prefix + "emailExpirationDate" + suffix));
     }
 
     return joiner.toString();

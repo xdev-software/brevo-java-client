@@ -25,6 +25,7 @@ import java.util.Arrays;
 import java.util.List;
 import software.xdev.brevo.model.RemoveContactFromListByAll;
 import software.xdev.brevo.model.RemoveContactFromListByEmails;
+import software.xdev.brevo.model.RemoveContactFromListByExtIDs;
 import software.xdev.brevo.model.RemoveContactFromListByIDs;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -38,7 +39,8 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   RemoveContactFromListRequest.JSON_PROPERTY_EMAILS,
   RemoveContactFromListRequest.JSON_PROPERTY_IDS,
-  RemoveContactFromListRequest.JSON_PROPERTY_ALL
+  RemoveContactFromListRequest.JSON_PROPERTY_ALL,
+  RemoveContactFromListRequest.JSON_PROPERTY_EXT_IDS
 })
 @JsonTypeName("removeContactFromList_request")
 public class RemoveContactFromListRequest {
@@ -53,6 +55,10 @@ public class RemoveContactFromListRequest {
   public static final String JSON_PROPERTY_ALL = "all";
   @jakarta.annotation.Nullable
   private Boolean all;
+
+  public static final String JSON_PROPERTY_EXT_IDS = "extIds";
+  @jakarta.annotation.Nullable
+  private List<String> extIds = new ArrayList<>();
 
   public RemoveContactFromListRequest() {
   }
@@ -72,7 +78,7 @@ public class RemoveContactFromListRequest {
   }
 
   /**
-   * **Required if &#39;all&#39; is false and &#39;ids&#39; is empty.** Emails to remove from a list. You can pass a **maximum of 150 emails** for removal in one request. 
+   * **Required if &#39;all&#39; is false and &#39;ids&#39;, &#39;extIds&#39; are empty.** Emails to remove from a list. You can pass a **maximum of 150 emails** for removal in one request. 
    * @return emails
    */
   @jakarta.annotation.Nullable
@@ -105,7 +111,7 @@ public class RemoveContactFromListRequest {
   }
 
   /**
-   * **Required if &#39;all&#39; is false and &#39;emails&#39; is empty.** IDs to remove from a list. You can pass a **maximum of 150 IDs** for removal in one request. 
+   * **Required if &#39;all&#39; is false and &#39;emails&#39;, &#39;extIds&#39; are empty.** IDs to remove from a list. You can pass a **maximum of 150 IDs** for removal in one request. 
    * @return ids
    */
   @jakarta.annotation.Nullable
@@ -130,7 +136,7 @@ public class RemoveContactFromListRequest {
   }
 
   /**
-   * **Required if &#39;emails&#39; and &#39;ids&#39; are empty.** Remove all existing contacts from a list. A process will be created in this scenario. You can fetch the process details to know about the progress 
+   * **Required if &#39;emails&#39;, &#39;extIds&#39; and &#39;ids&#39; are empty.** Remove all existing contacts from a list. A process will be created in this scenario. You can fetch the process details to know about the progress 
    * @return all
    */
   @jakarta.annotation.Nullable
@@ -148,6 +154,39 @@ public class RemoveContactFromListRequest {
     this.all = all;
   }
 
+  public RemoveContactFromListRequest extIds(@jakarta.annotation.Nullable List<String> extIds) {
+    
+    this.extIds = extIds;
+    return this;
+  }
+
+  public RemoveContactFromListRequest addExtIdsItem(String extIdsItem) {
+    if (this.extIds == null) {
+      this.extIds = new ArrayList<>();
+    }
+    this.extIds.add(extIdsItem);
+    return this;
+  }
+
+  /**
+   * **Required if &#39;all&#39; is false, &#39;ids&#39; and &#39;emails&#39; are empty.** EXT_ID attributes to remove from a list. You can pass a **maximum of 150 EXT_ID attributes** for removal in one request. 
+   * @return extIds
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_EXT_IDS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public List<String> getExtIds() {
+    return extIds;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_EXT_IDS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setExtIds(@jakarta.annotation.Nullable List<String> extIds) {
+    this.extIds = extIds;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -159,12 +198,13 @@ public class RemoveContactFromListRequest {
     RemoveContactFromListRequest removeContactFromListRequest = (RemoveContactFromListRequest) o;
     return Objects.equals(this.emails, removeContactFromListRequest.emails) &&
         Objects.equals(this.ids, removeContactFromListRequest.ids) &&
-        Objects.equals(this.all, removeContactFromListRequest.all);
+        Objects.equals(this.all, removeContactFromListRequest.all) &&
+        Objects.equals(this.extIds, removeContactFromListRequest.extIds);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(emails, ids, all);
+    return Objects.hash(emails, ids, all, extIds);
   }
 
   @Override
@@ -174,6 +214,7 @@ public class RemoveContactFromListRequest {
     sb.append("    emails: ").append(toIndentedString(emails)).append("\n");
     sb.append("    ids: ").append(toIndentedString(ids)).append("\n");
     sb.append("    all: ").append(toIndentedString(all)).append("\n");
+    sb.append("    extIds: ").append(toIndentedString(extIds)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -256,6 +297,20 @@ public class RemoveContactFromListRequest {
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
+      }
+    }
+
+    // add `extIds` to the URL query string
+    if (getExtIds() != null) {
+      for (int i = 0; i < getExtIds().size(); i++) {
+        try {
+          joiner.add(String.format("%sextIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getExtIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
       }
     }
 

@@ -62,7 +62,7 @@ public class EmailCampaignsApi extends BaseApi {
    * @return CreateModel
    * @throws ApiException if fails to make API call
    */
-  public CreateModel createEmailCampaign(CreateEmailCampaign createEmailCampaign) throws ApiException {
+  public CreateModel createEmailCampaign(@jakarta.annotation.Nonnull CreateEmailCampaign createEmailCampaign) throws ApiException {
     return this.createEmailCampaign(createEmailCampaign, Collections.emptyMap());
   }
 
@@ -75,7 +75,7 @@ public class EmailCampaignsApi extends BaseApi {
    * @return CreateModel
    * @throws ApiException if fails to make API call
    */
-  public CreateModel createEmailCampaign(CreateEmailCampaign createEmailCampaign, Map<String, String> additionalHeaders) throws ApiException {
+  public CreateModel createEmailCampaign(@jakarta.annotation.Nonnull CreateEmailCampaign createEmailCampaign, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = createEmailCampaign;
     
     // verify the required parameter 'createEmailCampaign' is set
@@ -135,7 +135,7 @@ public class EmailCampaignsApi extends BaseApi {
    * @param campaignId id of the campaign (required)
    * @throws ApiException if fails to make API call
    */
-  public void deleteEmailCampaign(Long campaignId) throws ApiException {
+  public void deleteEmailCampaign(@jakarta.annotation.Nonnull Long campaignId) throws ApiException {
     this.deleteEmailCampaign(campaignId, Collections.emptyMap());
   }
 
@@ -147,7 +147,7 @@ public class EmailCampaignsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void deleteEmailCampaign(Long campaignId, Map<String, String> additionalHeaders) throws ApiException {
+  public void deleteEmailCampaign(@jakarta.annotation.Nonnull Long campaignId, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'campaignId' is set
@@ -209,7 +209,7 @@ public class EmailCampaignsApi extends BaseApi {
    * @return CreatedProcessId
    * @throws ApiException if fails to make API call
    */
-  public CreatedProcessId emailExportRecipients(Long campaignId, EmailExportRecipients emailExportRecipients) throws ApiException {
+  public CreatedProcessId emailExportRecipients(@jakarta.annotation.Nonnull Long campaignId, @jakarta.annotation.Nullable EmailExportRecipients emailExportRecipients) throws ApiException {
     return this.emailExportRecipients(campaignId, emailExportRecipients, Collections.emptyMap());
   }
 
@@ -223,7 +223,7 @@ public class EmailCampaignsApi extends BaseApi {
    * @return CreatedProcessId
    * @throws ApiException if fails to make API call
    */
-  public CreatedProcessId emailExportRecipients(Long campaignId, EmailExportRecipients emailExportRecipients, Map<String, String> additionalHeaders) throws ApiException {
+  public CreatedProcessId emailExportRecipients(@jakarta.annotation.Nonnull Long campaignId, @jakarta.annotation.Nullable EmailExportRecipients emailExportRecipients, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = emailExportRecipients;
     
     // verify the required parameter 'campaignId' is set
@@ -285,7 +285,7 @@ public class EmailCampaignsApi extends BaseApi {
    * @return AbTestCampaignResult
    * @throws ApiException if fails to make API call
    */
-  public AbTestCampaignResult getAbTestCampaignResult(Long campaignId) throws ApiException {
+  public AbTestCampaignResult getAbTestCampaignResult(@jakarta.annotation.Nonnull Long campaignId) throws ApiException {
     return this.getAbTestCampaignResult(campaignId, Collections.emptyMap());
   }
 
@@ -298,7 +298,7 @@ public class EmailCampaignsApi extends BaseApi {
    * @return AbTestCampaignResult
    * @throws ApiException if fails to make API call
    */
-  public AbTestCampaignResult getAbTestCampaignResult(Long campaignId, Map<String, String> additionalHeaders) throws ApiException {
+  public AbTestCampaignResult getAbTestCampaignResult(@jakarta.annotation.Nonnull Long campaignId, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'campaignId' is set
@@ -361,7 +361,7 @@ public class EmailCampaignsApi extends BaseApi {
    * @return GetEmailCampaign
    * @throws ApiException if fails to make API call
    */
-  public GetEmailCampaign getEmailCampaign(Long campaignId, String statistics) throws ApiException {
+  public GetEmailCampaign getEmailCampaign(@jakarta.annotation.Nonnull Long campaignId, @jakarta.annotation.Nullable String statistics) throws ApiException {
     return this.getEmailCampaign(campaignId, statistics, Collections.emptyMap());
   }
 
@@ -375,7 +375,7 @@ public class EmailCampaignsApi extends BaseApi {
    * @return GetEmailCampaign
    * @throws ApiException if fails to make API call
    */
-  public GetEmailCampaign getEmailCampaign(Long campaignId, String statistics, Map<String, String> additionalHeaders) throws ApiException {
+  public GetEmailCampaign getEmailCampaign(@jakarta.annotation.Nonnull Long campaignId, @jakarta.annotation.Nullable String statistics, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'campaignId' is set
@@ -436,7 +436,7 @@ public class EmailCampaignsApi extends BaseApi {
    * 
    * @param type Filter on the type of the campaigns (optional)
    * @param status Filter on the status of the campaign (optional)
-   * @param statistics Filter on the type of statistics required. Example **globalStats** value will only fetch globalStats info of the campaign in returned response. (optional)
+   * @param statistics Filter on the type of statistics required. Example **globalStats** value will only fetch globalStats info of the campaign in returned response.This option only returns data for events occurred in the last 6 months.For older campaigns, it’s advisable to use the **Get Campaign Report** endpoint. (optional)
    * @param startDate **Mandatory if endDate is used**. Starting (urlencoded) UTC date-time (YYYY-MM-DDTHH:mm:ss.SSSZ) to filter the sent email campaigns. **Prefer to pass your timezone in date-time format for accurate result** ( only available if either &#39;status&#39; not passed and if passed is set to &#39;sent&#39; )  (optional)
    * @param endDate **Mandatory if startDate is used**. Ending (urlencoded) UTC date-time (YYYY-MM-DDTHH:mm:ss.SSSZ) to filter the sent email campaigns. **Prefer to pass your timezone in date-time format for accurate result** ( only available if either &#39;status&#39; not passed and if passed is set to &#39;sent&#39; )  (optional)
    * @param limit Number of documents per page (optional, default to 50)
@@ -446,7 +446,7 @@ public class EmailCampaignsApi extends BaseApi {
    * @return GetEmailCampaigns
    * @throws ApiException if fails to make API call
    */
-  public GetEmailCampaigns getEmailCampaigns(String type, String status, String statistics, String startDate, String endDate, Long limit, Long offset, String sort, Boolean excludeHtmlContent) throws ApiException {
+  public GetEmailCampaigns getEmailCampaigns(@jakarta.annotation.Nullable String type, @jakarta.annotation.Nullable String status, @jakarta.annotation.Nullable String statistics, @jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String sort, @jakarta.annotation.Nullable Boolean excludeHtmlContent) throws ApiException {
     return this.getEmailCampaigns(type, status, statistics, startDate, endDate, limit, offset, sort, excludeHtmlContent, Collections.emptyMap());
   }
 
@@ -456,7 +456,7 @@ public class EmailCampaignsApi extends BaseApi {
    * 
    * @param type Filter on the type of the campaigns (optional)
    * @param status Filter on the status of the campaign (optional)
-   * @param statistics Filter on the type of statistics required. Example **globalStats** value will only fetch globalStats info of the campaign in returned response. (optional)
+   * @param statistics Filter on the type of statistics required. Example **globalStats** value will only fetch globalStats info of the campaign in returned response.This option only returns data for events occurred in the last 6 months.For older campaigns, it’s advisable to use the **Get Campaign Report** endpoint. (optional)
    * @param startDate **Mandatory if endDate is used**. Starting (urlencoded) UTC date-time (YYYY-MM-DDTHH:mm:ss.SSSZ) to filter the sent email campaigns. **Prefer to pass your timezone in date-time format for accurate result** ( only available if either &#39;status&#39; not passed and if passed is set to &#39;sent&#39; )  (optional)
    * @param endDate **Mandatory if startDate is used**. Ending (urlencoded) UTC date-time (YYYY-MM-DDTHH:mm:ss.SSSZ) to filter the sent email campaigns. **Prefer to pass your timezone in date-time format for accurate result** ( only available if either &#39;status&#39; not passed and if passed is set to &#39;sent&#39; )  (optional)
    * @param limit Number of documents per page (optional, default to 50)
@@ -467,7 +467,7 @@ public class EmailCampaignsApi extends BaseApi {
    * @return GetEmailCampaigns
    * @throws ApiException if fails to make API call
    */
-  public GetEmailCampaigns getEmailCampaigns(String type, String status, String statistics, String startDate, String endDate, Long limit, Long offset, String sort, Boolean excludeHtmlContent, Map<String, String> additionalHeaders) throws ApiException {
+  public GetEmailCampaigns getEmailCampaigns(@jakarta.annotation.Nullable String type, @jakarta.annotation.Nullable String status, @jakarta.annotation.Nullable String statistics, @jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String sort, @jakarta.annotation.Nullable Boolean excludeHtmlContent, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -532,7 +532,7 @@ public class EmailCampaignsApi extends BaseApi {
    * @return GetSharedTemplateUrl
    * @throws ApiException if fails to make API call
    */
-  public GetSharedTemplateUrl getSharedTemplateUrl(Long campaignId) throws ApiException {
+  public GetSharedTemplateUrl getSharedTemplateUrl(@jakarta.annotation.Nonnull Long campaignId) throws ApiException {
     return this.getSharedTemplateUrl(campaignId, Collections.emptyMap());
   }
 
@@ -545,7 +545,7 @@ public class EmailCampaignsApi extends BaseApi {
    * @return GetSharedTemplateUrl
    * @throws ApiException if fails to make API call
    */
-  public GetSharedTemplateUrl getSharedTemplateUrl(Long campaignId, Map<String, String> additionalHeaders) throws ApiException {
+  public GetSharedTemplateUrl getSharedTemplateUrl(@jakarta.annotation.Nonnull Long campaignId, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'campaignId' is set
@@ -606,7 +606,7 @@ public class EmailCampaignsApi extends BaseApi {
    * @param campaignId Id of the campaign (required)
    * @throws ApiException if fails to make API call
    */
-  public void sendEmailCampaignNow(Long campaignId) throws ApiException {
+  public void sendEmailCampaignNow(@jakarta.annotation.Nonnull Long campaignId) throws ApiException {
     this.sendEmailCampaignNow(campaignId, Collections.emptyMap());
   }
 
@@ -618,7 +618,7 @@ public class EmailCampaignsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void sendEmailCampaignNow(Long campaignId, Map<String, String> additionalHeaders) throws ApiException {
+  public void sendEmailCampaignNow(@jakarta.annotation.Nonnull Long campaignId, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'campaignId' is set
@@ -679,7 +679,7 @@ public class EmailCampaignsApi extends BaseApi {
    * @param sendReport Values for send a report (required)
    * @throws ApiException if fails to make API call
    */
-  public void sendReport(Long campaignId, SendReport sendReport) throws ApiException {
+  public void sendReport(@jakarta.annotation.Nonnull Long campaignId, @jakarta.annotation.Nonnull SendReport sendReport) throws ApiException {
     this.sendReport(campaignId, sendReport, Collections.emptyMap());
   }
 
@@ -692,7 +692,7 @@ public class EmailCampaignsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void sendReport(Long campaignId, SendReport sendReport, Map<String, String> additionalHeaders) throws ApiException {
+  public void sendReport(@jakarta.annotation.Nonnull Long campaignId, @jakarta.annotation.Nonnull SendReport sendReport, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = sendReport;
     
     // verify the required parameter 'campaignId' is set
@@ -758,7 +758,7 @@ public class EmailCampaignsApi extends BaseApi {
    * @param sendTestEmail  (required)
    * @throws ApiException if fails to make API call
    */
-  public void sendTestEmail(Long campaignId, SendTestEmail sendTestEmail) throws ApiException {
+  public void sendTestEmail(@jakarta.annotation.Nonnull Long campaignId, @jakarta.annotation.Nonnull SendTestEmail sendTestEmail) throws ApiException {
     this.sendTestEmail(campaignId, sendTestEmail, Collections.emptyMap());
   }
 
@@ -771,7 +771,7 @@ public class EmailCampaignsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void sendTestEmail(Long campaignId, SendTestEmail sendTestEmail, Map<String, String> additionalHeaders) throws ApiException {
+  public void sendTestEmail(@jakarta.annotation.Nonnull Long campaignId, @jakarta.annotation.Nonnull SendTestEmail sendTestEmail, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = sendTestEmail;
     
     // verify the required parameter 'campaignId' is set
@@ -837,7 +837,7 @@ public class EmailCampaignsApi extends BaseApi {
    * @param updateCampaignStatus Status of the campaign (required)
    * @throws ApiException if fails to make API call
    */
-  public void updateCampaignStatus(Long campaignId, UpdateCampaignStatus updateCampaignStatus) throws ApiException {
+  public void updateCampaignStatus(@jakarta.annotation.Nonnull Long campaignId, @jakarta.annotation.Nonnull UpdateCampaignStatus updateCampaignStatus) throws ApiException {
     this.updateCampaignStatus(campaignId, updateCampaignStatus, Collections.emptyMap());
   }
 
@@ -850,7 +850,7 @@ public class EmailCampaignsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void updateCampaignStatus(Long campaignId, UpdateCampaignStatus updateCampaignStatus, Map<String, String> additionalHeaders) throws ApiException {
+  public void updateCampaignStatus(@jakarta.annotation.Nonnull Long campaignId, @jakarta.annotation.Nonnull UpdateCampaignStatus updateCampaignStatus, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = updateCampaignStatus;
     
     // verify the required parameter 'campaignId' is set
@@ -916,7 +916,7 @@ public class EmailCampaignsApi extends BaseApi {
    * @param updateEmailCampaign Values to update a campaign (required)
    * @throws ApiException if fails to make API call
    */
-  public void updateEmailCampaign(Long campaignId, UpdateEmailCampaign updateEmailCampaign) throws ApiException {
+  public void updateEmailCampaign(@jakarta.annotation.Nonnull Long campaignId, @jakarta.annotation.Nonnull UpdateEmailCampaign updateEmailCampaign) throws ApiException {
     this.updateEmailCampaign(campaignId, updateEmailCampaign, Collections.emptyMap());
   }
 
@@ -929,7 +929,7 @@ public class EmailCampaignsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void updateEmailCampaign(Long campaignId, UpdateEmailCampaign updateEmailCampaign, Map<String, String> additionalHeaders) throws ApiException {
+  public void updateEmailCampaign(@jakarta.annotation.Nonnull Long campaignId, @jakarta.annotation.Nonnull UpdateEmailCampaign updateEmailCampaign, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = updateEmailCampaign;
     
     // verify the required parameter 'campaignId' is set
@@ -995,7 +995,7 @@ public class EmailCampaignsApi extends BaseApi {
    * @return UploadImageModel
    * @throws ApiException if fails to make API call
    */
-  public UploadImageModel uploadImageToGallery(UploadImageToGallery uploadImageToGallery) throws ApiException {
+  public UploadImageModel uploadImageToGallery(@jakarta.annotation.Nonnull UploadImageToGallery uploadImageToGallery) throws ApiException {
     return this.uploadImageToGallery(uploadImageToGallery, Collections.emptyMap());
   }
 
@@ -1008,7 +1008,7 @@ public class EmailCampaignsApi extends BaseApi {
    * @return UploadImageModel
    * @throws ApiException if fails to make API call
    */
-  public UploadImageModel uploadImageToGallery(UploadImageToGallery uploadImageToGallery, Map<String, String> additionalHeaders) throws ApiException {
+  public UploadImageModel uploadImageToGallery(@jakarta.annotation.Nonnull UploadImageToGallery uploadImageToGallery, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = uploadImageToGallery;
     
     // verify the required parameter 'uploadImageToGallery' is set

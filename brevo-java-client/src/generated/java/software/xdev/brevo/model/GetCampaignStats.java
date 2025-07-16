@@ -45,7 +45,9 @@ import java.util.StringJoiner;
   GetCampaignStats.JSON_PROPERTY_UNSUBSCRIPTIONS,
   GetCampaignStats.JSON_PROPERTY_VIEWED,
   GetCampaignStats.JSON_PROPERTY_DEFERRED,
-  GetCampaignStats.JSON_PROPERTY_RETURN_BOUNCE
+  GetCampaignStats.JSON_PROPERTY_RETURN_BOUNCE,
+  GetCampaignStats.JSON_PROPERTY_OPENS_RATE,
+  GetCampaignStats.JSON_PROPERTY_APPLE_MPP_OPENS
 })
 @JsonTypeName("getCampaignStats")
 public class GetCampaignStats {
@@ -112,6 +114,14 @@ public class GetCampaignStats {
   public static final String JSON_PROPERTY_RETURN_BOUNCE = "returnBounce";
   @jakarta.annotation.Nullable
   private Long returnBounce;
+
+  public static final String JSON_PROPERTY_OPENS_RATE = "opensRate";
+  @jakarta.annotation.Nullable
+  private Float opensRate;
+
+  public static final String JSON_PROPERTY_APPLE_MPP_OPENS = "appleMppOpens";
+  @jakarta.annotation.Nullable
+  private Long appleMppOpens;
 
   public GetCampaignStats() {
   }
@@ -516,6 +526,56 @@ public class GetCampaignStats {
     this.returnBounce = returnBounce;
   }
 
+  public GetCampaignStats opensRate(@jakarta.annotation.Nullable Float opensRate) {
+    
+    this.opensRate = opensRate;
+    return this;
+  }
+
+  /**
+   * Percentage of recipients who open the email out of your total number of recipients. Depending on your Campaign settings, they may include Apple MPP opens.
+   * @return opensRate
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_OPENS_RATE)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public Float getOpensRate() {
+    return opensRate;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_OPENS_RATE)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setOpensRate(@jakarta.annotation.Nullable Float opensRate) {
+    this.opensRate = opensRate;
+  }
+
+  public GetCampaignStats appleMppOpens(@jakarta.annotation.Nullable Long appleMppOpens) {
+    
+    this.appleMppOpens = appleMppOpens;
+    return this;
+  }
+
+  /**
+   * Numbers of times your email has been opened automatically through Apple MPP.
+   * @return appleMppOpens
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_APPLE_MPP_OPENS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public Long getAppleMppOpens() {
+    return appleMppOpens;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_APPLE_MPP_OPENS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setAppleMppOpens(@jakarta.annotation.Nullable Long appleMppOpens) {
+    this.appleMppOpens = appleMppOpens;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -540,12 +600,14 @@ public class GetCampaignStats {
         Objects.equals(this.unsubscriptions, getCampaignStats.unsubscriptions) &&
         Objects.equals(this.viewed, getCampaignStats.viewed) &&
         Objects.equals(this.deferred, getCampaignStats.deferred) &&
-        Objects.equals(this.returnBounce, getCampaignStats.returnBounce);
+        Objects.equals(this.returnBounce, getCampaignStats.returnBounce) &&
+        Objects.equals(this.opensRate, getCampaignStats.opensRate) &&
+        Objects.equals(this.appleMppOpens, getCampaignStats.appleMppOpens);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(listId, uniqueClicks, clickers, complaints, delivered, sent, softBounces, hardBounces, uniqueViews, trackableViews, trackableViewsRate, estimatedViews, unsubscriptions, viewed, deferred, returnBounce);
+    return Objects.hash(listId, uniqueClicks, clickers, complaints, delivered, sent, softBounces, hardBounces, uniqueViews, trackableViews, trackableViewsRate, estimatedViews, unsubscriptions, viewed, deferred, returnBounce, opensRate, appleMppOpens);
   }
 
   @Override
@@ -568,6 +630,8 @@ public class GetCampaignStats {
     sb.append("    viewed: ").append(toIndentedString(viewed)).append("\n");
     sb.append("    deferred: ").append(toIndentedString(deferred)).append("\n");
     sb.append("    returnBounce: ").append(toIndentedString(returnBounce)).append("\n");
+    sb.append("    opensRate: ").append(toIndentedString(opensRate)).append("\n");
+    sb.append("    appleMppOpens: ").append(toIndentedString(appleMppOpens)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -769,6 +833,26 @@ public class GetCampaignStats {
     if (getReturnBounce() != null) {
       try {
         joiner.add(String.format("%sreturnBounce%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReturnBounce()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `opensRate` to the URL query string
+    if (getOpensRate() != null) {
+      try {
+        joiner.add(String.format("%sopensRate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOpensRate()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `appleMppOpens` to the URL query string
+    if (getAppleMppOpens() != null) {
+      try {
+        joiner.add(String.format("%sappleMppOpens%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAppleMppOpens()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

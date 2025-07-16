@@ -38,6 +38,7 @@ import java.util.StringJoiner;
   GetWebhook.JSON_PROPERTY_DESCRIPTION,
   GetWebhook.JSON_PROPERTY_EVENTS,
   GetWebhook.JSON_PROPERTY_TYPE,
+  GetWebhook.JSON_PROPERTY_CHANNEL,
   GetWebhook.JSON_PROPERTY_CREATED_AT,
   GetWebhook.JSON_PROPERTY_MODIFIED_AT,
   GetWebhook.JSON_PROPERTY_BATCHED,
@@ -100,6 +101,45 @@ public class GetWebhook {
   public static final String JSON_PROPERTY_TYPE = "type";
   @jakarta.annotation.Nonnull
   private TypeEnum type;
+
+  /**
+   * channel of webhook
+   */
+  public enum ChannelEnum {
+    SMS(String.valueOf("sms")),
+    
+    EMAIL(String.valueOf("email"));
+
+    private String value;
+
+    ChannelEnum(String value) {
+      this.value = value;
+    }
+
+    @JsonValue
+    public String getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    @JsonCreator
+    public static ChannelEnum fromValue(String value) {
+      for (ChannelEnum b : ChannelEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      throw new IllegalArgumentException("Unexpected value '" + value + "'");
+    }
+  }
+
+  public static final String JSON_PROPERTY_CHANNEL = "channel";
+  @jakarta.annotation.Nullable
+  private ChannelEnum channel = ChannelEnum.EMAIL;
 
   public static final String JSON_PROPERTY_CREATED_AT = "createdAt";
   @jakarta.annotation.Nonnull
@@ -257,6 +297,31 @@ public class GetWebhook {
     this.type = type;
   }
 
+  public GetWebhook channel(@jakarta.annotation.Nullable ChannelEnum channel) {
+    
+    this.channel = channel;
+    return this;
+  }
+
+  /**
+   * channel of webhook
+   * @return channel
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_CHANNEL)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public ChannelEnum getChannel() {
+    return channel;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_CHANNEL)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setChannel(@jakarta.annotation.Nullable ChannelEnum channel) {
+    this.channel = channel;
+  }
+
   public GetWebhook createdAt(@jakarta.annotation.Nonnull String createdAt) {
     
     this.createdAt = createdAt;
@@ -404,6 +469,7 @@ public class GetWebhook {
         Objects.equals(this.description, getWebhook.description) &&
         Objects.equals(this.events, getWebhook.events) &&
         Objects.equals(this.type, getWebhook.type) &&
+        Objects.equals(this.channel, getWebhook.channel) &&
         Objects.equals(this.createdAt, getWebhook.createdAt) &&
         Objects.equals(this.modifiedAt, getWebhook.modifiedAt) &&
         Objects.equals(this.batched, getWebhook.batched) &&
@@ -413,7 +479,7 @@ public class GetWebhook {
 
   @Override
   public int hashCode() {
-    return Objects.hash(url, id, description, events, type, createdAt, modifiedAt, batched, auth, headers);
+    return Objects.hash(url, id, description, events, type, channel, createdAt, modifiedAt, batched, auth, headers);
   }
 
   @Override
@@ -425,6 +491,7 @@ public class GetWebhook {
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    events: ").append(toIndentedString(events)).append("\n");
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
+    sb.append("    channel: ").append(toIndentedString(channel)).append("\n");
     sb.append("    createdAt: ").append(toIndentedString(createdAt)).append("\n");
     sb.append("    modifiedAt: ").append(toIndentedString(modifiedAt)).append("\n");
     sb.append("    batched: ").append(toIndentedString(batched)).append("\n");
@@ -525,6 +592,16 @@ public class GetWebhook {
     if (getType() != null) {
       try {
         joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `channel` to the URL query string
+    if (getChannel() != null) {
+      try {
+        joiner.add(String.format("%schannel%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getChannel()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

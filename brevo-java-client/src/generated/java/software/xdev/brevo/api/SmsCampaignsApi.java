@@ -58,7 +58,7 @@ public class SmsCampaignsApi extends BaseApi {
    * @return CreateModel
    * @throws ApiException if fails to make API call
    */
-  public CreateModel createSmsCampaign(CreateSmsCampaign createSmsCampaign) throws ApiException {
+  public CreateModel createSmsCampaign(@jakarta.annotation.Nonnull CreateSmsCampaign createSmsCampaign) throws ApiException {
     return this.createSmsCampaign(createSmsCampaign, Collections.emptyMap());
   }
 
@@ -71,7 +71,7 @@ public class SmsCampaignsApi extends BaseApi {
    * @return CreateModel
    * @throws ApiException if fails to make API call
    */
-  public CreateModel createSmsCampaign(CreateSmsCampaign createSmsCampaign, Map<String, String> additionalHeaders) throws ApiException {
+  public CreateModel createSmsCampaign(@jakarta.annotation.Nonnull CreateSmsCampaign createSmsCampaign, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = createSmsCampaign;
     
     // verify the required parameter 'createSmsCampaign' is set
@@ -131,7 +131,7 @@ public class SmsCampaignsApi extends BaseApi {
    * @param campaignId id of the SMS campaign (required)
    * @throws ApiException if fails to make API call
    */
-  public void deleteSmsCampaign(Long campaignId) throws ApiException {
+  public void deleteSmsCampaign(@jakarta.annotation.Nonnull Long campaignId) throws ApiException {
     this.deleteSmsCampaign(campaignId, Collections.emptyMap());
   }
 
@@ -143,7 +143,7 @@ public class SmsCampaignsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void deleteSmsCampaign(Long campaignId, Map<String, String> additionalHeaders) throws ApiException {
+  public void deleteSmsCampaign(@jakarta.annotation.Nonnull Long campaignId, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'campaignId' is set
@@ -204,7 +204,7 @@ public class SmsCampaignsApi extends BaseApi {
    * @return GetSmsCampaign
    * @throws ApiException if fails to make API call
    */
-  public GetSmsCampaign getSmsCampaign(Long campaignId) throws ApiException {
+  public GetSmsCampaign getSmsCampaign(@jakarta.annotation.Nonnull Long campaignId) throws ApiException {
     return this.getSmsCampaign(campaignId, Collections.emptyMap());
   }
 
@@ -217,7 +217,7 @@ public class SmsCampaignsApi extends BaseApi {
    * @return GetSmsCampaign
    * @throws ApiException if fails to make API call
    */
-  public GetSmsCampaign getSmsCampaign(Long campaignId, Map<String, String> additionalHeaders) throws ApiException {
+  public GetSmsCampaign getSmsCampaign(@jakarta.annotation.Nonnull Long campaignId, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'campaignId' is set
@@ -284,7 +284,7 @@ public class SmsCampaignsApi extends BaseApi {
    * @return GetSmsCampaigns
    * @throws ApiException if fails to make API call
    */
-  public GetSmsCampaigns getSmsCampaigns(String status, String startDate, String endDate, Long limit, Long offset, String sort) throws ApiException {
+  public GetSmsCampaigns getSmsCampaigns(@jakarta.annotation.Nullable String status, @jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String sort) throws ApiException {
     return this.getSmsCampaigns(status, startDate, endDate, limit, offset, sort, Collections.emptyMap());
   }
 
@@ -302,7 +302,7 @@ public class SmsCampaignsApi extends BaseApi {
    * @return GetSmsCampaigns
    * @throws ApiException if fails to make API call
    */
-  public GetSmsCampaigns getSmsCampaigns(String status, String startDate, String endDate, Long limit, Long offset, String sort, Map<String, String> additionalHeaders) throws ApiException {
+  public GetSmsCampaigns getSmsCampaigns(@jakarta.annotation.Nullable String status, @jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String sort, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -365,7 +365,7 @@ public class SmsCampaignsApi extends BaseApi {
    * @return CreatedProcessId
    * @throws ApiException if fails to make API call
    */
-  public CreatedProcessId requestSmsRecipientExport(Long campaignId, RequestSmsRecipientExport recipientExport) throws ApiException {
+  public CreatedProcessId requestSmsRecipientExport(@jakarta.annotation.Nonnull Long campaignId, @jakarta.annotation.Nullable RequestSmsRecipientExport recipientExport) throws ApiException {
     return this.requestSmsRecipientExport(campaignId, recipientExport, Collections.emptyMap());
   }
 
@@ -379,7 +379,7 @@ public class SmsCampaignsApi extends BaseApi {
    * @return CreatedProcessId
    * @throws ApiException if fails to make API call
    */
-  public CreatedProcessId requestSmsRecipientExport(Long campaignId, RequestSmsRecipientExport recipientExport, Map<String, String> additionalHeaders) throws ApiException {
+  public CreatedProcessId requestSmsRecipientExport(@jakarta.annotation.Nonnull Long campaignId, @jakarta.annotation.Nullable RequestSmsRecipientExport recipientExport, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = recipientExport;
     
     // verify the required parameter 'campaignId' is set
@@ -440,7 +440,7 @@ public class SmsCampaignsApi extends BaseApi {
    * @param campaignId id of the campaign (required)
    * @throws ApiException if fails to make API call
    */
-  public void sendSmsCampaignNow(Long campaignId) throws ApiException {
+  public void sendSmsCampaignNow(@jakarta.annotation.Nonnull Long campaignId) throws ApiException {
     this.sendSmsCampaignNow(campaignId, Collections.emptyMap());
   }
 
@@ -452,7 +452,7 @@ public class SmsCampaignsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void sendSmsCampaignNow(Long campaignId, Map<String, String> additionalHeaders) throws ApiException {
+  public void sendSmsCampaignNow(@jakarta.annotation.Nonnull Long campaignId, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'campaignId' is set
@@ -513,7 +513,7 @@ public class SmsCampaignsApi extends BaseApi {
    * @param sendReport Values for send a report (required)
    * @throws ApiException if fails to make API call
    */
-  public void sendSmsReport(Long campaignId, SendReport sendReport) throws ApiException {
+  public void sendSmsReport(@jakarta.annotation.Nonnull Long campaignId, @jakarta.annotation.Nonnull SendReport sendReport) throws ApiException {
     this.sendSmsReport(campaignId, sendReport, Collections.emptyMap());
   }
 
@@ -526,7 +526,7 @@ public class SmsCampaignsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void sendSmsReport(Long campaignId, SendReport sendReport, Map<String, String> additionalHeaders) throws ApiException {
+  public void sendSmsReport(@jakarta.annotation.Nonnull Long campaignId, @jakarta.annotation.Nonnull SendReport sendReport, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = sendReport;
     
     // verify the required parameter 'campaignId' is set
@@ -592,7 +592,7 @@ public class SmsCampaignsApi extends BaseApi {
    * @param sendTestSms Mobile number of the recipient with the country code. This number **must belong to one of your contacts in Brevo account and must not be blacklisted**  (required)
    * @throws ApiException if fails to make API call
    */
-  public void sendTestSms(Long campaignId, SendTestSms sendTestSms) throws ApiException {
+  public void sendTestSms(@jakarta.annotation.Nonnull Long campaignId, @jakarta.annotation.Nonnull SendTestSms sendTestSms) throws ApiException {
     this.sendTestSms(campaignId, sendTestSms, Collections.emptyMap());
   }
 
@@ -605,7 +605,7 @@ public class SmsCampaignsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void sendTestSms(Long campaignId, SendTestSms sendTestSms, Map<String, String> additionalHeaders) throws ApiException {
+  public void sendTestSms(@jakarta.annotation.Nonnull Long campaignId, @jakarta.annotation.Nonnull SendTestSms sendTestSms, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = sendTestSms;
     
     // verify the required parameter 'campaignId' is set
@@ -671,7 +671,7 @@ public class SmsCampaignsApi extends BaseApi {
    * @param updateSmsCampaign Values to update an SMS Campaign (required)
    * @throws ApiException if fails to make API call
    */
-  public void updateSmsCampaign(Long campaignId, UpdateSmsCampaign updateSmsCampaign) throws ApiException {
+  public void updateSmsCampaign(@jakarta.annotation.Nonnull Long campaignId, @jakarta.annotation.Nonnull UpdateSmsCampaign updateSmsCampaign) throws ApiException {
     this.updateSmsCampaign(campaignId, updateSmsCampaign, Collections.emptyMap());
   }
 
@@ -684,7 +684,7 @@ public class SmsCampaignsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void updateSmsCampaign(Long campaignId, UpdateSmsCampaign updateSmsCampaign, Map<String, String> additionalHeaders) throws ApiException {
+  public void updateSmsCampaign(@jakarta.annotation.Nonnull Long campaignId, @jakarta.annotation.Nonnull UpdateSmsCampaign updateSmsCampaign, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = updateSmsCampaign;
     
     // verify the required parameter 'campaignId' is set
@@ -750,7 +750,7 @@ public class SmsCampaignsApi extends BaseApi {
    * @param status Status of the campaign. (required)
    * @throws ApiException if fails to make API call
    */
-  public void updateSmsCampaignStatus(Long campaignId, UpdateCampaignStatus status) throws ApiException {
+  public void updateSmsCampaignStatus(@jakarta.annotation.Nonnull Long campaignId, @jakarta.annotation.Nonnull UpdateCampaignStatus status) throws ApiException {
     this.updateSmsCampaignStatus(campaignId, status, Collections.emptyMap());
   }
 
@@ -763,7 +763,7 @@ public class SmsCampaignsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void updateSmsCampaignStatus(Long campaignId, UpdateCampaignStatus status, Map<String, String> additionalHeaders) throws ApiException {
+  public void updateSmsCampaignStatus(@jakarta.annotation.Nonnull Long campaignId, @jakarta.annotation.Nonnull UpdateCampaignStatus status, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = status;
     
     // verify the required parameter 'campaignId' is set

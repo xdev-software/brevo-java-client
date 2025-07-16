@@ -58,7 +58,8 @@ import java.util.StringJoiner;
   SendSmtpEmail.JSON_PROPERTY_MESSAGE_VERSIONS,
   SendSmtpEmail.JSON_PROPERTY_TAGS,
   SendSmtpEmail.JSON_PROPERTY_SCHEDULED_AT,
-  SendSmtpEmail.JSON_PROPERTY_BATCH_ID
+  SendSmtpEmail.JSON_PROPERTY_BATCH_ID,
+  SendSmtpEmail.JSON_PROPERTY_PREHEADER
 })
 @JsonTypeName("sendSmtpEmail")
 public class SendSmtpEmail {
@@ -125,6 +126,10 @@ public class SendSmtpEmail {
   public static final String JSON_PROPERTY_BATCH_ID = "batchId";
   @jakarta.annotation.Nullable
   private String batchId;
+
+  public static final String JSON_PROPERTY_PREHEADER = "preheader";
+  @jakarta.annotation.Nullable
+  private String preheader;
 
   public SendSmtpEmail() {
   }
@@ -550,7 +555,7 @@ public class SendSmtpEmail {
   }
 
   /**
-   * UTC date-time on which the email has to schedule (YYYY-MM-DDTHH:mm:ss.SSSZ). Prefer to pass your timezone in date-time format for scheduling. There can be an expected delay of +5 minutes in scheduled email delivery. **Please note this feature is currently a public beta**.
+   * UTC date-time on which the email has to schedule (YYYY-MM-DDTHH:mm:ss.SSSZ). Prefer to pass your timezone in date-time format for scheduling. There can be an expected delay of +5 minutes in scheduled email delivery.
    * @return scheduledAt
    */
   @jakarta.annotation.Nullable
@@ -593,6 +598,31 @@ public class SendSmtpEmail {
     this.batchId = batchId;
   }
 
+  public SendSmtpEmail preheader(@jakarta.annotation.Nullable String preheader) {
+    
+    this.preheader = preheader;
+    return this;
+  }
+
+  /**
+   * A short summary that appears next to the subject line in the recipient’s inbox. This preview text gives recipients a quick idea of what the email is about before they open it. 
+   * @return preheader
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_PREHEADER)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public String getPreheader() {
+    return preheader;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_PREHEADER)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setPreheader(@jakarta.annotation.Nullable String preheader) {
+    this.preheader = preheader;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -617,12 +647,13 @@ public class SendSmtpEmail {
         Objects.equals(this.messageVersions, sendSmtpEmail.messageVersions) &&
         Objects.equals(this.tags, sendSmtpEmail.tags) &&
         Objects.equals(this.scheduledAt, sendSmtpEmail.scheduledAt) &&
-        Objects.equals(this.batchId, sendSmtpEmail.batchId);
+        Objects.equals(this.batchId, sendSmtpEmail.batchId) &&
+        Objects.equals(this.preheader, sendSmtpEmail.preheader);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(sender, to, bcc, cc, htmlContent, textContent, subject, replyTo, attachment, headers, templateId, params, messageVersions, tags, scheduledAt, batchId);
+    return Objects.hash(sender, to, bcc, cc, htmlContent, textContent, subject, replyTo, attachment, headers, templateId, params, messageVersions, tags, scheduledAt, batchId, preheader);
   }
 
   @Override
@@ -645,6 +676,7 @@ public class SendSmtpEmail {
     sb.append("    tags: ").append(toIndentedString(tags)).append("\n");
     sb.append("    scheduledAt: ").append(toIndentedString(scheduledAt)).append("\n");
     sb.append("    batchId: ").append(toIndentedString(batchId)).append("\n");
+    sb.append("    preheader: ").append(toIndentedString(preheader)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -848,6 +880,16 @@ public class SendSmtpEmail {
     if (getBatchId() != null) {
       try {
         joiner.add(String.format("%sbatchId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBatchId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `preheader` to the URL query string
+    if (getPreheader() != null) {
+      try {
+        joiner.add(String.format("%spreheader%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPreheader()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

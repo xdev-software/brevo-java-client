@@ -35,7 +35,8 @@ import java.util.StringJoiner;
  */
 @JsonPropertyOrder({
   UpdateAttribute.JSON_PROPERTY_VALUE,
-  UpdateAttribute.JSON_PROPERTY_ENUMERATION
+  UpdateAttribute.JSON_PROPERTY_ENUMERATION,
+  UpdateAttribute.JSON_PROPERTY_MULTI_CATEGORY_OPTIONS
 })
 @JsonTypeName("updateAttribute")
 public class UpdateAttribute {
@@ -46,6 +47,10 @@ public class UpdateAttribute {
   public static final String JSON_PROPERTY_ENUMERATION = "enumeration";
   @jakarta.annotation.Nullable
   private List<UpdateAttributeEnumerationInner> enumeration = new ArrayList<>();
+
+  public static final String JSON_PROPERTY_MULTI_CATEGORY_OPTIONS = "multiCategoryOptions";
+  @jakarta.annotation.Nullable
+  private List<String> multiCategoryOptions = new ArrayList<>();
 
   public UpdateAttribute() {
   }
@@ -90,7 +95,7 @@ public class UpdateAttribute {
   }
 
   /**
-   * List of the values and labels that the attribute can take. **Use only if the attribute&#39;s category is \&quot;category\&quot;**. For example, **[{\&quot;value\&quot;:1, \&quot;label\&quot;:\&quot;male\&quot;}, {\&quot;value\&quot;:2, \&quot;label\&quot;:\&quot;female\&quot;}]** 
+   * List of the values and labels that the attribute can take. **Use only if the attribute&#39;s category is \&quot;category\&quot;**. None of the category options can exceed max 200 characters. For example, **[{\&quot;value\&quot;:1, \&quot;label\&quot;:\&quot;male\&quot;}, {\&quot;value\&quot;:2, \&quot;label\&quot;:\&quot;female\&quot;}]** 
    * @return enumeration
    */
   @jakarta.annotation.Nullable
@@ -108,6 +113,39 @@ public class UpdateAttribute {
     this.enumeration = enumeration;
   }
 
+  public UpdateAttribute multiCategoryOptions(@jakarta.annotation.Nullable List<String> multiCategoryOptions) {
+    
+    this.multiCategoryOptions = multiCategoryOptions;
+    return this;
+  }
+
+  public UpdateAttribute addMultiCategoryOptionsItem(String multiCategoryOptionsItem) {
+    if (this.multiCategoryOptions == null) {
+      this.multiCategoryOptions = new ArrayList<>();
+    }
+    this.multiCategoryOptions.add(multiCategoryOptionsItem);
+    return this;
+  }
+
+  /**
+   * Use this option to add multiple-choice attributes options only if the attribute&#39;s category is \&quot;normal\&quot;. **This option is specifically designed for updating multiple-choice attributes. None of the multicategory options can exceed max 200 characters.** For example: **[\&quot;USA\&quot;,\&quot;INDIA\&quot;]** 
+   * @return multiCategoryOptions
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_MULTI_CATEGORY_OPTIONS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public List<String> getMultiCategoryOptions() {
+    return multiCategoryOptions;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_MULTI_CATEGORY_OPTIONS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setMultiCategoryOptions(@jakarta.annotation.Nullable List<String> multiCategoryOptions) {
+    this.multiCategoryOptions = multiCategoryOptions;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -118,12 +156,13 @@ public class UpdateAttribute {
     }
     UpdateAttribute updateAttribute = (UpdateAttribute) o;
     return Objects.equals(this.value, updateAttribute.value) &&
-        Objects.equals(this.enumeration, updateAttribute.enumeration);
+        Objects.equals(this.enumeration, updateAttribute.enumeration) &&
+        Objects.equals(this.multiCategoryOptions, updateAttribute.multiCategoryOptions);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(value, enumeration);
+    return Objects.hash(value, enumeration, multiCategoryOptions);
   }
 
   @Override
@@ -132,6 +171,7 @@ public class UpdateAttribute {
     sb.append("class UpdateAttribute {\n");
     sb.append("    value: ").append(toIndentedString(value)).append("\n");
     sb.append("    enumeration: ").append(toIndentedString(enumeration)).append("\n");
+    sb.append("    multiCategoryOptions: ").append(toIndentedString(multiCategoryOptions)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -195,6 +235,20 @@ public class UpdateAttribute {
         if (getEnumeration().get(i) != null) {
           joiner.add(getEnumeration().get(i).toUrlQueryString(String.format("%senumeration%s%s", prefix, suffix,
               "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+        }
+      }
+    }
+
+    // add `multiCategoryOptions` to the URL query string
+    if (getMultiCategoryOptions() != null) {
+      for (int i = 0; i < getMultiCategoryOptions().size(); i++) {
+        try {
+          joiner.add(String.format("%smultiCategoryOptions%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getMultiCategoryOptions().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
         }
       }
     }

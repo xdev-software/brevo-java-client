@@ -35,8 +35,7 @@ import java.util.StringJoiner;
   GetAccountAllOfPlan.JSON_PROPERTY_CREDITS_TYPE,
   GetAccountAllOfPlan.JSON_PROPERTY_CREDITS,
   GetAccountAllOfPlan.JSON_PROPERTY_START_DATE,
-  GetAccountAllOfPlan.JSON_PROPERTY_END_DATE,
-  GetAccountAllOfPlan.JSON_PROPERTY_USER_LIMIT
+  GetAccountAllOfPlan.JSON_PROPERTY_END_DATE
 })
 @JsonTypeName("getAccount_allOf_plan")
 public class GetAccountAllOfPlan {
@@ -50,9 +49,7 @@ public class GetAccountAllOfPlan {
     
     SUBSCRIPTION(String.valueOf("subscription")),
     
-    SMS(String.valueOf("sms")),
-    
-    RESELLER(String.valueOf("reseller"));
+    SMS(String.valueOf("sms"));
 
     private String value;
 
@@ -133,10 +130,6 @@ public class GetAccountAllOfPlan {
   public static final String JSON_PROPERTY_END_DATE = "endDate";
   @jakarta.annotation.Nullable
   private LocalDate endDate;
-
-  public static final String JSON_PROPERTY_USER_LIMIT = "userLimit";
-  @jakarta.annotation.Nullable
-  private Integer userLimit;
 
   public GetAccountAllOfPlan() {
   }
@@ -223,7 +216,7 @@ public class GetAccountAllOfPlan {
   }
 
   /**
-   * Date of the period from which the plan will start (only available for \&quot;subscription\&quot; and \&quot;reseller\&quot; plan type)
+   * Date of the period from which the plan will start (only available for \&quot;subscription\&quot; plan type)
    * @return startDate
    */
   @jakarta.annotation.Nullable
@@ -248,7 +241,7 @@ public class GetAccountAllOfPlan {
   }
 
   /**
-   * Date of the period from which the plan will end (only available for \&quot;subscription\&quot; and \&quot;reseller\&quot; plan type)
+   * Date of the period from which the plan will end (only available for \&quot;subscription\&quot; plan type)
    * @return endDate
    */
   @jakarta.annotation.Nullable
@@ -266,31 +259,6 @@ public class GetAccountAllOfPlan {
     this.endDate = endDate;
   }
 
-  public GetAccountAllOfPlan userLimit(@jakarta.annotation.Nullable Integer userLimit) {
-    
-    this.userLimit = userLimit;
-    return this;
-  }
-
-  /**
-   * Only in case of reseller account. It implies the total number of child accounts you can add to your account.
-   * @return userLimit
-   */
-  @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_USER_LIMIT)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
-  public Integer getUserLimit() {
-    return userLimit;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_USER_LIMIT)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setUserLimit(@jakarta.annotation.Nullable Integer userLimit) {
-    this.userLimit = userLimit;
-  }
-
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -304,13 +272,12 @@ public class GetAccountAllOfPlan {
         Objects.equals(this.creditsType, getAccountAllOfPlan.creditsType) &&
         Objects.equals(this.credits, getAccountAllOfPlan.credits) &&
         Objects.equals(this.startDate, getAccountAllOfPlan.startDate) &&
-        Objects.equals(this.endDate, getAccountAllOfPlan.endDate) &&
-        Objects.equals(this.userLimit, getAccountAllOfPlan.userLimit);
+        Objects.equals(this.endDate, getAccountAllOfPlan.endDate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(type, creditsType, credits, startDate, endDate, userLimit);
+    return Objects.hash(type, creditsType, credits, startDate, endDate);
   }
 
   @Override
@@ -322,7 +289,6 @@ public class GetAccountAllOfPlan {
     sb.append("    credits: ").append(toIndentedString(credits)).append("\n");
     sb.append("    startDate: ").append(toIndentedString(startDate)).append("\n");
     sb.append("    endDate: ").append(toIndentedString(endDate)).append("\n");
-    sb.append("    userLimit: ").append(toIndentedString(userLimit)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -414,16 +380,6 @@ public class GetAccountAllOfPlan {
     if (getEndDate() != null) {
       try {
         joiner.add(String.format("%sendDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEndDate()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
-    // add `userLimit` to the URL query string
-    if (getUserLimit() != null) {
-      try {
-        joiner.add(String.format("%suserLimit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUserLimit()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

@@ -45,6 +45,10 @@ import java.util.StringJoiner;
   GetExtendedCampaignOverview.JSON_PROPERTY_WINNER_CRITERIA,
   GetExtendedCampaignOverview.JSON_PROPERTY_WINNER_DELAY,
   GetExtendedCampaignOverview.JSON_PROPERTY_SEND_AT_BEST_TIME,
+  GetExtendedCampaignOverview.JSON_PROPERTY_UTM_CAMPAIGN_VALUE,
+  GetExtendedCampaignOverview.JSON_PROPERTY_UTM_SOURCE,
+  GetExtendedCampaignOverview.JSON_PROPERTY_UTM_MEDIUM,
+  GetExtendedCampaignOverview.JSON_PROPERTY_UTM_I_D_ACTIVE,
   GetExtendedCampaignOverview.JSON_PROPERTY_TEST_SENT,
   GetExtendedCampaignOverview.JSON_PROPERTY_HEADER,
   GetExtendedCampaignOverview.JSON_PROPERTY_FOOTER,
@@ -197,6 +201,22 @@ public class GetExtendedCampaignOverview {
   public static final String JSON_PROPERTY_SEND_AT_BEST_TIME = "sendAtBestTime";
   @jakarta.annotation.Nullable
   private Boolean sendAtBestTime;
+
+  public static final String JSON_PROPERTY_UTM_CAMPAIGN_VALUE = "utmCampaignValue";
+  @jakarta.annotation.Nullable
+  private String utmCampaignValue;
+
+  public static final String JSON_PROPERTY_UTM_SOURCE = "utmSource";
+  @jakarta.annotation.Nullable
+  private String utmSource;
+
+  public static final String JSON_PROPERTY_UTM_MEDIUM = "utmMedium";
+  @jakarta.annotation.Nullable
+  private String utmMedium;
+
+  public static final String JSON_PROPERTY_UTM_I_D_ACTIVE = "utmIDActive";
+  @jakarta.annotation.Nullable
+  private Boolean utmIDActive;
 
   public static final String JSON_PROPERTY_TEST_SENT = "testSent";
   @jakarta.annotation.Nonnull
@@ -613,6 +633,106 @@ public class GetExtendedCampaignOverview {
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSendAtBestTime(@jakarta.annotation.Nullable Boolean sendAtBestTime) {
     this.sendAtBestTime = sendAtBestTime;
+  }
+
+  public GetExtendedCampaignOverview utmCampaignValue(@jakarta.annotation.Nullable String utmCampaignValue) {
+    
+    this.utmCampaignValue = utmCampaignValue;
+    return this;
+  }
+
+  /**
+   * utm parameter associated with campaign
+   * @return utmCampaignValue
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_UTM_CAMPAIGN_VALUE)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public String getUtmCampaignValue() {
+    return utmCampaignValue;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_UTM_CAMPAIGN_VALUE)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setUtmCampaignValue(@jakarta.annotation.Nullable String utmCampaignValue) {
+    this.utmCampaignValue = utmCampaignValue;
+  }
+
+  public GetExtendedCampaignOverview utmSource(@jakarta.annotation.Nullable String utmSource) {
+    
+    this.utmSource = utmSource;
+    return this;
+  }
+
+  /**
+   * Get utmSource
+   * @return utmSource
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_UTM_SOURCE)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public String getUtmSource() {
+    return utmSource;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_UTM_SOURCE)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setUtmSource(@jakarta.annotation.Nullable String utmSource) {
+    this.utmSource = utmSource;
+  }
+
+  public GetExtendedCampaignOverview utmMedium(@jakarta.annotation.Nullable String utmMedium) {
+    
+    this.utmMedium = utmMedium;
+    return this;
+  }
+
+  /**
+   * Get utmMedium
+   * @return utmMedium
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_UTM_MEDIUM)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public String getUtmMedium() {
+    return utmMedium;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_UTM_MEDIUM)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setUtmMedium(@jakarta.annotation.Nullable String utmMedium) {
+    this.utmMedium = utmMedium;
+  }
+
+  public GetExtendedCampaignOverview utmIDActive(@jakarta.annotation.Nullable Boolean utmIDActive) {
+    
+    this.utmIDActive = utmIDActive;
+    return this;
+  }
+
+  /**
+   * utm id activate
+   * @return utmIDActive
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_UTM_I_D_ACTIVE)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public Boolean getUtmIDActive() {
+    return utmIDActive;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_UTM_I_D_ACTIVE)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setUtmIDActive(@jakarta.annotation.Nullable Boolean utmIDActive) {
+    this.utmIDActive = utmIDActive;
   }
 
   public GetExtendedCampaignOverview testSent(@jakarta.annotation.Nonnull Boolean testSent) {
@@ -1038,6 +1158,10 @@ public class GetExtendedCampaignOverview {
         Objects.equals(this.winnerCriteria, getExtendedCampaignOverview.winnerCriteria) &&
         Objects.equals(this.winnerDelay, getExtendedCampaignOverview.winnerDelay) &&
         Objects.equals(this.sendAtBestTime, getExtendedCampaignOverview.sendAtBestTime) &&
+        Objects.equals(this.utmCampaignValue, getExtendedCampaignOverview.utmCampaignValue) &&
+        Objects.equals(this.utmSource, getExtendedCampaignOverview.utmSource) &&
+        Objects.equals(this.utmMedium, getExtendedCampaignOverview.utmMedium) &&
+        Objects.equals(this.utmIDActive, getExtendedCampaignOverview.utmIDActive) &&
         Objects.equals(this.testSent, getExtendedCampaignOverview.testSent) &&
         Objects.equals(this.header, getExtendedCampaignOverview.header) &&
         Objects.equals(this.footer, getExtendedCampaignOverview.footer) &&
@@ -1058,7 +1182,7 @@ public class GetExtendedCampaignOverview {
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, name, subject, previewText, type, status, scheduledAt, abTesting, subjectA, subjectB, splitRule, winnerCriteria, winnerDelay, sendAtBestTime, testSent, header, footer, sender, replyTo, toField, htmlContent, shareLink, tag, createdAt, modifiedAt, inlineImageActivation, mirrorActive, recurring, sentDate, returnBounce);
+    return Objects.hash(id, name, subject, previewText, type, status, scheduledAt, abTesting, subjectA, subjectB, splitRule, winnerCriteria, winnerDelay, sendAtBestTime, utmCampaignValue, utmSource, utmMedium, utmIDActive, testSent, header, footer, sender, replyTo, toField, htmlContent, shareLink, tag, createdAt, modifiedAt, inlineImageActivation, mirrorActive, recurring, sentDate, returnBounce);
   }
 
   @Override
@@ -1079,6 +1203,10 @@ public class GetExtendedCampaignOverview {
     sb.append("    winnerCriteria: ").append(toIndentedString(winnerCriteria)).append("\n");
     sb.append("    winnerDelay: ").append(toIndentedString(winnerDelay)).append("\n");
     sb.append("    sendAtBestTime: ").append(toIndentedString(sendAtBestTime)).append("\n");
+    sb.append("    utmCampaignValue: ").append(toIndentedString(utmCampaignValue)).append("\n");
+    sb.append("    utmSource: ").append(toIndentedString(utmSource)).append("\n");
+    sb.append("    utmMedium: ").append(toIndentedString(utmMedium)).append("\n");
+    sb.append("    utmIDActive: ").append(toIndentedString(utmIDActive)).append("\n");
     sb.append("    testSent: ").append(toIndentedString(testSent)).append("\n");
     sb.append("    header: ").append(toIndentedString(header)).append("\n");
     sb.append("    footer: ").append(toIndentedString(footer)).append("\n");
@@ -1276,6 +1404,46 @@ public class GetExtendedCampaignOverview {
     if (getSendAtBestTime() != null) {
       try {
         joiner.add(String.format("%ssendAtBestTime%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSendAtBestTime()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `utmCampaignValue` to the URL query string
+    if (getUtmCampaignValue() != null) {
+      try {
+        joiner.add(String.format("%sutmCampaignValue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUtmCampaignValue()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `utmSource` to the URL query string
+    if (getUtmSource() != null) {
+      try {
+        joiner.add(String.format("%sutmSource%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUtmSource()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `utmMedium` to the URL query string
+    if (getUtmMedium() != null) {
+      try {
+        joiner.add(String.format("%sutmMedium%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUtmMedium()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `utmIDActive` to the URL query string
+    if (getUtmIDActive() != null) {
+      try {
+        joiner.add(String.format("%sutmIDActive%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUtmIDActive()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

@@ -40,7 +40,8 @@ import java.util.StringJoiner;
   GetTransacSmsReportReportsInner.JSON_PROPERTY_UNSUBSCRIBED,
   GetTransacSmsReportReportsInner.JSON_PROPERTY_REPLIED,
   GetTransacSmsReportReportsInner.JSON_PROPERTY_ACCEPTED,
-  GetTransacSmsReportReportsInner.JSON_PROPERTY_REJECTED
+  GetTransacSmsReportReportsInner.JSON_PROPERTY_REJECTED,
+  GetTransacSmsReportReportsInner.JSON_PROPERTY_SKIPPED
 })
 @JsonTypeName("getTransacSmsReport_reports_inner")
 public class GetTransacSmsReportReportsInner {
@@ -83,6 +84,10 @@ public class GetTransacSmsReportReportsInner {
   public static final String JSON_PROPERTY_REJECTED = "rejected";
   @jakarta.annotation.Nullable
   private Long rejected;
+
+  public static final String JSON_PROPERTY_SKIPPED = "skipped";
+  @jakarta.annotation.Nullable
+  private Long skipped;
 
   public GetTransacSmsReportReportsInner() {
   }
@@ -294,7 +299,7 @@ public class GetTransacSmsReportReportsInner {
   }
 
   /**
-   * Number of accepted for the date
+   * Number of accepted SMS for the date
    * @return accepted
    */
   @jakarta.annotation.Nullable
@@ -319,7 +324,7 @@ public class GetTransacSmsReportReportsInner {
   }
 
   /**
-   * Number of rejected for the date
+   * Number of rejected SMS for the date
    * @return rejected
    */
   @jakarta.annotation.Nullable
@@ -335,6 +340,31 @@ public class GetTransacSmsReportReportsInner {
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRejected(@jakarta.annotation.Nullable Long rejected) {
     this.rejected = rejected;
+  }
+
+  public GetTransacSmsReportReportsInner skipped(@jakarta.annotation.Nullable Long skipped) {
+    
+    this.skipped = skipped;
+    return this;
+  }
+
+  /**
+   * Number of skipped SMS for the date
+   * @return skipped
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_SKIPPED)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public Long getSkipped() {
+    return skipped;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_SKIPPED)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setSkipped(@jakarta.annotation.Nullable Long skipped) {
+    this.skipped = skipped;
   }
 
   @Override
@@ -355,12 +385,13 @@ public class GetTransacSmsReportReportsInner {
         Objects.equals(this.unsubscribed, getTransacSmsReportReportsInner.unsubscribed) &&
         Objects.equals(this.replied, getTransacSmsReportReportsInner.replied) &&
         Objects.equals(this.accepted, getTransacSmsReportReportsInner.accepted) &&
-        Objects.equals(this.rejected, getTransacSmsReportReportsInner.rejected);
+        Objects.equals(this.rejected, getTransacSmsReportReportsInner.rejected) &&
+        Objects.equals(this.skipped, getTransacSmsReportReportsInner.skipped);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(date, requests, delivered, hardBounces, softBounces, blocked, unsubscribed, replied, accepted, rejected);
+    return Objects.hash(date, requests, delivered, hardBounces, softBounces, blocked, unsubscribed, replied, accepted, rejected, skipped);
   }
 
   @Override
@@ -377,6 +408,7 @@ public class GetTransacSmsReportReportsInner {
     sb.append("    replied: ").append(toIndentedString(replied)).append("\n");
     sb.append("    accepted: ").append(toIndentedString(accepted)).append("\n");
     sb.append("    rejected: ").append(toIndentedString(rejected)).append("\n");
+    sb.append("    skipped: ").append(toIndentedString(skipped)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -518,6 +550,16 @@ public class GetTransacSmsReportReportsInner {
     if (getRejected() != null) {
       try {
         joiner.add(String.format("%srejected%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRejected()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `skipped` to the URL query string
+    if (getSkipped() != null) {
+      try {
+        joiner.add(String.format("%sskipped%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSkipped()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

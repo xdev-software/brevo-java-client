@@ -21,6 +21,10 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import software.xdev.brevo.model.SubAccountDetailsResponsePlanInfoCreditsEmails;
+import software.xdev.brevo.model.SubAccountDetailsResponsePlanInfoCreditsExternalFeeds;
+import software.xdev.brevo.model.SubAccountDetailsResponsePlanInfoCreditsSms;
+import software.xdev.brevo.model.SubAccountDetailsResponsePlanInfoCreditsWhatsapp;
+import software.xdev.brevo.model.SubAccountDetailsResponsePlanInfoCreditsWpSubscribers;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import java.io.UnsupportedEncodingException;
@@ -31,45 +35,35 @@ import java.util.StringJoiner;
  * Credits quota and remaining credits on the sub-account
  */
 @JsonPropertyOrder({
+  SubAccountDetailsResponsePlanInfoCredits.JSON_PROPERTY_EMAILS,
   SubAccountDetailsResponsePlanInfoCredits.JSON_PROPERTY_SMS,
-  SubAccountDetailsResponsePlanInfoCredits.JSON_PROPERTY_EMAILS
+  SubAccountDetailsResponsePlanInfoCredits.JSON_PROPERTY_WP_SUBSCRIBERS,
+  SubAccountDetailsResponsePlanInfoCredits.JSON_PROPERTY_WHATSAPP,
+  SubAccountDetailsResponsePlanInfoCredits.JSON_PROPERTY_EXTERNAL_FEEDS
 })
 @JsonTypeName("subAccountDetailsResponse_planInfo_credits")
 public class SubAccountDetailsResponsePlanInfoCredits {
-  public static final String JSON_PROPERTY_SMS = "sms";
-  @jakarta.annotation.Nullable
-  private Long sms;
-
   public static final String JSON_PROPERTY_EMAILS = "emails";
   @jakarta.annotation.Nullable
   private SubAccountDetailsResponsePlanInfoCreditsEmails emails;
 
-  public SubAccountDetailsResponsePlanInfoCredits() {
-  }
-
-  public SubAccountDetailsResponsePlanInfoCredits sms(@jakarta.annotation.Nullable Long sms) {
-    
-    this.sms = sms;
-    return this;
-  }
-
-  /**
-   * SMS credits remaining on the sub-account
-   * @return sms
-   */
+  public static final String JSON_PROPERTY_SMS = "sms";
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SMS)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  private SubAccountDetailsResponsePlanInfoCreditsSms sms;
 
-  public Long getSms() {
-    return sms;
-  }
+  public static final String JSON_PROPERTY_WP_SUBSCRIBERS = "wpSubscribers";
+  @jakarta.annotation.Nullable
+  private SubAccountDetailsResponsePlanInfoCreditsWpSubscribers wpSubscribers;
 
+  public static final String JSON_PROPERTY_WHATSAPP = "whatsapp";
+  @jakarta.annotation.Nullable
+  private SubAccountDetailsResponsePlanInfoCreditsWhatsapp whatsapp;
 
-  @JsonProperty(JSON_PROPERTY_SMS)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSms(@jakarta.annotation.Nullable Long sms) {
-    this.sms = sms;
+  public static final String JSON_PROPERTY_EXTERNAL_FEEDS = "externalFeeds";
+  @jakarta.annotation.Nullable
+  private SubAccountDetailsResponsePlanInfoCreditsExternalFeeds externalFeeds;
+
+  public SubAccountDetailsResponsePlanInfoCredits() {
   }
 
   public SubAccountDetailsResponsePlanInfoCredits emails(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfoCreditsEmails emails) {
@@ -97,6 +91,106 @@ public class SubAccountDetailsResponsePlanInfoCredits {
     this.emails = emails;
   }
 
+  public SubAccountDetailsResponsePlanInfoCredits sms(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfoCreditsSms sms) {
+    
+    this.sms = sms;
+    return this;
+  }
+
+  /**
+   * Get sms
+   * @return sms
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_SMS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public SubAccountDetailsResponsePlanInfoCreditsSms getSms() {
+    return sms;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_SMS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setSms(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfoCreditsSms sms) {
+    this.sms = sms;
+  }
+
+  public SubAccountDetailsResponsePlanInfoCredits wpSubscribers(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfoCreditsWpSubscribers wpSubscribers) {
+    
+    this.wpSubscribers = wpSubscribers;
+    return this;
+  }
+
+  /**
+   * Get wpSubscribers
+   * @return wpSubscribers
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_WP_SUBSCRIBERS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public SubAccountDetailsResponsePlanInfoCreditsWpSubscribers getWpSubscribers() {
+    return wpSubscribers;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_WP_SUBSCRIBERS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setWpSubscribers(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfoCreditsWpSubscribers wpSubscribers) {
+    this.wpSubscribers = wpSubscribers;
+  }
+
+  public SubAccountDetailsResponsePlanInfoCredits whatsapp(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfoCreditsWhatsapp whatsapp) {
+    
+    this.whatsapp = whatsapp;
+    return this;
+  }
+
+  /**
+   * Get whatsapp
+   * @return whatsapp
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_WHATSAPP)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public SubAccountDetailsResponsePlanInfoCreditsWhatsapp getWhatsapp() {
+    return whatsapp;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_WHATSAPP)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setWhatsapp(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfoCreditsWhatsapp whatsapp) {
+    this.whatsapp = whatsapp;
+  }
+
+  public SubAccountDetailsResponsePlanInfoCredits externalFeeds(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfoCreditsExternalFeeds externalFeeds) {
+    
+    this.externalFeeds = externalFeeds;
+    return this;
+  }
+
+  /**
+   * Get externalFeeds
+   * @return externalFeeds
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_EXTERNAL_FEEDS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public SubAccountDetailsResponsePlanInfoCreditsExternalFeeds getExternalFeeds() {
+    return externalFeeds;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_EXTERNAL_FEEDS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setExternalFeeds(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfoCreditsExternalFeeds externalFeeds) {
+    this.externalFeeds = externalFeeds;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -106,21 +200,27 @@ public class SubAccountDetailsResponsePlanInfoCredits {
       return false;
     }
     SubAccountDetailsResponsePlanInfoCredits subAccountDetailsResponsePlanInfoCredits = (SubAccountDetailsResponsePlanInfoCredits) o;
-    return Objects.equals(this.sms, subAccountDetailsResponsePlanInfoCredits.sms) &&
-        Objects.equals(this.emails, subAccountDetailsResponsePlanInfoCredits.emails);
+    return Objects.equals(this.emails, subAccountDetailsResponsePlanInfoCredits.emails) &&
+        Objects.equals(this.sms, subAccountDetailsResponsePlanInfoCredits.sms) &&
+        Objects.equals(this.wpSubscribers, subAccountDetailsResponsePlanInfoCredits.wpSubscribers) &&
+        Objects.equals(this.whatsapp, subAccountDetailsResponsePlanInfoCredits.whatsapp) &&
+        Objects.equals(this.externalFeeds, subAccountDetailsResponsePlanInfoCredits.externalFeeds);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(sms, emails);
+    return Objects.hash(emails, sms, wpSubscribers, whatsapp, externalFeeds);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class SubAccountDetailsResponsePlanInfoCredits {\n");
-    sb.append("    sms: ").append(toIndentedString(sms)).append("\n");
     sb.append("    emails: ").append(toIndentedString(emails)).append("\n");
+    sb.append("    sms: ").append(toIndentedString(sms)).append("\n");
+    sb.append("    wpSubscribers: ").append(toIndentedString(wpSubscribers)).append("\n");
+    sb.append("    whatsapp: ").append(toIndentedString(whatsapp)).append("\n");
+    sb.append("    externalFeeds: ").append(toIndentedString(externalFeeds)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -168,19 +268,29 @@ public class SubAccountDetailsResponsePlanInfoCredits {
 
     StringJoiner joiner = new StringJoiner("&");
 
-    // add `sms` to the URL query string
-    if (getSms() != null) {
-      try {
-        joiner.add(String.format("%ssms%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSms()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
-      }
-    }
-
     // add `emails` to the URL query string
     if (getEmails() != null) {
       joiner.add(getEmails().toUrlQueryString(prefix + "emails" + suffix));
+    }
+
+    // add `sms` to the URL query string
+    if (getSms() != null) {
+      joiner.add(getSms().toUrlQueryString(prefix + "sms" + suffix));
+    }
+
+    // add `wpSubscribers` to the URL query string
+    if (getWpSubscribers() != null) {
+      joiner.add(getWpSubscribers().toUrlQueryString(prefix + "wpSubscribers" + suffix));
+    }
+
+    // add `whatsapp` to the URL query string
+    if (getWhatsapp() != null) {
+      joiner.add(getWhatsapp().toUrlQueryString(prefix + "whatsapp" + suffix));
+    }
+
+    // add `externalFeeds` to the URL query string
+    if (getExternalFeeds() != null) {
+      joiner.add(getExternalFeeds().toUrlQueryString(prefix + "externalFeeds" + suffix));
     }
 
     return joiner.toString();

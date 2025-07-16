@@ -54,7 +54,7 @@ public class SendersApi extends BaseApi {
    * @return CreateSenderModel
    * @throws ApiException if fails to make API call
    */
-  public CreateSenderModel createSender(CreateSender sender) throws ApiException {
+  public CreateSenderModel createSender(@jakarta.annotation.Nullable CreateSender sender) throws ApiException {
     return this.createSender(sender, Collections.emptyMap());
   }
 
@@ -67,7 +67,7 @@ public class SendersApi extends BaseApi {
    * @return CreateSenderModel
    * @throws ApiException if fails to make API call
    */
-  public CreateSenderModel createSender(CreateSender sender, Map<String, String> additionalHeaders) throws ApiException {
+  public CreateSenderModel createSender(@jakarta.annotation.Nullable CreateSender sender, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = sender;
     
     // create path and map variables
@@ -122,7 +122,7 @@ public class SendersApi extends BaseApi {
    * @param senderId Id of the sender (required)
    * @throws ApiException if fails to make API call
    */
-  public void deleteSender(Long senderId) throws ApiException {
+  public void deleteSender(@jakarta.annotation.Nonnull Long senderId) throws ApiException {
     this.deleteSender(senderId, Collections.emptyMap());
   }
 
@@ -134,7 +134,7 @@ public class SendersApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void deleteSender(Long senderId, Map<String, String> additionalHeaders) throws ApiException {
+  public void deleteSender(@jakarta.annotation.Nonnull Long senderId, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'senderId' is set
@@ -262,7 +262,7 @@ public class SendersApi extends BaseApi {
    * @return GetIpsFromSender
    * @throws ApiException if fails to make API call
    */
-  public GetIpsFromSender getIpsFromSender(Long senderId) throws ApiException {
+  public GetIpsFromSender getIpsFromSender(@jakarta.annotation.Nonnull Long senderId) throws ApiException {
     return this.getIpsFromSender(senderId, Collections.emptyMap());
   }
 
@@ -275,7 +275,7 @@ public class SendersApi extends BaseApi {
    * @return GetIpsFromSender
    * @throws ApiException if fails to make API call
    */
-  public GetIpsFromSender getIpsFromSender(Long senderId, Map<String, String> additionalHeaders) throws ApiException {
+  public GetIpsFromSender getIpsFromSender(@jakarta.annotation.Nonnull Long senderId, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'senderId' is set
@@ -338,7 +338,7 @@ public class SendersApi extends BaseApi {
    * @return GetSendersList
    * @throws ApiException if fails to make API call
    */
-  public GetSendersList getSenders(String ip, String domain) throws ApiException {
+  public GetSendersList getSenders(@jakarta.annotation.Nullable String ip, @jakarta.annotation.Nullable String domain) throws ApiException {
     return this.getSenders(ip, domain, Collections.emptyMap());
   }
 
@@ -352,7 +352,7 @@ public class SendersApi extends BaseApi {
    * @return GetSendersList
    * @throws ApiException if fails to make API call
    */
-  public GetSendersList getSenders(String ip, String domain, Map<String, String> additionalHeaders) throws ApiException {
+  public GetSendersList getSenders(@jakarta.annotation.Nullable String ip, @jakarta.annotation.Nullable String domain, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -410,7 +410,7 @@ public class SendersApi extends BaseApi {
    * @param sender sender&#39;s name (optional)
    * @throws ApiException if fails to make API call
    */
-  public void updateSender(Long senderId, UpdateSender sender) throws ApiException {
+  public void updateSender(@jakarta.annotation.Nonnull Long senderId, @jakarta.annotation.Nullable UpdateSender sender) throws ApiException {
     this.updateSender(senderId, sender, Collections.emptyMap());
   }
 
@@ -423,7 +423,7 @@ public class SendersApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void updateSender(Long senderId, UpdateSender sender, Map<String, String> additionalHeaders) throws ApiException {
+  public void updateSender(@jakarta.annotation.Nonnull Long senderId, @jakarta.annotation.Nullable UpdateSender sender, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = sender;
     
     // verify the required parameter 'senderId' is set
@@ -484,7 +484,7 @@ public class SendersApi extends BaseApi {
    * @param sender otp (optional)
    * @throws ApiException if fails to make API call
    */
-  public void validateSenderByOTP(Long senderId, Otp sender) throws ApiException {
+  public void validateSenderByOTP(@jakarta.annotation.Nonnull Long senderId, @jakarta.annotation.Nullable Otp sender) throws ApiException {
     this.validateSenderByOTP(senderId, sender, Collections.emptyMap());
   }
 
@@ -497,7 +497,7 @@ public class SendersApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void validateSenderByOTP(Long senderId, Otp sender, Map<String, String> additionalHeaders) throws ApiException {
+  public void validateSenderByOTP(@jakarta.annotation.Nonnull Long senderId, @jakarta.annotation.Nullable Otp sender, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = sender;
     
     // verify the required parameter 'senderId' is set

@@ -1,9 +1,8 @@
 [![Latest version](https://img.shields.io/maven-central/v/software.xdev/brevo-java-client?logo=apache%20maven)](https://mvnrepository.com/artifact/software.xdev/brevo-java-client)
 [![Build](https://img.shields.io/github/actions/workflow/status/xdev-software/brevo-java-client/check-build.yml?branch=develop)](https://github.com/xdev-software/brevo-java-client/actions/workflows/check-build.yml?query=branch%3Adevelop)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=xdev-software_brevo-java-client&metric=alert_status)](https://sonarcloud.io/dashboard?id=xdev-software_brevo-java-client)
 [![API Specification Editor](https://img.shields.io/badge/API--Spec-Editor-85ea2d?logo=swagger)](https://editor.swagger.io/?url=https://raw.githubusercontent.com/xdev-software/brevo-java-client/develop/openapi/openapi.yml)
 
-# <img src="https://corp-backend.brevo.com/wp-content/uploads/2023/05/favicon.svg" height="28" /> [brevo](https://www.brevo.com/?r=t)-java-client
+# <img src="https://corp-backend.brevo.com/wp-content/uploads/2023/05/favicon.svg" height="28" /> Java Client for [Brevo](https://www.brevo.com/?r=t)
 
 A Java client for the [Brevo](https://www.brevo.com/?r=t) (formerly SendinBlue) API
 
@@ -14,16 +13,17 @@ A Java client for the [Brevo](https://www.brevo.com/?r=t) (formerly SendinBlue) 
 This client [is generated](./brevo-java-client/pom.xml) from an [``openapi.yml``](./openapi/openapi.yml) using [OpenAPI Generator](https://openapi-generator.tech/).
 
 > [!NOTE]
-> <details><summary>Why did you create this API client and not use <a href="https://github.com/sendinblue/APIv3-java-library">the official one</a>?</summary>
+> <details><summary>Why did you create this API client and not use the <a href="https://github.com/sendinblue/APIv3-java-library">the official</a>/<a href="https://github.com/getbrevo/brevo-java">new official</a> one?</summary>
 >
-> We had some problems (as of March 2024) with the "official" client:
-> * The client looks seriously outdated:
+> We had some problems (as of July 2025) with the "official" client:
+> * The (old) client looks seriously outdated:
 >   * it is still called "SendinBlue"
 >   * was last updated over a year ago and there was no activity (on issues/PR) since then
 >   * There is at least one CVE in the underlying HTTP client
 > * It looks like there are problems with the underlying dependencies:
 >   * ``maven-gpg-plugin`` is declared as compile dependency
 >   * There is a [dependency for Java 7](https://www.threeten.org/threetenbp/) however the client is built for Java 8+
+>   * There is an extremely outdated version of Apache Commons Lang in use
 > * ...
 >
 > </details>

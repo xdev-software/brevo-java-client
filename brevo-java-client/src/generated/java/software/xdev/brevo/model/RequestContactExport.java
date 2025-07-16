@@ -36,7 +36,11 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   RequestContactExport.JSON_PROPERTY_EXPORT_ATTRIBUTES,
   RequestContactExport.JSON_PROPERTY_CUSTOM_CONTACT_FILTER,
-  RequestContactExport.JSON_PROPERTY_NOTIFY_URL
+  RequestContactExport.JSON_PROPERTY_NOTIFY_URL,
+  RequestContactExport.JSON_PROPERTY_DISABLE_NOTIFICATION,
+  RequestContactExport.JSON_PROPERTY_EXPORT_MANDATORY_ATTRIBUTES,
+  RequestContactExport.JSON_PROPERTY_EXPORT_SUBSCRIPTION_STATUS,
+  RequestContactExport.JSON_PROPERTY_EXPORT_METADATA
 })
 @JsonTypeName("requestContactExport")
 public class RequestContactExport {
@@ -51,6 +55,22 @@ public class RequestContactExport {
   public static final String JSON_PROPERTY_NOTIFY_URL = "notifyUrl";
   @jakarta.annotation.Nullable
   private String notifyUrl;
+
+  public static final String JSON_PROPERTY_DISABLE_NOTIFICATION = "disableNotification";
+  @jakarta.annotation.Nullable
+  private Boolean disableNotification = false;
+
+  public static final String JSON_PROPERTY_EXPORT_MANDATORY_ATTRIBUTES = "exportMandatoryAttributes";
+  @jakarta.annotation.Nullable
+  private Boolean exportMandatoryAttributes = true;
+
+  public static final String JSON_PROPERTY_EXPORT_SUBSCRIPTION_STATUS = "exportSubscriptionStatus";
+  @jakarta.annotation.Nullable
+  private List<String> exportSubscriptionStatus = new ArrayList<>();
+
+  public static final String JSON_PROPERTY_EXPORT_METADATA = "exportMetadata";
+  @jakarta.annotation.Nullable
+  private List<String> exportMetadata = new ArrayList<>();
 
   public RequestContactExport() {
   }
@@ -70,7 +90,7 @@ public class RequestContactExport {
   }
 
   /**
-   * List of all the attributes that you want to export. **These attributes must be present in your contact database.** For example: **[&#39;fname&#39;, &#39;lname&#39;, &#39;email&#39;]** 
+   * List of all the attributes that you want to export. **These attributes must be present in your contact database. It is required if exportMandatoryAttributes is set false. ** For example: **[&#39;fname&#39;, &#39;lname&#39;, &#39;email&#39;]** 
    * @return exportAttributes
    */
   @jakarta.annotation.Nullable
@@ -138,6 +158,122 @@ public class RequestContactExport {
     this.notifyUrl = notifyUrl;
   }
 
+  public RequestContactExport disableNotification(@jakarta.annotation.Nullable Boolean disableNotification) {
+    
+    this.disableNotification = disableNotification;
+    return this;
+  }
+
+  /**
+   * To avoid generating the email notification upon contact export, pass **true**
+   * @return disableNotification
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_DISABLE_NOTIFICATION)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public Boolean getDisableNotification() {
+    return disableNotification;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_DISABLE_NOTIFICATION)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setDisableNotification(@jakarta.annotation.Nullable Boolean disableNotification) {
+    this.disableNotification = disableNotification;
+  }
+
+  public RequestContactExport exportMandatoryAttributes(@jakarta.annotation.Nullable Boolean exportMandatoryAttributes) {
+    
+    this.exportMandatoryAttributes = exportMandatoryAttributes;
+    return this;
+  }
+
+  /**
+   * To export mandatory attributes like EMAIL, ADDED_TIME, MODIFIED_TIME
+   * @return exportMandatoryAttributes
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_EXPORT_MANDATORY_ATTRIBUTES)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public Boolean getExportMandatoryAttributes() {
+    return exportMandatoryAttributes;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_EXPORT_MANDATORY_ATTRIBUTES)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setExportMandatoryAttributes(@jakarta.annotation.Nullable Boolean exportMandatoryAttributes) {
+    this.exportMandatoryAttributes = exportMandatoryAttributes;
+  }
+
+  public RequestContactExport exportSubscriptionStatus(@jakarta.annotation.Nullable List<String> exportSubscriptionStatus) {
+    
+    this.exportSubscriptionStatus = exportSubscriptionStatus;
+    return this;
+  }
+
+  public RequestContactExport addExportSubscriptionStatusItem(String exportSubscriptionStatusItem) {
+    if (this.exportSubscriptionStatus == null) {
+      this.exportSubscriptionStatus = new ArrayList<>();
+    }
+    this.exportSubscriptionStatus.add(exportSubscriptionStatusItem);
+    return this;
+  }
+
+  /**
+   * Export subscription status of contacts for email &amp; sms marketting. Pass email_marketing to obtain the marketing email subscription status &amp; sms_marketing to retrieve the marketing SMS status of the contact.
+   * @return exportSubscriptionStatus
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_EXPORT_SUBSCRIPTION_STATUS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public List<String> getExportSubscriptionStatus() {
+    return exportSubscriptionStatus;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_EXPORT_SUBSCRIPTION_STATUS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setExportSubscriptionStatus(@jakarta.annotation.Nullable List<String> exportSubscriptionStatus) {
+    this.exportSubscriptionStatus = exportSubscriptionStatus;
+  }
+
+  public RequestContactExport exportMetadata(@jakarta.annotation.Nullable List<String> exportMetadata) {
+    
+    this.exportMetadata = exportMetadata;
+    return this;
+  }
+
+  public RequestContactExport addExportMetadataItem(String exportMetadataItem) {
+    if (this.exportMetadata == null) {
+      this.exportMetadata = new ArrayList<>();
+    }
+    this.exportMetadata.add(exportMetadataItem);
+    return this;
+  }
+
+  /**
+   * Export metadata of contacts such as _listIds, ADDED_TIME, MODIFIED_TIME.
+   * @return exportMetadata
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_EXPORT_METADATA)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public List<String> getExportMetadata() {
+    return exportMetadata;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_EXPORT_METADATA)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setExportMetadata(@jakarta.annotation.Nullable List<String> exportMetadata) {
+    this.exportMetadata = exportMetadata;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -149,12 +285,16 @@ public class RequestContactExport {
     RequestContactExport requestContactExport = (RequestContactExport) o;
     return Objects.equals(this.exportAttributes, requestContactExport.exportAttributes) &&
         Objects.equals(this.customContactFilter, requestContactExport.customContactFilter) &&
-        Objects.equals(this.notifyUrl, requestContactExport.notifyUrl);
+        Objects.equals(this.notifyUrl, requestContactExport.notifyUrl) &&
+        Objects.equals(this.disableNotification, requestContactExport.disableNotification) &&
+        Objects.equals(this.exportMandatoryAttributes, requestContactExport.exportMandatoryAttributes) &&
+        Objects.equals(this.exportSubscriptionStatus, requestContactExport.exportSubscriptionStatus) &&
+        Objects.equals(this.exportMetadata, requestContactExport.exportMetadata);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(exportAttributes, customContactFilter, notifyUrl);
+    return Objects.hash(exportAttributes, customContactFilter, notifyUrl, disableNotification, exportMandatoryAttributes, exportSubscriptionStatus, exportMetadata);
   }
 
   @Override
@@ -164,6 +304,10 @@ public class RequestContactExport {
     sb.append("    exportAttributes: ").append(toIndentedString(exportAttributes)).append("\n");
     sb.append("    customContactFilter: ").append(toIndentedString(customContactFilter)).append("\n");
     sb.append("    notifyUrl: ").append(toIndentedString(notifyUrl)).append("\n");
+    sb.append("    disableNotification: ").append(toIndentedString(disableNotification)).append("\n");
+    sb.append("    exportMandatoryAttributes: ").append(toIndentedString(exportMandatoryAttributes)).append("\n");
+    sb.append("    exportSubscriptionStatus: ").append(toIndentedString(exportSubscriptionStatus)).append("\n");
+    sb.append("    exportMetadata: ").append(toIndentedString(exportMetadata)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -237,6 +381,54 @@ public class RequestContactExport {
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
+      }
+    }
+
+    // add `disableNotification` to the URL query string
+    if (getDisableNotification() != null) {
+      try {
+        joiner.add(String.format("%sdisableNotification%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisableNotification()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `exportMandatoryAttributes` to the URL query string
+    if (getExportMandatoryAttributes() != null) {
+      try {
+        joiner.add(String.format("%sexportMandatoryAttributes%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExportMandatoryAttributes()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `exportSubscriptionStatus` to the URL query string
+    if (getExportSubscriptionStatus() != null) {
+      for (int i = 0; i < getExportSubscriptionStatus().size(); i++) {
+        try {
+          joiner.add(String.format("%sexportSubscriptionStatus%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getExportSubscriptionStatus().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
+      }
+    }
+
+    // add `exportMetadata` to the URL query string
+    if (getExportMetadata() != null) {
+      for (int i = 0; i < getExportMetadata().size(); i++) {
+        try {
+          joiner.add(String.format("%sexportMetadata%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getExportMetadata().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
       }
     }
 

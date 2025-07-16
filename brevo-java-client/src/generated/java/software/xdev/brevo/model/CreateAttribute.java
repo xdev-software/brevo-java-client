@@ -37,6 +37,7 @@ import java.util.StringJoiner;
   CreateAttribute.JSON_PROPERTY_VALUE,
   CreateAttribute.JSON_PROPERTY_IS_RECURRING,
   CreateAttribute.JSON_PROPERTY_ENUMERATION,
+  CreateAttribute.JSON_PROPERTY_MULTI_CATEGORY_OPTIONS,
   CreateAttribute.JSON_PROPERTY_TYPE
 })
 @JsonTypeName("createAttribute")
@@ -53,8 +54,12 @@ public class CreateAttribute {
   @jakarta.annotation.Nullable
   private List<CreateAttributeEnumerationInner> enumeration = new ArrayList<>();
 
+  public static final String JSON_PROPERTY_MULTI_CATEGORY_OPTIONS = "multiCategoryOptions";
+  @jakarta.annotation.Nullable
+  private List<String> multiCategoryOptions = new ArrayList<>();
+
   /**
-   * Type of the attribute. **Use only if the attribute&#39;s category is &#39;normal&#39;, &#39;category&#39; or &#39;transactional&#39;** Type **boolean** is only available if the category is **normal** attribute Type **id** is only available if the category is **transactional** attribute Type **category** is only available if the category is **category** attribute 
+   * Type of the attribute. **Use only if the attribute&#39;s category is &#39;normal&#39;, &#39;category&#39; or &#39;transactional&#39;** Type **user and multiple-choice** is only available if the category is **normal** attribute Type **id** is only available if the category is **transactional** attribute Type **category** is only available if the category is **category** attribute 
    */
   public enum TypeEnum {
     TEXT(String.valueOf("text")),
@@ -67,7 +72,11 @@ public class CreateAttribute {
     
     ID(String.valueOf("id")),
     
-    CATEGORY(String.valueOf("category"));
+    CATEGORY(String.valueOf("category")),
+    
+    MULTIPLE_CHOICE(String.valueOf("multiple-choice")),
+    
+    USER(String.valueOf("user"));
 
     private String value;
 
@@ -168,7 +177,7 @@ public class CreateAttribute {
   }
 
   /**
-   * List of values and labels that the attribute can take. **Use only if the attribute&#39;s category is \&quot;category\&quot;**. For example: **[{\&quot;value\&quot;:1, \&quot;label\&quot;:\&quot;male\&quot;}, {\&quot;value\&quot;:2, \&quot;label\&quot;:\&quot;female\&quot;}]** 
+   * List of values and labels that the attribute can take. **Use only if the attribute&#39;s category is \&quot;category\&quot;**. None of the category options can exceed max 200 characters. For example: **[{\&quot;value\&quot;:1, \&quot;label\&quot;:\&quot;male\&quot;}, {\&quot;value\&quot;:2, \&quot;label\&quot;:\&quot;female\&quot;}]** 
    * @return enumeration
    */
   @jakarta.annotation.Nullable
@@ -186,6 +195,39 @@ public class CreateAttribute {
     this.enumeration = enumeration;
   }
 
+  public CreateAttribute multiCategoryOptions(@jakarta.annotation.Nullable List<String> multiCategoryOptions) {
+    
+    this.multiCategoryOptions = multiCategoryOptions;
+    return this;
+  }
+
+  public CreateAttribute addMultiCategoryOptionsItem(String multiCategoryOptionsItem) {
+    if (this.multiCategoryOptions == null) {
+      this.multiCategoryOptions = new ArrayList<>();
+    }
+    this.multiCategoryOptions.add(multiCategoryOptionsItem);
+    return this;
+  }
+
+  /**
+   * List of options you want to add for multiple-choice attribute. **Use only if the attribute&#39;s category is \&quot;normal\&quot; and attribute&#39;s type is \&quot;multiple-choice\&quot;. None of the multicategory options can exceed max 200 characters.** For example: **[\&quot;USA\&quot;,\&quot;INDIA\&quot;]** 
+   * @return multiCategoryOptions
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_MULTI_CATEGORY_OPTIONS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public List<String> getMultiCategoryOptions() {
+    return multiCategoryOptions;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_MULTI_CATEGORY_OPTIONS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setMultiCategoryOptions(@jakarta.annotation.Nullable List<String> multiCategoryOptions) {
+    this.multiCategoryOptions = multiCategoryOptions;
+  }
+
   public CreateAttribute type(@jakarta.annotation.Nullable TypeEnum type) {
     
     this.type = type;
@@ -193,7 +235,7 @@ public class CreateAttribute {
   }
 
   /**
-   * Type of the attribute. **Use only if the attribute&#39;s category is &#39;normal&#39;, &#39;category&#39; or &#39;transactional&#39;** Type **boolean** is only available if the category is **normal** attribute Type **id** is only available if the category is **transactional** attribute Type **category** is only available if the category is **category** attribute 
+   * Type of the attribute. **Use only if the attribute&#39;s category is &#39;normal&#39;, &#39;category&#39; or &#39;transactional&#39;** Type **user and multiple-choice** is only available if the category is **normal** attribute Type **id** is only available if the category is **transactional** attribute Type **category** is only available if the category is **category** attribute 
    * @return type
    */
   @jakarta.annotation.Nullable
@@ -223,12 +265,13 @@ public class CreateAttribute {
     return Objects.equals(this.value, createAttribute.value) &&
         Objects.equals(this.isRecurring, createAttribute.isRecurring) &&
         Objects.equals(this.enumeration, createAttribute.enumeration) &&
+        Objects.equals(this.multiCategoryOptions, createAttribute.multiCategoryOptions) &&
         Objects.equals(this.type, createAttribute.type);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(value, isRecurring, enumeration, type);
+    return Objects.hash(value, isRecurring, enumeration, multiCategoryOptions, type);
   }
 
   @Override
@@ -238,6 +281,7 @@ public class CreateAttribute {
     sb.append("    value: ").append(toIndentedString(value)).append("\n");
     sb.append("    isRecurring: ").append(toIndentedString(isRecurring)).append("\n");
     sb.append("    enumeration: ").append(toIndentedString(enumeration)).append("\n");
+    sb.append("    multiCategoryOptions: ").append(toIndentedString(multiCategoryOptions)).append("\n");
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -312,6 +356,20 @@ public class CreateAttribute {
         if (getEnumeration().get(i) != null) {
           joiner.add(getEnumeration().get(i).toUrlQueryString(String.format("%senumeration%s%s", prefix, suffix,
               "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+        }
+      }
+    }
+
+    // add `multiCategoryOptions` to the URL query string
+    if (getMultiCategoryOptions() != null) {
+      for (int i = 0; i < getMultiCategoryOptions().size(); i++) {
+        try {
+          joiner.add(String.format("%smultiCategoryOptions%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getMultiCategoryOptions().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
         }
       }
     }

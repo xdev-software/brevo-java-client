@@ -32,7 +32,8 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   SubAccountUpdatePlanRequestFeatures.JSON_PROPERTY_USERS,
   SubAccountUpdatePlanRequestFeatures.JSON_PROPERTY_LANDING_PAGE,
-  SubAccountUpdatePlanRequestFeatures.JSON_PROPERTY_INBOX
+  SubAccountUpdatePlanRequestFeatures.JSON_PROPERTY_INBOX,
+  SubAccountUpdatePlanRequestFeatures.JSON_PROPERTY_SALES_USERS
 })
 @JsonTypeName("subAccountUpdatePlanRequest_features")
 public class SubAccountUpdatePlanRequestFeatures {
@@ -47,6 +48,10 @@ public class SubAccountUpdatePlanRequestFeatures {
   public static final String JSON_PROPERTY_INBOX = "inbox";
   @jakarta.annotation.Nullable
   private Long inbox;
+
+  public static final String JSON_PROPERTY_SALES_USERS = "salesUsers";
+  @jakarta.annotation.Nullable
+  private Long salesUsers;
 
   public SubAccountUpdatePlanRequestFeatures() {
   }
@@ -83,7 +88,7 @@ public class SubAccountUpdatePlanRequestFeatures {
   }
 
   /**
-   * Number of landing pages / Not required on ENTv2
+   * Number of landing pages
    * @return landingPage
    */
   @jakarta.annotation.Nullable
@@ -126,6 +131,31 @@ public class SubAccountUpdatePlanRequestFeatures {
     this.inbox = inbox;
   }
 
+  public SubAccountUpdatePlanRequestFeatures salesUsers(@jakarta.annotation.Nullable Long salesUsers) {
+    
+    this.salesUsers = salesUsers;
+    return this;
+  }
+
+  /**
+   * Number of sales and service users | only available in ENT-V2
+   * @return salesUsers
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_SALES_USERS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public Long getSalesUsers() {
+    return salesUsers;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_SALES_USERS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setSalesUsers(@jakarta.annotation.Nullable Long salesUsers) {
+    this.salesUsers = salesUsers;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -137,12 +167,13 @@ public class SubAccountUpdatePlanRequestFeatures {
     SubAccountUpdatePlanRequestFeatures subAccountUpdatePlanRequestFeatures = (SubAccountUpdatePlanRequestFeatures) o;
     return Objects.equals(this.users, subAccountUpdatePlanRequestFeatures.users) &&
         Objects.equals(this.landingPage, subAccountUpdatePlanRequestFeatures.landingPage) &&
-        Objects.equals(this.inbox, subAccountUpdatePlanRequestFeatures.inbox);
+        Objects.equals(this.inbox, subAccountUpdatePlanRequestFeatures.inbox) &&
+        Objects.equals(this.salesUsers, subAccountUpdatePlanRequestFeatures.salesUsers);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(users, landingPage, inbox);
+    return Objects.hash(users, landingPage, inbox, salesUsers);
   }
 
   @Override
@@ -152,6 +183,7 @@ public class SubAccountUpdatePlanRequestFeatures {
     sb.append("    users: ").append(toIndentedString(users)).append("\n");
     sb.append("    landingPage: ").append(toIndentedString(landingPage)).append("\n");
     sb.append("    inbox: ").append(toIndentedString(inbox)).append("\n");
+    sb.append("    salesUsers: ").append(toIndentedString(salesUsers)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -223,6 +255,16 @@ public class SubAccountUpdatePlanRequestFeatures {
     if (getInbox() != null) {
       try {
         joiner.add(String.format("%sinbox%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getInbox()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `salesUsers` to the URL query string
+    if (getSalesUsers() != null) {
+      try {
+        joiner.add(String.format("%ssalesUsers%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSalesUsers()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

@@ -57,7 +57,7 @@ public class TransactionalWhatsAppApi extends BaseApi {
    * @return GetWhatsappEventReport
    * @throws ApiException if fails to make API call
    */
-  public GetWhatsappEventReport getWhatsappEventReport(Long limit, Long offset, String startDate, String endDate, Long days, String contactNumber, String event, String sort) throws ApiException {
+  public GetWhatsappEventReport getWhatsappEventReport(@jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, @jakarta.annotation.Nullable Long days, @jakarta.annotation.Nullable String contactNumber, @jakarta.annotation.Nullable String event, @jakarta.annotation.Nullable String sort) throws ApiException {
     return this.getWhatsappEventReport(limit, offset, startDate, endDate, days, contactNumber, event, sort, Collections.emptyMap());
   }
 
@@ -77,7 +77,7 @@ public class TransactionalWhatsAppApi extends BaseApi {
    * @return GetWhatsappEventReport
    * @throws ApiException if fails to make API call
    */
-  public GetWhatsappEventReport getWhatsappEventReport(Long limit, Long offset, String startDate, String endDate, Long days, String contactNumber, String event, String sort, Map<String, String> additionalHeaders) throws ApiException {
+  public GetWhatsappEventReport getWhatsappEventReport(@jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, @jakarta.annotation.Nullable Long days, @jakarta.annotation.Nullable String contactNumber, @jakarta.annotation.Nullable String event, @jakarta.annotation.Nullable String sort, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -141,7 +141,7 @@ public class TransactionalWhatsAppApi extends BaseApi {
    * @return SendWhatsappMessage201Response
    * @throws ApiException if fails to make API call
    */
-  public SendWhatsappMessage201Response sendWhatsappMessage(SendWhatsappMessageRequest sendWhatsappMessageRequest) throws ApiException {
+  public SendWhatsappMessage201Response sendWhatsappMessage(@jakarta.annotation.Nonnull SendWhatsappMessageRequest sendWhatsappMessageRequest) throws ApiException {
     return this.sendWhatsappMessage(sendWhatsappMessageRequest, Collections.emptyMap());
   }
 
@@ -154,7 +154,7 @@ public class TransactionalWhatsAppApi extends BaseApi {
    * @return SendWhatsappMessage201Response
    * @throws ApiException if fails to make API call
    */
-  public SendWhatsappMessage201Response sendWhatsappMessage(SendWhatsappMessageRequest sendWhatsappMessageRequest, Map<String, String> additionalHeaders) throws ApiException {
+  public SendWhatsappMessage201Response sendWhatsappMessage(@jakarta.annotation.Nonnull SendWhatsappMessageRequest sendWhatsappMessageRequest, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = sendWhatsappMessageRequest;
     
     // verify the required parameter 'sendWhatsappMessageRequest' is set

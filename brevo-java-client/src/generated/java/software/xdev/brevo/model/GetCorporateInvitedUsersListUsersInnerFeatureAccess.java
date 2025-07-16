@@ -36,7 +36,12 @@ import java.util.StringJoiner;
   GetCorporateInvitedUsersListUsersInnerFeatureAccess.JSON_PROPERTY_USER_MANAGEMENT,
   GetCorporateInvitedUsersListUsersInnerFeatureAccess.JSON_PROPERTY_API_KEYS,
   GetCorporateInvitedUsersListUsersInnerFeatureAccess.JSON_PROPERTY_MY_PLAN,
-  GetCorporateInvitedUsersListUsersInnerFeatureAccess.JSON_PROPERTY_APPS_MANAGEMENT
+  GetCorporateInvitedUsersListUsersInnerFeatureAccess.JSON_PROPERTY_APPS_MANAGEMENT,
+  GetCorporateInvitedUsersListUsersInnerFeatureAccess.JSON_PROPERTY_SUB_ORGANIZATION_GROUPS,
+  GetCorporateInvitedUsersListUsersInnerFeatureAccess.JSON_PROPERTY_CREATE_SUB_ORGANIZATIONS,
+  GetCorporateInvitedUsersListUsersInnerFeatureAccess.JSON_PROPERTY_MANAGE_SUB_ORGANIZATIONS,
+  GetCorporateInvitedUsersListUsersInnerFeatureAccess.JSON_PROPERTY_ANALYTICS,
+  GetCorporateInvitedUsersListUsersInnerFeatureAccess.JSON_PROPERTY_SECURITY
 })
 @JsonTypeName("getCorporateInvitedUsersList_users_inner_feature_access")
 public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
@@ -55,6 +60,26 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
   public static final String JSON_PROPERTY_APPS_MANAGEMENT = "apps_management";
   @jakarta.annotation.Nullable
   private List<String> appsManagement = new ArrayList<>();
+
+  public static final String JSON_PROPERTY_SUB_ORGANIZATION_GROUPS = "sub_organization_groups";
+  @jakarta.annotation.Nullable
+  private List<String> subOrganizationGroups = new ArrayList<>();
+
+  public static final String JSON_PROPERTY_CREATE_SUB_ORGANIZATIONS = "create_sub_organizations";
+  @jakarta.annotation.Nullable
+  private List<String> createSubOrganizations = new ArrayList<>();
+
+  public static final String JSON_PROPERTY_MANAGE_SUB_ORGANIZATIONS = "manage_sub_organizations";
+  @jakarta.annotation.Nullable
+  private List<String> manageSubOrganizations = new ArrayList<>();
+
+  public static final String JSON_PROPERTY_ANALYTICS = "analytics";
+  @jakarta.annotation.Nullable
+  private List<String> analytics = new ArrayList<>();
+
+  public static final String JSON_PROPERTY_SECURITY = "security";
+  @jakarta.annotation.Nullable
+  private List<String> security = new ArrayList<>();
 
   public GetCorporateInvitedUsersListUsersInnerFeatureAccess() {
   }
@@ -191,6 +216,171 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
     this.appsManagement = appsManagement;
   }
 
+  public GetCorporateInvitedUsersListUsersInnerFeatureAccess subOrganizationGroups(@jakarta.annotation.Nullable List<String> subOrganizationGroups) {
+    
+    this.subOrganizationGroups = subOrganizationGroups;
+    return this;
+  }
+
+  public GetCorporateInvitedUsersListUsersInnerFeatureAccess addSubOrganizationGroupsItem(String subOrganizationGroupsItem) {
+    if (this.subOrganizationGroups == null) {
+      this.subOrganizationGroups = new ArrayList<>();
+    }
+    this.subOrganizationGroups.add(subOrganizationGroupsItem);
+    return this;
+  }
+
+  /**
+   * Group creation, modification or deletion accessibility
+   * @return subOrganizationGroups
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_SUB_ORGANIZATION_GROUPS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public List<String> getSubOrganizationGroups() {
+    return subOrganizationGroups;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_SUB_ORGANIZATION_GROUPS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setSubOrganizationGroups(@jakarta.annotation.Nullable List<String> subOrganizationGroups) {
+    this.subOrganizationGroups = subOrganizationGroups;
+  }
+
+  public GetCorporateInvitedUsersListUsersInnerFeatureAccess createSubOrganizations(@jakarta.annotation.Nullable List<String> createSubOrganizations) {
+    
+    this.createSubOrganizations = createSubOrganizations;
+    return this;
+  }
+
+  public GetCorporateInvitedUsersListUsersInnerFeatureAccess addCreateSubOrganizationsItem(String createSubOrganizationsItem) {
+    if (this.createSubOrganizations == null) {
+      this.createSubOrganizations = new ArrayList<>();
+    }
+    this.createSubOrganizations.add(createSubOrganizationsItem);
+    return this;
+  }
+
+  /**
+   * Authorization to create sub-organization in the admin account. If the user creating the sub-organization, belongs to a group, the user must choose a group at the sub-organization creation.
+   * @return createSubOrganizations
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_CREATE_SUB_ORGANIZATIONS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public List<String> getCreateSubOrganizations() {
+    return createSubOrganizations;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_CREATE_SUB_ORGANIZATIONS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setCreateSubOrganizations(@jakarta.annotation.Nullable List<String> createSubOrganizations) {
+    this.createSubOrganizations = createSubOrganizations;
+  }
+
+  public GetCorporateInvitedUsersListUsersInnerFeatureAccess manageSubOrganizations(@jakarta.annotation.Nullable List<String> manageSubOrganizations) {
+    
+    this.manageSubOrganizations = manageSubOrganizations;
+    return this;
+  }
+
+  public GetCorporateInvitedUsersListUsersInnerFeatureAccess addManageSubOrganizationsItem(String manageSubOrganizationsItem) {
+    if (this.manageSubOrganizations == null) {
+      this.manageSubOrganizations = new ArrayList<>();
+    }
+    this.manageSubOrganizations.add(manageSubOrganizationsItem);
+    return this;
+  }
+
+  /**
+   * Authorization to manage and access sub-organizations in the admin account.
+   * @return manageSubOrganizations
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_MANAGE_SUB_ORGANIZATIONS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public List<String> getManageSubOrganizations() {
+    return manageSubOrganizations;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_MANAGE_SUB_ORGANIZATIONS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setManageSubOrganizations(@jakarta.annotation.Nullable List<String> manageSubOrganizations) {
+    this.manageSubOrganizations = manageSubOrganizations;
+  }
+
+  public GetCorporateInvitedUsersListUsersInnerFeatureAccess analytics(@jakarta.annotation.Nullable List<String> analytics) {
+    
+    this.analytics = analytics;
+    return this;
+  }
+
+  public GetCorporateInvitedUsersListUsersInnerFeatureAccess addAnalyticsItem(String analyticsItem) {
+    if (this.analytics == null) {
+      this.analytics = new ArrayList<>();
+    }
+    this.analytics.add(analyticsItem);
+    return this;
+  }
+
+  /**
+   * Analytics dashboard accessibility
+   * @return analytics
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_ANALYTICS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public List<String> getAnalytics() {
+    return analytics;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_ANALYTICS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setAnalytics(@jakarta.annotation.Nullable List<String> analytics) {
+    this.analytics = analytics;
+  }
+
+  public GetCorporateInvitedUsersListUsersInnerFeatureAccess security(@jakarta.annotation.Nullable List<String> security) {
+    
+    this.security = security;
+    return this;
+  }
+
+  public GetCorporateInvitedUsersListUsersInnerFeatureAccess addSecurityItem(String securityItem) {
+    if (this.security == null) {
+      this.security = new ArrayList<>();
+    }
+    this.security.add(securityItem);
+    return this;
+  }
+
+  /**
+   * Security page accessibility
+   * @return security
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_SECURITY)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public List<String> getSecurity() {
+    return security;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_SECURITY)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setSecurity(@jakarta.annotation.Nullable List<String> security) {
+    this.security = security;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -203,12 +393,17 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
     return Objects.equals(this.userManagement, getCorporateInvitedUsersListUsersInnerFeatureAccess.userManagement) &&
         Objects.equals(this.apiKeys, getCorporateInvitedUsersListUsersInnerFeatureAccess.apiKeys) &&
         Objects.equals(this.myPlan, getCorporateInvitedUsersListUsersInnerFeatureAccess.myPlan) &&
-        Objects.equals(this.appsManagement, getCorporateInvitedUsersListUsersInnerFeatureAccess.appsManagement);
+        Objects.equals(this.appsManagement, getCorporateInvitedUsersListUsersInnerFeatureAccess.appsManagement) &&
+        Objects.equals(this.subOrganizationGroups, getCorporateInvitedUsersListUsersInnerFeatureAccess.subOrganizationGroups) &&
+        Objects.equals(this.createSubOrganizations, getCorporateInvitedUsersListUsersInnerFeatureAccess.createSubOrganizations) &&
+        Objects.equals(this.manageSubOrganizations, getCorporateInvitedUsersListUsersInnerFeatureAccess.manageSubOrganizations) &&
+        Objects.equals(this.analytics, getCorporateInvitedUsersListUsersInnerFeatureAccess.analytics) &&
+        Objects.equals(this.security, getCorporateInvitedUsersListUsersInnerFeatureAccess.security);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(userManagement, apiKeys, myPlan, appsManagement);
+    return Objects.hash(userManagement, apiKeys, myPlan, appsManagement, subOrganizationGroups, createSubOrganizations, manageSubOrganizations, analytics, security);
   }
 
   @Override
@@ -219,6 +414,11 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
     sb.append("    apiKeys: ").append(toIndentedString(apiKeys)).append("\n");
     sb.append("    myPlan: ").append(toIndentedString(myPlan)).append("\n");
     sb.append("    appsManagement: ").append(toIndentedString(appsManagement)).append("\n");
+    sb.append("    subOrganizationGroups: ").append(toIndentedString(subOrganizationGroups)).append("\n");
+    sb.append("    createSubOrganizations: ").append(toIndentedString(createSubOrganizations)).append("\n");
+    sb.append("    manageSubOrganizations: ").append(toIndentedString(manageSubOrganizations)).append("\n");
+    sb.append("    analytics: ").append(toIndentedString(analytics)).append("\n");
+    sb.append("    security: ").append(toIndentedString(security)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -315,6 +515,76 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
           joiner.add(String.format("%sapps_management%s%s=%s", prefix, suffix,
               "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getAppsManagement().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
+      }
+    }
+
+    // add `sub_organization_groups` to the URL query string
+    if (getSubOrganizationGroups() != null) {
+      for (int i = 0; i < getSubOrganizationGroups().size(); i++) {
+        try {
+          joiner.add(String.format("%ssub_organization_groups%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getSubOrganizationGroups().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
+      }
+    }
+
+    // add `create_sub_organizations` to the URL query string
+    if (getCreateSubOrganizations() != null) {
+      for (int i = 0; i < getCreateSubOrganizations().size(); i++) {
+        try {
+          joiner.add(String.format("%screate_sub_organizations%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getCreateSubOrganizations().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
+      }
+    }
+
+    // add `manage_sub_organizations` to the URL query string
+    if (getManageSubOrganizations() != null) {
+      for (int i = 0; i < getManageSubOrganizations().size(); i++) {
+        try {
+          joiner.add(String.format("%smanage_sub_organizations%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getManageSubOrganizations().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
+      }
+    }
+
+    // add `analytics` to the URL query string
+    if (getAnalytics() != null) {
+      for (int i = 0; i < getAnalytics().size(); i++) {
+        try {
+          joiner.add(String.format("%sanalytics%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getAnalytics().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
+      }
+    }
+
+    // add `security` to the URL query string
+    if (getSecurity() != null) {
+      for (int i = 0; i < getSecurity().size(); i++) {
+        try {
+          joiner.add(String.format("%ssecurity%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getSecurity().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
           throw new RuntimeException(e);

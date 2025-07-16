@@ -25,6 +25,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import software.xdev.brevo.model.CreateDoiContactAttributesValue;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import java.io.UnsupportedEncodingException;
@@ -47,7 +48,7 @@ import java.util.StringJoiner;
 public class UpdateContact {
   public static final String JSON_PROPERTY_ATTRIBUTES = "attributes";
   @jakarta.annotation.Nullable
-  private Map<String, Object> attributes = new HashMap<>();
+  private Map<String, CreateDoiContactAttributesValue> attributes = new HashMap<>();
 
   public static final String JSON_PROPERTY_EXT_ID = "ext_id";
   @jakarta.annotation.Nullable
@@ -76,13 +77,13 @@ public class UpdateContact {
   public UpdateContact() {
   }
 
-  public UpdateContact attributes(@jakarta.annotation.Nullable Map<String, Object> attributes) {
+  public UpdateContact attributes(@jakarta.annotation.Nullable Map<String, CreateDoiContactAttributesValue> attributes) {
     
     this.attributes = attributes;
     return this;
   }
 
-  public UpdateContact putAttributesItem(String key, Object attributesItem) {
+  public UpdateContact putAttributesItem(String key, CreateDoiContactAttributesValue attributesItem) {
     if (this.attributes == null) {
       this.attributes = new HashMap<>();
     }
@@ -91,21 +92,21 @@ public class UpdateContact {
   }
 
   /**
-   * Pass the set of attributes to be updated. **These attributes must be present in your account**. To update existing email address of a contact with the new one please pass EMAIL in attributes. For example, **{ \&quot;EMAIL\&quot;:\&quot;newemail@domain.com\&quot;, \&quot;FNAME\&quot;:\&quot;Ellie\&quot;, \&quot;LNAME\&quot;:\&quot;Roger\&quot;}**. The attribute&#39;s parameter should be passed in capital letter while updating a contact. Values that don&#39;t match the attribute type (e.g. text or string in a date attribute) will be ignored. Keep in mind transactional attributes can be updated the same way as normal attributes. Mobile Number in **SMS** field should be passed with proper country code. For example: **{\&quot;SMS\&quot;:\&quot;+91xxxxxxxxxx\&quot;} or {\&quot;SMS\&quot;:\&quot;0091xxxxxxxxxx\&quot;}** 
+   * Pass the set of attributes to be updated. **These attributes must be present in your account**. To update existing email address of a contact with the new one please pass EMAIL in attributes. For example, **{ \&quot;EMAIL\&quot;:\&quot;newemail@domain.com\&quot;, \&quot;FNAME\&quot;:\&quot;Ellie\&quot;, \&quot;LNAME\&quot;:\&quot;Roger\&quot;, \&quot;COUNTRIES\&quot;:[\&quot;India\&quot;,\&quot;China\&quot;]}**. The attribute&#39;s parameter should be passed in capital letter while updating a contact. Values that don&#39;t match the attribute type (e.g. text or string in a date attribute) will be ignored. Keep in mind transactional attributes can be updated the same way as normal attributes. Mobile Number in **SMS** field should be passed with proper country code. For example: **{\&quot;SMS\&quot;:\&quot;+91xxxxxxxxxx\&quot;} or {\&quot;SMS\&quot;:\&quot;0091xxxxxxxxxx\&quot;}** 
    * @return attributes
    */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
-  @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public Map<String, Object> getAttributes() {
+  public Map<String, CreateDoiContactAttributesValue> getAttributes() {
     return attributes;
   }
 
 
   @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
-  @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
-  public void setAttributes(@jakarta.annotation.Nullable Map<String, Object> attributes) {
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setAttributes(@jakarta.annotation.Nullable Map<String, CreateDoiContactAttributesValue> attributes) {
     this.attributes = attributes;
   }
 
@@ -367,13 +368,9 @@ public class UpdateContact {
     // add `attributes` to the URL query string
     if (getAttributes() != null) {
       for (String _key : getAttributes().keySet()) {
-        try {
-          joiner.add(String.format("%sattributes%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix),
-              getAttributes().get(_key), URLEncoder.encode(String.valueOf(getAttributes().get(_key)), "UTF-8").replaceAll("\\+", "%20")));
-        } catch (UnsupportedEncodingException e) {
-          // Should never happen, UTF-8 is always supported
-          throw new RuntimeException(e);
+        if (getAttributes().get(_key) != null) {
+          joiner.add(getAttributes().get(_key).toUrlQueryString(String.format("%sattributes%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix))));
         }
       }
     }

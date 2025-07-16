@@ -27,7 +27,7 @@ import java.net.URLEncoder;
 import java.util.StringJoiner;
 
 /**
- * Multi-account details
+ * Marketing users to manage the marketing channels
  */
 @JsonPropertyOrder({
   SubAccountDetailsResponsePlanInfoFeaturesUsers.JSON_PROPERTY_QUANTITY,
@@ -53,7 +53,7 @@ public class SubAccountDetailsResponsePlanInfoFeaturesUsers {
   }
 
   /**
-   * Quantity of multi-account&#39;s provided
+   * Quantity of marketing users provided
    * @return quantity
    */
   @jakarta.annotation.Nullable
@@ -78,7 +78,7 @@ public class SubAccountDetailsResponsePlanInfoFeaturesUsers {
   }
 
   /**
-   * Available multi-accounts for use
+   * Available marketing users for use
    * @return remaining
    */
   @jakarta.annotation.Nullable

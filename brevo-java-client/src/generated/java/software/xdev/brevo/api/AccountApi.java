@@ -114,13 +114,14 @@ public class AccountApi extends BaseApi {
    * 
    * @param startDate Mandatory if endDate is used. Enter start date in UTC date (YYYY-MM-DD) format to filter the activity in your account. Maximum time period that can be selected is one month. Additionally, you can retrieve activity logs from the past 12 months from the date of your search. (optional)
    * @param endDate Mandatory if startDate is used. Enter end date in UTC date (YYYY-MM-DD) format to filter the activity in your account. Maximum time period that can be selected is one month. (optional)
+   * @param email Enter the user&#39;s email address to filter their activity in the account. (optional)
    * @param limit Number of documents per page (optional, default to 10)
    * @param offset Index of the first document in the page. (optional, default to 0)
    * @return GetAccountActivity
    * @throws ApiException if fails to make API call
    */
-  public GetAccountActivity getAccountActivity(String startDate, String endDate, Long limit, Long offset) throws ApiException {
-    return this.getAccountActivity(startDate, endDate, limit, offset, Collections.emptyMap());
+  public GetAccountActivity getAccountActivity(@jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, @jakarta.annotation.Nullable String email, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset) throws ApiException {
+    return this.getAccountActivity(startDate, endDate, email, limit, offset, Collections.emptyMap());
   }
 
 
@@ -129,13 +130,14 @@ public class AccountApi extends BaseApi {
    * 
    * @param startDate Mandatory if endDate is used. Enter start date in UTC date (YYYY-MM-DD) format to filter the activity in your account. Maximum time period that can be selected is one month. Additionally, you can retrieve activity logs from the past 12 months from the date of your search. (optional)
    * @param endDate Mandatory if startDate is used. Enter end date in UTC date (YYYY-MM-DD) format to filter the activity in your account. Maximum time period that can be selected is one month. (optional)
+   * @param email Enter the user&#39;s email address to filter their activity in the account. (optional)
    * @param limit Number of documents per page (optional, default to 10)
    * @param offset Index of the first document in the page. (optional, default to 0)
    * @param additionalHeaders additionalHeaders for this call
    * @return GetAccountActivity
    * @throws ApiException if fails to make API call
    */
-  public GetAccountActivity getAccountActivity(String startDate, String endDate, Long limit, Long offset, Map<String, String> additionalHeaders) throws ApiException {
+  public GetAccountActivity getAccountActivity(@jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, @jakarta.annotation.Nullable String email, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -151,6 +153,7 @@ public class AccountApi extends BaseApi {
 
     localVarQueryParams.addAll(apiClient.parameterToPair("startDate", startDate));
     localVarQueryParams.addAll(apiClient.parameterToPair("endDate", endDate));
+    localVarQueryParams.addAll(apiClient.parameterToPair("email", email));
     localVarQueryParams.addAll(apiClient.parameterToPair("limit", limit));
     localVarQueryParams.addAll(apiClient.parameterToPair("offset", offset));
     

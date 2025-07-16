@@ -51,8 +51,6 @@ public class ErrorModel {
     
     DOCUMENT_NOT_FOUND(String.valueOf("document_not_found")),
     
-    RESELLER_PERMISSION_DENIED(String.valueOf("reseller_permission_denied")),
-    
     NOT_ENOUGH_CREDITS(String.valueOf("not_enough_credits")),
     
     PERMISSION_DENIED(String.valueOf("permission_denied")),
@@ -69,7 +67,9 @@ public class ErrorModel {
     
     NOT_ACCEPTABLE(String.valueOf("not_acceptable")),
     
-    BAD_REQUEST(String.valueOf("bad_request"));
+    BAD_REQUEST(String.valueOf("bad_request")),
+    
+    UNPROCESSABLE_ENTITY(String.valueOf("unprocessable_entity"));
 
     private String value;
 

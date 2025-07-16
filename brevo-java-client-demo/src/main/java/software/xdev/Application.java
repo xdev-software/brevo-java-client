@@ -43,11 +43,15 @@ public final class Application
 			final GetExtendedContactDetails contactInfo = contactsApi.getContactInfo(
 				identifier,
 				null,
+				null,
 				null);
 			LOG.info("Got contact[email={},listIds={}]", contactInfo.getEmail(), contactInfo.getListIds());
 			if(!contactInfo.getListIds().contains(listId))
 			{
-				contactsApi.updateContact(identifier, new UpdateContact().listIds(List.of(listId)));
+				contactsApi.updateContact(
+					identifier,
+					new UpdateContact().listIds(List.of(listId)),
+					null);
 				LOG.info("Updated contact to include listId={}", listId);
 			}
 		}

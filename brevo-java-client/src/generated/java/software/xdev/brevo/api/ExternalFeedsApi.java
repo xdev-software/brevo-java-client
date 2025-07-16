@@ -53,7 +53,7 @@ public class ExternalFeedsApi extends BaseApi {
    * @return CreateExternalFeed201Response
    * @throws ApiException if fails to make API call
    */
-  public CreateExternalFeed201Response createExternalFeed(CreateExternalFeed createExternalFeed) throws ApiException {
+  public CreateExternalFeed201Response createExternalFeed(@jakarta.annotation.Nonnull CreateExternalFeed createExternalFeed) throws ApiException {
     return this.createExternalFeed(createExternalFeed, Collections.emptyMap());
   }
 
@@ -66,7 +66,7 @@ public class ExternalFeedsApi extends BaseApi {
    * @return CreateExternalFeed201Response
    * @throws ApiException if fails to make API call
    */
-  public CreateExternalFeed201Response createExternalFeed(CreateExternalFeed createExternalFeed, Map<String, String> additionalHeaders) throws ApiException {
+  public CreateExternalFeed201Response createExternalFeed(@jakarta.annotation.Nonnull CreateExternalFeed createExternalFeed, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = createExternalFeed;
     
     // verify the required parameter 'createExternalFeed' is set
@@ -126,7 +126,7 @@ public class ExternalFeedsApi extends BaseApi {
    * @param uuid UUID of the feed to delete (required)
    * @throws ApiException if fails to make API call
    */
-  public void deleteExternalFeed(String uuid) throws ApiException {
+  public void deleteExternalFeed(@jakarta.annotation.Nonnull String uuid) throws ApiException {
     this.deleteExternalFeed(uuid, Collections.emptyMap());
   }
 
@@ -138,7 +138,7 @@ public class ExternalFeedsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void deleteExternalFeed(String uuid, Map<String, String> additionalHeaders) throws ApiException {
+  public void deleteExternalFeed(@jakarta.annotation.Nonnull String uuid, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'uuid' is set
@@ -205,7 +205,7 @@ public class ExternalFeedsApi extends BaseApi {
    * @return GetAllExternalFeeds
    * @throws ApiException if fails to make API call
    */
-  public GetAllExternalFeeds getAllExternalFeeds(String search, LocalDate startDate, LocalDate endDate, String sort, String authType, Long limit, Long offset) throws ApiException {
+  public GetAllExternalFeeds getAllExternalFeeds(@jakarta.annotation.Nullable String search, @jakarta.annotation.Nullable LocalDate startDate, @jakarta.annotation.Nullable LocalDate endDate, @jakarta.annotation.Nullable String sort, @jakarta.annotation.Nullable String authType, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset) throws ApiException {
     return this.getAllExternalFeeds(search, startDate, endDate, sort, authType, limit, offset, Collections.emptyMap());
   }
 
@@ -224,7 +224,7 @@ public class ExternalFeedsApi extends BaseApi {
    * @return GetAllExternalFeeds
    * @throws ApiException if fails to make API call
    */
-  public GetAllExternalFeeds getAllExternalFeeds(String search, LocalDate startDate, LocalDate endDate, String sort, String authType, Long limit, Long offset, Map<String, String> additionalHeaders) throws ApiException {
+  public GetAllExternalFeeds getAllExternalFeeds(@jakarta.annotation.Nullable String search, @jakarta.annotation.Nullable LocalDate startDate, @jakarta.annotation.Nullable LocalDate endDate, @jakarta.annotation.Nullable String sort, @jakarta.annotation.Nullable String authType, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -287,7 +287,7 @@ public class ExternalFeedsApi extends BaseApi {
    * @return GetExternalFeedByUUID
    * @throws ApiException if fails to make API call
    */
-  public GetExternalFeedByUUID getExternalFeedByUUID(String uuid) throws ApiException {
+  public GetExternalFeedByUUID getExternalFeedByUUID(@jakarta.annotation.Nonnull String uuid) throws ApiException {
     return this.getExternalFeedByUUID(uuid, Collections.emptyMap());
   }
 
@@ -300,7 +300,7 @@ public class ExternalFeedsApi extends BaseApi {
    * @return GetExternalFeedByUUID
    * @throws ApiException if fails to make API call
    */
-  public GetExternalFeedByUUID getExternalFeedByUUID(String uuid, Map<String, String> additionalHeaders) throws ApiException {
+  public GetExternalFeedByUUID getExternalFeedByUUID(@jakarta.annotation.Nonnull String uuid, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'uuid' is set
@@ -362,7 +362,7 @@ public class ExternalFeedsApi extends BaseApi {
    * @param updateExternalFeed Values to update a feed (required)
    * @throws ApiException if fails to make API call
    */
-  public void updateExternalFeed(String uuid, UpdateExternalFeed updateExternalFeed) throws ApiException {
+  public void updateExternalFeed(@jakarta.annotation.Nonnull String uuid, @jakarta.annotation.Nonnull UpdateExternalFeed updateExternalFeed) throws ApiException {
     this.updateExternalFeed(uuid, updateExternalFeed, Collections.emptyMap());
   }
 
@@ -375,7 +375,7 @@ public class ExternalFeedsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void updateExternalFeed(String uuid, UpdateExternalFeed updateExternalFeed, Map<String, String> additionalHeaders) throws ApiException {
+  public void updateExternalFeed(@jakarta.annotation.Nonnull String uuid, @jakarta.annotation.Nonnull UpdateExternalFeed updateExternalFeed, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = updateExternalFeed;
     
     // verify the required parameter 'uuid' is set

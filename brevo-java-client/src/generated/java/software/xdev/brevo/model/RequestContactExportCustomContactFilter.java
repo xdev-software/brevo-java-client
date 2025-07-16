@@ -34,6 +34,7 @@ import java.util.StringJoiner;
   RequestContactExportCustomContactFilter.JSON_PROPERTY_ACTION_FOR_EMAIL_CAMPAIGNS,
   RequestContactExportCustomContactFilter.JSON_PROPERTY_ACTION_FOR_SMS_CAMPAIGNS,
   RequestContactExportCustomContactFilter.JSON_PROPERTY_LIST_ID,
+  RequestContactExportCustomContactFilter.JSON_PROPERTY_SEGMENT_ID,
   RequestContactExportCustomContactFilter.JSON_PROPERTY_EMAIL_CAMPAIGN_ID,
   RequestContactExportCustomContactFilter.JSON_PROPERTY_SMS_CAMPAIGN_ID
 })
@@ -176,6 +177,10 @@ public class RequestContactExportCustomContactFilter {
   @jakarta.annotation.Nullable
   private Long listId;
 
+  public static final String JSON_PROPERTY_SEGMENT_ID = "segmentId";
+  @jakarta.annotation.Nullable
+  private Long segmentId;
+
   public static final String JSON_PROPERTY_EMAIL_CAMPAIGN_ID = "emailCampaignId";
   @jakarta.annotation.Nullable
   private Long emailCampaignId;
@@ -269,7 +274,7 @@ public class RequestContactExportCustomContactFilter {
   }
 
   /**
-   * **Mandatory if actionForContacts is passed, ignored otherwise.** Id of the list for which the corresponding action shall be applied in the filter. 
+   * ID of the list. This is mandatory if actionForContacts is specified and segmentId is not provided. Either segmentId or listId must be included. 
    * @return listId
    */
   @jakarta.annotation.Nullable
@@ -285,6 +290,31 @@ public class RequestContactExportCustomContactFilter {
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setListId(@jakarta.annotation.Nullable Long listId) {
     this.listId = listId;
+  }
+
+  public RequestContactExportCustomContactFilter segmentId(@jakarta.annotation.Nullable Long segmentId) {
+    
+    this.segmentId = segmentId;
+    return this;
+  }
+
+  /**
+   * ID of the segment. This is mandatory if actionForContacts is specified and listId is not provided. Either segmentId or listId must be included. 
+   * @return segmentId
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_SEGMENT_ID)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public Long getSegmentId() {
+    return segmentId;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_SEGMENT_ID)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setSegmentId(@jakarta.annotation.Nullable Long segmentId) {
+    this.segmentId = segmentId;
   }
 
   public RequestContactExportCustomContactFilter emailCampaignId(@jakarta.annotation.Nullable Long emailCampaignId) {
@@ -350,13 +380,14 @@ public class RequestContactExportCustomContactFilter {
         Objects.equals(this.actionForEmailCampaigns, requestContactExportCustomContactFilter.actionForEmailCampaigns) &&
         Objects.equals(this.actionForSmsCampaigns, requestContactExportCustomContactFilter.actionForSmsCampaigns) &&
         Objects.equals(this.listId, requestContactExportCustomContactFilter.listId) &&
+        Objects.equals(this.segmentId, requestContactExportCustomContactFilter.segmentId) &&
         Objects.equals(this.emailCampaignId, requestContactExportCustomContactFilter.emailCampaignId) &&
         Objects.equals(this.smsCampaignId, requestContactExportCustomContactFilter.smsCampaignId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(actionForContacts, actionForEmailCampaigns, actionForSmsCampaigns, listId, emailCampaignId, smsCampaignId);
+    return Objects.hash(actionForContacts, actionForEmailCampaigns, actionForSmsCampaigns, listId, segmentId, emailCampaignId, smsCampaignId);
   }
 
   @Override
@@ -367,6 +398,7 @@ public class RequestContactExportCustomContactFilter {
     sb.append("    actionForEmailCampaigns: ").append(toIndentedString(actionForEmailCampaigns)).append("\n");
     sb.append("    actionForSmsCampaigns: ").append(toIndentedString(actionForSmsCampaigns)).append("\n");
     sb.append("    listId: ").append(toIndentedString(listId)).append("\n");
+    sb.append("    segmentId: ").append(toIndentedString(segmentId)).append("\n");
     sb.append("    emailCampaignId: ").append(toIndentedString(emailCampaignId)).append("\n");
     sb.append("    smsCampaignId: ").append(toIndentedString(smsCampaignId)).append("\n");
     sb.append("}");
@@ -450,6 +482,16 @@ public class RequestContactExportCustomContactFilter {
     if (getListId() != null) {
       try {
         joiner.add(String.format("%slistId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getListId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `segmentId` to the URL query string
+    if (getSegmentId() != null) {
+      try {
+        joiner.add(String.format("%ssegmentId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSegmentId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

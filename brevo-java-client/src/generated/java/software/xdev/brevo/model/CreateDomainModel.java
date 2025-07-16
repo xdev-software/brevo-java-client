@@ -33,6 +33,7 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   CreateDomainModel.JSON_PROPERTY_ID,
   CreateDomainModel.JSON_PROPERTY_DOMAIN_NAME,
+  CreateDomainModel.JSON_PROPERTY_DOMAIN_PROVIDER,
   CreateDomainModel.JSON_PROPERTY_MESSAGE,
   CreateDomainModel.JSON_PROPERTY_DNS_RECORDS
 })
@@ -45,6 +46,10 @@ public class CreateDomainModel {
   public static final String JSON_PROPERTY_DOMAIN_NAME = "domain_name";
   @jakarta.annotation.Nullable
   private String domainName;
+
+  public static final String JSON_PROPERTY_DOMAIN_PROVIDER = "domain_provider";
+  @jakarta.annotation.Nullable
+  private String domainProvider;
 
   public static final String JSON_PROPERTY_MESSAGE = "message";
   @jakarta.annotation.Nullable
@@ -105,6 +110,31 @@ public class CreateDomainModel {
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDomainName(@jakarta.annotation.Nullable String domainName) {
     this.domainName = domainName;
+  }
+
+  public CreateDomainModel domainProvider(@jakarta.annotation.Nullable String domainProvider) {
+    
+    this.domainProvider = domainProvider;
+    return this;
+  }
+
+  /**
+   * Domain Provider
+   * @return domainProvider
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_DOMAIN_PROVIDER)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public String getDomainProvider() {
+    return domainProvider;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_DOMAIN_PROVIDER)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setDomainProvider(@jakarta.annotation.Nullable String domainProvider) {
+    this.domainProvider = domainProvider;
   }
 
   public CreateDomainModel message(@jakarta.annotation.Nullable String message) {
@@ -168,13 +198,14 @@ public class CreateDomainModel {
     CreateDomainModel createDomainModel = (CreateDomainModel) o;
     return Objects.equals(this.id, createDomainModel.id) &&
         Objects.equals(this.domainName, createDomainModel.domainName) &&
+        Objects.equals(this.domainProvider, createDomainModel.domainProvider) &&
         Objects.equals(this.message, createDomainModel.message) &&
         Objects.equals(this.dnsRecords, createDomainModel.dnsRecords);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, domainName, message, dnsRecords);
+    return Objects.hash(id, domainName, domainProvider, message, dnsRecords);
   }
 
   @Override
@@ -183,6 +214,7 @@ public class CreateDomainModel {
     sb.append("class CreateDomainModel {\n");
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
     sb.append("    domainName: ").append(toIndentedString(domainName)).append("\n");
+    sb.append("    domainProvider: ").append(toIndentedString(domainProvider)).append("\n");
     sb.append("    message: ").append(toIndentedString(message)).append("\n");
     sb.append("    dnsRecords: ").append(toIndentedString(dnsRecords)).append("\n");
     sb.append("}");
@@ -246,6 +278,16 @@ public class CreateDomainModel {
     if (getDomainName() != null) {
       try {
         joiner.add(String.format("%sdomain_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDomainName()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `domain_provider` to the URL query string
+    if (getDomainProvider() != null) {
+      try {
+        joiner.add(String.format("%sdomain_provider%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDomainProvider()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

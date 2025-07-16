@@ -48,7 +48,17 @@ public class InviteAdminUserPrivilegesInner {
     
     USER_MANAGEMENT(String.valueOf("user_management")),
     
-    APP_MANAGEMENT(String.valueOf("app_management"));
+    APP_MANAGEMENT(String.valueOf("app_management")),
+    
+    SUB_ORGANIZATION_GROUPS(String.valueOf("sub_organization_groups")),
+    
+    CREATE_SUB_ORGANIZATIONS(String.valueOf("create_sub_organizations")),
+    
+    MANAGE_SUB_ORGANIZATIONS(String.valueOf("manage_sub_organizations")),
+    
+    ANALYTICS(String.valueOf("analytics")),
+    
+    SECURITY(String.valueOf("security"));
 
     private String value;
 
@@ -87,7 +97,15 @@ public class InviteAdminUserPrivilegesInner {
   public enum PermissionsEnum {
     ALL(String.valueOf("all")),
     
-    NONE(String.valueOf("none"));
+    NONE(String.valueOf("none")),
+    
+    CREATE(String.valueOf("create")),
+    
+    EDIT_DELETE(String.valueOf("edit_delete")),
+    
+    DOWNLOAD_DATA(String.valueOf("download_data")),
+    
+    CREATE_ALERTS(String.valueOf("create_alerts"));
 
     private String value;
 

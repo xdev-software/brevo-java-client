@@ -35,7 +35,8 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   CreateEmailCampaignRecipients.JSON_PROPERTY_EXCLUSION_LIST_IDS,
   CreateEmailCampaignRecipients.JSON_PROPERTY_LIST_IDS,
-  CreateEmailCampaignRecipients.JSON_PROPERTY_SEGMENT_IDS
+  CreateEmailCampaignRecipients.JSON_PROPERTY_SEGMENT_IDS,
+  CreateEmailCampaignRecipients.JSON_PROPERTY_EXCLUSION_SEGMENT_IDS
 })
 @JsonTypeName("createEmailCampaign_recipients")
 public class CreateEmailCampaignRecipients {
@@ -50,6 +51,10 @@ public class CreateEmailCampaignRecipients {
   public static final String JSON_PROPERTY_SEGMENT_IDS = "segmentIds";
   @jakarta.annotation.Nullable
   private List<Long> segmentIds = new ArrayList<>();
+
+  public static final String JSON_PROPERTY_EXCLUSION_SEGMENT_IDS = "exclusionSegmentIds";
+  @jakarta.annotation.Nullable
+  private List<Long> exclusionSegmentIds = new ArrayList<>();
 
   public CreateEmailCampaignRecipients() {
   }
@@ -153,6 +158,39 @@ public class CreateEmailCampaignRecipients {
     this.segmentIds = segmentIds;
   }
 
+  public CreateEmailCampaignRecipients exclusionSegmentIds(@jakarta.annotation.Nullable List<Long> exclusionSegmentIds) {
+    
+    this.exclusionSegmentIds = exclusionSegmentIds;
+    return this;
+  }
+
+  public CreateEmailCampaignRecipients addExclusionSegmentIdsItem(Long exclusionSegmentIdsItem) {
+    if (this.exclusionSegmentIds == null) {
+      this.exclusionSegmentIds = new ArrayList<>();
+    }
+    this.exclusionSegmentIds.add(exclusionSegmentIdsItem);
+    return this;
+  }
+
+  /**
+   * Segment ids which have to be excluded from a campaign. 
+   * @return exclusionSegmentIds
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_EXCLUSION_SEGMENT_IDS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public List<Long> getExclusionSegmentIds() {
+    return exclusionSegmentIds;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_EXCLUSION_SEGMENT_IDS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setExclusionSegmentIds(@jakarta.annotation.Nullable List<Long> exclusionSegmentIds) {
+    this.exclusionSegmentIds = exclusionSegmentIds;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -164,12 +202,13 @@ public class CreateEmailCampaignRecipients {
     CreateEmailCampaignRecipients createEmailCampaignRecipients = (CreateEmailCampaignRecipients) o;
     return Objects.equals(this.exclusionListIds, createEmailCampaignRecipients.exclusionListIds) &&
         Objects.equals(this.listIds, createEmailCampaignRecipients.listIds) &&
-        Objects.equals(this.segmentIds, createEmailCampaignRecipients.segmentIds);
+        Objects.equals(this.segmentIds, createEmailCampaignRecipients.segmentIds) &&
+        Objects.equals(this.exclusionSegmentIds, createEmailCampaignRecipients.exclusionSegmentIds);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(exclusionListIds, listIds, segmentIds);
+    return Objects.hash(exclusionListIds, listIds, segmentIds, exclusionSegmentIds);
   }
 
   @Override
@@ -179,6 +218,7 @@ public class CreateEmailCampaignRecipients {
     sb.append("    exclusionListIds: ").append(toIndentedString(exclusionListIds)).append("\n");
     sb.append("    listIds: ").append(toIndentedString(listIds)).append("\n");
     sb.append("    segmentIds: ").append(toIndentedString(segmentIds)).append("\n");
+    sb.append("    exclusionSegmentIds: ").append(toIndentedString(exclusionSegmentIds)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -261,6 +301,20 @@ public class CreateEmailCampaignRecipients {
           joiner.add(String.format("%ssegmentIds%s%s=%s", prefix, suffix,
               "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getSegmentIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
+      }
+    }
+
+    // add `exclusionSegmentIds` to the URL query string
+    if (getExclusionSegmentIds() != null) {
+      for (int i = 0; i < getExclusionSegmentIds().size(); i++) {
+        try {
+          joiner.add(String.format("%sexclusionSegmentIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getExclusionSegmentIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
           throw new RuntimeException(e);

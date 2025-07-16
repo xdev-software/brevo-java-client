@@ -33,6 +33,7 @@ import java.util.StringJoiner;
   OrderBilling.JSON_PROPERTY_ADDRESS,
   OrderBilling.JSON_PROPERTY_CITY,
   OrderBilling.JSON_PROPERTY_COUNTRY_CODE,
+  OrderBilling.JSON_PROPERTY_COUNTRY,
   OrderBilling.JSON_PROPERTY_PHONE,
   OrderBilling.JSON_PROPERTY_POST_CODE,
   OrderBilling.JSON_PROPERTY_PAYMENT_METHOD,
@@ -51,6 +52,10 @@ public class OrderBilling {
   public static final String JSON_PROPERTY_COUNTRY_CODE = "countryCode";
   @jakarta.annotation.Nullable
   private String countryCode;
+
+  public static final String JSON_PROPERTY_COUNTRY = "country";
+  @jakarta.annotation.Nullable
+  private String country;
 
   public static final String JSON_PROPERTY_PHONE = "phone";
   @jakarta.annotation.Nullable
@@ -146,6 +151,31 @@ public class OrderBilling {
     this.countryCode = countryCode;
   }
 
+  public OrderBilling country(@jakarta.annotation.Nullable String country) {
+    
+    this.country = country;
+    return this;
+  }
+
+  /**
+   * Billing country name.
+   * @return country
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_COUNTRY)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public String getCountry() {
+    return country;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_COUNTRY)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setCountry(@jakarta.annotation.Nullable String country) {
+    this.country = country;
+  }
+
   public OrderBilling phone(@jakarta.annotation.Nullable String phone) {
     
     this.phone = phone;
@@ -153,7 +183,7 @@ public class OrderBilling {
   }
 
   /**
-   * Phone number to contact for further details about the order, Mandatory if \&quot;email\&quot; field is not passed.
+   * Billing phone number.
    * @return phone
    */
   @jakarta.annotation.Nullable
@@ -258,6 +288,7 @@ public class OrderBilling {
     return Objects.equals(this.address, orderBilling.address) &&
         Objects.equals(this.city, orderBilling.city) &&
         Objects.equals(this.countryCode, orderBilling.countryCode) &&
+        Objects.equals(this.country, orderBilling.country) &&
         Objects.equals(this.phone, orderBilling.phone) &&
         Objects.equals(this.postCode, orderBilling.postCode) &&
         Objects.equals(this.paymentMethod, orderBilling.paymentMethod) &&
@@ -266,7 +297,7 @@ public class OrderBilling {
 
   @Override
   public int hashCode() {
-    return Objects.hash(address, city, countryCode, phone, postCode, paymentMethod, region);
+    return Objects.hash(address, city, countryCode, country, phone, postCode, paymentMethod, region);
   }
 
   @Override
@@ -276,6 +307,7 @@ public class OrderBilling {
     sb.append("    address: ").append(toIndentedString(address)).append("\n");
     sb.append("    city: ").append(toIndentedString(city)).append("\n");
     sb.append("    countryCode: ").append(toIndentedString(countryCode)).append("\n");
+    sb.append("    country: ").append(toIndentedString(country)).append("\n");
     sb.append("    phone: ").append(toIndentedString(phone)).append("\n");
     sb.append("    postCode: ").append(toIndentedString(postCode)).append("\n");
     sb.append("    paymentMethod: ").append(toIndentedString(paymentMethod)).append("\n");
@@ -351,6 +383,16 @@ public class OrderBilling {
     if (getCountryCode() != null) {
       try {
         joiner.add(String.format("%scountryCode%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCountryCode()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `country` to the URL query string
+    if (getCountry() != null) {
+      try {
+        joiner.add(String.format("%scountry%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCountry()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

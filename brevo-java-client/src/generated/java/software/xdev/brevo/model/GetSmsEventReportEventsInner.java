@@ -74,7 +74,9 @@ public class GetSmsEventReportEventsInner {
     
     BLOCKED(String.valueOf("blocked")),
     
-    REJECTED(String.valueOf("rejected"));
+    REJECTED(String.valueOf("rejected")),
+    
+    SKIPPED(String.valueOf("skipped"));
 
     private String value;
 
