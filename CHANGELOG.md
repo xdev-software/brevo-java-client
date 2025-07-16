@@ -1,6 +1,6 @@
 # 1.1.0
-* Updated generated code from brevo's openapi.yml
-* Updated references to "new" official brevo client #
+* Updated generated code from Brevo's openapi.yml
+* Updated references to "new" official Brevo client #
 * Updated dependencies
 
 # 1.0.4
