@@ -20,6 +20,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
+import java.math.BigDecimal;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import java.io.UnsupportedEncodingException;
@@ -30,13 +31,33 @@ import java.util.StringJoiner;
  * Credit details to update
  */
 @JsonPropertyOrder({
-  SubAccountUpdatePlanRequestCredits.JSON_PROPERTY_EMAIL
+  SubAccountUpdatePlanRequestCredits.JSON_PROPERTY_EMAIL,
+  SubAccountUpdatePlanRequestCredits.JSON_PROPERTY_SMS,
+  SubAccountUpdatePlanRequestCredits.JSON_PROPERTY_WP_SUBSCRIBERS,
+  SubAccountUpdatePlanRequestCredits.JSON_PROPERTY_EXTERNAL_FEEDS,
+  SubAccountUpdatePlanRequestCredits.JSON_PROPERTY_WHATSAPP
 })
 @JsonTypeName("subAccountUpdatePlanRequest_credits")
 public class SubAccountUpdatePlanRequestCredits {
   public static final String JSON_PROPERTY_EMAIL = "email";
   @jakarta.annotation.Nullable
   private Long email;
+
+  public static final String JSON_PROPERTY_SMS = "sms";
+  @jakarta.annotation.Nullable
+  private Float sms;
+
+  public static final String JSON_PROPERTY_WP_SUBSCRIBERS = "wpSubscribers";
+  @jakarta.annotation.Nullable
+  private Long wpSubscribers;
+
+  public static final String JSON_PROPERTY_EXTERNAL_FEEDS = "externalFeeds";
+  @jakarta.annotation.Nullable
+  private BigDecimal externalFeeds;
+
+  public static final String JSON_PROPERTY_WHATSAPP = "whatsapp";
+  @jakarta.annotation.Nullable
+  private Float whatsapp;
 
   public SubAccountUpdatePlanRequestCredits() {
   }
@@ -48,7 +69,7 @@ public class SubAccountUpdatePlanRequestCredits {
   }
 
   /**
-   * Number of email credits
+   * Number of email credits | Pass the value -1 for unlimited emails in ENTv2 only
    * @return email
    */
   @jakarta.annotation.Nullable
@@ -66,6 +87,106 @@ public class SubAccountUpdatePlanRequestCredits {
     this.email = email;
   }
 
+  public SubAccountUpdatePlanRequestCredits sms(@jakarta.annotation.Nullable Float sms) {
+    
+    this.sms = sms;
+    return this;
+  }
+
+  /**
+   * Number of SMS credits | Pass the value -1 for unlimited SMS in ENTv2 only
+   * @return sms
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_SMS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public Float getSms() {
+    return sms;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_SMS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setSms(@jakarta.annotation.Nullable Float sms) {
+    this.sms = sms;
+  }
+
+  public SubAccountUpdatePlanRequestCredits wpSubscribers(@jakarta.annotation.Nullable Long wpSubscribers) {
+    
+    this.wpSubscribers = wpSubscribers;
+    return this;
+  }
+
+  /**
+   * Number of Push credits, possible value is 0 and -1 | available in ENT-v2 only
+   * @return wpSubscribers
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_WP_SUBSCRIBERS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public Long getWpSubscribers() {
+    return wpSubscribers;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_WP_SUBSCRIBERS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setWpSubscribers(@jakarta.annotation.Nullable Long wpSubscribers) {
+    this.wpSubscribers = wpSubscribers;
+  }
+
+  public SubAccountUpdatePlanRequestCredits externalFeeds(@jakarta.annotation.Nullable BigDecimal externalFeeds) {
+    
+    this.externalFeeds = externalFeeds;
+    return this;
+  }
+
+  /**
+   * Number of externalFeeds credits, possible values are 0 or 1 |available in ENTv2 only
+   * @return externalFeeds
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_EXTERNAL_FEEDS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public BigDecimal getExternalFeeds() {
+    return externalFeeds;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_EXTERNAL_FEEDS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setExternalFeeds(@jakarta.annotation.Nullable BigDecimal externalFeeds) {
+    this.externalFeeds = externalFeeds;
+  }
+
+  public SubAccountUpdatePlanRequestCredits whatsapp(@jakarta.annotation.Nullable Float whatsapp) {
+    
+    this.whatsapp = whatsapp;
+    return this;
+  }
+
+  /**
+   * Number of whatsapp credits | Pass the value -1 for unlimited whatsapp in ENTv2 only
+   * @return whatsapp
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_WHATSAPP)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public Float getWhatsapp() {
+    return whatsapp;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_WHATSAPP)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setWhatsapp(@jakarta.annotation.Nullable Float whatsapp) {
+    this.whatsapp = whatsapp;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -75,12 +196,16 @@ public class SubAccountUpdatePlanRequestCredits {
       return false;
     }
     SubAccountUpdatePlanRequestCredits subAccountUpdatePlanRequestCredits = (SubAccountUpdatePlanRequestCredits) o;
-    return Objects.equals(this.email, subAccountUpdatePlanRequestCredits.email);
+    return Objects.equals(this.email, subAccountUpdatePlanRequestCredits.email) &&
+        Objects.equals(this.sms, subAccountUpdatePlanRequestCredits.sms) &&
+        Objects.equals(this.wpSubscribers, subAccountUpdatePlanRequestCredits.wpSubscribers) &&
+        Objects.equals(this.externalFeeds, subAccountUpdatePlanRequestCredits.externalFeeds) &&
+        Objects.equals(this.whatsapp, subAccountUpdatePlanRequestCredits.whatsapp);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(email);
+    return Objects.hash(email, sms, wpSubscribers, externalFeeds, whatsapp);
   }
 
   @Override
@@ -88,6 +213,10 @@ public class SubAccountUpdatePlanRequestCredits {
     StringBuilder sb = new StringBuilder();
     sb.append("class SubAccountUpdatePlanRequestCredits {\n");
     sb.append("    email: ").append(toIndentedString(email)).append("\n");
+    sb.append("    sms: ").append(toIndentedString(sms)).append("\n");
+    sb.append("    wpSubscribers: ").append(toIndentedString(wpSubscribers)).append("\n");
+    sb.append("    externalFeeds: ").append(toIndentedString(externalFeeds)).append("\n");
+    sb.append("    whatsapp: ").append(toIndentedString(whatsapp)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -139,6 +268,46 @@ public class SubAccountUpdatePlanRequestCredits {
     if (getEmail() != null) {
       try {
         joiner.add(String.format("%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `sms` to the URL query string
+    if (getSms() != null) {
+      try {
+        joiner.add(String.format("%ssms%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSms()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `wpSubscribers` to the URL query string
+    if (getWpSubscribers() != null) {
+      try {
+        joiner.add(String.format("%swpSubscribers%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWpSubscribers()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `externalFeeds` to the URL query string
+    if (getExternalFeeds() != null) {
+      try {
+        joiner.add(String.format("%sexternalFeeds%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExternalFeeds()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `whatsapp` to the URL query string
+    if (getWhatsapp() != null) {
+      try {
+        joiner.add(String.format("%swhatsapp%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWhatsapp()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

@@ -41,6 +41,8 @@ import software.xdev.brevo.model.PostSendFailed;
 import software.xdev.brevo.model.ScheduleSmtpEmail;
 import software.xdev.brevo.model.SendSmtpEmail;
 import software.xdev.brevo.model.SendTestEmail;
+import software.xdev.brevo.model.TemplatePreviewModel;
+import software.xdev.brevo.model.TemplatePreviewRequestBody;
 import software.xdev.brevo.model.UpdateSmtpTemplate;
 
 
@@ -67,7 +69,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @param blockDomain Name of the domain to be blocked (required)
    * @throws ApiException if fails to make API call
    */
-  public void blockNewDomain(BlockDomain blockDomain) throws ApiException {
+  public void blockNewDomain(@jakarta.annotation.Nonnull BlockDomain blockDomain) throws ApiException {
     this.blockNewDomain(blockDomain, Collections.emptyMap());
   }
 
@@ -79,7 +81,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void blockNewDomain(BlockDomain blockDomain, Map<String, String> additionalHeaders) throws ApiException {
+  public void blockNewDomain(@jakarta.annotation.Nonnull BlockDomain blockDomain, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = blockDomain;
     
     // verify the required parameter 'blockDomain' is set
@@ -139,7 +141,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @return CreateModel
    * @throws ApiException if fails to make API call
    */
-  public CreateModel createSmtpTemplate(CreateSmtpTemplate createSmtpTemplate) throws ApiException {
+  public CreateModel createSmtpTemplate(@jakarta.annotation.Nonnull CreateSmtpTemplate createSmtpTemplate) throws ApiException {
     return this.createSmtpTemplate(createSmtpTemplate, Collections.emptyMap());
   }
 
@@ -152,7 +154,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @return CreateModel
    * @throws ApiException if fails to make API call
    */
-  public CreateModel createSmtpTemplate(CreateSmtpTemplate createSmtpTemplate, Map<String, String> additionalHeaders) throws ApiException {
+  public CreateModel createSmtpTemplate(@jakarta.annotation.Nonnull CreateSmtpTemplate createSmtpTemplate, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = createSmtpTemplate;
     
     // verify the required parameter 'createSmtpTemplate' is set
@@ -212,7 +214,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @param domain The name of the domain to be deleted (required)
    * @throws ApiException if fails to make API call
    */
-  public void deleteBlockedDomain(String domain) throws ApiException {
+  public void deleteBlockedDomain(@jakarta.annotation.Nonnull String domain) throws ApiException {
     this.deleteBlockedDomain(domain, Collections.emptyMap());
   }
 
@@ -224,7 +226,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void deleteBlockedDomain(String domain, Map<String, String> additionalHeaders) throws ApiException {
+  public void deleteBlockedDomain(@jakarta.annotation.Nonnull String domain, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'domain' is set
@@ -284,7 +286,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @param deleteHardbounces values to delete hardbounces (optional)
    * @throws ApiException if fails to make API call
    */
-  public void deleteHardbounces(DeleteHardbounces deleteHardbounces) throws ApiException {
+  public void deleteHardbounces(@jakarta.annotation.Nullable DeleteHardbounces deleteHardbounces) throws ApiException {
     this.deleteHardbounces(deleteHardbounces, Collections.emptyMap());
   }
 
@@ -296,7 +298,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void deleteHardbounces(DeleteHardbounces deleteHardbounces, Map<String, String> additionalHeaders) throws ApiException {
+  public void deleteHardbounces(@jakarta.annotation.Nullable DeleteHardbounces deleteHardbounces, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = deleteHardbounces;
     
     // create path and map variables
@@ -350,7 +352,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @param identifier The &#x60;batchId&#x60; of scheduled emails batch (Should be a valid UUIDv4) or the &#x60;messageId&#x60; of scheduled email. (required)
    * @throws ApiException if fails to make API call
    */
-  public void deleteScheduledEmailById(String identifier) throws ApiException {
+  public void deleteScheduledEmailById(@jakarta.annotation.Nonnull String identifier) throws ApiException {
     this.deleteScheduledEmailById(identifier, Collections.emptyMap());
   }
 
@@ -362,7 +364,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void deleteScheduledEmailById(String identifier, Map<String, String> additionalHeaders) throws ApiException {
+  public void deleteScheduledEmailById(@jakarta.annotation.Nonnull String identifier, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'identifier' is set
@@ -422,7 +424,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @param templateId id of the template (required)
    * @throws ApiException if fails to make API call
    */
-  public void deleteSmtpTemplate(Long templateId) throws ApiException {
+  public void deleteSmtpTemplate(@jakarta.annotation.Nonnull Long templateId) throws ApiException {
     this.deleteSmtpTemplate(templateId, Collections.emptyMap());
   }
 
@@ -434,7 +436,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void deleteSmtpTemplate(Long templateId, Map<String, String> additionalHeaders) throws ApiException {
+  public void deleteSmtpTemplate(@jakarta.annotation.Nonnull Long templateId, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'templateId' is set
@@ -498,7 +500,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @return GetAggregatedReport
    * @throws ApiException if fails to make API call
    */
-  public GetAggregatedReport getAggregatedSmtpReport(String startDate, String endDate, Long days, String tag) throws ApiException {
+  public GetAggregatedReport getAggregatedSmtpReport(@jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, @jakarta.annotation.Nullable Long days, @jakarta.annotation.Nullable String tag) throws ApiException {
     return this.getAggregatedSmtpReport(startDate, endDate, days, tag, Collections.emptyMap());
   }
 
@@ -514,7 +516,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @return GetAggregatedReport
    * @throws ApiException if fails to make API call
    */
-  public GetAggregatedReport getAggregatedSmtpReport(String startDate, String endDate, Long days, String tag, Map<String, String> additionalHeaders) throws ApiException {
+  public GetAggregatedReport getAggregatedSmtpReport(@jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, @jakarta.annotation.Nullable Long days, @jakarta.annotation.Nullable String tag, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -644,14 +646,14 @@ public class TransactionalEmailsApi extends BaseApi {
    * @param days Number of days in the past including today (positive integer). _Not compatible with &#39;startDate&#39; and &#39;endDate&#39;_  (optional)
    * @param email Filter the report for a specific email addresses (optional)
    * @param event Filter the report for a specific event type (optional)
-   * @param tags Filter the report for tags (serialized and urlencoded array) (optional)
+   * @param tags Filter the report for tags (serialized and urlencoded array). To pass multiple tags, a format of string separated by commas is used such as **\&quot;one, two, three\&quot;** (optional)
    * @param messageId Filter on a specific message id (optional)
    * @param templateId Filter on a specific template id (optional)
    * @param sort Sort the results in the ascending/descending order of record creation. Default order is **descending** if &#x60;sort&#x60; is not passed (optional, default to desc)
    * @return GetEmailEventReport
    * @throws ApiException if fails to make API call
    */
-  public GetEmailEventReport getEmailEventReport(Long limit, Long offset, String startDate, String endDate, Long days, String email, String event, String tags, String messageId, Long templateId, String sort) throws ApiException {
+  public GetEmailEventReport getEmailEventReport(@jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, @jakarta.annotation.Nullable Long days, @jakarta.annotation.Nullable String email, @jakarta.annotation.Nullable String event, @jakarta.annotation.Nullable String tags, @jakarta.annotation.Nullable String messageId, @jakarta.annotation.Nullable Long templateId, @jakarta.annotation.Nullable String sort) throws ApiException {
     return this.getEmailEventReport(limit, offset, startDate, endDate, days, email, event, tags, messageId, templateId, sort, Collections.emptyMap());
   }
 
@@ -666,7 +668,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @param days Number of days in the past including today (positive integer). _Not compatible with &#39;startDate&#39; and &#39;endDate&#39;_  (optional)
    * @param email Filter the report for a specific email addresses (optional)
    * @param event Filter the report for a specific event type (optional)
-   * @param tags Filter the report for tags (serialized and urlencoded array) (optional)
+   * @param tags Filter the report for tags (serialized and urlencoded array). To pass multiple tags, a format of string separated by commas is used such as **\&quot;one, two, three\&quot;** (optional)
    * @param messageId Filter on a specific message id (optional)
    * @param templateId Filter on a specific template id (optional)
    * @param sort Sort the results in the ascending/descending order of record creation. Default order is **descending** if &#x60;sort&#x60; is not passed (optional, default to desc)
@@ -674,7 +676,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @return GetEmailEventReport
    * @throws ApiException if fails to make API call
    */
-  public GetEmailEventReport getEmailEventReport(Long limit, Long offset, String startDate, String endDate, Long days, String email, String event, String tags, String messageId, Long templateId, String sort, Map<String, String> additionalHeaders) throws ApiException {
+  public GetEmailEventReport getEmailEventReport(@jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, @jakarta.annotation.Nullable Long days, @jakarta.annotation.Nullable String email, @jakarta.annotation.Nullable String event, @jakarta.annotation.Nullable String tags, @jakarta.annotation.Nullable String messageId, @jakarta.annotation.Nullable Long templateId, @jakarta.annotation.Nullable String sort, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -747,7 +749,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @return GetScheduledEmailById200Response
    * @throws ApiException if fails to make API call
    */
-  public GetScheduledEmailById200Response getScheduledEmailById(String identifier, LocalDate startDate, LocalDate endDate, String sort, String status, Long limit, Long offset) throws ApiException {
+  public GetScheduledEmailById200Response getScheduledEmailById(@jakarta.annotation.Nonnull String identifier, @jakarta.annotation.Nullable LocalDate startDate, @jakarta.annotation.Nullable LocalDate endDate, @jakarta.annotation.Nullable String sort, @jakarta.annotation.Nullable String status, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset) throws ApiException {
     return this.getScheduledEmailById(identifier, startDate, endDate, sort, status, limit, offset, Collections.emptyMap());
   }
 
@@ -766,7 +768,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @return GetScheduledEmailById200Response
    * @throws ApiException if fails to make API call
    */
-  public GetScheduledEmailById200Response getScheduledEmailById(String identifier, LocalDate startDate, LocalDate endDate, String sort, String status, Long limit, Long offset, Map<String, String> additionalHeaders) throws ApiException {
+  public GetScheduledEmailById200Response getScheduledEmailById(@jakarta.annotation.Nonnull String identifier, @jakarta.annotation.Nullable LocalDate startDate, @jakarta.annotation.Nullable LocalDate endDate, @jakarta.annotation.Nullable String sort, @jakarta.annotation.Nullable String status, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'identifier' is set
@@ -840,7 +842,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @return GetReports
    * @throws ApiException if fails to make API call
    */
-  public GetReports getSmtpReport(Long limit, Long offset, String startDate, String endDate, Long days, String tag, String sort) throws ApiException {
+  public GetReports getSmtpReport(@jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, @jakarta.annotation.Nullable Long days, @jakarta.annotation.Nullable String tag, @jakarta.annotation.Nullable String sort) throws ApiException {
     return this.getSmtpReport(limit, offset, startDate, endDate, days, tag, sort, Collections.emptyMap());
   }
 
@@ -859,7 +861,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @return GetReports
    * @throws ApiException if fails to make API call
    */
-  public GetReports getSmtpReport(Long limit, Long offset, String startDate, String endDate, Long days, String tag, String sort, Map<String, String> additionalHeaders) throws ApiException {
+  public GetReports getSmtpReport(@jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, @jakarta.annotation.Nullable Long days, @jakarta.annotation.Nullable String tag, @jakarta.annotation.Nullable String sort, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -922,7 +924,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @return GetSmtpTemplateOverview
    * @throws ApiException if fails to make API call
    */
-  public GetSmtpTemplateOverview getSmtpTemplate(Long templateId) throws ApiException {
+  public GetSmtpTemplateOverview getSmtpTemplate(@jakarta.annotation.Nonnull Long templateId) throws ApiException {
     return this.getSmtpTemplate(templateId, Collections.emptyMap());
   }
 
@@ -935,7 +937,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @return GetSmtpTemplateOverview
    * @throws ApiException if fails to make API call
    */
-  public GetSmtpTemplateOverview getSmtpTemplate(Long templateId, Map<String, String> additionalHeaders) throws ApiException {
+  public GetSmtpTemplateOverview getSmtpTemplate(@jakarta.annotation.Nonnull Long templateId, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'templateId' is set
@@ -1000,7 +1002,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @return GetSmtpTemplates
    * @throws ApiException if fails to make API call
    */
-  public GetSmtpTemplates getSmtpTemplates(Boolean templateStatus, Long limit, Long offset, String sort) throws ApiException {
+  public GetSmtpTemplates getSmtpTemplates(@jakarta.annotation.Nullable Boolean templateStatus, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String sort) throws ApiException {
     return this.getSmtpTemplates(templateStatus, limit, offset, sort, Collections.emptyMap());
   }
 
@@ -1016,7 +1018,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @return GetSmtpTemplates
    * @throws ApiException if fails to make API call
    */
-  public GetSmtpTemplates getSmtpTemplates(Boolean templateStatus, Long limit, Long offset, String sort, Map<String, String> additionalHeaders) throws ApiException {
+  public GetSmtpTemplates getSmtpTemplates(@jakarta.annotation.Nullable Boolean templateStatus, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String sort, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -1081,7 +1083,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @return GetTransacBlockedContacts
    * @throws ApiException if fails to make API call
    */
-  public GetTransacBlockedContacts getTransacBlockedContacts(String startDate, String endDate, Long limit, Long offset, List<String> senders, String sort) throws ApiException {
+  public GetTransacBlockedContacts getTransacBlockedContacts(@jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable List<String> senders, @jakarta.annotation.Nullable String sort) throws ApiException {
     return this.getTransacBlockedContacts(startDate, endDate, limit, offset, senders, sort, Collections.emptyMap());
   }
 
@@ -1099,7 +1101,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @return GetTransacBlockedContacts
    * @throws ApiException if fails to make API call
    */
-  public GetTransacBlockedContacts getTransacBlockedContacts(String startDate, String endDate, Long limit, Long offset, List<String> senders, String sort, Map<String, String> additionalHeaders) throws ApiException {
+  public GetTransacBlockedContacts getTransacBlockedContacts(@jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable List<String> senders, @jakarta.annotation.Nullable String sort, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -1161,7 +1163,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @return GetTransacEmailContent
    * @throws ApiException if fails to make API call
    */
-  public GetTransacEmailContent getTransacEmailContent(String uuid) throws ApiException {
+  public GetTransacEmailContent getTransacEmailContent(@jakarta.annotation.Nonnull String uuid) throws ApiException {
     return this.getTransacEmailContent(uuid, Collections.emptyMap());
   }
 
@@ -1174,7 +1176,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @return GetTransacEmailContent
    * @throws ApiException if fails to make API call
    */
-  public GetTransacEmailContent getTransacEmailContent(String uuid, Map<String, String> additionalHeaders) throws ApiException {
+  public GetTransacEmailContent getTransacEmailContent(@jakarta.annotation.Nonnull String uuid, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'uuid' is set
@@ -1243,7 +1245,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @return GetTransacEmailsList
    * @throws ApiException if fails to make API call
    */
-  public GetTransacEmailsList getTransacEmailsList(String email, Long templateId, String messageId, String startDate, String endDate, String sort, Long limit, Long offset) throws ApiException {
+  public GetTransacEmailsList getTransacEmailsList(@jakarta.annotation.Nullable String email, @jakarta.annotation.Nullable Long templateId, @jakarta.annotation.Nullable String messageId, @jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, @jakarta.annotation.Nullable String sort, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset) throws ApiException {
     return this.getTransacEmailsList(email, templateId, messageId, startDate, endDate, sort, limit, offset, Collections.emptyMap());
   }
 
@@ -1263,7 +1265,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @return GetTransacEmailsList
    * @throws ApiException if fails to make API call
    */
-  public GetTransacEmailsList getTransacEmailsList(String email, Long templateId, String messageId, String startDate, String endDate, String sort, Long limit, Long offset, Map<String, String> additionalHeaders) throws ApiException {
+  public GetTransacEmailsList getTransacEmailsList(@jakarta.annotation.Nullable String email, @jakarta.annotation.Nullable Long templateId, @jakarta.annotation.Nullable String messageId, @jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, @jakarta.annotation.Nullable String sort, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -1327,7 +1329,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @param sendTestEmail  (required)
    * @throws ApiException if fails to make API call
    */
-  public void sendTestTemplate(Long templateId, SendTestEmail sendTestEmail) throws ApiException {
+  public void sendTestTemplate(@jakarta.annotation.Nonnull Long templateId, @jakarta.annotation.Nonnull SendTestEmail sendTestEmail) throws ApiException {
     this.sendTestTemplate(templateId, sendTestEmail, Collections.emptyMap());
   }
 
@@ -1340,7 +1342,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void sendTestTemplate(Long templateId, SendTestEmail sendTestEmail, Map<String, String> additionalHeaders) throws ApiException {
+  public void sendTestTemplate(@jakarta.annotation.Nonnull Long templateId, @jakarta.annotation.Nonnull SendTestEmail sendTestEmail, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = sendTestEmail;
     
     // verify the required parameter 'templateId' is set
@@ -1406,7 +1408,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @return CreateSmtpEmail
    * @throws ApiException if fails to make API call
    */
-  public CreateSmtpEmail sendTransacEmail(SendSmtpEmail sendSmtpEmail) throws ApiException {
+  public CreateSmtpEmail sendTransacEmail(@jakarta.annotation.Nonnull SendSmtpEmail sendSmtpEmail) throws ApiException {
     return this.sendTransacEmail(sendSmtpEmail, Collections.emptyMap());
   }
 
@@ -1419,7 +1421,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @return CreateSmtpEmail
    * @throws ApiException if fails to make API call
    */
-  public CreateSmtpEmail sendTransacEmail(SendSmtpEmail sendSmtpEmail, Map<String, String> additionalHeaders) throws ApiException {
+  public CreateSmtpEmail sendTransacEmail(@jakarta.annotation.Nonnull SendSmtpEmail sendSmtpEmail, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = sendSmtpEmail;
     
     // verify the required parameter 'sendSmtpEmail' is set
@@ -1479,7 +1481,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @param email contact email (urlencoded) to unblock. (required)
    * @throws ApiException if fails to make API call
    */
-  public void smtpBlockedContactsEmailDelete(String email) throws ApiException {
+  public void smtpBlockedContactsEmailDelete(@jakarta.annotation.Nonnull String email) throws ApiException {
     this.smtpBlockedContactsEmailDelete(email, Collections.emptyMap());
   }
 
@@ -1491,7 +1493,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void smtpBlockedContactsEmailDelete(String email, Map<String, String> additionalHeaders) throws ApiException {
+  public void smtpBlockedContactsEmailDelete(@jakarta.annotation.Nonnull String email, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'email' is set
@@ -1548,10 +1550,10 @@ public class TransactionalEmailsApi extends BaseApi {
   /**
    * Delete an SMTP transactional log
    * 
-   * @param identifier MessageId or Email of the transactional log(s) to delete (required)
+   * @param identifier MessageId of the transactional log(s) to delete (required)
    * @throws ApiException if fails to make API call
    */
-  public void smtpLogIdentifierDelete(String identifier) throws ApiException {
+  public void smtpLogIdentifierDelete(@jakarta.annotation.Nonnull String identifier) throws ApiException {
     this.smtpLogIdentifierDelete(identifier, Collections.emptyMap());
   }
 
@@ -1559,11 +1561,11 @@ public class TransactionalEmailsApi extends BaseApi {
   /**
    * Delete an SMTP transactional log
    * 
-   * @param identifier MessageId or Email of the transactional log(s) to delete (required)
+   * @param identifier MessageId of the transactional log(s) to delete (required)
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void smtpLogIdentifierDelete(String identifier, Map<String, String> additionalHeaders) throws ApiException {
+  public void smtpLogIdentifierDelete(@jakarta.annotation.Nonnull String identifier, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'identifier' is set
@@ -1618,13 +1620,87 @@ public class TransactionalEmailsApi extends BaseApi {
   }
 
   /**
+   * Generate the rendered preview of transactional template
+   * 
+   * @param templatePreviewRequestBody Values to fetch Template preview (required)
+   * @return TemplatePreviewModel
+   * @throws ApiException if fails to make API call
+   */
+  public TemplatePreviewModel templatePreview(@jakarta.annotation.Nullable TemplatePreviewRequestBody templatePreviewRequestBody) throws ApiException {
+    return this.templatePreview(templatePreviewRequestBody, Collections.emptyMap());
+  }
+
+
+  /**
+   * Generate the rendered preview of transactional template
+   * 
+   * @param templatePreviewRequestBody Values to fetch Template preview (required)
+   * @param additionalHeaders additionalHeaders for this call
+   * @return TemplatePreviewModel
+   * @throws ApiException if fails to make API call
+   */
+  public TemplatePreviewModel templatePreview(@jakarta.annotation.Nullable TemplatePreviewRequestBody templatePreviewRequestBody, Map<String, String> additionalHeaders) throws ApiException {
+    Object localVarPostBody = templatePreviewRequestBody;
+    
+    // verify the required parameter 'templatePreviewRequestBody' is set
+    if (templatePreviewRequestBody == null) {
+      throw new ApiException(400, "Missing the required parameter 'templatePreviewRequestBody' when calling templatePreview");
+    }
+    
+    // create path and map variables
+    String localVarPath = "/smtp/template/preview";
+
+    StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
+    String localVarQueryParameterBaseName;
+    List<Pair> localVarQueryParams = new ArrayList<Pair>();
+    List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+    Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+    Map<String, String> localVarCookieParams = new HashMap<String, String>();
+    Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+    
+    localVarHeaderParams.putAll(additionalHeaders);
+
+    
+    
+    final String[] localVarAccepts = {
+      "application/json"
+    };
+    final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+
+    final String[] localVarContentTypes = {
+      "application/json"
+    };
+    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+    String[] localVarAuthNames = new String[] { "api-key" };
+
+    TypeReference<TemplatePreviewModel> localVarReturnType = new TypeReference<TemplatePreviewModel>() {};
+    return apiClient.invokeAPI(
+        localVarPath,
+        "POST",
+        localVarQueryParams,
+        localVarCollectionQueryParams,
+        localVarQueryStringJoiner.toString(),
+        localVarPostBody,
+        localVarHeaderParams,
+        localVarCookieParams,
+        localVarFormParams,
+        localVarAccept,
+        localVarContentType,
+        localVarAuthNames,
+        localVarReturnType
+    );
+  }
+
+  /**
    * Update an email template
    * 
    * @param templateId id of the template (required)
    * @param updateSmtpTemplate values to update in transactional email template (required)
    * @throws ApiException if fails to make API call
    */
-  public void updateSmtpTemplate(Long templateId, UpdateSmtpTemplate updateSmtpTemplate) throws ApiException {
+  public void updateSmtpTemplate(@jakarta.annotation.Nonnull Long templateId, @jakarta.annotation.Nonnull UpdateSmtpTemplate updateSmtpTemplate) throws ApiException {
     this.updateSmtpTemplate(templateId, updateSmtpTemplate, Collections.emptyMap());
   }
 
@@ -1637,7 +1713,7 @@ public class TransactionalEmailsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void updateSmtpTemplate(Long templateId, UpdateSmtpTemplate updateSmtpTemplate, Map<String, String> additionalHeaders) throws ApiException {
+  public void updateSmtpTemplate(@jakarta.annotation.Nonnull Long templateId, @jakarta.annotation.Nonnull UpdateSmtpTemplate updateSmtpTemplate, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = updateSmtpTemplate;
     
     // verify the required parameter 'templateId' is set

@@ -20,6 +20,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -46,7 +47,9 @@ import java.util.StringJoiner;
   CreateUpdateProduct.JSON_PROPERTY_PARENT_ID,
   CreateUpdateProduct.JSON_PROPERTY_META_INFO,
   CreateUpdateProduct.JSON_PROPERTY_UPDATE_ENABLED,
-  CreateUpdateProduct.JSON_PROPERTY_DELETED_AT
+  CreateUpdateProduct.JSON_PROPERTY_DELETED_AT,
+  CreateUpdateProduct.JSON_PROPERTY_IS_DELETED,
+  CreateUpdateProduct.JSON_PROPERTY_STOCK
 })
 @JsonTypeName("createUpdateProduct")
 public class CreateUpdateProduct {
@@ -93,6 +96,14 @@ public class CreateUpdateProduct {
   public static final String JSON_PROPERTY_DELETED_AT = "deletedAt";
   @jakarta.annotation.Nullable
   private String deletedAt;
+
+  public static final String JSON_PROPERTY_IS_DELETED = "isDeleted";
+  @jakarta.annotation.Nullable
+  private Boolean isDeleted;
+
+  public static final String JSON_PROPERTY_STOCK = "stock";
+  @jakarta.annotation.Nullable
+  private BigDecimal stock;
 
   public CreateUpdateProduct() {
   }
@@ -320,7 +331,7 @@ public class CreateUpdateProduct {
   }
 
   /**
-   * Meta data of product such as description, vendor, producer, stock level. The size of cumulative metaInfo shall not exceed **1000 KB**. Maximum length of metaInfo object can be 10.
+   * Meta data of product such as description, vendor, producer, stock level. The size of cumulative metaInfo shall not exceed **1000 KB**. Maximum length of metaInfo object can be 20.
    * @return metaInfo
    */
   @jakarta.annotation.Nullable
@@ -388,6 +399,56 @@ public class CreateUpdateProduct {
     this.deletedAt = deletedAt;
   }
 
+  public CreateUpdateProduct isDeleted(@jakarta.annotation.Nullable Boolean isDeleted) {
+    
+    this.isDeleted = isDeleted;
+    return this;
+  }
+
+  /**
+   * product deleted from the shop&#39;s database
+   * @return isDeleted
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_IS_DELETED)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public Boolean getIsDeleted() {
+    return isDeleted;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_IS_DELETED)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setIsDeleted(@jakarta.annotation.Nullable Boolean isDeleted) {
+    this.isDeleted = isDeleted;
+  }
+
+  public CreateUpdateProduct stock(@jakarta.annotation.Nullable BigDecimal stock) {
+    
+    this.stock = stock;
+    return this;
+  }
+
+  /**
+   * Current stock value of the product from the shop&#39;s database
+   * @return stock
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_STOCK)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public BigDecimal getStock() {
+    return stock;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_STOCK)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setStock(@jakarta.annotation.Nullable BigDecimal stock) {
+    this.stock = stock;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -407,12 +468,14 @@ public class CreateUpdateProduct {
         Objects.equals(this.parentId, createUpdateProduct.parentId) &&
         Objects.equals(this.metaInfo, createUpdateProduct.metaInfo) &&
         Objects.equals(this.updateEnabled, createUpdateProduct.updateEnabled) &&
-        Objects.equals(this.deletedAt, createUpdateProduct.deletedAt);
+        Objects.equals(this.deletedAt, createUpdateProduct.deletedAt) &&
+        Objects.equals(this.isDeleted, createUpdateProduct.isDeleted) &&
+        Objects.equals(this.stock, createUpdateProduct.stock);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, name, url, imageUrl, sku, price, categories, parentId, metaInfo, updateEnabled, deletedAt);
+    return Objects.hash(id, name, url, imageUrl, sku, price, categories, parentId, metaInfo, updateEnabled, deletedAt, isDeleted, stock);
   }
 
   @Override
@@ -430,6 +493,8 @@ public class CreateUpdateProduct {
     sb.append("    metaInfo: ").append(toIndentedString(metaInfo)).append("\n");
     sb.append("    updateEnabled: ").append(toIndentedString(updateEnabled)).append("\n");
     sb.append("    deletedAt: ").append(toIndentedString(deletedAt)).append("\n");
+    sb.append("    isDeleted: ").append(toIndentedString(isDeleted)).append("\n");
+    sb.append("    stock: ").append(toIndentedString(stock)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -585,6 +650,26 @@ public class CreateUpdateProduct {
     if (getDeletedAt() != null) {
       try {
         joiner.add(String.format("%sdeletedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDeletedAt()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `isDeleted` to the URL query string
+    if (getIsDeleted() != null) {
+      try {
+        joiner.add(String.format("%sisDeleted%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsDeleted()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `stock` to the URL query string
+    if (getStock() != null) {
+      try {
+        joiner.add(String.format("%sstock%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStock()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

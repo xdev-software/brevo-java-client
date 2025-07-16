@@ -20,6 +20,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import java.io.UnsupportedEncodingException;
@@ -31,7 +34,9 @@ import java.util.StringJoiner;
  */
 @JsonPropertyOrder({
   CrmDealsIdPatchRequest.JSON_PROPERTY_NAME,
-  CrmDealsIdPatchRequest.JSON_PROPERTY_ATTRIBUTES
+  CrmDealsIdPatchRequest.JSON_PROPERTY_ATTRIBUTES,
+  CrmDealsIdPatchRequest.JSON_PROPERTY_LINKED_CONTACT_IDS,
+  CrmDealsIdPatchRequest.JSON_PROPERTY_LINKED_COMPANIES_IDS
 })
 @JsonTypeName("_crm_deals__id__patch_request")
 public class CrmDealsIdPatchRequest {
@@ -42,6 +47,14 @@ public class CrmDealsIdPatchRequest {
   public static final String JSON_PROPERTY_ATTRIBUTES = "attributes";
   @jakarta.annotation.Nullable
   private Object attributes;
+
+  public static final String JSON_PROPERTY_LINKED_CONTACT_IDS = "linkedContactIds";
+  @jakarta.annotation.Nullable
+  private List<Long> linkedContactIds = new ArrayList<>();
+
+  public static final String JSON_PROPERTY_LINKED_COMPANIES_IDS = "linkedCompaniesIds";
+  @jakarta.annotation.Nullable
+  private List<String> linkedCompaniesIds = new ArrayList<>();
 
   public CrmDealsIdPatchRequest() {
   }
@@ -78,7 +91,7 @@ public class CrmDealsIdPatchRequest {
   }
 
   /**
-   * Attributes for deal update  If you wish to update the pipeline of a deal you need to provide the &#x60;pipeline&#x60; and the &#x60;deal_stage&#x60;  Pipeline and deal_stage are ids you can fetch using this endpoint &#x60;/crm/pipeline/details/{pipelineID}&#x60; 
+   * Attributes for deal update  To assign owner of a Deal you can send attributes.deal_owner and utilize the account email or ID.  If you wish to update the pipeline of a deal you need to provide the &#x60;pipeline&#x60; and the &#x60;deal_stage&#x60;  Pipeline and deal_stage are ids you can fetch using this endpoint &#x60;/crm/pipeline/details/{pipelineID}&#x60; 
    * @return attributes
    */
   @jakarta.annotation.Nullable
@@ -96,6 +109,72 @@ public class CrmDealsIdPatchRequest {
     this.attributes = attributes;
   }
 
+  public CrmDealsIdPatchRequest linkedContactIds(@jakarta.annotation.Nullable List<Long> linkedContactIds) {
+    
+    this.linkedContactIds = linkedContactIds;
+    return this;
+  }
+
+  public CrmDealsIdPatchRequest addLinkedContactIdsItem(Long linkedContactIdsItem) {
+    if (this.linkedContactIds == null) {
+      this.linkedContactIds = new ArrayList<>();
+    }
+    this.linkedContactIds.add(linkedContactIdsItem);
+    return this;
+  }
+
+  /**
+   * Warning - Using PATCH on linkedContactIds replaces the list of linked contacts. Omitted IDs will be removed.
+   * @return linkedContactIds
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_LINKED_CONTACT_IDS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public List<Long> getLinkedContactIds() {
+    return linkedContactIds;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_LINKED_CONTACT_IDS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setLinkedContactIds(@jakarta.annotation.Nullable List<Long> linkedContactIds) {
+    this.linkedContactIds = linkedContactIds;
+  }
+
+  public CrmDealsIdPatchRequest linkedCompaniesIds(@jakarta.annotation.Nullable List<String> linkedCompaniesIds) {
+    
+    this.linkedCompaniesIds = linkedCompaniesIds;
+    return this;
+  }
+
+  public CrmDealsIdPatchRequest addLinkedCompaniesIdsItem(String linkedCompaniesIdsItem) {
+    if (this.linkedCompaniesIds == null) {
+      this.linkedCompaniesIds = new ArrayList<>();
+    }
+    this.linkedCompaniesIds.add(linkedCompaniesIdsItem);
+    return this;
+  }
+
+  /**
+   * Warning - Using PATCH on linkedCompaniesIds replaces the list of linked contacts. Omitted IDs will be removed.
+   * @return linkedCompaniesIds
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_LINKED_COMPANIES_IDS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public List<String> getLinkedCompaniesIds() {
+    return linkedCompaniesIds;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_LINKED_COMPANIES_IDS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setLinkedCompaniesIds(@jakarta.annotation.Nullable List<String> linkedCompaniesIds) {
+    this.linkedCompaniesIds = linkedCompaniesIds;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -106,12 +185,14 @@ public class CrmDealsIdPatchRequest {
     }
     CrmDealsIdPatchRequest crmDealsIdPatchRequest = (CrmDealsIdPatchRequest) o;
     return Objects.equals(this.name, crmDealsIdPatchRequest.name) &&
-        Objects.equals(this.attributes, crmDealsIdPatchRequest.attributes);
+        Objects.equals(this.attributes, crmDealsIdPatchRequest.attributes) &&
+        Objects.equals(this.linkedContactIds, crmDealsIdPatchRequest.linkedContactIds) &&
+        Objects.equals(this.linkedCompaniesIds, crmDealsIdPatchRequest.linkedCompaniesIds);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(name, attributes);
+    return Objects.hash(name, attributes, linkedContactIds, linkedCompaniesIds);
   }
 
   @Override
@@ -120,6 +201,8 @@ public class CrmDealsIdPatchRequest {
     sb.append("class CrmDealsIdPatchRequest {\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    attributes: ").append(toIndentedString(attributes)).append("\n");
+    sb.append("    linkedContactIds: ").append(toIndentedString(linkedContactIds)).append("\n");
+    sb.append("    linkedCompaniesIds: ").append(toIndentedString(linkedCompaniesIds)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -184,6 +267,34 @@ public class CrmDealsIdPatchRequest {
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
+      }
+    }
+
+    // add `linkedContactIds` to the URL query string
+    if (getLinkedContactIds() != null) {
+      for (int i = 0; i < getLinkedContactIds().size(); i++) {
+        try {
+          joiner.add(String.format("%slinkedContactIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getLinkedContactIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
+      }
+    }
+
+    // add `linkedCompaniesIds` to the URL query string
+    if (getLinkedCompaniesIds() != null) {
+      for (int i = 0; i < getLinkedCompaniesIds().size(); i++) {
+        try {
+          joiner.add(String.format("%slinkedCompaniesIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getLinkedCompaniesIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
       }
     }
 

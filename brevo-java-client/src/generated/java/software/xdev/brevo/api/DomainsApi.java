@@ -52,7 +52,7 @@ public class DomainsApi extends BaseApi {
    * @return AuthenticateDomainModel
    * @throws ApiException if fails to make API call
    */
-  public AuthenticateDomainModel authenticateDomain(String domainName) throws ApiException {
+  public AuthenticateDomainModel authenticateDomain(@jakarta.annotation.Nonnull String domainName) throws ApiException {
     return this.authenticateDomain(domainName, Collections.emptyMap());
   }
 
@@ -65,7 +65,7 @@ public class DomainsApi extends BaseApi {
    * @return AuthenticateDomainModel
    * @throws ApiException if fails to make API call
    */
-  public AuthenticateDomainModel authenticateDomain(String domainName, Map<String, String> additionalHeaders) throws ApiException {
+  public AuthenticateDomainModel authenticateDomain(@jakarta.annotation.Nonnull String domainName, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'domainName' is set
@@ -127,7 +127,7 @@ public class DomainsApi extends BaseApi {
    * @return CreateDomainModel
    * @throws ApiException if fails to make API call
    */
-  public CreateDomainModel createDomain(CreateDomain domain) throws ApiException {
+  public CreateDomainModel createDomain(@jakarta.annotation.Nullable CreateDomain domain) throws ApiException {
     return this.createDomain(domain, Collections.emptyMap());
   }
 
@@ -140,7 +140,7 @@ public class DomainsApi extends BaseApi {
    * @return CreateDomainModel
    * @throws ApiException if fails to make API call
    */
-  public CreateDomainModel createDomain(CreateDomain domain, Map<String, String> additionalHeaders) throws ApiException {
+  public CreateDomainModel createDomain(@jakarta.annotation.Nullable CreateDomain domain, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = domain;
     
     // create path and map variables
@@ -195,7 +195,7 @@ public class DomainsApi extends BaseApi {
    * @param domainName Domain name (required)
    * @throws ApiException if fails to make API call
    */
-  public void deleteDomain(String domainName) throws ApiException {
+  public void deleteDomain(@jakarta.annotation.Nonnull String domainName) throws ApiException {
     this.deleteDomain(domainName, Collections.emptyMap());
   }
 
@@ -207,7 +207,7 @@ public class DomainsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void deleteDomain(String domainName, Map<String, String> additionalHeaders) throws ApiException {
+  public void deleteDomain(@jakarta.annotation.Nonnull String domainName, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'domainName' is set
@@ -268,7 +268,7 @@ public class DomainsApi extends BaseApi {
    * @return GetDomainConfigurationModel
    * @throws ApiException if fails to make API call
    */
-  public GetDomainConfigurationModel getDomainConfiguration(String domainName) throws ApiException {
+  public GetDomainConfigurationModel getDomainConfiguration(@jakarta.annotation.Nonnull String domainName) throws ApiException {
     return this.getDomainConfiguration(domainName, Collections.emptyMap());
   }
 
@@ -281,7 +281,7 @@ public class DomainsApi extends BaseApi {
    * @return GetDomainConfigurationModel
    * @throws ApiException if fails to make API call
    */
-  public GetDomainConfigurationModel getDomainConfiguration(String domainName, Map<String, String> additionalHeaders) throws ApiException {
+  public GetDomainConfigurationModel getDomainConfiguration(@jakarta.annotation.Nonnull String domainName, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'domainName' is set

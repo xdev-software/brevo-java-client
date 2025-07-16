@@ -20,6 +20,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import software.xdev.brevo.model.SubAccountsResponseSubAccountsInnerGroupsInner;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import java.io.UnsupportedEncodingException;
@@ -33,7 +37,8 @@ import java.util.StringJoiner;
   SubAccountsResponseSubAccountsInner.JSON_PROPERTY_ID,
   SubAccountsResponseSubAccountsInner.JSON_PROPERTY_COMPANY_NAME,
   SubAccountsResponseSubAccountsInner.JSON_PROPERTY_ACTIVE,
-  SubAccountsResponseSubAccountsInner.JSON_PROPERTY_CREATED_AT
+  SubAccountsResponseSubAccountsInner.JSON_PROPERTY_CREATED_AT,
+  SubAccountsResponseSubAccountsInner.JSON_PROPERTY_GROUPS
 })
 @JsonTypeName("subAccountsResponse_subAccounts_inner")
 public class SubAccountsResponseSubAccountsInner {
@@ -52,6 +57,10 @@ public class SubAccountsResponseSubAccountsInner {
   public static final String JSON_PROPERTY_CREATED_AT = "createdAt";
   @jakarta.annotation.Nonnull
   private Long createdAt;
+
+  public static final String JSON_PROPERTY_GROUPS = "groups";
+  @jakarta.annotation.Nonnull
+  private List<SubAccountsResponseSubAccountsInnerGroupsInner> groups = new ArrayList<>();
 
   public SubAccountsResponseSubAccountsInner() {
   }
@@ -156,6 +165,39 @@ public class SubAccountsResponseSubAccountsInner {
     this.createdAt = createdAt;
   }
 
+  public SubAccountsResponseSubAccountsInner groups(@jakarta.annotation.Nonnull List<SubAccountsResponseSubAccountsInnerGroupsInner> groups) {
+    
+    this.groups = groups;
+    return this;
+  }
+
+  public SubAccountsResponseSubAccountsInner addGroupsItem(SubAccountsResponseSubAccountsInnerGroupsInner groupsItem) {
+    if (this.groups == null) {
+      this.groups = new ArrayList<>();
+    }
+    this.groups.add(groupsItem);
+    return this;
+  }
+
+  /**
+   * Group details
+   * @return groups
+   */
+  @jakarta.annotation.Nonnull
+  @JsonProperty(JSON_PROPERTY_GROUPS)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+
+  public List<SubAccountsResponseSubAccountsInnerGroupsInner> getGroups() {
+    return groups;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_GROUPS)
+  @JsonInclude(value = JsonInclude.Include.ALWAYS)
+  public void setGroups(@jakarta.annotation.Nonnull List<SubAccountsResponseSubAccountsInnerGroupsInner> groups) {
+    this.groups = groups;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -168,12 +210,13 @@ public class SubAccountsResponseSubAccountsInner {
     return Objects.equals(this.id, subAccountsResponseSubAccountsInner.id) &&
         Objects.equals(this.companyName, subAccountsResponseSubAccountsInner.companyName) &&
         Objects.equals(this.active, subAccountsResponseSubAccountsInner.active) &&
-        Objects.equals(this.createdAt, subAccountsResponseSubAccountsInner.createdAt);
+        Objects.equals(this.createdAt, subAccountsResponseSubAccountsInner.createdAt) &&
+        Objects.equals(this.groups, subAccountsResponseSubAccountsInner.groups);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, companyName, active, createdAt);
+    return Objects.hash(id, companyName, active, createdAt, groups);
   }
 
   @Override
@@ -184,6 +227,7 @@ public class SubAccountsResponseSubAccountsInner {
     sb.append("    companyName: ").append(toIndentedString(companyName)).append("\n");
     sb.append("    active: ").append(toIndentedString(active)).append("\n");
     sb.append("    createdAt: ").append(toIndentedString(createdAt)).append("\n");
+    sb.append("    groups: ").append(toIndentedString(groups)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -268,6 +312,16 @@ public class SubAccountsResponseSubAccountsInner {
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
+      }
+    }
+
+    // add `groups` to the URL query string
+    if (getGroups() != null) {
+      for (int i = 0; i < getGroups().size(); i++) {
+        if (getGroups().get(i) != null) {
+          joiner.add(getGroups().get(i).toUrlQueryString(String.format("%sgroups%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+        }
       }
     }
 

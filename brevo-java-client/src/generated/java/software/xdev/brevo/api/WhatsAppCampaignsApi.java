@@ -55,7 +55,7 @@ public class WhatsAppCampaignsApi extends BaseApi {
    * @return CreateModel
    * @throws ApiException if fails to make API call
    */
-  public CreateModel createWhatsAppCampaign(CreateWhatsAppCampaign createWhatsAppCampaign) throws ApiException {
+  public CreateModel createWhatsAppCampaign(@jakarta.annotation.Nonnull CreateWhatsAppCampaign createWhatsAppCampaign) throws ApiException {
     return this.createWhatsAppCampaign(createWhatsAppCampaign, Collections.emptyMap());
   }
 
@@ -68,7 +68,7 @@ public class WhatsAppCampaignsApi extends BaseApi {
    * @return CreateModel
    * @throws ApiException if fails to make API call
    */
-  public CreateModel createWhatsAppCampaign(CreateWhatsAppCampaign createWhatsAppCampaign, Map<String, String> additionalHeaders) throws ApiException {
+  public CreateModel createWhatsAppCampaign(@jakarta.annotation.Nonnull CreateWhatsAppCampaign createWhatsAppCampaign, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = createWhatsAppCampaign;
     
     // verify the required parameter 'createWhatsAppCampaign' is set
@@ -129,7 +129,7 @@ public class WhatsAppCampaignsApi extends BaseApi {
    * @return CreateModel
    * @throws ApiException if fails to make API call
    */
-  public CreateModel createWhatsAppTemplate(CreateWhatsAppTemplate createWhatsAppTemplate) throws ApiException {
+  public CreateModel createWhatsAppTemplate(@jakarta.annotation.Nonnull CreateWhatsAppTemplate createWhatsAppTemplate) throws ApiException {
     return this.createWhatsAppTemplate(createWhatsAppTemplate, Collections.emptyMap());
   }
 
@@ -142,7 +142,7 @@ public class WhatsAppCampaignsApi extends BaseApi {
    * @return CreateModel
    * @throws ApiException if fails to make API call
    */
-  public CreateModel createWhatsAppTemplate(CreateWhatsAppTemplate createWhatsAppTemplate, Map<String, String> additionalHeaders) throws ApiException {
+  public CreateModel createWhatsAppTemplate(@jakarta.annotation.Nonnull CreateWhatsAppTemplate createWhatsAppTemplate, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = createWhatsAppTemplate;
     
     // verify the required parameter 'createWhatsAppTemplate' is set
@@ -202,7 +202,7 @@ public class WhatsAppCampaignsApi extends BaseApi {
    * @param campaignId id of the campaign (required)
    * @throws ApiException if fails to make API call
    */
-  public void deleteWhatsAppCampaign(Long campaignId) throws ApiException {
+  public void deleteWhatsAppCampaign(@jakarta.annotation.Nonnull Long campaignId) throws ApiException {
     this.deleteWhatsAppCampaign(campaignId, Collections.emptyMap());
   }
 
@@ -214,7 +214,7 @@ public class WhatsAppCampaignsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void deleteWhatsAppCampaign(Long campaignId, Map<String, String> additionalHeaders) throws ApiException {
+  public void deleteWhatsAppCampaign(@jakarta.annotation.Nonnull Long campaignId, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'campaignId' is set
@@ -275,7 +275,7 @@ public class WhatsAppCampaignsApi extends BaseApi {
    * @return GetWhatsappCampaignOverview
    * @throws ApiException if fails to make API call
    */
-  public GetWhatsappCampaignOverview getWhatsAppCampaign(Long campaignId) throws ApiException {
+  public GetWhatsappCampaignOverview getWhatsAppCampaign(@jakarta.annotation.Nonnull Long campaignId) throws ApiException {
     return this.getWhatsAppCampaign(campaignId, Collections.emptyMap());
   }
 
@@ -288,7 +288,7 @@ public class WhatsAppCampaignsApi extends BaseApi {
    * @return GetWhatsappCampaignOverview
    * @throws ApiException if fails to make API call
    */
-  public GetWhatsappCampaignOverview getWhatsAppCampaign(Long campaignId, Map<String, String> additionalHeaders) throws ApiException {
+  public GetWhatsappCampaignOverview getWhatsAppCampaign(@jakarta.annotation.Nonnull Long campaignId, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'campaignId' is set
@@ -354,7 +354,7 @@ public class WhatsAppCampaignsApi extends BaseApi {
    * @return GetWhatsappCampaigns
    * @throws ApiException if fails to make API call
    */
-  public GetWhatsappCampaigns getWhatsAppCampaigns(String startDate, String endDate, Long limit, Long offset, String sort) throws ApiException {
+  public GetWhatsappCampaigns getWhatsAppCampaigns(@jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String sort) throws ApiException {
     return this.getWhatsAppCampaigns(startDate, endDate, limit, offset, sort, Collections.emptyMap());
   }
 
@@ -371,7 +371,7 @@ public class WhatsAppCampaignsApi extends BaseApi {
    * @return GetWhatsappCampaigns
    * @throws ApiException if fails to make API call
    */
-  public GetWhatsappCampaigns getWhatsAppCampaigns(String startDate, String endDate, Long limit, Long offset, String sort, Map<String, String> additionalHeaders) throws ApiException {
+  public GetWhatsappCampaigns getWhatsAppCampaigns(@jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String sort, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -504,7 +504,7 @@ public class WhatsAppCampaignsApi extends BaseApi {
    * @return GetWhatsappTemplates
    * @throws ApiException if fails to make API call
    */
-  public GetWhatsappTemplates getWhatsAppTemplates(String startDate, String endDate, Long limit, Long offset, String sort, String source) throws ApiException {
+  public GetWhatsappTemplates getWhatsAppTemplates(@jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String sort, @jakarta.annotation.Nullable String source) throws ApiException {
     return this.getWhatsAppTemplates(startDate, endDate, limit, offset, sort, source, Collections.emptyMap());
   }
 
@@ -522,7 +522,7 @@ public class WhatsAppCampaignsApi extends BaseApi {
    * @return GetWhatsappTemplates
    * @throws ApiException if fails to make API call
    */
-  public GetWhatsappTemplates getWhatsAppTemplates(String startDate, String endDate, Long limit, Long offset, String sort, String source, Map<String, String> additionalHeaders) throws ApiException {
+  public GetWhatsappTemplates getWhatsAppTemplates(@jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String sort, @jakarta.annotation.Nullable String source, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -583,7 +583,7 @@ public class WhatsAppCampaignsApi extends BaseApi {
    * @param templateId id of the template (required)
    * @throws ApiException if fails to make API call
    */
-  public void sendWhatsAppTemplateApproval(Long templateId) throws ApiException {
+  public void sendWhatsAppTemplateApproval(@jakarta.annotation.Nonnull Long templateId) throws ApiException {
     this.sendWhatsAppTemplateApproval(templateId, Collections.emptyMap());
   }
 
@@ -595,7 +595,7 @@ public class WhatsAppCampaignsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void sendWhatsAppTemplateApproval(Long templateId, Map<String, String> additionalHeaders) throws ApiException {
+  public void sendWhatsAppTemplateApproval(@jakarta.annotation.Nonnull Long templateId, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'templateId' is set
@@ -656,7 +656,7 @@ public class WhatsAppCampaignsApi extends BaseApi {
    * @param updateWhatsAppCampaign Values to update a WhatsApp Campaign (required)
    * @throws ApiException if fails to make API call
    */
-  public void updateWhatsAppCampaign(Long campaignId, UpdateWhatsAppCampaign updateWhatsAppCampaign) throws ApiException {
+  public void updateWhatsAppCampaign(@jakarta.annotation.Nonnull Long campaignId, @jakarta.annotation.Nonnull UpdateWhatsAppCampaign updateWhatsAppCampaign) throws ApiException {
     this.updateWhatsAppCampaign(campaignId, updateWhatsAppCampaign, Collections.emptyMap());
   }
 
@@ -669,7 +669,7 @@ public class WhatsAppCampaignsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void updateWhatsAppCampaign(Long campaignId, UpdateWhatsAppCampaign updateWhatsAppCampaign, Map<String, String> additionalHeaders) throws ApiException {
+  public void updateWhatsAppCampaign(@jakarta.annotation.Nonnull Long campaignId, @jakarta.annotation.Nonnull UpdateWhatsAppCampaign updateWhatsAppCampaign, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = updateWhatsAppCampaign;
     
     // verify the required parameter 'campaignId' is set

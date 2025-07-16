@@ -50,7 +50,7 @@ public class InboundParsingApi extends BaseApi {
    * @return File
    * @throws ApiException if fails to make API call
    */
-  public File getInboundEmailAttachment(String downloadToken) throws ApiException {
+  public File getInboundEmailAttachment(@jakarta.annotation.Nonnull String downloadToken) throws ApiException {
     return this.getInboundEmailAttachment(downloadToken, Collections.emptyMap());
   }
 
@@ -63,7 +63,7 @@ public class InboundParsingApi extends BaseApi {
    * @return File
    * @throws ApiException if fails to make API call
    */
-  public File getInboundEmailAttachment(String downloadToken, Map<String, String> additionalHeaders) throws ApiException {
+  public File getInboundEmailAttachment(@jakarta.annotation.Nonnull String downloadToken, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'downloadToken' is set
@@ -130,7 +130,7 @@ public class InboundParsingApi extends BaseApi {
    * @return GetInboundEmailEvents
    * @throws ApiException if fails to make API call
    */
-  public GetInboundEmailEvents getInboundEmailEvents(String sender, String startDate, String endDate, Long limit, Long offset, String sort) throws ApiException {
+  public GetInboundEmailEvents getInboundEmailEvents(@jakarta.annotation.Nullable String sender, @jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String sort) throws ApiException {
     return this.getInboundEmailEvents(sender, startDate, endDate, limit, offset, sort, Collections.emptyMap());
   }
 
@@ -148,7 +148,7 @@ public class InboundParsingApi extends BaseApi {
    * @return GetInboundEmailEvents
    * @throws ApiException if fails to make API call
    */
-  public GetInboundEmailEvents getInboundEmailEvents(String sender, String startDate, String endDate, Long limit, Long offset, String sort, Map<String, String> additionalHeaders) throws ApiException {
+  public GetInboundEmailEvents getInboundEmailEvents(@jakarta.annotation.Nullable String sender, @jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String sort, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -210,7 +210,7 @@ public class InboundParsingApi extends BaseApi {
    * @return GetInboundEmailEventsByUuid
    * @throws ApiException if fails to make API call
    */
-  public GetInboundEmailEventsByUuid getInboundEmailEventsByUuid(String uuid) throws ApiException {
+  public GetInboundEmailEventsByUuid getInboundEmailEventsByUuid(@jakarta.annotation.Nonnull String uuid) throws ApiException {
     return this.getInboundEmailEventsByUuid(uuid, Collections.emptyMap());
   }
 
@@ -223,7 +223,7 @@ public class InboundParsingApi extends BaseApi {
    * @return GetInboundEmailEventsByUuid
    * @throws ApiException if fails to make API call
    */
-  public GetInboundEmailEventsByUuid getInboundEmailEventsByUuid(String uuid, Map<String, String> additionalHeaders) throws ApiException {
+  public GetInboundEmailEventsByUuid getInboundEmailEventsByUuid(@jakarta.annotation.Nonnull String uuid, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'uuid' is set

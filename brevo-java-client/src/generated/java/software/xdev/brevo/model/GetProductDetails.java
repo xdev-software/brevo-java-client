@@ -20,6 +20,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -47,7 +48,8 @@ import java.util.StringJoiner;
   GetProductDetails.JSON_PROPERTY_S3_THUMB_ANALYTICS,
   GetProductDetails.JSON_PROPERTY_S3_THUMB_EDITOR,
   GetProductDetails.JSON_PROPERTY_META_INFO,
-  GetProductDetails.JSON_PROPERTY_IS_DELETED
+  GetProductDetails.JSON_PROPERTY_IS_DELETED,
+  GetProductDetails.JSON_PROPERTY_STOCK
 })
 @JsonTypeName("getProductDetails")
 public class GetProductDetails {
@@ -110,6 +112,10 @@ public class GetProductDetails {
   public static final String JSON_PROPERTY_IS_DELETED = "isDeleted";
   @jakarta.annotation.Nullable
   private Boolean isDeleted;
+
+  public static final String JSON_PROPERTY_STOCK = "stock";
+  @jakarta.annotation.Nullable
+  private BigDecimal stock;
 
   public GetProductDetails() {
   }
@@ -497,6 +503,31 @@ public class GetProductDetails {
     this.isDeleted = isDeleted;
   }
 
+  public GetProductDetails stock(@jakarta.annotation.Nullable BigDecimal stock) {
+    
+    this.stock = stock;
+    return this;
+  }
+
+  /**
+   * Current stock value of the product from the shop&#39;s database
+   * @return stock
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_STOCK)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public BigDecimal getStock() {
+    return stock;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_STOCK)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setStock(@jakarta.annotation.Nullable BigDecimal stock) {
+    this.stock = stock;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -520,12 +551,13 @@ public class GetProductDetails {
         Objects.equals(this.s3ThumbAnalytics, getProductDetails.s3ThumbAnalytics) &&
         Objects.equals(this.s3ThumbEditor, getProductDetails.s3ThumbEditor) &&
         Objects.equals(this.metaInfo, getProductDetails.metaInfo) &&
-        Objects.equals(this.isDeleted, getProductDetails.isDeleted);
+        Objects.equals(this.isDeleted, getProductDetails.isDeleted) &&
+        Objects.equals(this.stock, getProductDetails.stock);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, name, createdAt, modifiedAt, url, imageUrl, sku, price, categories, parentId, s3Original, s3ThumbAnalytics, s3ThumbEditor, metaInfo, isDeleted);
+    return Objects.hash(id, name, createdAt, modifiedAt, url, imageUrl, sku, price, categories, parentId, s3Original, s3ThumbAnalytics, s3ThumbEditor, metaInfo, isDeleted, stock);
   }
 
   @Override
@@ -547,6 +579,7 @@ public class GetProductDetails {
     sb.append("    s3ThumbEditor: ").append(toIndentedString(s3ThumbEditor)).append("\n");
     sb.append("    metaInfo: ").append(toIndentedString(metaInfo)).append("\n");
     sb.append("    isDeleted: ").append(toIndentedString(isDeleted)).append("\n");
+    sb.append("    stock: ").append(toIndentedString(stock)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -742,6 +775,16 @@ public class GetProductDetails {
     if (getIsDeleted() != null) {
       try {
         joiner.add(String.format("%sisDeleted%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsDeleted()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `stock` to the URL query string
+    if (getStock() != null) {
+      try {
+        joiner.add(String.format("%sstock%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStock()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

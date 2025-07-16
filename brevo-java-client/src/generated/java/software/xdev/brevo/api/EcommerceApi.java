@@ -30,11 +30,16 @@ import software.xdev.brevo.model.CreateUpdateBatchProductsModel;
 import software.xdev.brevo.model.CreateUpdateCategory;
 import software.xdev.brevo.model.CreateUpdateProduct;
 import software.xdev.brevo.model.CreatedBatchId;
+import software.xdev.brevo.model.EcommerceAttributionMetricsConversionSourceConversionSourceIdGet200Response;
+import software.xdev.brevo.model.EcommerceAttributionMetricsGet200Response;
+import software.xdev.brevo.model.EcommerceAttributionProductsConversionSourceConversionSourceIdGet200Response;
+import software.xdev.brevo.model.EcommerceConfigDisplayCurrencyGet200Response;
 import software.xdev.brevo.model.ErrorModel;
 import software.xdev.brevo.model.GetCategories;
 import software.xdev.brevo.model.GetCategoryDetails;
 import software.xdev.brevo.model.GetProductDetails;
 import software.xdev.brevo.model.GetProducts;
+import java.time.OffsetDateTime;
 import software.xdev.brevo.model.Order;
 import software.xdev.brevo.model.OrderBatch;
 
@@ -63,7 +68,7 @@ public class EcommerceApi extends BaseApi {
    * @return CreatedBatchId
    * @throws ApiException if fails to make API call
    */
-  public CreatedBatchId createBatchOrder(OrderBatch orderBatch) throws ApiException {
+  public CreatedBatchId createBatchOrder(@jakarta.annotation.Nonnull OrderBatch orderBatch) throws ApiException {
     return this.createBatchOrder(orderBatch, Collections.emptyMap());
   }
 
@@ -76,7 +81,7 @@ public class EcommerceApi extends BaseApi {
    * @return CreatedBatchId
    * @throws ApiException if fails to make API call
    */
-  public CreatedBatchId createBatchOrder(OrderBatch orderBatch, Map<String, String> additionalHeaders) throws ApiException {
+  public CreatedBatchId createBatchOrder(@jakarta.annotation.Nonnull OrderBatch orderBatch, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = orderBatch;
     
     // verify the required parameter 'orderBatch' is set
@@ -136,7 +141,7 @@ public class EcommerceApi extends BaseApi {
    * @param order  (required)
    * @throws ApiException if fails to make API call
    */
-  public void createOrder(Order order) throws ApiException {
+  public void createOrder(@jakarta.annotation.Nonnull Order order) throws ApiException {
     this.createOrder(order, Collections.emptyMap());
   }
 
@@ -148,7 +153,7 @@ public class EcommerceApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void createOrder(Order order, Map<String, String> additionalHeaders) throws ApiException {
+  public void createOrder(@jakarta.annotation.Nonnull Order order, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = order;
     
     // verify the required parameter 'order' is set
@@ -208,7 +213,7 @@ public class EcommerceApi extends BaseApi {
    * @return CreateUpdateBatchCategoryModel
    * @throws ApiException if fails to make API call
    */
-  public CreateUpdateBatchCategoryModel createUpdateBatchCategory(CreateUpdateBatchCategory createUpdateBatchCategory) throws ApiException {
+  public CreateUpdateBatchCategoryModel createUpdateBatchCategory(@jakarta.annotation.Nonnull CreateUpdateBatchCategory createUpdateBatchCategory) throws ApiException {
     return this.createUpdateBatchCategory(createUpdateBatchCategory, Collections.emptyMap());
   }
 
@@ -221,7 +226,7 @@ public class EcommerceApi extends BaseApi {
    * @return CreateUpdateBatchCategoryModel
    * @throws ApiException if fails to make API call
    */
-  public CreateUpdateBatchCategoryModel createUpdateBatchCategory(CreateUpdateBatchCategory createUpdateBatchCategory, Map<String, String> additionalHeaders) throws ApiException {
+  public CreateUpdateBatchCategoryModel createUpdateBatchCategory(@jakarta.annotation.Nonnull CreateUpdateBatchCategory createUpdateBatchCategory, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = createUpdateBatchCategory;
     
     // verify the required parameter 'createUpdateBatchCategory' is set
@@ -282,7 +287,7 @@ public class EcommerceApi extends BaseApi {
    * @return CreateUpdateBatchProductsModel
    * @throws ApiException if fails to make API call
    */
-  public CreateUpdateBatchProductsModel createUpdateBatchProducts(CreateUpdateBatchProducts createUpdateBatchProducts) throws ApiException {
+  public CreateUpdateBatchProductsModel createUpdateBatchProducts(@jakarta.annotation.Nonnull CreateUpdateBatchProducts createUpdateBatchProducts) throws ApiException {
     return this.createUpdateBatchProducts(createUpdateBatchProducts, Collections.emptyMap());
   }
 
@@ -295,7 +300,7 @@ public class EcommerceApi extends BaseApi {
    * @return CreateUpdateBatchProductsModel
    * @throws ApiException if fails to make API call
    */
-  public CreateUpdateBatchProductsModel createUpdateBatchProducts(CreateUpdateBatchProducts createUpdateBatchProducts, Map<String, String> additionalHeaders) throws ApiException {
+  public CreateUpdateBatchProductsModel createUpdateBatchProducts(@jakarta.annotation.Nonnull CreateUpdateBatchProducts createUpdateBatchProducts, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = createUpdateBatchProducts;
     
     // verify the required parameter 'createUpdateBatchProducts' is set
@@ -356,7 +361,7 @@ public class EcommerceApi extends BaseApi {
    * @return CreateCategoryModel
    * @throws ApiException if fails to make API call
    */
-  public CreateCategoryModel createUpdateCategory(CreateUpdateCategory createUpdateCategory) throws ApiException {
+  public CreateCategoryModel createUpdateCategory(@jakarta.annotation.Nonnull CreateUpdateCategory createUpdateCategory) throws ApiException {
     return this.createUpdateCategory(createUpdateCategory, Collections.emptyMap());
   }
 
@@ -369,7 +374,7 @@ public class EcommerceApi extends BaseApi {
    * @return CreateCategoryModel
    * @throws ApiException if fails to make API call
    */
-  public CreateCategoryModel createUpdateCategory(CreateUpdateCategory createUpdateCategory, Map<String, String> additionalHeaders) throws ApiException {
+  public CreateCategoryModel createUpdateCategory(@jakarta.annotation.Nonnull CreateUpdateCategory createUpdateCategory, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = createUpdateCategory;
     
     // verify the required parameter 'createUpdateCategory' is set
@@ -430,7 +435,7 @@ public class EcommerceApi extends BaseApi {
    * @return CreateProductModel
    * @throws ApiException if fails to make API call
    */
-  public CreateProductModel createUpdateProduct(CreateUpdateProduct createUpdateProduct) throws ApiException {
+  public CreateProductModel createUpdateProduct(@jakarta.annotation.Nonnull CreateUpdateProduct createUpdateProduct) throws ApiException {
     return this.createUpdateProduct(createUpdateProduct, Collections.emptyMap());
   }
 
@@ -443,7 +448,7 @@ public class EcommerceApi extends BaseApi {
    * @return CreateProductModel
    * @throws ApiException if fails to make API call
    */
-  public CreateProductModel createUpdateProduct(CreateUpdateProduct createUpdateProduct, Map<String, String> additionalHeaders) throws ApiException {
+  public CreateProductModel createUpdateProduct(@jakarta.annotation.Nonnull CreateUpdateProduct createUpdateProduct, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = createUpdateProduct;
     
     // verify the required parameter 'createUpdateProduct' is set
@@ -562,6 +567,324 @@ public class EcommerceApi extends BaseApi {
   }
 
   /**
+   * Get detailed attribution metrics for a single Brevo campaign or workflow
+   * 
+   * @param conversionSource The Brevo campaign type or workflow type for which data will be retrieved (required)
+   * @param conversionSourceId The Brevo campaign or automation workflow id for which data will be retrieved (required)
+   * @return EcommerceAttributionMetricsConversionSourceConversionSourceIdGet200Response
+   * @throws ApiException if fails to make API call
+   */
+  public EcommerceAttributionMetricsConversionSourceConversionSourceIdGet200Response ecommerceAttributionMetricsConversionSourceConversionSourceIdGet(@jakarta.annotation.Nonnull String conversionSource, @jakarta.annotation.Nonnull String conversionSourceId) throws ApiException {
+    return this.ecommerceAttributionMetricsConversionSourceConversionSourceIdGet(conversionSource, conversionSourceId, Collections.emptyMap());
+  }
+
+
+  /**
+   * Get detailed attribution metrics for a single Brevo campaign or workflow
+   * 
+   * @param conversionSource The Brevo campaign type or workflow type for which data will be retrieved (required)
+   * @param conversionSourceId The Brevo campaign or automation workflow id for which data will be retrieved (required)
+   * @param additionalHeaders additionalHeaders for this call
+   * @return EcommerceAttributionMetricsConversionSourceConversionSourceIdGet200Response
+   * @throws ApiException if fails to make API call
+   */
+  public EcommerceAttributionMetricsConversionSourceConversionSourceIdGet200Response ecommerceAttributionMetricsConversionSourceConversionSourceIdGet(@jakarta.annotation.Nonnull String conversionSource, @jakarta.annotation.Nonnull String conversionSourceId, Map<String, String> additionalHeaders) throws ApiException {
+    Object localVarPostBody = null;
+    
+    // verify the required parameter 'conversionSource' is set
+    if (conversionSource == null) {
+      throw new ApiException(400, "Missing the required parameter 'conversionSource' when calling ecommerceAttributionMetricsConversionSourceConversionSourceIdGet");
+    }
+    
+    // verify the required parameter 'conversionSourceId' is set
+    if (conversionSourceId == null) {
+      throw new ApiException(400, "Missing the required parameter 'conversionSourceId' when calling ecommerceAttributionMetricsConversionSourceConversionSourceIdGet");
+    }
+    
+    // create path and map variables
+    String localVarPath = "/ecommerce/attribution/metrics/{conversionSource}/{conversionSourceId}"
+      .replaceAll("\\{" + "conversionSource" + "\\}", apiClient.escapeString(apiClient.parameterToString(conversionSource)))
+      .replaceAll("\\{" + "conversionSourceId" + "\\}", apiClient.escapeString(apiClient.parameterToString(conversionSourceId)));
+
+    StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
+    String localVarQueryParameterBaseName;
+    List<Pair> localVarQueryParams = new ArrayList<Pair>();
+    List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+    Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+    Map<String, String> localVarCookieParams = new HashMap<String, String>();
+    Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+    
+    localVarHeaderParams.putAll(additionalHeaders);
+
+    
+    
+    final String[] localVarAccepts = {
+      "application/json"
+    };
+    final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+
+    final String[] localVarContentTypes = {
+      
+    };
+    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+    String[] localVarAuthNames = new String[] { "api-key" };
+
+    TypeReference<EcommerceAttributionMetricsConversionSourceConversionSourceIdGet200Response> localVarReturnType = new TypeReference<EcommerceAttributionMetricsConversionSourceConversionSourceIdGet200Response>() {};
+    return apiClient.invokeAPI(
+        localVarPath,
+        "GET",
+        localVarQueryParams,
+        localVarCollectionQueryParams,
+        localVarQueryStringJoiner.toString(),
+        localVarPostBody,
+        localVarHeaderParams,
+        localVarCookieParams,
+        localVarFormParams,
+        localVarAccept,
+        localVarContentType,
+        localVarAuthNames,
+        localVarReturnType
+    );
+  }
+
+  /**
+   * Get attribution metrics for one or more Brevo campaigns or workflows
+   * 
+   * @param periodFrom When getting metrics for a specific period, define the starting datetime in RFC3339 format (optional)
+   * @param periodTo When getting metrics for a specific period, define the end datetime in RFC3339 format (optional)
+   * @param emailCampaignId The email campaign ID(s) to get metrics for (optional)
+   * @param smsCampaignId The SMS campaign ID(s) to get metrics for (optional)
+   * @param automationWorkflowEmailId The automation workflow ID(s) to get email attribution metrics for (optional)
+   * @param automationWorkflowSmsId The automation workflow ID(s) to get SMS attribution metrics for (optional)
+   * @return EcommerceAttributionMetricsGet200Response
+   * @throws ApiException if fails to make API call
+   */
+  public EcommerceAttributionMetricsGet200Response ecommerceAttributionMetricsGet(@jakarta.annotation.Nullable OffsetDateTime periodFrom, @jakarta.annotation.Nullable OffsetDateTime periodTo, @jakarta.annotation.Nullable List<String> emailCampaignId, @jakarta.annotation.Nullable List<String> smsCampaignId, @jakarta.annotation.Nullable List<String> automationWorkflowEmailId, @jakarta.annotation.Nullable List<String> automationWorkflowSmsId) throws ApiException {
+    return this.ecommerceAttributionMetricsGet(periodFrom, periodTo, emailCampaignId, smsCampaignId, automationWorkflowEmailId, automationWorkflowSmsId, Collections.emptyMap());
+  }
+
+
+  /**
+   * Get attribution metrics for one or more Brevo campaigns or workflows
+   * 
+   * @param periodFrom When getting metrics for a specific period, define the starting datetime in RFC3339 format (optional)
+   * @param periodTo When getting metrics for a specific period, define the end datetime in RFC3339 format (optional)
+   * @param emailCampaignId The email campaign ID(s) to get metrics for (optional)
+   * @param smsCampaignId The SMS campaign ID(s) to get metrics for (optional)
+   * @param automationWorkflowEmailId The automation workflow ID(s) to get email attribution metrics for (optional)
+   * @param automationWorkflowSmsId The automation workflow ID(s) to get SMS attribution metrics for (optional)
+   * @param additionalHeaders additionalHeaders for this call
+   * @return EcommerceAttributionMetricsGet200Response
+   * @throws ApiException if fails to make API call
+   */
+  public EcommerceAttributionMetricsGet200Response ecommerceAttributionMetricsGet(@jakarta.annotation.Nullable OffsetDateTime periodFrom, @jakarta.annotation.Nullable OffsetDateTime periodTo, @jakarta.annotation.Nullable List<String> emailCampaignId, @jakarta.annotation.Nullable List<String> smsCampaignId, @jakarta.annotation.Nullable List<String> automationWorkflowEmailId, @jakarta.annotation.Nullable List<String> automationWorkflowSmsId, Map<String, String> additionalHeaders) throws ApiException {
+    Object localVarPostBody = null;
+    
+    // create path and map variables
+    String localVarPath = "/ecommerce/attribution/metrics";
+
+    StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
+    String localVarQueryParameterBaseName;
+    List<Pair> localVarQueryParams = new ArrayList<Pair>();
+    List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+    Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+    Map<String, String> localVarCookieParams = new HashMap<String, String>();
+    Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+    localVarQueryParams.addAll(apiClient.parameterToPair("periodFrom", periodFrom));
+    localVarQueryParams.addAll(apiClient.parameterToPair("periodTo", periodTo));
+    localVarCollectionQueryParams.addAll(apiClient.parameterToPairs("multi", "emailCampaignId[]", emailCampaignId));
+    localVarCollectionQueryParams.addAll(apiClient.parameterToPairs("multi", "smsCampaignId[]", smsCampaignId));
+    localVarCollectionQueryParams.addAll(apiClient.parameterToPairs("multi", "automationWorkflowEmailId[]", automationWorkflowEmailId));
+    localVarCollectionQueryParams.addAll(apiClient.parameterToPairs("multi", "automationWorkflowSmsId[]", automationWorkflowSmsId));
+    
+    localVarHeaderParams.putAll(additionalHeaders);
+
+    
+    
+    final String[] localVarAccepts = {
+      "application/json"
+    };
+    final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+
+    final String[] localVarContentTypes = {
+      
+    };
+    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+    String[] localVarAuthNames = new String[] { "api-key" };
+
+    TypeReference<EcommerceAttributionMetricsGet200Response> localVarReturnType = new TypeReference<EcommerceAttributionMetricsGet200Response>() {};
+    return apiClient.invokeAPI(
+        localVarPath,
+        "GET",
+        localVarQueryParams,
+        localVarCollectionQueryParams,
+        localVarQueryStringJoiner.toString(),
+        localVarPostBody,
+        localVarHeaderParams,
+        localVarCookieParams,
+        localVarFormParams,
+        localVarAccept,
+        localVarContentType,
+        localVarAuthNames,
+        localVarReturnType
+    );
+  }
+
+  /**
+   * Get attributed product sales for a single Brevo campaign or workflow
+   * 
+   * @param conversionSource The Brevo campaign or automation workflow type for which data will be retrieved (required)
+   * @param conversionSourceId The Brevo campaign or automation workflow id for which data will be retrieved (required)
+   * @return EcommerceAttributionProductsConversionSourceConversionSourceIdGet200Response
+   * @throws ApiException if fails to make API call
+   */
+  public EcommerceAttributionProductsConversionSourceConversionSourceIdGet200Response ecommerceAttributionProductsConversionSourceConversionSourceIdGet(@jakarta.annotation.Nonnull String conversionSource, @jakarta.annotation.Nonnull String conversionSourceId) throws ApiException {
+    return this.ecommerceAttributionProductsConversionSourceConversionSourceIdGet(conversionSource, conversionSourceId, Collections.emptyMap());
+  }
+
+
+  /**
+   * Get attributed product sales for a single Brevo campaign or workflow
+   * 
+   * @param conversionSource The Brevo campaign or automation workflow type for which data will be retrieved (required)
+   * @param conversionSourceId The Brevo campaign or automation workflow id for which data will be retrieved (required)
+   * @param additionalHeaders additionalHeaders for this call
+   * @return EcommerceAttributionProductsConversionSourceConversionSourceIdGet200Response
+   * @throws ApiException if fails to make API call
+   */
+  public EcommerceAttributionProductsConversionSourceConversionSourceIdGet200Response ecommerceAttributionProductsConversionSourceConversionSourceIdGet(@jakarta.annotation.Nonnull String conversionSource, @jakarta.annotation.Nonnull String conversionSourceId, Map<String, String> additionalHeaders) throws ApiException {
+    Object localVarPostBody = null;
+    
+    // verify the required parameter 'conversionSource' is set
+    if (conversionSource == null) {
+      throw new ApiException(400, "Missing the required parameter 'conversionSource' when calling ecommerceAttributionProductsConversionSourceConversionSourceIdGet");
+    }
+    
+    // verify the required parameter 'conversionSourceId' is set
+    if (conversionSourceId == null) {
+      throw new ApiException(400, "Missing the required parameter 'conversionSourceId' when calling ecommerceAttributionProductsConversionSourceConversionSourceIdGet");
+    }
+    
+    // create path and map variables
+    String localVarPath = "/ecommerce/attribution/products/{conversionSource}/{conversionSourceId}"
+      .replaceAll("\\{" + "conversionSource" + "\\}", apiClient.escapeString(apiClient.parameterToString(conversionSource)))
+      .replaceAll("\\{" + "conversionSourceId" + "\\}", apiClient.escapeString(apiClient.parameterToString(conversionSourceId)));
+
+    StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
+    String localVarQueryParameterBaseName;
+    List<Pair> localVarQueryParams = new ArrayList<Pair>();
+    List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+    Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+    Map<String, String> localVarCookieParams = new HashMap<String, String>();
+    Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+    
+    localVarHeaderParams.putAll(additionalHeaders);
+
+    
+    
+    final String[] localVarAccepts = {
+      "application/json"
+    };
+    final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+
+    final String[] localVarContentTypes = {
+      
+    };
+    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+    String[] localVarAuthNames = new String[] { "api-key" };
+
+    TypeReference<EcommerceAttributionProductsConversionSourceConversionSourceIdGet200Response> localVarReturnType = new TypeReference<EcommerceAttributionProductsConversionSourceConversionSourceIdGet200Response>() {};
+    return apiClient.invokeAPI(
+        localVarPath,
+        "GET",
+        localVarQueryParams,
+        localVarCollectionQueryParams,
+        localVarQueryStringJoiner.toString(),
+        localVarPostBody,
+        localVarHeaderParams,
+        localVarCookieParams,
+        localVarFormParams,
+        localVarAccept,
+        localVarContentType,
+        localVarAuthNames,
+        localVarReturnType
+    );
+  }
+
+  /**
+   * Get the ISO 4217 compliant display currency code for your Brevo account
+   * 
+   * @return EcommerceConfigDisplayCurrencyGet200Response
+   * @throws ApiException if fails to make API call
+   */
+  public EcommerceConfigDisplayCurrencyGet200Response ecommerceConfigDisplayCurrencyGet() throws ApiException {
+    return this.ecommerceConfigDisplayCurrencyGet(Collections.emptyMap());
+  }
+
+
+  /**
+   * Get the ISO 4217 compliant display currency code for your Brevo account
+   * 
+   * @param additionalHeaders additionalHeaders for this call
+   * @return EcommerceConfigDisplayCurrencyGet200Response
+   * @throws ApiException if fails to make API call
+   */
+  public EcommerceConfigDisplayCurrencyGet200Response ecommerceConfigDisplayCurrencyGet(Map<String, String> additionalHeaders) throws ApiException {
+    Object localVarPostBody = null;
+    
+    // create path and map variables
+    String localVarPath = "/ecommerce/config/displayCurrency";
+
+    StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
+    String localVarQueryParameterBaseName;
+    List<Pair> localVarQueryParams = new ArrayList<Pair>();
+    List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+    Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+    Map<String, String> localVarCookieParams = new HashMap<String, String>();
+    Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+    
+    localVarHeaderParams.putAll(additionalHeaders);
+
+    
+    
+    final String[] localVarAccepts = {
+      "application/json"
+    };
+    final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+
+    final String[] localVarContentTypes = {
+      
+    };
+    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+    String[] localVarAuthNames = new String[] { "api-key" };
+
+    TypeReference<EcommerceConfigDisplayCurrencyGet200Response> localVarReturnType = new TypeReference<EcommerceConfigDisplayCurrencyGet200Response>() {};
+    return apiClient.invokeAPI(
+        localVarPath,
+        "GET",
+        localVarQueryParams,
+        localVarCollectionQueryParams,
+        localVarQueryStringJoiner.toString(),
+        localVarPostBody,
+        localVarHeaderParams,
+        localVarCookieParams,
+        localVarFormParams,
+        localVarAccept,
+        localVarContentType,
+        localVarAuthNames,
+        localVarReturnType
+    );
+  }
+
+  /**
    * Return all your categories
    * 
    * @param limit Number of documents per page (optional, default to 50)
@@ -574,7 +897,7 @@ public class EcommerceApi extends BaseApi {
    * @return GetCategories
    * @throws ApiException if fails to make API call
    */
-  public GetCategories getCategories(Long limit, Long offset, String sort, List<String> ids, String name, String modifiedSince, String createdSince) throws ApiException {
+  public GetCategories getCategories(@jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String sort, @jakarta.annotation.Nullable List<String> ids, @jakarta.annotation.Nullable String name, @jakarta.annotation.Nullable String modifiedSince, @jakarta.annotation.Nullable String createdSince) throws ApiException {
     return this.getCategories(limit, offset, sort, ids, name, modifiedSince, createdSince, Collections.emptyMap());
   }
 
@@ -593,7 +916,7 @@ public class EcommerceApi extends BaseApi {
    * @return GetCategories
    * @throws ApiException if fails to make API call
    */
-  public GetCategories getCategories(Long limit, Long offset, String sort, List<String> ids, String name, String modifiedSince, String createdSince, Map<String, String> additionalHeaders) throws ApiException {
+  public GetCategories getCategories(@jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String sort, @jakarta.annotation.Nullable List<String> ids, @jakarta.annotation.Nullable String name, @jakarta.annotation.Nullable String modifiedSince, @jakarta.annotation.Nullable String createdSince, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -656,7 +979,7 @@ public class EcommerceApi extends BaseApi {
    * @return GetCategoryDetails
    * @throws ApiException if fails to make API call
    */
-  public GetCategoryDetails getCategoryInfo(String id) throws ApiException {
+  public GetCategoryDetails getCategoryInfo(@jakarta.annotation.Nonnull String id) throws ApiException {
     return this.getCategoryInfo(id, Collections.emptyMap());
   }
 
@@ -669,7 +992,7 @@ public class EcommerceApi extends BaseApi {
    * @return GetCategoryDetails
    * @throws ApiException if fails to make API call
    */
-  public GetCategoryDetails getCategoryInfo(String id, Map<String, String> additionalHeaders) throws ApiException {
+  public GetCategoryDetails getCategoryInfo(@jakarta.annotation.Nonnull String id, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'id' is set
@@ -734,7 +1057,7 @@ public class EcommerceApi extends BaseApi {
    * @param createdSince Filter (urlencoded) the orders created after a given UTC date-time (YYYY-MM-DDTHH:mm:ss.SSSZ). **Prefer to pass your timezone in date-time format for accurate result.**  (optional)
    * @throws ApiException if fails to make API call
    */
-  public void getOrders(Long limit, Long offset, String sort, String modifiedSince, String createdSince) throws ApiException {
+  public void getOrders(@jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String sort, @jakarta.annotation.Nullable String modifiedSince, @jakarta.annotation.Nullable String createdSince) throws ApiException {
     this.getOrders(limit, offset, sort, modifiedSince, createdSince, Collections.emptyMap());
   }
 
@@ -750,7 +1073,7 @@ public class EcommerceApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void getOrders(Long limit, Long offset, String sort, String modifiedSince, String createdSince, Map<String, String> additionalHeaders) throws ApiException {
+  public void getOrders(@jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String sort, @jakarta.annotation.Nullable String modifiedSince, @jakarta.annotation.Nullable String createdSince, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -810,7 +1133,7 @@ public class EcommerceApi extends BaseApi {
    * @return GetProductDetails
    * @throws ApiException if fails to make API call
    */
-  public GetProductDetails getProductInfo(String id) throws ApiException {
+  public GetProductDetails getProductInfo(@jakarta.annotation.Nonnull String id) throws ApiException {
     return this.getProductInfo(id, Collections.emptyMap());
   }
 
@@ -823,7 +1146,7 @@ public class EcommerceApi extends BaseApi {
    * @return GetProductDetails
    * @throws ApiException if fails to make API call
    */
-  public GetProductDetails getProductInfo(String id, Map<String, String> additionalHeaders) throws ApiException {
+  public GetProductDetails getProductInfo(@jakarta.annotation.Nonnull String id, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'id' is set
@@ -898,7 +1221,7 @@ public class EcommerceApi extends BaseApi {
    * @return GetProducts
    * @throws ApiException if fails to make API call
    */
-  public GetProducts getProducts(Long limit, Long offset, String sort, List<String> ids, String name, BigDecimal priceLte, BigDecimal priceGte, BigDecimal priceLt, BigDecimal priceGt, BigDecimal priceEq, BigDecimal priceNe, List<String> categories, String modifiedSince, String createdSince) throws ApiException {
+  public GetProducts getProducts(@jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String sort, @jakarta.annotation.Nullable List<String> ids, @jakarta.annotation.Nullable String name, @jakarta.annotation.Nullable BigDecimal priceLte, @jakarta.annotation.Nullable BigDecimal priceGte, @jakarta.annotation.Nullable BigDecimal priceLt, @jakarta.annotation.Nullable BigDecimal priceGt, @jakarta.annotation.Nullable BigDecimal priceEq, @jakarta.annotation.Nullable BigDecimal priceNe, @jakarta.annotation.Nullable List<String> categories, @jakarta.annotation.Nullable String modifiedSince, @jakarta.annotation.Nullable String createdSince) throws ApiException {
     return this.getProducts(limit, offset, sort, ids, name, priceLte, priceGte, priceLt, priceGt, priceEq, priceNe, categories, modifiedSince, createdSince, Collections.emptyMap());
   }
 
@@ -924,7 +1247,7 @@ public class EcommerceApi extends BaseApi {
    * @return GetProducts
    * @throws ApiException if fails to make API call
    */
-  public GetProducts getProducts(Long limit, Long offset, String sort, List<String> ids, String name, BigDecimal priceLte, BigDecimal priceGte, BigDecimal priceLt, BigDecimal priceGt, BigDecimal priceEq, BigDecimal priceNe, List<String> categories, String modifiedSince, String createdSince, Map<String, String> additionalHeaders) throws ApiException {
+  public GetProducts getProducts(@jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String sort, @jakarta.annotation.Nullable List<String> ids, @jakarta.annotation.Nullable String name, @jakarta.annotation.Nullable BigDecimal priceLte, @jakarta.annotation.Nullable BigDecimal priceGte, @jakarta.annotation.Nullable BigDecimal priceLt, @jakarta.annotation.Nullable BigDecimal priceGt, @jakarta.annotation.Nullable BigDecimal priceEq, @jakarta.annotation.Nullable BigDecimal priceNe, @jakarta.annotation.Nullable List<String> categories, @jakarta.annotation.Nullable String modifiedSince, @jakarta.annotation.Nullable String createdSince, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -987,6 +1310,75 @@ public class EcommerceApi extends BaseApi {
     );
   }
 
+  /**
+   * Set the ISO 4217 compliant display currency code for your Brevo account
+   * 
+   * @param ecommerceConfigDisplayCurrencyGet200Response set ISO 4217 compliant display currency code payload (optional)
+   * @return EcommerceConfigDisplayCurrencyGet200Response
+   * @throws ApiException if fails to make API call
+   */
+  public EcommerceConfigDisplayCurrencyGet200Response setConfigDisplayCurrency(@jakarta.annotation.Nullable EcommerceConfigDisplayCurrencyGet200Response ecommerceConfigDisplayCurrencyGet200Response) throws ApiException {
+    return this.setConfigDisplayCurrency(ecommerceConfigDisplayCurrencyGet200Response, Collections.emptyMap());
+  }
+
+
+  /**
+   * Set the ISO 4217 compliant display currency code for your Brevo account
+   * 
+   * @param ecommerceConfigDisplayCurrencyGet200Response set ISO 4217 compliant display currency code payload (optional)
+   * @param additionalHeaders additionalHeaders for this call
+   * @return EcommerceConfigDisplayCurrencyGet200Response
+   * @throws ApiException if fails to make API call
+   */
+  public EcommerceConfigDisplayCurrencyGet200Response setConfigDisplayCurrency(@jakarta.annotation.Nullable EcommerceConfigDisplayCurrencyGet200Response ecommerceConfigDisplayCurrencyGet200Response, Map<String, String> additionalHeaders) throws ApiException {
+    Object localVarPostBody = ecommerceConfigDisplayCurrencyGet200Response;
+    
+    // create path and map variables
+    String localVarPath = "/ecommerce/config/displayCurrency";
+
+    StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
+    String localVarQueryParameterBaseName;
+    List<Pair> localVarQueryParams = new ArrayList<Pair>();
+    List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+    Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+    Map<String, String> localVarCookieParams = new HashMap<String, String>();
+    Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+    
+    localVarHeaderParams.putAll(additionalHeaders);
+
+    
+    
+    final String[] localVarAccepts = {
+      "application/json"
+    };
+    final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+
+    final String[] localVarContentTypes = {
+      "application/json"
+    };
+    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+    String[] localVarAuthNames = new String[] { "api-key" };
+
+    TypeReference<EcommerceConfigDisplayCurrencyGet200Response> localVarReturnType = new TypeReference<EcommerceConfigDisplayCurrencyGet200Response>() {};
+    return apiClient.invokeAPI(
+        localVarPath,
+        "POST",
+        localVarQueryParams,
+        localVarCollectionQueryParams,
+        localVarQueryStringJoiner.toString(),
+        localVarPostBody,
+        localVarHeaderParams,
+        localVarCookieParams,
+        localVarFormParams,
+        localVarAccept,
+        localVarContentType,
+        localVarAuthNames,
+        localVarReturnType
+    );
+  }
+
   @Override
   public <T> T invokeAPI(String url, String method, Object request, TypeReference<T> returnType, Map<String, String> additionalHeaders) throws ApiException {
     String localVarPath = url.replace(apiClient.getBaseURL(), "");
@@ -1005,7 +1397,7 @@ public class EcommerceApi extends BaseApi {
     final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
 
     final String[] localVarContentTypes = {
-      
+      "application/json"
     };
     final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
 

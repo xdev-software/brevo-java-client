@@ -218,7 +218,7 @@ public class SendTransacSms {
   }
 
   /**
-   * Tag of the message
+   * A tag can have two types of values, either a string or an array of strings.
    * @return tag
    */
   @jakarta.annotation.Nullable

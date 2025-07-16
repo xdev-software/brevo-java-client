@@ -20,6 +20,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import java.io.UnsupportedEncodingException;
@@ -33,7 +36,8 @@ import java.util.StringJoiner;
   CreateSubAccount.JSON_PROPERTY_COMPANY_NAME,
   CreateSubAccount.JSON_PROPERTY_EMAIL,
   CreateSubAccount.JSON_PROPERTY_LANGUAGE,
-  CreateSubAccount.JSON_PROPERTY_TIMEZONE
+  CreateSubAccount.JSON_PROPERTY_TIMEZONE,
+  CreateSubAccount.JSON_PROPERTY_GROUP_IDS
 })
 @JsonTypeName("createSubAccount")
 public class CreateSubAccount {
@@ -95,6 +99,10 @@ public class CreateSubAccount {
   public static final String JSON_PROPERTY_TIMEZONE = "timezone";
   @jakarta.annotation.Nullable
   private String timezone;
+
+  public static final String JSON_PROPERTY_GROUP_IDS = "groupIds";
+  @jakarta.annotation.Nullable
+  private List<String> groupIds = new ArrayList<>();
 
   public CreateSubAccount() {
   }
@@ -199,6 +207,39 @@ public class CreateSubAccount {
     this.timezone = timezone;
   }
 
+  public CreateSubAccount groupIds(@jakarta.annotation.Nullable List<String> groupIds) {
+    
+    this.groupIds = groupIds;
+    return this;
+  }
+
+  public CreateSubAccount addGroupIdsItem(String groupIdsItem) {
+    if (this.groupIds == null) {
+      this.groupIds = new ArrayList<>();
+    }
+    this.groupIds.add(groupIdsItem);
+    return this;
+  }
+
+  /**
+   * Set the group(s) for the sub-account
+   * @return groupIds
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_GROUP_IDS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public List<String> getGroupIds() {
+    return groupIds;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_GROUP_IDS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setGroupIds(@jakarta.annotation.Nullable List<String> groupIds) {
+    this.groupIds = groupIds;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -211,12 +252,13 @@ public class CreateSubAccount {
     return Objects.equals(this.companyName, createSubAccount.companyName) &&
         Objects.equals(this.email, createSubAccount.email) &&
         Objects.equals(this.language, createSubAccount.language) &&
-        Objects.equals(this.timezone, createSubAccount.timezone);
+        Objects.equals(this.timezone, createSubAccount.timezone) &&
+        Objects.equals(this.groupIds, createSubAccount.groupIds);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(companyName, email, language, timezone);
+    return Objects.hash(companyName, email, language, timezone, groupIds);
   }
 
   @Override
@@ -227,6 +269,7 @@ public class CreateSubAccount {
     sb.append("    email: ").append(toIndentedString(email)).append("\n");
     sb.append("    language: ").append(toIndentedString(language)).append("\n");
     sb.append("    timezone: ").append(toIndentedString(timezone)).append("\n");
+    sb.append("    groupIds: ").append(toIndentedString(groupIds)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -311,6 +354,20 @@ public class CreateSubAccount {
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
+      }
+    }
+
+    // add `groupIds` to the URL query string
+    if (getGroupIds() != null) {
+      for (int i = 0; i < getGroupIds().size(); i++) {
+        try {
+          joiner.add(String.format("%sgroupIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getGroupIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
       }
     }
 

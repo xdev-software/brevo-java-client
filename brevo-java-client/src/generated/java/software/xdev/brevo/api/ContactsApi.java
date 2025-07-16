@@ -21,6 +21,7 @@ import software.xdev.brevo.client.Configuration;
 import software.xdev.brevo.client.Pair;
 
 import software.xdev.brevo.model.AddContactToListRequest;
+import software.xdev.brevo.model.ContactErrorModel;
 import software.xdev.brevo.model.CreateAttribute;
 import software.xdev.brevo.model.CreateContact;
 import software.xdev.brevo.model.CreateDoiContact;
@@ -72,11 +73,11 @@ public class ContactsApi extends BaseApi {
    * Add existing contacts to a list
    * 
    * @param listId Id of the list (required)
-   * @param addContactToListRequest Emails addresses OR IDs of the contacts (required)
+   * @param addContactToListRequest Emails addresses OR IDs OR EXT_ID attributes of the contacts (required)
    * @return PostContactInfo
    * @throws ApiException if fails to make API call
    */
-  public PostContactInfo addContactToList(Long listId, AddContactToListRequest addContactToListRequest) throws ApiException {
+  public PostContactInfo addContactToList(@jakarta.annotation.Nonnull Long listId, @jakarta.annotation.Nonnull AddContactToListRequest addContactToListRequest) throws ApiException {
     return this.addContactToList(listId, addContactToListRequest, Collections.emptyMap());
   }
 
@@ -85,12 +86,12 @@ public class ContactsApi extends BaseApi {
    * Add existing contacts to a list
    * 
    * @param listId Id of the list (required)
-   * @param addContactToListRequest Emails addresses OR IDs of the contacts (required)
+   * @param addContactToListRequest Emails addresses OR IDs OR EXT_ID attributes of the contacts (required)
    * @param additionalHeaders additionalHeaders for this call
    * @return PostContactInfo
    * @throws ApiException if fails to make API call
    */
-  public PostContactInfo addContactToList(Long listId, AddContactToListRequest addContactToListRequest, Map<String, String> additionalHeaders) throws ApiException {
+  public PostContactInfo addContactToList(@jakarta.annotation.Nonnull Long listId, @jakarta.annotation.Nonnull AddContactToListRequest addContactToListRequest, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = addContactToListRequest;
     
     // verify the required parameter 'listId' is set
@@ -158,7 +159,7 @@ public class ContactsApi extends BaseApi {
    * @param createAttribute Values to create an attribute (required)
    * @throws ApiException if fails to make API call
    */
-  public void createAttribute(String attributeCategory, String attributeName, CreateAttribute createAttribute) throws ApiException {
+  public void createAttribute(@jakarta.annotation.Nonnull String attributeCategory, @jakarta.annotation.Nonnull String attributeName, @jakarta.annotation.Nonnull CreateAttribute createAttribute) throws ApiException {
     this.createAttribute(attributeCategory, attributeName, createAttribute, Collections.emptyMap());
   }
 
@@ -172,7 +173,7 @@ public class ContactsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void createAttribute(String attributeCategory, String attributeName, CreateAttribute createAttribute, Map<String, String> additionalHeaders) throws ApiException {
+  public void createAttribute(@jakarta.annotation.Nonnull String attributeCategory, @jakarta.annotation.Nonnull String attributeName, @jakarta.annotation.Nonnull CreateAttribute createAttribute, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = createAttribute;
     
     // verify the required parameter 'attributeCategory' is set
@@ -239,25 +240,25 @@ public class ContactsApi extends BaseApi {
 
   /**
    * Create a contact
-   * 
+   * Creates new contacts on Brevo. Contacts can be created by passing either - &lt;br&gt;&lt;br&gt; 1. email address of the contact (email_id),  &lt;br&gt; 2. phone number of the contact (to be passed as \&quot;SMS\&quot; field in \&quot;attributes\&quot; along with proper country code), For example- {\&quot;SMS\&quot;:\&quot;+91xxxxxxxxxx\&quot;} or {\&quot;SMS\&quot;:\&quot;0091xxxxxxxxxx\&quot;} &lt;br&gt; 3. ext_id &lt;br&gt;
    * @param createContact Values to create a contact (required)
    * @return CreateUpdateContactModel
    * @throws ApiException if fails to make API call
    */
-  public CreateUpdateContactModel createContact(CreateContact createContact) throws ApiException {
+  public CreateUpdateContactModel createContact(@jakarta.annotation.Nonnull CreateContact createContact) throws ApiException {
     return this.createContact(createContact, Collections.emptyMap());
   }
 
 
   /**
    * Create a contact
-   * 
+   * Creates new contacts on Brevo. Contacts can be created by passing either - &lt;br&gt;&lt;br&gt; 1. email address of the contact (email_id),  &lt;br&gt; 2. phone number of the contact (to be passed as \&quot;SMS\&quot; field in \&quot;attributes\&quot; along with proper country code), For example- {\&quot;SMS\&quot;:\&quot;+91xxxxxxxxxx\&quot;} or {\&quot;SMS\&quot;:\&quot;0091xxxxxxxxxx\&quot;} &lt;br&gt; 3. ext_id &lt;br&gt;
    * @param createContact Values to create a contact (required)
    * @param additionalHeaders additionalHeaders for this call
    * @return CreateUpdateContactModel
    * @throws ApiException if fails to make API call
    */
-  public CreateUpdateContactModel createContact(CreateContact createContact, Map<String, String> additionalHeaders) throws ApiException {
+  public CreateUpdateContactModel createContact(@jakarta.annotation.Nonnull CreateContact createContact, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = createContact;
     
     // verify the required parameter 'createContact' is set
@@ -317,7 +318,7 @@ public class ContactsApi extends BaseApi {
    * @param createDoiContact Values to create the Double opt-in (DOI) contact (required)
    * @throws ApiException if fails to make API call
    */
-  public void createDoiContact(CreateDoiContact createDoiContact) throws ApiException {
+  public void createDoiContact(@jakarta.annotation.Nonnull CreateDoiContact createDoiContact) throws ApiException {
     this.createDoiContact(createDoiContact, Collections.emptyMap());
   }
 
@@ -329,7 +330,7 @@ public class ContactsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void createDoiContact(CreateDoiContact createDoiContact, Map<String, String> additionalHeaders) throws ApiException {
+  public void createDoiContact(@jakarta.annotation.Nonnull CreateDoiContact createDoiContact, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = createDoiContact;
     
     // verify the required parameter 'createDoiContact' is set
@@ -389,7 +390,7 @@ public class ContactsApi extends BaseApi {
    * @return CreateModel
    * @throws ApiException if fails to make API call
    */
-  public CreateModel createFolder(CreateUpdateFolder createFolder) throws ApiException {
+  public CreateModel createFolder(@jakarta.annotation.Nonnull CreateUpdateFolder createFolder) throws ApiException {
     return this.createFolder(createFolder, Collections.emptyMap());
   }
 
@@ -402,7 +403,7 @@ public class ContactsApi extends BaseApi {
    * @return CreateModel
    * @throws ApiException if fails to make API call
    */
-  public CreateModel createFolder(CreateUpdateFolder createFolder, Map<String, String> additionalHeaders) throws ApiException {
+  public CreateModel createFolder(@jakarta.annotation.Nonnull CreateUpdateFolder createFolder, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = createFolder;
     
     // verify the required parameter 'createFolder' is set
@@ -463,7 +464,7 @@ public class ContactsApi extends BaseApi {
    * @return CreateModel
    * @throws ApiException if fails to make API call
    */
-  public CreateModel createList(CreateList createList) throws ApiException {
+  public CreateModel createList(@jakarta.annotation.Nonnull CreateList createList) throws ApiException {
     return this.createList(createList, Collections.emptyMap());
   }
 
@@ -476,7 +477,7 @@ public class ContactsApi extends BaseApi {
    * @return CreateModel
    * @throws ApiException if fails to make API call
    */
-  public CreateModel createList(CreateList createList, Map<String, String> additionalHeaders) throws ApiException {
+  public CreateModel createList(@jakarta.annotation.Nonnull CreateList createList, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = createList;
     
     // verify the required parameter 'createList' is set
@@ -537,7 +538,7 @@ public class ContactsApi extends BaseApi {
    * @param attributeName Name of the existing attribute (required)
    * @throws ApiException if fails to make API call
    */
-  public void deleteAttribute(String attributeCategory, String attributeName) throws ApiException {
+  public void deleteAttribute(@jakarta.annotation.Nonnull String attributeCategory, @jakarta.annotation.Nonnull String attributeName) throws ApiException {
     this.deleteAttribute(attributeCategory, attributeName, Collections.emptyMap());
   }
 
@@ -550,7 +551,7 @@ public class ContactsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void deleteAttribute(String attributeCategory, String attributeName, Map<String, String> additionalHeaders) throws ApiException {
+  public void deleteAttribute(@jakarta.annotation.Nonnull String attributeCategory, @jakarta.annotation.Nonnull String attributeName, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'attributeCategory' is set
@@ -612,23 +613,25 @@ public class ContactsApi extends BaseApi {
 
   /**
    * Delete a contact
-   * 
-   * @param identifier Email (urlencoded) OR ID of the contact (required)
+   * There are 2 ways to delete a contact &lt;br&gt;&lt;br&gt; Option 1- https://api.brevo.com/v3/contacts/{identifier} &lt;br&gt;&lt;br&gt; Option 2- https://api.brevo.com/v3/contacts/{identifier}?identifierType&#x3D;{} &lt;br&gt; &lt;br&gt; Option 1 only works if identifierType is email_id (for EMAIL) or contact_id (for ID of the contact),where you can directly pass the value of EMAIL and ID of the contact.   &lt;br&gt;&lt;br&gt; Option 2 works for all identifierType, use email_id for EMAIL attribute, contact_id for ID of the contact, ext_id for EXT_ID attribute, phone_id for SMS attribute, whatsapp_id for WHATSAPP attribute, landline_number_id for LANDLINE_NUMBER attribute.
+   * @param identifier Email (urlencoded) OR ID of the contact OR EXT_ID attribute (urlencoded) (required)
+   * @param identifierType email_id for Email, contact_id for ID of the contact, ext_id for EXT_ID attribute, phone_id for SMS attribute, whatsapp_id for WHATSAPP attribute, landline_number_id for LANDLINE_NUMBER attribute (optional)
    * @throws ApiException if fails to make API call
    */
-  public void deleteContact(GetContactInfoIdentifierParameter identifier) throws ApiException {
-    this.deleteContact(identifier, Collections.emptyMap());
+  public void deleteContact(@jakarta.annotation.Nonnull GetContactInfoIdentifierParameter identifier, @jakarta.annotation.Nullable String identifierType) throws ApiException {
+    this.deleteContact(identifier, identifierType, Collections.emptyMap());
   }
 
 
   /**
    * Delete a contact
-   * 
-   * @param identifier Email (urlencoded) OR ID of the contact (required)
+   * There are 2 ways to delete a contact &lt;br&gt;&lt;br&gt; Option 1- https://api.brevo.com/v3/contacts/{identifier} &lt;br&gt;&lt;br&gt; Option 2- https://api.brevo.com/v3/contacts/{identifier}?identifierType&#x3D;{} &lt;br&gt; &lt;br&gt; Option 1 only works if identifierType is email_id (for EMAIL) or contact_id (for ID of the contact),where you can directly pass the value of EMAIL and ID of the contact.   &lt;br&gt;&lt;br&gt; Option 2 works for all identifierType, use email_id for EMAIL attribute, contact_id for ID of the contact, ext_id for EXT_ID attribute, phone_id for SMS attribute, whatsapp_id for WHATSAPP attribute, landline_number_id for LANDLINE_NUMBER attribute.
+   * @param identifier Email (urlencoded) OR ID of the contact OR EXT_ID attribute (urlencoded) (required)
+   * @param identifierType email_id for Email, contact_id for ID of the contact, ext_id for EXT_ID attribute, phone_id for SMS attribute, whatsapp_id for WHATSAPP attribute, landline_number_id for LANDLINE_NUMBER attribute (optional)
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void deleteContact(GetContactInfoIdentifierParameter identifier, Map<String, String> additionalHeaders) throws ApiException {
+  public void deleteContact(@jakarta.annotation.Nonnull GetContactInfoIdentifierParameter identifier, @jakarta.annotation.Nullable String identifierType, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'identifier' is set
@@ -648,6 +651,7 @@ public class ContactsApi extends BaseApi {
     Map<String, String> localVarCookieParams = new HashMap<String, String>();
     Map<String, Object> localVarFormParams = new HashMap<String, Object>();
 
+    localVarQueryParams.addAll(apiClient.parameterToPair("identifierType", identifierType));
     
     localVarHeaderParams.putAll(additionalHeaders);
 
@@ -688,7 +692,7 @@ public class ContactsApi extends BaseApi {
    * @param folderId Id of the folder (required)
    * @throws ApiException if fails to make API call
    */
-  public void deleteFolder(Long folderId) throws ApiException {
+  public void deleteFolder(@jakarta.annotation.Nonnull Long folderId) throws ApiException {
     this.deleteFolder(folderId, Collections.emptyMap());
   }
 
@@ -700,7 +704,7 @@ public class ContactsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void deleteFolder(Long folderId, Map<String, String> additionalHeaders) throws ApiException {
+  public void deleteFolder(@jakarta.annotation.Nonnull Long folderId, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'folderId' is set
@@ -760,7 +764,7 @@ public class ContactsApi extends BaseApi {
    * @param listId Id of the list (required)
    * @throws ApiException if fails to make API call
    */
-  public void deleteList(Long listId) throws ApiException {
+  public void deleteList(@jakarta.annotation.Nonnull Long listId) throws ApiException {
     this.deleteList(listId, Collections.emptyMap());
   }
 
@@ -772,7 +776,7 @@ public class ContactsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void deleteList(Long listId, Map<String, String> additionalHeaders) throws ApiException {
+  public void deleteList(@jakarta.annotation.Nonnull Long listId, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'listId' is set
@@ -783,6 +787,94 @@ public class ContactsApi extends BaseApi {
     // create path and map variables
     String localVarPath = "/contacts/lists/{listId}"
       .replaceAll("\\{" + "listId" + "\\}", apiClient.escapeString(apiClient.parameterToString(listId)));
+
+    StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
+    String localVarQueryParameterBaseName;
+    List<Pair> localVarQueryParams = new ArrayList<Pair>();
+    List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+    Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+    Map<String, String> localVarCookieParams = new HashMap<String, String>();
+    Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+    
+    localVarHeaderParams.putAll(additionalHeaders);
+
+    
+    
+    final String[] localVarAccepts = {
+      "application/json"
+    };
+    final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+
+    final String[] localVarContentTypes = {
+      
+    };
+    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+    String[] localVarAuthNames = new String[] { "api-key" };
+
+    apiClient.invokeAPI(
+        localVarPath,
+        "DELETE",
+        localVarQueryParams,
+        localVarCollectionQueryParams,
+        localVarQueryStringJoiner.toString(),
+        localVarPostBody,
+        localVarHeaderParams,
+        localVarCookieParams,
+        localVarFormParams,
+        localVarAccept,
+        localVarContentType,
+        localVarAuthNames,
+        null
+    );
+  }
+
+  /**
+   * Delete a multiple-choice attribute option
+   * 
+   * @param attributeType Type of the attribute (required)
+   * @param multipleChoiceAttribute Name of the existing muliple-choice attribute (required)
+   * @param multipleChoiceAttributeOption Name of the existing multiple-choice attribute option that you want to delete (required)
+   * @throws ApiException if fails to make API call
+   */
+  public void deleteMultiAttributeOptions(@jakarta.annotation.Nonnull String attributeType, @jakarta.annotation.Nonnull String multipleChoiceAttribute, @jakarta.annotation.Nonnull String multipleChoiceAttributeOption) throws ApiException {
+    this.deleteMultiAttributeOptions(attributeType, multipleChoiceAttribute, multipleChoiceAttributeOption, Collections.emptyMap());
+  }
+
+
+  /**
+   * Delete a multiple-choice attribute option
+   * 
+   * @param attributeType Type of the attribute (required)
+   * @param multipleChoiceAttribute Name of the existing muliple-choice attribute (required)
+   * @param multipleChoiceAttributeOption Name of the existing multiple-choice attribute option that you want to delete (required)
+   * @param additionalHeaders additionalHeaders for this call
+   * @throws ApiException if fails to make API call
+   */
+  public void deleteMultiAttributeOptions(@jakarta.annotation.Nonnull String attributeType, @jakarta.annotation.Nonnull String multipleChoiceAttribute, @jakarta.annotation.Nonnull String multipleChoiceAttributeOption, Map<String, String> additionalHeaders) throws ApiException {
+    Object localVarPostBody = null;
+    
+    // verify the required parameter 'attributeType' is set
+    if (attributeType == null) {
+      throw new ApiException(400, "Missing the required parameter 'attributeType' when calling deleteMultiAttributeOptions");
+    }
+    
+    // verify the required parameter 'multipleChoiceAttribute' is set
+    if (multipleChoiceAttribute == null) {
+      throw new ApiException(400, "Missing the required parameter 'multipleChoiceAttribute' when calling deleteMultiAttributeOptions");
+    }
+    
+    // verify the required parameter 'multipleChoiceAttributeOption' is set
+    if (multipleChoiceAttributeOption == null) {
+      throw new ApiException(400, "Missing the required parameter 'multipleChoiceAttributeOption' when calling deleteMultiAttributeOptions");
+    }
+    
+    // create path and map variables
+    String localVarPath = "/contacts/attributes/{attributeType}/{multipleChoiceAttribute}/{multipleChoiceAttributeOption}"
+      .replaceAll("\\{" + "attributeType" + "\\}", apiClient.escapeString(apiClient.parameterToString(attributeType)))
+      .replaceAll("\\{" + "multipleChoiceAttribute" + "\\}", apiClient.escapeString(apiClient.parameterToString(multipleChoiceAttribute)))
+      .replaceAll("\\{" + "multipleChoiceAttributeOption" + "\\}", apiClient.escapeString(apiClient.parameterToString(multipleChoiceAttributeOption)));
 
     StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
     String localVarQueryParameterBaseName;
@@ -895,29 +987,31 @@ public class ContactsApi extends BaseApi {
 
   /**
    * Get a contact&#39;s details
-   * Along with the contact details, this endpoint will show the statistics of contact for the recent 90 days by default. To fetch the earlier statistics, please use Get contact campaign stats &#x60;&#x60;https://developers.brevo.com/reference/contacts-7#getcontactstats&#x60;&#x60; endpoint with the appropriate date ranges.
-   * @param identifier Email (urlencoded) OR ID of the contact OR its SMS attribute value (required)
+   * There are 2 ways to get a contact &lt;br&gt;&lt;br&gt; Option 1- https://api.brevo.com/v3/contacts/{identifier} &lt;br&gt;&lt;br&gt; Option 2- https://api.brevo.com/v3/contacts/{identifier}?identifierType&#x3D;{} &lt;br&gt; &lt;br&gt; Option 1 only works if identifierType is email_id (for EMAIL), phone_id (for SMS) or contact_id (for ID of the contact),where you can directly pass the value of EMAIL, SMS and ID of the contact.   &lt;br&gt;&lt;br&gt; Option 2 works for all identifierType, use email_id for EMAIL attribute, phone_id for SMS attribute, contact_id for ID of the contact, ext_id for EXT_ID attribute, whatsapp_id for WHATSAPP attribute, landline_number_id for LANDLINE_NUMBER attribute &lt;br&gt;&lt;br&gt;Along with the contact details, this endpoint will show the statistics of contact for the recent 90 days by default. To fetch the earlier statistics, please use Get contact campaign stats &#x60;&#x60;https://developers.brevo.com/reference/contacts-7#getcontactstats&#x60;&#x60; endpoint with the appropriate date ranges.
+   * @param identifier Email (urlencoded) OR ID of the contact OR its SMS attribute value OR EXT_ID attribute (urlencoded) (required)
+   * @param identifierType email_id for Email, phone_id for SMS attribute, contact_id for ID of the contact, ext_id for EXT_ID attribute, whatsapp_id for WHATSAPP attribute, landline_number_id for LANDLINE_NUMBER attribute (optional)
    * @param startDate **Mandatory if endDate is used.** Starting date (YYYY-MM-DD) of the statistic events specific to campaigns. Must be lower than equal to endDate  (optional)
    * @param endDate **Mandatory if startDate is used.** Ending date (YYYY-MM-DD) of the statistic events specific to campaigns. Must be greater than equal to startDate.  (optional)
    * @return GetExtendedContactDetails
    * @throws ApiException if fails to make API call
    */
-  public GetExtendedContactDetails getContactInfo(GetContactInfoIdentifierParameter identifier, String startDate, String endDate) throws ApiException {
-    return this.getContactInfo(identifier, startDate, endDate, Collections.emptyMap());
+  public GetExtendedContactDetails getContactInfo(@jakarta.annotation.Nonnull GetContactInfoIdentifierParameter identifier, @jakarta.annotation.Nullable String identifierType, @jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate) throws ApiException {
+    return this.getContactInfo(identifier, identifierType, startDate, endDate, Collections.emptyMap());
   }
 
 
   /**
    * Get a contact&#39;s details
-   * Along with the contact details, this endpoint will show the statistics of contact for the recent 90 days by default. To fetch the earlier statistics, please use Get contact campaign stats &#x60;&#x60;https://developers.brevo.com/reference/contacts-7#getcontactstats&#x60;&#x60; endpoint with the appropriate date ranges.
-   * @param identifier Email (urlencoded) OR ID of the contact OR its SMS attribute value (required)
+   * There are 2 ways to get a contact &lt;br&gt;&lt;br&gt; Option 1- https://api.brevo.com/v3/contacts/{identifier} &lt;br&gt;&lt;br&gt; Option 2- https://api.brevo.com/v3/contacts/{identifier}?identifierType&#x3D;{} &lt;br&gt; &lt;br&gt; Option 1 only works if identifierType is email_id (for EMAIL), phone_id (for SMS) or contact_id (for ID of the contact),where you can directly pass the value of EMAIL, SMS and ID of the contact.   &lt;br&gt;&lt;br&gt; Option 2 works for all identifierType, use email_id for EMAIL attribute, phone_id for SMS attribute, contact_id for ID of the contact, ext_id for EXT_ID attribute, whatsapp_id for WHATSAPP attribute, landline_number_id for LANDLINE_NUMBER attribute &lt;br&gt;&lt;br&gt;Along with the contact details, this endpoint will show the statistics of contact for the recent 90 days by default. To fetch the earlier statistics, please use Get contact campaign stats &#x60;&#x60;https://developers.brevo.com/reference/contacts-7#getcontactstats&#x60;&#x60; endpoint with the appropriate date ranges.
+   * @param identifier Email (urlencoded) OR ID of the contact OR its SMS attribute value OR EXT_ID attribute (urlencoded) (required)
+   * @param identifierType email_id for Email, phone_id for SMS attribute, contact_id for ID of the contact, ext_id for EXT_ID attribute, whatsapp_id for WHATSAPP attribute, landline_number_id for LANDLINE_NUMBER attribute (optional)
    * @param startDate **Mandatory if endDate is used.** Starting date (YYYY-MM-DD) of the statistic events specific to campaigns. Must be lower than equal to endDate  (optional)
    * @param endDate **Mandatory if startDate is used.** Ending date (YYYY-MM-DD) of the statistic events specific to campaigns. Must be greater than equal to startDate.  (optional)
    * @param additionalHeaders additionalHeaders for this call
    * @return GetExtendedContactDetails
    * @throws ApiException if fails to make API call
    */
-  public GetExtendedContactDetails getContactInfo(GetContactInfoIdentifierParameter identifier, String startDate, String endDate, Map<String, String> additionalHeaders) throws ApiException {
+  public GetExtendedContactDetails getContactInfo(@jakarta.annotation.Nonnull GetContactInfoIdentifierParameter identifier, @jakarta.annotation.Nullable String identifierType, @jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'identifier' is set
@@ -937,6 +1031,7 @@ public class ContactsApi extends BaseApi {
     Map<String, String> localVarCookieParams = new HashMap<String, String>();
     Map<String, Object> localVarFormParams = new HashMap<String, Object>();
 
+    localVarQueryParams.addAll(apiClient.parameterToPair("identifierType", identifierType));
     localVarQueryParams.addAll(apiClient.parameterToPair("startDate", startDate));
     localVarQueryParams.addAll(apiClient.parameterToPair("endDate", endDate));
     
@@ -983,7 +1078,7 @@ public class ContactsApi extends BaseApi {
    * @return GetContactCampaignStats
    * @throws ApiException if fails to make API call
    */
-  public GetContactCampaignStats getContactStats(GetContactInfoIdentifierParameter identifier, String startDate, String endDate) throws ApiException {
+  public GetContactCampaignStats getContactStats(@jakarta.annotation.Nonnull GetContactInfoIdentifierParameter identifier, @jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate) throws ApiException {
     return this.getContactStats(identifier, startDate, endDate, Collections.emptyMap());
   }
 
@@ -998,7 +1093,7 @@ public class ContactsApi extends BaseApi {
    * @return GetContactCampaignStats
    * @throws ApiException if fails to make API call
    */
-  public GetContactCampaignStats getContactStats(GetContactInfoIdentifierParameter identifier, String startDate, String endDate, Map<String, String> additionalHeaders) throws ApiException {
+  public GetContactCampaignStats getContactStats(@jakarta.annotation.Nonnull GetContactInfoIdentifierParameter identifier, @jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'identifier' is set
@@ -1065,11 +1160,12 @@ public class ContactsApi extends BaseApi {
    * @param sort Sort the results in the ascending/descending order of record creation. Default order is **descending** if &#x60;sort&#x60; is not passed (optional, default to desc)
    * @param segmentId Id of the segment. **Either listIds or segmentId can be passed.** (optional)
    * @param listIds Ids of the list. **Either listIds or segmentId can be passed.** (optional)
+   * @param filter Filter the contacts on the basis of attributes. **Allowed operator: equals. For multiple-choice options, the filter will apply an AND condition between the options. For category attributes, the filter will work with both id and value. (e.g. filter&#x3D;equals(FIRSTNAME,\&quot;Antoine\&quot;), filter&#x3D;equals(B1, true), filter&#x3D;equals(DOB, \&quot;1989-11-23\&quot;), filter&#x3D;equals(GENDER, \&quot;1\&quot;), filter&#x3D;equals(GENDER, \&quot;MALE\&quot;), filter&#x3D;equals(COUNTRY,\&quot;USA, INDIA\&quot;)**  (optional)
    * @return GetContacts
    * @throws ApiException if fails to make API call
    */
-  public GetContacts getContacts(Long limit, Long offset, String modifiedSince, String createdSince, String sort, Long segmentId, List<Long> listIds) throws ApiException {
-    return this.getContacts(limit, offset, modifiedSince, createdSince, sort, segmentId, listIds, Collections.emptyMap());
+  public GetContacts getContacts(@jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String modifiedSince, @jakarta.annotation.Nullable String createdSince, @jakarta.annotation.Nullable String sort, @jakarta.annotation.Nullable Long segmentId, @jakarta.annotation.Nullable List<Long> listIds, @jakarta.annotation.Nullable String filter) throws ApiException {
+    return this.getContacts(limit, offset, modifiedSince, createdSince, sort, segmentId, listIds, filter, Collections.emptyMap());
   }
 
 
@@ -1083,11 +1179,12 @@ public class ContactsApi extends BaseApi {
    * @param sort Sort the results in the ascending/descending order of record creation. Default order is **descending** if &#x60;sort&#x60; is not passed (optional, default to desc)
    * @param segmentId Id of the segment. **Either listIds or segmentId can be passed.** (optional)
    * @param listIds Ids of the list. **Either listIds or segmentId can be passed.** (optional)
+   * @param filter Filter the contacts on the basis of attributes. **Allowed operator: equals. For multiple-choice options, the filter will apply an AND condition between the options. For category attributes, the filter will work with both id and value. (e.g. filter&#x3D;equals(FIRSTNAME,\&quot;Antoine\&quot;), filter&#x3D;equals(B1, true), filter&#x3D;equals(DOB, \&quot;1989-11-23\&quot;), filter&#x3D;equals(GENDER, \&quot;1\&quot;), filter&#x3D;equals(GENDER, \&quot;MALE\&quot;), filter&#x3D;equals(COUNTRY,\&quot;USA, INDIA\&quot;)**  (optional)
    * @param additionalHeaders additionalHeaders for this call
    * @return GetContacts
    * @throws ApiException if fails to make API call
    */
-  public GetContacts getContacts(Long limit, Long offset, String modifiedSince, String createdSince, String sort, Long segmentId, List<Long> listIds, Map<String, String> additionalHeaders) throws ApiException {
+  public GetContacts getContacts(@jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String modifiedSince, @jakarta.annotation.Nullable String createdSince, @jakarta.annotation.Nullable String sort, @jakarta.annotation.Nullable Long segmentId, @jakarta.annotation.Nullable List<Long> listIds, @jakarta.annotation.Nullable String filter, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -1108,6 +1205,7 @@ public class ContactsApi extends BaseApi {
     localVarQueryParams.addAll(apiClient.parameterToPair("sort", sort));
     localVarQueryParams.addAll(apiClient.parameterToPair("segmentId", segmentId));
     localVarCollectionQueryParams.addAll(apiClient.parameterToPairs("multi", "listIds", listIds));
+    localVarQueryParams.addAll(apiClient.parameterToPair("filter", filter));
     
     localVarHeaderParams.putAll(additionalHeaders);
 
@@ -1154,7 +1252,7 @@ public class ContactsApi extends BaseApi {
    * @return GetContacts
    * @throws ApiException if fails to make API call
    */
-  public GetContacts getContactsFromList(Long listId, String modifiedSince, Long limit, Long offset, String sort) throws ApiException {
+  public GetContacts getContactsFromList(@jakarta.annotation.Nonnull Long listId, @jakarta.annotation.Nullable String modifiedSince, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String sort) throws ApiException {
     return this.getContactsFromList(listId, modifiedSince, limit, offset, sort, Collections.emptyMap());
   }
 
@@ -1171,7 +1269,7 @@ public class ContactsApi extends BaseApi {
    * @return GetContacts
    * @throws ApiException if fails to make API call
    */
-  public GetContacts getContactsFromList(Long listId, String modifiedSince, Long limit, Long offset, String sort, Map<String, String> additionalHeaders) throws ApiException {
+  public GetContacts getContactsFromList(@jakarta.annotation.Nonnull Long listId, @jakarta.annotation.Nullable String modifiedSince, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String sort, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'listId' is set
@@ -1237,7 +1335,7 @@ public class ContactsApi extends BaseApi {
    * @return GetFolder
    * @throws ApiException if fails to make API call
    */
-  public GetFolder getFolder(Long folderId) throws ApiException {
+  public GetFolder getFolder(@jakarta.annotation.Nonnull Long folderId) throws ApiException {
     return this.getFolder(folderId, Collections.emptyMap());
   }
 
@@ -1250,7 +1348,7 @@ public class ContactsApi extends BaseApi {
    * @return GetFolder
    * @throws ApiException if fails to make API call
    */
-  public GetFolder getFolder(Long folderId, Map<String, String> additionalHeaders) throws ApiException {
+  public GetFolder getFolder(@jakarta.annotation.Nonnull Long folderId, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'folderId' is set
@@ -1315,7 +1413,7 @@ public class ContactsApi extends BaseApi {
    * @return GetFolderLists
    * @throws ApiException if fails to make API call
    */
-  public GetFolderLists getFolderLists(Long folderId, Long limit, Long offset, String sort) throws ApiException {
+  public GetFolderLists getFolderLists(@jakarta.annotation.Nonnull Long folderId, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String sort) throws ApiException {
     return this.getFolderLists(folderId, limit, offset, sort, Collections.emptyMap());
   }
 
@@ -1331,7 +1429,7 @@ public class ContactsApi extends BaseApi {
    * @return GetFolderLists
    * @throws ApiException if fails to make API call
    */
-  public GetFolderLists getFolderLists(Long folderId, Long limit, Long offset, String sort, Map<String, String> additionalHeaders) throws ApiException {
+  public GetFolderLists getFolderLists(@jakarta.annotation.Nonnull Long folderId, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String sort, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'folderId' is set
@@ -1392,13 +1490,13 @@ public class ContactsApi extends BaseApi {
   /**
    * Get all folders
    * 
-   * @param limit Number of documents per page (required)
-   * @param offset Index of the first document of the page (required)
+   * @param limit Number of documents per page (optional, default to 10)
+   * @param offset Index of the first document of the page (optional, default to 0)
    * @param sort Sort the results in the ascending/descending order of record creation. Default order is **descending** if &#x60;sort&#x60; is not passed (optional, default to desc)
    * @return GetFolders
    * @throws ApiException if fails to make API call
    */
-  public GetFolders getFolders(Long limit, Long offset, String sort) throws ApiException {
+  public GetFolders getFolders(@jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String sort) throws ApiException {
     return this.getFolders(limit, offset, sort, Collections.emptyMap());
   }
 
@@ -1406,25 +1504,15 @@ public class ContactsApi extends BaseApi {
   /**
    * Get all folders
    * 
-   * @param limit Number of documents per page (required)
-   * @param offset Index of the first document of the page (required)
+   * @param limit Number of documents per page (optional, default to 10)
+   * @param offset Index of the first document of the page (optional, default to 0)
    * @param sort Sort the results in the ascending/descending order of record creation. Default order is **descending** if &#x60;sort&#x60; is not passed (optional, default to desc)
    * @param additionalHeaders additionalHeaders for this call
    * @return GetFolders
    * @throws ApiException if fails to make API call
    */
-  public GetFolders getFolders(Long limit, Long offset, String sort, Map<String, String> additionalHeaders) throws ApiException {
+  public GetFolders getFolders(@jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String sort, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
-    
-    // verify the required parameter 'limit' is set
-    if (limit == null) {
-      throw new ApiException(400, "Missing the required parameter 'limit' when calling getFolders");
-    }
-    
-    // verify the required parameter 'offset' is set
-    if (offset == null) {
-      throw new ApiException(400, "Missing the required parameter 'offset' when calling getFolders");
-    }
     
     // create path and map variables
     String localVarPath = "/contacts/folders";
@@ -1484,7 +1572,7 @@ public class ContactsApi extends BaseApi {
    * @return GetExtendedList
    * @throws ApiException if fails to make API call
    */
-  public GetExtendedList getList(Long listId, String startDate, String endDate) throws ApiException {
+  public GetExtendedList getList(@jakarta.annotation.Nonnull Long listId, @jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate) throws ApiException {
     return this.getList(listId, startDate, endDate, Collections.emptyMap());
   }
 
@@ -1499,7 +1587,7 @@ public class ContactsApi extends BaseApi {
    * @return GetExtendedList
    * @throws ApiException if fails to make API call
    */
-  public GetExtendedList getList(Long listId, String startDate, String endDate, Map<String, String> additionalHeaders) throws ApiException {
+  public GetExtendedList getList(@jakarta.annotation.Nonnull Long listId, @jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'listId' is set
@@ -1565,7 +1653,7 @@ public class ContactsApi extends BaseApi {
    * @return GetLists
    * @throws ApiException if fails to make API call
    */
-  public GetLists getLists(Long limit, Long offset, String sort) throws ApiException {
+  public GetLists getLists(@jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String sort) throws ApiException {
     return this.getLists(limit, offset, sort, Collections.emptyMap());
   }
 
@@ -1580,7 +1668,7 @@ public class ContactsApi extends BaseApi {
    * @return GetLists
    * @throws ApiException if fails to make API call
    */
-  public GetLists getLists(Long limit, Long offset, String sort, Map<String, String> additionalHeaders) throws ApiException {
+  public GetLists getLists(@jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String sort, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -1641,7 +1729,7 @@ public class ContactsApi extends BaseApi {
    * @return GetSegments
    * @throws ApiException if fails to make API call
    */
-  public GetSegments getSegments(Long limit, Long offset, String sort) throws ApiException {
+  public GetSegments getSegments(@jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String sort) throws ApiException {
     return this.getSegments(limit, offset, sort, Collections.emptyMap());
   }
 
@@ -1656,7 +1744,7 @@ public class ContactsApi extends BaseApi {
    * @return GetSegments
    * @throws ApiException if fails to make API call
    */
-  public GetSegments getSegments(Long limit, Long offset, String sort, Map<String, String> additionalHeaders) throws ApiException {
+  public GetSegments getSegments(@jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String sort, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -1710,25 +1798,25 @@ public class ContactsApi extends BaseApi {
 
   /**
    * Import contacts
-   * It returns the background process ID which on completion calls the notify URL that you have set in the input.
+   * It returns the background process ID which on completion calls the notify URL that you have set in the input.  **Note**: - Any contact attribute that doesn&#39;t exist in your account will be ignored at import end. 
    * @param requestContactImport Values to import contacts in Brevo. To know more about the expected format, please have a look at &#x60;&#x60;https://help.brevo.com/hc/en-us/articles/209499265-Build-contacts-lists-for-your-email-marketing-campaigns&#x60;&#x60; (required)
    * @return CreatedProcessId
    * @throws ApiException if fails to make API call
    */
-  public CreatedProcessId importContacts(RequestContactImport requestContactImport) throws ApiException {
+  public CreatedProcessId importContacts(@jakarta.annotation.Nonnull RequestContactImport requestContactImport) throws ApiException {
     return this.importContacts(requestContactImport, Collections.emptyMap());
   }
 
 
   /**
    * Import contacts
-   * It returns the background process ID which on completion calls the notify URL that you have set in the input.
+   * It returns the background process ID which on completion calls the notify URL that you have set in the input.  **Note**: - Any contact attribute that doesn&#39;t exist in your account will be ignored at import end. 
    * @param requestContactImport Values to import contacts in Brevo. To know more about the expected format, please have a look at &#x60;&#x60;https://help.brevo.com/hc/en-us/articles/209499265-Build-contacts-lists-for-your-email-marketing-campaigns&#x60;&#x60; (required)
    * @param additionalHeaders additionalHeaders for this call
    * @return CreatedProcessId
    * @throws ApiException if fails to make API call
    */
-  public CreatedProcessId importContacts(RequestContactImport requestContactImport, Map<String, String> additionalHeaders) throws ApiException {
+  public CreatedProcessId importContacts(@jakarta.annotation.Nonnull RequestContactImport requestContactImport, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = requestContactImport;
     
     // verify the required parameter 'requestContactImport' is set
@@ -1786,11 +1874,11 @@ public class ContactsApi extends BaseApi {
    * Delete a contact from a list
    * 
    * @param listId Id of the list (required)
-   * @param contactEmails Emails adresses OR IDs of the contacts OR &#39;all&#39; true (required)
+   * @param contactEmails Emails adresses OR IDs OR EXT_ID attributes of the contacts OR &#39;all&#39; true (required)
    * @return PostContactInfo
    * @throws ApiException if fails to make API call
    */
-  public PostContactInfo removeContactFromList(Long listId, RemoveContactFromListRequest contactEmails) throws ApiException {
+  public PostContactInfo removeContactFromList(@jakarta.annotation.Nonnull Long listId, @jakarta.annotation.Nonnull RemoveContactFromListRequest contactEmails) throws ApiException {
     return this.removeContactFromList(listId, contactEmails, Collections.emptyMap());
   }
 
@@ -1799,12 +1887,12 @@ public class ContactsApi extends BaseApi {
    * Delete a contact from a list
    * 
    * @param listId Id of the list (required)
-   * @param contactEmails Emails adresses OR IDs of the contacts OR &#39;all&#39; true (required)
+   * @param contactEmails Emails adresses OR IDs OR EXT_ID attributes of the contacts OR &#39;all&#39; true (required)
    * @param additionalHeaders additionalHeaders for this call
    * @return PostContactInfo
    * @throws ApiException if fails to make API call
    */
-  public PostContactInfo removeContactFromList(Long listId, RemoveContactFromListRequest contactEmails, Map<String, String> additionalHeaders) throws ApiException {
+  public PostContactInfo removeContactFromList(@jakarta.annotation.Nonnull Long listId, @jakarta.annotation.Nonnull RemoveContactFromListRequest contactEmails, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = contactEmails;
     
     // verify the required parameter 'listId' is set
@@ -1871,7 +1959,7 @@ public class ContactsApi extends BaseApi {
    * @return CreatedProcessId
    * @throws ApiException if fails to make API call
    */
-  public CreatedProcessId requestContactExport(RequestContactExport requestContactExport) throws ApiException {
+  public CreatedProcessId requestContactExport(@jakarta.annotation.Nonnull RequestContactExport requestContactExport) throws ApiException {
     return this.requestContactExport(requestContactExport, Collections.emptyMap());
   }
 
@@ -1884,7 +1972,7 @@ public class ContactsApi extends BaseApi {
    * @return CreatedProcessId
    * @throws ApiException if fails to make API call
    */
-  public CreatedProcessId requestContactExport(RequestContactExport requestContactExport, Map<String, String> additionalHeaders) throws ApiException {
+  public CreatedProcessId requestContactExport(@jakarta.annotation.Nonnull RequestContactExport requestContactExport, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = requestContactExport;
     
     // verify the required parameter 'requestContactExport' is set
@@ -1946,7 +2034,7 @@ public class ContactsApi extends BaseApi {
    * @param updateAttribute Values to update an attribute (required)
    * @throws ApiException if fails to make API call
    */
-  public void updateAttribute(String attributeCategory, String attributeName, UpdateAttribute updateAttribute) throws ApiException {
+  public void updateAttribute(@jakarta.annotation.Nonnull String attributeCategory, @jakarta.annotation.Nonnull String attributeName, @jakarta.annotation.Nonnull UpdateAttribute updateAttribute) throws ApiException {
     this.updateAttribute(attributeCategory, attributeName, updateAttribute, Collections.emptyMap());
   }
 
@@ -1960,7 +2048,7 @@ public class ContactsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void updateAttribute(String attributeCategory, String attributeName, UpdateAttribute updateAttribute, Map<String, String> additionalHeaders) throws ApiException {
+  public void updateAttribute(@jakarta.annotation.Nonnull String attributeCategory, @jakarta.annotation.Nonnull String attributeName, @jakarta.annotation.Nonnull UpdateAttribute updateAttribute, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = updateAttribute;
     
     // verify the required parameter 'attributeCategory' is set
@@ -2031,7 +2119,7 @@ public class ContactsApi extends BaseApi {
    * @param updateBatchContacts Values to update multiple contacts (required)
    * @throws ApiException if fails to make API call
    */
-  public void updateBatchContacts(UpdateBatchContacts updateBatchContacts) throws ApiException {
+  public void updateBatchContacts(@jakarta.annotation.Nonnull UpdateBatchContacts updateBatchContacts) throws ApiException {
     this.updateBatchContacts(updateBatchContacts, Collections.emptyMap());
   }
 
@@ -2043,7 +2131,7 @@ public class ContactsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void updateBatchContacts(UpdateBatchContacts updateBatchContacts, Map<String, String> additionalHeaders) throws ApiException {
+  public void updateBatchContacts(@jakarta.annotation.Nonnull UpdateBatchContacts updateBatchContacts, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = updateBatchContacts;
     
     // verify the required parameter 'updateBatchContacts' is set
@@ -2098,25 +2186,27 @@ public class ContactsApi extends BaseApi {
 
   /**
    * Update a contact
-   * 
-   * @param identifier Email (urlencoded) OR ID of the contact (required)
+   * There are 2 ways to update a contact &lt;br&gt;&lt;br&gt; Option 1- https://api.brevo.com/v3/contacts/{identifier} &lt;br&gt;&lt;br&gt; Option 2- https://api.brevo.com/v3/contacts/{identifier}?identifierType&#x3D;{} &lt;br&gt; &lt;br&gt; Option 1 only works if identifierType is email_id (for EMAIL) or contact_id (for ID of the contact),where you can directly pass the value of EMAIL and ID of the contact.   &lt;br&gt;&lt;br&gt; Option 2 works for all identifierType, use email_id for EMAIL attribute, contact_id for ID of the contact, ext_id for EXT_ID attribute, phone_id for SMS attribute, whatsapp_id for WHATSAPP attribute, landline_number_id for LANDLINE attribute
+   * @param identifier Email (urlencoded) OR ID of the contact OR EXT_ID attribute (urlencoded) OR its SMS attribute value OR its WHATSAPP attribute value OR its LANDLINE attribute value (required)
    * @param updateContact Values to update a contact (required)
+   * @param identifierType email_id for Email, contact_id for ID of the contact, ext_id for EXT_ID attribute, phone_id for SMS attribute, whatsapp_id for WHATSAPP attribute, landline_number_id for LANDLINE attribute (optional)
    * @throws ApiException if fails to make API call
    */
-  public void updateContact(GetContactInfoIdentifierParameter identifier, UpdateContact updateContact) throws ApiException {
-    this.updateContact(identifier, updateContact, Collections.emptyMap());
+  public void updateContact(@jakarta.annotation.Nonnull GetContactInfoIdentifierParameter identifier, @jakarta.annotation.Nonnull UpdateContact updateContact, @jakarta.annotation.Nullable String identifierType) throws ApiException {
+    this.updateContact(identifier, updateContact, identifierType, Collections.emptyMap());
   }
 
 
   /**
    * Update a contact
-   * 
-   * @param identifier Email (urlencoded) OR ID of the contact (required)
+   * There are 2 ways to update a contact &lt;br&gt;&lt;br&gt; Option 1- https://api.brevo.com/v3/contacts/{identifier} &lt;br&gt;&lt;br&gt; Option 2- https://api.brevo.com/v3/contacts/{identifier}?identifierType&#x3D;{} &lt;br&gt; &lt;br&gt; Option 1 only works if identifierType is email_id (for EMAIL) or contact_id (for ID of the contact),where you can directly pass the value of EMAIL and ID of the contact.   &lt;br&gt;&lt;br&gt; Option 2 works for all identifierType, use email_id for EMAIL attribute, contact_id for ID of the contact, ext_id for EXT_ID attribute, phone_id for SMS attribute, whatsapp_id for WHATSAPP attribute, landline_number_id for LANDLINE attribute
+   * @param identifier Email (urlencoded) OR ID of the contact OR EXT_ID attribute (urlencoded) OR its SMS attribute value OR its WHATSAPP attribute value OR its LANDLINE attribute value (required)
    * @param updateContact Values to update a contact (required)
+   * @param identifierType email_id for Email, contact_id for ID of the contact, ext_id for EXT_ID attribute, phone_id for SMS attribute, whatsapp_id for WHATSAPP attribute, landline_number_id for LANDLINE attribute (optional)
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void updateContact(GetContactInfoIdentifierParameter identifier, UpdateContact updateContact, Map<String, String> additionalHeaders) throws ApiException {
+  public void updateContact(@jakarta.annotation.Nonnull GetContactInfoIdentifierParameter identifier, @jakarta.annotation.Nonnull UpdateContact updateContact, @jakarta.annotation.Nullable String identifierType, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = updateContact;
     
     // verify the required parameter 'identifier' is set
@@ -2141,6 +2231,7 @@ public class ContactsApi extends BaseApi {
     Map<String, String> localVarCookieParams = new HashMap<String, String>();
     Map<String, Object> localVarFormParams = new HashMap<String, Object>();
 
+    localVarQueryParams.addAll(apiClient.parameterToPair("identifierType", identifierType));
     
     localVarHeaderParams.putAll(additionalHeaders);
 
@@ -2182,7 +2273,7 @@ public class ContactsApi extends BaseApi {
    * @param updateFolder Name of the folder (required)
    * @throws ApiException if fails to make API call
    */
-  public void updateFolder(Long folderId, CreateUpdateFolder updateFolder) throws ApiException {
+  public void updateFolder(@jakarta.annotation.Nonnull Long folderId, @jakarta.annotation.Nonnull CreateUpdateFolder updateFolder) throws ApiException {
     this.updateFolder(folderId, updateFolder, Collections.emptyMap());
   }
 
@@ -2195,7 +2286,7 @@ public class ContactsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void updateFolder(Long folderId, CreateUpdateFolder updateFolder, Map<String, String> additionalHeaders) throws ApiException {
+  public void updateFolder(@jakarta.annotation.Nonnull Long folderId, @jakarta.annotation.Nonnull CreateUpdateFolder updateFolder, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = updateFolder;
     
     // verify the required parameter 'folderId' is set
@@ -2261,7 +2352,7 @@ public class ContactsApi extends BaseApi {
    * @param updateList Values to update a list (required)
    * @throws ApiException if fails to make API call
    */
-  public void updateList(Long listId, UpdateList updateList) throws ApiException {
+  public void updateList(@jakarta.annotation.Nonnull Long listId, @jakarta.annotation.Nonnull UpdateList updateList) throws ApiException {
     this.updateList(listId, updateList, Collections.emptyMap());
   }
 
@@ -2274,7 +2365,7 @@ public class ContactsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void updateList(Long listId, UpdateList updateList, Map<String, String> additionalHeaders) throws ApiException {
+  public void updateList(@jakarta.annotation.Nonnull Long listId, @jakarta.annotation.Nonnull UpdateList updateList, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = updateList;
     
     // verify the required parameter 'listId' is set

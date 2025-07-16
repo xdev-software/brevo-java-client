@@ -51,7 +51,7 @@ public class ConversationsApi extends BaseApi {
    * @param conversationsAgentOnlinePingPostRequest  (required)
    * @throws ApiException if fails to make API call
    */
-  public void conversationsAgentOnlinePingPost(ConversationsAgentOnlinePingPostRequest conversationsAgentOnlinePingPostRequest) throws ApiException {
+  public void conversationsAgentOnlinePingPost(@jakarta.annotation.Nonnull ConversationsAgentOnlinePingPostRequest conversationsAgentOnlinePingPostRequest) throws ApiException {
     this.conversationsAgentOnlinePingPost(conversationsAgentOnlinePingPostRequest, Collections.emptyMap());
   }
 
@@ -63,7 +63,7 @@ public class ConversationsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void conversationsAgentOnlinePingPost(ConversationsAgentOnlinePingPostRequest conversationsAgentOnlinePingPostRequest, Map<String, String> additionalHeaders) throws ApiException {
+  public void conversationsAgentOnlinePingPost(@jakarta.annotation.Nonnull ConversationsAgentOnlinePingPostRequest conversationsAgentOnlinePingPostRequest, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = conversationsAgentOnlinePingPostRequest;
     
     // verify the required parameter 'conversationsAgentOnlinePingPostRequest' is set
@@ -122,7 +122,7 @@ public class ConversationsApi extends BaseApi {
    * @param id ID of the message (required)
    * @throws ApiException if fails to make API call
    */
-  public void conversationsMessagesIdDelete(String id) throws ApiException {
+  public void conversationsMessagesIdDelete(@jakarta.annotation.Nonnull String id) throws ApiException {
     this.conversationsMessagesIdDelete(id, Collections.emptyMap());
   }
 
@@ -134,7 +134,7 @@ public class ConversationsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void conversationsMessagesIdDelete(String id, Map<String, String> additionalHeaders) throws ApiException {
+  public void conversationsMessagesIdDelete(@jakarta.annotation.Nonnull String id, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'id' is set
@@ -195,7 +195,7 @@ public class ConversationsApi extends BaseApi {
    * @return ConversationsMessage
    * @throws ApiException if fails to make API call
    */
-  public ConversationsMessage conversationsMessagesIdGet(String id) throws ApiException {
+  public ConversationsMessage conversationsMessagesIdGet(@jakarta.annotation.Nonnull String id) throws ApiException {
     return this.conversationsMessagesIdGet(id, Collections.emptyMap());
   }
 
@@ -208,7 +208,7 @@ public class ConversationsApi extends BaseApi {
    * @return ConversationsMessage
    * @throws ApiException if fails to make API call
    */
-  public ConversationsMessage conversationsMessagesIdGet(String id, Map<String, String> additionalHeaders) throws ApiException {
+  public ConversationsMessage conversationsMessagesIdGet(@jakarta.annotation.Nonnull String id, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'id' is set
@@ -271,7 +271,7 @@ public class ConversationsApi extends BaseApi {
    * @return ConversationsMessage
    * @throws ApiException if fails to make API call
    */
-  public ConversationsMessage conversationsMessagesIdPut(String id, ConversationsMessagesIdPutRequest conversationsMessagesIdPutRequest) throws ApiException {
+  public ConversationsMessage conversationsMessagesIdPut(@jakarta.annotation.Nonnull String id, @jakarta.annotation.Nonnull ConversationsMessagesIdPutRequest conversationsMessagesIdPutRequest) throws ApiException {
     return this.conversationsMessagesIdPut(id, conversationsMessagesIdPutRequest, Collections.emptyMap());
   }
 
@@ -285,7 +285,7 @@ public class ConversationsApi extends BaseApi {
    * @return ConversationsMessage
    * @throws ApiException if fails to make API call
    */
-  public ConversationsMessage conversationsMessagesIdPut(String id, ConversationsMessagesIdPutRequest conversationsMessagesIdPutRequest, Map<String, String> additionalHeaders) throws ApiException {
+  public ConversationsMessage conversationsMessagesIdPut(@jakarta.annotation.Nonnull String id, @jakarta.annotation.Nonnull ConversationsMessagesIdPutRequest conversationsMessagesIdPutRequest, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = conversationsMessagesIdPutRequest;
     
     // verify the required parameter 'id' is set
@@ -352,7 +352,7 @@ public class ConversationsApi extends BaseApi {
    * @return ConversationsMessage
    * @throws ApiException if fails to make API call
    */
-  public ConversationsMessage conversationsMessagesPost(ConversationsMessagesPostRequest conversationsMessagesPostRequest) throws ApiException {
+  public ConversationsMessage conversationsMessagesPost(@jakarta.annotation.Nonnull ConversationsMessagesPostRequest conversationsMessagesPostRequest) throws ApiException {
     return this.conversationsMessagesPost(conversationsMessagesPostRequest, Collections.emptyMap());
   }
 
@@ -365,7 +365,7 @@ public class ConversationsApi extends BaseApi {
    * @return ConversationsMessage
    * @throws ApiException if fails to make API call
    */
-  public ConversationsMessage conversationsMessagesPost(ConversationsMessagesPostRequest conversationsMessagesPostRequest, Map<String, String> additionalHeaders) throws ApiException {
+  public ConversationsMessage conversationsMessagesPost(@jakarta.annotation.Nonnull ConversationsMessagesPostRequest conversationsMessagesPostRequest, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = conversationsMessagesPostRequest;
     
     // verify the required parameter 'conversationsMessagesPostRequest' is set
@@ -425,7 +425,7 @@ public class ConversationsApi extends BaseApi {
    * @param id ID of the message (required)
    * @throws ApiException if fails to make API call
    */
-  public void conversationsPushedMessagesIdDelete(String id) throws ApiException {
+  public void conversationsPushedMessagesIdDelete(@jakarta.annotation.Nonnull String id) throws ApiException {
     this.conversationsPushedMessagesIdDelete(id, Collections.emptyMap());
   }
 
@@ -437,7 +437,7 @@ public class ConversationsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void conversationsPushedMessagesIdDelete(String id, Map<String, String> additionalHeaders) throws ApiException {
+  public void conversationsPushedMessagesIdDelete(@jakarta.annotation.Nonnull String id, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'id' is set
@@ -498,7 +498,7 @@ public class ConversationsApi extends BaseApi {
    * @return ConversationsMessage
    * @throws ApiException if fails to make API call
    */
-  public ConversationsMessage conversationsPushedMessagesIdGet(String id) throws ApiException {
+  public ConversationsMessage conversationsPushedMessagesIdGet(@jakarta.annotation.Nonnull String id) throws ApiException {
     return this.conversationsPushedMessagesIdGet(id, Collections.emptyMap());
   }
 
@@ -511,7 +511,7 @@ public class ConversationsApi extends BaseApi {
    * @return ConversationsMessage
    * @throws ApiException if fails to make API call
    */
-  public ConversationsMessage conversationsPushedMessagesIdGet(String id, Map<String, String> additionalHeaders) throws ApiException {
+  public ConversationsMessage conversationsPushedMessagesIdGet(@jakarta.annotation.Nonnull String id, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'id' is set
@@ -574,7 +574,7 @@ public class ConversationsApi extends BaseApi {
    * @return ConversationsMessage
    * @throws ApiException if fails to make API call
    */
-  public ConversationsMessage conversationsPushedMessagesIdPut(String id, ConversationsMessagesIdPutRequest conversationsMessagesIdPutRequest) throws ApiException {
+  public ConversationsMessage conversationsPushedMessagesIdPut(@jakarta.annotation.Nonnull String id, @jakarta.annotation.Nonnull ConversationsMessagesIdPutRequest conversationsMessagesIdPutRequest) throws ApiException {
     return this.conversationsPushedMessagesIdPut(id, conversationsMessagesIdPutRequest, Collections.emptyMap());
   }
 
@@ -588,7 +588,7 @@ public class ConversationsApi extends BaseApi {
    * @return ConversationsMessage
    * @throws ApiException if fails to make API call
    */
-  public ConversationsMessage conversationsPushedMessagesIdPut(String id, ConversationsMessagesIdPutRequest conversationsMessagesIdPutRequest, Map<String, String> additionalHeaders) throws ApiException {
+  public ConversationsMessage conversationsPushedMessagesIdPut(@jakarta.annotation.Nonnull String id, @jakarta.annotation.Nonnull ConversationsMessagesIdPutRequest conversationsMessagesIdPutRequest, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = conversationsMessagesIdPutRequest;
     
     // verify the required parameter 'id' is set
@@ -655,7 +655,7 @@ public class ConversationsApi extends BaseApi {
    * @return ConversationsMessage
    * @throws ApiException if fails to make API call
    */
-  public ConversationsMessage conversationsPushedMessagesPost(ConversationsPushedMessagesPostRequest conversationsPushedMessagesPostRequest) throws ApiException {
+  public ConversationsMessage conversationsPushedMessagesPost(@jakarta.annotation.Nonnull ConversationsPushedMessagesPostRequest conversationsPushedMessagesPostRequest) throws ApiException {
     return this.conversationsPushedMessagesPost(conversationsPushedMessagesPostRequest, Collections.emptyMap());
   }
 
@@ -668,7 +668,7 @@ public class ConversationsApi extends BaseApi {
    * @return ConversationsMessage
    * @throws ApiException if fails to make API call
    */
-  public ConversationsMessage conversationsPushedMessagesPost(ConversationsPushedMessagesPostRequest conversationsPushedMessagesPostRequest, Map<String, String> additionalHeaders) throws ApiException {
+  public ConversationsMessage conversationsPushedMessagesPost(@jakarta.annotation.Nonnull ConversationsPushedMessagesPostRequest conversationsPushedMessagesPostRequest, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = conversationsPushedMessagesPostRequest;
     
     // verify the required parameter 'conversationsPushedMessagesPostRequest' is set

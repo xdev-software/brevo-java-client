@@ -34,7 +34,8 @@ import java.util.StringJoiner;
   CreateUpdateCategory.JSON_PROPERTY_NAME,
   CreateUpdateCategory.JSON_PROPERTY_URL,
   CreateUpdateCategory.JSON_PROPERTY_UPDATE_ENABLED,
-  CreateUpdateCategory.JSON_PROPERTY_DELETED_AT
+  CreateUpdateCategory.JSON_PROPERTY_DELETED_AT,
+  CreateUpdateCategory.JSON_PROPERTY_IS_DELETED
 })
 @JsonTypeName("createUpdateCategory")
 public class CreateUpdateCategory {
@@ -57,6 +58,10 @@ public class CreateUpdateCategory {
   public static final String JSON_PROPERTY_DELETED_AT = "deletedAt";
   @jakarta.annotation.Nullable
   private String deletedAt;
+
+  public static final String JSON_PROPERTY_IS_DELETED = "isDeleted";
+  @jakarta.annotation.Nullable
+  private Boolean isDeleted;
 
   public CreateUpdateCategory() {
   }
@@ -186,6 +191,31 @@ public class CreateUpdateCategory {
     this.deletedAt = deletedAt;
   }
 
+  public CreateUpdateCategory isDeleted(@jakarta.annotation.Nullable Boolean isDeleted) {
+    
+    this.isDeleted = isDeleted;
+    return this;
+  }
+
+  /**
+   * category deleted from the shop&#39;s database
+   * @return isDeleted
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_IS_DELETED)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public Boolean getIsDeleted() {
+    return isDeleted;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_IS_DELETED)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setIsDeleted(@jakarta.annotation.Nullable Boolean isDeleted) {
+    this.isDeleted = isDeleted;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -199,12 +229,13 @@ public class CreateUpdateCategory {
         Objects.equals(this.name, createUpdateCategory.name) &&
         Objects.equals(this.url, createUpdateCategory.url) &&
         Objects.equals(this.updateEnabled, createUpdateCategory.updateEnabled) &&
-        Objects.equals(this.deletedAt, createUpdateCategory.deletedAt);
+        Objects.equals(this.deletedAt, createUpdateCategory.deletedAt) &&
+        Objects.equals(this.isDeleted, createUpdateCategory.isDeleted);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, name, url, updateEnabled, deletedAt);
+    return Objects.hash(id, name, url, updateEnabled, deletedAt, isDeleted);
   }
 
   @Override
@@ -216,6 +247,7 @@ public class CreateUpdateCategory {
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("    updateEnabled: ").append(toIndentedString(updateEnabled)).append("\n");
     sb.append("    deletedAt: ").append(toIndentedString(deletedAt)).append("\n");
+    sb.append("    isDeleted: ").append(toIndentedString(isDeleted)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -307,6 +339,16 @@ public class CreateUpdateCategory {
     if (getDeletedAt() != null) {
       try {
         joiner.add(String.format("%sdeletedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDeletedAt()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `isDeleted` to the URL query string
+    if (getIsDeleted() != null) {
+      try {
+        joiner.add(String.format("%sisDeleted%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsDeleted()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

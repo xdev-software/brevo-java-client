@@ -52,8 +52,6 @@ public class InviteuserPrivilegesInner {
     
     WORKFLOWS(String.valueOf("workflows")),
     
-    FACEBOOK_ADS(String.valueOf("facebook_ads")),
-    
     LANDING_PAGES(String.valueOf("landing_pages")),
     
     TRANSACTIONAL_EMAILS(String.valueOf("transactional_emails")),
@@ -70,7 +68,9 @@ public class InviteuserPrivilegesInner {
     
     SENDERS_DOMAINS_DEDICATED_IPS(String.valueOf("senders_domains_dedicated_ips")),
     
-    PUSH_NOTIFICATIONS(String.valueOf("push_notifications"));
+    PUSH_NOTIFICATIONS(String.valueOf("push_notifications")),
+    
+    COMPANIES(String.valueOf("companies"));
 
     private String value;
 
@@ -139,9 +139,15 @@ public class InviteuserPrivilegesInner {
     
     CONFIGURE(String.valueOf("configure")),
     
-    MANAGE_OWNED_DEALS_TASKS_COMPANIES(String.valueOf("manage_owned_deals_tasks_companies")),
+    CREATE_EDIT_DEALS(String.valueOf("create_edit_deals")),
     
-    MANAGE_OTHERS_DEALS_TASKS_COMPANIES(String.valueOf("manage_others_deals_tasks_companies")),
+    DELETE_DEALS(String.valueOf("delete_deals")),
+    
+    MANAGE_OTHERS_DEALS_TASKS(String.valueOf("manage_others_deals_tasks")),
+    
+    MANAGE_OWNED_COMPANIES(String.valueOf("manage_owned_companies")),
+    
+    MANAGE_OTHERS_COMPANIES(String.valueOf("manage_others_companies")),
     
     REPORTS(String.valueOf("reports")),
     

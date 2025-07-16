@@ -23,8 +23,12 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import software.xdev.brevo.model.OrderBilling;
+import software.xdev.brevo.model.OrderIdentifiers;
+import software.xdev.brevo.model.OrderMetaInfoValue;
 import software.xdev.brevo.model.OrderProductsInner;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -41,10 +45,12 @@ import java.util.StringJoiner;
   Order.JSON_PROPERTY_UPDATED_AT,
   Order.JSON_PROPERTY_STATUS,
   Order.JSON_PROPERTY_AMOUNT,
+  Order.JSON_PROPERTY_STORE_ID,
+  Order.JSON_PROPERTY_IDENTIFIERS,
   Order.JSON_PROPERTY_PRODUCTS,
-  Order.JSON_PROPERTY_EMAIL,
   Order.JSON_PROPERTY_BILLING,
-  Order.JSON_PROPERTY_COUPONS
+  Order.JSON_PROPERTY_COUPONS,
+  Order.JSON_PROPERTY_META_INFO
 })
 @JsonTypeName("order")
 public class Order {
@@ -68,13 +74,17 @@ public class Order {
   @jakarta.annotation.Nonnull
   private BigDecimal amount;
 
+  public static final String JSON_PROPERTY_STORE_ID = "storeId";
+  @jakarta.annotation.Nullable
+  private String storeId;
+
+  public static final String JSON_PROPERTY_IDENTIFIERS = "identifiers";
+  @jakarta.annotation.Nullable
+  private OrderIdentifiers identifiers;
+
   public static final String JSON_PROPERTY_PRODUCTS = "products";
   @jakarta.annotation.Nonnull
   private List<OrderProductsInner> products = new ArrayList<>();
-
-  public static final String JSON_PROPERTY_EMAIL = "email";
-  @jakarta.annotation.Nullable
-  private String email;
 
   public static final String JSON_PROPERTY_BILLING = "billing";
   @jakarta.annotation.Nullable
@@ -83,6 +93,10 @@ public class Order {
   public static final String JSON_PROPERTY_COUPONS = "coupons";
   @jakarta.annotation.Nullable
   private List<String> coupons = new ArrayList<>();
+
+  public static final String JSON_PROPERTY_META_INFO = "metaInfo";
+  @jakarta.annotation.Nullable
+  private Map<String, OrderMetaInfoValue> metaInfo = new HashMap<>();
 
   public Order() {
   }
@@ -212,6 +226,56 @@ public class Order {
     this.amount = amount;
   }
 
+  public Order storeId(@jakarta.annotation.Nullable String storeId) {
+    
+    this.storeId = storeId;
+    return this;
+  }
+
+  /**
+   * ID of store where the order is placed
+   * @return storeId
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_STORE_ID)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public String getStoreId() {
+    return storeId;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_STORE_ID)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setStoreId(@jakarta.annotation.Nullable String storeId) {
+    this.storeId = storeId;
+  }
+
+  public Order identifiers(@jakarta.annotation.Nullable OrderIdentifiers identifiers) {
+    
+    this.identifiers = identifiers;
+    return this;
+  }
+
+  /**
+   * Get identifiers
+   * @return identifiers
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_IDENTIFIERS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public OrderIdentifiers getIdentifiers() {
+    return identifiers;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_IDENTIFIERS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setIdentifiers(@jakarta.annotation.Nullable OrderIdentifiers identifiers) {
+    this.identifiers = identifiers;
+  }
+
   public Order products(@jakarta.annotation.Nonnull List<OrderProductsInner> products) {
     
     this.products = products;
@@ -243,31 +307,6 @@ public class Order {
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setProducts(@jakarta.annotation.Nonnull List<OrderProductsInner> products) {
     this.products = products;
-  }
-
-  public Order email(@jakarta.annotation.Nullable String email) {
-    
-    this.email = email;
-    return this;
-  }
-
-  /**
-   * Email of the contact, Mandatory if \&quot;phone\&quot; field is not passed in \&quot;billing\&quot; parameter.
-   * @return email
-   */
-  @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EMAIL)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-
-  public String getEmail() {
-    return email;
-  }
-
-
-  @JsonProperty(JSON_PROPERTY_EMAIL)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEmail(@jakarta.annotation.Nullable String email) {
-    this.email = email;
   }
 
   public Order billing(@jakarta.annotation.Nullable OrderBilling billing) {
@@ -328,6 +367,39 @@ public class Order {
     this.coupons = coupons;
   }
 
+  public Order metaInfo(@jakarta.annotation.Nullable Map<String, OrderMetaInfoValue> metaInfo) {
+    
+    this.metaInfo = metaInfo;
+    return this;
+  }
+
+  public Order putMetaInfoItem(String key, OrderMetaInfoValue metaInfoItem) {
+    if (this.metaInfo == null) {
+      this.metaInfo = new HashMap<>();
+    }
+    this.metaInfo.put(key, metaInfoItem);
+    return this;
+  }
+
+  /**
+   * Meta data of order to store additional detal such as custom message, customer type, source.
+   * @return metaInfo
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_META_INFO)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public Map<String, OrderMetaInfoValue> getMetaInfo() {
+    return metaInfo;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_META_INFO)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setMetaInfo(@jakarta.annotation.Nullable Map<String, OrderMetaInfoValue> metaInfo) {
+    this.metaInfo = metaInfo;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -342,15 +414,17 @@ public class Order {
         Objects.equals(this.updatedAt, order.updatedAt) &&
         Objects.equals(this.status, order.status) &&
         Objects.equals(this.amount, order.amount) &&
+        Objects.equals(this.storeId, order.storeId) &&
+        Objects.equals(this.identifiers, order.identifiers) &&
         Objects.equals(this.products, order.products) &&
-        Objects.equals(this.email, order.email) &&
         Objects.equals(this.billing, order.billing) &&
-        Objects.equals(this.coupons, order.coupons);
+        Objects.equals(this.coupons, order.coupons) &&
+        Objects.equals(this.metaInfo, order.metaInfo);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, createdAt, updatedAt, status, amount, products, email, billing, coupons);
+    return Objects.hash(id, createdAt, updatedAt, status, amount, storeId, identifiers, products, billing, coupons, metaInfo);
   }
 
   @Override
@@ -362,10 +436,12 @@ public class Order {
     sb.append("    updatedAt: ").append(toIndentedString(updatedAt)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
+    sb.append("    storeId: ").append(toIndentedString(storeId)).append("\n");
+    sb.append("    identifiers: ").append(toIndentedString(identifiers)).append("\n");
     sb.append("    products: ").append(toIndentedString(products)).append("\n");
-    sb.append("    email: ").append(toIndentedString(email)).append("\n");
     sb.append("    billing: ").append(toIndentedString(billing)).append("\n");
     sb.append("    coupons: ").append(toIndentedString(coupons)).append("\n");
+    sb.append("    metaInfo: ").append(toIndentedString(metaInfo)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -463,6 +539,21 @@ public class Order {
       }
     }
 
+    // add `storeId` to the URL query string
+    if (getStoreId() != null) {
+      try {
+        joiner.add(String.format("%sstoreId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStoreId()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `identifiers` to the URL query string
+    if (getIdentifiers() != null) {
+      joiner.add(getIdentifiers().toUrlQueryString(prefix + "identifiers" + suffix));
+    }
+
     // add `products` to the URL query string
     if (getProducts() != null) {
       for (int i = 0; i < getProducts().size(); i++) {
@@ -470,16 +561,6 @@ public class Order {
           joiner.add(getProducts().get(i).toUrlQueryString(String.format("%sproducts%s%s", prefix, suffix,
               "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
         }
-      }
-    }
-
-    // add `email` to the URL query string
-    if (getEmail() != null) {
-      try {
-        joiner.add(String.format("%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
-      } catch (UnsupportedEncodingException e) {
-        // Should never happen, UTF-8 is always supported
-        throw new RuntimeException(e);
       }
     }
 
@@ -498,6 +579,16 @@ public class Order {
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
           throw new RuntimeException(e);
+        }
+      }
+    }
+
+    // add `metaInfo` to the URL query string
+    if (getMetaInfo() != null) {
+      for (String _key : getMetaInfo().keySet()) {
+        if (getMetaInfo().get(_key) != null) {
+          joiner.add(getMetaInfo().get(_key).toUrlQueryString(String.format("%smetaInfo%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix))));
         }
       }
     }

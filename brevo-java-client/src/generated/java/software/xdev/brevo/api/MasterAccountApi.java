@@ -25,8 +25,13 @@ import software.xdev.brevo.model.CorporateGroupIdPutRequest;
 import software.xdev.brevo.model.CorporateGroupPost201Response;
 import software.xdev.brevo.model.CorporateGroupPostRequest;
 import software.xdev.brevo.model.CorporateGroupUnlinkGroupIdSubAccountsPutRequest;
+import software.xdev.brevo.model.CorporateIpGet200ResponseInner;
+import software.xdev.brevo.model.CorporateSsoTokenPostRequest;
+import software.xdev.brevo.model.CorporateSubAccountIpAssociatePostRequest;
+import software.xdev.brevo.model.CorporateSubAccountIpDissociatePutRequest;
 import software.xdev.brevo.model.CorporateSubAccountKeyPostRequest;
 import software.xdev.brevo.model.CorporateSubAccountSsoTokenPostRequest;
+import software.xdev.brevo.model.CorporateUserEmailPermissionsPutRequest;
 import software.xdev.brevo.model.CorporateUserInvitationActionEmailPut200Response;
 import software.xdev.brevo.model.CreateApiKeyResponse;
 import software.xdev.brevo.model.CreateSubAccount;
@@ -34,6 +39,7 @@ import software.xdev.brevo.model.CreateSubAccountResponse;
 import software.xdev.brevo.model.ErrorModel;
 import software.xdev.brevo.model.GetAccountActivity;
 import software.xdev.brevo.model.GetCorporateInvitedUsersList;
+import software.xdev.brevo.model.GetCorporateUserPermission;
 import software.xdev.brevo.model.GetSsoToken;
 import software.xdev.brevo.model.GetSubAccountGroups200ResponseInner;
 import software.xdev.brevo.model.InviteAdminUser;
@@ -42,6 +48,7 @@ import software.xdev.brevo.model.SubAccountAppsToggleRequest;
 import software.xdev.brevo.model.SubAccountDetailsResponse;
 import software.xdev.brevo.model.SubAccountUpdatePlanRequest;
 import software.xdev.brevo.model.SubAccountsResponse;
+import software.xdev.brevo.model.SubAccountsUpdatePlanRequest;
 
 
 import java.util.ArrayList;
@@ -67,7 +74,7 @@ public class MasterAccountApi extends BaseApi {
    * @param id Id of the group (required)
    * @throws ApiException if fails to make API call
    */
-  public void corporateGroupIdDelete(String id) throws ApiException {
+  public void corporateGroupIdDelete(@jakarta.annotation.Nonnull String id) throws ApiException {
     this.corporateGroupIdDelete(id, Collections.emptyMap());
   }
 
@@ -79,7 +86,7 @@ public class MasterAccountApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void corporateGroupIdDelete(String id, Map<String, String> additionalHeaders) throws ApiException {
+  public void corporateGroupIdDelete(@jakarta.annotation.Nonnull String id, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'id' is set
@@ -140,7 +147,7 @@ public class MasterAccountApi extends BaseApi {
    * @return CorporateGroupDetailsResponse
    * @throws ApiException if fails to make API call
    */
-  public CorporateGroupDetailsResponse corporateGroupIdGet(String id) throws ApiException {
+  public CorporateGroupDetailsResponse corporateGroupIdGet(@jakarta.annotation.Nonnull String id) throws ApiException {
     return this.corporateGroupIdGet(id, Collections.emptyMap());
   }
 
@@ -153,7 +160,7 @@ public class MasterAccountApi extends BaseApi {
    * @return CorporateGroupDetailsResponse
    * @throws ApiException if fails to make API call
    */
-  public CorporateGroupDetailsResponse corporateGroupIdGet(String id, Map<String, String> additionalHeaders) throws ApiException {
+  public CorporateGroupDetailsResponse corporateGroupIdGet(@jakarta.annotation.Nonnull String id, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'id' is set
@@ -215,7 +222,7 @@ public class MasterAccountApi extends BaseApi {
    * @param corporateGroupIdPutRequest Group details to be updated. (required)
    * @throws ApiException if fails to make API call
    */
-  public void corporateGroupIdPut(String id, CorporateGroupIdPutRequest corporateGroupIdPutRequest) throws ApiException {
+  public void corporateGroupIdPut(@jakarta.annotation.Nonnull String id, @jakarta.annotation.Nonnull CorporateGroupIdPutRequest corporateGroupIdPutRequest) throws ApiException {
     this.corporateGroupIdPut(id, corporateGroupIdPutRequest, Collections.emptyMap());
   }
 
@@ -228,7 +235,7 @@ public class MasterAccountApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void corporateGroupIdPut(String id, CorporateGroupIdPutRequest corporateGroupIdPutRequest, Map<String, String> additionalHeaders) throws ApiException {
+  public void corporateGroupIdPut(@jakarta.annotation.Nonnull String id, @jakarta.annotation.Nonnull CorporateGroupIdPutRequest corporateGroupIdPutRequest, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = corporateGroupIdPutRequest;
     
     // verify the required parameter 'id' is set
@@ -294,7 +301,7 @@ public class MasterAccountApi extends BaseApi {
    * @return CorporateGroupPost201Response
    * @throws ApiException if fails to make API call
    */
-  public CorporateGroupPost201Response corporateGroupPost(CorporateGroupPostRequest corporateGroupPostRequest) throws ApiException {
+  public CorporateGroupPost201Response corporateGroupPost(@jakarta.annotation.Nullable CorporateGroupPostRequest corporateGroupPostRequest) throws ApiException {
     return this.corporateGroupPost(corporateGroupPostRequest, Collections.emptyMap());
   }
 
@@ -307,7 +314,7 @@ public class MasterAccountApi extends BaseApi {
    * @return CorporateGroupPost201Response
    * @throws ApiException if fails to make API call
    */
-  public CorporateGroupPost201Response corporateGroupPost(CorporateGroupPostRequest corporateGroupPostRequest, Map<String, String> additionalHeaders) throws ApiException {
+  public CorporateGroupPost201Response corporateGroupPost(@jakarta.annotation.Nullable CorporateGroupPostRequest corporateGroupPostRequest, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = corporateGroupPostRequest;
     
     // create path and map variables
@@ -363,7 +370,7 @@ public class MasterAccountApi extends BaseApi {
    * @param corporateGroupUnlinkGroupIdSubAccountsPutRequest List of sub-account ids (required)
    * @throws ApiException if fails to make API call
    */
-  public void corporateGroupUnlinkGroupIdSubAccountsPut(String groupId, CorporateGroupUnlinkGroupIdSubAccountsPutRequest corporateGroupUnlinkGroupIdSubAccountsPutRequest) throws ApiException {
+  public void corporateGroupUnlinkGroupIdSubAccountsPut(@jakarta.annotation.Nonnull String groupId, @jakarta.annotation.Nonnull CorporateGroupUnlinkGroupIdSubAccountsPutRequest corporateGroupUnlinkGroupIdSubAccountsPutRequest) throws ApiException {
     this.corporateGroupUnlinkGroupIdSubAccountsPut(groupId, corporateGroupUnlinkGroupIdSubAccountsPutRequest, Collections.emptyMap());
   }
 
@@ -376,7 +383,7 @@ public class MasterAccountApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void corporateGroupUnlinkGroupIdSubAccountsPut(String groupId, CorporateGroupUnlinkGroupIdSubAccountsPutRequest corporateGroupUnlinkGroupIdSubAccountsPutRequest, Map<String, String> additionalHeaders) throws ApiException {
+  public void corporateGroupUnlinkGroupIdSubAccountsPut(@jakarta.annotation.Nonnull String groupId, @jakarta.annotation.Nonnull CorporateGroupUnlinkGroupIdSubAccountsPutRequest corporateGroupUnlinkGroupIdSubAccountsPutRequest, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = corporateGroupUnlinkGroupIdSubAccountsPutRequest;
     
     // verify the required parameter 'groupId' is set
@@ -432,6 +439,73 @@ public class MasterAccountApi extends BaseApi {
         localVarContentType,
         localVarAuthNames,
         null
+    );
+  }
+
+  /**
+   * List of all IPs
+   * This endpoint allows you to retrieve the list of active IPs on your Admin account
+   * @return List&lt;CorporateIpGet200ResponseInner&gt;
+   * @throws ApiException if fails to make API call
+   */
+  public List<CorporateIpGet200ResponseInner> corporateIpGet() throws ApiException {
+    return this.corporateIpGet(Collections.emptyMap());
+  }
+
+
+  /**
+   * List of all IPs
+   * This endpoint allows you to retrieve the list of active IPs on your Admin account
+   * @param additionalHeaders additionalHeaders for this call
+   * @return List&lt;CorporateIpGet200ResponseInner&gt;
+   * @throws ApiException if fails to make API call
+   */
+  public List<CorporateIpGet200ResponseInner> corporateIpGet(Map<String, String> additionalHeaders) throws ApiException {
+    Object localVarPostBody = null;
+    
+    // create path and map variables
+    String localVarPath = "/corporate/ip";
+
+    StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
+    String localVarQueryParameterBaseName;
+    List<Pair> localVarQueryParams = new ArrayList<Pair>();
+    List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+    Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+    Map<String, String> localVarCookieParams = new HashMap<String, String>();
+    Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+    
+    localVarHeaderParams.putAll(additionalHeaders);
+
+    
+    
+    final String[] localVarAccepts = {
+      "application/json"
+    };
+    final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+
+    final String[] localVarContentTypes = {
+      
+    };
+    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+    String[] localVarAuthNames = new String[] { "api-key" };
+
+    TypeReference<List<CorporateIpGet200ResponseInner>> localVarReturnType = new TypeReference<List<CorporateIpGet200ResponseInner>>() {};
+    return apiClient.invokeAPI(
+        localVarPath,
+        "GET",
+        localVarQueryParams,
+        localVarCollectionQueryParams,
+        localVarQueryStringJoiner.toString(),
+        localVarPostBody,
+        localVarHeaderParams,
+        localVarCookieParams,
+        localVarFormParams,
+        localVarAccept,
+        localVarContentType,
+        localVarAuthNames,
+        localVarReturnType
     );
   }
 
@@ -503,6 +577,75 @@ public class MasterAccountApi extends BaseApi {
   }
 
   /**
+   * Generate SSO token to access admin account
+   * This endpoint generates an SSO token to authenticate and access the admin account using the endpoint https://account-app.brevo.com/account/login/corporate/sso/[token], where [token] will be replaced by the actual token.
+   * @param corporateSsoTokenPostRequest  (optional)
+   * @return GetSsoToken
+   * @throws ApiException if fails to make API call
+   */
+  public GetSsoToken corporateSsoTokenPost(@jakarta.annotation.Nullable CorporateSsoTokenPostRequest corporateSsoTokenPostRequest) throws ApiException {
+    return this.corporateSsoTokenPost(corporateSsoTokenPostRequest, Collections.emptyMap());
+  }
+
+
+  /**
+   * Generate SSO token to access admin account
+   * This endpoint generates an SSO token to authenticate and access the admin account using the endpoint https://account-app.brevo.com/account/login/corporate/sso/[token], where [token] will be replaced by the actual token.
+   * @param corporateSsoTokenPostRequest  (optional)
+   * @param additionalHeaders additionalHeaders for this call
+   * @return GetSsoToken
+   * @throws ApiException if fails to make API call
+   */
+  public GetSsoToken corporateSsoTokenPost(@jakarta.annotation.Nullable CorporateSsoTokenPostRequest corporateSsoTokenPostRequest, Map<String, String> additionalHeaders) throws ApiException {
+    Object localVarPostBody = corporateSsoTokenPostRequest;
+    
+    // create path and map variables
+    String localVarPath = "/corporate/ssoToken";
+
+    StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
+    String localVarQueryParameterBaseName;
+    List<Pair> localVarQueryParams = new ArrayList<Pair>();
+    List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+    Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+    Map<String, String> localVarCookieParams = new HashMap<String, String>();
+    Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+    
+    localVarHeaderParams.putAll(additionalHeaders);
+
+    
+    
+    final String[] localVarAccepts = {
+      "application/json"
+    };
+    final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+
+    final String[] localVarContentTypes = {
+      "application/json"
+    };
+    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+    String[] localVarAuthNames = new String[] { "api-key" };
+
+    TypeReference<GetSsoToken> localVarReturnType = new TypeReference<GetSsoToken>() {};
+    return apiClient.invokeAPI(
+        localVarPath,
+        "POST",
+        localVarQueryParams,
+        localVarCollectionQueryParams,
+        localVarQueryStringJoiner.toString(),
+        localVarPostBody,
+        localVarHeaderParams,
+        localVarCookieParams,
+        localVarFormParams,
+        localVarAccept,
+        localVarContentType,
+        localVarAuthNames,
+        localVarReturnType
+    );
+  }
+
+  /**
    * Get the list of all the sub-accounts of the master account.
    * This endpoint will provide the list all the sub-accounts of the master account.
    * @param offset Index of the first sub-account in the page (required)
@@ -510,7 +653,7 @@ public class MasterAccountApi extends BaseApi {
    * @return SubAccountsResponse
    * @throws ApiException if fails to make API call
    */
-  public SubAccountsResponse corporateSubAccountGet(Integer offset, Integer limit) throws ApiException {
+  public SubAccountsResponse corporateSubAccountGet(@jakarta.annotation.Nonnull Integer offset, @jakarta.annotation.Nonnull Integer limit) throws ApiException {
     return this.corporateSubAccountGet(offset, limit, Collections.emptyMap());
   }
 
@@ -524,7 +667,7 @@ public class MasterAccountApi extends BaseApi {
    * @return SubAccountsResponse
    * @throws ApiException if fails to make API call
    */
-  public SubAccountsResponse corporateSubAccountGet(Integer offset, Integer limit, Map<String, String> additionalHeaders) throws ApiException {
+  public SubAccountsResponse corporateSubAccountGet(@jakarta.annotation.Nonnull Integer offset, @jakarta.annotation.Nonnull Integer limit, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'offset' is set
@@ -592,7 +735,7 @@ public class MasterAccountApi extends BaseApi {
    * @param subAccountAppsToggleRequest List of applications to activate or deactivate on a sub-account (required)
    * @throws ApiException if fails to make API call
    */
-  public void corporateSubAccountIdApplicationsTogglePut(Long id, SubAccountAppsToggleRequest subAccountAppsToggleRequest) throws ApiException {
+  public void corporateSubAccountIdApplicationsTogglePut(@jakarta.annotation.Nonnull Long id, @jakarta.annotation.Nonnull SubAccountAppsToggleRequest subAccountAppsToggleRequest) throws ApiException {
     this.corporateSubAccountIdApplicationsTogglePut(id, subAccountAppsToggleRequest, Collections.emptyMap());
   }
 
@@ -605,7 +748,7 @@ public class MasterAccountApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void corporateSubAccountIdApplicationsTogglePut(Long id, SubAccountAppsToggleRequest subAccountAppsToggleRequest, Map<String, String> additionalHeaders) throws ApiException {
+  public void corporateSubAccountIdApplicationsTogglePut(@jakarta.annotation.Nonnull Long id, @jakarta.annotation.Nonnull SubAccountAppsToggleRequest subAccountAppsToggleRequest, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = subAccountAppsToggleRequest;
     
     // verify the required parameter 'id' is set
@@ -670,7 +813,7 @@ public class MasterAccountApi extends BaseApi {
    * @param id Id of the sub-account organization to be deleted (required)
    * @throws ApiException if fails to make API call
    */
-  public void corporateSubAccountIdDelete(Long id) throws ApiException {
+  public void corporateSubAccountIdDelete(@jakarta.annotation.Nonnull Long id) throws ApiException {
     this.corporateSubAccountIdDelete(id, Collections.emptyMap());
   }
 
@@ -682,7 +825,7 @@ public class MasterAccountApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void corporateSubAccountIdDelete(Long id, Map<String, String> additionalHeaders) throws ApiException {
+  public void corporateSubAccountIdDelete(@jakarta.annotation.Nonnull Long id, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'id' is set
@@ -743,7 +886,7 @@ public class MasterAccountApi extends BaseApi {
    * @return SubAccountDetailsResponse
    * @throws ApiException if fails to make API call
    */
-  public SubAccountDetailsResponse corporateSubAccountIdGet(Long id) throws ApiException {
+  public SubAccountDetailsResponse corporateSubAccountIdGet(@jakarta.annotation.Nonnull Long id) throws ApiException {
     return this.corporateSubAccountIdGet(id, Collections.emptyMap());
   }
 
@@ -756,7 +899,7 @@ public class MasterAccountApi extends BaseApi {
    * @return SubAccountDetailsResponse
    * @throws ApiException if fails to make API call
    */
-  public SubAccountDetailsResponse corporateSubAccountIdGet(Long id, Map<String, String> additionalHeaders) throws ApiException {
+  public SubAccountDetailsResponse corporateSubAccountIdGet(@jakarta.annotation.Nonnull Long id, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'id' is set
@@ -813,25 +956,25 @@ public class MasterAccountApi extends BaseApi {
 
   /**
    * Update sub-account plan
-   * This endpoint will update the sub-account plan
+   * This endpoint will update the sub-account plan. On the Corporate solution new version v2, you can set an unlimited number of credits in your sub-organization. Please pass the value “-1\&quot; to set the consumable in unlimited mode.
    * @param id Id of the sub-account organization (required)
    * @param subAccountUpdatePlanRequest Values to update a sub-account plan (required)
    * @throws ApiException if fails to make API call
    */
-  public void corporateSubAccountIdPlanPut(Long id, SubAccountUpdatePlanRequest subAccountUpdatePlanRequest) throws ApiException {
+  public void corporateSubAccountIdPlanPut(@jakarta.annotation.Nonnull Long id, @jakarta.annotation.Nonnull SubAccountUpdatePlanRequest subAccountUpdatePlanRequest) throws ApiException {
     this.corporateSubAccountIdPlanPut(id, subAccountUpdatePlanRequest, Collections.emptyMap());
   }
 
 
   /**
    * Update sub-account plan
-   * This endpoint will update the sub-account plan
+   * This endpoint will update the sub-account plan. On the Corporate solution new version v2, you can set an unlimited number of credits in your sub-organization. Please pass the value “-1\&quot; to set the consumable in unlimited mode.
    * @param id Id of the sub-account organization (required)
    * @param subAccountUpdatePlanRequest Values to update a sub-account plan (required)
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void corporateSubAccountIdPlanPut(Long id, SubAccountUpdatePlanRequest subAccountUpdatePlanRequest, Map<String, String> additionalHeaders) throws ApiException {
+  public void corporateSubAccountIdPlanPut(@jakarta.annotation.Nonnull Long id, @jakarta.annotation.Nonnull SubAccountUpdatePlanRequest subAccountUpdatePlanRequest, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = subAccountUpdatePlanRequest;
     
     // verify the required parameter 'id' is set
@@ -891,13 +1034,148 @@ public class MasterAccountApi extends BaseApi {
   }
 
   /**
+   * Associate an IP to sub-accounts
+   * This endpoint allows to associate an IP to sub-accounts
+   * @param corporateSubAccountIpAssociatePostRequest  (optional)
+   * @return Object
+   * @throws ApiException if fails to make API call
+   */
+  public Object corporateSubAccountIpAssociatePost(@jakarta.annotation.Nullable CorporateSubAccountIpAssociatePostRequest corporateSubAccountIpAssociatePostRequest) throws ApiException {
+    return this.corporateSubAccountIpAssociatePost(corporateSubAccountIpAssociatePostRequest, Collections.emptyMap());
+  }
+
+
+  /**
+   * Associate an IP to sub-accounts
+   * This endpoint allows to associate an IP to sub-accounts
+   * @param corporateSubAccountIpAssociatePostRequest  (optional)
+   * @param additionalHeaders additionalHeaders for this call
+   * @return Object
+   * @throws ApiException if fails to make API call
+   */
+  public Object corporateSubAccountIpAssociatePost(@jakarta.annotation.Nullable CorporateSubAccountIpAssociatePostRequest corporateSubAccountIpAssociatePostRequest, Map<String, String> additionalHeaders) throws ApiException {
+    Object localVarPostBody = corporateSubAccountIpAssociatePostRequest;
+    
+    // create path and map variables
+    String localVarPath = "/corporate/subAccount/ip/associate";
+
+    StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
+    String localVarQueryParameterBaseName;
+    List<Pair> localVarQueryParams = new ArrayList<Pair>();
+    List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+    Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+    Map<String, String> localVarCookieParams = new HashMap<String, String>();
+    Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+    
+    localVarHeaderParams.putAll(additionalHeaders);
+
+    
+    
+    final String[] localVarAccepts = {
+      "application/json"
+    };
+    final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+
+    final String[] localVarContentTypes = {
+      "application/json"
+    };
+    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+    String[] localVarAuthNames = new String[] { "api-key" };
+
+    TypeReference<Object> localVarReturnType = new TypeReference<Object>() {};
+    return apiClient.invokeAPI(
+        localVarPath,
+        "POST",
+        localVarQueryParams,
+        localVarCollectionQueryParams,
+        localVarQueryStringJoiner.toString(),
+        localVarPostBody,
+        localVarHeaderParams,
+        localVarCookieParams,
+        localVarFormParams,
+        localVarAccept,
+        localVarContentType,
+        localVarAuthNames,
+        localVarReturnType
+    );
+  }
+
+  /**
+   * Dissociate an IP to sub-accounts
+   * This endpoint allows to dissociate an IP from sub-accounts
+   * @param corporateSubAccountIpDissociatePutRequest  (optional)
+   * @throws ApiException if fails to make API call
+   */
+  public void corporateSubAccountIpDissociatePut(@jakarta.annotation.Nullable CorporateSubAccountIpDissociatePutRequest corporateSubAccountIpDissociatePutRequest) throws ApiException {
+    this.corporateSubAccountIpDissociatePut(corporateSubAccountIpDissociatePutRequest, Collections.emptyMap());
+  }
+
+
+  /**
+   * Dissociate an IP to sub-accounts
+   * This endpoint allows to dissociate an IP from sub-accounts
+   * @param corporateSubAccountIpDissociatePutRequest  (optional)
+   * @param additionalHeaders additionalHeaders for this call
+   * @throws ApiException if fails to make API call
+   */
+  public void corporateSubAccountIpDissociatePut(@jakarta.annotation.Nullable CorporateSubAccountIpDissociatePutRequest corporateSubAccountIpDissociatePutRequest, Map<String, String> additionalHeaders) throws ApiException {
+    Object localVarPostBody = corporateSubAccountIpDissociatePutRequest;
+    
+    // create path and map variables
+    String localVarPath = "/corporate/subAccount/ip/dissociate";
+
+    StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
+    String localVarQueryParameterBaseName;
+    List<Pair> localVarQueryParams = new ArrayList<Pair>();
+    List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+    Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+    Map<String, String> localVarCookieParams = new HashMap<String, String>();
+    Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+    
+    localVarHeaderParams.putAll(additionalHeaders);
+
+    
+    
+    final String[] localVarAccepts = {
+      "application/json"
+    };
+    final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+
+    final String[] localVarContentTypes = {
+      "application/json"
+    };
+    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+    String[] localVarAuthNames = new String[] { "api-key" };
+
+    apiClient.invokeAPI(
+        localVarPath,
+        "PUT",
+        localVarQueryParams,
+        localVarCollectionQueryParams,
+        localVarQueryStringJoiner.toString(),
+        localVarPostBody,
+        localVarHeaderParams,
+        localVarCookieParams,
+        localVarFormParams,
+        localVarAccept,
+        localVarContentType,
+        localVarAuthNames,
+        null
+    );
+  }
+
+  /**
    * Create an API key for a sub-account
    * This endpoint will generate an API v3 key for a sub account
    * @param corporateSubAccountKeyPostRequest  (optional)
    * @return CreateApiKeyResponse
    * @throws ApiException if fails to make API call
    */
-  public CreateApiKeyResponse corporateSubAccountKeyPost(CorporateSubAccountKeyPostRequest corporateSubAccountKeyPostRequest) throws ApiException {
+  public CreateApiKeyResponse corporateSubAccountKeyPost(@jakarta.annotation.Nullable CorporateSubAccountKeyPostRequest corporateSubAccountKeyPostRequest) throws ApiException {
     return this.corporateSubAccountKeyPost(corporateSubAccountKeyPostRequest, Collections.emptyMap());
   }
 
@@ -910,7 +1188,7 @@ public class MasterAccountApi extends BaseApi {
    * @return CreateApiKeyResponse
    * @throws ApiException if fails to make API call
    */
-  public CreateApiKeyResponse corporateSubAccountKeyPost(CorporateSubAccountKeyPostRequest corporateSubAccountKeyPostRequest, Map<String, String> additionalHeaders) throws ApiException {
+  public CreateApiKeyResponse corporateSubAccountKeyPost(@jakarta.annotation.Nullable CorporateSubAccountKeyPostRequest corporateSubAccountKeyPostRequest, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = corporateSubAccountKeyPostRequest;
     
     // create path and map variables
@@ -966,7 +1244,7 @@ public class MasterAccountApi extends BaseApi {
    * @return CreateSubAccountResponse
    * @throws ApiException if fails to make API call
    */
-  public CreateSubAccountResponse corporateSubAccountPost(CreateSubAccount createSubAccount) throws ApiException {
+  public CreateSubAccountResponse corporateSubAccountPost(@jakarta.annotation.Nonnull CreateSubAccount createSubAccount) throws ApiException {
     return this.corporateSubAccountPost(createSubAccount, Collections.emptyMap());
   }
 
@@ -979,7 +1257,7 @@ public class MasterAccountApi extends BaseApi {
    * @return CreateSubAccountResponse
    * @throws ApiException if fails to make API call
    */
-  public CreateSubAccountResponse corporateSubAccountPost(CreateSubAccount createSubAccount, Map<String, String> additionalHeaders) throws ApiException {
+  public CreateSubAccountResponse corporateSubAccountPost(@jakarta.annotation.Nonnull CreateSubAccount createSubAccount, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = createSubAccount;
     
     // verify the required parameter 'createSubAccount' is set
@@ -1034,26 +1312,26 @@ public class MasterAccountApi extends BaseApi {
   }
 
   /**
-   * Generate SSO token to access Brevo
+   * Generate SSO token to access sub-account
    * This endpoint generates an sso token to authenticate and access a sub-account of the master using the account endpoint https://account-app.brevo.com/account/login/sub-account/sso/[token], where [token] will be replaced by the actual token.
    * @param corporateSubAccountSsoTokenPostRequest  (optional)
    * @return GetSsoToken
    * @throws ApiException if fails to make API call
    */
-  public GetSsoToken corporateSubAccountSsoTokenPost(CorporateSubAccountSsoTokenPostRequest corporateSubAccountSsoTokenPostRequest) throws ApiException {
+  public GetSsoToken corporateSubAccountSsoTokenPost(@jakarta.annotation.Nullable CorporateSubAccountSsoTokenPostRequest corporateSubAccountSsoTokenPostRequest) throws ApiException {
     return this.corporateSubAccountSsoTokenPost(corporateSubAccountSsoTokenPostRequest, Collections.emptyMap());
   }
 
 
   /**
-   * Generate SSO token to access Brevo
+   * Generate SSO token to access sub-account
    * This endpoint generates an sso token to authenticate and access a sub-account of the master using the account endpoint https://account-app.brevo.com/account/login/sub-account/sso/[token], where [token] will be replaced by the actual token.
    * @param corporateSubAccountSsoTokenPostRequest  (optional)
    * @param additionalHeaders additionalHeaders for this call
    * @return GetSsoToken
    * @throws ApiException if fails to make API call
    */
-  public GetSsoToken corporateSubAccountSsoTokenPost(CorporateSubAccountSsoTokenPostRequest corporateSubAccountSsoTokenPostRequest, Map<String, String> additionalHeaders) throws ApiException {
+  public GetSsoToken corporateSubAccountSsoTokenPost(@jakarta.annotation.Nullable CorporateSubAccountSsoTokenPostRequest corporateSubAccountSsoTokenPostRequest, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = corporateSubAccountSsoTokenPostRequest;
     
     // create path and map variables
@@ -1103,28 +1381,178 @@ public class MasterAccountApi extends BaseApi {
   }
 
   /**
+   * Update sub-accounts plan
+   * This endpoint will update multiple sub-accounts plan. On the Corporate solution new version v2, you can set an unlimited number of credits in your sub-organization. Please pass the value “-1\&quot; to set the consumable in unlimited mode.
+   * @param subAccountsUpdatePlanRequest Values to update sub-accounts plan (required)
+   * @throws ApiException if fails to make API call
+   */
+  public void corporateSubAccountsPlanPut(@jakarta.annotation.Nonnull SubAccountsUpdatePlanRequest subAccountsUpdatePlanRequest) throws ApiException {
+    this.corporateSubAccountsPlanPut(subAccountsUpdatePlanRequest, Collections.emptyMap());
+  }
+
+
+  /**
+   * Update sub-accounts plan
+   * This endpoint will update multiple sub-accounts plan. On the Corporate solution new version v2, you can set an unlimited number of credits in your sub-organization. Please pass the value “-1\&quot; to set the consumable in unlimited mode.
+   * @param subAccountsUpdatePlanRequest Values to update sub-accounts plan (required)
+   * @param additionalHeaders additionalHeaders for this call
+   * @throws ApiException if fails to make API call
+   */
+  public void corporateSubAccountsPlanPut(@jakarta.annotation.Nonnull SubAccountsUpdatePlanRequest subAccountsUpdatePlanRequest, Map<String, String> additionalHeaders) throws ApiException {
+    Object localVarPostBody = subAccountsUpdatePlanRequest;
+    
+    // verify the required parameter 'subAccountsUpdatePlanRequest' is set
+    if (subAccountsUpdatePlanRequest == null) {
+      throw new ApiException(400, "Missing the required parameter 'subAccountsUpdatePlanRequest' when calling corporateSubAccountsPlanPut");
+    }
+    
+    // create path and map variables
+    String localVarPath = "/corporate/subAccounts/plan";
+
+    StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
+    String localVarQueryParameterBaseName;
+    List<Pair> localVarQueryParams = new ArrayList<Pair>();
+    List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+    Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+    Map<String, String> localVarCookieParams = new HashMap<String, String>();
+    Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+    
+    localVarHeaderParams.putAll(additionalHeaders);
+
+    
+    
+    final String[] localVarAccepts = {
+      "application/json"
+    };
+    final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+
+    final String[] localVarContentTypes = {
+      "application/json"
+    };
+    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+    String[] localVarAuthNames = new String[] { "api-key" };
+
+    apiClient.invokeAPI(
+        localVarPath,
+        "PUT",
+        localVarQueryParams,
+        localVarCollectionQueryParams,
+        localVarQueryStringJoiner.toString(),
+        localVarPostBody,
+        localVarHeaderParams,
+        localVarCookieParams,
+        localVarFormParams,
+        localVarAccept,
+        localVarContentType,
+        localVarAuthNames,
+        null
+    );
+  }
+
+  /**
+   * Change admin user permissions
+   * This endpoint will allow you to change the permissions of Admin users of your Admin account
+   * @param email Email address of Admin user (required)
+   * @param corporateUserEmailPermissionsPutRequest Values to update an admin user permissions (required)
+   * @throws ApiException if fails to make API call
+   */
+  public void corporateUserEmailPermissionsPut(@jakarta.annotation.Nonnull String email, @jakarta.annotation.Nonnull CorporateUserEmailPermissionsPutRequest corporateUserEmailPermissionsPutRequest) throws ApiException {
+    this.corporateUserEmailPermissionsPut(email, corporateUserEmailPermissionsPutRequest, Collections.emptyMap());
+  }
+
+
+  /**
+   * Change admin user permissions
+   * This endpoint will allow you to change the permissions of Admin users of your Admin account
+   * @param email Email address of Admin user (required)
+   * @param corporateUserEmailPermissionsPutRequest Values to update an admin user permissions (required)
+   * @param additionalHeaders additionalHeaders for this call
+   * @throws ApiException if fails to make API call
+   */
+  public void corporateUserEmailPermissionsPut(@jakarta.annotation.Nonnull String email, @jakarta.annotation.Nonnull CorporateUserEmailPermissionsPutRequest corporateUserEmailPermissionsPutRequest, Map<String, String> additionalHeaders) throws ApiException {
+    Object localVarPostBody = corporateUserEmailPermissionsPutRequest;
+    
+    // verify the required parameter 'email' is set
+    if (email == null) {
+      throw new ApiException(400, "Missing the required parameter 'email' when calling corporateUserEmailPermissionsPut");
+    }
+    
+    // verify the required parameter 'corporateUserEmailPermissionsPutRequest' is set
+    if (corporateUserEmailPermissionsPutRequest == null) {
+      throw new ApiException(400, "Missing the required parameter 'corporateUserEmailPermissionsPutRequest' when calling corporateUserEmailPermissionsPut");
+    }
+    
+    // create path and map variables
+    String localVarPath = "/corporate/user/{email}/permissions"
+      .replaceAll("\\{" + "email" + "\\}", apiClient.escapeString(apiClient.parameterToString(email)));
+
+    StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
+    String localVarQueryParameterBaseName;
+    List<Pair> localVarQueryParams = new ArrayList<Pair>();
+    List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+    Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+    Map<String, String> localVarCookieParams = new HashMap<String, String>();
+    Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+    
+    localVarHeaderParams.putAll(additionalHeaders);
+
+    
+    
+    final String[] localVarAccepts = {
+      "application/json"
+    };
+    final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+
+    final String[] localVarContentTypes = {
+      "application/json"
+    };
+    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+    String[] localVarAuthNames = new String[] { "api-key" };
+
+    apiClient.invokeAPI(
+        localVarPath,
+        "PUT",
+        localVarQueryParams,
+        localVarCollectionQueryParams,
+        localVarQueryStringJoiner.toString(),
+        localVarPostBody,
+        localVarHeaderParams,
+        localVarCookieParams,
+        localVarFormParams,
+        localVarAccept,
+        localVarContentType,
+        localVarAuthNames,
+        null
+    );
+  }
+
+  /**
    * Resend / cancel admin user invitation
-   * This endpoint will allow the user to:  - Resend an admin user invitation - Cancel an admin user invitation 
+   * This endpoint will allow the user to: - Resend an admin user invitation - Cancel an admin user invitation 
    * @param action Action to be performed (cancel / resend) (required)
    * @param email Email address of the recipient (required)
    * @return CorporateUserInvitationActionEmailPut200Response
    * @throws ApiException if fails to make API call
    */
-  public CorporateUserInvitationActionEmailPut200Response corporateUserInvitationActionEmailPut(String action, String email) throws ApiException {
+  public CorporateUserInvitationActionEmailPut200Response corporateUserInvitationActionEmailPut(@jakarta.annotation.Nonnull String action, @jakarta.annotation.Nonnull String email) throws ApiException {
     return this.corporateUserInvitationActionEmailPut(action, email, Collections.emptyMap());
   }
 
 
   /**
    * Resend / cancel admin user invitation
-   * This endpoint will allow the user to:  - Resend an admin user invitation - Cancel an admin user invitation 
+   * This endpoint will allow the user to: - Resend an admin user invitation - Cancel an admin user invitation 
    * @param action Action to be performed (cancel / resend) (required)
    * @param email Email address of the recipient (required)
    * @param additionalHeaders additionalHeaders for this call
    * @return CorporateUserInvitationActionEmailPut200Response
    * @throws ApiException if fails to make API call
    */
-  public CorporateUserInvitationActionEmailPut200Response corporateUserInvitationActionEmailPut(String action, String email, Map<String, String> additionalHeaders) throws ApiException {
+  public CorporateUserInvitationActionEmailPut200Response corporateUserInvitationActionEmailPut(@jakarta.annotation.Nonnull String action, @jakarta.annotation.Nonnull String email, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'action' is set
@@ -1191,7 +1619,7 @@ public class MasterAccountApi extends BaseApi {
    * @param email Email of the invited user (required)
    * @throws ApiException if fails to make API call
    */
-  public void corporateUserRevokeEmailDelete(String email) throws ApiException {
+  public void corporateUserRevokeEmailDelete(@jakarta.annotation.Nonnull String email) throws ApiException {
     this.corporateUserRevokeEmailDelete(email, Collections.emptyMap());
   }
 
@@ -1203,7 +1631,7 @@ public class MasterAccountApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void corporateUserRevokeEmailDelete(String email, Map<String, String> additionalHeaders) throws ApiException {
+  public void corporateUserRevokeEmailDelete(@jakarta.annotation.Nonnull String email, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'email' is set
@@ -1262,13 +1690,14 @@ public class MasterAccountApi extends BaseApi {
    * 
    * @param startDate Mandatory if endDate is used. Enter start date in UTC date (YYYY-MM-DD) format to filter the activity in your account. Maximum time period that can be selected is one month. Additionally, you can retrieve activity logs from the past 12 months from the date of your search. (optional)
    * @param endDate Mandatory if startDate is used. Enter end date in UTC date (YYYY-MM-DD) format to filter the activity in your account. Maximum time period that can be selected is one month. (optional)
+   * @param email Enter the user&#39;s email address to filter their activity in the account. (optional)
    * @param limit Number of documents per page (optional, default to 10)
    * @param offset Index of the first document in the page. (optional, default to 0)
    * @return GetAccountActivity
    * @throws ApiException if fails to make API call
    */
-  public GetAccountActivity getAccountActivity(String startDate, String endDate, Long limit, Long offset) throws ApiException {
-    return this.getAccountActivity(startDate, endDate, limit, offset, Collections.emptyMap());
+  public GetAccountActivity getAccountActivity(@jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, @jakarta.annotation.Nullable String email, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset) throws ApiException {
+    return this.getAccountActivity(startDate, endDate, email, limit, offset, Collections.emptyMap());
   }
 
 
@@ -1277,13 +1706,14 @@ public class MasterAccountApi extends BaseApi {
    * 
    * @param startDate Mandatory if endDate is used. Enter start date in UTC date (YYYY-MM-DD) format to filter the activity in your account. Maximum time period that can be selected is one month. Additionally, you can retrieve activity logs from the past 12 months from the date of your search. (optional)
    * @param endDate Mandatory if startDate is used. Enter end date in UTC date (YYYY-MM-DD) format to filter the activity in your account. Maximum time period that can be selected is one month. (optional)
+   * @param email Enter the user&#39;s email address to filter their activity in the account. (optional)
    * @param limit Number of documents per page (optional, default to 10)
    * @param offset Index of the first document in the page. (optional, default to 0)
    * @param additionalHeaders additionalHeaders for this call
    * @return GetAccountActivity
    * @throws ApiException if fails to make API call
    */
-  public GetAccountActivity getAccountActivity(String startDate, String endDate, Long limit, Long offset, Map<String, String> additionalHeaders) throws ApiException {
+  public GetAccountActivity getAccountActivity(@jakarta.annotation.Nullable String startDate, @jakarta.annotation.Nullable String endDate, @jakarta.annotation.Nullable String email, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -1299,6 +1729,7 @@ public class MasterAccountApi extends BaseApi {
 
     localVarQueryParams.addAll(apiClient.parameterToPair("startDate", startDate));
     localVarQueryParams.addAll(apiClient.parameterToPair("endDate", endDate));
+    localVarQueryParams.addAll(apiClient.parameterToPair("email", email));
     localVarQueryParams.addAll(apiClient.parameterToPair("limit", limit));
     localVarQueryParams.addAll(apiClient.parameterToPair("offset", offset));
     
@@ -1404,6 +1835,81 @@ public class MasterAccountApi extends BaseApi {
   }
 
   /**
+   * Check admin user permissions
+   * This endpoint will provide the list of admin user permissions
+   * @param email Email of the invited user. (required)
+   * @return GetCorporateUserPermission
+   * @throws ApiException if fails to make API call
+   */
+  public GetCorporateUserPermission getCorporateUserPermission(@jakarta.annotation.Nonnull String email) throws ApiException {
+    return this.getCorporateUserPermission(email, Collections.emptyMap());
+  }
+
+
+  /**
+   * Check admin user permissions
+   * This endpoint will provide the list of admin user permissions
+   * @param email Email of the invited user. (required)
+   * @param additionalHeaders additionalHeaders for this call
+   * @return GetCorporateUserPermission
+   * @throws ApiException if fails to make API call
+   */
+  public GetCorporateUserPermission getCorporateUserPermission(@jakarta.annotation.Nonnull String email, Map<String, String> additionalHeaders) throws ApiException {
+    Object localVarPostBody = null;
+    
+    // verify the required parameter 'email' is set
+    if (email == null) {
+      throw new ApiException(400, "Missing the required parameter 'email' when calling getCorporateUserPermission");
+    }
+    
+    // create path and map variables
+    String localVarPath = "/corporate/user/{email}/permissions"
+      .replaceAll("\\{" + "email" + "\\}", apiClient.escapeString(apiClient.parameterToString(email)));
+
+    StringJoiner localVarQueryStringJoiner = new StringJoiner("&");
+    String localVarQueryParameterBaseName;
+    List<Pair> localVarQueryParams = new ArrayList<Pair>();
+    List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+    Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+    Map<String, String> localVarCookieParams = new HashMap<String, String>();
+    Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+    
+    localVarHeaderParams.putAll(additionalHeaders);
+
+    
+    
+    final String[] localVarAccepts = {
+      "application/json"
+    };
+    final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+
+    final String[] localVarContentTypes = {
+      
+    };
+    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+    String[] localVarAuthNames = new String[] { "api-key" };
+
+    TypeReference<GetCorporateUserPermission> localVarReturnType = new TypeReference<GetCorporateUserPermission>() {};
+    return apiClient.invokeAPI(
+        localVarPath,
+        "GET",
+        localVarQueryParams,
+        localVarCollectionQueryParams,
+        localVarQueryStringJoiner.toString(),
+        localVarPostBody,
+        localVarHeaderParams,
+        localVarCookieParams,
+        localVarFormParams,
+        localVarAccept,
+        localVarContentType,
+        localVarAuthNames,
+        localVarReturnType
+    );
+  }
+
+  /**
    * Get the list of groups
    * This endpoint allows you to list all groups created on your Admin account.
    * @return List&lt;GetSubAccountGroups200ResponseInner&gt;
@@ -1472,25 +1978,25 @@ public class MasterAccountApi extends BaseApi {
 
   /**
    * Send invitation to an admin user
-   * &#x60;This endpoint allows you to invite a member to manage the Admin account  Features and their respective permissions are as below:  - &#x60;my_plan&#x60;:   - \&quot;all\&quot; - &#x60;api&#x60;:   - \&quot;none\&quot; - &#x60;user_management&#x60;:   - \&quot;all\&quot; - &#x60;app_management&#x60; | Not available in ENTv2:   - \&quot;all\&quot;  **Note**: - If &#x60;all_features_access: false&#x60; then only privileges are required otherwise if &#x60;true&#x60; then it&#39;s assumed that all permissions will be there for the invited admin user. 
+   * &#x60;This endpoint allows you to invite a member to manage the Admin account  Features and their respective permissions are as below:  - &#x60;my_plan&#x60;:   - \&quot;all\&quot; - &#x60;api&#x60;:   - \&quot;none\&quot; - &#x60;user_management&#x60;:   - \&quot;all\&quot; - &#x60;app_management&#x60; | Not available in ENTv2:   - \&quot;all\&quot; - &#x60;sub_organization_groups&#x60;   - \&quot;create\&quot;   - \&quot;edit_delete\&quot; - &#x60;create_sub_organizations&#x60;   - \&quot;all\&quot; - &#x60;manage_sub_organizations&#x60;   - \&quot;all\&quot; - &#x60;analytics&#x60;   - \&quot;download_data\&quot;   - \&quot;create_alerts\&quot;   - \&quot;my_looks\&quot;   - \&quot;explore_create\&quot; - &#x60;security&#x60;   - \&quot;all\&quot;  **Note**: - If &#x60;all_features_access: false&#x60; then only privileges are required otherwise if &#x60;true&#x60; then it&#39;s assumed that all permissions will be there for the invited admin user. 
    * @param inviteAdminUser Payload to send an invitation (required)
    * @return CorporateGroupPost201Response
    * @throws ApiException if fails to make API call
    */
-  public CorporateGroupPost201Response inviteAdminUser(InviteAdminUser inviteAdminUser) throws ApiException {
+  public CorporateGroupPost201Response inviteAdminUser(@jakarta.annotation.Nonnull InviteAdminUser inviteAdminUser) throws ApiException {
     return this.inviteAdminUser(inviteAdminUser, Collections.emptyMap());
   }
 
 
   /**
    * Send invitation to an admin user
-   * &#x60;This endpoint allows you to invite a member to manage the Admin account  Features and their respective permissions are as below:  - &#x60;my_plan&#x60;:   - \&quot;all\&quot; - &#x60;api&#x60;:   - \&quot;none\&quot; - &#x60;user_management&#x60;:   - \&quot;all\&quot; - &#x60;app_management&#x60; | Not available in ENTv2:   - \&quot;all\&quot;  **Note**: - If &#x60;all_features_access: false&#x60; then only privileges are required otherwise if &#x60;true&#x60; then it&#39;s assumed that all permissions will be there for the invited admin user. 
+   * &#x60;This endpoint allows you to invite a member to manage the Admin account  Features and their respective permissions are as below:  - &#x60;my_plan&#x60;:   - \&quot;all\&quot; - &#x60;api&#x60;:   - \&quot;none\&quot; - &#x60;user_management&#x60;:   - \&quot;all\&quot; - &#x60;app_management&#x60; | Not available in ENTv2:   - \&quot;all\&quot; - &#x60;sub_organization_groups&#x60;   - \&quot;create\&quot;   - \&quot;edit_delete\&quot; - &#x60;create_sub_organizations&#x60;   - \&quot;all\&quot; - &#x60;manage_sub_organizations&#x60;   - \&quot;all\&quot; - &#x60;analytics&#x60;   - \&quot;download_data\&quot;   - \&quot;create_alerts\&quot;   - \&quot;my_looks\&quot;   - \&quot;explore_create\&quot; - &#x60;security&#x60;   - \&quot;all\&quot;  **Note**: - If &#x60;all_features_access: false&#x60; then only privileges are required otherwise if &#x60;true&#x60; then it&#39;s assumed that all permissions will be there for the invited admin user. 
    * @param inviteAdminUser Payload to send an invitation (required)
    * @param additionalHeaders additionalHeaders for this call
    * @return CorporateGroupPost201Response
    * @throws ApiException if fails to make API call
    */
-  public CorporateGroupPost201Response inviteAdminUser(InviteAdminUser inviteAdminUser, Map<String, String> additionalHeaders) throws ApiException {
+  public CorporateGroupPost201Response inviteAdminUser(@jakarta.annotation.Nonnull InviteAdminUser inviteAdminUser, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = inviteAdminUser;
     
     // verify the required parameter 'inviteAdminUser' is set

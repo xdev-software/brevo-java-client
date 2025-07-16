@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import software.xdev.brevo.model.SubAccountDetailsResponsePlanInfoFeaturesInbox;
 import software.xdev.brevo.model.SubAccountDetailsResponsePlanInfoFeaturesLandingPage;
+import software.xdev.brevo.model.SubAccountDetailsResponsePlanInfoFeaturesSalesUsers;
 import software.xdev.brevo.model.SubAccountDetailsResponsePlanInfoFeaturesUsers;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -35,7 +36,8 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   SubAccountDetailsResponsePlanInfoFeatures.JSON_PROPERTY_INBOX,
   SubAccountDetailsResponsePlanInfoFeatures.JSON_PROPERTY_LANDING_PAGE,
-  SubAccountDetailsResponsePlanInfoFeatures.JSON_PROPERTY_USERS
+  SubAccountDetailsResponsePlanInfoFeatures.JSON_PROPERTY_USERS,
+  SubAccountDetailsResponsePlanInfoFeatures.JSON_PROPERTY_SALES_USERS
 })
 @JsonTypeName("subAccountDetailsResponse_planInfo_features")
 public class SubAccountDetailsResponsePlanInfoFeatures {
@@ -50,6 +52,10 @@ public class SubAccountDetailsResponsePlanInfoFeatures {
   public static final String JSON_PROPERTY_USERS = "users";
   @jakarta.annotation.Nullable
   private SubAccountDetailsResponsePlanInfoFeaturesUsers users;
+
+  public static final String JSON_PROPERTY_SALES_USERS = "salesUsers";
+  @jakarta.annotation.Nullable
+  private SubAccountDetailsResponsePlanInfoFeaturesSalesUsers salesUsers;
 
   public SubAccountDetailsResponsePlanInfoFeatures() {
   }
@@ -129,6 +135,31 @@ public class SubAccountDetailsResponsePlanInfoFeatures {
     this.users = users;
   }
 
+  public SubAccountDetailsResponsePlanInfoFeatures salesUsers(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfoFeaturesSalesUsers salesUsers) {
+    
+    this.salesUsers = salesUsers;
+    return this;
+  }
+
+  /**
+   * Get salesUsers
+   * @return salesUsers
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_SALES_USERS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public SubAccountDetailsResponsePlanInfoFeaturesSalesUsers getSalesUsers() {
+    return salesUsers;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_SALES_USERS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setSalesUsers(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfoFeaturesSalesUsers salesUsers) {
+    this.salesUsers = salesUsers;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -140,12 +171,13 @@ public class SubAccountDetailsResponsePlanInfoFeatures {
     SubAccountDetailsResponsePlanInfoFeatures subAccountDetailsResponsePlanInfoFeatures = (SubAccountDetailsResponsePlanInfoFeatures) o;
     return Objects.equals(this.inbox, subAccountDetailsResponsePlanInfoFeatures.inbox) &&
         Objects.equals(this.landingPage, subAccountDetailsResponsePlanInfoFeatures.landingPage) &&
-        Objects.equals(this.users, subAccountDetailsResponsePlanInfoFeatures.users);
+        Objects.equals(this.users, subAccountDetailsResponsePlanInfoFeatures.users) &&
+        Objects.equals(this.salesUsers, subAccountDetailsResponsePlanInfoFeatures.salesUsers);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(inbox, landingPage, users);
+    return Objects.hash(inbox, landingPage, users, salesUsers);
   }
 
   @Override
@@ -155,6 +187,7 @@ public class SubAccountDetailsResponsePlanInfoFeatures {
     sb.append("    inbox: ").append(toIndentedString(inbox)).append("\n");
     sb.append("    landingPage: ").append(toIndentedString(landingPage)).append("\n");
     sb.append("    users: ").append(toIndentedString(users)).append("\n");
+    sb.append("    salesUsers: ").append(toIndentedString(salesUsers)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -215,6 +248,11 @@ public class SubAccountDetailsResponsePlanInfoFeatures {
     // add `users` to the URL query string
     if (getUsers() != null) {
       joiner.add(getUsers().toUrlQueryString(prefix + "users" + suffix));
+    }
+
+    // add `salesUsers` to the URL query string
+    if (getSalesUsers() != null) {
+      joiner.add(getSalesUsers().toUrlQueryString(prefix + "salesUsers" + suffix));
     }
 
     return joiner.toString();

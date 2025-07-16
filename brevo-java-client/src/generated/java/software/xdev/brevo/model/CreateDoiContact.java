@@ -25,6 +25,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import software.xdev.brevo.model.CreateDoiContactAttributesValue;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import java.io.UnsupportedEncodingException;
@@ -50,7 +51,7 @@ public class CreateDoiContact {
 
   public static final String JSON_PROPERTY_ATTRIBUTES = "attributes";
   @jakarta.annotation.Nullable
-  private Map<String, Object> attributes = new HashMap<>();
+  private Map<String, CreateDoiContactAttributesValue> attributes = new HashMap<>();
 
   public static final String JSON_PROPERTY_INCLUDE_LIST_IDS = "includeListIds";
   @jakarta.annotation.Nonnull
@@ -96,13 +97,13 @@ public class CreateDoiContact {
     this.email = email;
   }
 
-  public CreateDoiContact attributes(@jakarta.annotation.Nullable Map<String, Object> attributes) {
+  public CreateDoiContact attributes(@jakarta.annotation.Nullable Map<String, CreateDoiContactAttributesValue> attributes) {
     
     this.attributes = attributes;
     return this;
   }
 
-  public CreateDoiContact putAttributesItem(String key, Object attributesItem) {
+  public CreateDoiContact putAttributesItem(String key, CreateDoiContactAttributesValue attributesItem) {
     if (this.attributes == null) {
       this.attributes = new HashMap<>();
     }
@@ -111,21 +112,21 @@ public class CreateDoiContact {
   }
 
   /**
-   * Pass the set of attributes and their values. **These attributes must be present in your Brevo account**. For eg. **{&#39;FNAME&#39;:&#39;Elly&#39;, &#39;LNAME&#39;:&#39;Roger&#39;}** 
+   * Pass the set of attributes and their values. **These attributes must be present in your Brevo account**. For eg. **{&#39;FNAME&#39;:&#39;Elly&#39;, &#39;LNAME&#39;:&#39;Roger&#39;, &#39;COUNTRIES&#39;:[&#39;India&#39;,&#39;China&#39;]}** 
    * @return attributes
    */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
-  @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public Map<String, Object> getAttributes() {
+  public Map<String, CreateDoiContactAttributesValue> getAttributes() {
     return attributes;
   }
 
 
   @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
-  @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
-  public void setAttributes(@jakarta.annotation.Nullable Map<String, Object> attributes) {
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setAttributes(@jakarta.annotation.Nullable Map<String, CreateDoiContactAttributesValue> attributes) {
     this.attributes = attributes;
   }
 
@@ -337,13 +338,9 @@ public class CreateDoiContact {
     // add `attributes` to the URL query string
     if (getAttributes() != null) {
       for (String _key : getAttributes().keySet()) {
-        try {
-          joiner.add(String.format("%sattributes%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix),
-              getAttributes().get(_key), URLEncoder.encode(String.valueOf(getAttributes().get(_key)), "UTF-8").replaceAll("\\+", "%20")));
-        } catch (UnsupportedEncodingException e) {
-          // Should never happen, UTF-8 is always supported
-          throw new RuntimeException(e);
+        if (getAttributes().get(_key) != null) {
+          joiner.add(getAttributes().get(_key).toUrlQueryString(String.format("%sattributes%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix))));
         }
       }
     }

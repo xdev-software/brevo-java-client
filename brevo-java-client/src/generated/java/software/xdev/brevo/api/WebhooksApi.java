@@ -24,7 +24,7 @@ import software.xdev.brevo.model.CreateModel;
 import software.xdev.brevo.model.CreateWebhook;
 import software.xdev.brevo.model.CreatedProcessId;
 import software.xdev.brevo.model.ErrorModel;
-import software.xdev.brevo.model.ExportWebhooksHistoryRequest;
+import software.xdev.brevo.model.ExportWebhooksHistory;
 import software.xdev.brevo.model.GetWebhook;
 import software.xdev.brevo.model.GetWebhooks;
 import software.xdev.brevo.model.UpdateWebhook;
@@ -54,7 +54,7 @@ public class WebhooksApi extends BaseApi {
    * @return CreateModel
    * @throws ApiException if fails to make API call
    */
-  public CreateModel createWebhook(CreateWebhook createWebhook) throws ApiException {
+  public CreateModel createWebhook(@jakarta.annotation.Nonnull CreateWebhook createWebhook) throws ApiException {
     return this.createWebhook(createWebhook, Collections.emptyMap());
   }
 
@@ -67,7 +67,7 @@ public class WebhooksApi extends BaseApi {
    * @return CreateModel
    * @throws ApiException if fails to make API call
    */
-  public CreateModel createWebhook(CreateWebhook createWebhook, Map<String, String> additionalHeaders) throws ApiException {
+  public CreateModel createWebhook(@jakarta.annotation.Nonnull CreateWebhook createWebhook, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = createWebhook;
     
     // verify the required parameter 'createWebhook' is set
@@ -127,7 +127,7 @@ public class WebhooksApi extends BaseApi {
    * @param webhookId Id of the webhook (required)
    * @throws ApiException if fails to make API call
    */
-  public void deleteWebhook(Long webhookId) throws ApiException {
+  public void deleteWebhook(@jakarta.annotation.Nonnull Long webhookId) throws ApiException {
     this.deleteWebhook(webhookId, Collections.emptyMap());
   }
 
@@ -139,7 +139,7 @@ public class WebhooksApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void deleteWebhook(Long webhookId, Map<String, String> additionalHeaders) throws ApiException {
+  public void deleteWebhook(@jakarta.annotation.Nonnull Long webhookId, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'webhookId' is set
@@ -196,29 +196,29 @@ public class WebhooksApi extends BaseApi {
   /**
    * Export all webhook events
    * This endpoint will submit a request to get the history of webhooks in the CSV file. The link to download the CSV file will be sent to the webhook that was provided in the notifyURL.
-   * @param exportWebhooksHistoryRequest Values to submit for webhooks history (required)
+   * @param exportWebhooksHistory Values to submit for webhooks history (required)
    * @return CreatedProcessId
    * @throws ApiException if fails to make API call
    */
-  public CreatedProcessId exportWebhooksHistory(ExportWebhooksHistoryRequest exportWebhooksHistoryRequest) throws ApiException {
-    return this.exportWebhooksHistory(exportWebhooksHistoryRequest, Collections.emptyMap());
+  public CreatedProcessId exportWebhooksHistory(@jakarta.annotation.Nonnull ExportWebhooksHistory exportWebhooksHistory) throws ApiException {
+    return this.exportWebhooksHistory(exportWebhooksHistory, Collections.emptyMap());
   }
 
 
   /**
    * Export all webhook events
    * This endpoint will submit a request to get the history of webhooks in the CSV file. The link to download the CSV file will be sent to the webhook that was provided in the notifyURL.
-   * @param exportWebhooksHistoryRequest Values to submit for webhooks history (required)
+   * @param exportWebhooksHistory Values to submit for webhooks history (required)
    * @param additionalHeaders additionalHeaders for this call
    * @return CreatedProcessId
    * @throws ApiException if fails to make API call
    */
-  public CreatedProcessId exportWebhooksHistory(ExportWebhooksHistoryRequest exportWebhooksHistoryRequest, Map<String, String> additionalHeaders) throws ApiException {
-    Object localVarPostBody = exportWebhooksHistoryRequest;
+  public CreatedProcessId exportWebhooksHistory(@jakarta.annotation.Nonnull ExportWebhooksHistory exportWebhooksHistory, Map<String, String> additionalHeaders) throws ApiException {
+    Object localVarPostBody = exportWebhooksHistory;
     
-    // verify the required parameter 'exportWebhooksHistoryRequest' is set
-    if (exportWebhooksHistoryRequest == null) {
-      throw new ApiException(400, "Missing the required parameter 'exportWebhooksHistoryRequest' when calling exportWebhooksHistory");
+    // verify the required parameter 'exportWebhooksHistory' is set
+    if (exportWebhooksHistory == null) {
+      throw new ApiException(400, "Missing the required parameter 'exportWebhooksHistory' when calling exportWebhooksHistory");
     }
     
     // create path and map variables
@@ -274,7 +274,7 @@ public class WebhooksApi extends BaseApi {
    * @return GetWebhook
    * @throws ApiException if fails to make API call
    */
-  public GetWebhook getWebhook(Long webhookId) throws ApiException {
+  public GetWebhook getWebhook(@jakarta.annotation.Nonnull Long webhookId) throws ApiException {
     return this.getWebhook(webhookId, Collections.emptyMap());
   }
 
@@ -287,7 +287,7 @@ public class WebhooksApi extends BaseApi {
    * @return GetWebhook
    * @throws ApiException if fails to make API call
    */
-  public GetWebhook getWebhook(Long webhookId, Map<String, String> additionalHeaders) throws ApiException {
+  public GetWebhook getWebhook(@jakarta.annotation.Nonnull Long webhookId, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'webhookId' is set
@@ -350,7 +350,7 @@ public class WebhooksApi extends BaseApi {
    * @return GetWebhooks
    * @throws ApiException if fails to make API call
    */
-  public GetWebhooks getWebhooks(String type, String sort) throws ApiException {
+  public GetWebhooks getWebhooks(@jakarta.annotation.Nullable String type, @jakarta.annotation.Nullable String sort) throws ApiException {
     return this.getWebhooks(type, sort, Collections.emptyMap());
   }
 
@@ -364,7 +364,7 @@ public class WebhooksApi extends BaseApi {
    * @return GetWebhooks
    * @throws ApiException if fails to make API call
    */
-  public GetWebhooks getWebhooks(String type, String sort, Map<String, String> additionalHeaders) throws ApiException {
+  public GetWebhooks getWebhooks(@jakarta.annotation.Nullable String type, @jakarta.annotation.Nullable String sort, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -422,7 +422,7 @@ public class WebhooksApi extends BaseApi {
    * @param updateWebhook Values to update a webhook (required)
    * @throws ApiException if fails to make API call
    */
-  public void updateWebhook(Long webhookId, UpdateWebhook updateWebhook) throws ApiException {
+  public void updateWebhook(@jakarta.annotation.Nonnull Long webhookId, @jakarta.annotation.Nonnull UpdateWebhook updateWebhook) throws ApiException {
     this.updateWebhook(webhookId, updateWebhook, Collections.emptyMap());
   }
 
@@ -435,7 +435,7 @@ public class WebhooksApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void updateWebhook(Long webhookId, UpdateWebhook updateWebhook, Map<String, String> additionalHeaders) throws ApiException {
+  public void updateWebhook(@jakarta.annotation.Nonnull Long webhookId, @jakarta.annotation.Nonnull UpdateWebhook updateWebhook, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = updateWebhook;
     
     // verify the required parameter 'webhookId' is set

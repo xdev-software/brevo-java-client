@@ -56,7 +56,7 @@ public class NotesApi extends BaseApi {
    * @return List&lt;Note&gt;
    * @throws ApiException if fails to make API call
    */
-  public List<Note> crmNotesGet(String entity, String entityIds, Integer dateFrom, Integer dateTo, Long offset, Long limit, String sort) throws ApiException {
+  public List<Note> crmNotesGet(@jakarta.annotation.Nullable String entity, @jakarta.annotation.Nullable String entityIds, @jakarta.annotation.Nullable Integer dateFrom, @jakarta.annotation.Nullable Integer dateTo, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable String sort) throws ApiException {
     return this.crmNotesGet(entity, entityIds, dateFrom, dateTo, offset, limit, sort, Collections.emptyMap());
   }
 
@@ -75,7 +75,7 @@ public class NotesApi extends BaseApi {
    * @return List&lt;Note&gt;
    * @throws ApiException if fails to make API call
    */
-  public List<Note> crmNotesGet(String entity, String entityIds, Integer dateFrom, Integer dateTo, Long offset, Long limit, String sort, Map<String, String> additionalHeaders) throws ApiException {
+  public List<Note> crmNotesGet(@jakarta.annotation.Nullable String entity, @jakarta.annotation.Nullable String entityIds, @jakarta.annotation.Nullable Integer dateFrom, @jakarta.annotation.Nullable Integer dateTo, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable String sort, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -137,7 +137,7 @@ public class NotesApi extends BaseApi {
    * @param id Note ID to delete (required)
    * @throws ApiException if fails to make API call
    */
-  public void crmNotesIdDelete(String id) throws ApiException {
+  public void crmNotesIdDelete(@jakarta.annotation.Nonnull String id) throws ApiException {
     this.crmNotesIdDelete(id, Collections.emptyMap());
   }
 
@@ -149,7 +149,7 @@ public class NotesApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void crmNotesIdDelete(String id, Map<String, String> additionalHeaders) throws ApiException {
+  public void crmNotesIdDelete(@jakarta.annotation.Nonnull String id, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'id' is set
@@ -210,7 +210,7 @@ public class NotesApi extends BaseApi {
    * @return Note
    * @throws ApiException if fails to make API call
    */
-  public Note crmNotesIdGet(String id) throws ApiException {
+  public Note crmNotesIdGet(@jakarta.annotation.Nonnull String id) throws ApiException {
     return this.crmNotesIdGet(id, Collections.emptyMap());
   }
 
@@ -223,7 +223,7 @@ public class NotesApi extends BaseApi {
    * @return Note
    * @throws ApiException if fails to make API call
    */
-  public Note crmNotesIdGet(String id, Map<String, String> additionalHeaders) throws ApiException {
+  public Note crmNotesIdGet(@jakarta.annotation.Nonnull String id, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'id' is set
@@ -285,7 +285,7 @@ public class NotesApi extends BaseApi {
    * @param noteData Note data to update a note. (required)
    * @throws ApiException if fails to make API call
    */
-  public void crmNotesIdPatch(String id, NoteData noteData) throws ApiException {
+  public void crmNotesIdPatch(@jakarta.annotation.Nonnull String id, @jakarta.annotation.Nonnull NoteData noteData) throws ApiException {
     this.crmNotesIdPatch(id, noteData, Collections.emptyMap());
   }
 
@@ -298,7 +298,7 @@ public class NotesApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void crmNotesIdPatch(String id, NoteData noteData, Map<String, String> additionalHeaders) throws ApiException {
+  public void crmNotesIdPatch(@jakarta.annotation.Nonnull String id, @jakarta.annotation.Nonnull NoteData noteData, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = noteData;
     
     // verify the required parameter 'id' is set
@@ -364,7 +364,7 @@ public class NotesApi extends BaseApi {
    * @return NoteId
    * @throws ApiException if fails to make API call
    */
-  public NoteId crmNotesPost(NoteData noteData) throws ApiException {
+  public NoteId crmNotesPost(@jakarta.annotation.Nonnull NoteData noteData) throws ApiException {
     return this.crmNotesPost(noteData, Collections.emptyMap());
   }
 
@@ -377,7 +377,7 @@ public class NotesApi extends BaseApi {
    * @return NoteId
    * @throws ApiException if fails to make API call
    */
-  public NoteId crmNotesPost(NoteData noteData, Map<String, String> additionalHeaders) throws ApiException {
+  public NoteId crmNotesPost(@jakarta.annotation.Nonnull NoteData noteData, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = noteData;
     
     // verify the required parameter 'noteData' is set

@@ -20,6 +20,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import java.io.UnsupportedEncodingException;
@@ -32,7 +35,9 @@ import java.util.StringJoiner;
 @JsonPropertyOrder({
   CompaniesIdPatchRequest.JSON_PROPERTY_NAME,
   CompaniesIdPatchRequest.JSON_PROPERTY_ATTRIBUTES,
-  CompaniesIdPatchRequest.JSON_PROPERTY_COUNTRY_CODE
+  CompaniesIdPatchRequest.JSON_PROPERTY_COUNTRY_CODE,
+  CompaniesIdPatchRequest.JSON_PROPERTY_LINKED_CONTACTS_IDS,
+  CompaniesIdPatchRequest.JSON_PROPERTY_LINKED_DEALS_IDS
 })
 @JsonTypeName("_companies__id__patch_request")
 public class CompaniesIdPatchRequest {
@@ -47,6 +52,14 @@ public class CompaniesIdPatchRequest {
   public static final String JSON_PROPERTY_COUNTRY_CODE = "countryCode";
   @jakarta.annotation.Nullable
   private Long countryCode;
+
+  public static final String JSON_PROPERTY_LINKED_CONTACTS_IDS = "linkedContactsIds";
+  @jakarta.annotation.Nullable
+  private List<Long> linkedContactsIds = new ArrayList<>();
+
+  public static final String JSON_PROPERTY_LINKED_DEALS_IDS = "linkedDealsIds";
+  @jakarta.annotation.Nullable
+  private List<String> linkedDealsIds = new ArrayList<>();
 
   public CompaniesIdPatchRequest() {
   }
@@ -126,6 +139,72 @@ public class CompaniesIdPatchRequest {
     this.countryCode = countryCode;
   }
 
+  public CompaniesIdPatchRequest linkedContactsIds(@jakarta.annotation.Nullable List<Long> linkedContactsIds) {
+    
+    this.linkedContactsIds = linkedContactsIds;
+    return this;
+  }
+
+  public CompaniesIdPatchRequest addLinkedContactsIdsItem(Long linkedContactsIdsItem) {
+    if (this.linkedContactsIds == null) {
+      this.linkedContactsIds = new ArrayList<>();
+    }
+    this.linkedContactsIds.add(linkedContactsIdsItem);
+    return this;
+  }
+
+  /**
+   * Warning - Using PATCH on linkedContactIds replaces the list of linked contacts. Omitted IDs will be removed.
+   * @return linkedContactsIds
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_LINKED_CONTACTS_IDS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public List<Long> getLinkedContactsIds() {
+    return linkedContactsIds;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_LINKED_CONTACTS_IDS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setLinkedContactsIds(@jakarta.annotation.Nullable List<Long> linkedContactsIds) {
+    this.linkedContactsIds = linkedContactsIds;
+  }
+
+  public CompaniesIdPatchRequest linkedDealsIds(@jakarta.annotation.Nullable List<String> linkedDealsIds) {
+    
+    this.linkedDealsIds = linkedDealsIds;
+    return this;
+  }
+
+  public CompaniesIdPatchRequest addLinkedDealsIdsItem(String linkedDealsIdsItem) {
+    if (this.linkedDealsIds == null) {
+      this.linkedDealsIds = new ArrayList<>();
+    }
+    this.linkedDealsIds.add(linkedDealsIdsItem);
+    return this;
+  }
+
+  /**
+   * Warning - Using PATCH on linkedDealsIds replaces the list of linked contacts. Omitted IDs will be removed.
+   * @return linkedDealsIds
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_LINKED_DEALS_IDS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public List<String> getLinkedDealsIds() {
+    return linkedDealsIds;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_LINKED_DEALS_IDS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setLinkedDealsIds(@jakarta.annotation.Nullable List<String> linkedDealsIds) {
+    this.linkedDealsIds = linkedDealsIds;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -137,12 +216,14 @@ public class CompaniesIdPatchRequest {
     CompaniesIdPatchRequest companiesIdPatchRequest = (CompaniesIdPatchRequest) o;
     return Objects.equals(this.name, companiesIdPatchRequest.name) &&
         Objects.equals(this.attributes, companiesIdPatchRequest.attributes) &&
-        Objects.equals(this.countryCode, companiesIdPatchRequest.countryCode);
+        Objects.equals(this.countryCode, companiesIdPatchRequest.countryCode) &&
+        Objects.equals(this.linkedContactsIds, companiesIdPatchRequest.linkedContactsIds) &&
+        Objects.equals(this.linkedDealsIds, companiesIdPatchRequest.linkedDealsIds);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(name, attributes, countryCode);
+    return Objects.hash(name, attributes, countryCode, linkedContactsIds, linkedDealsIds);
   }
 
   @Override
@@ -152,6 +233,8 @@ public class CompaniesIdPatchRequest {
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    attributes: ").append(toIndentedString(attributes)).append("\n");
     sb.append("    countryCode: ").append(toIndentedString(countryCode)).append("\n");
+    sb.append("    linkedContactsIds: ").append(toIndentedString(linkedContactsIds)).append("\n");
+    sb.append("    linkedDealsIds: ").append(toIndentedString(linkedDealsIds)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -226,6 +309,34 @@ public class CompaniesIdPatchRequest {
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
+      }
+    }
+
+    // add `linkedContactsIds` to the URL query string
+    if (getLinkedContactsIds() != null) {
+      for (int i = 0; i < getLinkedContactsIds().size(); i++) {
+        try {
+          joiner.add(String.format("%slinkedContactsIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getLinkedContactsIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
+      }
+    }
+
+    // add `linkedDealsIds` to the URL query string
+    if (getLinkedDealsIds() != null) {
+      for (int i = 0; i < getLinkedDealsIds().size(); i++) {
+        try {
+          joiner.add(String.format("%slinkedDealsIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getLinkedDealsIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
       }
     }
 

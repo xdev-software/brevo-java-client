@@ -53,7 +53,7 @@ public class CouponsApi extends BaseApi {
    * @return CreateCouponCollection201Response
    * @throws ApiException if fails to make API call
    */
-  public CreateCouponCollection201Response createCouponCollection(CreateCouponCollectionRequest createCouponCollectionRequest) throws ApiException {
+  public CreateCouponCollection201Response createCouponCollection(@jakarta.annotation.Nonnull CreateCouponCollectionRequest createCouponCollectionRequest) throws ApiException {
     return this.createCouponCollection(createCouponCollectionRequest, Collections.emptyMap());
   }
 
@@ -66,7 +66,7 @@ public class CouponsApi extends BaseApi {
    * @return CreateCouponCollection201Response
    * @throws ApiException if fails to make API call
    */
-  public CreateCouponCollection201Response createCouponCollection(CreateCouponCollectionRequest createCouponCollectionRequest, Map<String, String> additionalHeaders) throws ApiException {
+  public CreateCouponCollection201Response createCouponCollection(@jakarta.annotation.Nonnull CreateCouponCollectionRequest createCouponCollectionRequest, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = createCouponCollectionRequest;
     
     // verify the required parameter 'createCouponCollectionRequest' is set
@@ -126,7 +126,7 @@ public class CouponsApi extends BaseApi {
    * @param createCouponsRequest Values to create coupons (required)
    * @throws ApiException if fails to make API call
    */
-  public void createCoupons(CreateCouponsRequest createCouponsRequest) throws ApiException {
+  public void createCoupons(@jakarta.annotation.Nonnull CreateCouponsRequest createCouponsRequest) throws ApiException {
     this.createCoupons(createCouponsRequest, Collections.emptyMap());
   }
 
@@ -138,7 +138,7 @@ public class CouponsApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void createCoupons(CreateCouponsRequest createCouponsRequest, Map<String, String> additionalHeaders) throws ApiException {
+  public void createCoupons(@jakarta.annotation.Nonnull CreateCouponsRequest createCouponsRequest, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = createCouponsRequest;
     
     // verify the required parameter 'createCouponsRequest' is set
@@ -198,7 +198,7 @@ public class CouponsApi extends BaseApi {
    * @return GetCouponCollection
    * @throws ApiException if fails to make API call
    */
-  public GetCouponCollection getCouponCollection(String id) throws ApiException {
+  public GetCouponCollection getCouponCollection(@jakarta.annotation.Nonnull String id) throws ApiException {
     return this.getCouponCollection(id, Collections.emptyMap());
   }
 
@@ -211,7 +211,7 @@ public class CouponsApi extends BaseApi {
    * @return GetCouponCollection
    * @throws ApiException if fails to make API call
    */
-  public GetCouponCollection getCouponCollection(String id, Map<String, String> additionalHeaders) throws ApiException {
+  public GetCouponCollection getCouponCollection(@jakarta.annotation.Nonnull String id, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'id' is set
@@ -272,11 +272,12 @@ public class CouponsApi extends BaseApi {
    * @param limit Number of documents returned per page (optional, default to 50)
    * @param offset Index of the first document on the page (optional, default to 0)
    * @param sort Sort the results by creation time in ascending/descending order (optional, default to desc)
+   * @param sortBy The field used to sort coupon collections (optional, default to createdAt)
    * @return GetCouponCollection
    * @throws ApiException if fails to make API call
    */
-  public GetCouponCollection getCouponCollections(Long limit, Long offset, String sort) throws ApiException {
-    return this.getCouponCollections(limit, offset, sort, Collections.emptyMap());
+  public GetCouponCollection getCouponCollections(@jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String sort, @jakarta.annotation.Nullable String sortBy) throws ApiException {
+    return this.getCouponCollections(limit, offset, sort, sortBy, Collections.emptyMap());
   }
 
 
@@ -286,11 +287,12 @@ public class CouponsApi extends BaseApi {
    * @param limit Number of documents returned per page (optional, default to 50)
    * @param offset Index of the first document on the page (optional, default to 0)
    * @param sort Sort the results by creation time in ascending/descending order (optional, default to desc)
+   * @param sortBy The field used to sort coupon collections (optional, default to createdAt)
    * @param additionalHeaders additionalHeaders for this call
    * @return GetCouponCollection
    * @throws ApiException if fails to make API call
    */
-  public GetCouponCollection getCouponCollections(Long limit, Long offset, String sort, Map<String, String> additionalHeaders) throws ApiException {
+  public GetCouponCollection getCouponCollections(@jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable String sort, @jakarta.annotation.Nullable String sortBy, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -307,6 +309,7 @@ public class CouponsApi extends BaseApi {
     localVarQueryParams.addAll(apiClient.parameterToPair("limit", limit));
     localVarQueryParams.addAll(apiClient.parameterToPair("offset", offset));
     localVarQueryParams.addAll(apiClient.parameterToPair("sort", sort));
+    localVarQueryParams.addAll(apiClient.parameterToPair("sortBy", sortBy));
     
     localVarHeaderParams.putAll(additionalHeaders);
 
@@ -346,11 +349,11 @@ public class CouponsApi extends BaseApi {
    * Update a coupon collection by id
    * 
    * @param id Id of the collection to update (required)
-   * @param updateCouponCollectionRequest Values to update the coupon collection (required)
+   * @param updateCouponCollectionRequest Values to update the coupon collection (optional)
    * @return UpdateCouponCollection200Response
    * @throws ApiException if fails to make API call
    */
-  public UpdateCouponCollection200Response updateCouponCollection(String id, UpdateCouponCollectionRequest updateCouponCollectionRequest) throws ApiException {
+  public UpdateCouponCollection200Response updateCouponCollection(@jakarta.annotation.Nonnull String id, @jakarta.annotation.Nullable UpdateCouponCollectionRequest updateCouponCollectionRequest) throws ApiException {
     return this.updateCouponCollection(id, updateCouponCollectionRequest, Collections.emptyMap());
   }
 
@@ -359,22 +362,17 @@ public class CouponsApi extends BaseApi {
    * Update a coupon collection by id
    * 
    * @param id Id of the collection to update (required)
-   * @param updateCouponCollectionRequest Values to update the coupon collection (required)
+   * @param updateCouponCollectionRequest Values to update the coupon collection (optional)
    * @param additionalHeaders additionalHeaders for this call
    * @return UpdateCouponCollection200Response
    * @throws ApiException if fails to make API call
    */
-  public UpdateCouponCollection200Response updateCouponCollection(String id, UpdateCouponCollectionRequest updateCouponCollectionRequest, Map<String, String> additionalHeaders) throws ApiException {
+  public UpdateCouponCollection200Response updateCouponCollection(@jakarta.annotation.Nonnull String id, @jakarta.annotation.Nullable UpdateCouponCollectionRequest updateCouponCollectionRequest, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = updateCouponCollectionRequest;
     
     // verify the required parameter 'id' is set
     if (id == null) {
       throw new ApiException(400, "Missing the required parameter 'id' when calling updateCouponCollection");
-    }
-    
-    // verify the required parameter 'updateCouponCollectionRequest' is set
-    if (updateCouponCollectionRequest == null) {
-      throw new ApiException(400, "Missing the required parameter 'updateCouponCollectionRequest' when calling updateCouponCollection");
     }
     
     // create path and map variables

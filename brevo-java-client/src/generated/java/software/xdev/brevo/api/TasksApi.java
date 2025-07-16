@@ -52,7 +52,7 @@ public class TasksApi extends BaseApi {
    * @param filterType Filter by task type (ID) (optional)
    * @param filterStatus Filter by task status (optional)
    * @param filterDate Filter by date (optional)
-   * @param filterAssignTo Filter by assignTo id (optional)
+   * @param filterAssignTo Filter by the \&quot;assignTo\&quot; ID. You can utilize account emails for the \&quot;assignTo\&quot; attribute. (optional)
    * @param filterContacts Filter by contact ids (optional)
    * @param filterDeals Filter by deals ids (optional)
    * @param filterCompanies Filter by companies ids (optional)
@@ -65,7 +65,7 @@ public class TasksApi extends BaseApi {
    * @return TaskList
    * @throws ApiException if fails to make API call
    */
-  public TaskList crmTasksGet(String filterType, String filterStatus, String filterDate, String filterAssignTo, String filterContacts, String filterDeals, String filterCompanies, Integer dateFrom, Integer dateTo, Long offset, Long limit, String sort, String sortBy) throws ApiException {
+  public TaskList crmTasksGet(@jakarta.annotation.Nullable String filterType, @jakarta.annotation.Nullable String filterStatus, @jakarta.annotation.Nullable String filterDate, @jakarta.annotation.Nullable String filterAssignTo, @jakarta.annotation.Nullable String filterContacts, @jakarta.annotation.Nullable String filterDeals, @jakarta.annotation.Nullable String filterCompanies, @jakarta.annotation.Nullable Integer dateFrom, @jakarta.annotation.Nullable Integer dateTo, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable String sort, @jakarta.annotation.Nullable String sortBy) throws ApiException {
     return this.crmTasksGet(filterType, filterStatus, filterDate, filterAssignTo, filterContacts, filterDeals, filterCompanies, dateFrom, dateTo, offset, limit, sort, sortBy, Collections.emptyMap());
   }
 
@@ -76,7 +76,7 @@ public class TasksApi extends BaseApi {
    * @param filterType Filter by task type (ID) (optional)
    * @param filterStatus Filter by task status (optional)
    * @param filterDate Filter by date (optional)
-   * @param filterAssignTo Filter by assignTo id (optional)
+   * @param filterAssignTo Filter by the \&quot;assignTo\&quot; ID. You can utilize account emails for the \&quot;assignTo\&quot; attribute. (optional)
    * @param filterContacts Filter by contact ids (optional)
    * @param filterDeals Filter by deals ids (optional)
    * @param filterCompanies Filter by companies ids (optional)
@@ -90,7 +90,7 @@ public class TasksApi extends BaseApi {
    * @return TaskList
    * @throws ApiException if fails to make API call
    */
-  public TaskList crmTasksGet(String filterType, String filterStatus, String filterDate, String filterAssignTo, String filterContacts, String filterDeals, String filterCompanies, Integer dateFrom, Integer dateTo, Long offset, Long limit, String sort, String sortBy, Map<String, String> additionalHeaders) throws ApiException {
+  public TaskList crmTasksGet(@jakarta.annotation.Nullable String filterType, @jakarta.annotation.Nullable String filterStatus, @jakarta.annotation.Nullable String filterDate, @jakarta.annotation.Nullable String filterAssignTo, @jakarta.annotation.Nullable String filterContacts, @jakarta.annotation.Nullable String filterDeals, @jakarta.annotation.Nullable String filterCompanies, @jakarta.annotation.Nullable Integer dateFrom, @jakarta.annotation.Nullable Integer dateTo, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable String sort, @jakarta.annotation.Nullable String sortBy, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -158,7 +158,7 @@ public class TasksApi extends BaseApi {
    * @param id  (required)
    * @throws ApiException if fails to make API call
    */
-  public void crmTasksIdDelete(String id) throws ApiException {
+  public void crmTasksIdDelete(@jakarta.annotation.Nonnull String id) throws ApiException {
     this.crmTasksIdDelete(id, Collections.emptyMap());
   }
 
@@ -170,7 +170,7 @@ public class TasksApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void crmTasksIdDelete(String id, Map<String, String> additionalHeaders) throws ApiException {
+  public void crmTasksIdDelete(@jakarta.annotation.Nonnull String id, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'id' is set
@@ -231,7 +231,7 @@ public class TasksApi extends BaseApi {
    * @return Task
    * @throws ApiException if fails to make API call
    */
-  public Task crmTasksIdGet(String id) throws ApiException {
+  public Task crmTasksIdGet(@jakarta.annotation.Nonnull String id) throws ApiException {
     return this.crmTasksIdGet(id, Collections.emptyMap());
   }
 
@@ -244,7 +244,7 @@ public class TasksApi extends BaseApi {
    * @return Task
    * @throws ApiException if fails to make API call
    */
-  public Task crmTasksIdGet(String id, Map<String, String> additionalHeaders) throws ApiException {
+  public Task crmTasksIdGet(@jakarta.annotation.Nonnull String id, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'id' is set
@@ -306,7 +306,7 @@ public class TasksApi extends BaseApi {
    * @param crmTasksIdPatchRequest Updated task details. (required)
    * @throws ApiException if fails to make API call
    */
-  public void crmTasksIdPatch(String id, CrmTasksIdPatchRequest crmTasksIdPatchRequest) throws ApiException {
+  public void crmTasksIdPatch(@jakarta.annotation.Nonnull String id, @jakarta.annotation.Nonnull CrmTasksIdPatchRequest crmTasksIdPatchRequest) throws ApiException {
     this.crmTasksIdPatch(id, crmTasksIdPatchRequest, Collections.emptyMap());
   }
 
@@ -319,7 +319,7 @@ public class TasksApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void crmTasksIdPatch(String id, CrmTasksIdPatchRequest crmTasksIdPatchRequest, Map<String, String> additionalHeaders) throws ApiException {
+  public void crmTasksIdPatch(@jakarta.annotation.Nonnull String id, @jakarta.annotation.Nonnull CrmTasksIdPatchRequest crmTasksIdPatchRequest, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = crmTasksIdPatchRequest;
     
     // verify the required parameter 'id' is set
@@ -385,7 +385,7 @@ public class TasksApi extends BaseApi {
    * @return CrmTasksPost201Response
    * @throws ApiException if fails to make API call
    */
-  public CrmTasksPost201Response crmTasksPost(CrmTasksPostRequest crmTasksPostRequest) throws ApiException {
+  public CrmTasksPost201Response crmTasksPost(@jakarta.annotation.Nonnull CrmTasksPostRequest crmTasksPostRequest) throws ApiException {
     return this.crmTasksPost(crmTasksPostRequest, Collections.emptyMap());
   }
 
@@ -398,7 +398,7 @@ public class TasksApi extends BaseApi {
    * @return CrmTasksPost201Response
    * @throws ApiException if fails to make API call
    */
-  public CrmTasksPost201Response crmTasksPost(CrmTasksPostRequest crmTasksPostRequest, Map<String, String> additionalHeaders) throws ApiException {
+  public CrmTasksPost201Response crmTasksPost(@jakarta.annotation.Nonnull CrmTasksPostRequest crmTasksPostRequest, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = crmTasksPostRequest;
     
     // verify the required parameter 'crmTasksPostRequest' is set

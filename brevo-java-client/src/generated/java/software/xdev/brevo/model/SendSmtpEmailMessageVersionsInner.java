@@ -44,7 +44,9 @@ import java.util.StringJoiner;
   SendSmtpEmailMessageVersionsInner.JSON_PROPERTY_BCC,
   SendSmtpEmailMessageVersionsInner.JSON_PROPERTY_CC,
   SendSmtpEmailMessageVersionsInner.JSON_PROPERTY_REPLY_TO,
-  SendSmtpEmailMessageVersionsInner.JSON_PROPERTY_SUBJECT
+  SendSmtpEmailMessageVersionsInner.JSON_PROPERTY_SUBJECT,
+  SendSmtpEmailMessageVersionsInner.JSON_PROPERTY_HTML_CONTENT,
+  SendSmtpEmailMessageVersionsInner.JSON_PROPERTY_TEXT_CONTENT
 })
 @JsonTypeName("sendSmtpEmail_messageVersions_inner")
 public class SendSmtpEmailMessageVersionsInner {
@@ -71,6 +73,14 @@ public class SendSmtpEmailMessageVersionsInner {
   public static final String JSON_PROPERTY_SUBJECT = "subject";
   @jakarta.annotation.Nullable
   private String subject;
+
+  public static final String JSON_PROPERTY_HTML_CONTENT = "htmlContent";
+  @jakarta.annotation.Nullable
+  private String htmlContent;
+
+  public static final String JSON_PROPERTY_TEXT_CONTENT = "textContent";
+  @jakarta.annotation.Nullable
+  private String textContent;
 
   public SendSmtpEmailMessageVersionsInner() {
   }
@@ -257,6 +267,56 @@ public class SendSmtpEmailMessageVersionsInner {
     this.subject = subject;
   }
 
+  public SendSmtpEmailMessageVersionsInner htmlContent(@jakarta.annotation.Nullable String htmlContent) {
+    
+    this.htmlContent = htmlContent;
+    return this;
+  }
+
+  /**
+   * HTML body of the message. **Mandatory if &#39;templateId&#39; is not passed, ignored if &#39;templateId&#39; is passed** 
+   * @return htmlContent
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_HTML_CONTENT)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public String getHtmlContent() {
+    return htmlContent;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_HTML_CONTENT)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setHtmlContent(@jakarta.annotation.Nullable String htmlContent) {
+    this.htmlContent = htmlContent;
+  }
+
+  public SendSmtpEmailMessageVersionsInner textContent(@jakarta.annotation.Nullable String textContent) {
+    
+    this.textContent = textContent;
+    return this;
+  }
+
+  /**
+   * Plain Text body of the message. **Ignored if &#39;templateId&#39; is passed** 
+   * @return textContent
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_TEXT_CONTENT)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public String getTextContent() {
+    return textContent;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_TEXT_CONTENT)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setTextContent(@jakarta.annotation.Nullable String textContent) {
+    this.textContent = textContent;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -271,12 +331,14 @@ public class SendSmtpEmailMessageVersionsInner {
         Objects.equals(this.bcc, sendSmtpEmailMessageVersionsInner.bcc) &&
         Objects.equals(this.cc, sendSmtpEmailMessageVersionsInner.cc) &&
         Objects.equals(this.replyTo, sendSmtpEmailMessageVersionsInner.replyTo) &&
-        Objects.equals(this.subject, sendSmtpEmailMessageVersionsInner.subject);
+        Objects.equals(this.subject, sendSmtpEmailMessageVersionsInner.subject) &&
+        Objects.equals(this.htmlContent, sendSmtpEmailMessageVersionsInner.htmlContent) &&
+        Objects.equals(this.textContent, sendSmtpEmailMessageVersionsInner.textContent);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(to, params, bcc, cc, replyTo, subject);
+    return Objects.hash(to, params, bcc, cc, replyTo, subject, htmlContent, textContent);
   }
 
   @Override
@@ -289,6 +351,8 @@ public class SendSmtpEmailMessageVersionsInner {
     sb.append("    cc: ").append(toIndentedString(cc)).append("\n");
     sb.append("    replyTo: ").append(toIndentedString(replyTo)).append("\n");
     sb.append("    subject: ").append(toIndentedString(subject)).append("\n");
+    sb.append("    htmlContent: ").append(toIndentedString(htmlContent)).append("\n");
+    sb.append("    textContent: ").append(toIndentedString(textContent)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -389,6 +453,26 @@ public class SendSmtpEmailMessageVersionsInner {
     if (getSubject() != null) {
       try {
         joiner.add(String.format("%ssubject%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubject()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `htmlContent` to the URL query string
+    if (getHtmlContent() != null) {
+      try {
+        joiner.add(String.format("%shtmlContent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHtmlContent()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `textContent` to the URL query string
+    if (getTextContent() != null) {
+      try {
+        joiner.add(String.format("%stextContent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTextContent()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

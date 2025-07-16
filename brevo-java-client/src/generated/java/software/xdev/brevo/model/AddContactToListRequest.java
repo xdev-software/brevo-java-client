@@ -24,6 +24,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import software.xdev.brevo.model.AddContactToListByEmails;
+import software.xdev.brevo.model.AddContactToListByExtIDs;
 import software.xdev.brevo.model.AddContactToListByIDs;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -36,7 +37,8 @@ import java.util.StringJoiner;
  */
 @JsonPropertyOrder({
   AddContactToListRequest.JSON_PROPERTY_EMAILS,
-  AddContactToListRequest.JSON_PROPERTY_IDS
+  AddContactToListRequest.JSON_PROPERTY_IDS,
+  AddContactToListRequest.JSON_PROPERTY_EXT_IDS
 })
 @JsonTypeName("addContactToList_request")
 public class AddContactToListRequest {
@@ -47,6 +49,10 @@ public class AddContactToListRequest {
   public static final String JSON_PROPERTY_IDS = "ids";
   @jakarta.annotation.Nullable
   private List<Long> ids = new ArrayList<>();
+
+  public static final String JSON_PROPERTY_EXT_IDS = "extIds";
+  @jakarta.annotation.Nullable
+  private List<String> extIds = new ArrayList<>();
 
   public AddContactToListRequest() {
   }
@@ -117,6 +123,39 @@ public class AddContactToListRequest {
     this.ids = ids;
   }
 
+  public AddContactToListRequest extIds(@jakarta.annotation.Nullable List<String> extIds) {
+    
+    this.extIds = extIds;
+    return this;
+  }
+
+  public AddContactToListRequest addExtIdsItem(String extIdsItem) {
+    if (this.extIds == null) {
+      this.extIds = new ArrayList<>();
+    }
+    this.extIds.add(extIdsItem);
+    return this;
+  }
+
+  /**
+   * EXT_ID attributes to add to a list. You can pass a **maximum of 150 EXT_ID attributes** for addition in one request. **_If you need to add the emails in bulk, please prefer /contacts/import api._** 
+   * @return extIds
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_EXT_IDS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public List<String> getExtIds() {
+    return extIds;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_EXT_IDS)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setExtIds(@jakarta.annotation.Nullable List<String> extIds) {
+    this.extIds = extIds;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -127,12 +166,13 @@ public class AddContactToListRequest {
     }
     AddContactToListRequest addContactToListRequest = (AddContactToListRequest) o;
     return Objects.equals(this.emails, addContactToListRequest.emails) &&
-        Objects.equals(this.ids, addContactToListRequest.ids);
+        Objects.equals(this.ids, addContactToListRequest.ids) &&
+        Objects.equals(this.extIds, addContactToListRequest.extIds);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(emails, ids);
+    return Objects.hash(emails, ids, extIds);
   }
 
   @Override
@@ -141,6 +181,7 @@ public class AddContactToListRequest {
     sb.append("class AddContactToListRequest {\n");
     sb.append("    emails: ").append(toIndentedString(emails)).append("\n");
     sb.append("    ids: ").append(toIndentedString(ids)).append("\n");
+    sb.append("    extIds: ").append(toIndentedString(extIds)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -209,6 +250,20 @@ public class AddContactToListRequest {
           joiner.add(String.format("%sids%s%s=%s", prefix, suffix,
               "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
+      }
+    }
+
+    // add `extIds` to the URL query string
+    if (getExtIds() != null) {
+      for (int i = 0; i < getExtIds().size(); i++) {
+        try {
+          joiner.add(String.format("%sextIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getExtIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
           throw new RuntimeException(e);

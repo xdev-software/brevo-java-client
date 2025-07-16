@@ -36,7 +36,10 @@ import java.util.StringJoiner;
   GetCouponCollection.JSON_PROPERTY_DEFAULT_COUPON,
   GetCouponCollection.JSON_PROPERTY_CREATED_AT,
   GetCouponCollection.JSON_PROPERTY_TOTAL_COUPONS,
-  GetCouponCollection.JSON_PROPERTY_REMAINING_COUPONS
+  GetCouponCollection.JSON_PROPERTY_REMAINING_COUPONS,
+  GetCouponCollection.JSON_PROPERTY_EXPIRATION_DATE,
+  GetCouponCollection.JSON_PROPERTY_REMAINING_DAYS_ALERT,
+  GetCouponCollection.JSON_PROPERTY_REMAINING_COUPONS_ALERT
 })
 @JsonTypeName("getCouponCollection")
 public class GetCouponCollection {
@@ -64,6 +67,18 @@ public class GetCouponCollection {
   @jakarta.annotation.Nonnull
   private Long remainingCoupons;
 
+  public static final String JSON_PROPERTY_EXPIRATION_DATE = "expirationDate";
+  @jakarta.annotation.Nullable
+  private OffsetDateTime expirationDate;
+
+  public static final String JSON_PROPERTY_REMAINING_DAYS_ALERT = "remainingDaysAlert";
+  @jakarta.annotation.Nullable
+  private Integer remainingDaysAlert;
+
+  public static final String JSON_PROPERTY_REMAINING_COUPONS_ALERT = "remainingCouponsAlert";
+  @jakarta.annotation.Nullable
+  private Integer remainingCouponsAlert;
+
   public GetCouponCollection() {
   }
 
@@ -74,7 +89,7 @@ public class GetCouponCollection {
   }
 
   /**
-   * The id of the collection
+   * The id of the collection.
    * @return id
    */
   @jakarta.annotation.Nonnull
@@ -99,7 +114,7 @@ public class GetCouponCollection {
   }
 
   /**
-   * The name of the collection
+   * The name of the collection.
    * @return name
    */
   @jakarta.annotation.Nonnull
@@ -124,7 +139,7 @@ public class GetCouponCollection {
   }
 
   /**
-   * The default coupon of the collection
+   * The default coupon of the collection.
    * @return defaultCoupon
    */
   @jakarta.annotation.Nonnull
@@ -149,7 +164,7 @@ public class GetCouponCollection {
   }
 
   /**
-   * Datetime on which the collection was created
+   * Datetime on which the collection was created.
    * @return createdAt
    */
   @jakarta.annotation.Nonnull
@@ -174,7 +189,7 @@ public class GetCouponCollection {
   }
 
   /**
-   * Total coupons in the collection
+   * Total number of coupons in the collection.
    * @return totalCoupons
    */
   @jakarta.annotation.Nonnull
@@ -199,7 +214,7 @@ public class GetCouponCollection {
   }
 
   /**
-   * Not sent coupons in the collection
+   * Number of coupons that have not been sent yet.
    * @return remainingCoupons
    */
   @jakarta.annotation.Nonnull
@@ -217,6 +232,81 @@ public class GetCouponCollection {
     this.remainingCoupons = remainingCoupons;
   }
 
+  public GetCouponCollection expirationDate(@jakarta.annotation.Nullable OffsetDateTime expirationDate) {
+    
+    this.expirationDate = expirationDate;
+    return this;
+  }
+
+  /**
+   * Expiration date for the coupon collection in RFC3339 format.
+   * @return expirationDate
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_EXPIRATION_DATE)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public OffsetDateTime getExpirationDate() {
+    return expirationDate;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_EXPIRATION_DATE)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setExpirationDate(@jakarta.annotation.Nullable OffsetDateTime expirationDate) {
+    this.expirationDate = expirationDate;
+  }
+
+  public GetCouponCollection remainingDaysAlert(@jakarta.annotation.Nullable Integer remainingDaysAlert) {
+    
+    this.remainingDaysAlert = remainingDaysAlert;
+    return this;
+  }
+
+  /**
+   * If present, an email notification is going to be sent the defined amount of days before to the expiration date.
+   * @return remainingDaysAlert
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_REMAINING_DAYS_ALERT)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public Integer getRemainingDaysAlert() {
+    return remainingDaysAlert;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_REMAINING_DAYS_ALERT)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setRemainingDaysAlert(@jakarta.annotation.Nullable Integer remainingDaysAlert) {
+    this.remainingDaysAlert = remainingDaysAlert;
+  }
+
+  public GetCouponCollection remainingCouponsAlert(@jakarta.annotation.Nullable Integer remainingCouponsAlert) {
+    
+    this.remainingCouponsAlert = remainingCouponsAlert;
+    return this;
+  }
+
+  /**
+   * If present, an email notification is going to be sent when the total number of available coupons falls below the defined threshold.
+   * @return remainingCouponsAlert
+   */
+  @jakarta.annotation.Nullable
+  @JsonProperty(JSON_PROPERTY_REMAINING_COUPONS_ALERT)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+
+  public Integer getRemainingCouponsAlert() {
+    return remainingCouponsAlert;
+  }
+
+
+  @JsonProperty(JSON_PROPERTY_REMAINING_COUPONS_ALERT)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setRemainingCouponsAlert(@jakarta.annotation.Nullable Integer remainingCouponsAlert) {
+    this.remainingCouponsAlert = remainingCouponsAlert;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -231,12 +321,15 @@ public class GetCouponCollection {
         Objects.equals(this.defaultCoupon, getCouponCollection.defaultCoupon) &&
         Objects.equals(this.createdAt, getCouponCollection.createdAt) &&
         Objects.equals(this.totalCoupons, getCouponCollection.totalCoupons) &&
-        Objects.equals(this.remainingCoupons, getCouponCollection.remainingCoupons);
+        Objects.equals(this.remainingCoupons, getCouponCollection.remainingCoupons) &&
+        Objects.equals(this.expirationDate, getCouponCollection.expirationDate) &&
+        Objects.equals(this.remainingDaysAlert, getCouponCollection.remainingDaysAlert) &&
+        Objects.equals(this.remainingCouponsAlert, getCouponCollection.remainingCouponsAlert);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, name, defaultCoupon, createdAt, totalCoupons, remainingCoupons);
+    return Objects.hash(id, name, defaultCoupon, createdAt, totalCoupons, remainingCoupons, expirationDate, remainingDaysAlert, remainingCouponsAlert);
   }
 
   @Override
@@ -249,6 +342,9 @@ public class GetCouponCollection {
     sb.append("    createdAt: ").append(toIndentedString(createdAt)).append("\n");
     sb.append("    totalCoupons: ").append(toIndentedString(totalCoupons)).append("\n");
     sb.append("    remainingCoupons: ").append(toIndentedString(remainingCoupons)).append("\n");
+    sb.append("    expirationDate: ").append(toIndentedString(expirationDate)).append("\n");
+    sb.append("    remainingDaysAlert: ").append(toIndentedString(remainingDaysAlert)).append("\n");
+    sb.append("    remainingCouponsAlert: ").append(toIndentedString(remainingCouponsAlert)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -350,6 +446,36 @@ public class GetCouponCollection {
     if (getRemainingCoupons() != null) {
       try {
         joiner.add(String.format("%sremainingCoupons%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRemainingCoupons()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `expirationDate` to the URL query string
+    if (getExpirationDate() != null) {
+      try {
+        joiner.add(String.format("%sexpirationDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpirationDate()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `remainingDaysAlert` to the URL query string
+    if (getRemainingDaysAlert() != null) {
+      try {
+        joiner.add(String.format("%sremainingDaysAlert%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRemainingDaysAlert()), "UTF-8").replaceAll("\\+", "%20")));
+      } catch (UnsupportedEncodingException e) {
+        // Should never happen, UTF-8 is always supported
+        throw new RuntimeException(e);
+      }
+    }
+
+    // add `remainingCouponsAlert` to the URL query string
+    if (getRemainingCouponsAlert() != null) {
+      try {
+        joiner.add(String.format("%sremainingCouponsAlert%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRemainingCouponsAlert()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

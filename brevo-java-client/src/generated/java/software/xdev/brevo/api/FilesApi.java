@@ -56,7 +56,7 @@ public class FilesApi extends BaseApi {
    * @return List&lt;FileData&gt;
    * @throws ApiException if fails to make API call
    */
-  public List<FileData> crmFilesGet(String entity, String entityIds, Integer dateFrom, Integer dateTo, Long offset, Long limit, String sort) throws ApiException {
+  public List<FileData> crmFilesGet(@jakarta.annotation.Nullable String entity, @jakarta.annotation.Nullable String entityIds, @jakarta.annotation.Nullable Integer dateFrom, @jakarta.annotation.Nullable Integer dateTo, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable String sort) throws ApiException {
     return this.crmFilesGet(entity, entityIds, dateFrom, dateTo, offset, limit, sort, Collections.emptyMap());
   }
 
@@ -75,7 +75,7 @@ public class FilesApi extends BaseApi {
    * @return List&lt;FileData&gt;
    * @throws ApiException if fails to make API call
    */
-  public List<FileData> crmFilesGet(String entity, String entityIds, Integer dateFrom, Integer dateTo, Long offset, Long limit, String sort, Map<String, String> additionalHeaders) throws ApiException {
+  public List<FileData> crmFilesGet(@jakarta.annotation.Nullable String entity, @jakarta.annotation.Nullable String entityIds, @jakarta.annotation.Nullable Integer dateFrom, @jakarta.annotation.Nullable Integer dateTo, @jakarta.annotation.Nullable Long offset, @jakarta.annotation.Nullable Long limit, @jakarta.annotation.Nullable String sort, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -138,7 +138,7 @@ public class FilesApi extends BaseApi {
    * @return FileData
    * @throws ApiException if fails to make API call
    */
-  public FileData crmFilesIdDataGet(String id) throws ApiException {
+  public FileData crmFilesIdDataGet(@jakarta.annotation.Nonnull String id) throws ApiException {
     return this.crmFilesIdDataGet(id, Collections.emptyMap());
   }
 
@@ -151,7 +151,7 @@ public class FilesApi extends BaseApi {
    * @return FileData
    * @throws ApiException if fails to make API call
    */
-  public FileData crmFilesIdDataGet(String id, Map<String, String> additionalHeaders) throws ApiException {
+  public FileData crmFilesIdDataGet(@jakarta.annotation.Nonnull String id, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'id' is set
@@ -212,7 +212,7 @@ public class FilesApi extends BaseApi {
    * @param id File id to delete. (required)
    * @throws ApiException if fails to make API call
    */
-  public void crmFilesIdDelete(String id) throws ApiException {
+  public void crmFilesIdDelete(@jakarta.annotation.Nonnull String id) throws ApiException {
     this.crmFilesIdDelete(id, Collections.emptyMap());
   }
 
@@ -224,7 +224,7 @@ public class FilesApi extends BaseApi {
    * @param additionalHeaders additionalHeaders for this call
    * @throws ApiException if fails to make API call
    */
-  public void crmFilesIdDelete(String id, Map<String, String> additionalHeaders) throws ApiException {
+  public void crmFilesIdDelete(@jakarta.annotation.Nonnull String id, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'id' is set
@@ -285,7 +285,7 @@ public class FilesApi extends BaseApi {
    * @return FileDownloadableLink
    * @throws ApiException if fails to make API call
    */
-  public FileDownloadableLink crmFilesIdGet(String id) throws ApiException {
+  public FileDownloadableLink crmFilesIdGet(@jakarta.annotation.Nonnull String id) throws ApiException {
     return this.crmFilesIdGet(id, Collections.emptyMap());
   }
 
@@ -298,7 +298,7 @@ public class FilesApi extends BaseApi {
    * @return FileDownloadableLink
    * @throws ApiException if fails to make API call
    */
-  public FileDownloadableLink crmFilesIdGet(String id, Map<String, String> additionalHeaders) throws ApiException {
+  public FileDownloadableLink crmFilesIdGet(@jakarta.annotation.Nonnull String id, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'id' is set
@@ -363,7 +363,7 @@ public class FilesApi extends BaseApi {
    * @return FileData
    * @throws ApiException if fails to make API call
    */
-  public FileData crmFilesPost(File _file, String dealId, Long contactId, String companyId) throws ApiException {
+  public FileData crmFilesPost(@jakarta.annotation.Nonnull File _file, @jakarta.annotation.Nullable String dealId, @jakarta.annotation.Nullable Long contactId, @jakarta.annotation.Nullable String companyId) throws ApiException {
     return this.crmFilesPost(_file, dealId, contactId, companyId, Collections.emptyMap());
   }
 
@@ -379,7 +379,7 @@ public class FilesApi extends BaseApi {
    * @return FileData
    * @throws ApiException if fails to make API call
    */
-  public FileData crmFilesPost(File _file, String dealId, Long contactId, String companyId, Map<String, String> additionalHeaders) throws ApiException {
+  public FileData crmFilesPost(@jakarta.annotation.Nonnull File _file, @jakarta.annotation.Nullable String dealId, @jakarta.annotation.Nullable Long contactId, @jakarta.annotation.Nullable String companyId, Map<String, String> additionalHeaders) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter '_file' is set
