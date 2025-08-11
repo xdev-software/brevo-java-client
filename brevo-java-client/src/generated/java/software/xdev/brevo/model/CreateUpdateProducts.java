@@ -26,7 +26,6 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import software.xdev.brevo.model.GetContactInfoIdentifierParameter;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import java.io.UnsupportedEncodingException;
@@ -86,7 +85,7 @@ public class CreateUpdateProducts {
 
   public static final String JSON_PROPERTY_META_INFO = "metaInfo";
   @jakarta.annotation.Nullable
-  private Map<String, GetContactInfoIdentifierParameter> metaInfo = new HashMap<>();
+  private Map<String, Object> metaInfo = new HashMap<>();
 
   public static final String JSON_PROPERTY_DELETED_AT = "deletedAt";
   @jakarta.annotation.Nullable
@@ -311,13 +310,13 @@ public class CreateUpdateProducts {
     this.parentId = parentId;
   }
 
-  public CreateUpdateProducts metaInfo(@jakarta.annotation.Nullable Map<String, GetContactInfoIdentifierParameter> metaInfo) {
+  public CreateUpdateProducts metaInfo(@jakarta.annotation.Nullable Map<String, Object> metaInfo) {
     
     this.metaInfo = metaInfo;
     return this;
   }
 
-  public CreateUpdateProducts putMetaInfoItem(String key, GetContactInfoIdentifierParameter metaInfoItem) {
+  public CreateUpdateProducts putMetaInfoItem(String key, Object metaInfoItem) {
     if (this.metaInfo == null) {
       this.metaInfo = new HashMap<>();
     }
@@ -331,16 +330,16 @@ public class CreateUpdateProducts {
    */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_META_INFO)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
 
-  public Map<String, GetContactInfoIdentifierParameter> getMetaInfo() {
+  public Map<String, Object> getMetaInfo() {
     return metaInfo;
   }
 
 
   @JsonProperty(JSON_PROPERTY_META_INFO)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setMetaInfo(@jakarta.annotation.Nullable Map<String, GetContactInfoIdentifierParameter> metaInfo) {
+  @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
+  public void setMetaInfo(@jakarta.annotation.Nullable Map<String, Object> metaInfo) {
     this.metaInfo = metaInfo;
   }
 
@@ -597,9 +596,13 @@ public class CreateUpdateProducts {
     // add `metaInfo` to the URL query string
     if (getMetaInfo() != null) {
       for (String _key : getMetaInfo().keySet()) {
-        if (getMetaInfo().get(_key) != null) {
-          joiner.add(getMetaInfo().get(_key).toUrlQueryString(String.format("%smetaInfo%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix))));
+        try {
+          joiner.add(String.format("%smetaInfo%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix),
+              getMetaInfo().get(_key), URLEncoder.encode(String.valueOf(getMetaInfo().get(_key)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
         }
       }
     }

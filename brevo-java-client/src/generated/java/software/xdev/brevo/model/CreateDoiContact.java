@@ -25,7 +25,6 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import software.xdev.brevo.model.CreateDoiContactAttributesValue;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import java.io.UnsupportedEncodingException;
@@ -51,7 +50,7 @@ public class CreateDoiContact {
 
   public static final String JSON_PROPERTY_ATTRIBUTES = "attributes";
   @jakarta.annotation.Nullable
-  private Map<String, CreateDoiContactAttributesValue> attributes = new HashMap<>();
+  private Map<String, Object> attributes = new HashMap<>();
 
   public static final String JSON_PROPERTY_INCLUDE_LIST_IDS = "includeListIds";
   @jakarta.annotation.Nonnull
@@ -97,13 +96,13 @@ public class CreateDoiContact {
     this.email = email;
   }
 
-  public CreateDoiContact attributes(@jakarta.annotation.Nullable Map<String, CreateDoiContactAttributesValue> attributes) {
+  public CreateDoiContact attributes(@jakarta.annotation.Nullable Map<String, Object> attributes) {
     
     this.attributes = attributes;
     return this;
   }
 
-  public CreateDoiContact putAttributesItem(String key, CreateDoiContactAttributesValue attributesItem) {
+  public CreateDoiContact putAttributesItem(String key, Object attributesItem) {
     if (this.attributes == null) {
       this.attributes = new HashMap<>();
     }
@@ -117,16 +116,16 @@ public class CreateDoiContact {
    */
   @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
 
-  public Map<String, CreateDoiContactAttributesValue> getAttributes() {
+  public Map<String, Object> getAttributes() {
     return attributes;
   }
 
 
   @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setAttributes(@jakarta.annotation.Nullable Map<String, CreateDoiContactAttributesValue> attributes) {
+  @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
+  public void setAttributes(@jakarta.annotation.Nullable Map<String, Object> attributes) {
     this.attributes = attributes;
   }
 
@@ -338,9 +337,13 @@ public class CreateDoiContact {
     // add `attributes` to the URL query string
     if (getAttributes() != null) {
       for (String _key : getAttributes().keySet()) {
-        if (getAttributes().get(_key) != null) {
-          joiner.add(getAttributes().get(_key).toUrlQueryString(String.format("%sattributes%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix))));
+        try {
+          joiner.add(String.format("%sattributes%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix),
+              getAttributes().get(_key), URLEncoder.encode(String.valueOf(getAttributes().get(_key)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
         }
       }
     }

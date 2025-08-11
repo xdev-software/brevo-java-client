@@ -1,3 +1,6 @@
+# 1.1.1
+* Fixed some incorrectly generated classes for ``additionalProperties: oneOf: ...`` #181
+
 # 1.1.0
 * Updated generated code from Brevo's openapi.yml
 * Updated references to "new" official Brevo client #
