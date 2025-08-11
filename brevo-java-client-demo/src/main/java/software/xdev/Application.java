@@ -9,6 +9,7 @@ import org.apache.hc.core5.http.HttpStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import software.xdev.brevo.IdentifierType;
 import software.xdev.brevo.api.ContactsApi;
 import software.xdev.brevo.client.ApiClient;
 import software.xdev.brevo.client.ApiException;
@@ -42,7 +43,7 @@ public final class Application
 				new GetContactInfoIdentifierStringParameter(email);
 			final GetExtendedContactDetails contactInfo = contactsApi.getContactInfo(
 				identifier,
-				null,
+				IdentifierType.EMAIL,
 				null,
 				null);
 			LOG.info("Got contact[email={},listIds={}]", contactInfo.getEmail(), contactInfo.getListIds());
@@ -51,7 +52,7 @@ public final class Application
 				contactsApi.updateContact(
 					identifier,
 					new UpdateContact().listIds(List.of(listId)),
-					null);
+					IdentifierType.EMAIL);
 				LOG.info("Updated contact to include listId={}", listId);
 			}
 		}
