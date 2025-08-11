@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<licensePluginReport goal="FORMAT" timestamp="1754910644658">
+    <module artifactId="brevo-java-client" groupId="software.xdev" version="1.1.1"/>
+    <files>
+        <file path="src/main/java/software/xdev/brevo/IdentifierType.java" result="NOOP"/>
+    </files>
+</licensePluginReport>
