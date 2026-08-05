@@ -1,3 +1,6 @@
+# 1.2.1
+* Fixed problems with Brevo API #206 #243
+
 # 1.2.0
 * Updated to Jackson v3
 * Updated dependencies
@@ -7,7 +10,7 @@
 
 # 1.1.0
 * Updated generated code from Brevo's openapi.yml
-* Updated references to "new" official Brevo client #
+* Updated references to "new" official Brevo client
 * Updated dependencies
 
 # 1.0.4

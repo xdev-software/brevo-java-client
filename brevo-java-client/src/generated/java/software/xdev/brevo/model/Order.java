@@ -28,7 +28,6 @@ import java.util.List;
 import java.util.Map;
 import software.xdev.brevo.model.OrderBilling;
 import software.xdev.brevo.model.OrderIdentifiers;
-import software.xdev.brevo.model.OrderMetaInfoValue;
 import software.xdev.brevo.model.OrderProductsInner;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -96,7 +95,7 @@ public class Order {
 
   public static final String JSON_PROPERTY_META_INFO = "metaInfo";
   @jakarta.annotation.Nullable
-  private Map<String, OrderMetaInfoValue> metaInfo = new HashMap<>();
+  private Map<String, Object> metaInfo = new HashMap<>();
 
   public Order() {
   }
@@ -367,13 +366,13 @@ public class Order {
     this.coupons = coupons;
   }
 
-  public Order metaInfo(@jakarta.annotation.Nullable Map<String, OrderMetaInfoValue> metaInfo) {
+  public Order metaInfo(@jakarta.annotation.Nullable Map<String, Object> metaInfo) {
     
     this.metaInfo = metaInfo;
     return this;
   }
 
-  public Order putMetaInfoItem(String key, OrderMetaInfoValue metaInfoItem) {
+  public Order putMetaInfoItem(String key, Object metaInfoItem) {
     if (this.metaInfo == null) {
       this.metaInfo = new HashMap<>();
     }
@@ -387,16 +386,16 @@ public class Order {
    */
   @jakarta.annotation.Nullable
   @JsonProperty(value = JSON_PROPERTY_META_INFO, required = false)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
 
-  public Map<String, OrderMetaInfoValue> getMetaInfo() {
+  public Map<String, Object> getMetaInfo() {
     return metaInfo;
   }
 
 
   @JsonProperty(value = JSON_PROPERTY_META_INFO, required = false)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setMetaInfo(@jakarta.annotation.Nullable Map<String, OrderMetaInfoValue> metaInfo) {
+  @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
+  public void setMetaInfo(@jakarta.annotation.Nullable Map<String, Object> metaInfo) {
     this.metaInfo = metaInfo;
   }
 
@@ -584,9 +583,13 @@ public class Order {
     // add `metaInfo` to the URL query string
     if (getMetaInfo() != null) {
       for (String _key : getMetaInfo().keySet()) {
-        if (getMetaInfo().get(_key) != null) {
-          joiner.add(getMetaInfo().get(_key).toUrlQueryString(String.format(java.util.Locale.ROOT, "%smetaInfo%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, _key, containerSuffix))));
+        try {
+          joiner.add(String.format(java.util.Locale.ROOT, "%smetaInfo%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, _key, containerSuffix),
+              getMetaInfo().get(_key), URLEncoder.encode(String.valueOf(getMetaInfo().get(_key)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
         }
       }
     }

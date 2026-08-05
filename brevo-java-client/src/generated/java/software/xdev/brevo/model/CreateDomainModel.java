@@ -41,7 +41,7 @@ import java.util.StringJoiner;
 public class CreateDomainModel {
   public static final String JSON_PROPERTY_ID = "id";
   @jakarta.annotation.Nonnull
-  private Long id;
+  private String id;
 
   public static final String JSON_PROPERTY_DOMAIN_NAME = "domain_name";
   @jakarta.annotation.Nullable
@@ -62,7 +62,7 @@ public class CreateDomainModel {
   public CreateDomainModel() {
   }
 
-  public CreateDomainModel id(@jakarta.annotation.Nonnull Long id) {
+  public CreateDomainModel id(@jakarta.annotation.Nonnull String id) {
     
     this.id = id;
     return this;
@@ -76,14 +76,14 @@ public class CreateDomainModel {
   @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
-  public Long getId() {
+  public String getId() {
     return id;
   }
 
 
   @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setId(@jakarta.annotation.Nonnull Long id) {
+  public void setId(@jakarta.annotation.Nonnull String id) {
     this.id = id;
   }
 

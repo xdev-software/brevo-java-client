@@ -20,8 +20,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import software.xdev.brevo.model.PostContactInfoContactsFailure;
-import software.xdev.brevo.model.PostContactInfoContactsSuccess;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import java.io.UnsupportedEncodingException;
@@ -41,11 +42,11 @@ import java.util.StringJoiner;
 public class PostContactInfoContacts {
   public static final String JSON_PROPERTY_SUCCESS = "success";
   @jakarta.annotation.Nullable
-  private PostContactInfoContactsSuccess success;
+  private List<String> success = new ArrayList<>();
 
   public static final String JSON_PROPERTY_FAILURE = "failure";
   @jakarta.annotation.Nullable
-  private PostContactInfoContactsFailure failure;
+  private List<String> failure = new ArrayList<>();
 
   public static final String JSON_PROPERTY_TOTAL = "total";
   @jakarta.annotation.Nullable
@@ -58,9 +59,17 @@ public class PostContactInfoContacts {
   public PostContactInfoContacts() {
   }
 
-  public PostContactInfoContacts success(@jakarta.annotation.Nullable PostContactInfoContactsSuccess success) {
+  public PostContactInfoContacts success(@jakarta.annotation.Nullable List<String> success) {
     
     this.success = success;
+    return this;
+  }
+
+  public PostContactInfoContacts addSuccessItem(String successItem) {
+    if (this.success == null) {
+      this.success = new ArrayList<>();
+    }
+    this.success.add(successItem);
     return this;
   }
 
@@ -72,20 +81,28 @@ public class PostContactInfoContacts {
   @JsonProperty(value = JSON_PROPERTY_SUCCESS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public PostContactInfoContactsSuccess getSuccess() {
+  public List<String> getSuccess() {
     return success;
   }
 
 
   @JsonProperty(value = JSON_PROPERTY_SUCCESS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setSuccess(@jakarta.annotation.Nullable PostContactInfoContactsSuccess success) {
+  public void setSuccess(@jakarta.annotation.Nullable List<String> success) {
     this.success = success;
   }
 
-  public PostContactInfoContacts failure(@jakarta.annotation.Nullable PostContactInfoContactsFailure failure) {
+  public PostContactInfoContacts failure(@jakarta.annotation.Nullable List<String> failure) {
     
     this.failure = failure;
+    return this;
+  }
+
+  public PostContactInfoContacts addFailureItem(String failureItem) {
+    if (this.failure == null) {
+      this.failure = new ArrayList<>();
+    }
+    this.failure.add(failureItem);
     return this;
   }
 
@@ -97,14 +114,14 @@ public class PostContactInfoContacts {
   @JsonProperty(value = JSON_PROPERTY_FAILURE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public PostContactInfoContactsFailure getFailure() {
+  public List<String> getFailure() {
     return failure;
   }
 
 
   @JsonProperty(value = JSON_PROPERTY_FAILURE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setFailure(@jakarta.annotation.Nullable PostContactInfoContactsFailure failure) {
+  public void setFailure(@jakarta.annotation.Nullable List<String> failure) {
     this.failure = failure;
   }
 
@@ -233,12 +250,30 @@ public class PostContactInfoContacts {
 
     // add `success` to the URL query string
     if (getSuccess() != null) {
-      joiner.add(getSuccess().toUrlQueryString(prefix + "success" + suffix));
+      for (int i = 0; i < getSuccess().size(); i++) {
+        try {
+          joiner.add(String.format(java.util.Locale.ROOT, "%ssuccess%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getSuccess().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
+      }
     }
 
     // add `failure` to the URL query string
     if (getFailure() != null) {
-      joiner.add(getFailure().toUrlQueryString(prefix + "failure" + suffix));
+      for (int i = 0; i < getFailure().size(); i++) {
+        try {
+          joiner.add(String.format(java.util.Locale.ROOT, "%sfailure%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
+              URLEncoder.encode(String.valueOf(getFailure().get(i)), "UTF-8").replaceAll("\\+", "%20")));
+        } catch (UnsupportedEncodingException e) {
+          // Should never happen, UTF-8 is always supported
+          throw new RuntimeException(e);
+        }
+      }
     }
 
     // add `total` to the URL query string
