@@ -95,7 +95,7 @@ public class GetExtendedCampaignStats {
    * @return globalStats
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_GLOBAL_STATS)
+  @JsonProperty(value = JSON_PROPERTY_GLOBAL_STATS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public GetCampaignStats getGlobalStats() {
@@ -103,7 +103,7 @@ public class GetExtendedCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_GLOBAL_STATS)
+  @JsonProperty(value = JSON_PROPERTY_GLOBAL_STATS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setGlobalStats(@jakarta.annotation.Nonnull GetCampaignStats globalStats) {
     this.globalStats = globalStats;
@@ -128,7 +128,7 @@ public class GetExtendedCampaignStats {
    * @return campaignStats
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CAMPAIGN_STATS)
+  @JsonProperty(value = JSON_PROPERTY_CAMPAIGN_STATS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public List<GetCampaignStats> getCampaignStats() {
@@ -136,7 +136,7 @@ public class GetExtendedCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CAMPAIGN_STATS)
+  @JsonProperty(value = JSON_PROPERTY_CAMPAIGN_STATS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCampaignStats(@jakarta.annotation.Nonnull List<GetCampaignStats> campaignStats) {
     this.campaignStats = campaignStats;
@@ -153,7 +153,7 @@ public class GetExtendedCampaignStats {
    * @return mirrorClick
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_MIRROR_CLICK)
+  @JsonProperty(value = JSON_PROPERTY_MIRROR_CLICK, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getMirrorClick() {
@@ -161,7 +161,7 @@ public class GetExtendedCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MIRROR_CLICK)
+  @JsonProperty(value = JSON_PROPERTY_MIRROR_CLICK, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setMirrorClick(@jakarta.annotation.Nonnull Long mirrorClick) {
     this.mirrorClick = mirrorClick;
@@ -178,7 +178,7 @@ public class GetExtendedCampaignStats {
    * @return remaining
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_REMAINING)
+  @JsonProperty(value = JSON_PROPERTY_REMAINING, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getRemaining() {
@@ -186,7 +186,7 @@ public class GetExtendedCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REMAINING)
+  @JsonProperty(value = JSON_PROPERTY_REMAINING, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setRemaining(@jakarta.annotation.Nonnull Long remaining) {
     this.remaining = remaining;
@@ -203,7 +203,7 @@ public class GetExtendedCampaignStats {
    * @return linksStats
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_LINKS_STATS)
+  @JsonProperty(value = JSON_PROPERTY_LINKS_STATS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Object getLinksStats() {
@@ -211,7 +211,7 @@ public class GetExtendedCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LINKS_STATS)
+  @JsonProperty(value = JSON_PROPERTY_LINKS_STATS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setLinksStats(@jakarta.annotation.Nonnull Object linksStats) {
     this.linksStats = linksStats;
@@ -233,7 +233,7 @@ public class GetExtendedCampaignStats {
    * @return statsByDomain
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_STATS_BY_DOMAIN)
+  @JsonProperty(value = JSON_PROPERTY_STATS_BY_DOMAIN, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Map<String, GetCampaignStats> getStatsByDomain() {
@@ -241,7 +241,7 @@ public class GetExtendedCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_STATS_BY_DOMAIN)
+  @JsonProperty(value = JSON_PROPERTY_STATS_BY_DOMAIN, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setStatsByDomain(@jakarta.annotation.Nonnull Map<String, GetCampaignStats> statsByDomain) {
     this.statsByDomain = statsByDomain;
@@ -258,7 +258,7 @@ public class GetExtendedCampaignStats {
    * @return statsByDevice
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_STATS_BY_DEVICE)
+  @JsonProperty(value = JSON_PROPERTY_STATS_BY_DEVICE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public GetStatsByDevice getStatsByDevice() {
@@ -266,7 +266,7 @@ public class GetExtendedCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_STATS_BY_DEVICE)
+  @JsonProperty(value = JSON_PROPERTY_STATS_BY_DEVICE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setStatsByDevice(@jakarta.annotation.Nonnull GetStatsByDevice statsByDevice) {
     this.statsByDevice = statsByDevice;
@@ -288,7 +288,7 @@ public class GetExtendedCampaignStats {
    * @return statsByBrowser
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_STATS_BY_BROWSER)
+  @JsonProperty(value = JSON_PROPERTY_STATS_BY_BROWSER, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Map<String, GetDeviceBrowserStats> getStatsByBrowser() {
@@ -296,11 +296,12 @@ public class GetExtendedCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_STATS_BY_BROWSER)
+  @JsonProperty(value = JSON_PROPERTY_STATS_BY_BROWSER, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setStatsByBrowser(@jakarta.annotation.Nonnull Map<String, GetDeviceBrowserStats> statsByBrowser) {
     this.statsByBrowser = statsByBrowser;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -347,10 +348,7 @@ public class GetExtendedCampaignStats {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -394,8 +392,8 @@ public class GetExtendedCampaignStats {
     if (getCampaignStats() != null) {
       for (int i = 0; i < getCampaignStats().size(); i++) {
         if (getCampaignStats().get(i) != null) {
-          joiner.add(getCampaignStats().get(i).toUrlQueryString(String.format("%scampaignStats%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getCampaignStats().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%scampaignStats%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -403,7 +401,7 @@ public class GetExtendedCampaignStats {
     // add `mirrorClick` to the URL query string
     if (getMirrorClick() != null) {
       try {
-        joiner.add(String.format("%smirrorClick%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMirrorClick()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%smirrorClick%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMirrorClick()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -413,7 +411,7 @@ public class GetExtendedCampaignStats {
     // add `remaining` to the URL query string
     if (getRemaining() != null) {
       try {
-        joiner.add(String.format("%sremaining%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRemaining()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sremaining%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRemaining()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -423,7 +421,7 @@ public class GetExtendedCampaignStats {
     // add `linksStats` to the URL query string
     if (getLinksStats() != null) {
       try {
-        joiner.add(String.format("%slinksStats%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLinksStats()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%slinksStats%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLinksStats()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -434,8 +432,8 @@ public class GetExtendedCampaignStats {
     if (getStatsByDomain() != null) {
       for (String _key : getStatsByDomain().keySet()) {
         if (getStatsByDomain().get(_key) != null) {
-          joiner.add(getStatsByDomain().get(_key).toUrlQueryString(String.format("%sstatsByDomain%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix))));
+          joiner.add(getStatsByDomain().get(_key).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sstatsByDomain%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, _key, containerSuffix))));
         }
       }
     }
@@ -449,8 +447,8 @@ public class GetExtendedCampaignStats {
     if (getStatsByBrowser() != null) {
       for (String _key : getStatsByBrowser().keySet()) {
         if (getStatsByBrowser().get(_key) != null) {
-          joiner.add(getStatsByBrowser().get(_key).toUrlQueryString(String.format("%sstatsByBrowser%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix))));
+          joiner.add(getStatsByBrowser().get(_key).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sstatsByBrowser%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, _key, containerSuffix))));
         }
       }
     }

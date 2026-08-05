@@ -86,7 +86,7 @@ public class MainAttributeRewardPayload {
    * @return value
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_VALUE)
+  @JsonProperty(value = JSON_PROPERTY_VALUE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public BigDecimal getValue() {
@@ -94,7 +94,7 @@ public class MainAttributeRewardPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_VALUE)
+  @JsonProperty(value = JSON_PROPERTY_VALUE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setValue(@jakarta.annotation.Nullable BigDecimal value) {
     this.value = value;
@@ -111,7 +111,7 @@ public class MainAttributeRewardPayload {
    * @return code
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CODE)
+  @JsonProperty(value = JSON_PROPERTY_CODE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getCode() {
@@ -119,7 +119,7 @@ public class MainAttributeRewardPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CODE)
+  @JsonProperty(value = JSON_PROPERTY_CODE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCode(@jakarta.annotation.Nullable String code) {
     this.code = code;
@@ -137,7 +137,7 @@ public class MainAttributeRewardPayload {
    * @return contactId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CONTACT_ID)
+  @JsonProperty(value = JSON_PROPERTY_CONTACT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getContactId() {
@@ -145,7 +145,7 @@ public class MainAttributeRewardPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONTACT_ID)
+  @JsonProperty(value = JSON_PROPERTY_CONTACT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setContactId(@jakarta.annotation.Nullable Long contactId) {
     this.contactId = contactId;
@@ -162,7 +162,7 @@ public class MainAttributeRewardPayload {
    * @return expirationDate
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EXPIRATION_DATE)
+  @JsonProperty(value = JSON_PROPERTY_EXPIRATION_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getExpirationDate() {
@@ -170,7 +170,7 @@ public class MainAttributeRewardPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EXPIRATION_DATE)
+  @JsonProperty(value = JSON_PROPERTY_EXPIRATION_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setExpirationDate(@jakarta.annotation.Nullable String expirationDate) {
     this.expirationDate = expirationDate;
@@ -187,7 +187,7 @@ public class MainAttributeRewardPayload {
    * @return loyaltySubscriptionId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LOYALTY_SUBSCRIPTION_ID)
+  @JsonProperty(value = JSON_PROPERTY_LOYALTY_SUBSCRIPTION_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getLoyaltySubscriptionId() {
@@ -195,7 +195,7 @@ public class MainAttributeRewardPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LOYALTY_SUBSCRIPTION_ID)
+  @JsonProperty(value = JSON_PROPERTY_LOYALTY_SUBSCRIPTION_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLoyaltySubscriptionId(@jakarta.annotation.Nullable String loyaltySubscriptionId) {
     this.loyaltySubscriptionId = loyaltySubscriptionId;
@@ -220,7 +220,7 @@ public class MainAttributeRewardPayload {
    * @return meta
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_META)
+  @JsonProperty(value = JSON_PROPERTY_META, required = false)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
 
   public Map<String, Object> getMeta() {
@@ -228,7 +228,7 @@ public class MainAttributeRewardPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_META)
+  @JsonProperty(value = JSON_PROPERTY_META, required = false)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
   public void setMeta(@jakarta.annotation.Nullable Map<String, Object> meta) {
     this.meta = meta;
@@ -245,7 +245,7 @@ public class MainAttributeRewardPayload {
    * @return rewardId
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_REWARD_ID)
+  @JsonProperty(value = JSON_PROPERTY_REWARD_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public UUID getRewardId() {
@@ -253,11 +253,12 @@ public class MainAttributeRewardPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REWARD_ID)
+  @JsonProperty(value = JSON_PROPERTY_REWARD_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setRewardId(@jakarta.annotation.Nonnull UUID rewardId) {
     this.rewardId = rewardId;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -302,10 +303,7 @@ public class MainAttributeRewardPayload {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -343,7 +341,7 @@ public class MainAttributeRewardPayload {
     // add `value` to the URL query string
     if (getValue() != null) {
       try {
-        joiner.add(String.format("%svalue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getValue()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%svalue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getValue()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -353,7 +351,7 @@ public class MainAttributeRewardPayload {
     // add `code` to the URL query string
     if (getCode() != null) {
       try {
-        joiner.add(String.format("%scode%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCode()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scode%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCode()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -363,7 +361,7 @@ public class MainAttributeRewardPayload {
     // add `contactId` to the URL query string
     if (getContactId() != null) {
       try {
-        joiner.add(String.format("%scontactId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContactId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scontactId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContactId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -373,7 +371,7 @@ public class MainAttributeRewardPayload {
     // add `expirationDate` to the URL query string
     if (getExpirationDate() != null) {
       try {
-        joiner.add(String.format("%sexpirationDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpirationDate()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sexpirationDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpirationDate()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -383,7 +381,7 @@ public class MainAttributeRewardPayload {
     // add `loyaltySubscriptionId` to the URL query string
     if (getLoyaltySubscriptionId() != null) {
       try {
-        joiner.add(String.format("%sloyaltySubscriptionId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLoyaltySubscriptionId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sloyaltySubscriptionId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLoyaltySubscriptionId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -394,8 +392,8 @@ public class MainAttributeRewardPayload {
     if (getMeta() != null) {
       for (String _key : getMeta().keySet()) {
         try {
-          joiner.add(String.format("%smeta%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%smeta%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, _key, containerSuffix),
               getMeta().get(_key), URLEncoder.encode(String.valueOf(getMeta().get(_key)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -407,7 +405,7 @@ public class MainAttributeRewardPayload {
     // add `rewardId` to the URL query string
     if (getRewardId() != null) {
       try {
-        joiner.add(String.format("%srewardId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRewardId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%srewardId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRewardId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

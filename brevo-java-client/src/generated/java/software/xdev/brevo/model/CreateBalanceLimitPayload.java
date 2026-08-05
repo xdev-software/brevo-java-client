@@ -186,7 +186,7 @@ public class CreateBalanceLimitPayload {
    * @return constraintType
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CONSTRAINT_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_CONSTRAINT_TYPE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public ConstraintTypeEnum getConstraintType() {
@@ -194,7 +194,7 @@ public class CreateBalanceLimitPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONSTRAINT_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_CONSTRAINT_TYPE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setConstraintType(@jakarta.annotation.Nonnull ConstraintTypeEnum constraintType) {
     this.constraintType = constraintType;
@@ -211,7 +211,7 @@ public class CreateBalanceLimitPayload {
    * @return durationUnit
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DURATION_UNIT)
+  @JsonProperty(value = JSON_PROPERTY_DURATION_UNIT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public DurationUnitEnum getDurationUnit() {
@@ -219,7 +219,7 @@ public class CreateBalanceLimitPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DURATION_UNIT)
+  @JsonProperty(value = JSON_PROPERTY_DURATION_UNIT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDurationUnit(@jakarta.annotation.Nonnull DurationUnitEnum durationUnit) {
     this.durationUnit = durationUnit;
@@ -236,7 +236,7 @@ public class CreateBalanceLimitPayload {
    * @return durationValue
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DURATION_VALUE)
+  @JsonProperty(value = JSON_PROPERTY_DURATION_VALUE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Integer getDurationValue() {
@@ -244,7 +244,7 @@ public class CreateBalanceLimitPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DURATION_VALUE)
+  @JsonProperty(value = JSON_PROPERTY_DURATION_VALUE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDurationValue(@jakarta.annotation.Nonnull Integer durationValue) {
     this.durationValue = durationValue;
@@ -261,7 +261,7 @@ public class CreateBalanceLimitPayload {
    * @return slidingSchedule
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SLIDING_SCHEDULE)
+  @JsonProperty(value = JSON_PROPERTY_SLIDING_SCHEDULE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getSlidingSchedule() {
@@ -269,7 +269,7 @@ public class CreateBalanceLimitPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SLIDING_SCHEDULE)
+  @JsonProperty(value = JSON_PROPERTY_SLIDING_SCHEDULE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSlidingSchedule(@jakarta.annotation.Nullable Boolean slidingSchedule) {
     this.slidingSchedule = slidingSchedule;
@@ -286,7 +286,7 @@ public class CreateBalanceLimitPayload {
    * @return transactionType
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TRANSACTION_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_TRANSACTION_TYPE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public TransactionTypeEnum getTransactionType() {
@@ -294,7 +294,7 @@ public class CreateBalanceLimitPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TRANSACTION_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_TRANSACTION_TYPE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setTransactionType(@jakarta.annotation.Nonnull TransactionTypeEnum transactionType) {
     this.transactionType = transactionType;
@@ -311,7 +311,7 @@ public class CreateBalanceLimitPayload {
    * @return value
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_VALUE)
+  @JsonProperty(value = JSON_PROPERTY_VALUE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Integer getValue() {
@@ -319,11 +319,12 @@ public class CreateBalanceLimitPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_VALUE)
+  @JsonProperty(value = JSON_PROPERTY_VALUE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setValue(@jakarta.annotation.Nonnull Integer value) {
     this.value = value;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -366,10 +367,7 @@ public class CreateBalanceLimitPayload {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -407,7 +405,7 @@ public class CreateBalanceLimitPayload {
     // add `constraintType` to the URL query string
     if (getConstraintType() != null) {
       try {
-        joiner.add(String.format("%sconstraintType%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConstraintType()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sconstraintType%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConstraintType()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -417,7 +415,7 @@ public class CreateBalanceLimitPayload {
     // add `durationUnit` to the URL query string
     if (getDurationUnit() != null) {
       try {
-        joiner.add(String.format("%sdurationUnit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDurationUnit()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdurationUnit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDurationUnit()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -427,7 +425,7 @@ public class CreateBalanceLimitPayload {
     // add `durationValue` to the URL query string
     if (getDurationValue() != null) {
       try {
-        joiner.add(String.format("%sdurationValue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDurationValue()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdurationValue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDurationValue()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -437,7 +435,7 @@ public class CreateBalanceLimitPayload {
     // add `slidingSchedule` to the URL query string
     if (getSlidingSchedule() != null) {
       try {
-        joiner.add(String.format("%sslidingSchedule%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSlidingSchedule()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sslidingSchedule%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSlidingSchedule()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -447,7 +445,7 @@ public class CreateBalanceLimitPayload {
     // add `transactionType` to the URL query string
     if (getTransactionType() != null) {
       try {
-        joiner.add(String.format("%stransactionType%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTransactionType()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stransactionType%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTransactionType()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -457,7 +455,7 @@ public class CreateBalanceLimitPayload {
     // add `value` to the URL query string
     if (getValue() != null) {
       try {
-        joiner.add(String.format("%svalue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getValue()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%svalue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getValue()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

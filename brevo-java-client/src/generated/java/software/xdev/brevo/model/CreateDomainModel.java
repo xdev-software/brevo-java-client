@@ -73,7 +73,7 @@ public class CreateDomainModel {
    * @return id
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getId() {
@@ -81,7 +81,7 @@ public class CreateDomainModel {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setId(@jakarta.annotation.Nonnull Long id) {
     this.id = id;
@@ -98,7 +98,7 @@ public class CreateDomainModel {
    * @return domainName
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DOMAIN_NAME)
+  @JsonProperty(value = JSON_PROPERTY_DOMAIN_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getDomainName() {
@@ -106,7 +106,7 @@ public class CreateDomainModel {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DOMAIN_NAME)
+  @JsonProperty(value = JSON_PROPERTY_DOMAIN_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDomainName(@jakarta.annotation.Nullable String domainName) {
     this.domainName = domainName;
@@ -123,7 +123,7 @@ public class CreateDomainModel {
    * @return domainProvider
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DOMAIN_PROVIDER)
+  @JsonProperty(value = JSON_PROPERTY_DOMAIN_PROVIDER, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getDomainProvider() {
@@ -131,7 +131,7 @@ public class CreateDomainModel {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DOMAIN_PROVIDER)
+  @JsonProperty(value = JSON_PROPERTY_DOMAIN_PROVIDER, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDomainProvider(@jakarta.annotation.Nullable String domainProvider) {
     this.domainProvider = domainProvider;
@@ -148,7 +148,7 @@ public class CreateDomainModel {
    * @return message
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_MESSAGE)
+  @JsonProperty(value = JSON_PROPERTY_MESSAGE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getMessage() {
@@ -156,7 +156,7 @@ public class CreateDomainModel {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MESSAGE)
+  @JsonProperty(value = JSON_PROPERTY_MESSAGE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setMessage(@jakarta.annotation.Nullable String message) {
     this.message = message;
@@ -173,7 +173,7 @@ public class CreateDomainModel {
    * @return dnsRecords
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DNS_RECORDS)
+  @JsonProperty(value = JSON_PROPERTY_DNS_RECORDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public CreateDomainModelDnsRecords getDnsRecords() {
@@ -181,11 +181,12 @@ public class CreateDomainModel {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DNS_RECORDS)
+  @JsonProperty(value = JSON_PROPERTY_DNS_RECORDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDnsRecords(@jakarta.annotation.Nullable CreateDomainModelDnsRecords dnsRecords) {
     this.dnsRecords = dnsRecords;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -226,10 +227,7 @@ public class CreateDomainModel {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -267,7 +265,7 @@ public class CreateDomainModel {
     // add `id` to the URL query string
     if (getId() != null) {
       try {
-        joiner.add(String.format("%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -277,7 +275,7 @@ public class CreateDomainModel {
     // add `domain_name` to the URL query string
     if (getDomainName() != null) {
       try {
-        joiner.add(String.format("%sdomain_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDomainName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdomain_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDomainName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -287,7 +285,7 @@ public class CreateDomainModel {
     // add `domain_provider` to the URL query string
     if (getDomainProvider() != null) {
       try {
-        joiner.add(String.format("%sdomain_provider%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDomainProvider()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdomain_provider%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDomainProvider()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -297,7 +295,7 @@ public class CreateDomainModel {
     // add `message` to the URL query string
     if (getMessage() != null) {
       try {
-        joiner.add(String.format("%smessage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMessage()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%smessage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMessage()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

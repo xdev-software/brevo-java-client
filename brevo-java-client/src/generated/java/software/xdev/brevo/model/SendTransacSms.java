@@ -122,7 +122,7 @@ public class SendTransacSms {
    * @return sender
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SENDER)
+  @JsonProperty(value = JSON_PROPERTY_SENDER, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getSender() {
@@ -130,7 +130,7 @@ public class SendTransacSms {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SENDER)
+  @JsonProperty(value = JSON_PROPERTY_SENDER, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSender(@jakarta.annotation.Nonnull String sender) {
     this.sender = sender;
@@ -147,7 +147,7 @@ public class SendTransacSms {
    * @return recipient
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_RECIPIENT)
+  @JsonProperty(value = JSON_PROPERTY_RECIPIENT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getRecipient() {
@@ -155,7 +155,7 @@ public class SendTransacSms {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_RECIPIENT)
+  @JsonProperty(value = JSON_PROPERTY_RECIPIENT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setRecipient(@jakarta.annotation.Nonnull String recipient) {
     this.recipient = recipient;
@@ -172,7 +172,7 @@ public class SendTransacSms {
    * @return content
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CONTENT)
+  @JsonProperty(value = JSON_PROPERTY_CONTENT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getContent() {
@@ -180,7 +180,7 @@ public class SendTransacSms {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONTENT)
+  @JsonProperty(value = JSON_PROPERTY_CONTENT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setContent(@jakarta.annotation.Nonnull String content) {
     this.content = content;
@@ -197,7 +197,7 @@ public class SendTransacSms {
    * @return type
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_TYPE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public TypeEnum getType() {
@@ -205,7 +205,7 @@ public class SendTransacSms {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_TYPE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setType(@jakarta.annotation.Nullable TypeEnum type) {
     this.type = type;
@@ -222,7 +222,7 @@ public class SendTransacSms {
    * @return tag
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TAG)
+  @JsonProperty(value = JSON_PROPERTY_TAG, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getTag() {
@@ -230,7 +230,7 @@ public class SendTransacSms {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TAG)
+  @JsonProperty(value = JSON_PROPERTY_TAG, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setTag(@jakarta.annotation.Nullable String tag) {
     this.tag = tag;
@@ -247,7 +247,7 @@ public class SendTransacSms {
    * @return webUrl
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_WEB_URL)
+  @JsonProperty(value = JSON_PROPERTY_WEB_URL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getWebUrl() {
@@ -255,7 +255,7 @@ public class SendTransacSms {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_WEB_URL)
+  @JsonProperty(value = JSON_PROPERTY_WEB_URL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setWebUrl(@jakarta.annotation.Nullable String webUrl) {
     this.webUrl = webUrl;
@@ -272,7 +272,7 @@ public class SendTransacSms {
    * @return unicodeEnabled
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UNICODE_ENABLED)
+  @JsonProperty(value = JSON_PROPERTY_UNICODE_ENABLED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getUnicodeEnabled() {
@@ -280,7 +280,7 @@ public class SendTransacSms {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UNICODE_ENABLED)
+  @JsonProperty(value = JSON_PROPERTY_UNICODE_ENABLED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUnicodeEnabled(@jakarta.annotation.Nullable Boolean unicodeEnabled) {
     this.unicodeEnabled = unicodeEnabled;
@@ -297,7 +297,7 @@ public class SendTransacSms {
    * @return organisationPrefix
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ORGANISATION_PREFIX)
+  @JsonProperty(value = JSON_PROPERTY_ORGANISATION_PREFIX, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getOrganisationPrefix() {
@@ -305,11 +305,12 @@ public class SendTransacSms {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ORGANISATION_PREFIX)
+  @JsonProperty(value = JSON_PROPERTY_ORGANISATION_PREFIX, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setOrganisationPrefix(@jakarta.annotation.Nullable String organisationPrefix) {
     this.organisationPrefix = organisationPrefix;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -356,10 +357,7 @@ public class SendTransacSms {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -397,7 +395,7 @@ public class SendTransacSms {
     // add `sender` to the URL query string
     if (getSender() != null) {
       try {
-        joiner.add(String.format("%ssender%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSender()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssender%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSender()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -407,7 +405,7 @@ public class SendTransacSms {
     // add `recipient` to the URL query string
     if (getRecipient() != null) {
       try {
-        joiner.add(String.format("%srecipient%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRecipient()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%srecipient%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRecipient()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -417,7 +415,7 @@ public class SendTransacSms {
     // add `content` to the URL query string
     if (getContent() != null) {
       try {
-        joiner.add(String.format("%scontent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContent()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scontent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContent()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -427,7 +425,7 @@ public class SendTransacSms {
     // add `type` to the URL query string
     if (getType() != null) {
       try {
-        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -437,7 +435,7 @@ public class SendTransacSms {
     // add `tag` to the URL query string
     if (getTag() != null) {
       try {
-        joiner.add(String.format("%stag%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTag()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stag%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTag()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -447,7 +445,7 @@ public class SendTransacSms {
     // add `webUrl` to the URL query string
     if (getWebUrl() != null) {
       try {
-        joiner.add(String.format("%swebUrl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWebUrl()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%swebUrl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWebUrl()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -457,7 +455,7 @@ public class SendTransacSms {
     // add `unicodeEnabled` to the URL query string
     if (getUnicodeEnabled() != null) {
       try {
-        joiner.add(String.format("%sunicodeEnabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUnicodeEnabled()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sunicodeEnabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUnicodeEnabled()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -467,7 +465,7 @@ public class SendTransacSms {
     // add `organisationPrefix` to the URL query string
     if (getOrganisationPrefix() != null) {
       try {
-        joiner.add(String.format("%sorganisationPrefix%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrganisationPrefix()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sorganisationPrefix%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrganisationPrefix()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

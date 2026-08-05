@@ -72,7 +72,7 @@ public class MasterDetailsResponseBillingInfoAddress {
    * @return streetAddress
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_STREET_ADDRESS)
+  @JsonProperty(value = JSON_PROPERTY_STREET_ADDRESS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getStreetAddress() {
@@ -80,7 +80,7 @@ public class MasterDetailsResponseBillingInfoAddress {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_STREET_ADDRESS)
+  @JsonProperty(value = JSON_PROPERTY_STREET_ADDRESS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setStreetAddress(@jakarta.annotation.Nullable String streetAddress) {
     this.streetAddress = streetAddress;
@@ -97,7 +97,7 @@ public class MasterDetailsResponseBillingInfoAddress {
    * @return locality
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LOCALITY)
+  @JsonProperty(value = JSON_PROPERTY_LOCALITY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getLocality() {
@@ -105,7 +105,7 @@ public class MasterDetailsResponseBillingInfoAddress {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LOCALITY)
+  @JsonProperty(value = JSON_PROPERTY_LOCALITY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLocality(@jakarta.annotation.Nullable String locality) {
     this.locality = locality;
@@ -122,7 +122,7 @@ public class MasterDetailsResponseBillingInfoAddress {
    * @return postalCode
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_POSTAL_CODE)
+  @JsonProperty(value = JSON_PROPERTY_POSTAL_CODE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getPostalCode() {
@@ -130,7 +130,7 @@ public class MasterDetailsResponseBillingInfoAddress {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_POSTAL_CODE)
+  @JsonProperty(value = JSON_PROPERTY_POSTAL_CODE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPostalCode(@jakarta.annotation.Nullable String postalCode) {
     this.postalCode = postalCode;
@@ -147,7 +147,7 @@ public class MasterDetailsResponseBillingInfoAddress {
    * @return stateCode
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_STATE_CODE)
+  @JsonProperty(value = JSON_PROPERTY_STATE_CODE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getStateCode() {
@@ -155,7 +155,7 @@ public class MasterDetailsResponseBillingInfoAddress {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_STATE_CODE)
+  @JsonProperty(value = JSON_PROPERTY_STATE_CODE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setStateCode(@jakarta.annotation.Nullable String stateCode) {
     this.stateCode = stateCode;
@@ -172,7 +172,7 @@ public class MasterDetailsResponseBillingInfoAddress {
    * @return countryCode
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_COUNTRY_CODE)
+  @JsonProperty(value = JSON_PROPERTY_COUNTRY_CODE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getCountryCode() {
@@ -180,11 +180,12 @@ public class MasterDetailsResponseBillingInfoAddress {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_COUNTRY_CODE)
+  @JsonProperty(value = JSON_PROPERTY_COUNTRY_CODE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCountryCode(@jakarta.annotation.Nullable String countryCode) {
     this.countryCode = countryCode;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -225,10 +226,7 @@ public class MasterDetailsResponseBillingInfoAddress {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -266,7 +264,7 @@ public class MasterDetailsResponseBillingInfoAddress {
     // add `streetAddress` to the URL query string
     if (getStreetAddress() != null) {
       try {
-        joiner.add(String.format("%sstreetAddress%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStreetAddress()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sstreetAddress%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStreetAddress()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -276,7 +274,7 @@ public class MasterDetailsResponseBillingInfoAddress {
     // add `locality` to the URL query string
     if (getLocality() != null) {
       try {
-        joiner.add(String.format("%slocality%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLocality()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%slocality%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLocality()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -286,7 +284,7 @@ public class MasterDetailsResponseBillingInfoAddress {
     // add `postalCode` to the URL query string
     if (getPostalCode() != null) {
       try {
-        joiner.add(String.format("%spostalCode%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPostalCode()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%spostalCode%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPostalCode()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -296,7 +294,7 @@ public class MasterDetailsResponseBillingInfoAddress {
     // add `stateCode` to the URL query string
     if (getStateCode() != null) {
       try {
-        joiner.add(String.format("%sstateCode%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStateCode()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sstateCode%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStateCode()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -306,7 +304,7 @@ public class MasterDetailsResponseBillingInfoAddress {
     // add `countryCode` to the URL query string
     if (getCountryCode() != null) {
       try {
-        joiner.add(String.format("%scountryCode%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCountryCode()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scountryCode%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCountryCode()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

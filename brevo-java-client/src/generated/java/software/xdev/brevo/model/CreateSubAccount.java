@@ -118,7 +118,7 @@ public class CreateSubAccount {
    * @return companyName
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_COMPANY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_COMPANY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getCompanyName() {
@@ -126,7 +126,7 @@ public class CreateSubAccount {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_COMPANY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_COMPANY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCompanyName(@jakarta.annotation.Nonnull String companyName) {
     this.companyName = companyName;
@@ -143,7 +143,7 @@ public class CreateSubAccount {
    * @return email
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getEmail() {
@@ -151,7 +151,7 @@ public class CreateSubAccount {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setEmail(@jakarta.annotation.Nonnull String email) {
     this.email = email;
@@ -168,7 +168,7 @@ public class CreateSubAccount {
    * @return language
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LANGUAGE)
+  @JsonProperty(value = JSON_PROPERTY_LANGUAGE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public LanguageEnum getLanguage() {
@@ -176,7 +176,7 @@ public class CreateSubAccount {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LANGUAGE)
+  @JsonProperty(value = JSON_PROPERTY_LANGUAGE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLanguage(@jakarta.annotation.Nullable LanguageEnum language) {
     this.language = language;
@@ -193,7 +193,7 @@ public class CreateSubAccount {
    * @return timezone
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TIMEZONE)
+  @JsonProperty(value = JSON_PROPERTY_TIMEZONE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getTimezone() {
@@ -201,7 +201,7 @@ public class CreateSubAccount {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TIMEZONE)
+  @JsonProperty(value = JSON_PROPERTY_TIMEZONE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setTimezone(@jakarta.annotation.Nullable String timezone) {
     this.timezone = timezone;
@@ -226,7 +226,7 @@ public class CreateSubAccount {
    * @return groupIds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_GROUP_IDS)
+  @JsonProperty(value = JSON_PROPERTY_GROUP_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getGroupIds() {
@@ -234,11 +234,12 @@ public class CreateSubAccount {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_GROUP_IDS)
+  @JsonProperty(value = JSON_PROPERTY_GROUP_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setGroupIds(@jakarta.annotation.Nullable List<String> groupIds) {
     this.groupIds = groupIds;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -279,10 +280,7 @@ public class CreateSubAccount {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -320,7 +318,7 @@ public class CreateSubAccount {
     // add `companyName` to the URL query string
     if (getCompanyName() != null) {
       try {
-        joiner.add(String.format("%scompanyName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCompanyName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scompanyName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCompanyName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -330,7 +328,7 @@ public class CreateSubAccount {
     // add `email` to the URL query string
     if (getEmail() != null) {
       try {
-        joiner.add(String.format("%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -340,7 +338,7 @@ public class CreateSubAccount {
     // add `language` to the URL query string
     if (getLanguage() != null) {
       try {
-        joiner.add(String.format("%slanguage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLanguage()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%slanguage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLanguage()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -350,7 +348,7 @@ public class CreateSubAccount {
     // add `timezone` to the URL query string
     if (getTimezone() != null) {
       try {
-        joiner.add(String.format("%stimezone%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTimezone()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stimezone%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTimezone()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -361,8 +359,8 @@ public class CreateSubAccount {
     if (getGroupIds() != null) {
       for (int i = 0; i < getGroupIds().size(); i++) {
         try {
-          joiner.add(String.format("%sgroupIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sgroupIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getGroupIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported

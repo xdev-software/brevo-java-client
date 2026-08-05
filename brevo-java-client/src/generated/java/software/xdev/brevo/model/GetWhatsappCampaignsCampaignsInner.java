@@ -150,7 +150,7 @@ public class GetWhatsappCampaignsCampaignsInner {
    * @return id
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getId() {
@@ -158,7 +158,7 @@ public class GetWhatsappCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setId(@jakarta.annotation.Nonnull Long id) {
     this.id = id;
@@ -175,7 +175,7 @@ public class GetWhatsappCampaignsCampaignsInner {
    * @return campaignName
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CAMPAIGN_NAME)
+  @JsonProperty(value = JSON_PROPERTY_CAMPAIGN_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getCampaignName() {
@@ -183,7 +183,7 @@ public class GetWhatsappCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CAMPAIGN_NAME)
+  @JsonProperty(value = JSON_PROPERTY_CAMPAIGN_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCampaignName(@jakarta.annotation.Nonnull String campaignName) {
     this.campaignName = campaignName;
@@ -200,7 +200,7 @@ public class GetWhatsappCampaignsCampaignsInner {
    * @return templateId
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
+  @JsonProperty(value = JSON_PROPERTY_TEMPLATE_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getTemplateId() {
@@ -208,7 +208,7 @@ public class GetWhatsappCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
+  @JsonProperty(value = JSON_PROPERTY_TEMPLATE_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setTemplateId(@jakarta.annotation.Nonnull String templateId) {
     this.templateId = templateId;
@@ -225,7 +225,7 @@ public class GetWhatsappCampaignsCampaignsInner {
    * @return campaignStatus
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CAMPAIGN_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_CAMPAIGN_STATUS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public CampaignStatusEnum getCampaignStatus() {
@@ -233,7 +233,7 @@ public class GetWhatsappCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CAMPAIGN_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_CAMPAIGN_STATUS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCampaignStatus(@jakarta.annotation.Nonnull CampaignStatusEnum campaignStatus) {
     this.campaignStatus = campaignStatus;
@@ -250,7 +250,7 @@ public class GetWhatsappCampaignsCampaignsInner {
    * @return scheduledAt
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
+  @JsonProperty(value = JSON_PROPERTY_SCHEDULED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getScheduledAt() {
@@ -258,7 +258,7 @@ public class GetWhatsappCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
+  @JsonProperty(value = JSON_PROPERTY_SCHEDULED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setScheduledAt(@jakarta.annotation.Nonnull String scheduledAt) {
     this.scheduledAt = scheduledAt;
@@ -275,7 +275,7 @@ public class GetWhatsappCampaignsCampaignsInner {
    * @return errorReason
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ERROR_REASON)
+  @JsonProperty(value = JSON_PROPERTY_ERROR_REASON, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getErrorReason() {
@@ -283,7 +283,7 @@ public class GetWhatsappCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ERROR_REASON)
+  @JsonProperty(value = JSON_PROPERTY_ERROR_REASON, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setErrorReason(@jakarta.annotation.Nullable String errorReason) {
     this.errorReason = errorReason;
@@ -300,7 +300,7 @@ public class GetWhatsappCampaignsCampaignsInner {
    * @return invalidatedContacts
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_INVALIDATED_CONTACTS)
+  @JsonProperty(value = JSON_PROPERTY_INVALIDATED_CONTACTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getInvalidatedContacts() {
@@ -308,7 +308,7 @@ public class GetWhatsappCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_INVALIDATED_CONTACTS)
+  @JsonProperty(value = JSON_PROPERTY_INVALIDATED_CONTACTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setInvalidatedContacts(@jakarta.annotation.Nullable Long invalidatedContacts) {
     this.invalidatedContacts = invalidatedContacts;
@@ -325,7 +325,7 @@ public class GetWhatsappCampaignsCampaignsInner {
    * @return readPercentage
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_READ_PERCENTAGE)
+  @JsonProperty(value = JSON_PROPERTY_READ_PERCENTAGE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Float getReadPercentage() {
@@ -333,7 +333,7 @@ public class GetWhatsappCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_READ_PERCENTAGE)
+  @JsonProperty(value = JSON_PROPERTY_READ_PERCENTAGE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setReadPercentage(@jakarta.annotation.Nullable Float readPercentage) {
     this.readPercentage = readPercentage;
@@ -350,7 +350,7 @@ public class GetWhatsappCampaignsCampaignsInner {
    * @return stats
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_STATS)
+  @JsonProperty(value = JSON_PROPERTY_STATS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public WhatsappCampStats getStats() {
@@ -358,7 +358,7 @@ public class GetWhatsappCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_STATS)
+  @JsonProperty(value = JSON_PROPERTY_STATS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setStats(@jakarta.annotation.Nullable WhatsappCampStats stats) {
     this.stats = stats;
@@ -375,7 +375,7 @@ public class GetWhatsappCampaignsCampaignsInner {
    * @return createdAt
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getCreatedAt() {
@@ -383,7 +383,7 @@ public class GetWhatsappCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCreatedAt(@jakarta.annotation.Nonnull String createdAt) {
     this.createdAt = createdAt;
@@ -400,7 +400,7 @@ public class GetWhatsappCampaignsCampaignsInner {
    * @return modifiedAt
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
+  @JsonProperty(value = JSON_PROPERTY_MODIFIED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getModifiedAt() {
@@ -408,11 +408,12 @@ public class GetWhatsappCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
+  @JsonProperty(value = JSON_PROPERTY_MODIFIED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setModifiedAt(@jakarta.annotation.Nonnull String modifiedAt) {
     this.modifiedAt = modifiedAt;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -465,10 +466,7 @@ public class GetWhatsappCampaignsCampaignsInner {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -506,7 +504,7 @@ public class GetWhatsappCampaignsCampaignsInner {
     // add `id` to the URL query string
     if (getId() != null) {
       try {
-        joiner.add(String.format("%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -516,7 +514,7 @@ public class GetWhatsappCampaignsCampaignsInner {
     // add `campaignName` to the URL query string
     if (getCampaignName() != null) {
       try {
-        joiner.add(String.format("%scampaignName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCampaignName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scampaignName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCampaignName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -526,7 +524,7 @@ public class GetWhatsappCampaignsCampaignsInner {
     // add `templateId` to the URL query string
     if (getTemplateId() != null) {
       try {
-        joiner.add(String.format("%stemplateId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTemplateId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stemplateId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTemplateId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -536,7 +534,7 @@ public class GetWhatsappCampaignsCampaignsInner {
     // add `campaignStatus` to the URL query string
     if (getCampaignStatus() != null) {
       try {
-        joiner.add(String.format("%scampaignStatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCampaignStatus()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scampaignStatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCampaignStatus()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -546,7 +544,7 @@ public class GetWhatsappCampaignsCampaignsInner {
     // add `scheduledAt` to the URL query string
     if (getScheduledAt() != null) {
       try {
-        joiner.add(String.format("%sscheduledAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getScheduledAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sscheduledAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getScheduledAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -556,7 +554,7 @@ public class GetWhatsappCampaignsCampaignsInner {
     // add `errorReason` to the URL query string
     if (getErrorReason() != null) {
       try {
-        joiner.add(String.format("%serrorReason%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getErrorReason()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%serrorReason%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getErrorReason()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -566,7 +564,7 @@ public class GetWhatsappCampaignsCampaignsInner {
     // add `invalidatedContacts` to the URL query string
     if (getInvalidatedContacts() != null) {
       try {
-        joiner.add(String.format("%sinvalidatedContacts%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getInvalidatedContacts()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sinvalidatedContacts%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getInvalidatedContacts()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -576,7 +574,7 @@ public class GetWhatsappCampaignsCampaignsInner {
     // add `readPercentage` to the URL query string
     if (getReadPercentage() != null) {
       try {
-        joiner.add(String.format("%sreadPercentage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReadPercentage()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sreadPercentage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReadPercentage()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -591,7 +589,7 @@ public class GetWhatsappCampaignsCampaignsInner {
     // add `createdAt` to the URL query string
     if (getCreatedAt() != null) {
       try {
-        joiner.add(String.format("%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -601,7 +599,7 @@ public class GetWhatsappCampaignsCampaignsInner {
     // add `modifiedAt` to the URL query string
     if (getModifiedAt() != null) {
       try {
-        joiner.add(String.format("%smodifiedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getModifiedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%smodifiedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getModifiedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

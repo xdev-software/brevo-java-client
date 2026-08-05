@@ -62,7 +62,7 @@ public class GetInvitedUsersListUsersInnerFeatureAccess {
    * @return marketing
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_MARKETING)
+  @JsonProperty(value = JSON_PROPERTY_MARKETING, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getMarketing() {
@@ -70,7 +70,7 @@ public class GetInvitedUsersListUsersInnerFeatureAccess {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MARKETING)
+  @JsonProperty(value = JSON_PROPERTY_MARKETING, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setMarketing(@jakarta.annotation.Nullable String marketing) {
     this.marketing = marketing;
@@ -87,7 +87,7 @@ public class GetInvitedUsersListUsersInnerFeatureAccess {
    * @return conversations
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CONVERSATIONS)
+  @JsonProperty(value = JSON_PROPERTY_CONVERSATIONS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getConversations() {
@@ -95,7 +95,7 @@ public class GetInvitedUsersListUsersInnerFeatureAccess {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONVERSATIONS)
+  @JsonProperty(value = JSON_PROPERTY_CONVERSATIONS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setConversations(@jakarta.annotation.Nullable String conversations) {
     this.conversations = conversations;
@@ -112,7 +112,7 @@ public class GetInvitedUsersListUsersInnerFeatureAccess {
    * @return crm
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CRM)
+  @JsonProperty(value = JSON_PROPERTY_CRM, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getCrm() {
@@ -120,11 +120,12 @@ public class GetInvitedUsersListUsersInnerFeatureAccess {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CRM)
+  @JsonProperty(value = JSON_PROPERTY_CRM, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCrm(@jakarta.annotation.Nullable String crm) {
     this.crm = crm;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -161,10 +162,7 @@ public class GetInvitedUsersListUsersInnerFeatureAccess {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -202,7 +200,7 @@ public class GetInvitedUsersListUsersInnerFeatureAccess {
     // add `marketing` to the URL query string
     if (getMarketing() != null) {
       try {
-        joiner.add(String.format("%smarketing%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMarketing()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%smarketing%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMarketing()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -212,7 +210,7 @@ public class GetInvitedUsersListUsersInnerFeatureAccess {
     // add `conversations` to the URL query string
     if (getConversations() != null) {
       try {
-        joiner.add(String.format("%sconversations%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConversations()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sconversations%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConversations()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -222,7 +220,7 @@ public class GetInvitedUsersListUsersInnerFeatureAccess {
     // add `crm` to the URL query string
     if (getCrm() != null) {
       try {
-        joiner.add(String.format("%scrm%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCrm()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scrm%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCrm()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

@@ -72,7 +72,7 @@ public class EventIdentifiers {
    * @return emailId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EMAIL_ID)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getEmailId() {
@@ -80,7 +80,7 @@ public class EventIdentifiers {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EMAIL_ID)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setEmailId(@jakarta.annotation.Nullable String emailId) {
     this.emailId = emailId;
@@ -97,7 +97,7 @@ public class EventIdentifiers {
    * @return phoneId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PHONE_ID)
+  @JsonProperty(value = JSON_PROPERTY_PHONE_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getPhoneId() {
@@ -105,7 +105,7 @@ public class EventIdentifiers {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PHONE_ID)
+  @JsonProperty(value = JSON_PROPERTY_PHONE_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPhoneId(@jakarta.annotation.Nullable String phoneId) {
     this.phoneId = phoneId;
@@ -122,7 +122,7 @@ public class EventIdentifiers {
    * @return whatsappId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_WHATSAPP_ID)
+  @JsonProperty(value = JSON_PROPERTY_WHATSAPP_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getWhatsappId() {
@@ -130,7 +130,7 @@ public class EventIdentifiers {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_WHATSAPP_ID)
+  @JsonProperty(value = JSON_PROPERTY_WHATSAPP_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setWhatsappId(@jakarta.annotation.Nullable String whatsappId) {
     this.whatsappId = whatsappId;
@@ -147,7 +147,7 @@ public class EventIdentifiers {
    * @return landlineNumberId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LANDLINE_NUMBER_ID)
+  @JsonProperty(value = JSON_PROPERTY_LANDLINE_NUMBER_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getLandlineNumberId() {
@@ -155,7 +155,7 @@ public class EventIdentifiers {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LANDLINE_NUMBER_ID)
+  @JsonProperty(value = JSON_PROPERTY_LANDLINE_NUMBER_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLandlineNumberId(@jakarta.annotation.Nullable String landlineNumberId) {
     this.landlineNumberId = landlineNumberId;
@@ -172,7 +172,7 @@ public class EventIdentifiers {
    * @return extId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EXT_ID)
+  @JsonProperty(value = JSON_PROPERTY_EXT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getExtId() {
@@ -180,11 +180,12 @@ public class EventIdentifiers {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EXT_ID)
+  @JsonProperty(value = JSON_PROPERTY_EXT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setExtId(@jakarta.annotation.Nullable String extId) {
     this.extId = extId;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -225,10 +226,7 @@ public class EventIdentifiers {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -266,7 +264,7 @@ public class EventIdentifiers {
     // add `email_id` to the URL query string
     if (getEmailId() != null) {
       try {
-        joiner.add(String.format("%semail_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmailId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%semail_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmailId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -276,7 +274,7 @@ public class EventIdentifiers {
     // add `phone_id` to the URL query string
     if (getPhoneId() != null) {
       try {
-        joiner.add(String.format("%sphone_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPhoneId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sphone_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPhoneId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -286,7 +284,7 @@ public class EventIdentifiers {
     // add `whatsapp_id` to the URL query string
     if (getWhatsappId() != null) {
       try {
-        joiner.add(String.format("%swhatsapp_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWhatsappId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%swhatsapp_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWhatsappId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -296,7 +294,7 @@ public class EventIdentifiers {
     // add `landline_number_id` to the URL query string
     if (getLandlineNumberId() != null) {
       try {
-        joiner.add(String.format("%slandline_number_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLandlineNumberId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%slandline_number_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLandlineNumberId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -306,7 +304,7 @@ public class EventIdentifiers {
     // add `ext_id` to the URL query string
     if (getExtId() != null) {
       try {
-        joiner.add(String.format("%sext_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExtId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sext_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExtId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

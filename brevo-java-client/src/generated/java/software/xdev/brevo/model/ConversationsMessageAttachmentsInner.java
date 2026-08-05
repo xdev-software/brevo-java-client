@@ -77,7 +77,7 @@ public class ConversationsMessageAttachmentsInner {
    * @return fileName
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_FILE_NAME)
+  @JsonProperty(value = JSON_PROPERTY_FILE_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getFileName() {
@@ -85,7 +85,7 @@ public class ConversationsMessageAttachmentsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_FILE_NAME)
+  @JsonProperty(value = JSON_PROPERTY_FILE_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setFileName(@jakarta.annotation.Nullable String fileName) {
     this.fileName = fileName;
@@ -102,7 +102,7 @@ public class ConversationsMessageAttachmentsInner {
    * @return isInline
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_IS_INLINE)
+  @JsonProperty(value = JSON_PROPERTY_IS_INLINE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getIsInline() {
@@ -110,7 +110,7 @@ public class ConversationsMessageAttachmentsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IS_INLINE)
+  @JsonProperty(value = JSON_PROPERTY_IS_INLINE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setIsInline(@jakarta.annotation.Nullable String isInline) {
     this.isInline = isInline;
@@ -127,7 +127,7 @@ public class ConversationsMessageAttachmentsInner {
    * @return inlineId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_INLINE_ID)
+  @JsonProperty(value = JSON_PROPERTY_INLINE_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getInlineId() {
@@ -135,7 +135,7 @@ public class ConversationsMessageAttachmentsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_INLINE_ID)
+  @JsonProperty(value = JSON_PROPERTY_INLINE_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setInlineId(@jakarta.annotation.Nullable String inlineId) {
     this.inlineId = inlineId;
@@ -152,7 +152,7 @@ public class ConversationsMessageAttachmentsInner {
    * @return url
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_URL)
+  @JsonProperty(value = JSON_PROPERTY_URL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getUrl() {
@@ -160,7 +160,7 @@ public class ConversationsMessageAttachmentsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_URL)
+  @JsonProperty(value = JSON_PROPERTY_URL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUrl(@jakarta.annotation.Nullable String url) {
     this.url = url;
@@ -177,7 +177,7 @@ public class ConversationsMessageAttachmentsInner {
    * @return isImage
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_IS_IMAGE)
+  @JsonProperty(value = JSON_PROPERTY_IS_IMAGE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getIsImage() {
@@ -185,7 +185,7 @@ public class ConversationsMessageAttachmentsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IS_IMAGE)
+  @JsonProperty(value = JSON_PROPERTY_IS_IMAGE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setIsImage(@jakarta.annotation.Nullable Boolean isImage) {
     this.isImage = isImage;
@@ -202,7 +202,7 @@ public class ConversationsMessageAttachmentsInner {
    * @return size
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SIZE)
+  @JsonProperty(value = JSON_PROPERTY_SIZE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getSize() {
@@ -210,11 +210,12 @@ public class ConversationsMessageAttachmentsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SIZE)
+  @JsonProperty(value = JSON_PROPERTY_SIZE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSize(@jakarta.annotation.Nullable Long size) {
     this.size = size;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -257,10 +258,7 @@ public class ConversationsMessageAttachmentsInner {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -298,7 +296,7 @@ public class ConversationsMessageAttachmentsInner {
     // add `fileName` to the URL query string
     if (getFileName() != null) {
       try {
-        joiner.add(String.format("%sfileName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFileName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sfileName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFileName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -308,7 +306,7 @@ public class ConversationsMessageAttachmentsInner {
     // add `isInline` to the URL query string
     if (getIsInline() != null) {
       try {
-        joiner.add(String.format("%sisInline%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsInline()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sisInline%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsInline()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -318,7 +316,7 @@ public class ConversationsMessageAttachmentsInner {
     // add `inlineId` to the URL query string
     if (getInlineId() != null) {
       try {
-        joiner.add(String.format("%sinlineId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getInlineId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sinlineId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getInlineId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -328,7 +326,7 @@ public class ConversationsMessageAttachmentsInner {
     // add `url` to the URL query string
     if (getUrl() != null) {
       try {
-        joiner.add(String.format("%surl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUrl()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%surl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUrl()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -338,7 +336,7 @@ public class ConversationsMessageAttachmentsInner {
     // add `isImage` to the URL query string
     if (getIsImage() != null) {
       try {
-        joiner.add(String.format("%sisImage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsImage()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sisImage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsImage()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -348,7 +346,7 @@ public class ConversationsMessageAttachmentsInner {
     // add `size` to the URL query string
     if (getSize() != null) {
       try {
-        joiner.add(String.format("%ssize%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSize()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssize%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSize()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

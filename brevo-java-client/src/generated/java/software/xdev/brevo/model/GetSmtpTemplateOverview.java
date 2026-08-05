@@ -113,7 +113,7 @@ public class GetSmtpTemplateOverview {
    * @return id
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getId() {
@@ -121,7 +121,7 @@ public class GetSmtpTemplateOverview {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setId(@jakarta.annotation.Nonnull Long id) {
     this.id = id;
@@ -138,7 +138,7 @@ public class GetSmtpTemplateOverview {
    * @return name
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getName() {
@@ -146,7 +146,7 @@ public class GetSmtpTemplateOverview {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
@@ -163,7 +163,7 @@ public class GetSmtpTemplateOverview {
    * @return subject
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SUBJECT)
+  @JsonProperty(value = JSON_PROPERTY_SUBJECT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getSubject() {
@@ -171,7 +171,7 @@ public class GetSmtpTemplateOverview {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SUBJECT)
+  @JsonProperty(value = JSON_PROPERTY_SUBJECT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSubject(@jakarta.annotation.Nonnull String subject) {
     this.subject = subject;
@@ -188,7 +188,7 @@ public class GetSmtpTemplateOverview {
    * @return isActive
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_IS_ACTIVE)
+  @JsonProperty(value = JSON_PROPERTY_IS_ACTIVE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Boolean getIsActive() {
@@ -196,7 +196,7 @@ public class GetSmtpTemplateOverview {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IS_ACTIVE)
+  @JsonProperty(value = JSON_PROPERTY_IS_ACTIVE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setIsActive(@jakarta.annotation.Nonnull Boolean isActive) {
     this.isActive = isActive;
@@ -213,7 +213,7 @@ public class GetSmtpTemplateOverview {
    * @return testSent
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TEST_SENT)
+  @JsonProperty(value = JSON_PROPERTY_TEST_SENT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Boolean getTestSent() {
@@ -221,7 +221,7 @@ public class GetSmtpTemplateOverview {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TEST_SENT)
+  @JsonProperty(value = JSON_PROPERTY_TEST_SENT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setTestSent(@jakarta.annotation.Nonnull Boolean testSent) {
     this.testSent = testSent;
@@ -238,7 +238,7 @@ public class GetSmtpTemplateOverview {
    * @return sender
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SENDER)
+  @JsonProperty(value = JSON_PROPERTY_SENDER, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public GetSmtpTemplateOverviewSender getSender() {
@@ -246,7 +246,7 @@ public class GetSmtpTemplateOverview {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SENDER)
+  @JsonProperty(value = JSON_PROPERTY_SENDER, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSender(@jakarta.annotation.Nonnull GetSmtpTemplateOverviewSender sender) {
     this.sender = sender;
@@ -263,7 +263,7 @@ public class GetSmtpTemplateOverview {
    * @return replyTo
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_REPLY_TO)
+  @JsonProperty(value = JSON_PROPERTY_REPLY_TO, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getReplyTo() {
@@ -271,7 +271,7 @@ public class GetSmtpTemplateOverview {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REPLY_TO)
+  @JsonProperty(value = JSON_PROPERTY_REPLY_TO, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setReplyTo(@jakarta.annotation.Nonnull String replyTo) {
     this.replyTo = replyTo;
@@ -288,7 +288,7 @@ public class GetSmtpTemplateOverview {
    * @return toField
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TO_FIELD)
+  @JsonProperty(value = JSON_PROPERTY_TO_FIELD, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getToField() {
@@ -296,7 +296,7 @@ public class GetSmtpTemplateOverview {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TO_FIELD)
+  @JsonProperty(value = JSON_PROPERTY_TO_FIELD, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setToField(@jakarta.annotation.Nonnull String toField) {
     this.toField = toField;
@@ -313,7 +313,7 @@ public class GetSmtpTemplateOverview {
    * @return tag
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TAG)
+  @JsonProperty(value = JSON_PROPERTY_TAG, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getTag() {
@@ -321,7 +321,7 @@ public class GetSmtpTemplateOverview {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TAG)
+  @JsonProperty(value = JSON_PROPERTY_TAG, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setTag(@jakarta.annotation.Nonnull String tag) {
     this.tag = tag;
@@ -338,7 +338,7 @@ public class GetSmtpTemplateOverview {
    * @return htmlContent
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_HTML_CONTENT)
+  @JsonProperty(value = JSON_PROPERTY_HTML_CONTENT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getHtmlContent() {
@@ -346,7 +346,7 @@ public class GetSmtpTemplateOverview {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_HTML_CONTENT)
+  @JsonProperty(value = JSON_PROPERTY_HTML_CONTENT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setHtmlContent(@jakarta.annotation.Nonnull String htmlContent) {
     this.htmlContent = htmlContent;
@@ -363,7 +363,7 @@ public class GetSmtpTemplateOverview {
    * @return createdAt
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getCreatedAt() {
@@ -371,7 +371,7 @@ public class GetSmtpTemplateOverview {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCreatedAt(@jakarta.annotation.Nonnull String createdAt) {
     this.createdAt = createdAt;
@@ -388,7 +388,7 @@ public class GetSmtpTemplateOverview {
    * @return modifiedAt
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
+  @JsonProperty(value = JSON_PROPERTY_MODIFIED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getModifiedAt() {
@@ -396,7 +396,7 @@ public class GetSmtpTemplateOverview {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
+  @JsonProperty(value = JSON_PROPERTY_MODIFIED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setModifiedAt(@jakarta.annotation.Nonnull String modifiedAt) {
     this.modifiedAt = modifiedAt;
@@ -413,7 +413,7 @@ public class GetSmtpTemplateOverview {
    * @return doiTemplate
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DOI_TEMPLATE)
+  @JsonProperty(value = JSON_PROPERTY_DOI_TEMPLATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getDoiTemplate() {
@@ -421,11 +421,12 @@ public class GetSmtpTemplateOverview {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DOI_TEMPLATE)
+  @JsonProperty(value = JSON_PROPERTY_DOI_TEMPLATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDoiTemplate(@jakarta.annotation.Nullable Boolean doiTemplate) {
     this.doiTemplate = doiTemplate;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -482,10 +483,7 @@ public class GetSmtpTemplateOverview {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -523,7 +521,7 @@ public class GetSmtpTemplateOverview {
     // add `id` to the URL query string
     if (getId() != null) {
       try {
-        joiner.add(String.format("%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -533,7 +531,7 @@ public class GetSmtpTemplateOverview {
     // add `name` to the URL query string
     if (getName() != null) {
       try {
-        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -543,7 +541,7 @@ public class GetSmtpTemplateOverview {
     // add `subject` to the URL query string
     if (getSubject() != null) {
       try {
-        joiner.add(String.format("%ssubject%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubject()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssubject%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubject()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -553,7 +551,7 @@ public class GetSmtpTemplateOverview {
     // add `isActive` to the URL query string
     if (getIsActive() != null) {
       try {
-        joiner.add(String.format("%sisActive%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsActive()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sisActive%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsActive()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -563,7 +561,7 @@ public class GetSmtpTemplateOverview {
     // add `testSent` to the URL query string
     if (getTestSent() != null) {
       try {
-        joiner.add(String.format("%stestSent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTestSent()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stestSent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTestSent()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -578,7 +576,7 @@ public class GetSmtpTemplateOverview {
     // add `replyTo` to the URL query string
     if (getReplyTo() != null) {
       try {
-        joiner.add(String.format("%sreplyTo%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReplyTo()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sreplyTo%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReplyTo()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -588,7 +586,7 @@ public class GetSmtpTemplateOverview {
     // add `toField` to the URL query string
     if (getToField() != null) {
       try {
-        joiner.add(String.format("%stoField%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getToField()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stoField%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getToField()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -598,7 +596,7 @@ public class GetSmtpTemplateOverview {
     // add `tag` to the URL query string
     if (getTag() != null) {
       try {
-        joiner.add(String.format("%stag%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTag()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stag%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTag()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -608,7 +606,7 @@ public class GetSmtpTemplateOverview {
     // add `htmlContent` to the URL query string
     if (getHtmlContent() != null) {
       try {
-        joiner.add(String.format("%shtmlContent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHtmlContent()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%shtmlContent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHtmlContent()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -618,7 +616,7 @@ public class GetSmtpTemplateOverview {
     // add `createdAt` to the URL query string
     if (getCreatedAt() != null) {
       try {
-        joiner.add(String.format("%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -628,7 +626,7 @@ public class GetSmtpTemplateOverview {
     // add `modifiedAt` to the URL query string
     if (getModifiedAt() != null) {
       try {
-        joiner.add(String.format("%smodifiedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getModifiedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%smodifiedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getModifiedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -638,7 +636,7 @@ public class GetSmtpTemplateOverview {
     // add `doiTemplate` to the URL query string
     if (getDoiTemplate() != null) {
       try {
-        joiner.add(String.format("%sdoiTemplate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDoiTemplate()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdoiTemplate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDoiTemplate()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

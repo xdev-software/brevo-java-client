@@ -67,7 +67,7 @@ public class GetExtendedContactDetailsAllOfStatisticsLinks {
    * @return count
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_COUNT)
+  @JsonProperty(value = JSON_PROPERTY_COUNT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getCount() {
@@ -75,7 +75,7 @@ public class GetExtendedContactDetailsAllOfStatisticsLinks {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_COUNT)
+  @JsonProperty(value = JSON_PROPERTY_COUNT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCount(@jakarta.annotation.Nonnull Long count) {
     this.count = count;
@@ -92,7 +92,7 @@ public class GetExtendedContactDetailsAllOfStatisticsLinks {
    * @return eventTime
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_EVENT_TIME)
+  @JsonProperty(value = JSON_PROPERTY_EVENT_TIME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getEventTime() {
@@ -100,7 +100,7 @@ public class GetExtendedContactDetailsAllOfStatisticsLinks {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EVENT_TIME)
+  @JsonProperty(value = JSON_PROPERTY_EVENT_TIME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setEventTime(@jakarta.annotation.Nonnull String eventTime) {
     this.eventTime = eventTime;
@@ -117,7 +117,7 @@ public class GetExtendedContactDetailsAllOfStatisticsLinks {
    * @return ip
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_IP)
+  @JsonProperty(value = JSON_PROPERTY_IP, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getIp() {
@@ -125,7 +125,7 @@ public class GetExtendedContactDetailsAllOfStatisticsLinks {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IP)
+  @JsonProperty(value = JSON_PROPERTY_IP, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setIp(@jakarta.annotation.Nonnull String ip) {
     this.ip = ip;
@@ -142,7 +142,7 @@ public class GetExtendedContactDetailsAllOfStatisticsLinks {
    * @return url
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_URL)
+  @JsonProperty(value = JSON_PROPERTY_URL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getUrl() {
@@ -150,11 +150,12 @@ public class GetExtendedContactDetailsAllOfStatisticsLinks {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_URL)
+  @JsonProperty(value = JSON_PROPERTY_URL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setUrl(@jakarta.annotation.Nonnull String url) {
     this.url = url;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -193,10 +194,7 @@ public class GetExtendedContactDetailsAllOfStatisticsLinks {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -234,7 +232,7 @@ public class GetExtendedContactDetailsAllOfStatisticsLinks {
     // add `count` to the URL query string
     if (getCount() != null) {
       try {
-        joiner.add(String.format("%scount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCount()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCount()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -244,7 +242,7 @@ public class GetExtendedContactDetailsAllOfStatisticsLinks {
     // add `eventTime` to the URL query string
     if (getEventTime() != null) {
       try {
-        joiner.add(String.format("%seventTime%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEventTime()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%seventTime%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEventTime()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -254,7 +252,7 @@ public class GetExtendedContactDetailsAllOfStatisticsLinks {
     // add `ip` to the URL query string
     if (getIp() != null) {
       try {
-        joiner.add(String.format("%sip%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIp()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sip%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIp()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -264,7 +262,7 @@ public class GetExtendedContactDetailsAllOfStatisticsLinks {
     // add `url` to the URL query string
     if (getUrl() != null) {
       try {
-        joiner.add(String.format("%surl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUrl()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%surl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUrl()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

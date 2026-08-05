@@ -82,7 +82,7 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
    * @return name
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getName() {
@@ -90,7 +90,7 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setName(@jakarta.annotation.Nullable String name) {
     this.name = name;
@@ -107,7 +107,7 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
    * @return unitValue
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UNIT_VALUE)
+  @JsonProperty(value = JSON_PROPERTY_UNIT_VALUE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getUnitValue() {
@@ -115,7 +115,7 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UNIT_VALUE)
+  @JsonProperty(value = JSON_PROPERTY_UNIT_VALUE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUnitValue(@jakarta.annotation.Nullable String unitValue) {
     this.unitValue = unitValue;
@@ -132,7 +132,7 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
    * @return quantity
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_QUANTITY)
+  @JsonProperty(value = JSON_PROPERTY_QUANTITY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getQuantity() {
@@ -140,7 +140,7 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_QUANTITY)
+  @JsonProperty(value = JSON_PROPERTY_QUANTITY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setQuantity(@jakarta.annotation.Nullable Long quantity) {
     this.quantity = quantity;
@@ -157,7 +157,7 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
    * @return quantityWithOverages
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_QUANTITY_WITH_OVERAGES)
+  @JsonProperty(value = JSON_PROPERTY_QUANTITY_WITH_OVERAGES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getQuantityWithOverages() {
@@ -165,7 +165,7 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_QUANTITY_WITH_OVERAGES)
+  @JsonProperty(value = JSON_PROPERTY_QUANTITY_WITH_OVERAGES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setQuantityWithOverages(@jakarta.annotation.Nullable Long quantityWithOverages) {
     this.quantityWithOverages = quantityWithOverages;
@@ -182,7 +182,7 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
    * @return used
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_USED)
+  @JsonProperty(value = JSON_PROPERTY_USED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getUsed() {
@@ -190,7 +190,7 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_USED)
+  @JsonProperty(value = JSON_PROPERTY_USED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUsed(@jakarta.annotation.Nullable Long used) {
     this.used = used;
@@ -207,7 +207,7 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
    * @return usedOverages
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_USED_OVERAGES)
+  @JsonProperty(value = JSON_PROPERTY_USED_OVERAGES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getUsedOverages() {
@@ -215,7 +215,7 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_USED_OVERAGES)
+  @JsonProperty(value = JSON_PROPERTY_USED_OVERAGES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUsedOverages(@jakarta.annotation.Nullable Long usedOverages) {
     this.usedOverages = usedOverages;
@@ -232,7 +232,7 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
    * @return remaining
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_REMAINING)
+  @JsonProperty(value = JSON_PROPERTY_REMAINING, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getRemaining() {
@@ -240,11 +240,12 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REMAINING)
+  @JsonProperty(value = JSON_PROPERTY_REMAINING, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRemaining(@jakarta.annotation.Nullable Long remaining) {
     this.remaining = remaining;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -289,10 +290,7 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -330,7 +328,7 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
     // add `name` to the URL query string
     if (getName() != null) {
       try {
-        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -340,7 +338,7 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
     // add `unitValue` to the URL query string
     if (getUnitValue() != null) {
       try {
-        joiner.add(String.format("%sunitValue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUnitValue()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sunitValue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUnitValue()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -350,7 +348,7 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
     // add `quantity` to the URL query string
     if (getQuantity() != null) {
       try {
-        joiner.add(String.format("%squantity%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getQuantity()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%squantity%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getQuantity()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -360,7 +358,7 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
     // add `quantityWithOverages` to the URL query string
     if (getQuantityWithOverages() != null) {
       try {
-        joiner.add(String.format("%squantityWithOverages%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getQuantityWithOverages()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%squantityWithOverages%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getQuantityWithOverages()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -370,7 +368,7 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
     // add `used` to the URL query string
     if (getUsed() != null) {
       try {
-        joiner.add(String.format("%sused%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUsed()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sused%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUsed()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -380,7 +378,7 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
     // add `usedOverages` to the URL query string
     if (getUsedOverages() != null) {
       try {
-        joiner.add(String.format("%susedOverages%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUsedOverages()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%susedOverages%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUsedOverages()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -390,7 +388,7 @@ public class MasterDetailsResponsePlanInfoFeaturesInner {
     // add `remaining` to the URL query string
     if (getRemaining() != null) {
       try {
-        joiner.add(String.format("%sremaining%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRemaining()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sremaining%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRemaining()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

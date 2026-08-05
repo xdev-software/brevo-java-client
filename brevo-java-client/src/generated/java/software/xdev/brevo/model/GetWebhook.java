@@ -175,7 +175,7 @@ public class GetWebhook {
    * @return url
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_URL)
+  @JsonProperty(value = JSON_PROPERTY_URL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getUrl() {
@@ -183,7 +183,7 @@ public class GetWebhook {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_URL)
+  @JsonProperty(value = JSON_PROPERTY_URL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setUrl(@jakarta.annotation.Nonnull String url) {
     this.url = url;
@@ -200,7 +200,7 @@ public class GetWebhook {
    * @return id
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getId() {
@@ -208,7 +208,7 @@ public class GetWebhook {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setId(@jakarta.annotation.Nonnull Long id) {
     this.id = id;
@@ -225,7 +225,7 @@ public class GetWebhook {
    * @return description
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DESCRIPTION)
+  @JsonProperty(value = JSON_PROPERTY_DESCRIPTION, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getDescription() {
@@ -233,7 +233,7 @@ public class GetWebhook {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DESCRIPTION)
+  @JsonProperty(value = JSON_PROPERTY_DESCRIPTION, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDescription(@jakarta.annotation.Nonnull String description) {
     this.description = description;
@@ -258,7 +258,7 @@ public class GetWebhook {
    * @return events
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_EVENTS)
+  @JsonProperty(value = JSON_PROPERTY_EVENTS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public List<String> getEvents() {
@@ -266,7 +266,7 @@ public class GetWebhook {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EVENTS)
+  @JsonProperty(value = JSON_PROPERTY_EVENTS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setEvents(@jakarta.annotation.Nonnull List<String> events) {
     this.events = events;
@@ -283,7 +283,7 @@ public class GetWebhook {
    * @return type
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_TYPE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public TypeEnum getType() {
@@ -291,7 +291,7 @@ public class GetWebhook {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_TYPE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setType(@jakarta.annotation.Nonnull TypeEnum type) {
     this.type = type;
@@ -308,7 +308,7 @@ public class GetWebhook {
    * @return channel
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CHANNEL)
+  @JsonProperty(value = JSON_PROPERTY_CHANNEL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public ChannelEnum getChannel() {
@@ -316,7 +316,7 @@ public class GetWebhook {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CHANNEL)
+  @JsonProperty(value = JSON_PROPERTY_CHANNEL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setChannel(@jakarta.annotation.Nullable ChannelEnum channel) {
     this.channel = channel;
@@ -333,7 +333,7 @@ public class GetWebhook {
    * @return createdAt
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getCreatedAt() {
@@ -341,7 +341,7 @@ public class GetWebhook {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCreatedAt(@jakarta.annotation.Nonnull String createdAt) {
     this.createdAt = createdAt;
@@ -358,7 +358,7 @@ public class GetWebhook {
    * @return modifiedAt
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
+  @JsonProperty(value = JSON_PROPERTY_MODIFIED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getModifiedAt() {
@@ -366,7 +366,7 @@ public class GetWebhook {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
+  @JsonProperty(value = JSON_PROPERTY_MODIFIED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setModifiedAt(@jakarta.annotation.Nonnull String modifiedAt) {
     this.modifiedAt = modifiedAt;
@@ -383,7 +383,7 @@ public class GetWebhook {
    * @return batched
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_BATCHED)
+  @JsonProperty(value = JSON_PROPERTY_BATCHED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getBatched() {
@@ -391,7 +391,7 @@ public class GetWebhook {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BATCHED)
+  @JsonProperty(value = JSON_PROPERTY_BATCHED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setBatched(@jakarta.annotation.Nullable Boolean batched) {
     this.batched = batched;
@@ -408,7 +408,7 @@ public class GetWebhook {
    * @return auth
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_AUTH)
+  @JsonProperty(value = JSON_PROPERTY_AUTH, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Object getAuth() {
@@ -416,7 +416,7 @@ public class GetWebhook {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_AUTH)
+  @JsonProperty(value = JSON_PROPERTY_AUTH, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setAuth(@jakarta.annotation.Nullable Object auth) {
     this.auth = auth;
@@ -441,7 +441,7 @@ public class GetWebhook {
    * @return headers
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_HEADERS)
+  @JsonProperty(value = JSON_PROPERTY_HEADERS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<Object> getHeaders() {
@@ -449,11 +449,12 @@ public class GetWebhook {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_HEADERS)
+  @JsonProperty(value = JSON_PROPERTY_HEADERS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setHeaders(@jakarta.annotation.Nullable List<Object> headers) {
     this.headers = headers;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -506,10 +507,7 @@ public class GetWebhook {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -547,7 +545,7 @@ public class GetWebhook {
     // add `url` to the URL query string
     if (getUrl() != null) {
       try {
-        joiner.add(String.format("%surl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUrl()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%surl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUrl()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -557,7 +555,7 @@ public class GetWebhook {
     // add `id` to the URL query string
     if (getId() != null) {
       try {
-        joiner.add(String.format("%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -567,7 +565,7 @@ public class GetWebhook {
     // add `description` to the URL query string
     if (getDescription() != null) {
       try {
-        joiner.add(String.format("%sdescription%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDescription()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdescription%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDescription()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -578,8 +576,8 @@ public class GetWebhook {
     if (getEvents() != null) {
       for (int i = 0; i < getEvents().size(); i++) {
         try {
-          joiner.add(String.format("%sevents%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sevents%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getEvents().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -591,7 +589,7 @@ public class GetWebhook {
     // add `type` to the URL query string
     if (getType() != null) {
       try {
-        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -601,7 +599,7 @@ public class GetWebhook {
     // add `channel` to the URL query string
     if (getChannel() != null) {
       try {
-        joiner.add(String.format("%schannel%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getChannel()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%schannel%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getChannel()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -611,7 +609,7 @@ public class GetWebhook {
     // add `createdAt` to the URL query string
     if (getCreatedAt() != null) {
       try {
-        joiner.add(String.format("%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -621,7 +619,7 @@ public class GetWebhook {
     // add `modifiedAt` to the URL query string
     if (getModifiedAt() != null) {
       try {
-        joiner.add(String.format("%smodifiedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getModifiedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%smodifiedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getModifiedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -631,7 +629,7 @@ public class GetWebhook {
     // add `batched` to the URL query string
     if (getBatched() != null) {
       try {
-        joiner.add(String.format("%sbatched%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBatched()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sbatched%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBatched()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -641,7 +639,7 @@ public class GetWebhook {
     // add `auth` to the URL query string
     if (getAuth() != null) {
       try {
-        joiner.add(String.format("%sauth%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAuth()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sauth%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAuth()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -652,8 +650,8 @@ public class GetWebhook {
     if (getHeaders() != null) {
       for (int i = 0; i < getHeaders().size(); i++) {
         try {
-          joiner.add(String.format("%sheaders%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sheaders%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getHeaders().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported

@@ -96,7 +96,7 @@ public class CreateEmailCampaignEmailExpirationDate {
    * @return duration
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DURATION)
+  @JsonProperty(value = JSON_PROPERTY_DURATION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getDuration() {
@@ -104,7 +104,7 @@ public class CreateEmailCampaignEmailExpirationDate {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DURATION)
+  @JsonProperty(value = JSON_PROPERTY_DURATION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDuration(@jakarta.annotation.Nullable Long duration) {
     this.duration = duration;
@@ -121,7 +121,7 @@ public class CreateEmailCampaignEmailExpirationDate {
    * @return unit
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UNIT)
+  @JsonProperty(value = JSON_PROPERTY_UNIT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public UnitEnum getUnit() {
@@ -129,11 +129,12 @@ public class CreateEmailCampaignEmailExpirationDate {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UNIT)
+  @JsonProperty(value = JSON_PROPERTY_UNIT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUnit(@jakarta.annotation.Nullable UnitEnum unit) {
     this.unit = unit;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -168,10 +169,7 @@ public class CreateEmailCampaignEmailExpirationDate {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -209,7 +207,7 @@ public class CreateEmailCampaignEmailExpirationDate {
     // add `duration` to the URL query string
     if (getDuration() != null) {
       try {
-        joiner.add(String.format("%sduration%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDuration()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sduration%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDuration()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -219,7 +217,7 @@ public class CreateEmailCampaignEmailExpirationDate {
     // add `unit` to the URL query string
     if (getUnit() != null) {
       try {
-        joiner.add(String.format("%sunit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUnit()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sunit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUnit()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

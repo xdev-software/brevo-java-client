@@ -101,7 +101,7 @@ public class SendReport {
    * @return language
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LANGUAGE)
+  @JsonProperty(value = JSON_PROPERTY_LANGUAGE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public LanguageEnum getLanguage() {
@@ -109,7 +109,7 @@ public class SendReport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LANGUAGE)
+  @JsonProperty(value = JSON_PROPERTY_LANGUAGE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLanguage(@jakarta.annotation.Nullable LanguageEnum language) {
     this.language = language;
@@ -126,7 +126,7 @@ public class SendReport {
    * @return email
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public SendReportEmail getEmail() {
@@ -134,11 +134,12 @@ public class SendReport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setEmail(@jakarta.annotation.Nonnull SendReportEmail email) {
     this.email = email;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -173,10 +174,7 @@ public class SendReport {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -214,7 +212,7 @@ public class SendReport {
     // add `language` to the URL query string
     if (getLanguage() != null) {
       try {
-        joiner.add(String.format("%slanguage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLanguage()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%slanguage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLanguage()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

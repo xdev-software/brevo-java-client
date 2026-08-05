@@ -18,7 +18,6 @@ import java.util.Arrays;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -106,7 +105,7 @@ public class WhatsappCampTemplate {
    * @return name
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getName() {
@@ -114,7 +113,7 @@ public class WhatsappCampTemplate {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setName(@jakarta.annotation.Nullable String name) {
     this.name = name;
@@ -131,7 +130,7 @@ public class WhatsappCampTemplate {
    * @return category
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CATEGORY)
+  @JsonProperty(value = JSON_PROPERTY_CATEGORY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getCategory() {
@@ -139,7 +138,7 @@ public class WhatsappCampTemplate {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CATEGORY)
+  @JsonProperty(value = JSON_PROPERTY_CATEGORY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCategory(@jakarta.annotation.Nullable String category) {
     this.category = category;
@@ -156,7 +155,7 @@ public class WhatsappCampTemplate {
    * @return language
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LANGUAGE)
+  @JsonProperty(value = JSON_PROPERTY_LANGUAGE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getLanguage() {
@@ -164,7 +163,7 @@ public class WhatsappCampTemplate {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LANGUAGE)
+  @JsonProperty(value = JSON_PROPERTY_LANGUAGE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLanguage(@jakarta.annotation.Nullable String language) {
     this.language = language;
@@ -181,7 +180,7 @@ public class WhatsappCampTemplate {
    * @return containsButton
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CONTAINS_BUTTON)
+  @JsonProperty(value = JSON_PROPERTY_CONTAINS_BUTTON, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getContainsButton() {
@@ -189,7 +188,7 @@ public class WhatsappCampTemplate {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONTAINS_BUTTON)
+  @JsonProperty(value = JSON_PROPERTY_CONTAINS_BUTTON, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setContainsButton(@jakarta.annotation.Nullable Boolean containsButton) {
     this.containsButton = containsButton;
@@ -206,7 +205,7 @@ public class WhatsappCampTemplate {
    * @return displayHeader
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DISPLAY_HEADER)
+  @JsonProperty(value = JSON_PROPERTY_DISPLAY_HEADER, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getDisplayHeader() {
@@ -214,7 +213,7 @@ public class WhatsappCampTemplate {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DISPLAY_HEADER)
+  @JsonProperty(value = JSON_PROPERTY_DISPLAY_HEADER, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDisplayHeader(@jakarta.annotation.Nullable Boolean displayHeader) {
     this.displayHeader = displayHeader;
@@ -231,7 +230,7 @@ public class WhatsappCampTemplate {
    * @return headerType
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_HEADER_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_HEADER_TYPE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getHeaderType() {
@@ -239,7 +238,7 @@ public class WhatsappCampTemplate {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_HEADER_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_HEADER_TYPE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setHeaderType(@jakarta.annotation.Nullable String headerType) {
     this.headerType = headerType;
@@ -264,7 +263,7 @@ public class WhatsappCampTemplate {
    * @return components
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_COMPONENTS)
+  @JsonProperty(value = JSON_PROPERTY_COMPONENTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<ComponentItems> getComponents() {
@@ -272,7 +271,7 @@ public class WhatsappCampTemplate {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_COMPONENTS)
+  @JsonProperty(value = JSON_PROPERTY_COMPONENTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setComponents(@jakarta.annotation.Nullable List<ComponentItems> components) {
     this.components = components;
@@ -297,7 +296,7 @@ public class WhatsappCampTemplate {
    * @return headerVariables
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_HEADER_VARIABLES)
+  @JsonProperty(value = JSON_PROPERTY_HEADER_VARIABLES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<VariablesItems> getHeaderVariables() {
@@ -305,7 +304,7 @@ public class WhatsappCampTemplate {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_HEADER_VARIABLES)
+  @JsonProperty(value = JSON_PROPERTY_HEADER_VARIABLES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setHeaderVariables(@jakarta.annotation.Nullable List<VariablesItems> headerVariables) {
     this.headerVariables = headerVariables;
@@ -330,7 +329,7 @@ public class WhatsappCampTemplate {
    * @return bodyVariables
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_BODY_VARIABLES)
+  @JsonProperty(value = JSON_PROPERTY_BODY_VARIABLES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<VariablesItems> getBodyVariables() {
@@ -338,7 +337,7 @@ public class WhatsappCampTemplate {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BODY_VARIABLES)
+  @JsonProperty(value = JSON_PROPERTY_BODY_VARIABLES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setBodyVariables(@jakarta.annotation.Nullable List<VariablesItems> bodyVariables) {
     this.bodyVariables = bodyVariables;
@@ -355,7 +354,7 @@ public class WhatsappCampTemplate {
    * @return buttonType
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_BUTTON_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_BUTTON_TYPE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getButtonType() {
@@ -363,7 +362,7 @@ public class WhatsappCampTemplate {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BUTTON_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_BUTTON_TYPE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setButtonType(@jakarta.annotation.Nullable String buttonType) {
     this.buttonType = buttonType;
@@ -380,7 +379,7 @@ public class WhatsappCampTemplate {
    * @return hideFooter
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_HIDE_FOOTER)
+  @JsonProperty(value = JSON_PROPERTY_HIDE_FOOTER, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getHideFooter() {
@@ -388,11 +387,12 @@ public class WhatsappCampTemplate {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_HIDE_FOOTER)
+  @JsonProperty(value = JSON_PROPERTY_HIDE_FOOTER, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setHideFooter(@jakarta.annotation.Nullable Boolean hideFooter) {
     this.hideFooter = hideFooter;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -445,10 +445,7 @@ public class WhatsappCampTemplate {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -486,7 +483,7 @@ public class WhatsappCampTemplate {
     // add `name` to the URL query string
     if (getName() != null) {
       try {
-        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -496,7 +493,7 @@ public class WhatsappCampTemplate {
     // add `category` to the URL query string
     if (getCategory() != null) {
       try {
-        joiner.add(String.format("%scategory%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCategory()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scategory%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCategory()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -506,7 +503,7 @@ public class WhatsappCampTemplate {
     // add `language` to the URL query string
     if (getLanguage() != null) {
       try {
-        joiner.add(String.format("%slanguage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLanguage()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%slanguage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLanguage()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -516,7 +513,7 @@ public class WhatsappCampTemplate {
     // add `contains_button` to the URL query string
     if (getContainsButton() != null) {
       try {
-        joiner.add(String.format("%scontains_button%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContainsButton()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scontains_button%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContainsButton()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -526,7 +523,7 @@ public class WhatsappCampTemplate {
     // add `display_header` to the URL query string
     if (getDisplayHeader() != null) {
       try {
-        joiner.add(String.format("%sdisplay_header%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisplayHeader()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdisplay_header%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisplayHeader()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -536,7 +533,7 @@ public class WhatsappCampTemplate {
     // add `header_type` to the URL query string
     if (getHeaderType() != null) {
       try {
-        joiner.add(String.format("%sheader_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHeaderType()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sheader_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHeaderType()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -547,8 +544,8 @@ public class WhatsappCampTemplate {
     if (getComponents() != null) {
       for (int i = 0; i < getComponents().size(); i++) {
         if (getComponents().get(i) != null) {
-          joiner.add(getComponents().get(i).toUrlQueryString(String.format("%scomponents%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getComponents().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%scomponents%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -557,8 +554,8 @@ public class WhatsappCampTemplate {
     if (getHeaderVariables() != null) {
       for (int i = 0; i < getHeaderVariables().size(); i++) {
         if (getHeaderVariables().get(i) != null) {
-          joiner.add(getHeaderVariables().get(i).toUrlQueryString(String.format("%sheader_variables%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getHeaderVariables().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sheader_variables%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -567,8 +564,8 @@ public class WhatsappCampTemplate {
     if (getBodyVariables() != null) {
       for (int i = 0; i < getBodyVariables().size(); i++) {
         if (getBodyVariables().get(i) != null) {
-          joiner.add(getBodyVariables().get(i).toUrlQueryString(String.format("%sbody_variables%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getBodyVariables().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sbody_variables%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -576,7 +573,7 @@ public class WhatsappCampTemplate {
     // add `button_type` to the URL query string
     if (getButtonType() != null) {
       try {
-        joiner.add(String.format("%sbutton_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getButtonType()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sbutton_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getButtonType()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -586,7 +583,7 @@ public class WhatsappCampTemplate {
     // add `hide_footer` to the URL query string
     if (getHideFooter() != null) {
       try {
-        joiner.add(String.format("%shide_footer%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHideFooter()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%shide_footer%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHideFooter()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

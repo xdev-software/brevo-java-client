@@ -99,7 +99,7 @@ public class Tier {
    * @return tierId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TIER_ID)
+  @JsonProperty(value = JSON_PROPERTY_TIER_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public UUID getTierId() {
@@ -107,7 +107,7 @@ public class Tier {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TIER_ID)
+  @JsonProperty(value = JSON_PROPERTY_TIER_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setTierId(@jakarta.annotation.Nullable UUID tierId) {
     this.tierId = tierId;
@@ -124,7 +124,7 @@ public class Tier {
    * @return name
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getName() {
@@ -132,7 +132,7 @@ public class Tier {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setName(@jakarta.annotation.Nullable String name) {
     this.name = name;
@@ -149,7 +149,7 @@ public class Tier {
    * @return imageRef
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_IMAGE_REF)
+  @JsonProperty(value = JSON_PROPERTY_IMAGE_REF, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getImageRef() {
@@ -157,7 +157,7 @@ public class Tier {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IMAGE_REF)
+  @JsonProperty(value = JSON_PROPERTY_IMAGE_REF, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setImageRef(@jakarta.annotation.Nullable String imageRef) {
     this.imageRef = imageRef;
@@ -174,7 +174,7 @@ public class Tier {
    * @return loyaltyProgramId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LOYALTY_PROGRAM_ID)
+  @JsonProperty(value = JSON_PROPERTY_LOYALTY_PROGRAM_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public UUID getLoyaltyProgramId() {
@@ -182,7 +182,7 @@ public class Tier {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LOYALTY_PROGRAM_ID)
+  @JsonProperty(value = JSON_PROPERTY_LOYALTY_PROGRAM_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLoyaltyProgramId(@jakarta.annotation.Nullable UUID loyaltyProgramId) {
     this.loyaltyProgramId = loyaltyProgramId;
@@ -199,7 +199,7 @@ public class Tier {
    * @return groupId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_GROUP_ID)
+  @JsonProperty(value = JSON_PROPERTY_GROUP_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public UUID getGroupId() {
@@ -207,7 +207,7 @@ public class Tier {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_GROUP_ID)
+  @JsonProperty(value = JSON_PROPERTY_GROUP_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setGroupId(@jakarta.annotation.Nullable UUID groupId) {
     this.groupId = groupId;
@@ -224,7 +224,7 @@ public class Tier {
    * @return createdAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public OffsetDateTime getCreatedAt() {
@@ -232,7 +232,7 @@ public class Tier {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCreatedAt(@jakarta.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
@@ -249,7 +249,7 @@ public class Tier {
    * @return updatedAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UPDATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_UPDATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public OffsetDateTime getUpdatedAt() {
@@ -257,7 +257,7 @@ public class Tier {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UPDATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_UPDATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUpdatedAt(@jakarta.annotation.Nullable OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
@@ -282,7 +282,7 @@ public class Tier {
    * @return accessConditions
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ACCESS_CONDITIONS)
+  @JsonProperty(value = JSON_PROPERTY_ACCESS_CONDITIONS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<TierAccessConditionsInner> getAccessConditions() {
@@ -290,7 +290,7 @@ public class Tier {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ACCESS_CONDITIONS)
+  @JsonProperty(value = JSON_PROPERTY_ACCESS_CONDITIONS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setAccessConditions(@jakarta.annotation.Nullable List<TierAccessConditionsInner> accessConditions) {
     this.accessConditions = accessConditions;
@@ -315,7 +315,7 @@ public class Tier {
    * @return tierRewards
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TIER_REWARDS)
+  @JsonProperty(value = JSON_PROPERTY_TIER_REWARDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<TierTierRewardsInner> getTierRewards() {
@@ -323,11 +323,12 @@ public class Tier {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TIER_REWARDS)
+  @JsonProperty(value = JSON_PROPERTY_TIER_REWARDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setTierRewards(@jakarta.annotation.Nullable List<TierTierRewardsInner> tierRewards) {
     this.tierRewards = tierRewards;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -376,10 +377,7 @@ public class Tier {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -417,7 +415,7 @@ public class Tier {
     // add `tierId` to the URL query string
     if (getTierId() != null) {
       try {
-        joiner.add(String.format("%stierId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTierId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stierId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTierId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -427,7 +425,7 @@ public class Tier {
     // add `name` to the URL query string
     if (getName() != null) {
       try {
-        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -437,7 +435,7 @@ public class Tier {
     // add `imageRef` to the URL query string
     if (getImageRef() != null) {
       try {
-        joiner.add(String.format("%simageRef%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getImageRef()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%simageRef%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getImageRef()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -447,7 +445,7 @@ public class Tier {
     // add `loyaltyProgramId` to the URL query string
     if (getLoyaltyProgramId() != null) {
       try {
-        joiner.add(String.format("%sloyaltyProgramId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLoyaltyProgramId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sloyaltyProgramId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLoyaltyProgramId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -457,7 +455,7 @@ public class Tier {
     // add `groupId` to the URL query string
     if (getGroupId() != null) {
       try {
-        joiner.add(String.format("%sgroupId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getGroupId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sgroupId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getGroupId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -467,7 +465,7 @@ public class Tier {
     // add `createdAt` to the URL query string
     if (getCreatedAt() != null) {
       try {
-        joiner.add(String.format("%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -477,7 +475,7 @@ public class Tier {
     // add `updatedAt` to the URL query string
     if (getUpdatedAt() != null) {
       try {
-        joiner.add(String.format("%supdatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUpdatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%supdatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUpdatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -488,8 +486,8 @@ public class Tier {
     if (getAccessConditions() != null) {
       for (int i = 0; i < getAccessConditions().size(); i++) {
         if (getAccessConditions().get(i) != null) {
-          joiner.add(getAccessConditions().get(i).toUrlQueryString(String.format("%saccessConditions%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getAccessConditions().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%saccessConditions%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -498,8 +496,8 @@ public class Tier {
     if (getTierRewards() != null) {
       for (int i = 0; i < getTierRewards().size(); i++) {
         if (getTierRewards().get(i) != null) {
-          joiner.add(getTierRewards().get(i).toUrlQueryString(String.format("%stierRewards%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getTierRewards().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%stierRewards%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }

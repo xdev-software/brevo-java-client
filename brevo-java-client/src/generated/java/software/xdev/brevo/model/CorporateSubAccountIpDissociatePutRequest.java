@@ -60,7 +60,7 @@ public class CorporateSubAccountIpDissociatePutRequest {
    * @return ip
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_IP)
+  @JsonProperty(value = JSON_PROPERTY_IP, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getIp() {
@@ -68,7 +68,7 @@ public class CorporateSubAccountIpDissociatePutRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IP)
+  @JsonProperty(value = JSON_PROPERTY_IP, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setIp(@jakarta.annotation.Nonnull String ip) {
     this.ip = ip;
@@ -93,7 +93,7 @@ public class CorporateSubAccountIpDissociatePutRequest {
    * @return ids
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_IDS)
+  @JsonProperty(value = JSON_PROPERTY_IDS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public List<Long> getIds() {
@@ -101,11 +101,12 @@ public class CorporateSubAccountIpDissociatePutRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IDS)
+  @JsonProperty(value = JSON_PROPERTY_IDS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setIds(@jakarta.annotation.Nonnull List<Long> ids) {
     this.ids = ids;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -140,10 +141,7 @@ public class CorporateSubAccountIpDissociatePutRequest {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -181,7 +179,7 @@ public class CorporateSubAccountIpDissociatePutRequest {
     // add `ip` to the URL query string
     if (getIp() != null) {
       try {
-        joiner.add(String.format("%sip%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIp()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sip%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIp()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -192,8 +190,8 @@ public class CorporateSubAccountIpDissociatePutRequest {
     if (getIds() != null) {
       for (int i = 0; i < getIds().size(); i++) {
         try {
-          joiner.add(String.format("%sids%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sids%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported

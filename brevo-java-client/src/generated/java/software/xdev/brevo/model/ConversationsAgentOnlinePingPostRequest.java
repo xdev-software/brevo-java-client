@@ -77,14 +77,14 @@ public class ConversationsAgentOnlinePingPostRequest {
         return agentId.orElse(null);
   }
 
-  @JsonProperty(JSON_PROPERTY_AGENT_ID)
+  @JsonProperty(value = JSON_PROPERTY_AGENT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public JsonNullable<Object> getAgentId_JsonNullable() {
     return agentId;
   }
   
-  @JsonProperty(JSON_PROPERTY_AGENT_ID)
+  @JsonProperty(value = JSON_PROPERTY_AGENT_ID, required = false)
   public void setAgentId_JsonNullable(JsonNullable<Object> agentId) {
     this.agentId = agentId;
   }
@@ -110,14 +110,14 @@ public class ConversationsAgentOnlinePingPostRequest {
         return receivedFrom.orElse(null);
   }
 
-  @JsonProperty(JSON_PROPERTY_RECEIVED_FROM)
+  @JsonProperty(value = JSON_PROPERTY_RECEIVED_FROM, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public JsonNullable<Object> getReceivedFrom_JsonNullable() {
     return receivedFrom;
   }
   
-  @JsonProperty(JSON_PROPERTY_RECEIVED_FROM)
+  @JsonProperty(value = JSON_PROPERTY_RECEIVED_FROM, required = false)
   public void setReceivedFrom_JsonNullable(JsonNullable<Object> receivedFrom) {
     this.receivedFrom = receivedFrom;
   }
@@ -143,14 +143,14 @@ public class ConversationsAgentOnlinePingPostRequest {
         return agentEmail.orElse(null);
   }
 
-  @JsonProperty(JSON_PROPERTY_AGENT_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_AGENT_EMAIL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public JsonNullable<Object> getAgentEmail_JsonNullable() {
     return agentEmail;
   }
   
-  @JsonProperty(JSON_PROPERTY_AGENT_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_AGENT_EMAIL, required = false)
   public void setAgentEmail_JsonNullable(JsonNullable<Object> agentEmail) {
     this.agentEmail = agentEmail;
   }
@@ -176,14 +176,14 @@ public class ConversationsAgentOnlinePingPostRequest {
         return agentName.orElse(null);
   }
 
-  @JsonProperty(JSON_PROPERTY_AGENT_NAME)
+  @JsonProperty(value = JSON_PROPERTY_AGENT_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public JsonNullable<Object> getAgentName_JsonNullable() {
     return agentName;
   }
   
-  @JsonProperty(JSON_PROPERTY_AGENT_NAME)
+  @JsonProperty(value = JSON_PROPERTY_AGENT_NAME, required = false)
   public void setAgentName_JsonNullable(JsonNullable<Object> agentName) {
     this.agentName = agentName;
   }
@@ -191,6 +191,7 @@ public class ConversationsAgentOnlinePingPostRequest {
   public void setAgentName(@jakarta.annotation.Nullable Object agentName) {
     this.agentName = JsonNullable.<Object>of(agentName);
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -240,10 +241,7 @@ public class ConversationsAgentOnlinePingPostRequest {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -281,7 +279,7 @@ public class ConversationsAgentOnlinePingPostRequest {
     // add `agentId` to the URL query string
     if (getAgentId() != null) {
       try {
-        joiner.add(String.format("%sagentId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAgentId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sagentId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAgentId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -291,7 +289,7 @@ public class ConversationsAgentOnlinePingPostRequest {
     // add `receivedFrom` to the URL query string
     if (getReceivedFrom() != null) {
       try {
-        joiner.add(String.format("%sreceivedFrom%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReceivedFrom()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sreceivedFrom%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReceivedFrom()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -301,7 +299,7 @@ public class ConversationsAgentOnlinePingPostRequest {
     // add `agentEmail` to the URL query string
     if (getAgentEmail() != null) {
       try {
-        joiner.add(String.format("%sagentEmail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAgentEmail()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sagentEmail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAgentEmail()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -311,7 +309,7 @@ public class ConversationsAgentOnlinePingPostRequest {
     // add `agentName` to the URL query string
     if (getAgentName() != null) {
       try {
-        joiner.add(String.format("%sagentName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAgentName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sagentName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAgentName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

@@ -53,7 +53,7 @@ public class PostContactInfo {
    * @return contacts
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CONTACTS)
+  @JsonProperty(value = JSON_PROPERTY_CONTACTS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public PostContactInfoContacts getContacts() {
@@ -61,11 +61,12 @@ public class PostContactInfo {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONTACTS)
+  @JsonProperty(value = JSON_PROPERTY_CONTACTS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setContacts(@jakarta.annotation.Nonnull PostContactInfoContacts contacts) {
     this.contacts = contacts;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -98,10 +99,7 @@ public class PostContactInfo {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**

@@ -53,7 +53,7 @@ public class Getrecords200ResponseRecordsInnerAssociationsInnerOneOfRecordsInner
    * @return identifiers
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_IDENTIFIERS)
+  @JsonProperty(value = JSON_PROPERTY_IDENTIFIERS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Getrecords200ResponseRecordsInnerAssociationsInnerOneOfRecordsInnerOneOfIdentifiers getIdentifiers() {
@@ -61,11 +61,12 @@ public class Getrecords200ResponseRecordsInnerAssociationsInnerOneOfRecordsInner
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IDENTIFIERS)
+  @JsonProperty(value = JSON_PROPERTY_IDENTIFIERS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setIdentifiers(@jakarta.annotation.Nullable Getrecords200ResponseRecordsInnerAssociationsInnerOneOfRecordsInnerOneOfIdentifiers identifiers) {
     this.identifiers = identifiers;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -98,10 +99,7 @@ public class Getrecords200ResponseRecordsInnerAssociationsInnerOneOfRecordsInner
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**

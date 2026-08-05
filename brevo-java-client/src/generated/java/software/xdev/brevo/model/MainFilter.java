@@ -57,7 +57,7 @@ public class MainFilter {
    * @return metadataKey
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_METADATA_KEY)
+  @JsonProperty(value = JSON_PROPERTY_METADATA_KEY, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getMetadataKey() {
@@ -65,7 +65,7 @@ public class MainFilter {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_METADATA_KEY)
+  @JsonProperty(value = JSON_PROPERTY_METADATA_KEY, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setMetadataKey(@jakarta.annotation.Nonnull String metadataKey) {
     this.metadataKey = metadataKey;
@@ -82,7 +82,7 @@ public class MainFilter {
    * @return metadataValue
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_METADATA_VALUE)
+  @JsonProperty(value = JSON_PROPERTY_METADATA_VALUE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getMetadataValue() {
@@ -90,11 +90,12 @@ public class MainFilter {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_METADATA_VALUE)
+  @JsonProperty(value = JSON_PROPERTY_METADATA_VALUE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setMetadataValue(@jakarta.annotation.Nonnull String metadataValue) {
     this.metadataValue = metadataValue;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -129,10 +130,7 @@ public class MainFilter {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -170,7 +168,7 @@ public class MainFilter {
     // add `metadata.key` to the URL query string
     if (getMetadataKey() != null) {
       try {
-        joiner.add(String.format("%smetadata.key%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMetadataKey()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%smetadata.key%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMetadataKey()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -180,7 +178,7 @@ public class MainFilter {
     // add `metadata.value` to the URL query string
     if (getMetadataValue() != null) {
       try {
-        joiner.add(String.format("%smetadata.value%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMetadataValue()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%smetadata.value%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMetadataValue()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

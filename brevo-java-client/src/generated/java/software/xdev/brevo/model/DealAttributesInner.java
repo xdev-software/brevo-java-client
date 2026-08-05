@@ -75,7 +75,7 @@ public class DealAttributesInner {
    * @return internalName
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_INTERNAL_NAME)
+  @JsonProperty(value = JSON_PROPERTY_INTERNAL_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getInternalName() {
@@ -83,7 +83,7 @@ public class DealAttributesInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_INTERNAL_NAME)
+  @JsonProperty(value = JSON_PROPERTY_INTERNAL_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setInternalName(@jakarta.annotation.Nullable String internalName) {
     this.internalName = internalName;
@@ -100,7 +100,7 @@ public class DealAttributesInner {
    * @return label
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LABEL)
+  @JsonProperty(value = JSON_PROPERTY_LABEL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getLabel() {
@@ -108,7 +108,7 @@ public class DealAttributesInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LABEL)
+  @JsonProperty(value = JSON_PROPERTY_LABEL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLabel(@jakarta.annotation.Nullable String label) {
     this.label = label;
@@ -125,7 +125,7 @@ public class DealAttributesInner {
    * @return attributeTypeName
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ATTRIBUTE_TYPE_NAME)
+  @JsonProperty(value = JSON_PROPERTY_ATTRIBUTE_TYPE_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getAttributeTypeName() {
@@ -133,7 +133,7 @@ public class DealAttributesInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ATTRIBUTE_TYPE_NAME)
+  @JsonProperty(value = JSON_PROPERTY_ATTRIBUTE_TYPE_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setAttributeTypeName(@jakarta.annotation.Nullable String attributeTypeName) {
     this.attributeTypeName = attributeTypeName;
@@ -158,7 +158,7 @@ public class DealAttributesInner {
    * @return attributeOptions
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ATTRIBUTE_OPTIONS)
+  @JsonProperty(value = JSON_PROPERTY_ATTRIBUTE_OPTIONS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<Object> getAttributeOptions() {
@@ -166,7 +166,7 @@ public class DealAttributesInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ATTRIBUTE_OPTIONS)
+  @JsonProperty(value = JSON_PROPERTY_ATTRIBUTE_OPTIONS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setAttributeOptions(@jakarta.annotation.Nullable List<Object> attributeOptions) {
     this.attributeOptions = attributeOptions;
@@ -183,7 +183,7 @@ public class DealAttributesInner {
    * @return isRequired
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_IS_REQUIRED)
+  @JsonProperty(value = JSON_PROPERTY_IS_REQUIRED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getIsRequired() {
@@ -191,11 +191,12 @@ public class DealAttributesInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IS_REQUIRED)
+  @JsonProperty(value = JSON_PROPERTY_IS_REQUIRED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setIsRequired(@jakarta.annotation.Nullable Boolean isRequired) {
     this.isRequired = isRequired;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -236,10 +237,7 @@ public class DealAttributesInner {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -277,7 +275,7 @@ public class DealAttributesInner {
     // add `internalName` to the URL query string
     if (getInternalName() != null) {
       try {
-        joiner.add(String.format("%sinternalName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getInternalName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sinternalName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getInternalName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -287,7 +285,7 @@ public class DealAttributesInner {
     // add `label` to the URL query string
     if (getLabel() != null) {
       try {
-        joiner.add(String.format("%slabel%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLabel()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%slabel%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLabel()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -297,7 +295,7 @@ public class DealAttributesInner {
     // add `attributeTypeName` to the URL query string
     if (getAttributeTypeName() != null) {
       try {
-        joiner.add(String.format("%sattributeTypeName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAttributeTypeName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sattributeTypeName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAttributeTypeName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -308,8 +306,8 @@ public class DealAttributesInner {
     if (getAttributeOptions() != null) {
       for (int i = 0; i < getAttributeOptions().size(); i++) {
         try {
-          joiner.add(String.format("%sattributeOptions%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sattributeOptions%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getAttributeOptions().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -321,7 +319,7 @@ public class DealAttributesInner {
     // add `isRequired` to the URL query string
     if (getIsRequired() != null) {
       try {
-        joiner.add(String.format("%sisRequired%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsRequired()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sisRequired%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsRequired()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

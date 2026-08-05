@@ -18,7 +18,6 @@ import java.util.Arrays;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -65,7 +64,7 @@ public class Pipeline {
    * @return pipelineName
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PIPELINE_NAME)
+  @JsonProperty(value = JSON_PROPERTY_PIPELINE_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getPipelineName() {
@@ -73,7 +72,7 @@ public class Pipeline {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PIPELINE_NAME)
+  @JsonProperty(value = JSON_PROPERTY_PIPELINE_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPipelineName(@jakarta.annotation.Nullable String pipelineName) {
     this.pipelineName = pipelineName;
@@ -90,7 +89,7 @@ public class Pipeline {
    * @return pipeline
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PIPELINE)
+  @JsonProperty(value = JSON_PROPERTY_PIPELINE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getPipeline() {
@@ -98,7 +97,7 @@ public class Pipeline {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PIPELINE)
+  @JsonProperty(value = JSON_PROPERTY_PIPELINE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPipeline(@jakarta.annotation.Nullable String pipeline) {
     this.pipeline = pipeline;
@@ -123,7 +122,7 @@ public class Pipeline {
    * @return stages
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_STAGES)
+  @JsonProperty(value = JSON_PROPERTY_STAGES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<PipelineStage> getStages() {
@@ -131,11 +130,12 @@ public class Pipeline {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_STAGES)
+  @JsonProperty(value = JSON_PROPERTY_STAGES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setStages(@jakarta.annotation.Nullable List<PipelineStage> stages) {
     this.stages = stages;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -172,10 +172,7 @@ public class Pipeline {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -213,7 +210,7 @@ public class Pipeline {
     // add `pipeline_name` to the URL query string
     if (getPipelineName() != null) {
       try {
-        joiner.add(String.format("%spipeline_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPipelineName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%spipeline_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPipelineName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -223,7 +220,7 @@ public class Pipeline {
     // add `pipeline` to the URL query string
     if (getPipeline() != null) {
       try {
-        joiner.add(String.format("%spipeline%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPipeline()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%spipeline%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPipeline()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -234,8 +231,8 @@ public class Pipeline {
     if (getStages() != null) {
       for (int i = 0; i < getStages().size(); i++) {
         if (getStages().get(i) != null) {
-          joiner.add(getStages().get(i).toUrlQueryString(String.format("%sstages%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getStages().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sstages%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }

@@ -20,9 +20,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import java.util.Arrays;
 import java.util.LinkedHashSet;
 import java.util.Set;
+import tools.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import java.io.UnsupportedEncodingException;
@@ -60,7 +61,7 @@ public class CreateCouponsRequest {
    * @return collectionId
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_COLLECTION_ID)
+  @JsonProperty(value = JSON_PROPERTY_COLLECTION_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getCollectionId() {
@@ -68,7 +69,7 @@ public class CreateCouponsRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_COLLECTION_ID)
+  @JsonProperty(value = JSON_PROPERTY_COLLECTION_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCollectionId(@jakarta.annotation.Nonnull String collectionId) {
     this.collectionId = collectionId;
@@ -93,7 +94,7 @@ public class CreateCouponsRequest {
    * @return coupons
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_COUPONS)
+  @JsonProperty(value = JSON_PROPERTY_COUPONS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Set<String> getCoupons() {
@@ -102,11 +103,12 @@ public class CreateCouponsRequest {
 
 
   @JsonDeserialize(as = LinkedHashSet.class)
-  @JsonProperty(JSON_PROPERTY_COUPONS)
+  @JsonProperty(value = JSON_PROPERTY_COUPONS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCoupons(@jakarta.annotation.Nonnull Set<String> coupons) {
     this.coupons = coupons;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -141,10 +143,7 @@ public class CreateCouponsRequest {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -182,7 +181,7 @@ public class CreateCouponsRequest {
     // add `collectionId` to the URL query string
     if (getCollectionId() != null) {
       try {
-        joiner.add(String.format("%scollectionId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCollectionId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scollectionId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCollectionId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -194,8 +193,8 @@ public class CreateCouponsRequest {
       int i = 0;
       for (String _item : getCoupons()) {
         try {
-          joiner.add(String.format("%scoupons%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%scoupons%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(_item), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported

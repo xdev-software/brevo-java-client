@@ -63,7 +63,7 @@ public class GetContactCampaignStatsTransacAttributesInner {
    * @return orderDate
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ORDER_DATE)
+  @JsonProperty(value = JSON_PROPERTY_ORDER_DATE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public LocalDate getOrderDate() {
@@ -71,7 +71,7 @@ public class GetContactCampaignStatsTransacAttributesInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ORDER_DATE)
+  @JsonProperty(value = JSON_PROPERTY_ORDER_DATE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setOrderDate(@jakarta.annotation.Nonnull LocalDate orderDate) {
     this.orderDate = orderDate;
@@ -88,7 +88,7 @@ public class GetContactCampaignStatsTransacAttributesInner {
    * @return orderPrice
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ORDER_PRICE)
+  @JsonProperty(value = JSON_PROPERTY_ORDER_PRICE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Float getOrderPrice() {
@@ -96,7 +96,7 @@ public class GetContactCampaignStatsTransacAttributesInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ORDER_PRICE)
+  @JsonProperty(value = JSON_PROPERTY_ORDER_PRICE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setOrderPrice(@jakarta.annotation.Nonnull Float orderPrice) {
     this.orderPrice = orderPrice;
@@ -113,7 +113,7 @@ public class GetContactCampaignStatsTransacAttributesInner {
    * @return orderId
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ORDER_ID)
+  @JsonProperty(value = JSON_PROPERTY_ORDER_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getOrderId() {
@@ -121,11 +121,12 @@ public class GetContactCampaignStatsTransacAttributesInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ORDER_ID)
+  @JsonProperty(value = JSON_PROPERTY_ORDER_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setOrderId(@jakarta.annotation.Nonnull Long orderId) {
     this.orderId = orderId;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -162,10 +163,7 @@ public class GetContactCampaignStatsTransacAttributesInner {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -203,7 +201,7 @@ public class GetContactCampaignStatsTransacAttributesInner {
     // add `orderDate` to the URL query string
     if (getOrderDate() != null) {
       try {
-        joiner.add(String.format("%sorderDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrderDate()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sorderDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrderDate()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -213,7 +211,7 @@ public class GetContactCampaignStatsTransacAttributesInner {
     // add `orderPrice` to the URL query string
     if (getOrderPrice() != null) {
       try {
-        joiner.add(String.format("%sorderPrice%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrderPrice()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sorderPrice%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrderPrice()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -223,7 +221,7 @@ public class GetContactCampaignStatsTransacAttributesInner {
     // add `orderId` to the URL query string
     if (getOrderId() != null) {
       try {
-        joiner.add(String.format("%sorderId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrderId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sorderId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrderId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

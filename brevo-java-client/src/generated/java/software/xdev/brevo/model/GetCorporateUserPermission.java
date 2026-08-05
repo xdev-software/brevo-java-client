@@ -72,7 +72,7 @@ public class GetCorporateUserPermission {
    * @return email
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getEmail() {
@@ -80,7 +80,7 @@ public class GetCorporateUserPermission {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setEmail(@jakarta.annotation.Nonnull String email) {
     this.email = email;
@@ -97,7 +97,7 @@ public class GetCorporateUserPermission {
    * @return status
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_STATUS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getStatus() {
@@ -105,7 +105,7 @@ public class GetCorporateUserPermission {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_STATUS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setStatus(@jakarta.annotation.Nonnull String status) {
     this.status = status;
@@ -130,7 +130,7 @@ public class GetCorporateUserPermission {
    * @return groups
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_GROUPS)
+  @JsonProperty(value = JSON_PROPERTY_GROUPS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public List<GetCorporateUserPermissionGroupsInner> getGroups() {
@@ -138,7 +138,7 @@ public class GetCorporateUserPermission {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_GROUPS)
+  @JsonProperty(value = JSON_PROPERTY_GROUPS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setGroups(@jakarta.annotation.Nonnull List<GetCorporateUserPermissionGroupsInner> groups) {
     this.groups = groups;
@@ -155,7 +155,7 @@ public class GetCorporateUserPermission {
    * @return featureAccess
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_FEATURE_ACCESS)
+  @JsonProperty(value = JSON_PROPERTY_FEATURE_ACCESS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public GetCorporateUserPermissionFeatureAccess getFeatureAccess() {
@@ -163,11 +163,12 @@ public class GetCorporateUserPermission {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_FEATURE_ACCESS)
+  @JsonProperty(value = JSON_PROPERTY_FEATURE_ACCESS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setFeatureAccess(@jakarta.annotation.Nonnull GetCorporateUserPermissionFeatureAccess featureAccess) {
     this.featureAccess = featureAccess;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -206,10 +207,7 @@ public class GetCorporateUserPermission {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -247,7 +245,7 @@ public class GetCorporateUserPermission {
     // add `email` to the URL query string
     if (getEmail() != null) {
       try {
-        joiner.add(String.format("%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -257,7 +255,7 @@ public class GetCorporateUserPermission {
     // add `status` to the URL query string
     if (getStatus() != null) {
       try {
-        joiner.add(String.format("%sstatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatus()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sstatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatus()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -268,8 +266,8 @@ public class GetCorporateUserPermission {
     if (getGroups() != null) {
       for (int i = 0; i < getGroups().size(); i++) {
         if (getGroups().get(i) != null) {
-          joiner.add(getGroups().get(i).toUrlQueryString(String.format("%sgroups%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getGroups().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sgroups%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }

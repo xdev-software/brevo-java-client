@@ -64,7 +64,7 @@ public class GetInboundEmailEvents {
    * @return events
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EVENTS)
+  @JsonProperty(value = JSON_PROPERTY_EVENTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<GetInboundEmailEventsEventsInner> getEvents() {
@@ -72,11 +72,12 @@ public class GetInboundEmailEvents {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EVENTS)
+  @JsonProperty(value = JSON_PROPERTY_EVENTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setEvents(@jakarta.annotation.Nullable List<GetInboundEmailEventsEventsInner> events) {
     this.events = events;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -109,10 +110,7 @@ public class GetInboundEmailEvents {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -151,8 +149,8 @@ public class GetInboundEmailEvents {
     if (getEvents() != null) {
       for (int i = 0; i < getEvents().size(); i++) {
         if (getEvents().get(i) != null) {
-          joiner.add(getEvents().get(i).toUrlQueryString(String.format("%sevents%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getEvents().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sevents%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }

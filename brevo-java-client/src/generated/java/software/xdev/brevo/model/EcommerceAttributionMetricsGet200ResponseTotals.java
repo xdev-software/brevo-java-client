@@ -63,7 +63,7 @@ public class EcommerceAttributionMetricsGet200ResponseTotals {
    * @return ordersCount
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ORDERS_COUNT)
+  @JsonProperty(value = JSON_PROPERTY_ORDERS_COUNT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public BigDecimal getOrdersCount() {
@@ -71,7 +71,7 @@ public class EcommerceAttributionMetricsGet200ResponseTotals {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ORDERS_COUNT)
+  @JsonProperty(value = JSON_PROPERTY_ORDERS_COUNT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setOrdersCount(@jakarta.annotation.Nonnull BigDecimal ordersCount) {
     this.ordersCount = ordersCount;
@@ -88,7 +88,7 @@ public class EcommerceAttributionMetricsGet200ResponseTotals {
    * @return revenue
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_REVENUE)
+  @JsonProperty(value = JSON_PROPERTY_REVENUE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Float getRevenue() {
@@ -96,7 +96,7 @@ public class EcommerceAttributionMetricsGet200ResponseTotals {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REVENUE)
+  @JsonProperty(value = JSON_PROPERTY_REVENUE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setRevenue(@jakarta.annotation.Nonnull Float revenue) {
     this.revenue = revenue;
@@ -113,7 +113,7 @@ public class EcommerceAttributionMetricsGet200ResponseTotals {
    * @return averageBasket
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_AVERAGE_BASKET)
+  @JsonProperty(value = JSON_PROPERTY_AVERAGE_BASKET, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Float getAverageBasket() {
@@ -121,11 +121,12 @@ public class EcommerceAttributionMetricsGet200ResponseTotals {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_AVERAGE_BASKET)
+  @JsonProperty(value = JSON_PROPERTY_AVERAGE_BASKET, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAverageBasket(@jakarta.annotation.Nonnull Float averageBasket) {
     this.averageBasket = averageBasket;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -162,10 +163,7 @@ public class EcommerceAttributionMetricsGet200ResponseTotals {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -203,7 +201,7 @@ public class EcommerceAttributionMetricsGet200ResponseTotals {
     // add `ordersCount` to the URL query string
     if (getOrdersCount() != null) {
       try {
-        joiner.add(String.format("%sordersCount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrdersCount()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sordersCount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrdersCount()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -213,7 +211,7 @@ public class EcommerceAttributionMetricsGet200ResponseTotals {
     // add `revenue` to the URL query string
     if (getRevenue() != null) {
       try {
-        joiner.add(String.format("%srevenue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRevenue()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%srevenue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRevenue()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -223,7 +221,7 @@ public class EcommerceAttributionMetricsGet200ResponseTotals {
     // add `averageBasket` to the URL query string
     if (getAverageBasket() != null) {
       try {
-        joiner.add(String.format("%saverageBasket%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAverageBasket()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%saverageBasket%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAverageBasket()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

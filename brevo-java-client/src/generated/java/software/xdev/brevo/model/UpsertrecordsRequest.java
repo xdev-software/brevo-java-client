@@ -64,7 +64,7 @@ public class UpsertrecordsRequest {
    * @return records
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_RECORDS)
+  @JsonProperty(value = JSON_PROPERTY_RECORDS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public List<UpsertrecordsRequestRecordsInner> getRecords() {
@@ -72,11 +72,12 @@ public class UpsertrecordsRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_RECORDS)
+  @JsonProperty(value = JSON_PROPERTY_RECORDS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setRecords(@jakarta.annotation.Nonnull List<UpsertrecordsRequestRecordsInner> records) {
     this.records = records;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -109,10 +110,7 @@ public class UpsertrecordsRequest {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -151,8 +149,8 @@ public class UpsertrecordsRequest {
     if (getRecords() != null) {
       for (int i = 0; i < getRecords().size(); i++) {
         if (getRecords().get(i) != null) {
-          joiner.add(getRecords().get(i).toUrlQueryString(String.format("%srecords%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getRecords().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%srecords%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }

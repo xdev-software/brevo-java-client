@@ -100,7 +100,7 @@ public class TransactionHistory {
    * @return amount
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_AMOUNT)
+  @JsonProperty(value = JSON_PROPERTY_AMOUNT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public BigDecimal getAmount() {
@@ -108,7 +108,7 @@ public class TransactionHistory {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_AMOUNT)
+  @JsonProperty(value = JSON_PROPERTY_AMOUNT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setAmount(@jakarta.annotation.Nullable BigDecimal amount) {
     this.amount = amount;
@@ -125,7 +125,7 @@ public class TransactionHistory {
    * @return balanceExpirationDate
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_BALANCE_EXPIRATION_DATE)
+  @JsonProperty(value = JSON_PROPERTY_BALANCE_EXPIRATION_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getBalanceExpirationDate() {
@@ -133,7 +133,7 @@ public class TransactionHistory {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BALANCE_EXPIRATION_DATE)
+  @JsonProperty(value = JSON_PROPERTY_BALANCE_EXPIRATION_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setBalanceExpirationDate(@jakarta.annotation.Nullable String balanceExpirationDate) {
     this.balanceExpirationDate = balanceExpirationDate;
@@ -150,7 +150,7 @@ public class TransactionHistory {
    * @return cancelledAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CANCELLED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CANCELLED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getCancelledAt() {
@@ -158,7 +158,7 @@ public class TransactionHistory {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CANCELLED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CANCELLED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCancelledAt(@jakarta.annotation.Nullable String cancelledAt) {
     this.cancelledAt = cancelledAt;
@@ -175,7 +175,7 @@ public class TransactionHistory {
    * @return completedAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_COMPLETED_AT)
+  @JsonProperty(value = JSON_PROPERTY_COMPLETED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getCompletedAt() {
@@ -183,7 +183,7 @@ public class TransactionHistory {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_COMPLETED_AT)
+  @JsonProperty(value = JSON_PROPERTY_COMPLETED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCompletedAt(@jakarta.annotation.Nullable String completedAt) {
     this.completedAt = completedAt;
@@ -200,7 +200,7 @@ public class TransactionHistory {
    * @return createdAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getCreatedAt() {
@@ -208,7 +208,7 @@ public class TransactionHistory {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCreatedAt(@jakarta.annotation.Nullable String createdAt) {
     this.createdAt = createdAt;
@@ -225,7 +225,7 @@ public class TransactionHistory {
    * @return id
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getId() {
@@ -233,7 +233,7 @@ public class TransactionHistory {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setId(@jakarta.annotation.Nullable String id) {
     this.id = id;
@@ -258,7 +258,7 @@ public class TransactionHistory {
    * @return meta
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_META)
+  @JsonProperty(value = JSON_PROPERTY_META, required = false)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
 
   public Map<String, Object> getMeta() {
@@ -266,7 +266,7 @@ public class TransactionHistory {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_META)
+  @JsonProperty(value = JSON_PROPERTY_META, required = false)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
   public void setMeta(@jakarta.annotation.Nullable Map<String, Object> meta) {
     this.meta = meta;
@@ -283,7 +283,7 @@ public class TransactionHistory {
    * @return rejectReason
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_REJECT_REASON)
+  @JsonProperty(value = JSON_PROPERTY_REJECT_REASON, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getRejectReason() {
@@ -291,7 +291,7 @@ public class TransactionHistory {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REJECT_REASON)
+  @JsonProperty(value = JSON_PROPERTY_REJECT_REASON, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRejectReason(@jakarta.annotation.Nullable String rejectReason) {
     this.rejectReason = rejectReason;
@@ -308,7 +308,7 @@ public class TransactionHistory {
    * @return rejectedAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_REJECTED_AT)
+  @JsonProperty(value = JSON_PROPERTY_REJECTED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getRejectedAt() {
@@ -316,7 +316,7 @@ public class TransactionHistory {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REJECTED_AT)
+  @JsonProperty(value = JSON_PROPERTY_REJECTED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRejectedAt(@jakarta.annotation.Nullable String rejectedAt) {
     this.rejectedAt = rejectedAt;
@@ -333,7 +333,7 @@ public class TransactionHistory {
    * @return status
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_STATUS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getStatus() {
@@ -341,11 +341,12 @@ public class TransactionHistory {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_STATUS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setStatus(@jakarta.annotation.Nullable String status) {
     this.status = status;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -396,10 +397,7 @@ public class TransactionHistory {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -437,7 +435,7 @@ public class TransactionHistory {
     // add `amount` to the URL query string
     if (getAmount() != null) {
       try {
-        joiner.add(String.format("%samount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAmount()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%samount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAmount()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -447,7 +445,7 @@ public class TransactionHistory {
     // add `balanceExpirationDate` to the URL query string
     if (getBalanceExpirationDate() != null) {
       try {
-        joiner.add(String.format("%sbalanceExpirationDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBalanceExpirationDate()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sbalanceExpirationDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBalanceExpirationDate()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -457,7 +455,7 @@ public class TransactionHistory {
     // add `cancelledAt` to the URL query string
     if (getCancelledAt() != null) {
       try {
-        joiner.add(String.format("%scancelledAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCancelledAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scancelledAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCancelledAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -467,7 +465,7 @@ public class TransactionHistory {
     // add `completedAt` to the URL query string
     if (getCompletedAt() != null) {
       try {
-        joiner.add(String.format("%scompletedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCompletedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scompletedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCompletedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -477,7 +475,7 @@ public class TransactionHistory {
     // add `createdAt` to the URL query string
     if (getCreatedAt() != null) {
       try {
-        joiner.add(String.format("%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -487,7 +485,7 @@ public class TransactionHistory {
     // add `id` to the URL query string
     if (getId() != null) {
       try {
-        joiner.add(String.format("%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -498,8 +496,8 @@ public class TransactionHistory {
     if (getMeta() != null) {
       for (String _key : getMeta().keySet()) {
         try {
-          joiner.add(String.format("%smeta%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%smeta%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, _key, containerSuffix),
               getMeta().get(_key), URLEncoder.encode(String.valueOf(getMeta().get(_key)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -511,7 +509,7 @@ public class TransactionHistory {
     // add `rejectReason` to the URL query string
     if (getRejectReason() != null) {
       try {
-        joiner.add(String.format("%srejectReason%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRejectReason()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%srejectReason%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRejectReason()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -521,7 +519,7 @@ public class TransactionHistory {
     // add `rejectedAt` to the URL query string
     if (getRejectedAt() != null) {
       try {
-        joiner.add(String.format("%srejectedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRejectedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%srejectedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRejectedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -531,7 +529,7 @@ public class TransactionHistory {
     // add `status` to the URL query string
     if (getStatus() != null) {
       try {
-        joiner.add(String.format("%sstatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatus()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sstatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatus()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

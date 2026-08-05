@@ -86,7 +86,7 @@ public class GetTransacEmailContent {
    * @return email
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getEmail() {
@@ -94,7 +94,7 @@ public class GetTransacEmailContent {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setEmail(@jakarta.annotation.Nonnull String email) {
     this.email = email;
@@ -111,7 +111,7 @@ public class GetTransacEmailContent {
    * @return subject
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SUBJECT)
+  @JsonProperty(value = JSON_PROPERTY_SUBJECT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getSubject() {
@@ -119,7 +119,7 @@ public class GetTransacEmailContent {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SUBJECT)
+  @JsonProperty(value = JSON_PROPERTY_SUBJECT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSubject(@jakarta.annotation.Nonnull String subject) {
     this.subject = subject;
@@ -136,7 +136,7 @@ public class GetTransacEmailContent {
    * @return templateId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
+  @JsonProperty(value = JSON_PROPERTY_TEMPLATE_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getTemplateId() {
@@ -144,7 +144,7 @@ public class GetTransacEmailContent {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
+  @JsonProperty(value = JSON_PROPERTY_TEMPLATE_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setTemplateId(@jakarta.annotation.Nullable Long templateId) {
     this.templateId = templateId;
@@ -161,7 +161,7 @@ public class GetTransacEmailContent {
    * @return date
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DATE)
+  @JsonProperty(value = JSON_PROPERTY_DATE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getDate() {
@@ -169,7 +169,7 @@ public class GetTransacEmailContent {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DATE)
+  @JsonProperty(value = JSON_PROPERTY_DATE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDate(@jakarta.annotation.Nonnull String date) {
     this.date = date;
@@ -194,7 +194,7 @@ public class GetTransacEmailContent {
    * @return events
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_EVENTS)
+  @JsonProperty(value = JSON_PROPERTY_EVENTS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public List<GetTransacEmailContentEventsInner> getEvents() {
@@ -202,7 +202,7 @@ public class GetTransacEmailContent {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EVENTS)
+  @JsonProperty(value = JSON_PROPERTY_EVENTS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setEvents(@jakarta.annotation.Nonnull List<GetTransacEmailContentEventsInner> events) {
     this.events = events;
@@ -219,7 +219,7 @@ public class GetTransacEmailContent {
    * @return body
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_BODY)
+  @JsonProperty(value = JSON_PROPERTY_BODY, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getBody() {
@@ -227,7 +227,7 @@ public class GetTransacEmailContent {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BODY)
+  @JsonProperty(value = JSON_PROPERTY_BODY, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setBody(@jakarta.annotation.Nonnull String body) {
     this.body = body;
@@ -244,7 +244,7 @@ public class GetTransacEmailContent {
    * @return attachmentCount
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ATTACHMENT_COUNT)
+  @JsonProperty(value = JSON_PROPERTY_ATTACHMENT_COUNT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getAttachmentCount() {
@@ -252,11 +252,12 @@ public class GetTransacEmailContent {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ATTACHMENT_COUNT)
+  @JsonProperty(value = JSON_PROPERTY_ATTACHMENT_COUNT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAttachmentCount(@jakarta.annotation.Nonnull Long attachmentCount) {
     this.attachmentCount = attachmentCount;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -301,10 +302,7 @@ public class GetTransacEmailContent {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -342,7 +340,7 @@ public class GetTransacEmailContent {
     // add `email` to the URL query string
     if (getEmail() != null) {
       try {
-        joiner.add(String.format("%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -352,7 +350,7 @@ public class GetTransacEmailContent {
     // add `subject` to the URL query string
     if (getSubject() != null) {
       try {
-        joiner.add(String.format("%ssubject%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubject()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssubject%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubject()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -362,7 +360,7 @@ public class GetTransacEmailContent {
     // add `templateId` to the URL query string
     if (getTemplateId() != null) {
       try {
-        joiner.add(String.format("%stemplateId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTemplateId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stemplateId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTemplateId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -372,7 +370,7 @@ public class GetTransacEmailContent {
     // add `date` to the URL query string
     if (getDate() != null) {
       try {
-        joiner.add(String.format("%sdate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDate()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDate()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -383,8 +381,8 @@ public class GetTransacEmailContent {
     if (getEvents() != null) {
       for (int i = 0; i < getEvents().size(); i++) {
         if (getEvents().get(i) != null) {
-          joiner.add(getEvents().get(i).toUrlQueryString(String.format("%sevents%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getEvents().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sevents%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -392,7 +390,7 @@ public class GetTransacEmailContent {
     // add `body` to the URL query string
     if (getBody() != null) {
       try {
-        joiner.add(String.format("%sbody%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBody()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sbody%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBody()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -402,7 +400,7 @@ public class GetTransacEmailContent {
     // add `attachmentCount` to the URL query string
     if (getAttachmentCount() != null) {
       try {
-        joiner.add(String.format("%sattachmentCount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAttachmentCount()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sattachmentCount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAttachmentCount()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

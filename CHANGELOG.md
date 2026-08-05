@@ -1,3 +1,7 @@
+# 1.2.0
+* Updated to Jackson v3
+* Updated dependencies
+
 # 1.1.1
 * Fixed some incorrectly generated classes for ``additionalProperties: oneOf: ...`` #181
 

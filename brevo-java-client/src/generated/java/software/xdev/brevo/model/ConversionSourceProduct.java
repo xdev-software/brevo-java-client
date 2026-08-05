@@ -18,7 +18,6 @@ import java.util.Arrays;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -86,7 +85,7 @@ public class ConversionSourceProduct {
    * @return id
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getId() {
@@ -94,7 +93,7 @@ public class ConversionSourceProduct {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setId(@jakarta.annotation.Nonnull String id) {
     this.id = id;
@@ -111,7 +110,7 @@ public class ConversionSourceProduct {
    * @return name
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getName() {
@@ -119,7 +118,7 @@ public class ConversionSourceProduct {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setName(@jakarta.annotation.Nullable String name) {
     this.name = name;
@@ -136,7 +135,7 @@ public class ConversionSourceProduct {
    * @return sku
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SKU)
+  @JsonProperty(value = JSON_PROPERTY_SKU, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getSku() {
@@ -144,7 +143,7 @@ public class ConversionSourceProduct {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SKU)
+  @JsonProperty(value = JSON_PROPERTY_SKU, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSku(@jakarta.annotation.Nullable String sku) {
     this.sku = sku;
@@ -161,7 +160,7 @@ public class ConversionSourceProduct {
    * @return price
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PRICE)
+  @JsonProperty(value = JSON_PROPERTY_PRICE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Float getPrice() {
@@ -169,7 +168,7 @@ public class ConversionSourceProduct {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PRICE)
+  @JsonProperty(value = JSON_PROPERTY_PRICE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPrice(@jakarta.annotation.Nullable Float price) {
     this.price = price;
@@ -186,7 +185,7 @@ public class ConversionSourceProduct {
    * @return url
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_URL)
+  @JsonProperty(value = JSON_PROPERTY_URL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getUrl() {
@@ -194,7 +193,7 @@ public class ConversionSourceProduct {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_URL)
+  @JsonProperty(value = JSON_PROPERTY_URL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUrl(@jakarta.annotation.Nullable String url) {
     this.url = url;
@@ -211,7 +210,7 @@ public class ConversionSourceProduct {
    * @return imageUrl
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_IMAGE_URL)
+  @JsonProperty(value = JSON_PROPERTY_IMAGE_URL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getImageUrl() {
@@ -219,7 +218,7 @@ public class ConversionSourceProduct {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IMAGE_URL)
+  @JsonProperty(value = JSON_PROPERTY_IMAGE_URL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setImageUrl(@jakarta.annotation.Nullable String imageUrl) {
     this.imageUrl = imageUrl;
@@ -236,7 +235,7 @@ public class ConversionSourceProduct {
    * @return ordersCount
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ORDERS_COUNT)
+  @JsonProperty(value = JSON_PROPERTY_ORDERS_COUNT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getOrdersCount() {
@@ -244,7 +243,7 @@ public class ConversionSourceProduct {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ORDERS_COUNT)
+  @JsonProperty(value = JSON_PROPERTY_ORDERS_COUNT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setOrdersCount(@jakarta.annotation.Nullable Integer ordersCount) {
     this.ordersCount = ordersCount;
@@ -261,7 +260,7 @@ public class ConversionSourceProduct {
    * @return revenue
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_REVENUE)
+  @JsonProperty(value = JSON_PROPERTY_REVENUE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Float getRevenue() {
@@ -269,11 +268,12 @@ public class ConversionSourceProduct {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REVENUE)
+  @JsonProperty(value = JSON_PROPERTY_REVENUE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRevenue(@jakarta.annotation.Nullable Float revenue) {
     this.revenue = revenue;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -320,10 +320,7 @@ public class ConversionSourceProduct {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -361,7 +358,7 @@ public class ConversionSourceProduct {
     // add `id` to the URL query string
     if (getId() != null) {
       try {
-        joiner.add(String.format("%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -371,7 +368,7 @@ public class ConversionSourceProduct {
     // add `name` to the URL query string
     if (getName() != null) {
       try {
-        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -381,7 +378,7 @@ public class ConversionSourceProduct {
     // add `sku` to the URL query string
     if (getSku() != null) {
       try {
-        joiner.add(String.format("%ssku%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSku()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssku%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSku()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -391,7 +388,7 @@ public class ConversionSourceProduct {
     // add `price` to the URL query string
     if (getPrice() != null) {
       try {
-        joiner.add(String.format("%sprice%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPrice()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sprice%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPrice()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -401,7 +398,7 @@ public class ConversionSourceProduct {
     // add `url` to the URL query string
     if (getUrl() != null) {
       try {
-        joiner.add(String.format("%surl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUrl()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%surl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUrl()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -411,7 +408,7 @@ public class ConversionSourceProduct {
     // add `imageUrl` to the URL query string
     if (getImageUrl() != null) {
       try {
-        joiner.add(String.format("%simageUrl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getImageUrl()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%simageUrl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getImageUrl()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -421,7 +418,7 @@ public class ConversionSourceProduct {
     // add `ordersCount` to the URL query string
     if (getOrdersCount() != null) {
       try {
-        joiner.add(String.format("%sordersCount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrdersCount()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sordersCount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrdersCount()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -431,7 +428,7 @@ public class ConversionSourceProduct {
     // add `revenue` to the URL query string
     if (getRevenue() != null) {
       try {
-        joiner.add(String.format("%srevenue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRevenue()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%srevenue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRevenue()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

@@ -65,7 +65,7 @@ public class UpdateUserResponse {
    * @return status
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_STATUS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getStatus() {
@@ -73,7 +73,7 @@ public class UpdateUserResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_STATUS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setStatus(@jakarta.annotation.Nonnull String status) {
     this.status = status;
@@ -98,7 +98,7 @@ public class UpdateUserResponse {
    * @return creditNotes
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CREDIT_NOTES)
+  @JsonProperty(value = JSON_PROPERTY_CREDIT_NOTES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getCreditNotes() {
@@ -106,7 +106,7 @@ public class UpdateUserResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CREDIT_NOTES)
+  @JsonProperty(value = JSON_PROPERTY_CREDIT_NOTES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCreditNotes(@jakarta.annotation.Nullable List<String> creditNotes) {
     this.creditNotes = creditNotes;
@@ -123,7 +123,7 @@ public class UpdateUserResponse {
    * @return invoiceId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_INVOICE_ID)
+  @JsonProperty(value = JSON_PROPERTY_INVOICE_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getInvoiceId() {
@@ -131,11 +131,12 @@ public class UpdateUserResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_INVOICE_ID)
+  @JsonProperty(value = JSON_PROPERTY_INVOICE_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setInvoiceId(@jakarta.annotation.Nullable String invoiceId) {
     this.invoiceId = invoiceId;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -172,10 +173,7 @@ public class UpdateUserResponse {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -213,7 +211,7 @@ public class UpdateUserResponse {
     // add `status` to the URL query string
     if (getStatus() != null) {
       try {
-        joiner.add(String.format("%sstatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatus()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sstatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatus()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -224,8 +222,8 @@ public class UpdateUserResponse {
     if (getCreditNotes() != null) {
       for (int i = 0; i < getCreditNotes().size(); i++) {
         try {
-          joiner.add(String.format("%scredit_notes%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%scredit_notes%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getCreditNotes().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -237,7 +235,7 @@ public class UpdateUserResponse {
     // add `invoice_id` to the URL query string
     if (getInvoiceId() != null) {
       try {
-        joiner.add(String.format("%sinvoice_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getInvoiceId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sinvoice_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getInvoiceId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

@@ -63,7 +63,7 @@ public class RemoveContactFromListByEmails {
    * @return emails
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EMAILS)
+  @JsonProperty(value = JSON_PROPERTY_EMAILS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getEmails() {
@@ -71,11 +71,12 @@ public class RemoveContactFromListByEmails {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EMAILS)
+  @JsonProperty(value = JSON_PROPERTY_EMAILS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setEmails(@jakarta.annotation.Nullable List<String> emails) {
     this.emails = emails;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -108,10 +109,7 @@ public class RemoveContactFromListByEmails {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -150,8 +148,8 @@ public class RemoveContactFromListByEmails {
     if (getEmails() != null) {
       for (int i = 0; i < getEmails().size(); i++) {
         try {
-          joiner.add(String.format("%semails%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%semails%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getEmails().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported

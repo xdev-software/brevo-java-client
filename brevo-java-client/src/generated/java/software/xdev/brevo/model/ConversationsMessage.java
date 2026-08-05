@@ -18,7 +18,6 @@ import java.util.Arrays;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -225,7 +224,7 @@ public class ConversationsMessage {
    * @return id
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getId() {
@@ -233,7 +232,7 @@ public class ConversationsMessage {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setId(@jakarta.annotation.Nullable String id) {
     this.id = id;
@@ -250,7 +249,7 @@ public class ConversationsMessage {
    * @return type
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_TYPE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public TypeEnum getType() {
@@ -258,7 +257,7 @@ public class ConversationsMessage {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_TYPE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setType(@jakarta.annotation.Nullable TypeEnum type) {
     this.type = type;
@@ -275,7 +274,7 @@ public class ConversationsMessage {
    * @return text
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TEXT)
+  @JsonProperty(value = JSON_PROPERTY_TEXT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getText() {
@@ -283,7 +282,7 @@ public class ConversationsMessage {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TEXT)
+  @JsonProperty(value = JSON_PROPERTY_TEXT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setText(@jakarta.annotation.Nullable String text) {
     this.text = text;
@@ -300,7 +299,7 @@ public class ConversationsMessage {
    * @return subject
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SUBJECT)
+  @JsonProperty(value = JSON_PROPERTY_SUBJECT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getSubject() {
@@ -308,7 +307,7 @@ public class ConversationsMessage {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SUBJECT)
+  @JsonProperty(value = JSON_PROPERTY_SUBJECT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSubject(@jakarta.annotation.Nullable String subject) {
     this.subject = subject;
@@ -325,7 +324,7 @@ public class ConversationsMessage {
    * @return html
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_HTML)
+  @JsonProperty(value = JSON_PROPERTY_HTML, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getHtml() {
@@ -333,7 +332,7 @@ public class ConversationsMessage {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_HTML)
+  @JsonProperty(value = JSON_PROPERTY_HTML, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setHtml(@jakarta.annotation.Nullable String html) {
     this.html = html;
@@ -350,7 +349,7 @@ public class ConversationsMessage {
    * @return rawUnsafeHtml
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_RAW_UNSAFE_HTML)
+  @JsonProperty(value = JSON_PROPERTY_RAW_UNSAFE_HTML, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getRawUnsafeHtml() {
@@ -358,7 +357,7 @@ public class ConversationsMessage {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_RAW_UNSAFE_HTML)
+  @JsonProperty(value = JSON_PROPERTY_RAW_UNSAFE_HTML, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRawUnsafeHtml(@jakarta.annotation.Nullable String rawUnsafeHtml) {
     this.rawUnsafeHtml = rawUnsafeHtml;
@@ -375,7 +374,7 @@ public class ConversationsMessage {
    * @return visitorId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_VISITOR_ID)
+  @JsonProperty(value = JSON_PROPERTY_VISITOR_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getVisitorId() {
@@ -383,7 +382,7 @@ public class ConversationsMessage {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_VISITOR_ID)
+  @JsonProperty(value = JSON_PROPERTY_VISITOR_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setVisitorId(@jakarta.annotation.Nullable String visitorId) {
     this.visitorId = visitorId;
@@ -400,7 +399,7 @@ public class ConversationsMessage {
    * @return agentId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_AGENT_ID)
+  @JsonProperty(value = JSON_PROPERTY_AGENT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getAgentId() {
@@ -408,7 +407,7 @@ public class ConversationsMessage {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_AGENT_ID)
+  @JsonProperty(value = JSON_PROPERTY_AGENT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setAgentId(@jakarta.annotation.Nullable String agentId) {
     this.agentId = agentId;
@@ -425,7 +424,7 @@ public class ConversationsMessage {
    * @return agentName
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_AGENT_NAME)
+  @JsonProperty(value = JSON_PROPERTY_AGENT_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getAgentName() {
@@ -433,7 +432,7 @@ public class ConversationsMessage {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_AGENT_NAME)
+  @JsonProperty(value = JSON_PROPERTY_AGENT_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setAgentName(@jakarta.annotation.Nullable String agentName) {
     this.agentName = agentName;
@@ -451,7 +450,7 @@ public class ConversationsMessage {
    * @return createdAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getCreatedAt() {
@@ -459,7 +458,7 @@ public class ConversationsMessage {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCreatedAt(@jakarta.annotation.Nullable Long createdAt) {
     this.createdAt = createdAt;
@@ -476,7 +475,7 @@ public class ConversationsMessage {
    * @return isPushed
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_IS_PUSHED)
+  @JsonProperty(value = JSON_PROPERTY_IS_PUSHED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getIsPushed() {
@@ -484,7 +483,7 @@ public class ConversationsMessage {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IS_PUSHED)
+  @JsonProperty(value = JSON_PROPERTY_IS_PUSHED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setIsPushed(@jakarta.annotation.Nullable Boolean isPushed) {
     this.isPushed = isPushed;
@@ -501,7 +500,7 @@ public class ConversationsMessage {
    * @return isTrigger
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_IS_TRIGGER)
+  @JsonProperty(value = JSON_PROPERTY_IS_TRIGGER, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getIsTrigger() {
@@ -509,7 +508,7 @@ public class ConversationsMessage {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IS_TRIGGER)
+  @JsonProperty(value = JSON_PROPERTY_IS_TRIGGER, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setIsTrigger(@jakarta.annotation.Nullable Boolean isTrigger) {
     this.isTrigger = isTrigger;
@@ -526,7 +525,7 @@ public class ConversationsMessage {
    * @return isMissed
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_IS_MISSED)
+  @JsonProperty(value = JSON_PROPERTY_IS_MISSED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getIsMissed() {
@@ -534,7 +533,7 @@ public class ConversationsMessage {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IS_MISSED)
+  @JsonProperty(value = JSON_PROPERTY_IS_MISSED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setIsMissed(@jakarta.annotation.Nullable Boolean isMissed) {
     this.isMissed = isMissed;
@@ -551,7 +550,7 @@ public class ConversationsMessage {
    * @return isMissedByVisitor
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_IS_MISSED_BY_VISITOR)
+  @JsonProperty(value = JSON_PROPERTY_IS_MISSED_BY_VISITOR, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getIsMissedByVisitor() {
@@ -559,7 +558,7 @@ public class ConversationsMessage {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IS_MISSED_BY_VISITOR)
+  @JsonProperty(value = JSON_PROPERTY_IS_MISSED_BY_VISITOR, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setIsMissedByVisitor(@jakarta.annotation.Nullable Boolean isMissedByVisitor) {
     this.isMissedByVisitor = isMissedByVisitor;
@@ -576,7 +575,7 @@ public class ConversationsMessage {
    * @return agentUserpic
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_AGENT_USERPIC)
+  @JsonProperty(value = JSON_PROPERTY_AGENT_USERPIC, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getAgentUserpic() {
@@ -584,7 +583,7 @@ public class ConversationsMessage {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_AGENT_USERPIC)
+  @JsonProperty(value = JSON_PROPERTY_AGENT_USERPIC, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setAgentUserpic(@jakarta.annotation.Nullable String agentUserpic) {
     this.agentUserpic = agentUserpic;
@@ -601,7 +600,7 @@ public class ConversationsMessage {
    * @return receivedFrom
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_RECEIVED_FROM)
+  @JsonProperty(value = JSON_PROPERTY_RECEIVED_FROM, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getReceivedFrom() {
@@ -609,7 +608,7 @@ public class ConversationsMessage {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_RECEIVED_FROM)
+  @JsonProperty(value = JSON_PROPERTY_RECEIVED_FROM, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setReceivedFrom(@jakarta.annotation.Nullable String receivedFrom) {
     this.receivedFrom = receivedFrom;
@@ -626,7 +625,7 @@ public class ConversationsMessage {
    * @return _file
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_FILE)
+  @JsonProperty(value = JSON_PROPERTY_FILE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public ConversationsMessageFile getFile() {
@@ -634,7 +633,7 @@ public class ConversationsMessage {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_FILE)
+  @JsonProperty(value = JSON_PROPERTY_FILE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setFile(@jakarta.annotation.Nullable ConversationsMessageFile _file) {
     this._file = _file;
@@ -651,7 +650,7 @@ public class ConversationsMessage {
    * @return from
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_FROM)
+  @JsonProperty(value = JSON_PROPERTY_FROM, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public ConversationsMessageFrom getFrom() {
@@ -659,7 +658,7 @@ public class ConversationsMessage {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_FROM)
+  @JsonProperty(value = JSON_PROPERTY_FROM, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setFrom(@jakarta.annotation.Nullable ConversationsMessageFrom from) {
     this.from = from;
@@ -684,7 +683,7 @@ public class ConversationsMessage {
    * @return to
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TO)
+  @JsonProperty(value = JSON_PROPERTY_TO, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<ConversationsMessageToInner> getTo() {
@@ -692,7 +691,7 @@ public class ConversationsMessage {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TO)
+  @JsonProperty(value = JSON_PROPERTY_TO, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setTo(@jakarta.annotation.Nullable List<ConversationsMessageToInner> to) {
     this.to = to;
@@ -709,7 +708,7 @@ public class ConversationsMessage {
    * @return replyTo
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_REPLY_TO)
+  @JsonProperty(value = JSON_PROPERTY_REPLY_TO, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public ConversationsMessageReplyTo getReplyTo() {
@@ -717,7 +716,7 @@ public class ConversationsMessage {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REPLY_TO)
+  @JsonProperty(value = JSON_PROPERTY_REPLY_TO, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setReplyTo(@jakarta.annotation.Nullable ConversationsMessageReplyTo replyTo) {
     this.replyTo = replyTo;
@@ -742,7 +741,7 @@ public class ConversationsMessage {
    * @return cc
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CC)
+  @JsonProperty(value = JSON_PROPERTY_CC, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<ConversationsMessageToInner> getCc() {
@@ -750,7 +749,7 @@ public class ConversationsMessage {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CC)
+  @JsonProperty(value = JSON_PROPERTY_CC, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCc(@jakarta.annotation.Nullable List<ConversationsMessageToInner> cc) {
     this.cc = cc;
@@ -775,7 +774,7 @@ public class ConversationsMessage {
    * @return bcc
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_BCC)
+  @JsonProperty(value = JSON_PROPERTY_BCC, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<ConversationsMessageToInner> getBcc() {
@@ -783,7 +782,7 @@ public class ConversationsMessage {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BCC)
+  @JsonProperty(value = JSON_PROPERTY_BCC, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setBcc(@jakarta.annotation.Nullable List<ConversationsMessageToInner> bcc) {
     this.bcc = bcc;
@@ -800,7 +799,7 @@ public class ConversationsMessage {
    * @return sourceMessageId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SOURCE_MESSAGE_ID)
+  @JsonProperty(value = JSON_PROPERTY_SOURCE_MESSAGE_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getSourceMessageId() {
@@ -808,7 +807,7 @@ public class ConversationsMessage {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SOURCE_MESSAGE_ID)
+  @JsonProperty(value = JSON_PROPERTY_SOURCE_MESSAGE_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSourceMessageId(@jakarta.annotation.Nullable String sourceMessageId) {
     this.sourceMessageId = sourceMessageId;
@@ -825,7 +824,7 @@ public class ConversationsMessage {
    * @return forwardedToSourceStatus
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_FORWARDED_TO_SOURCE_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_FORWARDED_TO_SOURCE_STATUS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public ConversationsMessageForwardedToSourceStatus getForwardedToSourceStatus() {
@@ -833,7 +832,7 @@ public class ConversationsMessage {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_FORWARDED_TO_SOURCE_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_FORWARDED_TO_SOURCE_STATUS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setForwardedToSourceStatus(@jakarta.annotation.Nullable ConversationsMessageForwardedToSourceStatus forwardedToSourceStatus) {
     this.forwardedToSourceStatus = forwardedToSourceStatus;
@@ -850,7 +849,7 @@ public class ConversationsMessage {
    * @return integrations
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_INTEGRATIONS)
+  @JsonProperty(value = JSON_PROPERTY_INTEGRATIONS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Object getIntegrations() {
@@ -858,7 +857,7 @@ public class ConversationsMessage {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_INTEGRATIONS)
+  @JsonProperty(value = JSON_PROPERTY_INTEGRATIONS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setIntegrations(@jakarta.annotation.Nullable Object integrations) {
     this.integrations = integrations;
@@ -875,7 +874,7 @@ public class ConversationsMessage {
    * @return isBot
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_IS_BOT)
+  @JsonProperty(value = JSON_PROPERTY_IS_BOT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getIsBot() {
@@ -883,7 +882,7 @@ public class ConversationsMessage {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IS_BOT)
+  @JsonProperty(value = JSON_PROPERTY_IS_BOT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setIsBot(@jakarta.annotation.Nullable Boolean isBot) {
     this.isBot = isBot;
@@ -908,7 +907,7 @@ public class ConversationsMessage {
    * @return attachments
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ATTACHMENTS)
+  @JsonProperty(value = JSON_PROPERTY_ATTACHMENTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<ConversationsMessageAttachmentsInner> getAttachments() {
@@ -916,11 +915,12 @@ public class ConversationsMessage {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ATTACHMENTS)
+  @JsonProperty(value = JSON_PROPERTY_ATTACHMENTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setAttachments(@jakarta.annotation.Nullable List<ConversationsMessageAttachmentsInner> attachments) {
     this.attachments = attachments;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -1005,10 +1005,7 @@ public class ConversationsMessage {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -1046,7 +1043,7 @@ public class ConversationsMessage {
     // add `id` to the URL query string
     if (getId() != null) {
       try {
-        joiner.add(String.format("%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1056,7 +1053,7 @@ public class ConversationsMessage {
     // add `type` to the URL query string
     if (getType() != null) {
       try {
-        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1066,7 +1063,7 @@ public class ConversationsMessage {
     // add `text` to the URL query string
     if (getText() != null) {
       try {
-        joiner.add(String.format("%stext%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getText()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stext%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getText()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1076,7 +1073,7 @@ public class ConversationsMessage {
     // add `subject` to the URL query string
     if (getSubject() != null) {
       try {
-        joiner.add(String.format("%ssubject%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubject()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssubject%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubject()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1086,7 +1083,7 @@ public class ConversationsMessage {
     // add `html` to the URL query string
     if (getHtml() != null) {
       try {
-        joiner.add(String.format("%shtml%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHtml()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%shtml%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHtml()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1096,7 +1093,7 @@ public class ConversationsMessage {
     // add `rawUnsafeHtml` to the URL query string
     if (getRawUnsafeHtml() != null) {
       try {
-        joiner.add(String.format("%srawUnsafeHtml%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRawUnsafeHtml()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%srawUnsafeHtml%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRawUnsafeHtml()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1106,7 +1103,7 @@ public class ConversationsMessage {
     // add `visitorId` to the URL query string
     if (getVisitorId() != null) {
       try {
-        joiner.add(String.format("%svisitorId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getVisitorId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%svisitorId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getVisitorId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1116,7 +1113,7 @@ public class ConversationsMessage {
     // add `agentId` to the URL query string
     if (getAgentId() != null) {
       try {
-        joiner.add(String.format("%sagentId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAgentId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sagentId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAgentId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1126,7 +1123,7 @@ public class ConversationsMessage {
     // add `agentName` to the URL query string
     if (getAgentName() != null) {
       try {
-        joiner.add(String.format("%sagentName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAgentName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sagentName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAgentName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1136,7 +1133,7 @@ public class ConversationsMessage {
     // add `createdAt` to the URL query string
     if (getCreatedAt() != null) {
       try {
-        joiner.add(String.format("%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1146,7 +1143,7 @@ public class ConversationsMessage {
     // add `isPushed` to the URL query string
     if (getIsPushed() != null) {
       try {
-        joiner.add(String.format("%sisPushed%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsPushed()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sisPushed%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsPushed()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1156,7 +1153,7 @@ public class ConversationsMessage {
     // add `isTrigger` to the URL query string
     if (getIsTrigger() != null) {
       try {
-        joiner.add(String.format("%sisTrigger%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsTrigger()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sisTrigger%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsTrigger()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1166,7 +1163,7 @@ public class ConversationsMessage {
     // add `isMissed` to the URL query string
     if (getIsMissed() != null) {
       try {
-        joiner.add(String.format("%sisMissed%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsMissed()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sisMissed%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsMissed()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1176,7 +1173,7 @@ public class ConversationsMessage {
     // add `isMissedByVisitor` to the URL query string
     if (getIsMissedByVisitor() != null) {
       try {
-        joiner.add(String.format("%sisMissedByVisitor%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsMissedByVisitor()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sisMissedByVisitor%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsMissedByVisitor()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1186,7 +1183,7 @@ public class ConversationsMessage {
     // add `agentUserpic` to the URL query string
     if (getAgentUserpic() != null) {
       try {
-        joiner.add(String.format("%sagentUserpic%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAgentUserpic()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sagentUserpic%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAgentUserpic()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1196,7 +1193,7 @@ public class ConversationsMessage {
     // add `receivedFrom` to the URL query string
     if (getReceivedFrom() != null) {
       try {
-        joiner.add(String.format("%sreceivedFrom%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReceivedFrom()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sreceivedFrom%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReceivedFrom()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1217,8 +1214,8 @@ public class ConversationsMessage {
     if (getTo() != null) {
       for (int i = 0; i < getTo().size(); i++) {
         if (getTo().get(i) != null) {
-          joiner.add(getTo().get(i).toUrlQueryString(String.format("%sto%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getTo().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sto%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -1232,8 +1229,8 @@ public class ConversationsMessage {
     if (getCc() != null) {
       for (int i = 0; i < getCc().size(); i++) {
         if (getCc().get(i) != null) {
-          joiner.add(getCc().get(i).toUrlQueryString(String.format("%scc%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getCc().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%scc%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -1242,8 +1239,8 @@ public class ConversationsMessage {
     if (getBcc() != null) {
       for (int i = 0; i < getBcc().size(); i++) {
         if (getBcc().get(i) != null) {
-          joiner.add(getBcc().get(i).toUrlQueryString(String.format("%sbcc%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getBcc().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sbcc%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -1251,7 +1248,7 @@ public class ConversationsMessage {
     // add `sourceMessageId` to the URL query string
     if (getSourceMessageId() != null) {
       try {
-        joiner.add(String.format("%ssourceMessageId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSourceMessageId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssourceMessageId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSourceMessageId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1266,7 +1263,7 @@ public class ConversationsMessage {
     // add `integrations` to the URL query string
     if (getIntegrations() != null) {
       try {
-        joiner.add(String.format("%sintegrations%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIntegrations()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sintegrations%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIntegrations()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1276,7 +1273,7 @@ public class ConversationsMessage {
     // add `isBot` to the URL query string
     if (getIsBot() != null) {
       try {
-        joiner.add(String.format("%sisBot%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsBot()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sisBot%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsBot()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1287,8 +1284,8 @@ public class ConversationsMessage {
     if (getAttachments() != null) {
       for (int i = 0; i < getAttachments().size(); i++) {
         if (getAttachments().get(i) != null) {
-          joiner.add(getAttachments().get(i).toUrlQueryString(String.format("%sattachments%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getAttachments().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sattachments%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }

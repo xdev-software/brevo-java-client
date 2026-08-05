@@ -115,7 +115,7 @@ public class MainOrderPayload {
    * @return amount
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_AMOUNT)
+  @JsonProperty(value = JSON_PROPERTY_AMOUNT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public BigDecimal getAmount() {
@@ -123,7 +123,7 @@ public class MainOrderPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_AMOUNT)
+  @JsonProperty(value = JSON_PROPERTY_AMOUNT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setAmount(@jakarta.annotation.Nullable BigDecimal amount) {
     this.amount = amount;
@@ -140,7 +140,7 @@ public class MainOrderPayload {
    * @return billing
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_BILLING)
+  @JsonProperty(value = JSON_PROPERTY_BILLING, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public MainBillingPayload getBilling() {
@@ -148,7 +148,7 @@ public class MainOrderPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BILLING)
+  @JsonProperty(value = JSON_PROPERTY_BILLING, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setBilling(@jakarta.annotation.Nullable MainBillingPayload billing) {
     this.billing = billing;
@@ -165,7 +165,7 @@ public class MainOrderPayload {
    * @return contactId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CONTACT_ID)
+  @JsonProperty(value = JSON_PROPERTY_CONTACT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getContactId() {
@@ -173,7 +173,7 @@ public class MainOrderPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONTACT_ID)
+  @JsonProperty(value = JSON_PROPERTY_CONTACT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setContactId(@jakarta.annotation.Nullable Long contactId) {
     this.contactId = contactId;
@@ -198,7 +198,7 @@ public class MainOrderPayload {
    * @return coupons
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_COUPONS)
+  @JsonProperty(value = JSON_PROPERTY_COUPONS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getCoupons() {
@@ -206,7 +206,7 @@ public class MainOrderPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_COUPONS)
+  @JsonProperty(value = JSON_PROPERTY_COUPONS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCoupons(@jakarta.annotation.Nullable List<String> coupons) {
     this.coupons = coupons;
@@ -223,7 +223,7 @@ public class MainOrderPayload {
    * @return createdAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public OffsetDateTime getCreatedAt() {
@@ -231,7 +231,7 @@ public class MainOrderPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCreatedAt(@jakarta.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
@@ -248,7 +248,7 @@ public class MainOrderPayload {
    * @return email
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getEmail() {
@@ -256,7 +256,7 @@ public class MainOrderPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setEmail(@jakarta.annotation.Nullable String email) {
     this.email = email;
@@ -273,7 +273,7 @@ public class MainOrderPayload {
    * @return id
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getId() {
@@ -281,7 +281,7 @@ public class MainOrderPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setId(@jakarta.annotation.Nullable String id) {
     this.id = id;
@@ -298,7 +298,7 @@ public class MainOrderPayload {
    * @return identifiers
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_IDENTIFIERS)
+  @JsonProperty(value = JSON_PROPERTY_IDENTIFIERS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public MainIdentifiersPayload getIdentifiers() {
@@ -306,7 +306,7 @@ public class MainOrderPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IDENTIFIERS)
+  @JsonProperty(value = JSON_PROPERTY_IDENTIFIERS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setIdentifiers(@jakarta.annotation.Nullable MainIdentifiersPayload identifiers) {
     this.identifiers = identifiers;
@@ -331,7 +331,7 @@ public class MainOrderPayload {
    * @return products
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PRODUCTS)
+  @JsonProperty(value = JSON_PROPERTY_PRODUCTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<MainProductPayload> getProducts() {
@@ -339,7 +339,7 @@ public class MainOrderPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PRODUCTS)
+  @JsonProperty(value = JSON_PROPERTY_PRODUCTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setProducts(@jakarta.annotation.Nullable List<MainProductPayload> products) {
     this.products = products;
@@ -356,7 +356,7 @@ public class MainOrderPayload {
    * @return status
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_STATUS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getStatus() {
@@ -364,7 +364,7 @@ public class MainOrderPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_STATUS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setStatus(@jakarta.annotation.Nullable String status) {
     this.status = status;
@@ -381,7 +381,7 @@ public class MainOrderPayload {
    * @return storeId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_STORE_ID)
+  @JsonProperty(value = JSON_PROPERTY_STORE_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getStoreId() {
@@ -389,7 +389,7 @@ public class MainOrderPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_STORE_ID)
+  @JsonProperty(value = JSON_PROPERTY_STORE_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setStoreId(@jakarta.annotation.Nullable String storeId) {
     this.storeId = storeId;
@@ -406,7 +406,7 @@ public class MainOrderPayload {
    * @return updatedAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UPDATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_UPDATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public OffsetDateTime getUpdatedAt() {
@@ -414,11 +414,12 @@ public class MainOrderPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UPDATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_UPDATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUpdatedAt(@jakarta.annotation.Nullable OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -473,10 +474,7 @@ public class MainOrderPayload {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -514,7 +512,7 @@ public class MainOrderPayload {
     // add `amount` to the URL query string
     if (getAmount() != null) {
       try {
-        joiner.add(String.format("%samount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAmount()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%samount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAmount()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -529,7 +527,7 @@ public class MainOrderPayload {
     // add `contact_id` to the URL query string
     if (getContactId() != null) {
       try {
-        joiner.add(String.format("%scontact_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContactId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scontact_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContactId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -540,8 +538,8 @@ public class MainOrderPayload {
     if (getCoupons() != null) {
       for (int i = 0; i < getCoupons().size(); i++) {
         try {
-          joiner.add(String.format("%scoupons%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%scoupons%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getCoupons().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -553,7 +551,7 @@ public class MainOrderPayload {
     // add `createdAt` to the URL query string
     if (getCreatedAt() != null) {
       try {
-        joiner.add(String.format("%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -563,7 +561,7 @@ public class MainOrderPayload {
     // add `email` to the URL query string
     if (getEmail() != null) {
       try {
-        joiner.add(String.format("%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -573,7 +571,7 @@ public class MainOrderPayload {
     // add `id` to the URL query string
     if (getId() != null) {
       try {
-        joiner.add(String.format("%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -589,8 +587,8 @@ public class MainOrderPayload {
     if (getProducts() != null) {
       for (int i = 0; i < getProducts().size(); i++) {
         if (getProducts().get(i) != null) {
-          joiner.add(getProducts().get(i).toUrlQueryString(String.format("%sproducts%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getProducts().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sproducts%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -598,7 +596,7 @@ public class MainOrderPayload {
     // add `status` to the URL query string
     if (getStatus() != null) {
       try {
-        joiner.add(String.format("%sstatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatus()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sstatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatus()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -608,7 +606,7 @@ public class MainOrderPayload {
     // add `storeId` to the URL query string
     if (getStoreId() != null) {
       try {
-        joiner.add(String.format("%sstoreId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStoreId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sstoreId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStoreId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -618,7 +616,7 @@ public class MainOrderPayload {
     // add `updatedAt` to the URL query string
     if (getUpdatedAt() != null) {
       try {
-        joiner.add(String.format("%supdatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUpdatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%supdatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUpdatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

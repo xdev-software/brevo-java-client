@@ -69,7 +69,7 @@ public class PostContactInfoContacts {
    * @return success
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SUCCESS)
+  @JsonProperty(value = JSON_PROPERTY_SUCCESS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public PostContactInfoContactsSuccess getSuccess() {
@@ -77,7 +77,7 @@ public class PostContactInfoContacts {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SUCCESS)
+  @JsonProperty(value = JSON_PROPERTY_SUCCESS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSuccess(@jakarta.annotation.Nullable PostContactInfoContactsSuccess success) {
     this.success = success;
@@ -94,7 +94,7 @@ public class PostContactInfoContacts {
    * @return failure
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_FAILURE)
+  @JsonProperty(value = JSON_PROPERTY_FAILURE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public PostContactInfoContactsFailure getFailure() {
@@ -102,7 +102,7 @@ public class PostContactInfoContacts {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_FAILURE)
+  @JsonProperty(value = JSON_PROPERTY_FAILURE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setFailure(@jakarta.annotation.Nullable PostContactInfoContactsFailure failure) {
     this.failure = failure;
@@ -119,7 +119,7 @@ public class PostContactInfoContacts {
    * @return total
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TOTAL)
+  @JsonProperty(value = JSON_PROPERTY_TOTAL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getTotal() {
@@ -127,7 +127,7 @@ public class PostContactInfoContacts {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TOTAL)
+  @JsonProperty(value = JSON_PROPERTY_TOTAL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setTotal(@jakarta.annotation.Nullable Long total) {
     this.total = total;
@@ -144,7 +144,7 @@ public class PostContactInfoContacts {
    * @return processId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PROCESS_ID)
+  @JsonProperty(value = JSON_PROPERTY_PROCESS_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getProcessId() {
@@ -152,11 +152,12 @@ public class PostContactInfoContacts {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PROCESS_ID)
+  @JsonProperty(value = JSON_PROPERTY_PROCESS_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setProcessId(@jakarta.annotation.Nullable Long processId) {
     this.processId = processId;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -195,10 +196,7 @@ public class PostContactInfoContacts {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -246,7 +244,7 @@ public class PostContactInfoContacts {
     // add `total` to the URL query string
     if (getTotal() != null) {
       try {
-        joiner.add(String.format("%stotal%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTotal()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stotal%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTotal()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -256,7 +254,7 @@ public class PostContactInfoContacts {
     // add `processId` to the URL query string
     if (getProcessId() != null) {
       try {
-        joiner.add(String.format("%sprocessId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProcessId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sprocessId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProcessId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

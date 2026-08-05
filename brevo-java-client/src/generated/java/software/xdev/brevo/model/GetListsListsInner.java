@@ -77,7 +77,7 @@ public class GetListsListsInner {
    * @return id
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getId() {
@@ -85,7 +85,7 @@ public class GetListsListsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setId(@jakarta.annotation.Nonnull Long id) {
     this.id = id;
@@ -102,7 +102,7 @@ public class GetListsListsInner {
    * @return name
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getName() {
@@ -110,7 +110,7 @@ public class GetListsListsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
@@ -127,7 +127,7 @@ public class GetListsListsInner {
    * @return totalBlacklisted
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TOTAL_BLACKLISTED)
+  @JsonProperty(value = JSON_PROPERTY_TOTAL_BLACKLISTED, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getTotalBlacklisted() {
@@ -135,7 +135,7 @@ public class GetListsListsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TOTAL_BLACKLISTED)
+  @JsonProperty(value = JSON_PROPERTY_TOTAL_BLACKLISTED, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setTotalBlacklisted(@jakarta.annotation.Nonnull Long totalBlacklisted) {
     this.totalBlacklisted = totalBlacklisted;
@@ -152,7 +152,7 @@ public class GetListsListsInner {
    * @return totalSubscribers
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TOTAL_SUBSCRIBERS)
+  @JsonProperty(value = JSON_PROPERTY_TOTAL_SUBSCRIBERS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getTotalSubscribers() {
@@ -160,7 +160,7 @@ public class GetListsListsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TOTAL_SUBSCRIBERS)
+  @JsonProperty(value = JSON_PROPERTY_TOTAL_SUBSCRIBERS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setTotalSubscribers(@jakarta.annotation.Nonnull Long totalSubscribers) {
     this.totalSubscribers = totalSubscribers;
@@ -177,7 +177,7 @@ public class GetListsListsInner {
    * @return uniqueSubscribers
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_UNIQUE_SUBSCRIBERS)
+  @JsonProperty(value = JSON_PROPERTY_UNIQUE_SUBSCRIBERS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getUniqueSubscribers() {
@@ -185,7 +185,7 @@ public class GetListsListsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UNIQUE_SUBSCRIBERS)
+  @JsonProperty(value = JSON_PROPERTY_UNIQUE_SUBSCRIBERS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setUniqueSubscribers(@jakarta.annotation.Nonnull Long uniqueSubscribers) {
     this.uniqueSubscribers = uniqueSubscribers;
@@ -202,7 +202,7 @@ public class GetListsListsInner {
    * @return folderId
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_FOLDER_ID)
+  @JsonProperty(value = JSON_PROPERTY_FOLDER_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getFolderId() {
@@ -210,11 +210,12 @@ public class GetListsListsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_FOLDER_ID)
+  @JsonProperty(value = JSON_PROPERTY_FOLDER_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setFolderId(@jakarta.annotation.Nonnull Long folderId) {
     this.folderId = folderId;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -257,10 +258,7 @@ public class GetListsListsInner {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -298,7 +296,7 @@ public class GetListsListsInner {
     // add `id` to the URL query string
     if (getId() != null) {
       try {
-        joiner.add(String.format("%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -308,7 +306,7 @@ public class GetListsListsInner {
     // add `name` to the URL query string
     if (getName() != null) {
       try {
-        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -318,7 +316,7 @@ public class GetListsListsInner {
     // add `totalBlacklisted` to the URL query string
     if (getTotalBlacklisted() != null) {
       try {
-        joiner.add(String.format("%stotalBlacklisted%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTotalBlacklisted()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stotalBlacklisted%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTotalBlacklisted()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -328,7 +326,7 @@ public class GetListsListsInner {
     // add `totalSubscribers` to the URL query string
     if (getTotalSubscribers() != null) {
       try {
-        joiner.add(String.format("%stotalSubscribers%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTotalSubscribers()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stotalSubscribers%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTotalSubscribers()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -338,7 +336,7 @@ public class GetListsListsInner {
     // add `uniqueSubscribers` to the URL query string
     if (getUniqueSubscribers() != null) {
       try {
-        joiner.add(String.format("%suniqueSubscribers%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUniqueSubscribers()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%suniqueSubscribers%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUniqueSubscribers()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -348,7 +346,7 @@ public class GetListsListsInner {
     // add `folderId` to the URL query string
     if (getFolderId() != null) {
       try {
-        joiner.add(String.format("%sfolderId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFolderId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sfolderId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFolderId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

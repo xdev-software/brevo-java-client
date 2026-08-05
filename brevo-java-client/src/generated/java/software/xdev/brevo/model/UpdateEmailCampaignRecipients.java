@@ -78,7 +78,7 @@ public class UpdateEmailCampaignRecipients {
    * @return exclusionListIds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EXCLUSION_LIST_IDS)
+  @JsonProperty(value = JSON_PROPERTY_EXCLUSION_LIST_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<Long> getExclusionListIds() {
@@ -86,7 +86,7 @@ public class UpdateEmailCampaignRecipients {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EXCLUSION_LIST_IDS)
+  @JsonProperty(value = JSON_PROPERTY_EXCLUSION_LIST_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setExclusionListIds(@jakarta.annotation.Nullable List<Long> exclusionListIds) {
     this.exclusionListIds = exclusionListIds;
@@ -111,7 +111,7 @@ public class UpdateEmailCampaignRecipients {
    * @return listIds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LIST_IDS)
+  @JsonProperty(value = JSON_PROPERTY_LIST_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<Long> getListIds() {
@@ -119,7 +119,7 @@ public class UpdateEmailCampaignRecipients {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LIST_IDS)
+  @JsonProperty(value = JSON_PROPERTY_LIST_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setListIds(@jakarta.annotation.Nullable List<Long> listIds) {
     this.listIds = listIds;
@@ -144,7 +144,7 @@ public class UpdateEmailCampaignRecipients {
    * @return segmentIds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SEGMENT_IDS)
+  @JsonProperty(value = JSON_PROPERTY_SEGMENT_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<Long> getSegmentIds() {
@@ -152,7 +152,7 @@ public class UpdateEmailCampaignRecipients {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SEGMENT_IDS)
+  @JsonProperty(value = JSON_PROPERTY_SEGMENT_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSegmentIds(@jakarta.annotation.Nullable List<Long> segmentIds) {
     this.segmentIds = segmentIds;
@@ -177,7 +177,7 @@ public class UpdateEmailCampaignRecipients {
    * @return exclusionSegmentIds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EXCLUSION_SEGMENT_IDS)
+  @JsonProperty(value = JSON_PROPERTY_EXCLUSION_SEGMENT_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<Long> getExclusionSegmentIds() {
@@ -185,11 +185,12 @@ public class UpdateEmailCampaignRecipients {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EXCLUSION_SEGMENT_IDS)
+  @JsonProperty(value = JSON_PROPERTY_EXCLUSION_SEGMENT_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setExclusionSegmentIds(@jakarta.annotation.Nullable List<Long> exclusionSegmentIds) {
     this.exclusionSegmentIds = exclusionSegmentIds;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -228,10 +229,7 @@ public class UpdateEmailCampaignRecipients {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -270,8 +268,8 @@ public class UpdateEmailCampaignRecipients {
     if (getExclusionListIds() != null) {
       for (int i = 0; i < getExclusionListIds().size(); i++) {
         try {
-          joiner.add(String.format("%sexclusionListIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sexclusionListIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getExclusionListIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -284,8 +282,8 @@ public class UpdateEmailCampaignRecipients {
     if (getListIds() != null) {
       for (int i = 0; i < getListIds().size(); i++) {
         try {
-          joiner.add(String.format("%slistIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%slistIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getListIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -298,8 +296,8 @@ public class UpdateEmailCampaignRecipients {
     if (getSegmentIds() != null) {
       for (int i = 0; i < getSegmentIds().size(); i++) {
         try {
-          joiner.add(String.format("%ssegmentIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%ssegmentIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getSegmentIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -312,8 +310,8 @@ public class UpdateEmailCampaignRecipients {
     if (getExclusionSegmentIds() != null) {
       for (int i = 0; i < getExclusionSegmentIds().size(); i++) {
         try {
-          joiner.add(String.format("%sexclusionSegmentIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sexclusionSegmentIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getExclusionSegmentIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported

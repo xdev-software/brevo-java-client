@@ -97,7 +97,7 @@ public class GetInboundEmailEventsByUuid {
    * @return receivedAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_RECEIVED_AT)
+  @JsonProperty(value = JSON_PROPERTY_RECEIVED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public OffsetDateTime getReceivedAt() {
@@ -105,7 +105,7 @@ public class GetInboundEmailEventsByUuid {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_RECEIVED_AT)
+  @JsonProperty(value = JSON_PROPERTY_RECEIVED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setReceivedAt(@jakarta.annotation.Nullable OffsetDateTime receivedAt) {
     this.receivedAt = receivedAt;
@@ -128,14 +128,14 @@ public class GetInboundEmailEventsByUuid {
         return deliveredAt.orElse(null);
   }
 
-  @JsonProperty(JSON_PROPERTY_DELIVERED_AT)
+  @JsonProperty(value = JSON_PROPERTY_DELIVERED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public JsonNullable<OffsetDateTime> getDeliveredAt_JsonNullable() {
     return deliveredAt;
   }
   
-  @JsonProperty(JSON_PROPERTY_DELIVERED_AT)
+  @JsonProperty(value = JSON_PROPERTY_DELIVERED_AT, required = false)
   public void setDeliveredAt_JsonNullable(JsonNullable<OffsetDateTime> deliveredAt) {
     this.deliveredAt = deliveredAt;
   }
@@ -155,7 +155,7 @@ public class GetInboundEmailEventsByUuid {
    * @return recipient
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_RECIPIENT)
+  @JsonProperty(value = JSON_PROPERTY_RECIPIENT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getRecipient() {
@@ -163,7 +163,7 @@ public class GetInboundEmailEventsByUuid {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_RECIPIENT)
+  @JsonProperty(value = JSON_PROPERTY_RECIPIENT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRecipient(@jakarta.annotation.Nullable String recipient) {
     this.recipient = recipient;
@@ -180,7 +180,7 @@ public class GetInboundEmailEventsByUuid {
    * @return sender
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SENDER)
+  @JsonProperty(value = JSON_PROPERTY_SENDER, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getSender() {
@@ -188,7 +188,7 @@ public class GetInboundEmailEventsByUuid {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SENDER)
+  @JsonProperty(value = JSON_PROPERTY_SENDER, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSender(@jakarta.annotation.Nullable String sender) {
     this.sender = sender;
@@ -205,7 +205,7 @@ public class GetInboundEmailEventsByUuid {
    * @return messageId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
+  @JsonProperty(value = JSON_PROPERTY_MESSAGE_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getMessageId() {
@@ -213,7 +213,7 @@ public class GetInboundEmailEventsByUuid {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
+  @JsonProperty(value = JSON_PROPERTY_MESSAGE_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setMessageId(@jakarta.annotation.Nullable String messageId) {
     this.messageId = messageId;
@@ -230,7 +230,7 @@ public class GetInboundEmailEventsByUuid {
    * @return subject
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SUBJECT)
+  @JsonProperty(value = JSON_PROPERTY_SUBJECT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getSubject() {
@@ -238,7 +238,7 @@ public class GetInboundEmailEventsByUuid {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SUBJECT)
+  @JsonProperty(value = JSON_PROPERTY_SUBJECT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSubject(@jakarta.annotation.Nullable String subject) {
     this.subject = subject;
@@ -263,7 +263,7 @@ public class GetInboundEmailEventsByUuid {
    * @return attachments
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ATTACHMENTS)
+  @JsonProperty(value = JSON_PROPERTY_ATTACHMENTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<GetInboundEmailEventsByUuidAttachmentsInner> getAttachments() {
@@ -271,7 +271,7 @@ public class GetInboundEmailEventsByUuid {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ATTACHMENTS)
+  @JsonProperty(value = JSON_PROPERTY_ATTACHMENTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setAttachments(@jakarta.annotation.Nullable List<GetInboundEmailEventsByUuidAttachmentsInner> attachments) {
     this.attachments = attachments;
@@ -296,7 +296,7 @@ public class GetInboundEmailEventsByUuid {
    * @return logs
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LOGS)
+  @JsonProperty(value = JSON_PROPERTY_LOGS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<GetInboundEmailEventsByUuidLogsInner> getLogs() {
@@ -304,11 +304,12 @@ public class GetInboundEmailEventsByUuid {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LOGS)
+  @JsonProperty(value = JSON_PROPERTY_LOGS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLogs(@jakarta.annotation.Nullable List<GetInboundEmailEventsByUuidLogsInner> logs) {
     this.logs = logs;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -366,10 +367,7 @@ public class GetInboundEmailEventsByUuid {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -407,7 +405,7 @@ public class GetInboundEmailEventsByUuid {
     // add `receivedAt` to the URL query string
     if (getReceivedAt() != null) {
       try {
-        joiner.add(String.format("%sreceivedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReceivedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sreceivedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReceivedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -417,7 +415,7 @@ public class GetInboundEmailEventsByUuid {
     // add `deliveredAt` to the URL query string
     if (getDeliveredAt() != null) {
       try {
-        joiner.add(String.format("%sdeliveredAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDeliveredAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdeliveredAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDeliveredAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -427,7 +425,7 @@ public class GetInboundEmailEventsByUuid {
     // add `recipient` to the URL query string
     if (getRecipient() != null) {
       try {
-        joiner.add(String.format("%srecipient%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRecipient()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%srecipient%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRecipient()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -437,7 +435,7 @@ public class GetInboundEmailEventsByUuid {
     // add `sender` to the URL query string
     if (getSender() != null) {
       try {
-        joiner.add(String.format("%ssender%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSender()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssender%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSender()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -447,7 +445,7 @@ public class GetInboundEmailEventsByUuid {
     // add `messageId` to the URL query string
     if (getMessageId() != null) {
       try {
-        joiner.add(String.format("%smessageId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMessageId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%smessageId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMessageId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -457,7 +455,7 @@ public class GetInboundEmailEventsByUuid {
     // add `subject` to the URL query string
     if (getSubject() != null) {
       try {
-        joiner.add(String.format("%ssubject%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubject()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssubject%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubject()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -468,8 +466,8 @@ public class GetInboundEmailEventsByUuid {
     if (getAttachments() != null) {
       for (int i = 0; i < getAttachments().size(); i++) {
         if (getAttachments().get(i) != null) {
-          joiner.add(getAttachments().get(i).toUrlQueryString(String.format("%sattachments%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getAttachments().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sattachments%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -478,8 +476,8 @@ public class GetInboundEmailEventsByUuid {
     if (getLogs() != null) {
       for (int i = 0; i < getLogs().size(); i++) {
         if (getLogs().get(i) != null) {
-          joiner.add(getLogs().get(i).toUrlQueryString(String.format("%slogs%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getLogs().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%slogs%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }

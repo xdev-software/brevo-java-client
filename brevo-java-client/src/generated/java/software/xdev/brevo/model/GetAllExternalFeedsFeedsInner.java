@@ -149,7 +149,7 @@ public class GetAllExternalFeedsFeedsInner {
    * @return id
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getId() {
@@ -157,7 +157,7 @@ public class GetAllExternalFeedsFeedsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setId(@jakarta.annotation.Nonnull String id) {
     this.id = id;
@@ -174,7 +174,7 @@ public class GetAllExternalFeedsFeedsInner {
    * @return name
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getName() {
@@ -182,7 +182,7 @@ public class GetAllExternalFeedsFeedsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
@@ -199,7 +199,7 @@ public class GetAllExternalFeedsFeedsInner {
    * @return url
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_URL)
+  @JsonProperty(value = JSON_PROPERTY_URL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getUrl() {
@@ -207,7 +207,7 @@ public class GetAllExternalFeedsFeedsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_URL)
+  @JsonProperty(value = JSON_PROPERTY_URL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setUrl(@jakarta.annotation.Nonnull String url) {
     this.url = url;
@@ -224,7 +224,7 @@ public class GetAllExternalFeedsFeedsInner {
    * @return authType
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_AUTH_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_AUTH_TYPE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public AuthTypeEnum getAuthType() {
@@ -232,7 +232,7 @@ public class GetAllExternalFeedsFeedsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_AUTH_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_AUTH_TYPE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAuthType(@jakarta.annotation.Nonnull AuthTypeEnum authType) {
     this.authType = authType;
@@ -249,7 +249,7 @@ public class GetAllExternalFeedsFeedsInner {
    * @return username
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_USERNAME)
+  @JsonProperty(value = JSON_PROPERTY_USERNAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getUsername() {
@@ -257,7 +257,7 @@ public class GetAllExternalFeedsFeedsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_USERNAME)
+  @JsonProperty(value = JSON_PROPERTY_USERNAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUsername(@jakarta.annotation.Nullable String username) {
     this.username = username;
@@ -274,7 +274,7 @@ public class GetAllExternalFeedsFeedsInner {
    * @return password
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PASSWORD)
+  @JsonProperty(value = JSON_PROPERTY_PASSWORD, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getPassword() {
@@ -282,7 +282,7 @@ public class GetAllExternalFeedsFeedsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PASSWORD)
+  @JsonProperty(value = JSON_PROPERTY_PASSWORD, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPassword(@jakarta.annotation.Nullable String password) {
     this.password = password;
@@ -299,7 +299,7 @@ public class GetAllExternalFeedsFeedsInner {
    * @return token
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TOKEN)
+  @JsonProperty(value = JSON_PROPERTY_TOKEN, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getToken() {
@@ -307,7 +307,7 @@ public class GetAllExternalFeedsFeedsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TOKEN)
+  @JsonProperty(value = JSON_PROPERTY_TOKEN, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setToken(@jakarta.annotation.Nullable String token) {
     this.token = token;
@@ -332,7 +332,7 @@ public class GetAllExternalFeedsFeedsInner {
    * @return headers
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_HEADERS)
+  @JsonProperty(value = JSON_PROPERTY_HEADERS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public List<GetExternalFeedByUUIDHeadersInner> getHeaders() {
@@ -340,7 +340,7 @@ public class GetAllExternalFeedsFeedsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_HEADERS)
+  @JsonProperty(value = JSON_PROPERTY_HEADERS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setHeaders(@jakarta.annotation.Nonnull List<GetExternalFeedByUUIDHeadersInner> headers) {
     this.headers = headers;
@@ -359,7 +359,7 @@ public class GetAllExternalFeedsFeedsInner {
    * @return maxRetries
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_MAX_RETRIES)
+  @JsonProperty(value = JSON_PROPERTY_MAX_RETRIES, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Integer getMaxRetries() {
@@ -367,7 +367,7 @@ public class GetAllExternalFeedsFeedsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MAX_RETRIES)
+  @JsonProperty(value = JSON_PROPERTY_MAX_RETRIES, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setMaxRetries(@jakarta.annotation.Nonnull Integer maxRetries) {
     this.maxRetries = maxRetries;
@@ -384,7 +384,7 @@ public class GetAllExternalFeedsFeedsInner {
    * @return cache
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CACHE)
+  @JsonProperty(value = JSON_PROPERTY_CACHE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Boolean getCache() {
@@ -392,7 +392,7 @@ public class GetAllExternalFeedsFeedsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CACHE)
+  @JsonProperty(value = JSON_PROPERTY_CACHE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCache(@jakarta.annotation.Nonnull Boolean cache) {
     this.cache = cache;
@@ -409,7 +409,7 @@ public class GetAllExternalFeedsFeedsInner {
    * @return createdAt
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public OffsetDateTime getCreatedAt() {
@@ -417,7 +417,7 @@ public class GetAllExternalFeedsFeedsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCreatedAt(@jakarta.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
@@ -434,7 +434,7 @@ public class GetAllExternalFeedsFeedsInner {
    * @return modifiedAt
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
+  @JsonProperty(value = JSON_PROPERTY_MODIFIED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public OffsetDateTime getModifiedAt() {
@@ -442,11 +442,12 @@ public class GetAllExternalFeedsFeedsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
+  @JsonProperty(value = JSON_PROPERTY_MODIFIED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setModifiedAt(@jakarta.annotation.Nonnull OffsetDateTime modifiedAt) {
     this.modifiedAt = modifiedAt;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -501,10 +502,7 @@ public class GetAllExternalFeedsFeedsInner {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -542,7 +540,7 @@ public class GetAllExternalFeedsFeedsInner {
     // add `id` to the URL query string
     if (getId() != null) {
       try {
-        joiner.add(String.format("%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -552,7 +550,7 @@ public class GetAllExternalFeedsFeedsInner {
     // add `name` to the URL query string
     if (getName() != null) {
       try {
-        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -562,7 +560,7 @@ public class GetAllExternalFeedsFeedsInner {
     // add `url` to the URL query string
     if (getUrl() != null) {
       try {
-        joiner.add(String.format("%surl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUrl()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%surl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUrl()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -572,7 +570,7 @@ public class GetAllExternalFeedsFeedsInner {
     // add `authType` to the URL query string
     if (getAuthType() != null) {
       try {
-        joiner.add(String.format("%sauthType%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAuthType()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sauthType%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAuthType()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -582,7 +580,7 @@ public class GetAllExternalFeedsFeedsInner {
     // add `username` to the URL query string
     if (getUsername() != null) {
       try {
-        joiner.add(String.format("%susername%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUsername()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%susername%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUsername()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -592,7 +590,7 @@ public class GetAllExternalFeedsFeedsInner {
     // add `password` to the URL query string
     if (getPassword() != null) {
       try {
-        joiner.add(String.format("%spassword%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPassword()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%spassword%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPassword()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -602,7 +600,7 @@ public class GetAllExternalFeedsFeedsInner {
     // add `token` to the URL query string
     if (getToken() != null) {
       try {
-        joiner.add(String.format("%stoken%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getToken()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stoken%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getToken()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -613,8 +611,8 @@ public class GetAllExternalFeedsFeedsInner {
     if (getHeaders() != null) {
       for (int i = 0; i < getHeaders().size(); i++) {
         if (getHeaders().get(i) != null) {
-          joiner.add(getHeaders().get(i).toUrlQueryString(String.format("%sheaders%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getHeaders().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sheaders%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -622,7 +620,7 @@ public class GetAllExternalFeedsFeedsInner {
     // add `maxRetries` to the URL query string
     if (getMaxRetries() != null) {
       try {
-        joiner.add(String.format("%smaxRetries%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMaxRetries()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%smaxRetries%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMaxRetries()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -632,7 +630,7 @@ public class GetAllExternalFeedsFeedsInner {
     // add `cache` to the URL query string
     if (getCache() != null) {
       try {
-        joiner.add(String.format("%scache%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCache()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scache%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCache()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -642,7 +640,7 @@ public class GetAllExternalFeedsFeedsInner {
     // add `createdAt` to the URL query string
     if (getCreatedAt() != null) {
       try {
-        joiner.add(String.format("%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -652,7 +650,7 @@ public class GetAllExternalFeedsFeedsInner {
     // add `modifiedAt` to the URL query string
     if (getModifiedAt() != null) {
       try {
-        joiner.add(String.format("%smodifiedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getModifiedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%smodifiedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getModifiedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

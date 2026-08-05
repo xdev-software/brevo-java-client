@@ -67,7 +67,7 @@ public class GetExtendedClientAllOfAddress {
    * @return street
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_STREET)
+  @JsonProperty(value = JSON_PROPERTY_STREET, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getStreet() {
@@ -75,7 +75,7 @@ public class GetExtendedClientAllOfAddress {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_STREET)
+  @JsonProperty(value = JSON_PROPERTY_STREET, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setStreet(@jakarta.annotation.Nonnull String street) {
     this.street = street;
@@ -92,7 +92,7 @@ public class GetExtendedClientAllOfAddress {
    * @return city
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CITY)
+  @JsonProperty(value = JSON_PROPERTY_CITY, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getCity() {
@@ -100,7 +100,7 @@ public class GetExtendedClientAllOfAddress {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CITY)
+  @JsonProperty(value = JSON_PROPERTY_CITY, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCity(@jakarta.annotation.Nonnull String city) {
     this.city = city;
@@ -117,7 +117,7 @@ public class GetExtendedClientAllOfAddress {
    * @return zipCode
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ZIP_CODE)
+  @JsonProperty(value = JSON_PROPERTY_ZIP_CODE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getZipCode() {
@@ -125,7 +125,7 @@ public class GetExtendedClientAllOfAddress {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ZIP_CODE)
+  @JsonProperty(value = JSON_PROPERTY_ZIP_CODE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setZipCode(@jakarta.annotation.Nonnull String zipCode) {
     this.zipCode = zipCode;
@@ -142,7 +142,7 @@ public class GetExtendedClientAllOfAddress {
    * @return country
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_COUNTRY)
+  @JsonProperty(value = JSON_PROPERTY_COUNTRY, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getCountry() {
@@ -150,11 +150,12 @@ public class GetExtendedClientAllOfAddress {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_COUNTRY)
+  @JsonProperty(value = JSON_PROPERTY_COUNTRY, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCountry(@jakarta.annotation.Nonnull String country) {
     this.country = country;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -193,10 +194,7 @@ public class GetExtendedClientAllOfAddress {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -234,7 +232,7 @@ public class GetExtendedClientAllOfAddress {
     // add `street` to the URL query string
     if (getStreet() != null) {
       try {
-        joiner.add(String.format("%sstreet%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStreet()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sstreet%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStreet()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -244,7 +242,7 @@ public class GetExtendedClientAllOfAddress {
     // add `city` to the URL query string
     if (getCity() != null) {
       try {
-        joiner.add(String.format("%scity%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCity()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scity%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCity()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -254,7 +252,7 @@ public class GetExtendedClientAllOfAddress {
     // add `zipCode` to the URL query string
     if (getZipCode() != null) {
       try {
-        joiner.add(String.format("%szipCode%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getZipCode()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%szipCode%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getZipCode()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -264,7 +262,7 @@ public class GetExtendedClientAllOfAddress {
     // add `country` to the URL query string
     if (getCountry() != null) {
       try {
-        joiner.add(String.format("%scountry%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCountry()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scountry%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCountry()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

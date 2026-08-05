@@ -18,7 +18,6 @@ import java.util.Arrays;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -138,7 +137,7 @@ public class TaskReminder {
    * @return value
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_VALUE)
+  @JsonProperty(value = JSON_PROPERTY_VALUE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Integer getValue() {
@@ -146,7 +145,7 @@ public class TaskReminder {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_VALUE)
+  @JsonProperty(value = JSON_PROPERTY_VALUE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setValue(@jakarta.annotation.Nonnull Integer value) {
     this.value = value;
@@ -163,7 +162,7 @@ public class TaskReminder {
    * @return unit
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_UNIT)
+  @JsonProperty(value = JSON_PROPERTY_UNIT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public UnitEnum getUnit() {
@@ -171,7 +170,7 @@ public class TaskReminder {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UNIT)
+  @JsonProperty(value = JSON_PROPERTY_UNIT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setUnit(@jakarta.annotation.Nonnull UnitEnum unit) {
     this.unit = unit;
@@ -196,7 +195,7 @@ public class TaskReminder {
    * @return types
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TYPES)
+  @JsonProperty(value = JSON_PROPERTY_TYPES, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public List<TypesEnum> getTypes() {
@@ -204,11 +203,12 @@ public class TaskReminder {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TYPES)
+  @JsonProperty(value = JSON_PROPERTY_TYPES, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setTypes(@jakarta.annotation.Nonnull List<TypesEnum> types) {
     this.types = types;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -245,10 +245,7 @@ public class TaskReminder {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -286,7 +283,7 @@ public class TaskReminder {
     // add `value` to the URL query string
     if (getValue() != null) {
       try {
-        joiner.add(String.format("%svalue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getValue()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%svalue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getValue()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -296,7 +293,7 @@ public class TaskReminder {
     // add `unit` to the URL query string
     if (getUnit() != null) {
       try {
-        joiner.add(String.format("%sunit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUnit()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sunit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUnit()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -307,8 +304,8 @@ public class TaskReminder {
     if (getTypes() != null) {
       for (int i = 0; i < getTypes().size(); i++) {
         try {
-          joiner.add(String.format("%stypes%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%stypes%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getTypes().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported

@@ -74,7 +74,7 @@ public class SubscriptionHandlerInfo {
    * @return balance
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_BALANCE)
+  @JsonProperty(value = JSON_PROPERTY_BALANCE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public SubscriptionBalances getBalance() {
@@ -82,7 +82,7 @@ public class SubscriptionHandlerInfo {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BALANCE)
+  @JsonProperty(value = JSON_PROPERTY_BALANCE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setBalance(@jakarta.annotation.Nullable SubscriptionBalances balance) {
     this.balance = balance;
@@ -107,7 +107,7 @@ public class SubscriptionHandlerInfo {
    * @return members
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_MEMBERS)
+  @JsonProperty(value = JSON_PROPERTY_MEMBERS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<MemberContact> getMembers() {
@@ -115,7 +115,7 @@ public class SubscriptionHandlerInfo {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MEMBERS)
+  @JsonProperty(value = JSON_PROPERTY_MEMBERS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setMembers(@jakarta.annotation.Nullable List<MemberContact> members) {
     this.members = members;
@@ -140,7 +140,7 @@ public class SubscriptionHandlerInfo {
    * @return reward
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_REWARD)
+  @JsonProperty(value = JSON_PROPERTY_REWARD, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<SubscriptionAttributedReward> getReward() {
@@ -148,7 +148,7 @@ public class SubscriptionHandlerInfo {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REWARD)
+  @JsonProperty(value = JSON_PROPERTY_REWARD, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setReward(@jakarta.annotation.Nullable List<SubscriptionAttributedReward> reward) {
     this.reward = reward;
@@ -173,7 +173,7 @@ public class SubscriptionHandlerInfo {
    * @return tier
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TIER)
+  @JsonProperty(value = JSON_PROPERTY_TIER, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<SubscriptionTier> getTier() {
@@ -181,11 +181,12 @@ public class SubscriptionHandlerInfo {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TIER)
+  @JsonProperty(value = JSON_PROPERTY_TIER, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setTier(@jakarta.annotation.Nullable List<SubscriptionTier> tier) {
     this.tier = tier;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -224,10 +225,7 @@ public class SubscriptionHandlerInfo {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -271,8 +269,8 @@ public class SubscriptionHandlerInfo {
     if (getMembers() != null) {
       for (int i = 0; i < getMembers().size(); i++) {
         if (getMembers().get(i) != null) {
-          joiner.add(getMembers().get(i).toUrlQueryString(String.format("%smembers%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getMembers().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%smembers%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -281,8 +279,8 @@ public class SubscriptionHandlerInfo {
     if (getReward() != null) {
       for (int i = 0; i < getReward().size(); i++) {
         if (getReward().get(i) != null) {
-          joiner.add(getReward().get(i).toUrlQueryString(String.format("%sreward%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getReward().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sreward%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -291,8 +289,8 @@ public class SubscriptionHandlerInfo {
     if (getTier() != null) {
       for (int i = 0; i < getTier().size(); i++) {
         if (getTier().get(i) != null) {
-          joiner.add(getTier().get(i).toUrlQueryString(String.format("%stier%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getTier().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%stier%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }

@@ -112,7 +112,7 @@ public class SubAccountAppsToggleRequest {
    * @return inbox
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_INBOX)
+  @JsonProperty(value = JSON_PROPERTY_INBOX, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getInbox() {
@@ -120,7 +120,7 @@ public class SubAccountAppsToggleRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_INBOX)
+  @JsonProperty(value = JSON_PROPERTY_INBOX, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setInbox(@jakarta.annotation.Nullable Boolean inbox) {
     this.inbox = inbox;
@@ -137,7 +137,7 @@ public class SubAccountAppsToggleRequest {
    * @return whatsapp
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_WHATSAPP)
+  @JsonProperty(value = JSON_PROPERTY_WHATSAPP, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getWhatsapp() {
@@ -145,7 +145,7 @@ public class SubAccountAppsToggleRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_WHATSAPP)
+  @JsonProperty(value = JSON_PROPERTY_WHATSAPP, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setWhatsapp(@jakarta.annotation.Nullable Boolean whatsapp) {
     this.whatsapp = whatsapp;
@@ -162,7 +162,7 @@ public class SubAccountAppsToggleRequest {
    * @return automation
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_AUTOMATION)
+  @JsonProperty(value = JSON_PROPERTY_AUTOMATION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getAutomation() {
@@ -170,7 +170,7 @@ public class SubAccountAppsToggleRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_AUTOMATION)
+  @JsonProperty(value = JSON_PROPERTY_AUTOMATION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setAutomation(@jakarta.annotation.Nullable Boolean automation) {
     this.automation = automation;
@@ -187,7 +187,7 @@ public class SubAccountAppsToggleRequest {
    * @return emailCampaigns
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EMAIL_CAMPAIGNS)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL_CAMPAIGNS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getEmailCampaigns() {
@@ -195,7 +195,7 @@ public class SubAccountAppsToggleRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EMAIL_CAMPAIGNS)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL_CAMPAIGNS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setEmailCampaigns(@jakarta.annotation.Nullable Boolean emailCampaigns) {
     this.emailCampaigns = emailCampaigns;
@@ -212,7 +212,7 @@ public class SubAccountAppsToggleRequest {
    * @return smsCampaigns
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SMS_CAMPAIGNS)
+  @JsonProperty(value = JSON_PROPERTY_SMS_CAMPAIGNS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getSmsCampaigns() {
@@ -220,7 +220,7 @@ public class SubAccountAppsToggleRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SMS_CAMPAIGNS)
+  @JsonProperty(value = JSON_PROPERTY_SMS_CAMPAIGNS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSmsCampaigns(@jakarta.annotation.Nullable Boolean smsCampaigns) {
     this.smsCampaigns = smsCampaigns;
@@ -237,7 +237,7 @@ public class SubAccountAppsToggleRequest {
    * @return landingPages
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LANDING_PAGES)
+  @JsonProperty(value = JSON_PROPERTY_LANDING_PAGES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getLandingPages() {
@@ -245,7 +245,7 @@ public class SubAccountAppsToggleRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LANDING_PAGES)
+  @JsonProperty(value = JSON_PROPERTY_LANDING_PAGES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLandingPages(@jakarta.annotation.Nullable Boolean landingPages) {
     this.landingPages = landingPages;
@@ -262,7 +262,7 @@ public class SubAccountAppsToggleRequest {
    * @return transactionalEmails
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TRANSACTIONAL_EMAILS)
+  @JsonProperty(value = JSON_PROPERTY_TRANSACTIONAL_EMAILS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getTransactionalEmails() {
@@ -270,7 +270,7 @@ public class SubAccountAppsToggleRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TRANSACTIONAL_EMAILS)
+  @JsonProperty(value = JSON_PROPERTY_TRANSACTIONAL_EMAILS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setTransactionalEmails(@jakarta.annotation.Nullable Boolean transactionalEmails) {
     this.transactionalEmails = transactionalEmails;
@@ -287,7 +287,7 @@ public class SubAccountAppsToggleRequest {
    * @return transactionalSms
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TRANSACTIONAL_SMS)
+  @JsonProperty(value = JSON_PROPERTY_TRANSACTIONAL_SMS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getTransactionalSms() {
@@ -295,7 +295,7 @@ public class SubAccountAppsToggleRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TRANSACTIONAL_SMS)
+  @JsonProperty(value = JSON_PROPERTY_TRANSACTIONAL_SMS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setTransactionalSms(@jakarta.annotation.Nullable Boolean transactionalSms) {
     this.transactionalSms = transactionalSms;
@@ -312,7 +312,7 @@ public class SubAccountAppsToggleRequest {
    * @return facebookAds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_FACEBOOK_ADS)
+  @JsonProperty(value = JSON_PROPERTY_FACEBOOK_ADS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getFacebookAds() {
@@ -320,7 +320,7 @@ public class SubAccountAppsToggleRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_FACEBOOK_ADS)
+  @JsonProperty(value = JSON_PROPERTY_FACEBOOK_ADS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setFacebookAds(@jakarta.annotation.Nullable Boolean facebookAds) {
     this.facebookAds = facebookAds;
@@ -337,7 +337,7 @@ public class SubAccountAppsToggleRequest {
    * @return webPush
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_WEB_PUSH)
+  @JsonProperty(value = JSON_PROPERTY_WEB_PUSH, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getWebPush() {
@@ -345,7 +345,7 @@ public class SubAccountAppsToggleRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_WEB_PUSH)
+  @JsonProperty(value = JSON_PROPERTY_WEB_PUSH, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setWebPush(@jakarta.annotation.Nullable Boolean webPush) {
     this.webPush = webPush;
@@ -362,7 +362,7 @@ public class SubAccountAppsToggleRequest {
    * @return meetings
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_MEETINGS)
+  @JsonProperty(value = JSON_PROPERTY_MEETINGS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getMeetings() {
@@ -370,7 +370,7 @@ public class SubAccountAppsToggleRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MEETINGS)
+  @JsonProperty(value = JSON_PROPERTY_MEETINGS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setMeetings(@jakarta.annotation.Nullable Boolean meetings) {
     this.meetings = meetings;
@@ -387,7 +387,7 @@ public class SubAccountAppsToggleRequest {
    * @return conversations
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CONVERSATIONS)
+  @JsonProperty(value = JSON_PROPERTY_CONVERSATIONS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getConversations() {
@@ -395,7 +395,7 @@ public class SubAccountAppsToggleRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONVERSATIONS)
+  @JsonProperty(value = JSON_PROPERTY_CONVERSATIONS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setConversations(@jakarta.annotation.Nullable Boolean conversations) {
     this.conversations = conversations;
@@ -412,7 +412,7 @@ public class SubAccountAppsToggleRequest {
    * @return crm
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CRM)
+  @JsonProperty(value = JSON_PROPERTY_CRM, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getCrm() {
@@ -420,11 +420,12 @@ public class SubAccountAppsToggleRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CRM)
+  @JsonProperty(value = JSON_PROPERTY_CRM, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCrm(@jakarta.annotation.Nullable Boolean crm) {
     this.crm = crm;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -481,10 +482,7 @@ public class SubAccountAppsToggleRequest {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -522,7 +520,7 @@ public class SubAccountAppsToggleRequest {
     // add `inbox` to the URL query string
     if (getInbox() != null) {
       try {
-        joiner.add(String.format("%sinbox%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getInbox()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sinbox%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getInbox()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -532,7 +530,7 @@ public class SubAccountAppsToggleRequest {
     // add `whatsapp` to the URL query string
     if (getWhatsapp() != null) {
       try {
-        joiner.add(String.format("%swhatsapp%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWhatsapp()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%swhatsapp%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWhatsapp()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -542,7 +540,7 @@ public class SubAccountAppsToggleRequest {
     // add `automation` to the URL query string
     if (getAutomation() != null) {
       try {
-        joiner.add(String.format("%sautomation%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAutomation()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sautomation%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAutomation()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -552,7 +550,7 @@ public class SubAccountAppsToggleRequest {
     // add `email-campaigns` to the URL query string
     if (getEmailCampaigns() != null) {
       try {
-        joiner.add(String.format("%semail-campaigns%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmailCampaigns()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%semail-campaigns%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmailCampaigns()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -562,7 +560,7 @@ public class SubAccountAppsToggleRequest {
     // add `sms-campaigns` to the URL query string
     if (getSmsCampaigns() != null) {
       try {
-        joiner.add(String.format("%ssms-campaigns%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSmsCampaigns()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssms-campaigns%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSmsCampaigns()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -572,7 +570,7 @@ public class SubAccountAppsToggleRequest {
     // add `landing-pages` to the URL query string
     if (getLandingPages() != null) {
       try {
-        joiner.add(String.format("%slanding-pages%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLandingPages()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%slanding-pages%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLandingPages()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -582,7 +580,7 @@ public class SubAccountAppsToggleRequest {
     // add `transactional-emails` to the URL query string
     if (getTransactionalEmails() != null) {
       try {
-        joiner.add(String.format("%stransactional-emails%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTransactionalEmails()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stransactional-emails%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTransactionalEmails()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -592,7 +590,7 @@ public class SubAccountAppsToggleRequest {
     // add `transactional-sms` to the URL query string
     if (getTransactionalSms() != null) {
       try {
-        joiner.add(String.format("%stransactional-sms%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTransactionalSms()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stransactional-sms%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTransactionalSms()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -602,7 +600,7 @@ public class SubAccountAppsToggleRequest {
     // add `facebook-ads` to the URL query string
     if (getFacebookAds() != null) {
       try {
-        joiner.add(String.format("%sfacebook-ads%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFacebookAds()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sfacebook-ads%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFacebookAds()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -612,7 +610,7 @@ public class SubAccountAppsToggleRequest {
     // add `web-push` to the URL query string
     if (getWebPush() != null) {
       try {
-        joiner.add(String.format("%sweb-push%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWebPush()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sweb-push%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWebPush()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -622,7 +620,7 @@ public class SubAccountAppsToggleRequest {
     // add `meetings` to the URL query string
     if (getMeetings() != null) {
       try {
-        joiner.add(String.format("%smeetings%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMeetings()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%smeetings%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMeetings()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -632,7 +630,7 @@ public class SubAccountAppsToggleRequest {
     // add `conversations` to the URL query string
     if (getConversations() != null) {
       try {
-        joiner.add(String.format("%sconversations%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConversations()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sconversations%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConversations()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -642,7 +640,7 @@ public class SubAccountAppsToggleRequest {
     // add `crm` to the URL query string
     if (getCrm() != null) {
       try {
-        joiner.add(String.format("%scrm%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCrm()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scrm%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCrm()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

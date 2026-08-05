@@ -80,7 +80,7 @@ public class CreatePaymentRequest {
    * @return reference
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_REFERENCE)
+  @JsonProperty(value = JSON_PROPERTY_REFERENCE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getReference() {
@@ -88,7 +88,7 @@ public class CreatePaymentRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REFERENCE)
+  @JsonProperty(value = JSON_PROPERTY_REFERENCE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setReference(@jakarta.annotation.Nonnull String reference) {
     this.reference = reference;
@@ -105,7 +105,7 @@ public class CreatePaymentRequest {
    * @return cart
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CART)
+  @JsonProperty(value = JSON_PROPERTY_CART, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Cart getCart() {
@@ -113,7 +113,7 @@ public class CreatePaymentRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CART)
+  @JsonProperty(value = JSON_PROPERTY_CART, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCart(@jakarta.annotation.Nonnull Cart cart) {
     this.cart = cart;
@@ -130,7 +130,7 @@ public class CreatePaymentRequest {
    * @return contactId
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CONTACT_ID)
+  @JsonProperty(value = JSON_PROPERTY_CONTACT_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getContactId() {
@@ -138,7 +138,7 @@ public class CreatePaymentRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONTACT_ID)
+  @JsonProperty(value = JSON_PROPERTY_CONTACT_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setContactId(@jakarta.annotation.Nonnull Long contactId) {
     this.contactId = contactId;
@@ -155,7 +155,7 @@ public class CreatePaymentRequest {
    * @return description
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DESCRIPTION)
+  @JsonProperty(value = JSON_PROPERTY_DESCRIPTION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getDescription() {
@@ -163,7 +163,7 @@ public class CreatePaymentRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DESCRIPTION)
+  @JsonProperty(value = JSON_PROPERTY_DESCRIPTION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDescription(@jakarta.annotation.Nullable String description) {
     this.description = description;
@@ -180,7 +180,7 @@ public class CreatePaymentRequest {
    * @return notification
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_NOTIFICATION)
+  @JsonProperty(value = JSON_PROPERTY_NOTIFICATION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Notification getNotification() {
@@ -188,7 +188,7 @@ public class CreatePaymentRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NOTIFICATION)
+  @JsonProperty(value = JSON_PROPERTY_NOTIFICATION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setNotification(@jakarta.annotation.Nullable Notification notification) {
     this.notification = notification;
@@ -205,7 +205,7 @@ public class CreatePaymentRequest {
    * @return _configuration
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CONFIGURATION)
+  @JsonProperty(value = JSON_PROPERTY_CONFIGURATION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public ModelConfiguration getConfiguration() {
@@ -213,11 +213,12 @@ public class CreatePaymentRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONFIGURATION)
+  @JsonProperty(value = JSON_PROPERTY_CONFIGURATION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setConfiguration(@jakarta.annotation.Nullable ModelConfiguration _configuration) {
     this._configuration = _configuration;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -260,10 +261,7 @@ public class CreatePaymentRequest {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -301,7 +299,7 @@ public class CreatePaymentRequest {
     // add `reference` to the URL query string
     if (getReference() != null) {
       try {
-        joiner.add(String.format("%sreference%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReference()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sreference%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReference()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -316,7 +314,7 @@ public class CreatePaymentRequest {
     // add `contactId` to the URL query string
     if (getContactId() != null) {
       try {
-        joiner.add(String.format("%scontactId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContactId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scontactId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContactId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -326,7 +324,7 @@ public class CreatePaymentRequest {
     // add `description` to the URL query string
     if (getDescription() != null) {
       try {
-        joiner.add(String.format("%sdescription%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDescription()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdescription%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDescription()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

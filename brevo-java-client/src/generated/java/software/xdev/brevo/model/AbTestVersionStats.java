@@ -57,7 +57,7 @@ public class AbTestVersionStats {
    * @return versionA
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_VERSION_A)
+  @JsonProperty(value = JSON_PROPERTY_VERSION_A, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getVersionA() {
@@ -65,7 +65,7 @@ public class AbTestVersionStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_VERSION_A)
+  @JsonProperty(value = JSON_PROPERTY_VERSION_A, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setVersionA(@jakarta.annotation.Nonnull String versionA) {
     this.versionA = versionA;
@@ -82,7 +82,7 @@ public class AbTestVersionStats {
    * @return versionB
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_VERSION_B)
+  @JsonProperty(value = JSON_PROPERTY_VERSION_B, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getVersionB() {
@@ -90,11 +90,12 @@ public class AbTestVersionStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_VERSION_B)
+  @JsonProperty(value = JSON_PROPERTY_VERSION_B, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setVersionB(@jakarta.annotation.Nonnull String versionB) {
     this.versionB = versionB;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -129,10 +130,7 @@ public class AbTestVersionStats {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -170,7 +168,7 @@ public class AbTestVersionStats {
     // add `Version A` to the URL query string
     if (getVersionA() != null) {
       try {
-        joiner.add(String.format("%sVersion A%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getVersionA()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sVersion A%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getVersionA()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -180,7 +178,7 @@ public class AbTestVersionStats {
     // add `Version B` to the URL query string
     if (getVersionB() != null) {
       try {
-        joiner.add(String.format("%sVersion B%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getVersionB()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sVersion B%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getVersionB()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

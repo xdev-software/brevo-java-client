@@ -188,7 +188,7 @@ public class GetWhatsAppConfig {
    * @return whatsappBusinessAccountId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_WHATSAPP_BUSINESS_ACCOUNT_ID)
+  @JsonProperty(value = JSON_PROPERTY_WHATSAPP_BUSINESS_ACCOUNT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getWhatsappBusinessAccountId() {
@@ -196,7 +196,7 @@ public class GetWhatsAppConfig {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_WHATSAPP_BUSINESS_ACCOUNT_ID)
+  @JsonProperty(value = JSON_PROPERTY_WHATSAPP_BUSINESS_ACCOUNT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setWhatsappBusinessAccountId(@jakarta.annotation.Nullable String whatsappBusinessAccountId) {
     this.whatsappBusinessAccountId = whatsappBusinessAccountId;
@@ -213,7 +213,7 @@ public class GetWhatsAppConfig {
    * @return sendingLimit
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SENDING_LIMIT)
+  @JsonProperty(value = JSON_PROPERTY_SENDING_LIMIT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getSendingLimit() {
@@ -221,7 +221,7 @@ public class GetWhatsAppConfig {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SENDING_LIMIT)
+  @JsonProperty(value = JSON_PROPERTY_SENDING_LIMIT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSendingLimit(@jakarta.annotation.Nullable String sendingLimit) {
     this.sendingLimit = sendingLimit;
@@ -238,7 +238,7 @@ public class GetWhatsAppConfig {
    * @return phoneNumberQuality
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PHONE_NUMBER_QUALITY)
+  @JsonProperty(value = JSON_PROPERTY_PHONE_NUMBER_QUALITY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public PhoneNumberQualityEnum getPhoneNumberQuality() {
@@ -246,7 +246,7 @@ public class GetWhatsAppConfig {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PHONE_NUMBER_QUALITY)
+  @JsonProperty(value = JSON_PROPERTY_PHONE_NUMBER_QUALITY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPhoneNumberQuality(@jakarta.annotation.Nullable PhoneNumberQualityEnum phoneNumberQuality) {
     this.phoneNumberQuality = phoneNumberQuality;
@@ -263,7 +263,7 @@ public class GetWhatsAppConfig {
    * @return whatsappBusinessAccountStatus
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_WHATSAPP_BUSINESS_ACCOUNT_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_WHATSAPP_BUSINESS_ACCOUNT_STATUS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public WhatsappBusinessAccountStatusEnum getWhatsappBusinessAccountStatus() {
@@ -271,7 +271,7 @@ public class GetWhatsAppConfig {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_WHATSAPP_BUSINESS_ACCOUNT_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_WHATSAPP_BUSINESS_ACCOUNT_STATUS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setWhatsappBusinessAccountStatus(@jakarta.annotation.Nullable WhatsappBusinessAccountStatusEnum whatsappBusinessAccountStatus) {
     this.whatsappBusinessAccountStatus = whatsappBusinessAccountStatus;
@@ -288,7 +288,7 @@ public class GetWhatsAppConfig {
    * @return businessStatus
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_BUSINESS_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_BUSINESS_STATUS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getBusinessStatus() {
@@ -296,7 +296,7 @@ public class GetWhatsAppConfig {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BUSINESS_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_BUSINESS_STATUS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setBusinessStatus(@jakarta.annotation.Nullable String businessStatus) {
     this.businessStatus = businessStatus;
@@ -313,7 +313,7 @@ public class GetWhatsAppConfig {
    * @return phoneNumberNameStatus
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PHONE_NUMBER_NAME_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_PHONE_NUMBER_NAME_STATUS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public PhoneNumberNameStatusEnum getPhoneNumberNameStatus() {
@@ -321,11 +321,12 @@ public class GetWhatsAppConfig {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PHONE_NUMBER_NAME_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_PHONE_NUMBER_NAME_STATUS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPhoneNumberNameStatus(@jakarta.annotation.Nullable PhoneNumberNameStatusEnum phoneNumberNameStatus) {
     this.phoneNumberNameStatus = phoneNumberNameStatus;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -368,10 +369,7 @@ public class GetWhatsAppConfig {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -409,7 +407,7 @@ public class GetWhatsAppConfig {
     // add `whatsappBusinessAccountId` to the URL query string
     if (getWhatsappBusinessAccountId() != null) {
       try {
-        joiner.add(String.format("%swhatsappBusinessAccountId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWhatsappBusinessAccountId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%swhatsappBusinessAccountId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWhatsappBusinessAccountId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -419,7 +417,7 @@ public class GetWhatsAppConfig {
     // add `sendingLimit` to the URL query string
     if (getSendingLimit() != null) {
       try {
-        joiner.add(String.format("%ssendingLimit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSendingLimit()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssendingLimit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSendingLimit()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -429,7 +427,7 @@ public class GetWhatsAppConfig {
     // add `phoneNumberQuality` to the URL query string
     if (getPhoneNumberQuality() != null) {
       try {
-        joiner.add(String.format("%sphoneNumberQuality%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPhoneNumberQuality()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sphoneNumberQuality%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPhoneNumberQuality()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -439,7 +437,7 @@ public class GetWhatsAppConfig {
     // add `whatsappBusinessAccountStatus` to the URL query string
     if (getWhatsappBusinessAccountStatus() != null) {
       try {
-        joiner.add(String.format("%swhatsappBusinessAccountStatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWhatsappBusinessAccountStatus()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%swhatsappBusinessAccountStatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWhatsappBusinessAccountStatus()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -449,7 +447,7 @@ public class GetWhatsAppConfig {
     // add `businessStatus` to the URL query string
     if (getBusinessStatus() != null) {
       try {
-        joiner.add(String.format("%sbusinessStatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBusinessStatus()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sbusinessStatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBusinessStatus()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -459,7 +457,7 @@ public class GetWhatsAppConfig {
     // add `phoneNumberNameStatus` to the URL query string
     if (getPhoneNumberNameStatus() != null) {
       try {
-        joiner.add(String.format("%sphoneNumberNameStatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPhoneNumberNameStatus()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sphoneNumberNameStatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPhoneNumberNameStatus()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

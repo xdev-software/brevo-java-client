@@ -62,7 +62,7 @@ public class CreateSubscriptionPayload {
    * @return contactId
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CONTACT_ID)
+  @JsonProperty(value = JSON_PROPERTY_CONTACT_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Integer getContactId() {
@@ -70,7 +70,7 @@ public class CreateSubscriptionPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONTACT_ID)
+  @JsonProperty(value = JSON_PROPERTY_CONTACT_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setContactId(@jakarta.annotation.Nonnull Integer contactId) {
     this.contactId = contactId;
@@ -87,7 +87,7 @@ public class CreateSubscriptionPayload {
    * @return creationDate
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CREATION_DATE)
+  @JsonProperty(value = JSON_PROPERTY_CREATION_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getCreationDate() {
@@ -95,7 +95,7 @@ public class CreateSubscriptionPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CREATION_DATE)
+  @JsonProperty(value = JSON_PROPERTY_CREATION_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCreationDate(@jakarta.annotation.Nullable String creationDate) {
     this.creationDate = creationDate;
@@ -112,7 +112,7 @@ public class CreateSubscriptionPayload {
    * @return loyaltySubscriptionId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LOYALTY_SUBSCRIPTION_ID)
+  @JsonProperty(value = JSON_PROPERTY_LOYALTY_SUBSCRIPTION_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getLoyaltySubscriptionId() {
@@ -120,11 +120,12 @@ public class CreateSubscriptionPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LOYALTY_SUBSCRIPTION_ID)
+  @JsonProperty(value = JSON_PROPERTY_LOYALTY_SUBSCRIPTION_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLoyaltySubscriptionId(@jakarta.annotation.Nullable String loyaltySubscriptionId) {
     this.loyaltySubscriptionId = loyaltySubscriptionId;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -161,10 +162,7 @@ public class CreateSubscriptionPayload {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -202,7 +200,7 @@ public class CreateSubscriptionPayload {
     // add `contactId` to the URL query string
     if (getContactId() != null) {
       try {
-        joiner.add(String.format("%scontactId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContactId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scontactId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContactId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -212,7 +210,7 @@ public class CreateSubscriptionPayload {
     // add `creationDate` to the URL query string
     if (getCreationDate() != null) {
       try {
-        joiner.add(String.format("%screationDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreationDate()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%screationDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreationDate()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -222,7 +220,7 @@ public class CreateSubscriptionPayload {
     // add `loyaltySubscriptionId` to the URL query string
     if (getLoyaltySubscriptionId() != null) {
       try {
-        joiner.add(String.format("%sloyaltySubscriptionId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLoyaltySubscriptionId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sloyaltySubscriptionId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLoyaltySubscriptionId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

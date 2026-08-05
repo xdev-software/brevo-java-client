@@ -12,7 +12,7 @@
 
 package software.xdev.brevo.api;
 
-import com.fasterxml.jackson.core.type.TypeReference;
+import tools.jackson.core.type.TypeReference;
 
 import software.xdev.brevo.client.ApiException;
 import software.xdev.brevo.client.ApiClient;

@@ -75,7 +75,7 @@ public class SubscriptionMember {
    * @return createdAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getCreatedAt() {
@@ -83,7 +83,7 @@ public class SubscriptionMember {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCreatedAt(@jakarta.annotation.Nullable String createdAt) {
     this.createdAt = createdAt;
@@ -108,7 +108,7 @@ public class SubscriptionMember {
    * @return memberContactIds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_MEMBER_CONTACT_IDS)
+  @JsonProperty(value = JSON_PROPERTY_MEMBER_CONTACT_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<Integer> getMemberContactIds() {
@@ -116,7 +116,7 @@ public class SubscriptionMember {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MEMBER_CONTACT_IDS)
+  @JsonProperty(value = JSON_PROPERTY_MEMBER_CONTACT_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setMemberContactIds(@jakarta.annotation.Nullable List<Integer> memberContactIds) {
     this.memberContactIds = memberContactIds;
@@ -133,7 +133,7 @@ public class SubscriptionMember {
    * @return organizationId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ORGANIZATION_ID)
+  @JsonProperty(value = JSON_PROPERTY_ORGANIZATION_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getOrganizationId() {
@@ -141,7 +141,7 @@ public class SubscriptionMember {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ORGANIZATION_ID)
+  @JsonProperty(value = JSON_PROPERTY_ORGANIZATION_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setOrganizationId(@jakarta.annotation.Nullable Integer organizationId) {
     this.organizationId = organizationId;
@@ -158,7 +158,7 @@ public class SubscriptionMember {
    * @return ownerContactId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_OWNER_CONTACT_ID)
+  @JsonProperty(value = JSON_PROPERTY_OWNER_CONTACT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getOwnerContactId() {
@@ -166,7 +166,7 @@ public class SubscriptionMember {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_OWNER_CONTACT_ID)
+  @JsonProperty(value = JSON_PROPERTY_OWNER_CONTACT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setOwnerContactId(@jakarta.annotation.Nullable Integer ownerContactId) {
     this.ownerContactId = ownerContactId;
@@ -183,7 +183,7 @@ public class SubscriptionMember {
    * @return updatedAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UPDATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_UPDATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getUpdatedAt() {
@@ -191,11 +191,12 @@ public class SubscriptionMember {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UPDATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_UPDATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUpdatedAt(@jakarta.annotation.Nullable String updatedAt) {
     this.updatedAt = updatedAt;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -236,10 +237,7 @@ public class SubscriptionMember {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -277,7 +275,7 @@ public class SubscriptionMember {
     // add `createdAt` to the URL query string
     if (getCreatedAt() != null) {
       try {
-        joiner.add(String.format("%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -288,8 +286,8 @@ public class SubscriptionMember {
     if (getMemberContactIds() != null) {
       for (int i = 0; i < getMemberContactIds().size(); i++) {
         try {
-          joiner.add(String.format("%smemberContactIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%smemberContactIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getMemberContactIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -301,7 +299,7 @@ public class SubscriptionMember {
     // add `organizationId` to the URL query string
     if (getOrganizationId() != null) {
       try {
-        joiner.add(String.format("%sorganizationId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrganizationId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sorganizationId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrganizationId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -311,7 +309,7 @@ public class SubscriptionMember {
     // add `ownerContactId` to the URL query string
     if (getOwnerContactId() != null) {
       try {
-        joiner.add(String.format("%sownerContactId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOwnerContactId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sownerContactId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOwnerContactId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -321,7 +319,7 @@ public class SubscriptionMember {
     // add `updatedAt` to the URL query string
     if (getUpdatedAt() != null) {
       try {
-        joiner.add(String.format("%supdatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUpdatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%supdatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUpdatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

@@ -137,7 +137,7 @@ public class GetCampaignStats {
    * @return listId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LIST_ID)
+  @JsonProperty(value = JSON_PROPERTY_LIST_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getListId() {
@@ -145,7 +145,7 @@ public class GetCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LIST_ID)
+  @JsonProperty(value = JSON_PROPERTY_LIST_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setListId(@jakarta.annotation.Nullable Long listId) {
     this.listId = listId;
@@ -162,7 +162,7 @@ public class GetCampaignStats {
    * @return uniqueClicks
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_UNIQUE_CLICKS)
+  @JsonProperty(value = JSON_PROPERTY_UNIQUE_CLICKS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getUniqueClicks() {
@@ -170,7 +170,7 @@ public class GetCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UNIQUE_CLICKS)
+  @JsonProperty(value = JSON_PROPERTY_UNIQUE_CLICKS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setUniqueClicks(@jakarta.annotation.Nonnull Long uniqueClicks) {
     this.uniqueClicks = uniqueClicks;
@@ -187,7 +187,7 @@ public class GetCampaignStats {
    * @return clickers
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CLICKERS)
+  @JsonProperty(value = JSON_PROPERTY_CLICKERS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getClickers() {
@@ -195,7 +195,7 @@ public class GetCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CLICKERS)
+  @JsonProperty(value = JSON_PROPERTY_CLICKERS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setClickers(@jakarta.annotation.Nonnull Long clickers) {
     this.clickers = clickers;
@@ -212,7 +212,7 @@ public class GetCampaignStats {
    * @return complaints
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_COMPLAINTS)
+  @JsonProperty(value = JSON_PROPERTY_COMPLAINTS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getComplaints() {
@@ -220,7 +220,7 @@ public class GetCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_COMPLAINTS)
+  @JsonProperty(value = JSON_PROPERTY_COMPLAINTS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setComplaints(@jakarta.annotation.Nonnull Long complaints) {
     this.complaints = complaints;
@@ -237,7 +237,7 @@ public class GetCampaignStats {
    * @return delivered
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DELIVERED)
+  @JsonProperty(value = JSON_PROPERTY_DELIVERED, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getDelivered() {
@@ -245,7 +245,7 @@ public class GetCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DELIVERED)
+  @JsonProperty(value = JSON_PROPERTY_DELIVERED, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDelivered(@jakarta.annotation.Nonnull Long delivered) {
     this.delivered = delivered;
@@ -262,7 +262,7 @@ public class GetCampaignStats {
    * @return sent
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SENT)
+  @JsonProperty(value = JSON_PROPERTY_SENT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getSent() {
@@ -270,7 +270,7 @@ public class GetCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SENT)
+  @JsonProperty(value = JSON_PROPERTY_SENT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSent(@jakarta.annotation.Nonnull Long sent) {
     this.sent = sent;
@@ -287,7 +287,7 @@ public class GetCampaignStats {
    * @return softBounces
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SOFT_BOUNCES)
+  @JsonProperty(value = JSON_PROPERTY_SOFT_BOUNCES, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getSoftBounces() {
@@ -295,7 +295,7 @@ public class GetCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SOFT_BOUNCES)
+  @JsonProperty(value = JSON_PROPERTY_SOFT_BOUNCES, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSoftBounces(@jakarta.annotation.Nonnull Long softBounces) {
     this.softBounces = softBounces;
@@ -312,7 +312,7 @@ public class GetCampaignStats {
    * @return hardBounces
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_HARD_BOUNCES)
+  @JsonProperty(value = JSON_PROPERTY_HARD_BOUNCES, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getHardBounces() {
@@ -320,7 +320,7 @@ public class GetCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_HARD_BOUNCES)
+  @JsonProperty(value = JSON_PROPERTY_HARD_BOUNCES, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setHardBounces(@jakarta.annotation.Nonnull Long hardBounces) {
     this.hardBounces = hardBounces;
@@ -337,7 +337,7 @@ public class GetCampaignStats {
    * @return uniqueViews
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_UNIQUE_VIEWS)
+  @JsonProperty(value = JSON_PROPERTY_UNIQUE_VIEWS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getUniqueViews() {
@@ -345,7 +345,7 @@ public class GetCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UNIQUE_VIEWS)
+  @JsonProperty(value = JSON_PROPERTY_UNIQUE_VIEWS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setUniqueViews(@jakarta.annotation.Nonnull Long uniqueViews) {
     this.uniqueViews = uniqueViews;
@@ -362,7 +362,7 @@ public class GetCampaignStats {
    * @return trackableViews
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TRACKABLE_VIEWS)
+  @JsonProperty(value = JSON_PROPERTY_TRACKABLE_VIEWS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getTrackableViews() {
@@ -370,7 +370,7 @@ public class GetCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TRACKABLE_VIEWS)
+  @JsonProperty(value = JSON_PROPERTY_TRACKABLE_VIEWS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setTrackableViews(@jakarta.annotation.Nonnull Long trackableViews) {
     this.trackableViews = trackableViews;
@@ -387,7 +387,7 @@ public class GetCampaignStats {
    * @return trackableViewsRate
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TRACKABLE_VIEWS_RATE)
+  @JsonProperty(value = JSON_PROPERTY_TRACKABLE_VIEWS_RATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Float getTrackableViewsRate() {
@@ -395,7 +395,7 @@ public class GetCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TRACKABLE_VIEWS_RATE)
+  @JsonProperty(value = JSON_PROPERTY_TRACKABLE_VIEWS_RATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setTrackableViewsRate(@jakarta.annotation.Nullable Float trackableViewsRate) {
     this.trackableViewsRate = trackableViewsRate;
@@ -412,7 +412,7 @@ public class GetCampaignStats {
    * @return estimatedViews
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ESTIMATED_VIEWS)
+  @JsonProperty(value = JSON_PROPERTY_ESTIMATED_VIEWS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getEstimatedViews() {
@@ -420,7 +420,7 @@ public class GetCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ESTIMATED_VIEWS)
+  @JsonProperty(value = JSON_PROPERTY_ESTIMATED_VIEWS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setEstimatedViews(@jakarta.annotation.Nullable Long estimatedViews) {
     this.estimatedViews = estimatedViews;
@@ -437,7 +437,7 @@ public class GetCampaignStats {
    * @return unsubscriptions
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_UNSUBSCRIPTIONS)
+  @JsonProperty(value = JSON_PROPERTY_UNSUBSCRIPTIONS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getUnsubscriptions() {
@@ -445,7 +445,7 @@ public class GetCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UNSUBSCRIPTIONS)
+  @JsonProperty(value = JSON_PROPERTY_UNSUBSCRIPTIONS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setUnsubscriptions(@jakarta.annotation.Nonnull Long unsubscriptions) {
     this.unsubscriptions = unsubscriptions;
@@ -462,7 +462,7 @@ public class GetCampaignStats {
    * @return viewed
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_VIEWED)
+  @JsonProperty(value = JSON_PROPERTY_VIEWED, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getViewed() {
@@ -470,7 +470,7 @@ public class GetCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_VIEWED)
+  @JsonProperty(value = JSON_PROPERTY_VIEWED, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setViewed(@jakarta.annotation.Nonnull Long viewed) {
     this.viewed = viewed;
@@ -487,7 +487,7 @@ public class GetCampaignStats {
    * @return deferred
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DEFERRED)
+  @JsonProperty(value = JSON_PROPERTY_DEFERRED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getDeferred() {
@@ -495,7 +495,7 @@ public class GetCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DEFERRED)
+  @JsonProperty(value = JSON_PROPERTY_DEFERRED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDeferred(@jakarta.annotation.Nullable Long deferred) {
     this.deferred = deferred;
@@ -512,7 +512,7 @@ public class GetCampaignStats {
    * @return returnBounce
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_RETURN_BOUNCE)
+  @JsonProperty(value = JSON_PROPERTY_RETURN_BOUNCE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getReturnBounce() {
@@ -520,7 +520,7 @@ public class GetCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_RETURN_BOUNCE)
+  @JsonProperty(value = JSON_PROPERTY_RETURN_BOUNCE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setReturnBounce(@jakarta.annotation.Nullable Long returnBounce) {
     this.returnBounce = returnBounce;
@@ -537,7 +537,7 @@ public class GetCampaignStats {
    * @return opensRate
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_OPENS_RATE)
+  @JsonProperty(value = JSON_PROPERTY_OPENS_RATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Float getOpensRate() {
@@ -545,7 +545,7 @@ public class GetCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_OPENS_RATE)
+  @JsonProperty(value = JSON_PROPERTY_OPENS_RATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setOpensRate(@jakarta.annotation.Nullable Float opensRate) {
     this.opensRate = opensRate;
@@ -562,7 +562,7 @@ public class GetCampaignStats {
    * @return appleMppOpens
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_APPLE_MPP_OPENS)
+  @JsonProperty(value = JSON_PROPERTY_APPLE_MPP_OPENS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getAppleMppOpens() {
@@ -570,11 +570,12 @@ public class GetCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_APPLE_MPP_OPENS)
+  @JsonProperty(value = JSON_PROPERTY_APPLE_MPP_OPENS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setAppleMppOpens(@jakarta.annotation.Nullable Long appleMppOpens) {
     this.appleMppOpens = appleMppOpens;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -641,10 +642,7 @@ public class GetCampaignStats {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -682,7 +680,7 @@ public class GetCampaignStats {
     // add `listId` to the URL query string
     if (getListId() != null) {
       try {
-        joiner.add(String.format("%slistId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getListId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%slistId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getListId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -692,7 +690,7 @@ public class GetCampaignStats {
     // add `uniqueClicks` to the URL query string
     if (getUniqueClicks() != null) {
       try {
-        joiner.add(String.format("%suniqueClicks%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUniqueClicks()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%suniqueClicks%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUniqueClicks()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -702,7 +700,7 @@ public class GetCampaignStats {
     // add `clickers` to the URL query string
     if (getClickers() != null) {
       try {
-        joiner.add(String.format("%sclickers%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getClickers()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sclickers%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getClickers()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -712,7 +710,7 @@ public class GetCampaignStats {
     // add `complaints` to the URL query string
     if (getComplaints() != null) {
       try {
-        joiner.add(String.format("%scomplaints%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getComplaints()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scomplaints%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getComplaints()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -722,7 +720,7 @@ public class GetCampaignStats {
     // add `delivered` to the URL query string
     if (getDelivered() != null) {
       try {
-        joiner.add(String.format("%sdelivered%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDelivered()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdelivered%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDelivered()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -732,7 +730,7 @@ public class GetCampaignStats {
     // add `sent` to the URL query string
     if (getSent() != null) {
       try {
-        joiner.add(String.format("%ssent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSent()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSent()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -742,7 +740,7 @@ public class GetCampaignStats {
     // add `softBounces` to the URL query string
     if (getSoftBounces() != null) {
       try {
-        joiner.add(String.format("%ssoftBounces%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSoftBounces()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssoftBounces%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSoftBounces()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -752,7 +750,7 @@ public class GetCampaignStats {
     // add `hardBounces` to the URL query string
     if (getHardBounces() != null) {
       try {
-        joiner.add(String.format("%shardBounces%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHardBounces()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%shardBounces%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHardBounces()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -762,7 +760,7 @@ public class GetCampaignStats {
     // add `uniqueViews` to the URL query string
     if (getUniqueViews() != null) {
       try {
-        joiner.add(String.format("%suniqueViews%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUniqueViews()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%suniqueViews%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUniqueViews()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -772,7 +770,7 @@ public class GetCampaignStats {
     // add `trackableViews` to the URL query string
     if (getTrackableViews() != null) {
       try {
-        joiner.add(String.format("%strackableViews%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTrackableViews()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%strackableViews%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTrackableViews()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -782,7 +780,7 @@ public class GetCampaignStats {
     // add `trackableViewsRate` to the URL query string
     if (getTrackableViewsRate() != null) {
       try {
-        joiner.add(String.format("%strackableViewsRate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTrackableViewsRate()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%strackableViewsRate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTrackableViewsRate()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -792,7 +790,7 @@ public class GetCampaignStats {
     // add `estimatedViews` to the URL query string
     if (getEstimatedViews() != null) {
       try {
-        joiner.add(String.format("%sestimatedViews%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEstimatedViews()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sestimatedViews%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEstimatedViews()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -802,7 +800,7 @@ public class GetCampaignStats {
     // add `unsubscriptions` to the URL query string
     if (getUnsubscriptions() != null) {
       try {
-        joiner.add(String.format("%sunsubscriptions%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUnsubscriptions()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sunsubscriptions%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUnsubscriptions()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -812,7 +810,7 @@ public class GetCampaignStats {
     // add `viewed` to the URL query string
     if (getViewed() != null) {
       try {
-        joiner.add(String.format("%sviewed%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getViewed()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sviewed%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getViewed()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -822,7 +820,7 @@ public class GetCampaignStats {
     // add `deferred` to the URL query string
     if (getDeferred() != null) {
       try {
-        joiner.add(String.format("%sdeferred%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDeferred()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdeferred%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDeferred()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -832,7 +830,7 @@ public class GetCampaignStats {
     // add `returnBounce` to the URL query string
     if (getReturnBounce() != null) {
       try {
-        joiner.add(String.format("%sreturnBounce%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReturnBounce()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sreturnBounce%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReturnBounce()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -842,7 +840,7 @@ public class GetCampaignStats {
     // add `opensRate` to the URL query string
     if (getOpensRate() != null) {
       try {
-        joiner.add(String.format("%sopensRate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOpensRate()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sopensRate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOpensRate()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -852,7 +850,7 @@ public class GetCampaignStats {
     // add `appleMppOpens` to the URL query string
     if (getAppleMppOpens() != null) {
       try {
-        joiner.add(String.format("%sappleMppOpens%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAppleMppOpens()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sappleMppOpens%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAppleMppOpens()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

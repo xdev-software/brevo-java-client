@@ -18,7 +18,6 @@ import java.util.Arrays;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -51,7 +50,7 @@ public class FileDownloadableLink {
    * @return fileUrl
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_FILE_URL)
+  @JsonProperty(value = JSON_PROPERTY_FILE_URL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getFileUrl() {
@@ -59,11 +58,12 @@ public class FileDownloadableLink {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_FILE_URL)
+  @JsonProperty(value = JSON_PROPERTY_FILE_URL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setFileUrl(@jakarta.annotation.Nullable String fileUrl) {
     this.fileUrl = fileUrl;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -96,10 +96,7 @@ public class FileDownloadableLink {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -137,7 +134,7 @@ public class FileDownloadableLink {
     // add `fileUrl` to the URL query string
     if (getFileUrl() != null) {
       try {
-        joiner.add(String.format("%sfileUrl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFileUrl()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sfileUrl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFileUrl()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

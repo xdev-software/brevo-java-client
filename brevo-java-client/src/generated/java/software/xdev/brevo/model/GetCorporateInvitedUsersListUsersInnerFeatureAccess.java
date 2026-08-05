@@ -103,7 +103,7 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
    * @return userManagement
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_USER_MANAGEMENT)
+  @JsonProperty(value = JSON_PROPERTY_USER_MANAGEMENT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getUserManagement() {
@@ -111,7 +111,7 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_USER_MANAGEMENT)
+  @JsonProperty(value = JSON_PROPERTY_USER_MANAGEMENT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUserManagement(@jakarta.annotation.Nullable List<String> userManagement) {
     this.userManagement = userManagement;
@@ -136,7 +136,7 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
    * @return apiKeys
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_API_KEYS)
+  @JsonProperty(value = JSON_PROPERTY_API_KEYS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getApiKeys() {
@@ -144,7 +144,7 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_API_KEYS)
+  @JsonProperty(value = JSON_PROPERTY_API_KEYS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setApiKeys(@jakarta.annotation.Nullable List<String> apiKeys) {
     this.apiKeys = apiKeys;
@@ -169,7 +169,7 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
    * @return myPlan
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_MY_PLAN)
+  @JsonProperty(value = JSON_PROPERTY_MY_PLAN, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getMyPlan() {
@@ -177,7 +177,7 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MY_PLAN)
+  @JsonProperty(value = JSON_PROPERTY_MY_PLAN, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setMyPlan(@jakarta.annotation.Nullable List<String> myPlan) {
     this.myPlan = myPlan;
@@ -202,7 +202,7 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
    * @return appsManagement
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_APPS_MANAGEMENT)
+  @JsonProperty(value = JSON_PROPERTY_APPS_MANAGEMENT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getAppsManagement() {
@@ -210,7 +210,7 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_APPS_MANAGEMENT)
+  @JsonProperty(value = JSON_PROPERTY_APPS_MANAGEMENT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setAppsManagement(@jakarta.annotation.Nullable List<String> appsManagement) {
     this.appsManagement = appsManagement;
@@ -235,7 +235,7 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
    * @return subOrganizationGroups
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SUB_ORGANIZATION_GROUPS)
+  @JsonProperty(value = JSON_PROPERTY_SUB_ORGANIZATION_GROUPS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getSubOrganizationGroups() {
@@ -243,7 +243,7 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SUB_ORGANIZATION_GROUPS)
+  @JsonProperty(value = JSON_PROPERTY_SUB_ORGANIZATION_GROUPS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSubOrganizationGroups(@jakarta.annotation.Nullable List<String> subOrganizationGroups) {
     this.subOrganizationGroups = subOrganizationGroups;
@@ -268,7 +268,7 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
    * @return createSubOrganizations
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CREATE_SUB_ORGANIZATIONS)
+  @JsonProperty(value = JSON_PROPERTY_CREATE_SUB_ORGANIZATIONS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getCreateSubOrganizations() {
@@ -276,7 +276,7 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CREATE_SUB_ORGANIZATIONS)
+  @JsonProperty(value = JSON_PROPERTY_CREATE_SUB_ORGANIZATIONS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCreateSubOrganizations(@jakarta.annotation.Nullable List<String> createSubOrganizations) {
     this.createSubOrganizations = createSubOrganizations;
@@ -301,7 +301,7 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
    * @return manageSubOrganizations
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_MANAGE_SUB_ORGANIZATIONS)
+  @JsonProperty(value = JSON_PROPERTY_MANAGE_SUB_ORGANIZATIONS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getManageSubOrganizations() {
@@ -309,7 +309,7 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MANAGE_SUB_ORGANIZATIONS)
+  @JsonProperty(value = JSON_PROPERTY_MANAGE_SUB_ORGANIZATIONS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setManageSubOrganizations(@jakarta.annotation.Nullable List<String> manageSubOrganizations) {
     this.manageSubOrganizations = manageSubOrganizations;
@@ -334,7 +334,7 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
    * @return analytics
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ANALYTICS)
+  @JsonProperty(value = JSON_PROPERTY_ANALYTICS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getAnalytics() {
@@ -342,7 +342,7 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ANALYTICS)
+  @JsonProperty(value = JSON_PROPERTY_ANALYTICS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setAnalytics(@jakarta.annotation.Nullable List<String> analytics) {
     this.analytics = analytics;
@@ -367,7 +367,7 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
    * @return security
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SECURITY)
+  @JsonProperty(value = JSON_PROPERTY_SECURITY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getSecurity() {
@@ -375,11 +375,12 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SECURITY)
+  @JsonProperty(value = JSON_PROPERTY_SECURITY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSecurity(@jakarta.annotation.Nullable List<String> security) {
     this.security = security;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -428,10 +429,7 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -470,8 +468,8 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
     if (getUserManagement() != null) {
       for (int i = 0; i < getUserManagement().size(); i++) {
         try {
-          joiner.add(String.format("%suser_management%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%suser_management%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getUserManagement().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -484,8 +482,8 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
     if (getApiKeys() != null) {
       for (int i = 0; i < getApiKeys().size(); i++) {
         try {
-          joiner.add(String.format("%sapi_keys%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sapi_keys%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getApiKeys().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -498,8 +496,8 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
     if (getMyPlan() != null) {
       for (int i = 0; i < getMyPlan().size(); i++) {
         try {
-          joiner.add(String.format("%smy_plan%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%smy_plan%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getMyPlan().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -512,8 +510,8 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
     if (getAppsManagement() != null) {
       for (int i = 0; i < getAppsManagement().size(); i++) {
         try {
-          joiner.add(String.format("%sapps_management%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sapps_management%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getAppsManagement().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -526,8 +524,8 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
     if (getSubOrganizationGroups() != null) {
       for (int i = 0; i < getSubOrganizationGroups().size(); i++) {
         try {
-          joiner.add(String.format("%ssub_organization_groups%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%ssub_organization_groups%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getSubOrganizationGroups().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -540,8 +538,8 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
     if (getCreateSubOrganizations() != null) {
       for (int i = 0; i < getCreateSubOrganizations().size(); i++) {
         try {
-          joiner.add(String.format("%screate_sub_organizations%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%screate_sub_organizations%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getCreateSubOrganizations().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -554,8 +552,8 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
     if (getManageSubOrganizations() != null) {
       for (int i = 0; i < getManageSubOrganizations().size(); i++) {
         try {
-          joiner.add(String.format("%smanage_sub_organizations%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%smanage_sub_organizations%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getManageSubOrganizations().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -568,8 +566,8 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
     if (getAnalytics() != null) {
       for (int i = 0; i < getAnalytics().size(); i++) {
         try {
-          joiner.add(String.format("%sanalytics%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sanalytics%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getAnalytics().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -582,8 +580,8 @@ public class GetCorporateInvitedUsersListUsersInnerFeatureAccess {
     if (getSecurity() != null) {
       for (int i = 0; i < getSecurity().size(); i++) {
         try {
-          joiner.add(String.format("%ssecurity%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%ssecurity%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getSecurity().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported

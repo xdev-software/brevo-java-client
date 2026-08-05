@@ -57,7 +57,7 @@ public class GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsAdminUnsubsc
    * @return eventTime
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_EVENT_TIME)
+  @JsonProperty(value = JSON_PROPERTY_EVENT_TIME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getEventTime() {
@@ -65,7 +65,7 @@ public class GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsAdminUnsubsc
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EVENT_TIME)
+  @JsonProperty(value = JSON_PROPERTY_EVENT_TIME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setEventTime(@jakarta.annotation.Nonnull String eventTime) {
     this.eventTime = eventTime;
@@ -82,7 +82,7 @@ public class GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsAdminUnsubsc
    * @return ip
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_IP)
+  @JsonProperty(value = JSON_PROPERTY_IP, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getIp() {
@@ -90,11 +90,12 @@ public class GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsAdminUnsubsc
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IP)
+  @JsonProperty(value = JSON_PROPERTY_IP, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setIp(@jakarta.annotation.Nullable String ip) {
     this.ip = ip;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -129,10 +130,7 @@ public class GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsAdminUnsubsc
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -170,7 +168,7 @@ public class GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsAdminUnsubsc
     // add `eventTime` to the URL query string
     if (getEventTime() != null) {
       try {
-        joiner.add(String.format("%seventTime%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEventTime()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%seventTime%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEventTime()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -180,7 +178,7 @@ public class GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsAdminUnsubsc
     // add `ip` to the URL query string
     if (getIp() != null) {
       try {
-        joiner.add(String.format("%sip%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIp()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sip%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIp()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

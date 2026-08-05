@@ -64,7 +64,7 @@ public class MainVoucherRevokePayload {
    * @return attributedRewardIds
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ATTRIBUTED_REWARD_IDS)
+  @JsonProperty(value = JSON_PROPERTY_ATTRIBUTED_REWARD_IDS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public List<UUID> getAttributedRewardIds() {
@@ -72,11 +72,12 @@ public class MainVoucherRevokePayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ATTRIBUTED_REWARD_IDS)
+  @JsonProperty(value = JSON_PROPERTY_ATTRIBUTED_REWARD_IDS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAttributedRewardIds(@jakarta.annotation.Nonnull List<UUID> attributedRewardIds) {
     this.attributedRewardIds = attributedRewardIds;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -109,10 +110,7 @@ public class MainVoucherRevokePayload {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -152,8 +150,8 @@ public class MainVoucherRevokePayload {
       for (int i = 0; i < getAttributedRewardIds().size(); i++) {
         if (getAttributedRewardIds().get(i) != null) {
           try {
-            joiner.add(String.format("%sattributedRewardIds%s%s=%s", prefix, suffix,
-                "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+            joiner.add(String.format(java.util.Locale.ROOT, "%sattributedRewardIds%s%s=%s", prefix, suffix,
+                "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
                 URLEncoder.encode(String.valueOf(getAttributedRewardIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
           } catch (UnsupportedEncodingException e) {
             // Should never happen, UTF-8 is always supported

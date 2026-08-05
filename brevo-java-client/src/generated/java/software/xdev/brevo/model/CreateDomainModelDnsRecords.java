@@ -63,7 +63,7 @@ public class CreateDomainModelDnsRecords {
    * @return dkimRecord
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DKIM_RECORD)
+  @JsonProperty(value = JSON_PROPERTY_DKIM_RECORD, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public CreateDomainModelDnsRecordsDkimRecord getDkimRecord() {
@@ -71,7 +71,7 @@ public class CreateDomainModelDnsRecords {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DKIM_RECORD)
+  @JsonProperty(value = JSON_PROPERTY_DKIM_RECORD, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDkimRecord(@jakarta.annotation.Nullable CreateDomainModelDnsRecordsDkimRecord dkimRecord) {
     this.dkimRecord = dkimRecord;
@@ -88,7 +88,7 @@ public class CreateDomainModelDnsRecords {
    * @return brevoCode
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_BREVO_CODE)
+  @JsonProperty(value = JSON_PROPERTY_BREVO_CODE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public CreateDomainModelDnsRecordsDkimRecord getBrevoCode() {
@@ -96,7 +96,7 @@ public class CreateDomainModelDnsRecords {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BREVO_CODE)
+  @JsonProperty(value = JSON_PROPERTY_BREVO_CODE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setBrevoCode(@jakarta.annotation.Nullable CreateDomainModelDnsRecordsDkimRecord brevoCode) {
     this.brevoCode = brevoCode;
@@ -113,7 +113,7 @@ public class CreateDomainModelDnsRecords {
    * @return dmarcRecord
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DMARC_RECORD)
+  @JsonProperty(value = JSON_PROPERTY_DMARC_RECORD, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public CreateDomainModelDnsRecordsDkimRecord getDmarcRecord() {
@@ -121,11 +121,12 @@ public class CreateDomainModelDnsRecords {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DMARC_RECORD)
+  @JsonProperty(value = JSON_PROPERTY_DMARC_RECORD, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDmarcRecord(@jakarta.annotation.Nullable CreateDomainModelDnsRecordsDkimRecord dmarcRecord) {
     this.dmarcRecord = dmarcRecord;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -162,10 +163,7 @@ public class CreateDomainModelDnsRecords {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**

@@ -52,7 +52,7 @@ public class RemoveContactFromListByAll {
    * @return all
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ALL)
+  @JsonProperty(value = JSON_PROPERTY_ALL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getAll() {
@@ -60,11 +60,12 @@ public class RemoveContactFromListByAll {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ALL)
+  @JsonProperty(value = JSON_PROPERTY_ALL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setAll(@jakarta.annotation.Nullable Boolean all) {
     this.all = all;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -97,10 +98,7 @@ public class RemoveContactFromListByAll {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -138,7 +136,7 @@ public class RemoveContactFromListByAll {
     // add `all` to the URL query string
     if (getAll() != null) {
       try {
-        joiner.add(String.format("%sall%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAll()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sall%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAll()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

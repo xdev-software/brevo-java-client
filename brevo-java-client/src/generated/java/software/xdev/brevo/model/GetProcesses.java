@@ -69,7 +69,7 @@ public class GetProcesses {
    * @return processes
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PROCESSES)
+  @JsonProperty(value = JSON_PROPERTY_PROCESSES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<GetProcess> getProcesses() {
@@ -77,7 +77,7 @@ public class GetProcesses {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PROCESSES)
+  @JsonProperty(value = JSON_PROPERTY_PROCESSES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setProcesses(@jakarta.annotation.Nullable List<GetProcess> processes) {
     this.processes = processes;
@@ -94,7 +94,7 @@ public class GetProcesses {
    * @return count
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_COUNT)
+  @JsonProperty(value = JSON_PROPERTY_COUNT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getCount() {
@@ -102,11 +102,12 @@ public class GetProcesses {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_COUNT)
+  @JsonProperty(value = JSON_PROPERTY_COUNT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCount(@jakarta.annotation.Nullable Long count) {
     this.count = count;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -141,10 +142,7 @@ public class GetProcesses {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -183,8 +181,8 @@ public class GetProcesses {
     if (getProcesses() != null) {
       for (int i = 0; i < getProcesses().size(); i++) {
         if (getProcesses().get(i) != null) {
-          joiner.add(getProcesses().get(i).toUrlQueryString(String.format("%sprocesses%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getProcesses().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sprocesses%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -192,7 +190,7 @@ public class GetProcesses {
     // add `count` to the URL query string
     if (getCount() != null) {
       try {
-        joiner.add(String.format("%scount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCount()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCount()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

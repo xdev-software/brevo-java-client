@@ -144,7 +144,7 @@ public class LoyaltyProgram {
    * @return codeCount
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CODE_COUNT)
+  @JsonProperty(value = JSON_PROPERTY_CODE_COUNT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getCodeCount() {
@@ -152,7 +152,7 @@ public class LoyaltyProgram {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CODE_COUNT)
+  @JsonProperty(value = JSON_PROPERTY_CODE_COUNT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCodeCount(@jakarta.annotation.Nullable Integer codeCount) {
     this.codeCount = codeCount;
@@ -169,7 +169,7 @@ public class LoyaltyProgram {
    * @return createdAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getCreatedAt() {
@@ -177,7 +177,7 @@ public class LoyaltyProgram {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCreatedAt(@jakarta.annotation.Nullable String createdAt) {
     this.createdAt = createdAt;
@@ -194,7 +194,7 @@ public class LoyaltyProgram {
    * @return description
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DESCRIPTION)
+  @JsonProperty(value = JSON_PROPERTY_DESCRIPTION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getDescription() {
@@ -202,7 +202,7 @@ public class LoyaltyProgram {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DESCRIPTION)
+  @JsonProperty(value = JSON_PROPERTY_DESCRIPTION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDescription(@jakarta.annotation.Nullable String description) {
     this.description = description;
@@ -219,7 +219,7 @@ public class LoyaltyProgram {
    * @return documentId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DOCUMENT_ID)
+  @JsonProperty(value = JSON_PROPERTY_DOCUMENT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getDocumentId() {
@@ -227,7 +227,7 @@ public class LoyaltyProgram {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DOCUMENT_ID)
+  @JsonProperty(value = JSON_PROPERTY_DOCUMENT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDocumentId(@jakarta.annotation.Nullable String documentId) {
     this.documentId = documentId;
@@ -244,7 +244,7 @@ public class LoyaltyProgram {
    * @return id
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getId() {
@@ -252,7 +252,7 @@ public class LoyaltyProgram {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setId(@jakarta.annotation.Nullable String id) {
     this.id = id;
@@ -277,7 +277,7 @@ public class LoyaltyProgram {
    * @return meta
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_META)
+  @JsonProperty(value = JSON_PROPERTY_META, required = false)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
 
   public Map<String, Object> getMeta() {
@@ -285,7 +285,7 @@ public class LoyaltyProgram {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_META)
+  @JsonProperty(value = JSON_PROPERTY_META, required = false)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
   public void setMeta(@jakarta.annotation.Nullable Map<String, Object> meta) {
     this.meta = meta;
@@ -302,7 +302,7 @@ public class LoyaltyProgram {
    * @return name
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getName() {
@@ -310,7 +310,7 @@ public class LoyaltyProgram {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setName(@jakarta.annotation.Nullable String name) {
     this.name = name;
@@ -327,7 +327,7 @@ public class LoyaltyProgram {
    * @return pattern
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PATTERN)
+  @JsonProperty(value = JSON_PROPERTY_PATTERN, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getPattern() {
@@ -335,7 +335,7 @@ public class LoyaltyProgram {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PATTERN)
+  @JsonProperty(value = JSON_PROPERTY_PATTERN, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPattern(@jakarta.annotation.Nullable String pattern) {
     this.pattern = pattern;
@@ -352,7 +352,7 @@ public class LoyaltyProgram {
    * @return state
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_STATE)
+  @JsonProperty(value = JSON_PROPERTY_STATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public StateEnum getState() {
@@ -360,7 +360,7 @@ public class LoyaltyProgram {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_STATE)
+  @JsonProperty(value = JSON_PROPERTY_STATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setState(@jakarta.annotation.Nullable StateEnum state) {
     this.state = state;
@@ -377,7 +377,7 @@ public class LoyaltyProgram {
    * @return subscriptionGeneratorId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SUBSCRIPTION_GENERATOR_ID)
+  @JsonProperty(value = JSON_PROPERTY_SUBSCRIPTION_GENERATOR_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getSubscriptionGeneratorId() {
@@ -385,7 +385,7 @@ public class LoyaltyProgram {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SUBSCRIPTION_GENERATOR_ID)
+  @JsonProperty(value = JSON_PROPERTY_SUBSCRIPTION_GENERATOR_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSubscriptionGeneratorId(@jakarta.annotation.Nullable String subscriptionGeneratorId) {
     this.subscriptionGeneratorId = subscriptionGeneratorId;
@@ -402,7 +402,7 @@ public class LoyaltyProgram {
    * @return subscriptionPoolId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SUBSCRIPTION_POOL_ID)
+  @JsonProperty(value = JSON_PROPERTY_SUBSCRIPTION_POOL_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getSubscriptionPoolId() {
@@ -410,7 +410,7 @@ public class LoyaltyProgram {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SUBSCRIPTION_POOL_ID)
+  @JsonProperty(value = JSON_PROPERTY_SUBSCRIPTION_POOL_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSubscriptionPoolId(@jakarta.annotation.Nullable String subscriptionPoolId) {
     this.subscriptionPoolId = subscriptionPoolId;
@@ -427,7 +427,7 @@ public class LoyaltyProgram {
    * @return updatedAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UPDATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_UPDATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getUpdatedAt() {
@@ -435,11 +435,12 @@ public class LoyaltyProgram {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UPDATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_UPDATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUpdatedAt(@jakarta.annotation.Nullable String updatedAt) {
     this.updatedAt = updatedAt;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -494,10 +495,7 @@ public class LoyaltyProgram {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -535,7 +533,7 @@ public class LoyaltyProgram {
     // add `codeCount` to the URL query string
     if (getCodeCount() != null) {
       try {
-        joiner.add(String.format("%scodeCount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCodeCount()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scodeCount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCodeCount()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -545,7 +543,7 @@ public class LoyaltyProgram {
     // add `createdAt` to the URL query string
     if (getCreatedAt() != null) {
       try {
-        joiner.add(String.format("%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -555,7 +553,7 @@ public class LoyaltyProgram {
     // add `description` to the URL query string
     if (getDescription() != null) {
       try {
-        joiner.add(String.format("%sdescription%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDescription()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdescription%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDescription()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -565,7 +563,7 @@ public class LoyaltyProgram {
     // add `documentId` to the URL query string
     if (getDocumentId() != null) {
       try {
-        joiner.add(String.format("%sdocumentId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDocumentId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdocumentId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDocumentId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -575,7 +573,7 @@ public class LoyaltyProgram {
     // add `id` to the URL query string
     if (getId() != null) {
       try {
-        joiner.add(String.format("%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -586,8 +584,8 @@ public class LoyaltyProgram {
     if (getMeta() != null) {
       for (String _key : getMeta().keySet()) {
         try {
-          joiner.add(String.format("%smeta%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%smeta%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, _key, containerSuffix),
               getMeta().get(_key), URLEncoder.encode(String.valueOf(getMeta().get(_key)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -599,7 +597,7 @@ public class LoyaltyProgram {
     // add `name` to the URL query string
     if (getName() != null) {
       try {
-        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -609,7 +607,7 @@ public class LoyaltyProgram {
     // add `pattern` to the URL query string
     if (getPattern() != null) {
       try {
-        joiner.add(String.format("%spattern%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPattern()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%spattern%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPattern()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -619,7 +617,7 @@ public class LoyaltyProgram {
     // add `state` to the URL query string
     if (getState() != null) {
       try {
-        joiner.add(String.format("%sstate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getState()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sstate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getState()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -629,7 +627,7 @@ public class LoyaltyProgram {
     // add `subscriptionGeneratorId` to the URL query string
     if (getSubscriptionGeneratorId() != null) {
       try {
-        joiner.add(String.format("%ssubscriptionGeneratorId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubscriptionGeneratorId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssubscriptionGeneratorId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubscriptionGeneratorId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -639,7 +637,7 @@ public class LoyaltyProgram {
     // add `subscriptionPoolId` to the URL query string
     if (getSubscriptionPoolId() != null) {
       try {
-        joiner.add(String.format("%ssubscriptionPoolId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubscriptionPoolId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssubscriptionPoolId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubscriptionPoolId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -649,7 +647,7 @@ public class LoyaltyProgram {
     // add `updatedAt` to the URL query string
     if (getUpdatedAt() != null) {
       try {
-        joiner.add(String.format("%supdatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUpdatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%supdatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUpdatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

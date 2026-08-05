@@ -107,7 +107,7 @@ public class GetExtendedContactDetailsAllOfStatistics {
    * @return messagesSent
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_MESSAGES_SENT)
+  @JsonProperty(value = JSON_PROPERTY_MESSAGES_SENT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> getMessagesSent() {
@@ -115,7 +115,7 @@ public class GetExtendedContactDetailsAllOfStatistics {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MESSAGES_SENT)
+  @JsonProperty(value = JSON_PROPERTY_MESSAGES_SENT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setMessagesSent(@jakarta.annotation.Nullable List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> messagesSent) {
     this.messagesSent = messagesSent;
@@ -140,7 +140,7 @@ public class GetExtendedContactDetailsAllOfStatistics {
    * @return hardBounces
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_HARD_BOUNCES)
+  @JsonProperty(value = JSON_PROPERTY_HARD_BOUNCES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> getHardBounces() {
@@ -148,7 +148,7 @@ public class GetExtendedContactDetailsAllOfStatistics {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_HARD_BOUNCES)
+  @JsonProperty(value = JSON_PROPERTY_HARD_BOUNCES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setHardBounces(@jakarta.annotation.Nullable List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> hardBounces) {
     this.hardBounces = hardBounces;
@@ -173,7 +173,7 @@ public class GetExtendedContactDetailsAllOfStatistics {
    * @return softBounces
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SOFT_BOUNCES)
+  @JsonProperty(value = JSON_PROPERTY_SOFT_BOUNCES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> getSoftBounces() {
@@ -181,7 +181,7 @@ public class GetExtendedContactDetailsAllOfStatistics {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SOFT_BOUNCES)
+  @JsonProperty(value = JSON_PROPERTY_SOFT_BOUNCES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSoftBounces(@jakarta.annotation.Nullable List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> softBounces) {
     this.softBounces = softBounces;
@@ -206,7 +206,7 @@ public class GetExtendedContactDetailsAllOfStatistics {
    * @return complaints
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_COMPLAINTS)
+  @JsonProperty(value = JSON_PROPERTY_COMPLAINTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> getComplaints() {
@@ -214,7 +214,7 @@ public class GetExtendedContactDetailsAllOfStatistics {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_COMPLAINTS)
+  @JsonProperty(value = JSON_PROPERTY_COMPLAINTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setComplaints(@jakarta.annotation.Nullable List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> complaints) {
     this.complaints = complaints;
@@ -231,7 +231,7 @@ public class GetExtendedContactDetailsAllOfStatistics {
    * @return unsubscriptions
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UNSUBSCRIPTIONS)
+  @JsonProperty(value = JSON_PROPERTY_UNSUBSCRIPTIONS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public GetExtendedContactDetailsAllOfStatisticsUnsubscriptions getUnsubscriptions() {
@@ -239,7 +239,7 @@ public class GetExtendedContactDetailsAllOfStatistics {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UNSUBSCRIPTIONS)
+  @JsonProperty(value = JSON_PROPERTY_UNSUBSCRIPTIONS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUnsubscriptions(@jakarta.annotation.Nullable GetExtendedContactDetailsAllOfStatisticsUnsubscriptions unsubscriptions) {
     this.unsubscriptions = unsubscriptions;
@@ -264,7 +264,7 @@ public class GetExtendedContactDetailsAllOfStatistics {
    * @return opened
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_OPENED)
+  @JsonProperty(value = JSON_PROPERTY_OPENED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<GetExtendedContactDetailsAllOfStatisticsOpened> getOpened() {
@@ -272,7 +272,7 @@ public class GetExtendedContactDetailsAllOfStatistics {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_OPENED)
+  @JsonProperty(value = JSON_PROPERTY_OPENED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setOpened(@jakarta.annotation.Nullable List<GetExtendedContactDetailsAllOfStatisticsOpened> opened) {
     this.opened = opened;
@@ -297,7 +297,7 @@ public class GetExtendedContactDetailsAllOfStatistics {
    * @return clicked
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CLICKED)
+  @JsonProperty(value = JSON_PROPERTY_CLICKED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<GetExtendedContactDetailsAllOfStatisticsClicked> getClicked() {
@@ -305,7 +305,7 @@ public class GetExtendedContactDetailsAllOfStatistics {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CLICKED)
+  @JsonProperty(value = JSON_PROPERTY_CLICKED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setClicked(@jakarta.annotation.Nullable List<GetExtendedContactDetailsAllOfStatisticsClicked> clicked) {
     this.clicked = clicked;
@@ -330,7 +330,7 @@ public class GetExtendedContactDetailsAllOfStatistics {
    * @return transacAttributes
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TRANSAC_ATTRIBUTES)
+  @JsonProperty(value = JSON_PROPERTY_TRANSAC_ATTRIBUTES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<Object> getTransacAttributes() {
@@ -338,7 +338,7 @@ public class GetExtendedContactDetailsAllOfStatistics {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TRANSAC_ATTRIBUTES)
+  @JsonProperty(value = JSON_PROPERTY_TRANSAC_ATTRIBUTES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setTransacAttributes(@jakarta.annotation.Nullable List<Object> transacAttributes) {
     this.transacAttributes = transacAttributes;
@@ -363,7 +363,7 @@ public class GetExtendedContactDetailsAllOfStatistics {
    * @return delivered
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DELIVERED)
+  @JsonProperty(value = JSON_PROPERTY_DELIVERED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> getDelivered() {
@@ -371,11 +371,12 @@ public class GetExtendedContactDetailsAllOfStatistics {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DELIVERED)
+  @JsonProperty(value = JSON_PROPERTY_DELIVERED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDelivered(@jakarta.annotation.Nullable List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> delivered) {
     this.delivered = delivered;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -424,10 +425,7 @@ public class GetExtendedContactDetailsAllOfStatistics {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -466,8 +464,8 @@ public class GetExtendedContactDetailsAllOfStatistics {
     if (getMessagesSent() != null) {
       for (int i = 0; i < getMessagesSent().size(); i++) {
         if (getMessagesSent().get(i) != null) {
-          joiner.add(getMessagesSent().get(i).toUrlQueryString(String.format("%smessagesSent%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getMessagesSent().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%smessagesSent%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -476,8 +474,8 @@ public class GetExtendedContactDetailsAllOfStatistics {
     if (getHardBounces() != null) {
       for (int i = 0; i < getHardBounces().size(); i++) {
         if (getHardBounces().get(i) != null) {
-          joiner.add(getHardBounces().get(i).toUrlQueryString(String.format("%shardBounces%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getHardBounces().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%shardBounces%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -486,8 +484,8 @@ public class GetExtendedContactDetailsAllOfStatistics {
     if (getSoftBounces() != null) {
       for (int i = 0; i < getSoftBounces().size(); i++) {
         if (getSoftBounces().get(i) != null) {
-          joiner.add(getSoftBounces().get(i).toUrlQueryString(String.format("%ssoftBounces%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getSoftBounces().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%ssoftBounces%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -496,8 +494,8 @@ public class GetExtendedContactDetailsAllOfStatistics {
     if (getComplaints() != null) {
       for (int i = 0; i < getComplaints().size(); i++) {
         if (getComplaints().get(i) != null) {
-          joiner.add(getComplaints().get(i).toUrlQueryString(String.format("%scomplaints%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getComplaints().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%scomplaints%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -511,8 +509,8 @@ public class GetExtendedContactDetailsAllOfStatistics {
     if (getOpened() != null) {
       for (int i = 0; i < getOpened().size(); i++) {
         if (getOpened().get(i) != null) {
-          joiner.add(getOpened().get(i).toUrlQueryString(String.format("%sopened%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getOpened().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sopened%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -521,8 +519,8 @@ public class GetExtendedContactDetailsAllOfStatistics {
     if (getClicked() != null) {
       for (int i = 0; i < getClicked().size(); i++) {
         if (getClicked().get(i) != null) {
-          joiner.add(getClicked().get(i).toUrlQueryString(String.format("%sclicked%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getClicked().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sclicked%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -531,8 +529,8 @@ public class GetExtendedContactDetailsAllOfStatistics {
     if (getTransacAttributes() != null) {
       for (int i = 0; i < getTransacAttributes().size(); i++) {
         try {
-          joiner.add(String.format("%stransacAttributes%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%stransacAttributes%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getTransacAttributes().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -545,8 +543,8 @@ public class GetExtendedContactDetailsAllOfStatistics {
     if (getDelivered() != null) {
       for (int i = 0; i < getDelivered().size(); i++) {
         if (getDelivered().get(i) != null) {
-          joiner.add(getDelivered().get(i).toUrlQueryString(String.format("%sdelivered%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getDelivered().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sdelivered%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }

@@ -101,7 +101,7 @@ public class GetExtendedContactDetails {
    * @return email
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getEmail() {
@@ -109,7 +109,7 @@ public class GetExtendedContactDetails {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setEmail(@jakarta.annotation.Nullable String email) {
     this.email = email;
@@ -126,7 +126,7 @@ public class GetExtendedContactDetails {
    * @return id
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getId() {
@@ -134,7 +134,7 @@ public class GetExtendedContactDetails {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setId(@jakarta.annotation.Nonnull Long id) {
     this.id = id;
@@ -151,7 +151,7 @@ public class GetExtendedContactDetails {
    * @return emailBlacklisted
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_EMAIL_BLACKLISTED)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL_BLACKLISTED, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Boolean getEmailBlacklisted() {
@@ -159,7 +159,7 @@ public class GetExtendedContactDetails {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EMAIL_BLACKLISTED)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL_BLACKLISTED, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setEmailBlacklisted(@jakarta.annotation.Nonnull Boolean emailBlacklisted) {
     this.emailBlacklisted = emailBlacklisted;
@@ -176,7 +176,7 @@ public class GetExtendedContactDetails {
    * @return smsBlacklisted
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SMS_BLACKLISTED)
+  @JsonProperty(value = JSON_PROPERTY_SMS_BLACKLISTED, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Boolean getSmsBlacklisted() {
@@ -184,7 +184,7 @@ public class GetExtendedContactDetails {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SMS_BLACKLISTED)
+  @JsonProperty(value = JSON_PROPERTY_SMS_BLACKLISTED, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSmsBlacklisted(@jakarta.annotation.Nonnull Boolean smsBlacklisted) {
     this.smsBlacklisted = smsBlacklisted;
@@ -201,7 +201,7 @@ public class GetExtendedContactDetails {
    * @return createdAt
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getCreatedAt() {
@@ -209,7 +209,7 @@ public class GetExtendedContactDetails {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCreatedAt(@jakarta.annotation.Nonnull String createdAt) {
     this.createdAt = createdAt;
@@ -226,7 +226,7 @@ public class GetExtendedContactDetails {
    * @return modifiedAt
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
+  @JsonProperty(value = JSON_PROPERTY_MODIFIED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getModifiedAt() {
@@ -234,7 +234,7 @@ public class GetExtendedContactDetails {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
+  @JsonProperty(value = JSON_PROPERTY_MODIFIED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setModifiedAt(@jakarta.annotation.Nonnull String modifiedAt) {
     this.modifiedAt = modifiedAt;
@@ -259,7 +259,7 @@ public class GetExtendedContactDetails {
    * @return listIds
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_LIST_IDS)
+  @JsonProperty(value = JSON_PROPERTY_LIST_IDS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public List<Long> getListIds() {
@@ -267,7 +267,7 @@ public class GetExtendedContactDetails {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LIST_IDS)
+  @JsonProperty(value = JSON_PROPERTY_LIST_IDS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setListIds(@jakarta.annotation.Nonnull List<Long> listIds) {
     this.listIds = listIds;
@@ -292,7 +292,7 @@ public class GetExtendedContactDetails {
    * @return listUnsubscribed
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LIST_UNSUBSCRIBED)
+  @JsonProperty(value = JSON_PROPERTY_LIST_UNSUBSCRIBED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<Long> getListUnsubscribed() {
@@ -300,7 +300,7 @@ public class GetExtendedContactDetails {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LIST_UNSUBSCRIBED)
+  @JsonProperty(value = JSON_PROPERTY_LIST_UNSUBSCRIBED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setListUnsubscribed(@jakarta.annotation.Nullable List<Long> listUnsubscribed) {
     this.listUnsubscribed = listUnsubscribed;
@@ -317,7 +317,7 @@ public class GetExtendedContactDetails {
    * @return attributes
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
+  @JsonProperty(value = JSON_PROPERTY_ATTRIBUTES, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Object getAttributes() {
@@ -325,7 +325,7 @@ public class GetExtendedContactDetails {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
+  @JsonProperty(value = JSON_PROPERTY_ATTRIBUTES, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAttributes(@jakarta.annotation.Nonnull Object attributes) {
     this.attributes = attributes;
@@ -342,7 +342,7 @@ public class GetExtendedContactDetails {
    * @return statistics
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_STATISTICS)
+  @JsonProperty(value = JSON_PROPERTY_STATISTICS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public GetExtendedContactDetailsAllOfStatistics getStatistics() {
@@ -350,11 +350,12 @@ public class GetExtendedContactDetails {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_STATISTICS)
+  @JsonProperty(value = JSON_PROPERTY_STATISTICS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setStatistics(@jakarta.annotation.Nonnull GetExtendedContactDetailsAllOfStatistics statistics) {
     this.statistics = statistics;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -405,10 +406,7 @@ public class GetExtendedContactDetails {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -446,7 +444,7 @@ public class GetExtendedContactDetails {
     // add `email` to the URL query string
     if (getEmail() != null) {
       try {
-        joiner.add(String.format("%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -456,7 +454,7 @@ public class GetExtendedContactDetails {
     // add `id` to the URL query string
     if (getId() != null) {
       try {
-        joiner.add(String.format("%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -466,7 +464,7 @@ public class GetExtendedContactDetails {
     // add `emailBlacklisted` to the URL query string
     if (getEmailBlacklisted() != null) {
       try {
-        joiner.add(String.format("%semailBlacklisted%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmailBlacklisted()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%semailBlacklisted%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmailBlacklisted()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -476,7 +474,7 @@ public class GetExtendedContactDetails {
     // add `smsBlacklisted` to the URL query string
     if (getSmsBlacklisted() != null) {
       try {
-        joiner.add(String.format("%ssmsBlacklisted%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSmsBlacklisted()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssmsBlacklisted%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSmsBlacklisted()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -486,7 +484,7 @@ public class GetExtendedContactDetails {
     // add `createdAt` to the URL query string
     if (getCreatedAt() != null) {
       try {
-        joiner.add(String.format("%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -496,7 +494,7 @@ public class GetExtendedContactDetails {
     // add `modifiedAt` to the URL query string
     if (getModifiedAt() != null) {
       try {
-        joiner.add(String.format("%smodifiedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getModifiedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%smodifiedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getModifiedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -507,8 +505,8 @@ public class GetExtendedContactDetails {
     if (getListIds() != null) {
       for (int i = 0; i < getListIds().size(); i++) {
         try {
-          joiner.add(String.format("%slistIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%slistIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getListIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -521,8 +519,8 @@ public class GetExtendedContactDetails {
     if (getListUnsubscribed() != null) {
       for (int i = 0; i < getListUnsubscribed().size(); i++) {
         try {
-          joiner.add(String.format("%slistUnsubscribed%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%slistUnsubscribed%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getListUnsubscribed().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -534,7 +532,7 @@ public class GetExtendedContactDetails {
     // add `attributes` to the URL query string
     if (getAttributes() != null) {
       try {
-        joiner.add(String.format("%sattributes%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAttributes()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sattributes%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAttributes()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

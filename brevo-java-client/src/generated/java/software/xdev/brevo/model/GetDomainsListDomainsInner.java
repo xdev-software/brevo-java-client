@@ -72,7 +72,7 @@ public class GetDomainsListDomainsInner {
    * @return id
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getId() {
@@ -80,7 +80,7 @@ public class GetDomainsListDomainsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setId(@jakarta.annotation.Nonnull Long id) {
     this.id = id;
@@ -97,7 +97,7 @@ public class GetDomainsListDomainsInner {
    * @return domainName
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DOMAIN_NAME)
+  @JsonProperty(value = JSON_PROPERTY_DOMAIN_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getDomainName() {
@@ -105,7 +105,7 @@ public class GetDomainsListDomainsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DOMAIN_NAME)
+  @JsonProperty(value = JSON_PROPERTY_DOMAIN_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDomainName(@jakarta.annotation.Nonnull String domainName) {
     this.domainName = domainName;
@@ -122,7 +122,7 @@ public class GetDomainsListDomainsInner {
    * @return authenticated
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_AUTHENTICATED)
+  @JsonProperty(value = JSON_PROPERTY_AUTHENTICATED, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Boolean getAuthenticated() {
@@ -130,7 +130,7 @@ public class GetDomainsListDomainsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_AUTHENTICATED)
+  @JsonProperty(value = JSON_PROPERTY_AUTHENTICATED, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAuthenticated(@jakarta.annotation.Nonnull Boolean authenticated) {
     this.authenticated = authenticated;
@@ -147,7 +147,7 @@ public class GetDomainsListDomainsInner {
    * @return verified
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_VERIFIED)
+  @JsonProperty(value = JSON_PROPERTY_VERIFIED, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Boolean getVerified() {
@@ -155,7 +155,7 @@ public class GetDomainsListDomainsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_VERIFIED)
+  @JsonProperty(value = JSON_PROPERTY_VERIFIED, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setVerified(@jakarta.annotation.Nonnull Boolean verified) {
     this.verified = verified;
@@ -172,7 +172,7 @@ public class GetDomainsListDomainsInner {
    * @return ip
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_IP)
+  @JsonProperty(value = JSON_PROPERTY_IP, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getIp() {
@@ -180,11 +180,12 @@ public class GetDomainsListDomainsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IP)
+  @JsonProperty(value = JSON_PROPERTY_IP, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setIp(@jakarta.annotation.Nullable String ip) {
     this.ip = ip;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -225,10 +226,7 @@ public class GetDomainsListDomainsInner {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -266,7 +264,7 @@ public class GetDomainsListDomainsInner {
     // add `id` to the URL query string
     if (getId() != null) {
       try {
-        joiner.add(String.format("%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -276,7 +274,7 @@ public class GetDomainsListDomainsInner {
     // add `domain_name` to the URL query string
     if (getDomainName() != null) {
       try {
-        joiner.add(String.format("%sdomain_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDomainName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdomain_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDomainName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -286,7 +284,7 @@ public class GetDomainsListDomainsInner {
     // add `authenticated` to the URL query string
     if (getAuthenticated() != null) {
       try {
-        joiner.add(String.format("%sauthenticated%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAuthenticated()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sauthenticated%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAuthenticated()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -296,7 +294,7 @@ public class GetDomainsListDomainsInner {
     // add `verified` to the URL query string
     if (getVerified() != null) {
       try {
-        joiner.add(String.format("%sverified%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getVerified()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sverified%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getVerified()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -306,7 +304,7 @@ public class GetDomainsListDomainsInner {
     // add `ip` to the URL query string
     if (getIp() != null) {
       try {
-        joiner.add(String.format("%sip%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIp()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sip%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIp()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

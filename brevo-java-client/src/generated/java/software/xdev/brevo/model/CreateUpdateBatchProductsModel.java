@@ -57,7 +57,7 @@ public class CreateUpdateBatchProductsModel {
    * @return createdCount
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CREATED_COUNT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_COUNT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getCreatedCount() {
@@ -65,7 +65,7 @@ public class CreateUpdateBatchProductsModel {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CREATED_COUNT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_COUNT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCreatedCount(@jakarta.annotation.Nullable Long createdCount) {
     this.createdCount = createdCount;
@@ -82,7 +82,7 @@ public class CreateUpdateBatchProductsModel {
    * @return updatedCount
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UPDATED_COUNT)
+  @JsonProperty(value = JSON_PROPERTY_UPDATED_COUNT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getUpdatedCount() {
@@ -90,11 +90,12 @@ public class CreateUpdateBatchProductsModel {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UPDATED_COUNT)
+  @JsonProperty(value = JSON_PROPERTY_UPDATED_COUNT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUpdatedCount(@jakarta.annotation.Nullable Long updatedCount) {
     this.updatedCount = updatedCount;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -129,10 +130,7 @@ public class CreateUpdateBatchProductsModel {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -170,7 +168,7 @@ public class CreateUpdateBatchProductsModel {
     // add `createdCount` to the URL query string
     if (getCreatedCount() != null) {
       try {
-        joiner.add(String.format("%screatedCount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedCount()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%screatedCount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedCount()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -180,7 +178,7 @@ public class CreateUpdateBatchProductsModel {
     // add `updatedCount` to the URL query string
     if (getUpdatedCount() != null) {
       try {
-        joiner.add(String.format("%supdatedCount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUpdatedCount()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%supdatedCount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUpdatedCount()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

@@ -88,7 +88,7 @@ public class MainLimit {
    * @return createdAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public OffsetDateTime getCreatedAt() {
@@ -96,7 +96,7 @@ public class MainLimit {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCreatedAt(@jakarta.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
@@ -113,7 +113,7 @@ public class MainLimit {
    * @return durationUnit
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DURATION_UNIT)
+  @JsonProperty(value = JSON_PROPERTY_DURATION_UNIT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getDurationUnit() {
@@ -121,7 +121,7 @@ public class MainLimit {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DURATION_UNIT)
+  @JsonProperty(value = JSON_PROPERTY_DURATION_UNIT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDurationUnit(@jakarta.annotation.Nullable String durationUnit) {
     this.durationUnit = durationUnit;
@@ -138,7 +138,7 @@ public class MainLimit {
    * @return durationValue
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DURATION_VALUE)
+  @JsonProperty(value = JSON_PROPERTY_DURATION_VALUE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getDurationValue() {
@@ -146,7 +146,7 @@ public class MainLimit {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DURATION_VALUE)
+  @JsonProperty(value = JSON_PROPERTY_DURATION_VALUE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDurationValue(@jakarta.annotation.Nullable Integer durationValue) {
     this.durationValue = durationValue;
@@ -163,7 +163,7 @@ public class MainLimit {
    * @return limitValue
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LIMIT_VALUE)
+  @JsonProperty(value = JSON_PROPERTY_LIMIT_VALUE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getLimitValue() {
@@ -171,7 +171,7 @@ public class MainLimit {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LIMIT_VALUE)
+  @JsonProperty(value = JSON_PROPERTY_LIMIT_VALUE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLimitValue(@jakarta.annotation.Nullable Integer limitValue) {
     this.limitValue = limitValue;
@@ -188,7 +188,7 @@ public class MainLimit {
    * @return rewardLimitId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_REWARD_LIMIT_ID)
+  @JsonProperty(value = JSON_PROPERTY_REWARD_LIMIT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getRewardLimitId() {
@@ -196,7 +196,7 @@ public class MainLimit {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REWARD_LIMIT_ID)
+  @JsonProperty(value = JSON_PROPERTY_REWARD_LIMIT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRewardLimitId(@jakarta.annotation.Nullable String rewardLimitId) {
     this.rewardLimitId = rewardLimitId;
@@ -213,7 +213,7 @@ public class MainLimit {
    * @return slidingSchedule
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SLIDING_SCHEDULE)
+  @JsonProperty(value = JSON_PROPERTY_SLIDING_SCHEDULE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getSlidingSchedule() {
@@ -221,7 +221,7 @@ public class MainLimit {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SLIDING_SCHEDULE)
+  @JsonProperty(value = JSON_PROPERTY_SLIDING_SCHEDULE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSlidingSchedule(@jakarta.annotation.Nullable Boolean slidingSchedule) {
     this.slidingSchedule = slidingSchedule;
@@ -238,7 +238,7 @@ public class MainLimit {
    * @return type
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_TYPE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getType() {
@@ -246,7 +246,7 @@ public class MainLimit {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_TYPE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setType(@jakarta.annotation.Nullable String type) {
     this.type = type;
@@ -263,7 +263,7 @@ public class MainLimit {
    * @return updatedAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UPDATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_UPDATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public OffsetDateTime getUpdatedAt() {
@@ -271,11 +271,12 @@ public class MainLimit {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UPDATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_UPDATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUpdatedAt(@jakarta.annotation.Nullable OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -322,10 +323,7 @@ public class MainLimit {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -363,7 +361,7 @@ public class MainLimit {
     // add `createdAt` to the URL query string
     if (getCreatedAt() != null) {
       try {
-        joiner.add(String.format("%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -373,7 +371,7 @@ public class MainLimit {
     // add `durationUnit` to the URL query string
     if (getDurationUnit() != null) {
       try {
-        joiner.add(String.format("%sdurationUnit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDurationUnit()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdurationUnit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDurationUnit()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -383,7 +381,7 @@ public class MainLimit {
     // add `durationValue` to the URL query string
     if (getDurationValue() != null) {
       try {
-        joiner.add(String.format("%sdurationValue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDurationValue()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdurationValue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDurationValue()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -393,7 +391,7 @@ public class MainLimit {
     // add `limitValue` to the URL query string
     if (getLimitValue() != null) {
       try {
-        joiner.add(String.format("%slimitValue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLimitValue()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%slimitValue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLimitValue()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -403,7 +401,7 @@ public class MainLimit {
     // add `rewardLimitId` to the URL query string
     if (getRewardLimitId() != null) {
       try {
-        joiner.add(String.format("%srewardLimitId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRewardLimitId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%srewardLimitId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRewardLimitId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -413,7 +411,7 @@ public class MainLimit {
     // add `slidingSchedule` to the URL query string
     if (getSlidingSchedule() != null) {
       try {
-        joiner.add(String.format("%sslidingSchedule%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSlidingSchedule()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sslidingSchedule%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSlidingSchedule()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -423,7 +421,7 @@ public class MainLimit {
     // add `type` to the URL query string
     if (getType() != null) {
       try {
-        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -433,7 +431,7 @@ public class MainLimit {
     // add `updatedAt` to the URL query string
     if (getUpdatedAt() != null) {
       try {
-        joiner.add(String.format("%supdatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUpdatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%supdatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUpdatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

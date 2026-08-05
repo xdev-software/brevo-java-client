@@ -120,7 +120,7 @@ public class MainRule {
    * @return condition
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CONDITION)
+  @JsonProperty(value = JSON_PROPERTY_CONDITION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public MainRuleConditionResponse getCondition() {
@@ -128,7 +128,7 @@ public class MainRule {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONDITION)
+  @JsonProperty(value = JSON_PROPERTY_CONDITION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCondition(@jakarta.annotation.Nullable MainRuleConditionResponse condition) {
     this.condition = condition;
@@ -145,7 +145,7 @@ public class MainRule {
    * @return createdAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getCreatedAt() {
@@ -153,7 +153,7 @@ public class MainRule {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCreatedAt(@jakarta.annotation.Nullable String createdAt) {
     this.createdAt = createdAt;
@@ -170,7 +170,7 @@ public class MainRule {
    * @return description
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DESCRIPTION)
+  @JsonProperty(value = JSON_PROPERTY_DESCRIPTION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getDescription() {
@@ -178,7 +178,7 @@ public class MainRule {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DESCRIPTION)
+  @JsonProperty(value = JSON_PROPERTY_DESCRIPTION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDescription(@jakarta.annotation.Nullable String description) {
     this.description = description;
@@ -195,7 +195,7 @@ public class MainRule {
    * @return event
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EVENT)
+  @JsonProperty(value = JSON_PROPERTY_EVENT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public MainRuleEventResponse getEvent() {
@@ -203,7 +203,7 @@ public class MainRule {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EVENT)
+  @JsonProperty(value = JSON_PROPERTY_EVENT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setEvent(@jakarta.annotation.Nullable MainRuleEventResponse event) {
     this.event = event;
@@ -220,7 +220,7 @@ public class MainRule {
    * @return isInternal
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_IS_INTERNAL)
+  @JsonProperty(value = JSON_PROPERTY_IS_INTERNAL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getIsInternal() {
@@ -228,7 +228,7 @@ public class MainRule {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IS_INTERNAL)
+  @JsonProperty(value = JSON_PROPERTY_IS_INTERNAL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setIsInternal(@jakarta.annotation.Nullable Boolean isInternal) {
     this.isInternal = isInternal;
@@ -245,7 +245,7 @@ public class MainRule {
    * @return loyaltyProgramId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LOYALTY_PROGRAM_ID)
+  @JsonProperty(value = JSON_PROPERTY_LOYALTY_PROGRAM_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getLoyaltyProgramId() {
@@ -253,7 +253,7 @@ public class MainRule {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LOYALTY_PROGRAM_ID)
+  @JsonProperty(value = JSON_PROPERTY_LOYALTY_PROGRAM_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLoyaltyProgramId(@jakarta.annotation.Nullable String loyaltyProgramId) {
     this.loyaltyProgramId = loyaltyProgramId;
@@ -270,7 +270,7 @@ public class MainRule {
    * @return loyaltyVersionId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LOYALTY_VERSION_ID)
+  @JsonProperty(value = JSON_PROPERTY_LOYALTY_VERSION_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getLoyaltyVersionId() {
@@ -278,7 +278,7 @@ public class MainRule {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LOYALTY_VERSION_ID)
+  @JsonProperty(value = JSON_PROPERTY_LOYALTY_VERSION_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLoyaltyVersionId(@jakarta.annotation.Nullable Integer loyaltyVersionId) {
     this.loyaltyVersionId = loyaltyVersionId;
@@ -303,7 +303,7 @@ public class MainRule {
    * @return meta
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_META)
+  @JsonProperty(value = JSON_PROPERTY_META, required = false)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
 
   public Map<String, Object> getMeta() {
@@ -311,7 +311,7 @@ public class MainRule {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_META)
+  @JsonProperty(value = JSON_PROPERTY_META, required = false)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
   public void setMeta(@jakarta.annotation.Nullable Map<String, Object> meta) {
     this.meta = meta;
@@ -328,7 +328,7 @@ public class MainRule {
    * @return name
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getName() {
@@ -336,7 +336,7 @@ public class MainRule {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setName(@jakarta.annotation.Nullable String name) {
     this.name = name;
@@ -361,7 +361,7 @@ public class MainRule {
    * @return results
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_RESULTS)
+  @JsonProperty(value = JSON_PROPERTY_RESULTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<MainRuleResultResponse> getResults() {
@@ -369,7 +369,7 @@ public class MainRule {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_RESULTS)
+  @JsonProperty(value = JSON_PROPERTY_RESULTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setResults(@jakarta.annotation.Nullable List<MainRuleResultResponse> results) {
     this.results = results;
@@ -386,7 +386,7 @@ public class MainRule {
    * @return ruleId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_RULE_ID)
+  @JsonProperty(value = JSON_PROPERTY_RULE_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getRuleId() {
@@ -394,7 +394,7 @@ public class MainRule {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_RULE_ID)
+  @JsonProperty(value = JSON_PROPERTY_RULE_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRuleId(@jakarta.annotation.Nullable String ruleId) {
     this.ruleId = ruleId;
@@ -411,7 +411,7 @@ public class MainRule {
    * @return ruleType
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_RULE_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_RULE_TYPE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getRuleType() {
@@ -419,7 +419,7 @@ public class MainRule {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_RULE_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_RULE_TYPE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRuleType(@jakarta.annotation.Nullable String ruleType) {
     this.ruleType = ruleType;
@@ -436,7 +436,7 @@ public class MainRule {
    * @return updatedAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UPDATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_UPDATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getUpdatedAt() {
@@ -444,11 +444,12 @@ public class MainRule {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UPDATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_UPDATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUpdatedAt(@jakarta.annotation.Nullable String updatedAt) {
     this.updatedAt = updatedAt;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -505,10 +506,7 @@ public class MainRule {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -551,7 +549,7 @@ public class MainRule {
     // add `createdAt` to the URL query string
     if (getCreatedAt() != null) {
       try {
-        joiner.add(String.format("%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -561,7 +559,7 @@ public class MainRule {
     // add `description` to the URL query string
     if (getDescription() != null) {
       try {
-        joiner.add(String.format("%sdescription%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDescription()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdescription%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDescription()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -576,7 +574,7 @@ public class MainRule {
     // add `isInternal` to the URL query string
     if (getIsInternal() != null) {
       try {
-        joiner.add(String.format("%sisInternal%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsInternal()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sisInternal%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsInternal()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -586,7 +584,7 @@ public class MainRule {
     // add `loyaltyProgramId` to the URL query string
     if (getLoyaltyProgramId() != null) {
       try {
-        joiner.add(String.format("%sloyaltyProgramId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLoyaltyProgramId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sloyaltyProgramId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLoyaltyProgramId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -596,7 +594,7 @@ public class MainRule {
     // add `loyaltyVersionId` to the URL query string
     if (getLoyaltyVersionId() != null) {
       try {
-        joiner.add(String.format("%sloyaltyVersionId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLoyaltyVersionId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sloyaltyVersionId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLoyaltyVersionId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -607,8 +605,8 @@ public class MainRule {
     if (getMeta() != null) {
       for (String _key : getMeta().keySet()) {
         try {
-          joiner.add(String.format("%smeta%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%smeta%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, _key, containerSuffix),
               getMeta().get(_key), URLEncoder.encode(String.valueOf(getMeta().get(_key)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -620,7 +618,7 @@ public class MainRule {
     // add `name` to the URL query string
     if (getName() != null) {
       try {
-        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -631,8 +629,8 @@ public class MainRule {
     if (getResults() != null) {
       for (int i = 0; i < getResults().size(); i++) {
         if (getResults().get(i) != null) {
-          joiner.add(getResults().get(i).toUrlQueryString(String.format("%sresults%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getResults().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sresults%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -640,7 +638,7 @@ public class MainRule {
     // add `ruleId` to the URL query string
     if (getRuleId() != null) {
       try {
-        joiner.add(String.format("%sruleId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRuleId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sruleId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRuleId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -650,7 +648,7 @@ public class MainRule {
     // add `ruleType` to the URL query string
     if (getRuleType() != null) {
       try {
-        joiner.add(String.format("%sruleType%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRuleType()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sruleType%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRuleType()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -660,7 +658,7 @@ public class MainRule {
     // add `updatedAt` to the URL query string
     if (getUpdatedAt() != null) {
       try {
-        joiner.add(String.format("%supdatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUpdatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%supdatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUpdatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

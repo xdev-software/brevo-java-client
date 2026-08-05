@@ -97,7 +97,7 @@ public class BalanceLimit {
    * @return balanceDefinitionId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_BALANCE_DEFINITION_ID)
+  @JsonProperty(value = JSON_PROPERTY_BALANCE_DEFINITION_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getBalanceDefinitionId() {
@@ -105,7 +105,7 @@ public class BalanceLimit {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BALANCE_DEFINITION_ID)
+  @JsonProperty(value = JSON_PROPERTY_BALANCE_DEFINITION_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setBalanceDefinitionId(@jakarta.annotation.Nullable String balanceDefinitionId) {
     this.balanceDefinitionId = balanceDefinitionId;
@@ -122,7 +122,7 @@ public class BalanceLimit {
    * @return constraintType
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CONSTRAINT_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_CONSTRAINT_TYPE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getConstraintType() {
@@ -130,7 +130,7 @@ public class BalanceLimit {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONSTRAINT_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_CONSTRAINT_TYPE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setConstraintType(@jakarta.annotation.Nullable String constraintType) {
     this.constraintType = constraintType;
@@ -147,7 +147,7 @@ public class BalanceLimit {
    * @return createdAt
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getCreatedAt() {
@@ -155,7 +155,7 @@ public class BalanceLimit {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCreatedAt(@jakarta.annotation.Nonnull String createdAt) {
     this.createdAt = createdAt;
@@ -172,7 +172,7 @@ public class BalanceLimit {
    * @return durationUnit
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DURATION_UNIT)
+  @JsonProperty(value = JSON_PROPERTY_DURATION_UNIT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getDurationUnit() {
@@ -180,7 +180,7 @@ public class BalanceLimit {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DURATION_UNIT)
+  @JsonProperty(value = JSON_PROPERTY_DURATION_UNIT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDurationUnit(@jakarta.annotation.Nullable String durationUnit) {
     this.durationUnit = durationUnit;
@@ -197,7 +197,7 @@ public class BalanceLimit {
    * @return durationValue
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DURATION_VALUE)
+  @JsonProperty(value = JSON_PROPERTY_DURATION_VALUE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getDurationValue() {
@@ -205,7 +205,7 @@ public class BalanceLimit {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DURATION_VALUE)
+  @JsonProperty(value = JSON_PROPERTY_DURATION_VALUE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDurationValue(@jakarta.annotation.Nullable Integer durationValue) {
     this.durationValue = durationValue;
@@ -222,7 +222,7 @@ public class BalanceLimit {
    * @return id
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getId() {
@@ -230,7 +230,7 @@ public class BalanceLimit {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setId(@jakarta.annotation.Nullable String id) {
     this.id = id;
@@ -247,7 +247,7 @@ public class BalanceLimit {
    * @return slidingSchedule
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SLIDING_SCHEDULE)
+  @JsonProperty(value = JSON_PROPERTY_SLIDING_SCHEDULE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getSlidingSchedule() {
@@ -255,7 +255,7 @@ public class BalanceLimit {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SLIDING_SCHEDULE)
+  @JsonProperty(value = JSON_PROPERTY_SLIDING_SCHEDULE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSlidingSchedule(@jakarta.annotation.Nullable Boolean slidingSchedule) {
     this.slidingSchedule = slidingSchedule;
@@ -272,7 +272,7 @@ public class BalanceLimit {
    * @return transactionType
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TRANSACTION_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_TRANSACTION_TYPE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getTransactionType() {
@@ -280,7 +280,7 @@ public class BalanceLimit {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TRANSACTION_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_TRANSACTION_TYPE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setTransactionType(@jakarta.annotation.Nullable String transactionType) {
     this.transactionType = transactionType;
@@ -297,7 +297,7 @@ public class BalanceLimit {
    * @return updatedAt
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_UPDATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_UPDATED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getUpdatedAt() {
@@ -305,7 +305,7 @@ public class BalanceLimit {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UPDATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_UPDATED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setUpdatedAt(@jakarta.annotation.Nonnull String updatedAt) {
     this.updatedAt = updatedAt;
@@ -322,7 +322,7 @@ public class BalanceLimit {
    * @return value
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_VALUE)
+  @JsonProperty(value = JSON_PROPERTY_VALUE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getValue() {
@@ -330,11 +330,12 @@ public class BalanceLimit {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_VALUE)
+  @JsonProperty(value = JSON_PROPERTY_VALUE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setValue(@jakarta.annotation.Nullable Integer value) {
     this.value = value;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -385,10 +386,7 @@ public class BalanceLimit {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -426,7 +424,7 @@ public class BalanceLimit {
     // add `balanceDefinitionId` to the URL query string
     if (getBalanceDefinitionId() != null) {
       try {
-        joiner.add(String.format("%sbalanceDefinitionId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBalanceDefinitionId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sbalanceDefinitionId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBalanceDefinitionId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -436,7 +434,7 @@ public class BalanceLimit {
     // add `constraintType` to the URL query string
     if (getConstraintType() != null) {
       try {
-        joiner.add(String.format("%sconstraintType%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConstraintType()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sconstraintType%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConstraintType()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -446,7 +444,7 @@ public class BalanceLimit {
     // add `createdAt` to the URL query string
     if (getCreatedAt() != null) {
       try {
-        joiner.add(String.format("%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -456,7 +454,7 @@ public class BalanceLimit {
     // add `durationUnit` to the URL query string
     if (getDurationUnit() != null) {
       try {
-        joiner.add(String.format("%sdurationUnit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDurationUnit()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdurationUnit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDurationUnit()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -466,7 +464,7 @@ public class BalanceLimit {
     // add `durationValue` to the URL query string
     if (getDurationValue() != null) {
       try {
-        joiner.add(String.format("%sdurationValue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDurationValue()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdurationValue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDurationValue()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -476,7 +474,7 @@ public class BalanceLimit {
     // add `id` to the URL query string
     if (getId() != null) {
       try {
-        joiner.add(String.format("%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -486,7 +484,7 @@ public class BalanceLimit {
     // add `slidingSchedule` to the URL query string
     if (getSlidingSchedule() != null) {
       try {
-        joiner.add(String.format("%sslidingSchedule%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSlidingSchedule()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sslidingSchedule%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSlidingSchedule()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -496,7 +494,7 @@ public class BalanceLimit {
     // add `transactionType` to the URL query string
     if (getTransactionType() != null) {
       try {
-        joiner.add(String.format("%stransactionType%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTransactionType()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stransactionType%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTransactionType()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -506,7 +504,7 @@ public class BalanceLimit {
     // add `updatedAt` to the URL query string
     if (getUpdatedAt() != null) {
       try {
-        joiner.add(String.format("%supdatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUpdatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%supdatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUpdatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -516,7 +514,7 @@ public class BalanceLimit {
     // add `value` to the URL query string
     if (getValue() != null) {
       try {
-        joiner.add(String.format("%svalue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getValue()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%svalue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getValue()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

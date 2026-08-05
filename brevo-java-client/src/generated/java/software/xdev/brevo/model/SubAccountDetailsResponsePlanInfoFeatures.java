@@ -71,7 +71,7 @@ public class SubAccountDetailsResponsePlanInfoFeatures {
    * @return inbox
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_INBOX)
+  @JsonProperty(value = JSON_PROPERTY_INBOX, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public SubAccountDetailsResponsePlanInfoFeaturesInbox getInbox() {
@@ -79,7 +79,7 @@ public class SubAccountDetailsResponsePlanInfoFeatures {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_INBOX)
+  @JsonProperty(value = JSON_PROPERTY_INBOX, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setInbox(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfoFeaturesInbox inbox) {
     this.inbox = inbox;
@@ -96,7 +96,7 @@ public class SubAccountDetailsResponsePlanInfoFeatures {
    * @return landingPage
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LANDING_PAGE)
+  @JsonProperty(value = JSON_PROPERTY_LANDING_PAGE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public SubAccountDetailsResponsePlanInfoFeaturesLandingPage getLandingPage() {
@@ -104,7 +104,7 @@ public class SubAccountDetailsResponsePlanInfoFeatures {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LANDING_PAGE)
+  @JsonProperty(value = JSON_PROPERTY_LANDING_PAGE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLandingPage(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfoFeaturesLandingPage landingPage) {
     this.landingPage = landingPage;
@@ -121,7 +121,7 @@ public class SubAccountDetailsResponsePlanInfoFeatures {
    * @return users
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_USERS)
+  @JsonProperty(value = JSON_PROPERTY_USERS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public SubAccountDetailsResponsePlanInfoFeaturesUsers getUsers() {
@@ -129,7 +129,7 @@ public class SubAccountDetailsResponsePlanInfoFeatures {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_USERS)
+  @JsonProperty(value = JSON_PROPERTY_USERS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUsers(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfoFeaturesUsers users) {
     this.users = users;
@@ -146,7 +146,7 @@ public class SubAccountDetailsResponsePlanInfoFeatures {
    * @return salesUsers
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SALES_USERS)
+  @JsonProperty(value = JSON_PROPERTY_SALES_USERS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public SubAccountDetailsResponsePlanInfoFeaturesSalesUsers getSalesUsers() {
@@ -154,11 +154,12 @@ public class SubAccountDetailsResponsePlanInfoFeatures {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SALES_USERS)
+  @JsonProperty(value = JSON_PROPERTY_SALES_USERS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSalesUsers(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfoFeaturesSalesUsers salesUsers) {
     this.salesUsers = salesUsers;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -197,10 +198,7 @@ public class SubAccountDetailsResponsePlanInfoFeatures {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**

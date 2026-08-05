@@ -52,7 +52,7 @@ public class BlockDomain {
    * @return domain
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DOMAIN)
+  @JsonProperty(value = JSON_PROPERTY_DOMAIN, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getDomain() {
@@ -60,11 +60,12 @@ public class BlockDomain {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DOMAIN)
+  @JsonProperty(value = JSON_PROPERTY_DOMAIN, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDomain(@jakarta.annotation.Nonnull String domain) {
     this.domain = domain;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -97,10 +98,7 @@ public class BlockDomain {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -138,7 +136,7 @@ public class BlockDomain {
     // add `domain` to the URL query string
     if (getDomain() != null) {
       try {
-        joiner.add(String.format("%sdomain%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDomain()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdomain%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDomain()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

@@ -100,7 +100,7 @@ public class RequestSmsRecipientExport {
    * @return notifyURL
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_NOTIFY_U_R_L)
+  @JsonProperty(value = JSON_PROPERTY_NOTIFY_U_R_L, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getNotifyURL() {
@@ -108,7 +108,7 @@ public class RequestSmsRecipientExport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NOTIFY_U_R_L)
+  @JsonProperty(value = JSON_PROPERTY_NOTIFY_U_R_L, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setNotifyURL(@jakarta.annotation.Nullable String notifyURL) {
     this.notifyURL = notifyURL;
@@ -125,7 +125,7 @@ public class RequestSmsRecipientExport {
    * @return recipientsType
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_RECIPIENTS_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_RECIPIENTS_TYPE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public RecipientsTypeEnum getRecipientsType() {
@@ -133,11 +133,12 @@ public class RequestSmsRecipientExport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_RECIPIENTS_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_RECIPIENTS_TYPE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setRecipientsType(@jakarta.annotation.Nonnull RecipientsTypeEnum recipientsType) {
     this.recipientsType = recipientsType;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -172,10 +173,7 @@ public class RequestSmsRecipientExport {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -213,7 +211,7 @@ public class RequestSmsRecipientExport {
     // add `notifyURL` to the URL query string
     if (getNotifyURL() != null) {
       try {
-        joiner.add(String.format("%snotifyURL%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNotifyURL()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%snotifyURL%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNotifyURL()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -223,7 +221,7 @@ public class RequestSmsRecipientExport {
     // add `recipientsType` to the URL query string
     if (getRecipientsType() != null) {
       try {
-        joiner.add(String.format("%srecipientsType%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRecipientsType()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%srecipientsType%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRecipientsType()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

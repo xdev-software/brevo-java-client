@@ -165,7 +165,7 @@ public class AbTestCampaignResult {
    * @return winningVersion
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_WINNING_VERSION)
+  @JsonProperty(value = JSON_PROPERTY_WINNING_VERSION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public WinningVersionEnum getWinningVersion() {
@@ -173,7 +173,7 @@ public class AbTestCampaignResult {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_WINNING_VERSION)
+  @JsonProperty(value = JSON_PROPERTY_WINNING_VERSION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setWinningVersion(@jakarta.annotation.Nullable WinningVersionEnum winningVersion) {
     this.winningVersion = winningVersion;
@@ -190,7 +190,7 @@ public class AbTestCampaignResult {
    * @return winningCriteria
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_WINNING_CRITERIA)
+  @JsonProperty(value = JSON_PROPERTY_WINNING_CRITERIA, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public WinningCriteriaEnum getWinningCriteria() {
@@ -198,7 +198,7 @@ public class AbTestCampaignResult {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_WINNING_CRITERIA)
+  @JsonProperty(value = JSON_PROPERTY_WINNING_CRITERIA, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setWinningCriteria(@jakarta.annotation.Nullable WinningCriteriaEnum winningCriteria) {
     this.winningCriteria = winningCriteria;
@@ -215,7 +215,7 @@ public class AbTestCampaignResult {
    * @return winningSubjectLine
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_WINNING_SUBJECT_LINE)
+  @JsonProperty(value = JSON_PROPERTY_WINNING_SUBJECT_LINE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getWinningSubjectLine() {
@@ -223,7 +223,7 @@ public class AbTestCampaignResult {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_WINNING_SUBJECT_LINE)
+  @JsonProperty(value = JSON_PROPERTY_WINNING_SUBJECT_LINE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setWinningSubjectLine(@jakarta.annotation.Nullable String winningSubjectLine) {
     this.winningSubjectLine = winningSubjectLine;
@@ -240,7 +240,7 @@ public class AbTestCampaignResult {
    * @return openRate
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_OPEN_RATE)
+  @JsonProperty(value = JSON_PROPERTY_OPEN_RATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getOpenRate() {
@@ -248,7 +248,7 @@ public class AbTestCampaignResult {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_OPEN_RATE)
+  @JsonProperty(value = JSON_PROPERTY_OPEN_RATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setOpenRate(@jakarta.annotation.Nullable String openRate) {
     this.openRate = openRate;
@@ -265,7 +265,7 @@ public class AbTestCampaignResult {
    * @return clickRate
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CLICK_RATE)
+  @JsonProperty(value = JSON_PROPERTY_CLICK_RATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getClickRate() {
@@ -273,7 +273,7 @@ public class AbTestCampaignResult {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CLICK_RATE)
+  @JsonProperty(value = JSON_PROPERTY_CLICK_RATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setClickRate(@jakarta.annotation.Nullable String clickRate) {
     this.clickRate = clickRate;
@@ -290,7 +290,7 @@ public class AbTestCampaignResult {
    * @return winningVersionRate
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_WINNING_VERSION_RATE)
+  @JsonProperty(value = JSON_PROPERTY_WINNING_VERSION_RATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getWinningVersionRate() {
@@ -298,7 +298,7 @@ public class AbTestCampaignResult {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_WINNING_VERSION_RATE)
+  @JsonProperty(value = JSON_PROPERTY_WINNING_VERSION_RATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setWinningVersionRate(@jakarta.annotation.Nullable String winningVersionRate) {
     this.winningVersionRate = winningVersionRate;
@@ -315,7 +315,7 @@ public class AbTestCampaignResult {
    * @return statistics
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_STATISTICS)
+  @JsonProperty(value = JSON_PROPERTY_STATISTICS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public AbTestCampaignResultStatistics getStatistics() {
@@ -323,7 +323,7 @@ public class AbTestCampaignResult {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_STATISTICS)
+  @JsonProperty(value = JSON_PROPERTY_STATISTICS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setStatistics(@jakarta.annotation.Nullable AbTestCampaignResultStatistics statistics) {
     this.statistics = statistics;
@@ -340,7 +340,7 @@ public class AbTestCampaignResult {
    * @return clickedLinks
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CLICKED_LINKS)
+  @JsonProperty(value = JSON_PROPERTY_CLICKED_LINKS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public AbTestCampaignResultClickedLinks getClickedLinks() {
@@ -348,11 +348,12 @@ public class AbTestCampaignResult {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CLICKED_LINKS)
+  @JsonProperty(value = JSON_PROPERTY_CLICKED_LINKS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setClickedLinks(@jakarta.annotation.Nullable AbTestCampaignResultClickedLinks clickedLinks) {
     this.clickedLinks = clickedLinks;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -399,10 +400,7 @@ public class AbTestCampaignResult {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -440,7 +438,7 @@ public class AbTestCampaignResult {
     // add `winningVersion` to the URL query string
     if (getWinningVersion() != null) {
       try {
-        joiner.add(String.format("%swinningVersion%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWinningVersion()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%swinningVersion%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWinningVersion()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -450,7 +448,7 @@ public class AbTestCampaignResult {
     // add `winningCriteria` to the URL query string
     if (getWinningCriteria() != null) {
       try {
-        joiner.add(String.format("%swinningCriteria%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWinningCriteria()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%swinningCriteria%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWinningCriteria()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -460,7 +458,7 @@ public class AbTestCampaignResult {
     // add `winningSubjectLine` to the URL query string
     if (getWinningSubjectLine() != null) {
       try {
-        joiner.add(String.format("%swinningSubjectLine%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWinningSubjectLine()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%swinningSubjectLine%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWinningSubjectLine()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -470,7 +468,7 @@ public class AbTestCampaignResult {
     // add `openRate` to the URL query string
     if (getOpenRate() != null) {
       try {
-        joiner.add(String.format("%sopenRate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOpenRate()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sopenRate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOpenRate()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -480,7 +478,7 @@ public class AbTestCampaignResult {
     // add `clickRate` to the URL query string
     if (getClickRate() != null) {
       try {
-        joiner.add(String.format("%sclickRate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getClickRate()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sclickRate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getClickRate()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -490,7 +488,7 @@ public class AbTestCampaignResult {
     // add `winningVersionRate` to the URL query string
     if (getWinningVersionRate() != null) {
       try {
-        joiner.add(String.format("%swinningVersionRate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWinningVersionRate()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%swinningVersionRate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWinningVersionRate()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

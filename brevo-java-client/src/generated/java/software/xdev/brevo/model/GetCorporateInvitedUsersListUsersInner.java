@@ -74,7 +74,7 @@ public class GetCorporateInvitedUsersListUsersInner {
    * @return groups
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_GROUPS)
+  @JsonProperty(value = JSON_PROPERTY_GROUPS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public GetCorporateInvitedUsersListUsersInnerGroups getGroups() {
@@ -82,7 +82,7 @@ public class GetCorporateInvitedUsersListUsersInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_GROUPS)
+  @JsonProperty(value = JSON_PROPERTY_GROUPS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setGroups(@jakarta.annotation.Nullable GetCorporateInvitedUsersListUsersInnerGroups groups) {
     this.groups = groups;
@@ -99,7 +99,7 @@ public class GetCorporateInvitedUsersListUsersInner {
    * @return email
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getEmail() {
@@ -107,7 +107,7 @@ public class GetCorporateInvitedUsersListUsersInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setEmail(@jakarta.annotation.Nonnull String email) {
     this.email = email;
@@ -124,7 +124,7 @@ public class GetCorporateInvitedUsersListUsersInner {
    * @return isOwner
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_IS_OWNER)
+  @JsonProperty(value = JSON_PROPERTY_IS_OWNER, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getIsOwner() {
@@ -132,7 +132,7 @@ public class GetCorporateInvitedUsersListUsersInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IS_OWNER)
+  @JsonProperty(value = JSON_PROPERTY_IS_OWNER, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setIsOwner(@jakarta.annotation.Nonnull String isOwner) {
     this.isOwner = isOwner;
@@ -149,7 +149,7 @@ public class GetCorporateInvitedUsersListUsersInner {
    * @return status
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_STATUS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getStatus() {
@@ -157,7 +157,7 @@ public class GetCorporateInvitedUsersListUsersInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_STATUS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setStatus(@jakarta.annotation.Nonnull String status) {
     this.status = status;
@@ -174,7 +174,7 @@ public class GetCorporateInvitedUsersListUsersInner {
    * @return featureAccess
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_FEATURE_ACCESS)
+  @JsonProperty(value = JSON_PROPERTY_FEATURE_ACCESS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public GetCorporateInvitedUsersListUsersInnerFeatureAccess getFeatureAccess() {
@@ -182,11 +182,12 @@ public class GetCorporateInvitedUsersListUsersInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_FEATURE_ACCESS)
+  @JsonProperty(value = JSON_PROPERTY_FEATURE_ACCESS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setFeatureAccess(@jakarta.annotation.Nonnull GetCorporateInvitedUsersListUsersInnerFeatureAccess featureAccess) {
     this.featureAccess = featureAccess;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -227,10 +228,7 @@ public class GetCorporateInvitedUsersListUsersInner {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -273,7 +271,7 @@ public class GetCorporateInvitedUsersListUsersInner {
     // add `email` to the URL query string
     if (getEmail() != null) {
       try {
-        joiner.add(String.format("%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -283,7 +281,7 @@ public class GetCorporateInvitedUsersListUsersInner {
     // add `is_owner` to the URL query string
     if (getIsOwner() != null) {
       try {
-        joiner.add(String.format("%sis_owner%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsOwner()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sis_owner%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsOwner()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -293,7 +291,7 @@ public class GetCorporateInvitedUsersListUsersInner {
     // add `status` to the URL query string
     if (getStatus() != null) {
       try {
-        joiner.add(String.format("%sstatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatus()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sstatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatus()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

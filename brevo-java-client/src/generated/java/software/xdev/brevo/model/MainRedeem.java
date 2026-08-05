@@ -121,7 +121,7 @@ public class MainRedeem {
    * @return cancelledAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CANCELLED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CANCELLED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public OffsetDateTime getCancelledAt() {
@@ -129,7 +129,7 @@ public class MainRedeem {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CANCELLED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CANCELLED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCancelledAt(@jakarta.annotation.Nullable OffsetDateTime cancelledAt) {
     this.cancelledAt = cancelledAt;
@@ -146,7 +146,7 @@ public class MainRedeem {
    * @return completedAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_COMPLETED_AT)
+  @JsonProperty(value = JSON_PROPERTY_COMPLETED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public OffsetDateTime getCompletedAt() {
@@ -154,7 +154,7 @@ public class MainRedeem {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_COMPLETED_AT)
+  @JsonProperty(value = JSON_PROPERTY_COMPLETED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCompletedAt(@jakarta.annotation.Nullable OffsetDateTime completedAt) {
     this.completedAt = completedAt;
@@ -171,7 +171,7 @@ public class MainRedeem {
    * @return contactId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CONTACT_ID)
+  @JsonProperty(value = JSON_PROPERTY_CONTACT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getContactId() {
@@ -179,7 +179,7 @@ public class MainRedeem {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONTACT_ID)
+  @JsonProperty(value = JSON_PROPERTY_CONTACT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setContactId(@jakarta.annotation.Nullable Long contactId) {
     this.contactId = contactId;
@@ -196,7 +196,7 @@ public class MainRedeem {
    * @return createdAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public OffsetDateTime getCreatedAt() {
@@ -204,7 +204,7 @@ public class MainRedeem {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCreatedAt(@jakarta.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
@@ -221,7 +221,7 @@ public class MainRedeem {
    * @return debitTransactionId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DEBIT_TRANSACTION_ID)
+  @JsonProperty(value = JSON_PROPERTY_DEBIT_TRANSACTION_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public UUID getDebitTransactionId() {
@@ -229,7 +229,7 @@ public class MainRedeem {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DEBIT_TRANSACTION_ID)
+  @JsonProperty(value = JSON_PROPERTY_DEBIT_TRANSACTION_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDebitTransactionId(@jakarta.annotation.Nullable UUID debitTransactionId) {
     this.debitTransactionId = debitTransactionId;
@@ -246,7 +246,7 @@ public class MainRedeem {
    * @return expiresAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EXPIRES_AT)
+  @JsonProperty(value = JSON_PROPERTY_EXPIRES_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public OffsetDateTime getExpiresAt() {
@@ -254,7 +254,7 @@ public class MainRedeem {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EXPIRES_AT)
+  @JsonProperty(value = JSON_PROPERTY_EXPIRES_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setExpiresAt(@jakarta.annotation.Nullable OffsetDateTime expiresAt) {
     this.expiresAt = expiresAt;
@@ -271,7 +271,7 @@ public class MainRedeem {
    * @return id
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public UUID getId() {
@@ -279,7 +279,7 @@ public class MainRedeem {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setId(@jakarta.annotation.Nullable UUID id) {
     this.id = id;
@@ -296,7 +296,7 @@ public class MainRedeem {
    * @return loyaltyProgramId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LOYALTY_PROGRAM_ID)
+  @JsonProperty(value = JSON_PROPERTY_LOYALTY_PROGRAM_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public UUID getLoyaltyProgramId() {
@@ -304,7 +304,7 @@ public class MainRedeem {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LOYALTY_PROGRAM_ID)
+  @JsonProperty(value = JSON_PROPERTY_LOYALTY_PROGRAM_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLoyaltyProgramId(@jakarta.annotation.Nullable UUID loyaltyProgramId) {
     this.loyaltyProgramId = loyaltyProgramId;
@@ -329,7 +329,7 @@ public class MainRedeem {
    * @return meta
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_META)
+  @JsonProperty(value = JSON_PROPERTY_META, required = false)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
 
   public Map<String, Object> getMeta() {
@@ -337,7 +337,7 @@ public class MainRedeem {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_META)
+  @JsonProperty(value = JSON_PROPERTY_META, required = false)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
   public void setMeta(@jakarta.annotation.Nullable Map<String, Object> meta) {
     this.meta = meta;
@@ -354,7 +354,7 @@ public class MainRedeem {
    * @return rejectReason
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_REJECT_REASON)
+  @JsonProperty(value = JSON_PROPERTY_REJECT_REASON, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getRejectReason() {
@@ -362,7 +362,7 @@ public class MainRedeem {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REJECT_REASON)
+  @JsonProperty(value = JSON_PROPERTY_REJECT_REASON, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRejectReason(@jakarta.annotation.Nullable String rejectReason) {
     this.rejectReason = rejectReason;
@@ -379,7 +379,7 @@ public class MainRedeem {
    * @return rejectedAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_REJECTED_AT)
+  @JsonProperty(value = JSON_PROPERTY_REJECTED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public OffsetDateTime getRejectedAt() {
@@ -387,7 +387,7 @@ public class MainRedeem {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REJECTED_AT)
+  @JsonProperty(value = JSON_PROPERTY_REJECTED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRejectedAt(@jakarta.annotation.Nullable OffsetDateTime rejectedAt) {
     this.rejectedAt = rejectedAt;
@@ -404,7 +404,7 @@ public class MainRedeem {
    * @return rewardAttributionId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_REWARD_ATTRIBUTION_ID)
+  @JsonProperty(value = JSON_PROPERTY_REWARD_ATTRIBUTION_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public UUID getRewardAttributionId() {
@@ -412,7 +412,7 @@ public class MainRedeem {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REWARD_ATTRIBUTION_ID)
+  @JsonProperty(value = JSON_PROPERTY_REWARD_ATTRIBUTION_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRewardAttributionId(@jakarta.annotation.Nullable UUID rewardAttributionId) {
     this.rewardAttributionId = rewardAttributionId;
@@ -429,7 +429,7 @@ public class MainRedeem {
    * @return status
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_STATUS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getStatus() {
@@ -437,7 +437,7 @@ public class MainRedeem {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_STATUS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setStatus(@jakarta.annotation.Nullable String status) {
     this.status = status;
@@ -454,7 +454,7 @@ public class MainRedeem {
    * @return updatedAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UPDATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_UPDATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public OffsetDateTime getUpdatedAt() {
@@ -462,11 +462,12 @@ public class MainRedeem {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UPDATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_UPDATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUpdatedAt(@jakarta.annotation.Nullable OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -525,10 +526,7 @@ public class MainRedeem {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -566,7 +564,7 @@ public class MainRedeem {
     // add `cancelledAt` to the URL query string
     if (getCancelledAt() != null) {
       try {
-        joiner.add(String.format("%scancelledAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCancelledAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scancelledAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCancelledAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -576,7 +574,7 @@ public class MainRedeem {
     // add `completedAt` to the URL query string
     if (getCompletedAt() != null) {
       try {
-        joiner.add(String.format("%scompletedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCompletedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scompletedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCompletedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -586,7 +584,7 @@ public class MainRedeem {
     // add `contactId` to the URL query string
     if (getContactId() != null) {
       try {
-        joiner.add(String.format("%scontactId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContactId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scontactId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContactId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -596,7 +594,7 @@ public class MainRedeem {
     // add `createdAt` to the URL query string
     if (getCreatedAt() != null) {
       try {
-        joiner.add(String.format("%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -606,7 +604,7 @@ public class MainRedeem {
     // add `debitTransactionId` to the URL query string
     if (getDebitTransactionId() != null) {
       try {
-        joiner.add(String.format("%sdebitTransactionId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDebitTransactionId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdebitTransactionId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDebitTransactionId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -616,7 +614,7 @@ public class MainRedeem {
     // add `expiresAt` to the URL query string
     if (getExpiresAt() != null) {
       try {
-        joiner.add(String.format("%sexpiresAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpiresAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sexpiresAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpiresAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -626,7 +624,7 @@ public class MainRedeem {
     // add `id` to the URL query string
     if (getId() != null) {
       try {
-        joiner.add(String.format("%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -636,7 +634,7 @@ public class MainRedeem {
     // add `loyaltyProgramId` to the URL query string
     if (getLoyaltyProgramId() != null) {
       try {
-        joiner.add(String.format("%sloyaltyProgramId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLoyaltyProgramId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sloyaltyProgramId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLoyaltyProgramId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -647,8 +645,8 @@ public class MainRedeem {
     if (getMeta() != null) {
       for (String _key : getMeta().keySet()) {
         try {
-          joiner.add(String.format("%smeta%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%smeta%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, _key, containerSuffix),
               getMeta().get(_key), URLEncoder.encode(String.valueOf(getMeta().get(_key)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -660,7 +658,7 @@ public class MainRedeem {
     // add `rejectReason` to the URL query string
     if (getRejectReason() != null) {
       try {
-        joiner.add(String.format("%srejectReason%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRejectReason()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%srejectReason%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRejectReason()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -670,7 +668,7 @@ public class MainRedeem {
     // add `rejectedAt` to the URL query string
     if (getRejectedAt() != null) {
       try {
-        joiner.add(String.format("%srejectedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRejectedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%srejectedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRejectedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -680,7 +678,7 @@ public class MainRedeem {
     // add `rewardAttributionId` to the URL query string
     if (getRewardAttributionId() != null) {
       try {
-        joiner.add(String.format("%srewardAttributionId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRewardAttributionId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%srewardAttributionId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRewardAttributionId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -690,7 +688,7 @@ public class MainRedeem {
     // add `status` to the URL query string
     if (getStatus() != null) {
       try {
-        joiner.add(String.format("%sstatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatus()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sstatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatus()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -700,7 +698,7 @@ public class MainRedeem {
     // add `updatedAt` to the URL query string
     if (getUpdatedAt() != null) {
       try {
-        joiner.add(String.format("%supdatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUpdatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%supdatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUpdatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

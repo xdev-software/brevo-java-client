@@ -78,7 +78,7 @@ public class CompaniesLinkUnlinkIdPatchRequest {
    * @return linkContactIds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LINK_CONTACT_IDS)
+  @JsonProperty(value = JSON_PROPERTY_LINK_CONTACT_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<Long> getLinkContactIds() {
@@ -86,7 +86,7 @@ public class CompaniesLinkUnlinkIdPatchRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LINK_CONTACT_IDS)
+  @JsonProperty(value = JSON_PROPERTY_LINK_CONTACT_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLinkContactIds(@jakarta.annotation.Nullable List<Long> linkContactIds) {
     this.linkContactIds = linkContactIds;
@@ -111,7 +111,7 @@ public class CompaniesLinkUnlinkIdPatchRequest {
    * @return unlinkContactIds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UNLINK_CONTACT_IDS)
+  @JsonProperty(value = JSON_PROPERTY_UNLINK_CONTACT_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<Long> getUnlinkContactIds() {
@@ -119,7 +119,7 @@ public class CompaniesLinkUnlinkIdPatchRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UNLINK_CONTACT_IDS)
+  @JsonProperty(value = JSON_PROPERTY_UNLINK_CONTACT_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUnlinkContactIds(@jakarta.annotation.Nullable List<Long> unlinkContactIds) {
     this.unlinkContactIds = unlinkContactIds;
@@ -144,7 +144,7 @@ public class CompaniesLinkUnlinkIdPatchRequest {
    * @return linkDealsIds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LINK_DEALS_IDS)
+  @JsonProperty(value = JSON_PROPERTY_LINK_DEALS_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getLinkDealsIds() {
@@ -152,7 +152,7 @@ public class CompaniesLinkUnlinkIdPatchRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LINK_DEALS_IDS)
+  @JsonProperty(value = JSON_PROPERTY_LINK_DEALS_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLinkDealsIds(@jakarta.annotation.Nullable List<String> linkDealsIds) {
     this.linkDealsIds = linkDealsIds;
@@ -177,7 +177,7 @@ public class CompaniesLinkUnlinkIdPatchRequest {
    * @return unlinkDealsIds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UNLINK_DEALS_IDS)
+  @JsonProperty(value = JSON_PROPERTY_UNLINK_DEALS_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getUnlinkDealsIds() {
@@ -185,11 +185,12 @@ public class CompaniesLinkUnlinkIdPatchRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UNLINK_DEALS_IDS)
+  @JsonProperty(value = JSON_PROPERTY_UNLINK_DEALS_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUnlinkDealsIds(@jakarta.annotation.Nullable List<String> unlinkDealsIds) {
     this.unlinkDealsIds = unlinkDealsIds;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -228,10 +229,7 @@ public class CompaniesLinkUnlinkIdPatchRequest {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -270,8 +268,8 @@ public class CompaniesLinkUnlinkIdPatchRequest {
     if (getLinkContactIds() != null) {
       for (int i = 0; i < getLinkContactIds().size(); i++) {
         try {
-          joiner.add(String.format("%slinkContactIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%slinkContactIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getLinkContactIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -284,8 +282,8 @@ public class CompaniesLinkUnlinkIdPatchRequest {
     if (getUnlinkContactIds() != null) {
       for (int i = 0; i < getUnlinkContactIds().size(); i++) {
         try {
-          joiner.add(String.format("%sunlinkContactIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sunlinkContactIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getUnlinkContactIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -298,8 +296,8 @@ public class CompaniesLinkUnlinkIdPatchRequest {
     if (getLinkDealsIds() != null) {
       for (int i = 0; i < getLinkDealsIds().size(); i++) {
         try {
-          joiner.add(String.format("%slinkDealsIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%slinkDealsIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getLinkDealsIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -312,8 +310,8 @@ public class CompaniesLinkUnlinkIdPatchRequest {
     if (getUnlinkDealsIds() != null) {
       for (int i = 0; i < getUnlinkDealsIds().size(); i++) {
         try {
-          joiner.add(String.format("%sunlinkDealsIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sunlinkDealsIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getUnlinkDealsIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported

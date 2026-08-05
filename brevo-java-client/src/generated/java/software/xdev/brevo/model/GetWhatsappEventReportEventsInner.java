@@ -132,7 +132,7 @@ public class GetWhatsappEventReportEventsInner {
    * @return contactNumber
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CONTACT_NUMBER)
+  @JsonProperty(value = JSON_PROPERTY_CONTACT_NUMBER, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getContactNumber() {
@@ -140,7 +140,7 @@ public class GetWhatsappEventReportEventsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONTACT_NUMBER)
+  @JsonProperty(value = JSON_PROPERTY_CONTACT_NUMBER, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setContactNumber(@jakarta.annotation.Nonnull String contactNumber) {
     this.contactNumber = contactNumber;
@@ -157,7 +157,7 @@ public class GetWhatsappEventReportEventsInner {
    * @return date
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DATE)
+  @JsonProperty(value = JSON_PROPERTY_DATE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getDate() {
@@ -165,7 +165,7 @@ public class GetWhatsappEventReportEventsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DATE)
+  @JsonProperty(value = JSON_PROPERTY_DATE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDate(@jakarta.annotation.Nonnull String date) {
     this.date = date;
@@ -182,7 +182,7 @@ public class GetWhatsappEventReportEventsInner {
    * @return messageId
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
+  @JsonProperty(value = JSON_PROPERTY_MESSAGE_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getMessageId() {
@@ -190,7 +190,7 @@ public class GetWhatsappEventReportEventsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
+  @JsonProperty(value = JSON_PROPERTY_MESSAGE_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setMessageId(@jakarta.annotation.Nonnull String messageId) {
     this.messageId = messageId;
@@ -207,7 +207,7 @@ public class GetWhatsappEventReportEventsInner {
    * @return event
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_EVENT)
+  @JsonProperty(value = JSON_PROPERTY_EVENT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public EventEnum getEvent() {
@@ -215,7 +215,7 @@ public class GetWhatsappEventReportEventsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EVENT)
+  @JsonProperty(value = JSON_PROPERTY_EVENT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setEvent(@jakarta.annotation.Nonnull EventEnum event) {
     this.event = event;
@@ -232,7 +232,7 @@ public class GetWhatsappEventReportEventsInner {
    * @return reason
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_REASON)
+  @JsonProperty(value = JSON_PROPERTY_REASON, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getReason() {
@@ -240,7 +240,7 @@ public class GetWhatsappEventReportEventsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REASON)
+  @JsonProperty(value = JSON_PROPERTY_REASON, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setReason(@jakarta.annotation.Nullable String reason) {
     this.reason = reason;
@@ -257,7 +257,7 @@ public class GetWhatsappEventReportEventsInner {
    * @return body
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_BODY)
+  @JsonProperty(value = JSON_PROPERTY_BODY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getBody() {
@@ -265,7 +265,7 @@ public class GetWhatsappEventReportEventsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BODY)
+  @JsonProperty(value = JSON_PROPERTY_BODY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setBody(@jakarta.annotation.Nullable String body) {
     this.body = body;
@@ -282,7 +282,7 @@ public class GetWhatsappEventReportEventsInner {
    * @return mediaUrl
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_MEDIA_URL)
+  @JsonProperty(value = JSON_PROPERTY_MEDIA_URL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getMediaUrl() {
@@ -290,7 +290,7 @@ public class GetWhatsappEventReportEventsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MEDIA_URL)
+  @JsonProperty(value = JSON_PROPERTY_MEDIA_URL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setMediaUrl(@jakarta.annotation.Nullable String mediaUrl) {
     this.mediaUrl = mediaUrl;
@@ -307,7 +307,7 @@ public class GetWhatsappEventReportEventsInner {
    * @return senderNumber
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SENDER_NUMBER)
+  @JsonProperty(value = JSON_PROPERTY_SENDER_NUMBER, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getSenderNumber() {
@@ -315,11 +315,12 @@ public class GetWhatsappEventReportEventsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SENDER_NUMBER)
+  @JsonProperty(value = JSON_PROPERTY_SENDER_NUMBER, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSenderNumber(@jakarta.annotation.Nonnull String senderNumber) {
     this.senderNumber = senderNumber;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -366,10 +367,7 @@ public class GetWhatsappEventReportEventsInner {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -407,7 +405,7 @@ public class GetWhatsappEventReportEventsInner {
     // add `contactNumber` to the URL query string
     if (getContactNumber() != null) {
       try {
-        joiner.add(String.format("%scontactNumber%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContactNumber()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scontactNumber%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContactNumber()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -417,7 +415,7 @@ public class GetWhatsappEventReportEventsInner {
     // add `date` to the URL query string
     if (getDate() != null) {
       try {
-        joiner.add(String.format("%sdate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDate()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDate()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -427,7 +425,7 @@ public class GetWhatsappEventReportEventsInner {
     // add `messageId` to the URL query string
     if (getMessageId() != null) {
       try {
-        joiner.add(String.format("%smessageId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMessageId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%smessageId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMessageId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -437,7 +435,7 @@ public class GetWhatsappEventReportEventsInner {
     // add `event` to the URL query string
     if (getEvent() != null) {
       try {
-        joiner.add(String.format("%sevent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEvent()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sevent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEvent()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -447,7 +445,7 @@ public class GetWhatsappEventReportEventsInner {
     // add `reason` to the URL query string
     if (getReason() != null) {
       try {
-        joiner.add(String.format("%sreason%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReason()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sreason%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReason()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -457,7 +455,7 @@ public class GetWhatsappEventReportEventsInner {
     // add `body` to the URL query string
     if (getBody() != null) {
       try {
-        joiner.add(String.format("%sbody%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBody()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sbody%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBody()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -467,7 +465,7 @@ public class GetWhatsappEventReportEventsInner {
     // add `mediaUrl` to the URL query string
     if (getMediaUrl() != null) {
       try {
-        joiner.add(String.format("%smediaUrl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMediaUrl()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%smediaUrl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMediaUrl()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -477,7 +475,7 @@ public class GetWhatsappEventReportEventsInner {
     // add `senderNumber` to the URL query string
     if (getSenderNumber() != null) {
       try {
-        joiner.add(String.format("%ssenderNumber%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSenderNumber()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssenderNumber%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSenderNumber()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

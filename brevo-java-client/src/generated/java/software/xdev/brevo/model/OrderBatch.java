@@ -74,7 +74,7 @@ public class OrderBatch {
    * @return orders
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ORDERS)
+  @JsonProperty(value = JSON_PROPERTY_ORDERS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public List<Order> getOrders() {
@@ -82,7 +82,7 @@ public class OrderBatch {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ORDERS)
+  @JsonProperty(value = JSON_PROPERTY_ORDERS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setOrders(@jakarta.annotation.Nonnull List<Order> orders) {
     this.orders = orders;
@@ -99,7 +99,7 @@ public class OrderBatch {
    * @return notifyUrl
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_NOTIFY_URL)
+  @JsonProperty(value = JSON_PROPERTY_NOTIFY_URL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getNotifyUrl() {
@@ -107,7 +107,7 @@ public class OrderBatch {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NOTIFY_URL)
+  @JsonProperty(value = JSON_PROPERTY_NOTIFY_URL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setNotifyUrl(@jakarta.annotation.Nullable String notifyUrl) {
     this.notifyUrl = notifyUrl;
@@ -124,7 +124,7 @@ public class OrderBatch {
    * @return historical
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_HISTORICAL)
+  @JsonProperty(value = JSON_PROPERTY_HISTORICAL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getHistorical() {
@@ -132,11 +132,12 @@ public class OrderBatch {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_HISTORICAL)
+  @JsonProperty(value = JSON_PROPERTY_HISTORICAL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setHistorical(@jakarta.annotation.Nullable Boolean historical) {
     this.historical = historical;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -173,10 +174,7 @@ public class OrderBatch {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -215,8 +213,8 @@ public class OrderBatch {
     if (getOrders() != null) {
       for (int i = 0; i < getOrders().size(); i++) {
         if (getOrders().get(i) != null) {
-          joiner.add(getOrders().get(i).toUrlQueryString(String.format("%sorders%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getOrders().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sorders%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -224,7 +222,7 @@ public class OrderBatch {
     // add `notifyUrl` to the URL query string
     if (getNotifyUrl() != null) {
       try {
-        joiner.add(String.format("%snotifyUrl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNotifyUrl()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%snotifyUrl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNotifyUrl()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -234,7 +232,7 @@ public class OrderBatch {
     // add `historical` to the URL query string
     if (getHistorical() != null) {
       try {
-        joiner.add(String.format("%shistorical%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHistorical()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%shistorical%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHistorical()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

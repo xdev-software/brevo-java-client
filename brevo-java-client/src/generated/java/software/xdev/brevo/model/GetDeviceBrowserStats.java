@@ -67,7 +67,7 @@ public class GetDeviceBrowserStats {
    * @return clickers
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CLICKERS)
+  @JsonProperty(value = JSON_PROPERTY_CLICKERS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getClickers() {
@@ -75,7 +75,7 @@ public class GetDeviceBrowserStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CLICKERS)
+  @JsonProperty(value = JSON_PROPERTY_CLICKERS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setClickers(@jakarta.annotation.Nonnull Long clickers) {
     this.clickers = clickers;
@@ -92,7 +92,7 @@ public class GetDeviceBrowserStats {
    * @return uniqueClicks
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_UNIQUE_CLICKS)
+  @JsonProperty(value = JSON_PROPERTY_UNIQUE_CLICKS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getUniqueClicks() {
@@ -100,7 +100,7 @@ public class GetDeviceBrowserStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UNIQUE_CLICKS)
+  @JsonProperty(value = JSON_PROPERTY_UNIQUE_CLICKS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setUniqueClicks(@jakarta.annotation.Nonnull Long uniqueClicks) {
     this.uniqueClicks = uniqueClicks;
@@ -117,7 +117,7 @@ public class GetDeviceBrowserStats {
    * @return viewed
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_VIEWED)
+  @JsonProperty(value = JSON_PROPERTY_VIEWED, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getViewed() {
@@ -125,7 +125,7 @@ public class GetDeviceBrowserStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_VIEWED)
+  @JsonProperty(value = JSON_PROPERTY_VIEWED, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setViewed(@jakarta.annotation.Nonnull Long viewed) {
     this.viewed = viewed;
@@ -142,7 +142,7 @@ public class GetDeviceBrowserStats {
    * @return uniqueViews
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_UNIQUE_VIEWS)
+  @JsonProperty(value = JSON_PROPERTY_UNIQUE_VIEWS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getUniqueViews() {
@@ -150,11 +150,12 @@ public class GetDeviceBrowserStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UNIQUE_VIEWS)
+  @JsonProperty(value = JSON_PROPERTY_UNIQUE_VIEWS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setUniqueViews(@jakarta.annotation.Nonnull Long uniqueViews) {
     this.uniqueViews = uniqueViews;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -193,10 +194,7 @@ public class GetDeviceBrowserStats {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -234,7 +232,7 @@ public class GetDeviceBrowserStats {
     // add `clickers` to the URL query string
     if (getClickers() != null) {
       try {
-        joiner.add(String.format("%sclickers%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getClickers()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sclickers%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getClickers()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -244,7 +242,7 @@ public class GetDeviceBrowserStats {
     // add `uniqueClicks` to the URL query string
     if (getUniqueClicks() != null) {
       try {
-        joiner.add(String.format("%suniqueClicks%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUniqueClicks()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%suniqueClicks%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUniqueClicks()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -254,7 +252,7 @@ public class GetDeviceBrowserStats {
     // add `viewed` to the URL query string
     if (getViewed() != null) {
       try {
-        joiner.add(String.format("%sviewed%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getViewed()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sviewed%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getViewed()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -264,7 +262,7 @@ public class GetDeviceBrowserStats {
     // add `uniqueViews` to the URL query string
     if (getUniqueViews() != null) {
       try {
-        joiner.add(String.format("%suniqueViews%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUniqueViews()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%suniqueViews%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUniqueViews()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

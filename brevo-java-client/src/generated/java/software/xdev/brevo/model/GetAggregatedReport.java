@@ -112,7 +112,7 @@ public class GetAggregatedReport {
    * @return range
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_RANGE)
+  @JsonProperty(value = JSON_PROPERTY_RANGE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getRange() {
@@ -120,7 +120,7 @@ public class GetAggregatedReport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_RANGE)
+  @JsonProperty(value = JSON_PROPERTY_RANGE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRange(@jakarta.annotation.Nullable String range) {
     this.range = range;
@@ -137,7 +137,7 @@ public class GetAggregatedReport {
    * @return requests
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_REQUESTS)
+  @JsonProperty(value = JSON_PROPERTY_REQUESTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getRequests() {
@@ -145,7 +145,7 @@ public class GetAggregatedReport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REQUESTS)
+  @JsonProperty(value = JSON_PROPERTY_REQUESTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRequests(@jakarta.annotation.Nullable Long requests) {
     this.requests = requests;
@@ -162,7 +162,7 @@ public class GetAggregatedReport {
    * @return delivered
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DELIVERED)
+  @JsonProperty(value = JSON_PROPERTY_DELIVERED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getDelivered() {
@@ -170,7 +170,7 @@ public class GetAggregatedReport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DELIVERED)
+  @JsonProperty(value = JSON_PROPERTY_DELIVERED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDelivered(@jakarta.annotation.Nullable Long delivered) {
     this.delivered = delivered;
@@ -187,7 +187,7 @@ public class GetAggregatedReport {
    * @return hardBounces
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_HARD_BOUNCES)
+  @JsonProperty(value = JSON_PROPERTY_HARD_BOUNCES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getHardBounces() {
@@ -195,7 +195,7 @@ public class GetAggregatedReport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_HARD_BOUNCES)
+  @JsonProperty(value = JSON_PROPERTY_HARD_BOUNCES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setHardBounces(@jakarta.annotation.Nullable Long hardBounces) {
     this.hardBounces = hardBounces;
@@ -212,7 +212,7 @@ public class GetAggregatedReport {
    * @return softBounces
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SOFT_BOUNCES)
+  @JsonProperty(value = JSON_PROPERTY_SOFT_BOUNCES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getSoftBounces() {
@@ -220,7 +220,7 @@ public class GetAggregatedReport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SOFT_BOUNCES)
+  @JsonProperty(value = JSON_PROPERTY_SOFT_BOUNCES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSoftBounces(@jakarta.annotation.Nullable Long softBounces) {
     this.softBounces = softBounces;
@@ -237,7 +237,7 @@ public class GetAggregatedReport {
    * @return clicks
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CLICKS)
+  @JsonProperty(value = JSON_PROPERTY_CLICKS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getClicks() {
@@ -245,7 +245,7 @@ public class GetAggregatedReport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CLICKS)
+  @JsonProperty(value = JSON_PROPERTY_CLICKS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setClicks(@jakarta.annotation.Nullable Long clicks) {
     this.clicks = clicks;
@@ -262,7 +262,7 @@ public class GetAggregatedReport {
    * @return uniqueClicks
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UNIQUE_CLICKS)
+  @JsonProperty(value = JSON_PROPERTY_UNIQUE_CLICKS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getUniqueClicks() {
@@ -270,7 +270,7 @@ public class GetAggregatedReport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UNIQUE_CLICKS)
+  @JsonProperty(value = JSON_PROPERTY_UNIQUE_CLICKS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUniqueClicks(@jakarta.annotation.Nullable Long uniqueClicks) {
     this.uniqueClicks = uniqueClicks;
@@ -287,7 +287,7 @@ public class GetAggregatedReport {
    * @return opens
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_OPENS)
+  @JsonProperty(value = JSON_PROPERTY_OPENS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getOpens() {
@@ -295,7 +295,7 @@ public class GetAggregatedReport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_OPENS)
+  @JsonProperty(value = JSON_PROPERTY_OPENS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setOpens(@jakarta.annotation.Nullable Long opens) {
     this.opens = opens;
@@ -312,7 +312,7 @@ public class GetAggregatedReport {
    * @return uniqueOpens
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UNIQUE_OPENS)
+  @JsonProperty(value = JSON_PROPERTY_UNIQUE_OPENS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getUniqueOpens() {
@@ -320,7 +320,7 @@ public class GetAggregatedReport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UNIQUE_OPENS)
+  @JsonProperty(value = JSON_PROPERTY_UNIQUE_OPENS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUniqueOpens(@jakarta.annotation.Nullable Long uniqueOpens) {
     this.uniqueOpens = uniqueOpens;
@@ -337,7 +337,7 @@ public class GetAggregatedReport {
    * @return spamReports
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SPAM_REPORTS)
+  @JsonProperty(value = JSON_PROPERTY_SPAM_REPORTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getSpamReports() {
@@ -345,7 +345,7 @@ public class GetAggregatedReport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SPAM_REPORTS)
+  @JsonProperty(value = JSON_PROPERTY_SPAM_REPORTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSpamReports(@jakarta.annotation.Nullable Long spamReports) {
     this.spamReports = spamReports;
@@ -362,7 +362,7 @@ public class GetAggregatedReport {
    * @return blocked
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_BLOCKED)
+  @JsonProperty(value = JSON_PROPERTY_BLOCKED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getBlocked() {
@@ -370,7 +370,7 @@ public class GetAggregatedReport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BLOCKED)
+  @JsonProperty(value = JSON_PROPERTY_BLOCKED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setBlocked(@jakarta.annotation.Nullable Long blocked) {
     this.blocked = blocked;
@@ -387,7 +387,7 @@ public class GetAggregatedReport {
    * @return invalid
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_INVALID)
+  @JsonProperty(value = JSON_PROPERTY_INVALID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getInvalid() {
@@ -395,7 +395,7 @@ public class GetAggregatedReport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_INVALID)
+  @JsonProperty(value = JSON_PROPERTY_INVALID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setInvalid(@jakarta.annotation.Nullable Long invalid) {
     this.invalid = invalid;
@@ -412,7 +412,7 @@ public class GetAggregatedReport {
    * @return unsubscribed
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UNSUBSCRIBED)
+  @JsonProperty(value = JSON_PROPERTY_UNSUBSCRIBED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getUnsubscribed() {
@@ -420,11 +420,12 @@ public class GetAggregatedReport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UNSUBSCRIBED)
+  @JsonProperty(value = JSON_PROPERTY_UNSUBSCRIBED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUnsubscribed(@jakarta.annotation.Nullable Long unsubscribed) {
     this.unsubscribed = unsubscribed;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -481,10 +482,7 @@ public class GetAggregatedReport {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -522,7 +520,7 @@ public class GetAggregatedReport {
     // add `range` to the URL query string
     if (getRange() != null) {
       try {
-        joiner.add(String.format("%srange%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRange()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%srange%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRange()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -532,7 +530,7 @@ public class GetAggregatedReport {
     // add `requests` to the URL query string
     if (getRequests() != null) {
       try {
-        joiner.add(String.format("%srequests%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRequests()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%srequests%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRequests()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -542,7 +540,7 @@ public class GetAggregatedReport {
     // add `delivered` to the URL query string
     if (getDelivered() != null) {
       try {
-        joiner.add(String.format("%sdelivered%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDelivered()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdelivered%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDelivered()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -552,7 +550,7 @@ public class GetAggregatedReport {
     // add `hardBounces` to the URL query string
     if (getHardBounces() != null) {
       try {
-        joiner.add(String.format("%shardBounces%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHardBounces()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%shardBounces%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHardBounces()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -562,7 +560,7 @@ public class GetAggregatedReport {
     // add `softBounces` to the URL query string
     if (getSoftBounces() != null) {
       try {
-        joiner.add(String.format("%ssoftBounces%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSoftBounces()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssoftBounces%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSoftBounces()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -572,7 +570,7 @@ public class GetAggregatedReport {
     // add `clicks` to the URL query string
     if (getClicks() != null) {
       try {
-        joiner.add(String.format("%sclicks%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getClicks()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sclicks%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getClicks()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -582,7 +580,7 @@ public class GetAggregatedReport {
     // add `uniqueClicks` to the URL query string
     if (getUniqueClicks() != null) {
       try {
-        joiner.add(String.format("%suniqueClicks%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUniqueClicks()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%suniqueClicks%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUniqueClicks()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -592,7 +590,7 @@ public class GetAggregatedReport {
     // add `opens` to the URL query string
     if (getOpens() != null) {
       try {
-        joiner.add(String.format("%sopens%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOpens()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sopens%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOpens()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -602,7 +600,7 @@ public class GetAggregatedReport {
     // add `uniqueOpens` to the URL query string
     if (getUniqueOpens() != null) {
       try {
-        joiner.add(String.format("%suniqueOpens%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUniqueOpens()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%suniqueOpens%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUniqueOpens()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -612,7 +610,7 @@ public class GetAggregatedReport {
     // add `spamReports` to the URL query string
     if (getSpamReports() != null) {
       try {
-        joiner.add(String.format("%sspamReports%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSpamReports()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sspamReports%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSpamReports()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -622,7 +620,7 @@ public class GetAggregatedReport {
     // add `blocked` to the URL query string
     if (getBlocked() != null) {
       try {
-        joiner.add(String.format("%sblocked%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBlocked()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sblocked%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBlocked()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -632,7 +630,7 @@ public class GetAggregatedReport {
     // add `invalid` to the URL query string
     if (getInvalid() != null) {
       try {
-        joiner.add(String.format("%sinvalid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getInvalid()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sinvalid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getInvalid()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -642,7 +640,7 @@ public class GetAggregatedReport {
     // add `unsubscribed` to the URL query string
     if (getUnsubscribed() != null) {
       try {
-        joiner.add(String.format("%sunsubscribed%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUnsubscribed()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sunsubscribed%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUnsubscribed()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

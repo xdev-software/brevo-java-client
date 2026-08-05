@@ -78,7 +78,7 @@ public class MainValidateRewardPayload {
    * @return attributedRewardId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ATTRIBUTED_REWARD_ID)
+  @JsonProperty(value = JSON_PROPERTY_ATTRIBUTED_REWARD_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public UUID getAttributedRewardId() {
@@ -86,7 +86,7 @@ public class MainValidateRewardPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ATTRIBUTED_REWARD_ID)
+  @JsonProperty(value = JSON_PROPERTY_ATTRIBUTED_REWARD_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setAttributedRewardId(@jakarta.annotation.Nullable UUID attributedRewardId) {
     this.attributedRewardId = attributedRewardId;
@@ -103,7 +103,7 @@ public class MainValidateRewardPayload {
    * @return code
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CODE)
+  @JsonProperty(value = JSON_PROPERTY_CODE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getCode() {
@@ -111,7 +111,7 @@ public class MainValidateRewardPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CODE)
+  @JsonProperty(value = JSON_PROPERTY_CODE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCode(@jakarta.annotation.Nullable String code) {
     this.code = code;
@@ -129,7 +129,7 @@ public class MainValidateRewardPayload {
    * @return contactId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CONTACT_ID)
+  @JsonProperty(value = JSON_PROPERTY_CONTACT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getContactId() {
@@ -137,7 +137,7 @@ public class MainValidateRewardPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONTACT_ID)
+  @JsonProperty(value = JSON_PROPERTY_CONTACT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setContactId(@jakarta.annotation.Nullable Long contactId) {
     this.contactId = contactId;
@@ -154,7 +154,7 @@ public class MainValidateRewardPayload {
    * @return loyaltySubscriptionId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LOYALTY_SUBSCRIPTION_ID)
+  @JsonProperty(value = JSON_PROPERTY_LOYALTY_SUBSCRIPTION_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getLoyaltySubscriptionId() {
@@ -162,7 +162,7 @@ public class MainValidateRewardPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LOYALTY_SUBSCRIPTION_ID)
+  @JsonProperty(value = JSON_PROPERTY_LOYALTY_SUBSCRIPTION_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLoyaltySubscriptionId(@jakarta.annotation.Nullable String loyaltySubscriptionId) {
     this.loyaltySubscriptionId = loyaltySubscriptionId;
@@ -179,7 +179,7 @@ public class MainValidateRewardPayload {
    * @return pointOfSellId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_POINT_OF_SELL_ID)
+  @JsonProperty(value = JSON_PROPERTY_POINT_OF_SELL_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getPointOfSellId() {
@@ -187,7 +187,7 @@ public class MainValidateRewardPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_POINT_OF_SELL_ID)
+  @JsonProperty(value = JSON_PROPERTY_POINT_OF_SELL_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPointOfSellId(@jakarta.annotation.Nullable String pointOfSellId) {
     this.pointOfSellId = pointOfSellId;
@@ -204,7 +204,7 @@ public class MainValidateRewardPayload {
    * @return rewardId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_REWARD_ID)
+  @JsonProperty(value = JSON_PROPERTY_REWARD_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public UUID getRewardId() {
@@ -212,11 +212,12 @@ public class MainValidateRewardPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REWARD_ID)
+  @JsonProperty(value = JSON_PROPERTY_REWARD_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRewardId(@jakarta.annotation.Nullable UUID rewardId) {
     this.rewardId = rewardId;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -259,10 +260,7 @@ public class MainValidateRewardPayload {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -300,7 +298,7 @@ public class MainValidateRewardPayload {
     // add `attributedRewardId` to the URL query string
     if (getAttributedRewardId() != null) {
       try {
-        joiner.add(String.format("%sattributedRewardId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAttributedRewardId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sattributedRewardId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAttributedRewardId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -310,7 +308,7 @@ public class MainValidateRewardPayload {
     // add `code` to the URL query string
     if (getCode() != null) {
       try {
-        joiner.add(String.format("%scode%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCode()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scode%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCode()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -320,7 +318,7 @@ public class MainValidateRewardPayload {
     // add `contactId` to the URL query string
     if (getContactId() != null) {
       try {
-        joiner.add(String.format("%scontactId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContactId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scontactId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContactId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -330,7 +328,7 @@ public class MainValidateRewardPayload {
     // add `loyaltySubscriptionId` to the URL query string
     if (getLoyaltySubscriptionId() != null) {
       try {
-        joiner.add(String.format("%sloyaltySubscriptionId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLoyaltySubscriptionId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sloyaltySubscriptionId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLoyaltySubscriptionId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -340,7 +338,7 @@ public class MainValidateRewardPayload {
     // add `pointOfSellId` to the URL query string
     if (getPointOfSellId() != null) {
       try {
-        joiner.add(String.format("%spointOfSellId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPointOfSellId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%spointOfSellId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPointOfSellId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -350,7 +348,7 @@ public class MainValidateRewardPayload {
     // add `rewardId` to the URL query string
     if (getRewardId() != null) {
       try {
-        joiner.add(String.format("%srewardId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRewardId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%srewardId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRewardId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

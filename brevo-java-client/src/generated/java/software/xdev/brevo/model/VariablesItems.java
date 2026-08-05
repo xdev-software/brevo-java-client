@@ -62,7 +62,7 @@ public class VariablesItems {
    * @return name
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getName() {
@@ -70,7 +70,7 @@ public class VariablesItems {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setName(@jakarta.annotation.Nullable String name) {
     this.name = name;
@@ -87,7 +87,7 @@ public class VariablesItems {
    * @return _default
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DEFAULT)
+  @JsonProperty(value = JSON_PROPERTY_DEFAULT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getDefault() {
@@ -95,7 +95,7 @@ public class VariablesItems {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DEFAULT)
+  @JsonProperty(value = JSON_PROPERTY_DEFAULT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDefault(@jakarta.annotation.Nullable String _default) {
     this._default = _default;
@@ -112,7 +112,7 @@ public class VariablesItems {
    * @return datatype
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DATATYPE)
+  @JsonProperty(value = JSON_PROPERTY_DATATYPE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getDatatype() {
@@ -120,11 +120,12 @@ public class VariablesItems {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DATATYPE)
+  @JsonProperty(value = JSON_PROPERTY_DATATYPE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDatatype(@jakarta.annotation.Nullable String datatype) {
     this.datatype = datatype;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -161,10 +162,7 @@ public class VariablesItems {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -202,7 +200,7 @@ public class VariablesItems {
     // add `name` to the URL query string
     if (getName() != null) {
       try {
-        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -212,7 +210,7 @@ public class VariablesItems {
     // add `default` to the URL query string
     if (getDefault() != null) {
       try {
-        joiner.add(String.format("%sdefault%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDefault()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdefault%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDefault()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -222,7 +220,7 @@ public class VariablesItems {
     // add `datatype` to the URL query string
     if (getDatatype() != null) {
       try {
-        joiner.add(String.format("%sdatatype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDatatype()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdatatype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDatatype()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

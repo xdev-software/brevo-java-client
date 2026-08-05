@@ -35,7 +35,7 @@ This client [is generated](./brevo-java-client/pom.xml) from an [``openapi.yml``
 A minimal demo is also available [here](./brevo-java-client-demo/src/main/java/software/xdev/Application.java).
 
 ## Support
-If you need support as soon as possible and you can't wait for any pull request, feel free to use [our support](https://xdev.software/en/services/support).
+If you need support as soon as possible and you can't wait for any pull request, feel free to use [our support](https://xdev.software/en/services-products/support).
 
 ## Contributing
 See the [contributing guide](./CONTRIBUTING.md) for detailed instructions on how to get started with our project.

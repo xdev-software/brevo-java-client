@@ -69,7 +69,7 @@ public class CreateUpdateBatchCategory {
    * @return categories
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CATEGORIES)
+  @JsonProperty(value = JSON_PROPERTY_CATEGORIES, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public List<CreateUpdateCategories> getCategories() {
@@ -77,7 +77,7 @@ public class CreateUpdateBatchCategory {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CATEGORIES)
+  @JsonProperty(value = JSON_PROPERTY_CATEGORIES, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCategories(@jakarta.annotation.Nonnull List<CreateUpdateCategories> categories) {
     this.categories = categories;
@@ -94,7 +94,7 @@ public class CreateUpdateBatchCategory {
    * @return updateEnabled
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UPDATE_ENABLED)
+  @JsonProperty(value = JSON_PROPERTY_UPDATE_ENABLED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getUpdateEnabled() {
@@ -102,11 +102,12 @@ public class CreateUpdateBatchCategory {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UPDATE_ENABLED)
+  @JsonProperty(value = JSON_PROPERTY_UPDATE_ENABLED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUpdateEnabled(@jakarta.annotation.Nullable Boolean updateEnabled) {
     this.updateEnabled = updateEnabled;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -141,10 +142,7 @@ public class CreateUpdateBatchCategory {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -183,8 +181,8 @@ public class CreateUpdateBatchCategory {
     if (getCategories() != null) {
       for (int i = 0; i < getCategories().size(); i++) {
         if (getCategories().get(i) != null) {
-          joiner.add(getCategories().get(i).toUrlQueryString(String.format("%scategories%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getCategories().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%scategories%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -192,7 +190,7 @@ public class CreateUpdateBatchCategory {
     // add `updateEnabled` to the URL query string
     if (getUpdateEnabled() != null) {
       try {
-        joiner.add(String.format("%supdateEnabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUpdateEnabled()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%supdateEnabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUpdateEnabled()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

@@ -104,7 +104,7 @@ public class SendSmtpEmailMessageVersionsInner {
    * @return to
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TO)
+  @JsonProperty(value = JSON_PROPERTY_TO, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public List<SendSmtpEmailToInner> getTo() {
@@ -112,7 +112,7 @@ public class SendSmtpEmailMessageVersionsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TO)
+  @JsonProperty(value = JSON_PROPERTY_TO, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setTo(@jakarta.annotation.Nonnull List<SendSmtpEmailToInner> to) {
     this.to = to;
@@ -137,7 +137,7 @@ public class SendSmtpEmailMessageVersionsInner {
    * @return params
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PARAMS)
+  @JsonProperty(value = JSON_PROPERTY_PARAMS, required = false)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
 
   public Map<String, Object> getParams() {
@@ -145,7 +145,7 @@ public class SendSmtpEmailMessageVersionsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PARAMS)
+  @JsonProperty(value = JSON_PROPERTY_PARAMS, required = false)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
   public void setParams(@jakarta.annotation.Nullable Map<String, Object> params) {
     this.params = params;
@@ -170,7 +170,7 @@ public class SendSmtpEmailMessageVersionsInner {
    * @return bcc
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_BCC)
+  @JsonProperty(value = JSON_PROPERTY_BCC, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<SendSmtpEmailBccInner> getBcc() {
@@ -178,7 +178,7 @@ public class SendSmtpEmailMessageVersionsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BCC)
+  @JsonProperty(value = JSON_PROPERTY_BCC, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setBcc(@jakarta.annotation.Nullable List<SendSmtpEmailBccInner> bcc) {
     this.bcc = bcc;
@@ -203,7 +203,7 @@ public class SendSmtpEmailMessageVersionsInner {
    * @return cc
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CC)
+  @JsonProperty(value = JSON_PROPERTY_CC, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<SendSmtpEmailCcInner> getCc() {
@@ -211,7 +211,7 @@ public class SendSmtpEmailMessageVersionsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CC)
+  @JsonProperty(value = JSON_PROPERTY_CC, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCc(@jakarta.annotation.Nullable List<SendSmtpEmailCcInner> cc) {
     this.cc = cc;
@@ -228,7 +228,7 @@ public class SendSmtpEmailMessageVersionsInner {
    * @return replyTo
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_REPLY_TO)
+  @JsonProperty(value = JSON_PROPERTY_REPLY_TO, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public SendSmtpEmailReplyTo getReplyTo() {
@@ -236,7 +236,7 @@ public class SendSmtpEmailMessageVersionsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REPLY_TO)
+  @JsonProperty(value = JSON_PROPERTY_REPLY_TO, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setReplyTo(@jakarta.annotation.Nullable SendSmtpEmailReplyTo replyTo) {
     this.replyTo = replyTo;
@@ -253,7 +253,7 @@ public class SendSmtpEmailMessageVersionsInner {
    * @return subject
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SUBJECT)
+  @JsonProperty(value = JSON_PROPERTY_SUBJECT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getSubject() {
@@ -261,7 +261,7 @@ public class SendSmtpEmailMessageVersionsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SUBJECT)
+  @JsonProperty(value = JSON_PROPERTY_SUBJECT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSubject(@jakarta.annotation.Nullable String subject) {
     this.subject = subject;
@@ -278,7 +278,7 @@ public class SendSmtpEmailMessageVersionsInner {
    * @return htmlContent
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_HTML_CONTENT)
+  @JsonProperty(value = JSON_PROPERTY_HTML_CONTENT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getHtmlContent() {
@@ -286,7 +286,7 @@ public class SendSmtpEmailMessageVersionsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_HTML_CONTENT)
+  @JsonProperty(value = JSON_PROPERTY_HTML_CONTENT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setHtmlContent(@jakarta.annotation.Nullable String htmlContent) {
     this.htmlContent = htmlContent;
@@ -303,7 +303,7 @@ public class SendSmtpEmailMessageVersionsInner {
    * @return textContent
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TEXT_CONTENT)
+  @JsonProperty(value = JSON_PROPERTY_TEXT_CONTENT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getTextContent() {
@@ -311,11 +311,12 @@ public class SendSmtpEmailMessageVersionsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TEXT_CONTENT)
+  @JsonProperty(value = JSON_PROPERTY_TEXT_CONTENT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setTextContent(@jakarta.annotation.Nullable String textContent) {
     this.textContent = textContent;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -362,10 +363,7 @@ public class SendSmtpEmailMessageVersionsInner {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -404,8 +402,8 @@ public class SendSmtpEmailMessageVersionsInner {
     if (getTo() != null) {
       for (int i = 0; i < getTo().size(); i++) {
         if (getTo().get(i) != null) {
-          joiner.add(getTo().get(i).toUrlQueryString(String.format("%sto%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getTo().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sto%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -414,8 +412,8 @@ public class SendSmtpEmailMessageVersionsInner {
     if (getParams() != null) {
       for (String _key : getParams().keySet()) {
         try {
-          joiner.add(String.format("%sparams%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sparams%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, _key, containerSuffix),
               getParams().get(_key), URLEncoder.encode(String.valueOf(getParams().get(_key)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -428,8 +426,8 @@ public class SendSmtpEmailMessageVersionsInner {
     if (getBcc() != null) {
       for (int i = 0; i < getBcc().size(); i++) {
         if (getBcc().get(i) != null) {
-          joiner.add(getBcc().get(i).toUrlQueryString(String.format("%sbcc%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getBcc().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sbcc%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -438,8 +436,8 @@ public class SendSmtpEmailMessageVersionsInner {
     if (getCc() != null) {
       for (int i = 0; i < getCc().size(); i++) {
         if (getCc().get(i) != null) {
-          joiner.add(getCc().get(i).toUrlQueryString(String.format("%scc%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getCc().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%scc%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -452,7 +450,7 @@ public class SendSmtpEmailMessageVersionsInner {
     // add `subject` to the URL query string
     if (getSubject() != null) {
       try {
-        joiner.add(String.format("%ssubject%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubject()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssubject%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubject()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -462,7 +460,7 @@ public class SendSmtpEmailMessageVersionsInner {
     // add `htmlContent` to the URL query string
     if (getHtmlContent() != null) {
       try {
-        joiner.add(String.format("%shtmlContent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHtmlContent()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%shtmlContent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHtmlContent()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -472,7 +470,7 @@ public class SendSmtpEmailMessageVersionsInner {
     // add `textContent` to the URL query string
     if (getTextContent() != null) {
       try {
-        joiner.add(String.format("%stextContent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTextContent()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stextContent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTextContent()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

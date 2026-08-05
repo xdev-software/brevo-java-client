@@ -112,7 +112,7 @@ public class Order {
    * @return id
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getId() {
@@ -120,7 +120,7 @@ public class Order {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setId(@jakarta.annotation.Nonnull String id) {
     this.id = id;
@@ -137,7 +137,7 @@ public class Order {
    * @return createdAt
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getCreatedAt() {
@@ -145,7 +145,7 @@ public class Order {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCreatedAt(@jakarta.annotation.Nonnull String createdAt) {
     this.createdAt = createdAt;
@@ -162,7 +162,7 @@ public class Order {
    * @return updatedAt
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_UPDATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_UPDATED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getUpdatedAt() {
@@ -170,7 +170,7 @@ public class Order {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UPDATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_UPDATED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setUpdatedAt(@jakarta.annotation.Nonnull String updatedAt) {
     this.updatedAt = updatedAt;
@@ -187,7 +187,7 @@ public class Order {
    * @return status
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_STATUS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getStatus() {
@@ -195,7 +195,7 @@ public class Order {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_STATUS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setStatus(@jakarta.annotation.Nonnull String status) {
     this.status = status;
@@ -212,7 +212,7 @@ public class Order {
    * @return amount
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_AMOUNT)
+  @JsonProperty(value = JSON_PROPERTY_AMOUNT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public BigDecimal getAmount() {
@@ -220,7 +220,7 @@ public class Order {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_AMOUNT)
+  @JsonProperty(value = JSON_PROPERTY_AMOUNT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAmount(@jakarta.annotation.Nonnull BigDecimal amount) {
     this.amount = amount;
@@ -237,7 +237,7 @@ public class Order {
    * @return storeId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_STORE_ID)
+  @JsonProperty(value = JSON_PROPERTY_STORE_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getStoreId() {
@@ -245,7 +245,7 @@ public class Order {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_STORE_ID)
+  @JsonProperty(value = JSON_PROPERTY_STORE_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setStoreId(@jakarta.annotation.Nullable String storeId) {
     this.storeId = storeId;
@@ -262,7 +262,7 @@ public class Order {
    * @return identifiers
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_IDENTIFIERS)
+  @JsonProperty(value = JSON_PROPERTY_IDENTIFIERS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public OrderIdentifiers getIdentifiers() {
@@ -270,7 +270,7 @@ public class Order {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IDENTIFIERS)
+  @JsonProperty(value = JSON_PROPERTY_IDENTIFIERS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setIdentifiers(@jakarta.annotation.Nullable OrderIdentifiers identifiers) {
     this.identifiers = identifiers;
@@ -295,7 +295,7 @@ public class Order {
    * @return products
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PRODUCTS)
+  @JsonProperty(value = JSON_PROPERTY_PRODUCTS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public List<OrderProductsInner> getProducts() {
@@ -303,7 +303,7 @@ public class Order {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PRODUCTS)
+  @JsonProperty(value = JSON_PROPERTY_PRODUCTS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setProducts(@jakarta.annotation.Nonnull List<OrderProductsInner> products) {
     this.products = products;
@@ -320,7 +320,7 @@ public class Order {
    * @return billing
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_BILLING)
+  @JsonProperty(value = JSON_PROPERTY_BILLING, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public OrderBilling getBilling() {
@@ -328,7 +328,7 @@ public class Order {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BILLING)
+  @JsonProperty(value = JSON_PROPERTY_BILLING, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setBilling(@jakarta.annotation.Nullable OrderBilling billing) {
     this.billing = billing;
@@ -353,7 +353,7 @@ public class Order {
    * @return coupons
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_COUPONS)
+  @JsonProperty(value = JSON_PROPERTY_COUPONS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getCoupons() {
@@ -361,7 +361,7 @@ public class Order {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_COUPONS)
+  @JsonProperty(value = JSON_PROPERTY_COUPONS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCoupons(@jakarta.annotation.Nullable List<String> coupons) {
     this.coupons = coupons;
@@ -386,7 +386,7 @@ public class Order {
    * @return metaInfo
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_META_INFO)
+  @JsonProperty(value = JSON_PROPERTY_META_INFO, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Map<String, OrderMetaInfoValue> getMetaInfo() {
@@ -394,11 +394,12 @@ public class Order {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_META_INFO)
+  @JsonProperty(value = JSON_PROPERTY_META_INFO, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setMetaInfo(@jakarta.annotation.Nullable Map<String, OrderMetaInfoValue> metaInfo) {
     this.metaInfo = metaInfo;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -451,10 +452,7 @@ public class Order {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -492,7 +490,7 @@ public class Order {
     // add `id` to the URL query string
     if (getId() != null) {
       try {
-        joiner.add(String.format("%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -502,7 +500,7 @@ public class Order {
     // add `createdAt` to the URL query string
     if (getCreatedAt() != null) {
       try {
-        joiner.add(String.format("%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -512,7 +510,7 @@ public class Order {
     // add `updatedAt` to the URL query string
     if (getUpdatedAt() != null) {
       try {
-        joiner.add(String.format("%supdatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUpdatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%supdatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUpdatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -522,7 +520,7 @@ public class Order {
     // add `status` to the URL query string
     if (getStatus() != null) {
       try {
-        joiner.add(String.format("%sstatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatus()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sstatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatus()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -532,7 +530,7 @@ public class Order {
     // add `amount` to the URL query string
     if (getAmount() != null) {
       try {
-        joiner.add(String.format("%samount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAmount()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%samount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAmount()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -542,7 +540,7 @@ public class Order {
     // add `storeId` to the URL query string
     if (getStoreId() != null) {
       try {
-        joiner.add(String.format("%sstoreId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStoreId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sstoreId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStoreId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -558,8 +556,8 @@ public class Order {
     if (getProducts() != null) {
       for (int i = 0; i < getProducts().size(); i++) {
         if (getProducts().get(i) != null) {
-          joiner.add(getProducts().get(i).toUrlQueryString(String.format("%sproducts%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getProducts().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sproducts%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -573,8 +571,8 @@ public class Order {
     if (getCoupons() != null) {
       for (int i = 0; i < getCoupons().size(); i++) {
         try {
-          joiner.add(String.format("%scoupons%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%scoupons%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getCoupons().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -587,8 +585,8 @@ public class Order {
     if (getMetaInfo() != null) {
       for (String _key : getMetaInfo().keySet()) {
         if (getMetaInfo().get(_key) != null) {
-          joiner.add(getMetaInfo().get(_key).toUrlQueryString(String.format("%smetaInfo%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix))));
+          joiner.add(getMetaInfo().get(_key).toUrlQueryString(String.format(java.util.Locale.ROOT, "%smetaInfo%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, _key, containerSuffix))));
         }
       }
     }

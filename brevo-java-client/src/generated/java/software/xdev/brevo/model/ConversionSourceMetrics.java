@@ -18,7 +18,6 @@ import java.util.Arrays;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.math.BigDecimal;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -111,7 +110,7 @@ public class ConversionSourceMetrics {
    * @return id
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getId() {
@@ -119,7 +118,7 @@ public class ConversionSourceMetrics {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setId(@jakarta.annotation.Nonnull String id) {
     this.id = id;
@@ -136,7 +135,7 @@ public class ConversionSourceMetrics {
    * @return conversionSource
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CONVERSION_SOURCE)
+  @JsonProperty(value = JSON_PROPERTY_CONVERSION_SOURCE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public ConversionSourceEnum getConversionSource() {
@@ -144,7 +143,7 @@ public class ConversionSourceMetrics {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONVERSION_SOURCE)
+  @JsonProperty(value = JSON_PROPERTY_CONVERSION_SOURCE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setConversionSource(@jakarta.annotation.Nonnull ConversionSourceEnum conversionSource) {
     this.conversionSource = conversionSource;
@@ -161,7 +160,7 @@ public class ConversionSourceMetrics {
    * @return ordersCount
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ORDERS_COUNT)
+  @JsonProperty(value = JSON_PROPERTY_ORDERS_COUNT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public BigDecimal getOrdersCount() {
@@ -169,7 +168,7 @@ public class ConversionSourceMetrics {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ORDERS_COUNT)
+  @JsonProperty(value = JSON_PROPERTY_ORDERS_COUNT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setOrdersCount(@jakarta.annotation.Nonnull BigDecimal ordersCount) {
     this.ordersCount = ordersCount;
@@ -186,7 +185,7 @@ public class ConversionSourceMetrics {
    * @return revenue
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_REVENUE)
+  @JsonProperty(value = JSON_PROPERTY_REVENUE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Float getRevenue() {
@@ -194,7 +193,7 @@ public class ConversionSourceMetrics {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REVENUE)
+  @JsonProperty(value = JSON_PROPERTY_REVENUE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setRevenue(@jakarta.annotation.Nonnull Float revenue) {
     this.revenue = revenue;
@@ -211,7 +210,7 @@ public class ConversionSourceMetrics {
    * @return averageBasket
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_AVERAGE_BASKET)
+  @JsonProperty(value = JSON_PROPERTY_AVERAGE_BASKET, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Float getAverageBasket() {
@@ -219,11 +218,12 @@ public class ConversionSourceMetrics {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_AVERAGE_BASKET)
+  @JsonProperty(value = JSON_PROPERTY_AVERAGE_BASKET, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAverageBasket(@jakarta.annotation.Nonnull Float averageBasket) {
     this.averageBasket = averageBasket;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -264,10 +264,7 @@ public class ConversionSourceMetrics {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -305,7 +302,7 @@ public class ConversionSourceMetrics {
     // add `id` to the URL query string
     if (getId() != null) {
       try {
-        joiner.add(String.format("%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -315,7 +312,7 @@ public class ConversionSourceMetrics {
     // add `conversionSource` to the URL query string
     if (getConversionSource() != null) {
       try {
-        joiner.add(String.format("%sconversionSource%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConversionSource()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sconversionSource%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConversionSource()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -325,7 +322,7 @@ public class ConversionSourceMetrics {
     // add `ordersCount` to the URL query string
     if (getOrdersCount() != null) {
       try {
-        joiner.add(String.format("%sordersCount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrdersCount()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sordersCount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrdersCount()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -335,7 +332,7 @@ public class ConversionSourceMetrics {
     // add `revenue` to the URL query string
     if (getRevenue() != null) {
       try {
-        joiner.add(String.format("%srevenue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRevenue()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%srevenue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRevenue()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -345,7 +342,7 @@ public class ConversionSourceMetrics {
     // add `averageBasket` to the URL query string
     if (getAverageBasket() != null) {
       try {
-        joiner.add(String.format("%saverageBasket%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAverageBasket()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%saverageBasket%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAverageBasket()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

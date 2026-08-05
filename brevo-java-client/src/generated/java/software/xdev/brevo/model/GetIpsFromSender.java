@@ -64,7 +64,7 @@ public class GetIpsFromSender {
    * @return ips
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_IPS)
+  @JsonProperty(value = JSON_PROPERTY_IPS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public List<GetIpFromSender> getIps() {
@@ -72,11 +72,12 @@ public class GetIpsFromSender {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IPS)
+  @JsonProperty(value = JSON_PROPERTY_IPS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setIps(@jakarta.annotation.Nonnull List<GetIpFromSender> ips) {
     this.ips = ips;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -109,10 +110,7 @@ public class GetIpsFromSender {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -151,8 +149,8 @@ public class GetIpsFromSender {
     if (getIps() != null) {
       for (int i = 0; i < getIps().size(); i++) {
         if (getIps().get(i) != null) {
-          joiner.add(getIps().get(i).toUrlQueryString(String.format("%sips%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getIps().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sips%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }

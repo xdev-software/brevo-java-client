@@ -63,7 +63,7 @@ public class ConversationsMessageFileImageInfo {
    * @return width
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_WIDTH)
+  @JsonProperty(value = JSON_PROPERTY_WIDTH, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getWidth() {
@@ -71,7 +71,7 @@ public class ConversationsMessageFileImageInfo {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_WIDTH)
+  @JsonProperty(value = JSON_PROPERTY_WIDTH, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setWidth(@jakarta.annotation.Nullable Long width) {
     this.width = width;
@@ -89,7 +89,7 @@ public class ConversationsMessageFileImageInfo {
    * @return height
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_HEIGHT)
+  @JsonProperty(value = JSON_PROPERTY_HEIGHT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getHeight() {
@@ -97,7 +97,7 @@ public class ConversationsMessageFileImageInfo {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_HEIGHT)
+  @JsonProperty(value = JSON_PROPERTY_HEIGHT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setHeight(@jakarta.annotation.Nullable Long height) {
     this.height = height;
@@ -114,7 +114,7 @@ public class ConversationsMessageFileImageInfo {
    * @return previewUrl
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PREVIEW_URL)
+  @JsonProperty(value = JSON_PROPERTY_PREVIEW_URL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getPreviewUrl() {
@@ -122,11 +122,12 @@ public class ConversationsMessageFileImageInfo {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PREVIEW_URL)
+  @JsonProperty(value = JSON_PROPERTY_PREVIEW_URL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPreviewUrl(@jakarta.annotation.Nullable String previewUrl) {
     this.previewUrl = previewUrl;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -163,10 +164,7 @@ public class ConversationsMessageFileImageInfo {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -204,7 +202,7 @@ public class ConversationsMessageFileImageInfo {
     // add `width` to the URL query string
     if (getWidth() != null) {
       try {
-        joiner.add(String.format("%swidth%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWidth()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%swidth%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWidth()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -214,7 +212,7 @@ public class ConversationsMessageFileImageInfo {
     // add `height` to the URL query string
     if (getHeight() != null) {
       try {
-        joiner.add(String.format("%sheight%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHeight()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sheight%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHeight()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -224,7 +222,7 @@ public class ConversationsMessageFileImageInfo {
     // add `previewUrl` to the URL query string
     if (getPreviewUrl() != null) {
       try {
-        joiner.add(String.format("%spreviewUrl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPreviewUrl()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%spreviewUrl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPreviewUrl()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

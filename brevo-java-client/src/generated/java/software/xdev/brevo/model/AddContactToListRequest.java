@@ -76,7 +76,7 @@ public class AddContactToListRequest {
    * @return emails
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EMAILS)
+  @JsonProperty(value = JSON_PROPERTY_EMAILS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getEmails() {
@@ -84,7 +84,7 @@ public class AddContactToListRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EMAILS)
+  @JsonProperty(value = JSON_PROPERTY_EMAILS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setEmails(@jakarta.annotation.Nullable List<String> emails) {
     this.emails = emails;
@@ -109,7 +109,7 @@ public class AddContactToListRequest {
    * @return ids
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_IDS)
+  @JsonProperty(value = JSON_PROPERTY_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<Long> getIds() {
@@ -117,7 +117,7 @@ public class AddContactToListRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IDS)
+  @JsonProperty(value = JSON_PROPERTY_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setIds(@jakarta.annotation.Nullable List<Long> ids) {
     this.ids = ids;
@@ -142,7 +142,7 @@ public class AddContactToListRequest {
    * @return extIds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EXT_IDS)
+  @JsonProperty(value = JSON_PROPERTY_EXT_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getExtIds() {
@@ -150,11 +150,12 @@ public class AddContactToListRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EXT_IDS)
+  @JsonProperty(value = JSON_PROPERTY_EXT_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setExtIds(@jakarta.annotation.Nullable List<String> extIds) {
     this.extIds = extIds;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -191,10 +192,7 @@ public class AddContactToListRequest {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -233,8 +231,8 @@ public class AddContactToListRequest {
     if (getEmails() != null) {
       for (int i = 0; i < getEmails().size(); i++) {
         try {
-          joiner.add(String.format("%semails%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%semails%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getEmails().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -247,8 +245,8 @@ public class AddContactToListRequest {
     if (getIds() != null) {
       for (int i = 0; i < getIds().size(); i++) {
         try {
-          joiner.add(String.format("%sids%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sids%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -261,8 +259,8 @@ public class AddContactToListRequest {
     if (getExtIds() != null) {
       for (int i = 0; i < getExtIds().size(); i++) {
         try {
-          joiner.add(String.format("%sextIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sextIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getExtIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported

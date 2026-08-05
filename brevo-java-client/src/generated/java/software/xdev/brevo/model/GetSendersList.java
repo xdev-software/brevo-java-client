@@ -64,7 +64,7 @@ public class GetSendersList {
    * @return senders
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SENDERS)
+  @JsonProperty(value = JSON_PROPERTY_SENDERS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<GetSendersListSendersInner> getSenders() {
@@ -72,11 +72,12 @@ public class GetSendersList {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SENDERS)
+  @JsonProperty(value = JSON_PROPERTY_SENDERS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSenders(@jakarta.annotation.Nullable List<GetSendersListSendersInner> senders) {
     this.senders = senders;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -109,10 +110,7 @@ public class GetSendersList {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -151,8 +149,8 @@ public class GetSendersList {
     if (getSenders() != null) {
       for (int i = 0; i < getSenders().size(); i++) {
         if (getSenders().get(i) != null) {
-          joiner.add(getSenders().get(i).toUrlQueryString(String.format("%ssenders%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getSenders().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%ssenders%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }

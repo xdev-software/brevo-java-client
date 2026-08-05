@@ -96,7 +96,7 @@ public class GetExtendedList {
    * @return id
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getId() {
@@ -104,7 +104,7 @@ public class GetExtendedList {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setId(@jakarta.annotation.Nonnull Long id) {
     this.id = id;
@@ -121,7 +121,7 @@ public class GetExtendedList {
    * @return name
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getName() {
@@ -129,7 +129,7 @@ public class GetExtendedList {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
@@ -146,7 +146,7 @@ public class GetExtendedList {
    * @return totalBlacklisted
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TOTAL_BLACKLISTED)
+  @JsonProperty(value = JSON_PROPERTY_TOTAL_BLACKLISTED, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getTotalBlacklisted() {
@@ -154,7 +154,7 @@ public class GetExtendedList {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TOTAL_BLACKLISTED)
+  @JsonProperty(value = JSON_PROPERTY_TOTAL_BLACKLISTED, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setTotalBlacklisted(@jakarta.annotation.Nonnull Long totalBlacklisted) {
     this.totalBlacklisted = totalBlacklisted;
@@ -171,7 +171,7 @@ public class GetExtendedList {
    * @return totalSubscribers
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TOTAL_SUBSCRIBERS)
+  @JsonProperty(value = JSON_PROPERTY_TOTAL_SUBSCRIBERS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getTotalSubscribers() {
@@ -179,7 +179,7 @@ public class GetExtendedList {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TOTAL_SUBSCRIBERS)
+  @JsonProperty(value = JSON_PROPERTY_TOTAL_SUBSCRIBERS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setTotalSubscribers(@jakarta.annotation.Nonnull Long totalSubscribers) {
     this.totalSubscribers = totalSubscribers;
@@ -196,7 +196,7 @@ public class GetExtendedList {
    * @return uniqueSubscribers
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_UNIQUE_SUBSCRIBERS)
+  @JsonProperty(value = JSON_PROPERTY_UNIQUE_SUBSCRIBERS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getUniqueSubscribers() {
@@ -204,7 +204,7 @@ public class GetExtendedList {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UNIQUE_SUBSCRIBERS)
+  @JsonProperty(value = JSON_PROPERTY_UNIQUE_SUBSCRIBERS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setUniqueSubscribers(@jakarta.annotation.Nonnull Long uniqueSubscribers) {
     this.uniqueSubscribers = uniqueSubscribers;
@@ -221,7 +221,7 @@ public class GetExtendedList {
    * @return folderId
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_FOLDER_ID)
+  @JsonProperty(value = JSON_PROPERTY_FOLDER_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getFolderId() {
@@ -229,7 +229,7 @@ public class GetExtendedList {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_FOLDER_ID)
+  @JsonProperty(value = JSON_PROPERTY_FOLDER_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setFolderId(@jakarta.annotation.Nonnull Long folderId) {
     this.folderId = folderId;
@@ -246,7 +246,7 @@ public class GetExtendedList {
    * @return createdAt
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getCreatedAt() {
@@ -254,7 +254,7 @@ public class GetExtendedList {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCreatedAt(@jakarta.annotation.Nonnull String createdAt) {
     this.createdAt = createdAt;
@@ -279,7 +279,7 @@ public class GetExtendedList {
    * @return campaignStats
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CAMPAIGN_STATS)
+  @JsonProperty(value = JSON_PROPERTY_CAMPAIGN_STATS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<GetExtendedListAllOfCampaignStats> getCampaignStats() {
@@ -287,7 +287,7 @@ public class GetExtendedList {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CAMPAIGN_STATS)
+  @JsonProperty(value = JSON_PROPERTY_CAMPAIGN_STATS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCampaignStats(@jakarta.annotation.Nullable List<GetExtendedListAllOfCampaignStats> campaignStats) {
     this.campaignStats = campaignStats;
@@ -304,7 +304,7 @@ public class GetExtendedList {
    * @return dynamicList
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DYNAMIC_LIST)
+  @JsonProperty(value = JSON_PROPERTY_DYNAMIC_LIST, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getDynamicList() {
@@ -312,11 +312,12 @@ public class GetExtendedList {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DYNAMIC_LIST)
+  @JsonProperty(value = JSON_PROPERTY_DYNAMIC_LIST, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDynamicList(@jakarta.annotation.Nullable Boolean dynamicList) {
     this.dynamicList = dynamicList;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -365,10 +366,7 @@ public class GetExtendedList {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -406,7 +404,7 @@ public class GetExtendedList {
     // add `id` to the URL query string
     if (getId() != null) {
       try {
-        joiner.add(String.format("%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -416,7 +414,7 @@ public class GetExtendedList {
     // add `name` to the URL query string
     if (getName() != null) {
       try {
-        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -426,7 +424,7 @@ public class GetExtendedList {
     // add `totalBlacklisted` to the URL query string
     if (getTotalBlacklisted() != null) {
       try {
-        joiner.add(String.format("%stotalBlacklisted%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTotalBlacklisted()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stotalBlacklisted%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTotalBlacklisted()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -436,7 +434,7 @@ public class GetExtendedList {
     // add `totalSubscribers` to the URL query string
     if (getTotalSubscribers() != null) {
       try {
-        joiner.add(String.format("%stotalSubscribers%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTotalSubscribers()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stotalSubscribers%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTotalSubscribers()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -446,7 +444,7 @@ public class GetExtendedList {
     // add `uniqueSubscribers` to the URL query string
     if (getUniqueSubscribers() != null) {
       try {
-        joiner.add(String.format("%suniqueSubscribers%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUniqueSubscribers()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%suniqueSubscribers%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUniqueSubscribers()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -456,7 +454,7 @@ public class GetExtendedList {
     // add `folderId` to the URL query string
     if (getFolderId() != null) {
       try {
-        joiner.add(String.format("%sfolderId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFolderId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sfolderId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFolderId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -466,7 +464,7 @@ public class GetExtendedList {
     // add `createdAt` to the URL query string
     if (getCreatedAt() != null) {
       try {
-        joiner.add(String.format("%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -477,8 +475,8 @@ public class GetExtendedList {
     if (getCampaignStats() != null) {
       for (int i = 0; i < getCampaignStats().size(); i++) {
         if (getCampaignStats().get(i) != null) {
-          joiner.add(getCampaignStats().get(i).toUrlQueryString(String.format("%scampaignStats%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getCampaignStats().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%scampaignStats%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -486,7 +484,7 @@ public class GetExtendedList {
     // add `dynamicList` to the URL query string
     if (getDynamicList() != null) {
       try {
-        joiner.add(String.format("%sdynamicList%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDynamicList()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdynamicList%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDynamicList()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

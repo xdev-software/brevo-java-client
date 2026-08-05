@@ -57,7 +57,7 @@ public class SubAccountDetailsResponsePlanInfoFeaturesInbox {
    * @return quantity
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_QUANTITY)
+  @JsonProperty(value = JSON_PROPERTY_QUANTITY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getQuantity() {
@@ -65,7 +65,7 @@ public class SubAccountDetailsResponsePlanInfoFeaturesInbox {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_QUANTITY)
+  @JsonProperty(value = JSON_PROPERTY_QUANTITY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setQuantity(@jakarta.annotation.Nullable Long quantity) {
     this.quantity = quantity;
@@ -82,7 +82,7 @@ public class SubAccountDetailsResponsePlanInfoFeaturesInbox {
    * @return remaining
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_REMAINING)
+  @JsonProperty(value = JSON_PROPERTY_REMAINING, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getRemaining() {
@@ -90,11 +90,12 @@ public class SubAccountDetailsResponsePlanInfoFeaturesInbox {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REMAINING)
+  @JsonProperty(value = JSON_PROPERTY_REMAINING, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRemaining(@jakarta.annotation.Nullable Long remaining) {
     this.remaining = remaining;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -129,10 +130,7 @@ public class SubAccountDetailsResponsePlanInfoFeaturesInbox {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -170,7 +168,7 @@ public class SubAccountDetailsResponsePlanInfoFeaturesInbox {
     // add `quantity` to the URL query string
     if (getQuantity() != null) {
       try {
-        joiner.add(String.format("%squantity%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getQuantity()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%squantity%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getQuantity()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -180,7 +178,7 @@ public class SubAccountDetailsResponsePlanInfoFeaturesInbox {
     // add `remaining` to the URL query string
     if (getRemaining() != null) {
       try {
-        joiner.add(String.format("%sremaining%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRemaining()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sremaining%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRemaining()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

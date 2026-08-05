@@ -195,7 +195,7 @@ public class GetCampaignOverview {
    * @return id
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getId() {
@@ -203,7 +203,7 @@ public class GetCampaignOverview {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setId(@jakarta.annotation.Nonnull Long id) {
     this.id = id;
@@ -220,7 +220,7 @@ public class GetCampaignOverview {
    * @return name
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getName() {
@@ -228,7 +228,7 @@ public class GetCampaignOverview {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
@@ -245,7 +245,7 @@ public class GetCampaignOverview {
    * @return subject
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SUBJECT)
+  @JsonProperty(value = JSON_PROPERTY_SUBJECT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getSubject() {
@@ -253,7 +253,7 @@ public class GetCampaignOverview {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SUBJECT)
+  @JsonProperty(value = JSON_PROPERTY_SUBJECT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSubject(@jakarta.annotation.Nullable String subject) {
     this.subject = subject;
@@ -270,7 +270,7 @@ public class GetCampaignOverview {
    * @return previewText
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PREVIEW_TEXT)
+  @JsonProperty(value = JSON_PROPERTY_PREVIEW_TEXT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getPreviewText() {
@@ -278,7 +278,7 @@ public class GetCampaignOverview {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PREVIEW_TEXT)
+  @JsonProperty(value = JSON_PROPERTY_PREVIEW_TEXT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPreviewText(@jakarta.annotation.Nullable String previewText) {
     this.previewText = previewText;
@@ -295,7 +295,7 @@ public class GetCampaignOverview {
    * @return type
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_TYPE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public TypeEnum getType() {
@@ -303,7 +303,7 @@ public class GetCampaignOverview {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_TYPE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setType(@jakarta.annotation.Nonnull TypeEnum type) {
     this.type = type;
@@ -320,7 +320,7 @@ public class GetCampaignOverview {
    * @return status
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_STATUS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public StatusEnum getStatus() {
@@ -328,7 +328,7 @@ public class GetCampaignOverview {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_STATUS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setStatus(@jakarta.annotation.Nonnull StatusEnum status) {
     this.status = status;
@@ -345,7 +345,7 @@ public class GetCampaignOverview {
    * @return scheduledAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
+  @JsonProperty(value = JSON_PROPERTY_SCHEDULED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getScheduledAt() {
@@ -353,7 +353,7 @@ public class GetCampaignOverview {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
+  @JsonProperty(value = JSON_PROPERTY_SCHEDULED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setScheduledAt(@jakarta.annotation.Nullable String scheduledAt) {
     this.scheduledAt = scheduledAt;
@@ -370,7 +370,7 @@ public class GetCampaignOverview {
    * @return abTesting
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_AB_TESTING)
+  @JsonProperty(value = JSON_PROPERTY_AB_TESTING, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getAbTesting() {
@@ -378,7 +378,7 @@ public class GetCampaignOverview {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_AB_TESTING)
+  @JsonProperty(value = JSON_PROPERTY_AB_TESTING, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setAbTesting(@jakarta.annotation.Nullable Boolean abTesting) {
     this.abTesting = abTesting;
@@ -395,7 +395,7 @@ public class GetCampaignOverview {
    * @return subjectA
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SUBJECT_A)
+  @JsonProperty(value = JSON_PROPERTY_SUBJECT_A, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getSubjectA() {
@@ -403,7 +403,7 @@ public class GetCampaignOverview {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SUBJECT_A)
+  @JsonProperty(value = JSON_PROPERTY_SUBJECT_A, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSubjectA(@jakarta.annotation.Nullable String subjectA) {
     this.subjectA = subjectA;
@@ -420,7 +420,7 @@ public class GetCampaignOverview {
    * @return subjectB
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SUBJECT_B)
+  @JsonProperty(value = JSON_PROPERTY_SUBJECT_B, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getSubjectB() {
@@ -428,7 +428,7 @@ public class GetCampaignOverview {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SUBJECT_B)
+  @JsonProperty(value = JSON_PROPERTY_SUBJECT_B, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSubjectB(@jakarta.annotation.Nullable String subjectB) {
     this.subjectB = subjectB;
@@ -445,7 +445,7 @@ public class GetCampaignOverview {
    * @return splitRule
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SPLIT_RULE)
+  @JsonProperty(value = JSON_PROPERTY_SPLIT_RULE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getSplitRule() {
@@ -453,7 +453,7 @@ public class GetCampaignOverview {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SPLIT_RULE)
+  @JsonProperty(value = JSON_PROPERTY_SPLIT_RULE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSplitRule(@jakarta.annotation.Nullable Integer splitRule) {
     this.splitRule = splitRule;
@@ -470,7 +470,7 @@ public class GetCampaignOverview {
    * @return winnerCriteria
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_WINNER_CRITERIA)
+  @JsonProperty(value = JSON_PROPERTY_WINNER_CRITERIA, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getWinnerCriteria() {
@@ -478,7 +478,7 @@ public class GetCampaignOverview {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_WINNER_CRITERIA)
+  @JsonProperty(value = JSON_PROPERTY_WINNER_CRITERIA, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setWinnerCriteria(@jakarta.annotation.Nullable String winnerCriteria) {
     this.winnerCriteria = winnerCriteria;
@@ -495,7 +495,7 @@ public class GetCampaignOverview {
    * @return winnerDelay
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_WINNER_DELAY)
+  @JsonProperty(value = JSON_PROPERTY_WINNER_DELAY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getWinnerDelay() {
@@ -503,7 +503,7 @@ public class GetCampaignOverview {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_WINNER_DELAY)
+  @JsonProperty(value = JSON_PROPERTY_WINNER_DELAY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setWinnerDelay(@jakarta.annotation.Nullable Integer winnerDelay) {
     this.winnerDelay = winnerDelay;
@@ -520,7 +520,7 @@ public class GetCampaignOverview {
    * @return sendAtBestTime
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SEND_AT_BEST_TIME)
+  @JsonProperty(value = JSON_PROPERTY_SEND_AT_BEST_TIME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getSendAtBestTime() {
@@ -528,11 +528,12 @@ public class GetCampaignOverview {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SEND_AT_BEST_TIME)
+  @JsonProperty(value = JSON_PROPERTY_SEND_AT_BEST_TIME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSendAtBestTime(@jakarta.annotation.Nullable Boolean sendAtBestTime) {
     this.sendAtBestTime = sendAtBestTime;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -591,10 +592,7 @@ public class GetCampaignOverview {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -632,7 +630,7 @@ public class GetCampaignOverview {
     // add `id` to the URL query string
     if (getId() != null) {
       try {
-        joiner.add(String.format("%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -642,7 +640,7 @@ public class GetCampaignOverview {
     // add `name` to the URL query string
     if (getName() != null) {
       try {
-        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -652,7 +650,7 @@ public class GetCampaignOverview {
     // add `subject` to the URL query string
     if (getSubject() != null) {
       try {
-        joiner.add(String.format("%ssubject%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubject()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssubject%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubject()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -662,7 +660,7 @@ public class GetCampaignOverview {
     // add `previewText` to the URL query string
     if (getPreviewText() != null) {
       try {
-        joiner.add(String.format("%spreviewText%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPreviewText()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%spreviewText%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPreviewText()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -672,7 +670,7 @@ public class GetCampaignOverview {
     // add `type` to the URL query string
     if (getType() != null) {
       try {
-        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -682,7 +680,7 @@ public class GetCampaignOverview {
     // add `status` to the URL query string
     if (getStatus() != null) {
       try {
-        joiner.add(String.format("%sstatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatus()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sstatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatus()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -692,7 +690,7 @@ public class GetCampaignOverview {
     // add `scheduledAt` to the URL query string
     if (getScheduledAt() != null) {
       try {
-        joiner.add(String.format("%sscheduledAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getScheduledAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sscheduledAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getScheduledAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -702,7 +700,7 @@ public class GetCampaignOverview {
     // add `abTesting` to the URL query string
     if (getAbTesting() != null) {
       try {
-        joiner.add(String.format("%sabTesting%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAbTesting()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sabTesting%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAbTesting()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -712,7 +710,7 @@ public class GetCampaignOverview {
     // add `subjectA` to the URL query string
     if (getSubjectA() != null) {
       try {
-        joiner.add(String.format("%ssubjectA%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubjectA()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssubjectA%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubjectA()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -722,7 +720,7 @@ public class GetCampaignOverview {
     // add `subjectB` to the URL query string
     if (getSubjectB() != null) {
       try {
-        joiner.add(String.format("%ssubjectB%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubjectB()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssubjectB%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubjectB()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -732,7 +730,7 @@ public class GetCampaignOverview {
     // add `splitRule` to the URL query string
     if (getSplitRule() != null) {
       try {
-        joiner.add(String.format("%ssplitRule%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSplitRule()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssplitRule%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSplitRule()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -742,7 +740,7 @@ public class GetCampaignOverview {
     // add `winnerCriteria` to the URL query string
     if (getWinnerCriteria() != null) {
       try {
-        joiner.add(String.format("%swinnerCriteria%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWinnerCriteria()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%swinnerCriteria%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWinnerCriteria()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -752,7 +750,7 @@ public class GetCampaignOverview {
     // add `winnerDelay` to the URL query string
     if (getWinnerDelay() != null) {
       try {
-        joiner.add(String.format("%swinnerDelay%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWinnerDelay()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%swinnerDelay%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWinnerDelay()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -762,7 +760,7 @@ public class GetCampaignOverview {
     // add `sendAtBestTime` to the URL query string
     if (getSendAtBestTime() != null) {
       try {
-        joiner.add(String.format("%ssendAtBestTime%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSendAtBestTime()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssendAtBestTime%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSendAtBestTime()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

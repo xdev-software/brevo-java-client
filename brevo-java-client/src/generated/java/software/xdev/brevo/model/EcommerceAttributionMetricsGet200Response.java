@@ -70,7 +70,7 @@ public class EcommerceAttributionMetricsGet200Response {
    * @return results
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_RESULTS)
+  @JsonProperty(value = JSON_PROPERTY_RESULTS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public List<ConversionSourceMetrics> getResults() {
@@ -78,7 +78,7 @@ public class EcommerceAttributionMetricsGet200Response {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_RESULTS)
+  @JsonProperty(value = JSON_PROPERTY_RESULTS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setResults(@jakarta.annotation.Nonnull List<ConversionSourceMetrics> results) {
     this.results = results;
@@ -95,7 +95,7 @@ public class EcommerceAttributionMetricsGet200Response {
    * @return totals
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TOTALS)
+  @JsonProperty(value = JSON_PROPERTY_TOTALS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public EcommerceAttributionMetricsGet200ResponseTotals getTotals() {
@@ -103,11 +103,12 @@ public class EcommerceAttributionMetricsGet200Response {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TOTALS)
+  @JsonProperty(value = JSON_PROPERTY_TOTALS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setTotals(@jakarta.annotation.Nonnull EcommerceAttributionMetricsGet200ResponseTotals totals) {
     this.totals = totals;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -142,10 +143,7 @@ public class EcommerceAttributionMetricsGet200Response {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -184,14 +182,8 @@ public class EcommerceAttributionMetricsGet200Response {
     if (getResults() != null) {
       for (int i = 0; i < getResults().size(); i++) {
         if (getResults().get(i) != null) {
-          try {
-            joiner.add(String.format("%sresults%s%s=%s", prefix, suffix,
-                "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-                URLEncoder.encode(String.valueOf(getResults().get(i)), "UTF-8").replaceAll("\\+", "%20")));
-          } catch (UnsupportedEncodingException e) {
-            // Should never happen, UTF-8 is always supported
-            throw new RuntimeException(e);
-          }
+          joiner.add(getResults().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sresults%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }

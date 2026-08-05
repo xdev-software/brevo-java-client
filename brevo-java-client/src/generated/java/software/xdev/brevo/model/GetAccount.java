@@ -94,7 +94,7 @@ public class GetAccount {
    * @return email
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getEmail() {
@@ -102,7 +102,7 @@ public class GetAccount {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setEmail(@jakarta.annotation.Nonnull String email) {
     this.email = email;
@@ -119,7 +119,7 @@ public class GetAccount {
    * @return firstName
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_FIRST_NAME)
+  @JsonProperty(value = JSON_PROPERTY_FIRST_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getFirstName() {
@@ -127,7 +127,7 @@ public class GetAccount {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_FIRST_NAME)
+  @JsonProperty(value = JSON_PROPERTY_FIRST_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setFirstName(@jakarta.annotation.Nonnull String firstName) {
     this.firstName = firstName;
@@ -144,7 +144,7 @@ public class GetAccount {
    * @return lastName
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_LAST_NAME)
+  @JsonProperty(value = JSON_PROPERTY_LAST_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getLastName() {
@@ -152,7 +152,7 @@ public class GetAccount {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LAST_NAME)
+  @JsonProperty(value = JSON_PROPERTY_LAST_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setLastName(@jakarta.annotation.Nonnull String lastName) {
     this.lastName = lastName;
@@ -169,7 +169,7 @@ public class GetAccount {
    * @return companyName
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_COMPANY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_COMPANY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getCompanyName() {
@@ -177,7 +177,7 @@ public class GetAccount {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_COMPANY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_COMPANY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCompanyName(@jakarta.annotation.Nonnull String companyName) {
     this.companyName = companyName;
@@ -194,7 +194,7 @@ public class GetAccount {
    * @return address
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ADDRESS)
+  @JsonProperty(value = JSON_PROPERTY_ADDRESS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public GetExtendedClientAllOfAddress getAddress() {
@@ -202,7 +202,7 @@ public class GetAccount {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ADDRESS)
+  @JsonProperty(value = JSON_PROPERTY_ADDRESS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAddress(@jakarta.annotation.Nonnull GetExtendedClientAllOfAddress address) {
     this.address = address;
@@ -227,7 +227,7 @@ public class GetAccount {
    * @return plan
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PLAN)
+  @JsonProperty(value = JSON_PROPERTY_PLAN, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public List<GetAccountAllOfPlan> getPlan() {
@@ -235,7 +235,7 @@ public class GetAccount {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PLAN)
+  @JsonProperty(value = JSON_PROPERTY_PLAN, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPlan(@jakarta.annotation.Nonnull List<GetAccountAllOfPlan> plan) {
     this.plan = plan;
@@ -252,7 +252,7 @@ public class GetAccount {
    * @return relay
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_RELAY)
+  @JsonProperty(value = JSON_PROPERTY_RELAY, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public GetAccountAllOfRelay getRelay() {
@@ -260,7 +260,7 @@ public class GetAccount {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_RELAY)
+  @JsonProperty(value = JSON_PROPERTY_RELAY, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setRelay(@jakarta.annotation.Nonnull GetAccountAllOfRelay relay) {
     this.relay = relay;
@@ -277,7 +277,7 @@ public class GetAccount {
    * @return marketingAutomation
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_MARKETING_AUTOMATION)
+  @JsonProperty(value = JSON_PROPERTY_MARKETING_AUTOMATION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public GetAccountAllOfMarketingAutomation getMarketingAutomation() {
@@ -285,11 +285,12 @@ public class GetAccount {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MARKETING_AUTOMATION)
+  @JsonProperty(value = JSON_PROPERTY_MARKETING_AUTOMATION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setMarketingAutomation(@jakarta.annotation.Nullable GetAccountAllOfMarketingAutomation marketingAutomation) {
     this.marketingAutomation = marketingAutomation;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -336,10 +337,7 @@ public class GetAccount {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -377,7 +375,7 @@ public class GetAccount {
     // add `email` to the URL query string
     if (getEmail() != null) {
       try {
-        joiner.add(String.format("%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -387,7 +385,7 @@ public class GetAccount {
     // add `firstName` to the URL query string
     if (getFirstName() != null) {
       try {
-        joiner.add(String.format("%sfirstName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFirstName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sfirstName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFirstName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -397,7 +395,7 @@ public class GetAccount {
     // add `lastName` to the URL query string
     if (getLastName() != null) {
       try {
-        joiner.add(String.format("%slastName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLastName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%slastName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLastName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -407,7 +405,7 @@ public class GetAccount {
     // add `companyName` to the URL query string
     if (getCompanyName() != null) {
       try {
-        joiner.add(String.format("%scompanyName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCompanyName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scompanyName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCompanyName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -423,8 +421,8 @@ public class GetAccount {
     if (getPlan() != null) {
       for (int i = 0; i < getPlan().size(); i++) {
         if (getPlan().get(i) != null) {
-          joiner.add(getPlan().get(i).toUrlQueryString(String.format("%splan%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getPlan().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%splan%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }

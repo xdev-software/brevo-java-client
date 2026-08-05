@@ -68,7 +68,7 @@ public class GetCampaignRecipients {
    * @return lists
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_LISTS)
+  @JsonProperty(value = JSON_PROPERTY_LISTS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public List<Long> getLists() {
@@ -76,7 +76,7 @@ public class GetCampaignRecipients {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LISTS)
+  @JsonProperty(value = JSON_PROPERTY_LISTS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setLists(@jakarta.annotation.Nonnull List<Long> lists) {
     this.lists = lists;
@@ -101,7 +101,7 @@ public class GetCampaignRecipients {
    * @return exclusionLists
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_EXCLUSION_LISTS)
+  @JsonProperty(value = JSON_PROPERTY_EXCLUSION_LISTS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public List<Long> getExclusionLists() {
@@ -109,11 +109,12 @@ public class GetCampaignRecipients {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EXCLUSION_LISTS)
+  @JsonProperty(value = JSON_PROPERTY_EXCLUSION_LISTS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setExclusionLists(@jakarta.annotation.Nonnull List<Long> exclusionLists) {
     this.exclusionLists = exclusionLists;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -148,10 +149,7 @@ public class GetCampaignRecipients {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -190,8 +188,8 @@ public class GetCampaignRecipients {
     if (getLists() != null) {
       for (int i = 0; i < getLists().size(); i++) {
         try {
-          joiner.add(String.format("%slists%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%slists%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getLists().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -204,8 +202,8 @@ public class GetCampaignRecipients {
     if (getExclusionLists() != null) {
       for (int i = 0; i < getExclusionLists().size(); i++) {
         try {
-          joiner.add(String.format("%sexclusionLists%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sexclusionLists%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getExclusionLists().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
