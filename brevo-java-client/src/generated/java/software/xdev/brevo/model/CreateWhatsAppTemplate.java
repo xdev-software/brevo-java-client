@@ -152,7 +152,7 @@ public class CreateWhatsAppTemplate {
    * @return name
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getName() {
@@ -160,7 +160,7 @@ public class CreateWhatsAppTemplate {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
@@ -177,7 +177,7 @@ public class CreateWhatsAppTemplate {
    * @return language
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_LANGUAGE)
+  @JsonProperty(value = JSON_PROPERTY_LANGUAGE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getLanguage() {
@@ -185,7 +185,7 @@ public class CreateWhatsAppTemplate {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LANGUAGE)
+  @JsonProperty(value = JSON_PROPERTY_LANGUAGE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setLanguage(@jakarta.annotation.Nonnull String language) {
     this.language = language;
@@ -202,7 +202,7 @@ public class CreateWhatsAppTemplate {
    * @return category
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CATEGORY)
+  @JsonProperty(value = JSON_PROPERTY_CATEGORY, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public CategoryEnum getCategory() {
@@ -210,7 +210,7 @@ public class CreateWhatsAppTemplate {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CATEGORY)
+  @JsonProperty(value = JSON_PROPERTY_CATEGORY, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCategory(@jakarta.annotation.Nonnull CategoryEnum category) {
     this.category = category;
@@ -227,7 +227,7 @@ public class CreateWhatsAppTemplate {
    * @return mediaUrl
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_MEDIA_URL)
+  @JsonProperty(value = JSON_PROPERTY_MEDIA_URL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getMediaUrl() {
@@ -235,7 +235,7 @@ public class CreateWhatsAppTemplate {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MEDIA_URL)
+  @JsonProperty(value = JSON_PROPERTY_MEDIA_URL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setMediaUrl(@jakarta.annotation.Nullable String mediaUrl) {
     this.mediaUrl = mediaUrl;
@@ -252,7 +252,7 @@ public class CreateWhatsAppTemplate {
    * @return bodyText
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_BODY_TEXT)
+  @JsonProperty(value = JSON_PROPERTY_BODY_TEXT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getBodyText() {
@@ -260,7 +260,7 @@ public class CreateWhatsAppTemplate {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BODY_TEXT)
+  @JsonProperty(value = JSON_PROPERTY_BODY_TEXT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setBodyText(@jakarta.annotation.Nonnull String bodyText) {
     this.bodyText = bodyText;
@@ -277,7 +277,7 @@ public class CreateWhatsAppTemplate {
    * @return headerText
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_HEADER_TEXT)
+  @JsonProperty(value = JSON_PROPERTY_HEADER_TEXT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getHeaderText() {
@@ -285,7 +285,7 @@ public class CreateWhatsAppTemplate {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_HEADER_TEXT)
+  @JsonProperty(value = JSON_PROPERTY_HEADER_TEXT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setHeaderText(@jakarta.annotation.Nullable String headerText) {
     this.headerText = headerText;
@@ -302,7 +302,7 @@ public class CreateWhatsAppTemplate {
    * @return source
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SOURCE)
+  @JsonProperty(value = JSON_PROPERTY_SOURCE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public SourceEnum getSource() {
@@ -310,11 +310,12 @@ public class CreateWhatsAppTemplate {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SOURCE)
+  @JsonProperty(value = JSON_PROPERTY_SOURCE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSource(@jakarta.annotation.Nullable SourceEnum source) {
     this.source = source;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -359,10 +360,7 @@ public class CreateWhatsAppTemplate {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -400,7 +398,7 @@ public class CreateWhatsAppTemplate {
     // add `name` to the URL query string
     if (getName() != null) {
       try {
-        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -410,7 +408,7 @@ public class CreateWhatsAppTemplate {
     // add `language` to the URL query string
     if (getLanguage() != null) {
       try {
-        joiner.add(String.format("%slanguage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLanguage()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%slanguage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLanguage()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -420,7 +418,7 @@ public class CreateWhatsAppTemplate {
     // add `category` to the URL query string
     if (getCategory() != null) {
       try {
-        joiner.add(String.format("%scategory%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCategory()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scategory%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCategory()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -430,7 +428,7 @@ public class CreateWhatsAppTemplate {
     // add `mediaUrl` to the URL query string
     if (getMediaUrl() != null) {
       try {
-        joiner.add(String.format("%smediaUrl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMediaUrl()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%smediaUrl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMediaUrl()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -440,7 +438,7 @@ public class CreateWhatsAppTemplate {
     // add `bodyText` to the URL query string
     if (getBodyText() != null) {
       try {
-        joiner.add(String.format("%sbodyText%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBodyText()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sbodyText%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBodyText()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -450,7 +448,7 @@ public class CreateWhatsAppTemplate {
     // add `headerText` to the URL query string
     if (getHeaderText() != null) {
       try {
-        joiner.add(String.format("%sheaderText%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHeaderText()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sheaderText%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHeaderText()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -460,7 +458,7 @@ public class CreateWhatsAppTemplate {
     // add `source` to the URL query string
     if (getSource() != null) {
       try {
-        joiner.add(String.format("%ssource%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSource()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssource%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSource()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

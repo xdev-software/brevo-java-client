@@ -57,7 +57,7 @@ public class ConversationsMessageForwardedToSourceStatus {
    * @return isSuccess
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_IS_SUCCESS)
+  @JsonProperty(value = JSON_PROPERTY_IS_SUCCESS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getIsSuccess() {
@@ -65,7 +65,7 @@ public class ConversationsMessageForwardedToSourceStatus {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IS_SUCCESS)
+  @JsonProperty(value = JSON_PROPERTY_IS_SUCCESS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setIsSuccess(@jakarta.annotation.Nullable Boolean isSuccess) {
     this.isSuccess = isSuccess;
@@ -82,7 +82,7 @@ public class ConversationsMessageForwardedToSourceStatus {
    * @return error
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ERROR)
+  @JsonProperty(value = JSON_PROPERTY_ERROR, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getError() {
@@ -90,11 +90,12 @@ public class ConversationsMessageForwardedToSourceStatus {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ERROR)
+  @JsonProperty(value = JSON_PROPERTY_ERROR, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setError(@jakarta.annotation.Nullable String error) {
     this.error = error;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -129,10 +130,7 @@ public class ConversationsMessageForwardedToSourceStatus {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -170,7 +168,7 @@ public class ConversationsMessageForwardedToSourceStatus {
     // add `isSuccess` to the URL query string
     if (getIsSuccess() != null) {
       try {
-        joiner.add(String.format("%sisSuccess%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsSuccess()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sisSuccess%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsSuccess()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -180,7 +178,7 @@ public class ConversationsMessageForwardedToSourceStatus {
     // add `error` to the URL query string
     if (getError() != null) {
       try {
-        joiner.add(String.format("%serror%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getError()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%serror%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getError()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

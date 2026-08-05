@@ -64,7 +64,7 @@ public class GetWebhooks {
    * @return webhooks
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_WEBHOOKS)
+  @JsonProperty(value = JSON_PROPERTY_WEBHOOKS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public List<GetWebhook> getWebhooks() {
@@ -72,11 +72,12 @@ public class GetWebhooks {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_WEBHOOKS)
+  @JsonProperty(value = JSON_PROPERTY_WEBHOOKS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setWebhooks(@jakarta.annotation.Nonnull List<GetWebhook> webhooks) {
     this.webhooks = webhooks;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -109,10 +110,7 @@ public class GetWebhooks {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -151,8 +149,8 @@ public class GetWebhooks {
     if (getWebhooks() != null) {
       for (int i = 0; i < getWebhooks().size(); i++) {
         if (getWebhooks().get(i) != null) {
-          joiner.add(getWebhooks().get(i).toUrlQueryString(String.format("%swebhooks%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getWebhooks().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%swebhooks%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }

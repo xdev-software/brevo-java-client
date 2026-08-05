@@ -72,7 +72,7 @@ public class SendSms {
    * @return reference
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_REFERENCE)
+  @JsonProperty(value = JSON_PROPERTY_REFERENCE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getReference() {
@@ -80,7 +80,7 @@ public class SendSms {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REFERENCE)
+  @JsonProperty(value = JSON_PROPERTY_REFERENCE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setReference(@jakarta.annotation.Nonnull String reference) {
     this.reference = reference;
@@ -97,7 +97,7 @@ public class SendSms {
    * @return messageId
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
+  @JsonProperty(value = JSON_PROPERTY_MESSAGE_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getMessageId() {
@@ -105,7 +105,7 @@ public class SendSms {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
+  @JsonProperty(value = JSON_PROPERTY_MESSAGE_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setMessageId(@jakarta.annotation.Nonnull Long messageId) {
     this.messageId = messageId;
@@ -122,7 +122,7 @@ public class SendSms {
    * @return smsCount
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SMS_COUNT)
+  @JsonProperty(value = JSON_PROPERTY_SMS_COUNT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getSmsCount() {
@@ -130,7 +130,7 @@ public class SendSms {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SMS_COUNT)
+  @JsonProperty(value = JSON_PROPERTY_SMS_COUNT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSmsCount(@jakarta.annotation.Nullable Long smsCount) {
     this.smsCount = smsCount;
@@ -147,7 +147,7 @@ public class SendSms {
    * @return usedCredits
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_USED_CREDITS)
+  @JsonProperty(value = JSON_PROPERTY_USED_CREDITS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Float getUsedCredits() {
@@ -155,7 +155,7 @@ public class SendSms {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_USED_CREDITS)
+  @JsonProperty(value = JSON_PROPERTY_USED_CREDITS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUsedCredits(@jakarta.annotation.Nullable Float usedCredits) {
     this.usedCredits = usedCredits;
@@ -172,7 +172,7 @@ public class SendSms {
    * @return remainingCredits
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_REMAINING_CREDITS)
+  @JsonProperty(value = JSON_PROPERTY_REMAINING_CREDITS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Float getRemainingCredits() {
@@ -180,11 +180,12 @@ public class SendSms {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REMAINING_CREDITS)
+  @JsonProperty(value = JSON_PROPERTY_REMAINING_CREDITS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRemainingCredits(@jakarta.annotation.Nullable Float remainingCredits) {
     this.remainingCredits = remainingCredits;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -225,10 +226,7 @@ public class SendSms {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -266,7 +264,7 @@ public class SendSms {
     // add `reference` to the URL query string
     if (getReference() != null) {
       try {
-        joiner.add(String.format("%sreference%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReference()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sreference%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReference()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -276,7 +274,7 @@ public class SendSms {
     // add `messageId` to the URL query string
     if (getMessageId() != null) {
       try {
-        joiner.add(String.format("%smessageId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMessageId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%smessageId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMessageId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -286,7 +284,7 @@ public class SendSms {
     // add `smsCount` to the URL query string
     if (getSmsCount() != null) {
       try {
-        joiner.add(String.format("%ssmsCount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSmsCount()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssmsCount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSmsCount()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -296,7 +294,7 @@ public class SendSms {
     // add `usedCredits` to the URL query string
     if (getUsedCredits() != null) {
       try {
-        joiner.add(String.format("%susedCredits%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUsedCredits()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%susedCredits%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUsedCredits()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -306,7 +304,7 @@ public class SendSms {
     // add `remainingCredits` to the URL query string
     if (getRemainingCredits() != null) {
       try {
-        joiner.add(String.format("%sremainingCredits%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRemainingCredits()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sremainingCredits%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRemainingCredits()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

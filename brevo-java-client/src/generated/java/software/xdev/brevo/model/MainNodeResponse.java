@@ -99,7 +99,7 @@ public class MainNodeResponse {
    * @return args
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ARGS)
+  @JsonProperty(value = JSON_PROPERTY_ARGS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<MainNodeResponse> getArgs() {
@@ -107,7 +107,7 @@ public class MainNodeResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ARGS)
+  @JsonProperty(value = JSON_PROPERTY_ARGS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setArgs(@jakarta.annotation.Nullable List<MainNodeResponse> args) {
     this.args = args;
@@ -132,7 +132,7 @@ public class MainNodeResponse {
    * @return array
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ARRAY)
+  @JsonProperty(value = JSON_PROPERTY_ARRAY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<MainNodeResponse> getArray() {
@@ -140,7 +140,7 @@ public class MainNodeResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ARRAY)
+  @JsonProperty(value = JSON_PROPERTY_ARRAY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setArray(@jakarta.annotation.Nullable List<MainNodeResponse> array) {
     this.array = array;
@@ -157,7 +157,7 @@ public class MainNodeResponse {
    * @return _boolean
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_BOOLEAN)
+  @JsonProperty(value = JSON_PROPERTY_BOOLEAN, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getBoolean() {
@@ -165,7 +165,7 @@ public class MainNodeResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BOOLEAN)
+  @JsonProperty(value = JSON_PROPERTY_BOOLEAN, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setBoolean(@jakarta.annotation.Nullable Boolean _boolean) {
     this._boolean = _boolean;
@@ -182,7 +182,7 @@ public class MainNodeResponse {
    * @return description
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DESCRIPTION)
+  @JsonProperty(value = JSON_PROPERTY_DESCRIPTION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getDescription() {
@@ -190,7 +190,7 @@ public class MainNodeResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DESCRIPTION)
+  @JsonProperty(value = JSON_PROPERTY_DESCRIPTION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDescription(@jakarta.annotation.Nullable String description) {
     this.description = description;
@@ -207,7 +207,7 @@ public class MainNodeResponse {
    * @return _float
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_FLOAT)
+  @JsonProperty(value = JSON_PROPERTY_FLOAT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public BigDecimal getFloat() {
@@ -215,7 +215,7 @@ public class MainNodeResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_FLOAT)
+  @JsonProperty(value = JSON_PROPERTY_FLOAT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setFloat(@jakarta.annotation.Nullable BigDecimal _float) {
     this._float = _float;
@@ -232,7 +232,7 @@ public class MainNodeResponse {
    * @return _int
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_INT)
+  @JsonProperty(value = JSON_PROPERTY_INT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getInt() {
@@ -240,7 +240,7 @@ public class MainNodeResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_INT)
+  @JsonProperty(value = JSON_PROPERTY_INT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setInt(@jakarta.annotation.Nullable Long _int) {
     this._int = _int;
@@ -257,7 +257,7 @@ public class MainNodeResponse {
    * @return op
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_OP)
+  @JsonProperty(value = JSON_PROPERTY_OP, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getOp() {
@@ -265,7 +265,7 @@ public class MainNodeResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_OP)
+  @JsonProperty(value = JSON_PROPERTY_OP, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setOp(@jakarta.annotation.Nullable String op) {
     this.op = op;
@@ -282,7 +282,7 @@ public class MainNodeResponse {
    * @return string
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_STRING)
+  @JsonProperty(value = JSON_PROPERTY_STRING, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getString() {
@@ -290,11 +290,12 @@ public class MainNodeResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_STRING)
+  @JsonProperty(value = JSON_PROPERTY_STRING, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setString(@jakarta.annotation.Nullable String string) {
     this.string = string;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -341,10 +342,7 @@ public class MainNodeResponse {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -383,8 +381,8 @@ public class MainNodeResponse {
     if (getArgs() != null) {
       for (int i = 0; i < getArgs().size(); i++) {
         if (getArgs().get(i) != null) {
-          joiner.add(getArgs().get(i).toUrlQueryString(String.format("%sargs%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getArgs().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sargs%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -393,8 +391,8 @@ public class MainNodeResponse {
     if (getArray() != null) {
       for (int i = 0; i < getArray().size(); i++) {
         if (getArray().get(i) != null) {
-          joiner.add(getArray().get(i).toUrlQueryString(String.format("%sarray%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getArray().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sarray%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -402,7 +400,7 @@ public class MainNodeResponse {
     // add `boolean` to the URL query string
     if (getBoolean() != null) {
       try {
-        joiner.add(String.format("%sboolean%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBoolean()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sboolean%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBoolean()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -412,7 +410,7 @@ public class MainNodeResponse {
     // add `description` to the URL query string
     if (getDescription() != null) {
       try {
-        joiner.add(String.format("%sdescription%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDescription()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdescription%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDescription()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -422,7 +420,7 @@ public class MainNodeResponse {
     // add `float` to the URL query string
     if (getFloat() != null) {
       try {
-        joiner.add(String.format("%sfloat%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFloat()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sfloat%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFloat()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -432,7 +430,7 @@ public class MainNodeResponse {
     // add `int` to the URL query string
     if (getInt() != null) {
       try {
-        joiner.add(String.format("%sint%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getInt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sint%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getInt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -442,7 +440,7 @@ public class MainNodeResponse {
     // add `op` to the URL query string
     if (getOp() != null) {
       try {
-        joiner.add(String.format("%sop%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOp()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sop%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOp()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -452,7 +450,7 @@ public class MainNodeResponse {
     // add `string` to the URL query string
     if (getString() != null) {
       try {
-        joiner.add(String.format("%sstring%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getString()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sstring%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getString()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

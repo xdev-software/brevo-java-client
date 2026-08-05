@@ -65,7 +65,7 @@ public class SendWhatsappMessageText {
    * @return senderNumber
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SENDER_NUMBER)
+  @JsonProperty(value = JSON_PROPERTY_SENDER_NUMBER, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getSenderNumber() {
@@ -73,7 +73,7 @@ public class SendWhatsappMessageText {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SENDER_NUMBER)
+  @JsonProperty(value = JSON_PROPERTY_SENDER_NUMBER, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSenderNumber(@jakarta.annotation.Nonnull String senderNumber) {
     this.senderNumber = senderNumber;
@@ -90,7 +90,7 @@ public class SendWhatsappMessageText {
    * @return text
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TEXT)
+  @JsonProperty(value = JSON_PROPERTY_TEXT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getText() {
@@ -98,7 +98,7 @@ public class SendWhatsappMessageText {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TEXT)
+  @JsonProperty(value = JSON_PROPERTY_TEXT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setText(@jakarta.annotation.Nonnull String text) {
     this.text = text;
@@ -123,7 +123,7 @@ public class SendWhatsappMessageText {
    * @return contactNumbers
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CONTACT_NUMBERS)
+  @JsonProperty(value = JSON_PROPERTY_CONTACT_NUMBERS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public List<String> getContactNumbers() {
@@ -131,11 +131,12 @@ public class SendWhatsappMessageText {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONTACT_NUMBERS)
+  @JsonProperty(value = JSON_PROPERTY_CONTACT_NUMBERS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setContactNumbers(@jakarta.annotation.Nonnull List<String> contactNumbers) {
     this.contactNumbers = contactNumbers;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -172,10 +173,7 @@ public class SendWhatsappMessageText {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -213,7 +211,7 @@ public class SendWhatsappMessageText {
     // add `senderNumber` to the URL query string
     if (getSenderNumber() != null) {
       try {
-        joiner.add(String.format("%ssenderNumber%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSenderNumber()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssenderNumber%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSenderNumber()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -223,7 +221,7 @@ public class SendWhatsappMessageText {
     // add `text` to the URL query string
     if (getText() != null) {
       try {
-        joiner.add(String.format("%stext%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getText()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stext%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getText()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -234,8 +232,8 @@ public class SendWhatsappMessageText {
     if (getContactNumbers() != null) {
       for (int i = 0; i < getContactNumbers().size(); i++) {
         try {
-          joiner.add(String.format("%scontactNumbers%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%scontactNumbers%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getContactNumbers().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported

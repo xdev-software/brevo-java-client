@@ -72,7 +72,7 @@ public class TierRequest {
    * @return name
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getName() {
@@ -80,7 +80,7 @@ public class TierRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
@@ -97,7 +97,7 @@ public class TierRequest {
    * @return imageRef
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_IMAGE_REF)
+  @JsonProperty(value = JSON_PROPERTY_IMAGE_REF, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getImageRef() {
@@ -105,7 +105,7 @@ public class TierRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IMAGE_REF)
+  @JsonProperty(value = JSON_PROPERTY_IMAGE_REF, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setImageRef(@jakarta.annotation.Nullable String imageRef) {
     this.imageRef = imageRef;
@@ -130,7 +130,7 @@ public class TierRequest {
    * @return accessConditions
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ACCESS_CONDITIONS)
+  @JsonProperty(value = JSON_PROPERTY_ACCESS_CONDITIONS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public List<TierRequestAccessConditionsInner> getAccessConditions() {
@@ -138,7 +138,7 @@ public class TierRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ACCESS_CONDITIONS)
+  @JsonProperty(value = JSON_PROPERTY_ACCESS_CONDITIONS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAccessConditions(@jakarta.annotation.Nonnull List<TierRequestAccessConditionsInner> accessConditions) {
     this.accessConditions = accessConditions;
@@ -163,7 +163,7 @@ public class TierRequest {
    * @return tierRewards
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TIER_REWARDS)
+  @JsonProperty(value = JSON_PROPERTY_TIER_REWARDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<TierRequestTierRewardsInner> getTierRewards() {
@@ -171,11 +171,12 @@ public class TierRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TIER_REWARDS)
+  @JsonProperty(value = JSON_PROPERTY_TIER_REWARDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setTierRewards(@jakarta.annotation.Nullable List<TierRequestTierRewardsInner> tierRewards) {
     this.tierRewards = tierRewards;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -214,10 +215,7 @@ public class TierRequest {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -255,7 +253,7 @@ public class TierRequest {
     // add `name` to the URL query string
     if (getName() != null) {
       try {
-        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -265,7 +263,7 @@ public class TierRequest {
     // add `imageRef` to the URL query string
     if (getImageRef() != null) {
       try {
-        joiner.add(String.format("%simageRef%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getImageRef()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%simageRef%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getImageRef()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -276,8 +274,8 @@ public class TierRequest {
     if (getAccessConditions() != null) {
       for (int i = 0; i < getAccessConditions().size(); i++) {
         if (getAccessConditions().get(i) != null) {
-          joiner.add(getAccessConditions().get(i).toUrlQueryString(String.format("%saccessConditions%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getAccessConditions().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%saccessConditions%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -286,8 +284,8 @@ public class TierRequest {
     if (getTierRewards() != null) {
       for (int i = 0; i < getTierRewards().size(); i++) {
         if (getTierRewards().get(i) != null) {
-          joiner.add(getTierRewards().get(i).toUrlQueryString(String.format("%stierRewards%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getTierRewards().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%stierRewards%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }

@@ -85,7 +85,7 @@ public class CreateOrderPayload {
    * @return amount
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_AMOUNT)
+  @JsonProperty(value = JSON_PROPERTY_AMOUNT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public BigDecimal getAmount() {
@@ -93,7 +93,7 @@ public class CreateOrderPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_AMOUNT)
+  @JsonProperty(value = JSON_PROPERTY_AMOUNT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAmount(@jakarta.annotation.Nonnull BigDecimal amount) {
     this.amount = amount;
@@ -110,7 +110,7 @@ public class CreateOrderPayload {
    * @return balanceDefinitionId
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_BALANCE_DEFINITION_ID)
+  @JsonProperty(value = JSON_PROPERTY_BALANCE_DEFINITION_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getBalanceDefinitionId() {
@@ -118,7 +118,7 @@ public class CreateOrderPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BALANCE_DEFINITION_ID)
+  @JsonProperty(value = JSON_PROPERTY_BALANCE_DEFINITION_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setBalanceDefinitionId(@jakarta.annotation.Nonnull String balanceDefinitionId) {
     this.balanceDefinitionId = balanceDefinitionId;
@@ -136,7 +136,7 @@ public class CreateOrderPayload {
    * @return contactId
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CONTACT_ID)
+  @JsonProperty(value = JSON_PROPERTY_CONTACT_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Integer getContactId() {
@@ -144,7 +144,7 @@ public class CreateOrderPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONTACT_ID)
+  @JsonProperty(value = JSON_PROPERTY_CONTACT_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setContactId(@jakarta.annotation.Nonnull Integer contactId) {
     this.contactId = contactId;
@@ -161,7 +161,7 @@ public class CreateOrderPayload {
    * @return dueAt
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DUE_AT)
+  @JsonProperty(value = JSON_PROPERTY_DUE_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getDueAt() {
@@ -169,7 +169,7 @@ public class CreateOrderPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DUE_AT)
+  @JsonProperty(value = JSON_PROPERTY_DUE_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDueAt(@jakarta.annotation.Nonnull String dueAt) {
     this.dueAt = dueAt;
@@ -186,7 +186,7 @@ public class CreateOrderPayload {
    * @return expiresAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EXPIRES_AT)
+  @JsonProperty(value = JSON_PROPERTY_EXPIRES_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getExpiresAt() {
@@ -194,7 +194,7 @@ public class CreateOrderPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EXPIRES_AT)
+  @JsonProperty(value = JSON_PROPERTY_EXPIRES_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setExpiresAt(@jakarta.annotation.Nullable String expiresAt) {
     this.expiresAt = expiresAt;
@@ -219,7 +219,7 @@ public class CreateOrderPayload {
    * @return meta
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_META)
+  @JsonProperty(value = JSON_PROPERTY_META, required = false)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
 
   public Map<String, Object> getMeta() {
@@ -227,7 +227,7 @@ public class CreateOrderPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_META)
+  @JsonProperty(value = JSON_PROPERTY_META, required = false)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
   public void setMeta(@jakarta.annotation.Nullable Map<String, Object> meta) {
     this.meta = meta;
@@ -244,7 +244,7 @@ public class CreateOrderPayload {
    * @return source
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SOURCE)
+  @JsonProperty(value = JSON_PROPERTY_SOURCE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getSource() {
@@ -252,11 +252,12 @@ public class CreateOrderPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SOURCE)
+  @JsonProperty(value = JSON_PROPERTY_SOURCE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSource(@jakarta.annotation.Nonnull String source) {
     this.source = source;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -301,10 +302,7 @@ public class CreateOrderPayload {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -342,7 +340,7 @@ public class CreateOrderPayload {
     // add `amount` to the URL query string
     if (getAmount() != null) {
       try {
-        joiner.add(String.format("%samount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAmount()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%samount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAmount()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -352,7 +350,7 @@ public class CreateOrderPayload {
     // add `balanceDefinitionId` to the URL query string
     if (getBalanceDefinitionId() != null) {
       try {
-        joiner.add(String.format("%sbalanceDefinitionId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBalanceDefinitionId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sbalanceDefinitionId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBalanceDefinitionId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -362,7 +360,7 @@ public class CreateOrderPayload {
     // add `contactId` to the URL query string
     if (getContactId() != null) {
       try {
-        joiner.add(String.format("%scontactId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContactId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scontactId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContactId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -372,7 +370,7 @@ public class CreateOrderPayload {
     // add `dueAt` to the URL query string
     if (getDueAt() != null) {
       try {
-        joiner.add(String.format("%sdueAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDueAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdueAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDueAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -382,7 +380,7 @@ public class CreateOrderPayload {
     // add `expiresAt` to the URL query string
     if (getExpiresAt() != null) {
       try {
-        joiner.add(String.format("%sexpiresAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpiresAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sexpiresAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpiresAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -393,8 +391,8 @@ public class CreateOrderPayload {
     if (getMeta() != null) {
       for (String _key : getMeta().keySet()) {
         try {
-          joiner.add(String.format("%smeta%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%smeta%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, _key, containerSuffix),
               getMeta().get(_key), URLEncoder.encode(String.valueOf(getMeta().get(_key)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -406,7 +404,7 @@ public class CreateOrderPayload {
     // add `source` to the URL query string
     if (getSource() != null) {
       try {
-        joiner.add(String.format("%ssource%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSource()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssource%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSource()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

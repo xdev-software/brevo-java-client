@@ -156,7 +156,7 @@ public class CorporateUserEmailPermissionsPutRequestPrivilegesInner {
    * @return feature
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_FEATURE)
+  @JsonProperty(value = JSON_PROPERTY_FEATURE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public FeatureEnum getFeature() {
@@ -164,7 +164,7 @@ public class CorporateUserEmailPermissionsPutRequestPrivilegesInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_FEATURE)
+  @JsonProperty(value = JSON_PROPERTY_FEATURE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setFeature(@jakarta.annotation.Nullable FeatureEnum feature) {
     this.feature = feature;
@@ -189,7 +189,7 @@ public class CorporateUserEmailPermissionsPutRequestPrivilegesInner {
    * @return permissions
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PERMISSIONS)
+  @JsonProperty(value = JSON_PROPERTY_PERMISSIONS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<PermissionsEnum> getPermissions() {
@@ -197,11 +197,12 @@ public class CorporateUserEmailPermissionsPutRequestPrivilegesInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PERMISSIONS)
+  @JsonProperty(value = JSON_PROPERTY_PERMISSIONS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPermissions(@jakarta.annotation.Nullable List<PermissionsEnum> permissions) {
     this.permissions = permissions;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -236,10 +237,7 @@ public class CorporateUserEmailPermissionsPutRequestPrivilegesInner {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -277,7 +275,7 @@ public class CorporateUserEmailPermissionsPutRequestPrivilegesInner {
     // add `feature` to the URL query string
     if (getFeature() != null) {
       try {
-        joiner.add(String.format("%sfeature%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFeature()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sfeature%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFeature()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -288,8 +286,8 @@ public class CorporateUserEmailPermissionsPutRequestPrivilegesInner {
     if (getPermissions() != null) {
       for (int i = 0; i < getPermissions().size(); i++) {
         try {
-          joiner.add(String.format("%spermissions%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%spermissions%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getPermissions().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported

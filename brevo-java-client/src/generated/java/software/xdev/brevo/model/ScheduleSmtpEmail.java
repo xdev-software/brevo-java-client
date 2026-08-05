@@ -65,7 +65,7 @@ public class ScheduleSmtpEmail {
    * @return messageId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
+  @JsonProperty(value = JSON_PROPERTY_MESSAGE_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getMessageId() {
@@ -73,7 +73,7 @@ public class ScheduleSmtpEmail {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
+  @JsonProperty(value = JSON_PROPERTY_MESSAGE_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setMessageId(@jakarta.annotation.Nullable String messageId) {
     this.messageId = messageId;
@@ -98,7 +98,7 @@ public class ScheduleSmtpEmail {
    * @return messageIds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_MESSAGE_IDS)
+  @JsonProperty(value = JSON_PROPERTY_MESSAGE_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getMessageIds() {
@@ -106,7 +106,7 @@ public class ScheduleSmtpEmail {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MESSAGE_IDS)
+  @JsonProperty(value = JSON_PROPERTY_MESSAGE_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setMessageIds(@jakarta.annotation.Nullable List<String> messageIds) {
     this.messageIds = messageIds;
@@ -123,7 +123,7 @@ public class ScheduleSmtpEmail {
    * @return batchId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_BATCH_ID)
+  @JsonProperty(value = JSON_PROPERTY_BATCH_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getBatchId() {
@@ -131,11 +131,12 @@ public class ScheduleSmtpEmail {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BATCH_ID)
+  @JsonProperty(value = JSON_PROPERTY_BATCH_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setBatchId(@jakarta.annotation.Nullable String batchId) {
     this.batchId = batchId;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -172,10 +173,7 @@ public class ScheduleSmtpEmail {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -213,7 +211,7 @@ public class ScheduleSmtpEmail {
     // add `messageId` to the URL query string
     if (getMessageId() != null) {
       try {
-        joiner.add(String.format("%smessageId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMessageId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%smessageId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMessageId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -224,8 +222,8 @@ public class ScheduleSmtpEmail {
     if (getMessageIds() != null) {
       for (int i = 0; i < getMessageIds().size(); i++) {
         try {
-          joiner.add(String.format("%smessageIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%smessageIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getMessageIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -237,7 +235,7 @@ public class ScheduleSmtpEmail {
     // add `batchId` to the URL query string
     if (getBatchId() != null) {
       try {
-        joiner.add(String.format("%sbatchId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBatchId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sbatchId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBatchId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

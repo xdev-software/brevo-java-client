@@ -64,7 +64,7 @@ public class GetTransacSmsReport {
    * @return reports
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_REPORTS)
+  @JsonProperty(value = JSON_PROPERTY_REPORTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<GetTransacSmsReportReportsInner> getReports() {
@@ -72,11 +72,12 @@ public class GetTransacSmsReport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REPORTS)
+  @JsonProperty(value = JSON_PROPERTY_REPORTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setReports(@jakarta.annotation.Nullable List<GetTransacSmsReportReportsInner> reports) {
     this.reports = reports;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -109,10 +110,7 @@ public class GetTransacSmsReport {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -151,8 +149,8 @@ public class GetTransacSmsReport {
     if (getReports() != null) {
       for (int i = 0; i < getReports().size(); i++) {
         if (getReports().get(i) != null) {
-          joiner.add(getReports().get(i).toUrlQueryString(String.format("%sreports%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getReports().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sreports%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }

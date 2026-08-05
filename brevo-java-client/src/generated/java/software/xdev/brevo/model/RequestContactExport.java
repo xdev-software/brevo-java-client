@@ -94,7 +94,7 @@ public class RequestContactExport {
    * @return exportAttributes
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EXPORT_ATTRIBUTES)
+  @JsonProperty(value = JSON_PROPERTY_EXPORT_ATTRIBUTES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getExportAttributes() {
@@ -102,7 +102,7 @@ public class RequestContactExport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EXPORT_ATTRIBUTES)
+  @JsonProperty(value = JSON_PROPERTY_EXPORT_ATTRIBUTES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setExportAttributes(@jakarta.annotation.Nullable List<String> exportAttributes) {
     this.exportAttributes = exportAttributes;
@@ -119,7 +119,7 @@ public class RequestContactExport {
    * @return customContactFilter
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CUSTOM_CONTACT_FILTER)
+  @JsonProperty(value = JSON_PROPERTY_CUSTOM_CONTACT_FILTER, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public RequestContactExportCustomContactFilter getCustomContactFilter() {
@@ -127,7 +127,7 @@ public class RequestContactExport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CUSTOM_CONTACT_FILTER)
+  @JsonProperty(value = JSON_PROPERTY_CUSTOM_CONTACT_FILTER, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCustomContactFilter(@jakarta.annotation.Nonnull RequestContactExportCustomContactFilter customContactFilter) {
     this.customContactFilter = customContactFilter;
@@ -144,7 +144,7 @@ public class RequestContactExport {
    * @return notifyUrl
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_NOTIFY_URL)
+  @JsonProperty(value = JSON_PROPERTY_NOTIFY_URL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getNotifyUrl() {
@@ -152,7 +152,7 @@ public class RequestContactExport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NOTIFY_URL)
+  @JsonProperty(value = JSON_PROPERTY_NOTIFY_URL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setNotifyUrl(@jakarta.annotation.Nullable String notifyUrl) {
     this.notifyUrl = notifyUrl;
@@ -169,7 +169,7 @@ public class RequestContactExport {
    * @return disableNotification
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DISABLE_NOTIFICATION)
+  @JsonProperty(value = JSON_PROPERTY_DISABLE_NOTIFICATION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getDisableNotification() {
@@ -177,7 +177,7 @@ public class RequestContactExport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DISABLE_NOTIFICATION)
+  @JsonProperty(value = JSON_PROPERTY_DISABLE_NOTIFICATION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDisableNotification(@jakarta.annotation.Nullable Boolean disableNotification) {
     this.disableNotification = disableNotification;
@@ -194,7 +194,7 @@ public class RequestContactExport {
    * @return exportMandatoryAttributes
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EXPORT_MANDATORY_ATTRIBUTES)
+  @JsonProperty(value = JSON_PROPERTY_EXPORT_MANDATORY_ATTRIBUTES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getExportMandatoryAttributes() {
@@ -202,7 +202,7 @@ public class RequestContactExport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EXPORT_MANDATORY_ATTRIBUTES)
+  @JsonProperty(value = JSON_PROPERTY_EXPORT_MANDATORY_ATTRIBUTES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setExportMandatoryAttributes(@jakarta.annotation.Nullable Boolean exportMandatoryAttributes) {
     this.exportMandatoryAttributes = exportMandatoryAttributes;
@@ -227,7 +227,7 @@ public class RequestContactExport {
    * @return exportSubscriptionStatus
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EXPORT_SUBSCRIPTION_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_EXPORT_SUBSCRIPTION_STATUS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getExportSubscriptionStatus() {
@@ -235,7 +235,7 @@ public class RequestContactExport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EXPORT_SUBSCRIPTION_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_EXPORT_SUBSCRIPTION_STATUS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setExportSubscriptionStatus(@jakarta.annotation.Nullable List<String> exportSubscriptionStatus) {
     this.exportSubscriptionStatus = exportSubscriptionStatus;
@@ -260,7 +260,7 @@ public class RequestContactExport {
    * @return exportMetadata
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EXPORT_METADATA)
+  @JsonProperty(value = JSON_PROPERTY_EXPORT_METADATA, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getExportMetadata() {
@@ -268,11 +268,12 @@ public class RequestContactExport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EXPORT_METADATA)
+  @JsonProperty(value = JSON_PROPERTY_EXPORT_METADATA, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setExportMetadata(@jakarta.annotation.Nullable List<String> exportMetadata) {
     this.exportMetadata = exportMetadata;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -317,10 +318,7 @@ public class RequestContactExport {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -359,8 +357,8 @@ public class RequestContactExport {
     if (getExportAttributes() != null) {
       for (int i = 0; i < getExportAttributes().size(); i++) {
         try {
-          joiner.add(String.format("%sexportAttributes%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sexportAttributes%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getExportAttributes().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -377,7 +375,7 @@ public class RequestContactExport {
     // add `notifyUrl` to the URL query string
     if (getNotifyUrl() != null) {
       try {
-        joiner.add(String.format("%snotifyUrl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNotifyUrl()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%snotifyUrl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNotifyUrl()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -387,7 +385,7 @@ public class RequestContactExport {
     // add `disableNotification` to the URL query string
     if (getDisableNotification() != null) {
       try {
-        joiner.add(String.format("%sdisableNotification%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisableNotification()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdisableNotification%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisableNotification()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -397,7 +395,7 @@ public class RequestContactExport {
     // add `exportMandatoryAttributes` to the URL query string
     if (getExportMandatoryAttributes() != null) {
       try {
-        joiner.add(String.format("%sexportMandatoryAttributes%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExportMandatoryAttributes()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sexportMandatoryAttributes%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExportMandatoryAttributes()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -408,8 +406,8 @@ public class RequestContactExport {
     if (getExportSubscriptionStatus() != null) {
       for (int i = 0; i < getExportSubscriptionStatus().size(); i++) {
         try {
-          joiner.add(String.format("%sexportSubscriptionStatus%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sexportSubscriptionStatus%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getExportSubscriptionStatus().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -422,8 +420,8 @@ public class RequestContactExport {
     if (getExportMetadata() != null) {
       for (int i = 0; i < getExportMetadata().size(); i++) {
         try {
-          joiner.add(String.format("%sexportMetadata%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sexportMetadata%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getExportMetadata().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported

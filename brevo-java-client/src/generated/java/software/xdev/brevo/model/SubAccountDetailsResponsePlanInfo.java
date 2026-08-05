@@ -64,7 +64,7 @@ public class SubAccountDetailsResponsePlanInfo {
    * @return credits
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CREDITS)
+  @JsonProperty(value = JSON_PROPERTY_CREDITS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public SubAccountDetailsResponsePlanInfoCredits getCredits() {
@@ -72,7 +72,7 @@ public class SubAccountDetailsResponsePlanInfo {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CREDITS)
+  @JsonProperty(value = JSON_PROPERTY_CREDITS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCredits(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfoCredits credits) {
     this.credits = credits;
@@ -89,7 +89,7 @@ public class SubAccountDetailsResponsePlanInfo {
    * @return features
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_FEATURES)
+  @JsonProperty(value = JSON_PROPERTY_FEATURES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public SubAccountDetailsResponsePlanInfoFeatures getFeatures() {
@@ -97,7 +97,7 @@ public class SubAccountDetailsResponsePlanInfo {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_FEATURES)
+  @JsonProperty(value = JSON_PROPERTY_FEATURES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setFeatures(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfoFeatures features) {
     this.features = features;
@@ -114,7 +114,7 @@ public class SubAccountDetailsResponsePlanInfo {
    * @return planType
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PLAN_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_PLAN_TYPE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getPlanType() {
@@ -122,11 +122,12 @@ public class SubAccountDetailsResponsePlanInfo {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PLAN_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_PLAN_TYPE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPlanType(@jakarta.annotation.Nullable String planType) {
     this.planType = planType;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -163,10 +164,7 @@ public class SubAccountDetailsResponsePlanInfo {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -214,7 +212,7 @@ public class SubAccountDetailsResponsePlanInfo {
     // add `planType` to the URL query string
     if (getPlanType() != null) {
       try {
-        joiner.add(String.format("%splanType%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPlanType()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%splanType%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPlanType()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

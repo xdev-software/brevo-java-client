@@ -69,7 +69,7 @@ public class MainRewardPage {
    * @return items
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ITEMS)
+  @JsonProperty(value = JSON_PROPERTY_ITEMS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<MainRewardPageObj> getItems() {
@@ -77,7 +77,7 @@ public class MainRewardPage {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ITEMS)
+  @JsonProperty(value = JSON_PROPERTY_ITEMS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setItems(@jakarta.annotation.Nullable List<MainRewardPageObj> items) {
     this.items = items;
@@ -94,7 +94,7 @@ public class MainRewardPage {
    * @return totalCount
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TOTAL_COUNT)
+  @JsonProperty(value = JSON_PROPERTY_TOTAL_COUNT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getTotalCount() {
@@ -102,11 +102,12 @@ public class MainRewardPage {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TOTAL_COUNT)
+  @JsonProperty(value = JSON_PROPERTY_TOTAL_COUNT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setTotalCount(@jakarta.annotation.Nullable Integer totalCount) {
     this.totalCount = totalCount;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -141,10 +142,7 @@ public class MainRewardPage {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -183,8 +181,8 @@ public class MainRewardPage {
     if (getItems() != null) {
       for (int i = 0; i < getItems().size(); i++) {
         if (getItems().get(i) != null) {
-          joiner.add(getItems().get(i).toUrlQueryString(String.format("%sitems%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getItems().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sitems%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -192,7 +190,7 @@ public class MainRewardPage {
     // add `totalCount` to the URL query string
     if (getTotalCount() != null) {
       try {
-        joiner.add(String.format("%stotalCount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTotalCount()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stotalCount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTotalCount()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

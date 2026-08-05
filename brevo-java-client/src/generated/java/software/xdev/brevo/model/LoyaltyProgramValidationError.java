@@ -62,7 +62,7 @@ public class LoyaltyProgramValidationError {
    * @return path
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PATH)
+  @JsonProperty(value = JSON_PROPERTY_PATH, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getPath() {
@@ -70,7 +70,7 @@ public class LoyaltyProgramValidationError {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PATH)
+  @JsonProperty(value = JSON_PROPERTY_PATH, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPath(@jakarta.annotation.Nullable String path) {
     this.path = path;
@@ -87,7 +87,7 @@ public class LoyaltyProgramValidationError {
    * @return rule
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_RULE)
+  @JsonProperty(value = JSON_PROPERTY_RULE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getRule() {
@@ -95,7 +95,7 @@ public class LoyaltyProgramValidationError {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_RULE)
+  @JsonProperty(value = JSON_PROPERTY_RULE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRule(@jakarta.annotation.Nullable String rule) {
     this.rule = rule;
@@ -112,7 +112,7 @@ public class LoyaltyProgramValidationError {
    * @return error
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ERROR)
+  @JsonProperty(value = JSON_PROPERTY_ERROR, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getError() {
@@ -120,11 +120,12 @@ public class LoyaltyProgramValidationError {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ERROR)
+  @JsonProperty(value = JSON_PROPERTY_ERROR, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setError(@jakarta.annotation.Nullable String error) {
     this.error = error;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -161,10 +162,7 @@ public class LoyaltyProgramValidationError {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -202,7 +200,7 @@ public class LoyaltyProgramValidationError {
     // add `path` to the URL query string
     if (getPath() != null) {
       try {
-        joiner.add(String.format("%spath%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPath()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%spath%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPath()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -212,7 +210,7 @@ public class LoyaltyProgramValidationError {
     // add `rule` to the URL query string
     if (getRule() != null) {
       try {
-        joiner.add(String.format("%srule%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRule()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%srule%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRule()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -222,7 +220,7 @@ public class LoyaltyProgramValidationError {
     // add `error` to the URL query string
     if (getError() != null) {
       try {
-        joiner.add(String.format("%serror%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getError()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%serror%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getError()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

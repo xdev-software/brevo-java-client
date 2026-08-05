@@ -67,7 +67,7 @@ public class OrderIdentifiers {
    * @return extId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EXT_ID)
+  @JsonProperty(value = JSON_PROPERTY_EXT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getExtId() {
@@ -75,7 +75,7 @@ public class OrderIdentifiers {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EXT_ID)
+  @JsonProperty(value = JSON_PROPERTY_EXT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setExtId(@jakarta.annotation.Nullable String extId) {
     this.extId = extId;
@@ -92,7 +92,7 @@ public class OrderIdentifiers {
    * @return loyaltySubscriptionId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LOYALTY_SUBSCRIPTION_ID)
+  @JsonProperty(value = JSON_PROPERTY_LOYALTY_SUBSCRIPTION_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getLoyaltySubscriptionId() {
@@ -100,7 +100,7 @@ public class OrderIdentifiers {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LOYALTY_SUBSCRIPTION_ID)
+  @JsonProperty(value = JSON_PROPERTY_LOYALTY_SUBSCRIPTION_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLoyaltySubscriptionId(@jakarta.annotation.Nullable String loyaltySubscriptionId) {
     this.loyaltySubscriptionId = loyaltySubscriptionId;
@@ -117,7 +117,7 @@ public class OrderIdentifiers {
    * @return phoneId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PHONE_ID)
+  @JsonProperty(value = JSON_PROPERTY_PHONE_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getPhoneId() {
@@ -125,7 +125,7 @@ public class OrderIdentifiers {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PHONE_ID)
+  @JsonProperty(value = JSON_PROPERTY_PHONE_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPhoneId(@jakarta.annotation.Nullable String phoneId) {
     this.phoneId = phoneId;
@@ -142,7 +142,7 @@ public class OrderIdentifiers {
    * @return emailId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EMAIL_ID)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getEmailId() {
@@ -150,11 +150,12 @@ public class OrderIdentifiers {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EMAIL_ID)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setEmailId(@jakarta.annotation.Nullable String emailId) {
     this.emailId = emailId;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -193,10 +194,7 @@ public class OrderIdentifiers {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -234,7 +232,7 @@ public class OrderIdentifiers {
     // add `ext_id` to the URL query string
     if (getExtId() != null) {
       try {
-        joiner.add(String.format("%sext_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExtId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sext_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExtId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -244,7 +242,7 @@ public class OrderIdentifiers {
     // add `loyalty_subscription_id` to the URL query string
     if (getLoyaltySubscriptionId() != null) {
       try {
-        joiner.add(String.format("%sloyalty_subscription_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLoyaltySubscriptionId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sloyalty_subscription_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLoyaltySubscriptionId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -254,7 +252,7 @@ public class OrderIdentifiers {
     // add `phone_id` to the URL query string
     if (getPhoneId() != null) {
       try {
-        joiner.add(String.format("%sphone_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPhoneId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sphone_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPhoneId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -264,7 +262,7 @@ public class OrderIdentifiers {
     // add `email_id` to the URL query string
     if (getEmailId() != null) {
       try {
-        joiner.add(String.format("%semail_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmailId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%semail_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmailId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

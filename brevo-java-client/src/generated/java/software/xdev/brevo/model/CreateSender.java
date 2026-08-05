@@ -66,7 +66,7 @@ public class CreateSender {
    * @return name
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getName() {
@@ -74,7 +74,7 @@ public class CreateSender {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
@@ -91,7 +91,7 @@ public class CreateSender {
    * @return email
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getEmail() {
@@ -99,7 +99,7 @@ public class CreateSender {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setEmail(@jakarta.annotation.Nonnull String email) {
     this.email = email;
@@ -124,7 +124,7 @@ public class CreateSender {
    * @return ips
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_IPS)
+  @JsonProperty(value = JSON_PROPERTY_IPS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<CreateSenderIpsInner> getIps() {
@@ -132,11 +132,12 @@ public class CreateSender {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IPS)
+  @JsonProperty(value = JSON_PROPERTY_IPS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setIps(@jakarta.annotation.Nullable List<CreateSenderIpsInner> ips) {
     this.ips = ips;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -173,10 +174,7 @@ public class CreateSender {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -214,7 +212,7 @@ public class CreateSender {
     // add `name` to the URL query string
     if (getName() != null) {
       try {
-        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -224,7 +222,7 @@ public class CreateSender {
     // add `email` to the URL query string
     if (getEmail() != null) {
       try {
-        joiner.add(String.format("%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -235,8 +233,8 @@ public class CreateSender {
     if (getIps() != null) {
       for (int i = 0; i < getIps().size(); i++) {
         if (getIps().get(i) != null) {
-          joiner.add(getIps().get(i).toUrlQueryString(String.format("%sips%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getIps().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sips%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }

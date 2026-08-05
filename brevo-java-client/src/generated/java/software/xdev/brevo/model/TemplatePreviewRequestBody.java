@@ -62,7 +62,7 @@ public class TemplatePreviewRequestBody {
    * @return templateId
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
+  @JsonProperty(value = JSON_PROPERTY_TEMPLATE_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Integer getTemplateId() {
@@ -70,7 +70,7 @@ public class TemplatePreviewRequestBody {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
+  @JsonProperty(value = JSON_PROPERTY_TEMPLATE_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setTemplateId(@jakarta.annotation.Nonnull Integer templateId) {
     this.templateId = templateId;
@@ -87,7 +87,7 @@ public class TemplatePreviewRequestBody {
    * @return email
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getEmail() {
@@ -95,7 +95,7 @@ public class TemplatePreviewRequestBody {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setEmail(@jakarta.annotation.Nullable String email) {
     this.email = email;
@@ -112,7 +112,7 @@ public class TemplatePreviewRequestBody {
    * @return params
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PARAMS)
+  @JsonProperty(value = JSON_PROPERTY_PARAMS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Object getParams() {
@@ -120,11 +120,12 @@ public class TemplatePreviewRequestBody {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PARAMS)
+  @JsonProperty(value = JSON_PROPERTY_PARAMS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setParams(@jakarta.annotation.Nullable Object params) {
     this.params = params;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -161,10 +162,7 @@ public class TemplatePreviewRequestBody {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**

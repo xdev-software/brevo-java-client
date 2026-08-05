@@ -131,7 +131,7 @@ public class GetProductDetails {
    * @return id
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getId() {
@@ -139,7 +139,7 @@ public class GetProductDetails {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setId(@jakarta.annotation.Nonnull String id) {
     this.id = id;
@@ -156,7 +156,7 @@ public class GetProductDetails {
    * @return name
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getName() {
@@ -164,7 +164,7 @@ public class GetProductDetails {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
@@ -181,7 +181,7 @@ public class GetProductDetails {
    * @return createdAt
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getCreatedAt() {
@@ -189,7 +189,7 @@ public class GetProductDetails {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCreatedAt(@jakarta.annotation.Nonnull String createdAt) {
     this.createdAt = createdAt;
@@ -206,7 +206,7 @@ public class GetProductDetails {
    * @return modifiedAt
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
+  @JsonProperty(value = JSON_PROPERTY_MODIFIED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getModifiedAt() {
@@ -214,7 +214,7 @@ public class GetProductDetails {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
+  @JsonProperty(value = JSON_PROPERTY_MODIFIED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setModifiedAt(@jakarta.annotation.Nonnull String modifiedAt) {
     this.modifiedAt = modifiedAt;
@@ -231,7 +231,7 @@ public class GetProductDetails {
    * @return url
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_URL)
+  @JsonProperty(value = JSON_PROPERTY_URL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getUrl() {
@@ -239,7 +239,7 @@ public class GetProductDetails {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_URL)
+  @JsonProperty(value = JSON_PROPERTY_URL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUrl(@jakarta.annotation.Nullable String url) {
     this.url = url;
@@ -256,7 +256,7 @@ public class GetProductDetails {
    * @return imageUrl
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_IMAGE_URL)
+  @JsonProperty(value = JSON_PROPERTY_IMAGE_URL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getImageUrl() {
@@ -264,7 +264,7 @@ public class GetProductDetails {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IMAGE_URL)
+  @JsonProperty(value = JSON_PROPERTY_IMAGE_URL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setImageUrl(@jakarta.annotation.Nullable String imageUrl) {
     this.imageUrl = imageUrl;
@@ -281,7 +281,7 @@ public class GetProductDetails {
    * @return sku
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SKU)
+  @JsonProperty(value = JSON_PROPERTY_SKU, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getSku() {
@@ -289,7 +289,7 @@ public class GetProductDetails {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SKU)
+  @JsonProperty(value = JSON_PROPERTY_SKU, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSku(@jakarta.annotation.Nullable String sku) {
     this.sku = sku;
@@ -306,7 +306,7 @@ public class GetProductDetails {
    * @return price
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PRICE)
+  @JsonProperty(value = JSON_PROPERTY_PRICE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Float getPrice() {
@@ -314,7 +314,7 @@ public class GetProductDetails {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PRICE)
+  @JsonProperty(value = JSON_PROPERTY_PRICE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPrice(@jakarta.annotation.Nullable Float price) {
     this.price = price;
@@ -339,7 +339,7 @@ public class GetProductDetails {
    * @return categories
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CATEGORIES)
+  @JsonProperty(value = JSON_PROPERTY_CATEGORIES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getCategories() {
@@ -347,7 +347,7 @@ public class GetProductDetails {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CATEGORIES)
+  @JsonProperty(value = JSON_PROPERTY_CATEGORIES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCategories(@jakarta.annotation.Nullable List<String> categories) {
     this.categories = categories;
@@ -364,7 +364,7 @@ public class GetProductDetails {
    * @return parentId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PARENT_ID)
+  @JsonProperty(value = JSON_PROPERTY_PARENT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getParentId() {
@@ -372,7 +372,7 @@ public class GetProductDetails {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PARENT_ID)
+  @JsonProperty(value = JSON_PROPERTY_PARENT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setParentId(@jakarta.annotation.Nullable String parentId) {
     this.parentId = parentId;
@@ -389,7 +389,7 @@ public class GetProductDetails {
    * @return s3Original
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_S3_ORIGINAL)
+  @JsonProperty(value = JSON_PROPERTY_S3_ORIGINAL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getS3Original() {
@@ -397,7 +397,7 @@ public class GetProductDetails {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_S3_ORIGINAL)
+  @JsonProperty(value = JSON_PROPERTY_S3_ORIGINAL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setS3Original(@jakarta.annotation.Nullable String s3Original) {
     this.s3Original = s3Original;
@@ -414,7 +414,7 @@ public class GetProductDetails {
    * @return s3ThumbAnalytics
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_S3_THUMB_ANALYTICS)
+  @JsonProperty(value = JSON_PROPERTY_S3_THUMB_ANALYTICS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getS3ThumbAnalytics() {
@@ -422,7 +422,7 @@ public class GetProductDetails {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_S3_THUMB_ANALYTICS)
+  @JsonProperty(value = JSON_PROPERTY_S3_THUMB_ANALYTICS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setS3ThumbAnalytics(@jakarta.annotation.Nonnull String s3ThumbAnalytics) {
     this.s3ThumbAnalytics = s3ThumbAnalytics;
@@ -439,7 +439,7 @@ public class GetProductDetails {
    * @return s3ThumbEditor
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_S3_THUMB_EDITOR)
+  @JsonProperty(value = JSON_PROPERTY_S3_THUMB_EDITOR, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getS3ThumbEditor() {
@@ -447,7 +447,7 @@ public class GetProductDetails {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_S3_THUMB_EDITOR)
+  @JsonProperty(value = JSON_PROPERTY_S3_THUMB_EDITOR, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setS3ThumbEditor(@jakarta.annotation.Nonnull String s3ThumbEditor) {
     this.s3ThumbEditor = s3ThumbEditor;
@@ -464,7 +464,7 @@ public class GetProductDetails {
    * @return metaInfo
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_META_INFO)
+  @JsonProperty(value = JSON_PROPERTY_META_INFO, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Object getMetaInfo() {
@@ -472,7 +472,7 @@ public class GetProductDetails {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_META_INFO)
+  @JsonProperty(value = JSON_PROPERTY_META_INFO, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setMetaInfo(@jakarta.annotation.Nullable Object metaInfo) {
     this.metaInfo = metaInfo;
@@ -489,7 +489,7 @@ public class GetProductDetails {
    * @return isDeleted
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_IS_DELETED)
+  @JsonProperty(value = JSON_PROPERTY_IS_DELETED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getIsDeleted() {
@@ -497,7 +497,7 @@ public class GetProductDetails {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IS_DELETED)
+  @JsonProperty(value = JSON_PROPERTY_IS_DELETED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setIsDeleted(@jakarta.annotation.Nullable Boolean isDeleted) {
     this.isDeleted = isDeleted;
@@ -514,7 +514,7 @@ public class GetProductDetails {
    * @return stock
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_STOCK)
+  @JsonProperty(value = JSON_PROPERTY_STOCK, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public BigDecimal getStock() {
@@ -522,11 +522,12 @@ public class GetProductDetails {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_STOCK)
+  @JsonProperty(value = JSON_PROPERTY_STOCK, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setStock(@jakarta.annotation.Nullable BigDecimal stock) {
     this.stock = stock;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -589,10 +590,7 @@ public class GetProductDetails {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -630,7 +628,7 @@ public class GetProductDetails {
     // add `id` to the URL query string
     if (getId() != null) {
       try {
-        joiner.add(String.format("%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -640,7 +638,7 @@ public class GetProductDetails {
     // add `name` to the URL query string
     if (getName() != null) {
       try {
-        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -650,7 +648,7 @@ public class GetProductDetails {
     // add `createdAt` to the URL query string
     if (getCreatedAt() != null) {
       try {
-        joiner.add(String.format("%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -660,7 +658,7 @@ public class GetProductDetails {
     // add `modifiedAt` to the URL query string
     if (getModifiedAt() != null) {
       try {
-        joiner.add(String.format("%smodifiedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getModifiedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%smodifiedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getModifiedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -670,7 +668,7 @@ public class GetProductDetails {
     // add `url` to the URL query string
     if (getUrl() != null) {
       try {
-        joiner.add(String.format("%surl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUrl()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%surl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUrl()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -680,7 +678,7 @@ public class GetProductDetails {
     // add `imageUrl` to the URL query string
     if (getImageUrl() != null) {
       try {
-        joiner.add(String.format("%simageUrl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getImageUrl()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%simageUrl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getImageUrl()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -690,7 +688,7 @@ public class GetProductDetails {
     // add `sku` to the URL query string
     if (getSku() != null) {
       try {
-        joiner.add(String.format("%ssku%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSku()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssku%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSku()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -700,7 +698,7 @@ public class GetProductDetails {
     // add `price` to the URL query string
     if (getPrice() != null) {
       try {
-        joiner.add(String.format("%sprice%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPrice()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sprice%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPrice()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -711,8 +709,8 @@ public class GetProductDetails {
     if (getCategories() != null) {
       for (int i = 0; i < getCategories().size(); i++) {
         try {
-          joiner.add(String.format("%scategories%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%scategories%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getCategories().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -724,7 +722,7 @@ public class GetProductDetails {
     // add `parentId` to the URL query string
     if (getParentId() != null) {
       try {
-        joiner.add(String.format("%sparentId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getParentId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sparentId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getParentId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -734,7 +732,7 @@ public class GetProductDetails {
     // add `s3Original` to the URL query string
     if (getS3Original() != null) {
       try {
-        joiner.add(String.format("%ss3Original%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getS3Original()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ss3Original%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getS3Original()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -744,7 +742,7 @@ public class GetProductDetails {
     // add `s3ThumbAnalytics` to the URL query string
     if (getS3ThumbAnalytics() != null) {
       try {
-        joiner.add(String.format("%ss3ThumbAnalytics%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getS3ThumbAnalytics()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ss3ThumbAnalytics%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getS3ThumbAnalytics()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -754,7 +752,7 @@ public class GetProductDetails {
     // add `s3ThumbEditor` to the URL query string
     if (getS3ThumbEditor() != null) {
       try {
-        joiner.add(String.format("%ss3ThumbEditor%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getS3ThumbEditor()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ss3ThumbEditor%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getS3ThumbEditor()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -764,7 +762,7 @@ public class GetProductDetails {
     // add `metaInfo` to the URL query string
     if (getMetaInfo() != null) {
       try {
-        joiner.add(String.format("%smetaInfo%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMetaInfo()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%smetaInfo%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMetaInfo()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -774,7 +772,7 @@ public class GetProductDetails {
     // add `isDeleted` to the URL query string
     if (getIsDeleted() != null) {
       try {
-        joiner.add(String.format("%sisDeleted%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsDeleted()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sisDeleted%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsDeleted()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -784,7 +782,7 @@ public class GetProductDetails {
     // add `stock` to the URL query string
     if (getStock() != null) {
       try {
-        joiner.add(String.format("%sstock%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStock()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sstock%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStock()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

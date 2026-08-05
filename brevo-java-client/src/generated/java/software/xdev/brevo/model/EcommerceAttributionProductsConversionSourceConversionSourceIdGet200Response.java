@@ -64,7 +64,7 @@ public class EcommerceAttributionProductsConversionSourceConversionSourceIdGet20
    * @return products
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PRODUCTS)
+  @JsonProperty(value = JSON_PROPERTY_PRODUCTS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public List<ConversionSourceProduct> getProducts() {
@@ -72,11 +72,12 @@ public class EcommerceAttributionProductsConversionSourceConversionSourceIdGet20
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PRODUCTS)
+  @JsonProperty(value = JSON_PROPERTY_PRODUCTS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setProducts(@jakarta.annotation.Nonnull List<ConversionSourceProduct> products) {
     this.products = products;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -109,10 +110,7 @@ public class EcommerceAttributionProductsConversionSourceConversionSourceIdGet20
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -151,14 +149,8 @@ public class EcommerceAttributionProductsConversionSourceConversionSourceIdGet20
     if (getProducts() != null) {
       for (int i = 0; i < getProducts().size(); i++) {
         if (getProducts().get(i) != null) {
-          try {
-            joiner.add(String.format("%sproducts%s%s=%s", prefix, suffix,
-                "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
-                URLEncoder.encode(String.valueOf(getProducts().get(i)), "UTF-8").replaceAll("\\+", "%20")));
-          } catch (UnsupportedEncodingException e) {
-            // Should never happen, UTF-8 is always supported
-            throw new RuntimeException(e);
-          }
+          joiner.add(getProducts().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sproducts%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }

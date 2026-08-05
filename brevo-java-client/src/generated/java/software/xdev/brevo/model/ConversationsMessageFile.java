@@ -73,7 +73,7 @@ public class ConversationsMessageFile {
    * @return filename
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_FILENAME)
+  @JsonProperty(value = JSON_PROPERTY_FILENAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getFilename() {
@@ -81,7 +81,7 @@ public class ConversationsMessageFile {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_FILENAME)
+  @JsonProperty(value = JSON_PROPERTY_FILENAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setFilename(@jakarta.annotation.Nullable String filename) {
     this.filename = filename;
@@ -99,7 +99,7 @@ public class ConversationsMessageFile {
    * @return size
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SIZE)
+  @JsonProperty(value = JSON_PROPERTY_SIZE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getSize() {
@@ -107,7 +107,7 @@ public class ConversationsMessageFile {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SIZE)
+  @JsonProperty(value = JSON_PROPERTY_SIZE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSize(@jakarta.annotation.Nullable Long size) {
     this.size = size;
@@ -124,7 +124,7 @@ public class ConversationsMessageFile {
    * @return isImage
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_IS_IMAGE)
+  @JsonProperty(value = JSON_PROPERTY_IS_IMAGE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getIsImage() {
@@ -132,7 +132,7 @@ public class ConversationsMessageFile {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IS_IMAGE)
+  @JsonProperty(value = JSON_PROPERTY_IS_IMAGE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setIsImage(@jakarta.annotation.Nullable Boolean isImage) {
     this.isImage = isImage;
@@ -149,7 +149,7 @@ public class ConversationsMessageFile {
    * @return url
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_URL)
+  @JsonProperty(value = JSON_PROPERTY_URL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getUrl() {
@@ -157,7 +157,7 @@ public class ConversationsMessageFile {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_URL)
+  @JsonProperty(value = JSON_PROPERTY_URL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUrl(@jakarta.annotation.Nullable String url) {
     this.url = url;
@@ -174,7 +174,7 @@ public class ConversationsMessageFile {
    * @return imageInfo
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_IMAGE_INFO)
+  @JsonProperty(value = JSON_PROPERTY_IMAGE_INFO, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public ConversationsMessageFileImageInfo getImageInfo() {
@@ -182,11 +182,12 @@ public class ConversationsMessageFile {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IMAGE_INFO)
+  @JsonProperty(value = JSON_PROPERTY_IMAGE_INFO, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setImageInfo(@jakarta.annotation.Nullable ConversationsMessageFileImageInfo imageInfo) {
     this.imageInfo = imageInfo;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -227,10 +228,7 @@ public class ConversationsMessageFile {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -268,7 +266,7 @@ public class ConversationsMessageFile {
     // add `filename` to the URL query string
     if (getFilename() != null) {
       try {
-        joiner.add(String.format("%sfilename%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFilename()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sfilename%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFilename()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -278,7 +276,7 @@ public class ConversationsMessageFile {
     // add `size` to the URL query string
     if (getSize() != null) {
       try {
-        joiner.add(String.format("%ssize%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSize()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssize%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSize()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -288,7 +286,7 @@ public class ConversationsMessageFile {
     // add `isImage` to the URL query string
     if (getIsImage() != null) {
       try {
-        joiner.add(String.format("%sisImage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsImage()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sisImage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIsImage()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -298,7 +296,7 @@ public class ConversationsMessageFile {
     // add `url` to the URL query string
     if (getUrl() != null) {
       try {
-        joiner.add(String.format("%surl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUrl()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%surl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUrl()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

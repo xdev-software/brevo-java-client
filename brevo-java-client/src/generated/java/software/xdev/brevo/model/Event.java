@@ -77,7 +77,7 @@ public class Event {
    * @return eventName
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_EVENT_NAME)
+  @JsonProperty(value = JSON_PROPERTY_EVENT_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getEventName() {
@@ -85,7 +85,7 @@ public class Event {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EVENT_NAME)
+  @JsonProperty(value = JSON_PROPERTY_EVENT_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setEventName(@jakarta.annotation.Nonnull String eventName) {
     this.eventName = eventName;
@@ -102,7 +102,7 @@ public class Event {
    * @return eventDate
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EVENT_DATE)
+  @JsonProperty(value = JSON_PROPERTY_EVENT_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getEventDate() {
@@ -110,7 +110,7 @@ public class Event {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EVENT_DATE)
+  @JsonProperty(value = JSON_PROPERTY_EVENT_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setEventDate(@jakarta.annotation.Nullable String eventDate) {
     this.eventDate = eventDate;
@@ -127,7 +127,7 @@ public class Event {
    * @return identifiers
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_IDENTIFIERS)
+  @JsonProperty(value = JSON_PROPERTY_IDENTIFIERS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public EventIdentifiers getIdentifiers() {
@@ -135,7 +135,7 @@ public class Event {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IDENTIFIERS)
+  @JsonProperty(value = JSON_PROPERTY_IDENTIFIERS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setIdentifiers(@jakarta.annotation.Nonnull EventIdentifiers identifiers) {
     this.identifiers = identifiers;
@@ -160,7 +160,7 @@ public class Event {
    * @return contactProperties
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CONTACT_PROPERTIES)
+  @JsonProperty(value = JSON_PROPERTY_CONTACT_PROPERTIES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Map<String, EventContactPropertiesValue> getContactProperties() {
@@ -168,7 +168,7 @@ public class Event {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONTACT_PROPERTIES)
+  @JsonProperty(value = JSON_PROPERTY_CONTACT_PROPERTIES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setContactProperties(@jakarta.annotation.Nullable Map<String, EventContactPropertiesValue> contactProperties) {
     this.contactProperties = contactProperties;
@@ -193,7 +193,7 @@ public class Event {
    * @return eventProperties
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EVENT_PROPERTIES)
+  @JsonProperty(value = JSON_PROPERTY_EVENT_PROPERTIES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Map<String, EventEventPropertiesValue> getEventProperties() {
@@ -201,11 +201,12 @@ public class Event {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EVENT_PROPERTIES)
+  @JsonProperty(value = JSON_PROPERTY_EVENT_PROPERTIES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setEventProperties(@jakarta.annotation.Nullable Map<String, EventEventPropertiesValue> eventProperties) {
     this.eventProperties = eventProperties;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -246,10 +247,7 @@ public class Event {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -287,7 +285,7 @@ public class Event {
     // add `event_name` to the URL query string
     if (getEventName() != null) {
       try {
-        joiner.add(String.format("%sevent_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEventName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sevent_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEventName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -297,7 +295,7 @@ public class Event {
     // add `event_date` to the URL query string
     if (getEventDate() != null) {
       try {
-        joiner.add(String.format("%sevent_date%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEventDate()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sevent_date%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEventDate()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -313,8 +311,8 @@ public class Event {
     if (getContactProperties() != null) {
       for (String _key : getContactProperties().keySet()) {
         if (getContactProperties().get(_key) != null) {
-          joiner.add(getContactProperties().get(_key).toUrlQueryString(String.format("%scontact_properties%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix))));
+          joiner.add(getContactProperties().get(_key).toUrlQueryString(String.format(java.util.Locale.ROOT, "%scontact_properties%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, _key, containerSuffix))));
         }
       }
     }
@@ -323,8 +321,8 @@ public class Event {
     if (getEventProperties() != null) {
       for (String _key : getEventProperties().keySet()) {
         if (getEventProperties().get(_key) != null) {
-          joiner.add(getEventProperties().get(_key).toUrlQueryString(String.format("%sevent_properties%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix))));
+          joiner.add(getEventProperties().get(_key).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sevent_properties%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, _key, containerSuffix))));
         }
       }
     }

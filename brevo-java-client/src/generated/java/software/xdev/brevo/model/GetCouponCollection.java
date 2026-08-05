@@ -93,7 +93,7 @@ public class GetCouponCollection {
    * @return id
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getId() {
@@ -101,7 +101,7 @@ public class GetCouponCollection {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setId(@jakarta.annotation.Nonnull String id) {
     this.id = id;
@@ -118,7 +118,7 @@ public class GetCouponCollection {
    * @return name
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getName() {
@@ -126,7 +126,7 @@ public class GetCouponCollection {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
@@ -143,7 +143,7 @@ public class GetCouponCollection {
    * @return defaultCoupon
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DEFAULT_COUPON)
+  @JsonProperty(value = JSON_PROPERTY_DEFAULT_COUPON, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getDefaultCoupon() {
@@ -151,7 +151,7 @@ public class GetCouponCollection {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DEFAULT_COUPON)
+  @JsonProperty(value = JSON_PROPERTY_DEFAULT_COUPON, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDefaultCoupon(@jakarta.annotation.Nonnull String defaultCoupon) {
     this.defaultCoupon = defaultCoupon;
@@ -168,7 +168,7 @@ public class GetCouponCollection {
    * @return createdAt
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public OffsetDateTime getCreatedAt() {
@@ -176,7 +176,7 @@ public class GetCouponCollection {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCreatedAt(@jakarta.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
@@ -193,7 +193,7 @@ public class GetCouponCollection {
    * @return totalCoupons
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TOTAL_COUPONS)
+  @JsonProperty(value = JSON_PROPERTY_TOTAL_COUPONS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getTotalCoupons() {
@@ -201,7 +201,7 @@ public class GetCouponCollection {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TOTAL_COUPONS)
+  @JsonProperty(value = JSON_PROPERTY_TOTAL_COUPONS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setTotalCoupons(@jakarta.annotation.Nonnull Long totalCoupons) {
     this.totalCoupons = totalCoupons;
@@ -218,7 +218,7 @@ public class GetCouponCollection {
    * @return remainingCoupons
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_REMAINING_COUPONS)
+  @JsonProperty(value = JSON_PROPERTY_REMAINING_COUPONS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getRemainingCoupons() {
@@ -226,7 +226,7 @@ public class GetCouponCollection {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REMAINING_COUPONS)
+  @JsonProperty(value = JSON_PROPERTY_REMAINING_COUPONS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setRemainingCoupons(@jakarta.annotation.Nonnull Long remainingCoupons) {
     this.remainingCoupons = remainingCoupons;
@@ -243,7 +243,7 @@ public class GetCouponCollection {
    * @return expirationDate
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EXPIRATION_DATE)
+  @JsonProperty(value = JSON_PROPERTY_EXPIRATION_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public OffsetDateTime getExpirationDate() {
@@ -251,7 +251,7 @@ public class GetCouponCollection {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EXPIRATION_DATE)
+  @JsonProperty(value = JSON_PROPERTY_EXPIRATION_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setExpirationDate(@jakarta.annotation.Nullable OffsetDateTime expirationDate) {
     this.expirationDate = expirationDate;
@@ -268,7 +268,7 @@ public class GetCouponCollection {
    * @return remainingDaysAlert
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_REMAINING_DAYS_ALERT)
+  @JsonProperty(value = JSON_PROPERTY_REMAINING_DAYS_ALERT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getRemainingDaysAlert() {
@@ -276,7 +276,7 @@ public class GetCouponCollection {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REMAINING_DAYS_ALERT)
+  @JsonProperty(value = JSON_PROPERTY_REMAINING_DAYS_ALERT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRemainingDaysAlert(@jakarta.annotation.Nullable Integer remainingDaysAlert) {
     this.remainingDaysAlert = remainingDaysAlert;
@@ -293,7 +293,7 @@ public class GetCouponCollection {
    * @return remainingCouponsAlert
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_REMAINING_COUPONS_ALERT)
+  @JsonProperty(value = JSON_PROPERTY_REMAINING_COUPONS_ALERT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getRemainingCouponsAlert() {
@@ -301,11 +301,12 @@ public class GetCouponCollection {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REMAINING_COUPONS_ALERT)
+  @JsonProperty(value = JSON_PROPERTY_REMAINING_COUPONS_ALERT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRemainingCouponsAlert(@jakarta.annotation.Nullable Integer remainingCouponsAlert) {
     this.remainingCouponsAlert = remainingCouponsAlert;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -354,10 +355,7 @@ public class GetCouponCollection {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -395,7 +393,7 @@ public class GetCouponCollection {
     // add `id` to the URL query string
     if (getId() != null) {
       try {
-        joiner.add(String.format("%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -405,7 +403,7 @@ public class GetCouponCollection {
     // add `name` to the URL query string
     if (getName() != null) {
       try {
-        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -415,7 +413,7 @@ public class GetCouponCollection {
     // add `defaultCoupon` to the URL query string
     if (getDefaultCoupon() != null) {
       try {
-        joiner.add(String.format("%sdefaultCoupon%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDefaultCoupon()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdefaultCoupon%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDefaultCoupon()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -425,7 +423,7 @@ public class GetCouponCollection {
     // add `createdAt` to the URL query string
     if (getCreatedAt() != null) {
       try {
-        joiner.add(String.format("%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -435,7 +433,7 @@ public class GetCouponCollection {
     // add `totalCoupons` to the URL query string
     if (getTotalCoupons() != null) {
       try {
-        joiner.add(String.format("%stotalCoupons%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTotalCoupons()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stotalCoupons%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTotalCoupons()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -445,7 +443,7 @@ public class GetCouponCollection {
     // add `remainingCoupons` to the URL query string
     if (getRemainingCoupons() != null) {
       try {
-        joiner.add(String.format("%sremainingCoupons%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRemainingCoupons()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sremainingCoupons%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRemainingCoupons()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -455,7 +453,7 @@ public class GetCouponCollection {
     // add `expirationDate` to the URL query string
     if (getExpirationDate() != null) {
       try {
-        joiner.add(String.format("%sexpirationDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpirationDate()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sexpirationDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpirationDate()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -465,7 +463,7 @@ public class GetCouponCollection {
     // add `remainingDaysAlert` to the URL query string
     if (getRemainingDaysAlert() != null) {
       try {
-        joiner.add(String.format("%sremainingDaysAlert%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRemainingDaysAlert()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sremainingDaysAlert%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRemainingDaysAlert()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -475,7 +473,7 @@ public class GetCouponCollection {
     // add `remainingCouponsAlert` to the URL query string
     if (getRemainingCouponsAlert() != null) {
       try {
-        joiner.add(String.format("%sremainingCouponsAlert%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRemainingCouponsAlert()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sremainingCouponsAlert%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRemainingCouponsAlert()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

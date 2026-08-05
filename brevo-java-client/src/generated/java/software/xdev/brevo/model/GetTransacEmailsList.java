@@ -61,7 +61,7 @@ public class GetTransacEmailsList {
    * @return count
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_COUNT)
+  @JsonProperty(value = JSON_PROPERTY_COUNT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getCount() {
@@ -69,7 +69,7 @@ public class GetTransacEmailsList {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_COUNT)
+  @JsonProperty(value = JSON_PROPERTY_COUNT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCount(@jakarta.annotation.Nullable Long count) {
     this.count = count;
@@ -94,7 +94,7 @@ public class GetTransacEmailsList {
    * @return transactionalEmails
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TRANSACTIONAL_EMAILS)
+  @JsonProperty(value = JSON_PROPERTY_TRANSACTIONAL_EMAILS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<GetTransacEmailsListTransactionalEmailsInner> getTransactionalEmails() {
@@ -102,11 +102,12 @@ public class GetTransacEmailsList {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TRANSACTIONAL_EMAILS)
+  @JsonProperty(value = JSON_PROPERTY_TRANSACTIONAL_EMAILS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setTransactionalEmails(@jakarta.annotation.Nullable List<GetTransacEmailsListTransactionalEmailsInner> transactionalEmails) {
     this.transactionalEmails = transactionalEmails;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -141,10 +142,7 @@ public class GetTransacEmailsList {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -182,7 +180,7 @@ public class GetTransacEmailsList {
     // add `count` to the URL query string
     if (getCount() != null) {
       try {
-        joiner.add(String.format("%scount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCount()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCount()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -193,8 +191,8 @@ public class GetTransacEmailsList {
     if (getTransactionalEmails() != null) {
       for (int i = 0; i < getTransactionalEmails().size(); i++) {
         if (getTransactionalEmails().get(i) != null) {
-          joiner.add(getTransactionalEmails().get(i).toUrlQueryString(String.format("%stransactionalEmails%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getTransactionalEmails().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%stransactionalEmails%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }

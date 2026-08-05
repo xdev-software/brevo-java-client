@@ -108,7 +108,7 @@ public class GetContactCampaignStats {
    * @return messagesSent
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_MESSAGES_SENT)
+  @JsonProperty(value = JSON_PROPERTY_MESSAGES_SENT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> getMessagesSent() {
@@ -116,7 +116,7 @@ public class GetContactCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MESSAGES_SENT)
+  @JsonProperty(value = JSON_PROPERTY_MESSAGES_SENT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setMessagesSent(@jakarta.annotation.Nullable List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> messagesSent) {
     this.messagesSent = messagesSent;
@@ -141,7 +141,7 @@ public class GetContactCampaignStats {
    * @return hardBounces
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_HARD_BOUNCES)
+  @JsonProperty(value = JSON_PROPERTY_HARD_BOUNCES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> getHardBounces() {
@@ -149,7 +149,7 @@ public class GetContactCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_HARD_BOUNCES)
+  @JsonProperty(value = JSON_PROPERTY_HARD_BOUNCES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setHardBounces(@jakarta.annotation.Nullable List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> hardBounces) {
     this.hardBounces = hardBounces;
@@ -174,7 +174,7 @@ public class GetContactCampaignStats {
    * @return softBounces
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SOFT_BOUNCES)
+  @JsonProperty(value = JSON_PROPERTY_SOFT_BOUNCES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> getSoftBounces() {
@@ -182,7 +182,7 @@ public class GetContactCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SOFT_BOUNCES)
+  @JsonProperty(value = JSON_PROPERTY_SOFT_BOUNCES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSoftBounces(@jakarta.annotation.Nullable List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> softBounces) {
     this.softBounces = softBounces;
@@ -207,7 +207,7 @@ public class GetContactCampaignStats {
    * @return complaints
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_COMPLAINTS)
+  @JsonProperty(value = JSON_PROPERTY_COMPLAINTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> getComplaints() {
@@ -215,7 +215,7 @@ public class GetContactCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_COMPLAINTS)
+  @JsonProperty(value = JSON_PROPERTY_COMPLAINTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setComplaints(@jakarta.annotation.Nullable List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> complaints) {
     this.complaints = complaints;
@@ -232,7 +232,7 @@ public class GetContactCampaignStats {
    * @return unsubscriptions
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UNSUBSCRIPTIONS)
+  @JsonProperty(value = JSON_PROPERTY_UNSUBSCRIPTIONS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public GetContactCampaignStatsUnsubscriptions getUnsubscriptions() {
@@ -240,7 +240,7 @@ public class GetContactCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UNSUBSCRIPTIONS)
+  @JsonProperty(value = JSON_PROPERTY_UNSUBSCRIPTIONS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUnsubscriptions(@jakarta.annotation.Nullable GetContactCampaignStatsUnsubscriptions unsubscriptions) {
     this.unsubscriptions = unsubscriptions;
@@ -265,7 +265,7 @@ public class GetContactCampaignStats {
    * @return opened
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_OPENED)
+  @JsonProperty(value = JSON_PROPERTY_OPENED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<GetContactCampaignStatsOpenedInner> getOpened() {
@@ -273,7 +273,7 @@ public class GetContactCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_OPENED)
+  @JsonProperty(value = JSON_PROPERTY_OPENED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setOpened(@jakarta.annotation.Nullable List<GetContactCampaignStatsOpenedInner> opened) {
     this.opened = opened;
@@ -298,7 +298,7 @@ public class GetContactCampaignStats {
    * @return clicked
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CLICKED)
+  @JsonProperty(value = JSON_PROPERTY_CLICKED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<GetContactCampaignStatsClickedInner> getClicked() {
@@ -306,7 +306,7 @@ public class GetContactCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CLICKED)
+  @JsonProperty(value = JSON_PROPERTY_CLICKED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setClicked(@jakarta.annotation.Nullable List<GetContactCampaignStatsClickedInner> clicked) {
     this.clicked = clicked;
@@ -331,7 +331,7 @@ public class GetContactCampaignStats {
    * @return transacAttributes
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TRANSAC_ATTRIBUTES)
+  @JsonProperty(value = JSON_PROPERTY_TRANSAC_ATTRIBUTES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<GetContactCampaignStatsTransacAttributesInner> getTransacAttributes() {
@@ -339,7 +339,7 @@ public class GetContactCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TRANSAC_ATTRIBUTES)
+  @JsonProperty(value = JSON_PROPERTY_TRANSAC_ATTRIBUTES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setTransacAttributes(@jakarta.annotation.Nullable List<GetContactCampaignStatsTransacAttributesInner> transacAttributes) {
     this.transacAttributes = transacAttributes;
@@ -364,7 +364,7 @@ public class GetContactCampaignStats {
    * @return delivered
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DELIVERED)
+  @JsonProperty(value = JSON_PROPERTY_DELIVERED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> getDelivered() {
@@ -372,11 +372,12 @@ public class GetContactCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DELIVERED)
+  @JsonProperty(value = JSON_PROPERTY_DELIVERED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDelivered(@jakarta.annotation.Nullable List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> delivered) {
     this.delivered = delivered;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -425,10 +426,7 @@ public class GetContactCampaignStats {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -467,8 +465,8 @@ public class GetContactCampaignStats {
     if (getMessagesSent() != null) {
       for (int i = 0; i < getMessagesSent().size(); i++) {
         if (getMessagesSent().get(i) != null) {
-          joiner.add(getMessagesSent().get(i).toUrlQueryString(String.format("%smessagesSent%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getMessagesSent().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%smessagesSent%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -477,8 +475,8 @@ public class GetContactCampaignStats {
     if (getHardBounces() != null) {
       for (int i = 0; i < getHardBounces().size(); i++) {
         if (getHardBounces().get(i) != null) {
-          joiner.add(getHardBounces().get(i).toUrlQueryString(String.format("%shardBounces%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getHardBounces().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%shardBounces%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -487,8 +485,8 @@ public class GetContactCampaignStats {
     if (getSoftBounces() != null) {
       for (int i = 0; i < getSoftBounces().size(); i++) {
         if (getSoftBounces().get(i) != null) {
-          joiner.add(getSoftBounces().get(i).toUrlQueryString(String.format("%ssoftBounces%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getSoftBounces().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%ssoftBounces%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -497,8 +495,8 @@ public class GetContactCampaignStats {
     if (getComplaints() != null) {
       for (int i = 0; i < getComplaints().size(); i++) {
         if (getComplaints().get(i) != null) {
-          joiner.add(getComplaints().get(i).toUrlQueryString(String.format("%scomplaints%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getComplaints().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%scomplaints%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -512,8 +510,8 @@ public class GetContactCampaignStats {
     if (getOpened() != null) {
       for (int i = 0; i < getOpened().size(); i++) {
         if (getOpened().get(i) != null) {
-          joiner.add(getOpened().get(i).toUrlQueryString(String.format("%sopened%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getOpened().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sopened%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -522,8 +520,8 @@ public class GetContactCampaignStats {
     if (getClicked() != null) {
       for (int i = 0; i < getClicked().size(); i++) {
         if (getClicked().get(i) != null) {
-          joiner.add(getClicked().get(i).toUrlQueryString(String.format("%sclicked%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getClicked().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sclicked%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -532,8 +530,8 @@ public class GetContactCampaignStats {
     if (getTransacAttributes() != null) {
       for (int i = 0; i < getTransacAttributes().size(); i++) {
         if (getTransacAttributes().get(i) != null) {
-          joiner.add(getTransacAttributes().get(i).toUrlQueryString(String.format("%stransacAttributes%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getTransacAttributes().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%stransacAttributes%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -542,8 +540,8 @@ public class GetContactCampaignStats {
     if (getDelivered() != null) {
       for (int i = 0; i < getDelivered().size(); i++) {
         if (getDelivered().get(i) != null) {
-          joiner.add(getDelivered().get(i).toUrlQueryString(String.format("%sdelivered%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getDelivered().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sdelivered%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }

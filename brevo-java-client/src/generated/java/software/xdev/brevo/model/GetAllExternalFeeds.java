@@ -61,7 +61,7 @@ public class GetAllExternalFeeds {
    * @return count
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_COUNT)
+  @JsonProperty(value = JSON_PROPERTY_COUNT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getCount() {
@@ -69,7 +69,7 @@ public class GetAllExternalFeeds {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_COUNT)
+  @JsonProperty(value = JSON_PROPERTY_COUNT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCount(@jakarta.annotation.Nullable Integer count) {
     this.count = count;
@@ -94,7 +94,7 @@ public class GetAllExternalFeeds {
    * @return feeds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_FEEDS)
+  @JsonProperty(value = JSON_PROPERTY_FEEDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<GetAllExternalFeedsFeedsInner> getFeeds() {
@@ -102,11 +102,12 @@ public class GetAllExternalFeeds {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_FEEDS)
+  @JsonProperty(value = JSON_PROPERTY_FEEDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setFeeds(@jakarta.annotation.Nullable List<GetAllExternalFeedsFeedsInner> feeds) {
     this.feeds = feeds;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -141,10 +142,7 @@ public class GetAllExternalFeeds {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -182,7 +180,7 @@ public class GetAllExternalFeeds {
     // add `count` to the URL query string
     if (getCount() != null) {
       try {
-        joiner.add(String.format("%scount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCount()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCount()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -193,8 +191,8 @@ public class GetAllExternalFeeds {
     if (getFeeds() != null) {
       for (int i = 0; i < getFeeds().size(); i++) {
         if (getFeeds().get(i) != null) {
-          joiner.add(getFeeds().get(i).toUrlQueryString(String.format("%sfeeds%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getFeeds().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sfeeds%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }

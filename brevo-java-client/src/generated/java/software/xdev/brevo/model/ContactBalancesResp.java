@@ -71,7 +71,7 @@ public class ContactBalancesResp {
    * @return balanceDefinitionId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_BALANCE_DEFINITION_ID)
+  @JsonProperty(value = JSON_PROPERTY_BALANCE_DEFINITION_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getBalanceDefinitionId() {
@@ -79,7 +79,7 @@ public class ContactBalancesResp {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BALANCE_DEFINITION_ID)
+  @JsonProperty(value = JSON_PROPERTY_BALANCE_DEFINITION_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setBalanceDefinitionId(@jakarta.annotation.Nullable String balanceDefinitionId) {
     this.balanceDefinitionId = balanceDefinitionId;
@@ -104,7 +104,7 @@ public class ContactBalancesResp {
    * @return balances
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_BALANCES)
+  @JsonProperty(value = JSON_PROPERTY_BALANCES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<BalanceDataPerContact> getBalances() {
@@ -112,7 +112,7 @@ public class ContactBalancesResp {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BALANCES)
+  @JsonProperty(value = JSON_PROPERTY_BALANCES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setBalances(@jakarta.annotation.Nullable List<BalanceDataPerContact> balances) {
     this.balances = balances;
@@ -129,7 +129,7 @@ public class ContactBalancesResp {
    * @return count
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_COUNT)
+  @JsonProperty(value = JSON_PROPERTY_COUNT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getCount() {
@@ -137,7 +137,7 @@ public class ContactBalancesResp {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_COUNT)
+  @JsonProperty(value = JSON_PROPERTY_COUNT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCount(@jakarta.annotation.Nullable Integer count) {
     this.count = count;
@@ -154,7 +154,7 @@ public class ContactBalancesResp {
    * @return loyaltyProgramId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LOYALTY_PROGRAM_ID)
+  @JsonProperty(value = JSON_PROPERTY_LOYALTY_PROGRAM_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getLoyaltyProgramId() {
@@ -162,11 +162,12 @@ public class ContactBalancesResp {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LOYALTY_PROGRAM_ID)
+  @JsonProperty(value = JSON_PROPERTY_LOYALTY_PROGRAM_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLoyaltyProgramId(@jakarta.annotation.Nullable String loyaltyProgramId) {
     this.loyaltyProgramId = loyaltyProgramId;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -205,10 +206,7 @@ public class ContactBalancesResp {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -246,7 +244,7 @@ public class ContactBalancesResp {
     // add `balanceDefinitionId` to the URL query string
     if (getBalanceDefinitionId() != null) {
       try {
-        joiner.add(String.format("%sbalanceDefinitionId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBalanceDefinitionId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sbalanceDefinitionId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBalanceDefinitionId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -257,8 +255,8 @@ public class ContactBalancesResp {
     if (getBalances() != null) {
       for (int i = 0; i < getBalances().size(); i++) {
         if (getBalances().get(i) != null) {
-          joiner.add(getBalances().get(i).toUrlQueryString(String.format("%sbalances%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getBalances().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sbalances%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -266,7 +264,7 @@ public class ContactBalancesResp {
     // add `count` to the URL query string
     if (getCount() != null) {
       try {
-        joiner.add(String.format("%scount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCount()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCount()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -276,7 +274,7 @@ public class ContactBalancesResp {
     // add `loyaltyProgramId` to the URL query string
     if (getLoyaltyProgramId() != null) {
       try {
-        joiner.add(String.format("%sloyaltyProgramId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLoyaltyProgramId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sloyaltyProgramId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLoyaltyProgramId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

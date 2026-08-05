@@ -70,7 +70,7 @@ public class GetContactCampaignStatsUnsubscriptions {
    * @return userUnsubscription
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_USER_UNSUBSCRIPTION)
+  @JsonProperty(value = JSON_PROPERTY_USER_UNSUBSCRIPTION, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public List<GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsUserUnsubscription> getUserUnsubscription() {
@@ -78,7 +78,7 @@ public class GetContactCampaignStatsUnsubscriptions {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_USER_UNSUBSCRIPTION)
+  @JsonProperty(value = JSON_PROPERTY_USER_UNSUBSCRIPTION, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setUserUnsubscription(@jakarta.annotation.Nonnull List<GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsUserUnsubscription> userUnsubscription) {
     this.userUnsubscription = userUnsubscription;
@@ -103,7 +103,7 @@ public class GetContactCampaignStatsUnsubscriptions {
    * @return adminUnsubscription
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ADMIN_UNSUBSCRIPTION)
+  @JsonProperty(value = JSON_PROPERTY_ADMIN_UNSUBSCRIPTION, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public List<GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsAdminUnsubscription> getAdminUnsubscription() {
@@ -111,11 +111,12 @@ public class GetContactCampaignStatsUnsubscriptions {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ADMIN_UNSUBSCRIPTION)
+  @JsonProperty(value = JSON_PROPERTY_ADMIN_UNSUBSCRIPTION, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAdminUnsubscription(@jakarta.annotation.Nonnull List<GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsAdminUnsubscription> adminUnsubscription) {
     this.adminUnsubscription = adminUnsubscription;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -150,10 +151,7 @@ public class GetContactCampaignStatsUnsubscriptions {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -192,8 +190,8 @@ public class GetContactCampaignStatsUnsubscriptions {
     if (getUserUnsubscription() != null) {
       for (int i = 0; i < getUserUnsubscription().size(); i++) {
         if (getUserUnsubscription().get(i) != null) {
-          joiner.add(getUserUnsubscription().get(i).toUrlQueryString(String.format("%suserUnsubscription%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getUserUnsubscription().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%suserUnsubscription%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -202,8 +200,8 @@ public class GetContactCampaignStatsUnsubscriptions {
     if (getAdminUnsubscription() != null) {
       for (int i = 0; i < getAdminUnsubscription().size(); i++) {
         if (getAdminUnsubscription().get(i) != null) {
-          joiner.add(getAdminUnsubscription().get(i).toUrlQueryString(String.format("%sadminUnsubscription%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getAdminUnsubscription().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sadminUnsubscription%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }

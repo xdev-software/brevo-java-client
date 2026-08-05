@@ -69,7 +69,7 @@ public class AbTestCampaignResultClickedLinks {
    * @return versionA
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_VERSION_A)
+  @JsonProperty(value = JSON_PROPERTY_VERSION_A, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public List<AbTestVersionClicksInner> getVersionA() {
@@ -77,7 +77,7 @@ public class AbTestCampaignResultClickedLinks {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_VERSION_A)
+  @JsonProperty(value = JSON_PROPERTY_VERSION_A, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setVersionA(@jakarta.annotation.Nonnull List<AbTestVersionClicksInner> versionA) {
     this.versionA = versionA;
@@ -102,7 +102,7 @@ public class AbTestCampaignResultClickedLinks {
    * @return versionB
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_VERSION_B)
+  @JsonProperty(value = JSON_PROPERTY_VERSION_B, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public List<AbTestVersionClicksInner> getVersionB() {
@@ -110,11 +110,12 @@ public class AbTestCampaignResultClickedLinks {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_VERSION_B)
+  @JsonProperty(value = JSON_PROPERTY_VERSION_B, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setVersionB(@jakarta.annotation.Nonnull List<AbTestVersionClicksInner> versionB) {
     this.versionB = versionB;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -149,10 +150,7 @@ public class AbTestCampaignResultClickedLinks {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -191,8 +189,8 @@ public class AbTestCampaignResultClickedLinks {
     if (getVersionA() != null) {
       for (int i = 0; i < getVersionA().size(); i++) {
         if (getVersionA().get(i) != null) {
-          joiner.add(getVersionA().get(i).toUrlQueryString(String.format("%sVersion A%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getVersionA().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sVersion A%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -201,8 +199,8 @@ public class AbTestCampaignResultClickedLinks {
     if (getVersionB() != null) {
       for (int i = 0; i < getVersionB().size(); i++) {
         if (getVersionB().get(i) != null) {
-          joiner.add(getVersionB().get(i).toUrlQueryString(String.format("%sVersion B%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getVersionB().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sVersion B%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }

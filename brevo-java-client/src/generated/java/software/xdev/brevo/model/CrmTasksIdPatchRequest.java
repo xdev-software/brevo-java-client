@@ -107,7 +107,7 @@ public class CrmTasksIdPatchRequest {
    * @return name
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getName() {
@@ -115,7 +115,7 @@ public class CrmTasksIdPatchRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setName(@jakarta.annotation.Nullable String name) {
     this.name = name;
@@ -132,7 +132,7 @@ public class CrmTasksIdPatchRequest {
    * @return duration
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DURATION)
+  @JsonProperty(value = JSON_PROPERTY_DURATION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getDuration() {
@@ -140,7 +140,7 @@ public class CrmTasksIdPatchRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DURATION)
+  @JsonProperty(value = JSON_PROPERTY_DURATION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDuration(@jakarta.annotation.Nullable Long duration) {
     this.duration = duration;
@@ -157,7 +157,7 @@ public class CrmTasksIdPatchRequest {
    * @return taskTypeId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TASK_TYPE_ID)
+  @JsonProperty(value = JSON_PROPERTY_TASK_TYPE_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getTaskTypeId() {
@@ -165,7 +165,7 @@ public class CrmTasksIdPatchRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TASK_TYPE_ID)
+  @JsonProperty(value = JSON_PROPERTY_TASK_TYPE_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setTaskTypeId(@jakarta.annotation.Nullable String taskTypeId) {
     this.taskTypeId = taskTypeId;
@@ -182,7 +182,7 @@ public class CrmTasksIdPatchRequest {
    * @return date
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DATE)
+  @JsonProperty(value = JSON_PROPERTY_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public OffsetDateTime getDate() {
@@ -190,7 +190,7 @@ public class CrmTasksIdPatchRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DATE)
+  @JsonProperty(value = JSON_PROPERTY_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDate(@jakarta.annotation.Nullable OffsetDateTime date) {
     this.date = date;
@@ -207,7 +207,7 @@ public class CrmTasksIdPatchRequest {
    * @return notes
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_NOTES)
+  @JsonProperty(value = JSON_PROPERTY_NOTES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getNotes() {
@@ -215,7 +215,7 @@ public class CrmTasksIdPatchRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NOTES)
+  @JsonProperty(value = JSON_PROPERTY_NOTES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setNotes(@jakarta.annotation.Nullable String notes) {
     this.notes = notes;
@@ -232,7 +232,7 @@ public class CrmTasksIdPatchRequest {
    * @return done
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DONE)
+  @JsonProperty(value = JSON_PROPERTY_DONE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getDone() {
@@ -240,7 +240,7 @@ public class CrmTasksIdPatchRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DONE)
+  @JsonProperty(value = JSON_PROPERTY_DONE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDone(@jakarta.annotation.Nullable Boolean done) {
     this.done = done;
@@ -257,7 +257,7 @@ public class CrmTasksIdPatchRequest {
    * @return assignToId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ASSIGN_TO_ID)
+  @JsonProperty(value = JSON_PROPERTY_ASSIGN_TO_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getAssignToId() {
@@ -265,7 +265,7 @@ public class CrmTasksIdPatchRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ASSIGN_TO_ID)
+  @JsonProperty(value = JSON_PROPERTY_ASSIGN_TO_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setAssignToId(@jakarta.annotation.Nullable String assignToId) {
     this.assignToId = assignToId;
@@ -290,7 +290,7 @@ public class CrmTasksIdPatchRequest {
    * @return contactsIds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CONTACTS_IDS)
+  @JsonProperty(value = JSON_PROPERTY_CONTACTS_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<Integer> getContactsIds() {
@@ -298,7 +298,7 @@ public class CrmTasksIdPatchRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONTACTS_IDS)
+  @JsonProperty(value = JSON_PROPERTY_CONTACTS_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setContactsIds(@jakarta.annotation.Nullable List<Integer> contactsIds) {
     this.contactsIds = contactsIds;
@@ -323,7 +323,7 @@ public class CrmTasksIdPatchRequest {
    * @return dealsIds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DEALS_IDS)
+  @JsonProperty(value = JSON_PROPERTY_DEALS_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getDealsIds() {
@@ -331,7 +331,7 @@ public class CrmTasksIdPatchRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DEALS_IDS)
+  @JsonProperty(value = JSON_PROPERTY_DEALS_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDealsIds(@jakarta.annotation.Nullable List<String> dealsIds) {
     this.dealsIds = dealsIds;
@@ -356,7 +356,7 @@ public class CrmTasksIdPatchRequest {
    * @return companiesIds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_COMPANIES_IDS)
+  @JsonProperty(value = JSON_PROPERTY_COMPANIES_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getCompaniesIds() {
@@ -364,7 +364,7 @@ public class CrmTasksIdPatchRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_COMPANIES_IDS)
+  @JsonProperty(value = JSON_PROPERTY_COMPANIES_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCompaniesIds(@jakarta.annotation.Nullable List<String> companiesIds) {
     this.companiesIds = companiesIds;
@@ -381,7 +381,7 @@ public class CrmTasksIdPatchRequest {
    * @return reminder
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_REMINDER)
+  @JsonProperty(value = JSON_PROPERTY_REMINDER, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public TaskReminder getReminder() {
@@ -389,11 +389,12 @@ public class CrmTasksIdPatchRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REMINDER)
+  @JsonProperty(value = JSON_PROPERTY_REMINDER, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setReminder(@jakarta.annotation.Nullable TaskReminder reminder) {
     this.reminder = reminder;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -446,10 +447,7 @@ public class CrmTasksIdPatchRequest {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -487,7 +485,7 @@ public class CrmTasksIdPatchRequest {
     // add `name` to the URL query string
     if (getName() != null) {
       try {
-        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -497,7 +495,7 @@ public class CrmTasksIdPatchRequest {
     // add `duration` to the URL query string
     if (getDuration() != null) {
       try {
-        joiner.add(String.format("%sduration%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDuration()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sduration%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDuration()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -507,7 +505,7 @@ public class CrmTasksIdPatchRequest {
     // add `taskTypeId` to the URL query string
     if (getTaskTypeId() != null) {
       try {
-        joiner.add(String.format("%staskTypeId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTaskTypeId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%staskTypeId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTaskTypeId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -517,7 +515,7 @@ public class CrmTasksIdPatchRequest {
     // add `date` to the URL query string
     if (getDate() != null) {
       try {
-        joiner.add(String.format("%sdate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDate()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDate()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -527,7 +525,7 @@ public class CrmTasksIdPatchRequest {
     // add `notes` to the URL query string
     if (getNotes() != null) {
       try {
-        joiner.add(String.format("%snotes%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNotes()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%snotes%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNotes()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -537,7 +535,7 @@ public class CrmTasksIdPatchRequest {
     // add `done` to the URL query string
     if (getDone() != null) {
       try {
-        joiner.add(String.format("%sdone%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDone()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdone%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDone()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -547,7 +545,7 @@ public class CrmTasksIdPatchRequest {
     // add `assignToId` to the URL query string
     if (getAssignToId() != null) {
       try {
-        joiner.add(String.format("%sassignToId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAssignToId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sassignToId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAssignToId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -558,8 +556,8 @@ public class CrmTasksIdPatchRequest {
     if (getContactsIds() != null) {
       for (int i = 0; i < getContactsIds().size(); i++) {
         try {
-          joiner.add(String.format("%scontactsIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%scontactsIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getContactsIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -572,8 +570,8 @@ public class CrmTasksIdPatchRequest {
     if (getDealsIds() != null) {
       for (int i = 0; i < getDealsIds().size(); i++) {
         try {
-          joiner.add(String.format("%sdealsIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sdealsIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getDealsIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -586,8 +584,8 @@ public class CrmTasksIdPatchRequest {
     if (getCompaniesIds() != null) {
       for (int i = 0; i < getCompaniesIds().size(); i++) {
         try {
-          joiner.add(String.format("%scompaniesIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%scompaniesIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getCompaniesIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported

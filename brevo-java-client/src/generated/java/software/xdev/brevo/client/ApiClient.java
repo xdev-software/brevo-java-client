@@ -13,14 +13,17 @@
 package software.xdev.brevo.client;
 
 import com.fasterxml.jackson.annotation.*;
-import com.fasterxml.jackson.databind.*;
-import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import tools.jackson.databind.*;
+import tools.jackson.databind.cfg.DateTimeFeature;
+import tools.jackson.databind.cfg.EnumFeature;
+import tools.jackson.databind.json.JsonMapper;
 import java.time.OffsetDateTime;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.JavaType;
-import org.openapitools.jackson.nullable.JsonNullableModule;
+import tools.jackson.core.type.TypeReference;
+import tools.jackson.core.JacksonException;
+import org.openapitools.jackson.nullable.JsonNullableJackson3Module;
 
+import org.apache.hc.client5.http.config.Configurable;
+import org.apache.hc.client5.http.config.RequestConfig;
 import org.apache.hc.client5.http.cookie.BasicCookieStore;
 import org.apache.hc.client5.http.cookie.Cookie;
 import org.apache.hc.client5.http.entity.UrlEncodedFormEntity;
@@ -43,6 +46,7 @@ import org.apache.hc.core5.http.io.entity.FileEntity;
 import org.apache.hc.core5.http.io.entity.StringEntity;
 import org.apache.hc.core5.http.io.support.ClassicRequestBuilder;
 import org.apache.hc.core5.http.message.BasicNameValuePair;
+import org.apache.hc.core5.util.Timeout;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -56,7 +60,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.function.Supplier;
 import java.util.TimeZone;
-import java.util.concurrent.ConcurrentHashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -95,6 +98,7 @@ public class ApiClient extends JavaTimeFormatter {
   protected Map<String, String> serverVariables = null;
   protected boolean debugging = false;
   protected int connectionTimeout = 0;
+  protected int readTimeout = 0;
 
   protected CloseableHttpClient httpClient;
   protected ObjectMapper objectMapper;
@@ -102,8 +106,8 @@ public class ApiClient extends JavaTimeFormatter {
 
   protected Map<String, Authentication> authentications;
 
-  protected Map<Long, Integer> lastStatusCodeByThread = new ConcurrentHashMap<>();
-  protected Map<Long, Map<String, List<String>>> lastResponseHeadersByThread = new ConcurrentHashMap<>();
+  protected ThreadLocal<Integer> lastStatusCode = new ThreadLocal<>();
+  protected ThreadLocal<Map<String, List<String>>> lastResponseHeaders = new ThreadLocal<>();
 
   protected DateFormat dateFormat;
 
@@ -111,17 +115,17 @@ public class ApiClient extends JavaTimeFormatter {
   protected static List<String> bodyMethods = Arrays.asList("POST", "PUT", "DELETE", "PATCH");
 
   public ApiClient(CloseableHttpClient httpClient) {
-    objectMapper = new ObjectMapper();
-    objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
-    objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-    objectMapper.configure(DeserializationFeature.FAIL_ON_INVALID_SUBTYPE, false);
-    objectMapper.disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS);
-    objectMapper.enable(SerializationFeature.WRITE_ENUMS_USING_TO_STRING);
-    objectMapper.enable(DeserializationFeature.READ_ENUMS_USING_TO_STRING);
-    objectMapper.registerModule(new JavaTimeModule());
-    objectMapper.registerModule(new JsonNullableModule());
-    objectMapper.registerModule(new RFC3339JavaTimeModule());
-    objectMapper.setDateFormat(ApiClient.buildDefaultDateFormat());
+    objectMapper = JsonMapper.builder()
+        .changeDefaultPropertyInclusion(v -> v.withValueInclusion(JsonInclude.Include.NON_NULL))
+        .disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES)
+        .disable(DeserializationFeature.FAIL_ON_INVALID_SUBTYPE)
+        .disable(DateTimeFeature.WRITE_DATES_AS_TIMESTAMPS)
+        .enable(EnumFeature.WRITE_ENUMS_USING_TO_STRING)
+        .enable(EnumFeature.READ_ENUMS_USING_TO_STRING)
+        .addModule(new JsonNullableJackson3Module())
+        .addModule(new RFC3339JavaTimeModule())
+        .defaultDateFormat(ApiClient.buildDefaultDateFormat())
+        .build();
 
     dateFormat = ApiClient.buildDefaultDateFormat();
 
@@ -251,7 +255,7 @@ public class ApiClient extends JavaTimeFormatter {
    */
   @Deprecated
   public int getStatusCode() {
-    return lastStatusCodeByThread.get(Thread.currentThread().getId());
+    return lastStatusCode.get();
   }
 
   /**
@@ -260,7 +264,7 @@ public class ApiClient extends JavaTimeFormatter {
    */
   @Deprecated
   public Map<String, List<String>> getResponseHeaders() {
-    return lastResponseHeadersByThread.get(Thread.currentThread().getId());
+    return lastResponseHeaders.get();
   }
 
   /**
@@ -400,15 +404,50 @@ public class ApiClient extends JavaTimeFormatter {
 
   /**
    * Set the connect timeout (in milliseconds).
-   * A value of 0 means no timeout, otherwise values must be between 1 and
-   * {@link Integer#MAX_VALUE}.
+   * A value of 0 means the HTTP client's default connect timeout is used,
+   * otherwise values must be between 1 and {@link Integer#MAX_VALUE}.
+   * The timeout is applied to each request via its request configuration;
+   * other request configuration defaults of the underlying HTTP client
+   * are preserved.
    * @param connectionTimeout Connection timeout in milliseconds
    * @return API client
+   * @throws IllegalArgumentException if connectionTimeout is negative
    */
-   public ApiClient setConnectTimeout(int connectionTimeout) {
-     this.connectionTimeout = connectionTimeout;
-     return this;
-   }
+  public ApiClient setConnectTimeout(int connectionTimeout) {
+    if (connectionTimeout < 0) {
+      throw new IllegalArgumentException("connectionTimeout must not be negative");
+    }
+    this.connectionTimeout = connectionTimeout;
+    return this;
+  }
+
+  /**
+   * Read timeout (in milliseconds).
+   * @return Read timeout
+   */
+  public int getReadTimeout() {
+    return readTimeout;
+  }
+
+  /**
+   * Set the read timeout (in milliseconds), i.e. the response timeout
+   * while waiting for data after the connection is established.
+   * A value of 0 means the HTTP client's default response timeout is used,
+   * otherwise values must be between 1 and {@link Integer#MAX_VALUE}.
+   * The timeout is applied to each request via its request configuration;
+   * other request configuration defaults of the underlying HTTP client
+   * are preserved.
+   * @param readTimeout Read timeout in milliseconds
+   * @return API client
+   * @throws IllegalArgumentException if readTimeout is negative
+   */
+  public ApiClient setReadTimeout(int readTimeout) {
+    if (readTimeout < 0) {
+      throw new IllegalArgumentException("readTimeout must not be negative");
+    }
+    this.readTimeout = readTimeout;
+    return this;
+  }
 
   /**
    * Get the date format used to parse/format date parameters.
@@ -426,7 +465,11 @@ public class ApiClient extends JavaTimeFormatter {
   public ApiClient setDateFormat(DateFormat dateFormat) {
     this.dateFormat = dateFormat;
     // Also set the date format for model (de)serialization with Date properties.
-    this.objectMapper.setDateFormat((DateFormat) dateFormat.clone());
+    if (this.objectMapper instanceof JsonMapper) {
+      this.objectMapper = ((JsonMapper) this.objectMapper).rebuild().defaultDateFormat((DateFormat) dateFormat.clone()).build();
+    } else {
+      throw new UnsupportedOperationException("setDateFormat is only supported when objectMapper is a JsonMapper instance");
+    }
     return this;
   }
 
@@ -676,7 +719,7 @@ public class ApiClient extends JavaTimeFormatter {
     if (isJsonMime(mimeType)) {
       try {
         return new StringEntity(objectMapper.writeValueAsString(obj), contentType.withCharset(StandardCharsets.UTF_8));
-      } catch (JsonProcessingException e) {
+      } catch (JacksonException e) {
         throw new ApiException(e);
       }
     } else if (mimeType.equals(ContentType.MULTIPART_FORM_DATA.getMimeType())) {
@@ -815,6 +858,7 @@ public class ApiClient extends JavaTimeFormatter {
     if (serverIndex != null) {
       if (serverIndex < 0 || serverIndex >= servers.size()) {
         throw new ArrayIndexOutOfBoundsException(String.format(
+          java.util.Locale.ROOT,
           "Invalid index %d when selecting the host settings. Must be less than %d", serverIndex, servers.size()
         ));
       }
@@ -900,13 +944,13 @@ public class ApiClient extends JavaTimeFormatter {
 
   protected <T> T processResponse(CloseableHttpResponse response, TypeReference<T> returnType) throws ApiException, IOException, ParseException {
     int statusCode = response.getCode();
-    lastStatusCodeByThread.put(Thread.currentThread().getId(), statusCode);
+    lastStatusCode.set(statusCode);
     if (statusCode == HttpStatus.SC_NO_CONTENT) {
       return null;
     }
 
     Map<String, List<String>> responseHeaders = transformResponseHeaders(response.getHeaders());
-    lastResponseHeadersByThread.put(Thread.currentThread().getId(), responseHeaders);
+    lastResponseHeaders.set(responseHeaders);
 
     if (isSuccessfulStatus(statusCode)) {
       return this.deserialize(response, returnType);
@@ -984,6 +1028,20 @@ public class ApiClient extends JavaTimeFormatter {
 
     HttpClientContext context = HttpClientContext.create();
     context.setCookieStore(store);
+
+    if (connectionTimeout > 0 || readTimeout > 0) {
+      // start from the default request configuration of the underlying HTTP client, if
+      // accessible, so that only the configured timeouts are overridden
+      RequestConfig defaultConfig = httpClient instanceof Configurable ? ((Configurable) httpClient).getConfig() : null;
+      RequestConfig.Builder requestConfigBuilder = defaultConfig == null ? RequestConfig.custom() : RequestConfig.copy(defaultConfig);
+      if (connectionTimeout > 0) {
+        requestConfigBuilder.setConnectTimeout(Timeout.ofMilliseconds(connectionTimeout));
+      }
+      if (readTimeout > 0) {
+        requestConfigBuilder.setResponseTimeout(Timeout.ofMilliseconds(readTimeout));
+      }
+      context.setRequestConfig(requestConfigBuilder.build());
+    }
 
     ContentType contentTypeObj = getContentType(contentType);
     if (body != null || !formParams.isEmpty()) {

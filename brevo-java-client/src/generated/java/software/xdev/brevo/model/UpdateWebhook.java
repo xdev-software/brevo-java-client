@@ -150,7 +150,7 @@ public class UpdateWebhook {
    * @return url
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_URL)
+  @JsonProperty(value = JSON_PROPERTY_URL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getUrl() {
@@ -158,7 +158,7 @@ public class UpdateWebhook {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_URL)
+  @JsonProperty(value = JSON_PROPERTY_URL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUrl(@jakarta.annotation.Nullable String url) {
     this.url = url;
@@ -175,7 +175,7 @@ public class UpdateWebhook {
    * @return description
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DESCRIPTION)
+  @JsonProperty(value = JSON_PROPERTY_DESCRIPTION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getDescription() {
@@ -183,7 +183,7 @@ public class UpdateWebhook {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DESCRIPTION)
+  @JsonProperty(value = JSON_PROPERTY_DESCRIPTION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDescription(@jakarta.annotation.Nullable String description) {
     this.description = description;
@@ -208,7 +208,7 @@ public class UpdateWebhook {
    * @return events
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EVENTS)
+  @JsonProperty(value = JSON_PROPERTY_EVENTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<EventsEnum> getEvents() {
@@ -216,7 +216,7 @@ public class UpdateWebhook {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EVENTS)
+  @JsonProperty(value = JSON_PROPERTY_EVENTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setEvents(@jakarta.annotation.Nullable List<EventsEnum> events) {
     this.events = events;
@@ -233,7 +233,7 @@ public class UpdateWebhook {
    * @return domain
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DOMAIN)
+  @JsonProperty(value = JSON_PROPERTY_DOMAIN, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getDomain() {
@@ -241,7 +241,7 @@ public class UpdateWebhook {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DOMAIN)
+  @JsonProperty(value = JSON_PROPERTY_DOMAIN, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDomain(@jakarta.annotation.Nullable String domain) {
     this.domain = domain;
@@ -258,7 +258,7 @@ public class UpdateWebhook {
    * @return batched
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_BATCHED)
+  @JsonProperty(value = JSON_PROPERTY_BATCHED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getBatched() {
@@ -266,7 +266,7 @@ public class UpdateWebhook {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BATCHED)
+  @JsonProperty(value = JSON_PROPERTY_BATCHED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setBatched(@jakarta.annotation.Nullable Boolean batched) {
     this.batched = batched;
@@ -283,7 +283,7 @@ public class UpdateWebhook {
    * @return auth
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_AUTH)
+  @JsonProperty(value = JSON_PROPERTY_AUTH, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Object getAuth() {
@@ -291,7 +291,7 @@ public class UpdateWebhook {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_AUTH)
+  @JsonProperty(value = JSON_PROPERTY_AUTH, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setAuth(@jakarta.annotation.Nullable Object auth) {
     this.auth = auth;
@@ -316,7 +316,7 @@ public class UpdateWebhook {
    * @return headers
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_HEADERS)
+  @JsonProperty(value = JSON_PROPERTY_HEADERS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<Object> getHeaders() {
@@ -324,11 +324,12 @@ public class UpdateWebhook {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_HEADERS)
+  @JsonProperty(value = JSON_PROPERTY_HEADERS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setHeaders(@jakarta.annotation.Nullable List<Object> headers) {
     this.headers = headers;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -373,10 +374,7 @@ public class UpdateWebhook {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -414,7 +412,7 @@ public class UpdateWebhook {
     // add `url` to the URL query string
     if (getUrl() != null) {
       try {
-        joiner.add(String.format("%surl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUrl()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%surl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUrl()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -424,7 +422,7 @@ public class UpdateWebhook {
     // add `description` to the URL query string
     if (getDescription() != null) {
       try {
-        joiner.add(String.format("%sdescription%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDescription()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdescription%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDescription()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -435,8 +433,8 @@ public class UpdateWebhook {
     if (getEvents() != null) {
       for (int i = 0; i < getEvents().size(); i++) {
         try {
-          joiner.add(String.format("%sevents%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sevents%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getEvents().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -448,7 +446,7 @@ public class UpdateWebhook {
     // add `domain` to the URL query string
     if (getDomain() != null) {
       try {
-        joiner.add(String.format("%sdomain%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDomain()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdomain%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDomain()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -458,7 +456,7 @@ public class UpdateWebhook {
     // add `batched` to the URL query string
     if (getBatched() != null) {
       try {
-        joiner.add(String.format("%sbatched%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBatched()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sbatched%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBatched()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -468,7 +466,7 @@ public class UpdateWebhook {
     // add `auth` to the URL query string
     if (getAuth() != null) {
       try {
-        joiner.add(String.format("%sauth%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAuth()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sauth%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAuth()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -479,8 +477,8 @@ public class UpdateWebhook {
     if (getHeaders() != null) {
       for (int i = 0; i < getHeaders().size(); i++) {
         try {
-          joiner.add(String.format("%sheaders%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sheaders%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getHeaders().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported

@@ -78,7 +78,7 @@ public class GetStatsByDevice {
    * @return desktop
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DESKTOP)
+  @JsonProperty(value = JSON_PROPERTY_DESKTOP, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Map<String, GetDeviceBrowserStats> getDesktop() {
@@ -86,7 +86,7 @@ public class GetStatsByDevice {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DESKTOP)
+  @JsonProperty(value = JSON_PROPERTY_DESKTOP, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDesktop(@jakarta.annotation.Nullable Map<String, GetDeviceBrowserStats> desktop) {
     this.desktop = desktop;
@@ -111,7 +111,7 @@ public class GetStatsByDevice {
    * @return mobile
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_MOBILE)
+  @JsonProperty(value = JSON_PROPERTY_MOBILE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Map<String, GetDeviceBrowserStats> getMobile() {
@@ -119,7 +119,7 @@ public class GetStatsByDevice {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MOBILE)
+  @JsonProperty(value = JSON_PROPERTY_MOBILE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setMobile(@jakarta.annotation.Nullable Map<String, GetDeviceBrowserStats> mobile) {
     this.mobile = mobile;
@@ -144,7 +144,7 @@ public class GetStatsByDevice {
    * @return tablet
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TABLET)
+  @JsonProperty(value = JSON_PROPERTY_TABLET, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Map<String, GetDeviceBrowserStats> getTablet() {
@@ -152,7 +152,7 @@ public class GetStatsByDevice {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TABLET)
+  @JsonProperty(value = JSON_PROPERTY_TABLET, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setTablet(@jakarta.annotation.Nullable Map<String, GetDeviceBrowserStats> tablet) {
     this.tablet = tablet;
@@ -177,7 +177,7 @@ public class GetStatsByDevice {
    * @return unknown
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UNKNOWN)
+  @JsonProperty(value = JSON_PROPERTY_UNKNOWN, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Map<String, GetDeviceBrowserStats> getUnknown() {
@@ -185,11 +185,12 @@ public class GetStatsByDevice {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UNKNOWN)
+  @JsonProperty(value = JSON_PROPERTY_UNKNOWN, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUnknown(@jakarta.annotation.Nullable Map<String, GetDeviceBrowserStats> unknown) {
     this.unknown = unknown;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -228,10 +229,7 @@ public class GetStatsByDevice {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -270,8 +268,8 @@ public class GetStatsByDevice {
     if (getDesktop() != null) {
       for (String _key : getDesktop().keySet()) {
         if (getDesktop().get(_key) != null) {
-          joiner.add(getDesktop().get(_key).toUrlQueryString(String.format("%sdesktop%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix))));
+          joiner.add(getDesktop().get(_key).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sdesktop%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, _key, containerSuffix))));
         }
       }
     }
@@ -280,8 +278,8 @@ public class GetStatsByDevice {
     if (getMobile() != null) {
       for (String _key : getMobile().keySet()) {
         if (getMobile().get(_key) != null) {
-          joiner.add(getMobile().get(_key).toUrlQueryString(String.format("%smobile%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix))));
+          joiner.add(getMobile().get(_key).toUrlQueryString(String.format(java.util.Locale.ROOT, "%smobile%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, _key, containerSuffix))));
         }
       }
     }
@@ -290,8 +288,8 @@ public class GetStatsByDevice {
     if (getTablet() != null) {
       for (String _key : getTablet().keySet()) {
         if (getTablet().get(_key) != null) {
-          joiner.add(getTablet().get(_key).toUrlQueryString(String.format("%stablet%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix))));
+          joiner.add(getTablet().get(_key).toUrlQueryString(String.format(java.util.Locale.ROOT, "%stablet%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, _key, containerSuffix))));
         }
       }
     }
@@ -300,8 +298,8 @@ public class GetStatsByDevice {
     if (getUnknown() != null) {
       for (String _key : getUnknown().keySet()) {
         if (getUnknown().get(_key) != null) {
-          joiner.add(getUnknown().get(_key).toUrlQueryString(String.format("%sunknown%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix))));
+          joiner.add(getUnknown().get(_key).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sunknown%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, _key, containerSuffix))));
         }
       }
     }

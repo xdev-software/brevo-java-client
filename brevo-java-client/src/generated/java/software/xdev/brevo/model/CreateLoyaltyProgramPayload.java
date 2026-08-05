@@ -69,7 +69,7 @@ public class CreateLoyaltyProgramPayload {
    * @return description
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DESCRIPTION)
+  @JsonProperty(value = JSON_PROPERTY_DESCRIPTION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getDescription() {
@@ -77,7 +77,7 @@ public class CreateLoyaltyProgramPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DESCRIPTION)
+  @JsonProperty(value = JSON_PROPERTY_DESCRIPTION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDescription(@jakarta.annotation.Nullable String description) {
     this.description = description;
@@ -94,7 +94,7 @@ public class CreateLoyaltyProgramPayload {
    * @return documentId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DOCUMENT_ID)
+  @JsonProperty(value = JSON_PROPERTY_DOCUMENT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getDocumentId() {
@@ -102,7 +102,7 @@ public class CreateLoyaltyProgramPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DOCUMENT_ID)
+  @JsonProperty(value = JSON_PROPERTY_DOCUMENT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDocumentId(@jakarta.annotation.Nullable String documentId) {
     this.documentId = documentId;
@@ -127,7 +127,7 @@ public class CreateLoyaltyProgramPayload {
    * @return meta
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_META)
+  @JsonProperty(value = JSON_PROPERTY_META, required = false)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
 
   public Map<String, Object> getMeta() {
@@ -135,7 +135,7 @@ public class CreateLoyaltyProgramPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_META)
+  @JsonProperty(value = JSON_PROPERTY_META, required = false)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
   public void setMeta(@jakarta.annotation.Nullable Map<String, Object> meta) {
     this.meta = meta;
@@ -152,7 +152,7 @@ public class CreateLoyaltyProgramPayload {
    * @return name
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getName() {
@@ -160,11 +160,12 @@ public class CreateLoyaltyProgramPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -203,10 +204,7 @@ public class CreateLoyaltyProgramPayload {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -244,7 +242,7 @@ public class CreateLoyaltyProgramPayload {
     // add `description` to the URL query string
     if (getDescription() != null) {
       try {
-        joiner.add(String.format("%sdescription%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDescription()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdescription%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDescription()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -254,7 +252,7 @@ public class CreateLoyaltyProgramPayload {
     // add `documentId` to the URL query string
     if (getDocumentId() != null) {
       try {
-        joiner.add(String.format("%sdocumentId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDocumentId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdocumentId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDocumentId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -265,8 +263,8 @@ public class CreateLoyaltyProgramPayload {
     if (getMeta() != null) {
       for (String _key : getMeta().keySet()) {
         try {
-          joiner.add(String.format("%smeta%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%smeta%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, _key, containerSuffix),
               getMeta().get(_key), URLEncoder.encode(String.valueOf(getMeta().get(_key)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -278,7 +276,7 @@ public class CreateLoyaltyProgramPayload {
     // add `name` to the URL query string
     if (getName() != null) {
       try {
-        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

@@ -82,7 +82,7 @@ public class MainBillingPayload {
    * @return address
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ADDRESS)
+  @JsonProperty(value = JSON_PROPERTY_ADDRESS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getAddress() {
@@ -90,7 +90,7 @@ public class MainBillingPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ADDRESS)
+  @JsonProperty(value = JSON_PROPERTY_ADDRESS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setAddress(@jakarta.annotation.Nullable String address) {
     this.address = address;
@@ -107,7 +107,7 @@ public class MainBillingPayload {
    * @return city
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CITY)
+  @JsonProperty(value = JSON_PROPERTY_CITY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getCity() {
@@ -115,7 +115,7 @@ public class MainBillingPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CITY)
+  @JsonProperty(value = JSON_PROPERTY_CITY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCity(@jakarta.annotation.Nullable String city) {
     this.city = city;
@@ -132,7 +132,7 @@ public class MainBillingPayload {
    * @return countryCode
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_COUNTRY_CODE)
+  @JsonProperty(value = JSON_PROPERTY_COUNTRY_CODE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getCountryCode() {
@@ -140,7 +140,7 @@ public class MainBillingPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_COUNTRY_CODE)
+  @JsonProperty(value = JSON_PROPERTY_COUNTRY_CODE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCountryCode(@jakarta.annotation.Nullable String countryCode) {
     this.countryCode = countryCode;
@@ -157,7 +157,7 @@ public class MainBillingPayload {
    * @return paymentMethod
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
+  @JsonProperty(value = JSON_PROPERTY_PAYMENT_METHOD, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getPaymentMethod() {
@@ -165,7 +165,7 @@ public class MainBillingPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PAYMENT_METHOD)
+  @JsonProperty(value = JSON_PROPERTY_PAYMENT_METHOD, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPaymentMethod(@jakarta.annotation.Nullable String paymentMethod) {
     this.paymentMethod = paymentMethod;
@@ -182,7 +182,7 @@ public class MainBillingPayload {
    * @return phone
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PHONE)
+  @JsonProperty(value = JSON_PROPERTY_PHONE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getPhone() {
@@ -190,7 +190,7 @@ public class MainBillingPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PHONE)
+  @JsonProperty(value = JSON_PROPERTY_PHONE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPhone(@jakarta.annotation.Nullable Long phone) {
     this.phone = phone;
@@ -207,7 +207,7 @@ public class MainBillingPayload {
    * @return postCode
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_POST_CODE)
+  @JsonProperty(value = JSON_PROPERTY_POST_CODE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getPostCode() {
@@ -215,7 +215,7 @@ public class MainBillingPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_POST_CODE)
+  @JsonProperty(value = JSON_PROPERTY_POST_CODE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPostCode(@jakarta.annotation.Nullable Long postCode) {
     this.postCode = postCode;
@@ -232,7 +232,7 @@ public class MainBillingPayload {
    * @return region
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_REGION)
+  @JsonProperty(value = JSON_PROPERTY_REGION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getRegion() {
@@ -240,11 +240,12 @@ public class MainBillingPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REGION)
+  @JsonProperty(value = JSON_PROPERTY_REGION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRegion(@jakarta.annotation.Nullable String region) {
     this.region = region;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -289,10 +290,7 @@ public class MainBillingPayload {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -330,7 +328,7 @@ public class MainBillingPayload {
     // add `address` to the URL query string
     if (getAddress() != null) {
       try {
-        joiner.add(String.format("%saddress%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAddress()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%saddress%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAddress()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -340,7 +338,7 @@ public class MainBillingPayload {
     // add `city` to the URL query string
     if (getCity() != null) {
       try {
-        joiner.add(String.format("%scity%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCity()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scity%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCity()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -350,7 +348,7 @@ public class MainBillingPayload {
     // add `countryCode` to the URL query string
     if (getCountryCode() != null) {
       try {
-        joiner.add(String.format("%scountryCode%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCountryCode()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scountryCode%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCountryCode()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -360,7 +358,7 @@ public class MainBillingPayload {
     // add `paymentMethod` to the URL query string
     if (getPaymentMethod() != null) {
       try {
-        joiner.add(String.format("%spaymentMethod%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentMethod()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%spaymentMethod%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPaymentMethod()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -370,7 +368,7 @@ public class MainBillingPayload {
     // add `phone` to the URL query string
     if (getPhone() != null) {
       try {
-        joiner.add(String.format("%sphone%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPhone()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sphone%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPhone()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -380,7 +378,7 @@ public class MainBillingPayload {
     // add `postCode` to the URL query string
     if (getPostCode() != null) {
       try {
-        joiner.add(String.format("%spostCode%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPostCode()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%spostCode%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPostCode()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -390,7 +388,7 @@ public class MainBillingPayload {
     // add `region` to the URL query string
     if (getRegion() != null) {
       try {
-        joiner.add(String.format("%sregion%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRegion()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sregion%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRegion()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

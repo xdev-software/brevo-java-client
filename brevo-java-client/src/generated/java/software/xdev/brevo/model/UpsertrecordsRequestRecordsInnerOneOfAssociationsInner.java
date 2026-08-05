@@ -61,7 +61,7 @@ public class UpsertrecordsRequestRecordsInnerOneOfAssociationsInner {
    * @return objectType
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_OBJECT_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_OBJECT_TYPE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getObjectType() {
@@ -69,7 +69,7 @@ public class UpsertrecordsRequestRecordsInnerOneOfAssociationsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_OBJECT_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_OBJECT_TYPE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setObjectType(@jakarta.annotation.Nullable String objectType) {
     this.objectType = objectType;
@@ -94,7 +94,7 @@ public class UpsertrecordsRequestRecordsInnerOneOfAssociationsInner {
    * @return records
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_RECORDS)
+  @JsonProperty(value = JSON_PROPERTY_RECORDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<UpsertrecordsRequestRecordsInnerOneOfAssociationsInnerRecordsInner> getRecords() {
@@ -102,11 +102,12 @@ public class UpsertrecordsRequestRecordsInnerOneOfAssociationsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_RECORDS)
+  @JsonProperty(value = JSON_PROPERTY_RECORDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRecords(@jakarta.annotation.Nullable List<UpsertrecordsRequestRecordsInnerOneOfAssociationsInnerRecordsInner> records) {
     this.records = records;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -141,10 +142,7 @@ public class UpsertrecordsRequestRecordsInnerOneOfAssociationsInner {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -182,7 +180,7 @@ public class UpsertrecordsRequestRecordsInnerOneOfAssociationsInner {
     // add `object_type` to the URL query string
     if (getObjectType() != null) {
       try {
-        joiner.add(String.format("%sobject_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getObjectType()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sobject_type%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getObjectType()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -193,8 +191,8 @@ public class UpsertrecordsRequestRecordsInnerOneOfAssociationsInner {
     if (getRecords() != null) {
       for (int i = 0; i < getRecords().size(); i++) {
         if (getRecords().get(i) != null) {
-          joiner.add(getRecords().get(i).toUrlQueryString(String.format("%srecords%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getRecords().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%srecords%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }

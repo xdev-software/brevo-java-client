@@ -308,7 +308,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return id
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getId() {
@@ -316,7 +316,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setId(@jakarta.annotation.Nonnull Long id) {
     this.id = id;
@@ -333,7 +333,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return name
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getName() {
@@ -341,7 +341,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
@@ -358,7 +358,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return subject
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SUBJECT)
+  @JsonProperty(value = JSON_PROPERTY_SUBJECT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getSubject() {
@@ -366,7 +366,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SUBJECT)
+  @JsonProperty(value = JSON_PROPERTY_SUBJECT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSubject(@jakarta.annotation.Nullable String subject) {
     this.subject = subject;
@@ -383,7 +383,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return previewText
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PREVIEW_TEXT)
+  @JsonProperty(value = JSON_PROPERTY_PREVIEW_TEXT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getPreviewText() {
@@ -391,7 +391,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PREVIEW_TEXT)
+  @JsonProperty(value = JSON_PROPERTY_PREVIEW_TEXT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPreviewText(@jakarta.annotation.Nullable String previewText) {
     this.previewText = previewText;
@@ -408,7 +408,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return type
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_TYPE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public TypeEnum getType() {
@@ -416,7 +416,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_TYPE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setType(@jakarta.annotation.Nonnull TypeEnum type) {
     this.type = type;
@@ -433,7 +433,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return status
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_STATUS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public StatusEnum getStatus() {
@@ -441,7 +441,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_STATUS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setStatus(@jakarta.annotation.Nonnull StatusEnum status) {
     this.status = status;
@@ -458,7 +458,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return scheduledAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
+  @JsonProperty(value = JSON_PROPERTY_SCHEDULED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getScheduledAt() {
@@ -466,7 +466,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
+  @JsonProperty(value = JSON_PROPERTY_SCHEDULED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setScheduledAt(@jakarta.annotation.Nullable String scheduledAt) {
     this.scheduledAt = scheduledAt;
@@ -483,7 +483,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return abTesting
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_AB_TESTING)
+  @JsonProperty(value = JSON_PROPERTY_AB_TESTING, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getAbTesting() {
@@ -491,7 +491,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_AB_TESTING)
+  @JsonProperty(value = JSON_PROPERTY_AB_TESTING, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setAbTesting(@jakarta.annotation.Nullable Boolean abTesting) {
     this.abTesting = abTesting;
@@ -508,7 +508,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return subjectA
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SUBJECT_A)
+  @JsonProperty(value = JSON_PROPERTY_SUBJECT_A, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getSubjectA() {
@@ -516,7 +516,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SUBJECT_A)
+  @JsonProperty(value = JSON_PROPERTY_SUBJECT_A, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSubjectA(@jakarta.annotation.Nullable String subjectA) {
     this.subjectA = subjectA;
@@ -533,7 +533,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return subjectB
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SUBJECT_B)
+  @JsonProperty(value = JSON_PROPERTY_SUBJECT_B, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getSubjectB() {
@@ -541,7 +541,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SUBJECT_B)
+  @JsonProperty(value = JSON_PROPERTY_SUBJECT_B, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSubjectB(@jakarta.annotation.Nullable String subjectB) {
     this.subjectB = subjectB;
@@ -558,7 +558,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return splitRule
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SPLIT_RULE)
+  @JsonProperty(value = JSON_PROPERTY_SPLIT_RULE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getSplitRule() {
@@ -566,7 +566,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SPLIT_RULE)
+  @JsonProperty(value = JSON_PROPERTY_SPLIT_RULE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSplitRule(@jakarta.annotation.Nullable Integer splitRule) {
     this.splitRule = splitRule;
@@ -583,7 +583,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return winnerCriteria
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_WINNER_CRITERIA)
+  @JsonProperty(value = JSON_PROPERTY_WINNER_CRITERIA, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getWinnerCriteria() {
@@ -591,7 +591,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_WINNER_CRITERIA)
+  @JsonProperty(value = JSON_PROPERTY_WINNER_CRITERIA, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setWinnerCriteria(@jakarta.annotation.Nullable String winnerCriteria) {
     this.winnerCriteria = winnerCriteria;
@@ -608,7 +608,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return winnerDelay
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_WINNER_DELAY)
+  @JsonProperty(value = JSON_PROPERTY_WINNER_DELAY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getWinnerDelay() {
@@ -616,7 +616,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_WINNER_DELAY)
+  @JsonProperty(value = JSON_PROPERTY_WINNER_DELAY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setWinnerDelay(@jakarta.annotation.Nullable Integer winnerDelay) {
     this.winnerDelay = winnerDelay;
@@ -633,7 +633,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return sendAtBestTime
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SEND_AT_BEST_TIME)
+  @JsonProperty(value = JSON_PROPERTY_SEND_AT_BEST_TIME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getSendAtBestTime() {
@@ -641,7 +641,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SEND_AT_BEST_TIME)
+  @JsonProperty(value = JSON_PROPERTY_SEND_AT_BEST_TIME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSendAtBestTime(@jakarta.annotation.Nullable Boolean sendAtBestTime) {
     this.sendAtBestTime = sendAtBestTime;
@@ -658,7 +658,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return utmCampaignValue
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UTM_CAMPAIGN_VALUE)
+  @JsonProperty(value = JSON_PROPERTY_UTM_CAMPAIGN_VALUE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getUtmCampaignValue() {
@@ -666,7 +666,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UTM_CAMPAIGN_VALUE)
+  @JsonProperty(value = JSON_PROPERTY_UTM_CAMPAIGN_VALUE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUtmCampaignValue(@jakarta.annotation.Nullable String utmCampaignValue) {
     this.utmCampaignValue = utmCampaignValue;
@@ -683,7 +683,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return utmSource
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UTM_SOURCE)
+  @JsonProperty(value = JSON_PROPERTY_UTM_SOURCE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getUtmSource() {
@@ -691,7 +691,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UTM_SOURCE)
+  @JsonProperty(value = JSON_PROPERTY_UTM_SOURCE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUtmSource(@jakarta.annotation.Nullable String utmSource) {
     this.utmSource = utmSource;
@@ -708,7 +708,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return utmMedium
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UTM_MEDIUM)
+  @JsonProperty(value = JSON_PROPERTY_UTM_MEDIUM, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getUtmMedium() {
@@ -716,7 +716,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UTM_MEDIUM)
+  @JsonProperty(value = JSON_PROPERTY_UTM_MEDIUM, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUtmMedium(@jakarta.annotation.Nullable String utmMedium) {
     this.utmMedium = utmMedium;
@@ -733,7 +733,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return utmIDActive
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UTM_I_D_ACTIVE)
+  @JsonProperty(value = JSON_PROPERTY_UTM_I_D_ACTIVE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getUtmIDActive() {
@@ -741,7 +741,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UTM_I_D_ACTIVE)
+  @JsonProperty(value = JSON_PROPERTY_UTM_I_D_ACTIVE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUtmIDActive(@jakarta.annotation.Nullable Boolean utmIDActive) {
     this.utmIDActive = utmIDActive;
@@ -758,7 +758,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return testSent
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TEST_SENT)
+  @JsonProperty(value = JSON_PROPERTY_TEST_SENT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Boolean getTestSent() {
@@ -766,7 +766,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TEST_SENT)
+  @JsonProperty(value = JSON_PROPERTY_TEST_SENT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setTestSent(@jakarta.annotation.Nonnull Boolean testSent) {
     this.testSent = testSent;
@@ -783,7 +783,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return header
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_HEADER)
+  @JsonProperty(value = JSON_PROPERTY_HEADER, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getHeader() {
@@ -791,7 +791,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_HEADER)
+  @JsonProperty(value = JSON_PROPERTY_HEADER, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setHeader(@jakarta.annotation.Nonnull String header) {
     this.header = header;
@@ -808,7 +808,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return footer
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_FOOTER)
+  @JsonProperty(value = JSON_PROPERTY_FOOTER, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getFooter() {
@@ -816,7 +816,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_FOOTER)
+  @JsonProperty(value = JSON_PROPERTY_FOOTER, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setFooter(@jakarta.annotation.Nonnull String footer) {
     this.footer = footer;
@@ -833,7 +833,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return sender
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SENDER)
+  @JsonProperty(value = JSON_PROPERTY_SENDER, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public GetExtendedCampaignOverviewAllOfSender getSender() {
@@ -841,7 +841,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SENDER)
+  @JsonProperty(value = JSON_PROPERTY_SENDER, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSender(@jakarta.annotation.Nonnull GetExtendedCampaignOverviewAllOfSender sender) {
     this.sender = sender;
@@ -858,7 +858,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return replyTo
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_REPLY_TO)
+  @JsonProperty(value = JSON_PROPERTY_REPLY_TO, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getReplyTo() {
@@ -866,7 +866,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REPLY_TO)
+  @JsonProperty(value = JSON_PROPERTY_REPLY_TO, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setReplyTo(@jakarta.annotation.Nonnull String replyTo) {
     this.replyTo = replyTo;
@@ -883,7 +883,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return toField
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TO_FIELD)
+  @JsonProperty(value = JSON_PROPERTY_TO_FIELD, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getToField() {
@@ -891,7 +891,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TO_FIELD)
+  @JsonProperty(value = JSON_PROPERTY_TO_FIELD, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setToField(@jakarta.annotation.Nullable String toField) {
     this.toField = toField;
@@ -908,7 +908,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return htmlContent
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_HTML_CONTENT)
+  @JsonProperty(value = JSON_PROPERTY_HTML_CONTENT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getHtmlContent() {
@@ -916,7 +916,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_HTML_CONTENT)
+  @JsonProperty(value = JSON_PROPERTY_HTML_CONTENT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setHtmlContent(@jakarta.annotation.Nonnull String htmlContent) {
     this.htmlContent = htmlContent;
@@ -933,7 +933,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return shareLink
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SHARE_LINK)
+  @JsonProperty(value = JSON_PROPERTY_SHARE_LINK, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getShareLink() {
@@ -941,7 +941,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SHARE_LINK)
+  @JsonProperty(value = JSON_PROPERTY_SHARE_LINK, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setShareLink(@jakarta.annotation.Nullable String shareLink) {
     this.shareLink = shareLink;
@@ -958,7 +958,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return tag
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TAG)
+  @JsonProperty(value = JSON_PROPERTY_TAG, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getTag() {
@@ -966,7 +966,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TAG)
+  @JsonProperty(value = JSON_PROPERTY_TAG, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setTag(@jakarta.annotation.Nullable String tag) {
     this.tag = tag;
@@ -983,7 +983,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return createdAt
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getCreatedAt() {
@@ -991,7 +991,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCreatedAt(@jakarta.annotation.Nonnull String createdAt) {
     this.createdAt = createdAt;
@@ -1008,7 +1008,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return modifiedAt
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
+  @JsonProperty(value = JSON_PROPERTY_MODIFIED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getModifiedAt() {
@@ -1016,7 +1016,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MODIFIED_AT)
+  @JsonProperty(value = JSON_PROPERTY_MODIFIED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setModifiedAt(@jakarta.annotation.Nonnull String modifiedAt) {
     this.modifiedAt = modifiedAt;
@@ -1033,7 +1033,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return inlineImageActivation
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_INLINE_IMAGE_ACTIVATION)
+  @JsonProperty(value = JSON_PROPERTY_INLINE_IMAGE_ACTIVATION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getInlineImageActivation() {
@@ -1041,7 +1041,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_INLINE_IMAGE_ACTIVATION)
+  @JsonProperty(value = JSON_PROPERTY_INLINE_IMAGE_ACTIVATION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setInlineImageActivation(@jakarta.annotation.Nullable Boolean inlineImageActivation) {
     this.inlineImageActivation = inlineImageActivation;
@@ -1058,7 +1058,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return mirrorActive
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_MIRROR_ACTIVE)
+  @JsonProperty(value = JSON_PROPERTY_MIRROR_ACTIVE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getMirrorActive() {
@@ -1066,7 +1066,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MIRROR_ACTIVE)
+  @JsonProperty(value = JSON_PROPERTY_MIRROR_ACTIVE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setMirrorActive(@jakarta.annotation.Nullable Boolean mirrorActive) {
     this.mirrorActive = mirrorActive;
@@ -1083,7 +1083,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return recurring
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_RECURRING)
+  @JsonProperty(value = JSON_PROPERTY_RECURRING, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getRecurring() {
@@ -1091,7 +1091,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_RECURRING)
+  @JsonProperty(value = JSON_PROPERTY_RECURRING, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRecurring(@jakarta.annotation.Nullable Boolean recurring) {
     this.recurring = recurring;
@@ -1108,7 +1108,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return sentDate
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SENT_DATE)
+  @JsonProperty(value = JSON_PROPERTY_SENT_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getSentDate() {
@@ -1116,7 +1116,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SENT_DATE)
+  @JsonProperty(value = JSON_PROPERTY_SENT_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSentDate(@jakarta.annotation.Nullable String sentDate) {
     this.sentDate = sentDate;
@@ -1133,7 +1133,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return returnBounce
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_RETURN_BOUNCE)
+  @JsonProperty(value = JSON_PROPERTY_RETURN_BOUNCE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getReturnBounce() {
@@ -1141,7 +1141,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_RETURN_BOUNCE)
+  @JsonProperty(value = JSON_PROPERTY_RETURN_BOUNCE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setReturnBounce(@jakarta.annotation.Nullable Long returnBounce) {
     this.returnBounce = returnBounce;
@@ -1158,7 +1158,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return recipients
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_RECIPIENTS)
+  @JsonProperty(value = JSON_PROPERTY_RECIPIENTS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public GetCampaignRecipients getRecipients() {
@@ -1166,7 +1166,7 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_RECIPIENTS)
+  @JsonProperty(value = JSON_PROPERTY_RECIPIENTS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setRecipients(@jakarta.annotation.Nonnull GetCampaignRecipients recipients) {
     this.recipients = recipients;
@@ -1183,7 +1183,7 @@ public class GetEmailCampaignsCampaignsInner {
    * @return statistics
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_STATISTICS)
+  @JsonProperty(value = JSON_PROPERTY_STATISTICS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public GetExtendedCampaignStats getStatistics() {
@@ -1191,11 +1191,12 @@ public class GetEmailCampaignsCampaignsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_STATISTICS)
+  @JsonProperty(value = JSON_PROPERTY_STATISTICS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setStatistics(@jakarta.annotation.Nonnull GetExtendedCampaignStats statistics) {
     this.statistics = statistics;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -1298,10 +1299,7 @@ public class GetEmailCampaignsCampaignsInner {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -1339,7 +1337,7 @@ public class GetEmailCampaignsCampaignsInner {
     // add `id` to the URL query string
     if (getId() != null) {
       try {
-        joiner.add(String.format("%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1349,7 +1347,7 @@ public class GetEmailCampaignsCampaignsInner {
     // add `name` to the URL query string
     if (getName() != null) {
       try {
-        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1359,7 +1357,7 @@ public class GetEmailCampaignsCampaignsInner {
     // add `subject` to the URL query string
     if (getSubject() != null) {
       try {
-        joiner.add(String.format("%ssubject%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubject()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssubject%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubject()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1369,7 +1367,7 @@ public class GetEmailCampaignsCampaignsInner {
     // add `previewText` to the URL query string
     if (getPreviewText() != null) {
       try {
-        joiner.add(String.format("%spreviewText%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPreviewText()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%spreviewText%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPreviewText()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1379,7 +1377,7 @@ public class GetEmailCampaignsCampaignsInner {
     // add `type` to the URL query string
     if (getType() != null) {
       try {
-        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1389,7 +1387,7 @@ public class GetEmailCampaignsCampaignsInner {
     // add `status` to the URL query string
     if (getStatus() != null) {
       try {
-        joiner.add(String.format("%sstatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatus()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sstatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatus()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1399,7 +1397,7 @@ public class GetEmailCampaignsCampaignsInner {
     // add `scheduledAt` to the URL query string
     if (getScheduledAt() != null) {
       try {
-        joiner.add(String.format("%sscheduledAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getScheduledAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sscheduledAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getScheduledAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1409,7 +1407,7 @@ public class GetEmailCampaignsCampaignsInner {
     // add `abTesting` to the URL query string
     if (getAbTesting() != null) {
       try {
-        joiner.add(String.format("%sabTesting%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAbTesting()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sabTesting%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAbTesting()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1419,7 +1417,7 @@ public class GetEmailCampaignsCampaignsInner {
     // add `subjectA` to the URL query string
     if (getSubjectA() != null) {
       try {
-        joiner.add(String.format("%ssubjectA%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubjectA()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssubjectA%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubjectA()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1429,7 +1427,7 @@ public class GetEmailCampaignsCampaignsInner {
     // add `subjectB` to the URL query string
     if (getSubjectB() != null) {
       try {
-        joiner.add(String.format("%ssubjectB%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubjectB()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssubjectB%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubjectB()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1439,7 +1437,7 @@ public class GetEmailCampaignsCampaignsInner {
     // add `splitRule` to the URL query string
     if (getSplitRule() != null) {
       try {
-        joiner.add(String.format("%ssplitRule%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSplitRule()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssplitRule%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSplitRule()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1449,7 +1447,7 @@ public class GetEmailCampaignsCampaignsInner {
     // add `winnerCriteria` to the URL query string
     if (getWinnerCriteria() != null) {
       try {
-        joiner.add(String.format("%swinnerCriteria%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWinnerCriteria()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%swinnerCriteria%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWinnerCriteria()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1459,7 +1457,7 @@ public class GetEmailCampaignsCampaignsInner {
     // add `winnerDelay` to the URL query string
     if (getWinnerDelay() != null) {
       try {
-        joiner.add(String.format("%swinnerDelay%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWinnerDelay()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%swinnerDelay%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWinnerDelay()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1469,7 +1467,7 @@ public class GetEmailCampaignsCampaignsInner {
     // add `sendAtBestTime` to the URL query string
     if (getSendAtBestTime() != null) {
       try {
-        joiner.add(String.format("%ssendAtBestTime%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSendAtBestTime()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssendAtBestTime%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSendAtBestTime()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1479,7 +1477,7 @@ public class GetEmailCampaignsCampaignsInner {
     // add `utmCampaignValue` to the URL query string
     if (getUtmCampaignValue() != null) {
       try {
-        joiner.add(String.format("%sutmCampaignValue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUtmCampaignValue()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sutmCampaignValue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUtmCampaignValue()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1489,7 +1487,7 @@ public class GetEmailCampaignsCampaignsInner {
     // add `utmSource` to the URL query string
     if (getUtmSource() != null) {
       try {
-        joiner.add(String.format("%sutmSource%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUtmSource()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sutmSource%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUtmSource()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1499,7 +1497,7 @@ public class GetEmailCampaignsCampaignsInner {
     // add `utmMedium` to the URL query string
     if (getUtmMedium() != null) {
       try {
-        joiner.add(String.format("%sutmMedium%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUtmMedium()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sutmMedium%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUtmMedium()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1509,7 +1507,7 @@ public class GetEmailCampaignsCampaignsInner {
     // add `utmIDActive` to the URL query string
     if (getUtmIDActive() != null) {
       try {
-        joiner.add(String.format("%sutmIDActive%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUtmIDActive()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sutmIDActive%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUtmIDActive()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1519,7 +1517,7 @@ public class GetEmailCampaignsCampaignsInner {
     // add `testSent` to the URL query string
     if (getTestSent() != null) {
       try {
-        joiner.add(String.format("%stestSent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTestSent()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stestSent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTestSent()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1529,7 +1527,7 @@ public class GetEmailCampaignsCampaignsInner {
     // add `header` to the URL query string
     if (getHeader() != null) {
       try {
-        joiner.add(String.format("%sheader%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHeader()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sheader%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHeader()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1539,7 +1537,7 @@ public class GetEmailCampaignsCampaignsInner {
     // add `footer` to the URL query string
     if (getFooter() != null) {
       try {
-        joiner.add(String.format("%sfooter%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFooter()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sfooter%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFooter()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1554,7 +1552,7 @@ public class GetEmailCampaignsCampaignsInner {
     // add `replyTo` to the URL query string
     if (getReplyTo() != null) {
       try {
-        joiner.add(String.format("%sreplyTo%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReplyTo()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sreplyTo%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReplyTo()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1564,7 +1562,7 @@ public class GetEmailCampaignsCampaignsInner {
     // add `toField` to the URL query string
     if (getToField() != null) {
       try {
-        joiner.add(String.format("%stoField%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getToField()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stoField%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getToField()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1574,7 +1572,7 @@ public class GetEmailCampaignsCampaignsInner {
     // add `htmlContent` to the URL query string
     if (getHtmlContent() != null) {
       try {
-        joiner.add(String.format("%shtmlContent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHtmlContent()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%shtmlContent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHtmlContent()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1584,7 +1582,7 @@ public class GetEmailCampaignsCampaignsInner {
     // add `shareLink` to the URL query string
     if (getShareLink() != null) {
       try {
-        joiner.add(String.format("%sshareLink%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getShareLink()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sshareLink%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getShareLink()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1594,7 +1592,7 @@ public class GetEmailCampaignsCampaignsInner {
     // add `tag` to the URL query string
     if (getTag() != null) {
       try {
-        joiner.add(String.format("%stag%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTag()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stag%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTag()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1604,7 +1602,7 @@ public class GetEmailCampaignsCampaignsInner {
     // add `createdAt` to the URL query string
     if (getCreatedAt() != null) {
       try {
-        joiner.add(String.format("%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1614,7 +1612,7 @@ public class GetEmailCampaignsCampaignsInner {
     // add `modifiedAt` to the URL query string
     if (getModifiedAt() != null) {
       try {
-        joiner.add(String.format("%smodifiedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getModifiedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%smodifiedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getModifiedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1624,7 +1622,7 @@ public class GetEmailCampaignsCampaignsInner {
     // add `inlineImageActivation` to the URL query string
     if (getInlineImageActivation() != null) {
       try {
-        joiner.add(String.format("%sinlineImageActivation%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getInlineImageActivation()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sinlineImageActivation%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getInlineImageActivation()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1634,7 +1632,7 @@ public class GetEmailCampaignsCampaignsInner {
     // add `mirrorActive` to the URL query string
     if (getMirrorActive() != null) {
       try {
-        joiner.add(String.format("%smirrorActive%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMirrorActive()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%smirrorActive%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMirrorActive()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1644,7 +1642,7 @@ public class GetEmailCampaignsCampaignsInner {
     // add `recurring` to the URL query string
     if (getRecurring() != null) {
       try {
-        joiner.add(String.format("%srecurring%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRecurring()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%srecurring%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRecurring()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1654,7 +1652,7 @@ public class GetEmailCampaignsCampaignsInner {
     // add `sentDate` to the URL query string
     if (getSentDate() != null) {
       try {
-        joiner.add(String.format("%ssentDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSentDate()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssentDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSentDate()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1664,7 +1662,7 @@ public class GetEmailCampaignsCampaignsInner {
     // add `returnBounce` to the URL query string
     if (getReturnBounce() != null) {
       try {
-        joiner.add(String.format("%sreturnBounce%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReturnBounce()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sreturnBounce%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReturnBounce()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

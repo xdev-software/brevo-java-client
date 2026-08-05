@@ -68,7 +68,7 @@ public class CorporateGroupDetailsResponse {
    * @return group
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_GROUP)
+  @JsonProperty(value = JSON_PROPERTY_GROUP, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public CorporateGroupDetailsResponseGroup getGroup() {
@@ -76,7 +76,7 @@ public class CorporateGroupDetailsResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_GROUP)
+  @JsonProperty(value = JSON_PROPERTY_GROUP, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setGroup(@jakarta.annotation.Nullable CorporateGroupDetailsResponseGroup group) {
     this.group = group;
@@ -101,7 +101,7 @@ public class CorporateGroupDetailsResponse {
    * @return subAccounts
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SUB_ACCOUNTS)
+  @JsonProperty(value = JSON_PROPERTY_SUB_ACCOUNTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<CorporateGroupDetailsResponseSubAccountsInner> getSubAccounts() {
@@ -109,7 +109,7 @@ public class CorporateGroupDetailsResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SUB_ACCOUNTS)
+  @JsonProperty(value = JSON_PROPERTY_SUB_ACCOUNTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSubAccounts(@jakarta.annotation.Nullable List<CorporateGroupDetailsResponseSubAccountsInner> subAccounts) {
     this.subAccounts = subAccounts;
@@ -134,7 +134,7 @@ public class CorporateGroupDetailsResponse {
    * @return users
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_USERS)
+  @JsonProperty(value = JSON_PROPERTY_USERS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<CorporateGroupDetailsResponseUsersInner> getUsers() {
@@ -142,11 +142,12 @@ public class CorporateGroupDetailsResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_USERS)
+  @JsonProperty(value = JSON_PROPERTY_USERS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUsers(@jakarta.annotation.Nullable List<CorporateGroupDetailsResponseUsersInner> users) {
     this.users = users;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -183,10 +184,7 @@ public class CorporateGroupDetailsResponse {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -230,8 +228,8 @@ public class CorporateGroupDetailsResponse {
     if (getSubAccounts() != null) {
       for (int i = 0; i < getSubAccounts().size(); i++) {
         if (getSubAccounts().get(i) != null) {
-          joiner.add(getSubAccounts().get(i).toUrlQueryString(String.format("%ssub-accounts%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getSubAccounts().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%ssub-accounts%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -240,8 +238,8 @@ public class CorporateGroupDetailsResponse {
     if (getUsers() != null) {
       for (int i = 0; i < getUsers().size(); i++) {
         if (getUsers().get(i) != null) {
-          joiner.add(getUsers().get(i).toUrlQueryString(String.format("%susers%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getUsers().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%susers%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }

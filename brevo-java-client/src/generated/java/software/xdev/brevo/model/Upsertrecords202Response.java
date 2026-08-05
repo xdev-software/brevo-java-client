@@ -57,7 +57,7 @@ public class Upsertrecords202Response {
    * @return processId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PROCESS_ID)
+  @JsonProperty(value = JSON_PROPERTY_PROCESS_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getProcessId() {
@@ -65,7 +65,7 @@ public class Upsertrecords202Response {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PROCESS_ID)
+  @JsonProperty(value = JSON_PROPERTY_PROCESS_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setProcessId(@jakarta.annotation.Nullable Long processId) {
     this.processId = processId;
@@ -82,7 +82,7 @@ public class Upsertrecords202Response {
    * @return message
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_MESSAGE)
+  @JsonProperty(value = JSON_PROPERTY_MESSAGE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getMessage() {
@@ -90,11 +90,12 @@ public class Upsertrecords202Response {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MESSAGE)
+  @JsonProperty(value = JSON_PROPERTY_MESSAGE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setMessage(@jakarta.annotation.Nullable String message) {
     this.message = message;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -129,10 +130,7 @@ public class Upsertrecords202Response {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -170,7 +168,7 @@ public class Upsertrecords202Response {
     // add `processId` to the URL query string
     if (getProcessId() != null) {
       try {
-        joiner.add(String.format("%sprocessId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProcessId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sprocessId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProcessId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -180,7 +178,7 @@ public class Upsertrecords202Response {
     // add `message` to the URL query string
     if (getMessage() != null) {
       try {
-        joiner.add(String.format("%smessage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMessage()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%smessage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMessage()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

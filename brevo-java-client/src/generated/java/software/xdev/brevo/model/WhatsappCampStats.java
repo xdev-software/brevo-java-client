@@ -18,7 +18,6 @@ import java.util.Arrays;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
@@ -71,7 +70,7 @@ public class WhatsappCampStats {
    * @return sent
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SENT)
+  @JsonProperty(value = JSON_PROPERTY_SENT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Integer getSent() {
@@ -79,7 +78,7 @@ public class WhatsappCampStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SENT)
+  @JsonProperty(value = JSON_PROPERTY_SENT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSent(@jakarta.annotation.Nonnull Integer sent) {
     this.sent = sent;
@@ -96,7 +95,7 @@ public class WhatsappCampStats {
    * @return delivered
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DELIVERED)
+  @JsonProperty(value = JSON_PROPERTY_DELIVERED, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Integer getDelivered() {
@@ -104,7 +103,7 @@ public class WhatsappCampStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DELIVERED)
+  @JsonProperty(value = JSON_PROPERTY_DELIVERED, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDelivered(@jakarta.annotation.Nonnull Integer delivered) {
     this.delivered = delivered;
@@ -121,7 +120,7 @@ public class WhatsappCampStats {
    * @return read
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_READ)
+  @JsonProperty(value = JSON_PROPERTY_READ, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Integer getRead() {
@@ -129,7 +128,7 @@ public class WhatsappCampStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_READ)
+  @JsonProperty(value = JSON_PROPERTY_READ, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setRead(@jakarta.annotation.Nonnull Integer read) {
     this.read = read;
@@ -146,7 +145,7 @@ public class WhatsappCampStats {
    * @return unsubscribe
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_UNSUBSCRIBE)
+  @JsonProperty(value = JSON_PROPERTY_UNSUBSCRIBE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Integer getUnsubscribe() {
@@ -154,7 +153,7 @@ public class WhatsappCampStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UNSUBSCRIBE)
+  @JsonProperty(value = JSON_PROPERTY_UNSUBSCRIBE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setUnsubscribe(@jakarta.annotation.Nonnull Integer unsubscribe) {
     this.unsubscribe = unsubscribe;
@@ -171,7 +170,7 @@ public class WhatsappCampStats {
    * @return notSent
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_NOT_SENT)
+  @JsonProperty(value = JSON_PROPERTY_NOT_SENT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Integer getNotSent() {
@@ -179,11 +178,12 @@ public class WhatsappCampStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NOT_SENT)
+  @JsonProperty(value = JSON_PROPERTY_NOT_SENT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setNotSent(@jakarta.annotation.Nonnull Integer notSent) {
     this.notSent = notSent;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -224,10 +224,7 @@ public class WhatsappCampStats {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -265,7 +262,7 @@ public class WhatsappCampStats {
     // add `sent` to the URL query string
     if (getSent() != null) {
       try {
-        joiner.add(String.format("%ssent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSent()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSent()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -275,7 +272,7 @@ public class WhatsappCampStats {
     // add `delivered` to the URL query string
     if (getDelivered() != null) {
       try {
-        joiner.add(String.format("%sdelivered%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDelivered()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdelivered%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDelivered()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -285,7 +282,7 @@ public class WhatsappCampStats {
     // add `read` to the URL query string
     if (getRead() != null) {
       try {
-        joiner.add(String.format("%sread%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRead()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sread%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRead()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -295,7 +292,7 @@ public class WhatsappCampStats {
     // add `unsubscribe` to the URL query string
     if (getUnsubscribe() != null) {
       try {
-        joiner.add(String.format("%sunsubscribe%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUnsubscribe()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sunsubscribe%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUnsubscribe()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -305,7 +302,7 @@ public class WhatsappCampStats {
     // add `notSent` to the URL query string
     if (getNotSent() != null) {
       try {
-        joiner.add(String.format("%snotSent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNotSent()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%snotSent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNotSent()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

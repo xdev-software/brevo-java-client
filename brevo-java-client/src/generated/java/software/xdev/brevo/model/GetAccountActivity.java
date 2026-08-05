@@ -64,7 +64,7 @@ public class GetAccountActivity {
    * @return logs
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LOGS)
+  @JsonProperty(value = JSON_PROPERTY_LOGS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<GetAccountActivityLogsInner> getLogs() {
@@ -72,11 +72,12 @@ public class GetAccountActivity {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LOGS)
+  @JsonProperty(value = JSON_PROPERTY_LOGS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLogs(@jakarta.annotation.Nullable List<GetAccountActivityLogsInner> logs) {
     this.logs = logs;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -109,10 +110,7 @@ public class GetAccountActivity {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -151,8 +149,8 @@ public class GetAccountActivity {
     if (getLogs() != null) {
       for (int i = 0; i < getLogs().size(); i++) {
         if (getLogs().get(i) != null) {
-          joiner.add(getLogs().get(i).toUrlQueryString(String.format("%slogs%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getLogs().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%slogs%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }

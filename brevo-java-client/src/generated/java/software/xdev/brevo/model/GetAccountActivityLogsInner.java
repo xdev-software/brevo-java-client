@@ -72,7 +72,7 @@ public class GetAccountActivityLogsInner {
    * @return action
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ACTION)
+  @JsonProperty(value = JSON_PROPERTY_ACTION, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getAction() {
@@ -80,7 +80,7 @@ public class GetAccountActivityLogsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ACTION)
+  @JsonProperty(value = JSON_PROPERTY_ACTION, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAction(@jakarta.annotation.Nonnull String action) {
     this.action = action;
@@ -97,7 +97,7 @@ public class GetAccountActivityLogsInner {
    * @return date
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DATE)
+  @JsonProperty(value = JSON_PROPERTY_DATE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getDate() {
@@ -105,7 +105,7 @@ public class GetAccountActivityLogsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DATE)
+  @JsonProperty(value = JSON_PROPERTY_DATE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDate(@jakarta.annotation.Nonnull String date) {
     this.date = date;
@@ -122,7 +122,7 @@ public class GetAccountActivityLogsInner {
    * @return userEmail
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_USER_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_USER_EMAIL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getUserEmail() {
@@ -130,7 +130,7 @@ public class GetAccountActivityLogsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_USER_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_USER_EMAIL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setUserEmail(@jakarta.annotation.Nonnull String userEmail) {
     this.userEmail = userEmail;
@@ -147,7 +147,7 @@ public class GetAccountActivityLogsInner {
    * @return userIp
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_USER_IP)
+  @JsonProperty(value = JSON_PROPERTY_USER_IP, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getUserIp() {
@@ -155,7 +155,7 @@ public class GetAccountActivityLogsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_USER_IP)
+  @JsonProperty(value = JSON_PROPERTY_USER_IP, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setUserIp(@jakarta.annotation.Nonnull String userIp) {
     this.userIp = userIp;
@@ -172,7 +172,7 @@ public class GetAccountActivityLogsInner {
    * @return userAgent
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_USER_AGENT)
+  @JsonProperty(value = JSON_PROPERTY_USER_AGENT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getUserAgent() {
@@ -180,11 +180,12 @@ public class GetAccountActivityLogsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_USER_AGENT)
+  @JsonProperty(value = JSON_PROPERTY_USER_AGENT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setUserAgent(@jakarta.annotation.Nonnull String userAgent) {
     this.userAgent = userAgent;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -225,10 +226,7 @@ public class GetAccountActivityLogsInner {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -266,7 +264,7 @@ public class GetAccountActivityLogsInner {
     // add `action` to the URL query string
     if (getAction() != null) {
       try {
-        joiner.add(String.format("%saction%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAction()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%saction%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAction()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -276,7 +274,7 @@ public class GetAccountActivityLogsInner {
     // add `date` to the URL query string
     if (getDate() != null) {
       try {
-        joiner.add(String.format("%sdate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDate()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDate()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -286,7 +284,7 @@ public class GetAccountActivityLogsInner {
     // add `user_email` to the URL query string
     if (getUserEmail() != null) {
       try {
-        joiner.add(String.format("%suser_email%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUserEmail()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%suser_email%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUserEmail()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -296,7 +294,7 @@ public class GetAccountActivityLogsInner {
     // add `user_ip` to the URL query string
     if (getUserIp() != null) {
       try {
-        joiner.add(String.format("%suser_ip%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUserIp()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%suser_ip%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUserIp()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -306,7 +304,7 @@ public class GetAccountActivityLogsInner {
     // add `user_agent` to the URL query string
     if (getUserAgent() != null) {
       try {
-        joiner.add(String.format("%suser_agent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUserAgent()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%suser_agent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUserAgent()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

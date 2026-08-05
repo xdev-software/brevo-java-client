@@ -84,7 +84,7 @@ public class MasterDetailsResponse {
    * @return email
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getEmail() {
@@ -92,7 +92,7 @@ public class MasterDetailsResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setEmail(@jakarta.annotation.Nullable String email) {
     this.email = email;
@@ -109,7 +109,7 @@ public class MasterDetailsResponse {
    * @return companyName
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_COMPANY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_COMPANY_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getCompanyName() {
@@ -117,7 +117,7 @@ public class MasterDetailsResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_COMPANY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_COMPANY_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCompanyName(@jakarta.annotation.Nullable String companyName) {
     this.companyName = companyName;
@@ -134,7 +134,7 @@ public class MasterDetailsResponse {
    * @return id
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getId() {
@@ -142,7 +142,7 @@ public class MasterDetailsResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setId(@jakarta.annotation.Nullable Long id) {
     this.id = id;
@@ -159,7 +159,7 @@ public class MasterDetailsResponse {
    * @return currencyCode
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CURRENCY_CODE)
+  @JsonProperty(value = JSON_PROPERTY_CURRENCY_CODE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getCurrencyCode() {
@@ -167,7 +167,7 @@ public class MasterDetailsResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CURRENCY_CODE)
+  @JsonProperty(value = JSON_PROPERTY_CURRENCY_CODE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCurrencyCode(@jakarta.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
@@ -184,7 +184,7 @@ public class MasterDetailsResponse {
    * @return timezone
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TIMEZONE)
+  @JsonProperty(value = JSON_PROPERTY_TIMEZONE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getTimezone() {
@@ -192,7 +192,7 @@ public class MasterDetailsResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TIMEZONE)
+  @JsonProperty(value = JSON_PROPERTY_TIMEZONE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setTimezone(@jakarta.annotation.Nullable String timezone) {
     this.timezone = timezone;
@@ -209,7 +209,7 @@ public class MasterDetailsResponse {
    * @return billingInfo
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_BILLING_INFO)
+  @JsonProperty(value = JSON_PROPERTY_BILLING_INFO, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public MasterDetailsResponseBillingInfo getBillingInfo() {
@@ -217,7 +217,7 @@ public class MasterDetailsResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BILLING_INFO)
+  @JsonProperty(value = JSON_PROPERTY_BILLING_INFO, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setBillingInfo(@jakarta.annotation.Nullable MasterDetailsResponseBillingInfo billingInfo) {
     this.billingInfo = billingInfo;
@@ -234,7 +234,7 @@ public class MasterDetailsResponse {
    * @return planInfo
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PLAN_INFO)
+  @JsonProperty(value = JSON_PROPERTY_PLAN_INFO, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public MasterDetailsResponsePlanInfo getPlanInfo() {
@@ -242,11 +242,12 @@ public class MasterDetailsResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PLAN_INFO)
+  @JsonProperty(value = JSON_PROPERTY_PLAN_INFO, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPlanInfo(@jakarta.annotation.Nullable MasterDetailsResponsePlanInfo planInfo) {
     this.planInfo = planInfo;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -291,10 +292,7 @@ public class MasterDetailsResponse {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -332,7 +330,7 @@ public class MasterDetailsResponse {
     // add `email` to the URL query string
     if (getEmail() != null) {
       try {
-        joiner.add(String.format("%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -342,7 +340,7 @@ public class MasterDetailsResponse {
     // add `companyName` to the URL query string
     if (getCompanyName() != null) {
       try {
-        joiner.add(String.format("%scompanyName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCompanyName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scompanyName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCompanyName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -352,7 +350,7 @@ public class MasterDetailsResponse {
     // add `id` to the URL query string
     if (getId() != null) {
       try {
-        joiner.add(String.format("%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -362,7 +360,7 @@ public class MasterDetailsResponse {
     // add `currencyCode` to the URL query string
     if (getCurrencyCode() != null) {
       try {
-        joiner.add(String.format("%scurrencyCode%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCurrencyCode()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scurrencyCode%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCurrencyCode()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -372,7 +370,7 @@ public class MasterDetailsResponse {
     // add `timezone` to the URL query string
     if (getTimezone() != null) {
       try {
-        joiner.add(String.format("%stimezone%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTimezone()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stimezone%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTimezone()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

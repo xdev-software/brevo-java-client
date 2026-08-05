@@ -67,7 +67,7 @@ public class GetClient {
    * @return email
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getEmail() {
@@ -75,7 +75,7 @@ public class GetClient {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setEmail(@jakarta.annotation.Nonnull String email) {
     this.email = email;
@@ -92,7 +92,7 @@ public class GetClient {
    * @return firstName
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_FIRST_NAME)
+  @JsonProperty(value = JSON_PROPERTY_FIRST_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getFirstName() {
@@ -100,7 +100,7 @@ public class GetClient {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_FIRST_NAME)
+  @JsonProperty(value = JSON_PROPERTY_FIRST_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setFirstName(@jakarta.annotation.Nonnull String firstName) {
     this.firstName = firstName;
@@ -117,7 +117,7 @@ public class GetClient {
    * @return lastName
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_LAST_NAME)
+  @JsonProperty(value = JSON_PROPERTY_LAST_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getLastName() {
@@ -125,7 +125,7 @@ public class GetClient {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LAST_NAME)
+  @JsonProperty(value = JSON_PROPERTY_LAST_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setLastName(@jakarta.annotation.Nonnull String lastName) {
     this.lastName = lastName;
@@ -142,7 +142,7 @@ public class GetClient {
    * @return companyName
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_COMPANY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_COMPANY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getCompanyName() {
@@ -150,11 +150,12 @@ public class GetClient {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_COMPANY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_COMPANY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCompanyName(@jakarta.annotation.Nonnull String companyName) {
     this.companyName = companyName;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -193,10 +194,7 @@ public class GetClient {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -234,7 +232,7 @@ public class GetClient {
     // add `email` to the URL query string
     if (getEmail() != null) {
       try {
-        joiner.add(String.format("%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -244,7 +242,7 @@ public class GetClient {
     // add `firstName` to the URL query string
     if (getFirstName() != null) {
       try {
-        joiner.add(String.format("%sfirstName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFirstName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sfirstName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFirstName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -254,7 +252,7 @@ public class GetClient {
     // add `lastName` to the URL query string
     if (getLastName() != null) {
       try {
-        joiner.add(String.format("%slastName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLastName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%slastName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLastName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -264,7 +262,7 @@ public class GetClient {
     // add `companyName` to the URL query string
     if (getCompanyName() != null) {
       try {
-        joiner.add(String.format("%scompanyName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCompanyName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scompanyName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCompanyName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

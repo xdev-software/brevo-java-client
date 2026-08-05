@@ -64,7 +64,7 @@ public class ModelSubscriptionBalanceResp {
    * @return balance
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_BALANCE)
+  @JsonProperty(value = JSON_PROPERTY_BALANCE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<AggregateBalance> getBalance() {
@@ -72,11 +72,12 @@ public class ModelSubscriptionBalanceResp {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BALANCE)
+  @JsonProperty(value = JSON_PROPERTY_BALANCE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setBalance(@jakarta.annotation.Nullable List<AggregateBalance> balance) {
     this.balance = balance;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -109,10 +110,7 @@ public class ModelSubscriptionBalanceResp {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -151,8 +149,8 @@ public class ModelSubscriptionBalanceResp {
     if (getBalance() != null) {
       for (int i = 0; i < getBalance().size(); i++) {
         if (getBalance().get(i) != null) {
-          joiner.add(getBalance().get(i).toUrlQueryString(String.format("%sbalance%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getBalance().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sbalance%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }

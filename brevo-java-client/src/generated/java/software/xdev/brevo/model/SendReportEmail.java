@@ -68,7 +68,7 @@ public class SendReportEmail {
    * @return to
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TO)
+  @JsonProperty(value = JSON_PROPERTY_TO, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public List<String> getTo() {
@@ -76,7 +76,7 @@ public class SendReportEmail {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TO)
+  @JsonProperty(value = JSON_PROPERTY_TO, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setTo(@jakarta.annotation.Nonnull List<String> to) {
     this.to = to;
@@ -93,7 +93,7 @@ public class SendReportEmail {
    * @return body
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_BODY)
+  @JsonProperty(value = JSON_PROPERTY_BODY, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getBody() {
@@ -101,11 +101,12 @@ public class SendReportEmail {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BODY)
+  @JsonProperty(value = JSON_PROPERTY_BODY, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setBody(@jakarta.annotation.Nonnull String body) {
     this.body = body;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -140,10 +141,7 @@ public class SendReportEmail {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -182,8 +180,8 @@ public class SendReportEmail {
     if (getTo() != null) {
       for (int i = 0; i < getTo().size(); i++) {
         try {
-          joiner.add(String.format("%sto%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sto%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getTo().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -195,7 +193,7 @@ public class SendReportEmail {
     // add `body` to the URL query string
     if (getBody() != null) {
       try {
-        joiner.add(String.format("%sbody%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBody()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sbody%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBody()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

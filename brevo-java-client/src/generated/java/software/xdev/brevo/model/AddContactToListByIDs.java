@@ -63,7 +63,7 @@ public class AddContactToListByIDs {
    * @return ids
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_IDS)
+  @JsonProperty(value = JSON_PROPERTY_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<Long> getIds() {
@@ -71,11 +71,12 @@ public class AddContactToListByIDs {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IDS)
+  @JsonProperty(value = JSON_PROPERTY_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setIds(@jakarta.annotation.Nullable List<Long> ids) {
     this.ids = ids;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -108,10 +109,7 @@ public class AddContactToListByIDs {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -150,8 +148,8 @@ public class AddContactToListByIDs {
     if (getIds() != null) {
       for (int i = 0; i < getIds().size(); i++) {
         try {
-          joiner.add(String.format("%sids%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sids%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported

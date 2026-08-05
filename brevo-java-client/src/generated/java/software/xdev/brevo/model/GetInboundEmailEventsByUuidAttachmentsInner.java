@@ -67,7 +67,7 @@ public class GetInboundEmailEventsByUuidAttachmentsInner {
    * @return name
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getName() {
@@ -75,7 +75,7 @@ public class GetInboundEmailEventsByUuidAttachmentsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setName(@jakarta.annotation.Nullable String name) {
     this.name = name;
@@ -92,7 +92,7 @@ public class GetInboundEmailEventsByUuidAttachmentsInner {
    * @return contentType
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CONTENT_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_CONTENT_TYPE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getContentType() {
@@ -100,7 +100,7 @@ public class GetInboundEmailEventsByUuidAttachmentsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONTENT_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_CONTENT_TYPE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setContentType(@jakarta.annotation.Nullable String contentType) {
     this.contentType = contentType;
@@ -117,7 +117,7 @@ public class GetInboundEmailEventsByUuidAttachmentsInner {
    * @return contentId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CONTENT_ID)
+  @JsonProperty(value = JSON_PROPERTY_CONTENT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getContentId() {
@@ -125,7 +125,7 @@ public class GetInboundEmailEventsByUuidAttachmentsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONTENT_ID)
+  @JsonProperty(value = JSON_PROPERTY_CONTENT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setContentId(@jakarta.annotation.Nullable String contentId) {
     this.contentId = contentId;
@@ -142,7 +142,7 @@ public class GetInboundEmailEventsByUuidAttachmentsInner {
    * @return contentLength
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CONTENT_LENGTH)
+  @JsonProperty(value = JSON_PROPERTY_CONTENT_LENGTH, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getContentLength() {
@@ -150,11 +150,12 @@ public class GetInboundEmailEventsByUuidAttachmentsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONTENT_LENGTH)
+  @JsonProperty(value = JSON_PROPERTY_CONTENT_LENGTH, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setContentLength(@jakarta.annotation.Nullable Integer contentLength) {
     this.contentLength = contentLength;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -193,10 +194,7 @@ public class GetInboundEmailEventsByUuidAttachmentsInner {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -234,7 +232,7 @@ public class GetInboundEmailEventsByUuidAttachmentsInner {
     // add `name` to the URL query string
     if (getName() != null) {
       try {
-        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -244,7 +242,7 @@ public class GetInboundEmailEventsByUuidAttachmentsInner {
     // add `contentType` to the URL query string
     if (getContentType() != null) {
       try {
-        joiner.add(String.format("%scontentType%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContentType()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scontentType%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContentType()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -254,7 +252,7 @@ public class GetInboundEmailEventsByUuidAttachmentsInner {
     // add `contentId` to the URL query string
     if (getContentId() != null) {
       try {
-        joiner.add(String.format("%scontentId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContentId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scontentId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContentId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -264,7 +262,7 @@ public class GetInboundEmailEventsByUuidAttachmentsInner {
     // add `contentLength` to the URL query string
     if (getContentLength() != null) {
       try {
-        joiner.add(String.format("%scontentLength%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContentLength()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scontentLength%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContentLength()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

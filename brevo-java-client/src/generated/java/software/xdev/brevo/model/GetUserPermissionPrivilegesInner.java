@@ -60,7 +60,7 @@ public class GetUserPermissionPrivilegesInner {
    * @return feature
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_FEATURE)
+  @JsonProperty(value = JSON_PROPERTY_FEATURE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getFeature() {
@@ -68,7 +68,7 @@ public class GetUserPermissionPrivilegesInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_FEATURE)
+  @JsonProperty(value = JSON_PROPERTY_FEATURE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setFeature(@jakarta.annotation.Nonnull String feature) {
     this.feature = feature;
@@ -93,7 +93,7 @@ public class GetUserPermissionPrivilegesInner {
    * @return permissions
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PERMISSIONS)
+  @JsonProperty(value = JSON_PROPERTY_PERMISSIONS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public List<String> getPermissions() {
@@ -101,11 +101,12 @@ public class GetUserPermissionPrivilegesInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PERMISSIONS)
+  @JsonProperty(value = JSON_PROPERTY_PERMISSIONS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPermissions(@jakarta.annotation.Nonnull List<String> permissions) {
     this.permissions = permissions;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -140,10 +141,7 @@ public class GetUserPermissionPrivilegesInner {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -181,7 +179,7 @@ public class GetUserPermissionPrivilegesInner {
     // add `feature` to the URL query string
     if (getFeature() != null) {
       try {
-        joiner.add(String.format("%sfeature%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFeature()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sfeature%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFeature()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -192,8 +190,8 @@ public class GetUserPermissionPrivilegesInner {
     if (getPermissions() != null) {
       for (int i = 0; i < getPermissions().size(); i++) {
         try {
-          joiner.add(String.format("%spermissions%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%spermissions%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getPermissions().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported

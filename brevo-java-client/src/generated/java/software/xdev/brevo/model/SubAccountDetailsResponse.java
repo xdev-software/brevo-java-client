@@ -77,7 +77,7 @@ public class SubAccountDetailsResponse {
    * @return name
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getName() {
@@ -85,7 +85,7 @@ public class SubAccountDetailsResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setName(@jakarta.annotation.Nullable String name) {
     this.name = name;
@@ -102,7 +102,7 @@ public class SubAccountDetailsResponse {
    * @return email
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getEmail() {
@@ -110,7 +110,7 @@ public class SubAccountDetailsResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setEmail(@jakarta.annotation.Nullable String email) {
     this.email = email;
@@ -127,7 +127,7 @@ public class SubAccountDetailsResponse {
    * @return companyName
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_COMPANY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_COMPANY_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getCompanyName() {
@@ -135,7 +135,7 @@ public class SubAccountDetailsResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_COMPANY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_COMPANY_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCompanyName(@jakarta.annotation.Nullable String companyName) {
     this.companyName = companyName;
@@ -160,7 +160,7 @@ public class SubAccountDetailsResponse {
    * @return groups
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_GROUPS)
+  @JsonProperty(value = JSON_PROPERTY_GROUPS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<SubAccountDetailsResponseGroupsInner> getGroups() {
@@ -168,7 +168,7 @@ public class SubAccountDetailsResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_GROUPS)
+  @JsonProperty(value = JSON_PROPERTY_GROUPS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setGroups(@jakarta.annotation.Nullable List<SubAccountDetailsResponseGroupsInner> groups) {
     this.groups = groups;
@@ -185,7 +185,7 @@ public class SubAccountDetailsResponse {
    * @return planInfo
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PLAN_INFO)
+  @JsonProperty(value = JSON_PROPERTY_PLAN_INFO, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public SubAccountDetailsResponsePlanInfo getPlanInfo() {
@@ -193,11 +193,12 @@ public class SubAccountDetailsResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PLAN_INFO)
+  @JsonProperty(value = JSON_PROPERTY_PLAN_INFO, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPlanInfo(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfo planInfo) {
     this.planInfo = planInfo;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -238,10 +239,7 @@ public class SubAccountDetailsResponse {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -279,7 +277,7 @@ public class SubAccountDetailsResponse {
     // add `name` to the URL query string
     if (getName() != null) {
       try {
-        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -289,7 +287,7 @@ public class SubAccountDetailsResponse {
     // add `email` to the URL query string
     if (getEmail() != null) {
       try {
-        joiner.add(String.format("%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -299,7 +297,7 @@ public class SubAccountDetailsResponse {
     // add `companyName` to the URL query string
     if (getCompanyName() != null) {
       try {
-        joiner.add(String.format("%scompanyName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCompanyName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scompanyName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCompanyName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -310,8 +308,8 @@ public class SubAccountDetailsResponse {
     if (getGroups() != null) {
       for (int i = 0; i < getGroups().size(); i++) {
         if (getGroups().get(i) != null) {
-          joiner.add(getGroups().get(i).toUrlQueryString(String.format("%sgroups%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getGroups().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sgroups%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }

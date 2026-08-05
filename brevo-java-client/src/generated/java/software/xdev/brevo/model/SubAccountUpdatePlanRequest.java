@@ -59,7 +59,7 @@ public class SubAccountUpdatePlanRequest {
    * @return credits
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CREDITS)
+  @JsonProperty(value = JSON_PROPERTY_CREDITS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public SubAccountUpdatePlanRequestCredits getCredits() {
@@ -67,7 +67,7 @@ public class SubAccountUpdatePlanRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CREDITS)
+  @JsonProperty(value = JSON_PROPERTY_CREDITS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCredits(@jakarta.annotation.Nullable SubAccountUpdatePlanRequestCredits credits) {
     this.credits = credits;
@@ -84,7 +84,7 @@ public class SubAccountUpdatePlanRequest {
    * @return features
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_FEATURES)
+  @JsonProperty(value = JSON_PROPERTY_FEATURES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public SubAccountUpdatePlanRequestFeatures getFeatures() {
@@ -92,11 +92,12 @@ public class SubAccountUpdatePlanRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_FEATURES)
+  @JsonProperty(value = JSON_PROPERTY_FEATURES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setFeatures(@jakarta.annotation.Nullable SubAccountUpdatePlanRequestFeatures features) {
     this.features = features;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -131,10 +132,7 @@ public class SubAccountUpdatePlanRequest {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**

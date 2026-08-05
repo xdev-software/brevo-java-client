@@ -145,7 +145,7 @@ public class GetAccountAllOfPlan {
    * @return type
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_TYPE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public TypeEnum getType() {
@@ -153,7 +153,7 @@ public class GetAccountAllOfPlan {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_TYPE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setType(@jakarta.annotation.Nonnull TypeEnum type) {
     this.type = type;
@@ -170,7 +170,7 @@ public class GetAccountAllOfPlan {
    * @return creditsType
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CREDITS_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_CREDITS_TYPE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public CreditsTypeEnum getCreditsType() {
@@ -178,7 +178,7 @@ public class GetAccountAllOfPlan {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CREDITS_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_CREDITS_TYPE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCreditsType(@jakarta.annotation.Nonnull CreditsTypeEnum creditsType) {
     this.creditsType = creditsType;
@@ -195,7 +195,7 @@ public class GetAccountAllOfPlan {
    * @return credits
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CREDITS)
+  @JsonProperty(value = JSON_PROPERTY_CREDITS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Float getCredits() {
@@ -203,7 +203,7 @@ public class GetAccountAllOfPlan {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CREDITS)
+  @JsonProperty(value = JSON_PROPERTY_CREDITS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCredits(@jakarta.annotation.Nonnull Float credits) {
     this.credits = credits;
@@ -220,7 +220,7 @@ public class GetAccountAllOfPlan {
    * @return startDate
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_START_DATE)
+  @JsonProperty(value = JSON_PROPERTY_START_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public LocalDate getStartDate() {
@@ -228,7 +228,7 @@ public class GetAccountAllOfPlan {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_START_DATE)
+  @JsonProperty(value = JSON_PROPERTY_START_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setStartDate(@jakarta.annotation.Nullable LocalDate startDate) {
     this.startDate = startDate;
@@ -245,7 +245,7 @@ public class GetAccountAllOfPlan {
    * @return endDate
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_END_DATE)
+  @JsonProperty(value = JSON_PROPERTY_END_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public LocalDate getEndDate() {
@@ -253,11 +253,12 @@ public class GetAccountAllOfPlan {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_END_DATE)
+  @JsonProperty(value = JSON_PROPERTY_END_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setEndDate(@jakarta.annotation.Nullable LocalDate endDate) {
     this.endDate = endDate;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -298,10 +299,7 @@ public class GetAccountAllOfPlan {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -339,7 +337,7 @@ public class GetAccountAllOfPlan {
     // add `type` to the URL query string
     if (getType() != null) {
       try {
-        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -349,7 +347,7 @@ public class GetAccountAllOfPlan {
     // add `creditsType` to the URL query string
     if (getCreditsType() != null) {
       try {
-        joiner.add(String.format("%screditsType%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreditsType()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%screditsType%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreditsType()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -359,7 +357,7 @@ public class GetAccountAllOfPlan {
     // add `credits` to the URL query string
     if (getCredits() != null) {
       try {
-        joiner.add(String.format("%scredits%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCredits()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scredits%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCredits()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -369,7 +367,7 @@ public class GetAccountAllOfPlan {
     // add `startDate` to the URL query string
     if (getStartDate() != null) {
       try {
-        joiner.add(String.format("%sstartDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStartDate()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sstartDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStartDate()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -379,7 +377,7 @@ public class GetAccountAllOfPlan {
     // add `endDate` to the URL query string
     if (getEndDate() != null) {
       try {
-        joiner.add(String.format("%sendDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEndDate()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sendDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEndDate()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

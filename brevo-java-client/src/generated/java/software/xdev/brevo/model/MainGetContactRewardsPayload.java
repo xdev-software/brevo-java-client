@@ -157,7 +157,7 @@ public class MainGetContactRewardsPayload {
    * @return contactId
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CONTACT_ID)
+  @JsonProperty(value = JSON_PROPERTY_CONTACT_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Integer getContactId() {
@@ -165,7 +165,7 @@ public class MainGetContactRewardsPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONTACT_ID)
+  @JsonProperty(value = JSON_PROPERTY_CONTACT_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setContactId(@jakarta.annotation.Nonnull Integer contactId) {
     this.contactId = contactId;
@@ -184,7 +184,7 @@ public class MainGetContactRewardsPayload {
    * @return limit
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LIMIT)
+  @JsonProperty(value = JSON_PROPERTY_LIMIT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getLimit() {
@@ -192,7 +192,7 @@ public class MainGetContactRewardsPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LIMIT)
+  @JsonProperty(value = JSON_PROPERTY_LIMIT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLimit(@jakarta.annotation.Nullable Integer limit) {
     this.limit = limit;
@@ -217,7 +217,7 @@ public class MainGetContactRewardsPayload {
    * @return metadata
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_METADATA)
+  @JsonProperty(value = JSON_PROPERTY_METADATA, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<MainFilter> getMetadata() {
@@ -225,7 +225,7 @@ public class MainGetContactRewardsPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_METADATA)
+  @JsonProperty(value = JSON_PROPERTY_METADATA, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setMetadata(@jakarta.annotation.Nullable List<MainFilter> metadata) {
     this.metadata = metadata;
@@ -243,7 +243,7 @@ public class MainGetContactRewardsPayload {
    * @return offset
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_OFFSET)
+  @JsonProperty(value = JSON_PROPERTY_OFFSET, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getOffset() {
@@ -251,7 +251,7 @@ public class MainGetContactRewardsPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_OFFSET)
+  @JsonProperty(value = JSON_PROPERTY_OFFSET, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setOffset(@jakarta.annotation.Nullable Integer offset) {
     this.offset = offset;
@@ -268,7 +268,7 @@ public class MainGetContactRewardsPayload {
    * @return rewardId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_REWARD_ID)
+  @JsonProperty(value = JSON_PROPERTY_REWARD_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getRewardId() {
@@ -276,7 +276,7 @@ public class MainGetContactRewardsPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REWARD_ID)
+  @JsonProperty(value = JSON_PROPERTY_REWARD_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRewardId(@jakarta.annotation.Nullable String rewardId) {
     this.rewardId = rewardId;
@@ -293,7 +293,7 @@ public class MainGetContactRewardsPayload {
    * @return sort
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SORT)
+  @JsonProperty(value = JSON_PROPERTY_SORT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public SortEnum getSort() {
@@ -301,7 +301,7 @@ public class MainGetContactRewardsPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SORT)
+  @JsonProperty(value = JSON_PROPERTY_SORT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSort(@jakarta.annotation.Nullable SortEnum sort) {
     this.sort = sort;
@@ -318,7 +318,7 @@ public class MainGetContactRewardsPayload {
    * @return sortField
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SORT_FIELD)
+  @JsonProperty(value = JSON_PROPERTY_SORT_FIELD, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public SortFieldEnum getSortField() {
@@ -326,11 +326,12 @@ public class MainGetContactRewardsPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SORT_FIELD)
+  @JsonProperty(value = JSON_PROPERTY_SORT_FIELD, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSortField(@jakarta.annotation.Nullable SortFieldEnum sortField) {
     this.sortField = sortField;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -375,10 +376,7 @@ public class MainGetContactRewardsPayload {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -416,7 +414,7 @@ public class MainGetContactRewardsPayload {
     // add `contactId` to the URL query string
     if (getContactId() != null) {
       try {
-        joiner.add(String.format("%scontactId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContactId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scontactId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContactId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -426,7 +424,7 @@ public class MainGetContactRewardsPayload {
     // add `limit` to the URL query string
     if (getLimit() != null) {
       try {
-        joiner.add(String.format("%slimit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLimit()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%slimit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLimit()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -437,8 +435,8 @@ public class MainGetContactRewardsPayload {
     if (getMetadata() != null) {
       for (int i = 0; i < getMetadata().size(); i++) {
         if (getMetadata().get(i) != null) {
-          joiner.add(getMetadata().get(i).toUrlQueryString(String.format("%smetadata%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getMetadata().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%smetadata%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -446,7 +444,7 @@ public class MainGetContactRewardsPayload {
     // add `offset` to the URL query string
     if (getOffset() != null) {
       try {
-        joiner.add(String.format("%soffset%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOffset()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%soffset%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOffset()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -456,7 +454,7 @@ public class MainGetContactRewardsPayload {
     // add `rewardId` to the URL query string
     if (getRewardId() != null) {
       try {
-        joiner.add(String.format("%srewardId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRewardId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%srewardId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRewardId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -466,7 +464,7 @@ public class MainGetContactRewardsPayload {
     // add `sort` to the URL query string
     if (getSort() != null) {
       try {
-        joiner.add(String.format("%ssort%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSort()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssort%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSort()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -476,7 +474,7 @@ public class MainGetContactRewardsPayload {
     // add `sortField` to the URL query string
     if (getSortField() != null) {
       try {
-        joiner.add(String.format("%ssortField%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSortField()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssortField%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSortField()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

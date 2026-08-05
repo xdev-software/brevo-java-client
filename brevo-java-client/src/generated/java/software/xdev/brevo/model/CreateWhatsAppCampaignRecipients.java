@@ -73,7 +73,7 @@ public class CreateWhatsAppCampaignRecipients {
    * @return excludedListIds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EXCLUDED_LIST_IDS)
+  @JsonProperty(value = JSON_PROPERTY_EXCLUDED_LIST_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<Long> getExcludedListIds() {
@@ -81,7 +81,7 @@ public class CreateWhatsAppCampaignRecipients {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EXCLUDED_LIST_IDS)
+  @JsonProperty(value = JSON_PROPERTY_EXCLUDED_LIST_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setExcludedListIds(@jakarta.annotation.Nullable List<Long> excludedListIds) {
     this.excludedListIds = excludedListIds;
@@ -106,7 +106,7 @@ public class CreateWhatsAppCampaignRecipients {
    * @return listIds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LIST_IDS)
+  @JsonProperty(value = JSON_PROPERTY_LIST_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<Long> getListIds() {
@@ -114,7 +114,7 @@ public class CreateWhatsAppCampaignRecipients {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LIST_IDS)
+  @JsonProperty(value = JSON_PROPERTY_LIST_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setListIds(@jakarta.annotation.Nullable List<Long> listIds) {
     this.listIds = listIds;
@@ -139,7 +139,7 @@ public class CreateWhatsAppCampaignRecipients {
    * @return segments
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SEGMENTS)
+  @JsonProperty(value = JSON_PROPERTY_SEGMENTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<Long> getSegments() {
@@ -147,11 +147,12 @@ public class CreateWhatsAppCampaignRecipients {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SEGMENTS)
+  @JsonProperty(value = JSON_PROPERTY_SEGMENTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSegments(@jakarta.annotation.Nullable List<Long> segments) {
     this.segments = segments;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -188,10 +189,7 @@ public class CreateWhatsAppCampaignRecipients {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -230,8 +228,8 @@ public class CreateWhatsAppCampaignRecipients {
     if (getExcludedListIds() != null) {
       for (int i = 0; i < getExcludedListIds().size(); i++) {
         try {
-          joiner.add(String.format("%sexcludedListIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sexcludedListIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getExcludedListIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -244,8 +242,8 @@ public class CreateWhatsAppCampaignRecipients {
     if (getListIds() != null) {
       for (int i = 0; i < getListIds().size(); i++) {
         try {
-          joiner.add(String.format("%slistIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%slistIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getListIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -258,8 +256,8 @@ public class CreateWhatsAppCampaignRecipients {
     if (getSegments() != null) {
       for (int i = 0; i < getSegments().size(); i++) {
         try {
-          joiner.add(String.format("%ssegments%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%ssegments%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getSegments().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported

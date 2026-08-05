@@ -66,7 +66,7 @@ public class MainRuleResultResponse {
    * @return action
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ACTION)
+  @JsonProperty(value = JSON_PROPERTY_ACTION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getAction() {
@@ -74,7 +74,7 @@ public class MainRuleResultResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ACTION)
+  @JsonProperty(value = JSON_PROPERTY_ACTION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setAction(@jakarta.annotation.Nullable String action) {
     this.action = action;
@@ -99,7 +99,7 @@ public class MainRuleResultResponse {
    * @return parameters
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PARAMETERS)
+  @JsonProperty(value = JSON_PROPERTY_PARAMETERS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<MainResultParameterResponse> getParameters() {
@@ -107,7 +107,7 @@ public class MainRuleResultResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PARAMETERS)
+  @JsonProperty(value = JSON_PROPERTY_PARAMETERS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setParameters(@jakarta.annotation.Nullable List<MainResultParameterResponse> parameters) {
     this.parameters = parameters;
@@ -124,7 +124,7 @@ public class MainRuleResultResponse {
    * @return service
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SERVICE)
+  @JsonProperty(value = JSON_PROPERTY_SERVICE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getService() {
@@ -132,11 +132,12 @@ public class MainRuleResultResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SERVICE)
+  @JsonProperty(value = JSON_PROPERTY_SERVICE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setService(@jakarta.annotation.Nullable String service) {
     this.service = service;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -173,10 +174,7 @@ public class MainRuleResultResponse {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -214,7 +212,7 @@ public class MainRuleResultResponse {
     // add `action` to the URL query string
     if (getAction() != null) {
       try {
-        joiner.add(String.format("%saction%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAction()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%saction%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAction()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -225,8 +223,8 @@ public class MainRuleResultResponse {
     if (getParameters() != null) {
       for (int i = 0; i < getParameters().size(); i++) {
         if (getParameters().get(i) != null) {
-          joiner.add(getParameters().get(i).toUrlQueryString(String.format("%sparameters%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getParameters().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sparameters%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -234,7 +232,7 @@ public class MainRuleResultResponse {
     // add `service` to the URL query string
     if (getService() != null) {
       try {
-        joiner.add(String.format("%sservice%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getService()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sservice%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getService()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

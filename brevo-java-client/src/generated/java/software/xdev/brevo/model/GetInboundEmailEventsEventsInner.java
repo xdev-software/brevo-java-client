@@ -69,7 +69,7 @@ public class GetInboundEmailEventsEventsInner {
    * @return uuid
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_UUID)
+  @JsonProperty(value = JSON_PROPERTY_UUID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public UUID getUuid() {
@@ -77,7 +77,7 @@ public class GetInboundEmailEventsEventsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UUID)
+  @JsonProperty(value = JSON_PROPERTY_UUID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setUuid(@jakarta.annotation.Nonnull UUID uuid) {
     this.uuid = uuid;
@@ -94,7 +94,7 @@ public class GetInboundEmailEventsEventsInner {
    * @return date
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DATE)
+  @JsonProperty(value = JSON_PROPERTY_DATE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public OffsetDateTime getDate() {
@@ -102,7 +102,7 @@ public class GetInboundEmailEventsEventsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DATE)
+  @JsonProperty(value = JSON_PROPERTY_DATE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDate(@jakarta.annotation.Nonnull OffsetDateTime date) {
     this.date = date;
@@ -119,7 +119,7 @@ public class GetInboundEmailEventsEventsInner {
    * @return sender
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SENDER)
+  @JsonProperty(value = JSON_PROPERTY_SENDER, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getSender() {
@@ -127,7 +127,7 @@ public class GetInboundEmailEventsEventsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SENDER)
+  @JsonProperty(value = JSON_PROPERTY_SENDER, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSender(@jakarta.annotation.Nonnull String sender) {
     this.sender = sender;
@@ -144,7 +144,7 @@ public class GetInboundEmailEventsEventsInner {
    * @return recipient
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_RECIPIENT)
+  @JsonProperty(value = JSON_PROPERTY_RECIPIENT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getRecipient() {
@@ -152,11 +152,12 @@ public class GetInboundEmailEventsEventsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_RECIPIENT)
+  @JsonProperty(value = JSON_PROPERTY_RECIPIENT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setRecipient(@jakarta.annotation.Nonnull String recipient) {
     this.recipient = recipient;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -195,10 +196,7 @@ public class GetInboundEmailEventsEventsInner {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -236,7 +234,7 @@ public class GetInboundEmailEventsEventsInner {
     // add `uuid` to the URL query string
     if (getUuid() != null) {
       try {
-        joiner.add(String.format("%suuid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUuid()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%suuid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUuid()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -246,7 +244,7 @@ public class GetInboundEmailEventsEventsInner {
     // add `date` to the URL query string
     if (getDate() != null) {
       try {
-        joiner.add(String.format("%sdate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDate()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDate()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -256,7 +254,7 @@ public class GetInboundEmailEventsEventsInner {
     // add `sender` to the URL query string
     if (getSender() != null) {
       try {
-        joiner.add(String.format("%ssender%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSender()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssender%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSender()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -266,7 +264,7 @@ public class GetInboundEmailEventsEventsInner {
     // add `recipient` to the URL query string
     if (getRecipient() != null) {
       try {
-        joiner.add(String.format("%srecipient%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRecipient()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%srecipient%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRecipient()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

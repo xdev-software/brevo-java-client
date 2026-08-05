@@ -18,7 +18,6 @@ import java.util.Arrays;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -69,7 +68,7 @@ public class Company {
    * @return id
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getId() {
@@ -77,7 +76,7 @@ public class Company {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setId(@jakarta.annotation.Nullable String id) {
     this.id = id;
@@ -94,7 +93,7 @@ public class Company {
    * @return attributes
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
+  @JsonProperty(value = JSON_PROPERTY_ATTRIBUTES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Object getAttributes() {
@@ -102,7 +101,7 @@ public class Company {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
+  @JsonProperty(value = JSON_PROPERTY_ATTRIBUTES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setAttributes(@jakarta.annotation.Nullable Object attributes) {
     this.attributes = attributes;
@@ -127,7 +126,7 @@ public class Company {
    * @return linkedContactsIds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LINKED_CONTACTS_IDS)
+  @JsonProperty(value = JSON_PROPERTY_LINKED_CONTACTS_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<Integer> getLinkedContactsIds() {
@@ -135,7 +134,7 @@ public class Company {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LINKED_CONTACTS_IDS)
+  @JsonProperty(value = JSON_PROPERTY_LINKED_CONTACTS_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLinkedContactsIds(@jakarta.annotation.Nullable List<Integer> linkedContactsIds) {
     this.linkedContactsIds = linkedContactsIds;
@@ -160,7 +159,7 @@ public class Company {
    * @return linkedDealsIds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LINKED_DEALS_IDS)
+  @JsonProperty(value = JSON_PROPERTY_LINKED_DEALS_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getLinkedDealsIds() {
@@ -168,11 +167,12 @@ public class Company {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LINKED_DEALS_IDS)
+  @JsonProperty(value = JSON_PROPERTY_LINKED_DEALS_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLinkedDealsIds(@jakarta.annotation.Nullable List<String> linkedDealsIds) {
     this.linkedDealsIds = linkedDealsIds;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -211,10 +211,7 @@ public class Company {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -252,7 +249,7 @@ public class Company {
     // add `id` to the URL query string
     if (getId() != null) {
       try {
-        joiner.add(String.format("%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -262,7 +259,7 @@ public class Company {
     // add `attributes` to the URL query string
     if (getAttributes() != null) {
       try {
-        joiner.add(String.format("%sattributes%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAttributes()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sattributes%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAttributes()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -273,8 +270,8 @@ public class Company {
     if (getLinkedContactsIds() != null) {
       for (int i = 0; i < getLinkedContactsIds().size(); i++) {
         try {
-          joiner.add(String.format("%slinkedContactsIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%slinkedContactsIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getLinkedContactsIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -287,8 +284,8 @@ public class Company {
     if (getLinkedDealsIds() != null) {
       for (int i = 0; i < getLinkedDealsIds().size(); i++) {
         try {
-          joiner.add(String.format("%slinkedDealsIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%slinkedDealsIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getLinkedDealsIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported

@@ -380,7 +380,7 @@ public class UpdateBalanceDefinitionPayload {
    * @return balanceAvailabilityDurationModifier
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_BALANCE_AVAILABILITY_DURATION_MODIFIER)
+  @JsonProperty(value = JSON_PROPERTY_BALANCE_AVAILABILITY_DURATION_MODIFIER, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public BalanceAvailabilityDurationModifierEnum getBalanceAvailabilityDurationModifier() {
@@ -388,7 +388,7 @@ public class UpdateBalanceDefinitionPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BALANCE_AVAILABILITY_DURATION_MODIFIER)
+  @JsonProperty(value = JSON_PROPERTY_BALANCE_AVAILABILITY_DURATION_MODIFIER, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setBalanceAvailabilityDurationModifier(@jakarta.annotation.Nullable BalanceAvailabilityDurationModifierEnum balanceAvailabilityDurationModifier) {
     this.balanceAvailabilityDurationModifier = balanceAvailabilityDurationModifier;
@@ -405,7 +405,7 @@ public class UpdateBalanceDefinitionPayload {
    * @return balanceAvailabilityDurationUnit
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_BALANCE_AVAILABILITY_DURATION_UNIT)
+  @JsonProperty(value = JSON_PROPERTY_BALANCE_AVAILABILITY_DURATION_UNIT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public BalanceAvailabilityDurationUnitEnum getBalanceAvailabilityDurationUnit() {
@@ -413,7 +413,7 @@ public class UpdateBalanceDefinitionPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BALANCE_AVAILABILITY_DURATION_UNIT)
+  @JsonProperty(value = JSON_PROPERTY_BALANCE_AVAILABILITY_DURATION_UNIT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setBalanceAvailabilityDurationUnit(@jakarta.annotation.Nullable BalanceAvailabilityDurationUnitEnum balanceAvailabilityDurationUnit) {
     this.balanceAvailabilityDurationUnit = balanceAvailabilityDurationUnit;
@@ -430,7 +430,7 @@ public class UpdateBalanceDefinitionPayload {
    * @return balanceAvailabilityDurationValue
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_BALANCE_AVAILABILITY_DURATION_VALUE)
+  @JsonProperty(value = JSON_PROPERTY_BALANCE_AVAILABILITY_DURATION_VALUE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getBalanceAvailabilityDurationValue() {
@@ -438,7 +438,7 @@ public class UpdateBalanceDefinitionPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BALANCE_AVAILABILITY_DURATION_VALUE)
+  @JsonProperty(value = JSON_PROPERTY_BALANCE_AVAILABILITY_DURATION_VALUE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setBalanceAvailabilityDurationValue(@jakarta.annotation.Nullable Integer balanceAvailabilityDurationValue) {
     this.balanceAvailabilityDurationValue = balanceAvailabilityDurationValue;
@@ -455,7 +455,7 @@ public class UpdateBalanceDefinitionPayload {
    * @return balanceExpirationDate
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_BALANCE_EXPIRATION_DATE)
+  @JsonProperty(value = JSON_PROPERTY_BALANCE_EXPIRATION_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getBalanceExpirationDate() {
@@ -463,7 +463,7 @@ public class UpdateBalanceDefinitionPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BALANCE_EXPIRATION_DATE)
+  @JsonProperty(value = JSON_PROPERTY_BALANCE_EXPIRATION_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setBalanceExpirationDate(@jakarta.annotation.Nullable String balanceExpirationDate) {
     this.balanceExpirationDate = balanceExpirationDate;
@@ -480,7 +480,7 @@ public class UpdateBalanceDefinitionPayload {
    * @return balanceOptionAmountOvertakingStrategy
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_BALANCE_OPTION_AMOUNT_OVERTAKING_STRATEGY)
+  @JsonProperty(value = JSON_PROPERTY_BALANCE_OPTION_AMOUNT_OVERTAKING_STRATEGY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public BalanceOptionAmountOvertakingStrategyEnum getBalanceOptionAmountOvertakingStrategy() {
@@ -488,7 +488,7 @@ public class UpdateBalanceDefinitionPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BALANCE_OPTION_AMOUNT_OVERTAKING_STRATEGY)
+  @JsonProperty(value = JSON_PROPERTY_BALANCE_OPTION_AMOUNT_OVERTAKING_STRATEGY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setBalanceOptionAmountOvertakingStrategy(@jakarta.annotation.Nullable BalanceOptionAmountOvertakingStrategyEnum balanceOptionAmountOvertakingStrategy) {
     this.balanceOptionAmountOvertakingStrategy = balanceOptionAmountOvertakingStrategy;
@@ -505,7 +505,7 @@ public class UpdateBalanceDefinitionPayload {
    * @return balanceOptionCreditRounding
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_BALANCE_OPTION_CREDIT_ROUNDING)
+  @JsonProperty(value = JSON_PROPERTY_BALANCE_OPTION_CREDIT_ROUNDING, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public BalanceOptionCreditRoundingEnum getBalanceOptionCreditRounding() {
@@ -513,7 +513,7 @@ public class UpdateBalanceDefinitionPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BALANCE_OPTION_CREDIT_ROUNDING)
+  @JsonProperty(value = JSON_PROPERTY_BALANCE_OPTION_CREDIT_ROUNDING, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setBalanceOptionCreditRounding(@jakarta.annotation.Nullable BalanceOptionCreditRoundingEnum balanceOptionCreditRounding) {
     this.balanceOptionCreditRounding = balanceOptionCreditRounding;
@@ -530,7 +530,7 @@ public class UpdateBalanceDefinitionPayload {
    * @return balanceOptionDebitRounding
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_BALANCE_OPTION_DEBIT_ROUNDING)
+  @JsonProperty(value = JSON_PROPERTY_BALANCE_OPTION_DEBIT_ROUNDING, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public BalanceOptionDebitRoundingEnum getBalanceOptionDebitRounding() {
@@ -538,7 +538,7 @@ public class UpdateBalanceDefinitionPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BALANCE_OPTION_DEBIT_ROUNDING)
+  @JsonProperty(value = JSON_PROPERTY_BALANCE_OPTION_DEBIT_ROUNDING, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setBalanceOptionDebitRounding(@jakarta.annotation.Nullable BalanceOptionDebitRoundingEnum balanceOptionDebitRounding) {
     this.balanceOptionDebitRounding = balanceOptionDebitRounding;
@@ -555,7 +555,7 @@ public class UpdateBalanceDefinitionPayload {
    * @return description
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DESCRIPTION)
+  @JsonProperty(value = JSON_PROPERTY_DESCRIPTION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getDescription() {
@@ -563,7 +563,7 @@ public class UpdateBalanceDefinitionPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DESCRIPTION)
+  @JsonProperty(value = JSON_PROPERTY_DESCRIPTION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDescription(@jakarta.annotation.Nullable String description) {
     this.description = description;
@@ -580,7 +580,7 @@ public class UpdateBalanceDefinitionPayload {
    * @return imageRef
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_IMAGE_REF)
+  @JsonProperty(value = JSON_PROPERTY_IMAGE_REF, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getImageRef() {
@@ -588,7 +588,7 @@ public class UpdateBalanceDefinitionPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IMAGE_REF)
+  @JsonProperty(value = JSON_PROPERTY_IMAGE_REF, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setImageRef(@jakarta.annotation.Nullable String imageRef) {
     this.imageRef = imageRef;
@@ -605,7 +605,7 @@ public class UpdateBalanceDefinitionPayload {
    * @return maxAmount
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_MAX_AMOUNT)
+  @JsonProperty(value = JSON_PROPERTY_MAX_AMOUNT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public BigDecimal getMaxAmount() {
@@ -613,7 +613,7 @@ public class UpdateBalanceDefinitionPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MAX_AMOUNT)
+  @JsonProperty(value = JSON_PROPERTY_MAX_AMOUNT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setMaxAmount(@jakarta.annotation.Nullable BigDecimal maxAmount) {
     this.maxAmount = maxAmount;
@@ -630,7 +630,7 @@ public class UpdateBalanceDefinitionPayload {
    * @return maxCreditAmountLimit
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_MAX_CREDIT_AMOUNT_LIMIT)
+  @JsonProperty(value = JSON_PROPERTY_MAX_CREDIT_AMOUNT_LIMIT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public BigDecimal getMaxCreditAmountLimit() {
@@ -638,7 +638,7 @@ public class UpdateBalanceDefinitionPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MAX_CREDIT_AMOUNT_LIMIT)
+  @JsonProperty(value = JSON_PROPERTY_MAX_CREDIT_AMOUNT_LIMIT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setMaxCreditAmountLimit(@jakarta.annotation.Nullable BigDecimal maxCreditAmountLimit) {
     this.maxCreditAmountLimit = maxCreditAmountLimit;
@@ -655,7 +655,7 @@ public class UpdateBalanceDefinitionPayload {
    * @return maxDebitAmountLimit
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_MAX_DEBIT_AMOUNT_LIMIT)
+  @JsonProperty(value = JSON_PROPERTY_MAX_DEBIT_AMOUNT_LIMIT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public BigDecimal getMaxDebitAmountLimit() {
@@ -663,7 +663,7 @@ public class UpdateBalanceDefinitionPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MAX_DEBIT_AMOUNT_LIMIT)
+  @JsonProperty(value = JSON_PROPERTY_MAX_DEBIT_AMOUNT_LIMIT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setMaxDebitAmountLimit(@jakarta.annotation.Nullable BigDecimal maxDebitAmountLimit) {
     this.maxDebitAmountLimit = maxDebitAmountLimit;
@@ -688,7 +688,7 @@ public class UpdateBalanceDefinitionPayload {
    * @return meta
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_META)
+  @JsonProperty(value = JSON_PROPERTY_META, required = false)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
 
   public Map<String, Object> getMeta() {
@@ -696,7 +696,7 @@ public class UpdateBalanceDefinitionPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_META)
+  @JsonProperty(value = JSON_PROPERTY_META, required = false)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
   public void setMeta(@jakarta.annotation.Nullable Map<String, Object> meta) {
     this.meta = meta;
@@ -713,7 +713,7 @@ public class UpdateBalanceDefinitionPayload {
    * @return minAmount
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_MIN_AMOUNT)
+  @JsonProperty(value = JSON_PROPERTY_MIN_AMOUNT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public BigDecimal getMinAmount() {
@@ -721,7 +721,7 @@ public class UpdateBalanceDefinitionPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MIN_AMOUNT)
+  @JsonProperty(value = JSON_PROPERTY_MIN_AMOUNT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setMinAmount(@jakarta.annotation.Nullable BigDecimal minAmount) {
     this.minAmount = minAmount;
@@ -738,7 +738,7 @@ public class UpdateBalanceDefinitionPayload {
    * @return name
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getName() {
@@ -746,7 +746,7 @@ public class UpdateBalanceDefinitionPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
@@ -763,7 +763,7 @@ public class UpdateBalanceDefinitionPayload {
    * @return unit
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_UNIT)
+  @JsonProperty(value = JSON_PROPERTY_UNIT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public UnitEnum getUnit() {
@@ -771,11 +771,12 @@ public class UpdateBalanceDefinitionPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UNIT)
+  @JsonProperty(value = JSON_PROPERTY_UNIT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setUnit(@jakarta.annotation.Nonnull UnitEnum unit) {
     this.unit = unit;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -838,10 +839,7 @@ public class UpdateBalanceDefinitionPayload {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -879,7 +877,7 @@ public class UpdateBalanceDefinitionPayload {
     // add `balanceAvailabilityDurationModifier` to the URL query string
     if (getBalanceAvailabilityDurationModifier() != null) {
       try {
-        joiner.add(String.format("%sbalanceAvailabilityDurationModifier%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBalanceAvailabilityDurationModifier()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sbalanceAvailabilityDurationModifier%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBalanceAvailabilityDurationModifier()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -889,7 +887,7 @@ public class UpdateBalanceDefinitionPayload {
     // add `balanceAvailabilityDurationUnit` to the URL query string
     if (getBalanceAvailabilityDurationUnit() != null) {
       try {
-        joiner.add(String.format("%sbalanceAvailabilityDurationUnit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBalanceAvailabilityDurationUnit()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sbalanceAvailabilityDurationUnit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBalanceAvailabilityDurationUnit()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -899,7 +897,7 @@ public class UpdateBalanceDefinitionPayload {
     // add `balanceAvailabilityDurationValue` to the URL query string
     if (getBalanceAvailabilityDurationValue() != null) {
       try {
-        joiner.add(String.format("%sbalanceAvailabilityDurationValue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBalanceAvailabilityDurationValue()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sbalanceAvailabilityDurationValue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBalanceAvailabilityDurationValue()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -909,7 +907,7 @@ public class UpdateBalanceDefinitionPayload {
     // add `balanceExpirationDate` to the URL query string
     if (getBalanceExpirationDate() != null) {
       try {
-        joiner.add(String.format("%sbalanceExpirationDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBalanceExpirationDate()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sbalanceExpirationDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBalanceExpirationDate()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -919,7 +917,7 @@ public class UpdateBalanceDefinitionPayload {
     // add `balanceOptionAmountOvertakingStrategy` to the URL query string
     if (getBalanceOptionAmountOvertakingStrategy() != null) {
       try {
-        joiner.add(String.format("%sbalanceOptionAmountOvertakingStrategy%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBalanceOptionAmountOvertakingStrategy()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sbalanceOptionAmountOvertakingStrategy%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBalanceOptionAmountOvertakingStrategy()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -929,7 +927,7 @@ public class UpdateBalanceDefinitionPayload {
     // add `balanceOptionCreditRounding` to the URL query string
     if (getBalanceOptionCreditRounding() != null) {
       try {
-        joiner.add(String.format("%sbalanceOptionCreditRounding%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBalanceOptionCreditRounding()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sbalanceOptionCreditRounding%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBalanceOptionCreditRounding()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -939,7 +937,7 @@ public class UpdateBalanceDefinitionPayload {
     // add `balanceOptionDebitRounding` to the URL query string
     if (getBalanceOptionDebitRounding() != null) {
       try {
-        joiner.add(String.format("%sbalanceOptionDebitRounding%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBalanceOptionDebitRounding()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sbalanceOptionDebitRounding%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBalanceOptionDebitRounding()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -949,7 +947,7 @@ public class UpdateBalanceDefinitionPayload {
     // add `description` to the URL query string
     if (getDescription() != null) {
       try {
-        joiner.add(String.format("%sdescription%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDescription()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdescription%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDescription()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -959,7 +957,7 @@ public class UpdateBalanceDefinitionPayload {
     // add `imageRef` to the URL query string
     if (getImageRef() != null) {
       try {
-        joiner.add(String.format("%simageRef%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getImageRef()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%simageRef%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getImageRef()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -969,7 +967,7 @@ public class UpdateBalanceDefinitionPayload {
     // add `maxAmount` to the URL query string
     if (getMaxAmount() != null) {
       try {
-        joiner.add(String.format("%smaxAmount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMaxAmount()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%smaxAmount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMaxAmount()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -979,7 +977,7 @@ public class UpdateBalanceDefinitionPayload {
     // add `maxCreditAmountLimit` to the URL query string
     if (getMaxCreditAmountLimit() != null) {
       try {
-        joiner.add(String.format("%smaxCreditAmountLimit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMaxCreditAmountLimit()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%smaxCreditAmountLimit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMaxCreditAmountLimit()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -989,7 +987,7 @@ public class UpdateBalanceDefinitionPayload {
     // add `maxDebitAmountLimit` to the URL query string
     if (getMaxDebitAmountLimit() != null) {
       try {
-        joiner.add(String.format("%smaxDebitAmountLimit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMaxDebitAmountLimit()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%smaxDebitAmountLimit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMaxDebitAmountLimit()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1000,8 +998,8 @@ public class UpdateBalanceDefinitionPayload {
     if (getMeta() != null) {
       for (String _key : getMeta().keySet()) {
         try {
-          joiner.add(String.format("%smeta%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%smeta%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, _key, containerSuffix),
               getMeta().get(_key), URLEncoder.encode(String.valueOf(getMeta().get(_key)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -1013,7 +1011,7 @@ public class UpdateBalanceDefinitionPayload {
     // add `minAmount` to the URL query string
     if (getMinAmount() != null) {
       try {
-        joiner.add(String.format("%sminAmount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMinAmount()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sminAmount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMinAmount()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1023,7 +1021,7 @@ public class UpdateBalanceDefinitionPayload {
     // add `name` to the URL query string
     if (getName() != null) {
       try {
-        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1033,7 +1031,7 @@ public class UpdateBalanceDefinitionPayload {
     // add `unit` to the URL query string
     if (getUnit() != null) {
       try {
-        joiner.add(String.format("%sunit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUnit()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sunit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUnit()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

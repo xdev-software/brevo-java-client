@@ -68,7 +68,7 @@ public class UpdateBatchContactsModel {
    * @return successIds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SUCCESS_IDS)
+  @JsonProperty(value = JSON_PROPERTY_SUCCESS_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<Long> getSuccessIds() {
@@ -76,7 +76,7 @@ public class UpdateBatchContactsModel {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SUCCESS_IDS)
+  @JsonProperty(value = JSON_PROPERTY_SUCCESS_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSuccessIds(@jakarta.annotation.Nullable List<Long> successIds) {
     this.successIds = successIds;
@@ -101,7 +101,7 @@ public class UpdateBatchContactsModel {
    * @return failureIds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_FAILURE_IDS)
+  @JsonProperty(value = JSON_PROPERTY_FAILURE_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<Long> getFailureIds() {
@@ -109,11 +109,12 @@ public class UpdateBatchContactsModel {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_FAILURE_IDS)
+  @JsonProperty(value = JSON_PROPERTY_FAILURE_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setFailureIds(@jakarta.annotation.Nullable List<Long> failureIds) {
     this.failureIds = failureIds;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -148,10 +149,7 @@ public class UpdateBatchContactsModel {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -190,8 +188,8 @@ public class UpdateBatchContactsModel {
     if (getSuccessIds() != null) {
       for (int i = 0; i < getSuccessIds().size(); i++) {
         try {
-          joiner.add(String.format("%ssuccessIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%ssuccessIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getSuccessIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -204,8 +202,8 @@ public class UpdateBatchContactsModel {
     if (getFailureIds() != null) {
       for (int i = 0; i < getFailureIds().size(); i++) {
         try {
-          joiner.add(String.format("%sfailureIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sfailureIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getFailureIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported

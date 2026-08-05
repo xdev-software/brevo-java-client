@@ -102,7 +102,7 @@ public class GetScheduledEmailByBatchIdBatchesInner {
    * @return scheduledAt
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
+  @JsonProperty(value = JSON_PROPERTY_SCHEDULED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public OffsetDateTime getScheduledAt() {
@@ -110,7 +110,7 @@ public class GetScheduledEmailByBatchIdBatchesInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
+  @JsonProperty(value = JSON_PROPERTY_SCHEDULED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setScheduledAt(@jakarta.annotation.Nonnull OffsetDateTime scheduledAt) {
     this.scheduledAt = scheduledAt;
@@ -127,7 +127,7 @@ public class GetScheduledEmailByBatchIdBatchesInner {
    * @return createdAt
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public OffsetDateTime getCreatedAt() {
@@ -135,7 +135,7 @@ public class GetScheduledEmailByBatchIdBatchesInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCreatedAt(@jakarta.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
@@ -152,7 +152,7 @@ public class GetScheduledEmailByBatchIdBatchesInner {
    * @return status
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_STATUS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public StatusEnum getStatus() {
@@ -160,11 +160,12 @@ public class GetScheduledEmailByBatchIdBatchesInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_STATUS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setStatus(@jakarta.annotation.Nonnull StatusEnum status) {
     this.status = status;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -201,10 +202,7 @@ public class GetScheduledEmailByBatchIdBatchesInner {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -242,7 +240,7 @@ public class GetScheduledEmailByBatchIdBatchesInner {
     // add `scheduledAt` to the URL query string
     if (getScheduledAt() != null) {
       try {
-        joiner.add(String.format("%sscheduledAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getScheduledAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sscheduledAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getScheduledAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -252,7 +250,7 @@ public class GetScheduledEmailByBatchIdBatchesInner {
     // add `createdAt` to the URL query string
     if (getCreatedAt() != null) {
       try {
-        joiner.add(String.format("%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -262,7 +260,7 @@ public class GetScheduledEmailByBatchIdBatchesInner {
     // add `status` to the URL query string
     if (getStatus() != null) {
       try {
-        joiner.add(String.format("%sstatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatus()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sstatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatus()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

@@ -102,7 +102,7 @@ public class UpdateBatchContactsContactsInner {
    * @return email
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getEmail() {
@@ -110,7 +110,7 @@ public class UpdateBatchContactsContactsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setEmail(@jakarta.annotation.Nullable String email) {
     this.email = email;
@@ -127,7 +127,7 @@ public class UpdateBatchContactsContactsInner {
    * @return id
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getId() {
@@ -135,7 +135,7 @@ public class UpdateBatchContactsContactsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setId(@jakarta.annotation.Nullable Long id) {
     this.id = id;
@@ -152,7 +152,7 @@ public class UpdateBatchContactsContactsInner {
    * @return sms
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SMS)
+  @JsonProperty(value = JSON_PROPERTY_SMS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getSms() {
@@ -160,7 +160,7 @@ public class UpdateBatchContactsContactsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SMS)
+  @JsonProperty(value = JSON_PROPERTY_SMS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSms(@jakarta.annotation.Nullable String sms) {
     this.sms = sms;
@@ -177,7 +177,7 @@ public class UpdateBatchContactsContactsInner {
    * @return extId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EXT_ID)
+  @JsonProperty(value = JSON_PROPERTY_EXT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getExtId() {
@@ -185,7 +185,7 @@ public class UpdateBatchContactsContactsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EXT_ID)
+  @JsonProperty(value = JSON_PROPERTY_EXT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setExtId(@jakarta.annotation.Nullable String extId) {
     this.extId = extId;
@@ -210,7 +210,7 @@ public class UpdateBatchContactsContactsInner {
    * @return attributes
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
+  @JsonProperty(value = JSON_PROPERTY_ATTRIBUTES, required = false)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
 
   public Map<String, Object> getAttributes() {
@@ -218,7 +218,7 @@ public class UpdateBatchContactsContactsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
+  @JsonProperty(value = JSON_PROPERTY_ATTRIBUTES, required = false)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
   public void setAttributes(@jakarta.annotation.Nullable Map<String, Object> attributes) {
     this.attributes = attributes;
@@ -235,7 +235,7 @@ public class UpdateBatchContactsContactsInner {
    * @return emailBlacklisted
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EMAIL_BLACKLISTED)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL_BLACKLISTED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getEmailBlacklisted() {
@@ -243,7 +243,7 @@ public class UpdateBatchContactsContactsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EMAIL_BLACKLISTED)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL_BLACKLISTED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setEmailBlacklisted(@jakarta.annotation.Nullable Boolean emailBlacklisted) {
     this.emailBlacklisted = emailBlacklisted;
@@ -260,7 +260,7 @@ public class UpdateBatchContactsContactsInner {
    * @return smsBlacklisted
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SMS_BLACKLISTED)
+  @JsonProperty(value = JSON_PROPERTY_SMS_BLACKLISTED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getSmsBlacklisted() {
@@ -268,7 +268,7 @@ public class UpdateBatchContactsContactsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SMS_BLACKLISTED)
+  @JsonProperty(value = JSON_PROPERTY_SMS_BLACKLISTED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSmsBlacklisted(@jakarta.annotation.Nullable Boolean smsBlacklisted) {
     this.smsBlacklisted = smsBlacklisted;
@@ -293,7 +293,7 @@ public class UpdateBatchContactsContactsInner {
    * @return listIds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LIST_IDS)
+  @JsonProperty(value = JSON_PROPERTY_LIST_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<Long> getListIds() {
@@ -301,7 +301,7 @@ public class UpdateBatchContactsContactsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LIST_IDS)
+  @JsonProperty(value = JSON_PROPERTY_LIST_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setListIds(@jakarta.annotation.Nullable List<Long> listIds) {
     this.listIds = listIds;
@@ -326,7 +326,7 @@ public class UpdateBatchContactsContactsInner {
    * @return unlinkListIds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UNLINK_LIST_IDS)
+  @JsonProperty(value = JSON_PROPERTY_UNLINK_LIST_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<Long> getUnlinkListIds() {
@@ -334,7 +334,7 @@ public class UpdateBatchContactsContactsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UNLINK_LIST_IDS)
+  @JsonProperty(value = JSON_PROPERTY_UNLINK_LIST_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUnlinkListIds(@jakarta.annotation.Nullable List<Long> unlinkListIds) {
     this.unlinkListIds = unlinkListIds;
@@ -359,7 +359,7 @@ public class UpdateBatchContactsContactsInner {
    * @return smtpBlacklistSender
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SMTP_BLACKLIST_SENDER)
+  @JsonProperty(value = JSON_PROPERTY_SMTP_BLACKLIST_SENDER, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getSmtpBlacklistSender() {
@@ -367,11 +367,12 @@ public class UpdateBatchContactsContactsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SMTP_BLACKLIST_SENDER)
+  @JsonProperty(value = JSON_PROPERTY_SMTP_BLACKLIST_SENDER, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSmtpBlacklistSender(@jakarta.annotation.Nullable List<String> smtpBlacklistSender) {
     this.smtpBlacklistSender = smtpBlacklistSender;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -422,10 +423,7 @@ public class UpdateBatchContactsContactsInner {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -463,7 +461,7 @@ public class UpdateBatchContactsContactsInner {
     // add `email` to the URL query string
     if (getEmail() != null) {
       try {
-        joiner.add(String.format("%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -473,7 +471,7 @@ public class UpdateBatchContactsContactsInner {
     // add `id` to the URL query string
     if (getId() != null) {
       try {
-        joiner.add(String.format("%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -483,7 +481,7 @@ public class UpdateBatchContactsContactsInner {
     // add `sms` to the URL query string
     if (getSms() != null) {
       try {
-        joiner.add(String.format("%ssms%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSms()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssms%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSms()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -493,7 +491,7 @@ public class UpdateBatchContactsContactsInner {
     // add `ext_id` to the URL query string
     if (getExtId() != null) {
       try {
-        joiner.add(String.format("%sext_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExtId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sext_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExtId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -504,8 +502,8 @@ public class UpdateBatchContactsContactsInner {
     if (getAttributes() != null) {
       for (String _key : getAttributes().keySet()) {
         try {
-          joiner.add(String.format("%sattributes%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sattributes%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, _key, containerSuffix),
               getAttributes().get(_key), URLEncoder.encode(String.valueOf(getAttributes().get(_key)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -517,7 +515,7 @@ public class UpdateBatchContactsContactsInner {
     // add `emailBlacklisted` to the URL query string
     if (getEmailBlacklisted() != null) {
       try {
-        joiner.add(String.format("%semailBlacklisted%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmailBlacklisted()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%semailBlacklisted%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmailBlacklisted()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -527,7 +525,7 @@ public class UpdateBatchContactsContactsInner {
     // add `smsBlacklisted` to the URL query string
     if (getSmsBlacklisted() != null) {
       try {
-        joiner.add(String.format("%ssmsBlacklisted%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSmsBlacklisted()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssmsBlacklisted%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSmsBlacklisted()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -538,8 +536,8 @@ public class UpdateBatchContactsContactsInner {
     if (getListIds() != null) {
       for (int i = 0; i < getListIds().size(); i++) {
         try {
-          joiner.add(String.format("%slistIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%slistIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getListIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -552,8 +550,8 @@ public class UpdateBatchContactsContactsInner {
     if (getUnlinkListIds() != null) {
       for (int i = 0; i < getUnlinkListIds().size(); i++) {
         try {
-          joiner.add(String.format("%sunlinkListIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sunlinkListIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getUnlinkListIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -566,8 +564,8 @@ public class UpdateBatchContactsContactsInner {
     if (getSmtpBlacklistSender() != null) {
       for (int i = 0; i < getSmtpBlacklistSender().size(); i++) {
         try {
-          joiner.add(String.format("%ssmtpBlacklistSender%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%ssmtpBlacklistSender%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getSmtpBlacklistSender().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported

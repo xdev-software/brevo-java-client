@@ -57,7 +57,7 @@ public class UpsertrecordsRequestRecordsInnerOneOf1Identifiers {
    * @return extId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EXT_ID)
+  @JsonProperty(value = JSON_PROPERTY_EXT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getExtId() {
@@ -65,7 +65,7 @@ public class UpsertrecordsRequestRecordsInnerOneOf1Identifiers {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EXT_ID)
+  @JsonProperty(value = JSON_PROPERTY_EXT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setExtId(@jakarta.annotation.Nullable String extId) {
     this.extId = extId;
@@ -82,7 +82,7 @@ public class UpsertrecordsRequestRecordsInnerOneOf1Identifiers {
    * @return id
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getId() {
@@ -90,11 +90,12 @@ public class UpsertrecordsRequestRecordsInnerOneOf1Identifiers {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setId(@jakarta.annotation.Nullable Integer id) {
     this.id = id;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -129,10 +130,7 @@ public class UpsertrecordsRequestRecordsInnerOneOf1Identifiers {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -170,7 +168,7 @@ public class UpsertrecordsRequestRecordsInnerOneOf1Identifiers {
     // add `ext_id` to the URL query string
     if (getExtId() != null) {
       try {
-        joiner.add(String.format("%sext_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExtId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sext_id%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExtId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -180,7 +178,7 @@ public class UpsertrecordsRequestRecordsInnerOneOf1Identifiers {
     // add `id` to the URL query string
     if (getId() != null) {
       try {
-        joiner.add(String.format("%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

@@ -68,7 +68,7 @@ public class GetDomainConfigurationModel {
    * @return domain
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DOMAIN)
+  @JsonProperty(value = JSON_PROPERTY_DOMAIN, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getDomain() {
@@ -76,7 +76,7 @@ public class GetDomainConfigurationModel {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DOMAIN)
+  @JsonProperty(value = JSON_PROPERTY_DOMAIN, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDomain(@jakarta.annotation.Nonnull String domain) {
     this.domain = domain;
@@ -93,7 +93,7 @@ public class GetDomainConfigurationModel {
    * @return verified
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_VERIFIED)
+  @JsonProperty(value = JSON_PROPERTY_VERIFIED, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Boolean getVerified() {
@@ -101,7 +101,7 @@ public class GetDomainConfigurationModel {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_VERIFIED)
+  @JsonProperty(value = JSON_PROPERTY_VERIFIED, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setVerified(@jakarta.annotation.Nonnull Boolean verified) {
     this.verified = verified;
@@ -118,7 +118,7 @@ public class GetDomainConfigurationModel {
    * @return authenticated
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_AUTHENTICATED)
+  @JsonProperty(value = JSON_PROPERTY_AUTHENTICATED, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Boolean getAuthenticated() {
@@ -126,7 +126,7 @@ public class GetDomainConfigurationModel {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_AUTHENTICATED)
+  @JsonProperty(value = JSON_PROPERTY_AUTHENTICATED, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAuthenticated(@jakarta.annotation.Nonnull Boolean authenticated) {
     this.authenticated = authenticated;
@@ -143,7 +143,7 @@ public class GetDomainConfigurationModel {
    * @return dnsRecords
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DNS_RECORDS)
+  @JsonProperty(value = JSON_PROPERTY_DNS_RECORDS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public CreateDomainModelDnsRecords getDnsRecords() {
@@ -151,11 +151,12 @@ public class GetDomainConfigurationModel {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DNS_RECORDS)
+  @JsonProperty(value = JSON_PROPERTY_DNS_RECORDS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDnsRecords(@jakarta.annotation.Nonnull CreateDomainModelDnsRecords dnsRecords) {
     this.dnsRecords = dnsRecords;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -194,10 +195,7 @@ public class GetDomainConfigurationModel {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -235,7 +233,7 @@ public class GetDomainConfigurationModel {
     // add `domain` to the URL query string
     if (getDomain() != null) {
       try {
-        joiner.add(String.format("%sdomain%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDomain()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdomain%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDomain()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -245,7 +243,7 @@ public class GetDomainConfigurationModel {
     // add `verified` to the URL query string
     if (getVerified() != null) {
       try {
-        joiner.add(String.format("%sverified%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getVerified()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sverified%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getVerified()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -255,7 +253,7 @@ public class GetDomainConfigurationModel {
     // add `authenticated` to the URL query string
     if (getAuthenticated() != null) {
       try {
-        joiner.add(String.format("%sauthenticated%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAuthenticated()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sauthenticated%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAuthenticated()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

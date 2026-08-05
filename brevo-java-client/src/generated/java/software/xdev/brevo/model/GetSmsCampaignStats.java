@@ -82,7 +82,7 @@ public class GetSmsCampaignStats {
    * @return delivered
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DELIVERED)
+  @JsonProperty(value = JSON_PROPERTY_DELIVERED, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getDelivered() {
@@ -90,7 +90,7 @@ public class GetSmsCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DELIVERED)
+  @JsonProperty(value = JSON_PROPERTY_DELIVERED, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDelivered(@jakarta.annotation.Nonnull Long delivered) {
     this.delivered = delivered;
@@ -107,7 +107,7 @@ public class GetSmsCampaignStats {
    * @return sent
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SENT)
+  @JsonProperty(value = JSON_PROPERTY_SENT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getSent() {
@@ -115,7 +115,7 @@ public class GetSmsCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SENT)
+  @JsonProperty(value = JSON_PROPERTY_SENT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSent(@jakarta.annotation.Nonnull Long sent) {
     this.sent = sent;
@@ -132,7 +132,7 @@ public class GetSmsCampaignStats {
    * @return processing
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PROCESSING)
+  @JsonProperty(value = JSON_PROPERTY_PROCESSING, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getProcessing() {
@@ -140,7 +140,7 @@ public class GetSmsCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PROCESSING)
+  @JsonProperty(value = JSON_PROPERTY_PROCESSING, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setProcessing(@jakarta.annotation.Nonnull Long processing) {
     this.processing = processing;
@@ -157,7 +157,7 @@ public class GetSmsCampaignStats {
    * @return softBounces
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SOFT_BOUNCES)
+  @JsonProperty(value = JSON_PROPERTY_SOFT_BOUNCES, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getSoftBounces() {
@@ -165,7 +165,7 @@ public class GetSmsCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SOFT_BOUNCES)
+  @JsonProperty(value = JSON_PROPERTY_SOFT_BOUNCES, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSoftBounces(@jakarta.annotation.Nonnull Long softBounces) {
     this.softBounces = softBounces;
@@ -182,7 +182,7 @@ public class GetSmsCampaignStats {
    * @return hardBounces
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_HARD_BOUNCES)
+  @JsonProperty(value = JSON_PROPERTY_HARD_BOUNCES, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getHardBounces() {
@@ -190,7 +190,7 @@ public class GetSmsCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_HARD_BOUNCES)
+  @JsonProperty(value = JSON_PROPERTY_HARD_BOUNCES, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setHardBounces(@jakarta.annotation.Nonnull Long hardBounces) {
     this.hardBounces = hardBounces;
@@ -207,7 +207,7 @@ public class GetSmsCampaignStats {
    * @return unsubscriptions
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_UNSUBSCRIPTIONS)
+  @JsonProperty(value = JSON_PROPERTY_UNSUBSCRIPTIONS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getUnsubscriptions() {
@@ -215,7 +215,7 @@ public class GetSmsCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UNSUBSCRIPTIONS)
+  @JsonProperty(value = JSON_PROPERTY_UNSUBSCRIPTIONS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setUnsubscriptions(@jakarta.annotation.Nonnull Long unsubscriptions) {
     this.unsubscriptions = unsubscriptions;
@@ -232,7 +232,7 @@ public class GetSmsCampaignStats {
    * @return answered
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ANSWERED)
+  @JsonProperty(value = JSON_PROPERTY_ANSWERED, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getAnswered() {
@@ -240,11 +240,12 @@ public class GetSmsCampaignStats {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ANSWERED)
+  @JsonProperty(value = JSON_PROPERTY_ANSWERED, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAnswered(@jakarta.annotation.Nonnull Long answered) {
     this.answered = answered;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -289,10 +290,7 @@ public class GetSmsCampaignStats {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -330,7 +328,7 @@ public class GetSmsCampaignStats {
     // add `delivered` to the URL query string
     if (getDelivered() != null) {
       try {
-        joiner.add(String.format("%sdelivered%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDelivered()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdelivered%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDelivered()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -340,7 +338,7 @@ public class GetSmsCampaignStats {
     // add `sent` to the URL query string
     if (getSent() != null) {
       try {
-        joiner.add(String.format("%ssent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSent()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSent()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -350,7 +348,7 @@ public class GetSmsCampaignStats {
     // add `processing` to the URL query string
     if (getProcessing() != null) {
       try {
-        joiner.add(String.format("%sprocessing%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProcessing()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sprocessing%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProcessing()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -360,7 +358,7 @@ public class GetSmsCampaignStats {
     // add `softBounces` to the URL query string
     if (getSoftBounces() != null) {
       try {
-        joiner.add(String.format("%ssoftBounces%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSoftBounces()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssoftBounces%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSoftBounces()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -370,7 +368,7 @@ public class GetSmsCampaignStats {
     // add `hardBounces` to the URL query string
     if (getHardBounces() != null) {
       try {
-        joiner.add(String.format("%shardBounces%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHardBounces()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%shardBounces%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHardBounces()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -380,7 +378,7 @@ public class GetSmsCampaignStats {
     // add `unsubscriptions` to the URL query string
     if (getUnsubscriptions() != null) {
       try {
-        joiner.add(String.format("%sunsubscriptions%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUnsubscriptions()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sunsubscriptions%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUnsubscriptions()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -390,7 +388,7 @@ public class GetSmsCampaignStats {
     // add `answered` to the URL query string
     if (getAnswered() != null) {
       try {
-        joiner.add(String.format("%sanswered%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAnswered()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sanswered%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAnswered()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

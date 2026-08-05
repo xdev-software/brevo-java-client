@@ -77,7 +77,7 @@ public class SubAccountDetailsResponsePlanInfoCredits {
    * @return emails
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EMAILS)
+  @JsonProperty(value = JSON_PROPERTY_EMAILS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public SubAccountDetailsResponsePlanInfoCreditsEmails getEmails() {
@@ -85,7 +85,7 @@ public class SubAccountDetailsResponsePlanInfoCredits {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EMAILS)
+  @JsonProperty(value = JSON_PROPERTY_EMAILS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setEmails(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfoCreditsEmails emails) {
     this.emails = emails;
@@ -102,7 +102,7 @@ public class SubAccountDetailsResponsePlanInfoCredits {
    * @return sms
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SMS)
+  @JsonProperty(value = JSON_PROPERTY_SMS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public SubAccountDetailsResponsePlanInfoCreditsSms getSms() {
@@ -110,7 +110,7 @@ public class SubAccountDetailsResponsePlanInfoCredits {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SMS)
+  @JsonProperty(value = JSON_PROPERTY_SMS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSms(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfoCreditsSms sms) {
     this.sms = sms;
@@ -127,7 +127,7 @@ public class SubAccountDetailsResponsePlanInfoCredits {
    * @return wpSubscribers
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_WP_SUBSCRIBERS)
+  @JsonProperty(value = JSON_PROPERTY_WP_SUBSCRIBERS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public SubAccountDetailsResponsePlanInfoCreditsWpSubscribers getWpSubscribers() {
@@ -135,7 +135,7 @@ public class SubAccountDetailsResponsePlanInfoCredits {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_WP_SUBSCRIBERS)
+  @JsonProperty(value = JSON_PROPERTY_WP_SUBSCRIBERS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setWpSubscribers(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfoCreditsWpSubscribers wpSubscribers) {
     this.wpSubscribers = wpSubscribers;
@@ -152,7 +152,7 @@ public class SubAccountDetailsResponsePlanInfoCredits {
    * @return whatsapp
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_WHATSAPP)
+  @JsonProperty(value = JSON_PROPERTY_WHATSAPP, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public SubAccountDetailsResponsePlanInfoCreditsWhatsapp getWhatsapp() {
@@ -160,7 +160,7 @@ public class SubAccountDetailsResponsePlanInfoCredits {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_WHATSAPP)
+  @JsonProperty(value = JSON_PROPERTY_WHATSAPP, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setWhatsapp(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfoCreditsWhatsapp whatsapp) {
     this.whatsapp = whatsapp;
@@ -177,7 +177,7 @@ public class SubAccountDetailsResponsePlanInfoCredits {
    * @return externalFeeds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EXTERNAL_FEEDS)
+  @JsonProperty(value = JSON_PROPERTY_EXTERNAL_FEEDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public SubAccountDetailsResponsePlanInfoCreditsExternalFeeds getExternalFeeds() {
@@ -185,11 +185,12 @@ public class SubAccountDetailsResponsePlanInfoCredits {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EXTERNAL_FEEDS)
+  @JsonProperty(value = JSON_PROPERTY_EXTERNAL_FEEDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setExternalFeeds(@jakarta.annotation.Nullable SubAccountDetailsResponsePlanInfoCreditsExternalFeeds externalFeeds) {
     this.externalFeeds = externalFeeds;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -230,10 +231,7 @@ public class SubAccountDetailsResponsePlanInfoCredits {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**

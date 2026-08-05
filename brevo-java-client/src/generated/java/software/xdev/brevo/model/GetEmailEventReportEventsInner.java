@@ -161,7 +161,7 @@ public class GetEmailEventReportEventsInner {
    * @return email
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getEmail() {
@@ -169,7 +169,7 @@ public class GetEmailEventReportEventsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setEmail(@jakarta.annotation.Nonnull String email) {
     this.email = email;
@@ -186,7 +186,7 @@ public class GetEmailEventReportEventsInner {
    * @return date
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DATE)
+  @JsonProperty(value = JSON_PROPERTY_DATE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getDate() {
@@ -194,7 +194,7 @@ public class GetEmailEventReportEventsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DATE)
+  @JsonProperty(value = JSON_PROPERTY_DATE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDate(@jakarta.annotation.Nonnull String date) {
     this.date = date;
@@ -211,7 +211,7 @@ public class GetEmailEventReportEventsInner {
    * @return subject
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SUBJECT)
+  @JsonProperty(value = JSON_PROPERTY_SUBJECT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getSubject() {
@@ -219,7 +219,7 @@ public class GetEmailEventReportEventsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SUBJECT)
+  @JsonProperty(value = JSON_PROPERTY_SUBJECT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSubject(@jakarta.annotation.Nullable String subject) {
     this.subject = subject;
@@ -236,7 +236,7 @@ public class GetEmailEventReportEventsInner {
    * @return messageId
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
+  @JsonProperty(value = JSON_PROPERTY_MESSAGE_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getMessageId() {
@@ -244,7 +244,7 @@ public class GetEmailEventReportEventsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
+  @JsonProperty(value = JSON_PROPERTY_MESSAGE_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setMessageId(@jakarta.annotation.Nonnull String messageId) {
     this.messageId = messageId;
@@ -261,7 +261,7 @@ public class GetEmailEventReportEventsInner {
    * @return event
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_EVENT)
+  @JsonProperty(value = JSON_PROPERTY_EVENT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public EventEnum getEvent() {
@@ -269,7 +269,7 @@ public class GetEmailEventReportEventsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EVENT)
+  @JsonProperty(value = JSON_PROPERTY_EVENT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setEvent(@jakarta.annotation.Nonnull EventEnum event) {
     this.event = event;
@@ -286,7 +286,7 @@ public class GetEmailEventReportEventsInner {
    * @return reason
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_REASON)
+  @JsonProperty(value = JSON_PROPERTY_REASON, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getReason() {
@@ -294,7 +294,7 @@ public class GetEmailEventReportEventsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REASON)
+  @JsonProperty(value = JSON_PROPERTY_REASON, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setReason(@jakarta.annotation.Nullable String reason) {
     this.reason = reason;
@@ -311,7 +311,7 @@ public class GetEmailEventReportEventsInner {
    * @return tag
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TAG)
+  @JsonProperty(value = JSON_PROPERTY_TAG, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getTag() {
@@ -319,7 +319,7 @@ public class GetEmailEventReportEventsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TAG)
+  @JsonProperty(value = JSON_PROPERTY_TAG, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setTag(@jakarta.annotation.Nullable String tag) {
     this.tag = tag;
@@ -336,7 +336,7 @@ public class GetEmailEventReportEventsInner {
    * @return ip
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_IP)
+  @JsonProperty(value = JSON_PROPERTY_IP, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getIp() {
@@ -344,7 +344,7 @@ public class GetEmailEventReportEventsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IP)
+  @JsonProperty(value = JSON_PROPERTY_IP, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setIp(@jakarta.annotation.Nullable String ip) {
     this.ip = ip;
@@ -361,7 +361,7 @@ public class GetEmailEventReportEventsInner {
    * @return link
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LINK)
+  @JsonProperty(value = JSON_PROPERTY_LINK, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getLink() {
@@ -369,7 +369,7 @@ public class GetEmailEventReportEventsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LINK)
+  @JsonProperty(value = JSON_PROPERTY_LINK, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLink(@jakarta.annotation.Nullable String link) {
     this.link = link;
@@ -386,7 +386,7 @@ public class GetEmailEventReportEventsInner {
    * @return from
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_FROM)
+  @JsonProperty(value = JSON_PROPERTY_FROM, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getFrom() {
@@ -394,7 +394,7 @@ public class GetEmailEventReportEventsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_FROM)
+  @JsonProperty(value = JSON_PROPERTY_FROM, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setFrom(@jakarta.annotation.Nullable String from) {
     this.from = from;
@@ -411,7 +411,7 @@ public class GetEmailEventReportEventsInner {
    * @return templateId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
+  @JsonProperty(value = JSON_PROPERTY_TEMPLATE_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getTemplateId() {
@@ -419,11 +419,12 @@ public class GetEmailEventReportEventsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
+  @JsonProperty(value = JSON_PROPERTY_TEMPLATE_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setTemplateId(@jakarta.annotation.Nullable Long templateId) {
     this.templateId = templateId;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -476,10 +477,7 @@ public class GetEmailEventReportEventsInner {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -517,7 +515,7 @@ public class GetEmailEventReportEventsInner {
     // add `email` to the URL query string
     if (getEmail() != null) {
       try {
-        joiner.add(String.format("%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -527,7 +525,7 @@ public class GetEmailEventReportEventsInner {
     // add `date` to the URL query string
     if (getDate() != null) {
       try {
-        joiner.add(String.format("%sdate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDate()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDate()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -537,7 +535,7 @@ public class GetEmailEventReportEventsInner {
     // add `subject` to the URL query string
     if (getSubject() != null) {
       try {
-        joiner.add(String.format("%ssubject%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubject()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssubject%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubject()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -547,7 +545,7 @@ public class GetEmailEventReportEventsInner {
     // add `messageId` to the URL query string
     if (getMessageId() != null) {
       try {
-        joiner.add(String.format("%smessageId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMessageId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%smessageId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMessageId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -557,7 +555,7 @@ public class GetEmailEventReportEventsInner {
     // add `event` to the URL query string
     if (getEvent() != null) {
       try {
-        joiner.add(String.format("%sevent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEvent()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sevent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEvent()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -567,7 +565,7 @@ public class GetEmailEventReportEventsInner {
     // add `reason` to the URL query string
     if (getReason() != null) {
       try {
-        joiner.add(String.format("%sreason%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReason()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sreason%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReason()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -577,7 +575,7 @@ public class GetEmailEventReportEventsInner {
     // add `tag` to the URL query string
     if (getTag() != null) {
       try {
-        joiner.add(String.format("%stag%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTag()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stag%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTag()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -587,7 +585,7 @@ public class GetEmailEventReportEventsInner {
     // add `ip` to the URL query string
     if (getIp() != null) {
       try {
-        joiner.add(String.format("%sip%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIp()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sip%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIp()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -597,7 +595,7 @@ public class GetEmailEventReportEventsInner {
     // add `link` to the URL query string
     if (getLink() != null) {
       try {
-        joiner.add(String.format("%slink%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLink()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%slink%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLink()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -607,7 +605,7 @@ public class GetEmailEventReportEventsInner {
     // add `from` to the URL query string
     if (getFrom() != null) {
       try {
-        joiner.add(String.format("%sfrom%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFrom()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sfrom%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFrom()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -617,7 +615,7 @@ public class GetEmailEventReportEventsInner {
     // add `templateId` to the URL query string
     if (getTemplateId() != null) {
       try {
-        joiner.add(String.format("%stemplateId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTemplateId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stemplateId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTemplateId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

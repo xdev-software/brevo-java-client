@@ -57,7 +57,7 @@ public class RequestContactImportNewList {
    * @return listName
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LIST_NAME)
+  @JsonProperty(value = JSON_PROPERTY_LIST_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getListName() {
@@ -65,7 +65,7 @@ public class RequestContactImportNewList {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LIST_NAME)
+  @JsonProperty(value = JSON_PROPERTY_LIST_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setListName(@jakarta.annotation.Nullable String listName) {
     this.listName = listName;
@@ -82,7 +82,7 @@ public class RequestContactImportNewList {
    * @return folderId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_FOLDER_ID)
+  @JsonProperty(value = JSON_PROPERTY_FOLDER_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getFolderId() {
@@ -90,11 +90,12 @@ public class RequestContactImportNewList {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_FOLDER_ID)
+  @JsonProperty(value = JSON_PROPERTY_FOLDER_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setFolderId(@jakarta.annotation.Nullable Long folderId) {
     this.folderId = folderId;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -129,10 +130,7 @@ public class RequestContactImportNewList {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -170,7 +168,7 @@ public class RequestContactImportNewList {
     // add `listName` to the URL query string
     if (getListName() != null) {
       try {
-        joiner.add(String.format("%slistName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getListName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%slistName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getListName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -180,7 +178,7 @@ public class RequestContactImportNewList {
     // add `folderId` to the URL query string
     if (getFolderId() != null) {
       try {
-        joiner.add(String.format("%sfolderId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFolderId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sfolderId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFolderId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

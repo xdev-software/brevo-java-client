@@ -78,7 +78,7 @@ public class Getrecords200ResponseRecordsInner {
    * @return createdAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public OffsetDateTime getCreatedAt() {
@@ -86,7 +86,7 @@ public class Getrecords200ResponseRecordsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCreatedAt(@jakarta.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
@@ -103,7 +103,7 @@ public class Getrecords200ResponseRecordsInner {
    * @return updatedAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UPDATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_UPDATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public OffsetDateTime getUpdatedAt() {
@@ -111,7 +111,7 @@ public class Getrecords200ResponseRecordsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UPDATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_UPDATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUpdatedAt(@jakarta.annotation.Nullable OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
@@ -128,7 +128,7 @@ public class Getrecords200ResponseRecordsInner {
    * @return identifiers
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_IDENTIFIERS)
+  @JsonProperty(value = JSON_PROPERTY_IDENTIFIERS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Getrecords200ResponseRecordsInnerIdentifiers getIdentifiers() {
@@ -136,7 +136,7 @@ public class Getrecords200ResponseRecordsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IDENTIFIERS)
+  @JsonProperty(value = JSON_PROPERTY_IDENTIFIERS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setIdentifiers(@jakarta.annotation.Nullable Getrecords200ResponseRecordsInnerIdentifiers identifiers) {
     this.identifiers = identifiers;
@@ -153,7 +153,7 @@ public class Getrecords200ResponseRecordsInner {
    * @return attributes
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
+  @JsonProperty(value = JSON_PROPERTY_ATTRIBUTES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Object getAttributes() {
@@ -161,7 +161,7 @@ public class Getrecords200ResponseRecordsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
+  @JsonProperty(value = JSON_PROPERTY_ATTRIBUTES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setAttributes(@jakarta.annotation.Nullable Object attributes) {
     this.attributes = attributes;
@@ -186,7 +186,7 @@ public class Getrecords200ResponseRecordsInner {
    * @return associations
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ASSOCIATIONS)
+  @JsonProperty(value = JSON_PROPERTY_ASSOCIATIONS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<Getrecords200ResponseRecordsInnerAssociationsInner> getAssociations() {
@@ -194,11 +194,12 @@ public class Getrecords200ResponseRecordsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ASSOCIATIONS)
+  @JsonProperty(value = JSON_PROPERTY_ASSOCIATIONS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setAssociations(@jakarta.annotation.Nullable List<Getrecords200ResponseRecordsInnerAssociationsInner> associations) {
     this.associations = associations;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -239,10 +240,7 @@ public class Getrecords200ResponseRecordsInner {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -280,7 +278,7 @@ public class Getrecords200ResponseRecordsInner {
     // add `createdAt` to the URL query string
     if (getCreatedAt() != null) {
       try {
-        joiner.add(String.format("%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -290,7 +288,7 @@ public class Getrecords200ResponseRecordsInner {
     // add `updatedAt` to the URL query string
     if (getUpdatedAt() != null) {
       try {
-        joiner.add(String.format("%supdatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUpdatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%supdatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUpdatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -305,7 +303,7 @@ public class Getrecords200ResponseRecordsInner {
     // add `attributes` to the URL query string
     if (getAttributes() != null) {
       try {
-        joiner.add(String.format("%sattributes%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAttributes()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sattributes%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAttributes()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -316,8 +314,8 @@ public class Getrecords200ResponseRecordsInner {
     if (getAssociations() != null) {
       for (int i = 0; i < getAssociations().size(); i++) {
         if (getAssociations().get(i) != null) {
-          joiner.add(getAssociations().get(i).toUrlQueryString(String.format("%sassociations%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getAssociations().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sassociations%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }

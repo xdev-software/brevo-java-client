@@ -61,7 +61,7 @@ public class CorporateUserEmailPermissionsPutRequest {
    * @return allFeaturesAccess
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ALL_FEATURES_ACCESS)
+  @JsonProperty(value = JSON_PROPERTY_ALL_FEATURES_ACCESS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Boolean getAllFeaturesAccess() {
@@ -69,7 +69,7 @@ public class CorporateUserEmailPermissionsPutRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ALL_FEATURES_ACCESS)
+  @JsonProperty(value = JSON_PROPERTY_ALL_FEATURES_ACCESS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAllFeaturesAccess(@jakarta.annotation.Nonnull Boolean allFeaturesAccess) {
     this.allFeaturesAccess = allFeaturesAccess;
@@ -94,7 +94,7 @@ public class CorporateUserEmailPermissionsPutRequest {
    * @return privileges
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PRIVILEGES)
+  @JsonProperty(value = JSON_PROPERTY_PRIVILEGES, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public List<CorporateUserEmailPermissionsPutRequestPrivilegesInner> getPrivileges() {
@@ -102,11 +102,12 @@ public class CorporateUserEmailPermissionsPutRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PRIVILEGES)
+  @JsonProperty(value = JSON_PROPERTY_PRIVILEGES, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPrivileges(@jakarta.annotation.Nonnull List<CorporateUserEmailPermissionsPutRequestPrivilegesInner> privileges) {
     this.privileges = privileges;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -141,10 +142,7 @@ public class CorporateUserEmailPermissionsPutRequest {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -182,7 +180,7 @@ public class CorporateUserEmailPermissionsPutRequest {
     // add `all_features_access` to the URL query string
     if (getAllFeaturesAccess() != null) {
       try {
-        joiner.add(String.format("%sall_features_access%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAllFeaturesAccess()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sall_features_access%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAllFeaturesAccess()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -193,8 +191,8 @@ public class CorporateUserEmailPermissionsPutRequest {
     if (getPrivileges() != null) {
       for (int i = 0; i < getPrivileges().size(); i++) {
         if (getPrivileges().get(i) != null) {
-          joiner.add(getPrivileges().get(i).toUrlQueryString(String.format("%sprivileges%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getPrivileges().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sprivileges%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }

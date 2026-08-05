@@ -75,7 +75,7 @@ public class PostSendFailed {
    * @return code
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CODE)
+  @JsonProperty(value = JSON_PROPERTY_CODE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getCode() {
@@ -83,7 +83,7 @@ public class PostSendFailed {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CODE)
+  @JsonProperty(value = JSON_PROPERTY_CODE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCode(@jakarta.annotation.Nonnull String code) {
     this.code = code;
@@ -100,7 +100,7 @@ public class PostSendFailed {
    * @return message
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_MESSAGE)
+  @JsonProperty(value = JSON_PROPERTY_MESSAGE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getMessage() {
@@ -108,7 +108,7 @@ public class PostSendFailed {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MESSAGE)
+  @JsonProperty(value = JSON_PROPERTY_MESSAGE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setMessage(@jakarta.annotation.Nonnull String message) {
     this.message = message;
@@ -133,7 +133,7 @@ public class PostSendFailed {
    * @return unexistingEmails
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UNEXISTING_EMAILS)
+  @JsonProperty(value = JSON_PROPERTY_UNEXISTING_EMAILS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getUnexistingEmails() {
@@ -141,7 +141,7 @@ public class PostSendFailed {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UNEXISTING_EMAILS)
+  @JsonProperty(value = JSON_PROPERTY_UNEXISTING_EMAILS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUnexistingEmails(@jakarta.annotation.Nullable List<String> unexistingEmails) {
     this.unexistingEmails = unexistingEmails;
@@ -166,7 +166,7 @@ public class PostSendFailed {
    * @return withoutListEmails
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_WITHOUT_LIST_EMAILS)
+  @JsonProperty(value = JSON_PROPERTY_WITHOUT_LIST_EMAILS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getWithoutListEmails() {
@@ -174,7 +174,7 @@ public class PostSendFailed {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_WITHOUT_LIST_EMAILS)
+  @JsonProperty(value = JSON_PROPERTY_WITHOUT_LIST_EMAILS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setWithoutListEmails(@jakarta.annotation.Nullable List<String> withoutListEmails) {
     this.withoutListEmails = withoutListEmails;
@@ -199,7 +199,7 @@ public class PostSendFailed {
    * @return blackListedEmails
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_BLACK_LISTED_EMAILS)
+  @JsonProperty(value = JSON_PROPERTY_BLACK_LISTED_EMAILS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getBlackListedEmails() {
@@ -207,11 +207,12 @@ public class PostSendFailed {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BLACK_LISTED_EMAILS)
+  @JsonProperty(value = JSON_PROPERTY_BLACK_LISTED_EMAILS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setBlackListedEmails(@jakarta.annotation.Nullable List<String> blackListedEmails) {
     this.blackListedEmails = blackListedEmails;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -252,10 +253,7 @@ public class PostSendFailed {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -293,7 +291,7 @@ public class PostSendFailed {
     // add `code` to the URL query string
     if (getCode() != null) {
       try {
-        joiner.add(String.format("%scode%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCode()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scode%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCode()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -303,7 +301,7 @@ public class PostSendFailed {
     // add `message` to the URL query string
     if (getMessage() != null) {
       try {
-        joiner.add(String.format("%smessage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMessage()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%smessage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMessage()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -314,8 +312,8 @@ public class PostSendFailed {
     if (getUnexistingEmails() != null) {
       for (int i = 0; i < getUnexistingEmails().size(); i++) {
         try {
-          joiner.add(String.format("%sunexistingEmails%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sunexistingEmails%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getUnexistingEmails().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -328,8 +326,8 @@ public class PostSendFailed {
     if (getWithoutListEmails() != null) {
       for (int i = 0; i < getWithoutListEmails().size(); i++) {
         try {
-          joiner.add(String.format("%swithoutListEmails%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%swithoutListEmails%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getWithoutListEmails().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -342,8 +340,8 @@ public class PostSendFailed {
     if (getBlackListedEmails() != null) {
       for (int i = 0; i < getBlackListedEmails().size(); i++) {
         try {
-          joiner.add(String.format("%sblackListedEmails%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sblackListedEmails%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getBlackListedEmails().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported

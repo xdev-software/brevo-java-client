@@ -60,7 +60,7 @@ public class CorporateGroupPostRequest {
    * @return groupName
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_GROUP_NAME)
+  @JsonProperty(value = JSON_PROPERTY_GROUP_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getGroupName() {
@@ -68,7 +68,7 @@ public class CorporateGroupPostRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_GROUP_NAME)
+  @JsonProperty(value = JSON_PROPERTY_GROUP_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setGroupName(@jakarta.annotation.Nonnull String groupName) {
     this.groupName = groupName;
@@ -93,7 +93,7 @@ public class CorporateGroupPostRequest {
    * @return subAccountIds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SUB_ACCOUNT_IDS)
+  @JsonProperty(value = JSON_PROPERTY_SUB_ACCOUNT_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<Long> getSubAccountIds() {
@@ -101,11 +101,12 @@ public class CorporateGroupPostRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SUB_ACCOUNT_IDS)
+  @JsonProperty(value = JSON_PROPERTY_SUB_ACCOUNT_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSubAccountIds(@jakarta.annotation.Nullable List<Long> subAccountIds) {
     this.subAccountIds = subAccountIds;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -140,10 +141,7 @@ public class CorporateGroupPostRequest {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -181,7 +179,7 @@ public class CorporateGroupPostRequest {
     // add `groupName` to the URL query string
     if (getGroupName() != null) {
       try {
-        joiner.add(String.format("%sgroupName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getGroupName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sgroupName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getGroupName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -192,8 +190,8 @@ public class CorporateGroupPostRequest {
     if (getSubAccountIds() != null) {
       for (int i = 0; i < getSubAccountIds().size(); i++) {
         try {
-          joiner.add(String.format("%ssubAccountIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%ssubAccountIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getSubAccountIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported

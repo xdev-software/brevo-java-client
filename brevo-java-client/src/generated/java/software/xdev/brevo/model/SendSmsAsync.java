@@ -52,7 +52,7 @@ public class SendSmsAsync {
    * @return messageId
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
+  @JsonProperty(value = JSON_PROPERTY_MESSAGE_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getMessageId() {
@@ -60,11 +60,12 @@ public class SendSmsAsync {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
+  @JsonProperty(value = JSON_PROPERTY_MESSAGE_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setMessageId(@jakarta.annotation.Nonnull Long messageId) {
     this.messageId = messageId;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -97,10 +98,7 @@ public class SendSmsAsync {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -138,7 +136,7 @@ public class SendSmsAsync {
     // add `messageId` to the URL query string
     if (getMessageId() != null) {
       try {
-        joiner.add(String.format("%smessageId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMessageId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%smessageId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMessageId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

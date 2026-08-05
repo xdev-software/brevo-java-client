@@ -52,7 +52,7 @@ public class MainRewardValidate {
    * @return authorize
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_AUTHORIZE)
+  @JsonProperty(value = JSON_PROPERTY_AUTHORIZE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getAuthorize() {
@@ -60,11 +60,12 @@ public class MainRewardValidate {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_AUTHORIZE)
+  @JsonProperty(value = JSON_PROPERTY_AUTHORIZE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setAuthorize(@jakarta.annotation.Nullable Boolean authorize) {
     this.authorize = authorize;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -97,10 +98,7 @@ public class MainRewardValidate {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -138,7 +136,7 @@ public class MainRewardValidate {
     // add `authorize` to the URL query string
     if (getAuthorize() != null) {
       try {
-        joiner.add(String.format("%sauthorize%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAuthorize()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sauthorize%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAuthorize()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

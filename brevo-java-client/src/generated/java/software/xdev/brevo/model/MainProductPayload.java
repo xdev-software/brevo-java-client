@@ -84,7 +84,7 @@ public class MainProductPayload {
    * @return category
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CATEGORY)
+  @JsonProperty(value = JSON_PROPERTY_CATEGORY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getCategory() {
@@ -92,7 +92,7 @@ public class MainProductPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CATEGORY)
+  @JsonProperty(value = JSON_PROPERTY_CATEGORY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCategory(@jakarta.annotation.Nullable List<String> category) {
     this.category = category;
@@ -109,7 +109,7 @@ public class MainProductPayload {
    * @return price
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PRICE)
+  @JsonProperty(value = JSON_PROPERTY_PRICE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public BigDecimal getPrice() {
@@ -117,7 +117,7 @@ public class MainProductPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PRICE)
+  @JsonProperty(value = JSON_PROPERTY_PRICE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPrice(@jakarta.annotation.Nullable BigDecimal price) {
     this.price = price;
@@ -134,7 +134,7 @@ public class MainProductPayload {
    * @return productId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PRODUCT_ID)
+  @JsonProperty(value = JSON_PROPERTY_PRODUCT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getProductId() {
@@ -142,7 +142,7 @@ public class MainProductPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PRODUCT_ID)
+  @JsonProperty(value = JSON_PROPERTY_PRODUCT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setProductId(@jakarta.annotation.Nullable String productId) {
     this.productId = productId;
@@ -159,7 +159,7 @@ public class MainProductPayload {
    * @return quantity
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_QUANTITY)
+  @JsonProperty(value = JSON_PROPERTY_QUANTITY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public BigDecimal getQuantity() {
@@ -167,7 +167,7 @@ public class MainProductPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_QUANTITY)
+  @JsonProperty(value = JSON_PROPERTY_QUANTITY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setQuantity(@jakarta.annotation.Nullable BigDecimal quantity) {
     this.quantity = quantity;
@@ -184,7 +184,7 @@ public class MainProductPayload {
    * @return variantId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_VARIANT_ID)
+  @JsonProperty(value = JSON_PROPERTY_VARIANT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getVariantId() {
@@ -192,11 +192,12 @@ public class MainProductPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_VARIANT_ID)
+  @JsonProperty(value = JSON_PROPERTY_VARIANT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setVariantId(@jakarta.annotation.Nullable String variantId) {
     this.variantId = variantId;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -237,10 +238,7 @@ public class MainProductPayload {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -279,8 +277,8 @@ public class MainProductPayload {
     if (getCategory() != null) {
       for (int i = 0; i < getCategory().size(); i++) {
         try {
-          joiner.add(String.format("%scategory%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%scategory%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getCategory().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -292,7 +290,7 @@ public class MainProductPayload {
     // add `price` to the URL query string
     if (getPrice() != null) {
       try {
-        joiner.add(String.format("%sprice%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPrice()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sprice%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPrice()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -302,7 +300,7 @@ public class MainProductPayload {
     // add `productId` to the URL query string
     if (getProductId() != null) {
       try {
-        joiner.add(String.format("%sproductId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProductId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sproductId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getProductId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -312,7 +310,7 @@ public class MainProductPayload {
     // add `quantity` to the URL query string
     if (getQuantity() != null) {
       try {
-        joiner.add(String.format("%squantity%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getQuantity()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%squantity%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getQuantity()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -322,7 +320,7 @@ public class MainProductPayload {
     // add `variantId` to the URL query string
     if (getVariantId() != null) {
       try {
-        joiner.add(String.format("%svariantId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getVariantId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%svariantId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getVariantId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

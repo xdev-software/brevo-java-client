@@ -86,7 +86,7 @@ public class TierForContact {
    * @return id
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public UUID getId() {
@@ -94,7 +94,7 @@ public class TierForContact {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setId(@jakarta.annotation.Nullable UUID id) {
     this.id = id;
@@ -111,7 +111,7 @@ public class TierForContact {
    * @return loyaltyProgramId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LOYALTY_PROGRAM_ID)
+  @JsonProperty(value = JSON_PROPERTY_LOYALTY_PROGRAM_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public UUID getLoyaltyProgramId() {
@@ -119,7 +119,7 @@ public class TierForContact {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LOYALTY_PROGRAM_ID)
+  @JsonProperty(value = JSON_PROPERTY_LOYALTY_PROGRAM_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLoyaltyProgramId(@jakarta.annotation.Nullable UUID loyaltyProgramId) {
     this.loyaltyProgramId = loyaltyProgramId;
@@ -136,7 +136,7 @@ public class TierForContact {
    * @return groupId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_GROUP_ID)
+  @JsonProperty(value = JSON_PROPERTY_GROUP_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public UUID getGroupId() {
@@ -144,7 +144,7 @@ public class TierForContact {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_GROUP_ID)
+  @JsonProperty(value = JSON_PROPERTY_GROUP_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setGroupId(@jakarta.annotation.Nullable UUID groupId) {
     this.groupId = groupId;
@@ -161,7 +161,7 @@ public class TierForContact {
    * @return contactId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CONTACT_ID)
+  @JsonProperty(value = JSON_PROPERTY_CONTACT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getContactId() {
@@ -169,7 +169,7 @@ public class TierForContact {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONTACT_ID)
+  @JsonProperty(value = JSON_PROPERTY_CONTACT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setContactId(@jakarta.annotation.Nullable Integer contactId) {
     this.contactId = contactId;
@@ -194,7 +194,7 @@ public class TierForContact {
    * @return meta
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_META)
+  @JsonProperty(value = JSON_PROPERTY_META, required = false)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
 
   public Map<String, Object> getMeta() {
@@ -202,7 +202,7 @@ public class TierForContact {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_META)
+  @JsonProperty(value = JSON_PROPERTY_META, required = false)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
   public void setMeta(@jakarta.annotation.Nullable Map<String, Object> meta) {
     this.meta = meta;
@@ -219,7 +219,7 @@ public class TierForContact {
    * @return createdAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public OffsetDateTime getCreatedAt() {
@@ -227,7 +227,7 @@ public class TierForContact {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCreatedAt(@jakarta.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
@@ -244,7 +244,7 @@ public class TierForContact {
    * @return updatedAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UPDATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_UPDATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public OffsetDateTime getUpdatedAt() {
@@ -252,11 +252,12 @@ public class TierForContact {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UPDATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_UPDATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUpdatedAt(@jakarta.annotation.Nullable OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -301,10 +302,7 @@ public class TierForContact {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -342,7 +340,7 @@ public class TierForContact {
     // add `id` to the URL query string
     if (getId() != null) {
       try {
-        joiner.add(String.format("%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -352,7 +350,7 @@ public class TierForContact {
     // add `loyaltyProgramId` to the URL query string
     if (getLoyaltyProgramId() != null) {
       try {
-        joiner.add(String.format("%sloyaltyProgramId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLoyaltyProgramId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sloyaltyProgramId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLoyaltyProgramId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -362,7 +360,7 @@ public class TierForContact {
     // add `groupId` to the URL query string
     if (getGroupId() != null) {
       try {
-        joiner.add(String.format("%sgroupId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getGroupId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sgroupId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getGroupId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -372,7 +370,7 @@ public class TierForContact {
     // add `contactId` to the URL query string
     if (getContactId() != null) {
       try {
-        joiner.add(String.format("%scontactId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContactId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scontactId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContactId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -383,8 +381,8 @@ public class TierForContact {
     if (getMeta() != null) {
       for (String _key : getMeta().keySet()) {
         try {
-          joiner.add(String.format("%smeta%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%smeta%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, _key, containerSuffix),
               getMeta().get(_key), URLEncoder.encode(String.valueOf(getMeta().get(_key)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -396,7 +394,7 @@ public class TierForContact {
     // add `createdAt` to the URL query string
     if (getCreatedAt() != null) {
       try {
-        joiner.add(String.format("%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -406,7 +404,7 @@ public class TierForContact {
     // add `updatedAt` to the URL query string
     if (getUpdatedAt() != null) {
       try {
-        joiner.add(String.format("%supdatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUpdatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%supdatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUpdatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

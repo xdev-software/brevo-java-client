@@ -69,7 +69,7 @@ public class CreateUpdateBatchProducts {
    * @return products
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PRODUCTS)
+  @JsonProperty(value = JSON_PROPERTY_PRODUCTS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public List<CreateUpdateProducts> getProducts() {
@@ -77,7 +77,7 @@ public class CreateUpdateBatchProducts {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PRODUCTS)
+  @JsonProperty(value = JSON_PROPERTY_PRODUCTS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setProducts(@jakarta.annotation.Nonnull List<CreateUpdateProducts> products) {
     this.products = products;
@@ -94,7 +94,7 @@ public class CreateUpdateBatchProducts {
    * @return updateEnabled
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UPDATE_ENABLED)
+  @JsonProperty(value = JSON_PROPERTY_UPDATE_ENABLED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getUpdateEnabled() {
@@ -102,11 +102,12 @@ public class CreateUpdateBatchProducts {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UPDATE_ENABLED)
+  @JsonProperty(value = JSON_PROPERTY_UPDATE_ENABLED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUpdateEnabled(@jakarta.annotation.Nullable Boolean updateEnabled) {
     this.updateEnabled = updateEnabled;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -141,10 +142,7 @@ public class CreateUpdateBatchProducts {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -183,8 +181,8 @@ public class CreateUpdateBatchProducts {
     if (getProducts() != null) {
       for (int i = 0; i < getProducts().size(); i++) {
         if (getProducts().get(i) != null) {
-          joiner.add(getProducts().get(i).toUrlQueryString(String.format("%sproducts%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getProducts().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sproducts%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -192,7 +190,7 @@ public class CreateUpdateBatchProducts {
     // add `updateEnabled` to the URL query string
     if (getUpdateEnabled() != null) {
       try {
-        joiner.add(String.format("%supdateEnabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUpdateEnabled()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%supdateEnabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUpdateEnabled()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

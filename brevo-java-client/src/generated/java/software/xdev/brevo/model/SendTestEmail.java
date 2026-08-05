@@ -63,7 +63,7 @@ public class SendTestEmail {
    * @return emailTo
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EMAIL_TO)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL_TO, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getEmailTo() {
@@ -71,11 +71,12 @@ public class SendTestEmail {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EMAIL_TO)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL_TO, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setEmailTo(@jakarta.annotation.Nullable List<String> emailTo) {
     this.emailTo = emailTo;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -108,10 +109,7 @@ public class SendTestEmail {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -150,8 +148,8 @@ public class SendTestEmail {
     if (getEmailTo() != null) {
       for (int i = 0; i < getEmailTo().size(); i++) {
         try {
-          joiner.add(String.format("%semailTo%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%semailTo%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getEmailTo().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported

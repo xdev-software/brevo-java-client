@@ -84,7 +84,7 @@ public class MainRuleConditionResponse {
    * @return and
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_AND)
+  @JsonProperty(value = JSON_PROPERTY_AND, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<MainRuleConditionResponse> getAnd() {
@@ -92,7 +92,7 @@ public class MainRuleConditionResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_AND)
+  @JsonProperty(value = JSON_PROPERTY_AND, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setAnd(@jakarta.annotation.Nullable List<MainRuleConditionResponse> and) {
     this.and = and;
@@ -109,7 +109,7 @@ public class MainRuleConditionResponse {
    * @return lhs
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LHS)
+  @JsonProperty(value = JSON_PROPERTY_LHS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public MainValueResponse getLhs() {
@@ -117,7 +117,7 @@ public class MainRuleConditionResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LHS)
+  @JsonProperty(value = JSON_PROPERTY_LHS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLhs(@jakarta.annotation.Nullable MainValueResponse lhs) {
     this.lhs = lhs;
@@ -134,7 +134,7 @@ public class MainRuleConditionResponse {
    * @return op
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_OP)
+  @JsonProperty(value = JSON_PROPERTY_OP, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getOp() {
@@ -142,7 +142,7 @@ public class MainRuleConditionResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_OP)
+  @JsonProperty(value = JSON_PROPERTY_OP, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setOp(@jakarta.annotation.Nullable String op) {
     this.op = op;
@@ -167,7 +167,7 @@ public class MainRuleConditionResponse {
    * @return or
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_OR)
+  @JsonProperty(value = JSON_PROPERTY_OR, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<MainRuleConditionResponse> getOr() {
@@ -175,7 +175,7 @@ public class MainRuleConditionResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_OR)
+  @JsonProperty(value = JSON_PROPERTY_OR, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setOr(@jakarta.annotation.Nullable List<MainRuleConditionResponse> or) {
     this.or = or;
@@ -192,7 +192,7 @@ public class MainRuleConditionResponse {
    * @return rhs
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_RHS)
+  @JsonProperty(value = JSON_PROPERTY_RHS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public MainValueResponse getRhs() {
@@ -200,11 +200,12 @@ public class MainRuleConditionResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_RHS)
+  @JsonProperty(value = JSON_PROPERTY_RHS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRhs(@jakarta.annotation.Nullable MainValueResponse rhs) {
     this.rhs = rhs;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -245,10 +246,7 @@ public class MainRuleConditionResponse {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -287,8 +285,8 @@ public class MainRuleConditionResponse {
     if (getAnd() != null) {
       for (int i = 0; i < getAnd().size(); i++) {
         if (getAnd().get(i) != null) {
-          joiner.add(getAnd().get(i).toUrlQueryString(String.format("%sand%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getAnd().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sand%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -301,7 +299,7 @@ public class MainRuleConditionResponse {
     // add `op` to the URL query string
     if (getOp() != null) {
       try {
-        joiner.add(String.format("%sop%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOp()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sop%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOp()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -312,8 +310,8 @@ public class MainRuleConditionResponse {
     if (getOr() != null) {
       for (int i = 0; i < getOr().size(); i++) {
         if (getOr().get(i) != null) {
-          joiner.add(getOr().get(i).toUrlQueryString(String.format("%sor%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getOr().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sor%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }

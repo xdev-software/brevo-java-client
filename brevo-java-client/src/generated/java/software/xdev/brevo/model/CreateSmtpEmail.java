@@ -60,7 +60,7 @@ public class CreateSmtpEmail {
    * @return messageId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
+  @JsonProperty(value = JSON_PROPERTY_MESSAGE_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getMessageId() {
@@ -68,7 +68,7 @@ public class CreateSmtpEmail {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
+  @JsonProperty(value = JSON_PROPERTY_MESSAGE_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setMessageId(@jakarta.annotation.Nullable String messageId) {
     this.messageId = messageId;
@@ -93,7 +93,7 @@ public class CreateSmtpEmail {
    * @return messageIds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_MESSAGE_IDS)
+  @JsonProperty(value = JSON_PROPERTY_MESSAGE_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getMessageIds() {
@@ -101,11 +101,12 @@ public class CreateSmtpEmail {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MESSAGE_IDS)
+  @JsonProperty(value = JSON_PROPERTY_MESSAGE_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setMessageIds(@jakarta.annotation.Nullable List<String> messageIds) {
     this.messageIds = messageIds;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -140,10 +141,7 @@ public class CreateSmtpEmail {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -181,7 +179,7 @@ public class CreateSmtpEmail {
     // add `messageId` to the URL query string
     if (getMessageId() != null) {
       try {
-        joiner.add(String.format("%smessageId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMessageId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%smessageId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMessageId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -192,8 +190,8 @@ public class CreateSmtpEmail {
     if (getMessageIds() != null) {
       for (int i = 0; i < getMessageIds().size(); i++) {
         try {
-          joiner.add(String.format("%smessageIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%smessageIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getMessageIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported

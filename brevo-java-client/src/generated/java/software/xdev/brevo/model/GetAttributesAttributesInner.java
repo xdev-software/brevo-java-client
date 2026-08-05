@@ -167,7 +167,7 @@ public class GetAttributesAttributesInner {
    * @return name
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getName() {
@@ -175,7 +175,7 @@ public class GetAttributesAttributesInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
@@ -192,7 +192,7 @@ public class GetAttributesAttributesInner {
    * @return category
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CATEGORY)
+  @JsonProperty(value = JSON_PROPERTY_CATEGORY, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public CategoryEnum getCategory() {
@@ -200,7 +200,7 @@ public class GetAttributesAttributesInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CATEGORY)
+  @JsonProperty(value = JSON_PROPERTY_CATEGORY, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCategory(@jakarta.annotation.Nonnull CategoryEnum category) {
     this.category = category;
@@ -217,7 +217,7 @@ public class GetAttributesAttributesInner {
    * @return type
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_TYPE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public TypeEnum getType() {
@@ -225,7 +225,7 @@ public class GetAttributesAttributesInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_TYPE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setType(@jakarta.annotation.Nullable TypeEnum type) {
     this.type = type;
@@ -250,7 +250,7 @@ public class GetAttributesAttributesInner {
    * @return enumeration
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ENUMERATION)
+  @JsonProperty(value = JSON_PROPERTY_ENUMERATION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<GetAttributesAttributesInnerEnumerationInner> getEnumeration() {
@@ -258,7 +258,7 @@ public class GetAttributesAttributesInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ENUMERATION)
+  @JsonProperty(value = JSON_PROPERTY_ENUMERATION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setEnumeration(@jakarta.annotation.Nullable List<GetAttributesAttributesInnerEnumerationInner> enumeration) {
     this.enumeration = enumeration;
@@ -275,7 +275,7 @@ public class GetAttributesAttributesInner {
    * @return calculatedValue
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CALCULATED_VALUE)
+  @JsonProperty(value = JSON_PROPERTY_CALCULATED_VALUE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getCalculatedValue() {
@@ -283,7 +283,7 @@ public class GetAttributesAttributesInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CALCULATED_VALUE)
+  @JsonProperty(value = JSON_PROPERTY_CALCULATED_VALUE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCalculatedValue(@jakarta.annotation.Nullable String calculatedValue) {
     this.calculatedValue = calculatedValue;
@@ -308,7 +308,7 @@ public class GetAttributesAttributesInner {
    * @return multiCategoryOptions
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_MULTI_CATEGORY_OPTIONS)
+  @JsonProperty(value = JSON_PROPERTY_MULTI_CATEGORY_OPTIONS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getMultiCategoryOptions() {
@@ -316,11 +316,12 @@ public class GetAttributesAttributesInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MULTI_CATEGORY_OPTIONS)
+  @JsonProperty(value = JSON_PROPERTY_MULTI_CATEGORY_OPTIONS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setMultiCategoryOptions(@jakarta.annotation.Nullable List<String> multiCategoryOptions) {
     this.multiCategoryOptions = multiCategoryOptions;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -363,10 +364,7 @@ public class GetAttributesAttributesInner {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -404,7 +402,7 @@ public class GetAttributesAttributesInner {
     // add `name` to the URL query string
     if (getName() != null) {
       try {
-        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -414,7 +412,7 @@ public class GetAttributesAttributesInner {
     // add `category` to the URL query string
     if (getCategory() != null) {
       try {
-        joiner.add(String.format("%scategory%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCategory()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scategory%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCategory()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -424,7 +422,7 @@ public class GetAttributesAttributesInner {
     // add `type` to the URL query string
     if (getType() != null) {
       try {
-        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -435,8 +433,8 @@ public class GetAttributesAttributesInner {
     if (getEnumeration() != null) {
       for (int i = 0; i < getEnumeration().size(); i++) {
         if (getEnumeration().get(i) != null) {
-          joiner.add(getEnumeration().get(i).toUrlQueryString(String.format("%senumeration%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getEnumeration().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%senumeration%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -444,7 +442,7 @@ public class GetAttributesAttributesInner {
     // add `calculatedValue` to the URL query string
     if (getCalculatedValue() != null) {
       try {
-        joiner.add(String.format("%scalculatedValue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCalculatedValue()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scalculatedValue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCalculatedValue()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -455,8 +453,8 @@ public class GetAttributesAttributesInner {
     if (getMultiCategoryOptions() != null) {
       for (int i = 0; i < getMultiCategoryOptions().size(); i++) {
         try {
-          joiner.add(String.format("%smultiCategoryOptions%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%smultiCategoryOptions%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getMultiCategoryOptions().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported

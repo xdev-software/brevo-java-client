@@ -90,7 +90,7 @@ public class Notification {
    * @return channel
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CHANNEL)
+  @JsonProperty(value = JSON_PROPERTY_CHANNEL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public ChannelEnum getChannel() {
@@ -98,7 +98,7 @@ public class Notification {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CHANNEL)
+  @JsonProperty(value = JSON_PROPERTY_CHANNEL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setChannel(@jakarta.annotation.Nonnull ChannelEnum channel) {
     this.channel = channel;
@@ -115,7 +115,7 @@ public class Notification {
    * @return text
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TEXT)
+  @JsonProperty(value = JSON_PROPERTY_TEXT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getText() {
@@ -123,11 +123,12 @@ public class Notification {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TEXT)
+  @JsonProperty(value = JSON_PROPERTY_TEXT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setText(@jakarta.annotation.Nonnull String text) {
     this.text = text;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -162,10 +163,7 @@ public class Notification {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -203,7 +201,7 @@ public class Notification {
     // add `channel` to the URL query string
     if (getChannel() != null) {
       try {
-        joiner.add(String.format("%schannel%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getChannel()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%schannel%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getChannel()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -213,7 +211,7 @@ public class Notification {
     // add `text` to the URL query string
     if (getText() != null) {
       try {
-        joiner.add(String.format("%stext%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getText()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stext%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getText()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

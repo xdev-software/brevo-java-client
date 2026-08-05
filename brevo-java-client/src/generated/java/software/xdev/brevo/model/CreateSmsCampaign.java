@@ -88,7 +88,7 @@ public class CreateSmsCampaign {
    * @return name
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getName() {
@@ -96,7 +96,7 @@ public class CreateSmsCampaign {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
@@ -113,7 +113,7 @@ public class CreateSmsCampaign {
    * @return sender
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SENDER)
+  @JsonProperty(value = JSON_PROPERTY_SENDER, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getSender() {
@@ -121,7 +121,7 @@ public class CreateSmsCampaign {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SENDER)
+  @JsonProperty(value = JSON_PROPERTY_SENDER, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSender(@jakarta.annotation.Nonnull String sender) {
     this.sender = sender;
@@ -138,7 +138,7 @@ public class CreateSmsCampaign {
    * @return content
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CONTENT)
+  @JsonProperty(value = JSON_PROPERTY_CONTENT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getContent() {
@@ -146,7 +146,7 @@ public class CreateSmsCampaign {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONTENT)
+  @JsonProperty(value = JSON_PROPERTY_CONTENT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setContent(@jakarta.annotation.Nonnull String content) {
     this.content = content;
@@ -163,7 +163,7 @@ public class CreateSmsCampaign {
    * @return recipients
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_RECIPIENTS)
+  @JsonProperty(value = JSON_PROPERTY_RECIPIENTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public CreateSmsCampaignRecipients getRecipients() {
@@ -171,7 +171,7 @@ public class CreateSmsCampaign {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_RECIPIENTS)
+  @JsonProperty(value = JSON_PROPERTY_RECIPIENTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRecipients(@jakarta.annotation.Nullable CreateSmsCampaignRecipients recipients) {
     this.recipients = recipients;
@@ -188,7 +188,7 @@ public class CreateSmsCampaign {
    * @return scheduledAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
+  @JsonProperty(value = JSON_PROPERTY_SCHEDULED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getScheduledAt() {
@@ -196,7 +196,7 @@ public class CreateSmsCampaign {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SCHEDULED_AT)
+  @JsonProperty(value = JSON_PROPERTY_SCHEDULED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setScheduledAt(@jakarta.annotation.Nullable String scheduledAt) {
     this.scheduledAt = scheduledAt;
@@ -213,7 +213,7 @@ public class CreateSmsCampaign {
    * @return unicodeEnabled
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UNICODE_ENABLED)
+  @JsonProperty(value = JSON_PROPERTY_UNICODE_ENABLED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getUnicodeEnabled() {
@@ -221,7 +221,7 @@ public class CreateSmsCampaign {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UNICODE_ENABLED)
+  @JsonProperty(value = JSON_PROPERTY_UNICODE_ENABLED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUnicodeEnabled(@jakarta.annotation.Nullable Boolean unicodeEnabled) {
     this.unicodeEnabled = unicodeEnabled;
@@ -238,7 +238,7 @@ public class CreateSmsCampaign {
    * @return organisationPrefix
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ORGANISATION_PREFIX)
+  @JsonProperty(value = JSON_PROPERTY_ORGANISATION_PREFIX, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getOrganisationPrefix() {
@@ -246,7 +246,7 @@ public class CreateSmsCampaign {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ORGANISATION_PREFIX)
+  @JsonProperty(value = JSON_PROPERTY_ORGANISATION_PREFIX, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setOrganisationPrefix(@jakarta.annotation.Nullable String organisationPrefix) {
     this.organisationPrefix = organisationPrefix;
@@ -263,7 +263,7 @@ public class CreateSmsCampaign {
    * @return unsubscribeInstruction
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UNSUBSCRIBE_INSTRUCTION)
+  @JsonProperty(value = JSON_PROPERTY_UNSUBSCRIBE_INSTRUCTION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getUnsubscribeInstruction() {
@@ -271,11 +271,12 @@ public class CreateSmsCampaign {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UNSUBSCRIBE_INSTRUCTION)
+  @JsonProperty(value = JSON_PROPERTY_UNSUBSCRIBE_INSTRUCTION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUnsubscribeInstruction(@jakarta.annotation.Nullable String unsubscribeInstruction) {
     this.unsubscribeInstruction = unsubscribeInstruction;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -322,10 +323,7 @@ public class CreateSmsCampaign {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -363,7 +361,7 @@ public class CreateSmsCampaign {
     // add `name` to the URL query string
     if (getName() != null) {
       try {
-        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -373,7 +371,7 @@ public class CreateSmsCampaign {
     // add `sender` to the URL query string
     if (getSender() != null) {
       try {
-        joiner.add(String.format("%ssender%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSender()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssender%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSender()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -383,7 +381,7 @@ public class CreateSmsCampaign {
     // add `content` to the URL query string
     if (getContent() != null) {
       try {
-        joiner.add(String.format("%scontent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContent()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scontent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContent()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -398,7 +396,7 @@ public class CreateSmsCampaign {
     // add `scheduledAt` to the URL query string
     if (getScheduledAt() != null) {
       try {
-        joiner.add(String.format("%sscheduledAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getScheduledAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sscheduledAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getScheduledAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -408,7 +406,7 @@ public class CreateSmsCampaign {
     // add `unicodeEnabled` to the URL query string
     if (getUnicodeEnabled() != null) {
       try {
-        joiner.add(String.format("%sunicodeEnabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUnicodeEnabled()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sunicodeEnabled%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUnicodeEnabled()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -418,7 +416,7 @@ public class CreateSmsCampaign {
     // add `organisationPrefix` to the URL query string
     if (getOrganisationPrefix() != null) {
       try {
-        joiner.add(String.format("%sorganisationPrefix%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrganisationPrefix()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sorganisationPrefix%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOrganisationPrefix()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -428,7 +426,7 @@ public class CreateSmsCampaign {
     // add `unsubscribeInstruction` to the URL query string
     if (getUnsubscribeInstruction() != null) {
       try {
-        joiner.add(String.format("%sunsubscribeInstruction%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUnsubscribeInstruction()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sunsubscribeInstruction%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUnsubscribeInstruction()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

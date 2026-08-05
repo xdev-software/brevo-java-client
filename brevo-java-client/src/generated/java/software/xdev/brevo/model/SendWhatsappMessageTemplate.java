@@ -70,7 +70,7 @@ public class SendWhatsappMessageTemplate {
    * @return templateId
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
+  @JsonProperty(value = JSON_PROPERTY_TEMPLATE_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Integer getTemplateId() {
@@ -78,7 +78,7 @@ public class SendWhatsappMessageTemplate {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
+  @JsonProperty(value = JSON_PROPERTY_TEMPLATE_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setTemplateId(@jakarta.annotation.Nonnull Integer templateId) {
     this.templateId = templateId;
@@ -95,7 +95,7 @@ public class SendWhatsappMessageTemplate {
    * @return senderNumber
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SENDER_NUMBER)
+  @JsonProperty(value = JSON_PROPERTY_SENDER_NUMBER, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getSenderNumber() {
@@ -103,7 +103,7 @@ public class SendWhatsappMessageTemplate {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SENDER_NUMBER)
+  @JsonProperty(value = JSON_PROPERTY_SENDER_NUMBER, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSenderNumber(@jakarta.annotation.Nonnull String senderNumber) {
     this.senderNumber = senderNumber;
@@ -120,7 +120,7 @@ public class SendWhatsappMessageTemplate {
    * @return params
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PARAMS)
+  @JsonProperty(value = JSON_PROPERTY_PARAMS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Object getParams() {
@@ -128,7 +128,7 @@ public class SendWhatsappMessageTemplate {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PARAMS)
+  @JsonProperty(value = JSON_PROPERTY_PARAMS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setParams(@jakarta.annotation.Nullable Object params) {
     this.params = params;
@@ -153,7 +153,7 @@ public class SendWhatsappMessageTemplate {
    * @return contactNumbers
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CONTACT_NUMBERS)
+  @JsonProperty(value = JSON_PROPERTY_CONTACT_NUMBERS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public List<String> getContactNumbers() {
@@ -161,11 +161,12 @@ public class SendWhatsappMessageTemplate {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONTACT_NUMBERS)
+  @JsonProperty(value = JSON_PROPERTY_CONTACT_NUMBERS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setContactNumbers(@jakarta.annotation.Nonnull List<String> contactNumbers) {
     this.contactNumbers = contactNumbers;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -204,10 +205,7 @@ public class SendWhatsappMessageTemplate {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -245,7 +243,7 @@ public class SendWhatsappMessageTemplate {
     // add `templateId` to the URL query string
     if (getTemplateId() != null) {
       try {
-        joiner.add(String.format("%stemplateId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTemplateId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stemplateId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTemplateId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -255,7 +253,7 @@ public class SendWhatsappMessageTemplate {
     // add `senderNumber` to the URL query string
     if (getSenderNumber() != null) {
       try {
-        joiner.add(String.format("%ssenderNumber%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSenderNumber()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssenderNumber%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSenderNumber()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -265,7 +263,7 @@ public class SendWhatsappMessageTemplate {
     // add `params` to the URL query string
     if (getParams() != null) {
       try {
-        joiner.add(String.format("%sparams%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getParams()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sparams%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getParams()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -276,8 +274,8 @@ public class SendWhatsappMessageTemplate {
     if (getContactNumbers() != null) {
       for (int i = 0; i < getContactNumbers().size(); i++) {
         try {
-          joiner.add(String.format("%scontactNumbers%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%scontactNumbers%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getContactNumbers().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported

@@ -64,7 +64,7 @@ public class UpdateBatchContacts {
    * @return contacts
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CONTACTS)
+  @JsonProperty(value = JSON_PROPERTY_CONTACTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<UpdateBatchContactsContactsInner> getContacts() {
@@ -72,11 +72,12 @@ public class UpdateBatchContacts {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONTACTS)
+  @JsonProperty(value = JSON_PROPERTY_CONTACTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setContacts(@jakarta.annotation.Nullable List<UpdateBatchContactsContactsInner> contacts) {
     this.contacts = contacts;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -109,10 +110,7 @@ public class UpdateBatchContacts {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -151,8 +149,8 @@ public class UpdateBatchContacts {
     if (getContacts() != null) {
       for (int i = 0; i < getContacts().size(); i++) {
         if (getContacts().get(i) != null) {
-          joiner.add(getContacts().get(i).toUrlQueryString(String.format("%scontacts%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getContacts().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%scontacts%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }

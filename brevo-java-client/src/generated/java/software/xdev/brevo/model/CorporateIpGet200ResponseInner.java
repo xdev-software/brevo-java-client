@@ -62,7 +62,7 @@ public class CorporateIpGet200ResponseInner {
    * @return ip
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_IP)
+  @JsonProperty(value = JSON_PROPERTY_IP, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getIp() {
@@ -70,7 +70,7 @@ public class CorporateIpGet200ResponseInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IP)
+  @JsonProperty(value = JSON_PROPERTY_IP, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setIp(@jakarta.annotation.Nullable String ip) {
     this.ip = ip;
@@ -87,7 +87,7 @@ public class CorporateIpGet200ResponseInner {
    * @return domain
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DOMAIN)
+  @JsonProperty(value = JSON_PROPERTY_DOMAIN, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getDomain() {
@@ -95,7 +95,7 @@ public class CorporateIpGet200ResponseInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DOMAIN)
+  @JsonProperty(value = JSON_PROPERTY_DOMAIN, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDomain(@jakarta.annotation.Nullable String domain) {
     this.domain = domain;
@@ -112,7 +112,7 @@ public class CorporateIpGet200ResponseInner {
    * @return transactional
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TRANSACTIONAL)
+  @JsonProperty(value = JSON_PROPERTY_TRANSACTIONAL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getTransactional() {
@@ -120,11 +120,12 @@ public class CorporateIpGet200ResponseInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TRANSACTIONAL)
+  @JsonProperty(value = JSON_PROPERTY_TRANSACTIONAL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setTransactional(@jakarta.annotation.Nullable Boolean transactional) {
     this.transactional = transactional;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -161,10 +162,7 @@ public class CorporateIpGet200ResponseInner {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -202,7 +200,7 @@ public class CorporateIpGet200ResponseInner {
     // add `ip` to the URL query string
     if (getIp() != null) {
       try {
-        joiner.add(String.format("%sip%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIp()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sip%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIp()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -212,7 +210,7 @@ public class CorporateIpGet200ResponseInner {
     // add `domain` to the URL query string
     if (getDomain() != null) {
       try {
-        joiner.add(String.format("%sdomain%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDomain()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdomain%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDomain()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -222,7 +220,7 @@ public class CorporateIpGet200ResponseInner {
     // add `transactional` to the URL query string
     if (getTransactional() != null) {
       try {
-        joiner.add(String.format("%stransactional%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTransactional()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stransactional%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTransactional()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

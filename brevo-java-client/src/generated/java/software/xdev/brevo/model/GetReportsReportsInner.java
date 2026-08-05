@@ -113,7 +113,7 @@ public class GetReportsReportsInner {
    * @return date
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DATE)
+  @JsonProperty(value = JSON_PROPERTY_DATE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public LocalDate getDate() {
@@ -121,7 +121,7 @@ public class GetReportsReportsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DATE)
+  @JsonProperty(value = JSON_PROPERTY_DATE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDate(@jakarta.annotation.Nonnull LocalDate date) {
     this.date = date;
@@ -138,7 +138,7 @@ public class GetReportsReportsInner {
    * @return requests
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_REQUESTS)
+  @JsonProperty(value = JSON_PROPERTY_REQUESTS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getRequests() {
@@ -146,7 +146,7 @@ public class GetReportsReportsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REQUESTS)
+  @JsonProperty(value = JSON_PROPERTY_REQUESTS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setRequests(@jakarta.annotation.Nonnull Long requests) {
     this.requests = requests;
@@ -163,7 +163,7 @@ public class GetReportsReportsInner {
    * @return delivered
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DELIVERED)
+  @JsonProperty(value = JSON_PROPERTY_DELIVERED, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getDelivered() {
@@ -171,7 +171,7 @@ public class GetReportsReportsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DELIVERED)
+  @JsonProperty(value = JSON_PROPERTY_DELIVERED, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDelivered(@jakarta.annotation.Nonnull Long delivered) {
     this.delivered = delivered;
@@ -188,7 +188,7 @@ public class GetReportsReportsInner {
    * @return hardBounces
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_HARD_BOUNCES)
+  @JsonProperty(value = JSON_PROPERTY_HARD_BOUNCES, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getHardBounces() {
@@ -196,7 +196,7 @@ public class GetReportsReportsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_HARD_BOUNCES)
+  @JsonProperty(value = JSON_PROPERTY_HARD_BOUNCES, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setHardBounces(@jakarta.annotation.Nonnull Long hardBounces) {
     this.hardBounces = hardBounces;
@@ -213,7 +213,7 @@ public class GetReportsReportsInner {
    * @return softBounces
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SOFT_BOUNCES)
+  @JsonProperty(value = JSON_PROPERTY_SOFT_BOUNCES, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getSoftBounces() {
@@ -221,7 +221,7 @@ public class GetReportsReportsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SOFT_BOUNCES)
+  @JsonProperty(value = JSON_PROPERTY_SOFT_BOUNCES, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSoftBounces(@jakarta.annotation.Nonnull Long softBounces) {
     this.softBounces = softBounces;
@@ -238,7 +238,7 @@ public class GetReportsReportsInner {
    * @return clicks
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CLICKS)
+  @JsonProperty(value = JSON_PROPERTY_CLICKS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getClicks() {
@@ -246,7 +246,7 @@ public class GetReportsReportsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CLICKS)
+  @JsonProperty(value = JSON_PROPERTY_CLICKS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setClicks(@jakarta.annotation.Nonnull Long clicks) {
     this.clicks = clicks;
@@ -263,7 +263,7 @@ public class GetReportsReportsInner {
    * @return uniqueClicks
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_UNIQUE_CLICKS)
+  @JsonProperty(value = JSON_PROPERTY_UNIQUE_CLICKS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getUniqueClicks() {
@@ -271,7 +271,7 @@ public class GetReportsReportsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UNIQUE_CLICKS)
+  @JsonProperty(value = JSON_PROPERTY_UNIQUE_CLICKS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setUniqueClicks(@jakarta.annotation.Nonnull Long uniqueClicks) {
     this.uniqueClicks = uniqueClicks;
@@ -288,7 +288,7 @@ public class GetReportsReportsInner {
    * @return opens
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_OPENS)
+  @JsonProperty(value = JSON_PROPERTY_OPENS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getOpens() {
@@ -296,7 +296,7 @@ public class GetReportsReportsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_OPENS)
+  @JsonProperty(value = JSON_PROPERTY_OPENS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setOpens(@jakarta.annotation.Nonnull Long opens) {
     this.opens = opens;
@@ -313,7 +313,7 @@ public class GetReportsReportsInner {
    * @return uniqueOpens
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_UNIQUE_OPENS)
+  @JsonProperty(value = JSON_PROPERTY_UNIQUE_OPENS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getUniqueOpens() {
@@ -321,7 +321,7 @@ public class GetReportsReportsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UNIQUE_OPENS)
+  @JsonProperty(value = JSON_PROPERTY_UNIQUE_OPENS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setUniqueOpens(@jakarta.annotation.Nonnull Long uniqueOpens) {
     this.uniqueOpens = uniqueOpens;
@@ -338,7 +338,7 @@ public class GetReportsReportsInner {
    * @return spamReports
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SPAM_REPORTS)
+  @JsonProperty(value = JSON_PROPERTY_SPAM_REPORTS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getSpamReports() {
@@ -346,7 +346,7 @@ public class GetReportsReportsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SPAM_REPORTS)
+  @JsonProperty(value = JSON_PROPERTY_SPAM_REPORTS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSpamReports(@jakarta.annotation.Nonnull Long spamReports) {
     this.spamReports = spamReports;
@@ -363,7 +363,7 @@ public class GetReportsReportsInner {
    * @return blocked
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_BLOCKED)
+  @JsonProperty(value = JSON_PROPERTY_BLOCKED, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getBlocked() {
@@ -371,7 +371,7 @@ public class GetReportsReportsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BLOCKED)
+  @JsonProperty(value = JSON_PROPERTY_BLOCKED, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setBlocked(@jakarta.annotation.Nonnull Long blocked) {
     this.blocked = blocked;
@@ -388,7 +388,7 @@ public class GetReportsReportsInner {
    * @return invalid
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_INVALID)
+  @JsonProperty(value = JSON_PROPERTY_INVALID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getInvalid() {
@@ -396,7 +396,7 @@ public class GetReportsReportsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_INVALID)
+  @JsonProperty(value = JSON_PROPERTY_INVALID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setInvalid(@jakarta.annotation.Nonnull Long invalid) {
     this.invalid = invalid;
@@ -413,7 +413,7 @@ public class GetReportsReportsInner {
    * @return unsubscribed
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_UNSUBSCRIBED)
+  @JsonProperty(value = JSON_PROPERTY_UNSUBSCRIBED, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getUnsubscribed() {
@@ -421,11 +421,12 @@ public class GetReportsReportsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UNSUBSCRIBED)
+  @JsonProperty(value = JSON_PROPERTY_UNSUBSCRIBED, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setUnsubscribed(@jakarta.annotation.Nonnull Long unsubscribed) {
     this.unsubscribed = unsubscribed;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -482,10 +483,7 @@ public class GetReportsReportsInner {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -523,7 +521,7 @@ public class GetReportsReportsInner {
     // add `date` to the URL query string
     if (getDate() != null) {
       try {
-        joiner.add(String.format("%sdate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDate()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDate()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -533,7 +531,7 @@ public class GetReportsReportsInner {
     // add `requests` to the URL query string
     if (getRequests() != null) {
       try {
-        joiner.add(String.format("%srequests%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRequests()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%srequests%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRequests()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -543,7 +541,7 @@ public class GetReportsReportsInner {
     // add `delivered` to the URL query string
     if (getDelivered() != null) {
       try {
-        joiner.add(String.format("%sdelivered%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDelivered()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdelivered%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDelivered()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -553,7 +551,7 @@ public class GetReportsReportsInner {
     // add `hardBounces` to the URL query string
     if (getHardBounces() != null) {
       try {
-        joiner.add(String.format("%shardBounces%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHardBounces()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%shardBounces%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHardBounces()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -563,7 +561,7 @@ public class GetReportsReportsInner {
     // add `softBounces` to the URL query string
     if (getSoftBounces() != null) {
       try {
-        joiner.add(String.format("%ssoftBounces%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSoftBounces()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssoftBounces%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSoftBounces()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -573,7 +571,7 @@ public class GetReportsReportsInner {
     // add `clicks` to the URL query string
     if (getClicks() != null) {
       try {
-        joiner.add(String.format("%sclicks%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getClicks()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sclicks%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getClicks()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -583,7 +581,7 @@ public class GetReportsReportsInner {
     // add `uniqueClicks` to the URL query string
     if (getUniqueClicks() != null) {
       try {
-        joiner.add(String.format("%suniqueClicks%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUniqueClicks()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%suniqueClicks%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUniqueClicks()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -593,7 +591,7 @@ public class GetReportsReportsInner {
     // add `opens` to the URL query string
     if (getOpens() != null) {
       try {
-        joiner.add(String.format("%sopens%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOpens()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sopens%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOpens()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -603,7 +601,7 @@ public class GetReportsReportsInner {
     // add `uniqueOpens` to the URL query string
     if (getUniqueOpens() != null) {
       try {
-        joiner.add(String.format("%suniqueOpens%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUniqueOpens()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%suniqueOpens%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUniqueOpens()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -613,7 +611,7 @@ public class GetReportsReportsInner {
     // add `spamReports` to the URL query string
     if (getSpamReports() != null) {
       try {
-        joiner.add(String.format("%sspamReports%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSpamReports()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sspamReports%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSpamReports()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -623,7 +621,7 @@ public class GetReportsReportsInner {
     // add `blocked` to the URL query string
     if (getBlocked() != null) {
       try {
-        joiner.add(String.format("%sblocked%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBlocked()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sblocked%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBlocked()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -633,7 +631,7 @@ public class GetReportsReportsInner {
     // add `invalid` to the URL query string
     if (getInvalid() != null) {
       try {
-        joiner.add(String.format("%sinvalid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getInvalid()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sinvalid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getInvalid()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -643,7 +641,7 @@ public class GetReportsReportsInner {
     // add `unsubscribed` to the URL query string
     if (getUnsubscribed() != null) {
       try {
-        joiner.add(String.format("%sunsubscribed%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUnsubscribed()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sunsubscribed%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUnsubscribed()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

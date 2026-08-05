@@ -52,7 +52,7 @@ public class ModelConfiguration {
    * @return customSuccessUrl
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CUSTOM_SUCCESS_URL)
+  @JsonProperty(value = JSON_PROPERTY_CUSTOM_SUCCESS_URL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getCustomSuccessUrl() {
@@ -60,11 +60,12 @@ public class ModelConfiguration {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CUSTOM_SUCCESS_URL)
+  @JsonProperty(value = JSON_PROPERTY_CUSTOM_SUCCESS_URL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCustomSuccessUrl(@jakarta.annotation.Nonnull String customSuccessUrl) {
     this.customSuccessUrl = customSuccessUrl;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -97,10 +98,7 @@ public class ModelConfiguration {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -138,7 +136,7 @@ public class ModelConfiguration {
     // add `customSuccessUrl` to the URL query string
     if (getCustomSuccessUrl() != null) {
       try {
-        joiner.add(String.format("%scustomSuccessUrl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCustomSuccessUrl()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scustomSuccessUrl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCustomSuccessUrl()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

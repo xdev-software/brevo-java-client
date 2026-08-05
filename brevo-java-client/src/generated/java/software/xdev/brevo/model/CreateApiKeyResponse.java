@@ -57,7 +57,7 @@ public class CreateApiKeyResponse {
    * @return status
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_STATUS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getStatus() {
@@ -65,7 +65,7 @@ public class CreateApiKeyResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_STATUS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setStatus(@jakarta.annotation.Nonnull String status) {
     this.status = status;
@@ -82,7 +82,7 @@ public class CreateApiKeyResponse {
    * @return key
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_KEY)
+  @JsonProperty(value = JSON_PROPERTY_KEY, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getKey() {
@@ -90,11 +90,12 @@ public class CreateApiKeyResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_KEY)
+  @JsonProperty(value = JSON_PROPERTY_KEY, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setKey(@jakarta.annotation.Nonnull String key) {
     this.key = key;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -129,10 +130,7 @@ public class CreateApiKeyResponse {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -170,7 +168,7 @@ public class CreateApiKeyResponse {
     // add `status` to the URL query string
     if (getStatus() != null) {
       try {
-        joiner.add(String.format("%sstatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatus()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sstatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatus()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -180,7 +178,7 @@ public class CreateApiKeyResponse {
     // add `key` to the URL query string
     if (getKey() != null) {
       try {
-        joiner.add(String.format("%skey%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getKey()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%skey%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getKey()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

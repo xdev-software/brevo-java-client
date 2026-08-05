@@ -155,7 +155,7 @@ public class CrmAttributesPostRequest {
    * @return label
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_LABEL)
+  @JsonProperty(value = JSON_PROPERTY_LABEL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getLabel() {
@@ -163,7 +163,7 @@ public class CrmAttributesPostRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LABEL)
+  @JsonProperty(value = JSON_PROPERTY_LABEL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setLabel(@jakarta.annotation.Nonnull String label) {
     this.label = label;
@@ -180,7 +180,7 @@ public class CrmAttributesPostRequest {
    * @return attributeType
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ATTRIBUTE_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_ATTRIBUTE_TYPE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public AttributeTypeEnum getAttributeType() {
@@ -188,7 +188,7 @@ public class CrmAttributesPostRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ATTRIBUTE_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_ATTRIBUTE_TYPE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAttributeType(@jakarta.annotation.Nonnull AttributeTypeEnum attributeType) {
     this.attributeType = attributeType;
@@ -205,7 +205,7 @@ public class CrmAttributesPostRequest {
    * @return description
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DESCRIPTION)
+  @JsonProperty(value = JSON_PROPERTY_DESCRIPTION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getDescription() {
@@ -213,7 +213,7 @@ public class CrmAttributesPostRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DESCRIPTION)
+  @JsonProperty(value = JSON_PROPERTY_DESCRIPTION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDescription(@jakarta.annotation.Nullable String description) {
     this.description = description;
@@ -238,7 +238,7 @@ public class CrmAttributesPostRequest {
    * @return optionsLabels
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_OPTIONS_LABELS)
+  @JsonProperty(value = JSON_PROPERTY_OPTIONS_LABELS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getOptionsLabels() {
@@ -246,7 +246,7 @@ public class CrmAttributesPostRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_OPTIONS_LABELS)
+  @JsonProperty(value = JSON_PROPERTY_OPTIONS_LABELS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setOptionsLabels(@jakarta.annotation.Nullable List<String> optionsLabels) {
     this.optionsLabels = optionsLabels;
@@ -263,7 +263,7 @@ public class CrmAttributesPostRequest {
    * @return objectType
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_OBJECT_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_OBJECT_TYPE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public ObjectTypeEnum getObjectType() {
@@ -271,11 +271,12 @@ public class CrmAttributesPostRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_OBJECT_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_OBJECT_TYPE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setObjectType(@jakarta.annotation.Nonnull ObjectTypeEnum objectType) {
     this.objectType = objectType;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -316,10 +317,7 @@ public class CrmAttributesPostRequest {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -357,7 +355,7 @@ public class CrmAttributesPostRequest {
     // add `label` to the URL query string
     if (getLabel() != null) {
       try {
-        joiner.add(String.format("%slabel%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLabel()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%slabel%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLabel()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -367,7 +365,7 @@ public class CrmAttributesPostRequest {
     // add `attributeType` to the URL query string
     if (getAttributeType() != null) {
       try {
-        joiner.add(String.format("%sattributeType%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAttributeType()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sattributeType%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAttributeType()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -377,7 +375,7 @@ public class CrmAttributesPostRequest {
     // add `description` to the URL query string
     if (getDescription() != null) {
       try {
-        joiner.add(String.format("%sdescription%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDescription()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdescription%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDescription()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -388,8 +386,8 @@ public class CrmAttributesPostRequest {
     if (getOptionsLabels() != null) {
       for (int i = 0; i < getOptionsLabels().size(); i++) {
         try {
-          joiner.add(String.format("%soptionsLabels%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%soptionsLabels%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getOptionsLabels().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -401,7 +399,7 @@ public class CrmAttributesPostRequest {
     // add `objectType` to the URL query string
     if (getObjectType() != null) {
       try {
-        joiner.add(String.format("%sobjectType%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getObjectType()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sobjectType%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getObjectType()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

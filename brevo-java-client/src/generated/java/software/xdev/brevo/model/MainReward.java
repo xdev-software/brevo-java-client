@@ -297,7 +297,7 @@ public class MainReward {
    * @return attributionPerConsumer
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ATTRIBUTION_PER_CONSUMER)
+  @JsonProperty(value = JSON_PROPERTY_ATTRIBUTION_PER_CONSUMER, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getAttributionPerConsumer() {
@@ -305,7 +305,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ATTRIBUTION_PER_CONSUMER)
+  @JsonProperty(value = JSON_PROPERTY_ATTRIBUTION_PER_CONSUMER, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setAttributionPerConsumer(@jakarta.annotation.Nullable Integer attributionPerConsumer) {
     this.attributionPerConsumer = attributionPerConsumer;
@@ -322,7 +322,7 @@ public class MainReward {
    * @return balanceDefinitionId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_BALANCE_DEFINITION_ID)
+  @JsonProperty(value = JSON_PROPERTY_BALANCE_DEFINITION_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public UUID getBalanceDefinitionId() {
@@ -330,7 +330,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BALANCE_DEFINITION_ID)
+  @JsonProperty(value = JSON_PROPERTY_BALANCE_DEFINITION_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setBalanceDefinitionId(@jakarta.annotation.Nullable UUID balanceDefinitionId) {
     this.balanceDefinitionId = balanceDefinitionId;
@@ -347,7 +347,7 @@ public class MainReward {
    * @return code
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CODE)
+  @JsonProperty(value = JSON_PROPERTY_CODE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getCode() {
@@ -355,7 +355,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CODE)
+  @JsonProperty(value = JSON_PROPERTY_CODE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCode(@jakarta.annotation.Nullable String code) {
     this.code = code;
@@ -372,7 +372,7 @@ public class MainReward {
    * @return codeCount
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CODE_COUNT)
+  @JsonProperty(value = JSON_PROPERTY_CODE_COUNT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getCodeCount() {
@@ -380,7 +380,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CODE_COUNT)
+  @JsonProperty(value = JSON_PROPERTY_CODE_COUNT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCodeCount(@jakarta.annotation.Nullable Long codeCount) {
     this.codeCount = codeCount;
@@ -397,7 +397,7 @@ public class MainReward {
    * @return codeGeneratorId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CODE_GENERATOR_ID)
+  @JsonProperty(value = JSON_PROPERTY_CODE_GENERATOR_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public UUID getCodeGeneratorId() {
@@ -405,7 +405,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CODE_GENERATOR_ID)
+  @JsonProperty(value = JSON_PROPERTY_CODE_GENERATOR_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCodeGeneratorId(@jakarta.annotation.Nullable UUID codeGeneratorId) {
     this.codeGeneratorId = codeGeneratorId;
@@ -422,7 +422,7 @@ public class MainReward {
    * @return codePoolId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CODE_POOL_ID)
+  @JsonProperty(value = JSON_PROPERTY_CODE_POOL_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public UUID getCodePoolId() {
@@ -430,7 +430,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CODE_POOL_ID)
+  @JsonProperty(value = JSON_PROPERTY_CODE_POOL_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCodePoolId(@jakarta.annotation.Nullable UUID codePoolId) {
     this.codePoolId = codePoolId;
@@ -447,7 +447,7 @@ public class MainReward {
    * @return config
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CONFIG)
+  @JsonProperty(value = JSON_PROPERTY_CONFIG, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getConfig() {
@@ -455,7 +455,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONFIG)
+  @JsonProperty(value = JSON_PROPERTY_CONFIG, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setConfig(@jakarta.annotation.Nullable String config) {
     this.config = config;
@@ -472,7 +472,7 @@ public class MainReward {
    * @return createdAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public OffsetDateTime getCreatedAt() {
@@ -480,7 +480,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CREATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_CREATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCreatedAt(@jakarta.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
@@ -497,7 +497,7 @@ public class MainReward {
    * @return disabledAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DISABLED_AT)
+  @JsonProperty(value = JSON_PROPERTY_DISABLED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public OffsetDateTime getDisabledAt() {
@@ -505,7 +505,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DISABLED_AT)
+  @JsonProperty(value = JSON_PROPERTY_DISABLED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDisabledAt(@jakarta.annotation.Nullable OffsetDateTime disabledAt) {
     this.disabledAt = disabledAt;
@@ -522,7 +522,7 @@ public class MainReward {
    * @return endDate
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_END_DATE)
+  @JsonProperty(value = JSON_PROPERTY_END_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public OffsetDateTime getEndDate() {
@@ -530,7 +530,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_END_DATE)
+  @JsonProperty(value = JSON_PROPERTY_END_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setEndDate(@jakarta.annotation.Nullable OffsetDateTime endDate) {
     this.endDate = endDate;
@@ -547,7 +547,7 @@ public class MainReward {
    * @return expirationDate
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EXPIRATION_DATE)
+  @JsonProperty(value = JSON_PROPERTY_EXPIRATION_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public OffsetDateTime getExpirationDate() {
@@ -555,7 +555,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EXPIRATION_DATE)
+  @JsonProperty(value = JSON_PROPERTY_EXPIRATION_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setExpirationDate(@jakarta.annotation.Nullable OffsetDateTime expirationDate) {
     this.expirationDate = expirationDate;
@@ -572,7 +572,7 @@ public class MainReward {
    * @return expirationModifier
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EXPIRATION_MODIFIER)
+  @JsonProperty(value = JSON_PROPERTY_EXPIRATION_MODIFIER, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public ExpirationModifierEnum getExpirationModifier() {
@@ -580,7 +580,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EXPIRATION_MODIFIER)
+  @JsonProperty(value = JSON_PROPERTY_EXPIRATION_MODIFIER, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setExpirationModifier(@jakarta.annotation.Nullable ExpirationModifierEnum expirationModifier) {
     this.expirationModifier = expirationModifier;
@@ -597,7 +597,7 @@ public class MainReward {
    * @return expirationUnit
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EXPIRATION_UNIT)
+  @JsonProperty(value = JSON_PROPERTY_EXPIRATION_UNIT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getExpirationUnit() {
@@ -605,7 +605,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EXPIRATION_UNIT)
+  @JsonProperty(value = JSON_PROPERTY_EXPIRATION_UNIT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setExpirationUnit(@jakarta.annotation.Nullable String expirationUnit) {
     this.expirationUnit = expirationUnit;
@@ -622,7 +622,7 @@ public class MainReward {
    * @return expirationValue
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EXPIRATION_VALUE)
+  @JsonProperty(value = JSON_PROPERTY_EXPIRATION_VALUE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getExpirationValue() {
@@ -630,7 +630,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EXPIRATION_VALUE)
+  @JsonProperty(value = JSON_PROPERTY_EXPIRATION_VALUE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setExpirationValue(@jakarta.annotation.Nullable Integer expirationValue) {
     this.expirationValue = expirationValue;
@@ -647,7 +647,7 @@ public class MainReward {
    * @return generator
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_GENERATOR)
+  @JsonProperty(value = JSON_PROPERTY_GENERATOR, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public MainGenerator getGenerator() {
@@ -655,7 +655,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_GENERATOR)
+  @JsonProperty(value = JSON_PROPERTY_GENERATOR, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setGenerator(@jakarta.annotation.Nullable MainGenerator generator) {
     this.generator = generator;
@@ -672,7 +672,7 @@ public class MainReward {
    * @return id
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public UUID getId() {
@@ -680,7 +680,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setId(@jakarta.annotation.Nullable UUID id) {
     this.id = id;
@@ -705,7 +705,7 @@ public class MainReward {
    * @return limits
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LIMITS)
+  @JsonProperty(value = JSON_PROPERTY_LIMITS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<MainLimit> getLimits() {
@@ -713,7 +713,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LIMITS)
+  @JsonProperty(value = JSON_PROPERTY_LIMITS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLimits(@jakarta.annotation.Nullable List<MainLimit> limits) {
     this.limits = limits;
@@ -730,7 +730,7 @@ public class MainReward {
    * @return loyaltyProgramId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LOYALTY_PROGRAM_ID)
+  @JsonProperty(value = JSON_PROPERTY_LOYALTY_PROGRAM_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public UUID getLoyaltyProgramId() {
@@ -738,7 +738,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LOYALTY_PROGRAM_ID)
+  @JsonProperty(value = JSON_PROPERTY_LOYALTY_PROGRAM_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLoyaltyProgramId(@jakarta.annotation.Nullable UUID loyaltyProgramId) {
     this.loyaltyProgramId = loyaltyProgramId;
@@ -763,7 +763,7 @@ public class MainReward {
    * @return meta
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_META)
+  @JsonProperty(value = JSON_PROPERTY_META, required = false)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
 
   public Map<String, Object> getMeta() {
@@ -771,7 +771,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_META)
+  @JsonProperty(value = JSON_PROPERTY_META, required = false)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
   public void setMeta(@jakarta.annotation.Nullable Map<String, Object> meta) {
     this.meta = meta;
@@ -788,7 +788,7 @@ public class MainReward {
    * @return name
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getName() {
@@ -796,7 +796,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setName(@jakarta.annotation.Nullable String name) {
     this.name = name;
@@ -821,7 +821,7 @@ public class MainReward {
    * @return products
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PRODUCTS)
+  @JsonProperty(value = JSON_PROPERTY_PRODUCTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<MainProduct> getProducts() {
@@ -829,7 +829,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PRODUCTS)
+  @JsonProperty(value = JSON_PROPERTY_PRODUCTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setProducts(@jakarta.annotation.Nullable List<MainProduct> products) {
     this.products = products;
@@ -846,7 +846,7 @@ public class MainReward {
    * @return publicDescription
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PUBLIC_DESCRIPTION)
+  @JsonProperty(value = JSON_PROPERTY_PUBLIC_DESCRIPTION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getPublicDescription() {
@@ -854,7 +854,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PUBLIC_DESCRIPTION)
+  @JsonProperty(value = JSON_PROPERTY_PUBLIC_DESCRIPTION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPublicDescription(@jakarta.annotation.Nullable String publicDescription) {
     this.publicDescription = publicDescription;
@@ -871,7 +871,7 @@ public class MainReward {
    * @return publicImage
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PUBLIC_IMAGE)
+  @JsonProperty(value = JSON_PROPERTY_PUBLIC_IMAGE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getPublicImage() {
@@ -879,7 +879,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PUBLIC_IMAGE)
+  @JsonProperty(value = JSON_PROPERTY_PUBLIC_IMAGE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPublicImage(@jakarta.annotation.Nullable String publicImage) {
     this.publicImage = publicImage;
@@ -896,7 +896,7 @@ public class MainReward {
    * @return publicName
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PUBLIC_NAME)
+  @JsonProperty(value = JSON_PROPERTY_PUBLIC_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getPublicName() {
@@ -904,7 +904,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PUBLIC_NAME)
+  @JsonProperty(value = JSON_PROPERTY_PUBLIC_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPublicName(@jakarta.annotation.Nullable String publicName) {
     this.publicName = publicName;
@@ -921,7 +921,7 @@ public class MainReward {
    * @return redeemPerConsumer
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_REDEEM_PER_CONSUMER)
+  @JsonProperty(value = JSON_PROPERTY_REDEEM_PER_CONSUMER, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getRedeemPerConsumer() {
@@ -929,7 +929,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REDEEM_PER_CONSUMER)
+  @JsonProperty(value = JSON_PROPERTY_REDEEM_PER_CONSUMER, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRedeemPerConsumer(@jakarta.annotation.Nullable Integer redeemPerConsumer) {
     this.redeemPerConsumer = redeemPerConsumer;
@@ -954,7 +954,7 @@ public class MainReward {
    * @return redeemRules
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_REDEEM_RULES)
+  @JsonProperty(value = JSON_PROPERTY_REDEEM_RULES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getRedeemRules() {
@@ -962,7 +962,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REDEEM_RULES)
+  @JsonProperty(value = JSON_PROPERTY_REDEEM_RULES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRedeemRules(@jakarta.annotation.Nullable List<String> redeemRules) {
     this.redeemRules = redeemRules;
@@ -979,7 +979,7 @@ public class MainReward {
    * @return rewardConfigs
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_REWARD_CONFIGS)
+  @JsonProperty(value = JSON_PROPERTY_REWARD_CONFIGS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public MainRewardConfigurations getRewardConfigs() {
@@ -987,7 +987,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REWARD_CONFIGS)
+  @JsonProperty(value = JSON_PROPERTY_REWARD_CONFIGS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRewardConfigs(@jakarta.annotation.Nullable MainRewardConfigurations rewardConfigs) {
     this.rewardConfigs = rewardConfigs;
@@ -1004,7 +1004,7 @@ public class MainReward {
    * @return rule
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_RULE)
+  @JsonProperty(value = JSON_PROPERTY_RULE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public MainRule getRule() {
@@ -1012,7 +1012,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_RULE)
+  @JsonProperty(value = JSON_PROPERTY_RULE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRule(@jakarta.annotation.Nullable MainRule rule) {
     this.rule = rule;
@@ -1029,7 +1029,7 @@ public class MainReward {
    * @return startDate
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_START_DATE)
+  @JsonProperty(value = JSON_PROPERTY_START_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public OffsetDateTime getStartDate() {
@@ -1037,7 +1037,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_START_DATE)
+  @JsonProperty(value = JSON_PROPERTY_START_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setStartDate(@jakarta.annotation.Nullable OffsetDateTime startDate) {
     this.startDate = startDate;
@@ -1054,7 +1054,7 @@ public class MainReward {
    * @return subtractBalanceDefinitionId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SUBTRACT_BALANCE_DEFINITION_ID)
+  @JsonProperty(value = JSON_PROPERTY_SUBTRACT_BALANCE_DEFINITION_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getSubtractBalanceDefinitionId() {
@@ -1062,7 +1062,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SUBTRACT_BALANCE_DEFINITION_ID)
+  @JsonProperty(value = JSON_PROPERTY_SUBTRACT_BALANCE_DEFINITION_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSubtractBalanceDefinitionId(@jakarta.annotation.Nullable String subtractBalanceDefinitionId) {
     this.subtractBalanceDefinitionId = subtractBalanceDefinitionId;
@@ -1079,7 +1079,7 @@ public class MainReward {
    * @return subtractBalanceStrategy
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SUBTRACT_BALANCE_STRATEGY)
+  @JsonProperty(value = JSON_PROPERTY_SUBTRACT_BALANCE_STRATEGY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getSubtractBalanceStrategy() {
@@ -1087,7 +1087,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SUBTRACT_BALANCE_STRATEGY)
+  @JsonProperty(value = JSON_PROPERTY_SUBTRACT_BALANCE_STRATEGY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSubtractBalanceStrategy(@jakarta.annotation.Nullable String subtractBalanceStrategy) {
     this.subtractBalanceStrategy = subtractBalanceStrategy;
@@ -1104,7 +1104,7 @@ public class MainReward {
    * @return subtractBalanceValue
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SUBTRACT_BALANCE_VALUE)
+  @JsonProperty(value = JSON_PROPERTY_SUBTRACT_BALANCE_VALUE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getSubtractBalanceValue() {
@@ -1112,7 +1112,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SUBTRACT_BALANCE_VALUE)
+  @JsonProperty(value = JSON_PROPERTY_SUBTRACT_BALANCE_VALUE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSubtractBalanceValue(@jakarta.annotation.Nullable Integer subtractBalanceValue) {
     this.subtractBalanceValue = subtractBalanceValue;
@@ -1129,7 +1129,7 @@ public class MainReward {
    * @return subtractTotalBalance
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SUBTRACT_TOTAL_BALANCE)
+  @JsonProperty(value = JSON_PROPERTY_SUBTRACT_TOTAL_BALANCE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getSubtractTotalBalance() {
@@ -1137,7 +1137,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SUBTRACT_TOTAL_BALANCE)
+  @JsonProperty(value = JSON_PROPERTY_SUBTRACT_TOTAL_BALANCE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSubtractTotalBalance(@jakarta.annotation.Nullable Boolean subtractTotalBalance) {
     this.subtractTotalBalance = subtractTotalBalance;
@@ -1154,7 +1154,7 @@ public class MainReward {
    * @return totalAttribution
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TOTAL_ATTRIBUTION)
+  @JsonProperty(value = JSON_PROPERTY_TOTAL_ATTRIBUTION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getTotalAttribution() {
@@ -1162,7 +1162,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TOTAL_ATTRIBUTION)
+  @JsonProperty(value = JSON_PROPERTY_TOTAL_ATTRIBUTION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setTotalAttribution(@jakarta.annotation.Nullable Integer totalAttribution) {
     this.totalAttribution = totalAttribution;
@@ -1179,7 +1179,7 @@ public class MainReward {
    * @return totalRedeem
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TOTAL_REDEEM)
+  @JsonProperty(value = JSON_PROPERTY_TOTAL_REDEEM, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getTotalRedeem() {
@@ -1187,7 +1187,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TOTAL_REDEEM)
+  @JsonProperty(value = JSON_PROPERTY_TOTAL_REDEEM, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setTotalRedeem(@jakarta.annotation.Nullable Integer totalRedeem) {
     this.totalRedeem = totalRedeem;
@@ -1204,7 +1204,7 @@ public class MainReward {
    * @return triggerId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TRIGGER_ID)
+  @JsonProperty(value = JSON_PROPERTY_TRIGGER_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getTriggerId() {
@@ -1212,7 +1212,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TRIGGER_ID)
+  @JsonProperty(value = JSON_PROPERTY_TRIGGER_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setTriggerId(@jakarta.annotation.Nullable String triggerId) {
     this.triggerId = triggerId;
@@ -1229,7 +1229,7 @@ public class MainReward {
    * @return unit
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UNIT)
+  @JsonProperty(value = JSON_PROPERTY_UNIT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getUnit() {
@@ -1237,7 +1237,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UNIT)
+  @JsonProperty(value = JSON_PROPERTY_UNIT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUnit(@jakarta.annotation.Nullable String unit) {
     this.unit = unit;
@@ -1254,7 +1254,7 @@ public class MainReward {
    * @return updatedAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UPDATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_UPDATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getUpdatedAt() {
@@ -1262,7 +1262,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UPDATED_AT)
+  @JsonProperty(value = JSON_PROPERTY_UPDATED_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUpdatedAt(@jakarta.annotation.Nullable String updatedAt) {
     this.updatedAt = updatedAt;
@@ -1279,7 +1279,7 @@ public class MainReward {
    * @return value
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_VALUE)
+  @JsonProperty(value = JSON_PROPERTY_VALUE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public BigDecimal getValue() {
@@ -1287,7 +1287,7 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_VALUE)
+  @JsonProperty(value = JSON_PROPERTY_VALUE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setValue(@jakarta.annotation.Nullable BigDecimal value) {
     this.value = value;
@@ -1304,7 +1304,7 @@ public class MainReward {
    * @return valueType
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_VALUE_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_VALUE_TYPE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getValueType() {
@@ -1312,11 +1312,12 @@ public class MainReward {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_VALUE_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_VALUE_TYPE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setValueType(@jakarta.annotation.Nullable String valueType) {
     this.valueType = valueType;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -1427,10 +1428,7 @@ public class MainReward {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -1468,7 +1466,7 @@ public class MainReward {
     // add `attributionPerConsumer` to the URL query string
     if (getAttributionPerConsumer() != null) {
       try {
-        joiner.add(String.format("%sattributionPerConsumer%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAttributionPerConsumer()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sattributionPerConsumer%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAttributionPerConsumer()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1478,7 +1476,7 @@ public class MainReward {
     // add `balanceDefinitionId` to the URL query string
     if (getBalanceDefinitionId() != null) {
       try {
-        joiner.add(String.format("%sbalanceDefinitionId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBalanceDefinitionId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sbalanceDefinitionId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBalanceDefinitionId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1488,7 +1486,7 @@ public class MainReward {
     // add `code` to the URL query string
     if (getCode() != null) {
       try {
-        joiner.add(String.format("%scode%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCode()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scode%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCode()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1498,7 +1496,7 @@ public class MainReward {
     // add `codeCount` to the URL query string
     if (getCodeCount() != null) {
       try {
-        joiner.add(String.format("%scodeCount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCodeCount()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scodeCount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCodeCount()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1508,7 +1506,7 @@ public class MainReward {
     // add `codeGeneratorId` to the URL query string
     if (getCodeGeneratorId() != null) {
       try {
-        joiner.add(String.format("%scodeGeneratorId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCodeGeneratorId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scodeGeneratorId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCodeGeneratorId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1518,7 +1516,7 @@ public class MainReward {
     // add `codePoolId` to the URL query string
     if (getCodePoolId() != null) {
       try {
-        joiner.add(String.format("%scodePoolId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCodePoolId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scodePoolId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCodePoolId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1528,7 +1526,7 @@ public class MainReward {
     // add `config` to the URL query string
     if (getConfig() != null) {
       try {
-        joiner.add(String.format("%sconfig%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConfig()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sconfig%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getConfig()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1538,7 +1536,7 @@ public class MainReward {
     // add `createdAt` to the URL query string
     if (getCreatedAt() != null) {
       try {
-        joiner.add(String.format("%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%screatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCreatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1548,7 +1546,7 @@ public class MainReward {
     // add `disabledAt` to the URL query string
     if (getDisabledAt() != null) {
       try {
-        joiner.add(String.format("%sdisabledAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisabledAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdisabledAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisabledAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1558,7 +1556,7 @@ public class MainReward {
     // add `endDate` to the URL query string
     if (getEndDate() != null) {
       try {
-        joiner.add(String.format("%sendDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEndDate()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sendDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEndDate()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1568,7 +1566,7 @@ public class MainReward {
     // add `expirationDate` to the URL query string
     if (getExpirationDate() != null) {
       try {
-        joiner.add(String.format("%sexpirationDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpirationDate()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sexpirationDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpirationDate()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1578,7 +1576,7 @@ public class MainReward {
     // add `expirationModifier` to the URL query string
     if (getExpirationModifier() != null) {
       try {
-        joiner.add(String.format("%sexpirationModifier%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpirationModifier()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sexpirationModifier%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpirationModifier()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1588,7 +1586,7 @@ public class MainReward {
     // add `expirationUnit` to the URL query string
     if (getExpirationUnit() != null) {
       try {
-        joiner.add(String.format("%sexpirationUnit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpirationUnit()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sexpirationUnit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpirationUnit()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1598,7 +1596,7 @@ public class MainReward {
     // add `expirationValue` to the URL query string
     if (getExpirationValue() != null) {
       try {
-        joiner.add(String.format("%sexpirationValue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpirationValue()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sexpirationValue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpirationValue()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1613,7 +1611,7 @@ public class MainReward {
     // add `id` to the URL query string
     if (getId() != null) {
       try {
-        joiner.add(String.format("%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1624,8 +1622,8 @@ public class MainReward {
     if (getLimits() != null) {
       for (int i = 0; i < getLimits().size(); i++) {
         if (getLimits().get(i) != null) {
-          joiner.add(getLimits().get(i).toUrlQueryString(String.format("%slimits%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getLimits().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%slimits%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -1633,7 +1631,7 @@ public class MainReward {
     // add `loyaltyProgramId` to the URL query string
     if (getLoyaltyProgramId() != null) {
       try {
-        joiner.add(String.format("%sloyaltyProgramId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLoyaltyProgramId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sloyaltyProgramId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLoyaltyProgramId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1644,8 +1642,8 @@ public class MainReward {
     if (getMeta() != null) {
       for (String _key : getMeta().keySet()) {
         try {
-          joiner.add(String.format("%smeta%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%smeta%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, _key, containerSuffix),
               getMeta().get(_key), URLEncoder.encode(String.valueOf(getMeta().get(_key)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -1657,7 +1655,7 @@ public class MainReward {
     // add `name` to the URL query string
     if (getName() != null) {
       try {
-        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1668,8 +1666,8 @@ public class MainReward {
     if (getProducts() != null) {
       for (int i = 0; i < getProducts().size(); i++) {
         if (getProducts().get(i) != null) {
-          joiner.add(getProducts().get(i).toUrlQueryString(String.format("%sproducts%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getProducts().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sproducts%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -1677,7 +1675,7 @@ public class MainReward {
     // add `publicDescription` to the URL query string
     if (getPublicDescription() != null) {
       try {
-        joiner.add(String.format("%spublicDescription%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPublicDescription()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%spublicDescription%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPublicDescription()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1687,7 +1685,7 @@ public class MainReward {
     // add `publicImage` to the URL query string
     if (getPublicImage() != null) {
       try {
-        joiner.add(String.format("%spublicImage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPublicImage()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%spublicImage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPublicImage()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1697,7 +1695,7 @@ public class MainReward {
     // add `publicName` to the URL query string
     if (getPublicName() != null) {
       try {
-        joiner.add(String.format("%spublicName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPublicName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%spublicName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPublicName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1707,7 +1705,7 @@ public class MainReward {
     // add `redeemPerConsumer` to the URL query string
     if (getRedeemPerConsumer() != null) {
       try {
-        joiner.add(String.format("%sredeemPerConsumer%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRedeemPerConsumer()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sredeemPerConsumer%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRedeemPerConsumer()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1718,8 +1716,8 @@ public class MainReward {
     if (getRedeemRules() != null) {
       for (int i = 0; i < getRedeemRules().size(); i++) {
         try {
-          joiner.add(String.format("%sredeemRules%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sredeemRules%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getRedeemRules().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -1741,7 +1739,7 @@ public class MainReward {
     // add `startDate` to the URL query string
     if (getStartDate() != null) {
       try {
-        joiner.add(String.format("%sstartDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStartDate()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sstartDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStartDate()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1751,7 +1749,7 @@ public class MainReward {
     // add `subtractBalanceDefinitionId` to the URL query string
     if (getSubtractBalanceDefinitionId() != null) {
       try {
-        joiner.add(String.format("%ssubtractBalanceDefinitionId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubtractBalanceDefinitionId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssubtractBalanceDefinitionId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubtractBalanceDefinitionId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1761,7 +1759,7 @@ public class MainReward {
     // add `subtractBalanceStrategy` to the URL query string
     if (getSubtractBalanceStrategy() != null) {
       try {
-        joiner.add(String.format("%ssubtractBalanceStrategy%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubtractBalanceStrategy()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssubtractBalanceStrategy%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubtractBalanceStrategy()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1771,7 +1769,7 @@ public class MainReward {
     // add `subtractBalanceValue` to the URL query string
     if (getSubtractBalanceValue() != null) {
       try {
-        joiner.add(String.format("%ssubtractBalanceValue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubtractBalanceValue()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssubtractBalanceValue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubtractBalanceValue()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1781,7 +1779,7 @@ public class MainReward {
     // add `subtractTotalBalance` to the URL query string
     if (getSubtractTotalBalance() != null) {
       try {
-        joiner.add(String.format("%ssubtractTotalBalance%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubtractTotalBalance()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssubtractTotalBalance%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubtractTotalBalance()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1791,7 +1789,7 @@ public class MainReward {
     // add `totalAttribution` to the URL query string
     if (getTotalAttribution() != null) {
       try {
-        joiner.add(String.format("%stotalAttribution%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTotalAttribution()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stotalAttribution%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTotalAttribution()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1801,7 +1799,7 @@ public class MainReward {
     // add `totalRedeem` to the URL query string
     if (getTotalRedeem() != null) {
       try {
-        joiner.add(String.format("%stotalRedeem%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTotalRedeem()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stotalRedeem%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTotalRedeem()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1811,7 +1809,7 @@ public class MainReward {
     // add `triggerId` to the URL query string
     if (getTriggerId() != null) {
       try {
-        joiner.add(String.format("%striggerId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTriggerId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%striggerId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTriggerId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1821,7 +1819,7 @@ public class MainReward {
     // add `unit` to the URL query string
     if (getUnit() != null) {
       try {
-        joiner.add(String.format("%sunit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUnit()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sunit%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUnit()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1831,7 +1829,7 @@ public class MainReward {
     // add `updatedAt` to the URL query string
     if (getUpdatedAt() != null) {
       try {
-        joiner.add(String.format("%supdatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUpdatedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%supdatedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUpdatedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1841,7 +1839,7 @@ public class MainReward {
     // add `value` to the URL query string
     if (getValue() != null) {
       try {
-        joiner.add(String.format("%svalue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getValue()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%svalue%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getValue()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -1851,7 +1849,7 @@ public class MainReward {
     // add `valueType` to the URL query string
     if (getValueType() != null) {
       try {
-        joiner.add(String.format("%svalueType%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getValueType()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%svalueType%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getValueType()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

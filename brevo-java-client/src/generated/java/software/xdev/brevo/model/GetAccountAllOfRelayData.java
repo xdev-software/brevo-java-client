@@ -62,7 +62,7 @@ public class GetAccountAllOfRelayData {
    * @return userName
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_USER_NAME)
+  @JsonProperty(value = JSON_PROPERTY_USER_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getUserName() {
@@ -70,7 +70,7 @@ public class GetAccountAllOfRelayData {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_USER_NAME)
+  @JsonProperty(value = JSON_PROPERTY_USER_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setUserName(@jakarta.annotation.Nonnull String userName) {
     this.userName = userName;
@@ -87,7 +87,7 @@ public class GetAccountAllOfRelayData {
    * @return relay
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_RELAY)
+  @JsonProperty(value = JSON_PROPERTY_RELAY, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getRelay() {
@@ -95,7 +95,7 @@ public class GetAccountAllOfRelayData {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_RELAY)
+  @JsonProperty(value = JSON_PROPERTY_RELAY, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setRelay(@jakarta.annotation.Nonnull String relay) {
     this.relay = relay;
@@ -112,7 +112,7 @@ public class GetAccountAllOfRelayData {
    * @return port
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_PORT)
+  @JsonProperty(value = JSON_PROPERTY_PORT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Integer getPort() {
@@ -120,11 +120,12 @@ public class GetAccountAllOfRelayData {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PORT)
+  @JsonProperty(value = JSON_PROPERTY_PORT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setPort(@jakarta.annotation.Nonnull Integer port) {
     this.port = port;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -161,10 +162,7 @@ public class GetAccountAllOfRelayData {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -202,7 +200,7 @@ public class GetAccountAllOfRelayData {
     // add `userName` to the URL query string
     if (getUserName() != null) {
       try {
-        joiner.add(String.format("%suserName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUserName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%suserName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUserName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -212,7 +210,7 @@ public class GetAccountAllOfRelayData {
     // add `relay` to the URL query string
     if (getRelay() != null) {
       try {
-        joiner.add(String.format("%srelay%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRelay()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%srelay%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRelay()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -222,7 +220,7 @@ public class GetAccountAllOfRelayData {
     // add `port` to the URL query string
     if (getPort() != null) {
       try {
-        joiner.add(String.format("%sport%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPort()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sport%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPort()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

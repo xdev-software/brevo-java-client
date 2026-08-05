@@ -197,7 +197,7 @@ public class ExportWebhooksHistory {
    * @return days
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DAYS)
+  @JsonProperty(value = JSON_PROPERTY_DAYS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getDays() {
@@ -205,7 +205,7 @@ public class ExportWebhooksHistory {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DAYS)
+  @JsonProperty(value = JSON_PROPERTY_DAYS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDays(@jakarta.annotation.Nullable Integer days) {
     this.days = days;
@@ -222,7 +222,7 @@ public class ExportWebhooksHistory {
    * @return startDate
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_START_DATE)
+  @JsonProperty(value = JSON_PROPERTY_START_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getStartDate() {
@@ -230,7 +230,7 @@ public class ExportWebhooksHistory {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_START_DATE)
+  @JsonProperty(value = JSON_PROPERTY_START_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setStartDate(@jakarta.annotation.Nullable String startDate) {
     this.startDate = startDate;
@@ -247,7 +247,7 @@ public class ExportWebhooksHistory {
    * @return endDate
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_END_DATE)
+  @JsonProperty(value = JSON_PROPERTY_END_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getEndDate() {
@@ -255,7 +255,7 @@ public class ExportWebhooksHistory {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_END_DATE)
+  @JsonProperty(value = JSON_PROPERTY_END_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setEndDate(@jakarta.annotation.Nullable String endDate) {
     this.endDate = endDate;
@@ -272,7 +272,7 @@ public class ExportWebhooksHistory {
    * @return sort
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SORT)
+  @JsonProperty(value = JSON_PROPERTY_SORT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getSort() {
@@ -280,7 +280,7 @@ public class ExportWebhooksHistory {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SORT)
+  @JsonProperty(value = JSON_PROPERTY_SORT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSort(@jakarta.annotation.Nullable String sort) {
     this.sort = sort;
@@ -297,7 +297,7 @@ public class ExportWebhooksHistory {
    * @return type
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_TYPE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public TypeEnum getType() {
@@ -305,7 +305,7 @@ public class ExportWebhooksHistory {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TYPE)
+  @JsonProperty(value = JSON_PROPERTY_TYPE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setType(@jakarta.annotation.Nonnull TypeEnum type) {
     this.type = type;
@@ -322,7 +322,7 @@ public class ExportWebhooksHistory {
    * @return event
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_EVENT)
+  @JsonProperty(value = JSON_PROPERTY_EVENT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public EventEnum getEvent() {
@@ -330,7 +330,7 @@ public class ExportWebhooksHistory {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EVENT)
+  @JsonProperty(value = JSON_PROPERTY_EVENT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setEvent(@jakarta.annotation.Nonnull EventEnum event) {
     this.event = event;
@@ -347,7 +347,7 @@ public class ExportWebhooksHistory {
    * @return notifyURL
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_NOTIFY_U_R_L)
+  @JsonProperty(value = JSON_PROPERTY_NOTIFY_U_R_L, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getNotifyURL() {
@@ -355,7 +355,7 @@ public class ExportWebhooksHistory {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NOTIFY_U_R_L)
+  @JsonProperty(value = JSON_PROPERTY_NOTIFY_U_R_L, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setNotifyURL(@jakarta.annotation.Nonnull String notifyURL) {
     this.notifyURL = notifyURL;
@@ -372,7 +372,7 @@ public class ExportWebhooksHistory {
    * @return webhookId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_WEBHOOK_ID)
+  @JsonProperty(value = JSON_PROPERTY_WEBHOOK_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getWebhookId() {
@@ -380,7 +380,7 @@ public class ExportWebhooksHistory {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_WEBHOOK_ID)
+  @JsonProperty(value = JSON_PROPERTY_WEBHOOK_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setWebhookId(@jakarta.annotation.Nullable Integer webhookId) {
     this.webhookId = webhookId;
@@ -397,7 +397,7 @@ public class ExportWebhooksHistory {
    * @return email
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getEmail() {
@@ -405,7 +405,7 @@ public class ExportWebhooksHistory {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setEmail(@jakarta.annotation.Nullable String email) {
     this.email = email;
@@ -422,7 +422,7 @@ public class ExportWebhooksHistory {
    * @return messageId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
+  @JsonProperty(value = JSON_PROPERTY_MESSAGE_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getMessageId() {
@@ -430,11 +430,12 @@ public class ExportWebhooksHistory {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
+  @JsonProperty(value = JSON_PROPERTY_MESSAGE_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setMessageId(@jakarta.annotation.Nullable Integer messageId) {
     this.messageId = messageId;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -485,10 +486,7 @@ public class ExportWebhooksHistory {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -526,7 +524,7 @@ public class ExportWebhooksHistory {
     // add `days` to the URL query string
     if (getDays() != null) {
       try {
-        joiner.add(String.format("%sdays%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDays()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdays%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDays()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -536,7 +534,7 @@ public class ExportWebhooksHistory {
     // add `startDate` to the URL query string
     if (getStartDate() != null) {
       try {
-        joiner.add(String.format("%sstartDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStartDate()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sstartDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStartDate()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -546,7 +544,7 @@ public class ExportWebhooksHistory {
     // add `endDate` to the URL query string
     if (getEndDate() != null) {
       try {
-        joiner.add(String.format("%sendDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEndDate()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sendDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEndDate()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -556,7 +554,7 @@ public class ExportWebhooksHistory {
     // add `sort` to the URL query string
     if (getSort() != null) {
       try {
-        joiner.add(String.format("%ssort%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSort()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssort%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSort()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -566,7 +564,7 @@ public class ExportWebhooksHistory {
     // add `type` to the URL query string
     if (getType() != null) {
       try {
-        joiner.add(String.format("%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stype%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getType()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -576,7 +574,7 @@ public class ExportWebhooksHistory {
     // add `event` to the URL query string
     if (getEvent() != null) {
       try {
-        joiner.add(String.format("%sevent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEvent()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sevent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEvent()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -586,7 +584,7 @@ public class ExportWebhooksHistory {
     // add `notifyURL` to the URL query string
     if (getNotifyURL() != null) {
       try {
-        joiner.add(String.format("%snotifyURL%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNotifyURL()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%snotifyURL%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNotifyURL()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -596,7 +594,7 @@ public class ExportWebhooksHistory {
     // add `webhookId` to the URL query string
     if (getWebhookId() != null) {
       try {
-        joiner.add(String.format("%swebhookId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWebhookId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%swebhookId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getWebhookId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -606,7 +604,7 @@ public class ExportWebhooksHistory {
     // add `email` to the URL query string
     if (getEmail() != null) {
       try {
-        joiner.add(String.format("%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -616,7 +614,7 @@ public class ExportWebhooksHistory {
     // add `messageId` to the URL query string
     if (getMessageId() != null) {
       try {
-        joiner.add(String.format("%smessageId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMessageId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%smessageId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMessageId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

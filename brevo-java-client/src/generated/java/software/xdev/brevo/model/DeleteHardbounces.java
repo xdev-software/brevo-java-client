@@ -62,7 +62,7 @@ public class DeleteHardbounces {
    * @return startDate
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_START_DATE)
+  @JsonProperty(value = JSON_PROPERTY_START_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getStartDate() {
@@ -70,7 +70,7 @@ public class DeleteHardbounces {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_START_DATE)
+  @JsonProperty(value = JSON_PROPERTY_START_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setStartDate(@jakarta.annotation.Nullable String startDate) {
     this.startDate = startDate;
@@ -87,7 +87,7 @@ public class DeleteHardbounces {
    * @return endDate
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_END_DATE)
+  @JsonProperty(value = JSON_PROPERTY_END_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getEndDate() {
@@ -95,7 +95,7 @@ public class DeleteHardbounces {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_END_DATE)
+  @JsonProperty(value = JSON_PROPERTY_END_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setEndDate(@jakarta.annotation.Nullable String endDate) {
     this.endDate = endDate;
@@ -112,7 +112,7 @@ public class DeleteHardbounces {
    * @return contactEmail
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CONTACT_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_CONTACT_EMAIL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getContactEmail() {
@@ -120,11 +120,12 @@ public class DeleteHardbounces {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONTACT_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_CONTACT_EMAIL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setContactEmail(@jakarta.annotation.Nullable String contactEmail) {
     this.contactEmail = contactEmail;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -161,10 +162,7 @@ public class DeleteHardbounces {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -202,7 +200,7 @@ public class DeleteHardbounces {
     // add `startDate` to the URL query string
     if (getStartDate() != null) {
       try {
-        joiner.add(String.format("%sstartDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStartDate()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sstartDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStartDate()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -212,7 +210,7 @@ public class DeleteHardbounces {
     // add `endDate` to the URL query string
     if (getEndDate() != null) {
       try {
-        joiner.add(String.format("%sendDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEndDate()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sendDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEndDate()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -222,7 +220,7 @@ public class DeleteHardbounces {
     // add `contactEmail` to the URL query string
     if (getContactEmail() != null) {
       try {
-        joiner.add(String.format("%scontactEmail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContactEmail()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scontactEmail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContactEmail()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

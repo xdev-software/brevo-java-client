@@ -62,7 +62,7 @@ public class SubAccountsUpdatePlanRequestFeatures {
    * @return users
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_USERS)
+  @JsonProperty(value = JSON_PROPERTY_USERS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getUsers() {
@@ -70,7 +70,7 @@ public class SubAccountsUpdatePlanRequestFeatures {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_USERS)
+  @JsonProperty(value = JSON_PROPERTY_USERS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUsers(@jakarta.annotation.Nullable Long users) {
     this.users = users;
@@ -87,7 +87,7 @@ public class SubAccountsUpdatePlanRequestFeatures {
    * @return landingPage
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LANDING_PAGE)
+  @JsonProperty(value = JSON_PROPERTY_LANDING_PAGE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getLandingPage() {
@@ -95,7 +95,7 @@ public class SubAccountsUpdatePlanRequestFeatures {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LANDING_PAGE)
+  @JsonProperty(value = JSON_PROPERTY_LANDING_PAGE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLandingPage(@jakarta.annotation.Nullable Long landingPage) {
     this.landingPage = landingPage;
@@ -112,7 +112,7 @@ public class SubAccountsUpdatePlanRequestFeatures {
    * @return salesUsers
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SALES_USERS)
+  @JsonProperty(value = JSON_PROPERTY_SALES_USERS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getSalesUsers() {
@@ -120,11 +120,12 @@ public class SubAccountsUpdatePlanRequestFeatures {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SALES_USERS)
+  @JsonProperty(value = JSON_PROPERTY_SALES_USERS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSalesUsers(@jakarta.annotation.Nullable Long salesUsers) {
     this.salesUsers = salesUsers;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -161,10 +162,7 @@ public class SubAccountsUpdatePlanRequestFeatures {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -202,7 +200,7 @@ public class SubAccountsUpdatePlanRequestFeatures {
     // add `users` to the URL query string
     if (getUsers() != null) {
       try {
-        joiner.add(String.format("%susers%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUsers()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%susers%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUsers()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -212,7 +210,7 @@ public class SubAccountsUpdatePlanRequestFeatures {
     // add `landingPage` to the URL query string
     if (getLandingPage() != null) {
       try {
-        joiner.add(String.format("%slandingPage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLandingPage()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%slandingPage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLandingPage()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -222,7 +220,7 @@ public class SubAccountsUpdatePlanRequestFeatures {
     // add `salesUsers` to the URL query string
     if (getSalesUsers() != null) {
       try {
-        joiner.add(String.format("%ssalesUsers%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSalesUsers()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssalesUsers%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSalesUsers()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

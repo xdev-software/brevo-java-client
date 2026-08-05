@@ -203,7 +203,7 @@ public class RequestContactExportCustomContactFilter {
    * @return actionForContacts
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ACTION_FOR_CONTACTS)
+  @JsonProperty(value = JSON_PROPERTY_ACTION_FOR_CONTACTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public ActionForContactsEnum getActionForContacts() {
@@ -211,7 +211,7 @@ public class RequestContactExportCustomContactFilter {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ACTION_FOR_CONTACTS)
+  @JsonProperty(value = JSON_PROPERTY_ACTION_FOR_CONTACTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setActionForContacts(@jakarta.annotation.Nullable ActionForContactsEnum actionForContacts) {
     this.actionForContacts = actionForContacts;
@@ -228,7 +228,7 @@ public class RequestContactExportCustomContactFilter {
    * @return actionForEmailCampaigns
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ACTION_FOR_EMAIL_CAMPAIGNS)
+  @JsonProperty(value = JSON_PROPERTY_ACTION_FOR_EMAIL_CAMPAIGNS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public ActionForEmailCampaignsEnum getActionForEmailCampaigns() {
@@ -236,7 +236,7 @@ public class RequestContactExportCustomContactFilter {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ACTION_FOR_EMAIL_CAMPAIGNS)
+  @JsonProperty(value = JSON_PROPERTY_ACTION_FOR_EMAIL_CAMPAIGNS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setActionForEmailCampaigns(@jakarta.annotation.Nullable ActionForEmailCampaignsEnum actionForEmailCampaigns) {
     this.actionForEmailCampaigns = actionForEmailCampaigns;
@@ -253,7 +253,7 @@ public class RequestContactExportCustomContactFilter {
    * @return actionForSmsCampaigns
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ACTION_FOR_SMS_CAMPAIGNS)
+  @JsonProperty(value = JSON_PROPERTY_ACTION_FOR_SMS_CAMPAIGNS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public ActionForSmsCampaignsEnum getActionForSmsCampaigns() {
@@ -261,7 +261,7 @@ public class RequestContactExportCustomContactFilter {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ACTION_FOR_SMS_CAMPAIGNS)
+  @JsonProperty(value = JSON_PROPERTY_ACTION_FOR_SMS_CAMPAIGNS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setActionForSmsCampaigns(@jakarta.annotation.Nullable ActionForSmsCampaignsEnum actionForSmsCampaigns) {
     this.actionForSmsCampaigns = actionForSmsCampaigns;
@@ -278,7 +278,7 @@ public class RequestContactExportCustomContactFilter {
    * @return listId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LIST_ID)
+  @JsonProperty(value = JSON_PROPERTY_LIST_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getListId() {
@@ -286,7 +286,7 @@ public class RequestContactExportCustomContactFilter {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LIST_ID)
+  @JsonProperty(value = JSON_PROPERTY_LIST_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setListId(@jakarta.annotation.Nullable Long listId) {
     this.listId = listId;
@@ -303,7 +303,7 @@ public class RequestContactExportCustomContactFilter {
    * @return segmentId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SEGMENT_ID)
+  @JsonProperty(value = JSON_PROPERTY_SEGMENT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getSegmentId() {
@@ -311,7 +311,7 @@ public class RequestContactExportCustomContactFilter {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SEGMENT_ID)
+  @JsonProperty(value = JSON_PROPERTY_SEGMENT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSegmentId(@jakarta.annotation.Nullable Long segmentId) {
     this.segmentId = segmentId;
@@ -328,7 +328,7 @@ public class RequestContactExportCustomContactFilter {
    * @return emailCampaignId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EMAIL_CAMPAIGN_ID)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL_CAMPAIGN_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getEmailCampaignId() {
@@ -336,7 +336,7 @@ public class RequestContactExportCustomContactFilter {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EMAIL_CAMPAIGN_ID)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL_CAMPAIGN_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setEmailCampaignId(@jakarta.annotation.Nullable Long emailCampaignId) {
     this.emailCampaignId = emailCampaignId;
@@ -353,7 +353,7 @@ public class RequestContactExportCustomContactFilter {
    * @return smsCampaignId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SMS_CAMPAIGN_ID)
+  @JsonProperty(value = JSON_PROPERTY_SMS_CAMPAIGN_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getSmsCampaignId() {
@@ -361,11 +361,12 @@ public class RequestContactExportCustomContactFilter {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SMS_CAMPAIGN_ID)
+  @JsonProperty(value = JSON_PROPERTY_SMS_CAMPAIGN_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSmsCampaignId(@jakarta.annotation.Nullable Long smsCampaignId) {
     this.smsCampaignId = smsCampaignId;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -410,10 +411,7 @@ public class RequestContactExportCustomContactFilter {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -451,7 +449,7 @@ public class RequestContactExportCustomContactFilter {
     // add `actionForContacts` to the URL query string
     if (getActionForContacts() != null) {
       try {
-        joiner.add(String.format("%sactionForContacts%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getActionForContacts()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sactionForContacts%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getActionForContacts()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -461,7 +459,7 @@ public class RequestContactExportCustomContactFilter {
     // add `actionForEmailCampaigns` to the URL query string
     if (getActionForEmailCampaigns() != null) {
       try {
-        joiner.add(String.format("%sactionForEmailCampaigns%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getActionForEmailCampaigns()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sactionForEmailCampaigns%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getActionForEmailCampaigns()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -471,7 +469,7 @@ public class RequestContactExportCustomContactFilter {
     // add `actionForSmsCampaigns` to the URL query string
     if (getActionForSmsCampaigns() != null) {
       try {
-        joiner.add(String.format("%sactionForSmsCampaigns%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getActionForSmsCampaigns()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sactionForSmsCampaigns%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getActionForSmsCampaigns()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -481,7 +479,7 @@ public class RequestContactExportCustomContactFilter {
     // add `listId` to the URL query string
     if (getListId() != null) {
       try {
-        joiner.add(String.format("%slistId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getListId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%slistId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getListId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -491,7 +489,7 @@ public class RequestContactExportCustomContactFilter {
     // add `segmentId` to the URL query string
     if (getSegmentId() != null) {
       try {
-        joiner.add(String.format("%ssegmentId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSegmentId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssegmentId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSegmentId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -501,7 +499,7 @@ public class RequestContactExportCustomContactFilter {
     // add `emailCampaignId` to the URL query string
     if (getEmailCampaignId() != null) {
       try {
-        joiner.add(String.format("%semailCampaignId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmailCampaignId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%semailCampaignId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmailCampaignId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -511,7 +509,7 @@ public class RequestContactExportCustomContactFilter {
     // add `smsCampaignId` to the URL query string
     if (getSmsCampaignId() != null) {
       try {
-        joiner.add(String.format("%ssmsCampaignId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSmsCampaignId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssmsCampaignId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSmsCampaignId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

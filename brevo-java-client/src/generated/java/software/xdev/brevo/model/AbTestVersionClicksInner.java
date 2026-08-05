@@ -62,7 +62,7 @@ public class AbTestVersionClicksInner {
    * @return link
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_LINK)
+  @JsonProperty(value = JSON_PROPERTY_LINK, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getLink() {
@@ -70,7 +70,7 @@ public class AbTestVersionClicksInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LINK)
+  @JsonProperty(value = JSON_PROPERTY_LINK, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setLink(@jakarta.annotation.Nonnull String link) {
     this.link = link;
@@ -87,7 +87,7 @@ public class AbTestVersionClicksInner {
    * @return clicksCount
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CLICKS_COUNT)
+  @JsonProperty(value = JSON_PROPERTY_CLICKS_COUNT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getClicksCount() {
@@ -95,7 +95,7 @@ public class AbTestVersionClicksInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CLICKS_COUNT)
+  @JsonProperty(value = JSON_PROPERTY_CLICKS_COUNT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setClicksCount(@jakarta.annotation.Nonnull Long clicksCount) {
     this.clicksCount = clicksCount;
@@ -112,7 +112,7 @@ public class AbTestVersionClicksInner {
    * @return clickRate
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CLICK_RATE)
+  @JsonProperty(value = JSON_PROPERTY_CLICK_RATE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getClickRate() {
@@ -120,11 +120,12 @@ public class AbTestVersionClicksInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CLICK_RATE)
+  @JsonProperty(value = JSON_PROPERTY_CLICK_RATE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setClickRate(@jakarta.annotation.Nonnull String clickRate) {
     this.clickRate = clickRate;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -161,10 +162,7 @@ public class AbTestVersionClicksInner {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -202,7 +200,7 @@ public class AbTestVersionClicksInner {
     // add `link` to the URL query string
     if (getLink() != null) {
       try {
-        joiner.add(String.format("%slink%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLink()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%slink%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLink()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -212,7 +210,7 @@ public class AbTestVersionClicksInner {
     // add `clicksCount` to the URL query string
     if (getClicksCount() != null) {
       try {
-        joiner.add(String.format("%sclicksCount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getClicksCount()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sclicksCount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getClicksCount()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -222,7 +220,7 @@ public class AbTestVersionClicksInner {
     // add `clickRate` to the URL query string
     if (getClickRate() != null) {
       try {
-        joiner.add(String.format("%sclickRate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getClickRate()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sclickRate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getClickRate()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

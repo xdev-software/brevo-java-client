@@ -61,7 +61,7 @@ public class GetScheduledEmailByBatchId {
    * @return count
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_COUNT)
+  @JsonProperty(value = JSON_PROPERTY_COUNT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getCount() {
@@ -69,7 +69,7 @@ public class GetScheduledEmailByBatchId {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_COUNT)
+  @JsonProperty(value = JSON_PROPERTY_COUNT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCount(@jakarta.annotation.Nullable Integer count) {
     this.count = count;
@@ -94,7 +94,7 @@ public class GetScheduledEmailByBatchId {
    * @return batches
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_BATCHES)
+  @JsonProperty(value = JSON_PROPERTY_BATCHES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<GetScheduledEmailByBatchIdBatchesInner> getBatches() {
@@ -102,11 +102,12 @@ public class GetScheduledEmailByBatchId {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BATCHES)
+  @JsonProperty(value = JSON_PROPERTY_BATCHES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setBatches(@jakarta.annotation.Nullable List<GetScheduledEmailByBatchIdBatchesInner> batches) {
     this.batches = batches;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -141,10 +142,7 @@ public class GetScheduledEmailByBatchId {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -182,7 +180,7 @@ public class GetScheduledEmailByBatchId {
     // add `count` to the URL query string
     if (getCount() != null) {
       try {
-        joiner.add(String.format("%scount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCount()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCount()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -193,8 +191,8 @@ public class GetScheduledEmailByBatchId {
     if (getBatches() != null) {
       for (int i = 0; i < getBatches().size(); i++) {
         if (getBatches().get(i) != null) {
-          joiner.add(getBatches().get(i).toUrlQueryString(String.format("%sbatches%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getBatches().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sbatches%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }

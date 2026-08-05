@@ -102,7 +102,7 @@ public class GetTransacAggregatedSmsReport {
    * @return range
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_RANGE)
+  @JsonProperty(value = JSON_PROPERTY_RANGE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getRange() {
@@ -110,7 +110,7 @@ public class GetTransacAggregatedSmsReport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_RANGE)
+  @JsonProperty(value = JSON_PROPERTY_RANGE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRange(@jakarta.annotation.Nullable String range) {
     this.range = range;
@@ -127,7 +127,7 @@ public class GetTransacAggregatedSmsReport {
    * @return requests
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_REQUESTS)
+  @JsonProperty(value = JSON_PROPERTY_REQUESTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getRequests() {
@@ -135,7 +135,7 @@ public class GetTransacAggregatedSmsReport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REQUESTS)
+  @JsonProperty(value = JSON_PROPERTY_REQUESTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRequests(@jakarta.annotation.Nullable Long requests) {
     this.requests = requests;
@@ -152,7 +152,7 @@ public class GetTransacAggregatedSmsReport {
    * @return delivered
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DELIVERED)
+  @JsonProperty(value = JSON_PROPERTY_DELIVERED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getDelivered() {
@@ -160,7 +160,7 @@ public class GetTransacAggregatedSmsReport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DELIVERED)
+  @JsonProperty(value = JSON_PROPERTY_DELIVERED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDelivered(@jakarta.annotation.Nullable Long delivered) {
     this.delivered = delivered;
@@ -177,7 +177,7 @@ public class GetTransacAggregatedSmsReport {
    * @return hardBounces
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_HARD_BOUNCES)
+  @JsonProperty(value = JSON_PROPERTY_HARD_BOUNCES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getHardBounces() {
@@ -185,7 +185,7 @@ public class GetTransacAggregatedSmsReport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_HARD_BOUNCES)
+  @JsonProperty(value = JSON_PROPERTY_HARD_BOUNCES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setHardBounces(@jakarta.annotation.Nullable Long hardBounces) {
     this.hardBounces = hardBounces;
@@ -202,7 +202,7 @@ public class GetTransacAggregatedSmsReport {
    * @return softBounces
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SOFT_BOUNCES)
+  @JsonProperty(value = JSON_PROPERTY_SOFT_BOUNCES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getSoftBounces() {
@@ -210,7 +210,7 @@ public class GetTransacAggregatedSmsReport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SOFT_BOUNCES)
+  @JsonProperty(value = JSON_PROPERTY_SOFT_BOUNCES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSoftBounces(@jakarta.annotation.Nullable Long softBounces) {
     this.softBounces = softBounces;
@@ -227,7 +227,7 @@ public class GetTransacAggregatedSmsReport {
    * @return blocked
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_BLOCKED)
+  @JsonProperty(value = JSON_PROPERTY_BLOCKED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getBlocked() {
@@ -235,7 +235,7 @@ public class GetTransacAggregatedSmsReport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BLOCKED)
+  @JsonProperty(value = JSON_PROPERTY_BLOCKED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setBlocked(@jakarta.annotation.Nullable Long blocked) {
     this.blocked = blocked;
@@ -252,7 +252,7 @@ public class GetTransacAggregatedSmsReport {
    * @return unsubscribed
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UNSUBSCRIBED)
+  @JsonProperty(value = JSON_PROPERTY_UNSUBSCRIBED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getUnsubscribed() {
@@ -260,7 +260,7 @@ public class GetTransacAggregatedSmsReport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UNSUBSCRIBED)
+  @JsonProperty(value = JSON_PROPERTY_UNSUBSCRIBED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUnsubscribed(@jakarta.annotation.Nullable Long unsubscribed) {
     this.unsubscribed = unsubscribed;
@@ -277,7 +277,7 @@ public class GetTransacAggregatedSmsReport {
    * @return replied
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_REPLIED)
+  @JsonProperty(value = JSON_PROPERTY_REPLIED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getReplied() {
@@ -285,7 +285,7 @@ public class GetTransacAggregatedSmsReport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REPLIED)
+  @JsonProperty(value = JSON_PROPERTY_REPLIED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setReplied(@jakarta.annotation.Nullable Long replied) {
     this.replied = replied;
@@ -302,7 +302,7 @@ public class GetTransacAggregatedSmsReport {
    * @return accepted
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ACCEPTED)
+  @JsonProperty(value = JSON_PROPERTY_ACCEPTED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getAccepted() {
@@ -310,7 +310,7 @@ public class GetTransacAggregatedSmsReport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ACCEPTED)
+  @JsonProperty(value = JSON_PROPERTY_ACCEPTED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setAccepted(@jakarta.annotation.Nullable Long accepted) {
     this.accepted = accepted;
@@ -327,7 +327,7 @@ public class GetTransacAggregatedSmsReport {
    * @return rejected
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_REJECTED)
+  @JsonProperty(value = JSON_PROPERTY_REJECTED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getRejected() {
@@ -335,7 +335,7 @@ public class GetTransacAggregatedSmsReport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REJECTED)
+  @JsonProperty(value = JSON_PROPERTY_REJECTED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRejected(@jakarta.annotation.Nullable Long rejected) {
     this.rejected = rejected;
@@ -352,7 +352,7 @@ public class GetTransacAggregatedSmsReport {
    * @return skipped
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SKIPPED)
+  @JsonProperty(value = JSON_PROPERTY_SKIPPED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getSkipped() {
@@ -360,11 +360,12 @@ public class GetTransacAggregatedSmsReport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SKIPPED)
+  @JsonProperty(value = JSON_PROPERTY_SKIPPED, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSkipped(@jakarta.annotation.Nullable Long skipped) {
     this.skipped = skipped;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -417,10 +418,7 @@ public class GetTransacAggregatedSmsReport {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -458,7 +456,7 @@ public class GetTransacAggregatedSmsReport {
     // add `range` to the URL query string
     if (getRange() != null) {
       try {
-        joiner.add(String.format("%srange%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRange()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%srange%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRange()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -468,7 +466,7 @@ public class GetTransacAggregatedSmsReport {
     // add `requests` to the URL query string
     if (getRequests() != null) {
       try {
-        joiner.add(String.format("%srequests%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRequests()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%srequests%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRequests()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -478,7 +476,7 @@ public class GetTransacAggregatedSmsReport {
     // add `delivered` to the URL query string
     if (getDelivered() != null) {
       try {
-        joiner.add(String.format("%sdelivered%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDelivered()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdelivered%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDelivered()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -488,7 +486,7 @@ public class GetTransacAggregatedSmsReport {
     // add `hardBounces` to the URL query string
     if (getHardBounces() != null) {
       try {
-        joiner.add(String.format("%shardBounces%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHardBounces()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%shardBounces%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHardBounces()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -498,7 +496,7 @@ public class GetTransacAggregatedSmsReport {
     // add `softBounces` to the URL query string
     if (getSoftBounces() != null) {
       try {
-        joiner.add(String.format("%ssoftBounces%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSoftBounces()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssoftBounces%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSoftBounces()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -508,7 +506,7 @@ public class GetTransacAggregatedSmsReport {
     // add `blocked` to the URL query string
     if (getBlocked() != null) {
       try {
-        joiner.add(String.format("%sblocked%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBlocked()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sblocked%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBlocked()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -518,7 +516,7 @@ public class GetTransacAggregatedSmsReport {
     // add `unsubscribed` to the URL query string
     if (getUnsubscribed() != null) {
       try {
-        joiner.add(String.format("%sunsubscribed%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUnsubscribed()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sunsubscribed%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUnsubscribed()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -528,7 +526,7 @@ public class GetTransacAggregatedSmsReport {
     // add `replied` to the URL query string
     if (getReplied() != null) {
       try {
-        joiner.add(String.format("%sreplied%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReplied()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sreplied%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReplied()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -538,7 +536,7 @@ public class GetTransacAggregatedSmsReport {
     // add `accepted` to the URL query string
     if (getAccepted() != null) {
       try {
-        joiner.add(String.format("%saccepted%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAccepted()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%saccepted%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAccepted()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -548,7 +546,7 @@ public class GetTransacAggregatedSmsReport {
     // add `rejected` to the URL query string
     if (getRejected() != null) {
       try {
-        joiner.add(String.format("%srejected%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRejected()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%srejected%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRejected()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -558,7 +556,7 @@ public class GetTransacAggregatedSmsReport {
     // add `skipped` to the URL query string
     if (getSkipped() != null) {
       try {
-        joiner.add(String.format("%sskipped%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSkipped()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sskipped%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSkipped()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

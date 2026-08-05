@@ -82,7 +82,7 @@ public class CreateDoiContact {
    * @return email
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getEmail() {
@@ -90,7 +90,7 @@ public class CreateDoiContact {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setEmail(@jakarta.annotation.Nonnull String email) {
     this.email = email;
@@ -115,7 +115,7 @@ public class CreateDoiContact {
    * @return attributes
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
+  @JsonProperty(value = JSON_PROPERTY_ATTRIBUTES, required = false)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
 
   public Map<String, Object> getAttributes() {
@@ -123,7 +123,7 @@ public class CreateDoiContact {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
+  @JsonProperty(value = JSON_PROPERTY_ATTRIBUTES, required = false)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
   public void setAttributes(@jakarta.annotation.Nullable Map<String, Object> attributes) {
     this.attributes = attributes;
@@ -148,7 +148,7 @@ public class CreateDoiContact {
    * @return includeListIds
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_INCLUDE_LIST_IDS)
+  @JsonProperty(value = JSON_PROPERTY_INCLUDE_LIST_IDS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public List<Long> getIncludeListIds() {
@@ -156,7 +156,7 @@ public class CreateDoiContact {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_INCLUDE_LIST_IDS)
+  @JsonProperty(value = JSON_PROPERTY_INCLUDE_LIST_IDS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setIncludeListIds(@jakarta.annotation.Nonnull List<Long> includeListIds) {
     this.includeListIds = includeListIds;
@@ -181,7 +181,7 @@ public class CreateDoiContact {
    * @return excludeListIds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EXCLUDE_LIST_IDS)
+  @JsonProperty(value = JSON_PROPERTY_EXCLUDE_LIST_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<Long> getExcludeListIds() {
@@ -189,7 +189,7 @@ public class CreateDoiContact {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EXCLUDE_LIST_IDS)
+  @JsonProperty(value = JSON_PROPERTY_EXCLUDE_LIST_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setExcludeListIds(@jakarta.annotation.Nullable List<Long> excludeListIds) {
     this.excludeListIds = excludeListIds;
@@ -206,7 +206,7 @@ public class CreateDoiContact {
    * @return templateId
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
+  @JsonProperty(value = JSON_PROPERTY_TEMPLATE_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getTemplateId() {
@@ -214,7 +214,7 @@ public class CreateDoiContact {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
+  @JsonProperty(value = JSON_PROPERTY_TEMPLATE_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setTemplateId(@jakarta.annotation.Nonnull Long templateId) {
     this.templateId = templateId;
@@ -231,7 +231,7 @@ public class CreateDoiContact {
    * @return redirectionUrl
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_REDIRECTION_URL)
+  @JsonProperty(value = JSON_PROPERTY_REDIRECTION_URL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getRedirectionUrl() {
@@ -239,11 +239,12 @@ public class CreateDoiContact {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REDIRECTION_URL)
+  @JsonProperty(value = JSON_PROPERTY_REDIRECTION_URL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setRedirectionUrl(@jakarta.annotation.Nonnull String redirectionUrl) {
     this.redirectionUrl = redirectionUrl;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -286,10 +287,7 @@ public class CreateDoiContact {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -327,7 +325,7 @@ public class CreateDoiContact {
     // add `email` to the URL query string
     if (getEmail() != null) {
       try {
-        joiner.add(String.format("%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -338,8 +336,8 @@ public class CreateDoiContact {
     if (getAttributes() != null) {
       for (String _key : getAttributes().keySet()) {
         try {
-          joiner.add(String.format("%sattributes%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sattributes%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, _key, containerSuffix),
               getAttributes().get(_key), URLEncoder.encode(String.valueOf(getAttributes().get(_key)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -352,8 +350,8 @@ public class CreateDoiContact {
     if (getIncludeListIds() != null) {
       for (int i = 0; i < getIncludeListIds().size(); i++) {
         try {
-          joiner.add(String.format("%sincludeListIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sincludeListIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getIncludeListIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -366,8 +364,8 @@ public class CreateDoiContact {
     if (getExcludeListIds() != null) {
       for (int i = 0; i < getExcludeListIds().size(); i++) {
         try {
-          joiner.add(String.format("%sexcludeListIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sexcludeListIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getExcludeListIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -379,7 +377,7 @@ public class CreateDoiContact {
     // add `templateId` to the URL query string
     if (getTemplateId() != null) {
       try {
-        joiner.add(String.format("%stemplateId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTemplateId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stemplateId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTemplateId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -389,7 +387,7 @@ public class CreateDoiContact {
     // add `redirectionUrl` to the URL query string
     if (getRedirectionUrl() != null) {
       try {
-        joiner.add(String.format("%sredirectionUrl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRedirectionUrl()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sredirectionUrl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRedirectionUrl()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

@@ -90,7 +90,7 @@ public class GetTransacEmailsListTransactionalEmailsInner {
    * @return email
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getEmail() {
@@ -98,7 +98,7 @@ public class GetTransacEmailsListTransactionalEmailsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setEmail(@jakarta.annotation.Nonnull String email) {
     this.email = email;
@@ -115,7 +115,7 @@ public class GetTransacEmailsListTransactionalEmailsInner {
    * @return subject
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SUBJECT)
+  @JsonProperty(value = JSON_PROPERTY_SUBJECT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getSubject() {
@@ -123,7 +123,7 @@ public class GetTransacEmailsListTransactionalEmailsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SUBJECT)
+  @JsonProperty(value = JSON_PROPERTY_SUBJECT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSubject(@jakarta.annotation.Nonnull String subject) {
     this.subject = subject;
@@ -140,7 +140,7 @@ public class GetTransacEmailsListTransactionalEmailsInner {
    * @return templateId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
+  @JsonProperty(value = JSON_PROPERTY_TEMPLATE_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getTemplateId() {
@@ -148,7 +148,7 @@ public class GetTransacEmailsListTransactionalEmailsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TEMPLATE_ID)
+  @JsonProperty(value = JSON_PROPERTY_TEMPLATE_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setTemplateId(@jakarta.annotation.Nullable Long templateId) {
     this.templateId = templateId;
@@ -165,7 +165,7 @@ public class GetTransacEmailsListTransactionalEmailsInner {
    * @return messageId
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
+  @JsonProperty(value = JSON_PROPERTY_MESSAGE_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getMessageId() {
@@ -173,7 +173,7 @@ public class GetTransacEmailsListTransactionalEmailsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MESSAGE_ID)
+  @JsonProperty(value = JSON_PROPERTY_MESSAGE_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setMessageId(@jakarta.annotation.Nonnull String messageId) {
     this.messageId = messageId;
@@ -190,7 +190,7 @@ public class GetTransacEmailsListTransactionalEmailsInner {
    * @return uuid
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_UUID)
+  @JsonProperty(value = JSON_PROPERTY_UUID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getUuid() {
@@ -198,7 +198,7 @@ public class GetTransacEmailsListTransactionalEmailsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UUID)
+  @JsonProperty(value = JSON_PROPERTY_UUID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setUuid(@jakarta.annotation.Nonnull String uuid) {
     this.uuid = uuid;
@@ -215,7 +215,7 @@ public class GetTransacEmailsListTransactionalEmailsInner {
    * @return date
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DATE)
+  @JsonProperty(value = JSON_PROPERTY_DATE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getDate() {
@@ -223,7 +223,7 @@ public class GetTransacEmailsListTransactionalEmailsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DATE)
+  @JsonProperty(value = JSON_PROPERTY_DATE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDate(@jakarta.annotation.Nonnull String date) {
     this.date = date;
@@ -240,7 +240,7 @@ public class GetTransacEmailsListTransactionalEmailsInner {
    * @return from
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_FROM)
+  @JsonProperty(value = JSON_PROPERTY_FROM, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getFrom() {
@@ -248,7 +248,7 @@ public class GetTransacEmailsListTransactionalEmailsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_FROM)
+  @JsonProperty(value = JSON_PROPERTY_FROM, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setFrom(@jakarta.annotation.Nullable String from) {
     this.from = from;
@@ -273,7 +273,7 @@ public class GetTransacEmailsListTransactionalEmailsInner {
    * @return tags
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TAGS)
+  @JsonProperty(value = JSON_PROPERTY_TAGS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getTags() {
@@ -281,11 +281,12 @@ public class GetTransacEmailsListTransactionalEmailsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TAGS)
+  @JsonProperty(value = JSON_PROPERTY_TAGS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setTags(@jakarta.annotation.Nullable List<String> tags) {
     this.tags = tags;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -332,10 +333,7 @@ public class GetTransacEmailsListTransactionalEmailsInner {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -373,7 +371,7 @@ public class GetTransacEmailsListTransactionalEmailsInner {
     // add `email` to the URL query string
     if (getEmail() != null) {
       try {
-        joiner.add(String.format("%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -383,7 +381,7 @@ public class GetTransacEmailsListTransactionalEmailsInner {
     // add `subject` to the URL query string
     if (getSubject() != null) {
       try {
-        joiner.add(String.format("%ssubject%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubject()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssubject%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubject()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -393,7 +391,7 @@ public class GetTransacEmailsListTransactionalEmailsInner {
     // add `templateId` to the URL query string
     if (getTemplateId() != null) {
       try {
-        joiner.add(String.format("%stemplateId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTemplateId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stemplateId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTemplateId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -403,7 +401,7 @@ public class GetTransacEmailsListTransactionalEmailsInner {
     // add `messageId` to the URL query string
     if (getMessageId() != null) {
       try {
-        joiner.add(String.format("%smessageId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMessageId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%smessageId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMessageId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -413,7 +411,7 @@ public class GetTransacEmailsListTransactionalEmailsInner {
     // add `uuid` to the URL query string
     if (getUuid() != null) {
       try {
-        joiner.add(String.format("%suuid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUuid()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%suuid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUuid()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -423,7 +421,7 @@ public class GetTransacEmailsListTransactionalEmailsInner {
     // add `date` to the URL query string
     if (getDate() != null) {
       try {
-        joiner.add(String.format("%sdate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDate()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDate()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -433,7 +431,7 @@ public class GetTransacEmailsListTransactionalEmailsInner {
     // add `from` to the URL query string
     if (getFrom() != null) {
       try {
-        joiner.add(String.format("%sfrom%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFrom()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sfrom%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFrom()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -444,8 +442,8 @@ public class GetTransacEmailsListTransactionalEmailsInner {
     if (getTags() != null) {
       for (int i = 0; i < getTags().size(); i++) {
         try {
-          joiner.add(String.format("%stags%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%stags%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getTags().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported

@@ -68,7 +68,7 @@ public class GetTransacBlockedContactsContactsInner {
    * @return email
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getEmail() {
@@ -76,7 +76,7 @@ public class GetTransacBlockedContactsContactsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setEmail(@jakarta.annotation.Nonnull String email) {
     this.email = email;
@@ -93,7 +93,7 @@ public class GetTransacBlockedContactsContactsInner {
    * @return senderEmail
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SENDER_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_SENDER_EMAIL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getSenderEmail() {
@@ -101,7 +101,7 @@ public class GetTransacBlockedContactsContactsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SENDER_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_SENDER_EMAIL, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSenderEmail(@jakarta.annotation.Nonnull String senderEmail) {
     this.senderEmail = senderEmail;
@@ -118,7 +118,7 @@ public class GetTransacBlockedContactsContactsInner {
    * @return reason
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_REASON)
+  @JsonProperty(value = JSON_PROPERTY_REASON, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public GetTransacBlockedContactsContactsInnerReason getReason() {
@@ -126,7 +126,7 @@ public class GetTransacBlockedContactsContactsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REASON)
+  @JsonProperty(value = JSON_PROPERTY_REASON, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setReason(@jakarta.annotation.Nonnull GetTransacBlockedContactsContactsInnerReason reason) {
     this.reason = reason;
@@ -143,7 +143,7 @@ public class GetTransacBlockedContactsContactsInner {
    * @return blockedAt
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_BLOCKED_AT)
+  @JsonProperty(value = JSON_PROPERTY_BLOCKED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getBlockedAt() {
@@ -151,11 +151,12 @@ public class GetTransacBlockedContactsContactsInner {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BLOCKED_AT)
+  @JsonProperty(value = JSON_PROPERTY_BLOCKED_AT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setBlockedAt(@jakarta.annotation.Nonnull String blockedAt) {
     this.blockedAt = blockedAt;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -194,10 +195,7 @@ public class GetTransacBlockedContactsContactsInner {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -235,7 +233,7 @@ public class GetTransacBlockedContactsContactsInner {
     // add `email` to the URL query string
     if (getEmail() != null) {
       try {
-        joiner.add(String.format("%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%semail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmail()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -245,7 +243,7 @@ public class GetTransacBlockedContactsContactsInner {
     // add `senderEmail` to the URL query string
     if (getSenderEmail() != null) {
       try {
-        joiner.add(String.format("%ssenderEmail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSenderEmail()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssenderEmail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSenderEmail()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -260,7 +258,7 @@ public class GetTransacBlockedContactsContactsInner {
     // add `blockedAt` to the URL query string
     if (getBlockedAt() != null) {
       try {
-        joiner.add(String.format("%sblockedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBlockedAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sblockedAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBlockedAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

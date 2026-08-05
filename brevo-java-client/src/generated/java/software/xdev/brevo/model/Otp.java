@@ -52,7 +52,7 @@ public class Otp {
    * @return otp
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_OTP)
+  @JsonProperty(value = JSON_PROPERTY_OTP, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Integer getOtp() {
@@ -60,11 +60,12 @@ public class Otp {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_OTP)
+  @JsonProperty(value = JSON_PROPERTY_OTP, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setOtp(@jakarta.annotation.Nonnull Integer otp) {
     this.otp = otp;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -97,10 +98,7 @@ public class Otp {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -138,7 +136,7 @@ public class Otp {
     // add `otp` to the URL query string
     if (getOtp() != null) {
       try {
-        joiner.add(String.format("%sotp%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOtp()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sotp%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getOtp()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

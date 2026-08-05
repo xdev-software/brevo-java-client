@@ -81,7 +81,7 @@ public class ConversationsMessagesPostRequest {
    * @return visitorId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_VISITOR_ID)
+  @JsonProperty(value = JSON_PROPERTY_VISITOR_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Object getVisitorId() {
@@ -89,7 +89,7 @@ public class ConversationsMessagesPostRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_VISITOR_ID)
+  @JsonProperty(value = JSON_PROPERTY_VISITOR_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setVisitorId(@jakarta.annotation.Nullable Object visitorId) {
     this.visitorId = visitorId;
@@ -106,7 +106,7 @@ public class ConversationsMessagesPostRequest {
    * @return text
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TEXT)
+  @JsonProperty(value = JSON_PROPERTY_TEXT, required = false)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Object getText() {
@@ -114,7 +114,7 @@ public class ConversationsMessagesPostRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TEXT)
+  @JsonProperty(value = JSON_PROPERTY_TEXT, required = false)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setText(@jakarta.annotation.Nullable Object text) {
     this.text = text;
@@ -137,14 +137,14 @@ public class ConversationsMessagesPostRequest {
         return agentId.orElse(null);
   }
 
-  @JsonProperty(JSON_PROPERTY_AGENT_ID)
+  @JsonProperty(value = JSON_PROPERTY_AGENT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public JsonNullable<Object> getAgentId_JsonNullable() {
     return agentId;
   }
   
-  @JsonProperty(JSON_PROPERTY_AGENT_ID)
+  @JsonProperty(value = JSON_PROPERTY_AGENT_ID, required = false)
   public void setAgentId_JsonNullable(JsonNullable<Object> agentId) {
     this.agentId = agentId;
   }
@@ -170,14 +170,14 @@ public class ConversationsMessagesPostRequest {
         return receivedFrom.orElse(null);
   }
 
-  @JsonProperty(JSON_PROPERTY_RECEIVED_FROM)
+  @JsonProperty(value = JSON_PROPERTY_RECEIVED_FROM, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public JsonNullable<Object> getReceivedFrom_JsonNullable() {
     return receivedFrom;
   }
   
-  @JsonProperty(JSON_PROPERTY_RECEIVED_FROM)
+  @JsonProperty(value = JSON_PROPERTY_RECEIVED_FROM, required = false)
   public void setReceivedFrom_JsonNullable(JsonNullable<Object> receivedFrom) {
     this.receivedFrom = receivedFrom;
   }
@@ -203,14 +203,14 @@ public class ConversationsMessagesPostRequest {
         return agentEmail.orElse(null);
   }
 
-  @JsonProperty(JSON_PROPERTY_AGENT_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_AGENT_EMAIL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public JsonNullable<Object> getAgentEmail_JsonNullable() {
     return agentEmail;
   }
   
-  @JsonProperty(JSON_PROPERTY_AGENT_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_AGENT_EMAIL, required = false)
   public void setAgentEmail_JsonNullable(JsonNullable<Object> agentEmail) {
     this.agentEmail = agentEmail;
   }
@@ -236,14 +236,14 @@ public class ConversationsMessagesPostRequest {
         return agentName.orElse(null);
   }
 
-  @JsonProperty(JSON_PROPERTY_AGENT_NAME)
+  @JsonProperty(value = JSON_PROPERTY_AGENT_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public JsonNullable<Object> getAgentName_JsonNullable() {
     return agentName;
   }
   
-  @JsonProperty(JSON_PROPERTY_AGENT_NAME)
+  @JsonProperty(value = JSON_PROPERTY_AGENT_NAME, required = false)
   public void setAgentName_JsonNullable(JsonNullable<Object> agentName) {
     this.agentName = agentName;
   }
@@ -251,6 +251,7 @@ public class ConversationsMessagesPostRequest {
   public void setAgentName(@jakarta.annotation.Nullable Object agentName) {
     this.agentName = JsonNullable.<Object>of(agentName);
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -304,10 +305,7 @@ public class ConversationsMessagesPostRequest {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -345,7 +343,7 @@ public class ConversationsMessagesPostRequest {
     // add `visitorId` to the URL query string
     if (getVisitorId() != null) {
       try {
-        joiner.add(String.format("%svisitorId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getVisitorId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%svisitorId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getVisitorId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -355,7 +353,7 @@ public class ConversationsMessagesPostRequest {
     // add `text` to the URL query string
     if (getText() != null) {
       try {
-        joiner.add(String.format("%stext%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getText()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stext%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getText()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -365,7 +363,7 @@ public class ConversationsMessagesPostRequest {
     // add `agentId` to the URL query string
     if (getAgentId() != null) {
       try {
-        joiner.add(String.format("%sagentId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAgentId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sagentId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAgentId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -375,7 +373,7 @@ public class ConversationsMessagesPostRequest {
     // add `receivedFrom` to the URL query string
     if (getReceivedFrom() != null) {
       try {
-        joiner.add(String.format("%sreceivedFrom%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReceivedFrom()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sreceivedFrom%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReceivedFrom()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -385,7 +383,7 @@ public class ConversationsMessagesPostRequest {
     // add `agentEmail` to the URL query string
     if (getAgentEmail() != null) {
       try {
-        joiner.add(String.format("%sagentEmail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAgentEmail()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sagentEmail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAgentEmail()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -395,7 +393,7 @@ public class ConversationsMessagesPostRequest {
     // add `agentName` to the URL query string
     if (getAgentName() != null) {
       try {
-        joiner.add(String.format("%sagentName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAgentName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sagentName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAgentName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

@@ -70,7 +70,7 @@ public class CrmDealsPostRequest {
    * @return name
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getName() {
@@ -78,7 +78,7 @@ public class CrmDealsPostRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
@@ -95,7 +95,7 @@ public class CrmDealsPostRequest {
    * @return attributes
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
+  @JsonProperty(value = JSON_PROPERTY_ATTRIBUTES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Object getAttributes() {
@@ -103,7 +103,7 @@ public class CrmDealsPostRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ATTRIBUTES)
+  @JsonProperty(value = JSON_PROPERTY_ATTRIBUTES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setAttributes(@jakarta.annotation.Nullable Object attributes) {
     this.attributes = attributes;
@@ -128,7 +128,7 @@ public class CrmDealsPostRequest {
    * @return linkedContactsIds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LINKED_CONTACTS_IDS)
+  @JsonProperty(value = JSON_PROPERTY_LINKED_CONTACTS_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<Long> getLinkedContactsIds() {
@@ -136,7 +136,7 @@ public class CrmDealsPostRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LINKED_CONTACTS_IDS)
+  @JsonProperty(value = JSON_PROPERTY_LINKED_CONTACTS_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLinkedContactsIds(@jakarta.annotation.Nullable List<Long> linkedContactsIds) {
     this.linkedContactsIds = linkedContactsIds;
@@ -161,7 +161,7 @@ public class CrmDealsPostRequest {
    * @return linkedCompaniesIds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LINKED_COMPANIES_IDS)
+  @JsonProperty(value = JSON_PROPERTY_LINKED_COMPANIES_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getLinkedCompaniesIds() {
@@ -169,11 +169,12 @@ public class CrmDealsPostRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LINKED_COMPANIES_IDS)
+  @JsonProperty(value = JSON_PROPERTY_LINKED_COMPANIES_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLinkedCompaniesIds(@jakarta.annotation.Nullable List<String> linkedCompaniesIds) {
     this.linkedCompaniesIds = linkedCompaniesIds;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -212,10 +213,7 @@ public class CrmDealsPostRequest {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -253,7 +251,7 @@ public class CrmDealsPostRequest {
     // add `name` to the URL query string
     if (getName() != null) {
       try {
-        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -263,7 +261,7 @@ public class CrmDealsPostRequest {
     // add `attributes` to the URL query string
     if (getAttributes() != null) {
       try {
-        joiner.add(String.format("%sattributes%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAttributes()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sattributes%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAttributes()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -274,8 +272,8 @@ public class CrmDealsPostRequest {
     if (getLinkedContactsIds() != null) {
       for (int i = 0; i < getLinkedContactsIds().size(); i++) {
         try {
-          joiner.add(String.format("%slinkedContactsIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%slinkedContactsIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getLinkedContactsIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -288,8 +286,8 @@ public class CrmDealsPostRequest {
     if (getLinkedCompaniesIds() != null) {
       for (int i = 0; i < getLinkedCompaniesIds().size(); i++) {
         try {
-          joiner.add(String.format("%slinkedCompaniesIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%slinkedCompaniesIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getLinkedCompaniesIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported

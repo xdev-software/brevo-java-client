@@ -68,7 +68,7 @@ public class MainCreateRewardPayload {
    * @return name
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getName() {
@@ -76,7 +76,7 @@ public class MainCreateRewardPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
@@ -93,7 +93,7 @@ public class MainCreateRewardPayload {
    * @return publicDescription
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PUBLIC_DESCRIPTION)
+  @JsonProperty(value = JSON_PROPERTY_PUBLIC_DESCRIPTION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getPublicDescription() {
@@ -101,7 +101,7 @@ public class MainCreateRewardPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PUBLIC_DESCRIPTION)
+  @JsonProperty(value = JSON_PROPERTY_PUBLIC_DESCRIPTION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPublicDescription(@jakarta.annotation.Nullable String publicDescription) {
     this.publicDescription = publicDescription;
@@ -118,7 +118,7 @@ public class MainCreateRewardPayload {
    * @return publicImage
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PUBLIC_IMAGE)
+  @JsonProperty(value = JSON_PROPERTY_PUBLIC_IMAGE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public URI getPublicImage() {
@@ -126,7 +126,7 @@ public class MainCreateRewardPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PUBLIC_IMAGE)
+  @JsonProperty(value = JSON_PROPERTY_PUBLIC_IMAGE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPublicImage(@jakarta.annotation.Nullable URI publicImage) {
     this.publicImage = publicImage;
@@ -143,7 +143,7 @@ public class MainCreateRewardPayload {
    * @return publicName
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PUBLIC_NAME)
+  @JsonProperty(value = JSON_PROPERTY_PUBLIC_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getPublicName() {
@@ -151,11 +151,12 @@ public class MainCreateRewardPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PUBLIC_NAME)
+  @JsonProperty(value = JSON_PROPERTY_PUBLIC_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPublicName(@jakarta.annotation.Nullable String publicName) {
     this.publicName = publicName;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -194,10 +195,7 @@ public class MainCreateRewardPayload {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -235,7 +233,7 @@ public class MainCreateRewardPayload {
     // add `name` to the URL query string
     if (getName() != null) {
       try {
-        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -245,7 +243,7 @@ public class MainCreateRewardPayload {
     // add `publicDescription` to the URL query string
     if (getPublicDescription() != null) {
       try {
-        joiner.add(String.format("%spublicDescription%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPublicDescription()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%spublicDescription%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPublicDescription()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -255,7 +253,7 @@ public class MainCreateRewardPayload {
     // add `publicImage` to the URL query string
     if (getPublicImage() != null) {
       try {
-        joiner.add(String.format("%spublicImage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPublicImage()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%spublicImage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPublicImage()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -265,7 +263,7 @@ public class MainCreateRewardPayload {
     // add `publicName` to the URL query string
     if (getPublicName() != null) {
       try {
-        joiner.add(String.format("%spublicName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPublicName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%spublicName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPublicName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

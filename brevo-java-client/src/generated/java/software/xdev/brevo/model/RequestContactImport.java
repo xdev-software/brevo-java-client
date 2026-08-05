@@ -107,7 +107,7 @@ public class RequestContactImport {
    * @return fileUrl
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_FILE_URL)
+  @JsonProperty(value = JSON_PROPERTY_FILE_URL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getFileUrl() {
@@ -115,7 +115,7 @@ public class RequestContactImport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_FILE_URL)
+  @JsonProperty(value = JSON_PROPERTY_FILE_URL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setFileUrl(@jakarta.annotation.Nullable String fileUrl) {
     this.fileUrl = fileUrl;
@@ -132,7 +132,7 @@ public class RequestContactImport {
    * @return fileBody
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_FILE_BODY)
+  @JsonProperty(value = JSON_PROPERTY_FILE_BODY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getFileBody() {
@@ -140,7 +140,7 @@ public class RequestContactImport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_FILE_BODY)
+  @JsonProperty(value = JSON_PROPERTY_FILE_BODY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setFileBody(@jakarta.annotation.Nullable String fileBody) {
     this.fileBody = fileBody;
@@ -165,7 +165,7 @@ public class RequestContactImport {
    * @return jsonBody
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_JSON_BODY)
+  @JsonProperty(value = JSON_PROPERTY_JSON_BODY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<RequestContactImportJsonBodyInner> getJsonBody() {
@@ -173,7 +173,7 @@ public class RequestContactImport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_JSON_BODY)
+  @JsonProperty(value = JSON_PROPERTY_JSON_BODY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setJsonBody(@jakarta.annotation.Nullable List<RequestContactImportJsonBodyInner> jsonBody) {
     this.jsonBody = jsonBody;
@@ -198,7 +198,7 @@ public class RequestContactImport {
    * @return listIds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LIST_IDS)
+  @JsonProperty(value = JSON_PROPERTY_LIST_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<Long> getListIds() {
@@ -206,7 +206,7 @@ public class RequestContactImport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LIST_IDS)
+  @JsonProperty(value = JSON_PROPERTY_LIST_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setListIds(@jakarta.annotation.Nullable List<Long> listIds) {
     this.listIds = listIds;
@@ -223,7 +223,7 @@ public class RequestContactImport {
    * @return notifyUrl
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_NOTIFY_URL)
+  @JsonProperty(value = JSON_PROPERTY_NOTIFY_URL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getNotifyUrl() {
@@ -231,7 +231,7 @@ public class RequestContactImport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NOTIFY_URL)
+  @JsonProperty(value = JSON_PROPERTY_NOTIFY_URL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setNotifyUrl(@jakarta.annotation.Nullable String notifyUrl) {
     this.notifyUrl = notifyUrl;
@@ -248,7 +248,7 @@ public class RequestContactImport {
    * @return newList
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_NEW_LIST)
+  @JsonProperty(value = JSON_PROPERTY_NEW_LIST, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public RequestContactImportNewList getNewList() {
@@ -256,7 +256,7 @@ public class RequestContactImport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NEW_LIST)
+  @JsonProperty(value = JSON_PROPERTY_NEW_LIST, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setNewList(@jakarta.annotation.Nullable RequestContactImportNewList newList) {
     this.newList = newList;
@@ -273,7 +273,7 @@ public class RequestContactImport {
    * @return emailBlacklist
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EMAIL_BLACKLIST)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL_BLACKLIST, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getEmailBlacklist() {
@@ -281,7 +281,7 @@ public class RequestContactImport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EMAIL_BLACKLIST)
+  @JsonProperty(value = JSON_PROPERTY_EMAIL_BLACKLIST, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setEmailBlacklist(@jakarta.annotation.Nullable Boolean emailBlacklist) {
     this.emailBlacklist = emailBlacklist;
@@ -298,7 +298,7 @@ public class RequestContactImport {
    * @return disableNotification
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DISABLE_NOTIFICATION)
+  @JsonProperty(value = JSON_PROPERTY_DISABLE_NOTIFICATION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getDisableNotification() {
@@ -306,7 +306,7 @@ public class RequestContactImport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DISABLE_NOTIFICATION)
+  @JsonProperty(value = JSON_PROPERTY_DISABLE_NOTIFICATION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDisableNotification(@jakarta.annotation.Nullable Boolean disableNotification) {
     this.disableNotification = disableNotification;
@@ -323,7 +323,7 @@ public class RequestContactImport {
    * @return smsBlacklist
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SMS_BLACKLIST)
+  @JsonProperty(value = JSON_PROPERTY_SMS_BLACKLIST, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getSmsBlacklist() {
@@ -331,7 +331,7 @@ public class RequestContactImport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SMS_BLACKLIST)
+  @JsonProperty(value = JSON_PROPERTY_SMS_BLACKLIST, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSmsBlacklist(@jakarta.annotation.Nullable Boolean smsBlacklist) {
     this.smsBlacklist = smsBlacklist;
@@ -348,7 +348,7 @@ public class RequestContactImport {
    * @return updateExistingContacts
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_UPDATE_EXISTING_CONTACTS)
+  @JsonProperty(value = JSON_PROPERTY_UPDATE_EXISTING_CONTACTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getUpdateExistingContacts() {
@@ -356,7 +356,7 @@ public class RequestContactImport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_UPDATE_EXISTING_CONTACTS)
+  @JsonProperty(value = JSON_PROPERTY_UPDATE_EXISTING_CONTACTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUpdateExistingContacts(@jakarta.annotation.Nullable Boolean updateExistingContacts) {
     this.updateExistingContacts = updateExistingContacts;
@@ -373,7 +373,7 @@ public class RequestContactImport {
    * @return emptyContactsAttributes
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EMPTY_CONTACTS_ATTRIBUTES)
+  @JsonProperty(value = JSON_PROPERTY_EMPTY_CONTACTS_ATTRIBUTES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getEmptyContactsAttributes() {
@@ -381,11 +381,12 @@ public class RequestContactImport {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EMPTY_CONTACTS_ATTRIBUTES)
+  @JsonProperty(value = JSON_PROPERTY_EMPTY_CONTACTS_ATTRIBUTES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setEmptyContactsAttributes(@jakarta.annotation.Nullable Boolean emptyContactsAttributes) {
     this.emptyContactsAttributes = emptyContactsAttributes;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -438,10 +439,7 @@ public class RequestContactImport {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -479,7 +477,7 @@ public class RequestContactImport {
     // add `fileUrl` to the URL query string
     if (getFileUrl() != null) {
       try {
-        joiner.add(String.format("%sfileUrl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFileUrl()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sfileUrl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFileUrl()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -489,7 +487,7 @@ public class RequestContactImport {
     // add `fileBody` to the URL query string
     if (getFileBody() != null) {
       try {
-        joiner.add(String.format("%sfileBody%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFileBody()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sfileBody%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFileBody()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -500,8 +498,8 @@ public class RequestContactImport {
     if (getJsonBody() != null) {
       for (int i = 0; i < getJsonBody().size(); i++) {
         if (getJsonBody().get(i) != null) {
-          joiner.add(getJsonBody().get(i).toUrlQueryString(String.format("%sjsonBody%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getJsonBody().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sjsonBody%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -510,8 +508,8 @@ public class RequestContactImport {
     if (getListIds() != null) {
       for (int i = 0; i < getListIds().size(); i++) {
         try {
-          joiner.add(String.format("%slistIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%slistIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getListIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -523,7 +521,7 @@ public class RequestContactImport {
     // add `notifyUrl` to the URL query string
     if (getNotifyUrl() != null) {
       try {
-        joiner.add(String.format("%snotifyUrl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNotifyUrl()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%snotifyUrl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNotifyUrl()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -538,7 +536,7 @@ public class RequestContactImport {
     // add `emailBlacklist` to the URL query string
     if (getEmailBlacklist() != null) {
       try {
-        joiner.add(String.format("%semailBlacklist%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmailBlacklist()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%semailBlacklist%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmailBlacklist()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -548,7 +546,7 @@ public class RequestContactImport {
     // add `disableNotification` to the URL query string
     if (getDisableNotification() != null) {
       try {
-        joiner.add(String.format("%sdisableNotification%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisableNotification()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdisableNotification%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDisableNotification()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -558,7 +556,7 @@ public class RequestContactImport {
     // add `smsBlacklist` to the URL query string
     if (getSmsBlacklist() != null) {
       try {
-        joiner.add(String.format("%ssmsBlacklist%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSmsBlacklist()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssmsBlacklist%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSmsBlacklist()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -568,7 +566,7 @@ public class RequestContactImport {
     // add `updateExistingContacts` to the URL query string
     if (getUpdateExistingContacts() != null) {
       try {
-        joiner.add(String.format("%supdateExistingContacts%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUpdateExistingContacts()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%supdateExistingContacts%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getUpdateExistingContacts()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -578,7 +576,7 @@ public class RequestContactImport {
     // add `emptyContactsAttributes` to the URL query string
     if (getEmptyContactsAttributes() != null) {
       try {
-        joiner.add(String.format("%semptyContactsAttributes%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmptyContactsAttributes()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%semptyContactsAttributes%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEmptyContactsAttributes()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

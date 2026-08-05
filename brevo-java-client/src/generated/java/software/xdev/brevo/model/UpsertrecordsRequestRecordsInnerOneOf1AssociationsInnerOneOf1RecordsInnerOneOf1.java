@@ -52,7 +52,7 @@ public class UpsertrecordsRequestRecordsInnerOneOf1AssociationsInnerOneOf1Record
    * @return identifiers
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_IDENTIFIERS)
+  @JsonProperty(value = JSON_PROPERTY_IDENTIFIERS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Object getIdentifiers() {
@@ -60,11 +60,12 @@ public class UpsertrecordsRequestRecordsInnerOneOf1AssociationsInnerOneOf1Record
   }
 
 
-  @JsonProperty(JSON_PROPERTY_IDENTIFIERS)
+  @JsonProperty(value = JSON_PROPERTY_IDENTIFIERS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setIdentifiers(@jakarta.annotation.Nullable Object identifiers) {
     this.identifiers = identifiers;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -97,10 +98,7 @@ public class UpsertrecordsRequestRecordsInnerOneOf1AssociationsInnerOneOf1Record
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -138,7 +136,7 @@ public class UpsertrecordsRequestRecordsInnerOneOf1AssociationsInnerOneOf1Record
     // add `identifiers` to the URL query string
     if (getIdentifiers() != null) {
       try {
-        joiner.add(String.format("%sidentifiers%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIdentifiers()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sidentifiers%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getIdentifiers()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

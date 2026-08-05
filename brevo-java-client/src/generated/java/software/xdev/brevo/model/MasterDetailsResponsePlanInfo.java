@@ -117,7 +117,7 @@ public class MasterDetailsResponsePlanInfo {
    * @return currencyCode
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CURRENCY_CODE)
+  @JsonProperty(value = JSON_PROPERTY_CURRENCY_CODE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getCurrencyCode() {
@@ -125,7 +125,7 @@ public class MasterDetailsResponsePlanInfo {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CURRENCY_CODE)
+  @JsonProperty(value = JSON_PROPERTY_CURRENCY_CODE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCurrencyCode(@jakarta.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
@@ -142,7 +142,7 @@ public class MasterDetailsResponsePlanInfo {
    * @return nextBillingAt
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_NEXT_BILLING_AT)
+  @JsonProperty(value = JSON_PROPERTY_NEXT_BILLING_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getNextBillingAt() {
@@ -150,7 +150,7 @@ public class MasterDetailsResponsePlanInfo {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NEXT_BILLING_AT)
+  @JsonProperty(value = JSON_PROPERTY_NEXT_BILLING_AT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setNextBillingAt(@jakarta.annotation.Nullable Long nextBillingAt) {
     this.nextBillingAt = nextBillingAt;
@@ -167,7 +167,7 @@ public class MasterDetailsResponsePlanInfo {
    * @return price
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PRICE)
+  @JsonProperty(value = JSON_PROPERTY_PRICE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public BigDecimal getPrice() {
@@ -175,7 +175,7 @@ public class MasterDetailsResponsePlanInfo {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PRICE)
+  @JsonProperty(value = JSON_PROPERTY_PRICE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPrice(@jakarta.annotation.Nullable BigDecimal price) {
     this.price = price;
@@ -192,7 +192,7 @@ public class MasterDetailsResponsePlanInfo {
    * @return planPeriod
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PLAN_PERIOD)
+  @JsonProperty(value = JSON_PROPERTY_PLAN_PERIOD, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public PlanPeriodEnum getPlanPeriod() {
@@ -200,7 +200,7 @@ public class MasterDetailsResponsePlanInfo {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PLAN_PERIOD)
+  @JsonProperty(value = JSON_PROPERTY_PLAN_PERIOD, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPlanPeriod(@jakarta.annotation.Nullable PlanPeriodEnum planPeriod) {
     this.planPeriod = planPeriod;
@@ -217,7 +217,7 @@ public class MasterDetailsResponsePlanInfo {
    * @return subAccounts
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SUB_ACCOUNTS)
+  @JsonProperty(value = JSON_PROPERTY_SUB_ACCOUNTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getSubAccounts() {
@@ -225,7 +225,7 @@ public class MasterDetailsResponsePlanInfo {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SUB_ACCOUNTS)
+  @JsonProperty(value = JSON_PROPERTY_SUB_ACCOUNTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSubAccounts(@jakarta.annotation.Nullable Integer subAccounts) {
     this.subAccounts = subAccounts;
@@ -250,7 +250,7 @@ public class MasterDetailsResponsePlanInfo {
    * @return features
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_FEATURES)
+  @JsonProperty(value = JSON_PROPERTY_FEATURES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<MasterDetailsResponsePlanInfoFeaturesInner> getFeatures() {
@@ -258,11 +258,12 @@ public class MasterDetailsResponsePlanInfo {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_FEATURES)
+  @JsonProperty(value = JSON_PROPERTY_FEATURES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setFeatures(@jakarta.annotation.Nullable List<MasterDetailsResponsePlanInfoFeaturesInner> features) {
     this.features = features;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -305,10 +306,7 @@ public class MasterDetailsResponsePlanInfo {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -346,7 +344,7 @@ public class MasterDetailsResponsePlanInfo {
     // add `currencyCode` to the URL query string
     if (getCurrencyCode() != null) {
       try {
-        joiner.add(String.format("%scurrencyCode%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCurrencyCode()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scurrencyCode%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCurrencyCode()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -356,7 +354,7 @@ public class MasterDetailsResponsePlanInfo {
     // add `nextBillingAt` to the URL query string
     if (getNextBillingAt() != null) {
       try {
-        joiner.add(String.format("%snextBillingAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNextBillingAt()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%snextBillingAt%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNextBillingAt()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -366,7 +364,7 @@ public class MasterDetailsResponsePlanInfo {
     // add `price` to the URL query string
     if (getPrice() != null) {
       try {
-        joiner.add(String.format("%sprice%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPrice()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sprice%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPrice()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -376,7 +374,7 @@ public class MasterDetailsResponsePlanInfo {
     // add `planPeriod` to the URL query string
     if (getPlanPeriod() != null) {
       try {
-        joiner.add(String.format("%splanPeriod%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPlanPeriod()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%splanPeriod%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPlanPeriod()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -386,7 +384,7 @@ public class MasterDetailsResponsePlanInfo {
     // add `subAccounts` to the URL query string
     if (getSubAccounts() != null) {
       try {
-        joiner.add(String.format("%ssubAccounts%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubAccounts()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssubAccounts%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubAccounts()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -397,8 +395,8 @@ public class MasterDetailsResponsePlanInfo {
     if (getFeatures() != null) {
       for (int i = 0; i < getFeatures().size(); i++) {
         if (getFeatures().get(i) != null) {
-          joiner.add(getFeatures().get(i).toUrlQueryString(String.format("%sfeatures%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getFeatures().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sfeatures%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }

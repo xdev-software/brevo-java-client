@@ -103,7 +103,7 @@ public class UpdateWhatsAppCampaign {
    * @return campaignName
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CAMPAIGN_NAME)
+  @JsonProperty(value = JSON_PROPERTY_CAMPAIGN_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getCampaignName() {
@@ -111,7 +111,7 @@ public class UpdateWhatsAppCampaign {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CAMPAIGN_NAME)
+  @JsonProperty(value = JSON_PROPERTY_CAMPAIGN_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCampaignName(@jakarta.annotation.Nullable String campaignName) {
     this.campaignName = campaignName;
@@ -128,7 +128,7 @@ public class UpdateWhatsAppCampaign {
    * @return campaignStatus
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CAMPAIGN_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_CAMPAIGN_STATUS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public CampaignStatusEnum getCampaignStatus() {
@@ -136,7 +136,7 @@ public class UpdateWhatsAppCampaign {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CAMPAIGN_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_CAMPAIGN_STATUS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCampaignStatus(@jakarta.annotation.Nullable CampaignStatusEnum campaignStatus) {
     this.campaignStatus = campaignStatus;
@@ -153,7 +153,7 @@ public class UpdateWhatsAppCampaign {
    * @return rescheduleFor
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_RESCHEDULE_FOR)
+  @JsonProperty(value = JSON_PROPERTY_RESCHEDULE_FOR, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getRescheduleFor() {
@@ -161,7 +161,7 @@ public class UpdateWhatsAppCampaign {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_RESCHEDULE_FOR)
+  @JsonProperty(value = JSON_PROPERTY_RESCHEDULE_FOR, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRescheduleFor(@jakarta.annotation.Nullable String rescheduleFor) {
     this.rescheduleFor = rescheduleFor;
@@ -178,7 +178,7 @@ public class UpdateWhatsAppCampaign {
    * @return recipients
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_RECIPIENTS)
+  @JsonProperty(value = JSON_PROPERTY_RECIPIENTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public CreateWhatsAppCampaignRecipients getRecipients() {
@@ -186,11 +186,12 @@ public class UpdateWhatsAppCampaign {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_RECIPIENTS)
+  @JsonProperty(value = JSON_PROPERTY_RECIPIENTS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRecipients(@jakarta.annotation.Nullable CreateWhatsAppCampaignRecipients recipients) {
     this.recipients = recipients;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -229,10 +230,7 @@ public class UpdateWhatsAppCampaign {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -270,7 +268,7 @@ public class UpdateWhatsAppCampaign {
     // add `campaignName` to the URL query string
     if (getCampaignName() != null) {
       try {
-        joiner.add(String.format("%scampaignName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCampaignName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scampaignName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCampaignName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -280,7 +278,7 @@ public class UpdateWhatsAppCampaign {
     // add `campaignStatus` to the URL query string
     if (getCampaignStatus() != null) {
       try {
-        joiner.add(String.format("%scampaignStatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCampaignStatus()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scampaignStatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCampaignStatus()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -290,7 +288,7 @@ public class UpdateWhatsAppCampaign {
     // add `rescheduleFor` to the URL query string
     if (getRescheduleFor() != null) {
       try {
-        joiner.add(String.format("%srescheduleFor%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRescheduleFor()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%srescheduleFor%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRescheduleFor()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

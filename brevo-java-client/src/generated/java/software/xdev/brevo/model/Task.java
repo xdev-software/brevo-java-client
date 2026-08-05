@@ -18,7 +18,6 @@ import java.util.Arrays;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -79,7 +78,7 @@ public class Task {
    * @return id
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getId() {
@@ -87,7 +86,7 @@ public class Task {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setId(@jakarta.annotation.Nullable String id) {
     this.id = id;
@@ -104,7 +103,7 @@ public class Task {
    * @return taskTypeId
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_TASK_TYPE_ID)
+  @JsonProperty(value = JSON_PROPERTY_TASK_TYPE_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getTaskTypeId() {
@@ -112,7 +111,7 @@ public class Task {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TASK_TYPE_ID)
+  @JsonProperty(value = JSON_PROPERTY_TASK_TYPE_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setTaskTypeId(@jakarta.annotation.Nonnull String taskTypeId) {
     this.taskTypeId = taskTypeId;
@@ -129,7 +128,7 @@ public class Task {
    * @return name
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getName() {
@@ -137,7 +136,7 @@ public class Task {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NAME)
+  @JsonProperty(value = JSON_PROPERTY_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setName(@jakarta.annotation.Nonnull String name) {
     this.name = name;
@@ -162,7 +161,7 @@ public class Task {
    * @return contactsIds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CONTACTS_IDS)
+  @JsonProperty(value = JSON_PROPERTY_CONTACTS_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<Integer> getContactsIds() {
@@ -170,7 +169,7 @@ public class Task {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONTACTS_IDS)
+  @JsonProperty(value = JSON_PROPERTY_CONTACTS_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setContactsIds(@jakarta.annotation.Nullable List<Integer> contactsIds) {
     this.contactsIds = contactsIds;
@@ -195,7 +194,7 @@ public class Task {
    * @return dealsIds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DEALS_IDS)
+  @JsonProperty(value = JSON_PROPERTY_DEALS_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getDealsIds() {
@@ -203,7 +202,7 @@ public class Task {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DEALS_IDS)
+  @JsonProperty(value = JSON_PROPERTY_DEALS_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDealsIds(@jakarta.annotation.Nullable List<String> dealsIds) {
     this.dealsIds = dealsIds;
@@ -228,7 +227,7 @@ public class Task {
    * @return companiesIds
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_COMPANIES_IDS)
+  @JsonProperty(value = JSON_PROPERTY_COMPANIES_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getCompaniesIds() {
@@ -236,11 +235,12 @@ public class Task {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_COMPANIES_IDS)
+  @JsonProperty(value = JSON_PROPERTY_COMPANIES_IDS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCompaniesIds(@jakarta.annotation.Nullable List<String> companiesIds) {
     this.companiesIds = companiesIds;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -283,10 +283,7 @@ public class Task {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -324,7 +321,7 @@ public class Task {
     // add `id` to the URL query string
     if (getId() != null) {
       try {
-        joiner.add(String.format("%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -334,7 +331,7 @@ public class Task {
     // add `taskTypeId` to the URL query string
     if (getTaskTypeId() != null) {
       try {
-        joiner.add(String.format("%staskTypeId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTaskTypeId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%staskTypeId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTaskTypeId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -344,7 +341,7 @@ public class Task {
     // add `name` to the URL query string
     if (getName() != null) {
       try {
-        joiner.add(String.format("%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sname%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -355,8 +352,8 @@ public class Task {
     if (getContactsIds() != null) {
       for (int i = 0; i < getContactsIds().size(); i++) {
         try {
-          joiner.add(String.format("%scontactsIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%scontactsIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getContactsIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -369,8 +366,8 @@ public class Task {
     if (getDealsIds() != null) {
       for (int i = 0; i < getDealsIds().size(); i++) {
         try {
-          joiner.add(String.format("%sdealsIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%sdealsIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getDealsIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -383,8 +380,8 @@ public class Task {
     if (getCompaniesIds() != null) {
       for (int i = 0; i < getCompaniesIds().size(); i++) {
         try {
-          joiner.add(String.format("%scompaniesIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%scompaniesIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getCompaniesIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported

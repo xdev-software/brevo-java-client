@@ -124,7 +124,7 @@ public class GetPaymentRequest {
    * @return reference
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_REFERENCE)
+  @JsonProperty(value = JSON_PROPERTY_REFERENCE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getReference() {
@@ -132,7 +132,7 @@ public class GetPaymentRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REFERENCE)
+  @JsonProperty(value = JSON_PROPERTY_REFERENCE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setReference(@jakarta.annotation.Nonnull String reference) {
     this.reference = reference;
@@ -149,7 +149,7 @@ public class GetPaymentRequest {
    * @return status
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_STATUS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public StatusEnum getStatus() {
@@ -157,7 +157,7 @@ public class GetPaymentRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_STATUS)
+  @JsonProperty(value = JSON_PROPERTY_STATUS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setStatus(@jakarta.annotation.Nonnull StatusEnum status) {
     this.status = status;
@@ -174,7 +174,7 @@ public class GetPaymentRequest {
    * @return _configuration
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CONFIGURATION)
+  @JsonProperty(value = JSON_PROPERTY_CONFIGURATION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public ModelConfiguration getConfiguration() {
@@ -182,7 +182,7 @@ public class GetPaymentRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONFIGURATION)
+  @JsonProperty(value = JSON_PROPERTY_CONFIGURATION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setConfiguration(@jakarta.annotation.Nullable ModelConfiguration _configuration) {
     this._configuration = _configuration;
@@ -199,7 +199,7 @@ public class GetPaymentRequest {
    * @return contactId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CONTACT_ID)
+  @JsonProperty(value = JSON_PROPERTY_CONTACT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getContactId() {
@@ -207,7 +207,7 @@ public class GetPaymentRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONTACT_ID)
+  @JsonProperty(value = JSON_PROPERTY_CONTACT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setContactId(@jakarta.annotation.Nullable Long contactId) {
     this.contactId = contactId;
@@ -224,7 +224,7 @@ public class GetPaymentRequest {
    * @return numberOfRemindersSent
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_NUMBER_OF_REMINDERS_SENT)
+  @JsonProperty(value = JSON_PROPERTY_NUMBER_OF_REMINDERS_SENT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Long getNumberOfRemindersSent() {
@@ -232,7 +232,7 @@ public class GetPaymentRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NUMBER_OF_REMINDERS_SENT)
+  @JsonProperty(value = JSON_PROPERTY_NUMBER_OF_REMINDERS_SENT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setNumberOfRemindersSent(@jakarta.annotation.Nullable Long numberOfRemindersSent) {
     this.numberOfRemindersSent = numberOfRemindersSent;
@@ -249,7 +249,7 @@ public class GetPaymentRequest {
    * @return cart
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CART)
+  @JsonProperty(value = JSON_PROPERTY_CART, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Cart getCart() {
@@ -257,7 +257,7 @@ public class GetPaymentRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CART)
+  @JsonProperty(value = JSON_PROPERTY_CART, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCart(@jakarta.annotation.Nonnull Cart cart) {
     this.cart = cart;
@@ -274,7 +274,7 @@ public class GetPaymentRequest {
    * @return notification
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_NOTIFICATION)
+  @JsonProperty(value = JSON_PROPERTY_NOTIFICATION, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Notification getNotification() {
@@ -282,11 +282,12 @@ public class GetPaymentRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NOTIFICATION)
+  @JsonProperty(value = JSON_PROPERTY_NOTIFICATION, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setNotification(@jakarta.annotation.Nonnull Notification notification) {
     this.notification = notification;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -331,10 +332,7 @@ public class GetPaymentRequest {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -372,7 +370,7 @@ public class GetPaymentRequest {
     // add `reference` to the URL query string
     if (getReference() != null) {
       try {
-        joiner.add(String.format("%sreference%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReference()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sreference%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getReference()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -382,7 +380,7 @@ public class GetPaymentRequest {
     // add `status` to the URL query string
     if (getStatus() != null) {
       try {
-        joiner.add(String.format("%sstatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatus()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sstatus%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getStatus()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -397,7 +395,7 @@ public class GetPaymentRequest {
     // add `contactId` to the URL query string
     if (getContactId() != null) {
       try {
-        joiner.add(String.format("%scontactId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContactId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scontactId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContactId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -407,7 +405,7 @@ public class GetPaymentRequest {
     // add `numberOfRemindersSent` to the URL query string
     if (getNumberOfRemindersSent() != null) {
       try {
-        joiner.add(String.format("%snumberOfRemindersSent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNumberOfRemindersSent()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%snumberOfRemindersSent%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNumberOfRemindersSent()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

@@ -63,7 +63,7 @@ public class CorporateGroupUnlinkGroupIdSubAccountsPutRequest {
    * @return subAccountIds
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SUB_ACCOUNT_IDS)
+  @JsonProperty(value = JSON_PROPERTY_SUB_ACCOUNT_IDS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public List<Long> getSubAccountIds() {
@@ -71,11 +71,12 @@ public class CorporateGroupUnlinkGroupIdSubAccountsPutRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SUB_ACCOUNT_IDS)
+  @JsonProperty(value = JSON_PROPERTY_SUB_ACCOUNT_IDS, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSubAccountIds(@jakarta.annotation.Nonnull List<Long> subAccountIds) {
     this.subAccountIds = subAccountIds;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -108,10 +109,7 @@ public class CorporateGroupUnlinkGroupIdSubAccountsPutRequest {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -150,8 +148,8 @@ public class CorporateGroupUnlinkGroupIdSubAccountsPutRequest {
     if (getSubAccountIds() != null) {
       for (int i = 0; i < getSubAccountIds().size(); i++) {
         try {
-          joiner.add(String.format("%ssubAccountIds%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%ssubAccountIds%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getSubAccountIds().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported

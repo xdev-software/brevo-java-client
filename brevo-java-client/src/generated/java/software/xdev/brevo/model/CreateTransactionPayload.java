@@ -95,7 +95,7 @@ public class CreateTransactionPayload {
    * @return loyaltySubscriptionId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_LOYALTY_SUBSCRIPTION_ID)
+  @JsonProperty(value = JSON_PROPERTY_LOYALTY_SUBSCRIPTION_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getLoyaltySubscriptionId() {
@@ -103,7 +103,7 @@ public class CreateTransactionPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LOYALTY_SUBSCRIPTION_ID)
+  @JsonProperty(value = JSON_PROPERTY_LOYALTY_SUBSCRIPTION_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLoyaltySubscriptionId(@jakarta.annotation.Nullable String loyaltySubscriptionId) {
     this.loyaltySubscriptionId = loyaltySubscriptionId;
@@ -120,7 +120,7 @@ public class CreateTransactionPayload {
    * @return amount
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_AMOUNT)
+  @JsonProperty(value = JSON_PROPERTY_AMOUNT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public BigDecimal getAmount() {
@@ -128,7 +128,7 @@ public class CreateTransactionPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_AMOUNT)
+  @JsonProperty(value = JSON_PROPERTY_AMOUNT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setAmount(@jakarta.annotation.Nonnull BigDecimal amount) {
     this.amount = amount;
@@ -145,7 +145,7 @@ public class CreateTransactionPayload {
    * @return autoComplete
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_AUTO_COMPLETE)
+  @JsonProperty(value = JSON_PROPERTY_AUTO_COMPLETE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getAutoComplete() {
@@ -153,7 +153,7 @@ public class CreateTransactionPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_AUTO_COMPLETE)
+  @JsonProperty(value = JSON_PROPERTY_AUTO_COMPLETE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setAutoComplete(@jakarta.annotation.Nullable Boolean autoComplete) {
     this.autoComplete = autoComplete;
@@ -170,7 +170,7 @@ public class CreateTransactionPayload {
    * @return balanceDefinitionId
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_BALANCE_DEFINITION_ID)
+  @JsonProperty(value = JSON_PROPERTY_BALANCE_DEFINITION_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getBalanceDefinitionId() {
@@ -178,7 +178,7 @@ public class CreateTransactionPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BALANCE_DEFINITION_ID)
+  @JsonProperty(value = JSON_PROPERTY_BALANCE_DEFINITION_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setBalanceDefinitionId(@jakarta.annotation.Nonnull String balanceDefinitionId) {
     this.balanceDefinitionId = balanceDefinitionId;
@@ -195,7 +195,7 @@ public class CreateTransactionPayload {
    * @return balanceExpiryInMinutes
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_BALANCE_EXPIRY_IN_MINUTES)
+  @JsonProperty(value = JSON_PROPERTY_BALANCE_EXPIRY_IN_MINUTES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getBalanceExpiryInMinutes() {
@@ -203,7 +203,7 @@ public class CreateTransactionPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BALANCE_EXPIRY_IN_MINUTES)
+  @JsonProperty(value = JSON_PROPERTY_BALANCE_EXPIRY_IN_MINUTES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setBalanceExpiryInMinutes(@jakarta.annotation.Nullable Integer balanceExpiryInMinutes) {
     this.balanceExpiryInMinutes = balanceExpiryInMinutes;
@@ -221,7 +221,7 @@ public class CreateTransactionPayload {
    * @return contactId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CONTACT_ID)
+  @JsonProperty(value = JSON_PROPERTY_CONTACT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getContactId() {
@@ -229,7 +229,7 @@ public class CreateTransactionPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONTACT_ID)
+  @JsonProperty(value = JSON_PROPERTY_CONTACT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setContactId(@jakarta.annotation.Nullable Integer contactId) {
     this.contactId = contactId;
@@ -246,7 +246,7 @@ public class CreateTransactionPayload {
    * @return eventTime
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EVENT_TIME)
+  @JsonProperty(value = JSON_PROPERTY_EVENT_TIME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getEventTime() {
@@ -254,7 +254,7 @@ public class CreateTransactionPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EVENT_TIME)
+  @JsonProperty(value = JSON_PROPERTY_EVENT_TIME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setEventTime(@jakarta.annotation.Nullable String eventTime) {
     this.eventTime = eventTime;
@@ -279,7 +279,7 @@ public class CreateTransactionPayload {
    * @return meta
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_META)
+  @JsonProperty(value = JSON_PROPERTY_META, required = false)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
 
   public Map<String, Object> getMeta() {
@@ -287,7 +287,7 @@ public class CreateTransactionPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_META)
+  @JsonProperty(value = JSON_PROPERTY_META, required = false)
   @JsonInclude(content = JsonInclude.Include.ALWAYS, value = JsonInclude.Include.USE_DEFAULTS)
   public void setMeta(@jakarta.annotation.Nullable Map<String, Object> meta) {
     this.meta = meta;
@@ -304,7 +304,7 @@ public class CreateTransactionPayload {
    * @return ttl
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TTL)
+  @JsonProperty(value = JSON_PROPERTY_TTL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getTtl() {
@@ -312,11 +312,12 @@ public class CreateTransactionPayload {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TTL)
+  @JsonProperty(value = JSON_PROPERTY_TTL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setTtl(@jakarta.annotation.Nullable Integer ttl) {
     this.ttl = ttl;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -365,10 +366,7 @@ public class CreateTransactionPayload {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -406,7 +404,7 @@ public class CreateTransactionPayload {
     // add `LoyaltySubscriptionId` to the URL query string
     if (getLoyaltySubscriptionId() != null) {
       try {
-        joiner.add(String.format("%sLoyaltySubscriptionId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLoyaltySubscriptionId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sLoyaltySubscriptionId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getLoyaltySubscriptionId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -416,7 +414,7 @@ public class CreateTransactionPayload {
     // add `amount` to the URL query string
     if (getAmount() != null) {
       try {
-        joiner.add(String.format("%samount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAmount()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%samount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAmount()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -426,7 +424,7 @@ public class CreateTransactionPayload {
     // add `autoComplete` to the URL query string
     if (getAutoComplete() != null) {
       try {
-        joiner.add(String.format("%sautoComplete%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAutoComplete()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sautoComplete%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAutoComplete()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -436,7 +434,7 @@ public class CreateTransactionPayload {
     // add `balanceDefinitionId` to the URL query string
     if (getBalanceDefinitionId() != null) {
       try {
-        joiner.add(String.format("%sbalanceDefinitionId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBalanceDefinitionId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sbalanceDefinitionId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBalanceDefinitionId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -446,7 +444,7 @@ public class CreateTransactionPayload {
     // add `balanceExpiryInMinutes` to the URL query string
     if (getBalanceExpiryInMinutes() != null) {
       try {
-        joiner.add(String.format("%sbalanceExpiryInMinutes%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBalanceExpiryInMinutes()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sbalanceExpiryInMinutes%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBalanceExpiryInMinutes()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -456,7 +454,7 @@ public class CreateTransactionPayload {
     // add `contactId` to the URL query string
     if (getContactId() != null) {
       try {
-        joiner.add(String.format("%scontactId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContactId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scontactId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContactId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -466,7 +464,7 @@ public class CreateTransactionPayload {
     // add `eventTime` to the URL query string
     if (getEventTime() != null) {
       try {
-        joiner.add(String.format("%seventTime%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEventTime()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%seventTime%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEventTime()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -477,8 +475,8 @@ public class CreateTransactionPayload {
     if (getMeta() != null) {
       for (String _key : getMeta().keySet()) {
         try {
-          joiner.add(String.format("%smeta%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, _key, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%smeta%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, _key, containerSuffix),
               getMeta().get(_key), URLEncoder.encode(String.valueOf(getMeta().get(_key)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -490,7 +488,7 @@ public class CreateTransactionPayload {
     // add `ttl` to the URL query string
     if (getTtl() != null) {
       try {
-        joiner.add(String.format("%sttl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTtl()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sttl%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getTtl()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

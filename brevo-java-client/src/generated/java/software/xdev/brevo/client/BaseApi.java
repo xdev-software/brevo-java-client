@@ -12,7 +12,7 @@
 
 package software.xdev.brevo.client;
 
-import com.fasterxml.jackson.core.type.TypeReference;
+import tools.jackson.core.type.TypeReference;
 
 import java.util.Collections;
 import java.util.Map;

@@ -100,7 +100,7 @@ public class MainValueResponse {
    * @return array
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_ARRAY)
+  @JsonProperty(value = JSON_PROPERTY_ARRAY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<MainValueResponse> getArray() {
@@ -108,7 +108,7 @@ public class MainValueResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ARRAY)
+  @JsonProperty(value = JSON_PROPERTY_ARRAY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setArray(@jakarta.annotation.Nullable List<MainValueResponse> array) {
     this.array = array;
@@ -125,7 +125,7 @@ public class MainValueResponse {
    * @return _boolean
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_BOOLEAN)
+  @JsonProperty(value = JSON_PROPERTY_BOOLEAN, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getBoolean() {
@@ -133,7 +133,7 @@ public class MainValueResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_BOOLEAN)
+  @JsonProperty(value = JSON_PROPERTY_BOOLEAN, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setBoolean(@jakarta.annotation.Nullable Boolean _boolean) {
     this._boolean = _boolean;
@@ -150,7 +150,7 @@ public class MainValueResponse {
    * @return contactProperty
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_CONTACT_PROPERTY)
+  @JsonProperty(value = JSON_PROPERTY_CONTACT_PROPERTY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getContactProperty() {
@@ -158,7 +158,7 @@ public class MainValueResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CONTACT_PROPERTY)
+  @JsonProperty(value = JSON_PROPERTY_CONTACT_PROPERTY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setContactProperty(@jakarta.annotation.Nullable String contactProperty) {
     this.contactProperty = contactProperty;
@@ -175,7 +175,7 @@ public class MainValueResponse {
    * @return date
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DATE)
+  @JsonProperty(value = JSON_PROPERTY_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getDate() {
@@ -183,7 +183,7 @@ public class MainValueResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DATE)
+  @JsonProperty(value = JSON_PROPERTY_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDate(@jakarta.annotation.Nullable String date) {
     this.date = date;
@@ -200,7 +200,7 @@ public class MainValueResponse {
    * @return eventProperty
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EVENT_PROPERTY)
+  @JsonProperty(value = JSON_PROPERTY_EVENT_PROPERTY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getEventProperty() {
@@ -208,7 +208,7 @@ public class MainValueResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EVENT_PROPERTY)
+  @JsonProperty(value = JSON_PROPERTY_EVENT_PROPERTY, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setEventProperty(@jakarta.annotation.Nullable String eventProperty) {
     this.eventProperty = eventProperty;
@@ -225,7 +225,7 @@ public class MainValueResponse {
    * @return expression
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EXPRESSION)
+  @JsonProperty(value = JSON_PROPERTY_EXPRESSION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public MainNodeResponse getExpression() {
@@ -233,7 +233,7 @@ public class MainValueResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EXPRESSION)
+  @JsonProperty(value = JSON_PROPERTY_EXPRESSION, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setExpression(@jakarta.annotation.Nullable MainNodeResponse expression) {
     this.expression = expression;
@@ -250,7 +250,7 @@ public class MainValueResponse {
    * @return number
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_NUMBER)
+  @JsonProperty(value = JSON_PROPERTY_NUMBER, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public BigDecimal getNumber() {
@@ -258,7 +258,7 @@ public class MainValueResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_NUMBER)
+  @JsonProperty(value = JSON_PROPERTY_NUMBER, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setNumber(@jakarta.annotation.Nullable BigDecimal number) {
     this.number = number;
@@ -275,7 +275,7 @@ public class MainValueResponse {
    * @return string
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_STRING)
+  @JsonProperty(value = JSON_PROPERTY_STRING, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getString() {
@@ -283,11 +283,12 @@ public class MainValueResponse {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_STRING)
+  @JsonProperty(value = JSON_PROPERTY_STRING, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setString(@jakarta.annotation.Nullable String string) {
     this.string = string;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -334,10 +335,7 @@ public class MainValueResponse {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -376,8 +374,8 @@ public class MainValueResponse {
     if (getArray() != null) {
       for (int i = 0; i < getArray().size(); i++) {
         if (getArray().get(i) != null) {
-          joiner.add(getArray().get(i).toUrlQueryString(String.format("%sarray%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getArray().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sarray%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
@@ -385,7 +383,7 @@ public class MainValueResponse {
     // add `boolean` to the URL query string
     if (getBoolean() != null) {
       try {
-        joiner.add(String.format("%sboolean%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBoolean()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sboolean%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getBoolean()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -395,7 +393,7 @@ public class MainValueResponse {
     // add `contactProperty` to the URL query string
     if (getContactProperty() != null) {
       try {
-        joiner.add(String.format("%scontactProperty%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContactProperty()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scontactProperty%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getContactProperty()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -405,7 +403,7 @@ public class MainValueResponse {
     // add `date` to the URL query string
     if (getDate() != null) {
       try {
-        joiner.add(String.format("%sdate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDate()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDate()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -415,7 +413,7 @@ public class MainValueResponse {
     // add `eventProperty` to the URL query string
     if (getEventProperty() != null) {
       try {
-        joiner.add(String.format("%seventProperty%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEventProperty()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%seventProperty%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getEventProperty()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -430,7 +428,7 @@ public class MainValueResponse {
     // add `number` to the URL query string
     if (getNumber() != null) {
       try {
-        joiner.add(String.format("%snumber%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNumber()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%snumber%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getNumber()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -440,7 +438,7 @@ public class MainValueResponse {
     // add `string` to the URL query string
     if (getString() != null) {
       try {
-        joiner.add(String.format("%sstring%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getString()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sstring%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getString()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

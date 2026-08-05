@@ -62,7 +62,7 @@ public class CreateSenderModel {
    * @return id
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getId() {
@@ -70,7 +70,7 @@ public class CreateSenderModel {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_ID)
+  @JsonProperty(value = JSON_PROPERTY_ID, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setId(@jakarta.annotation.Nonnull Long id) {
     this.id = id;
@@ -87,7 +87,7 @@ public class CreateSenderModel {
    * @return spfError
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SPF_ERROR)
+  @JsonProperty(value = JSON_PROPERTY_SPF_ERROR, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getSpfError() {
@@ -95,7 +95,7 @@ public class CreateSenderModel {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SPF_ERROR)
+  @JsonProperty(value = JSON_PROPERTY_SPF_ERROR, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSpfError(@jakarta.annotation.Nullable Boolean spfError) {
     this.spfError = spfError;
@@ -112,7 +112,7 @@ public class CreateSenderModel {
    * @return dkimError
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DKIM_ERROR)
+  @JsonProperty(value = JSON_PROPERTY_DKIM_ERROR, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Boolean getDkimError() {
@@ -120,11 +120,12 @@ public class CreateSenderModel {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DKIM_ERROR)
+  @JsonProperty(value = JSON_PROPERTY_DKIM_ERROR, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDkimError(@jakarta.annotation.Nullable Boolean dkimError) {
     this.dkimError = dkimError;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -161,10 +162,7 @@ public class CreateSenderModel {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -202,7 +200,7 @@ public class CreateSenderModel {
     // add `id` to the URL query string
     if (getId() != null) {
       try {
-        joiner.add(String.format("%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sid%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -212,7 +210,7 @@ public class CreateSenderModel {
     // add `spfError` to the URL query string
     if (getSpfError() != null) {
       try {
-        joiner.add(String.format("%sspfError%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSpfError()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sspfError%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSpfError()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -222,7 +220,7 @@ public class CreateSenderModel {
     // add `dkimError` to the URL query string
     if (getDkimError() != null) {
       try {
-        joiner.add(String.format("%sdkimError%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDkimError()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdkimError%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDkimError()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

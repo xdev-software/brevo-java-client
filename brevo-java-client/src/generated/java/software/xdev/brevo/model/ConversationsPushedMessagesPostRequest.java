@@ -71,7 +71,7 @@ public class ConversationsPushedMessagesPostRequest {
    * @return visitorId
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_VISITOR_ID)
+  @JsonProperty(value = JSON_PROPERTY_VISITOR_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Object getVisitorId() {
@@ -79,7 +79,7 @@ public class ConversationsPushedMessagesPostRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_VISITOR_ID)
+  @JsonProperty(value = JSON_PROPERTY_VISITOR_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setVisitorId(@jakarta.annotation.Nullable Object visitorId) {
     this.visitorId = visitorId;
@@ -96,7 +96,7 @@ public class ConversationsPushedMessagesPostRequest {
    * @return text
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_TEXT)
+  @JsonProperty(value = JSON_PROPERTY_TEXT, required = false)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Object getText() {
@@ -104,7 +104,7 @@ public class ConversationsPushedMessagesPostRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_TEXT)
+  @JsonProperty(value = JSON_PROPERTY_TEXT, required = false)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setText(@jakarta.annotation.Nullable Object text) {
     this.text = text;
@@ -127,14 +127,14 @@ public class ConversationsPushedMessagesPostRequest {
         return agentId.orElse(null);
   }
 
-  @JsonProperty(JSON_PROPERTY_AGENT_ID)
+  @JsonProperty(value = JSON_PROPERTY_AGENT_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public JsonNullable<Object> getAgentId_JsonNullable() {
     return agentId;
   }
   
-  @JsonProperty(JSON_PROPERTY_AGENT_ID)
+  @JsonProperty(value = JSON_PROPERTY_AGENT_ID, required = false)
   public void setAgentId_JsonNullable(JsonNullable<Object> agentId) {
     this.agentId = agentId;
   }
@@ -160,14 +160,14 @@ public class ConversationsPushedMessagesPostRequest {
         return groupId.orElse(null);
   }
 
-  @JsonProperty(JSON_PROPERTY_GROUP_ID)
+  @JsonProperty(value = JSON_PROPERTY_GROUP_ID, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public JsonNullable<Object> getGroupId_JsonNullable() {
     return groupId;
   }
   
-  @JsonProperty(JSON_PROPERTY_GROUP_ID)
+  @JsonProperty(value = JSON_PROPERTY_GROUP_ID, required = false)
   public void setGroupId_JsonNullable(JsonNullable<Object> groupId) {
     this.groupId = groupId;
   }
@@ -175,6 +175,7 @@ public class ConversationsPushedMessagesPostRequest {
   public void setGroupId(@jakarta.annotation.Nullable Object groupId) {
     this.groupId = JsonNullable.<Object>of(groupId);
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -224,10 +225,7 @@ public class ConversationsPushedMessagesPostRequest {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -265,7 +263,7 @@ public class ConversationsPushedMessagesPostRequest {
     // add `visitorId` to the URL query string
     if (getVisitorId() != null) {
       try {
-        joiner.add(String.format("%svisitorId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getVisitorId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%svisitorId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getVisitorId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -275,7 +273,7 @@ public class ConversationsPushedMessagesPostRequest {
     // add `text` to the URL query string
     if (getText() != null) {
       try {
-        joiner.add(String.format("%stext%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getText()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%stext%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getText()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -285,7 +283,7 @@ public class ConversationsPushedMessagesPostRequest {
     // add `agentId` to the URL query string
     if (getAgentId() != null) {
       try {
-        joiner.add(String.format("%sagentId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAgentId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sagentId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getAgentId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -295,7 +293,7 @@ public class ConversationsPushedMessagesPostRequest {
     // add `groupId` to the URL query string
     if (getGroupId() != null) {
       try {
-        joiner.add(String.format("%sgroupId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getGroupId()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sgroupId%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getGroupId()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

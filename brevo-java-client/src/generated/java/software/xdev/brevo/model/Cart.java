@@ -90,7 +90,7 @@ public class Cart {
    * @return currency
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_CURRENCY)
+  @JsonProperty(value = JSON_PROPERTY_CURRENCY, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public CurrencyEnum getCurrency() {
@@ -98,7 +98,7 @@ public class Cart {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_CURRENCY)
+  @JsonProperty(value = JSON_PROPERTY_CURRENCY, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setCurrency(@jakarta.annotation.Nonnull CurrencyEnum currency) {
     this.currency = currency;
@@ -115,7 +115,7 @@ public class Cart {
    * @return specificAmount
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_SPECIFIC_AMOUNT)
+  @JsonProperty(value = JSON_PROPERTY_SPECIFIC_AMOUNT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public Long getSpecificAmount() {
@@ -123,11 +123,12 @@ public class Cart {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SPECIFIC_AMOUNT)
+  @JsonProperty(value = JSON_PROPERTY_SPECIFIC_AMOUNT, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setSpecificAmount(@jakarta.annotation.Nonnull Long specificAmount) {
     this.specificAmount = specificAmount;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -162,10 +163,7 @@ public class Cart {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -203,7 +201,7 @@ public class Cart {
     // add `currency` to the URL query string
     if (getCurrency() != null) {
       try {
-        joiner.add(String.format("%scurrency%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCurrency()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%scurrency%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getCurrency()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -213,7 +211,7 @@ public class Cart {
     // add `specificAmount` to the URL query string
     if (getSpecificAmount() != null) {
       try {
-        joiner.add(String.format("%sspecificAmount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSpecificAmount()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sspecificAmount%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSpecificAmount()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

@@ -80,7 +80,7 @@ public class TemplatePreviewModel {
    * @return fromEmail
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_FROM_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_FROM_EMAIL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getFromEmail() {
@@ -88,7 +88,7 @@ public class TemplatePreviewModel {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_FROM_EMAIL)
+  @JsonProperty(value = JSON_PROPERTY_FROM_EMAIL, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setFromEmail(@jakarta.annotation.Nullable String fromEmail) {
     this.fromEmail = fromEmail;
@@ -105,7 +105,7 @@ public class TemplatePreviewModel {
    * @return fromName
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_FROM_NAME)
+  @JsonProperty(value = JSON_PROPERTY_FROM_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getFromName() {
@@ -113,7 +113,7 @@ public class TemplatePreviewModel {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_FROM_NAME)
+  @JsonProperty(value = JSON_PROPERTY_FROM_NAME, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setFromName(@jakarta.annotation.Nullable String fromName) {
     this.fromName = fromName;
@@ -130,7 +130,7 @@ public class TemplatePreviewModel {
    * @return html
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_HTML)
+  @JsonProperty(value = JSON_PROPERTY_HTML, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getHtml() {
@@ -138,7 +138,7 @@ public class TemplatePreviewModel {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_HTML)
+  @JsonProperty(value = JSON_PROPERTY_HTML, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setHtml(@jakarta.annotation.Nullable String html) {
     this.html = html;
@@ -155,7 +155,7 @@ public class TemplatePreviewModel {
    * @return subject
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_SUBJECT)
+  @JsonProperty(value = JSON_PROPERTY_SUBJECT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getSubject() {
@@ -163,7 +163,7 @@ public class TemplatePreviewModel {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_SUBJECT)
+  @JsonProperty(value = JSON_PROPERTY_SUBJECT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSubject(@jakarta.annotation.Nullable String subject) {
     this.subject = subject;
@@ -188,7 +188,7 @@ public class TemplatePreviewModel {
    * @return usedFeedNames
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_USED_FEED_NAMES)
+  @JsonProperty(value = JSON_PROPERTY_USED_FEED_NAMES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<String> getUsedFeedNames() {
@@ -196,7 +196,7 @@ public class TemplatePreviewModel {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_USED_FEED_NAMES)
+  @JsonProperty(value = JSON_PROPERTY_USED_FEED_NAMES, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUsedFeedNames(@jakarta.annotation.Nullable List<String> usedFeedNames) {
     this.usedFeedNames = usedFeedNames;
@@ -213,7 +213,7 @@ public class TemplatePreviewModel {
    * @return previewText
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_PREVIEW_TEXT)
+  @JsonProperty(value = JSON_PROPERTY_PREVIEW_TEXT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getPreviewText() {
@@ -221,11 +221,12 @@ public class TemplatePreviewModel {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_PREVIEW_TEXT)
+  @JsonProperty(value = JSON_PROPERTY_PREVIEW_TEXT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPreviewText(@jakarta.annotation.Nullable String previewText) {
     this.previewText = previewText;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -268,10 +269,7 @@ public class TemplatePreviewModel {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -309,7 +307,7 @@ public class TemplatePreviewModel {
     // add `fromEmail` to the URL query string
     if (getFromEmail() != null) {
       try {
-        joiner.add(String.format("%sfromEmail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFromEmail()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sfromEmail%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFromEmail()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -319,7 +317,7 @@ public class TemplatePreviewModel {
     // add `fromName` to the URL query string
     if (getFromName() != null) {
       try {
-        joiner.add(String.format("%sfromName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFromName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sfromName%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getFromName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -329,7 +327,7 @@ public class TemplatePreviewModel {
     // add `html` to the URL query string
     if (getHtml() != null) {
       try {
-        joiner.add(String.format("%shtml%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHtml()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%shtml%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getHtml()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -339,7 +337,7 @@ public class TemplatePreviewModel {
     // add `subject` to the URL query string
     if (getSubject() != null) {
       try {
-        joiner.add(String.format("%ssubject%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubject()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%ssubject%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getSubject()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -350,8 +348,8 @@ public class TemplatePreviewModel {
     if (getUsedFeedNames() != null) {
       for (int i = 0; i < getUsedFeedNames().size(); i++) {
         try {
-          joiner.add(String.format("%susedFeedNames%s%s=%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix),
+          joiner.add(String.format(java.util.Locale.ROOT, "%susedFeedNames%s%s=%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix),
               URLEncoder.encode(String.valueOf(getUsedFeedNames().get(i)), "UTF-8").replaceAll("\\+", "%20")));
         } catch (UnsupportedEncodingException e) {
           // Should never happen, UTF-8 is always supported
@@ -363,7 +361,7 @@ public class TemplatePreviewModel {
     // add `previewText` to the URL query string
     if (getPreviewText() != null) {
       try {
-        joiner.add(String.format("%spreviewText%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPreviewText()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%spreviewText%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getPreviewText()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

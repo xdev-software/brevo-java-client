@@ -68,7 +68,7 @@ public class UpdateCouponCollectionRequest {
    * @return defaultCoupon
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DEFAULT_COUPON)
+  @JsonProperty(value = JSON_PROPERTY_DEFAULT_COUPON, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public String getDefaultCoupon() {
@@ -76,7 +76,7 @@ public class UpdateCouponCollectionRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DEFAULT_COUPON)
+  @JsonProperty(value = JSON_PROPERTY_DEFAULT_COUPON, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDefaultCoupon(@jakarta.annotation.Nullable String defaultCoupon) {
     this.defaultCoupon = defaultCoupon;
@@ -93,7 +93,7 @@ public class UpdateCouponCollectionRequest {
    * @return expirationDate
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_EXPIRATION_DATE)
+  @JsonProperty(value = JSON_PROPERTY_EXPIRATION_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public OffsetDateTime getExpirationDate() {
@@ -101,7 +101,7 @@ public class UpdateCouponCollectionRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_EXPIRATION_DATE)
+  @JsonProperty(value = JSON_PROPERTY_EXPIRATION_DATE, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setExpirationDate(@jakarta.annotation.Nullable OffsetDateTime expirationDate) {
     this.expirationDate = expirationDate;
@@ -118,7 +118,7 @@ public class UpdateCouponCollectionRequest {
    * @return remainingDaysAlert
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_REMAINING_DAYS_ALERT)
+  @JsonProperty(value = JSON_PROPERTY_REMAINING_DAYS_ALERT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getRemainingDaysAlert() {
@@ -126,7 +126,7 @@ public class UpdateCouponCollectionRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REMAINING_DAYS_ALERT)
+  @JsonProperty(value = JSON_PROPERTY_REMAINING_DAYS_ALERT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRemainingDaysAlert(@jakarta.annotation.Nullable Integer remainingDaysAlert) {
     this.remainingDaysAlert = remainingDaysAlert;
@@ -143,7 +143,7 @@ public class UpdateCouponCollectionRequest {
    * @return remainingCouponsAlert
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_REMAINING_COUPONS_ALERT)
+  @JsonProperty(value = JSON_PROPERTY_REMAINING_COUPONS_ALERT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public Integer getRemainingCouponsAlert() {
@@ -151,11 +151,12 @@ public class UpdateCouponCollectionRequest {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_REMAINING_COUPONS_ALERT)
+  @JsonProperty(value = JSON_PROPERTY_REMAINING_COUPONS_ALERT, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setRemainingCouponsAlert(@jakarta.annotation.Nullable Integer remainingCouponsAlert) {
     this.remainingCouponsAlert = remainingCouponsAlert;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -194,10 +195,7 @@ public class UpdateCouponCollectionRequest {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -235,7 +233,7 @@ public class UpdateCouponCollectionRequest {
     // add `defaultCoupon` to the URL query string
     if (getDefaultCoupon() != null) {
       try {
-        joiner.add(String.format("%sdefaultCoupon%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDefaultCoupon()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdefaultCoupon%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDefaultCoupon()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -245,7 +243,7 @@ public class UpdateCouponCollectionRequest {
     // add `expirationDate` to the URL query string
     if (getExpirationDate() != null) {
       try {
-        joiner.add(String.format("%sexpirationDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpirationDate()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sexpirationDate%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getExpirationDate()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -255,7 +253,7 @@ public class UpdateCouponCollectionRequest {
     // add `remainingDaysAlert` to the URL query string
     if (getRemainingDaysAlert() != null) {
       try {
-        joiner.add(String.format("%sremainingDaysAlert%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRemainingDaysAlert()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sremainingDaysAlert%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRemainingDaysAlert()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -265,7 +263,7 @@ public class UpdateCouponCollectionRequest {
     // add `remainingCouponsAlert` to the URL query string
     if (getRemainingCouponsAlert() != null) {
       try {
-        joiner.add(String.format("%sremainingCouponsAlert%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRemainingCouponsAlert()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sremainingCouponsAlert%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getRemainingCouponsAlert()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

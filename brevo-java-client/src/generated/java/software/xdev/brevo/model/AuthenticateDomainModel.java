@@ -57,7 +57,7 @@ public class AuthenticateDomainModel {
    * @return domainName
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_DOMAIN_NAME)
+  @JsonProperty(value = JSON_PROPERTY_DOMAIN_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getDomainName() {
@@ -65,7 +65,7 @@ public class AuthenticateDomainModel {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DOMAIN_NAME)
+  @JsonProperty(value = JSON_PROPERTY_DOMAIN_NAME, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setDomainName(@jakarta.annotation.Nonnull String domainName) {
     this.domainName = domainName;
@@ -82,7 +82,7 @@ public class AuthenticateDomainModel {
    * @return message
    */
   @jakarta.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_MESSAGE)
+  @JsonProperty(value = JSON_PROPERTY_MESSAGE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
 
   public String getMessage() {
@@ -90,11 +90,12 @@ public class AuthenticateDomainModel {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_MESSAGE)
+  @JsonProperty(value = JSON_PROPERTY_MESSAGE, required = true)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
   public void setMessage(@jakarta.annotation.Nonnull String message) {
     this.message = message;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -129,10 +130,7 @@ public class AuthenticateDomainModel {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -170,7 +168,7 @@ public class AuthenticateDomainModel {
     // add `domain_name` to the URL query string
     if (getDomainName() != null) {
       try {
-        joiner.add(String.format("%sdomain_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDomainName()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%sdomain_name%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getDomainName()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);
@@ -180,7 +178,7 @@ public class AuthenticateDomainModel {
     // add `message` to the URL query string
     if (getMessage() != null) {
       try {
-        joiner.add(String.format("%smessage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMessage()), "UTF-8").replaceAll("\\+", "%20")));
+        joiner.add(String.format(java.util.Locale.ROOT, "%smessage%s=%s", prefix, suffix, URLEncoder.encode(String.valueOf(getMessage()), "UTF-8").replaceAll("\\+", "%20")));
       } catch (UnsupportedEncodingException e) {
         // Should never happen, UTF-8 is always supported
         throw new RuntimeException(e);

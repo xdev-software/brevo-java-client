@@ -64,7 +64,7 @@ public class GetDomainsList {
    * @return domains
    */
   @jakarta.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_DOMAINS)
+  @JsonProperty(value = JSON_PROPERTY_DOMAINS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
   public List<GetDomainsListDomainsInner> getDomains() {
@@ -72,11 +72,12 @@ public class GetDomainsList {
   }
 
 
-  @JsonProperty(JSON_PROPERTY_DOMAINS)
+  @JsonProperty(value = JSON_PROPERTY_DOMAINS, required = false)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDomains(@jakarta.annotation.Nullable List<GetDomainsListDomainsInner> domains) {
     this.domains = domains;
   }
+
 
   @Override
   public boolean equals(Object o) {
@@ -109,10 +110,7 @@ public class GetDomainsList {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
   /**
@@ -151,8 +149,8 @@ public class GetDomainsList {
     if (getDomains() != null) {
       for (int i = 0; i < getDomains().size(); i++) {
         if (getDomains().get(i) != null) {
-          joiner.add(getDomains().get(i).toUrlQueryString(String.format("%sdomains%s%s", prefix, suffix,
-              "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+          joiner.add(getDomains().get(i).toUrlQueryString(String.format(java.util.Locale.ROOT, "%sdomains%s%s", prefix, suffix,
+              "".equals(suffix) ? "" : String.format(java.util.Locale.ROOT, "%s%d%s", containerPrefix, i, containerSuffix))));
         }
       }
     }
