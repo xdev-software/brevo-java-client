@@ -1,3 +1,7 @@
+# 1.2.2
+* Internal restructuring
+* Updated dependencies
+
 # 1.2.1
 * Fixed problems with Brevo API #206 #243
 
