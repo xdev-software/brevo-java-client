@@ -4,56 +4,17 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-<<<<<<<< HEAD:brevo-java-client/pom.xml
-	<groupId>software.xdev</groupId>
+	<parent>
+		<groupId>software.xdev</groupId>
+		<artifactId>src</artifactId>
+		<version>1.2.2-SNAPSHOT</version>
+	</parent>
+	
 	<artifactId>brevo-java-client</artifactId>
-	<version>1.2.2-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>brevo-java-client</name>
 	<description>brevo-java-client</description>
-	<url>https://github.com/xdev-software/brevo-java-client</url>
-
-	<scm>
-		<url>https://github.com/xdev-software/brevo-java-client</url>
-		<connection>scm:git:https://github.com/xdev-software/brevo-java-client.git</connection>
-	</scm>
-
-	<inceptionYear>2024</inceptionYear>
-
-	<organization>
-		<name>XDEV Software</name>
-		<url>https://xdev.software</url>
-	</organization>
-
-	<developers>
-		<developer>
-			<name>XDEV Software</name>
-			<organization>XDEV Software</organization>
-			<url>https://xdev.software</url>
-		</developer>
-	</developers>
-
-	<licenses>
-		<license>
-			<name>Apache-2.0</name>
-			<url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
-			<distribution>repo</distribution>
-		</license>
-	</licenses>
-========
-	<parent>
-		<groupId>software.xdev</groupId>
-		<artifactId>src</artifactId>
-		<version>1.0.0-SNAPSHOT</version>
-	</parent>
-	
-	<artifactId>template-placeholder</artifactId>
-	<packaging>jar</packaging>
-
-	<name>template-placeholder</name>
-	<description>template-placeholder</description>
->>>>>>>> origin/update-from-template-github_com_xdev-software_openapi-client-maven-template_master:src/template-placeholder/pom.xml
 
 	<properties>
 		<generatedDirRelative>src/generated/java</generatedDirRelative>
