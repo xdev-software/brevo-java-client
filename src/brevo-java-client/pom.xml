@@ -33,7 +33,7 @@
 		<dependency>
 			<groupId>tools.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
-			<version>3.2.3</version>
+			<version>3.2.4</version>
 		</dependency>
 		<dependency>
 			<groupId>org.openapitools</groupId>
@@ -115,7 +115,7 @@
 					<plugin>
 						<groupId>org.openapitools</groupId>
 						<artifactId>openapi-generator-maven-plugin</artifactId>
-						<version>7.26.0</version>
+						<version>7.27.0</version>
 						<executions>
 							<execution>
 								<goals>
