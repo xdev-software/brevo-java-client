@@ -6,26 +6,23 @@
 
 	<parent>
 		<groupId>software.xdev</groupId>
+<<<<<<<< HEAD:brevo-java-client-demo/pom.xml
 		<artifactId>brevo-java-client-root</artifactId>
 		<version>1.2.2-SNAPSHOT</version>
 	</parent>
 
 	<artifactId>brevo-java-client-demo</artifactId>
 	<version>1.2.2-SNAPSHOT</version>
+========
+		<artifactId>demos</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>template-placeholder-demo</artifactId>
+>>>>>>>> origin/update-from-template-github_com_xdev-software_openapi-client-maven-template_master:demos/template-placeholder-demo/pom.xml
 	<packaging>jar</packaging>
 
-	<organization>
-		<name>XDEV Software</name>
-		<url>https://xdev.software</url>
-	</organization>
-
 	<properties>
-		<javaVersion>17</javaVersion>
-		<maven.compiler.release>${javaVersion}</maven.compiler.release>
-
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
 		<mainClass>software.xdev.Application</mainClass>
 
 		<log4j2-version>2.26.1</log4j2-version>
@@ -56,17 +53,6 @@
 		<finalName>${project.artifactId}</finalName>
 		
 		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.16.0</version>
-				<configuration>
-					<release>${maven.compiler.release}</release>
-					<compilerArgs>
-						<arg>-proc:none</arg>
-					</compilerArgs>
-				</configuration>
-			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-assembly-plugin</artifactId>
