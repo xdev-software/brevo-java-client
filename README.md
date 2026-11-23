@@ -32,7 +32,7 @@ This client [is generated](./src/brevo-java-client/pom.xml) from an [`openapi.ym
 [Installation guide for the latest release](https://github.com/xdev-software/brevo-java-client/releases/latest#Installation)
 
 ## Demo
-A minimal demo is also available [here](./brevo-java-client-demo/src/main/java/software/xdev/Application.java).
+A minimal demo is also available [here](./demos/brevo-java-client-demo/src/main/java/software/xdev/Application.java).
 
 ## Support
 If you need support as soon as possible and you can't wait for any pull request, feel free to use [our support](https://xdev.software/en/services-products/support).
