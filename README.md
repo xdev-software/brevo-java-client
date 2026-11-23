@@ -10,7 +10,7 @@ A Java client for the [Brevo](https://www.brevo.com/?r=t) (formerly SendinBlue) 
 > An API-Key is required.<br/>
 > You can get it at https://app.brevo.com/settings/keys/api
 
-This client [is generated](./brevo-java-client/pom.xml) from an [``openapi.yml``](./openapi/openapi.yml) using [OpenAPI Generator](https://openapi-generator.tech/).
+This client [is generated](./src/brevo-java-client/pom.xml) from an [`openapi.yml`](./src/brevo-java-client/openapi/openapi.yml) using [OpenAPI Generator](https://openapi-generator.tech/).
 
 > [!NOTE]
 > <details><summary>Why did you create this API client and not use the <a href="https://github.com/sendinblue/APIv3-java-library">the official</a>/<a href="https://github.com/getbrevo/brevo-java">new official</a> one?</summary>
