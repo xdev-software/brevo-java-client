@@ -139,6 +139,8 @@
 										<useJakartaEe>true</useJakartaEe>
 										<hideGenerationTimestamp>true</hideGenerationTimestamp>
 										<useJackson3>true</useJackson3>
+										<!-- Conflicts with serialization policy NON_NULL otherwise -->
+										<containerDefaultToNull>true</containerDefaultToNull>
 									</configOptions>
 									<!-- No tests and documentation because we don't use that -->
 									<generateModelTests>false</generateModelTests>
