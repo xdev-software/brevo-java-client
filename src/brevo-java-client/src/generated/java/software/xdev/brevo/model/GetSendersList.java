@@ -40,7 +40,7 @@ import java.util.StringJoiner;
 public class GetSendersList {
   public static final String JSON_PROPERTY_SENDERS = "senders";
   @jakarta.annotation.Nullable
-  private List<GetSendersListSendersInner> senders = new ArrayList<>();
+  private List<GetSendersListSendersInner> senders;
 
   public GetSendersList() {
   }

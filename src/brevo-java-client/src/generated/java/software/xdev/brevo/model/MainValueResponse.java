@@ -48,7 +48,7 @@ import java.util.StringJoiner;
 public class MainValueResponse {
   public static final String JSON_PROPERTY_ARRAY = "array";
   @jakarta.annotation.Nullable
-  private List<MainValueResponse> array = new ArrayList<>();
+  private List<MainValueResponse> array;
 
   public static final String JSON_PROPERTY_BOOLEAN = "boolean";
   @jakarta.annotation.Nullable

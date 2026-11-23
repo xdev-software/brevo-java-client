@@ -45,7 +45,7 @@ public class GetExtendedContactDetailsAllOfStatisticsClicked {
 
   public static final String JSON_PROPERTY_LINKS = "links";
   @jakarta.annotation.Nonnull
-  private List<GetExtendedContactDetailsAllOfStatisticsLinks> links = new ArrayList<>();
+  private List<GetExtendedContactDetailsAllOfStatisticsLinks> links;
 
   public GetExtendedContactDetailsAllOfStatisticsClicked() {
   }

@@ -40,7 +40,7 @@ import java.util.StringJoiner;
 public class GetDomainsList {
   public static final String JSON_PROPERTY_DOMAINS = "domains";
   @jakarta.annotation.Nullable
-  private List<GetDomainsListDomainsInner> domains = new ArrayList<>();
+  private List<GetDomainsListDomainsInner> domains;
 
   public GetDomainsList() {
   }

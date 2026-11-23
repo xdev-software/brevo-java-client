@@ -50,15 +50,15 @@ public class CreateDoiContact {
 
   public static final String JSON_PROPERTY_ATTRIBUTES = "attributes";
   @jakarta.annotation.Nullable
-  private Map<String, Object> attributes = new HashMap<>();
+  private Map<String, Object> attributes;
 
   public static final String JSON_PROPERTY_INCLUDE_LIST_IDS = "includeListIds";
   @jakarta.annotation.Nonnull
-  private List<Long> includeListIds = new ArrayList<>();
+  private List<Long> includeListIds;
 
   public static final String JSON_PROPERTY_EXCLUDE_LIST_IDS = "excludeListIds";
   @jakarta.annotation.Nullable
-  private List<Long> excludeListIds = new ArrayList<>();
+  private List<Long> excludeListIds;
 
   public static final String JSON_PROPERTY_TEMPLATE_ID = "templateId";
   @jakarta.annotation.Nonnull

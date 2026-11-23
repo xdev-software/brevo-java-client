@@ -40,7 +40,7 @@ import java.util.StringJoiner;
 public class GetIps {
   public static final String JSON_PROPERTY_IPS = "ips";
   @jakarta.annotation.Nonnull
-  private List<GetIp> ips = new ArrayList<>();
+  private List<GetIp> ips;
 
   public GetIps() {
   }

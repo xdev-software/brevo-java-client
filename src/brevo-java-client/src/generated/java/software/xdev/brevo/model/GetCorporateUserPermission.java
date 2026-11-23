@@ -52,7 +52,7 @@ public class GetCorporateUserPermission {
 
   public static final String JSON_PROPERTY_GROUPS = "groups";
   @jakarta.annotation.Nonnull
-  private List<GetCorporateUserPermissionGroupsInner> groups = new ArrayList<>();
+  private List<GetCorporateUserPermissionGroupsInner> groups;
 
   public static final String JSON_PROPERTY_FEATURE_ACCESS = "feature_access";
   @jakarta.annotation.Nonnull

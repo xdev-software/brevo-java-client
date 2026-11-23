@@ -52,19 +52,19 @@ import java.util.StringJoiner;
 public class SendSmtpEmailMessageVersionsInner {
   public static final String JSON_PROPERTY_TO = "to";
   @jakarta.annotation.Nonnull
-  private List<SendSmtpEmailToInner> to = new ArrayList<>();
+  private List<SendSmtpEmailToInner> to;
 
   public static final String JSON_PROPERTY_PARAMS = "params";
   @jakarta.annotation.Nullable
-  private Map<String, Object> params = new HashMap<>();
+  private Map<String, Object> params;
 
   public static final String JSON_PROPERTY_BCC = "bcc";
   @jakarta.annotation.Nullable
-  private List<SendSmtpEmailBccInner> bcc = new ArrayList<>();
+  private List<SendSmtpEmailBccInner> bcc;
 
   public static final String JSON_PROPERTY_CC = "cc";
   @jakarta.annotation.Nullable
-  private List<SendSmtpEmailCcInner> cc = new ArrayList<>();
+  private List<SendSmtpEmailCcInner> cc;
 
   public static final String JSON_PROPERTY_REPLY_TO = "replyTo";
   @jakarta.annotation.Nullable

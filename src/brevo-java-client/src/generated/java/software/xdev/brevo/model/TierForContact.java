@@ -62,7 +62,7 @@ public class TierForContact {
 
   public static final String JSON_PROPERTY_META = "meta";
   @jakarta.annotation.Nullable
-  private Map<String, Object> meta = new HashMap<>();
+  private Map<String, Object> meta;
 
   public static final String JSON_PROPERTY_CREATED_AT = "createdAt";
   @jakarta.annotation.Nullable

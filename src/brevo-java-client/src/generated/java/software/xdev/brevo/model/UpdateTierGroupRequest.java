@@ -47,7 +47,7 @@ public class UpdateTierGroupRequest {
 
   public static final String JSON_PROPERTY_TIER_ORDER = "tierOrder";
   @jakarta.annotation.Nonnull
-  private List<UUID> tierOrder = new ArrayList<>();
+  private List<UUID> tierOrder;
 
   /**
    * Select real_time to upgrade tier on real time balance updates. Select membership_anniversary to upgrade tier on subscription anniversary. Select tier_anniversary to upgrade tier on tier anniversary.

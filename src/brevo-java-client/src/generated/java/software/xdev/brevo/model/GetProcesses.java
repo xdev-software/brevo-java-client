@@ -41,7 +41,7 @@ import java.util.StringJoiner;
 public class GetProcesses {
   public static final String JSON_PROPERTY_PROCESSES = "processes";
   @jakarta.annotation.Nullable
-  private List<GetProcess> processes = new ArrayList<>();
+  private List<GetProcess> processes;
 
   public static final String JSON_PROPERTY_COUNT = "count";
   @jakarta.annotation.Nullable

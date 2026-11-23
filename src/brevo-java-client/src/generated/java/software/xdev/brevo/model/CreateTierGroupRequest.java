@@ -128,7 +128,7 @@ public class CreateTierGroupRequest {
 
   public static final String JSON_PROPERTY_TIER_ORDER = "tierOrder";
   @jakarta.annotation.Nullable
-  private List<String> tierOrder = new ArrayList<>();
+  private List<String> tierOrder;
 
   public CreateTierGroupRequest() {
   }

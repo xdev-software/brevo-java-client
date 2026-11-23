@@ -45,7 +45,7 @@ public class GetSmtpTemplates {
 
   public static final String JSON_PROPERTY_TEMPLATES = "templates";
   @jakarta.annotation.Nullable
-  private List<GetSmtpTemplateOverview> templates = new ArrayList<>();
+  private List<GetSmtpTemplateOverview> templates;
 
   public GetSmtpTemplates() {
   }

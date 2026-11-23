@@ -51,7 +51,7 @@ public class GetScheduledEmailById200Response {
 
   public static final String JSON_PROPERTY_BATCHES = "batches";
   @jakarta.annotation.Nullable
-  private List<GetScheduledEmailByBatchIdBatchesInner> batches = new ArrayList<>();
+  private List<GetScheduledEmailByBatchIdBatchesInner> batches;
 
   public static final String JSON_PROPERTY_SCHEDULED_AT = "scheduledAt";
   @jakarta.annotation.Nonnull

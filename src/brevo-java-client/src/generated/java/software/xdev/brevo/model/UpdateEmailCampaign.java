@@ -144,7 +144,7 @@ public class UpdateEmailCampaign {
 
   public static final String JSON_PROPERTY_PARAMS = "params";
   @jakarta.annotation.Nullable
-  private Map<String, Object> params = new HashMap<>();
+  private Map<String, Object> params;
 
   public static final String JSON_PROPERTY_SEND_AT_BEST_TIME = "sendAtBestTime";
   @jakarta.annotation.Nullable

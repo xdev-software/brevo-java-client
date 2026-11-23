@@ -120,7 +120,7 @@ public class CreateWebhook {
 
   public static final String JSON_PROPERTY_EVENTS = "events";
   @jakarta.annotation.Nonnull
-  private List<EventsEnum> events = new ArrayList<>();
+  private List<EventsEnum> events;
 
   /**
    * Type of the webhook
@@ -216,7 +216,7 @@ public class CreateWebhook {
 
   public static final String JSON_PROPERTY_HEADERS = "headers";
   @jakarta.annotation.Nullable
-  private List<Object> headers = new ArrayList<>();
+  private List<Object> headers;
 
   public CreateWebhook() {
   }

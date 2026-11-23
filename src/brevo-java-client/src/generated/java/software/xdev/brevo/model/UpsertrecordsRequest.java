@@ -40,7 +40,7 @@ import java.util.StringJoiner;
 public class UpsertrecordsRequest {
   public static final String JSON_PROPERTY_RECORDS = "records";
   @jakarta.annotation.Nonnull
-  private List<UpsertrecordsRequestRecordsInner> records = new ArrayList<>();
+  private List<UpsertrecordsRequestRecordsInner> records;
 
   public UpsertrecordsRequest() {
   }

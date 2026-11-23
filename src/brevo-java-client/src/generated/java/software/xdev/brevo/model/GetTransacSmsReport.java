@@ -40,7 +40,7 @@ import java.util.StringJoiner;
 public class GetTransacSmsReport {
   public static final String JSON_PROPERTY_REPORTS = "reports";
   @jakarta.annotation.Nullable
-  private List<GetTransacSmsReportReportsInner> reports = new ArrayList<>();
+  private List<GetTransacSmsReportReportsInner> reports;
 
   public GetTransacSmsReport() {
   }

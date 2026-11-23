@@ -44,7 +44,7 @@ import java.util.StringJoiner;
 public class MainProductPayload {
   public static final String JSON_PROPERTY_CATEGORY = "category";
   @jakarta.annotation.Nullable
-  private List<String> category = new ArrayList<>();
+  private List<String> category;
 
   public static final String JSON_PROPERTY_PRICE = "price";
   @jakarta.annotation.Nullable

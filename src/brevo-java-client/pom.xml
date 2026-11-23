@@ -33,7 +33,7 @@
 		<dependency>
 			<groupId>tools.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
-			<version>3.2.4</version>
+			<version>3.3.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.openapitools</groupId>
@@ -53,7 +53,7 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>build-helper-maven-plugin</artifactId>
-				<version>3.6.2</version>
+				<version>3.8.0</version>
 				<executions>
 					<execution>
 						<phase>generate-sources</phase>
@@ -139,6 +139,8 @@
 										<useJakartaEe>true</useJakartaEe>
 										<hideGenerationTimestamp>true</hideGenerationTimestamp>
 										<useJackson3>true</useJackson3>
+										<!-- Conflicts with serialization policy NON_NULL otherwise -->
+										<containerDefaultToNull>true</containerDefaultToNull>
 									</configOptions>
 									<!-- No tests and documentation because we don't use that -->
 									<generateModelTests>false</generateModelTests>

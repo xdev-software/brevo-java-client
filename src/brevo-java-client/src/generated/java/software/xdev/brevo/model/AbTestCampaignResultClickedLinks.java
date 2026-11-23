@@ -41,11 +41,11 @@ import java.util.StringJoiner;
 public class AbTestCampaignResultClickedLinks {
   public static final String JSON_PROPERTY_VERSION_A = "Version A";
   @jakarta.annotation.Nonnull
-  private List<AbTestVersionClicksInner> versionA = new ArrayList<>();
+  private List<AbTestVersionClicksInner> versionA;
 
   public static final String JSON_PROPERTY_VERSION_B = "Version B";
   @jakarta.annotation.Nonnull
-  private List<AbTestVersionClicksInner> versionB = new ArrayList<>();
+  private List<AbTestVersionClicksInner> versionB;
 
   public AbTestCampaignResultClickedLinks() {
   }

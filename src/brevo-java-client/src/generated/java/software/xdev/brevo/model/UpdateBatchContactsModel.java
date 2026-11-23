@@ -40,11 +40,11 @@ import java.util.StringJoiner;
 public class UpdateBatchContactsModel {
   public static final String JSON_PROPERTY_SUCCESS_IDS = "successIds";
   @jakarta.annotation.Nullable
-  private List<Long> successIds = new ArrayList<>();
+  private List<Long> successIds;
 
   public static final String JSON_PROPERTY_FAILURE_IDS = "failureIds";
   @jakarta.annotation.Nullable
-  private List<Long> failureIds = new ArrayList<>();
+  private List<Long> failureIds;
 
   public UpdateBatchContactsModel() {
   }

@@ -79,11 +79,11 @@ public class Tier {
 
   public static final String JSON_PROPERTY_ACCESS_CONDITIONS = "accessConditions";
   @jakarta.annotation.Nullable
-  private List<TierAccessConditionsInner> accessConditions = new ArrayList<>();
+  private List<TierAccessConditionsInner> accessConditions;
 
   public static final String JSON_PROPERTY_TIER_REWARDS = "tierRewards";
   @jakarta.annotation.Nullable
-  private List<TierTierRewardsInner> tierRewards = new ArrayList<>();
+  private List<TierTierRewardsInner> tierRewards;
 
   public Tier() {
   }

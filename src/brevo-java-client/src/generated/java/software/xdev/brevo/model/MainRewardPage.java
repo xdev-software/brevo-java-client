@@ -41,7 +41,7 @@ import java.util.StringJoiner;
 public class MainRewardPage {
   public static final String JSON_PROPERTY_ITEMS = "items";
   @jakarta.annotation.Nullable
-  private List<MainRewardPageObj> items = new ArrayList<>();
+  private List<MainRewardPageObj> items;
 
   public static final String JSON_PROPERTY_TOTAL_COUNT = "totalCount";
   @jakarta.annotation.Nullable

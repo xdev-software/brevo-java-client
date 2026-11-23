@@ -93,7 +93,7 @@ public class Transaction {
 
   public static final String JSON_PROPERTY_META = "meta";
   @jakarta.annotation.Nullable
-  private Map<String, Object> meta = new HashMap<>();
+  private Map<String, Object> meta;
 
   public static final String JSON_PROPERTY_REJECT_REASON = "rejectReason";
   @jakarta.annotation.Nullable

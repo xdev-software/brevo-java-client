@@ -62,7 +62,7 @@ public class GetTransacEmailContent {
 
   public static final String JSON_PROPERTY_EVENTS = "events";
   @jakarta.annotation.Nonnull
-  private List<GetTransacEmailContentEventsInner> events = new ArrayList<>();
+  private List<GetTransacEmailContentEventsInner> events;
 
   public static final String JSON_PROPERTY_BODY = "body";
   @jakarta.annotation.Nonnull

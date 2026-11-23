@@ -40,7 +40,7 @@ import java.util.StringJoiner;
 public class GetWhatsappEventReport {
   public static final String JSON_PROPERTY_EVENTS = "events";
   @jakarta.annotation.Nullable
-  private List<GetWhatsappEventReportEventsInner> events = new ArrayList<>();
+  private List<GetWhatsappEventReportEventsInner> events;
 
   public GetWhatsappEventReport() {
   }

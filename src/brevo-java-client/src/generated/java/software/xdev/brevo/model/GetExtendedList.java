@@ -76,7 +76,7 @@ public class GetExtendedList {
 
   public static final String JSON_PROPERTY_CAMPAIGN_STATS = "campaignStats";
   @jakarta.annotation.Nullable
-  private List<GetExtendedListAllOfCampaignStats> campaignStats = new ArrayList<>();
+  private List<GetExtendedListAllOfCampaignStats> campaignStats;
 
   public static final String JSON_PROPERTY_DYNAMIC_LIST = "dynamicList";
   @jakarta.annotation.Nullable

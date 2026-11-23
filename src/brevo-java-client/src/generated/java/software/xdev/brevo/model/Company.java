@@ -48,11 +48,11 @@ public class Company {
 
   public static final String JSON_PROPERTY_LINKED_CONTACTS_IDS = "linkedContactsIds";
   @jakarta.annotation.Nullable
-  private List<Integer> linkedContactsIds = new ArrayList<>();
+  private List<Integer> linkedContactsIds;
 
   public static final String JSON_PROPERTY_LINKED_DEALS_IDS = "linkedDealsIds";
   @jakarta.annotation.Nullable
-  private List<String> linkedDealsIds = new ArrayList<>();
+  private List<String> linkedDealsIds;
 
   public Company() {
   }

@@ -47,39 +47,39 @@ import java.util.StringJoiner;
 public class GetCorporateUserPermissionFeatureAccess {
   public static final String JSON_PROPERTY_API_KEYS = "api_keys";
   @jakarta.annotation.Nullable
-  private List<String> apiKeys = new ArrayList<>();
+  private List<String> apiKeys;
 
   public static final String JSON_PROPERTY_MY_PLAN = "my_plan";
   @jakarta.annotation.Nullable
-  private List<String> myPlan = new ArrayList<>();
+  private List<String> myPlan;
 
   public static final String JSON_PROPERTY_USER_MANAGEMENT = "user_management";
   @jakarta.annotation.Nullable
-  private List<String> userManagement = new ArrayList<>();
+  private List<String> userManagement;
 
   public static final String JSON_PROPERTY_APPS_MANAGEMENT = "apps_management";
   @jakarta.annotation.Nullable
-  private List<String> appsManagement = new ArrayList<>();
+  private List<String> appsManagement;
 
   public static final String JSON_PROPERTY_SUB_ORGANIZATION_GROUPS = "sub_organization_groups";
   @jakarta.annotation.Nullable
-  private List<String> subOrganizationGroups = new ArrayList<>();
+  private List<String> subOrganizationGroups;
 
   public static final String JSON_PROPERTY_CREATE_SUB_ORGANIZATIONS = "create_sub_organizations";
   @jakarta.annotation.Nullable
-  private List<String> createSubOrganizations = new ArrayList<>();
+  private List<String> createSubOrganizations;
 
   public static final String JSON_PROPERTY_MANAGE_SUB_ORGANIZATIONS = "manage_sub_organizations";
   @jakarta.annotation.Nullable
-  private List<String> manageSubOrganizations = new ArrayList<>();
+  private List<String> manageSubOrganizations;
 
   public static final String JSON_PROPERTY_ANALYTICS = "analytics";
   @jakarta.annotation.Nullable
-  private List<String> analytics = new ArrayList<>();
+  private List<String> analytics;
 
   public static final String JSON_PROPERTY_SECURITY = "security";
   @jakarta.annotation.Nullable
-  private List<String> security = new ArrayList<>();
+  private List<String> security;
 
   public GetCorporateUserPermissionFeatureAccess() {
   }

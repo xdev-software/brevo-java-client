@@ -40,11 +40,11 @@ import java.util.StringJoiner;
 public class CreateSmsCampaignRecipients {
   public static final String JSON_PROPERTY_LIST_IDS = "listIds";
   @jakarta.annotation.Nonnull
-  private List<Long> listIds = new ArrayList<>();
+  private List<Long> listIds;
 
   public static final String JSON_PROPERTY_EXCLUSION_LIST_IDS = "exclusionListIds";
   @jakarta.annotation.Nullable
-  private List<Long> exclusionListIds = new ArrayList<>();
+  private List<Long> exclusionListIds;
 
   public CreateSmsCampaignRecipients() {
   }

@@ -73,15 +73,15 @@ public class WhatsappCampTemplate {
 
   public static final String JSON_PROPERTY_COMPONENTS = "components";
   @jakarta.annotation.Nullable
-  private List<ComponentItems> components = new ArrayList<>();
+  private List<ComponentItems> components;
 
   public static final String JSON_PROPERTY_HEADER_VARIABLES = "header_variables";
   @jakarta.annotation.Nullable
-  private List<VariablesItems> headerVariables = new ArrayList<>();
+  private List<VariablesItems> headerVariables;
 
   public static final String JSON_PROPERTY_BODY_VARIABLES = "body_variables";
   @jakarta.annotation.Nullable
-  private List<VariablesItems> bodyVariables = new ArrayList<>();
+  private List<VariablesItems> bodyVariables;
 
   public static final String JSON_PROPERTY_BUTTON_TYPE = "button_type";
   @jakarta.annotation.Nullable

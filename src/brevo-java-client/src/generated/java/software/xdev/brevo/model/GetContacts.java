@@ -41,7 +41,7 @@ import java.util.StringJoiner;
 public class GetContacts {
   public static final String JSON_PROPERTY_CONTACTS = "contacts";
   @jakarta.annotation.Nonnull
-  private List<GetContactDetails> contacts = new ArrayList<>();
+  private List<GetContactDetails> contacts;
 
   public static final String JSON_PROPERTY_COUNT = "count";
   @jakarta.annotation.Nonnull

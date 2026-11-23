@@ -60,7 +60,7 @@ public class GetSendersListSendersInner {
 
   public static final String JSON_PROPERTY_IPS = "ips";
   @jakarta.annotation.Nullable
-  private List<GetSendersListSendersInnerIpsInner> ips = new ArrayList<>();
+  private List<GetSendersListSendersInnerIpsInner> ips;
 
   public GetSendersListSendersInner() {
   }

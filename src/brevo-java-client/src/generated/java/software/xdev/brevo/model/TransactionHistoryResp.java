@@ -60,7 +60,7 @@ public class TransactionHistoryResp {
 
   public static final String JSON_PROPERTY_TRANSACTION_HISTORY = "transactionHistory";
   @jakarta.annotation.Nullable
-  private List<TransactionHistory> transactionHistory = new ArrayList<>();
+  private List<TransactionHistory> transactionHistory;
 
   public TransactionHistoryResp() {
   }

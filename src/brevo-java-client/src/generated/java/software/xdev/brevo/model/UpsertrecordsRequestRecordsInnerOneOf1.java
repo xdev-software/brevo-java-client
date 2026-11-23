@@ -51,7 +51,7 @@ public class UpsertrecordsRequestRecordsInnerOneOf1 {
 
   public static final String JSON_PROPERTY_ASSOCIATIONS = "associations";
   @jakarta.annotation.Nullable
-  private List<UpsertrecordsRequestRecordsInnerOneOf1AssociationsInner> associations = new ArrayList<>();
+  private List<UpsertrecordsRequestRecordsInnerOneOf1AssociationsInner> associations;
 
   public UpsertrecordsRequestRecordsInnerOneOf1() {
   }

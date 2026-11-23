@@ -66,7 +66,7 @@ public class UpdateBatchContactsContactsInner {
 
   public static final String JSON_PROPERTY_ATTRIBUTES = "attributes";
   @jakarta.annotation.Nullable
-  private Map<String, Object> attributes = new HashMap<>();
+  private Map<String, Object> attributes;
 
   public static final String JSON_PROPERTY_EMAIL_BLACKLISTED = "emailBlacklisted";
   @jakarta.annotation.Nullable
@@ -78,15 +78,15 @@ public class UpdateBatchContactsContactsInner {
 
   public static final String JSON_PROPERTY_LIST_IDS = "listIds";
   @jakarta.annotation.Nullable
-  private List<Long> listIds = new ArrayList<>();
+  private List<Long> listIds;
 
   public static final String JSON_PROPERTY_UNLINK_LIST_IDS = "unlinkListIds";
   @jakarta.annotation.Nullable
-  private List<Long> unlinkListIds = new ArrayList<>();
+  private List<Long> unlinkListIds;
 
   public static final String JSON_PROPERTY_SMTP_BLACKLIST_SENDER = "smtpBlacklistSender";
   @jakarta.annotation.Nullable
-  private List<String> smtpBlacklistSender = new ArrayList<>();
+  private List<String> smtpBlacklistSender;
 
   public UpdateBatchContactsContactsInner() {
   }

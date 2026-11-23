@@ -50,15 +50,15 @@ public class SubscriptionHandlerInfo {
 
   public static final String JSON_PROPERTY_MEMBERS = "members";
   @jakarta.annotation.Nullable
-  private List<MemberContact> members = new ArrayList<>();
+  private List<MemberContact> members;
 
   public static final String JSON_PROPERTY_REWARD = "reward";
   @jakarta.annotation.Nullable
-  private List<SubscriptionAttributedReward> reward = new ArrayList<>();
+  private List<SubscriptionAttributedReward> reward;
 
   public static final String JSON_PROPERTY_TIER = "tier";
   @jakarta.annotation.Nullable
-  private List<SubscriptionTier> tier = new ArrayList<>();
+  private List<SubscriptionTier> tier;
 
   public SubscriptionHandlerInfo() {
   }

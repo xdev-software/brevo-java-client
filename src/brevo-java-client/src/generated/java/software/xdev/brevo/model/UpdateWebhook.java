@@ -118,7 +118,7 @@ public class UpdateWebhook {
 
   public static final String JSON_PROPERTY_EVENTS = "events";
   @jakarta.annotation.Nullable
-  private List<EventsEnum> events = new ArrayList<>();
+  private List<EventsEnum> events;
 
   public static final String JSON_PROPERTY_DOMAIN = "domain";
   @jakarta.annotation.Nullable
@@ -134,7 +134,7 @@ public class UpdateWebhook {
 
   public static final String JSON_PROPERTY_HEADERS = "headers";
   @jakarta.annotation.Nullable
-  private List<Object> headers = new ArrayList<>();
+  private List<Object> headers;
 
   public UpdateWebhook() {
   }

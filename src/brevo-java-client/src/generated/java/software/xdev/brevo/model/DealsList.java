@@ -38,7 +38,7 @@ import java.util.StringJoiner;
 public class DealsList {
   public static final String JSON_PROPERTY_ITEMS = "items";
   @jakarta.annotation.Nullable
-  private List<Deal> items = new ArrayList<>();
+  private List<Deal> items;
 
   public DealsList() {
   }

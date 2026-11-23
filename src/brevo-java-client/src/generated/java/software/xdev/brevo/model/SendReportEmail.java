@@ -40,7 +40,7 @@ import java.util.StringJoiner;
 public class SendReportEmail {
   public static final String JSON_PROPERTY_TO = "to";
   @jakarta.annotation.Nonnull
-  private List<String> to = new ArrayList<>();
+  private List<String> to;
 
   public static final String JSON_PROPERTY_BODY = "body";
   @jakarta.annotation.Nonnull

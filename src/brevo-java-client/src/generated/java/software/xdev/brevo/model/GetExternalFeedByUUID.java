@@ -117,7 +117,7 @@ public class GetExternalFeedByUUID {
 
   public static final String JSON_PROPERTY_HEADERS = "headers";
   @jakarta.annotation.Nonnull
-  private List<GetExternalFeedByUUIDHeadersInner> headers = new ArrayList<>();
+  private List<GetExternalFeedByUUIDHeadersInner> headers;
 
   public static final String JSON_PROPERTY_MAX_RETRIES = "maxRetries";
   @jakarta.annotation.Nonnull

@@ -60,7 +60,7 @@ public class SubAccountsResponseSubAccountsInner {
 
   public static final String JSON_PROPERTY_GROUPS = "groups";
   @jakarta.annotation.Nonnull
-  private List<SubAccountsResponseSubAccountsInnerGroupsInner> groups = new ArrayList<>();
+  private List<SubAccountsResponseSubAccountsInnerGroupsInner> groups;
 
   public SubAccountsResponseSubAccountsInner() {
   }

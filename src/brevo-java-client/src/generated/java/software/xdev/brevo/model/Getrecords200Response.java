@@ -45,7 +45,7 @@ public class Getrecords200Response {
 
   public static final String JSON_PROPERTY_RECORDS = "records";
   @jakarta.annotation.Nullable
-  private List<Getrecords200ResponseRecordsInner> records = new ArrayList<>();
+  private List<Getrecords200ResponseRecordsInner> records;
 
   public Getrecords200Response() {
   }

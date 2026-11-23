@@ -57,7 +57,7 @@ public class SubAccountDetailsResponse {
 
   public static final String JSON_PROPERTY_GROUPS = "groups";
   @jakarta.annotation.Nullable
-  private List<SubAccountDetailsResponseGroupsInner> groups = new ArrayList<>();
+  private List<SubAccountDetailsResponseGroupsInner> groups;
 
   public static final String JSON_PROPERTY_PLAN_INFO = "planInfo";
   @jakarta.annotation.Nullable

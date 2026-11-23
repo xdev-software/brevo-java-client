@@ -83,7 +83,7 @@ public class Order {
 
   public static final String JSON_PROPERTY_PRODUCTS = "products";
   @jakarta.annotation.Nonnull
-  private List<OrderProductsInner> products = new ArrayList<>();
+  private List<OrderProductsInner> products;
 
   public static final String JSON_PROPERTY_BILLING = "billing";
   @jakarta.annotation.Nullable
@@ -91,11 +91,11 @@ public class Order {
 
   public static final String JSON_PROPERTY_COUPONS = "coupons";
   @jakarta.annotation.Nullable
-  private List<String> coupons = new ArrayList<>();
+  private List<String> coupons;
 
   public static final String JSON_PROPERTY_META_INFO = "metaInfo";
   @jakarta.annotation.Nullable
-  private Map<String, Object> metaInfo = new HashMap<>();
+  private Map<String, Object> metaInfo;
 
   public Order() {
   }

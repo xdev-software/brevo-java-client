@@ -47,7 +47,7 @@ public class ContactBalancesResp {
 
   public static final String JSON_PROPERTY_BALANCES = "balances";
   @jakarta.annotation.Nullable
-  private List<BalanceDataPerContact> balances = new ArrayList<>();
+  private List<BalanceDataPerContact> balances;
 
   public static final String JSON_PROPERTY_COUNT = "count";
   @jakarta.annotation.Nullable

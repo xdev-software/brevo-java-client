@@ -48,11 +48,11 @@ public class CorporateGroupDetailsResponse {
 
   public static final String JSON_PROPERTY_SUB_ACCOUNTS = "sub-accounts";
   @jakarta.annotation.Nullable
-  private List<CorporateGroupDetailsResponseSubAccountsInner> subAccounts = new ArrayList<>();
+  private List<CorporateGroupDetailsResponseSubAccountsInner> subAccounts;
 
   public static final String JSON_PROPERTY_USERS = "users";
   @jakarta.annotation.Nullable
-  private List<CorporateGroupDetailsResponseUsersInner> users = new ArrayList<>();
+  private List<CorporateGroupDetailsResponseUsersInner> users;
 
   public CorporateGroupDetailsResponse() {
   }

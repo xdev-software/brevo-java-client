@@ -44,15 +44,15 @@ import java.util.StringJoiner;
 public class AddContactToListRequest {
   public static final String JSON_PROPERTY_EMAILS = "emails";
   @jakarta.annotation.Nullable
-  private List<String> emails = new ArrayList<>();
+  private List<String> emails;
 
   public static final String JSON_PROPERTY_IDS = "ids";
   @jakarta.annotation.Nullable
-  private List<Long> ids = new ArrayList<>();
+  private List<Long> ids;
 
   public static final String JSON_PROPERTY_EXT_IDS = "extIds";
   @jakarta.annotation.Nullable
-  private List<String> extIds = new ArrayList<>();
+  private List<String> extIds;
 
   public AddContactToListRequest() {
   }

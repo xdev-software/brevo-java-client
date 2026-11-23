@@ -87,7 +87,7 @@ public class GetProductDetails {
 
   public static final String JSON_PROPERTY_CATEGORIES = "categories";
   @jakarta.annotation.Nullable
-  private List<String> categories = new ArrayList<>();
+  private List<String> categories;
 
   public static final String JSON_PROPERTY_PARENT_ID = "parentId";
   @jakarta.annotation.Nullable

@@ -45,7 +45,7 @@ public class ScheduleSmtpEmail {
 
   public static final String JSON_PROPERTY_MESSAGE_IDS = "messageIds";
   @jakarta.annotation.Nullable
-  private List<String> messageIds = new ArrayList<>();
+  private List<String> messageIds;
 
   public static final String JSON_PROPERTY_BATCH_ID = "batchId";
   @jakarta.annotation.Nullable

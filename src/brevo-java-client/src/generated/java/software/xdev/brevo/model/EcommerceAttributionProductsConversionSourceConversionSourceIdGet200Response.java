@@ -40,7 +40,7 @@ import java.util.StringJoiner;
 public class EcommerceAttributionProductsConversionSourceConversionSourceIdGet200Response {
   public static final String JSON_PROPERTY_PRODUCTS = "products";
   @jakarta.annotation.Nonnull
-  private List<ConversionSourceProduct> products = new ArrayList<>();
+  private List<ConversionSourceProduct> products;
 
   public EcommerceAttributionProductsConversionSourceConversionSourceIdGet200Response() {
   }

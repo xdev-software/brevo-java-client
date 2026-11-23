@@ -40,7 +40,7 @@ import java.util.StringJoiner;
 public class GetReports {
   public static final String JSON_PROPERTY_REPORTS = "reports";
   @jakarta.annotation.Nullable
-  private List<GetReportsReportsInner> reports = new ArrayList<>();
+  private List<GetReportsReportsInner> reports;
 
   public GetReports() {
   }

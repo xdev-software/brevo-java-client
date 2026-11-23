@@ -49,7 +49,7 @@ public class AddSubscriptionMemberPayload {
 
   public static final String JSON_PROPERTY_MEMBER_CONTACT_IDS = "memberContactIds";
   @jakarta.annotation.Nonnull
-  private List<Integer> memberContactIds = new ArrayList<>();
+  private List<Integer> memberContactIds;
 
   public AddSubscriptionMemberPayload() {
   }

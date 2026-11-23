@@ -74,7 +74,7 @@ public class GetTransacEmailsListTransactionalEmailsInner {
 
   public static final String JSON_PROPERTY_TAGS = "tags";
   @jakarta.annotation.Nullable
-  private List<String> tags = new ArrayList<>();
+  private List<String> tags;
 
   public GetTransacEmailsListTransactionalEmailsInner() {
   }

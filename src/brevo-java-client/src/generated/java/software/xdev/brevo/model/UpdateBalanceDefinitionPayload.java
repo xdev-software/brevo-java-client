@@ -287,7 +287,7 @@ public class UpdateBalanceDefinitionPayload {
 
   public static final String JSON_PROPERTY_META = "meta";
   @jakarta.annotation.Nullable
-  private Map<String, Object> meta = new HashMap<>();
+  private Map<String, Object> meta;
 
   public static final String JSON_PROPERTY_MIN_AMOUNT = "minAmount";
   @jakarta.annotation.Nullable

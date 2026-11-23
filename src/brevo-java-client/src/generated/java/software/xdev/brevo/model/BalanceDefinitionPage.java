@@ -40,7 +40,7 @@ import java.util.StringJoiner;
 public class BalanceDefinitionPage {
   public static final String JSON_PROPERTY_ITEMS = "items";
   @jakarta.annotation.Nullable
-  private List<BalanceDefinition> items = new ArrayList<>();
+  private List<BalanceDefinition> items;
 
   public BalanceDefinitionPage() {
   }

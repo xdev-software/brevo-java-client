@@ -55,7 +55,7 @@ public class GetExtendedCampaignStats {
 
   public static final String JSON_PROPERTY_CAMPAIGN_STATS = "campaignStats";
   @jakarta.annotation.Nonnull
-  private List<GetCampaignStats> campaignStats = new ArrayList<>();
+  private List<GetCampaignStats> campaignStats;
 
   public static final String JSON_PROPERTY_MIRROR_CLICK = "mirrorClick";
   @jakarta.annotation.Nonnull
@@ -71,7 +71,7 @@ public class GetExtendedCampaignStats {
 
   public static final String JSON_PROPERTY_STATS_BY_DOMAIN = "statsByDomain";
   @jakarta.annotation.Nonnull
-  private Map<String, GetCampaignStats> statsByDomain = new HashMap<>();
+  private Map<String, GetCampaignStats> statsByDomain;
 
   public static final String JSON_PROPERTY_STATS_BY_DEVICE = "statsByDevice";
   @jakarta.annotation.Nonnull
@@ -79,7 +79,7 @@ public class GetExtendedCampaignStats {
 
   public static final String JSON_PROPERTY_STATS_BY_BROWSER = "statsByBrowser";
   @jakarta.annotation.Nonnull
-  private Map<String, GetDeviceBrowserStats> statsByBrowser = new HashMap<>();
+  private Map<String, GetDeviceBrowserStats> statsByBrowser;
 
   public GetExtendedCampaignStats() {
   }

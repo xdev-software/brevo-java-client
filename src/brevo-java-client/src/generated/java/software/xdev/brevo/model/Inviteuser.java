@@ -50,7 +50,7 @@ public class Inviteuser {
 
   public static final String JSON_PROPERTY_PRIVILEGES = "privileges";
   @jakarta.annotation.Nonnull
-  private List<InviteuserPrivilegesInner> privileges = new ArrayList<>();
+  private List<InviteuserPrivilegesInner> privileges;
 
   public Inviteuser() {
   }

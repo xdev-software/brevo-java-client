@@ -102,7 +102,7 @@ public class CreateSubAccount {
 
   public static final String JSON_PROPERTY_GROUP_IDS = "groupIds";
   @jakarta.annotation.Nullable
-  private List<String> groupIds = new ArrayList<>();
+  private List<String> groupIds;
 
   public CreateSubAccount() {
   }

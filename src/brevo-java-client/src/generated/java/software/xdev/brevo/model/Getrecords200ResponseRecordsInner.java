@@ -62,7 +62,7 @@ public class Getrecords200ResponseRecordsInner {
 
   public static final String JSON_PROPERTY_ASSOCIATIONS = "associations";
   @jakarta.annotation.Nullable
-  private List<Getrecords200ResponseRecordsInnerAssociationsInner> associations = new ArrayList<>();
+  private List<Getrecords200ResponseRecordsInnerAssociationsInner> associations;
 
   public Getrecords200ResponseRecordsInner() {
   }

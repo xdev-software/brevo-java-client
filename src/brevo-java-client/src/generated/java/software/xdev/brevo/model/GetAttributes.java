@@ -40,7 +40,7 @@ import java.util.StringJoiner;
 public class GetAttributes {
   public static final String JSON_PROPERTY_ATTRIBUTES = "attributes";
   @jakarta.annotation.Nonnull
-  private List<GetAttributesAttributesInner> attributes = new ArrayList<>();
+  private List<GetAttributesAttributesInner> attributes;
 
   public GetAttributes() {
   }

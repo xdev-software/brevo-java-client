@@ -47,11 +47,11 @@ import java.util.StringJoiner;
 public class MainNodeResponse {
   public static final String JSON_PROPERTY_ARGS = "args";
   @jakarta.annotation.Nullable
-  private List<MainNodeResponse> args = new ArrayList<>();
+  private List<MainNodeResponse> args;
 
   public static final String JSON_PROPERTY_ARRAY = "array";
   @jakarta.annotation.Nullable
-  private List<MainNodeResponse> array = new ArrayList<>();
+  private List<MainNodeResponse> array;
 
   public static final String JSON_PROPERTY_BOOLEAN = "boolean";
   @jakarta.annotation.Nullable

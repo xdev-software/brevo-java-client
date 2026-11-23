@@ -42,7 +42,7 @@ import java.util.StringJoiner;
 public class EcommerceAttributionMetricsGet200Response {
   public static final String JSON_PROPERTY_RESULTS = "results";
   @jakarta.annotation.Nonnull
-  private List<ConversionSourceMetrics> results = new ArrayList<>();
+  private List<ConversionSourceMetrics> results;
 
   public static final String JSON_PROPERTY_TOTALS = "totals";
   @jakarta.annotation.Nonnull

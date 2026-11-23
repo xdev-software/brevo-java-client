@@ -60,7 +60,7 @@ public class TemplatePreviewModel {
 
   public static final String JSON_PROPERTY_USED_FEED_NAMES = "usedFeedNames";
   @jakarta.annotation.Nullable
-  private List<String> usedFeedNames = new ArrayList<>();
+  private List<String> usedFeedNames;
 
   public static final String JSON_PROPERTY_PREVIEW_TEXT = "previewText";
   @jakarta.annotation.Nullable

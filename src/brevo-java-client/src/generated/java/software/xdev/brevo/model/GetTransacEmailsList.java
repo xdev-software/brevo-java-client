@@ -45,7 +45,7 @@ public class GetTransacEmailsList {
 
   public static final String JSON_PROPERTY_TRANSACTIONAL_EMAILS = "transactionalEmails";
   @jakarta.annotation.Nullable
-  private List<GetTransacEmailsListTransactionalEmailsInner> transactionalEmails = new ArrayList<>();
+  private List<GetTransacEmailsListTransactionalEmailsInner> transactionalEmails;
 
   public GetTransacEmailsList() {
   }

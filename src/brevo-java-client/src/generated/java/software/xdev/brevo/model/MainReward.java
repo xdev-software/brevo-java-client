@@ -189,7 +189,7 @@ public class MainReward {
 
   public static final String JSON_PROPERTY_LIMITS = "limits";
   @jakarta.annotation.Nullable
-  private List<MainLimit> limits = new ArrayList<>();
+  private List<MainLimit> limits;
 
   public static final String JSON_PROPERTY_LOYALTY_PROGRAM_ID = "loyaltyProgramId";
   @jakarta.annotation.Nullable
@@ -197,7 +197,7 @@ public class MainReward {
 
   public static final String JSON_PROPERTY_META = "meta";
   @jakarta.annotation.Nullable
-  private Map<String, Object> meta = new HashMap<>();
+  private Map<String, Object> meta;
 
   public static final String JSON_PROPERTY_NAME = "name";
   @jakarta.annotation.Nullable
@@ -205,7 +205,7 @@ public class MainReward {
 
   public static final String JSON_PROPERTY_PRODUCTS = "products";
   @jakarta.annotation.Nullable
-  private List<MainProduct> products = new ArrayList<>();
+  private List<MainProduct> products;
 
   public static final String JSON_PROPERTY_PUBLIC_DESCRIPTION = "publicDescription";
   @jakarta.annotation.Nullable
@@ -225,7 +225,7 @@ public class MainReward {
 
   public static final String JSON_PROPERTY_REDEEM_RULES = "redeemRules";
   @jakarta.annotation.Nullable
-  private List<String> redeemRules = new ArrayList<>();
+  private List<String> redeemRules;
 
   public static final String JSON_PROPERTY_REWARD_CONFIGS = "rewardConfigs";
   @jakarta.annotation.Nullable

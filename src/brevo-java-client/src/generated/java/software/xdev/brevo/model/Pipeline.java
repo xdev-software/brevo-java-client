@@ -48,7 +48,7 @@ public class Pipeline {
 
   public static final String JSON_PROPERTY_STAGES = "stages";
   @jakarta.annotation.Nullable
-  private List<PipelineStage> stages = new ArrayList<>();
+  private List<PipelineStage> stages;
 
   public Pipeline() {
   }

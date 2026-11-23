@@ -59,11 +59,11 @@ public class RequestContactImport {
 
   public static final String JSON_PROPERTY_JSON_BODY = "jsonBody";
   @jakarta.annotation.Nullable
-  private List<RequestContactImportJsonBodyInner> jsonBody = new ArrayList<>();
+  private List<RequestContactImportJsonBodyInner> jsonBody;
 
   public static final String JSON_PROPERTY_LIST_IDS = "listIds";
   @jakarta.annotation.Nullable
-  private List<Long> listIds = new ArrayList<>();
+  private List<Long> listIds;
 
   public static final String JSON_PROPERTY_NOTIFY_URL = "notifyUrl";
   @jakarta.annotation.Nullable

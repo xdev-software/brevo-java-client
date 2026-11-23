@@ -57,7 +57,7 @@ public class SendWhatsappMessageRequest {
 
   public static final String JSON_PROPERTY_CONTACT_NUMBERS = "contactNumbers";
   @jakarta.annotation.Nonnull
-  private List<String> contactNumbers = new ArrayList<>();
+  private List<String> contactNumbers;
 
   public static final String JSON_PROPERTY_TEXT = "text";
   @jakarta.annotation.Nonnull

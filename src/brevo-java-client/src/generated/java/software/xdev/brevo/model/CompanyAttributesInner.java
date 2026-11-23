@@ -55,7 +55,7 @@ public class CompanyAttributesInner {
 
   public static final String JSON_PROPERTY_ATTRIBUTE_OPTIONS = "attributeOptions";
   @jakarta.annotation.Nullable
-  private List<Object> attributeOptions = new ArrayList<>();
+  private List<Object> attributeOptions;
 
   public static final String JSON_PROPERTY_IS_REQUIRED = "isRequired";
   @jakarta.annotation.Nullable

@@ -143,7 +143,7 @@ public class GetAttributesAttributesInner {
 
   public static final String JSON_PROPERTY_ENUMERATION = "enumeration";
   @jakarta.annotation.Nullable
-  private List<GetAttributesAttributesInnerEnumerationInner> enumeration = new ArrayList<>();
+  private List<GetAttributesAttributesInnerEnumerationInner> enumeration;
 
   public static final String JSON_PROPERTY_CALCULATED_VALUE = "calculatedValue";
   @jakarta.annotation.Nullable
@@ -151,7 +151,7 @@ public class GetAttributesAttributesInner {
 
   public static final String JSON_PROPERTY_MULTI_CATEGORY_OPTIONS = "multiCategoryOptions";
   @jakarta.annotation.Nullable
-  private List<String> multiCategoryOptions = new ArrayList<>();
+  private List<String> multiCategoryOptions;
 
   public GetAttributesAttributesInner() {
   }
