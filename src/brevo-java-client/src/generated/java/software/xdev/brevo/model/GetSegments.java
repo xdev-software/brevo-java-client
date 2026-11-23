@@ -40,7 +40,7 @@ import java.util.StringJoiner;
 public class GetSegments {
   public static final String JSON_PROPERTY_SEGMENTS = "segments";
   @jakarta.annotation.Nullable
-  private List<Object> segments = new ArrayList<>();
+  private List<Object> segments;
 
   public static final String JSON_PROPERTY_COUNT = "count";
   @jakarta.annotation.Nullable

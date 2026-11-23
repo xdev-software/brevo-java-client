@@ -41,7 +41,7 @@ import java.util.StringJoiner;
 public class GetWhatsappTemplates {
   public static final String JSON_PROPERTY_TEMPLATES = "templates";
   @jakarta.annotation.Nullable
-  private List<GetWhatsappTemplatesTemplatesInner> templates = new ArrayList<>();
+  private List<GetWhatsappTemplatesTemplatesInner> templates;
 
   public static final String JSON_PROPERTY_COUNT = "count";
   @jakarta.annotation.Nullable

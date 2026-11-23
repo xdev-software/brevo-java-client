@@ -45,7 +45,7 @@ public class CorporateUserEmailPermissionsPutRequest {
 
   public static final String JSON_PROPERTY_PRIVILEGES = "privileges";
   @jakarta.annotation.Nonnull
-  private List<CorporateUserEmailPermissionsPutRequestPrivilegesInner> privileges = new ArrayList<>();
+  private List<CorporateUserEmailPermissionsPutRequestPrivilegesInner> privileges;
 
   public CorporateUserEmailPermissionsPutRequest() {
   }

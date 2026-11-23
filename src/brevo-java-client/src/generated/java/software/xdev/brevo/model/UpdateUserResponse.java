@@ -45,7 +45,7 @@ public class UpdateUserResponse {
 
   public static final String JSON_PROPERTY_CREDIT_NOTES = "credit_notes";
   @jakarta.annotation.Nullable
-  private List<String> creditNotes = new ArrayList<>();
+  private List<String> creditNotes;
 
   public static final String JSON_PROPERTY_INVOICE_ID = "invoice_id";
   @jakarta.annotation.Nullable

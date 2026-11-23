@@ -52,19 +52,19 @@ import java.util.StringJoiner;
 public class GetContactCampaignStats {
   public static final String JSON_PROPERTY_MESSAGES_SENT = "messagesSent";
   @jakarta.annotation.Nullable
-  private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> messagesSent = new ArrayList<>();
+  private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> messagesSent;
 
   public static final String JSON_PROPERTY_HARD_BOUNCES = "hardBounces";
   @jakarta.annotation.Nullable
-  private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> hardBounces = new ArrayList<>();
+  private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> hardBounces;
 
   public static final String JSON_PROPERTY_SOFT_BOUNCES = "softBounces";
   @jakarta.annotation.Nullable
-  private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> softBounces = new ArrayList<>();
+  private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> softBounces;
 
   public static final String JSON_PROPERTY_COMPLAINTS = "complaints";
   @jakarta.annotation.Nullable
-  private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> complaints = new ArrayList<>();
+  private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> complaints;
 
   public static final String JSON_PROPERTY_UNSUBSCRIPTIONS = "unsubscriptions";
   @jakarta.annotation.Nullable
@@ -72,19 +72,19 @@ public class GetContactCampaignStats {
 
   public static final String JSON_PROPERTY_OPENED = "opened";
   @jakarta.annotation.Nullable
-  private List<GetContactCampaignStatsOpenedInner> opened = new ArrayList<>();
+  private List<GetContactCampaignStatsOpenedInner> opened;
 
   public static final String JSON_PROPERTY_CLICKED = "clicked";
   @jakarta.annotation.Nullable
-  private List<GetContactCampaignStatsClickedInner> clicked = new ArrayList<>();
+  private List<GetContactCampaignStatsClickedInner> clicked;
 
   public static final String JSON_PROPERTY_TRANSAC_ATTRIBUTES = "transacAttributes";
   @jakarta.annotation.Nullable
-  private List<GetContactCampaignStatsTransacAttributesInner> transacAttributes = new ArrayList<>();
+  private List<GetContactCampaignStatsTransacAttributesInner> transacAttributes;
 
   public static final String JSON_PROPERTY_DELIVERED = "delivered";
   @jakarta.annotation.Nullable
-  private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> delivered = new ArrayList<>();
+  private List<GetExtendedContactDetailsAllOfStatisticsMessagesSent> delivered;
 
   public GetContactCampaignStats() {
   }

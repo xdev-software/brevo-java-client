@@ -47,7 +47,7 @@ public class SubscriptionMember {
 
   public static final String JSON_PROPERTY_MEMBER_CONTACT_IDS = "memberContactIds";
   @jakarta.annotation.Nullable
-  private List<Integer> memberContactIds = new ArrayList<>();
+  private List<Integer> memberContactIds;
 
   public static final String JSON_PROPERTY_ORGANIZATION_ID = "organizationId";
   @jakarta.annotation.Nullable

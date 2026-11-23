@@ -136,7 +136,7 @@ public class InviteAdminUserPrivilegesInner {
 
   public static final String JSON_PROPERTY_PERMISSIONS = "permissions";
   @jakarta.annotation.Nullable
-  private List<PermissionsEnum> permissions = new ArrayList<>();
+  private List<PermissionsEnum> permissions;
 
   public InviteAdminUserPrivilegesInner() {
   }

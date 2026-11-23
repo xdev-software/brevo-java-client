@@ -40,7 +40,7 @@ import java.util.StringJoiner;
 public class GetAccountActivity {
   public static final String JSON_PROPERTY_LOGS = "logs";
   @jakarta.annotation.Nullable
-  private List<GetAccountActivityLogsInner> logs = new ArrayList<>();
+  private List<GetAccountActivityLogsInner> logs;
 
   public GetAccountActivity() {
   }

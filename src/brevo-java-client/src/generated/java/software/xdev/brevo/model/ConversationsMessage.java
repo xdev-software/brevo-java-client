@@ -176,7 +176,7 @@ public class ConversationsMessage {
 
   public static final String JSON_PROPERTY_TO = "to";
   @jakarta.annotation.Nullable
-  private List<ConversationsMessageToInner> to = new ArrayList<>();
+  private List<ConversationsMessageToInner> to;
 
   public static final String JSON_PROPERTY_REPLY_TO = "replyTo";
   @jakarta.annotation.Nullable
@@ -184,11 +184,11 @@ public class ConversationsMessage {
 
   public static final String JSON_PROPERTY_CC = "cc";
   @jakarta.annotation.Nullable
-  private List<ConversationsMessageToInner> cc = new ArrayList<>();
+  private List<ConversationsMessageToInner> cc;
 
   public static final String JSON_PROPERTY_BCC = "bcc";
   @jakarta.annotation.Nullable
-  private List<ConversationsMessageToInner> bcc = new ArrayList<>();
+  private List<ConversationsMessageToInner> bcc;
 
   public static final String JSON_PROPERTY_SOURCE_MESSAGE_ID = "sourceMessageId";
   @jakarta.annotation.Nullable
@@ -208,7 +208,7 @@ public class ConversationsMessage {
 
   public static final String JSON_PROPERTY_ATTACHMENTS = "attachments";
   @jakarta.annotation.Nullable
-  private List<ConversationsMessageAttachmentsInner> attachments = new ArrayList<>();
+  private List<ConversationsMessageAttachmentsInner> attachments;
 
   public ConversationsMessage() {
   }

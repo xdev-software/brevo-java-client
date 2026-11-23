@@ -42,19 +42,19 @@ import java.util.StringJoiner;
 public class UpdateEmailCampaignRecipients {
   public static final String JSON_PROPERTY_EXCLUSION_LIST_IDS = "exclusionListIds";
   @jakarta.annotation.Nullable
-  private List<Long> exclusionListIds = new ArrayList<>();
+  private List<Long> exclusionListIds;
 
   public static final String JSON_PROPERTY_LIST_IDS = "listIds";
   @jakarta.annotation.Nullable
-  private List<Long> listIds = new ArrayList<>();
+  private List<Long> listIds;
 
   public static final String JSON_PROPERTY_SEGMENT_IDS = "segmentIds";
   @jakarta.annotation.Nullable
-  private List<Long> segmentIds = new ArrayList<>();
+  private List<Long> segmentIds;
 
   public static final String JSON_PROPERTY_EXCLUSION_SEGMENT_IDS = "exclusionSegmentIds";
   @jakarta.annotation.Nullable
-  private List<Long> exclusionSegmentIds = new ArrayList<>();
+  private List<Long> exclusionSegmentIds;
 
   public UpdateEmailCampaignRecipients() {
   }

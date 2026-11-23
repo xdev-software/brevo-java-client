@@ -1,3 +1,8 @@
+# 1.2.3
+* container types (e.g. Lists, Sets, Maps, ...) are now once again null
+  * This fixes some endpoints that interpreted empty values as missing #366
+* Updated dependencies
+
 # 1.2.2
 * Internal restructuring
 * Updated dependencies

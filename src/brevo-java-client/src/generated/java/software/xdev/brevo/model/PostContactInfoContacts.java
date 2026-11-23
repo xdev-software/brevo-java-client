@@ -42,11 +42,11 @@ import java.util.StringJoiner;
 public class PostContactInfoContacts {
   public static final String JSON_PROPERTY_SUCCESS = "success";
   @jakarta.annotation.Nullable
-  private List<String> success = new ArrayList<>();
+  private List<String> success;
 
   public static final String JSON_PROPERTY_FAILURE = "failure";
   @jakarta.annotation.Nullable
-  private List<String> failure = new ArrayList<>();
+  private List<String> failure;
 
   public static final String JSON_PROPERTY_TOTAL = "total";
   @jakarta.annotation.Nullable

@@ -77,7 +77,7 @@ public class CreateUpdateProducts {
 
   public static final String JSON_PROPERTY_CATEGORIES = "categories";
   @jakarta.annotation.Nullable
-  private List<String> categories = new ArrayList<>();
+  private List<String> categories;
 
   public static final String JSON_PROPERTY_PARENT_ID = "parentId";
   @jakarta.annotation.Nullable
@@ -85,7 +85,7 @@ public class CreateUpdateProducts {
 
   public static final String JSON_PROPERTY_META_INFO = "metaInfo";
   @jakarta.annotation.Nullable
-  private Map<String, Object> metaInfo = new HashMap<>();
+  private Map<String, Object> metaInfo;
 
   public static final String JSON_PROPERTY_DELETED_AT = "deletedAt";
   @jakarta.annotation.Nullable

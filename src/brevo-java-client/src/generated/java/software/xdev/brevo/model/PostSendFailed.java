@@ -51,15 +51,15 @@ public class PostSendFailed {
 
   public static final String JSON_PROPERTY_UNEXISTING_EMAILS = "unexistingEmails";
   @jakarta.annotation.Nullable
-  private List<String> unexistingEmails = new ArrayList<>();
+  private List<String> unexistingEmails;
 
   public static final String JSON_PROPERTY_WITHOUT_LIST_EMAILS = "withoutListEmails";
   @jakarta.annotation.Nullable
-  private List<String> withoutListEmails = new ArrayList<>();
+  private List<String> withoutListEmails;
 
   public static final String JSON_PROPERTY_BLACK_LISTED_EMAILS = "blackListedEmails";
   @jakarta.annotation.Nullable
-  private List<String> blackListedEmails = new ArrayList<>();
+  private List<String> blackListedEmails;
 
   public PostSendFailed() {
   }

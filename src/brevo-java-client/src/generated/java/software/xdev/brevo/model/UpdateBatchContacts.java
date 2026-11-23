@@ -40,7 +40,7 @@ import java.util.StringJoiner;
 public class UpdateBatchContacts {
   public static final String JSON_PROPERTY_CONTACTS = "contacts";
   @jakarta.annotation.Nullable
-  private List<UpdateBatchContactsContactsInner> contacts = new ArrayList<>();
+  private List<UpdateBatchContactsContactsInner> contacts;
 
   public UpdateBatchContacts() {
   }

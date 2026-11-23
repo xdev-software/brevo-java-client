@@ -100,7 +100,7 @@ public class CrmAttributesPostRequest {
 
   public static final String JSON_PROPERTY_OPTIONS_LABELS = "optionsLabels";
   @jakarta.annotation.Nullable
-  private List<String> optionsLabels = new ArrayList<>();
+  private List<String> optionsLabels;
 
   /**
    * The type of object the attribute belongs to (prefilled with &#x60;companies&#x60; or &#x60;deal&#x60;, mandatory)

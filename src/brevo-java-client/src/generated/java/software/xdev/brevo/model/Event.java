@@ -57,11 +57,11 @@ public class Event {
 
   public static final String JSON_PROPERTY_CONTACT_PROPERTIES = "contact_properties";
   @jakarta.annotation.Nullable
-  private Map<String, EventContactPropertiesValue> contactProperties = new HashMap<>();
+  private Map<String, EventContactPropertiesValue> contactProperties;
 
   public static final String JSON_PROPERTY_EVENT_PROPERTIES = "event_properties";
   @jakarta.annotation.Nullable
-  private Map<String, EventEventPropertiesValue> eventProperties = new HashMap<>();
+  private Map<String, EventEventPropertiesValue> eventProperties;
 
   public Event() {
   }

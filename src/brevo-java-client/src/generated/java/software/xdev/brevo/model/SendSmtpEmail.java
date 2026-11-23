@@ -69,15 +69,15 @@ public class SendSmtpEmail {
 
   public static final String JSON_PROPERTY_TO = "to";
   @jakarta.annotation.Nullable
-  private List<SendSmtpEmailToInner> to = new ArrayList<>();
+  private List<SendSmtpEmailToInner> to;
 
   public static final String JSON_PROPERTY_BCC = "bcc";
   @jakarta.annotation.Nullable
-  private List<SendSmtpEmailBccInner> bcc = new ArrayList<>();
+  private List<SendSmtpEmailBccInner> bcc;
 
   public static final String JSON_PROPERTY_CC = "cc";
   @jakarta.annotation.Nullable
-  private List<SendSmtpEmailCcInner> cc = new ArrayList<>();
+  private List<SendSmtpEmailCcInner> cc;
 
   public static final String JSON_PROPERTY_HTML_CONTENT = "htmlContent";
   @jakarta.annotation.Nullable
@@ -97,11 +97,11 @@ public class SendSmtpEmail {
 
   public static final String JSON_PROPERTY_ATTACHMENT = "attachment";
   @jakarta.annotation.Nullable
-  private List<SendSmtpEmailAttachmentInner> attachment = new ArrayList<>();
+  private List<SendSmtpEmailAttachmentInner> attachment;
 
   public static final String JSON_PROPERTY_HEADERS = "headers";
   @jakarta.annotation.Nullable
-  private Map<String, Object> headers = new HashMap<>();
+  private Map<String, Object> headers;
 
   public static final String JSON_PROPERTY_TEMPLATE_ID = "templateId";
   @jakarta.annotation.Nullable
@@ -109,15 +109,15 @@ public class SendSmtpEmail {
 
   public static final String JSON_PROPERTY_PARAMS = "params";
   @jakarta.annotation.Nullable
-  private Map<String, Object> params = new HashMap<>();
+  private Map<String, Object> params;
 
   public static final String JSON_PROPERTY_MESSAGE_VERSIONS = "messageVersions";
   @jakarta.annotation.Nullable
-  private List<SendSmtpEmailMessageVersionsInner> messageVersions = new ArrayList<>();
+  private List<SendSmtpEmailMessageVersionsInner> messageVersions;
 
   public static final String JSON_PROPERTY_TAGS = "tags";
   @jakarta.annotation.Nullable
-  private List<String> tags = new ArrayList<>();
+  private List<String> tags;
 
   public static final String JSON_PROPERTY_SCHEDULED_AT = "scheduledAt";
   @jakarta.annotation.Nullable

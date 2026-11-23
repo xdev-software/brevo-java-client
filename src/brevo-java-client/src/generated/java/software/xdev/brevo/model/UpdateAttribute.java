@@ -46,11 +46,11 @@ public class UpdateAttribute {
 
   public static final String JSON_PROPERTY_ENUMERATION = "enumeration";
   @jakarta.annotation.Nullable
-  private List<UpdateAttributeEnumerationInner> enumeration = new ArrayList<>();
+  private List<UpdateAttributeEnumerationInner> enumeration;
 
   public static final String JSON_PROPERTY_MULTI_CATEGORY_OPTIONS = "multiCategoryOptions";
   @jakarta.annotation.Nullable
-  private List<String> multiCategoryOptions = new ArrayList<>();
+  private List<String> multiCategoryOptions;
 
   public UpdateAttribute() {
   }

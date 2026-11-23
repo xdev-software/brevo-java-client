@@ -39,7 +39,7 @@ import java.util.StringJoiner;
 public class RemoveContactFromListByExtIDs {
   public static final String JSON_PROPERTY_EXT_IDS = "extIds";
   @jakarta.annotation.Nullable
-  private List<String> extIds = new ArrayList<>();
+  private List<String> extIds;
 
   public RemoveContactFromListByExtIDs() {
   }

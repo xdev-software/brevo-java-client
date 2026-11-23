@@ -70,7 +70,7 @@ public class GetAccount {
 
   public static final String JSON_PROPERTY_PLAN = "plan";
   @jakarta.annotation.Nonnull
-  private List<GetAccountAllOfPlan> plan = new ArrayList<>();
+  private List<GetAccountAllOfPlan> plan;
 
   public static final String JSON_PROPERTY_RELAY = "relay";
   @jakarta.annotation.Nonnull

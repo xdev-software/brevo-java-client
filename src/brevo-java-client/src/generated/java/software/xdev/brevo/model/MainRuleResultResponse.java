@@ -46,7 +46,7 @@ public class MainRuleResultResponse {
 
   public static final String JSON_PROPERTY_PARAMETERS = "parameters";
   @jakarta.annotation.Nullable
-  private List<MainResultParameterResponse> parameters = new ArrayList<>();
+  private List<MainResultParameterResponse> parameters;
 
   public static final String JSON_PROPERTY_SERVICE = "service";
   @jakarta.annotation.Nullable

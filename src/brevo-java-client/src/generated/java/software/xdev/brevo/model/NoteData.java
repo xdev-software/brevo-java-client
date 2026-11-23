@@ -44,15 +44,15 @@ public class NoteData {
 
   public static final String JSON_PROPERTY_CONTACT_IDS = "contactIds";
   @jakarta.annotation.Nullable
-  private List<Integer> contactIds = new ArrayList<>();
+  private List<Integer> contactIds;
 
   public static final String JSON_PROPERTY_DEAL_IDS = "dealIds";
   @jakarta.annotation.Nullable
-  private List<String> dealIds = new ArrayList<>();
+  private List<String> dealIds;
 
   public static final String JSON_PROPERTY_COMPANY_IDS = "companyIds";
   @jakarta.annotation.Nullable
-  private List<String> companyIds = new ArrayList<>();
+  private List<String> companyIds;
 
   public NoteData() {
   }

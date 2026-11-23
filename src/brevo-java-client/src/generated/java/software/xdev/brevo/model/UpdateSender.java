@@ -50,7 +50,7 @@ public class UpdateSender {
 
   public static final String JSON_PROPERTY_IPS = "ips";
   @jakarta.annotation.Nullable
-  private List<CreateSenderIpsInner> ips = new ArrayList<>();
+  private List<CreateSenderIpsInner> ips;
 
   public UpdateSender() {
   }

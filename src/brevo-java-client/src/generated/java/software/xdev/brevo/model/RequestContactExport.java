@@ -46,7 +46,7 @@ import java.util.StringJoiner;
 public class RequestContactExport {
   public static final String JSON_PROPERTY_EXPORT_ATTRIBUTES = "exportAttributes";
   @jakarta.annotation.Nullable
-  private List<String> exportAttributes = new ArrayList<>();
+  private List<String> exportAttributes;
 
   public static final String JSON_PROPERTY_CUSTOM_CONTACT_FILTER = "customContactFilter";
   @jakarta.annotation.Nonnull
@@ -66,11 +66,11 @@ public class RequestContactExport {
 
   public static final String JSON_PROPERTY_EXPORT_SUBSCRIPTION_STATUS = "exportSubscriptionStatus";
   @jakarta.annotation.Nullable
-  private List<String> exportSubscriptionStatus = new ArrayList<>();
+  private List<String> exportSubscriptionStatus;
 
   public static final String JSON_PROPERTY_EXPORT_METADATA = "exportMetadata";
   @jakarta.annotation.Nullable
-  private List<String> exportMetadata = new ArrayList<>();
+  private List<String> exportMetadata;
 
   public RequestContactExport() {
   }

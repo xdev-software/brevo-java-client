@@ -39,7 +39,7 @@ import java.util.StringJoiner;
 public class GetBlockedDomains {
   public static final String JSON_PROPERTY_DOMAINS = "domains";
   @jakarta.annotation.Nonnull
-  private List<String> domains = new ArrayList<>();
+  private List<String> domains;
 
   public GetBlockedDomains() {
   }

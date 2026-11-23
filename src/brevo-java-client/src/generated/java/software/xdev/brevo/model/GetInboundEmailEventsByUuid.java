@@ -77,11 +77,11 @@ public class GetInboundEmailEventsByUuid {
 
   public static final String JSON_PROPERTY_ATTACHMENTS = "attachments";
   @jakarta.annotation.Nullable
-  private List<GetInboundEmailEventsByUuidAttachmentsInner> attachments = new ArrayList<>();
+  private List<GetInboundEmailEventsByUuidAttachmentsInner> attachments;
 
   public static final String JSON_PROPERTY_LOGS = "logs";
   @jakarta.annotation.Nullable
-  private List<GetInboundEmailEventsByUuidLogsInner> logs = new ArrayList<>();
+  private List<GetInboundEmailEventsByUuidLogsInner> logs;
 
   public GetInboundEmailEventsByUuid() {
   }

@@ -40,7 +40,7 @@ import java.util.StringJoiner;
 public class MainVoucherRevokePayload {
   public static final String JSON_PROPERTY_ATTRIBUTED_REWARD_IDS = "attributedRewardIds";
   @jakarta.annotation.Nonnull
-  private List<UUID> attributedRewardIds = new ArrayList<>();
+  private List<UUID> attributedRewardIds;
 
   public MainVoucherRevokePayload() {
   }

@@ -45,7 +45,7 @@ public class SubAccountsResponse {
 
   public static final String JSON_PROPERTY_SUB_ACCOUNTS = "subAccounts";
   @jakarta.annotation.Nullable
-  private List<SubAccountsResponseSubAccountsInner> subAccounts = new ArrayList<>();
+  private List<SubAccountsResponseSubAccountsInner> subAccounts;
 
   public SubAccountsResponse() {
   }

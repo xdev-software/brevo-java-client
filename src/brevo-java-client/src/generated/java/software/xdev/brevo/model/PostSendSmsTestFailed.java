@@ -50,11 +50,11 @@ public class PostSendSmsTestFailed {
 
   public static final String JSON_PROPERTY_UNEXISTING_SMS = "unexistingSms";
   @jakarta.annotation.Nullable
-  private List<String> unexistingSms = new ArrayList<>();
+  private List<String> unexistingSms;
 
   public static final String JSON_PROPERTY_WITHOUT_LIST_SMS = "withoutListSms";
   @jakarta.annotation.Nullable
-  private List<String> withoutListSms = new ArrayList<>();
+  private List<String> withoutListSms;
 
   public PostSendSmsTestFailed() {
   }

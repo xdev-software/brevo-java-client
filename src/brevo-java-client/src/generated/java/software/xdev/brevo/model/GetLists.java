@@ -41,7 +41,7 @@ import java.util.StringJoiner;
 public class GetLists {
   public static final String JSON_PROPERTY_LISTS = "lists";
   @jakarta.annotation.Nullable
-  private List<GetListsListsInner> lists = new ArrayList<>();
+  private List<GetListsListsInner> lists;
 
   public static final String JSON_PROPERTY_COUNT = "count";
   @jakarta.annotation.Nullable

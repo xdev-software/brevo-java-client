@@ -50,7 +50,7 @@ public class GetUserPermission {
 
   public static final String JSON_PROPERTY_PRIVILEGES = "privileges";
   @jakarta.annotation.Nonnull
-  private List<GetUserPermissionPrivilegesInner> privileges = new ArrayList<>();
+  private List<GetUserPermissionPrivilegesInner> privileges;
 
   public GetUserPermission() {
   }

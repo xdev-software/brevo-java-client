@@ -45,7 +45,7 @@ public class CreateCouponsRequest {
 
   public static final String JSON_PROPERTY_COUPONS = "coupons";
   @jakarta.annotation.Nonnull
-  private Set<String> coupons = new LinkedHashSet<>();
+  private Set<String> coupons;
 
   public CreateCouponsRequest() {
   }

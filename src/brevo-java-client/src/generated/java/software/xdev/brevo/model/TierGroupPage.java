@@ -40,7 +40,7 @@ import java.util.StringJoiner;
 public class TierGroupPage {
   public static final String JSON_PROPERTY_ITEMS = "items";
   @jakarta.annotation.Nullable
-  private List<TierGroup> items = new ArrayList<>();
+  private List<TierGroup> items;
 
   public TierGroupPage() {
   }

@@ -42,19 +42,19 @@ import java.util.StringJoiner;
 public class GetStatsByDevice {
   public static final String JSON_PROPERTY_DESKTOP = "desktop";
   @jakarta.annotation.Nullable
-  private Map<String, GetDeviceBrowserStats> desktop = new HashMap<>();
+  private Map<String, GetDeviceBrowserStats> desktop;
 
   public static final String JSON_PROPERTY_MOBILE = "mobile";
   @jakarta.annotation.Nullable
-  private Map<String, GetDeviceBrowserStats> mobile = new HashMap<>();
+  private Map<String, GetDeviceBrowserStats> mobile;
 
   public static final String JSON_PROPERTY_TABLET = "tablet";
   @jakarta.annotation.Nullable
-  private Map<String, GetDeviceBrowserStats> tablet = new HashMap<>();
+  private Map<String, GetDeviceBrowserStats> tablet;
 
   public static final String JSON_PROPERTY_UNKNOWN = "unknown";
   @jakarta.annotation.Nullable
-  private Map<String, GetDeviceBrowserStats> unknown = new HashMap<>();
+  private Map<String, GetDeviceBrowserStats> unknown;
 
   public GetStatsByDevice() {
   }

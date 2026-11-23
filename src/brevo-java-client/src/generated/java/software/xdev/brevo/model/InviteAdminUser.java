@@ -51,11 +51,11 @@ public class InviteAdminUser {
 
   public static final String JSON_PROPERTY_GROUP_IDS = "groupIds";
   @jakarta.annotation.Nullable
-  private List<String> groupIds = new ArrayList<>();
+  private List<String> groupIds;
 
   public static final String JSON_PROPERTY_PRIVILEGES = "privileges";
   @jakarta.annotation.Nonnull
-  private List<InviteAdminUserPrivilegesInner> privileges = new ArrayList<>();
+  private List<InviteAdminUserPrivilegesInner> privileges;
 
   public InviteAdminUser() {
   }

@@ -54,15 +54,15 @@ public class Task {
 
   public static final String JSON_PROPERTY_CONTACTS_IDS = "contactsIds";
   @jakarta.annotation.Nullable
-  private List<Integer> contactsIds = new ArrayList<>();
+  private List<Integer> contactsIds;
 
   public static final String JSON_PROPERTY_DEALS_IDS = "dealsIds";
   @jakarta.annotation.Nullable
-  private List<String> dealsIds = new ArrayList<>();
+  private List<String> dealsIds;
 
   public static final String JSON_PROPERTY_COMPANIES_IDS = "companiesIds";
   @jakarta.annotation.Nullable
-  private List<String> companiesIds = new ArrayList<>();
+  private List<String> companiesIds;
 
   public Task() {
   }

@@ -84,7 +84,7 @@ public class MainRule {
 
   public static final String JSON_PROPERTY_META = "meta";
   @jakarta.annotation.Nullable
-  private Map<String, Object> meta = new HashMap<>();
+  private Map<String, Object> meta;
 
   public static final String JSON_PROPERTY_NAME = "name";
   @jakarta.annotation.Nullable
@@ -92,7 +92,7 @@ public class MainRule {
 
   public static final String JSON_PROPERTY_RESULTS = "results";
   @jakarta.annotation.Nullable
-  private List<MainRuleResultResponse> results = new ArrayList<>();
+  private List<MainRuleResultResponse> results;
 
   public static final String JSON_PROPERTY_RULE_ID = "ruleId";
   @jakarta.annotation.Nullable

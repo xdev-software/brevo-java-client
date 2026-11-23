@@ -67,7 +67,7 @@ public class MainOrderPayload {
 
   public static final String JSON_PROPERTY_COUPONS = "coupons";
   @jakarta.annotation.Nullable
-  private List<String> coupons = new ArrayList<>();
+  private List<String> coupons;
 
   public static final String JSON_PROPERTY_CREATED_AT = "createdAt";
   @jakarta.annotation.Nullable
@@ -87,7 +87,7 @@ public class MainOrderPayload {
 
   public static final String JSON_PROPERTY_PRODUCTS = "products";
   @jakarta.annotation.Nullable
-  private List<MainProductPayload> products = new ArrayList<>();
+  private List<MainProductPayload> products;
 
   public static final String JSON_PROPERTY_STATUS = "status";
   @jakarta.annotation.Nullable

@@ -39,7 +39,7 @@ import java.util.StringJoiner;
 public class CorporateGroupUnlinkGroupIdSubAccountsPutRequest {
   public static final String JSON_PROPERTY_SUB_ACCOUNT_IDS = "subAccountIds";
   @jakarta.annotation.Nonnull
-  private List<Long> subAccountIds = new ArrayList<>();
+  private List<Long> subAccountIds;
 
   public CorporateGroupUnlinkGroupIdSubAccountsPutRequest() {
   }

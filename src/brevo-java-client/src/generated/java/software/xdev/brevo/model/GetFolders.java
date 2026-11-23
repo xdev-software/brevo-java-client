@@ -41,7 +41,7 @@ import java.util.StringJoiner;
 public class GetFolders {
   public static final String JSON_PROPERTY_FOLDERS = "folders";
   @jakarta.annotation.Nullable
-  private List<GetFolder> folders = new ArrayList<>();
+  private List<GetFolder> folders;
 
   public static final String JSON_PROPERTY_COUNT = "count";
   @jakarta.annotation.Nullable

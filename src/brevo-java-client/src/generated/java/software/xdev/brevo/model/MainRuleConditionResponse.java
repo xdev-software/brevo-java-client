@@ -44,7 +44,7 @@ import java.util.StringJoiner;
 public class MainRuleConditionResponse {
   public static final String JSON_PROPERTY_AND = "and";
   @jakarta.annotation.Nullable
-  private List<MainRuleConditionResponse> and = new ArrayList<>();
+  private List<MainRuleConditionResponse> and;
 
   public static final String JSON_PROPERTY_LHS = "lhs";
   @jakarta.annotation.Nullable
@@ -56,7 +56,7 @@ public class MainRuleConditionResponse {
 
   public static final String JSON_PROPERTY_OR = "or";
   @jakarta.annotation.Nullable
-  private List<MainRuleConditionResponse> or = new ArrayList<>();
+  private List<MainRuleConditionResponse> or;
 
   public static final String JSON_PROPERTY_RHS = "rhs";
   @jakarta.annotation.Nullable

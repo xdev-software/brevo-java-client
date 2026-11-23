@@ -50,11 +50,11 @@ public class CrmDealsPostRequest {
 
   public static final String JSON_PROPERTY_LINKED_CONTACTS_IDS = "linkedContactsIds";
   @jakarta.annotation.Nullable
-  private List<Long> linkedContactsIds = new ArrayList<>();
+  private List<Long> linkedContactsIds;
 
   public static final String JSON_PROPERTY_LINKED_COMPANIES_IDS = "linkedCompaniesIds";
   @jakarta.annotation.Nullable
-  private List<String> linkedCompaniesIds = new ArrayList<>();
+  private List<String> linkedCompaniesIds;
 
   public CrmDealsPostRequest() {
   }

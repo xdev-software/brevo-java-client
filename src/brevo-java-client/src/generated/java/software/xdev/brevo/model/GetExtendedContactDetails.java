@@ -73,11 +73,11 @@ public class GetExtendedContactDetails {
 
   public static final String JSON_PROPERTY_LIST_IDS = "listIds";
   @jakarta.annotation.Nonnull
-  private List<Long> listIds = new ArrayList<>();
+  private List<Long> listIds;
 
   public static final String JSON_PROPERTY_LIST_UNSUBSCRIBED = "listUnsubscribed";
   @jakarta.annotation.Nullable
-  private List<Long> listUnsubscribed = new ArrayList<>();
+  private List<Long> listUnsubscribed;
 
   public static final String JSON_PROPERTY_ATTRIBUTES = "attributes";
   @jakarta.annotation.Nonnull

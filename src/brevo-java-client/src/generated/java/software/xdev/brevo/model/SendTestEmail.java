@@ -39,7 +39,7 @@ import java.util.StringJoiner;
 public class SendTestEmail {
   public static final String JSON_PROPERTY_EMAIL_TO = "emailTo";
   @jakarta.annotation.Nullable
-  private List<String> emailTo = new ArrayList<>();
+  private List<String> emailTo;
 
   public SendTestEmail() {
   }

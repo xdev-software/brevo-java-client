@@ -41,7 +41,7 @@ import java.util.StringJoiner;
 public class GetSmsCampaigns {
   public static final String JSON_PROPERTY_CAMPAIGNS = "campaigns";
   @jakarta.annotation.Nullable
-  private List<GetSmsCampaignsCampaignsInner> campaigns = new ArrayList<>();
+  private List<GetSmsCampaignsCampaignsInner> campaigns;
 
   public static final String JSON_PROPERTY_COUNT = "count";
   @jakarta.annotation.Nullable

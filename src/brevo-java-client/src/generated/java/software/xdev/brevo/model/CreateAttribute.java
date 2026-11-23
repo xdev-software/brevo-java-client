@@ -52,11 +52,11 @@ public class CreateAttribute {
 
   public static final String JSON_PROPERTY_ENUMERATION = "enumeration";
   @jakarta.annotation.Nullable
-  private List<CreateAttributeEnumerationInner> enumeration = new ArrayList<>();
+  private List<CreateAttributeEnumerationInner> enumeration;
 
   public static final String JSON_PROPERTY_MULTI_CATEGORY_OPTIONS = "multiCategoryOptions";
   @jakarta.annotation.Nullable
-  private List<String> multiCategoryOptions = new ArrayList<>();
+  private List<String> multiCategoryOptions;
 
   /**
    * Type of the attribute. **Use only if the attribute&#39;s category is &#39;normal&#39;, &#39;category&#39; or &#39;transactional&#39;** Type **user and multiple-choice** is only available if the category is **normal** attribute Type **id** is only available if the category is **transactional** attribute Type **category** is only available if the category is **category** attribute 

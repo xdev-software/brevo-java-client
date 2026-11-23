@@ -52,11 +52,11 @@ public class TierRequestPutPayload {
 
   public static final String JSON_PROPERTY_ACCESS_CONDITIONS = "accessConditions";
   @jakarta.annotation.Nonnull
-  private List<TierRequestAccessConditionsInner> accessConditions = new ArrayList<>();
+  private List<TierRequestAccessConditionsInner> accessConditions;
 
   public static final String JSON_PROPERTY_TIER_REWARDS = "tierRewards";
   @jakarta.annotation.Nonnull
-  private List<TierRequestTierRewardsInner> tierRewards = new ArrayList<>();
+  private List<TierRequestTierRewardsInner> tierRewards;
 
   public TierRequestPutPayload() {
   }

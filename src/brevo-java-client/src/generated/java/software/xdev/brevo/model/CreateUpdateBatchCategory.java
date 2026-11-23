@@ -41,7 +41,7 @@ import java.util.StringJoiner;
 public class CreateUpdateBatchCategory {
   public static final String JSON_PROPERTY_CATEGORIES = "categories";
   @jakarta.annotation.Nonnull
-  private List<CreateUpdateCategories> categories = new ArrayList<>();
+  private List<CreateUpdateCategories> categories;
 
   public static final String JSON_PROPERTY_UPDATE_ENABLED = "updateEnabled";
   @jakarta.annotation.Nullable

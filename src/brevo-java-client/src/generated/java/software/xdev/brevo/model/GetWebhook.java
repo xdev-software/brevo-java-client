@@ -61,7 +61,7 @@ public class GetWebhook {
 
   public static final String JSON_PROPERTY_EVENTS = "events";
   @jakarta.annotation.Nonnull
-  private List<String> events = new ArrayList<>();
+  private List<String> events;
 
   /**
    * Type of webhook (marketing or transactional)
@@ -159,7 +159,7 @@ public class GetWebhook {
 
   public static final String JSON_PROPERTY_HEADERS = "headers";
   @jakarta.annotation.Nullable
-  private List<Object> headers = new ArrayList<>();
+  private List<Object> headers;
 
   public GetWebhook() {
   }

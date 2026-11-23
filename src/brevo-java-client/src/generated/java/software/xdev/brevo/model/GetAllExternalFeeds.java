@@ -45,7 +45,7 @@ public class GetAllExternalFeeds {
 
   public static final String JSON_PROPERTY_FEEDS = "feeds";
   @jakarta.annotation.Nullable
-  private List<GetAllExternalFeedsFeedsInner> feeds = new ArrayList<>();
+  private List<GetAllExternalFeedsFeedsInner> feeds;
 
   public GetAllExternalFeeds() {
   }

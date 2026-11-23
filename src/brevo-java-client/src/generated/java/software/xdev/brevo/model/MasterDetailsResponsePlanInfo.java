@@ -101,7 +101,7 @@ public class MasterDetailsResponsePlanInfo {
 
   public static final String JSON_PROPERTY_FEATURES = "features";
   @jakarta.annotation.Nullable
-  private List<MasterDetailsResponsePlanInfoFeaturesInner> features = new ArrayList<>();
+  private List<MasterDetailsResponsePlanInfoFeaturesInner> features;
 
   public MasterDetailsResponsePlanInfo() {
   }

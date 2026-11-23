@@ -42,19 +42,19 @@ import java.util.StringJoiner;
 public class CrmDealsLinkUnlinkIdPatchRequest {
   public static final String JSON_PROPERTY_LINK_CONTACT_IDS = "linkContactIds";
   @jakarta.annotation.Nullable
-  private List<Long> linkContactIds = new ArrayList<>();
+  private List<Long> linkContactIds;
 
   public static final String JSON_PROPERTY_UNLINK_CONTACT_IDS = "unlinkContactIds";
   @jakarta.annotation.Nullable
-  private List<Long> unlinkContactIds = new ArrayList<>();
+  private List<Long> unlinkContactIds;
 
   public static final String JSON_PROPERTY_LINK_COMPANY_IDS = "linkCompanyIds";
   @jakarta.annotation.Nullable
-  private List<String> linkCompanyIds = new ArrayList<>();
+  private List<String> linkCompanyIds;
 
   public static final String JSON_PROPERTY_UNLINK_COMPANY_IDS = "unlinkCompanyIds";
   @jakarta.annotation.Nullable
-  private List<String> unlinkCompanyIds = new ArrayList<>();
+  private List<String> unlinkCompanyIds;
 
   public CrmDealsLinkUnlinkIdPatchRequest() {
   }

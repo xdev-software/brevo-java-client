@@ -56,7 +56,7 @@ public class TierGroup {
 
   public static final String JSON_PROPERTY_TIER_ORDER = "tierOrder";
   @jakarta.annotation.Nullable
-  private List<UUID> tierOrder = new ArrayList<>();
+  private List<UUID> tierOrder;
 
   public static final String JSON_PROPERTY_LOYALTY_PROGRAM_ID = "loyaltyProgramId";
   @jakarta.annotation.Nullable

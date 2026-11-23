@@ -42,7 +42,7 @@ import java.util.StringJoiner;
 public class OrderBatch {
   public static final String JSON_PROPERTY_ORDERS = "orders";
   @jakarta.annotation.Nonnull
-  private List<Order> orders = new ArrayList<>();
+  private List<Order> orders;
 
   public static final String JSON_PROPERTY_NOTIFY_URL = "notifyUrl";
   @jakarta.annotation.Nullable

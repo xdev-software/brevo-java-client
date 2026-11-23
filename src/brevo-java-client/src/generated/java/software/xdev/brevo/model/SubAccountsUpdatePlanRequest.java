@@ -43,7 +43,7 @@ import java.util.StringJoiner;
 public class SubAccountsUpdatePlanRequest {
   public static final String JSON_PROPERTY_SUB_ACCOUNT_IDS = "subAccountIds";
   @jakarta.annotation.Nullable
-  private List<Long> subAccountIds = new ArrayList<>();
+  private List<Long> subAccountIds;
 
   public static final String JSON_PROPERTY_CREDITS = "credits";
   @jakarta.annotation.Nullable

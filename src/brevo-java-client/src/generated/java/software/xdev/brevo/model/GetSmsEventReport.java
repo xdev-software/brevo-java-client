@@ -40,7 +40,7 @@ import java.util.StringJoiner;
 public class GetSmsEventReport {
   public static final String JSON_PROPERTY_EVENTS = "events";
   @jakarta.annotation.Nullable
-  private List<GetSmsEventReportEventsInner> events = new ArrayList<>();
+  private List<GetSmsEventReportEventsInner> events;
 
   public GetSmsEventReport() {
   }

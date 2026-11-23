@@ -121,7 +121,7 @@ public class TaskReminder {
 
   public static final String JSON_PROPERTY_TYPES = "types";
   @jakarta.annotation.Nonnull
-  private List<TypesEnum> types = new ArrayList<>();
+  private List<TypesEnum> types;
 
   public TaskReminder() {
   }

@@ -45,7 +45,7 @@ public class GetScheduledEmailByBatchId {
 
   public static final String JSON_PROPERTY_BATCHES = "batches";
   @jakarta.annotation.Nullable
-  private List<GetScheduledEmailByBatchIdBatchesInner> batches = new ArrayList<>();
+  private List<GetScheduledEmailByBatchIdBatchesInner> batches;
 
   public GetScheduledEmailByBatchId() {
   }

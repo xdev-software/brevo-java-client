@@ -42,11 +42,11 @@ import java.util.StringJoiner;
 public class GetExtendedContactDetailsAllOfStatisticsUnsubscriptions {
   public static final String JSON_PROPERTY_USER_UNSUBSCRIPTION = "userUnsubscription";
   @jakarta.annotation.Nonnull
-  private List<GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsUserUnsubscription> userUnsubscription = new ArrayList<>();
+  private List<GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsUserUnsubscription> userUnsubscription;
 
   public static final String JSON_PROPERTY_ADMIN_UNSUBSCRIPTION = "adminUnsubscription";
   @jakarta.annotation.Nonnull
-  private List<GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsAdminUnsubscription> adminUnsubscription = new ArrayList<>();
+  private List<GetExtendedContactDetailsAllOfStatisticsUnsubscriptionsAdminUnsubscription> adminUnsubscription;
 
   public GetExtendedContactDetailsAllOfStatisticsUnsubscriptions() {
   }

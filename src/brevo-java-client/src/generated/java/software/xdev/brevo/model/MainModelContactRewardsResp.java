@@ -48,7 +48,7 @@ public class MainModelContactRewardsResp {
 
   public static final String JSON_PROPERTY_CONTACT_REWARDS = "contactRewards";
   @jakarta.annotation.Nullable
-  private List<MainModelContactReward> contactRewards = new ArrayList<>();
+  private List<MainModelContactReward> contactRewards;
 
   public static final String JSON_PROPERTY_COUNT = "count";
   @jakarta.annotation.Nullable

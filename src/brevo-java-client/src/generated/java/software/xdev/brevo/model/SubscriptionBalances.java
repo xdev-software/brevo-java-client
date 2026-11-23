@@ -42,7 +42,7 @@ import java.util.StringJoiner;
 public class SubscriptionBalances {
   public static final String JSON_PROPERTY_BALANCES = "balances";
   @jakarta.annotation.Nullable
-  private List<SubscriptionAggregateBalance> balances = new ArrayList<>();
+  private List<SubscriptionAggregateBalance> balances;
 
   public static final String JSON_PROPERTY_CONTACT_ID = "contactId";
   @jakarta.annotation.Nullable

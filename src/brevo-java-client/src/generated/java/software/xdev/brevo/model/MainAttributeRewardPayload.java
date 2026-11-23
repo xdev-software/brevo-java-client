@@ -66,7 +66,7 @@ public class MainAttributeRewardPayload {
 
   public static final String JSON_PROPERTY_META = "meta";
   @jakarta.annotation.Nullable
-  private Map<String, Object> meta = new HashMap<>();
+  private Map<String, Object> meta;
 
   public static final String JSON_PROPERTY_REWARD_ID = "rewardId";
   @jakarta.annotation.Nonnull

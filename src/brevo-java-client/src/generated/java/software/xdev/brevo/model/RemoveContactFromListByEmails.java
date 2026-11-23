@@ -39,7 +39,7 @@ import java.util.StringJoiner;
 public class RemoveContactFromListByEmails {
   public static final String JSON_PROPERTY_EMAILS = "emails";
   @jakarta.annotation.Nullable
-  private List<String> emails = new ArrayList<>();
+  private List<String> emails;
 
   public RemoveContactFromListByEmails() {
   }

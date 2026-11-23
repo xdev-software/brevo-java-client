@@ -44,7 +44,7 @@ public class CorporateSubAccountIpAssociatePostRequest {
 
   public static final String JSON_PROPERTY_IDS = "ids";
   @jakarta.annotation.Nonnull
-  private List<Long> ids = new ArrayList<>();
+  private List<Long> ids;
 
   public CorporateSubAccountIpAssociatePostRequest() {
   }

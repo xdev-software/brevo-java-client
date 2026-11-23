@@ -41,15 +41,15 @@ import java.util.StringJoiner;
 public class CreateWhatsAppCampaignRecipients {
   public static final String JSON_PROPERTY_EXCLUDED_LIST_IDS = "excludedListIds";
   @jakarta.annotation.Nullable
-  private List<Long> excludedListIds = new ArrayList<>();
+  private List<Long> excludedListIds;
 
   public static final String JSON_PROPERTY_LIST_IDS = "listIds";
   @jakarta.annotation.Nullable
-  private List<Long> listIds = new ArrayList<>();
+  private List<Long> listIds;
 
   public static final String JSON_PROPERTY_SEGMENTS = "segments";
   @jakarta.annotation.Nullable
-  private List<Long> segments = new ArrayList<>();
+  private List<Long> segments;
 
   public CreateWhatsAppCampaignRecipients() {
   }

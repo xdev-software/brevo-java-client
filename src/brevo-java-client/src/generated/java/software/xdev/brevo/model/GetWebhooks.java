@@ -40,7 +40,7 @@ import java.util.StringJoiner;
 public class GetWebhooks {
   public static final String JSON_PROPERTY_WEBHOOKS = "webhooks";
   @jakarta.annotation.Nonnull
-  private List<GetWebhook> webhooks = new ArrayList<>();
+  private List<GetWebhook> webhooks;
 
   public GetWebhooks() {
   }

@@ -54,7 +54,7 @@ public class MainGetContactRewardsPayload {
 
   public static final String JSON_PROPERTY_METADATA = "metadata";
   @jakarta.annotation.Nullable
-  private List<MainFilter> metadata = new ArrayList<>();
+  private List<MainFilter> metadata;
 
   public static final String JSON_PROPERTY_OFFSET = "offset";
   @jakarta.annotation.Nullable

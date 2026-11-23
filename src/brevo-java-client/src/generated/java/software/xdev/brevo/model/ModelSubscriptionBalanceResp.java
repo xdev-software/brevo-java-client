@@ -40,7 +40,7 @@ import java.util.StringJoiner;
 public class ModelSubscriptionBalanceResp {
   public static final String JSON_PROPERTY_BALANCE = "balance";
   @jakarta.annotation.Nullable
-  private List<AggregateBalance> balance = new ArrayList<>();
+  private List<AggregateBalance> balance;
 
   public ModelSubscriptionBalanceResp() {
   }

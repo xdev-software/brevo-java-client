@@ -40,7 +40,7 @@ import java.util.StringJoiner;
 public class GetCorporateInvitedUsersList {
   public static final String JSON_PROPERTY_USERS = "users";
   @jakarta.annotation.Nullable
-  private List<GetCorporateInvitedUsersListUsersInner> users = new ArrayList<>();
+  private List<GetCorporateInvitedUsersListUsersInner> users;
 
   public GetCorporateInvitedUsersList() {
   }

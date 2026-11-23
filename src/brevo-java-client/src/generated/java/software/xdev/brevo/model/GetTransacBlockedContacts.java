@@ -45,7 +45,7 @@ public class GetTransacBlockedContacts {
 
   public static final String JSON_PROPERTY_CONTACTS = "contacts";
   @jakarta.annotation.Nullable
-  private List<GetTransacBlockedContactsContactsInner> contacts = new ArrayList<>();
+  private List<GetTransacBlockedContactsContactsInner> contacts;
 
   public GetTransacBlockedContacts() {
   }

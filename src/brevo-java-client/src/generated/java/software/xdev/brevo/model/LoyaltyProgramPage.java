@@ -40,7 +40,7 @@ import java.util.StringJoiner;
 public class LoyaltyProgramPage {
   public static final String JSON_PROPERTY_ITEMS = "items";
   @jakarta.annotation.Nullable
-  private List<LoyaltyProgram> items = new ArrayList<>();
+  private List<LoyaltyProgram> items;
 
   public LoyaltyProgramPage() {
   }

@@ -41,7 +41,7 @@ import java.util.StringJoiner;
 public class GetProducts {
   public static final String JSON_PROPERTY_PRODUCTS = "products";
   @jakarta.annotation.Nonnull
-  private List<GetProductDetails> products = new ArrayList<>();
+  private List<GetProductDetails> products;
 
   public static final String JSON_PROPERTY_COUNT = "count";
   @jakarta.annotation.Nonnull

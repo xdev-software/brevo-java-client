@@ -39,7 +39,7 @@ import java.util.StringJoiner;
 public class AddContactToListByIDs {
   public static final String JSON_PROPERTY_IDS = "ids";
   @jakarta.annotation.Nullable
-  private List<Long> ids = new ArrayList<>();
+  private List<Long> ids;
 
   public AddContactToListByIDs() {
   }
